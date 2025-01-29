@@ -74,10 +74,18 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
+
+
+  
   --bs-link-color: #ffc800;
   --bs-link-hover-color: #cca000;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
+
+
+  --bs-link-color: #b38600; /* Deep, refined gold for better visibility */
+  --bs-link-hover-color: #997000; /* Slightly darker gold for hover */
+  --bs-link-decoration: underline; /* Ensures visibility on all screens */
 }
 
 *,
@@ -2846,20 +2854,21 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: var(--bs-primary);
-  --bs-btn-border-color: #ffc800;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #d9aa00;
-  --bs-btn-hover-border-color: #cca000;
-  --bs-btn-focus-shadow-rgb: 255, 208, 38;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #cca000;
-  --bs-btn-active-border-color: #bf9600;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #ffc800;
-  --bs-btn-disabled-border-color: #ffc800;
+  --bs-btn-color: #333; /* Darker text for better readability */
+  --bs-btn-bg: #ffb300; /* Warmer, more contrasting yellow */
+  --bs-btn-border-color: #e0a800; 
+  --bs-btn-hover-color: #222; /* Slightly darker hover text */
+  --bs-btn-hover-bg: #d99600; /* Deeper gold for hover */
+  --bs-btn-hover-border-color: #c48c00;
+  --bs-btn-focus-shadow-rgb: 220, 180, 30;
+  --bs-btn-active-color: #222;
+  --bs-btn-active-bg: #c48c00; /* Darker gold for active state */
+  --bs-btn-active-border-color: #b08000;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+  --bs-btn-disabled-color: #999; /* More visible disabled text */
+  --bs-btn-disabled-bg: #e0a800; /* Softer gold for disabled */
+  --bs-btn-disabled-border-color: #e0a800;
+
 }
 
 .btn-secondary {
@@ -10917,7 +10926,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -10952,8 +10961,8 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: black;
-  background-color: white;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Broadhurst_and_Portal_in_Fieseler_Storch_WWII_IWM_CL_3862.jpg");
+  
+  background-image: url("/assets/img/books.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10962,10 +10971,12 @@ header.masthead {
 
 header.masthead .container {
   background-color: whitesmoke;
-  padding: 20px;
-  border-radius: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  
 }
 header.masthead .masthead-subheading {
+  
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
@@ -10973,6 +10984,7 @@ header.masthead .masthead-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
+  
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -10982,6 +10994,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
+    
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
@@ -10990,6 +11003,7 @@ header.masthead .masthead-heading {
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
+   
   }
   header.masthead .masthead-heading {
     font-size: 4.5rem;

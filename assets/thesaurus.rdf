@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+    <!-- Top Concept: World War II -->
+    <skos:Concept rdf:about="#WorldWarII">
+        <skos:prefLabel>World War II</skos:prefLabel>
+        <skos:narrower rdf:resource="#Events"/>
+        <skos:narrower rdf:resource="#Locations"/>
+        <skos:narrower rdf:resource="#People"/>
+        <skos:narrower rdf:resource="#Organisations"/>
+    </skos:Concept>
+
+    <!-- Events -->
+    <skos:Concept rdf:about="#Events">
+        <skos:prefLabel>Events</skos:prefLabel>
+        <skos:broader rdf:resource="#WorldWarII"/>
+        <skos:narrower rdf:resource="#BattleOfBritain"/>
+        <skos:narrower rdf:resource="#DDay"/>
+        <skos:narrower rdf:resource="#PearlHarborAttack"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#BattleOfBritain">
+        <skos:prefLabel>Battle of Britain</skos:prefLabel>
+        <skos:broader rdf:resource="#Events"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#DDay">
+        <skos:prefLabel>D-Day</skos:prefLabel>
+        <skos:broader rdf:resource="#Events"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#PearlHarborAttack">
+        <skos:prefLabel>Pearl Harbor Attack</skos:prefLabel>
+        <skos:broader rdf:resource="#Events"/>
+    </skos:Concept>
+    
+    <!-- Locations -->
+    <skos:Concept rdf:about="#Locations">
+        <skos:prefLabel>Locations</skos:prefLabel>
+        <skos:broader rdf:resource="#WorldWarII"/>
+        <skos:narrower rdf:resource="#Normandy"/>
+        <skos:narrower rdf:resource="#Stalingrad"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#Normandy">
+        <skos:prefLabel>Normandy</skos:prefLabel>
+        <skos:broader rdf:resource="#Locations"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#Stalingrad">
+        <skos:prefLabel>Stalingrad</skos:prefLabel>
+        <skos:broader rdf:resource="#Locations"/>
+    </skos:Concept>
+    
+    <!-- People -->
+    <skos:Concept rdf:about="#People">
+        <skos:prefLabel>People</skos:prefLabel>
+        <skos:broader rdf:resource="#WorldWarII"/>
+        <skos:narrower rdf:resource="#WinstonChurchill"/>
+        <skos:narrower rdf:resource="#DwightEisenhower"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#WinstonChurchill">
+        <skos:prefLabel>Winston Churchill</skos:prefLabel>
+        <skos:broader rdf:resource="#People"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#DwightEisenhower">
+        <skos:prefLabel>Dwight D. Eisenhower</skos:prefLabel>
+        <skos:broader rdf:resource="#People"/>
+    </skos:Concept>
+    
+    <!-- Organisations -->
+    <skos:Concept rdf:about="#Organisations">
+        <skos:prefLabel>Organisations</skos:prefLabel>
+        <skos:broader rdf:resource="#WorldWarII"/>
+        <skos:narrower rdf:resource="#RAF"/>
+        <skos:narrower rdf:resource="#Wehrmacht"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#RAF">
+        <skos:prefLabel>Royal Air Force</skos:prefLabel>
+        <skos:broader rdf:resource="#Organisations"/>
+    </skos:Concept>
+    
+    <skos:Concept rdf:about="#Wehrmacht">
+        <skos:prefLabel>Wehrmacht</skos:prefLabel>
+        <skos:broader rdf:resource="#Organisations"/>
+    </skos:Concept>
+    
+</rdf:RDF>

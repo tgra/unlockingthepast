@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Wing-Commander Yarde",
+            "p_2": "Colonel Scott",
+            "p_3": "Colonel Faweett",
+            "p_4": "Mr. Killery",
+            "p_5": "Colonel Warren",
+            "p_6": "Air Vice-Marshal Pulford",
+            "p_7": "Air Vice-Marshal Babington",
+            "p_8": "Lieutenant-General Percival",
+            "p_9": "Lieutenant-General Bond"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "Burma",
+            "l_4": "Hong Kong",
+            "l_5": "Siam",
+            "l_6": "Gulf of Siam",
+            "l_7": "IndoChina",
+            "l_8": "Kota Bharu",
+            "l_9": "Kelantan",
+            "l_10": "Mersing",
+            "l_11": "Kuantan"
+        },
+        "events": {
+            "e_1": "War with Japan",
+            "e_2": "Formation of General Headquarters Staff",
+            "e_3": "Defence of Malaya"
+        },
+        "organisations": {
+            "o_1": "Far Eastern Combined Bureau",
+            "o_2": "Ministry of Economic Warfare"
+        }
+    },
+    "keywords": [
+        "sickness",
+        "overwork",
+        "intelligence",
+        "war",
+        "defence",
+        "economic warfare",
+        "communications"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence",
+        "Healthcare in Military",
+        "Defence Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Intelligence": [
+            "e_2"
+        ],
+        "Defence Strategy": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Officially declared 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "War with Japan breaks out, prompting a reassessment of military and intelligence capabilities."
+        },
+        {
+            "event": "e_2",
+            "date": "May 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The formation of General Headquarters Staff takes place, aimed at bolstering military planning and coordination."
+        },
+        {
+            "event": "e_3",
+            "date": "November 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_6",
+                "p_7",
+                "p_8",
+                "p_9"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Defence of Malaya addresses strategic concerns to protect Singapore, focusing on enemy aircraft and communications."
+        }
+    ]
+}

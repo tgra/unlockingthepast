@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Brooke",
+            "p_2": "General Weygand",
+            "p_3": "General Georges",
+            "p_4": "General Altmayer"
+        },
+        "locations": {
+            "l_1": "Plymouth",
+            "l_2": "London",
+            "l_3": "Rennes",
+            "l_4": "France",
+            "l_5": "Amiens",
+            "l_6": "Abbeville",
+            "l_7": "Sarre Front",
+            "l_8": "Seine",
+            "l_9": "Bresle",
+            "l_10": "Rouen",
+            "l_11": "Dieppe"
+        },
+        "events": {
+            "e_1": "Evacuation of the main British Expeditionary Force",
+            "e_2": "Attack on the Abbeville bridgehead",
+            "e_3": "German Offensive against the Seventh and Tenth French Armies",
+            "e_4": "German attack with 5th and 7th Armoured Divisions"
+        },
+        "organisations": {
+            "o_1": "B.E.F. (British Expeditionary Force)",
+            "o_2": "Tenth French Army",
+            "o_3": "51st Division",
+            "o_4": "1st Armoured Division"
+        }
+    },
+    "keywords": [
+        "British Expeditionary Force",
+        "German Offensive",
+        "French Armies",
+        "tactics",
+        "military strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Allied Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Allied Coordination": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 1940",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The main British Expeditionary Force is evacuated from Flanders, leaving only the 51st Division in France."
+        },
+        {
+            "event": "e_2",
+            "date": "June 4, 1940",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The 51st Division conducts an attack on the Abbeville bridgehead, which ultimately fails due to a lack of coordination."
+        },
+        {
+            "event": "e_3",
+            "date": "June 5, 1940",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "A major German offensive launches an attack on the Seventh and Tenth French Armies, pushing British forces back."
+        },
+        {
+            "event": "e_4",
+            "date": "June 7, 1940",
+            "locations": [
+                "l_5",
+                "l_8"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "German forces, comprised of the 5th and 7th Armoured Divisions, execute a smashing attack aimed at breaking the Tenth French Army."
+        }
+    ]
+}

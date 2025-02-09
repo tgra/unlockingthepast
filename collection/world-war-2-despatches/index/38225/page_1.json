@@ -1,0 +1,94 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral D. W. Boyd",
+            "p_2": "Anthony"
+        },
+        "locations": {
+            "l_1": "Mozambique Channel",
+            "l_2": "Majunga",
+            "l_3": "Tamatave",
+            "l_4": "Diego Suarez",
+            "l_5": "Mayotta Island",
+            "l_6": "Cape Amber"
+        },
+        "events": {
+            "e_1": "Operation Ironclad",
+            "e_2": "Assault on Diego Suarez"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "INDOMITABLE",
+            "o_3": "DEVONSHIRE",
+            "o_4": "HERMIONE",
+            "o_5": "EASEDALE"
+        }
+    },
+    "keywords": [
+        "Mozambique Channel",
+        "submarine",
+        "U-boats",
+        "intelligence reports",
+        "assault orders",
+        "air patrols",
+        "convoy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Intelligence Gathering"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1"
+        ],
+        "Intelligence Gathering": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2nd May",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Ironclad is set to proceed based on definitive orders received from the Admiralty, with instructions for an ultimatum to be delivered to the Governor following the assault on Diego Suarez."
+        },
+        {
+            "event": "e_2",
+            "date": "3rd May",
+            "locations": [
+                "l_4",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The assault on Diego Suarez is executed, with naval forces proceeding as planned and conditions for landing reported to be good."
+        }
+    ]
+}

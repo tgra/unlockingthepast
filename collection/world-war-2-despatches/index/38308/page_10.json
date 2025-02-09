@@ -1,0 +1,115 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain D. 27",
+            "p_2": "Commander Logistic Support Group"
+        },
+        "locations": {
+            "l_1": "Leyte",
+            "l_2": "Sakishima",
+            "l_3": "Miyako",
+            "l_4": "Ishigaki",
+            "l_5": "Cootie"
+        },
+        "events": {
+            "e_1": "Operations in Sakishima",
+            "e_2": "Collision between H.M.S. QUILLIAM and H.M.S. INDOMITABLE",
+            "e_3": "Airstrikes on Miyako and Ishigaki"
+        },
+        "organisations": {
+            "o_1": "H.M.S.",
+            "o_2": "H.M.A.S.",
+            "o_3": "CTF 112",
+            "o_4": "CTG 99.2"
+        }
+    },
+    "keywords": [
+        "H.M.A.S. NORMAN",
+        "TF 57",
+        "casualties",
+        "air cover",
+        "bombing strikes",
+        "friendly bombers"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Battles",
+        "Aerial Combat"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Battles": [
+            "e_2"
+        ],
+        "Aerial Combat": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Fleet embarks on operations in Sakishima, with a focus on strikes against enemy positions amidst challenging weather conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "21st May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "H.M.S. QUILLIAM collides with H.M.S. INDOMITABLE, resulting in damage but no casualties, prompting towing operations."
+        },
+        {
+            "event": "e_3",
+            "date": "21st May",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Airstrikes are executed targeting Miyako and Ishigaki, impacting enemy installations despite adverse weather."
+        }
+    ]
+}

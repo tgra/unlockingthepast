@@ -1,0 +1,140 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Norrie",
+            "p_2": "General Ritchie"
+        },
+        "locations": {
+            "l_1": "El Adem",
+            "l_2": "Sidi Rezegh",
+            "l_3": "Bardia",
+            "l_4": "Bir el Gubi",
+            "l_5": "Gambut",
+            "l_6": "Trigh Capuzzo",
+            "l_7": "Tobruk"
+        },
+        "events": {
+            "e_1": "Operation at El Adem",
+            "e_2": "Siege of Tobruk",
+            "e_3": "Raid on Bardia",
+            "e_4": "Counter-offensive against the enemy"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "11th Indian Infantry Brigade",
+            "o_3": "5th New Zealand Infantry Brigade",
+            "o_4": "2nd South African Division",
+            "o_5": "Afrika Korps",
+            "o_6": "Bologna Division",
+            "o_7": "1st South African Brigade",
+            "o_8": "German Panzer Divisions"
+        }
+    },
+    "keywords": [
+        "Offensive",
+        "Reconnaissance",
+        "Communications",
+        "Troop movements",
+        "Supply dumps",
+        "Counter-attack",
+        "Retreat",
+        "Evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Resistance",
+        "Tactical Maneuvers",
+        "Enemy Engagements",
+        "Supply Chain Disruption"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Diplomacy": [],
+        "Tactical Maneuvers": [
+            "e_3"
+        ],
+        "Enemy Engagements": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 4, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Eighth Army initiates the offensive at El Adem, encountering strong enemy resistance. General Norrie plans for the operation to begin, adjusting tactical movements based on reconnaissance and enemy positions."
+        },
+        {
+            "event": "e_2",
+            "date": "Ongoing through December 4, 1941",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The Siege of Tobruk continues with intense fighting as the Eighth Army fortifies positions against enemy advances, and attempts to push back the Axis forces as they make strategic withdrawals."
+        },
+        {
+            "event": "e_3",
+            "date": "December 3, 1941",
+            "locations": [
+                "l_3",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 5th New Zealand and 5th Indian Infantry Brigades engage in raids against enemy patrols trying to secure supplies from Bardia, successfully routing enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "December 4-6, 1941",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "As the offensive at El Adem begins, the Eighth Army faces counter-offensives and tactical maneuvers from Axis forces, with significant losses and adjustments to operational plans."
+        }
+    ]
+}

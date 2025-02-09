@@ -1,0 +1,112 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A. E. Percival",
+            "p_2": "Pulford",
+            "p_3": "Spooner"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Sumatra",
+            "l_4": "N.E.I."
+        },
+        "events": {
+            "e_1": "Air Campaign in Malaya",
+            "e_2": "Reinforcement Arrival",
+            "e_3": "Civilian Aid to RAF"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "Royal Navy",
+            "o_3": "Merchant Navy"
+        }
+    },
+    "keywords": [
+        "reinforcements",
+        "aerodromes",
+        "air attack",
+        "Malaya",
+        "civilian aid"
+    ],
+    "themes": [
+        "Military Operations",
+        "Support and Logistics",
+        "Allied Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Support and Logistics": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Allied Cooperation": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Early 1940s",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The air campaign in Malaya faces heavy resistance with inadequate air protection leading to high casualties and little strategic gain."
+        },
+        {
+            "event": "e_2",
+            "date": "Mid January 1940",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Reinforcements for the RAF arrive too late to change the situation in Malaya, facing logistical challenges and tactical disadvantages."
+        },
+        {
+            "event": "e_3",
+            "date": "Early 1940s",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Civilians and various naval forces provide critical support to the RAF during the campaign, demonstrating vital cooperation among allied forces."
+        }
+    ]
+}

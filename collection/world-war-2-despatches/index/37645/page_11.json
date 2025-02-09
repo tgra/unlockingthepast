@@ -1,0 +1,189 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Wavell",
+            "p_2": "Major-General Wetherall",
+            "p_3": "Brigadier F. L. A. Buchanan",
+            "p_4": "Brigadier A. R. Chater",
+            "p_5": "Lieut.-Colonel R. H. Smith"
+        },
+        "locations": {
+            "l_1": "Addis Abeba",
+            "l_2": "Massawa harbour",
+            "l_3": "Adama",
+            "l_4": "British Somaliland",
+            "l_5": "Berbera",
+            "l_6": "Dire Daua",
+            "l_7": "Abyssinia",
+            "l_8": "Auasc River"
+        },
+        "events": {
+            "e_1": "Negotiations with Italian Military Command",
+            "e_2": "Advance of 22nd Brigade",
+            "e_3": "Combined Air Force Attacks on Addis Abeba",
+            "e_4": "Entry into Addis Abeba",
+            "e_5": "Landing in British Somaliland",
+            "e_6": "Capture of Berbera",
+            "e_7": "Re-raise of the Somaliland Camel Corps"
+        },
+        "organisations": {
+            "o_1": "Defence Committee",
+            "o_2": "Air Force",
+            "o_3": "11th (A) Division",
+            "o_4": "2nd S.A. Infantry Brigade"
+        }
+    },
+    "keywords": [
+        "General Wavell",
+        "Addis Abeba",
+        "Italian Military Command",
+        "22nd Brigade",
+        "Air Force",
+        "S.A. Brigade",
+        "Berbera"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Air Attacks",
+        "Strategic Command"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Air Attacks": [
+            "e_3"
+        ],
+        "Strategic Command": [
+            "e_5",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "4th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On April 4th, negotiations with the Italian Military Command progress as General Wavell receives directives from the Defence Committee regarding terms for the Italian forces."
+        },
+        {
+            "event": "e_2",
+            "date": "2nd-3rd April",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The advance of the 22nd Brigade towards Addis Abeba continues on April 2nd to 3rd, encountering resistance but ultimately progressing."
+        },
+        {
+            "event": "e_3",
+            "date": "4th-5th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "On April 4th and 5th, combined bomber and fighter attacks by the Air Force target the Addis Abeba aerodrome, resulting in the loss of enemy aircraft."
+        },
+        {
+            "event": "e_4",
+            "date": "6th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On April 6th, Addis Abeba is entered by the 1st S.A. Brigade as part of a coordinated military operation."
+        },
+        {
+            "event": "e_5",
+            "date": "16th March",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_6",
+                "e_7"
+            ],
+            "eventSummary": "On March 16th, a military force successfully lands in British Somaliland and captures Berbera."
+        },
+        {
+            "event": "e_6",
+            "date": "23rd March",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "On March 23rd, Brigadier Buchanan arrives at Berbera, taking over command and leading military efforts in British Somaliland."
+        },
+        {
+            "event": "e_7",
+            "date": "8th April",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On April 8th, Brigadier A. R. Chater takes over as Military Governor of British Somaliland, initiating the re-raising of the Somaliland Camel Corps."
+        }
+    ]
+}

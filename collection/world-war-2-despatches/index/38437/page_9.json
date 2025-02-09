@@ -1,0 +1,146 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Albert Speer",
+            "p_2": "Koller",
+            "p_3": "Hitler",
+            "p_4": "Goering"
+        },
+        "locations": {
+            "l_1": "Germany",
+            "l_2": "London",
+            "l_3": "north-west Europe",
+            "l_4": "Normandy",
+            "l_5": "Berchtesgaden",
+            "l_6": "Kent",
+            "l_7": "Sussex",
+            "l_8": "Surrey"
+        },
+        "events": {
+            "e_1": "Development of the Flying Bomb",
+            "e_2": "Attempt to Coordinate Weapons in December 1943",
+            "e_3": "Operation of Flying Bombs Ordered on 12th June 1944",
+            "e_4": "Bombing Campaign Against London",
+            "e_5": "Landings in Normandy on 6th June 1944"
+        },
+        "organisations": {
+            "o_1": "OKW",
+            "o_2": "Luftwaffe",
+            "o_3": "LXVI Army Korps",
+            "o_4": "Flakregiment 155 (W)"
+        }
+    },
+    "keywords": [
+        "Flying Bomb",
+        "A-4 Rocket",
+        "Luftwaffe",
+        "Military Operations",
+        "Bombing Campaign",
+        "World War II"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Propaganda",
+        "Technological Development"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Propaganda": [
+            "e_4"
+        ],
+        "Technological Development": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "End of 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Development of the flying bomb begins as the German Air Staff becomes jealous of the Army's success with the A-4 rocket."
+        },
+        {
+            "event": "e_2",
+            "date": "December 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "LXVI Army Korps is given control over both the flying bomb and A-4 rocket in an attempt to coordinate their use."
+        },
+        {
+            "event": "e_3",
+            "date": "12th June 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Following the surprise of the Normandy landings, operations using the flying bomb are ordered to commence."
+        },
+        {
+            "event": "e_4",
+            "date": "1944-1945",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Germans launch over 10,000 flying bombs at London, but only a fraction reach their target due to effective defense."
+        },
+        {
+            "event": "e_5",
+            "date": "6th June 1944",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The landings in Normandy take the Germans by surprise, demonstrating their unpreparedness for a major Allied offensive."
+        }
+    ]
+}

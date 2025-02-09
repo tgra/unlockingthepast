@@ -1,0 +1,139 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief, Mediterranean",
+            "p_2": "Vice Admiral 1st Battle Squadron"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Canea",
+            "l_3": "Suda",
+            "l_4": "Heraklion",
+            "l_5": "Alexandria",
+            "l_6": "Maleme",
+            "l_7": "Scarpanto",
+            "l_8": "Tymbaki",
+            "l_9": "Aegean Sea"
+        },
+        "events": {
+            "e_1": "Heavy bombing attack on Canea",
+            "e_2": "Military operations in the Aegean",
+            "e_3": "Operation M.A.Q.3",
+            "e_4": "Troop movements on the south coast of Crete"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Royal Air Force",
+            "o_3": "Fleet Air Arm"
+        }
+    },
+    "keywords": [
+        "bombing attack",
+        "military operations",
+        "air attack",
+        "naval operations",
+        "Aegean",
+        "Crete",
+        "troop movements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Air Support",
+        "Troop Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_2",
+            "e_4"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_3"
+        ],
+        "Troop Logistics": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "25th May 1941",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The enemy launches a heavy bombing attack on Canea, decreasing the viability of naval operations in Crete."
+        },
+        {
+            "event": "e_2",
+            "date": "24th-26th May 1941",
+            "locations": [
+                "l_1",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Navy faces challenges in the Aegean due to sustained enemy air attacks, affecting troop logistics and naval operations."
+        },
+        {
+            "event": "e_3",
+            "date": "25th May 1941",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation M.A.Q.3 is launched to attack enemy aerodromes using Fleet Air Arm aircraft."
+        },
+        {
+            "event": "e_4",
+            "date": "25th-26th May 1941",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Troops are repositioned in response to the changing military situation on the south coast of Crete."
+        }
+    ]
+}

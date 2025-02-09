@@ -1,0 +1,153 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant-Colonel McFeat",
+            "p_2": "General Mow",
+            "p_3": "Chinese Military Mission",
+            "p_4": "Siamese Prime Minister"
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "Singapore",
+            "l_3": "Hong Kong",
+            "l_4": "Chungking",
+            "l_5": "Chi Base",
+            "l_6": "Tulip",
+            "l_7": "Rangoon",
+            "l_8": "Maymyo",
+            "l_9": "Lashio",
+            "l_10": "Bhamo",
+            "l_11": "Siam",
+            "l_12": "Indo-China",
+            "l_13": "Tongking",
+            "l_14": "Kwangsi",
+            "l_15": "Battambang",
+            "l_16": "Bangkok",
+            "l_17": "Saigon",
+            "l_18": "Camranh Harbour"
+        },
+        "events": {
+            "e_1": "Chinese Military Assistance",
+            "e_2": "Formation of Chinese Guerilla Companies",
+            "e_3": "Aid to Siam",
+            "e_4": "Economic Agreement with Vichy French Authorities",
+            "e_5": "Japanese Expansion in Indo-China"
+        },
+        "organisations": {
+            "o_1": "American Volunteer Group",
+            "o_2": "Royal Air Force"
+        }
+    },
+    "keywords": [
+        "Military Assistance",
+        "Guerilla Warfare",
+        "Training",
+        "Supplies",
+        "Diplomatic Relations",
+        "Japanese Expansion"
+    ],
+    "themes": [
+        "Military Operations",
+        "International Relations",
+        "Support and Aid",
+        "Strategic Alliances"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 13, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Chinese Military Assistance is established, with promises of troop support to defend Burma, marking a significant strategic collaboration."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Fifteen special Chinese guerilla companies are formed with British and Indian personnel, who undergo thorough training in guerilla tactics."
+        },
+        {
+            "event": "e_3",
+            "date": "October 1940",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Siamese resist Japanese demands but are limited by a lack of military support, culminating in a weak response to Japanese incursions."
+        },
+        {
+            "event": "e_4",
+            "date": "July 24, 1941",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "An economic agreement is concluded with the Vichy French, which does not prevent Japanese expansion into Indo-China."
+        },
+        {
+            "event": "e_5",
+            "date": "July 26, 1941",
+            "locations": [
+                "l_17",
+                "l_18"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Japanese forces establish control in Indo-China, enhancing their strategic position in the region."
+        }
+    ]
+}

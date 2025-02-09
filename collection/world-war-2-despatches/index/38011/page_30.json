@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Auchinleck",
+            "p_2": "General Bethouart"
+        },
+        "locations": {
+            "l_1": "MASHOBRA",
+            "l_2": "Orneset",
+            "l_3": "Narvik",
+            "l_4": "Ankenes Peninsula",
+            "l_5": "Beisford",
+            "l_6": "Taraldvik",
+            "l_7": "Bardufoss Aerodrome",
+            "l_8": "Fagernes",
+            "l_9": "Forneset",
+            "l_10": "United Kingdom",
+            "l_11": "Northern Norway"
+        },
+        "events": {
+            "e_1": "Landing of French troops on a small beach east of Orneset",
+            "e_2": "Attack on Narvik",
+            "e_3": "Evacuation of Northern Norway"
+        },
+        "organisations": {
+            "o_1": "French troops",
+            "o_2": "Polish troops",
+            "o_3": "Royal Navy",
+            "o_4": "His Majesty's Government",
+            "o_5": "Admiralty"
+        }
+    },
+    "keywords": [
+        "French troops",
+        "Polish advance",
+        "Naval Message",
+        "Evacuation",
+        "Counter-attack",
+        "Bombing attacks",
+        "Narvik"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Troop Landings",
+        "Evacuations",
+        "Counter-attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Evacuations": [
+            "e_3"
+        ],
+        "Air Support": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 27th",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "French troops land successfully on a beach east of Orneset, supported by a Polish advance on the Ankenes Peninsula."
+        },
+        {
+            "event": "e_2",
+            "date": "May 27th",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The attack on Narvik begins at 2340, with naval bombardments supporting the troops landing amidst enemy fire."
+        },
+        {
+            "event": "e_3",
+            "date": "May 24/25th",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Orders are received for the evacuation of Northern Norway due to urgent needs in the United Kingdom."
+        }
+    ]
+}

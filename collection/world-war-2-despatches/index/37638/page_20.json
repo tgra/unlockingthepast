@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Freyberg",
+            "p_2": "General Weston",
+            "p_3": "Lieut.-Colonel J. Campbell"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Suda Bay",
+            "l_3": "Heraklion",
+            "l_4": "Retimo",
+            "l_5": "Canea",
+            "l_6": "Tymbaki",
+            "l_7": "Sphakia",
+            "l_8": "Alexandria",
+            "l_9": "Egypt"
+        },
+        "events": {
+            "e_1": "Evacuation of Crete",
+            "e_2": "Battle of Crete",
+            "e_3": "Landing of enemy troops in Canea"
+        },
+        "organisations": {
+            "o_1": "Royal Marines",
+            "o_2": "16th Infantry Brigade",
+            "o_3": "5th New Zealand Brigade",
+            "o_4": "19th Australian Brigade",
+            "o_5": "Layforce",
+            "o_6": "1st Battalion Leicester Regiment",
+            "o_7": "2nd Battalion Argyll and Sutherland Highlanders"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Reinforcements",
+        "Enemy Troops",
+        "Canea",
+        "Suda Bay",
+        "Heraklion",
+        "Withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Evacuation",
+        "Resistance Against Enemy Forces"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ],
+        "Evacuation": [
+            "e_1"
+        ],
+        "Resistance Against Enemy Forces": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "30th-31st May",
+            "locations": [
+                "l_1",
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Crete occurs amid increasing enemy forces on the island, culminating in the withdrawal of remaining garrisons after significant fighting."
+        },
+        {
+            "event": "e_2",
+            "date": "26th-31st May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_5",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Crete sees intensive fighting and air bombing, leading to the decision for evacuation as enemy forces mount on the island."
+        },
+        {
+            "event": "e_3",
+            "date": "May",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Enemy troops establish a strong presence in Canea, forcing adjustments in strategy and leading to intensified efforts in the battle."
+        }
+    ]
+}

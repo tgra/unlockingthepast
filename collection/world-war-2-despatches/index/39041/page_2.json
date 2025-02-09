@@ -1,0 +1,180 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_001": "Vice Admiral A. T. B. Curteis"
+        },
+        "locations": {
+            "l_001": "Hvalfiord",
+            "l_002": "Kola Inlet",
+            "l_003": "Iceland",
+            "l_004": "North Norway",
+            "l_005": "Lofoten Islands",
+            "l_006": "Trondheim",
+            "l_007": "Narvik",
+            "l_008": "Murmansk",
+            "l_009": "Bear Island",
+            "l_010": "Kirkenes"
+        },
+        "events": {
+            "e_001": "P.Q.12 Convoy",
+            "e_002": "Q.P.8 Convoy",
+            "e_003": "Attack by TIRPITZ",
+            "e_004": "P.Q.13 Convoy",
+            "e_005": "Q.P.9 Convoy",
+            "e_006": "P.Q.14 Convoy",
+            "e_007": "Q.P.10 Convoy"
+        },
+        "organisations": {
+            "o_001": "Home Fleet",
+            "o_002": "Royal Navy",
+            "o_003": "Russian Navy",
+            "o_004": "U-boat Forces"
+        }
+    },
+    "keywords": [
+        "Convoys",
+        "TIRPITZ",
+        "Attacks",
+        "U-boats",
+        "Home Fleet",
+        "Air Support"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Convoy Escort",
+        "Air Defense",
+        "International Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_003",
+            "e_004",
+            "e_005"
+        ],
+        "Naval Engagements": [
+            "e_003"
+        ],
+        "Convoy Escort": [
+            "e_001",
+            "e_002",
+            "e_004",
+            "e_005",
+            "e_006",
+            "e_007"
+        ],
+        "Air Defense": [
+            "e_003"
+        ],
+        "International Cooperation": [
+            "e_006",
+            "e_007"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_001",
+            "date": "1st March",
+            "locations": [
+                "l_001",
+                "l_002"
+            ],
+            "persons": [
+                "p_001"
+            ],
+            "organisations": [
+                "o_001"
+            ],
+            "connectedEvents": [
+                "e_003",
+                "e_002"
+            ],
+            "eventSummary": "The P.Q.12 convoy, supported by the Home Fleet, sets sail from Hvalfiord under threat of U-boat and air attacks."
+        },
+        {
+            "event": "e_002",
+            "date": "1st March",
+            "locations": [
+                "l_001",
+                "l_002"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_001"
+            ],
+            "connectedEvents": [
+                "e_001",
+                "e_003"
+            ],
+            "eventSummary": "The Q.P.8 convoy departs from Hvalfiord facing similar threats as P.Q.12."
+        },
+        {
+            "event": "e_003",
+            "date": "7th March",
+            "locations": [
+                "l_003",
+                "l_004"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_001",
+                "o_004"
+            ],
+            "connectedEvents": [
+                "e_001",
+                "e_002"
+            ],
+            "eventSummary": "The German battleship TIRPITZ attempts to intercept the eastbound convoy P.Q.12 but fails while sinking a straggler from Q.P.8."
+        },
+        {
+            "event": "e_004",
+            "date": "20th March",
+            "locations": [
+                "l_010"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_001"
+            ],
+            "connectedEvents": [
+                "e_005"
+            ],
+            "eventSummary": "The P.Q.13 convoy sets sail under significant threat from enemy forces, compounded by the presence of U-boats."
+        },
+        {
+            "event": "e_005",
+            "date": "21st March",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_001"
+            ],
+            "connectedEvents": [
+                "e_004"
+            ],
+            "eventSummary": "The Q.P.9 convoy departs successfully, in contrast to the challenges faced by P.Q.13."
+        },
+        {
+            "event": "e_006",
+            "date": "8th April",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_001"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The P.Q.14 convoy, consisting of 23 ships, sets sail while the escort is bolstered by additional naval assets from the Western Approaches."
+        },
+        {
+            "event": "e_007",
+            "date": "10th April",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_001"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Q.P.10 convoy, with 16 ships, departs, highlighting a sustained commitment to safeguarding shipping routes."
+        }
+    ]
+}

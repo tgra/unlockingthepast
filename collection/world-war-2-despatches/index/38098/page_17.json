@@ -1,0 +1,115 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief, Home Fleet",
+            "p_2": "Captain (D), 4th Destroyer Flotilla"
+        },
+        "locations": {
+            "l_1": "ARK ROYAL",
+            "l_2": "SHEFFIELD",
+            "l_3": "BISMARCK",
+            "l_4": "PRINZ EUGEN",
+            "l_5": "French coast",
+            "l_6": "Catalina",
+            "l_7": "RODNEY",
+            "l_8": "PIORUN",
+            "l_9": "ZULU",
+            "l_10": "MAORI",
+            "l_11": "SIKH",
+            "l_12": "COSSACK"
+        },
+        "events": {
+            "e_1": "Detachment of SHEFFIELD",
+            "e_2": "Striking force attack",
+            "e_3": "Second striking force launch"
+        },
+        "organisations": {
+            "o_1": "Admiralty"
+        }
+    },
+    "keywords": [
+        "Duplex pistols",
+        "Aircraft",
+        "Torpedoes",
+        "Target area",
+        "Enemy ship",
+        "Shadow",
+        "Striking force"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Aircraft Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Aircraft Operations": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Commander-in-Chief orders SHEFFIELD to shadow the enemy, leading to critical decisions based on changing naval positions."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The striking force launches an attack on SHEFFIELD, mistakenly targeting her instead of the enemy ship, BISMARCK, due to communication errors."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The second striking force launches to engage the enemy, employing contact pistols after prior failures with Duplex pistols."
+        }
+    ]
+}

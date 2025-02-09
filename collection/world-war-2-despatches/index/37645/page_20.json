@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Pralormo",
+            "p_2": "General Wetherall"
+        },
+        "locations": {
+            "l_1": "Mogadiscio",
+            "l_2": "Addis Abeba",
+            "l_3": "Soddu",
+            "l_4": "Colito",
+            "l_5": "Gimma",
+            "l_6": "Diredaua",
+            "l_7": "Kenya",
+            "l_8": "Berbera",
+            "l_9": "River Omo",
+            "l_10": "Dalle"
+        },
+        "events": {
+            "e_1": "Capture of Soddu",
+            "e_2": "Battle of the Omo",
+            "e_3": "Establishment of a defensive flank",
+            "e_4": "Crossing of the River Omo"
+        },
+        "organisations": {
+            "o_1": "2nd Nigeria Regiment",
+            "o_2": "1 N.M.R.",
+            "o_3": "1 F.F. Battalion",
+            "o_4": "12th (A) Division",
+            "o_5": "22nd E.A. Brigade",
+            "o_6": "1/6 K.A.R.",
+            "o_7": "Nigerian Brigade",
+            "o_8": "24th Division",
+            "o_9": "rath (A) Division",
+            "o_10": "South African battalions"
+        }
+    },
+    "keywords": [
+        "defensive flank",
+        "attack",
+        "capture",
+        "river crossing",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Offensive Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd May",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Soddu is captured with slight opposition following successful military tactics that dismantle enemy defenses."
+        },
+        {
+            "event": "e_2",
+            "date": "2nd June",
+            "locations": [
+                "l_5",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Battle of the Omo commences as troops attempt to cross the river Omo, facing significant challenges due to flooding."
+        },
+        {
+            "event": "e_3",
+            "date": "24th May",
+            "locations": [
+                "l_2",
+                "l_10"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A defensive flank is formed in the Dalle area, utilizing two South African battalions for an impending attack on Soddu."
+        },
+        {
+            "event": "e_4",
+            "date": "2nd June",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Troops manage to establish a precarious bridgehead across the River Omo amidst heavy shelling and logistical challenges."
+        }
+    ]
+}

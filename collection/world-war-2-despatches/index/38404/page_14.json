@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Officer Commanding",
+            "p_2": "Mezog"
+        },
+        "locations": {
+            "l_1": "Dartmouth",
+            "l_2": "Nova Scotia",
+            "l_3": "England",
+            "l_4": "Scotland",
+            "l_5": "Kent",
+            "l_6": "Sussex",
+            "l_7": "Hastings",
+            "l_8": "Northern France"
+        },
+        "events": {
+            "e_1": "Battle of Britain",
+            "e_2": "Rhubarb patrols",
+            "e_3": "Circus operations"
+        },
+        "organisations": {
+            "o_1": "No. 10 Group",
+            "o_2": "No. 11 Group",
+            "o_3": "Bomber Command"
+        }
+    },
+    "keywords": [
+        "German aircraft",
+        "Fighter Directing Officers",
+        "pirate raids",
+        "high-altitude interceptions",
+        "balloon barrage control"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Aerial Reconnaissance",
+        "Defensive Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
+        ],
+        "Defensive Tactics": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1940-06-13",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "During the Battle of Britain, the initiative in daylight operations lies with the Germans, prompting plans for future British offensives."
+        },
+        {
+            "event": "e_2",
+            "date": "1940-12-20",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Rhubarb patrols are initiated, allowing British pilots to engage German aircraft and gather operational experience."
+        },
+        {
+            "event": "e_3",
+            "date": "1940-12-20",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Circus operations are planned to combine offensive sweeps with operations by Bomber Command, aiming to take the initiative from the enemy."
+        }
+    ]
+}

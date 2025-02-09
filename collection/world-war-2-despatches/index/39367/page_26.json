@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Guy GarRop",
+            "p_2": "Field Marshal Alexander"
+        },
+        "locations": {
+            "l_1": "Northern Italy",
+            "l_2": "Foggia plain",
+            "l_3": "Ferrara",
+            "l_4": "Lake Comacchio",
+            "l_5": "Egypt"
+        },
+        "events": {
+            "e_1": "Battle of the Po Crossings",
+            "e_2": "Air Operations in Northern Italy"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "M.A.A.F. (Mediterranean Allied Air Forces)",
+            "o_3": "Allied Forces"
+        }
+    },
+    "keywords": [
+        "Air Superiority",
+        "German Troops",
+        "Allied Bombardment",
+        "Air Operations",
+        "Morale",
+        "Ground Forces",
+        "Fighter-bombers",
+        "Communication Disruption"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Power",
+        "Leadership",
+        "Teamwork",
+        "Retreat and Rout"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Power": [
+            "e_2"
+        ],
+        "Leadership": [
+            "e_2"
+        ],
+        "Teamwork": [
+            "e_2"
+        ],
+        "Retreat and Rout": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 1946",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of the Po Crossings highlights the decisive impact of air power on the German troops, leading to disorganized retreats and an overwhelming victory for the Allied Forces."
+        },
+        {
+            "event": "e_2",
+            "date": "August 1946",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Air Operations in Northern Italy showcase the crucial teamwork among Allied Forces, enhancing air superiority and directly contributing to the success of ground assaults."
+        }
+    ]
+}

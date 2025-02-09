@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain of SCHARNHORST",
+            "p_2": "Admiral of SCHARNHORST",
+            "p_3": "SAVAGE",
+            "p_4": "MUSKETEER",
+            "p_5": "MATCHLESS",
+            "p_6": "OPPORTUNE",
+            "p_7": "VIRAGO"
+        },
+        "locations": {
+            "l_1": "SCHARNHORST",
+            "l_2": "North East",
+            "l_3": "South West",
+            "l_4": "West"
+        },
+        "events": {
+            "e_1": "Engagement of SCHARNHORST with DUKE OF YORK",
+            "e_2": "Torpedo attacks by BELFAST and JAMAICA",
+            "e_3": "Torpedo attacks by the 36th Division"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Torpedo",
+        "Engagement",
+        "Battleship",
+        "Radar",
+        "Attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "n/a",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The engagement with DUKE OF YORK involves several exchanges of fire between the SCHARNHORST and British ships, resulting in significant damage and strategic shifts during the battle."
+        },
+        {
+            "event": "e_2",
+            "date": "1919-1948",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "BELFAST and JAMAICA launch coordinated torpedo attacks on the enemy, focusing on SCHARNHORST while managing the challenges of visibility and timing amidst fierce engagement."
+        },
+        {
+            "event": "e_3",
+            "date": "1931-1933",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 36th Division conducts a series of torpedo attacks following the main engagement, contributing to the overall battle outcome and aiming to capture survivors while facing fleet coordination challenges."
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "R.A.F. Officials",
+            "p_2": "U.S. Air Force Personnel"
+        },
+        "locations": {
+            "l_1": "India",
+            "l_2": "North East Assam",
+            "l_3": "Punjab",
+            "l_4": "United Provinces"
+        },
+        "events": {
+            "e_1": "Airfield Construction Progress 1943",
+            "e_2": "Manpower Substitution Scheme 1942"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "U.S. Army Air Forces (U.S.A.A.F.)",
+            "o_3": "Indian Air Force (I.A.F.)"
+        }
+    },
+    "keywords": [
+        "Airfield Construction",
+        "Manpower Shortage",
+        "Operational Airfields",
+        "Training Facilities"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistical Challenges",
+        "Airforce Training",
+        "Supply Chain Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Logistical Challenges": [
+            "e_1",
+            "e_2"
+        ],
+        "Airforce Training": [
+            "e_2"
+        ],
+        "Supply Chain Management": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The airfield construction progress in India by 1943 showcases the construction of 285 airfields, addressing the need for operational air support as demands increase during the war."
+        },
+        {
+            "event": "e_2",
+            "date": "End of 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The manpower substitution scheme initiated in late 1942 aims to recruit and train local individuals to fill the vacancies within the Royal Air Force, addressing the severe manpower shortage."
+        }
+    ]
+}

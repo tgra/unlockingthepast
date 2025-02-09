@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral Commanding Destroyers",
+            "p_2": "Admiral Vian",
+            "p_3": "Commander-in-Chief, Pacific"
+        },
+        "locations": {
+            "l_1": "Miyako Jima",
+            "l_2": "Tarima Shima",
+            "l_3": "Sakishima Gunto"
+        },
+        "events": {
+            "e_1": "Fueling Operation",
+            "e_2": "Fighter Sweeps",
+            "e_3": "Bomber Strikes",
+            "e_4": "Rescue Operation"
+        },
+        "organisations": {
+            "o_1": "Task Force 57"
+        }
+    },
+    "keywords": [
+        "Destroyers",
+        "Fleet",
+        "Fuelling",
+        "Airfields",
+        "Aircraft"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Aircraft Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_4"
+        ],
+        "Aircraft Operations": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th March 2023",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The fueling operation for the Fleet is conducted but faces delays due to strong winds and equipment issues, leading to operation stoppage."
+        },
+        {
+            "event": "e_2",
+            "date": "27th March 2023",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Strong fighter sweeps are launched from the Fleet to attack airfields at Ashigaki and Miyako, reporting minimal enemy activity."
+        },
+        {
+            "event": "e_3",
+            "date": "27th March 2023",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Multiple bomber strikes target barracks and airfields as the Fleet continues its operational plans despite needing to withdraw at dusk."
+        },
+        {
+            "event": "e_4",
+            "date": "27th March 2023",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A rescue operation is conducted for an aircraft crew who ditched in the sea, successfully recovering the crew members despite coordination challenges with the U.S. submarine."
+        }
+    ]
+}

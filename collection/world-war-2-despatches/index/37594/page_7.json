@@ -1,0 +1,155 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Godwin Austen",
+            "p_2": "Lieutenant-General Sir H. M. Wilson",
+            "p_3": "Captain D. MacN. C. Rose"
+        },
+        "locations": {
+            "l_1": "Castle Hill",
+            "l_2": "Observation Hill",
+            "l_3": "Mirgo Pass",
+            "l_4": "Berbera",
+            "l_5": "Tug Argan",
+            "l_6": "Laferug",
+            "l_7": "Barkasan",
+            "l_8": "Bulhar",
+            "l_9": "Zeilah"
+        },
+        "events": {
+            "e_1": "Evacuation Plan",
+            "e_2": "Battle of Observation Hill",
+            "e_3": "Counter-Attack at Mirgo Pass",
+            "e_4": "Withdrawal from Tug Argan",
+            "e_5": "Embarkation at Berbera"
+        },
+        "organisations": {
+            "o_1": "G.H.Q. Middle East",
+            "o_2": "2nd Black Watch",
+            "o_3": "2nd King's African Rifles",
+            "o_4": "H.M.A.S. Hobart"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "shelling",
+        "counter-attack",
+        "embarkation",
+        "enemy forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Defensive Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
+        ],
+        "Defensive Tactics": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "14th August",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "General Godwin Austen prepares an evacuation plan after observing the deteriorating situation on the battlefield."
+        },
+        {
+            "event": "e_2",
+            "date": "15th August",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Heavy enemy shelling begins on Observation Hill, leading to intense fighting that culminates in a fierce attack on the garrison."
+        },
+        {
+            "event": "e_3",
+            "date": "15th August",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A counter-attack is launched at Mirgo Pass to reclaim lost positions but initially achieves success before reverting back."
+        },
+        {
+            "event": "e_4",
+            "date": "16th-17th August",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Withdrawal from the Tug Argan position is executed under the cover of troops, signaling a strategic retreat toward Berbera."
+        },
+        {
+            "event": "e_5",
+            "date": "17th-18th August",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The embarkation of troops at Berbera is conducted without enemy interference, allowing for the successful evacuation of personnel."
+        }
+    ]
+}

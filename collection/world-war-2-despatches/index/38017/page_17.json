@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lord Gort",
+            "p_2": "General Lloyd",
+            "p_3": "General Alexander",
+            "p_4": "Vice Admiral",
+            "p_5": "Rear Admiral"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "La Panne",
+            "l_3": "Margate",
+            "l_4": "Sheerness",
+            "l_5": "Southern England",
+            "l_6": "Bray",
+            "l_7": "Malo"
+        },
+        "events": {
+            "e_1": "Dunkirk Evacuation",
+            "e_2": "Heavy Bombardment of Dunkirk and La Panne",
+            "e_3": "Military Plan Change",
+            "e_4": "Final Evacuation of the British Expeditionary Force (B.E.F.)"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "B.E.F. (British Expeditionary Force)"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "bombardment",
+        "artillery",
+        "troops",
+        "Dunkirk",
+        "La Panne"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation",
+        "Artillery Bombardment",
+        "Military Strategies",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Evacuation": [
+            "e_1",
+            "e_4"
+        ],
+        "Artillery Bombardment": [
+            "e_2"
+        ],
+        "Military Strategies": [
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1st June 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The final evacuation of the British Expeditionary Force (B.E.F.) is being executed as large numbers of troops are being lifted from Dunkirk on the night of June 1st-2nd, following a series of strategic adjustments and heavy bombardments."
+        },
+        {
+            "event": "e_2",
+            "date": "1st June 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Dunkirk and La Panne beaches are subjected to heavy artillery fire, affecting evacuation efforts as the Royal Air Force coordinates with naval operations to assist in locating enemy artillery."
+        },
+        {
+            "event": "e_3",
+            "date": "1st June 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A significant change in the military plan is announced, necessitating the withdrawal of the Eastern-most Division from La Panne to adjust to the evolving conditions of the evacuation."
+        },
+        {
+            "event": "e_4",
+            "date": "Night of 1st/2nd June 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The final phase of the evacuation of the B.E.F. is underway, with significant movements and transport arrangements made to ensure the safety and rescue of the remaining troops."
+        }
+    ]
+}

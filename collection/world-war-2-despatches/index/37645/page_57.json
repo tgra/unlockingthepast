@@ -1,0 +1,150 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Wavell",
+            "p_2": "Governor of Jibuti"
+        },
+        "locations": {
+            "l_1": "Loyada",
+            "l_2": "Galla Sidamo",
+            "l_3": "Jibuti",
+            "l_4": "Madagascar",
+            "l_5": "Addis Abeba",
+            "l_6": "South Abyssinia",
+            "l_7": "North Abyssinia",
+            "l_8": "Assab-Dessie-Bethor"
+        },
+        "events": {
+            "e_1": "Blockade of French Somaliland",
+            "e_2": "Battle in Galla Sidamo",
+            "e_3": "Evacuation proposal for Italian women and children",
+            "e_4": "Fall of Addis Abeba",
+            "e_5": "Capture of Dessie",
+            "e_6": "Fall of Amba Alagi"
+        },
+        "organisations": {
+            "o_1": "E.A. Force",
+            "o_2": "South African units"
+        }
+    },
+    "keywords": [
+        "blockade",
+        "evacuation",
+        "artillery",
+        "propaganda",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Diplomacy": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown date",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The blockade of French Somaliland is expected to pressure the Governor towards compliance."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown date",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A battle takes place in Galla Sidamo with the E.A. Force engaging Italian troops."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown date",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An official proposal is made to evacuate Italian women and children to Madagascar."
+        },
+        {
+            "event": "e_4",
+            "date": "After fall of Addis Abeba",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5",
+                "e_6"
+            ],
+            "eventSummary": "Addis Abeba falls, marking a significant victory in the conflict."
+        },
+        {
+            "event": "e_5",
+            "date": "Before the fall of Addis Abeba",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4",
+                "e_6"
+            ],
+            "eventSummary": "Dessie is captured as part of the continued military advances."
+        },
+        {
+            "event": "e_6",
+            "date": "Unknown date",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Amba Alagi falls, contributing to the overall military success."
+        }
+    ]
+}

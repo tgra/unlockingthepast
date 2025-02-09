@@ -1,0 +1,142 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Colonel Gubbins",
+            "p_2": "Brigadier Fraser",
+            "p_3": "Lieut.-Colonel Trappes-Lomax",
+            "p_4": "Colonel Dowler",
+            "p_5": "General Bethouart"
+        },
+        "locations": {
+            "l_1": "Bodo",
+            "l_2": "Scapa Flow",
+            "l_3": "Mo",
+            "l_4": "Harstad",
+            "l_5": "Rognan",
+            "l_6": "Southern Norway",
+            "l_7": "Messingletten"
+        },
+        "events": {
+            "e_1": "Evacuation from Bodo",
+            "e_2": "Formation of BODOFORCE",
+            "e_3": "Enemy Air Attacks",
+            "e_4": "Reinforcement and Supply Difficulties"
+        },
+        "organisations": {
+            "o_1": "24th Guards Brigade",
+            "o_2": "South Wales Borderers",
+            "o_3": "Irish Guards",
+            "o_4": "Fleet Air Arm"
+        }
+    },
+    "keywords": [
+        "Navy",
+        "equipment",
+        "fishing boats",
+        "aircraft",
+        "retreat",
+        "reinforcements",
+        "evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Evacuation",
+        "Air Support",
+        "Reinforcement Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_4"
+        ],
+        "Evacuation": [
+            "e_1"
+        ],
+        "Air Support": [
+            "e_3"
+        ],
+        "Reinforcement Challenges": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of troops from Bodo is conducted amidst heavy enemy pressure, with significant equipment losses but also some successful rescues."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "BODOFORCE is formed under Brigadier Gubbins as troops in the area are amalgamated to strengthen defense against enemy advances."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Troops at Bodo are subjected to bombings by enemy aircraft, raising concerns for their safety and effectiveness."
+        },
+        {
+            "event": "e_4",
+            "date": "On various dates leading up to evacuation",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Significant logistical challenges are encountered in supplying and reinforcing troops at Bodo after previous units suffer equipment losses."
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Civil Health Authorities",
+            "p_2": "War Office",
+            "p_3": "Naval authorities"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Johore",
+            "l_3": "Segamat",
+            "l_4": "Batu Anam",
+            "l_5": "Johore Bahru",
+            "l_6": "Malacca",
+            "l_7": "Dutch East Indies",
+            "l_8": "North and Central Malaya",
+            "l_9": "Singapore Island",
+            "l_10": "Kuala Lumpur"
+        },
+        "events": {
+            "e_1": "Evacuation of Reserves",
+            "e_2": "Establishment of Dumps",
+            "e_3": "Food Situation Monitoring",
+            "e_4": "Water Economy Measures",
+            "e_5": "Medical Accommodation Challenges",
+            "e_6": "Evacuation of Sick and Wounded",
+            "e_7": "Railway Congestion Issues"
+        },
+        "organisations": {
+            "o_1": "Royal Engineers",
+            "o_2": "Australian Base Hospital",
+            "o_3": "Yangtze River Boat"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Congestion",
+        "Water Economy",
+        "Hospital Accommodation",
+        "Military Reserves"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics and Supplies",
+        "Public Health",
+        "Transportation Issues"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_6"
+        ],
+        "Logistics and Supplies": [
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_7"
+        ],
+        "Public Health": [
+            "e_5",
+            "e_6"
+        ],
+        "Transportation Issues": [
+            "e_7"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The evacuation of reserves is implemented, prompting the creation of new supply dumps in Johore to support military logistics."
+        },
+        {
+            "event": "e_2",
+            "date": "January",
+            "locations": [
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Dumps are established in Johore and near waterways to avoid congestion on Singapore Island and facilitate troop supply."
+        },
+        {
+            "event": "e_3",
+            "date": "January",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Ongoing monitoring of the food situation show it remains satisfactory despite increased population due to refugees."
+        },
+        {
+            "event": "e_4",
+            "date": "January",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Strict measures for water economy are introduced in response to the dry season, including public awareness campaigns."
+        },
+        {
+            "event": "e_5",
+            "date": "January",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The need for increased hospital accommodation is highlighted as the healthcare system strains under the pressure of the increasing sick and wounded."
+        },
+        {
+            "event": "e_6",
+            "date": "January",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Sick and wounded personnel are earmarked for evacuation to the UK and India, utilizing the Wu Sueh repurposed as a hospital ship."
+        },
+        {
+            "event": "e_7",
+            "date": "January",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Railway congestion worsens due to rapid military withdrawals, leading to the abandonment of fully laden trains on the Malacca branch."
+        }
+    ]
+}

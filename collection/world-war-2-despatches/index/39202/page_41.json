@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Kanchanaburi",
+            "l_2": "Bangkok",
+            "l_3": "Burma",
+            "l_4": "Rangoon",
+            "l_5": "Southern Burma",
+            "l_6": "Pegu Yomas"
+        },
+        "events": {
+            "e_1": "Raid on Kanchanaburi Bridges",
+            "e_2": "Strategic Bombing Operations",
+            "e_3": "Capture of Rangoon",
+            "e_4": "Disintegration of Combat Cargo Task Force"
+        },
+        "organisations": {
+            "o_1": "ACS.E.A. Command",
+            "o_2": "Supreme Allied Command, South East Asia",
+            "o_3": "Combat Cargo Task Force",
+            "o_4": "No. 232 Group R.A.F."
+        }
+    },
+    "keywords": [
+        "supply chain",
+        "air supply",
+        "military strategy",
+        "Rangoon",
+        "bombing",
+        "transport squadrons"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Management",
+        "Air Support",
+        "Allied Campaigns"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Supply Chain Management": [
+            "e_2",
+            "e_3"
+        ],
+        "Air Support": [
+            "e_2",
+            "e_3"
+        ],
+        "Allied Campaigns": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 24, 1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On June 24th, Liberators destroy key bridges at Kanchanaburi, impacting Japanese supply lines."
+        },
+        {
+            "event": "e_2",
+            "date": "December 1943 to August 1945",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Strategic bombing campaigns reduce enemy railroad usage, forcing reliance on slower supply methods."
+        },
+        {
+            "event": "e_3",
+            "date": "May to August 1945",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The capture of Rangoon concludes intensive Army-Air cooperation, transitioning to air supply amidst logistical challenges."
+        },
+        {
+            "event": "e_4",
+            "date": "May 1945",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The disintegration of the Combat Cargo Task Force occurs at the end of May 1945, impacting supply efficiency."
+        }
+    ]
+}

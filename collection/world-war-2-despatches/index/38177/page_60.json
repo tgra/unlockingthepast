@@ -1,0 +1,149 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Godwin-Austen",
+            "p_2": "General Ritchie",
+            "p_3": "General Norrie",
+            "p_4": "General Wavell"
+        },
+        "locations": {
+            "l_1": "Wadi Faregh",
+            "l_2": "Agedabia",
+            "l_3": "Chor es Sufan",
+            "l_4": "El Haseiat",
+            "l_5": "Tripolitania",
+            "l_6": "Bengasi",
+            "l_7": "Derna",
+            "l_8": "Gebel Akhdar",
+            "l_9": "Bardia",
+            "l_10": "Halfaya",
+            "l_11": "Sollum",
+            "l_12": "Tobruk"
+        },
+        "events": {
+            "e_1": "Attack on Agedabia by Guards Brigade",
+            "e_2": "Engagement of 22nd Armoured Brigade",
+            "e_3": "Reduction of Enemy Strongholds at Bardia and Halfaya",
+            "e_4": "Assault on Bardia Fortress"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "Royal Air Force",
+            "o_3": "Union Defence Forces",
+            "o_4": "1st Army Tank Brigade",
+            "o_5": "2nd South African Division",
+            "o_6": "1st South African Division"
+        }
+    },
+    "keywords": [
+        "Wadi Faregh",
+        "Agedabia",
+        "armoured brigade",
+        "supply lines",
+        "enemy strongholds",
+        "Tobruk",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Casualty Management",
+        "Strategic Offensive"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Casualty Management": [
+            "e_3"
+        ],
+        "Strategic Offensive": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 26",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On December 26, the Guards Brigade attempts an attack on Agedabia but fails due to misdirection."
+        },
+        {
+            "event": "e_2",
+            "date": "December 27",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On December 27, the 22nd Armoured Brigade is engaged by enemy forces in a significant battle."
+        },
+        {
+            "event": "e_3",
+            "date": "December 31 - January 1",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "From December 31 to January 1, the 30th Corps works to reduce enemy strongholds at Bardia and Halfaya."
+        },
+        {
+            "event": "e_4",
+            "date": "January 1",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On January 1, the assault on Bardia Fortress continues as the enemy fiercely resists."
+        }
+    ]
+}

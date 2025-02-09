@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General Robertson",
+            "p_2": "General Eisenhower"
+        },
+        "locations": {
+            "l_1": "Naples",
+            "l_2": "Italy",
+            "l_3": "Bari",
+            "l_4": "Anzio",
+            "l_5": "Garigliano",
+            "l_6": "Arno"
+        },
+        "events": {
+            "e_1": "Establishment of Advanced Administrative Echelon",
+            "e_2": "German air raid on Bari",
+            "e_3": "Reorganisation after General Eisenhower's departure",
+            "e_4": "Ammunition shortage in Italy",
+            "e_5": "Gothic Line battles"
+        },
+        "organisations": {
+            "o_1": "A.F.H.Q.",
+            "o_2": "Fifteenth Army Group",
+            "o_3": "Headquarters Allied Armies in Italy"
+        }
+    },
+    "keywords": [
+        "administration",
+        "supply lines",
+        "reorganisation",
+        "ammunition shortage",
+        "logistics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics and Supply",
+        "Reorganisation",
+        "Ammunition Crisis"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Logistics and Supply": [
+            "e_1",
+            "e_4"
+        ],
+        "Reorganisation": [
+            "e_3"
+        ],
+        "Ammunition Crisis": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "24th October",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "An Advanced Administrative Echelon of A.F.H.Q. is established at Naples, assuming former administrative functions and coordinating logistics for military operations in Italy."
+        },
+        {
+            "event": "e_2",
+            "date": "1st December",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A German air raid destroys 17 ships and 40,000 tons of cargo at Bari, impacting the supply lines."
+        },
+        {
+            "event": "e_3",
+            "date": "24th February 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "All responsibility for Italy is transferred to the Fifteenth Army Group, reorganising the A.F.H.Q. Administrative Echelon into Headquarters Allied Armies in Italy."
+        },
+        {
+            "event": "e_4",
+            "date": "early February 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An ammunition shortage occurs in the Mediterranean theatre, necessitating rationing and urgent requests for additional supplies."
+        },
+        {
+            "event": "e_5",
+            "date": "autumn 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "During the Gothic line battles, a world-wide ammunition shortage affects operations, prompting strict rationing measures."
+        }
+    ]
+}

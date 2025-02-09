@@ -1,0 +1,113 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "RODNEY",
+            "p_2": "KING GEORGE V",
+            "p_3": "DORSETSHIRE",
+            "p_4": "NORFOLK",
+            "p_5": "MAORI",
+            "p_6": "Flag Officer Commanding, Force H"
+        },
+        "locations": {
+            "l_1": "North-eastward",
+            "l_2": "South of East",
+            "l_3": "Position 48 09 N, 16 07 W",
+            "l_4": "Imperial German Navy"
+        },
+        "events": {
+            "e_1": "Battle of the BISMARCK",
+            "e_2": "Sinking of the BISMARCK",
+            "e_3": "Torpedo attack by DORSETSHIRE"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "BISMARCK",
+        "RODNEY",
+        "KING GEORGE V",
+        "DORSETSHIRE",
+        "naval battle",
+        "torpedoes"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 27, 1941",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of the BISMARCK takes place as RODNEY and KING GEORGE V engage the BISMARCK in naval combat, resulting in heavy damage to the enemy."
+        },
+        {
+            "event": "e_2",
+            "date": "May 27, 1941",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The BISMARCK sinks at 1037 after sustaining severe damage, marking a significant turn in the naval warfare of World War II."
+        },
+        {
+            "event": "e_3",
+            "date": "May 27, 1941",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "DORSETSHIRE successfully torpedoes the BISMARCK, contributing to its sinking and highlighting strategic decisions in naval combat."
+        }
+    ]
+}

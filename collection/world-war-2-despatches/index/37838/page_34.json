@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Germany",
+            "l_2": "Eindhoven",
+            "l_3": "Nijmegen",
+            "l_4": "Arnhem",
+            "l_5": "Holland",
+            "l_6": "Reich"
+        },
+        "events": {
+            "e_1": "Landing of Airborne Troops",
+            "e_2": "G.A.F. Operations in September",
+            "e_3": "Enemy Use of Jet-Propelled Aircraft"
+        },
+        "organisations": {
+            "o_1": "G.A.F.",
+            "o_2": "United States Eighth Air Force",
+            "o_3": "Allied Forces",
+            "o_4": "R.A.F."
+        }
+    },
+    "keywords": [
+        "G.A.F.",
+        "airborne troops",
+        "jet-propelled aircraft",
+        "Allied Forces",
+        "air attacks",
+        "Nijmegen area"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Battles",
+        "Technological Advancements",
+        "Intelligence Gathering"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Battles": [
+            "e_2",
+            "e_3"
+        ],
+        "Technological Advancements": [
+            "e_3"
+        ],
+        "Intelligence Gathering": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Mid-September 1944",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Airborne troops land in the Eindhoven-Nijmegen-Arnhem area producing a strong reaction from G.A.F., achieving tactical surprise initially with no opposition."
+        },
+        {
+            "event": "e_2",
+            "date": "September 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "G.A.F. faces stiffened resistance in the air during September, primarily in the Nijmegen area, at a high cost, scrambling its experienced pilots."
+        },
+        {
+            "event": "e_3",
+            "date": "Second half of September 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The appearance of jet-propelled aircraft marks a significant development in G.A.F. operations, primarily used as fighter bombers for ground support and reconnaissance."
+        }
+    ]
+}

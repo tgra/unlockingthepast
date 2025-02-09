@@ -1,0 +1,119 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Hungary",
+            "l_2": "Austria",
+            "l_3": "Western Hungary",
+            "l_4": "Northern Jugoslavia",
+            "l_5": "Linz",
+            "l_6": "Vienna",
+            "l_7": "Zagreb",
+            "l_8": "North-East Italy",
+            "l_9": "Bratislava",
+            "l_10": "Komarom",
+            "l_11": "Hegyeshalom",
+            "l_12": "Sopron",
+            "l_13": "Szombathely",
+            "l_14": "Graz",
+            "l_15": "Bruck",
+            "l_16": "Maribor",
+            "l_17": "Budapest",
+            "l_18": "Czechoslovakia",
+            "l_19": "Southern Germany"
+        },
+        "events": {
+            "e_1": "Air Offensive",
+            "e_2": "Disruption of Railway Communications",
+            "e_3": "Operational Support to Russian Forces"
+        },
+        "organisations": {
+            "o_1": "M.A.S.A.F.",
+            "o_2": "Fifteenth Air Force",
+            "o_3": "No. 205 Group"
+        }
+    },
+    "keywords": [
+        "Air Offensive",
+        "Soviet forces",
+        "Railway Disruption",
+        "Marshalling Yards",
+        "Bombing Attacks",
+        "Military Supply"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Allied Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Allied Support": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The M.A.S.A.F. conducts a massive air offensive focused on disrupting the enemy's railway systems to aid the Soviet advance."
+        },
+        {
+            "event": "e_2",
+            "date": "February 1945",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Railway communications disruption is a primary goal to impair Axis troop movements."
+        },
+        {
+            "event": "e_3",
+            "date": "November 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The M.A.S.A.F. begins providing operational support to the Russian forces through coordinated airstrikes."
+        }
+    ]
+}

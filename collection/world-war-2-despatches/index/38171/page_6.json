@@ -1,0 +1,168 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain Maund",
+            "p_2": "Admiral Doenitz",
+            "p_3": "Admiral Von Friedeberg",
+            "p_4": "Admiral Backenkohler",
+            "p_5": "Admiral Warzecha",
+            "p_6": "Captain Alleyne",
+            "p_7": "Captain E. Hale, R.N.",
+            "p_8": "Rear-Admiral W. E. Parry, C.B."
+        },
+        "locations": {
+            "l_1": "O.K.W.",
+            "l_2": "O.K.M.",
+            "l_3": "North German Ports",
+            "l_4": "Hamburg",
+            "l_5": "Bremerhaven",
+            "l_6": "Emden",
+            "l_7": "Kiel",
+            "l_8": "Frankfurt",
+            "l_9": "Minden",
+            "l_10": "Bad Oeynhausen",
+            "l_11": "Lubbecke",
+            "l_12": "Cuxhaven",
+            "l_13": "Heligoland",
+            "l_14": "Chateau d Hennement, St. Germain",
+            "l_15": "Versailles"
+        },
+        "events": {
+            "e_1": "Dissolution of O.K.W.",
+            "e_2": "Arrest of German Senior Naval Officers",
+            "e_3": "Dissolution of O.K.M.",
+            "e_4": "Opening of North German Ports",
+            "e_5": "Transfer of Minesweeping Forces"
+        },
+        "organisations": {
+            "o_1": "A.N.C.X.F.",
+            "o_2": "O.K.W.",
+            "o_3": "O.K.M.",
+            "o_4": "Royal Naval Field Intelligence Unit",
+            "o_5": "Mine Clearance Board",
+            "o_6": "U.S. Naval Technical Mission in Europe",
+            "o_7": "21st Army Group",
+            "o_8": "British Control Commission"
+        }
+    },
+    "keywords": [
+        "naval operations",
+        "disarmament",
+        "intelligence",
+        "Minesweeping",
+        "North German Ports"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Intelligence Gathering",
+        "Naval Control"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Intelligence Gathering": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "23rd May",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The dissolution of O.K.W. is executed following the arrest of several German senior naval officers."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd May",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Several German senior naval officers, including Admirals Doenitz and Von Friedeberg, are arrested after the dissolution of O.K.W."
+        },
+        {
+            "event": "e_3",
+            "date": "25th May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Admiral Backenkohler assumes command following the dissolution of O.K.M., which is further succeeded by Admiral Warzecha."
+        },
+        {
+            "event": "e_4",
+            "date": "1st June",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The opening of North German Ports progresses, allowing for urgent shipping traffic, initiated on the 9th May."
+        },
+        {
+            "event": "e_5",
+            "date": "21st July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "A new organization is established for the administration of German minesweeping forces employed in mine clearance operations."
+        }
+    ]
+}

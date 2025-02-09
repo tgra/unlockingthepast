@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain (D)",
+            "p_2": "G. H. Stanning",
+            "p_3": "G. R. Heppel",
+            "p_4": "Captain B. A. W. Warburton-Lee",
+            "p_5": "H. F. Layman"
+        },
+        "locations": {
+            "l_1": "HARDY",
+            "l_2": "HOTSPUR",
+            "l_3": "HUNTER",
+            "l_4": "Skjel Fiord",
+            "l_5": "Narvik",
+            "l_6": "Ballangen",
+            "l_7": "Otfiord"
+        },
+        "events": {
+            "e_1": "Raid on Narvik",
+            "e_2": "Sinking of HUNTER",
+            "e_3": "Collision of HOTSPUR and HUNTER",
+            "e_4": "Explosion of RAUENFELS"
+        },
+        "organisations": {
+            "o_1": "Home Fleet Destroyers",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "raid",
+        "destroyers",
+        "Narvik",
+        "explosion",
+        "collision",
+        "gunfire",
+        "torpedoes",
+        "rescue"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Courage and Initiative"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Courage and Initiative": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "7th April, 194v",
+            "locations": [
+                "l_1",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The raid on Narvik involves British destroyers engaging enemy ships, leading to multiple collisions and significant naval action."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified, during the raid",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "HUNTER is reported to be sunk during the engagement with enemy vessels, signaling a significant loss in the operation."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unspecified, during the raid",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the raid, HOTSPUR collides with HUNTER following an explosion and becomes trapped, complicating the situation further."
+        },
+        {
+            "event": "e_4",
+            "date": "Date unspecified, after the raid",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The German ammunition ship RAUENFELS is mistakenly engaged and blown up, further disrupting enemy operations."
+        }
+    ]
+}

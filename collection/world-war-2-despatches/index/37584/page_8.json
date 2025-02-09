@@ -1,0 +1,138 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Kent Lemon",
+            "p_2": "Brigadier Morgan",
+            "p_3": "Norwegian station-master"
+        },
+        "locations": {
+            "l_1": "Domb&s tunnel",
+            "l_2": "Lesja",
+            "l_3": "Lesjaverk",
+            "l_4": "Lesjaskog",
+            "l_5": "Andalsnes",
+            "l_6": "Verma",
+            "l_7": "Romsdalshorn",
+            "l_8": "Verma Gorge"
+        },
+        "events": {
+            "e_1": "Troop Withdrawal from Lesja",
+            "e_2": "Train Wreck Incident near Lesjaskog",
+            "e_3": "Embarkation at Andalsnes",
+            "e_4": "Marines' Roadblock Setup"
+        },
+        "organisations": {
+            "o_1": "Norwegian Army",
+            "o_2": "Royal Navy",
+            "o_3": "British Army"
+        }
+    },
+    "keywords": [
+        "troops",
+        "withdrawal",
+        "train",
+        "bombing",
+        "Marines",
+        "Andalsnes",
+        "Lesja"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuations",
+        "Air Attacks",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Evacuations": [
+            "e_1",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_3"
+        ],
+        "Air Attacks": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown Date",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Troops are withdrawn from the areas of Lesja, Lesjaverk, and Lesjaskog in a series of coordinated operations to secure safety."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown Date",
+            "locations": [
+                "l_4",
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A train carrying troops wrecks near Lesjaskog due to a bomb crater, causing casualties and a disrupted withdrawal plan."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown Date",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Troops arrive at Andalsnes to embark onto several Royal Navy ships after a successful evacuation from the area."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown Date",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Marines set up a roadblock at Verma Gorge to protect withdrawing troops during engagements with enemy forces."
+        }
+    ]
+}

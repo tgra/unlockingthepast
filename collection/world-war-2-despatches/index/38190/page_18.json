@@ -1,0 +1,139 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander MainJand",
+            "p_2": "Brigadier Wallis",
+            "p_3": "Major A. J. Dewar",
+            "p_4": "Captain C. G. Turner",
+            "p_5": "Lt.-General Sakai"
+        },
+        "locations": {
+            "l_1": "Lyemun Strait",
+            "l_2": "Devils Peak Peninsula",
+            "l_3": "Aberdeen",
+            "l_4": "Hang Hau area",
+            "l_5": "Victoria Pier",
+            "l_6": "Kowloon",
+            "l_7": "Green Island",
+            "l_8": "Tytam Gap",
+            "l_9": "Bailey's Shipyard",
+            "l_10": "Victoria Peninsula",
+            "l_11": "Kennedy Town"
+        },
+        "events": {
+            "e_1": "Evacuation of Ma Lau Tong line",
+            "e_2": "Counter-offensive operations against Japanese forces",
+            "e_3": "Delivery of surrender demand",
+            "e_4": "Dynamite launch explosion"
+        },
+        "organisations": {
+            "o_1": "Royal Artillery",
+            "o_2": "2/14 Punjab Regt.",
+            "o_3": "5/7 Rajput Regt.",
+            "o_4": "Royal Navy",
+            "o_5": "WD fleet"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "morning assault",
+        "surrender demand",
+        "dynamite explosion",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Strategies",
+        "Diplomacy",
+        "Combat Engagement",
+        "Logistical Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_3"
+        ],
+        "Logistical Challenges": [
+            "e_1",
+            "e_4"
+        ],
+        "Evacuation Strategies": [
+            "e_1"
+        ],
+        "Casualties and Conflict": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "12th/13th December",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The evacuation of the Ma Lau Tong line begins due to intense Japanese attacks and logistical difficulties, securing personnel and equipment under fire while attempting to maintain a critical defensive position."
+        },
+        {
+            "event": "e_2",
+            "date": "12th/13th December",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the ongoing conflict, there is a counter-offensive against Japanese forces in an effort to maintain control over critical areas under siege."
+        },
+        {
+            "event": "e_3",
+            "date": "13th December",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A launch bearing a truce flag arrives at Victoria Pier, delivering a demand for unconditional surrender from the Japanese forces, which is categorically rejected."
+        },
+        {
+            "event": "e_4",
+            "date": "13th December",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A tragic incident occurs when a launch carrying dynamite explodes at the Vehicular Ferry after arriving unexpectedly, leading to significant casualties."
+        }
+    ]
+}

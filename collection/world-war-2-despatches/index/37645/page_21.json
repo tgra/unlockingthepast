@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander 11th (A) Division",
+            "p_2": "General Wavell",
+            "p_3": "H.R.H. The Duke of Aosta",
+            "p_4": "General Cunningham"
+        },
+        "locations": {
+            "l_1": "Dire Daua",
+            "l_2": "Nigerian Brigade",
+            "l_3": "French Somaliland",
+            "l_4": "Auasc",
+            "l_5": "Miesso",
+            "l_6": "Addis Abeba"
+        },
+        "events": {
+            "e_1": "Capture of Dire Daua",
+            "e_2": "Military Operations in Abyssinia",
+            "e_3": "Protection of Population Negotiations"
+        },
+        "organisations": {
+            "o_1": "1st S.A. Brigade",
+            "o_2": "54th E.A. Field Companies",
+            "o_3": "Ist Nigeria Regiment",
+            "o_4": "1st Transvaal Scottish"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "demolitions",
+        "retreating Italians",
+        "morale",
+        "protection of civilians",
+        "envoy",
+        "negotiations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Humanitarian Concerns",
+        "Logistical Challenges",
+        "Strategic Decision-Making"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Humanitarian Concerns": [
+            "e_3"
+        ],
+        "Logistical Challenges": [
+            "e_1"
+        ],
+        "Strategic Decision-Making": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th March",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 1st Transvaal Scottish captures Dire Daua unopposed after the retreating Italians abandon the town, exposing themselves to further military advancement."
+        },
+        {
+            "event": "e_2",
+            "date": "1st April",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The 1st S.A. Brigade occupies Miesso, marking a significant point in the ongoing military operations in Abyssinia as they prepare for an approach towards Addis Abeba."
+        },
+        {
+            "event": "e_3",
+            "date": "30th March",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "General Wavell initiates protective negotiations with H.R.H. The Duke of Aosta regarding the safety of civilians in Addis Abeba amid advancing military operations."
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "CINC PAC",
+            "p_2": "CIF 57",
+            "p_3": "COM 5th Fleet",
+            "p_4": "A.C.1",
+            "p_5": "CINC POA",
+            "p_6": "C.-in-C., B.P.F.",
+            "p_7": "CTF 57"
+        },
+        "locations": {
+            "l_1": "Sakishima",
+            "l_2": "Leyte",
+            "l_3": "Formosa",
+            "l_4": "Southern Formosa",
+            "l_5": "Matsuyama",
+            "l_6": "Shinchiku",
+            "l_7": "Yonakuni Jima",
+            "l_8": "Cootie area",
+            "l_9": "Nansei Shoto"
+        },
+        "events": {
+            "e_1": "Sakishima Operations",
+            "e_2": "Formosa Airfield Strikes",
+            "e_3": "Fueling Operations",
+            "e_4": "Change of Task Force 57 Plans"
+        },
+        "organisations": {
+            "o_1": "American Task Group",
+            "o_2": "5th Fleet",
+            "o_3": "Task Force 57"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Refueling",
+        "Airstrikes",
+        "Naval Maneuvers",
+        "Operational Plans"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Air Support Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_4"
+        ],
+        "Air Support Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 8-11",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The American Task Group conducts operations in Sakishima, including planned airstrikes in response to modified operational priorities."
+        },
+        {
+            "event": "e_2",
+            "date": "April 11-12",
+            "locations": [
+                "l_3",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Task Force 57 organizes airstrikes against Matsuyama and Shinchiku airfields, aiming to maximize air support over enemy territory while managing operational capabilities."
+        },
+        {
+            "event": "e_3",
+            "date": "April 8",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Refueling operations are successfully completed for the fleet while maintaining optimal weather conditions."
+        },
+        {
+            "event": "e_4",
+            "date": "April 8-11",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A change in plans for Task Force 57 is initiated, shifting focus from Sakishima operations to potential strikes at Formosa near the operational timeframe."
+        }
+    ]
+}

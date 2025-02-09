@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Sir Archibald Wavell",
+            "p_2": "Japanese Military Commanders"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Singapore Island",
+            "l_3": "Thailand",
+            "l_4": "Netherlands East Indies",
+            "l_5": "Pearl Harbour"
+        },
+        "events": {
+            "e_1": "Malayan Campaign",
+            "e_2": "Attack on American Fleet at Pearl Harbour",
+            "e_3": "Withdrawal Down the Peninsula"
+        },
+        "organisations": {
+            "o_1": "British Empire",
+            "o_2": "Japanese Army",
+            "o_3": "Thai Authorities"
+        }
+    },
+    "keywords": [
+        "British might",
+        "Naval Base",
+        "Air Force",
+        "Japanese activities",
+        "intelligence",
+        "reconnaissance",
+        "propaganda",
+        "campaign strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence Failures",
+        "Political Dynamics",
+        "Morale of Troops"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Intelligence Failures": [
+            "e_2",
+            "e_1"
+        ],
+        "Political Dynamics": [
+            "e_3"
+        ],
+        "Morale of Troops": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1941-1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Malayan Campaign unfolds with significant fighting involving British troops who face exhaustion and challenging conditions as they attempt to defend against the Japanese forces."
+        },
+        {
+            "event": "e_2",
+            "date": "December 8, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Japanese attack on the American fleet at Pearl Harbour surprises the world and demonstrates the effectiveness of Japanese blitz tactics."
+        },
+        {
+            "event": "e_3",
+            "date": "1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The British military faces increasing pressure and conducts a strategic withdrawal down the Peninsula amid ongoing combat."
+        }
+    ]
+}

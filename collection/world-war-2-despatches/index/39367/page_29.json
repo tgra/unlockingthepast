@@ -1,0 +1,139 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Partisan leaders",
+            "p_2": "R.A.F. Liaison Officers",
+            "p_3": "Jugoslav Army of National Liberation leaders"
+        },
+        "locations": {
+            "l_1": "Balkans",
+            "l_2": "Jugoslavia",
+            "l_3": "Zadar",
+            "l_4": "Sarajevo",
+            "l_5": "Vis",
+            "l_6": "Trieste",
+            "l_7": "Fiume",
+            "l_8": "Canne",
+            "l_9": "Biferno",
+            "l_10": "Northern Adriatic"
+        },
+        "events": {
+            "e_1": "Jugoslav Fourth Army offensive",
+            "e_2": "German withdrawal from Sarajevo salient",
+            "e_3": "Attacks on communications",
+            "e_4": "Attacks on sea communications"
+        },
+        "organisations": {
+            "o_1": "Balkan Air Force",
+            "o_2": "U.S.A.A.F.",
+            "o_3": "Jugoslav 4th Army Headquarters"
+        }
+    },
+    "keywords": [
+        "Balkans",
+        "Partisans",
+        "Air Support",
+        "Attacks",
+        "Jugoslav Army of National Liberation",
+        "Operability",
+        "Communications",
+        "Operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Guerilla Warfare",
+        "Communications Challenges",
+        "Air Support",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Guerilla Warfare": [
+            "e_1"
+        ],
+        "Communications Challenges": [
+            "e_3"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Spring 1945",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Jugoslav Fourth Army launches an offensive in Croatia, greatly improving communications and support to the Partisans, providing them better air support."
+        },
+        {
+            "event": "e_2",
+            "date": "April 1945",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "During a significant German withdrawal from Sarajevo, coordinated air attacks target enemy vehicle concentrations, showcasing the air force's effectiveness."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Operations targeting enemy communications proceed in three main categories to disrupt the enemy's movement and logistics."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Air attacks on enemy sea communications effectively hinder the enemy's naval operations along the Adriatic coast."
+        }
+    ]
+}

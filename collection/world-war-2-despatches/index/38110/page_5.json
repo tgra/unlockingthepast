@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral A. G. Kirk",
+            "p_2": "Rear-Admiral J. Wilkes"
+        },
+        "locations": {
+            "l_1": "Bay of the Seine",
+            "l_2": "Ile de Bas",
+            "l_3": "Cherbourg",
+            "l_4": "Havre",
+            "l_5": "Western Channel",
+            "l_6": "south coast of England"
+        },
+        "events": {
+            "e_1": "D Day",
+            "e_2": "H Hour",
+            "e_3": "Engagement off Ile de Bas",
+            "e_4": "Operation Neptune"
+        },
+        "organisations": {
+            "o_1": "British Admiralty",
+            "o_2": "U.S. Navy",
+            "o_3": "Allied Expeditionary Force",
+            "o_4": "Coastal Command",
+            "o_5": "Commander Landing Craft and Bases, 11th Amphibious Force"
+        }
+    },
+    "keywords": [
+        "naval activity",
+        "minelaying",
+        "assault ships",
+        "enemy U-Boat",
+        "tidal conditions",
+        "air superiority"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategies",
+        "Enemy Engagements",
+        "Planning and Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategies": [
+            "e_2",
+            "e_3"
+        ],
+        "Enemy Engagements": [
+            "e_3"
+        ],
+        "Planning and Logistics": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "5th June",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "D Day is selected as the date for the large-scale invasion, ensuring readiness for the assault on enemy territory."
+        },
+        {
+            "event": "e_2",
+            "date": "17th May",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "H Hour is determined based on tidal conditions and obstacles, impacting the planned assault on D Day."
+        },
+        {
+            "event": "e_3",
+            "date": "29th April",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An engagement occurs off Ile de Bas as enemy naval activity increases, resulting in the sinking of both allied and enemy ships."
+        },
+        {
+            "event": "e_4",
+            "date": "N/A",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Neptune is carried out with significant naval cooperation, leading to preparations for D Day."
+        }
+    ]
+}

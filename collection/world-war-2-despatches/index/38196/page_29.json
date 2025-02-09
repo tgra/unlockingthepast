@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Monigomery",
+            "p_2": "General Patton",
+            "p_3": "General Fredendall",
+            "p_4": "General Mannerim",
+            "p_5": "General Freyberg"
+        },
+        "locations": {
+            "l_1": "Tripoli",
+            "l_2": "Mareth",
+            "l_3": "Sfax",
+            "l_4": "Gafsa",
+            "l_5": "Maknassy",
+            "l_6": "El Guettar",
+            "l_7": "Foum Tatahouine",
+            "l_8": "Gebel Tebaga",
+            "l_9": "Gebel Melab",
+            "l_10": "Tunisian Front"
+        },
+        "events": {
+            "e_1": "Operation PUGILIST",
+            "e_2": "Battle of Gafsa",
+            "e_3": "Counter-offensive by 50 Division"
+        },
+        "organisations": {
+            "o_1": "II United States Corps",
+            "o_2": "Eighth Army",
+            "o_3": "New Zealand Corps",
+            "o_4": "30 Corps",
+            "o_5": "201 Guards Brigade",
+            "o_6": "XX Corps",
+            "o_7": "XXI Corps"
+        }
+    },
+    "keywords": [
+        "Operation PUGILIST",
+        "Gafsa",
+        "II United States Corps",
+        "General Patton",
+        "Eighth Army",
+        "Mareth line",
+        "counter-offensive"
+    ],
+    "themes": [
+        "Military Operations",
+        "Battle Strategies",
+        "Flanking Maneuvers",
+        "Supply Lines",
+        "Forces Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Battle Strategies": [
+            "e_1",
+            "e_2"
+        ],
+        "Forces Coordination": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 20, 1943",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation PUGILIST concludes as the main attack by 30 Corps begins at 2230 hours, facing tough enemy resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "March 15, 1943",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Battle of Gafsa initiates with II Corps commanded by General Patton, aiming to secure the town and establish supply lines."
+        },
+        {
+            "event": "e_3",
+            "date": "March 22, 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "As the enemy launches a counter-offensive, 50 Division's unsuccessful hold on the position forces a retreat across Wadi Zigzaou."
+        }
+    ]
+}

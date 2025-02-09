@@ -1,0 +1,113 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Dover",
+            "l_2": "French coast",
+            "l_3": "U.K. Ports",
+            "l_4": "Isle of Guernsey",
+            "l_5": "St. Julian",
+            "l_6": "Isle of Thanet",
+            "l_7": "Worthing",
+            "l_8": "St. David",
+            "l_9": "Dinard",
+            "l_10": "St. Andrew",
+            "l_11": "Nore Command"
+        },
+        "events": {
+            "e_1": "Disembarkation in U.K. Ports",
+            "e_2": "Operation involving local skoots, launches, motor boats",
+            "e_3": "Sinking and damaging of ships"
+        },
+        "organisations": {
+            "o_1": "H.M. Trawlers",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Disembarkation",
+        "Evacuation",
+        "Naval ships",
+        "Damaged ships",
+        "Sunk ships"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation",
+        "Naval Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Evacuation": [
+            "e_1",
+            "e_3"
+        ],
+        "Naval Operations": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The disembarkation operations are ongoing in U.K. Ports, involving the movement of various vessels."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Local skoots, launches, and motor boats assist in evacuating boats to the French coast amidst challenging conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "Throughout late May to early June",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Several ships are reported sunk or damaged during the naval operations, highlighting the perilous conditions at sea."
+        }
+    ]
+}

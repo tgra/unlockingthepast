@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Troop Commander"
+        },
+        "locations": {
+            "l_1": "Morsalines",
+            "l_2": "Houlgate",
+            "l_3": "Ouistreham",
+            "l_4": "Point de Hoe",
+            "l_5": "St. Martin de Varreville"
+        },
+        "events": {
+            "e_1": "Air Assault on Coastal Batteries",
+            "e_2": "Photographic Reconnaissance Report",
+            "e_3": "R.A.F. Bomber Command Raid"
+        },
+        "organisations": {
+            "o_1": "US Eighth Air Force",
+            "o_2": "R.A.F. Bomber Command",
+            "o_3": "United States Ninth Air Force",
+            "o_4": "A.E.A.F."
+        }
+    },
+    "keywords": [
+        "Air Assault",
+        "Coastal Batteries",
+        "Reconnaissance",
+        "Bombing",
+        "Casemates",
+        "Military Strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Power",
+        "Damage Assessment",
+        "Strategic Bombing"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Damage Assessment": [
+            "e_2"
+        ],
+        "Air Power": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Bombing": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "28th-29th May 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A heavy aerial bombardment on coastal batteries takes place, involving significant air power that is effective in neutralising enemy defenses before an assault."
+        },
+        {
+            "event": "e_2",
+            "date": "29th May 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A photographic reconnaissance report reveals extensive damage caused by air strikes on coastal batteries, confirming the effectiveness of the bombardments."
+        },
+        {
+            "event": "e_3",
+            "date": "28th-29th May 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A coordinated raid by R.A.F. Bomber Command utilizes Lancasters and Mosquitoes to effectively damage coastal batteries, confirming the strategic efforts made by the Allied forces."
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A. F. E. Palmaster",
+            "p_2": "R. D. Franks"
+        },
+        "locations": {
+            "l_1": "Rathedaung",
+            "l_2": "Mayu River",
+            "l_3": "Chittagong",
+            "l_4": "Eastern Fleet",
+            "l_5": "Bengal Command"
+        },
+        "events": {
+            "e_1": "Night Patrols Attack",
+            "e_2": "Attack on Enemy Armed Craft",
+            "e_3": "Harassment of Enemy Forces",
+            "e_4": "Mobility Increase of Land Forces"
+        },
+        "organisations": {
+            "o_1": "Eastern Fleet",
+            "o_2": "Mayu Force",
+            "o_3": "Army Command",
+            "o_4": "Air Force Command"
+        }
+    },
+    "keywords": [
+        "night patrols",
+        "enemy L. of C.",
+        "attack",
+        "Mayu River",
+        "mobility",
+        "reinforcements",
+        "administration",
+        "maintenance"
+    ],
+    "themes": [
+        "Military Strategy",
+        "Operations Coordination",
+        "Logistics",
+        "Air and Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_4"
+        ],
+        "Air and Naval Warfare": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 19, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Night patrols are maintained to attack the enemy's lines of communication both in forward areas and south of Rathedaung."
+        },
+        {
+            "event": "e_2",
+            "date": "March 19, 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An attack is executed against enemy armed craft in the Mayu River."
+        },
+        {
+            "event": "e_3",
+            "date": "March 19, 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The enemy forces on the river banks are harassed to disrupt their operations."
+        },
+        {
+            "event": "e_4",
+            "date": "March 19, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Mobility of land forces is increased by carrying troops or towing sampans, considering limited repair facilities."
+        }
+    ]
+}

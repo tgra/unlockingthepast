@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commanding Officers",
+            "p_2": "Army Officers",
+            "p_3": "Naval Officers"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "Northern Route Y",
+            "l_3": "Gravelines",
+            "l_4": "United Kingdom"
+        },
+        "events": {
+            "e_1": "Operation Dynamo",
+            "e_2": "Dunkirk Evacuation",
+            "e_3": "Air Reconnaissance"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "Royal Air Force",
+            "o_3": "Air Ministry"
+        }
+    },
+    "keywords": [
+        "Air Cooperation",
+        "Air Protection",
+        "Enemy Air Effort",
+        "Naval Operations",
+        "Dunkirk Evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Power",
+        "Naval Strategy",
+        "Troop Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Power": [
+            "e_2",
+            "e_3"
+        ],
+        "Troop Coordination": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May-June 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Dynamo is a military evacuation operation taking place at Dunkirk where Allied troops are evacuated under heavy enemy fire."
+        },
+        {
+            "event": "e_2",
+            "date": "May-June 1940",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Dunkirk Evacuation involves the careful retraining of naval and air forces to extract British and Allied troops from Dunkirk amidst enemy assaults."
+        },
+        {
+            "event": "e_3",
+            "date": "31st May 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Air reconnaissance is conducted to locate enemy batteries, contributing to the success of the Dunkirk Evacuation by reducing fire from enemy forces."
+        }
+    ]
+}

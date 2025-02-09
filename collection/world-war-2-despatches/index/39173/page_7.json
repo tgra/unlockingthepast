@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Colonel Cochran",
+            "p_2": "General Wingate",
+            "p_3": "Lt.-Col. Allison",
+            "p_4": "General J. W. Stilwell"
+        },
+        "locations": {
+            "l_1": "Chindwin",
+            "l_2": "Katha",
+            "l_3": "Myitkyina",
+            "l_4": "India",
+            "l_5": "Burma",
+            "l_6": "Piccadilly",
+            "l_7": "Broadway"
+        },
+        "events": {
+            "e_1": "Airborne Supplies Drop",
+            "e_2": "Fly-in of Special Force",
+            "e_3": "Operations around Myitkyina"
+        },
+        "organisations": {
+            "o_1": "First Air Commando Unit",
+            "o_2": "U.S.A.A.F.",
+            "o_3": "British Transport Squadrons"
+        }
+    },
+    "keywords": [
+        "airborne supplies",
+        "gliders",
+        "transport aircraft",
+        "penetration brigade",
+        "combat troops",
+        "airfield control",
+        "air superiority"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Logistical Challenges",
+        "Coordination in Combat"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistical Challenges": [
+            "e_1"
+        ],
+        "Coordination in Combat": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "10th February",
+            "locations": [
+                "l_1",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The First Air Commando Unit initiates the airborne supplies drop for the long range penetration brigade, marking a significant logistical accomplishment amidst various challenges."
+        },
+        {
+            "event": "e_2",
+            "date": "3rd February onwards",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The fly-in of Special Force begins, with the First Air Commando Unit providing critical support to the ground forces, culminating in operations around Myitkyina."
+        },
+        {
+            "event": "e_3",
+            "date": "During operations around 10th February",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The forces, supplied entirely by air, engage in operations around Myitkyina to support Chinese-American forces led by General Stilwell."
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander El Miralai Orr Bey"
+        },
+        "locations": {
+            "l_1": "Kassala",
+            "l_2": "Kurmmuk",
+            "l_3": "Sennar",
+            "l_4": "Aicota",
+            "l_5": "Keru",
+            "l_6": "Tessenei",
+            "l_7": "Barentu",
+            "l_8": "Wachai",
+            "l_9": "Gondar",
+            "l_10": "Butana Bridge"
+        },
+        "events": {
+            "e_1": "Evacuation of Kassala",
+            "e_2": "Order for Pursuit",
+            "e_3": "Action at Keru",
+            "e_4": "Establishment of Advanced Headquarters"
+        },
+        "organisations": {
+            "o_1": "4th Indian Division",
+            "o_2": "5th Indian Division",
+            "o_3": "Gazelle Force",
+            "o_4": "203 Group, R.A.F."
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Pursuit",
+        "Military Operations",
+        "Air Attack",
+        "Resistance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "19th January",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The evacuation of Kassala by enemy forces is confirmed, leading to a strategic military response from the 4th and 5th Indian Divisions."
+        },
+        {
+            "event": "e_2",
+            "date": "19th January",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Orders for the pursuit of enemy forces that have escaped from Kassala are issued to the 4th and 5th Indian Divisions."
+        },
+        {
+            "event": "e_3",
+            "date": "21st January",
+            "locations": [
+                "l_5",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 4th Indian Division encounters serious resistance at Keru while pursuing enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "18th January",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An Advanced Headquarters is established at the Butana Bridge to facilitate military operations during the campaign."
+        }
+    ]
+}

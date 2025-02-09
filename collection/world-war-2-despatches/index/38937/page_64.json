@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Eisenhower",
+            "p_2": "General Castellano",
+            "p_3": "General Zanussi",
+            "p_4": "General Carton de Wiart",
+            "p_5": "General Smith",
+            "p_6": "Admiral Cunningham",
+            "p_7": "Air Marshal Tedder"
+        },
+        "locations": {
+            "l_1": "Italy",
+            "l_2": "Mediterranean theatre",
+            "l_3": "Apennines",
+            "l_4": "Lisbon",
+            "l_5": "Cassibile",
+            "l_6": "Sicily",
+            "l_7": "Rome",
+            "l_8": "Naples"
+        },
+        "events": {
+            "e_1": "Allied Armistice terms",
+            "e_2": "Signing of the armistice",
+            "e_3": "Salerno landing"
+        },
+        "organisations": {
+            "o_1": "Royal Government of Italy",
+            "o_2": "Allied Forces",
+            "o_3": "Italian Armed Forces"
+        }
+    },
+    "keywords": [
+        "Allied forces",
+        "Italian troops",
+        "Germans",
+        "Armistice",
+        "Invasion of Italy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Negotiations",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1 August",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Allied Armistice terms have been prepared following the fall of Mussolini, aiming to secure Italy's transition to the Allied side."
+        },
+        {
+            "event": "e_2",
+            "date": "3 September",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2",
+                "p_1",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The signing of the armistice at Cassibile marks Italy's formal surrender and transition from German to Allied control."
+        },
+        {
+            "event": "e_3",
+            "date": "9 September",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Salerno landing occurs, marking the commencement of the Allied invasion of Italy with considerable military force."
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unnamed Military Officer",
+            "p_2": "Unnamed Army Officer"
+        },
+        "locations": {
+            "l_1": "United Kingdom",
+            "l_2": "Crete"
+        },
+        "events": {
+            "e_1": "Preparation to Resist Invasion",
+            "e_2": "General Defence Plan"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Air Ministry",
+            "o_3": "Army"
+        }
+    },
+    "keywords": [
+        "Invasion",
+        "Defence",
+        "Fighter Command",
+        "Airborne invasion",
+        "Seaborne invasion",
+        "Royal Air Force",
+        "Army"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Resource Allocation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Defensive Strategies": [
+            "e_1",
+            "e_2"
+        ],
+        "Resource Allocation": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Summer 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Preparations are made to resist an invasion of the United Kingdom, focusing on operational phases defined by the Air Ministry."
+        },
+        {
+            "event": "e_2",
+            "date": "1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The general defence plan requires adapting local defences against various forms of attack and ensuring coordination between the Royal Air Force and Army."
+        }
+    ]
+}

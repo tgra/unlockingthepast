@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Chief of the Air Staff",
+            "p_2": "Air Officer-Commanding-in-Chief",
+            "p_3": "Unnamed pilot",
+            "p_4": "Unnamed pilot"
+        },
+        "locations": {
+            "l_1": "France",
+            "l_2": "Dunkirk",
+            "l_3": "Calais",
+            "l_4": "Boulogne",
+            "l_5": "Foret de Guines",
+            "l_6": "Bethune"
+        },
+        "events": {
+            "e_1": "Rhubarb Patrol",
+            "e_2": "Circus Operations",
+            "e_3": "Bomber and Coastal Command Operations"
+        },
+        "organisations": {
+            "o_1": "Bomber Command",
+            "o_2": "Fighter Command"
+        }
+    },
+    "keywords": [
+        "Rhubarb Patrol",
+        "Circus Operations",
+        "Bomber Command",
+        "Fighter Command",
+        "German aircraft",
+        "Pilot losses"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Battles",
+        "Strategic Air Campaigns",
+        "Weather Impact"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Battles": [
+            "e_2"
+        ],
+        "Strategic Air Campaigns": [
+            "e_2"
+        ],
+        "Weather Impact": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1940-12-20 to 1941-06-13",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Rhubarb patrol involves 336 sorties flown by British aircraft, resulting in claims for the destruction of seven enemy aircraft."
+        },
+        {
+            "event": "e_2",
+            "date": "1941-01-09 to 1941-06-13",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Circus operations include a series of coordinated attacks aimed at forcing enemy fighters into battle while inflicting damage on German objectives in France."
+        },
+        {
+            "event": "e_3",
+            "date": "1941-02-05 to 1941-06-12",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Bomber and Coastal Commands execute operations targeting shipping and fringe targets, prioritizing damage over forcing air combat."
+        }
+    ]
+}

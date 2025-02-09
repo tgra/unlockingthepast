@@ -1,0 +1,155 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "India",
+            "l_2": "South East Asia",
+            "l_3": "Arakan",
+            "l_4": "Burma",
+            "l_5": "Gulf of Martaban",
+            "l_6": "Rangoon",
+            "l_7": "Malaya",
+            "l_8": "Tenasserim"
+        },
+        "events": {
+            "e_1": "Japanese War of Aggression",
+            "e_2": "Air Battles over the Arakan",
+            "e_3": "Close Support Operations",
+            "e_4": "Heavy Bomber Operations",
+            "e_5": "Air Mining Operations"
+        },
+        "organisations": {
+            "o_1": "Allied Powers",
+            "o_2": "Japanese Army Air Force"
+        }
+    },
+    "keywords": [
+        "Japan",
+        "Allied Powers",
+        "Expansion",
+        "Air Superiority",
+        "Japanese Army",
+        "Air Support",
+        "Fighter Operations",
+        "Bomber Operations",
+        "Naval Operations",
+        "Morale"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Warfare",
+        "Strategic Failures",
+        "Morale Impact"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Aerial Warfare": [
+            "e_2",
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Failures": [
+            "e_1"
+        ],
+        "Morale Impact": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1943-1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "Japan's war of aggression leads to a series of military defeats due to overreach and misjudgment."
+        },
+        {
+            "event": "e_2",
+            "date": "Late 1943 to Early 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "Allied air superiority is achieved during intense air battles over the Arakan."
+        },
+        {
+            "event": "e_3",
+            "date": "1945",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Allied fighter operations greatly impact Japanese ground forces and logistics during battles."
+        },
+        {
+            "event": "e_4",
+            "date": "1945",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "Heavy bombing raids on Rangoon and surrounding areas significantly disrupt Japanese military operations."
+        },
+        {
+            "event": "e_5",
+            "date": "January 21, 1945 - May 24, 1945",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Air mining operations conducted by Allied forces create significant logistical challenges for Japanese supply routes."
+        }
+    ]
+}

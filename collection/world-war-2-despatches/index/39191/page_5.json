@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant (A) G. J. Conolly, R.N.V.R."
+        },
+        "locations": {
+            "l_1": "Mana airfield",
+            "l_2": "Pladjoe",
+            "l_3": "Fleet",
+            "l_4": "Indian Ocean",
+            "l_5": "INDOMITABLE",
+            "l_6": "ILLUSTRIOUS",
+            "l_7": "INDEFATIGABLE",
+            "l_8": "VICTORIOUS"
+        },
+        "events": {
+            "e_1": "Air Combat Operations",
+            "e_2": "Balloon Barrage Engagement",
+            "e_3": "Bombing Strike",
+            "e_4": "Enemy Aircraft Interception"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Japanese Army"
+        }
+    },
+    "keywords": [
+        "squadron",
+        "attack",
+        "bombing",
+        "enemy fighters",
+        "losses",
+        "aircraft"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Combat",
+        "Aircraft Losses",
+        "Naval Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Aerial Combat": [
+            "e_1",
+            "e_4"
+        ],
+        "Aircraft Losses": [
+            "e_1",
+            "e_3"
+        ],
+        "Naval Operations": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 29",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The air combat operations involve various squadrons engaging enemy fighters and executing bombing strikes while dealing with their own losses."
+        },
+        {
+            "event": "e_2",
+            "date": "January 29",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The balloon barrage was encountered, showing a less severe engagement compared to previous strikes, allowing some Avengers to successfully drop bombs."
+        },
+        {
+            "event": "e_3",
+            "date": "January 29",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The bombing strike initiates with excellent results, as bombs are effectively concentrated on targeted areas, resulting in significant destruction."
+        },
+        {
+            "event": "e_4",
+            "date": "January 29",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Enemy aircraft are intercepted during air operations, resulting in the destruction of several enemy fighters, amidst the confusion and damage seen in the fleet."
+        }
+    ]
+}

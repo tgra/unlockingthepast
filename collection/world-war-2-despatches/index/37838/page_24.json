@@ -1,0 +1,217 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A.E.A.F.",
+            "p_2": "German Army",
+            "p_3": "United States Ninth Air Force",
+            "p_4": "United States Eighth Air Force",
+            "p_5": "R.A.F. Second Tactical Air Force",
+            "p_6": "G.A.F.",
+            "p_7": "Army Commanders"
+        },
+        "locations": {
+            "l_1": "Northern France",
+            "l_2": "Belgium",
+            "l_3": "Seine",
+            "l_4": "Rheims",
+            "l_5": "Rouen",
+            "l_6": "Brest",
+            "l_7": "Le Havre",
+            "l_8": "Boulogne",
+            "l_9": "Calais",
+            "l_10": "Rhine",
+            "l_11": "Moselle"
+        },
+        "events": {
+            "e_1": "Retreat across Northern France and Belgium",
+            "e_2": "Air attacks on enemy ambulances",
+            "e_3": "Enemy rail movement",
+            "e_4": "Tactical air forces operations on 18th and 25th August",
+            "e_5": "G.A.F. protection efforts on 25th August",
+            "e_6": "Bombing of Brest",
+            "e_7": "Bombing of Le Havre",
+            "e_8": "Attacks on Coastal Garrisons"
+        },
+        "organisations": {
+            "o_1": "United States Air Force",
+            "o_2": "R.A.F. Bomber Command"
+        }
+    },
+    "keywords": [
+        "Retreat",
+        "Air Attacks",
+        "Ambulances",
+        "Rail Movement",
+        "Bombing",
+        "Casualties",
+        "German Army"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Air Assaults",
+        "Casualty Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_6",
+            "e_7",
+            "e_8"
+        ],
+        "Air Assaults": [
+            "e_2",
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Various Dates",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The retreat of enemy forces across Northern France and Belgium unfolds, marked by significant air assaults on their movements."
+        },
+        {
+            "event": "e_2",
+            "date": "Various Dates",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Decisions are made regarding whether to attack suspected enemy ambulances during their retreat, reflecting the complexity of targeting amid combat."
+        },
+        {
+            "event": "e_3",
+            "date": "Various Dates",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Reconnaissance reveals enemy rail movements aimed at stabilizing their line, prompting targeted air efforts against these movements."
+        },
+        {
+            "event": "e_4",
+            "date": "18th and 25th August",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_5",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "Tactical air forces achieve significant success with numerous enemy aircraft destroyed during operations on key dates in August."
+        },
+        {
+            "event": "e_5",
+            "date": "25th August",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_6",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The German Army attempts to protect their river crossings, resulting in a fierce aerial battle where many enemy aircraft are destroyed."
+        },
+        {
+            "event": "e_6",
+            "date": "24th August to 6th September",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Intensive bombing campaigns target the garrison at Brest, resulting in significant destruction of enemy positions."
+        },
+        {
+            "event": "e_7",
+            "date": "1st to 12th September",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A significant number of sorties are flown against Le Havre, leading to substantial bombing efforts aimed at disabling enemy defenses."
+        },
+        {
+            "event": "e_8",
+            "date": "September",
+            "locations": [
+                "l_9",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_6",
+                "e_7"
+            ],
+            "eventSummary": "Coastal garrisons are relentlessly bombed throughout September, impacting enemy operations significantly."
+        }
+    ]
+}

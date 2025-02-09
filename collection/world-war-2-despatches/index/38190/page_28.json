@@ -1,0 +1,149 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier",
+            "p_2": "Lt.-Colonel F. D. Field",
+            "p_3": "Wing Commander H. G. Sullivan"
+        },
+        "locations": {
+            "l_1": "Hong Kong",
+            "l_2": "Kowloon City",
+            "l_3": "Devils Peak Peninsula",
+            "l_4": "Ma Lau Tong",
+            "l_5": "George Island",
+            "l_6": "Star Ferry pier",
+            "l_7": "Kai Tak aerodrome",
+            "l_8": "Green Island",
+            "l_9": "North East sector",
+            "l_10": "North West sector"
+        },
+        "events": {
+            "e_1": "Withdrawal of troops from the mainland",
+            "e_2": "Military operations during 11-13 December",
+            "e_3": "Air raids and shelling of the island",
+            "e_4": "Enemy activity reported at George Island"
+        },
+        "organisations": {
+            "o_1": "R.A.O.C.",
+            "o_2": "5/7 Rajput Regiment",
+            "o_3": "2/14 Punjab Regiment",
+            "o_4": "Royal Signals",
+            "o_5": "Hong Kong Telephone Company",
+            "o_6": "1 Middlesex Regiment",
+            "o_7": "HHKVDC",
+            "o_8": "Canadian battalions",
+            "o_9": "Far East Command"
+        }
+    },
+    "keywords": [
+        "withdrawal",
+        "military operations",
+        "air raids",
+        "shelling",
+        "enemy activity",
+        "Hong Kong",
+        "troops",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Communications",
+        "Civilian Morale",
+        "Logistical Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [],
+        "Civilian Impact": [
+            "e_4"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 1-12, 1941",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The withdrawal of troops from the mainland is well executed, but logistical challenges hinder the process."
+        },
+        {
+            "event": "e_2",
+            "date": "December 11-13, 1941",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_10"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Military operations are conducted against enemy forces, focusing on maintaining positions along the Ma Lau Tong line amid significant enemy action."
+        },
+        {
+            "event": "e_3",
+            "date": "December 12, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Continuous air raids and shelling occur throughout the day, damaging key infrastructure and affecting troop morale."
+        },
+        {
+            "event": "e_4",
+            "date": "December 12, 1941",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Reports indicate that the enemy occupies George Island, prompting concerns about increased military activity in the area."
+        }
+    ]
+}

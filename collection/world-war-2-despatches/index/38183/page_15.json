@@ -1,0 +1,172 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Sir Tom Phillips",
+            "p_2": "Admiral Sir Geoffrey Layton",
+            "p_3": "Lieutenant-General Paget",
+            "p_4": "General Pownall",
+            "p_5": "General McLeod",
+            "p_6": "General Hutton",
+            "p_7": "Mr. Duff Cooper",
+            "p_8": "Sir George Sansom"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Burma",
+            "l_3": "Singapore",
+            "l_4": "Far East",
+            "l_5": "Japan",
+            "l_6": "Philippines",
+            "l_7": "Netherlands East Indies",
+            "l_8": "Pearl Harbour"
+        },
+        "events": {
+            "e_1": "Command Changes",
+            "e_2": "Formation of War Council",
+            "e_3": "Civil Defence Committee Establishment",
+            "e_4": "Japanese Government Intention Assessment",
+            "e_5": "Malayan Defense Review"
+        },
+        "organisations": {
+            "o_1": "Army",
+            "o_2": "Air Force",
+            "o_3": "War Council",
+            "o_4": "Civil Defence Committee"
+        }
+    },
+    "keywords": [
+        "command changes",
+        "war council",
+        "Japanese intentions",
+        "Malaya",
+        "Burma",
+        "defense",
+        "military"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence Handling",
+        "Strategic Command Changes",
+        "Civil Defense Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4",
+            "e_5"
+        ],
+        "Intelligence Handling": [
+            "e_4"
+        ],
+        "Strategic Command Changes": [
+            "e_1",
+            "e_2"
+        ],
+        "Civil Defense Planning": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 6, 1941",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Admiral Sir Tom Phillips replaces Admiral Sir Geoffrey Layton on December 6, 1941, amidst significant command changes in response to the war with Japan."
+        },
+        {
+            "event": "e_2",
+            "date": "December 15, 1941",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "A War Council is formed on December 15, 1941, led by Mr. Duff Cooper to address the military situation in the Far East."
+        },
+        {
+            "event": "e_3",
+            "date": "December 16, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A Civil Defence Committee is established on December 16, 1941, to manage non-military defense operations in Singapore."
+        },
+        {
+            "event": "e_4",
+            "date": "End of November 1941",
+            "locations": [
+                "l_5",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "Significant underestimations regarding Japanese military intentions lead to changes in strategic assessments by the end of November 1941."
+        },
+        {
+            "event": "e_5",
+            "date": "Late November 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A review of the defense capabilities in Malaya takes place in late November 1941, highlighting the need for strategic adjustments before the anticipated Japanese attacks."
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A.C.1"
+        },
+        "locations": {
+            "l_1": "Ishigaki",
+            "l_2": "Miyako",
+            "l_3": "Nobara airfield",
+            "l_4": "Sukama air strip",
+            "l_5": "Hirara airfield",
+            "l_6": "Southward"
+        },
+        "events": {
+            "e_1": "Ishigaki strike",
+            "e_2": "Bombardment of A.A. defence areas",
+            "e_3": "Kamikaze attack on H.M.S. Formidable"
+        },
+        "organisations": {
+            "o_1": "H.M. Ships"
+        }
+    },
+    "keywords": [
+        "Bombardment",
+        "A.A. defence",
+        "Kamikaze",
+        "Naval Operation",
+        "Air Attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Aircraft Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_2",
+            "e_3"
+        ],
+        "Aircraft Engagement": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the Ishigaki strike, an Avenger crashes into the sea, but the crew is rescued unharmed while enemy aircraft approaches the force."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The naval force conducts a bombardment of A.A. defense areas at Nobara and Hirara airfields, successfully hitting targets without encountering opposition from shore."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A Kamikaze attack occurs on H.M.S. Formidable, causing significant damage and casualties as the enemy aircraft crashes into the flight deck."
+        }
+    ]
+}

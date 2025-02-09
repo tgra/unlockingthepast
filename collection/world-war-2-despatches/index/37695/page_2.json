@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Dentz",
+            "p_2": "General de Gaulle",
+            "p_3": "General Catroux",
+            "p_4": "Brigadier A. S. Mavrogordato"
+        },
+        "locations": {
+            "l_1": "Palestine",
+            "l_2": "Syria",
+            "l_3": "Cairo",
+            "l_4": "Lebanon",
+            "l_5": "Euphrates",
+            "l_6": "Syrian Desert",
+            "l_7": "Abu Kemal",
+            "l_8": "Cyprus"
+        },
+        "events": {
+            "e_1": "Capitulation of Vichy Forces",
+            "e_2": "Evacuation of 37,000 strong army",
+            "e_3": "Tribal outbreaks in Abu Kemal district",
+            "e_4": "Military security discussions in London and Middle East"
+        },
+        "organisations": {
+            "o_1": "Commission of Control",
+            "o_2": "Free French Forces",
+            "o_3": "British Commander-in-Chief",
+            "o_4": "Anglo-French Commission"
+        }
+    },
+    "keywords": [
+        "prisoners",
+        "detention",
+        "evacuation",
+        "military security",
+        "civil administration",
+        "political unrest",
+        "tribal outbreaks"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Crisis Management",
+        "Political Unrest"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_1",
+            "e_4"
+        ],
+        "Crisis Management": [
+            "e_2"
+        ],
+        "Political Unrest": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unspecified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The capitulation of the Vichy Forces and the occupation of Syria by the British and Free French necessitate various political and military decisions."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In ten weeks, the Commission of Control successfully arranges the orderly evacuation of a strong army, ensuring the transfer of public services despite chaotic conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "Late September",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Tribal outbreaks occur in the Abu Kemal district, leading to clashes between Arabs and Free French troops, requiring British intervention."
+        },
+        {
+            "event": "e_4",
+            "date": "October",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Military security discussions take place in London and the Middle East, resulting in agreements on authority delegation to the British Command."
+        }
+    ]
+}

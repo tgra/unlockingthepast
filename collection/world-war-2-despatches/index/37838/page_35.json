@@ -1,0 +1,152 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Paris",
+            "l_2": "Seine",
+            "l_3": "Caen",
+            "l_4": "Sword beach",
+            "l_5": "Portland Bill",
+            "l_6": "Mortain"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "D + 1",
+            "e_3": "D + 2",
+            "e_4": "Counterattack in Mortain",
+            "e_5": "Air operations in August",
+            "e_6": "United States Ninth Air Force engagement"
+        },
+        "organisations": {
+            "o_1": "Allied Forces",
+            "o_2": "German Air Force (G.A.F.)",
+            "o_3": "R.A.F. Bomber Command"
+        }
+    },
+    "keywords": [
+        "bombing operations",
+        "Allied bombers",
+        "fighter units",
+        "enemy aircraft",
+        "Naval minesweepers",
+        "air support",
+        "reconnaissance",
+        "Operation D-Day"
+    ],
+    "themes": [
+        "Air Operations",
+        "Enemy Engagement",
+        "Allied Strategy",
+        "Military Impact",
+        "Weather Conditions",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Enemy Engagement": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_4",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On D-Day, enemy Air Force begins reconnaissance of the Channel areas, culminating in air activity following the Allied assault."
+        },
+        {
+            "event": "e_2",
+            "date": "D + 1",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On D + 1, significant enemy air activity occurs, with 59 enemy aircraft reported and engagements resulting in the destruction of several enemy planes."
+        },
+        {
+            "event": "e_3",
+            "date": "D + 2",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On D + 2, the enemy conducts attacks against shipping off Sword beach and a destroyer is sunk due to these efforts."
+        },
+        {
+            "event": "e_4",
+            "date": "Mid-August",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "During mid-August, the German Air Force launches a strong counterattack in the Mortain area, resulting in increased sorties."
+        },
+        {
+            "event": "e_5",
+            "date": "August",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "In August, as the Allied armies break out, G.A.F. forces increase their focus on ground support while struggling with logistics."
+        },
+        {
+            "event": "e_6",
+            "date": "25th August",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 25th August, United States Ninth Air Force fighters achieve significant success, destroying numerous enemy aircraft in combat."
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Garrison Commander",
+            "p_2": "Troops from the Greek mainland",
+            "p_3": "Parachute troops"
+        },
+        "locations": {
+            "l_1": "Cos",
+            "l_2": "Antimachia",
+            "l_3": "Rhodes",
+            "l_4": "Crete",
+            "l_5": "Leros",
+            "l_6": "Samos",
+            "l_7": "Greek mainland",
+            "l_8": "Naxos",
+            "l_9": "Kalino",
+            "l_10": "Gairos",
+            "l_11": "Kythnos",
+            "l_12": "Stampalia"
+        },
+        "events": {
+            "e_1": "Assault on Cos",
+            "e_2": "Destruction of enemy convoy off Stampalia",
+            "e_3": "Enemy assault on Leros"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Royal Navy",
+            "o_3": "U.S.A.A.F",
+            "o_4": "German Air Force",
+            "o_5": "Durham Light Infantry"
+        }
+    },
+    "keywords": [
+        "garrison",
+        "airfield",
+        "anti-aircraft defences",
+        "German Air Force",
+        "naval patrols",
+        "convoy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Air Superiority",
+        "Naval Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Defensive Strategies": [
+            "e_1"
+        ],
+        "Naval Engagements": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "3rd October",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The enemy assault on Cos begins, leading to the overwhelming of the British garrison."
+        },
+        {
+            "event": "e_2",
+            "date": "7th October",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Royal Navy intercepts a large enemy convoy off Stampalia, destroying multiple enemy vessels."
+        },
+        {
+            "event": "e_3",
+            "date": "October (after Cos fall)",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Following the fall of Cos, the enemy's anticipated assault on Leros is delayed, allowing British forces to strengthen their garrison."
+        }
+    ]
+}

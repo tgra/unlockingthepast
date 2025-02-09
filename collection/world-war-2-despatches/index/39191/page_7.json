@@ -1,0 +1,98 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Strike Leader",
+            "p_2": "Admiralty"
+        },
+        "locations": {
+            "l_1": "Ceylon",
+            "l_2": "Fremantle",
+            "l_3": "Cocos Island",
+            "l_4": "Palembang",
+            "l_5": "Sumatra",
+            "l_6": "Matapoera"
+        },
+        "events": {
+            "e_1": "First Strike",
+            "e_2": "Operation Oiling and Passage"
+        },
+        "organisations": {
+            "o_1": "H.M.S. VICTORIOUS",
+            "o_2": "Force 63",
+            "o_3": "H.M.S. INDEFATIGABLE",
+            "o_4": "H.M.S. INDOMITABLE"
+        }
+    },
+    "keywords": [
+        "Corsairs",
+        "air strike",
+        "fuelling",
+        "enemy aircraft",
+        "bombing",
+        "naval fleet"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Aerial Warfare",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_2"
+        ],
+        "Aerial Warfare": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 24, 1945",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The First Strike is conducted against enemy targets in Palembang, Sumatra with multiple aircraft formations executing the aerial operation.",
+            "time": "0704"
+        },
+        {
+            "event": "e_2",
+            "date": "January 29-30, 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Force 63 undertakes an oiling operation and passage towards Fremantle, ensuring all ships are refueled for the next mission."
+        }
+    ]
+}

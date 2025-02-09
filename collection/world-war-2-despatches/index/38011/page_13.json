@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Colonel Pollock",
+            "p_2": "Lord Cork",
+            "p_3": "General Bethouart",
+            "p_4": "Commander Hubback",
+            "p_5": "General Rug"
+        },
+        "locations": {
+            "l_1": "Harstad",
+            "l_2": "Tromso",
+            "l_3": "Bodo",
+            "l_4": "Narvik",
+            "l_5": "Ankenes",
+            "l_6": "Tjelsundet Fjord",
+            "l_7": "Ofot Fjord",
+            "l_8": "Vest Fjord",
+            "l_9": "Hinnoy Island",
+            "l_10": "Ballangen",
+            "l_11": "Scapa Flow"
+        },
+        "events": {
+            "e_1": "Evacuation of Personnel",
+            "e_2": "Embarkation of French Troops"
+        },
+        "organisations": {
+            "o_1": "Norwegian Army",
+            "o_2": "Royal Engineers",
+            "o_3": "Military Police",
+            "o_4": "Fleet Air Arm",
+            "o_5": "Admiralty"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "embarkation",
+        "anti-aircraft artillery",
+        "enemy air attacks",
+        "morale",
+        "French troops",
+        "military mission"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Strategy",
+        "Troop Morale"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Evacuation Strategy": [
+            "e_1"
+        ],
+        "Troop Morale": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 3rd to 8th",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation operation is successfully executed over a period of five days, with around 27,000 personnel safely evacuated despite potential enemy interference."
+        },
+        {
+            "event": "e_2",
+            "date": "June 3rd to 8th",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The French troops are skillfully embarked onto destroyers and liners without incident, reflecting high morale among the troops throughout the operation."
+        }
+    ]
+}

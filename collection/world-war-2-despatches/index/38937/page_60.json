@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Hitler",
+            "p_2": "Kesselring"
+        },
+        "locations": {
+            "l_1": "Italy",
+            "l_2": "Mediterranean",
+            "l_3": "United Kingdom",
+            "l_4": "Foggia",
+            "l_5": "Middle East",
+            "l_6": "North Africa",
+            "l_7": "Southern Front",
+            "l_8": "South France",
+            "l_9": "Balkans",
+            "l_10": "Dodecanese"
+        },
+        "events": {
+            "e_1": "Withdrawal of German forces",
+            "e_2": "Buildup of Allied forces in Italy",
+            "e_3": "Strategic bombing programme POINTBLANK"
+        },
+        "organisations": {
+            "o_1": "Canadian Army",
+            "o_2": "Allied Forces"
+        }
+    },
+    "keywords": [
+        "Allied forces",
+        "German divisions",
+        "airborne division",
+        "Strategic Air Force",
+        "buildup",
+        "bombing programme"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Hitler decides that the German withdrawal in Italy should stop and Kesselring is to hold a line as far south as possible."
+        },
+        {
+            "event": "e_2",
+            "date": "September 1943 to January 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Allied forces are building up in Italy, with an increase of divisions expected by early 1944 despite logistical challenges."
+        },
+        {
+            "event": "e_3",
+            "date": "1943",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The strategic bombing programme POINTBLANK is fully underway, impacting resource allocation for the Italian campaign."
+        }
+    ]
+}

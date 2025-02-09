@@ -1,0 +1,110 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major A. R. Aslett",
+            "p_2": "Lieutenant Sir Marshall G. C. Warmington, Bart.",
+            "p_3": "2nd Lieutenant L. M. HarperGow",
+            "p_4": "Brigadier"
+        },
+        "locations": {
+            "l_1": "Ports A",
+            "l_2": "Ports B",
+            "l_3": "Port X",
+            "l_4": "Skaalefjord",
+            "l_5": "Norway",
+            "l_6": "Faroes"
+        },
+        "events": {
+            "e_1": "Landing Operations at Ports A and B",
+            "e_2": "Destruction of the trawler KREBS",
+            "e_3": "Destruction of German ships at Port X"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "H.M.S. NELSON",
+            "o_3": "H.M.S. TARTAR",
+            "o_4": "QUEEN EMMA"
+        }
+    },
+    "keywords": [
+        "Landing Operation",
+        "Gunfire",
+        "Norwegian Population",
+        "Destruction of ships",
+        "Survivors",
+        "Fishing Fleet"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Humanitarian Assistance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Humanitarian Assistance": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 6, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Landing operations proceed successfully at Ports A and B without opposition, establishing cordial relations with the local Norwegian population."
+        },
+        {
+            "event": "e_2",
+            "date": "March 6, 1941",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The trawler KREBS is destroyed by gunfire after engaging the British ship SOMALI, resulting in several survivors rescued."
+        },
+        {
+            "event": "e_3",
+            "date": "March 6, 1941",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The German ships HAMBURG and PASAJES are destroyed by British naval forces at Port X, thwarting an attempt to capture the ships."
+        }
+    ]
+}

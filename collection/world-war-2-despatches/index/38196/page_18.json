@@ -1,0 +1,151 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rommel",
+            "p_2": "General Eisenhower",
+            "p_3": "General Anderson"
+        },
+        "locations": {
+            "l_1": "Siliana",
+            "l_2": "Maktar",
+            "l_3": "Sbiba",
+            "l_4": "Sbeitla",
+            "l_5": "Tebessa",
+            "l_6": "Kasserine",
+            "l_7": "Feriana",
+            "l_8": "Algiers",
+            "l_9": "Tripoli",
+            "l_10": "Telergma",
+            "l_11": "Constantine",
+            "l_12": "Dernaia Pass",
+            "l_13": "Western Dorsale",
+            "l_14": "Le Kef",
+            "l_15": "Eastern Dorsale",
+            "l_16": "Thala"
+        },
+        "events": {
+            "e_1": "Attack on Sbeitla",
+            "e_2": "American retreat in Kasserine",
+            "e_3": "Concentration of forces at Thala",
+            "e_4": "Exploratory attacks on northern roads"
+        },
+        "organisations": {
+            "o_1": "26 Armoured Brigade",
+            "o_2": "1 Armoured Division",
+            "o_3": "39 United States Regimental Combat Team",
+            "o_4": "II Corps",
+            "o_5": "German Africa Corps",
+            "o_6": "Eighth Army",
+            "o_7": "g United States Division"
+        }
+    },
+    "keywords": [
+        "Kasserine Pass",
+        "Rommel",
+        "American troops",
+        "British forces",
+        "Military positioning"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Maneuvers",
+        "Leadership Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Tactical Maneuvers": [
+            "e_1",
+            "e_2"
+        ],
+        "Leadership Decisions": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "16th/17th February",
+            "locations": [
+                "l_4",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The enemy attacks Sbeitla under bright moonlight, breaking into the town after fierce fighting overnight."
+        },
+        {
+            "event": "e_2",
+            "date": "18th February",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "American troops begin to retreat from the Kasserine Pass, suffering significant losses as they deal with the enemy influx."
+        },
+        {
+            "event": "e_3",
+            "date": "20th February",
+            "locations": [
+                "l_16"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "General Anderson organizes a concentration of forces for the defense of Thala in response to the enemy's advances."
+        },
+        {
+            "event": "e_4",
+            "date": "10th February",
+            "locations": [
+                "l_14",
+                "l_13"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Enemy forces carry out exploratory attacks against multiple routes leading to Thala, searching for the most opportune path for a major offensive."
+        }
+    ]
+}

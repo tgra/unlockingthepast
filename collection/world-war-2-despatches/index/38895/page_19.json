@@ -1,0 +1,107 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Naval Commander Force A",
+            "p_2": "Bombardment Liaison Officer"
+        },
+        "locations": {
+            "l_1": "Syracuse",
+            "l_2": "Pozzallo",
+            "l_3": "Gela",
+            "l_4": "Mellili",
+            "l_5": "Priolo",
+            "l_6": "Augusta",
+            "l_7": "Bark West",
+            "l_8": "Bark South",
+            "l_9": "Amber beach",
+            "l_10": "AwC South"
+        },
+        "events": {
+            "e_1": "Bombardment of Pozzallo",
+            "e_2": "Landing and unloading operations on D+2 Day"
+        },
+        "organisations": {
+            "o_1": "H.M.S. BRISSENDEN",
+            "o_2": "H.M.S. DELHI",
+            "o_3": "H.M.S. COLOMBO",
+            "o_4": "H.M.S. MAURITIUS",
+            "o_5": "H.M.S. ULSTER MONARCH",
+            "o_6": "H.M.S. TETCOTT"
+        }
+    },
+    "keywords": [
+        "Naval Commander",
+        "Bombardment",
+        "Surrender",
+        "Landing Operations",
+        "Unloading",
+        "Assault Convoy",
+        "Air Attacks",
+        "Convoy",
+        "Military Support"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Surrender",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Surrender": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "12th July",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The town of Pozzallo is bombarded by H.M.S. BRISSENDEN, leading to its surrender at 1315, resulting in the capture of 98 prisoners and making the port ineffective for unloading."
+        },
+        {
+            "event": "e_2",
+            "date": "12th July",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On D+2 Day, various naval forces conduct landing operations at multiple beaches, reinforcing positions and ensuring the discharge of personnel and stores after the successful bombardment of Pozzallo."
+        }
+    ]
+}

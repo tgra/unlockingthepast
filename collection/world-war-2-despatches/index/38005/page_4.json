@@ -1,0 +1,91 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain D."
+        },
+        "locations": {
+            "l_1": "Rombaks Fjord",
+            "l_2": "Herjangs Fjord",
+            "l_3": "Narvik Harbour",
+            "l_4": "Tranoy Light"
+        },
+        "events": {
+            "e_1": "Engagement with enemy destroyers",
+            "e_2": "Attack on German S.S. RAUENFELS"
+        },
+        "organisations": {
+            "o_1": "HAVOCK",
+            "o_2": "NORTH CORNWALL",
+            "o_3": "HOSTILE",
+            "o_4": "HARDY"
+        }
+    },
+    "keywords": [
+        "destroyer",
+        "torpedoes",
+        "gunfire",
+        "explosion",
+        "engagement",
+        "Narvik",
+        "German S.S. RAUENFELS"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Combat Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_1"
+        ],
+        "Combat Strategy": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of event unspecified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the naval engagement, HAVOCK and other destroyers engage enemy ships amidst increased gunfire and torpedo threats while navigating Rombaks Fjord."
+        },
+        {
+            "event": "e_2",
+            "date": "Date of event unspecified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the attack on the German S.S. RAUENFELS, HOSTILE confronts the ship, leading to its destruction while avoiding casualties on HAVOCK."
+        }
+    ]
+}

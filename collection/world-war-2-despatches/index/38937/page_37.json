@@ -1,0 +1,130 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Leese",
+            "p_2": "General Clark"
+        },
+        "locations": {
+            "l_1": "Elba",
+            "l_2": "Caserta",
+            "l_3": "Anzio",
+            "l_4": "Rome",
+            "l_5": "Liri Valley",
+            "l_6": "Cassino",
+            "l_7": "Route 6",
+            "l_8": "Ausonia",
+            "l_9": "Pico Itri",
+            "l_10": "Atina",
+            "l_11": "Monte Majo",
+            "l_12": "Monte Revole",
+            "l_13": "Pontecorvo",
+            "l_14": "Monte d Oro",
+            "l_15": "Monte Campese",
+            "l_16": "Monte Scauri",
+            "l_17": "Formia"
+        },
+        "events": {
+            "e_1": "D-Day Preparation",
+            "e_2": "Operation Order No. 1",
+            "e_3": "Breakout from Anzio"
+        },
+        "organisations": {
+            "o_1": "Fifth Army",
+            "o_2": "Eighth Army",
+            "o_3": "13 Corps",
+            "o_4": "2 Polish Corps",
+            "o_5": "South African Armoured Division",
+            "o_6": "Canadian Corps",
+            "o_7": "French Expeditionary Corps"
+        }
+    },
+    "keywords": [
+        "May",
+        "D-Day",
+        "Operation Order",
+        "attack",
+        "advance",
+        "Gustav line",
+        "Hitler line",
+        "breakout"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Planning",
+        "Coordination of Forces"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "11th May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The preparations for D-Day are finalized as the attack plans are confirmed with timelines set for execution."
+        },
+        {
+            "event": "e_2",
+            "date": "5th May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Order No. 1 is issued, affirming the strategies and plans established previously for the upcoming offensive."
+        },
+        {
+            "event": "e_3",
+            "date": "after D-Day",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The breakout from Anzio is conducted, targeting enemy defenses and aiming to seize control of strategically important locations."
+        }
+    ]
+}

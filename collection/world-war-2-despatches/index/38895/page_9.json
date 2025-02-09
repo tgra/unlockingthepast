@@ -1,0 +1,154 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Forward Observation Officer",
+            "p_2": "Naval Commander Eastern Task Force",
+            "p_3": "Flag Officer Sicily",
+            "p_4": "Commander-in-Chief",
+            "p_5": "S.N.O.L."
+        },
+        "locations": {
+            "l_1": "Catania",
+            "l_2": "Lentini",
+            "l_3": "Murazzo Point",
+            "l_4": "Syracuse",
+            "l_5": "Augusta",
+            "l_6": "Carlentini",
+            "l_7": "Catania Airfield",
+            "l_8": "Bark East",
+            "l_9": "Bark South",
+            "l_10": "Bark West"
+        },
+        "events": {
+            "e_1": "Commando landing by H.M.S. PRINS ALBERT",
+            "e_2": "Naval operations against enemy guns",
+            "e_3": "Sinking of the NEREIDE",
+            "e_4": "Proposals for withdrawal from the island",
+            "e_5": "Air attacks on S.S. THOMAS PICKERING"
+        },
+        "organisations": {
+            "o_1": "Eastern Task Force",
+            "o_2": "Force A",
+            "o_3": "Force B",
+            "o_4": "Force H"
+        }
+    },
+    "keywords": [
+        "Commando landing",
+        "Naval operations",
+        "U-boats",
+        "Air attacks",
+        "Amphibious assault"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Air Support",
+        "Logistics",
+        "Local Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Air Support": [
+            "e_5"
+        ],
+        "Logistics": [
+            "e_4"
+        ],
+        "Local Defense": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "13th July",
+            "locations": [
+                "l_3",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "H.M.S. PRINS ALBERT successfully lands No. 3 Commando near Murazzo Point with minimal losses."
+        },
+        {
+            "event": "e_2",
+            "date": "13th July",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "Naval operations engage and neutralize enemy guns in support of the Commando landing."
+        },
+        {
+            "event": "e_3",
+            "date": "14th July",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The destroyer H.M.S. ECHO sinks the Italian submarine NEREIDE, capturing twenty-five prisoners."
+        },
+        {
+            "event": "e_4",
+            "date": "15th July",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Proposals for the withdrawal of forces from the island are submitted and concurred by commanders."
+        },
+        {
+            "event": "e_5",
+            "date": "13th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Air attacks in the Acip area target S.S. THOMAS PICKERING, resulting in its total loss."
+        }
+    ]
+}

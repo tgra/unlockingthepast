@@ -1,0 +1,91 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "R. D. Oliver",
+            "p_2": "A. U. Willis"
+        },
+        "locations": {
+            "l_1": "South Atlantic",
+            "l_2": "Balboa",
+            "l_3": "Cape",
+            "l_4": "U.S."
+        },
+        "events": {
+            "e_1": "Sinking of German Supply Ship Python",
+            "e_2": "Action involving H.M.S. DEVONSHIRE"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "H.M.S. DEVONSHIRE",
+            "o_3": "DORSETSHIRE",
+            "o_4": "S.S. CLAN MACBEAN",
+            "o_5": "U.S."
+        }
+    },
+    "keywords": [
+        "sinking",
+        "raider",
+        "submarine",
+        "survivors",
+        "Admiralty",
+        "British prisoners",
+        "German"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Survivor Rescue",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Survivor Rescue": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "29th December 1941",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The German supply ship Python is sunk, significantly reducing the submarine threat to shipping in the Cape area."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd November 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "H.M.S. DEVONSHIRE engages in action against an enemy raider, leading to its destruction and revealing potential U-Boat presence."
+        }
+    ]
+}

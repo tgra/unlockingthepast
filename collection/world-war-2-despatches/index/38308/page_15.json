@@ -1,0 +1,103 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander sth Fleet",
+            "p_2": "A.C.x",
+            "p_3": "A.C.1",
+            "p_4": "CS.4"
+        },
+        "locations": {
+            "l_1": "Sakishima",
+            "l_2": "Ishigaki",
+            "l_3": "Leyte"
+        },
+        "events": {
+            "e_1": "Engagement on May 10",
+            "e_2": "Operational Review on May 11",
+            "e_3": "Tanker Group Formation on May 12"
+        },
+        "organisations": {
+            "o_1": "Fleet",
+            "o_2": "TF 57",
+            "o_3": "HMS. FORMIDABLE",
+            "o_4": "HMS. VICTORIOUS",
+            "o_5": "H.M. Ships SPEAKER",
+            "o_6": "American Task Unit 52.1.3"
+        }
+    },
+    "keywords": [
+        "Engagement",
+        "Air Operations",
+        "Casualties",
+        "Tactics",
+        "Fleet Operations",
+        "Kamikaze"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Air Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Air Defense": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 10",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The engagement results in the downing of multiple enemy aircraft while sustaining light casualties and damaging several friendly aircraft."
+        },
+        {
+            "event": "e_2",
+            "date": "May 11",
+            "locations": [],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An operational review leads to tactical adjustments in fleet positioning to enhance air defense against changing enemy tactics."
+        },
+        {
+            "event": "e_3",
+            "date": "May 12",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The tanker group is formed to facilitate fuelling and resupply operations for the fleet ahead of further engagements."
+        }
+    ]
+}

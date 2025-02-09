@@ -1,0 +1,116 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major Taylor",
+            "p_2": "General Alexander"
+        },
+        "locations": {
+            "l_1": "Karenni Hills",
+            "l_2": "Valley of the Salween",
+            "l_3": "Rangoon",
+            "l_4": "Tavoy",
+            "l_5": "Mergui",
+            "l_6": "Mingaladon",
+            "l_7": "Zayatkwin",
+            "l_8": "Magwe",
+            "l_9": "Akyab",
+            "l_10": "Burma",
+            "l_11": "Bay of Bengal",
+            "l_12": "Gulf of Martaban"
+        },
+        "events": {
+            "e_1": "Development of Telephone System in Karenni Hills",
+            "e_2": "Completion of Air Appreciation Strength of the Air Force in Burma",
+            "e_3": "Request for Reinforcements to ABDA Command"
+        },
+        "organisations": {
+            "o_1": "Burma Observer Corps",
+            "o_2": "Royal Air Force (R.A.F.)",
+            "o_3": "ABDA Command",
+            "o_4": "Air Ministry"
+        }
+    },
+    "keywords": [
+        "telephone system",
+        "airfields",
+        "reinforcements",
+        "defense",
+        "Japanese Air Force",
+        "counter-offensive",
+        "security",
+        "communications"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Communication Systems",
+        "Reinforcements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3"
+        ],
+        "Defensive Strategies": [
+            "e_1",
+            "e_2"
+        ],
+        "Communication Systems": [
+            "e_1"
+        ],
+        "Reinforcements": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Developing the telephone system in the Karenni Hills aims to enhance communication capabilities for military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "14th January",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The appreciation of air force strength in Burma is completed, assessing potential Japanese attacks and the required fighter force."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A telegraphic request for reinforcements to ABDA Command is sent after agreement in the Joint Commanders Sub-Committee."
+        }
+    ]
+}

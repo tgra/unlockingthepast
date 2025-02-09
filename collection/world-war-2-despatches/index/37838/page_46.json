@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unidentified military officer"
+        },
+        "locations": {
+            "l_1": "Western Front",
+            "l_2": "Norway",
+            "l_3": "Spanish border",
+            "l_4": "Ostend",
+            "l_5": "Cherbourg",
+            "l_6": "Channel Islands",
+            "l_7": "Cap de la Hague",
+            "l_8": "Dieppe",
+            "l_9": "Caudecote",
+            "l_10": "Cap Antifer",
+            "l_11": "Sortosville",
+            "l_12": "Lanmeur",
+            "l_13": "Boulogne",
+            "l_14": "Au Feure"
+        },
+        "events": {
+            "e_1": "Attacks on enemy radar installations",
+            "e_2": "Bombing of navigational beam stations",
+            "e_3": "W/T station attacks"
+        },
+        "organisations": {
+            "o_1": "A.E.A.F.",
+            "o_2": "R.A.F. Bomber Command",
+            "o_3": "R.A.F. Second Tactical Air Force"
+        }
+    },
+    "keywords": [
+        "Radar cover",
+        "Air attacks",
+        "Coastal stations",
+        "Jamming",
+        "Sorties",
+        "Precision bombing",
+        "Navigational stations",
+        "W/T stations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Warfare",
+        "Preparation for Assault",
+        "Intelligence Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Aerial Warfare": [
+            "e_1",
+            "e_3"
+        ],
+        "Preparation for Assault": [
+            "e_1"
+        ],
+        "Intelligence Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 1944",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A series of coordinated attacks on enemy radar installations commences, targeting vital sites to support air and naval operations, with the intent to blind the enemy before an impending assault."
+        },
+        {
+            "event": "e_2",
+            "date": "May 31/June 1, 1944",
+            "locations": [
+                "l_11",
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Key navigational beam stations are attacked to disrupt enemy operations ahead of the assault, with one station completely destroyed and another rendered temporarily inoperative."
+        },
+        {
+            "event": "e_3",
+            "date": "May 31/June 1, 1944",
+            "locations": [
+                "l_13",
+                "l_14"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Crucial W/T stations are subjected to heavy bombing by R.A.F. Bomber Command, achieving significant damage and diminishing the enemy's communication capabilities."
+        }
+    ]
+}

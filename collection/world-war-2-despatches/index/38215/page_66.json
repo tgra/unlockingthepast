@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lt.-Col Maxwell",
+            "p_2": "Lt.-Gen. A. E. Percival",
+            "p_3": "Maj.-Gen. Gordon Bennett",
+            "p_4": "Maj.-Gen. F. Keith Simmons",
+            "p_5": "Brig. A. W. G. Wildey",
+            "p_6": "Brig. A. C. Paris",
+            "p_7": "Lt.-Gen. Sir Lewis Heath"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Singapore Island",
+            "l_3": "West Johore",
+            "l_4": "Malacca",
+            "l_5": "Port Swettenham",
+            "l_6": "Ipoh",
+            "l_7": "Penang",
+            "l_8": "Pengerang",
+            "l_9": "Johore",
+            "l_10": "Kelantan"
+        },
+        "events": {
+            "e_1": "Arrival of the 2nd Contingent of the A.I.F.",
+            "e_2": "Dispositions on the Outbreak of War with Japan",
+            "e_3": "Adjustment of the Defence Plan"
+        },
+        "organisations": {
+            "o_1": "Australian Imperial Force (A.I.F.)",
+            "o_2": "Indian Corps",
+            "o_3": "Singapore Fortress",
+            "o_4": "Johore Military Forces",
+            "o_5": "Johore Volunteer Forces",
+            "o_6": "Royal Engineers",
+            "o_7": "Straits Settlements Volunteer Force",
+            "o_8": "Federated Malay States Volunteer Force"
+        }
+    },
+    "keywords": [
+        "Military reinforcements",
+        "Defense plan",
+        "Bush warfare",
+        "Operation Matador",
+        "Gurkha battalions"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategy",
+        "Troop Deployment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defensive Strategy": [
+            "e_3"
+        ],
+        "Troop Deployment": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "15th August 1941",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The second contingent of the Australian Imperial Force arrives in Malaya, consisting of the 27 Australian Infantry Brigade commanded by Lt.-Col. Maxwell."
+        },
+        {
+            "event": "e_2",
+            "date": "29th August 1941",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Troop dispositions are made in Malaya as war with Japan breaks out, with a notable focus on new operational assignments."
+        },
+        {
+            "event": "e_3",
+            "date": "August 1941",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The defense plan is adjusted based on the arrival of the 2nd A.I.F. contingent, altering responsibilities in Johore and Malacca."
+        }
+    ]
+}

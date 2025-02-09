@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "Chiefs of Staff"
+        },
+        "locations": {
+            "l_1": "Luzon",
+            "l_2": "Hong Kong",
+            "l_3": "China",
+            "l_4": "Philippines",
+            "l_5": "Singapore",
+            "l_6": "Malaya",
+            "l_7": "United States"
+        },
+        "events": {
+            "e_1": "A.D.B. report",
+            "e_2": "A.D.B. 2 agreement",
+            "e_3": "Outbreak of war with Japan",
+            "e_4": "Staff Exercises"
+        },
+        "organisations": {
+            "o_1": "United States Pacific Fleet",
+            "o_2": "Royal Air Force",
+            "o_3": "General Headquarters"
+        }
+    },
+    "keywords": [
+        "defensive strategy",
+        "military operations",
+        "collective action",
+        "guerilla operations",
+        "subversive activity"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Defensive Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The A.D.B. report is produced emphasizing the importance of preparing for military operations against Japanese territories while advocating for a defensive posture in the Far East."
+        },
+        {
+            "event": "e_2",
+            "date": "August 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An amended version of the A.D.B. report is created to address political concerns raised by the United States, while keeping major strategies intact."
+        },
+        {
+            "event": "e_3",
+            "date": "December 1941",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The outbreak of war with Japan marks a significant escalation in military engagement, directly linked to the strategies discussed in the A.D.B. reports."
+        },
+        {
+            "event": "e_4",
+            "date": "February-March 1941",
+            "locations": [
+                "l_2",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Staff exercises are conducted to prepare military forces for a transition from peaceful conditions to wartime readiness."
+        }
+    ]
+}

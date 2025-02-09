@@ -1,0 +1,122 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander, Advanced A.E.A.F.",
+            "p_2": "Air Staff Officer"
+        },
+        "locations": {
+            "l_1": "England",
+            "l_2": "Continent",
+            "l_3": "Uxbridge",
+            "l_4": "Portsmouth",
+            "l_5": "American beaches",
+            "l_6": "British beaches"
+        },
+        "events": {
+            "e_1": "D-Day Assault",
+            "e_2": "Operation of Fighter Cover",
+            "e_3": "First Three Days of Patrol"
+        },
+        "organisations": {
+            "o_1": "British Fighter Squadrons",
+            "o_2": "American Fighter Squadrons",
+            "o_3": "Fighter Direction Tenders",
+            "o_4": "Combined Control Centre"
+        }
+    },
+    "keywords": [
+        "Fighter Cover",
+        "D-Day",
+        "Patrol",
+        "Squadrons",
+        "Naval Assault Force"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Warfare",
+        "Coordination of Forces",
+        "Air Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Coordination of Forces": [
+            "e_2"
+        ],
+        "Aerial Warfare": [
+            "e_3"
+        ],
+        "Air Support": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On D-Day, coordinated fighter cover is maintained over the assault area, ensuring air superiority during the initial landings."
+        },
+        {
+            "event": "e_2",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The operation of fighter cover continues throughout the daylight hours during the assault period, providing critical support to ground forces."
+        },
+        {
+            "event": "e_3",
+            "date": "June 6-8, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the first three days, continuous patrols are conducted by fighter squadrons over the assault forces and shipping lanes to maintain air dominance."
+        }
+    ]
+}

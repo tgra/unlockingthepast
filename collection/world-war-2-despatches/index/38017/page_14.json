@@ -1,0 +1,88 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "John Catling",
+            "p_2": "Thomas Bartlett"
+        },
+        "locations": {
+            "l_1": "Dundalk",
+            "l_2": "Brighton",
+            "l_3": "Medway",
+            "l_4": "Sandown",
+            "l_5": "Grimsby Town"
+        },
+        "events": {
+            "e_1": "Minesweeping Operations",
+            "e_2": "Sinking of Vessels"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Minesweepers",
+        "Sunk",
+        "Damaged",
+        "Trawlers",
+        "Special Service Vessels",
+        "Drifters"
+    ],
+    "themes": [
+        "Naval Warfare",
+        "Ship Losses",
+        "Military Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_2"
+        ],
+        "Ship Losses": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 31, 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A series of minesweeping operations are conducted, resulting in 36 vessels being affected, of which 5 were sunk and 4 damaged."
+        },
+        {
+            "event": "e_2",
+            "date": "June 1, 1943",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Numerous vessels, including trawlers and special service vessels, are reported sunk or damaged in engagements during this period."
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral",
+            "p_2": "Admiral Nord",
+            "p_3": "Marceau"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "East Pier",
+            "l_3": "West Pier",
+            "l_4": "Gravelines",
+            "l_5": "Goodwins",
+            "l_6": "Thanet",
+            "l_7": "Boulogne",
+            "l_8": "Ramsgate",
+            "l_9": "Dover",
+            "l_10": "Margate"
+        },
+        "events": {
+            "e_1": "Evacuation Operation",
+            "e_2": "Operation Dynamo",
+            "e_3": "Air reconnaissance"
+        },
+        "organisations": {
+            "o_1": "French Admiralty",
+            "o_2": "R.A.F.",
+            "o_3": "B.N.L.O."
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Troops",
+        "Air reconnaissance",
+        "Navigation",
+        "Military Operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Strategies",
+        "Military Coordination",
+        "Under Fire"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Evacuation Strategies": [
+            "e_1"
+        ],
+        "Military Coordination": [
+            "e_2"
+        ],
+        "Under Fire": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 4, 1940",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation operation commences at 2230 with a pre-arranged plan, utilizing various vessels for the safe withdrawal of troops amidst challenging weather and enemy attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "May 27 - June 4, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Dynamo formally concludes with the last of the troop evacuations from Dunkirk, resulting in significant troop recoveries despite adverse conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "June 5, 1940",
+            "locations": [
+                "l_5",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air reconnaissance is conducted to search for any remaining stranded troops post-evacuation from Dunkirk, revealing survivors on a transport and barge."
+        }
+    ]
+}

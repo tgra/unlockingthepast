@@ -1,0 +1,106 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mr. Killery"
+        },
+        "locations": {
+            "l_1": "Northern Malaya",
+            "l_2": "Singapore Island",
+            "l_3": "Sumatra",
+            "l_4": "Crete",
+            "l_5": "Hong Kong"
+        },
+        "events": {
+            "e_1": "Battle for Northern Aerodromes",
+            "e_2": "Establishment of Left-Behind Parties",
+            "e_3": "Planned Move of Bombing Squadrons"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Ministry of Economic Warfare",
+            "o_3": "Royal Australian Air Force"
+        }
+    },
+    "keywords": [
+        "Air Force",
+        "aerodromes",
+        "bombing squadrons",
+        "military governance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Evacuation Plans",
+        "Sabotage Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Defense": [
+            "e_1"
+        ],
+        "Evacuation Plans": [
+            "e_3"
+        ],
+        "Sabotage Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Start of the War",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The battle for Northern aerodromes intensifies as air operations face significant challenges and the need for rapid evacuation escalates."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Efforts are made to organize left-behind parties to gather intelligence and execute sabotage against the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "End of December 1941",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Plans for the relocation of bombing squadrons to Dutch aerodromes in Sumatra progress, emphasizing strategic considerations amidst operational strains."
+        }
+    ]
+}

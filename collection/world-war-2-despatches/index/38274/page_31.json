@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Adviser in Venereal Disease"
+        },
+        "locations": {
+            "l_1": "North East India",
+            "l_2": "Burma",
+            "l_3": "Assam",
+            "l_4": "Arakan",
+            "l_5": "Calcutta",
+            "l_6": "Brahmaputra",
+            "l_7": "Cox's Bazar",
+            "l_8": "Tamu",
+            "l_9": "Tiddim"
+        },
+        "events": {
+            "e_1": "Anti-Malarial Measures",
+            "e_2": "Evacuation of Patients",
+            "e_3": "Dysentery and Venereal Disease Crisis",
+            "e_4": "Hospital Development"
+        },
+        "organisations": {
+            "o_1": "Military Medical Units"
+        }
+    },
+    "keywords": [
+        "Malaria",
+        "Evacuation",
+        "Dysentery",
+        "Venereal Disease",
+        "Public Health"
+    ],
+    "themes": [
+        "Military Operations",
+        "Public Health",
+        "Healthcare Improvement",
+        "Disease Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Public Health": [
+            "e_3",
+            "e_4"
+        ],
+        "Healthcare Improvement": [
+            "e_4"
+        ],
+        "Disease Management": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Current Period",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Anti-malarial measures have been successfully implemented resulting in decreased sick rates in controlled areas."
+        },
+        {
+            "event": "e_2",
+            "date": "Monsoon Season",
+            "locations": [
+                "l_4",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Evacuations of patients are hindered by monsoon conditions, with significant challenges in transportation."
+        },
+        {
+            "event": "e_3",
+            "date": "June and July Period",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Dysentery cases have increased, particularly in 4th Corps area, alongside a serious venereal disease crisis."
+        },
+        {
+            "event": "e_4",
+            "date": "Current Period",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Hospital conditions are improving in North East India, assisting in the treatment of returning personnel."
+        }
+    ]
+}

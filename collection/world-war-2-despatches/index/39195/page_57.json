@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Slim",
+            "p_2": "General Sultan"
+        },
+        "locations": {
+            "l_1": "Mandalay",
+            "l_2": "Meiktila",
+            "l_3": "Indaw",
+            "l_4": "Kyaukmyaung",
+            "l_5": "Nyaungu",
+            "l_6": "Pakokku",
+            "l_7": "Myinmu",
+            "l_8": "Monywa",
+            "l_9": "Thabeikkyin",
+            "l_10": "Singu"
+        },
+        "events": {
+            "e_1": "Crossing of 19 Indian Division",
+            "e_2": "Crossing of 20 Indian Division",
+            "e_3": "Crossing of 2 British Division",
+            "e_4": "4 Corps Crossing at Nyaungu"
+        },
+        "organisations": {
+            "o_1": "33 Corps",
+            "o_2": "4 Corps",
+            "o_3": "Northern Combat Area Command",
+            "o_4": "Fourteenth Army",
+            "o_5": "15 Japanese Army"
+        }
+    },
+    "keywords": [
+        "Indian Division",
+        "Crossing",
+        "Enemy Concentration",
+        "Artillery",
+        "Bridgehead"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategy",
+        "Troop Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Defensive Strategy": [
+            "e_1",
+            "e_4"
+        ],
+        "Troop Movements": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "9th January",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "19 Indian Division successfully crosses at Thabeikkyin and Kyaukmyaung, holds its ground despite heavy enemy attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "12th February",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "20 Indian Division crosses the Irrawaddy at Myinmu, aiming to advance towards Mandalay."
+        },
+        {
+            "event": "e_3",
+            "date": "24th February",
+            "locations": [
+                "l_5",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "2 British Division crosses at Ngazun, solidifying the front against enemy forces near Mandalay."
+        },
+        {
+            "event": "e_4",
+            "date": "Between 13th and 19th February",
+            "locations": [
+                "l_6",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "4 Corps completes a strategic advance crossing the Irrawaddy, contributing to the pressure on enemy forces."
+        }
+    ]
+}

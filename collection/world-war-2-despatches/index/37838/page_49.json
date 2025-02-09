@@ -1,0 +1,89 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Europe",
+            "l_2": "Holland",
+            "l_3": "Belgium",
+            "l_4": "France",
+            "l_5": "Granville",
+            "l_6": "Flushing",
+            "l_7": "Spanish frontier"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "Invasion of Europe"
+        },
+        "organisations": {
+            "o_1": "Eighth Air Force",
+            "o_2": "Ninth Air Force",
+            "o_3": "R.A.F. Bomber Command",
+            "o_4": "Allied air forces"
+        }
+    },
+    "keywords": [
+        "airfields",
+        "attacks",
+        "photographic reconnaissance",
+        "invasion preparation",
+        "military operations",
+        "intelligence gathering",
+        "camouflage"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence and Reconnaissance",
+        "Strategic Air Attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Intelligence and Reconnaissance": [
+            "e_2"
+        ],
+        "Strategic Air Attacks": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "D-Day marks the Allied invasion of Europe, utilizing extensive airfield attacks and reconnaissance to ensure the effective landing of allied forces."
+        },
+        {
+            "event": "e_2",
+            "date": "Preparation Phase prior to D-Day",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The invasion of Europe from the west involves comprehensive photographic reconnaissance and air attack strategies to undermine enemy defenses."
+        }
+    ]
+}

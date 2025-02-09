@@ -1,0 +1,130 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General R. G. Sturges",
+            "p_2": "Rear-Admiral E. N. Syfret",
+            "p_3": "Captain G. A. Garnons-Williams",
+            "p_4": "Brigadier F. W. Festing"
+        },
+        "locations": {
+            "l_1": "Durban",
+            "l_2": "Diego Suarez",
+            "l_3": "Mombasa",
+            "l_4": "Wilham Pitt Bay",
+            "l_5": "Mozambique"
+        },
+        "events": {
+            "e_1": "Operation Ironclad",
+            "e_2": "Assembly of Ships at Durban",
+            "e_3": "Convoy Y",
+            "e_4": "Convoy Z"
+        },
+        "organisations": {
+            "o_1": "South Atlantic Command",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Operation Ironclad",
+        "Naval Convoys",
+        "Military Preparations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "15th May 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Operation Ironclad is being executed with Naval forces assembling at Durban and proceeding towards Diego Suarez, aimed at strategic military objectives."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd April 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Assembly of Ships at Durban proceeds as various naval vessels arrive to prepare for Operation Ironclad."
+        },
+        {
+            "event": "e_3",
+            "date": "25th April 1942",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Convoy Y departs from Durban, comprising several ships escorting military personnel toward their operational destination."
+        },
+        {
+            "event": "e_4",
+            "date": "28th April 1942",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Following Convoy Y, Convoy Z sets sail from Durban, carrying critical naval units including Headquarters ships under Major-General Sturges' command."
+        }
+    ]
+}

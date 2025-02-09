@@ -1,0 +1,154 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Kesselring"
+        },
+        "locations": {
+            "l_1": "Coriano ridge",
+            "l_2": "Gothic line",
+            "l_3": "Canada",
+            "l_4": "Gemmano",
+            "l_5": "Urbino",
+            "l_6": "Pontassieve",
+            "l_7": "Florence",
+            "l_8": "Monte Morello",
+            "l_9": "Monte Senario",
+            "l_10": "Monte Calvana",
+            "l_11": "Monte Giovi",
+            "l_12": "Arno",
+            "l_13": "Pisa",
+            "l_14": "Lucca",
+            "l_15": "Pistoia",
+            "l_16": "Rimini",
+            "l_17": "Sieve",
+            "l_18": "Borgo San Lorenzo",
+            "l_19": "Dicomano",
+            "l_20": "Faenza"
+        },
+        "events": {
+            "e_1": "Allied offensive on Gothic line",
+            "e_2": "Enemy withdrawal to Gothic line",
+            "e_3": "Fifth Army attack",
+            "e_4": "Simultaneous attack by Fifth and Eighth Armies"
+        },
+        "organisations": {
+            "o_1": "Fifth Army",
+            "o_2": "Eighth Army",
+            "o_3": "1 Parachute Division",
+            "o_4": "26 Panzer Division",
+            "o_5": "29 Panzer Grenadier Division",
+            "o_6": "LI Mountain Corps",
+            "o_7": "10 Corps",
+            "o_8": "IV Corps",
+            "o_9": "II Corps",
+            "o_10": "13 Corps",
+            "o_11": "91 Division",
+            "o_12": "3 Division",
+            "o_13": "6 South African Armoured Division",
+            "o_14": "Task Force 45"
+        }
+    },
+    "keywords": [
+        "Gothic Line",
+        "Coriano Ridge",
+        "Fifth Army",
+        "Eighth Army",
+        "Kesselring",
+        "Enemy Withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Allied Forces Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "13th September",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Allied offensive on the Gothic line is launched, marking a significant military operation as forces advance with little resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "30th August",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The enemy begins their withdrawal to the Gothic line, allowing Allied forces to concentrate their troops for a continued offensive."
+        },
+        {
+            "event": "e_3",
+            "date": "9th September",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Fifth Army is set to attack as preparations are finalized to take advantage of the enemy's weakened position."
+        },
+        {
+            "event": "e_4",
+            "date": "13th September",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On the night of the 12th, the Fifth and Eighth Armies simultaneously launch coordinated attacks on the Gothic line."
+        }
+    ]
+}

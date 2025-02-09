@@ -1,0 +1,153 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral Commanding, Fifteenth Cruiser Squadron",
+            "p_2": "H. B. Rawlings",
+            "p_3": "W. G. A. Robson",
+            "p_4": "P. Somerville",
+            "p_5": "W. R. Marshall A Deane",
+            "p_6": "Captain J. A. V. Morse",
+            "p_7": "A. B. Cunnincuam"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Aegean",
+            "l_3": "Alexandria",
+            "l_4": "Suda"
+        },
+        "events": {
+            "e_1": "Destruction of enemy convoy",
+            "e_2": "Withdrawal order on 23rd May",
+            "e_3": "Rescue of GREYHOUND and FIJI",
+            "e_4": "Air attacks on the fleet",
+            "e_5": "Loss of GLOUCESTER and KELLY"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Mediterranean Fleet"
+        }
+    },
+    "keywords": [
+        "enemy convoy",
+        "withdrawal",
+        "air attacks",
+        "rescue operation",
+        "ammunition shortage",
+        "naval strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Courage and Sacrifice",
+        "Strategic Decisions",
+        "Naval Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_5"
+        ],
+        "Courage and Sacrifice": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ],
+        "Naval Coordination": [
+            "e_1",
+            "e_3",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 22",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "The Rear Admiral Commanding, Fifteenth Cruiser Squadron, has the opportunity to destroy an enemy convoy but decides to withdraw due to heavy air attacks and low ammunition supplies."
+        },
+        {
+            "event": "e_2",
+            "date": "May 23",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A Most Immediate message is sent due to a miscommunication regarding ammunition, resulting in the withdrawal order for all forces."
+        },
+        {
+            "event": "e_3",
+            "date": "May 22-23",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "KANDAHAR and KINGSTON conduct a brave rescue operation under heavy attack to save the crews of GREYHOUND and FIJI."
+        },
+        {
+            "event": "e_4",
+            "date": "May 22-23",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The fleet suffers intense air attacks, challenging their strategies and testing their resilience."
+        },
+        {
+            "event": "e_5",
+            "date": "May 22",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Significant losses are incurred by the fleet, including the ships GLOUCESTER and KELLY, amidst ongoing conflict."
+        }
+    ]
+}

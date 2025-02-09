@@ -1,0 +1,148 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Senior Naval Officer (L)",
+            "p_2": "Admiral"
+        },
+        "locations": {
+            "l_1": "Nosi Hara",
+            "l_2": "Q.1",
+            "l_3": "Nosi Anjombavola",
+            "l_4": "Courrier Bay",
+            "l_5": "Windsor Castle",
+            "l_6": "Antsirane"
+        },
+        "events": {
+            "e_1": "Report of mine in vicinity",
+            "e_2": "Bombing of observation post at Windsor Castle",
+            "e_3": "Landing of forces at White Beach",
+            "e_4": "Ship movements to main anchorage",
+            "e_5": "Survey of No. 8 battery"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Minesweeper",
+        "Anchor",
+        "Report",
+        "Communication",
+        "Landing Craft",
+        "Bombing",
+        "Session"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Communication",
+        "Strategic Movements",
+        "Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Communication": [
+            "e_3",
+            "e_5"
+        ],
+        "Strategic Movements": [
+            "e_4"
+        ],
+        "Reconnaissance": [
+            "e_2",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A report of mines in the vicinity is received indicating a potential hazard during operations."
+        },
+        {
+            "event": "e_2",
+            "date": "1138",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Walrus aircraft is sent to bomb the observation post at Windsor Castle on request from the Army on shore."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Landing forces at White Beach indicate progress in securing the area."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "Ships navigate to the main anchorage area as part of operational strategy."
+        },
+        {
+            "event": "e_5",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Surveys of No. 8 battery are carried out as part of reconnaissance efforts."
+        }
+    ]
+}

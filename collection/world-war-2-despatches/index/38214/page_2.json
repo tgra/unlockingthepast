@@ -1,0 +1,83 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "W. G. Tennant"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "3 45 N. 104 24 E",
+            "l_3": "3 36 N. 104 28 E",
+            "l_4": "Kallang"
+        },
+        "events": {
+            "e_1": "Sinking of H.M.S. REPULSE",
+            "e_2": "Attack on Force Z"
+        },
+        "organisations": {
+            "o_1": "H.M.S. REPULSE",
+            "o_2": "H.M.S. PRINCE OF WALES"
+        }
+    },
+    "keywords": [
+        "aircraft attacks",
+        "torpedo bombers",
+        "naval operations",
+        "rescue efforts"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualties",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Casualties": [
+            "e_1"
+        ],
+        "Naval Warfare": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 11, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "H.M.S. REPULSE sinks after sustaining multiple torpedo hits and bomb attacks from enemy aircraft, with significant loss of life reported among officers and crew."
+        },
+        {
+            "event": "e_2",
+            "date": "December 11, 1941",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Force Z is attacked by Japanese aircraft, leading to heavy damage to H.M.S. PRINCE OF WALES and contributing to the eventual sinking of H.M.S. REPULSE."
+        }
+    ]
+}

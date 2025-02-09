@@ -1,0 +1,87 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice-Admiral Commanding, North Atlantic",
+            "p_2": "Rear-Admiral Commanding, 18th Cruiser Squadron"
+        },
+        "locations": {
+            "l_1": "Carnero Point",
+            "l_2": "Malta",
+            "l_3": "Almeria",
+            "l_4": "Cape Palos",
+            "l_5": "Formentera",
+            "l_6": "Gibraltar",
+            "l_7": "Oran"
+        },
+        "events": {
+            "e_1": "Submarine Attack on Force H",
+            "e_2": "Operations of Group 4 and Group 5"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Submarine Attack",
+        "Military Operations",
+        "Naval Strategy",
+        "Air Patrols"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Air Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_2"
+        ],
+        "Air Defense": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "23rd July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "At 2315 on 23rd July, NESTOR reports a torpedo approaching, leading to evasive maneuvers and subsequent explosions, indicating a submarine attack on Force H."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd-23rd July",
+            "locations": [
+                "l_1",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Throughout 22nd and 23rd July, Groups 4 and 5 operate in parallel, maintaining A.S. patrols while preparing for a possible submarine confrontation."
+        }
+    ]
+}

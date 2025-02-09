@@ -1,0 +1,106 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief, Mediterranean",
+            "p_2": "Vice Admiral"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Suda Bay",
+            "l_3": "Alexandria",
+            "l_4": "Heraklion",
+            "l_5": "Canea",
+            "l_6": "Retimo",
+            "l_7": "Kissamo Bay",
+            "l_8": "Sitia",
+            "l_9": "Lemnos"
+        },
+        "events": {
+            "e_1": "Battle of Crete",
+            "e_2": "Operation Demon",
+            "e_3": "Airborne Attack on Crete"
+        },
+        "organisations": {
+            "o_1": "Royal Marines",
+            "o_2": "M.N.B.D.O."
+        }
+    },
+    "keywords": [
+        "Battle of Crete",
+        "Operation Demon",
+        "naval forces",
+        "air attacks",
+        "evacuation",
+        "Convoy",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Challenges",
+        "Air Defense",
+        "Strategic Mobility"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Supply Chain Challenges": [
+            "e_2"
+        ],
+        "Air Defense": [
+            "e_3"
+        ],
+        "Strategic Mobility": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Crete is an ongoing military engagement, characterized by naval and air operations, including the evacuation of British forces prompted by heavy enemy attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "April 29, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Demon involves the evacuation of over 50,000 troops from Greece, significantly impacting the resupply efforts on Crete."
+        },
+        {
+            "event": "e_3",
+            "date": "May 20, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Airborne Attack on Crete commences, marking the start of intense air operations against the island, leading to significant military challenges."
+        }
+    ]
+}

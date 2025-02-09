@@ -1,0 +1,113 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Marshall",
+            "p_2": "Brigadier J. A. E. Burls",
+            "p_3": "Lieut.-Colonel H. J. R. J. Radcliffe"
+        },
+        "locations": {
+            "l_1": "America",
+            "l_2": "London",
+            "l_3": "Cuckmere Haven",
+            "l_4": "St. Margaret's Bay",
+            "l_5": "Thames Estuary"
+        },
+        "events": {
+            "e_1": "Deployment of new radar equipment",
+            "e_2": "Move of coastal gun belt",
+            "e_3": "Introduction of new artillery tactics"
+        },
+        "organisations": {
+            "o_1": "R.E.M.E.",
+            "o_2": "Fighter Command",
+            "o_3": "Royal Air Force (R.A.F.)"
+        }
+    },
+    "keywords": [
+        "Anti-Aircraft gunnery",
+        "radar sets",
+        "V-1 rockets",
+        "static guns",
+        "mobile guns",
+        "coastal defense",
+        "armament deployment"
+    ],
+    "themes": [
+        "Military Operations",
+        "Technology Implementation",
+        "Strategic Defense Planning",
+        "Coordination between Units"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Technology Implementation": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Defense Planning": [
+            "e_2"
+        ],
+        "Coordination between Units": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "July 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "New American radar equipment, including the SCR.584, is deployed along the coastal defense belt enhancing accuracy in targeting V-1 rockets."
+        },
+        {
+            "event": "e_2",
+            "date": "14 July 1944",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The coastal gun belt is moved, enhancing military effectiveness against aerial threats and consolidating existing defenses along the South coast."
+        },
+        {
+            "event": "e_3",
+            "date": "July 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A reassessment of artillery tactics is implemented leading to improved coordination between land and air defense operations."
+        }
+    ]
+}

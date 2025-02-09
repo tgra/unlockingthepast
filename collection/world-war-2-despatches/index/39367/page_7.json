@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Chief of the Air Staff",
+            "p_2": "Marshal Tito"
+        },
+        "locations": {
+            "l_1": "Italy",
+            "l_2": "Nothern Italy",
+            "l_3": "Jugoslavia",
+            "l_4": "Greece",
+            "l_5": "Bari"
+        },
+        "events": {
+            "e_1": "Final Italian Offensive",
+            "e_2": "Jugoslav Fourth Army Offensive",
+            "e_3": "Formation of Balkan Air Force"
+        },
+        "organisations": {
+            "o_1": "U.S.A.A.F.",
+            "o_2": "M.A.T.A.F.",
+            "o_3": "B.A.F.",
+            "o_4": "M.A.S.A.F.",
+            "o_5": "Royal Air Force",
+            "o_6": "Allied Force Headquarters"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "offensive",
+        "air support",
+        "Manpower",
+        "co-ordination",
+        "partisans"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Co-ordination",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 16, 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The final Italian offensive continues with unchanged order of battle and preparation for support despite overall manpower deficiencies."
+        },
+        {
+            "event": "e_2",
+            "date": "1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Jugoslav Fourth Army offensive is initiated with the support of Allied forces and Partisans against substantial German resistance."
+        },
+        {
+            "event": "e_3",
+            "date": "May 1944",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The formation of the Balkan Air Force is decided to enable operational co-ordination for trans-Adriatic operations against Axis forces."
+        }
+    ]
+}

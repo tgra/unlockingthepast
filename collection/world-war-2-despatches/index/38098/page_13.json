@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice-Admiral Sir James F. Somerville, K.C.B., D.S.O.",
+            "p_2": "Captain Rhoderick R. McGrigor",
+            "p_3": "Captain Loben E. H. Maund",
+            "p_4": "Captain Charles A. A. Larcom",
+            "p_5": "Captain Clifford Caslon",
+            "p_6": "Commander Lionel P. Skipwith",
+            "p_7": "Commander William H. Selby"
+        },
+        "locations": {
+            "l_1": "Galatea",
+            "l_2": "Kenya",
+            "l_3": "Iceland-Faeroes passage",
+            "l_4": "Davis Strait",
+            "l_5": "Cape Farewell",
+            "l_6": "Straits of Gibraltar",
+            "l_7": "Bay of Biscay"
+        },
+        "events": {
+            "e_1": "Operation against Bismarck",
+            "e_2": "Air search operations",
+            "e_3": "Rescue operations of the aircrew",
+            "e_4": "Security patrol flights"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "Royal Navy",
+            "o_3": "Coastal Command"
+        }
+    },
+    "keywords": [
+        "Bismarck",
+        "air searches",
+        "cruisers",
+        "Swordfish",
+        "patrols",
+        "merchant vessel",
+        "rescue",
+        "navy operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Search and Rescue",
+        "Naval Warfare",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Search and Rescue": [
+            "e_3"
+        ],
+        "Security Operations": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 26th May, the Flag Officer Commanding, Force H, coordinates the search for the Bismarck while managing the operations of aircraft, aiming to locate and strategically attack the enemy."
+        },
+        {
+            "event": "e_2",
+            "date": "25th-26th May",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Air search operations are conducted over the course of 25th and 26th May as naval forces seek to locate enemy positions and protect allied cruisers."
+        },
+        {
+            "event": "e_3",
+            "date": "25th-26th May",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Two aircraft crews face peril during their air search but are successfully rescued by a merchant vessel after spending nine days stranded."
+        },
+        {
+            "event": "e_4",
+            "date": "25th May",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Security patrol flights are arranged to monitor the Straits of Gibraltar to prevent enemy movements, ensuring the safety of allied naval sorties."
+        }
+    ]
+}

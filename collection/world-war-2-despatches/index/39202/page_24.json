@@ -1,0 +1,161 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieut.-Colonel Maugham",
+            "p_2": "Lieut.-Commander Galley",
+            "p_3": "Admiral Moody",
+            "p_4": "2nd Officer Price",
+            "p_5": "General MacArthur",
+            "p_6": "Lt-Gen. Kawaba Takashiro",
+            "p_7": "General Kenney",
+            "p_8": "General Blamey"
+        },
+        "locations": {
+            "l_1": "Manila",
+            "l_2": "Japan",
+            "l_3": "Okinawa",
+            "l_4": "Singapore",
+            "l_5": "Tokio",
+            "l_6": "South West Pacific Area",
+            "l_7": "Hong Kong",
+            "l_8": "Malaya",
+            "l_9": "Quajalin"
+        },
+        "events": {
+            "e_1": "Arrival of the S.A.C.S.E.A. Mission at Manila",
+            "e_2": "Visit of the Japanese Mission to Manila",
+            "e_3": "Return of the Japanese Mission to Okinawa",
+            "e_4": "Conference at G.H.Q.",
+            "e_5": "Occupation of Japan"
+        },
+        "organisations": {
+            "o_1": "S.A.C.S.E.A.",
+            "o_2": "Imperial General Staff",
+            "o_3": "U.S. Army Forces",
+            "o_4": "British Air Forces",
+            "o_5": "Commonwealth Forces"
+        }
+    },
+    "keywords": [
+        "surrender terms",
+        "Japanese Mission",
+        "political confusion",
+        "occupation",
+        "Allied terms",
+        "negotiations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Political Confusion",
+        "Occupation Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_5"
+        ],
+        "Diplomacy": [
+            "e_2",
+            "e_4"
+        ],
+        "Political Confusion": [
+            "e_2",
+            "e_4"
+        ],
+        "Occupation Strategies": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "17th August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The S.A.C.S.E.A. Mission arrives at Manila shortly after dawn."
+        },
+        {
+            "event": "e_2",
+            "date": "19th August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Japanese Mission, led by Lt-Gen. Kawaba Takashiro, arrives in Manila to discuss surrender terms."
+        },
+        {
+            "event": "e_3",
+            "date": "20th August",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Japanese Mission returns to Okinawa from Manila without any incident during their visit."
+        },
+        {
+            "event": "e_4",
+            "date": "Unspecified date (during the Mission's visit)",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A conference at G.H.Q. occurs, presenting the terms of surrender to the Japanese Mission."
+        },
+        {
+            "event": "e_5",
+            "date": "Unspecified date (after surrender)",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_5",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The occupation of Japan is discussed, highlighting the roles of different military forces."
+        }
+    ]
+}

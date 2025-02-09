@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Nimitz"
+        },
+        "locations": {
+            "l_1": "Miyako",
+            "l_2": "Ishigaki",
+            "l_3": "Hirara",
+            "l_4": "Nobara",
+            "l_5": "Sukhama",
+            "l_6": "Myara",
+            "l_7": "Okinawa",
+            "l_8": "Inland Sea",
+            "l_9": "Cootie"
+        },
+        "events": {
+            "e_1": "Attack on Miyako airfield",
+            "e_2": "Air operation against enemy surface force",
+            "e_3": "Recovery of Corsair pilot"
+        },
+        "organisations": {
+            "o_1": "CTF 57",
+            "o_2": "CTF 58",
+            "o_3": "5th Fleet",
+            "o_4": "Admiralty"
+        }
+    },
+    "keywords": [
+        "aircraft",
+        "CAP",
+        "bombing",
+        "enemy losses",
+        "strikes",
+        "tactical command"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Combat",
+        "Strategic Commands",
+        "Losses Assessment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Combat": [
+            "e_1"
+        ],
+        "Strategic Commands": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 4",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Fleet conducts air operations over Miyako airfield, targeting enemy installations and achieving significant air combat success with losses considered."
+        },
+        {
+            "event": "e_2",
+            "date": "April 4",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "CTF 58 engages an enemy surface force in a decisive air operation, resulting in significant enemy losses."
+        },
+        {
+            "event": "e_3",
+            "date": "April 4",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. URANIA responds to a downed Corsair pilot, recovering the pilot but discovering he has unfortunately passed away."
+        }
+    ]
+}

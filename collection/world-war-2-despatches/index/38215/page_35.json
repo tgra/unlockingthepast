@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mr. Murnane",
+            "p_2": "Mr. Rayman",
+            "p_3": "Mr. Fraser",
+            "p_4": "The Governor",
+            "p_5": "The Director General of Civil Defence"
+        },
+        "locations": {
+            "l_1": "Singapore Club",
+            "l_2": "Singapore",
+            "l_3": "Mount Pleasant Ridge",
+            "l_4": "Alexandra Depots",
+            "l_5": "Keppel Golf Links",
+            "l_6": "Fort Canning"
+        },
+        "events": {
+            "e_1": "Water Supply Crisis Meeting",
+            "e_2": "Conference on Water Situation",
+            "e_3": "Infiltration of Enemy Infantry",
+            "e_4": "Senior Commanders Conference"
+        },
+        "organisations": {
+            "o_1": "Royal Engineers",
+            "o_2": "Civil Defence",
+            "o_3": "18 British Division",
+            "o_4": "11 Indian Divisions",
+            "o_5": "Supreme Commander South-West Pacific",
+            "o_6": "Colonial Office"
+        }
+    },
+    "keywords": [
+        "water supply",
+        "infrastructure damage",
+        "military operations",
+        "infantry attacks",
+        "civil defence"
+    ],
+    "themes": [
+        "Military Operations",
+        "Civil Defence",
+        "Infrastructure Crisis"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_3",
+            "e_4"
+        ],
+        "Civil Defence": [
+            "e_1",
+            "e_2"
+        ],
+        "Infrastructure Crisis": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "4th February 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Municipal Water Engineer reports an imminent failure of the water supply, prompting a conference to discuss the crisis."
+        },
+        {
+            "event": "e_2",
+            "date": "4th February 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Governor is informed of the worsening water situation and the decision to continue military resistance despite the crisis."
+        },
+        {
+            "event": "e_3",
+            "date": "5th February 1942",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Enemy infantry infiltrates the positions of the 18 British Division, leading to local counter-attacks despite the difficult situation."
+        },
+        {
+            "event": "e_4",
+            "date": "5th February 1942",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A Senior Commanders Conference is held at Fort Canning to discuss the deteriorating situation and next steps."
+        }
+    ]
+}

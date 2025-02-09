@@ -1,0 +1,86 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Japanese Medical Major"
+        },
+        "locations": {
+            "l_1": "Hong Kong",
+            "l_2": "Kowloon",
+            "l_3": "Kai Tak Aerodrome"
+        },
+        "events": {
+            "e_1": "Memorial Service at Kai Tak Aerodrome",
+            "e_2": "Attack on Hong Kong"
+        },
+        "organisations": {
+            "o_1": "R.A.",
+            "o_2": "R.E.",
+            "o_3": "Indian Army",
+            "o_4": "Japanese Forces"
+        }
+    },
+    "keywords": [
+        "casualties",
+        "battle",
+        "wounded",
+        "strength",
+        "Vietnam War"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualty Statistics",
+        "Historical Analysis"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Casualty Statistics": [
+            "e_1",
+            "e_2"
+        ],
+        "Historical Analysis": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 1942",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A memorial service is held at Kai Tak Aerodrome for 1,995 Japanese soldiers who fell during the attack on Hong Kong."
+        },
+        {
+            "event": "e_2",
+            "date": "December 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An attack is launched on Hong Kong, resulting in significant casualties on both the Japanese and Allied forces."
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander H. V. P. McClintock",
+            "p_2": "Lieut.- Commander J. H. Dathan",
+            "p_3": "Lieut.- Commander C. W. McMullen",
+            "p_4": "Air Commodore A. Cole",
+            "p_5": "Captain (D) 16",
+            "p_6": "Sur; Commander W. B. D. Miller",
+            "p_7": "Surgeon Lieut. M. P. Martin"
+        },
+        "locations": {
+            "l_1": "Dieppe",
+            "l_2": "Newhaven",
+            "l_3": "Portsmouth",
+            "l_4": "Red Beach"
+        },
+        "events": {
+            "e_1": "Evacuation Operation at Dieppe",
+            "e_2": "Attack on H.M.S. CALPE",
+            "e_3": "Sinking of H.M.S. BERKELEY",
+            "e_4": "Landing Craft Convoy Movement"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Military Operation",
+        "Attack",
+        "Landing Craft",
+        "Casualties",
+        "Troops",
+        "Medical Assistance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Efforts",
+        "Medical Response",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_2"
+        ],
+        "Evacuation Efforts": [
+            "e_1"
+        ],
+        "Medical Response": [
+            "e_1",
+            "e_4"
+        ],
+        "Naval Warfare": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "During the evacuation operation, over a thousand troops are evacuated from the beaches near Dieppe amid heavy attacks and challenging conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "H.M.S. CALPE comes under attack during the evacuation, leading to casualties including Air Commodore A. Cole."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "H.M.S. BERKELEY is heavily bombed, sustaining critical damage and necessitating the sinking of the ship to save crew members."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The landing craft convoy successfully moves from Dieppe towards Newhaven under Navy escort after the major evacuation phase."
+        }
+    ]
+}

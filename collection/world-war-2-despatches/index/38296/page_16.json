@@ -1,0 +1,104 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C.S.7",
+            "p_2": "Captain G. R. B. Back"
+        },
+        "locations": {
+            "l_1": "Kaso Strait",
+            "l_2": "Alexandria",
+            "l_3": "Crete",
+            "l_4": "Sphakia",
+            "l_5": "Suda"
+        },
+        "events": {
+            "e_1": "Operation to sink IMPERIAL",
+            "e_2": "Air attacks on naval forces",
+            "e_3": "Embarkation at Sphakia"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Royal Air Force"
+        }
+    },
+    "keywords": [
+        "naval operations",
+        "air attacks",
+        "embarkation",
+        "C.S.7",
+        "JU.87",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Attacks",
+        "Evacuations",
+        "Naval Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Evacuations": [
+            "e_3"
+        ],
+        "Air Attacks": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 29",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "C.S.7 orders the sinking of the damaged ship IMPERIAL to reduce the risk to his force."
+        },
+        {
+            "event": "e_2",
+            "date": "May 29",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air attacks by JU.87s cause significant damage to the naval force, with casualties reported among the crew."
+        },
+        {
+            "event": "e_3",
+            "date": "May 29",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Force C successfully embarks troops and supplies at Sphakia during the evacuation efforts."
+        }
+    ]
+}

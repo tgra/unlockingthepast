@@ -1,0 +1,103 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander",
+            "p_2": "R. Jats",
+            "p_3": "Dogras",
+            "p_4": "Baluch",
+            "p_5": "Gurkhas",
+            "p_6": "Burma Rifles",
+            "p_7": "7 Hussars",
+            "p_8": "2 R. Tanks",
+            "p_9": "4 R.H.A.",
+            "p_10": "Cameronians"
+        },
+        "locations": {
+            "l_1": "Pegu",
+            "l_2": "Rangoon",
+            "l_3": "River Sittang",
+            "l_4": "Waw",
+            "l_5": "Thaton",
+            "l_6": "Bilin",
+            "l_7": "Kyaikto"
+        },
+        "events": {
+            "e_1": "Battle of the River Sittang",
+            "e_2": "Loss of Rangoon"
+        },
+        "organisations": {
+            "o_1": "17 Indian Division",
+            "o_2": "46 Indian Infantry Brigade",
+            "o_3": "7 Armoured Brigade"
+        }
+    },
+    "keywords": [
+        "Battle",
+        "Disaster",
+        "Evacuation",
+        "Division",
+        "Casualties",
+        "Reinforcement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics and Supply",
+        "Morale",
+        "Evacuation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics and Supply": [
+            "e_1"
+        ],
+        "Morale": [
+            "e_1"
+        ],
+        "Evacuation": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "24th February",
+            "locations": [
+                "l_3",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of the River Sittang results in disaster as the 17 Indian Division suffers heavy casualties and loses most of its equipment amidst chaotic conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd February",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Loss of Rangoon occurs after a tactical failure and retreat during which the 17 Indian Division is re-organized amidst dwindling resources and morale."
+        }
+    ]
+}

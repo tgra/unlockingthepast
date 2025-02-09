@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Truscott",
+            "p_2": "Mackensen",
+            "p_3": "General Freyberg"
+        },
+        "locations": {
+            "l_1": "Anzio",
+            "l_2": "Caserta",
+            "l_3": "Cassino",
+            "l_4": "Middle East",
+            "l_5": "Colli Laziali",
+            "l_6": "Cisterna"
+        },
+        "events": {
+            "e_1": "First Battle of Cassino",
+            "e_2": "Second Battle of Anzio",
+            "e_3": "Third Battle of Cassino",
+            "e_4": "Fourteenth Army's Second Offensive at Anzio"
+        },
+        "organisations": {
+            "o_1": "British Division",
+            "o_2": "United States Division",
+            "o_3": "New Zealand Corps",
+            "o_4": "German Army",
+            "o_5": "LXXVI Corps",
+            "o_6": "VI Corps"
+        }
+    },
+    "keywords": [
+        "regrouping",
+        "offensive",
+        "attack",
+        "defensive",
+        "bridgehead",
+        "weather conditions",
+        "bombardment"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Casualties",
+        "Weather Conditions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_2",
+            "e_3"
+        ],
+        "Casualties": [
+            "e_1",
+            "e_2"
+        ],
+        "Weather Conditions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 14, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Third Battle of Cassino is launched after careful planning and lays down heavy bombardments, but German troops are resilient."
+        },
+        {
+            "event": "e_2",
+            "date": "February 20, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Fourteenth Army's Second Offensive at Anzio begins but is ultimately deemed a failure due to strategic errors."
+        },
+        {
+            "event": "e_3",
+            "date": "March 5, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Second Battle of Anzio ends with heavy German losses, leading to a more secure Allied bridgehead."
+        }
+    ]
+}

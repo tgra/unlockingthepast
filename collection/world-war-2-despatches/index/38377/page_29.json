@@ -1,0 +1,148 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral",
+            "p_2": "Commander of 20th Cruiser Squadron",
+            "p_3": "Crew of COSSACK",
+            "p_4": "Crew of EDINBURGH",
+            "p_5": "Crew of SHEFFIELD",
+            "p_6": "Crew of HERMIONE",
+            "p_7": "Crew of ORIBI"
+        },
+        "locations": {
+            "l_1": "Christmas",
+            "l_2": "Convoy",
+            "l_3": "Position 37 31 N, 10 46 E"
+        },
+        "events": {
+            "e_1": "Night T/B Attack on Force X and Convoy",
+            "e_2": "Second Attack",
+            "e_3": "Third Attack",
+            "e_4": "Fourth Attack"
+        },
+        "organisations": {
+            "o_1": "20th Cruiser Squadron",
+            "o_2": "Fleet"
+        }
+    },
+    "keywords": [
+        "T/B attack",
+        "Fulmar escort",
+        "convoy",
+        "R.D.F.",
+        "torpedo",
+        "enemy aircraft",
+        "C.R.42"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Naval Tactics",
+        "Convoy Escort"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Air Defense": [
+            "e_1"
+        ],
+        "Naval Tactics": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Convoy Escort": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 8",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "A series of torpedo bomber attacks occur against Force X and the convoy, prompting defensive maneuvers and engagement of enemy aircraft."
+        },
+        {
+            "event": "e_2",
+            "date": "September 8",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The second attack features multiple aircraft crossing from starboard to port and attacking the convoy."
+        },
+        {
+            "event": "e_3",
+            "date": "September 8",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In the third attack, three torpedo bombers engage from the port beam, with noticeable defensive actions from HERMIONE."
+        },
+        {
+            "event": "e_4",
+            "date": "September 8",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the fourth attack, several aircraft drop torpedoes on the convoy with notable damage occurring to IMPERIAL STAR."
+        }
+    ]
+}

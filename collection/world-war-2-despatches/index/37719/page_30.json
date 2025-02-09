@@ -1,0 +1,115 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Vice-Marshal K. R. Park"
+        },
+        "locations": {
+            "l_1": "Calais",
+            "l_2": "London",
+            "l_3": "Southampton",
+            "l_4": "Portland",
+            "l_5": "Piccadilly Circus",
+            "l_6": "Duxford",
+            "l_7": "Portsmouth",
+            "l_8": "Isle of Wight",
+            "l_9": "Cherbourg",
+            "l_10": "Manston",
+            "l_11": "Hawkinge",
+            "l_12": "Lympne",
+            "l_13": "South of England"
+        },
+        "events": {
+            "e_1": "The Battle",
+            "e_2": "Air Raids on London and Southern England"
+        },
+        "organisations": {
+            "o_1": "No. 11 Group",
+            "o_2": "No. 10 Group",
+            "o_3": "No. 12 Group",
+            "o_4": "Royal Engineers"
+        }
+    },
+    "keywords": [
+        "Battle",
+        "Fighter Bomber",
+        "Convoys",
+        "Aerodromes",
+        "Air Raids"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Adjustments",
+        "Air Defense",
+        "Coordination among Groups",
+        "Damage Assessment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Tactical Adjustments": [
+            "e_1"
+        ],
+        "Air Defense": [
+            "e_2"
+        ],
+        "Coordination among Groups": [
+            "e_2"
+        ],
+        "Damage Assessment": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of event",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle consists of various attacks on coastal and inland targets, showcasing the versatility and strategic brilliance of German efforts against the British Air Force."
+        },
+        {
+            "event": "e_2",
+            "date": "Date of Air Raids",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_9",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air raids on London and surrounding cities lead to temporary loss of aerodromes and significant coordination between different fighter groups."
+        }
+    ]
+}

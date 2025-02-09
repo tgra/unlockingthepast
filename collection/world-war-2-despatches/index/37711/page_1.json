@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Bradley",
+            "p_2": "Field-Marshal von Rundstedt",
+            "p_3": "Field-Marshal Rommel",
+            "p_4": "Blaskowitz",
+            "p_5": "General Schweppenburg"
+        },
+        "locations": {
+            "l_1": "Caen",
+            "l_2": "Loire",
+            "l_3": "Seine",
+            "l_4": "Paris",
+            "l_5": "United Kingdom",
+            "l_6": "Arromanches",
+            "l_7": "France",
+            "l_8": "Low Countries",
+            "l_9": "Normandy",
+            "l_10": "Pas de Calais",
+            "l_11": "Flanders",
+            "l_12": "Riviera",
+            "l_13": "Carentan estuary",
+            "l_14": "Cherbourg"
+        },
+        "events": {
+            "e_1": "D Day",
+            "e_2": "invasion operations",
+            "e_3": "air superiority operations",
+            "e_4": "construction of artificial ports",
+            "e_5": "German coastal defense operations"
+        },
+        "organisations": {
+            "o_1": "American Army",
+            "o_2": "German Army",
+            "o_3": "Army Group B",
+            "o_4": "Army Group G",
+            "o_5": "Panzer Group West",
+            "o_6": "S.S. Corps"
+        }
+    },
+    "keywords": [
+        "D Day",
+        "Normandy",
+        "air superiority",
+        "invasion",
+        "German defenses"
+    ],
+    "themes": [
+        "Military Operations",
+        "Coastal Defense",
+        "Air Operations",
+        "Invasion Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Coastal Defense": [
+            "e_5"
+        ],
+        "Invasion Planning": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 7, 1944",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The D Day invasion operation is orchestrated, aiming to achieve air superiority and launch the Allied forces into Normandy."
+        },
+        {
+            "event": "e_2",
+            "date": "June - August 1944",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The invasion operations unfold as planned, with significant developments throughout June, July, and August 1944."
+        },
+        {
+            "event": "e_4",
+            "date": "1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Construction of artificial ports in the United Kingdom is completed to facilitate the shipping needs for the planned invasion."
+        }
+    ]
+}

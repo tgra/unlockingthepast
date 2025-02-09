@@ -1,0 +1,174 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Alex C. Chapman",
+            "p_2": "Wilfrid R. Patterson",
+            "p_3": "Edward W. B. Sim",
+            "p_4": "William G. Agnew",
+            "p_5": "Michael M. Denny",
+            "p_6": "Rory C. O Conor",
+            "p_7": "Michael W. Tomkinson",
+            "p_8": "Stuart A. Buss",
+            "p_9": "Conrad B. AlersHankey",
+            "p_10": "Percy Todd",
+            "p_11": "Roderick C. Gordon",
+            "p_12": "Henry C. Bovell",
+            "p_13": "William G. Tennant",
+            "p_14": "P. M. Sommeville",
+            "p_15": "Jchn B. de B. Kershaw",
+            "p_16": "Henry L. St.J. Fancourt",
+            "p_17": "Geoffrey A. Rotherham",
+            "p_18": "Noel E. Goddard"
+        },
+        "locations": {
+            "l_1": "Denmark Strait",
+            "l_2": "Reykjavik",
+            "l_3": "Hvalfiord",
+            "l_4": "Scapa",
+            "l_5": "South West Norway",
+            "l_6": "Trondheim",
+            "l_7": "Kristiansand",
+            "l_8": "Bergen",
+            "l_9": "Kirkenes",
+            "l_10": "Iceland"
+        },
+        "events": {
+            "e_1": "Order to rejoin Rear-Admiral Commanding",
+            "e_2": "Cancellation of VICTORIOUS and REPULSE sailing",
+            "e_3": "Bombing attack by Royal Air Force",
+            "e_4": "Reconnaissance search by R.N. Air Station",
+            "e_5": "Report of enemy convoy departure"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Admiralty",
+            "o_3": "Commander-in-Chief, Home Fleet"
+        }
+    },
+    "keywords": [
+        "Royal Navy",
+        "convoy",
+        "reconnaissance",
+        "military operations",
+        "air patrol",
+        "enemy movements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Reconnaissance",
+        "Naval Strategy",
+        "Air Patrols"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_5"
+        ],
+        "Reconnaissance": [
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_3"
+        ],
+        "Air Patrols": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_5"
+            ],
+            "eventSummary": "The squadron is ordered to rejoin Rear-Admiral Commanding after completing fuel."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_12",
+                "p_13"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The sailing of VICTORIOUS and REPULSE is cancelled by the Admiralty."
+        },
+        {
+            "event": "e_3",
+            "date": "22 May",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_16",
+                "p_17",
+                "p_18"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "A bombing attack by Royal Air Force aircraft is conducted, but fog makes reconnaissance difficult."
+        },
+        {
+            "event": "e_4",
+            "date": "22 May",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_16",
+                "p_17",
+                "p_18"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "An aircraft is dispatched to conduct reconnaissance in the fog near the Norwegian coast."
+        },
+        {
+            "event": "e_5",
+            "date": "22 May, 2000",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_16"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The report of the departure of enemy warships and convoy is received, indicating potential military movements."
+        }
+    ]
+}

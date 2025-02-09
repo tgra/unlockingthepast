@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir Reginald Dorman Smith",
+            "p_2": "General Hutton",
+            "p_3": "General Alexander",
+            "p_4": "Commodore Graham",
+            "p_5": "Colonel Chennault",
+            "p_6": "Chiang Kai-Shek"
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Magwe",
+            "l_4": "Java",
+            "l_5": "Akyab",
+            "l_6": "Calcutta",
+            "l_7": "Kunming",
+            "l_8": "Tenasserm",
+            "l_9": "Basra"
+        },
+        "events": {
+            "e_1": "Air Battle in Burma",
+            "e_2": "Meeting between General Hutton and R.A.F.",
+            "e_3": "Cooperation with A.V.G. in Burma",
+            "e_4": "Visit to Chiang Kai-Shek"
+        },
+        "organisations": {
+            "o_1": "274 Balloon Wing",
+            "o_2": "P.R.U.",
+            "o_3": "R.A.F.",
+            "o_4": "A.V.G.",
+            "o_5": "American Army Air Corps",
+            "o_6": "Generalissimo's government"
+        }
+    },
+    "keywords": [
+        "R.D.F.",
+        "Air Defence",
+        "Cooperation",
+        "Reconnaissance",
+        "Military Strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Cooperation between Services",
+        "Air Reconnaissance",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Cooperation between Services": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Air Reconnaissance": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_5"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "During the air battle in Burma, various air operations are coordinated while facing significant challenges, including a lack of adequate reconnaissance and warning systems."
+        },
+        {
+            "event": "e_2",
+            "date": "Ongoing, noted meetings",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Meetings between General Hutton and R.A.F. facilitate cooperation and strategic decisions during the ongoing air battle."
+        },
+        {
+            "event": "e_3",
+            "date": "January 31, 1942",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Colonel Chennault discusses principles of A.V.G. operations in Burma, emphasizing the need for coordinated efforts in response to air threats."
+        },
+        {
+            "event": "e_4",
+            "date": "January 30, 1942",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A visit to Chiang Kai-Shek results in promises of ongoing support for A.V.G. operations, aiming to maintain a defensive presence in Rangoon."
+        }
+    ]
+}

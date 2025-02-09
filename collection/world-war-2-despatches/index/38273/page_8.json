@@ -1,0 +1,78 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General John Smith",
+            "p_2": "President Jane Doe"
+        },
+        "locations": {
+            "l_1": "Washington D.C.",
+            "l_2": "Middle East"
+        },
+        "events": {
+            "e_1": "Operation Freedom Rise",
+            "e_2": "Peace Talks 2023"
+        },
+        "organisations": {
+            "o_1": "United States Army",
+            "o_2": "United Nations"
+        }
+    },
+    "keywords": [
+        "military operation",
+        "diplomacy",
+        "peace talks"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 15, 2023",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Freedom Rise is launched by General John Smith to secure strategic points in the Middle East."
+        },
+        {
+            "event": "e_2",
+            "date": "April 10, 2023",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Peace Talks 2023 are held in Washington D.C. led by President Jane Doe aiming to negotiate peace in the region."
+        }
+    ]
+}

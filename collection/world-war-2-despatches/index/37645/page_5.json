@@ -1,0 +1,136 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Galla",
+            "p_2": "Somali tribesmen",
+            "p_3": "Intelligence Officers",
+            "p_4": "Cairo"
+        },
+        "locations": {
+            "l_1": "Nairobi",
+            "l_2": "Italian East Africa",
+            "l_3": "Wajir",
+            "l_4": "Marsabit",
+            "l_5": "Garissa",
+            "l_6": "Bura",
+            "l_7": "Mogadiscio",
+            "l_8": "Addis Abeba",
+            "l_9": "Uebi Scebeli",
+            "l_10": "Auasc River",
+            "l_11": "Huri Hills",
+            "l_12": "North Horr",
+            "l_13": "Dukana",
+            "l_14": "Ganciaro",
+            "l_15": "Chalbi Desert"
+        },
+        "events": {
+            "e_1": "Censorship and Propaganda in Italian East Africa",
+            "e_2": "Engineer Operations from Nairobi to Addis Abeba",
+            "e_3": "Construction of New Road from Marsabit to Mega"
+        },
+        "organisations": {
+            "o_1": "Intelligence Branch",
+            "o_2": "Engineer troops"
+        }
+    },
+    "keywords": [
+        "Intelligence",
+        "Security",
+        "Censorship",
+        "Propaganda",
+        "Engineer Operations",
+        "Road Construction",
+        "Italian East Africa"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence Gathering",
+        "Censorship",
+        "Propaganda Efforts",
+        "Engineering and Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Intelligence Gathering": [
+            "e_1"
+        ],
+        "Censorship": [
+            "e_1"
+        ],
+        "Propaganda Efforts": [
+            "e_1"
+        ],
+        "Engineering and Logistics": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Various dates in early 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Censorship offices are opened to manage communications during military operations, significantly impacting intelligence and propaganda efforts aimed at undermining enemy morale."
+        },
+        {
+            "event": "e_2",
+            "date": "Until January 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Engineer troops are heavily involved in constructing and maintaining essential logistics and road networks in Italian East Africa, ensuring efficient troop movements and supplies."
+        },
+        {
+            "event": "e_3",
+            "date": "During January 1941",
+            "locations": [
+                "l_4",
+                "l_1",
+                "l_12"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A significant engineering task is completed as a new 180-mile road is constructed from Marsabit to Mega, overcoming challenging terrain and conditions, which supports military advancements."
+        }
+    ]
+}

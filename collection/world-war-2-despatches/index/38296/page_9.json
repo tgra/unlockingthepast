@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral",
+            "p_2": "Commander-in-Chief"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Melos Harbour",
+            "l_3": "Alexandria",
+            "l_4": "Kaso Strait",
+            "l_5": "Suda Bay"
+        },
+        "events": {
+            "e_1": "Raid on Melos Harbour",
+            "e_2": "Convoy A.N.31",
+            "e_3": "Landing at Suda Bay"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "1st Battle Squadron"
+        }
+    },
+    "keywords": [
+        "aircraft",
+        "dive bombing",
+        "naval operation",
+        "intelligence",
+        "evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Naval Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ],
+        "Naval Engagements": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 26th-27th",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Vice Admiral orders a raid on Melos Harbour in response to enemy activity detected via intelligence regarding an impending invasion of Crete."
+        },
+        {
+            "event": "e_2",
+            "date": "May 26th",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Convoy A.N.31, consisting of two ships, departs from Alexandria to maintain supplies to Crete under escort."
+        },
+        {
+            "event": "e_3",
+            "date": "May 27th",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Ships ABDIEL, HERO, and NIZAM land 750 Special Service Troops and Army stores at Suda Bay, providing the last reinforcement for Crete."
+        }
+    ]
+}

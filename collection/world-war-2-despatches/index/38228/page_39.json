@@ -1,0 +1,161 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Colonel Treffrey Thomson",
+            "p_2": "Lieut.-Colonel A. Campbell",
+            "p_3": "Mr. Morton",
+            "p_4": "Mr. John Wise",
+            "p_5": "Mr. Potter",
+            "p_6": "Mr. Forster",
+            "p_7": "Captain Scott"
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Upper Burma"
+        },
+        "events": {
+            "e_1": "Arrival of Chinese Troops",
+            "e_2": "Breakdown of Civil Medical Services",
+            "e_3": "Establishment of Defence Services (Burma) Canteen",
+            "e_4": "Martial Law Decision",
+            "e_5": "Evacuation Policy Discussion",
+            "e_6": "Demolition of Oilfields and Refineries"
+        },
+        "organisations": {
+            "o_1": "Free Burma Army",
+            "o_2": "Docks Operating Company",
+            "o_3": "Irrawaddy Flotilla Company",
+            "o_4": "Defence Services (Burma)"
+        }
+    },
+    "keywords": [
+        "Medical services",
+        "Troops",
+        "Morale",
+        "Transportation",
+        "Martial Law",
+        "Evacuation",
+        "Demolition"
+    ],
+    "themes": [
+        "Medical Operations",
+        "Military Logistics",
+        "Civilian Affairs",
+        "Martial Law",
+        "Strategic Evacuation",
+        "Resource Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4",
+            "e_6"
+        ],
+        "Civilian Affairs": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_6"
+            ],
+            "eventSummary": "Chinese troops arrive with inadequate medical organization, straining military resources."
+        },
+        {
+            "event": "e_2",
+            "date": "Date not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A breakdown of civil medical services adds strain to military organisation during the campaign."
+        },
+        {
+            "event": "e_3",
+            "date": "January or February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Defence Services (Burma) Canteen is established to provide morale support for troops."
+        },
+        {
+            "event": "e_4",
+            "date": "Date not specified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A decision is made to appoint a military commandant as lawlessness increases in Rangoon."
+        },
+        {
+            "event": "e_5",
+            "date": "Date not specified",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Discussion on evacuation policy emphasizes the need for timely demolition of key resources if Rangoon becomes indefensible."
+        },
+        {
+            "event": "e_6",
+            "date": "Date not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Planning for the demolition of oilfields is underway in anticipation of a potential loss of control."
+        }
+    ]
+}

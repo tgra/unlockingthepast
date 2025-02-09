@@ -1,0 +1,87 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A.E.A.F.",
+            "p_2": "Unknown Military Leadership"
+        },
+        "locations": {
+            "l_1": "United Kingdom",
+            "l_2": "North African Theatre",
+            "l_3": "D-Day Beach-head",
+            "l_4": "Julouville"
+        },
+        "events": {
+            "e_1": "D-Day Assault",
+            "e_2": "Establishment of G.C.I. Stations"
+        },
+        "organisations": {
+            "o_1": "British Second Tactical Air Force",
+            "o_2": "United States Ninth Air Force",
+            "o_3": "Combined Control Centre",
+            "o_4": "Executive Control Centre",
+            "o_5": "Operational Research Section"
+        }
+    },
+    "keywords": [
+        "signals communications",
+        "Radar cover",
+        "G.C.I. stations",
+        "W/T communications",
+        "air operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Communications Planning",
+        "Logistics and Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Communications Planning": [
+            "e_1"
+        ],
+        "Logistics and Coordination": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On D-Day, the assault forces land on the beach-head and begin operations, requiring robust signals communications to maintain control and coordination."
+        },
+        {
+            "event": "e_2",
+            "date": "D-Day",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The establishment of G.C.I. stations is initiated on D-Day to provide radar cover, despite challenges faced with equipment losses."
+        }
+    ]
+}

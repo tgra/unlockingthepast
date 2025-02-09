@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain",
+            "p_2": "Vice Admiral",
+            "p_3": "Admiral Nord",
+            "p_4": "Rear Admiral Wake-Walker",
+            "p_5": "Captain Tennant",
+            "p_6": "Captain Bush",
+            "p_7": "Commander-in-Chief, Nore"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "Dover",
+            "l_3": "La Panne",
+            "l_4": "Bray",
+            "l_5": "Malo",
+            "l_6": "Sheerness",
+            "l_7": "Ramsgate"
+        },
+        "events": {
+            "e_1": "Evacuation of British troops",
+            "e_2": "Dunkirk bombing",
+            "e_3": "Operation Dynamo",
+            "e_4": "Consultation between Admiralty and Vice Admiral"
+        },
+        "organisations": {
+            "o_1": "War Office",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Dunkirk",
+        "Ships",
+        "Destroyers",
+        "Military Operations",
+        "Troop Concentration"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualties",
+        "Evacuation Strategy",
+        "Command and Communication"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Evacuation Strategy": [
+            "e_1"
+        ],
+        "Command and Communication": [
+            "e_4",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 30, 1940",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_2",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of British troops continues at maximum speed during the night, with Navy and other vessels participating in transporting them from beaches to safety."
+        },
+        {
+            "event": "e_2",
+            "date": "May 29-30, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Dunkirk is undergoing heavy air bombardment, resulting in significant losses among the destroyer forces supporting the evacuation."
+        },
+        {
+            "event": "e_3",
+            "date": "May 27 - June 4, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Operation Dynamo is launched to evacuate Allied troops from Dunkirk, facing fierce enemy attacks and logistical challenges."
+        },
+        {
+            "event": "e_4",
+            "date": "May 30, 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_7"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A consultation is held between the Admiralty and the Vice Admiral regarding the ongoing evacuation efforts and challenges faced in Dunkirk."
+        }
+    ]
+}

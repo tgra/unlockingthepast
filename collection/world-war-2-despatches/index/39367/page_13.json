@@ -1,0 +1,110 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General von Senger",
+            "p_2": "General von Vietinghoff",
+            "p_3": "Field Marshal Alexander",
+            "p_4": "Marshal Tito"
+        },
+        "locations": {
+            "l_1": "River Po",
+            "l_2": "Italy",
+            "l_3": "Milan",
+            "l_4": "Trieste",
+            "l_5": "Caserta",
+            "l_6": "Adige River",
+            "l_7": "Brenta River",
+            "l_8": "Veneto",
+            "l_9": "Alps"
+        },
+        "events": {
+            "e_1": "Surrender of German forces",
+            "e_2": "Operation Corncob",
+            "e_3": "Link-up with New Zealand forces and Marshal Tito's forces"
+        },
+        "organisations": {
+            "o_1": "German XIV Panzer Corps",
+            "o_2": "Allied Air Forces",
+            "o_3": "M.A.S.A.F.",
+            "o_4": "M.A.T.A.F."
+        }
+    },
+    "keywords": [
+        "Allied Forces",
+        "German Army",
+        "surrender",
+        "ferries",
+        "bombing",
+        "air operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Surrender",
+        "Air Strategy",
+        "Ground Forces Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Surrender": [
+            "e_1"
+        ],
+        "Air Strategy": [
+            "e_2"
+        ],
+        "Ground Forces Coordination": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "29th April",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The surrender instrument is signed at Field Marshal Alexander's Headquarters, ending major hostilities."
+        },
+        {
+            "event": "e_2",
+            "date": "25th to 26th April",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Corncob is conducted to block German retreats by destroying critical road bridges."
+        },
+        {
+            "event": "e_3",
+            "date": "1st May",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "New Zealand forces and Marshal Tito’s forces link up in the Trieste area, impacting post-war territorial claims."
+        }
+    ]
+}

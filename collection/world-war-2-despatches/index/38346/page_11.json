@@ -1,0 +1,100 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral",
+            "p_2": "Navigating Officer",
+            "p_3": "Surviving Officers of HOUSTON and PERTH"
+        },
+        "locations": {
+            "l_1": "Sourabaya",
+            "l_2": "Colombo",
+            "l_3": "Macassar P.O.W. Camp",
+            "l_4": "Bawean Island",
+            "l_5": "Sunda Strait"
+        },
+        "events": {
+            "e_1": "Action involving EXETER",
+            "e_2": "Japanese air raids on 28th February",
+            "e_3": "Funeral of those killed in action"
+        },
+        "organisations": {
+            "o_1": "Dutch Navy",
+            "o_2": "Allied Squadron"
+        }
+    },
+    "keywords": [
+        "EXETER",
+        "Sourabaya",
+        "Japanese destroyers",
+        "naval action",
+        "enemy air raids"
+    ],
+    "themes": [
+        "Military Operations",
+        "International Cooperation",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "International Cooperation": [
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The action involving EXETER demonstrates the challenges of coordinating a heterogeneous Allied naval squadron while engaging enemy forces."
+        },
+        {
+            "event": "e_2",
+            "date": "28th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Continuous enemy air raids occur on 28th February, impacting the naval forces engaged in ongoing battles."
+        },
+        {
+            "event": "e_3",
+            "date": "28th February, 1700",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A funeral for those killed in action takes place with full naval honors, reflecting on the sacrifices made during recent conflicts."
+        }
+    ]
+}

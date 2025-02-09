@@ -1,0 +1,103 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain (D)",
+            "p_2": "Admiral Commanding"
+        },
+        "locations": {
+            "l_1": "Seidisfiord",
+            "l_2": "Position B",
+            "l_3": "Position X",
+            "l_4": "Position C"
+        },
+        "events": {
+            "e_1": "Operation of Force P",
+            "e_2": "Search operation at Position X",
+            "e_3": "Oiling operations for ships"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "ADVENTURE",
+        "FURIOUS",
+        "DEVONSHIRE",
+        "oil",
+        "patrol",
+        "submarine",
+        "fog"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistical Coordination",
+        "Search and Rescue"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistical Coordination": [
+            "e_3"
+        ],
+        "Search and Rescue": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 26th July, Force P departs from Seidisfiord at 2300 with an air patrol provisioned for submarine threats."
+        },
+        {
+            "event": "e_2",
+            "date": "28th July",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A search operation is conducted at Position X in the early hours of 28th July, with aircraft and ships covering substantial front amidst fog."
+        },
+        {
+            "event": "e_3",
+            "date": "28th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Oiling operations for various vessels occur on 28th July to prepare them for ongoing military engagement."
+        }
+    ]
+}

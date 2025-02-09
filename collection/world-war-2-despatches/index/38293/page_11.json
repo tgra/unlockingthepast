@@ -1,0 +1,109 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "F.O.A.M.",
+            "p_2": "G.A.15"
+        },
+        "locations": {
+            "l_1": "Monemvasia",
+            "l_2": "Nauplia",
+            "l_3": "Suda",
+            "l_4": "Milo",
+            "l_5": "Tolon",
+            "l_6": "Raphina",
+            "l_7": "Zea Island",
+            "l_8": "Kalamata"
+        },
+        "events": {
+            "e_1": "Evacuation from Monemvasia",
+            "e_2": "Bombing of the Scottish Prince",
+            "e_3": "Sinking of S.S. Slamat"
+        },
+        "organisations": {
+            "o_1": "H.M.S. Grimsby",
+            "o_2": "Naval Officer-in-Charge",
+            "o_3": "CALCUTTA",
+            "o_4": "H.M.S. Havock"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Bombing",
+        "Navy Operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Assistance",
+        "Emergency Evacuation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Naval Assistance": [
+            "e_2",
+            "e_1"
+        ],
+        "Emergency Evacuation": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26-27 April 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "During the night of 26th/27th April, a significant evacuation operation is conducted from Monemvasia due to the bombing of allied ships, leading to a complex situation where not all troops could be evacuated."
+        },
+        {
+            "event": "e_2",
+            "date": "25 April 1941",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Scottish Prince is bombed while en route from Smyrna to Suda, but manages to reach Suda with assistance from H.M.S. Grimsby, highlighting the dangers faced by naval operations in the area."
+        },
+        {
+            "event": "e_3",
+            "date": "27 April 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The S.S. Slamat is bombed and sinks off Nauplia after failing to depart on time, illustrating the chaotic conditions during the evacuation efforts."
+        }
+    ]
+}

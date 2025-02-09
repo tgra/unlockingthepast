@@ -1,0 +1,113 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Kalam-Maji",
+            "p_2": "A. A. Hayton",
+            "p_3": "Emperor Haile Selassie"
+        },
+        "locations": {
+            "l_1": "Addis Abeba",
+            "l_2": "Maji",
+            "l_3": "Lokitaung",
+            "l_4": "Khartoum",
+            "l_5": "Debra Marcos",
+            "l_6": "Abyssinia",
+            "l_7": "Gojjam"
+        },
+        "events": {
+            "e_1": "Occupation of Addis Abeba",
+            "e_2": "Disarmament Program of Italian Police",
+            "e_3": "Military Operations against Keren"
+        },
+        "organisations": {
+            "o_1": "E.A. Force",
+            "o_2": "Occupied Enemy Territory Administration"
+        }
+    },
+    "keywords": [
+        "Addis Abeba",
+        "disarmament",
+        "Italian police",
+        "Ethiopian patriots",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Disarmament",
+        "Diplomacy",
+        "Political Administration"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Disarmament": [
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Political Administration": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of entry unspecified but recent to the withdrawal at Lokitaung",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Troops enter Addis Abeba and encounter armed Italian resistance, necessitating a disarmament program for the remaining Italian police."
+        },
+        {
+            "event": "e_2",
+            "date": "End of April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The disarmament program for Italian police is rapidly pushed forward, resulting in no more armed police in Addis Abeba."
+        },
+        {
+            "event": "e_3",
+            "date": "Unspecified but contemporaneous with the events in Addis Abeba",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Military operations are conducted against Keren, enhancing the chances for E.A. Force to enter Addis Abeba."
+        }
+    ]
+}

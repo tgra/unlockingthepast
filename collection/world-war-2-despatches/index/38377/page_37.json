@@ -1,0 +1,140 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral Commanding",
+            "p_2": "H.E. the Governor of Malta",
+            "p_3": "Admuralty"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Gibraltar",
+            "l_3": "Balearics",
+            "l_4": "Spanish",
+            "l_5": "French"
+        },
+        "events": {
+            "e_1": "Convoy M.G.2 Departure",
+            "e_2": "Movements of Group I",
+            "e_3": "Movements of Group II",
+            "e_4": "Air Attacks on D.3",
+            "e_5": "Aircraft Recognition Event"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty",
+            "o_3": "R.A.F."
+        }
+    },
+    "keywords": [
+        "Group I",
+        "Group II",
+        "R.D.F.",
+        "A/S patrol",
+        "aircraft",
+        "convoy",
+        "shadowing aircraft"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Tactics",
+        "Convoy Protection",
+        "Air Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Convoy Protection": [
+            "e_1",
+            "e_4"
+        ],
+        "Air Reconnaissance": [
+            "e_4",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The convoy M.G.2 departs from Malta with Army and R.A.F. personnel aboard, under the request of the Governor of Malta, for their own safety."
+        },
+        {
+            "event": "e_2",
+            "date": "26th September",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Group I maintains air patrols and navigates through the morning, responding to potential air threats while positioned near the Balearics."
+        },
+        {
+            "event": "e_3",
+            "date": "26th September",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Group II proceeds towards the east, coordinating movements despite unforeseen delays with one of the destroyers."
+        },
+        {
+            "event": "e_4",
+            "date": "27th September",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Expectations of enemy air attacks lead to the preparation of air defense operations from ARK ROYAL and vigilance of incoming reconnaissance."
+        },
+        {
+            "event": "e_5",
+            "date": "26th September",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An aircraft with Spanish colors is sighted during the operations, indicating a potential reconnaissance activity in the area."
+        }
+    ]
+}

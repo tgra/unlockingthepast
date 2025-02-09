@@ -1,0 +1,122 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Montgomery",
+            "p_2": "Rommel",
+            "p_3": "General von Thoma"
+        },
+        "locations": {
+            "l_1": "Egyptian soil",
+            "l_2": "Tell el Aqqaqir",
+            "l_3": "Ghazal",
+            "l_4": "Fuka",
+            "l_5": "Rahman track"
+        },
+        "events": {
+            "e_1": "Battle of 2nd November",
+            "e_2": "Attack on 4th November",
+            "e_3": "British armoured pursuit"
+        },
+        "organisations": {
+            "o_1": "1 Armoured Division",
+            "o_2": "21 Panzer Division",
+            "o_3": "4 Indian Division",
+            "o_4": "10 Corps",
+            "o_5": "X Corps",
+            "o_6": "XX Corps",
+            "o_7": "Ariete Division",
+            "o_8": "New Zealand Division",
+            "o_9": "Royal Dragoons",
+            "o_10": "5 Indian Brigade",
+            "o_11": "4/6 South African Armoured Car Regiment"
+        }
+    },
+    "keywords": [
+        "armoured division",
+        "battle",
+        "retreat",
+        "infantry assault",
+        "armoured car regiment"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Maneuvers",
+        "War Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Tactical Maneuvers": [
+            "e_3"
+        ],
+        "War Strategy": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2nd November",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of 2nd November is a decisive action where heavy losses occur on both sides, culminating in the enemy's indication of a withdrawal."
+        },
+        {
+            "event": "e_2",
+            "date": "4th November",
+            "locations": [
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An infantry assault occurs on 4th November near Tell el Aqqaqir, resulting in a successful breach of enemy defenses and demonstrating the effectiveness of coordinated attacks."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The British armoured pursuit begins following the battle, as British forces press on to secure positions and prevent orderly enemy retreat."
+        }
+    ]
+}

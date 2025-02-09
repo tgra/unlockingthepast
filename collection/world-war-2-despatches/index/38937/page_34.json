@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Salerno",
+            "l_2": "Sicily",
+            "l_3": "Naples",
+            "l_4": "Sardinia",
+            "l_5": "Foggia",
+            "l_6": "Lombardy",
+            "l_7": "Heel",
+            "l_8": "Trapani"
+        },
+        "events": {
+            "e_1": "Capture of Salerno Airfield",
+            "e_2": "Airborne Operations Initiation",
+            "e_3": "Bomber Operations against Enemy Airfields"
+        },
+        "organisations": {
+            "o_1": "S.E.F. (Squadron)",
+            "o_2": "T.E.F. (Task Force)"
+        }
+    },
+    "keywords": [
+        "Airfield Accommodation",
+        "Fighter Resources",
+        "Bomber Operations",
+        "Airborne Forces",
+        "Salerno Assault"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Strategy",
+        "Logistical Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Strategy": [
+            "e_1",
+            "e_3"
+        ],
+        "Logistical Coordination": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_6",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The event focuses on the need to capture the airfield at Salerno early to support the assault, emphasizing logistical considerations such as airfield accommodation and proximity to ports."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Airborne Operations are planned to secure airfields, with considerations made regarding fighter cover and long-range resource allocation."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Bomber Operations are outlined to target enemy airfields in key locations, ensuring that air coverage can be established for allied forces."
+        }
+    ]
+}

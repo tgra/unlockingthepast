@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Master of S.S. OHIO",
+            "p_2": "H.M.S. KENYA",
+            "p_3": "H.M.S. ASHANTI"
+        },
+        "locations": {
+            "l_1": "Grand Harbour",
+            "l_2": "Cape Bon",
+            "l_3": "Fratelli Rock",
+            "l_4": "Galita Island",
+            "l_5": "Force Z"
+        },
+        "events": {
+            "e_1": "Entry of S.S. OHIO",
+            "e_2": "Withdrawal of Force X",
+            "e_3": "Attacks on Force X",
+            "e_4": "Joining of Force Z"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "S.S. OHIO",
+        "Force X",
+        "E-Boats",
+        "U-Boat",
+        "air attacks",
+        "JU.88s",
+        "Force Z"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Aerial Attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Aerial Attacks": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 15",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "S.S. OHIO enters Grand Harbour at 0755 after a struggle by her Master and escorts."
+        },
+        {
+            "event": "e_2",
+            "date": "August 15",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Force X's withdrawal goes uneventfully until they are attacked by E-Boats near Cape Bon at 0130."
+        },
+        {
+            "event": "e_3",
+            "date": "August 15",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Force X endures multiple air attacks starting at 0942, including confrontations with submarines and dive bombers."
+        },
+        {
+            "event": "e_4",
+            "date": "August 15",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "At 1800, Force X successfully joins Force Z in their operation."
+        }
+    ]
+}

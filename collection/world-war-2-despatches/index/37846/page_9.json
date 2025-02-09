@@ -1,0 +1,145 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "German pilots",
+            "p_2": "British pilots",
+            "p_3": "Greeks",
+            "p_4": "British Army officials"
+        },
+        "locations": {
+            "l_1": "Athens",
+            "l_2": "Argos",
+            "l_3": "Crete",
+            "l_4": "Egypt",
+            "l_5": "Albania",
+            "l_6": "Yugo-Slavia"
+        },
+        "events": {
+            "e_1": "Evacuation of the British Army",
+            "e_2": "Air Campaign in Greece",
+            "e_3": "German Air Attacks",
+            "e_4": "Operation of Sunderland Flying Boats"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "B.O.A.C."
+        }
+    },
+    "keywords": [
+        "Hurricanes",
+        "dive bombers",
+        "air support",
+        "evacuation",
+        "air campaign",
+        "enemy aircraft",
+        "gallantry"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Campaign",
+        "Evacuation Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Evacuation Strategy": [
+            "e_1",
+            "e_4"
+        ],
+        "Operational Challenges": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 22nd - 23rd, 1941",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On April 22nd, remaining Hurricanes are sent to Argos to cover the evacuation of British forces amid concentrated German air attacks. By April 23rd, many Hurricanes are destroyed, leading to a retreat to Crete."
+        },
+        {
+            "event": "e_2",
+            "date": "1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The air campaign in Greece involves coordinated attacks against enemy aircraft throughout 1941, resulting in the destruction of 232 confirmed enemy aircraft despite severe disadvantages."
+        },
+        {
+            "event": "e_3",
+            "date": "April 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "In April 1941, German air attacks are concentrated on the Athens area, leading to intense air operations involving British pilots and resulting in significant losses for both sides."
+        },
+        {
+            "event": "e_4",
+            "date": "1941",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Throughout the evacuation process in 1941, Sunderland flying boats carry out numerous flights ferrying airmen and soldiers between the mainland, Crete, and Egypt, showcasing remarkable bravery in dangerous conditions."
+        }
+    ]
+}

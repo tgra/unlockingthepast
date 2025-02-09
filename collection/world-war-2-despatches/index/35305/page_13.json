@@ -1,0 +1,144 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Petre",
+            "p_2": "General Sir Edmund Ironside",
+            "p_3": "General Billotte",
+            "p_4": "General Georges",
+            "p_5": "General Weygand"
+        },
+        "locations": {
+            "l_1": "Arras",
+            "l_2": "Canal du Nord",
+            "l_3": "Sailly",
+            "l_4": "Albert",
+            "l_5": "Doullens",
+            "l_6": "Amiens",
+            "l_7": "Somme",
+            "l_8": "Cambrai",
+            "l_9": "Hesdin",
+            "l_10": "Montreuil",
+            "l_11": "G.H.Q.",
+            "l_12": "Wahagnies",
+            "l_13": "Scarpe"
+        },
+        "events": {
+            "e_1": "Counter Attack on 21st May",
+            "e_2": "Withdrawal from Canal du Nord",
+            "e_3": "Bombing of Arras on 19th May",
+            "e_4": "Orders issued by General Weygand on 23rd May",
+            "e_5": "Attacks on 5th and 50th Divisions"
+        },
+        "organisations": {
+            "o_1": "B.E.F.",
+            "o_2": "War Office",
+            "o_3": "Air Ministry",
+            "o_4": "French Army",
+            "o_5": "Belgian Command"
+        }
+    },
+    "keywords": [
+        "Withdrawal",
+        "Counter Attack",
+        "Reconnaissance",
+        "Bombing",
+        "German Troops",
+        "Armoured Forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Allied Coordination",
+        "German Assaults"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_5"
+        ],
+        "Allied Coordination": [
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_2",
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "21st May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_5"
+            ],
+            "eventSummary": "On 21st May, a counter-attack is launched by the 5th and 50th Divisions near Arras as part of a coordinated effort to regain control amid increasing pressure from German forces."
+        },
+        {
+            "event": "e_2",
+            "date": "19th May",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The withdrawal from the Canal du Nord takes place as General Petre orders the 23rd Division to reposition to a more secure line following pressure from enemy forces."
+        },
+        {
+            "event": "e_3",
+            "date": "19th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Arras experiences heavy bombing for the first time as the situation for the 23rd Division becomes precarious but they manage not to be seriously attacked."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd May",
+            "locations": [],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "General Weygand announces that he is now Commander-in-Chief in all theaters of war, signaling a shift in leadership amidst the crisis."
+        },
+        {
+            "event": "e_5",
+            "date": "20th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The 5th and 50th Divisions prepare to launch an attack amid deepening breaches in the defense south of Arras, confronting advancing German armoured forces."
+        }
+    ]
+}

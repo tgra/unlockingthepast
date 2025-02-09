@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Montgomery",
+            "p_2": "Messe"
+        },
+        "locations": {
+            "l_1": "Wadi Akarit",
+            "l_2": "Maknassy",
+            "l_3": "Kessera",
+            "l_4": "Fondouk",
+            "l_5": "Pichon",
+            "l_6": "Sfax",
+            "l_7": "Kairouan",
+            "l_8": "El Guettar"
+        },
+        "events": {
+            "e_1": "Battle of Wadi Akarit",
+            "e_2": "Attack on El Guettar",
+            "e_3": "Advance to Kairouan"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "30 Corps",
+            "o_3": "4 Indian Division",
+            "o_4": "5x Division",
+            "o_5": "50 Division",
+            "o_6": "II Corps",
+            "o_7": "g Corps",
+            "o_8": "Royal Sussex",
+            "o_9": "2 Gurkhas",
+            "o_10": "Long Range Desert Group",
+            "o_11": "Raiding Forces",
+            "o_12": "First Army"
+        }
+    },
+    "keywords": [
+        "Battle",
+        "Counter-attack",
+        "Infantry assault",
+        "Casualties",
+        "Victory",
+        "Enemy withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Tactical Maneuvers",
+        "Casualty Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ],
+        "Tactical Maneuvers": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "6th April",
+            "locations": [
+                "Wadi Akarit"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Wadi Akarit commences with Eighth Army launching an infantry assault at dawn, resulting in fierce fighting against German and Italian forces."
+        },
+        {
+            "event": "e_2",
+            "date": "2nd April",
+            "locations": [
+                "El Guettar"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An attack is launched to distract enemy forces on the El Guettar road, aimed at facilitating operations for the upcoming battle."
+        },
+        {
+            "event": "e_3",
+            "date": "8th April",
+            "locations": [
+                "Kairouan"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_12"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The advance towards Kairouan culminates in a significant attack as 6 Armoured Division secures a critical pass location."
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Blanchard",
+            "p_2": "Admiral Abrial",
+            "p_3": "General Fagalde",
+            "p_4": "General Koeltz",
+            "p_5": "H.M. the King of the Belgians",
+            "p_6": "General Prioux"
+        },
+        "locations": {
+            "l_1": "La Panne",
+            "l_2": "Bray Dunes",
+            "l_3": "Malo-les-Bains",
+            "l_4": "Dunkirk",
+            "l_5": "Coxyde",
+            "l_6": "Ypres",
+            "l_7": "Bergues",
+            "l_8": "Hazebrouck",
+            "l_9": "Premesques",
+            "l_10": "Houtkerque",
+            "l_11": "Poperinghe",
+            "l_12": "Lille",
+            "l_13": "Cassel",
+            "l_14": "Wormhoudt",
+            "l_15": "Bethune"
+        },
+        "events": {
+            "e_1": "Bombing of Dunkirk",
+            "e_2": "Belgian Armistice",
+            "e_3": "Evacuation Planning"
+        },
+        "organisations": {
+            "o_1": "G.H.Q.",
+            "o_2": "French High Command"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "Belgian Army",
+        "military beach parties",
+        "air defence",
+        "bombing",
+        "armistice",
+        "withdrawal",
+        "troop movements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Evacuation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th May",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Dunkirk experiences a severe bombing attack which escalates the urgency of evacuating troops due to heavy damage and fire in the town."
+        },
+        {
+            "event": "e_2",
+            "date": "27th May",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "H.M. the King of the Belgians requests an armistice as the Belgian Army capitulates, indicating a significant shift in military dynamics."
+        },
+        {
+            "event": "e_3",
+            "date": "28th May",
+            "locations": [
+                "l_4",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Discussion between Allied commanders on evacuation strategies becomes critical after the Belgian Army ceases to exist, necessitating urgent decision-making."
+        }
+    ]
+}

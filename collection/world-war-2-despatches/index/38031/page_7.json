@@ -1,0 +1,90 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "Vice-Admiral, Light Forces",
+            "p_3": "Captain (D), Fourteenth Destroyer Flotilla"
+        },
+        "locations": {
+            "l_1": "Maleme",
+            "l_2": "Commander-in-Chief"
+        },
+        "events": {
+            "e_1": "Attack on LITTORIO",
+            "e_2": "Night Action"
+        },
+        "organisations": {
+            "o_1": "Maleme Fleet Air Arm",
+            "o_2": "Fourteenth Destroyer Flotilla",
+            "o_3": "Tenth Destroyer Flotilla",
+            "o_4": "Second Destroyer Flotilla"
+        }
+    },
+    "keywords": [
+        "Battleship",
+        "Destroyers",
+        "Aircraft",
+        "Torpedo",
+        "Cruiser",
+        "Night action",
+        "Fleet"
+    ],
+    "themes": [
+        "Military Operations",
+        "Engagement Decisions",
+        "Aerial Attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Engagement Decisions": [
+            "e_2"
+        ],
+        "Aerial Attacks": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified (reported at 1515 and 1235)",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The aerial striking force attacks the damaged battleship LITTORIO and reports three hits."
+        },
+        {
+            "event": "e_2",
+            "date": "At 2040",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Commander-in-Chief decides to engage the enemy fleet at night, directing the destroyers to attack."
+        }
+    ]
+}

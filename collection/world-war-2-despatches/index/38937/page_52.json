@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General von Vietinghoff"
+        },
+        "locations": {
+            "l_1": "Anzio",
+            "l_2": "North Italy",
+            "l_3": "Minturno",
+            "l_4": "Castelforte",
+            "l_5": "San Giorgio",
+            "l_6": "Liri valley",
+            "l_7": "Garigliano",
+            "l_8": "Rome",
+            "l_9": "Civitavecchia",
+            "l_10": "Perugia"
+        },
+        "events": {
+            "e_1": "Landing at Anzio",
+            "e_2": "10 Corps attack across the Garigliano",
+            "e_3": "Counter-attack on the 22nd January",
+            "e_4": "Consolidation of the Bridgehead"
+        },
+        "organisations": {
+            "o_1": "Tenth Army",
+            "o_2": "Army Group C"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Assault Force",
+        "Surprise Attack",
+        "Enemy Defences",
+        "Bridgehead"
+    ],
+    "themes": [
+        "Military Operations",
+        "Surprise Tactics",
+        "Enemy Reconnaissance",
+        "Strategic Objectives"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Surprise Tactics": [
+            "e_1",
+            "e_4"
+        ],
+        "Enemy Reconnaissance": [
+            "e_1"
+        ],
+        "Strategic Objectives": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd January",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The landing at Anzio is achieved with negligible resistance, allowing forces to establish a foothold on enemy territory."
+        },
+        {
+            "event": "e_2",
+            "date": "17th January",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The 10 Corps launch an attack across the Garigliano to disrupt enemy defenses ahead of the Anzio landing."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd January",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_1"
+            ],
+            "eventSummary": "A powerful counter-attack is launched by the Germans against the forces at Anzio."
+        },
+        {
+            "event": "e_4",
+            "date": "22nd January",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Consolidation of the bridgehead is attempted but faces challenges, dampening initial expectations for rapid advancement."
+        }
+    ]
+}

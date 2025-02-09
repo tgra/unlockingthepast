@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Col. Chennault",
+            "p_2": "Commander-in-Chief",
+            "p_3": "G.O.C.",
+            "p_4": "senior staff officers",
+            "p_5": "station commander"
+        },
+        "locations": {
+            "l_1": "Kunming",
+            "l_2": "Singapore",
+            "l_3": "Ceylon",
+            "l_4": "Malaya",
+            "l_5": "Colombo"
+        },
+        "events": {
+            "e_1": "Initiation of Air Support to Chinese",
+            "e_2": "Japanese landing in Malaya",
+            "e_3": "Establishment of Combined Operations Room at Colombo",
+            "e_4": "Joint Training for Army and Air Force Units"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "A.H.Q.",
+            "o_3": "G.H.Q.",
+            "o_4": "R.A.A.F.",
+            "o_5": "Navy"
+        }
+    },
+    "keywords": [
+        "Air Support",
+        "Military Operations",
+        "Naval Coordination",
+        "Joint Training"
+    ],
+    "themes": [
+        "Military Operations",
+        "Cooperation",
+        "Preparation",
+        "Strategic Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Cooperation": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Planning": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Preparations are set in motion for providing air support to the Chinese with plans for an International Air Force, including R.A.F. units and an American Volunteer Group."
+        },
+        {
+            "event": "e_2",
+            "date": "Date Unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Japanese forces land in Malaya, prompting urgent responses to assist in defense and coordination of air and ground forces."
+        },
+        {
+            "event": "e_3",
+            "date": "Date Unknown",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A Combined Operations Room is established at Colombo to improve naval and air coordination in response to military needs."
+        },
+        {
+            "event": "e_4",
+            "date": "September 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Joint training sessions are initiated to enhance cooperation between Army and Air Force units, focusing on tactical operations."
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commanding Officer of the ASHANTI"
+        },
+        "locations": {
+            "l_1": "Barents Sea",
+            "l_2": "North Russia",
+            "l_3": "Iceland",
+            "l_4": "Kola Inlet",
+            "l_5": "Bear Island",
+            "l_6": "Narvik",
+            "l_7": "Spitzbergen",
+            "l_8": "Norway"
+        },
+        "events": {
+            "e_1": "Convoy P.Q.16",
+            "e_2": "Convoy Q.P.12",
+            "e_3": "Operation for the supply of Malta",
+            "e_4": "Attack on Convoy P.Q.16",
+            "e_5": "Threat of Heavy Surface Attack in June"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "Royal Navy",
+            "o_3": "Home Fleet"
+        }
+    },
+    "keywords": [
+        "Reconnaissance",
+        "A/S Patrols",
+        "Fighter Protection",
+        "Convoy",
+        "U-boats",
+        "Damage",
+        "Air Attack",
+        "Surface Attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Naval Convoys",
+        "Enemy Engagements",
+        "Strategic Threat"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4",
+            "e_5"
+        ],
+        "Air Support": [
+            "e_4"
+        ],
+        "Naval Convoys": [
+            "e_1",
+            "e_2"
+        ],
+        "Enemy Engagements": [
+            "e_4"
+        ],
+        "Strategic Threat": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th May",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_2"
+            ],
+            "eventSummary": "Convoy P.Q.16, with 35 ships, sets sail despite adverse conditions and faces a series of air attacks over several days."
+        },
+        {
+            "event": "e_2",
+            "date": "31st May",
+            "locations": [
+                "l_4",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Convoy Q.P.12 leaves Kola Inlet for Iceland without being attacked while the enemy focuses on another convoy."
+        },
+        {
+            "event": "e_3",
+            "date": "Early June",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation for the supply of Malta hampers the availability of destroyers for Russian convoy operations."
+        },
+        {
+            "event": "e_4",
+            "date": "25th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The first attack on convoy P.Q.16 occurs, resulting in damage to one ship while enemy aircraft are engaged."
+        },
+        {
+            "event": "e_5",
+            "date": "June",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Information indicates an imminent attack by enemy heavy surface units against eastbound convoys, creating a strategic threat."
+        }
+    ]
+}

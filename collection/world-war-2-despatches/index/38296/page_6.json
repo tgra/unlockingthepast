@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief Mediterranean",
+            "p_2": "King of Greece"
+        },
+        "locations": {
+            "l_1": "Cape Elaphonisi",
+            "l_2": "Crete",
+            "l_3": "Maleme",
+            "l_4": "Alexandria",
+            "l_5": "Heraklion",
+            "l_6": "Canea Bay",
+            "l_7": "Cephalonia",
+            "l_8": "Levkas",
+            "l_9": "Gulf of Salonika",
+            "l_10": "Tymbaki"
+        },
+        "events": {
+            "e_1": "Sinking of FIJI",
+            "e_2": "Withdrawal to Alexandria",
+            "e_3": "Counter Attack on Maleme",
+            "e_4": "Laying of Minefields"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "16th Infantry Brigade"
+        }
+    },
+    "keywords": [
+        "FIJI",
+        "KANDAHAR",
+        "KINGSTON",
+        "GLOUCESTER",
+        "air attack",
+        "withdrawal",
+        "minefields",
+        "C.S.7",
+        "casualties",
+        "bombing"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Strategic Withdrawals",
+        "Aerial Bombardment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_4"
+        ],
+        "Strategic Withdrawals": [
+            "e_2"
+        ],
+        "Aerial Bombardment": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd May, 1941",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The ship FIJI is hit and ultimately sinks following multiple bombing attacks near Cape Elaphonisi, leading to a severe loss of naval capabilities."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd May, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "In response to losses, the Commander-in-Chief Mediterranean orders all forces to withdraw to Alexandria."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd May, 1941",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Plans for a counter attack on the enemy at Maleme are abandoned as troops begin to withdraw."
+        },
+        {
+            "event": "e_4",
+            "date": "22nd May, 1941",
+            "locations": [
+                "l_7",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Minefields are successfully laid by ABDIEL in strategic locations to hinder enemy advances."
+        }
+    ]
+}

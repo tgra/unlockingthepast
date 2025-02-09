@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Supreme Commander",
+            "p_2": "Admiralty"
+        },
+        "locations": {
+            "l_1": "Devonshire",
+            "l_2": "Channel",
+            "l_3": "Isle of Wight",
+            "l_4": "Lyme Bay",
+            "l_5": "Dartmouth",
+            "l_6": "Solent",
+            "l_7": "Brixham",
+            "l_8": "Plymouth",
+            "l_9": "Falmouth",
+            "l_10": "Helford River"
+        },
+        "events": {
+            "e_1": "Exercise Tiger",
+            "e_2": "Operation Neptune",
+            "e_3": "Exercise Fabius"
+        },
+        "organisations": {
+            "o_1": "Bomber Command",
+            "o_2": "Admiralty",
+            "o_3": "U.S. Navy"
+        }
+    },
+    "keywords": [
+        "Operation Neptune",
+        "Exercise Tiger",
+        "Exercise Fabius",
+        "air superiority",
+        "naval assault",
+        "sea mining"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Naval Strategy",
+        "Meteorology"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Meteorology": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th/28th April",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During Exercise Tiger, three groups of E-Boats penetrate patrols and successfully attack the final convoy, leading to significant losses and underscoring the need for naval defense."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Neptune is planned as a massive assault requiring extensive naval and meteorological preparations, emphasizing air superiority and logistics for success."
+        },
+        {
+            "event": "e_3",
+            "date": "4th May",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Exercise Fabius involves the simultaneous sailing and preparation of naval forces, with minimal enemy reaction noted, indicating readiness for the upcoming assaults."
+        }
+    ]
+}

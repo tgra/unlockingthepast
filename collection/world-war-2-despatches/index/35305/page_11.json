@@ -1,0 +1,161 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant-General Sir Ronald Adam",
+            "p_2": "General Blanchard",
+            "p_3": "General Altmeyer",
+            "p_4": "Major-General Eastwood",
+            "p_5": "General Thorne",
+            "p_6": "Admiral Abrial",
+            "p_7": "General Fagalde"
+        },
+        "locations": {
+            "l_1": "Plouvain",
+            "l_2": "Marquion",
+            "l_3": "Cambrai",
+            "l_4": "Canal du Nord",
+            "l_5": "Forest of Clairmarais",
+            "l_6": "Aire",
+            "l_7": "La Basse",
+            "l_8": "Raches",
+            "l_9": "Forest of Nieppe",
+            "l_10": "Cassel",
+            "l_11": "Gravelines",
+            "l_12": "St. Omer",
+            "l_13": "Dunkirk",
+            "l_14": "Bergues",
+            "l_15": "Wormhoudt",
+            "l_16": "Belgian frontier",
+            "l_17": "Yser canal",
+            "l_18": "Menin",
+            "l_19": "Desselghem"
+        },
+        "events": {
+            "e_1": "Counter-attack preparations",
+            "e_2": "Strengthening of canal defences",
+            "e_3": "Attacks on the Canal Line",
+            "e_4": "Enemy attack on Belgian 4th Corps"
+        },
+        "organisations": {
+            "o_1": "3rd Corps",
+            "o_2": "French 5th Corps",
+            "o_3": "French Cavalry Corps",
+            "o_4": "British Base Commandant",
+            "o_5": "16th Corps",
+            "o_6": "G.H.Q."
+        }
+    },
+    "keywords": [
+        "counter-attack",
+        "canal defences",
+        "military operations",
+        "British forces",
+        "French forces",
+        "enemy attacks"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategy",
+        "Allied Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Defensive Strategy": [
+            "e_2"
+        ],
+        "Allied Cooperation": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "24th May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Preparations for a counter-attack are underway, involving coordination between British and French forces."
+        },
+        {
+            "event": "e_2",
+            "date": "24th May",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On this day, significant efforts are made to strengthen the defenses along the canal line."
+        },
+        {
+            "event": "e_3",
+            "date": "25th May",
+            "locations": [
+                "l_9",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Intense enemy activity is reported, leading to attacks on the canal line and the Belgian Army sectors."
+        },
+        {
+            "event": "e_4",
+            "date": "25th May",
+            "locations": [
+                "l_18",
+                "l_19"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The enemy launches a significant assault on the Belgian 4th Corps, penetrating defenses and creating a critical situation."
+        }
+    ]
+}

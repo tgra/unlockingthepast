@@ -1,0 +1,134 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "American Medical Officers",
+            "p_2": "unnamed military official"
+        },
+        "locations": {
+            "l_1": "Normandy",
+            "l_2": "R.A.F. Station Broadwell",
+            "l_3": "R.A.F. Station Odiham",
+            "l_4": "Basingstoke"
+        },
+        "events": {
+            "e_1": "Medical Airlift Operation",
+            "e_2": "Air/Sea Rescue Operations",
+            "e_3": "Air Evacuation of Medical Cases",
+            "e_4": "Airlift of Supplies"
+        },
+        "organisations": {
+            "o_1": "A.D.G.B",
+            "o_2": "R.A.F. Coastal Command",
+            "o_3": "CATOR",
+            "o_4": "United States Eighth Air Force",
+            "o_5": "R.A.F. Bomber Command"
+        }
+    },
+    "keywords": [
+        "medical aid",
+        "air evacuation",
+        "supply missions",
+        "personnel rescued",
+        "air transport"
+    ],
+    "themes": [
+        "Military Operations",
+        "Medical Evacuation",
+        "Airlift Operations",
+        "Rescue Recovery"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Medical Evacuation": [
+            "e_3"
+        ],
+        "Airlift Operations": [
+            "e_4"
+        ],
+        "Rescue Recovery": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1944-09-30",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Medical aid is successfully flown to injured personnel, rescuing at least two lives after a Walrus from No. 289 Squadron brings medical officers to the wounded at sea."
+        },
+        {
+            "event": "e_2",
+            "date": "1944-06-06 to 1944-09-30",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "During the Air/Sea Rescue Operations, significant numbers of personnel are rescued, demonstrating the importance of the Air/Sea Rescue Services."
+        },
+        {
+            "event": "e_3",
+            "date": "1944-09-30",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Air evacuation efforts transport 107,115 medical cases, offering timely assistance to the sick and wounded from forward positions during operations."
+        },
+        {
+            "event": "e_4",
+            "date": "1944-08-25 to 1944-09-30",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Allied forces conduct a series of airlift operations to deliver critical supplies, demonstrating the tactical necessity of air support in rapidly advancing armies."
+        }
+    ]
+}

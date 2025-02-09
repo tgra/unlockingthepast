@@ -1,0 +1,94 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commanders-in-Chief",
+            "p_2": "My Headquarters"
+        },
+        "locations": {
+            "l_1": "United Kingdom",
+            "l_2": "Northern France",
+            "l_3": "Low Countries",
+            "l_4": "Paris",
+            "l_5": "Orleans",
+            "l_6": "Le Bourget"
+        },
+        "events": {
+            "e_1": "Operation Neptune",
+            "e_2": "D-Day"
+        },
+        "organisations": {
+            "o_1": "United States Army Air Force",
+            "o_2": "Royal Air Force",
+            "o_3": "Allied Air Forces"
+        }
+    },
+    "keywords": [
+        "Air Plan",
+        "preparatory bombing",
+        "enemy movements",
+        "reconnaissance",
+        "coastal batteries"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Strategy",
+        "Logistics",
+        "Bombing Campaign"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Strategy": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Bombing Campaign": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Neptune is successfully implemented as a comprehensive air plan aimed at preventing German Air Force interference and supporting Allied ground operations."
+        },
+        {
+            "event": "e_2",
+            "date": "D-Day",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "D-Day represents a significant strategic military operation with extensive preparatory air bombing campaigns aimed at disrupting enemy logistics."
+        }
+    ]
+}

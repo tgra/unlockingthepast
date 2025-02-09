@@ -1,0 +1,180 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain (D)",
+            "p_2": "Lieutenant j. G. G. Muir",
+            "p_3": "Lieutenant-Commander F. P. Monckton",
+            "p_4": "Lieutenant L. E. Newell",
+            "p_5": "Sub-Lieutenant J. N. Broad",
+            "p_6": "Lieutenant A. G. Fry",
+            "p_7": "Lieutenant-Commander R. H. C. Wyld"
+        },
+        "locations": {
+            "l_1": "Kos",
+            "l_2": "Kalymnos",
+            "l_3": "Leros",
+            "l_4": "Casteloriso",
+            "l_5": "Alinda Bay",
+            "l_6": "Pharmaco",
+            "l_7": "Palma",
+            "l_8": "Pasti Di Sotto",
+            "l_9": "Grifo",
+            "l_10": "N. Appetici",
+            "l_11": "Blefuti Bay",
+            "l_12": "Mount Clido",
+            "l_13": "Samos"
+        },
+        "events": {
+            "e_1": "Assault on Leros",
+            "e_2": "Enemy Landing Operations",
+            "e_3": "Engagement with enemy forces",
+            "e_4": "Destruction of naval signal publications",
+            "e_5": "Counterattacks by British forces"
+        },
+        "organisations": {
+            "o_1": "8th Destroyer Flotilla",
+            "o_2": "R.N.V.R.",
+            "o_3": "R.N.R.",
+            "o_4": "H.M. Ships",
+            "o_5": "Army"
+        }
+    },
+    "keywords": [
+        "reconnaissance",
+        "enemy forces",
+        "landing craft",
+        "naval operations",
+        "gale",
+        "parachute landing",
+        "ammunition",
+        "communications"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Combat",
+        "Air Attacks",
+        "Logistical Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Combat": [
+            "e_3"
+        ],
+        "Logistical Challenges": [
+            "e_4",
+            "e_5"
+        ],
+        "Air Attacks": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 12th, 1943",
+            "locations": [
+                "l_3",
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Allied forces prepare to mount an assault on Leros, with night operations continuing and heavy enemy engagements commencing."
+        },
+        {
+            "event": "e_2",
+            "date": "November 12th-14th, 1943",
+            "locations": [
+                "l_3",
+                "l_5",
+                "l_11"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Enemy operations lead to landings at various points around Leros, meeting with fierce counteractions and complications from weather."
+        },
+        {
+            "event": "e_3",
+            "date": "November 13th, 1943",
+            "locations": [
+                "l_3",
+                "l_1"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "British forces engage with enemy forces around Alinda Bay, suffering losses but managing to maintain a defensive stance."
+        },
+        {
+            "event": "e_4",
+            "date": "November 14th, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "All naval signal publications are destroyed as enemy forces threaten Leros, complicating British communications."
+        },
+        {
+            "event": "e_5",
+            "date": "November 14th, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "British forces initiate counterattacks, struggling with fatigue and heavy artillery and air attacks from the enemy."
+        }
+    ]
+}

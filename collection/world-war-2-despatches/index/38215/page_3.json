@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir",
+            "p_2": "European officers",
+            "p_3": "Japanese commanders"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "United Kingdom",
+            "l_3": "Middle East",
+            "l_4": "Banka Straits",
+            "l_5": "Jemaluang",
+            "l_6": "Mersing",
+            "l_7": "Labis",
+            "l_8": "North Johore",
+            "l_9": "Sumatra",
+            "l_10": "Indo-China"
+        },
+        "events": {
+            "e_1": "Arrival of 45 Indian Infantry Brigade",
+            "e_2": "Convoy reaching Singapore",
+            "e_3": "Despatch of Dutch Marechaussees",
+            "e_4": "Arrival of Hurricane Fighters"
+        },
+        "organisations": {
+            "o_1": "Indian Army",
+            "o_2": "British Army",
+            "o_3": "Royal Air Force",
+            "o_4": "Dutch Allies",
+            "o_5": "Passive Air Defence Organization"
+        }
+    },
+    "keywords": [
+        "defense",
+        "convoy",
+        "reinforcements",
+        "military operations",
+        "supply lines"
+    ],
+    "themes": [
+        "Military Operations",
+        "International Cooperation",
+        "Logistics Management",
+        "Strategic Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "International Cooperation": [
+            "e_3"
+        ],
+        "Logistics Management": [
+            "e_2",
+            "e_4"
+        ],
+        "Strategic Defense": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "3rd January 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 45 Indian Infantry Brigade arrives in Singapore, preparing to bolster defense forces amid increasing threats."
+        },
+        {
+            "event": "e_2",
+            "date": "13th January 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "An important convoy successfully reaches Singapore, delivering crucial military personnel and supplies to support ongoing operations."
+        },
+        {
+            "event": "e_3",
+            "date": "14th January 1942",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A detachment of Dutch Marechaussees arrives, contributing native troops trained in guerilla warfare to combat Japanese forces."
+        },
+        {
+            "event": "e_4",
+            "date": "13th January 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Crated Hurricane Fighters arrive at Singapore and are rapidly unpacked and assembled, enhancing aerial defense capabilities."
+        }
+    ]
+}

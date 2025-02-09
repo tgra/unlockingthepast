@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Wallis",
+            "p_2": "Brigadier Lawson",
+            "p_3": "General Yu Han Mou"
+        },
+        "locations": {
+            "l_1": "Hong Kong",
+            "l_2": "Kowloon",
+            "l_3": "Aberdeen Island",
+            "l_4": "Wanchai Gap",
+            "l_5": "Kai Tak",
+            "l_6": "Shek O",
+            "l_7": "Lyemun",
+            "l_8": "Shaukiwan",
+            "l_9": "Kowloon Bay"
+        },
+        "events": {
+            "e_1": "Battle of Hong Kong",
+            "e_2": "Shelling of Pill Boxes",
+            "e_3": "Air Raids on December 16"
+        },
+        "organisations": {
+            "o_1": "Fortress H.Q.",
+            "o_2": "Royal Scots",
+            "o_3": "5/7 Rajput Regt.",
+            "o_4": "HKVDC",
+            "o_5": "2/14 Punjab Regt.",
+            "o_6": "Chungking Government"
+        }
+    },
+    "keywords": [
+        "military command",
+        "shelling",
+        "air raid",
+        "morale",
+        "anti-personnel minefields"
+    ],
+    "themes": [
+        "Military Operations",
+        "Civilian Impact",
+        "Diplomacy",
+        "Defensive Actions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Civilian Impact": [
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Defensive Actions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 15, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Hong Kong is ongoing, with defensive measures intensified as troop deployment continues."
+        },
+        {
+            "event": "e_2",
+            "date": "December 15, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Pill boxes along the North shore are systematically shelled in an intense exchange of fire, resulting in significant damage to defensive positions."
+        },
+        {
+            "event": "e_3",
+            "date": "December 16, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On December 16, enemy air raids increase in intensity, causing civilian casualties and damaging key military positions in Hong Kong."
+        }
+    ]
+}

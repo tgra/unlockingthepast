@@ -1,0 +1,167 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Staff of Fighter Control Operations Room",
+            "p_2": "Personnel on the spot",
+            "p_3": "Pilot of P.R. Beaufort",
+            "p_4": "Station Commander at Kota Bahru"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Seletar",
+            "l_3": "Tengah",
+            "l_4": "Kota Bahru",
+            "l_5": "Gong Kedah",
+            "l_6": "Machang",
+            "l_7": "Sungei Patani",
+            "l_8": "Penang",
+            "l_9": "Butterworth",
+            "l_10": "Alor Star",
+            "l_11": "Kedah Province",
+            "l_12": "Singora",
+            "l_13": "Patani",
+            "l_14": "Krohkol",
+            "l_15": "Ban Sadao",
+            "l_16": "Lakon Roads",
+            "l_17": "South Golok River",
+            "l_18": "Kuantan"
+        },
+        "events": {
+            "e_1": "Air-Raid on Singapore",
+            "e_2": "Japanese Attacks on Northern Airfields",
+            "e_3": "Serious Attack at Alor Star",
+            "e_4": "Enemy Landings in Singora and Patani Area",
+            "e_5": "Evacuation of Kota Bahru Aerodrome"
+        },
+        "organisations": {
+            "o_1": "Civil A.R.P. Organisation",
+            "o_2": "No. 34 (B) Squadron",
+            "o_3": "No. 62 (B) Squadron",
+            "o_4": "Nos. 21 (F) R.A.A.F.",
+            "o_5": "27 (NF) Squadrons",
+            "o_6": "IJIrd Corps"
+        }
+    },
+    "keywords": [
+        "air raid",
+        "Japanese attacks",
+        "bombers",
+        "low-flying fighters",
+        "evacuation",
+        "aerodrome",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Bombardment",
+        "Civil Defense Failures",
+        "Enemy Landings",
+        "Strategic Withdrawal"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Civil Defense": [
+            "e_1"
+        ],
+        "Enemy Landings": [
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An air raid occurs shortly after 0400 hours, with radar detecting the approaching raid from 130-140 miles away, allowing for only limited warning before the attack at Singapore."
+        },
+        {
+            "event": "e_2",
+            "date": "8th December",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Japanese forces attack Northern Airfields, targeting Kota Bahru, Gong Kedah, and Machang with bombers and fighters, causing delays in aircraft readiness."
+        },
+        {
+            "event": "e_3",
+            "date": "8th December",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A significant attack strikes Alor Star, with Japanese aircraft bombing the area after the No. 62 Squadron had landed, severely impacting their operational capacity."
+        },
+        {
+            "event": "e_4",
+            "date": "8th December",
+            "locations": [
+                "l_12",
+                "l_13"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Reconnaissance indicates enemy landings in the Singora-Patani area, confirming a significant concentration of Japanese troops."
+        },
+        {
+            "event": "e_5",
+            "date": "8th December",
+            "locations": [
+                "l_4",
+                "l_18"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Station Commander at Kota Bahru orders an evacuation of the aerodrome amid increasing enemy threats and sporadic fire from ground forces."
+        }
+    ]
+}

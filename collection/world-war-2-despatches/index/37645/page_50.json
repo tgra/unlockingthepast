@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Gen. Lorenzini",
+            "p_2": "Commander of 5th Indian Division",
+            "p_3": "Commander 7th Indian Infantry Brigade"
+        },
+        "locations": {
+            "l_1": "Fort Dologorodoc",
+            "l_2": "M. Sanchil",
+            "l_3": "Keren",
+            "l_4": "Happy Valley",
+            "l_5": "Railway Bumps",
+            "l_6": "Dongolaas gorge"
+        },
+        "events": {
+            "e_1": "Death of Gen. Lorenzini",
+            "e_2": "Resumption of Offensive",
+            "e_3": "Initial Assault on Fort Dologorodoc"
+        },
+        "organisations": {
+            "o_1": "5th Indian Division",
+            "o_2": "7th Indian Infantry Brigade",
+            "o_3": "roth Indian Infantry Brigade",
+            "o_4": "2gth Indian Infantry Brigade",
+            "o_5": "No. 2 M.M.G. Group",
+            "o_6": "Skinner's Horse",
+            "o_7": "2 Highland Light Infantry",
+            "o_8": "I Worcesters"
+        }
+    },
+    "keywords": [
+        "Fort Dologorodoc",
+        "M. Sanchil",
+        "5th Indian Division",
+        "7th Indian Infantry Brigade",
+        "enemy counter-attacks",
+        "mechanised forces",
+        "Gen. Lorenzini"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualties",
+        "Tactical Retreat",
+        "Artillery Support",
+        "Counter-attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Casualties": [
+            "e_1"
+        ],
+        "Tactical Retreat": [
+            "e_3"
+        ],
+        "Counter-attacks": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "19th March",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "General Lorenzini is killed on 19th March, which is a significant loss for the enemy forces."
+        },
+        {
+            "event": "e_2",
+            "date": "25th March",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "After a week of heavy counter-attacks, the 5th Indian Division resumes the offensive to secure the road to Keren."
+        },
+        {
+            "event": "e_3",
+            "date": "March",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An assault is launched against Fort Dologorodoc, marking a significant tactical effort to gain control over the area."
+        }
+    ]
+}

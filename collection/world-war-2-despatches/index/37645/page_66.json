@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Le Gentilhomme",
+            "p_2": "Brigadier Buchanan",
+            "p_3": "Colonel Brossett",
+            "p_4": "Major Appert",
+            "p_5": "Captain Majendie"
+        },
+        "locations": {
+            "l_1": "Addis Abeba",
+            "l_2": "Diredaua",
+            "l_3": "Nairobi",
+            "l_4": "British Somaliland",
+            "l_5": "Jibuti",
+            "l_6": "French Somaliland",
+            "l_7": "Zeilah",
+            "l_8": "Daouenle",
+            "l_9": "Aden",
+            "l_10": "Madagascar"
+        },
+        "events": {
+            "e_1": "Evacuation of Fascists from Addis Abeba",
+            "e_2": "Arrival of Free French Detachments to Somaliland",
+            "e_3": "Drop of leaflets inviting French troops",
+            "e_4": "Negotiations regarding Jibuti blockade"
+        },
+        "organisations": {
+            "o_1": "O.E.T.A.",
+            "o_2": "C.P.O. Middle East"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "Free French",
+        "military resources",
+        "blockade",
+        "Vichy French",
+        "negotiations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Political Maneuvering"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_4"
+        ],
+        "Political Maneuvering": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "28th April",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Eighty prominent Fascists and their families are evacuated from Addis Abeba to Diredaua."
+        },
+        {
+            "event": "e_2",
+            "date": "5th April",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Detachments of Free French under General Le Gentilhomme are proceeding to British Somaliland."
+        },
+        {
+            "event": "e_3",
+            "date": "15th April",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Leaflets are dropped from a Free French aircraft inviting French troops to join the British."
+        },
+        {
+            "event": "e_4",
+            "date": "1st May",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Negotiations regarding the use of the port of Jibuti and the blockade are opened."
+        }
+    ]
+}

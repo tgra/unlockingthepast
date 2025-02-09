@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rommel",
+            "p_2": "Manteuffel",
+            "p_3": "Broich"
+        },
+        "locations": {
+            "l_1": "Algeria",
+            "l_2": "French North Africa",
+            "l_3": "Tripolitania",
+            "l_4": "Tunis",
+            "l_5": "Bizerta",
+            "l_6": "Djebel Abiod",
+            "l_7": "Zaghouan"
+        },
+        "events": {
+            "e_1": "Landing of Allied Forces in Algeria",
+            "e_2": "Formation of Axis Forces in Tunisia",
+            "e_3": "Contact between Axis and Allied Forces"
+        },
+        "organisations": {
+            "o_1": "United States Army",
+            "o_2": "German Air Force",
+            "o_3": "Italian Army",
+            "o_4": "Corps Franc d'Afrique",
+            "o_5": "Royal Artillery"
+        }
+    },
+    "keywords": [
+        "Allied forces",
+        "Axis troops",
+        "Tunisian-Algerian frontier",
+        "Combat units",
+        "Military strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Formation of Troops",
+        "Conflict Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Formation of Troops": [
+            "e_1",
+            "e_2"
+        ],
+        "Conflict Engagement": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "4th May, 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Allied forces land in Algeria, facing no opposition from Axis troops."
+        },
+        {
+            "event": "e_2",
+            "date": "November 1942",
+            "locations": [
+                "l_2",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In response to the Allied landing, Axis forces form in Tunisia, consolidating power and resources."
+        },
+        {
+            "event": "e_3",
+            "date": "26th November, 1942",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Contact occurs between the Axis forces and Allied troops along the Tunisian-Algerian frontier."
+        }
+    ]
+}

@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "Captain (D), Fourteenth Destroyer Flotilla",
+            "p_3": "Captain (D), Tenth Destroyer Flotilla"
+        },
+        "locations": {
+            "l_1": "Battlefleet",
+            "l_2": "Position 35 degs. 54 mins. N., 21 degs. 38 mins. E.",
+            "l_3": "Alexandria",
+            "l_4": "Corinth Canal"
+        },
+        "events": {
+            "e_1": "Engagement with enemy cruisers",
+            "e_2": "Battlefleet withdrawal",
+            "e_3": "Encounter with LITTORIO battleship",
+            "e_4": "Air reconnaissance"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty",
+            "o_3": "R.A.F. (Royal Air Force)"
+        }
+    },
+    "keywords": [
+        "destroyer",
+        "battlefleet",
+        "cruiser",
+        "engagement",
+        "withdrawal",
+        "air reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "29th March, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "During the engagement with enemy cruisers, the battlefleet turns to engage two ZARA-class cruisers. WARSPITE delivers a successful broadside while several enemy vessels are put out of action."
+        },
+        {
+            "event": "e_2",
+            "date": "29th March, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The battlefleet withdraws to the north-eastward to avoid potential friendly fire, altering course and maintaining speed as the operation concludes."
+        },
+        {
+            "event": "e_3",
+            "date": "29th March, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "HAVOCK reports contact with a LITTORIO battleship, prompting the Captain of the Fourth Destroyer Flotilla to proceed to engage alongside the other vessels."
+        },
+        {
+            "event": "e_4",
+            "date": "30th March, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Following the main action, air reconnaissance is requested for the following morning to assess the situation and assist in fleet coordination."
+        }
+    ]
+}

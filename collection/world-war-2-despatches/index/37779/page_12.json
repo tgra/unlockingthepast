@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Hitler",
+            "p_2": "Rommel"
+        },
+        "locations": {
+            "l_1": "Tunisia",
+            "l_2": "Germany",
+            "l_3": "Mareth",
+            "l_4": "El Alamein",
+            "l_5": "Tripolitania",
+            "l_6": "Algeria"
+        },
+        "events": {
+            "e_1": "Campaign in Tunisia",
+            "e_2": "Formation of the Hermann Goering Armoured Division",
+            "e_3": "Arrival of 999 Division",
+            "e_4": "Withdrawal of Rommel's army to Mareth"
+        },
+        "organisations": {
+            "o_1": "German 334 Infantry Division",
+            "o_2": "Hermann Goering Flak Regiment",
+            "o_3": "Hermann Goering Armoured Division",
+            "o_4": "First Army",
+            "o_5": "Panzer Grenadier Regiment Afrika",
+            "o_6": "Ramcke Brigade",
+            "o_7": "Centauro Division",
+            "o_8": "Trieste Division",
+            "o_9": "Phalange Frangaise"
+        }
+    },
+    "keywords": [
+        "Axis troops",
+        "German tanks",
+        "Italian troops",
+        "Hermann Goering Division",
+        "reinforcements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Troop Movements",
+        "Strategic Reinforcements",
+        "Formation of Divisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Troop Movements": [
+            "e_1",
+            "e_4"
+        ],
+        "Strategic Reinforcements": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 1, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The campaign in Tunisia sees the German forces, led by Rommel, facing significant opposition as troop numbers fluctuate."
+        },
+        {
+            "event": "e_2",
+            "date": "Late January 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Hermann Goering Flak Regiment dispatches batteries to North Africa, leading to the formation of the Hermann Goering Armoured Division."
+        },
+        {
+            "event": "e_3",
+            "date": "Late March 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The 999 Division arrives in Tunisia, consisting mainly of under-trained personnel under low morale."
+        },
+        {
+            "event": "e_4",
+            "date": "February 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Rommel's army withdraws to the Mareth area, positioning itself for potential conflict with the First Army."
+        }
+    ]
+}

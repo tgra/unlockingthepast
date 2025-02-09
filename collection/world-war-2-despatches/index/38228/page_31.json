@@ -1,0 +1,162 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Divisional Commander"
+        },
+        "locations": {
+            "l_1": "Moulmein",
+            "l_2": "River Salween",
+            "l_3": "Chaungzon",
+            "l_4": "Paan",
+            "l_5": "Rangoon",
+            "l_6": "Bilin",
+            "l_7": "Martaban",
+            "l_8": "Kyaikto",
+            "l_9": "Kawkareik",
+            "l_10": "Thaton",
+            "l_11": "Malaya"
+        },
+        "events": {
+            "e_1": "Evacuation of Moulmein",
+            "e_2": "Request for Naval Assistance",
+            "e_3": "Reinforcements to Bilin",
+            "e_4": "Enemy Action at Martaban",
+            "e_5": "Martaban Road Cut"
+        },
+        "organisations": {
+            "o_1": "G.H.Q. South West Pacific Command",
+            "o_2": "A.B.D.A. Command",
+            "o_3": "3/7 Gurkha Rifles",
+            "o_4": "1/7 Gurkha Rifles",
+            "o_5": "4 Burma Rifles",
+            "o_6": "5/17 Dogras",
+            "o_7": "7/10 Baluch",
+            "o_8": "2 K.O.Y.L.I.",
+            "o_9": "8 Burma Rifles",
+            "o_10": "1/9 R. Jats",
+            "o_11": "Rangoon Battalion B.A.F."
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Casualties",
+        "Reinforcements",
+        "Enemy Action",
+        "Shelling",
+        "Counter-offensive",
+        "Naval Assistance",
+        "Withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualty Reports",
+        "Reinforcement Strategies",
+        "Tactical Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4",
+            "e_5"
+        ],
+        "Casualty Reports": [
+            "e_1"
+        ],
+        "Reinforcement Strategies": [
+            "e_3"
+        ],
+        "Tactical Engagements": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Troops evacuate Moulmein after evaluating the untenable situation caused by enemy positioning."
+        },
+        {
+            "event": "e_2",
+            "date": "During Evacuation",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A signal is sent to G.H.Q. requesting naval assistance to safeguard the coast as Moulmein is about to fall."
+        },
+        {
+            "event": "e_3",
+            "date": "February 3rd",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Reinforcements, the 48 Indian Infantry Brigade, are ordered forward to Bilin to support the 17 Indian Division."
+        },
+        {
+            "event": "e_4",
+            "date": "February",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Martaban experiences shelling as enemy forces successfully navigate the River Salween, prompting a response from local troops."
+        },
+        {
+            "event": "e_5",
+            "date": "February 10th",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "A Japanese party cuts the road near Martaban, creating a stronghold that causes difficulties for advancing allied forces."
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Slim"
+        },
+        "locations": {
+            "l_1": "Chittagong",
+            "l_2": "Mayu Range",
+            "l_3": "Taung Bazaar",
+            "l_4": "Bawli Bazaar",
+            "l_5": "Ngakyedauk Pass",
+            "l_6": "Awlanbyin",
+            "l_7": "Sinzweya",
+            "l_8": "Buthidaung"
+        },
+        "events": {
+            "e_1": "Japanese Counter-Attack",
+            "e_2": "Defensive Operations by 7 Indian Division"
+        },
+        "organisations": {
+            "o_1": "14th Army",
+            "o_2": "5 Indian Division",
+            "o_3": "7 Indian Division",
+            "o_4": "26 Indian Division",
+            "o_5": "15 Indian Corps",
+            "o_6": "Tokyo Radio"
+        }
+    },
+    "keywords": [
+        "Counter-Attack",
+        "Defensive Strategy",
+        "Air Supply",
+        "Fighter Bombers",
+        "Infiltration Tactics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Japanese Strategy",
+        "Defensive Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defensive Tactics": [
+            "e_2"
+        ],
+        "Japanese Strategy": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 1, 1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Japanese launch a counter-attack against 7 Indian Division, attempting to outflank their position and cut off supply lines."
+        },
+        {
+            "event": "e_2",
+            "date": "February 9, 1945",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "7 Indian Division undertakes defensive operations to withstand Japanese assaults, establishing strong positions against frontal and flank attacks while maintaining supply lines."
+        }
+    ]
+}

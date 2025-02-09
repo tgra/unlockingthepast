@@ -1,0 +1,148 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Colonel Pollock",
+            "p_2": "General Rug",
+            "p_3": "Sir Cecil Dormer",
+            "p_4": "Admiral Diesen",
+            "p_5": "Vice-Admiral Cunningham",
+            "p_6": "Lieutenant Francklin",
+            "p_7": "Wing Commander Atcherley"
+        },
+        "locations": {
+            "l_1": "Norway",
+            "l_2": "Tromso",
+            "l_3": "Harstad",
+            "l_4": "Bardufoss",
+            "l_5": "Levangs Fiord",
+            "l_6": "Vaags Fiord",
+            "l_7": "Tjeldsundet"
+        },
+        "events": {
+            "e_1": "Air Attack on DEVONSHIRE",
+            "e_2": "Evacuation of Namsos and Aandalsnes",
+            "e_3": "Minelaying by enemy aircraft",
+            "e_4": "Arrival of A/A Guns",
+            "e_5": "Operations by ARK ROYAL"
+        },
+        "organisations": {
+            "o_1": "Norwegian Government",
+            "o_2": "British Military Authorities",
+            "o_3": "Royal Air Force",
+            "o_4": "Fleet Air Arm"
+        }
+    },
+    "keywords": [
+        "military control",
+        "collaboration",
+        "air attacks",
+        "A/A artillery",
+        "aerodromes"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Diplomacy": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An air attack aimed at the DEVONSHIRE in Tromso harbour occurs shortly after the Ministers' meeting, disrupting the discussions."
+        },
+        {
+            "event": "e_2",
+            "date": "April 2023",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The evacuation of Namsos and Aandalsnes takes place amid increasing enemy air attacks, emphasizing the need for stronger military coordination."
+        },
+        {
+            "event": "e_3",
+            "date": "May 29, 2023",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Enemy aircraft are suspected of laying mines in Tjeldsundet during intensified air attacks on allied positions."
+        },
+        {
+            "event": "e_4",
+            "date": "May 6, 2023",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The arrival of A/A artillery in the area marks a significant enhancement of defensive capabilities against air attacks."
+        },
+        {
+            "event": "e_5",
+            "date": "May 6, 2023",
+            "locations": [],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The ARK ROYAL joins the operations at sea, significantly improving the air defense against enemy attacks."
+        }
+    ]
+}

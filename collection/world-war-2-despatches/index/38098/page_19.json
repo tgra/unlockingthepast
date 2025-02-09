@@ -1,0 +1,108 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "Admiralty"
+        },
+        "locations": {
+            "l_1": "Brest",
+            "l_2": "ARK ROYAL",
+            "l_3": "RENOWN",
+            "l_4": "KRG7 4731",
+            "l_5": "Convoy W.S.8B"
+        },
+        "events": {
+            "e_1": "Reconnaissance Report",
+            "e_2": "Patrol Operations",
+            "e_3": "Engagement Orders"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "Home Fleet"
+        }
+    },
+    "keywords": [
+        "BISMARCK",
+        "Catalina",
+        "Swordfish",
+        "patrol",
+        "reconnaissance",
+        "torpedo",
+        "enemy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Search and Reconnaissance",
+        "Naval Strategy",
+        "Intelligence Gathering"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_3"
+        ],
+        "Search and Reconnaissance": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 26, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The reconnaissance report reveals the presence of German battle cruisers at Brest, raising concerns about potential movements of the BISMARCK."
+        },
+        {
+            "event": "e_2",
+            "date": "May 26, 1941",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Search operations are conducted with the deployment of Swordfish and Catalinas to locate the BISMARCK while maintaining contact with the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "May 26, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Orders are received from the Admiralty to ensure that RENOWN does not engage with the BISMARCK unless it is already heavily engaged with enemy forces."
+        }
+    ]
+}

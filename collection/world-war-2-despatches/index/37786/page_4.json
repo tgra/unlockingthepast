@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Eighth Army",
+            "p_2": "First Army",
+            "p_3": "Fighting French",
+            "p_4": "56th Division"
+        },
+        "locations": {
+            "l_1": "Tripoli",
+            "l_2": "Delta",
+            "l_3": "Sfax",
+            "l_4": "Algiers",
+            "l_5": "Tobruk",
+            "l_6": "Mareth Line",
+            "l_7": "Wadi Akarit",
+            "l_8": "Enfidaville",
+            "l_9": "Tunisia",
+            "l_10": "North Africa",
+            "l_11": "Benghazi"
+        },
+        "events": {
+            "e_1": "Battle of E Alamein",
+            "e_2": "Tunisian Campaign",
+            "e_3": "Establishment of a Transit Camp"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "First Army",
+            "o_3": "Middle East Base"
+        }
+    },
+    "keywords": [
+        "reinforcements",
+        "logistics",
+        "transport",
+        "supply chain",
+        "military operations",
+        "casualties",
+        "mail services"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics and Supply",
+        "Casualty Management",
+        "Transport and Communication"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics and Supply": [
+            "e_3"
+        ],
+        "Casualty Management": [
+            "e_3"
+        ],
+        "Transport and Communication": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Battle of E Alamein",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of E Alamein is a critical battle where Eighth Army is reinforced to strengthen their chances of success."
+        },
+        {
+            "event": "e_2",
+            "date": "Tunisian Campaign",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Tunisian Campaign involves significant logistics, with reinforcements and supplies managed through various means, culminating in operational success."
+        },
+        {
+            "event": "e_3",
+            "date": "Establishment of a Transit Camp",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A transit camp is established in Tripoli to facilitate the distribution of reinforcements and supplies to Eighth Army."
+        }
+    ]
+}

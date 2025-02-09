@@ -1,0 +1,84 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "T. J. Buicu"
+        },
+        "locations": {
+            "l_1": "Mulat",
+            "l_2": "Trieste",
+            "l_3": "Split",
+            "l_4": "Pasman Channel",
+            "l_5": "Rivanj",
+            "l_6": "Tower Lane, Bristol",
+            "l_7": "Chichester Street, Belfast"
+        },
+        "events": {
+            "e_1": "Decisive Victory of D-boats over F-lighters",
+            "e_2": "Convoy attacks"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "D-boats",
+        "F-lighters",
+        "convoy",
+        "victory",
+        "armament",
+        "reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The D-boats achieve a decisive victory over F-lighters, demonstrating effective tactics despite facing heavier armament."
+        },
+        {
+            "event": "e_2",
+            "date": "Previous night preceding the report",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Reports indicate a convoy was attacked while en route from Trieste to Split, involving several enemy vessels."
+        }
+    ]
+}

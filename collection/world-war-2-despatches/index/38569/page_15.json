@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Fredendall",
+            "p_2": "Captain J. S. Bethell"
+        },
+        "locations": {
+            "l_1": "Tafaraoui",
+            "l_2": "Gibraltar",
+            "l_3": "Oran",
+            "l_4": "Mers el Kebir",
+            "l_5": "Arzeu Bay",
+            "l_6": "Algiers",
+            "l_7": "La Senia",
+            "l_8": "X Beach",
+            "l_9": "Y Beach",
+            "l_10": "Z Beach",
+            "l_11": "Mostaganem"
+        },
+        "events": {
+            "e_1": "Assault on Oran",
+            "e_2": "Surrender of Oran",
+            "e_3": "Naval aircraft attack on La Senia",
+            "e_4": "Air reconnaissance of the harbour"
+        },
+        "organisations": {
+            "o_1": "U.S. Army",
+            "o_2": "French Navy",
+            "o_3": "British Naval Forces"
+        }
+    },
+    "keywords": [
+        "Tafaraoui",
+        "Gibraltar",
+        "Oran",
+        "U.S. Spitfires",
+        "naval aircraft",
+        "assault",
+        "surrender",
+        "reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Aerial Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_3"
+        ],
+        "Aerial Reconnaissance": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 10",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The assault on Oran proceeds as planned, with American forces successfully taking control of the city."
+        },
+        {
+            "event": "e_2",
+            "date": "November 10",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "General Fredendall takes the surrender of Oran shortly after the planned assault."
+        },
+        {
+            "event": "e_3",
+            "date": "November 10",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Naval aircraft conduct an attack on La Senia, resulting in substantial damage to the airfield."
+        },
+        {
+            "event": "e_4",
+            "date": "November 10",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Early morning reconnaissance reveals that blocking operations by the French had already been implemented at the harbour."
+        }
+    ]
+}

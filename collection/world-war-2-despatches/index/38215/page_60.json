@@ -1,0 +1,115 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Sir Tom Phillips",
+            "p_2": "Vice-Admiral Sir Geoffrey Layton",
+            "p_3": "C.-in-C. Far East"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "Indo-China",
+            "l_4": "Thailand",
+            "l_5": "Sarawak",
+            "l_6": "China"
+        },
+        "events": {
+            "e_1": "Outbreak of World War II",
+            "e_2": "Mobilization of Volunteer Forces",
+            "e_3": "Outbreak of Hostilities with Japan"
+        },
+        "organisations": {
+            "o_1": "Ministry of Information Far East",
+            "o_2": "Malayan Information Bureau",
+            "o_3": "China Fleet"
+        }
+    },
+    "keywords": [
+        "Press",
+        "Censorship",
+        "Military Operations",
+        "Public Relations",
+        "Emergency",
+        "Naval Base"
+    ],
+    "themes": [
+        "Military Operations",
+        "Censorship",
+        "Diplomacy",
+        "Information Warfare",
+        "Emergency Preparedness"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Information Warfare": [
+            "e_1"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Emergency Preparedness": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1939-09-01",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The outbreak of World War II leads to a strategic reallocation of naval resources and increases political tensions in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "1941-12-01",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The mobilization of Volunteer Forces occurs as a response to escalating military tensions in Southeast Asia."
+        },
+        {
+            "event": "e_3",
+            "date": "1941-12-08",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Hostilities with Japan commence, leading to immediate naval engagements and heightened military alertness in the region."
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander 5th Fleet",
+            "p_2": "CINCPAC",
+            "p_3": "Captain D.7",
+            "p_4": "Captain D.27",
+            "p_5": "Rear Admiral E. J. P. Brind",
+            "p_6": "Captain J. B.E. Wright"
+        },
+        "locations": {
+            "l_1": "Mosquito",
+            "l_2": "Leyte",
+            "l_3": "Myako",
+            "l_4": "Ishigaki",
+            "l_5": "San Pedro Bay"
+        },
+        "events": {
+            "e_1": "Fleet Fueling Operation",
+            "e_2": "Air Strikes on Myako and Ishigaki",
+            "e_3": "Tactical Command Change",
+            "e_4": "Operations Conclusion"
+        },
+        "organisations": {
+            "o_1": "5th Fleet",
+            "o_2": "British Pacific Fleet",
+            "o_3": "U.S. Naval Marines"
+        }
+    },
+    "keywords": [
+        "Fleet",
+        "Air Strikes",
+        "Kamikaze",
+        "Fueling Operation",
+        "Replenishment"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Combat",
+        "Tactical Movements",
+        "Naval Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Tactical Movements": [
+            "e_3"
+        ],
+        "Air Combat": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "18th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Fleet conducts a fueling operation in the Mosquito area, preparing for upcoming air strikes."
+        },
+        {
+            "event": "e_2",
+            "date": "20th April",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Fleet executes air strikes on the Myako and Ishigaki airfields, aimed to cripple enemy capabilities with significant damage to runways and enemy aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "20th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "CTF 57 assumes tactical command during key military operations, coordinating various fleet movements."
+        },
+        {
+            "event": "e_4",
+            "date": "26th April",
+            "locations": [],
+            "persons": [
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The operations are concluded, detailing losses and outcomes with an overall evaluation of the campaign's effectiveness."
+        }
+    ]
+}

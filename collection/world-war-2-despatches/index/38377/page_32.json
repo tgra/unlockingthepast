@@ -1,0 +1,82 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral",
+            "p_2": "Officer in ARETHUSA"
+        },
+        "locations": {
+            "l_1": "Skerki Channel",
+            "l_2": "Pantellaria",
+            "l_3": "Italian convoy route",
+            "l_4": "Position K 12 E"
+        },
+        "events": {
+            "e_1": "Convoy's alteration of course to the northward",
+            "e_2": "E-Boat Attack on Force X"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "E-Boat",
+        "Convoy",
+        "Mines",
+        "Searchlight",
+        "Flare"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Tactical Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_2"
+        ],
+        "Tactical Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2000",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "At 2000, Force X and the convoy alter course northward to enhance safety from enemy mines, unexpectedly evading an anticipated attack at dusk."
+        },
+        {
+            "event": "e_2",
+            "date": "0300, 24th July",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "At 0300, the convoy is attacked by E-Boats, prompting a series of engagements where Navy ships like COSSACK and EDINBURGH respond, resulting in one E-Boat sunk and others damaged."
+        }
+    ]
+}

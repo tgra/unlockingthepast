@@ -1,0 +1,88 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant Aitken",
+            "p_2": "Lieutenant H. Henty-Creer",
+            "p_3": "Lieutenants Place",
+            "p_4": "Lieutenant D. Cameron"
+        },
+        "locations": {
+            "l_1": "TIRPITZ",
+            "l_2": "Kaafiord",
+            "l_3": "Alten Fiord"
+        },
+        "events": {
+            "e_1": "Explosion on TIRPITZ",
+            "e_2": "Attack on TIRPITZ by X.6 and X.5"
+        },
+        "organisations": {
+            "o_1": "Admiralty"
+        }
+    },
+    "keywords": [
+        "explosion",
+        "damaged",
+        "casualties",
+        "rescue operations",
+        "naval attack",
+        "salvage"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualties and Damage",
+        "Rescue and Salvage Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Casualties and Damage": [
+            "e_1"
+        ],
+        "Rescue and Salvage Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unspecified, at 08:30",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "At 08:30, a massive explosion occurs on TIRPITZ, causing significant damage and casualties, with subsequent panic among the crew."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified, prior to the explosion",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "TIRPITZ is attacked by submarines X.6 and X.5, resulting in severe damage and casualties aboard the ship."
+        }
+    ]
+}

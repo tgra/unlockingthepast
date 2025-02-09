@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir Andrew B. Cunningham",
+            "p_2": "H. K. Hewitt",
+            "p_3": "O. R. Bennehoff",
+            "p_4": "H. G. Scott",
+            "p_5": "Lieutenant-Commander Willmott"
+        },
+        "locations": {
+            "l_1": "Algiers",
+            "l_2": "Gibraltar",
+            "l_3": "Bone",
+            "l_4": "Mediterranean",
+            "l_5": "United Kingdom"
+        },
+        "events": {
+            "e_1": "Operation Torch",
+            "e_2": "Landings in North Africa",
+            "e_3": "Torpedoing of USS Thomas Stone"
+        },
+        "organisations": {
+            "o_1": "United States Navy",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Operation Torch",
+        "Landings",
+        "North Africa",
+        "Admiral",
+        "Reconnaissance",
+        "Gibraltar",
+        "USS Thomas Stone"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Assaults",
+        "Seamanship",
+        "Strategic Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Assaults": [
+            "e_2"
+        ],
+        "Seamanship": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "30th March, 1943",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Torch is reported on, covering the British naval assaults during the landings in North Africa."
+        },
+        {
+            "event": "e_2",
+            "date": "5th November, 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The landings in North Africa commence, focusing on naval operations and coordination among Allied forces."
+        },
+        {
+            "event": "e_3",
+            "date": "7th November, 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The USS Thomas Stone is torpedoed, leading to a courageous decision by Captain O. R. Bennehoff to assist in the assault."
+        }
+    ]
+}

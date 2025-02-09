@@ -1,0 +1,146 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General MacArthur",
+            "p_2": "Commander-in-Chief, Eastern Fleet",
+            "p_3": "Chief of Staff, Eastern Fleet"
+        },
+        "locations": {
+            "l_1": "Kota Bharu",
+            "l_2": "Malaya",
+            "l_3": "Gulf of Siam",
+            "l_4": "Perhentian Island",
+            "l_5": "Singgora",
+            "l_6": "Southern Indo-China",
+            "l_7": "Thailand"
+        },
+        "events": {
+            "e_1": "landing on the north coast of Malaya",
+            "e_2": "dawn reconnaissance of the coast near Singgora",
+            "e_3": "enemy bombers activity on South Indo-China aerodromes",
+            "e_4": "landings in Kota Bharu area",
+            "e_5": "military situation at Kota Bharu"
+        },
+        "organisations": {
+            "o_1": "Eastern Fleet",
+            "o_2": "R.A.F."
+        }
+    },
+    "keywords": [
+        "reconnaissance",
+        "military action",
+        "Japanese forces",
+        "aerodromes",
+        "battlecruiser"
+    ],
+    "themes": [
+        "Military Operations",
+        "Reconnaissance Missions",
+        "Enemy Engagement",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4",
+            "e_5"
+        ],
+        "Reconnaissance Missions": [
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "The enemy has made several landings on the north coast of Malaya, posing a threat to local forces and positioning the alert for a strategic counteraction."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A dawn reconnaissance of the coast near Singgora is set to be carried out to gather intelligence on enemy movements."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Japanese forces are reported to have a significant presence with large bomber forces based in Southern Indo-China and possibly also in Thailand, affecting operational security."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "There is ongoing enemy activity with landings reported in the Kota Bharu area, complicating the military position there."
+        },
+        {
+            "event": "e_5",
+            "date": "Not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The military situation at Kota Bharu is reported to be difficult, with the aerodrome in enemy hands."
+        }
+    ]
+}

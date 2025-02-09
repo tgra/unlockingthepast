@@ -1,0 +1,99 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral",
+            "p_2": "R.A. Dover",
+            "p_3": "Commander-in-Chief",
+            "p_4": "Rear Admiral",
+            "p_5": "Military officers"
+        },
+        "locations": {
+            "l_1": "Dunkirk Harbour",
+            "l_2": "Dunkirk",
+            "l_3": "Bray",
+            "l_4": "Dover"
+        },
+        "events": {
+            "e_1": "Operation Dunkirk",
+            "e_2": "Evacuation Conference"
+        },
+        "organisations": {
+            "o_1": "B.E.F.",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Dunkirk",
+        "evacuation",
+        "destroyers",
+        "personnel vessels",
+        "B.E.F.",
+        "meeting",
+        "transport",
+        "operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Evacuation Planning",
+        "Naval Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Evacuation Planning": [
+            "e_2"
+        ],
+        "Naval Coordination": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "31 May 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation operation from Dunkirk is ongoing, focusing on getting personnel vessels and destroyers to the beaches to evacuate troops quickly due to the incoming threats."
+        },
+        {
+            "event": "e_2",
+            "date": "31 May 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A conference is held among military leaders to finalize evacuation plans, setting a target of reducing forces on the beach to the rear guard by the early hours of 1st June."
+        }
+    ]
+}

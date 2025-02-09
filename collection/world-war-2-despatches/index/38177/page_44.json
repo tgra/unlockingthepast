@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Ritchie",
+            "p_2": "Major-General Klopper",
+            "p_3": "Prime Minister"
+        },
+        "locations": {
+            "l_1": "Tobruk",
+            "l_2": "Cyrenaica",
+            "l_3": "Tripolitania",
+            "l_4": "Belhamed",
+            "l_5": "Gazala",
+            "l_6": "Bir Hacheim",
+            "l_7": "Malta",
+            "l_8": "Egypt",
+            "l_9": "Acroma",
+            "l_10": "El Adem",
+            "l_11": "Sidi Rezegh",
+            "l_12": "Gambut",
+            "l_13": "Syria"
+        },
+        "events": {
+            "e_1": "Battle of Gazala",
+            "e_2": "Encirclement of Tobruk",
+            "e_3": "Withdrawal from Gazala"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "2nd South African Division",
+            "o_3": "New Zealand Division"
+        }
+    },
+    "keywords": [
+        "Tobruk",
+        "Cyrenaica",
+        "offensive",
+        "enemy",
+        "artillery",
+        "infantry",
+        "armoured divisions",
+        "Eighth Army",
+        "encirclement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategy",
+        "Resource Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defensive Strategy": [
+            "e_2",
+            "e_3"
+        ],
+        "Resource Management": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th May",
+            "locations": [
+                "l_5",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Gazala begins, with forces preparing for an offensive while aiming to hold Tobruk."
+        },
+        {
+            "event": "e_2",
+            "date": "17th June",
+            "locations": [
+                "l_1",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The encirclement of Tobruk begins as the enemy captures Sidi Rezegh, threatening the defenses of the fortress."
+        },
+        {
+            "event": "e_3",
+            "date": "16th June",
+            "locations": [
+                "l_5",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "General Ritchie agrees to withdraw two divisions from Gazala, while ensuring Tobruk is not besieged."
+        }
+    ]
+}

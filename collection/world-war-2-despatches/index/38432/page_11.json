@@ -1,0 +1,110 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief, The Nore"
+        },
+        "locations": {
+            "l_1": "Tjmuiden",
+            "l_2": "Humber",
+            "l_3": "Cromer",
+            "l_4": "Brown Ridge",
+            "l_5": "Lowestoft"
+        },
+        "events": {
+            "e_1": "Action involving H.M.S. PYTCHLEY",
+            "e_2": "Engagement of E-boats by H.M.S. WORCESTER",
+            "e_3": "Engagement of E-boats by H.M.S. MACKAY"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "E-boats",
+        "H.M.S. PYTCHLEY",
+        "Royal Navy",
+        "convoy",
+        "radar",
+        "engagement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Convoy Protection"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagements": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Convoy Protection": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "25th October",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "H.M.S. PYTCHLEY engages with 5 or 6 E-boats north of 56B buoy, successfully driving them off and preventing the convoy from being located."
+        },
+        {
+            "event": "e_2",
+            "date": "25th October",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "H.M.S. WORCESTER engages E-boats at 0027, successfully scoring hits and driving them off to ensure convoy safety."
+        },
+        {
+            "event": "e_3",
+            "date": "25th October",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "H.M.S. MACKAY engages multiple E-boats at various times, successfully driving them off while ensuring the convoy's protection."
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "H.M.M.T.B.634",
+            "p_2": "H.M.M.G.B.662",
+            "p_3": "H.M.M.T.B.638"
+        },
+        "locations": {
+            "l_1": "Ist",
+            "l_2": "Vir",
+            "l_3": "Mulat",
+            "l_4": "Nin",
+            "l_5": "Zara"
+        },
+        "events": {
+            "e_1": "Enemy Demonstration at Mulat Breakwater",
+            "e_2": "Torpedo Attack on Flak-Lighter"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "patrol",
+        "pyrotechnic signal",
+        "enemy ships",
+        "torpedo attack",
+        "E-boats",
+        "F-lighters"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Tactical Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_2"
+        ],
+        "Tactical Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Deriving from context but no specific date provided",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An enemy demonstration involving torpedoes fired at Mulat breakwater indicates a strategy to eliminate naval assets."
+        },
+        {
+            "event": "e_2",
+            "date": "Deriving from context but no specific date provided",
+            "locations": [
+                "l_2",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A torpedo attack is executed by H.M.M.T.B.634 and H.M.M.G.B.662 against enemy F-lighters with significant naval engagement, featuring heavy gunfire and casualties."
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commodore A. H. Taylor",
+            "p_2": "Captain the Hon. G. Frazer",
+            "p_3": "General Alexander",
+            "p_4": "Admiral Abrial",
+            "p_5": "Commander G. O. Maund",
+            "p_6": "Rear Admiral, Dover"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "Ramsgate",
+            "l_3": "Mole",
+            "l_4": "United Kingdom"
+        },
+        "events": {
+            "e_1": "Night Evacuation Operation",
+            "e_2": "Planning for Daylight Evacuation Abort"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "British Expeditionary Force",
+            "o_3": "Admiralty"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "Dunkirk",
+        "military operations",
+        "beach",
+        "harbour",
+        "French troops",
+        "British troops"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Strategy",
+        "Air Attack",
+        "Naval Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Evacuation Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Attack": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of event unspecified, likely during the night of an unspecified date in June 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Commodore Taylor and Captain Frazer lead the reorganization of flotillas for a critical night evacuation operation at Dunkirk, as General Alexander plans for a full evacuation."
+        },
+        {
+            "event": "e_2",
+            "date": "Date of event unspecified, occurring during the early hours of June 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The decision to abandon daylight evacuation is made due to increasing enemy air attacks and significant losses in ships, necessitating a transition to night operations."
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Stilwell"
+        },
+        "locations": {
+            "l_1": "Imphal",
+            "l_2": "Chindwin",
+            "l_3": "Kohima",
+            "l_4": "Tiddim",
+            "l_5": "Arakan",
+            "l_6": "Assam",
+            "l_7": "Calcutta",
+            "l_8": "Poona"
+        },
+        "events": {
+            "e_1": "Siege of Imphal",
+            "e_2": "Air supply operation"
+        },
+        "organisations": {
+            "o_1": "U.S.A.A.F.",
+            "o_2": "R.A.F.",
+            "o_3": "M.A.A.F.",
+            "o_4": "14th Army"
+        }
+    },
+    "keywords": [
+        "aircraft",
+        "transport",
+        "operations",
+        "reinforcements",
+        "casualties",
+        "air supply"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Logistics",
+        "Supply Chain Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Supply Chain Management": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "In March 1944, the Siege of Imphal unfolds, with significant supply and reinforcement demands on air operations due to enemy encirclement."
+        },
+        {
+            "event": "e_2",
+            "date": "April 1944",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In April 1944, air supply operations are crucial for sustaining forces in Imphal, amid ongoing threats from the advancing enemy."
+        }
+    ]
+}

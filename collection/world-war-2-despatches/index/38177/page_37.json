@@ -1,0 +1,162 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Gott",
+            "p_2": "Brigadier Sir Brian Robertson",
+            "p_3": "General Holmes"
+        },
+        "locations": {
+            "l_1": "Sidi Hamza",
+            "l_2": "Matruh",
+            "l_3": "Bagush",
+            "l_4": "El Alamein",
+            "l_5": "El Daba",
+            "l_6": "Sidi Abd el Rahman",
+            "l_7": "Qattara Depression",
+            "l_8": "Alexandria",
+            "l_9": "Deir el Shein",
+            "l_10": "Bab el Qattara"
+        },
+        "events": {
+            "e_1": "Withdrawal of the 13th Corps",
+            "e_2": "Break-out of the 9th Corps",
+            "e_3": "Enemy Occupation of El Alamein",
+            "e_4": "July 1st Attack on the 1st South African Division",
+            "e_5": "Counter-attack by the 13th Corps"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "New Zealand Division",
+            "o_3": "5th Indian Division",
+            "o_4": "7th Motor Brigade",
+            "o_5": "18th Indian Infantry Brigade Group"
+        }
+    },
+    "keywords": [
+        "artillery",
+        "enemy",
+        "withdrawal",
+        "occupation",
+        "counter-attack",
+        "fortifications"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Tactical Engagements",
+        "Defensive Positions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_5"
+        ],
+        "Defensive Positions": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 27",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 13th Corps engages with the enemy around Sidi Hamza and is ordered to withdraw."
+        },
+        {
+            "event": "e_2",
+            "date": "June 28-29",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The 9th Corps successfully fights their way out during the night despite losses."
+        },
+        {
+            "event": "e_3",
+            "date": "June 29-30",
+            "locations": [
+                "l_4",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The enemy occupies El Alamein, pressing forward despite opposition from the 13th Corps."
+        },
+        {
+            "event": "e_4",
+            "date": "July 1",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The enemy launches an attack on the 1st South African Division, which is holding the fortifications."
+        },
+        {
+            "event": "e_5",
+            "date": "July 2-3",
+            "locations": [
+                "l_5",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The 13th Corps counter-attacks to regain tactical initiative, attacking the enemy in flank and rear."
+        }
+    ]
+}

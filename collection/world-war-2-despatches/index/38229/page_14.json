@@ -1,0 +1,161 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Sir Archibald Wavell",
+            "p_2": "Duke of Wellington"
+        },
+        "locations": {
+            "l_1": "Sittang",
+            "l_2": "Rangoon",
+            "l_3": "Moulmein",
+            "l_4": "Tenasserim",
+            "l_5": "Bilin",
+            "l_6": "Kyaikto",
+            "l_7": "Mokpalin",
+            "l_8": "Kawbein",
+            "l_9": "Mandalay",
+            "l_10": "Gulf of Martaban",
+            "l_11": "Andaman Islands",
+            "l_12": "Port Blair"
+        },
+        "events": {
+            "e_1": "Withdrawal to the Sittang Position",
+            "e_2": "Air Battle of Rangoon",
+            "e_3": "Air Action on the Bilin-Kyaikto Road",
+            "e_4": "Alleged Bombing of Own Troops",
+            "e_5": "Attack on Mandalay",
+            "e_6": "GR Escort for Shipping"
+        },
+        "organisations": {
+            "o_1": "ABDA Command"
+        }
+    },
+    "keywords": [
+        "withdrawal",
+        "air operations",
+        "bombing",
+        "reinforcements",
+        "enemy attacks"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Friendly Fire",
+        "Reconnaissance",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Air Support": [
+            "e_2",
+            "e_3",
+            "e_5"
+        ],
+        "Friendly Fire": [
+            "e_4"
+        ],
+        "Reconnaissance": [
+            "e_6"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Withdrawal to the Sittang position is underway as forces have reached the right bank."
+        },
+        {
+            "event": "e_2",
+            "date": "Ongoing during late January to February",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Air operations continue intensely, supporting the Army amidst the losses at Moulmein and Rangoon."
+        },
+        {
+            "event": "e_3",
+            "date": "21st February",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "For the first time, enemy vehicles are targeted as bombers and fighters engage along the Bilin-Kyaikto road."
+        },
+        {
+            "event": "e_4",
+            "date": "21st February",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Reports surface of possible friendly fire as troops at Mokpalin allegedly bombed by Blenheim aircraft."
+        },
+        {
+            "event": "e_5",
+            "date": "13th February",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Mandalay experiences its first air attack by enemy bombers."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_10",
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "GR escort and reconnaissance efforts are conducted in the Gulf of Martaban and Andaman Islands."
+        }
+    ]
+}

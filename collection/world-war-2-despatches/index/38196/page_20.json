@@ -1,0 +1,112 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rommel",
+            "p_2": "General Montgomery"
+        },
+        "locations": {
+            "l_1": "Nofilia",
+            "l_2": "Benghazi",
+            "l_3": "Sirte",
+            "l_4": "Buerat",
+            "l_5": "Tripoli",
+            "l_6": "Tripolitania",
+            "l_7": "Tunisia",
+            "l_8": "Tarhuna",
+            "l_9": "Homs",
+            "l_10": "Gulf of Sirte"
+        },
+        "events": {
+            "e_1": "Battle of Nofilia",
+            "e_2": "Evacuation of Tripolitania",
+            "e_3": "Advance on Tripoli"
+        },
+        "organisations": {
+            "o_1": "German High Command",
+            "o_2": "Long Range Desert Group"
+        }
+    },
+    "keywords": [
+        "armoured brigade",
+        "rearguard",
+        "reconnaissance",
+        "defensive position",
+        "invasion",
+        "mines",
+        "military tactics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Withdrawals",
+        "Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Withdrawals": [
+            "e_2"
+        ],
+        "Reconnaissance": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "16th December",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Light Armoured Brigade engages the enemy rearguard near Nofilia, with a successful advance despite numerous challenges like blown bridges and rough terrain."
+        },
+        {
+            "event": "e_2",
+            "date": "31st December",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Axis powers decide to evacuate Tripolitania to concentrate resources for the defense of Tunisia, intending to maintain a bridgehead that could tie down enemy forces."
+        },
+        {
+            "event": "e_3",
+            "date": "January",
+            "locations": [
+                "l_5",
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Preparations are made to advance on Tripoli without interruption, despite the logistical difficulties posed by distance and the terrain."
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant General Sir Oliver Leese",
+            "p_2": "Major-General Bastyan"
+        },
+        "locations": {
+            "l_1": "Rangoon",
+            "l_2": "Ramree",
+            "l_3": "Akyab",
+            "l_4": "Kandy"
+        },
+        "events": {
+            "e_1": "Zipper/Mailfist Operation",
+            "e_2": "Air Supply Planning for June"
+        },
+        "organisations": {
+            "o_1": "No. 238 Squadron",
+            "o_2": "US.A.A.F",
+            "o_3": "B.AF.S.E.A",
+            "o_4": "ALFSE.A"
+        }
+    },
+    "keywords": [
+        "Transport Aircraft",
+        "Air Supply",
+        "Army Requirements",
+        "Airlift Capacity",
+        "Military Coordination"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Management",
+        "Air Transport Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Supply Chain Management": [
+            "e_2"
+        ],
+        "Air Transport Challenges": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "July 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Zipper/Mailfist Operation prioritizes the airlift of tactical squadrons from Burma due to overloaded land and sea lines of communication."
+        },
+        {
+            "event": "e_2",
+            "date": "June 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air supply discussions take place regarding the shortfall in air transport, necessitating better planning and allocation of resources."
+        }
+    ]
+}

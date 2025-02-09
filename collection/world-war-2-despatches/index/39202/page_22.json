@@ -1,0 +1,122 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Vice-Marshal Bandon",
+            "p_2": "William MacClurry"
+        },
+        "locations": {
+            "l_1": "Kelanang airfield",
+            "l_2": "Port Dickson",
+            "l_3": "Morib Beach",
+            "l_4": "Bangkok",
+            "l_5": "Rangoon",
+            "l_6": "Singapore",
+            "l_7": "Saigon",
+            "l_8": "Phu My",
+            "l_9": "French Indo-China"
+        },
+        "events": {
+            "e_1": "Landing at Port Dickson",
+            "e_2": "Landings at Morib",
+            "e_3": "Occupation of Siam",
+            "e_4": "Entry into Saigon"
+        },
+        "organisations": {
+            "o_1": "Siamese Air Force",
+            "o_2": "R.A.F.",
+            "o_3": "Allied Forces"
+        }
+    },
+    "keywords": [
+        "Amphibious Operations",
+        "Allied Forces",
+        "Japanese Air Force",
+        "Siam",
+        "Cooperation",
+        "Evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Cooperation",
+        "Occupation",
+        "Reception by Local Populace"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Cooperation": [
+            "e_3"
+        ],
+        "Occupation": [
+            "e_3"
+        ],
+        "Reception by Local Populace": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 10th",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The landing at Port Dickson proceeds as planned with no significant incidents."
+        },
+        {
+            "event": "e_2",
+            "date": "D-plus-3, September 11th",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The landings at Morib are less successful due to difficult landing conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "December 8th, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Siamese Air Force attempts to resist Japanese invasion but is overwhelmed."
+        },
+        {
+            "event": "e_4",
+            "date": "September 12th",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The main R.A.F. party receives a warm welcome in Saigon from French and Annamese."
+        }
+    ]
+}

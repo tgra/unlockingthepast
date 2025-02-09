@@ -1,0 +1,116 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A. G. CUNNINGHAM",
+            "p_2": "Major General Godwin Austen",
+            "p_3": "Major General Wetherall",
+            "p_4": "Major General Godwin Kasten"
+        },
+        "locations": {
+            "l_1": "Addis Abeba",
+            "l_2": "E. Africa",
+            "l_3": "Dessie",
+            "l_4": "Sciasciamanna",
+            "l_5": "Soddu",
+            "l_6": "Omo",
+            "l_7": "Berbera",
+            "l_8": "British Somaliland"
+        },
+        "events": {
+            "e_1": "Surrender of Gazzera",
+            "e_2": "Attacks on Dessie, Sciasciamanna, Soddu and Omo",
+            "e_3": "Operation of E.A. Force campaign"
+        },
+        "organisations": {
+            "o_1": "E.A. Force"
+        }
+    },
+    "keywords": [
+        "morale",
+        "prisoners",
+        "supply",
+        "transport",
+        "military operations",
+        "Italian troops"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Management",
+        "Troop Morale"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Supply Chain Management": [
+            "e_3"
+        ],
+        "Troop Morale": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "July 2, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The surrender of Gazzera marks a significant end to the military operations in the region, leading to the capture of thousands of enemy troops."
+        },
+        {
+            "event": "e_2",
+            "date": "unknown",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Attacks led by Major Generals Austen, Wetherall, and Kasten successfully breach enemy defenses at Dessie, contributing to the enemy's eventual defeat."
+        },
+        {
+            "event": "e_3",
+            "date": "unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The E.A. Force campaign encompasses a series of military operations resulting in significant territorial gains and prisoner captures."
+        }
+    ]
+}

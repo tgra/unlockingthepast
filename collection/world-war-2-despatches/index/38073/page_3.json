@@ -1,0 +1,136 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Sir Henry H. Harwood",
+            "p_2": "Admiral Sir Andrew B. Cunningham"
+        },
+        "locations": {
+            "l_1": "Mediterranean",
+            "l_2": "Malta",
+            "l_3": "Alexandria",
+            "l_4": "Cyrenaica",
+            "l_5": "Crete",
+            "l_6": "Messina",
+            "l_7": "Gulf of Taranto"
+        },
+        "events": {
+            "e_1": "Battle of Sirte",
+            "e_2": "Operation M.G. One",
+            "e_3": "Operation M.W.10",
+            "e_4": "Operation Fullsize"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Royal Air Force",
+            "o_3": "Eighth Army"
+        }
+    },
+    "keywords": [
+        "Battle",
+        "Convoy",
+        "Operation",
+        "Air Attack",
+        "Naval Forces",
+        "Submarine Patrols"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Tactical Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Tactical Strategy": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22 March 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Sirte occurs, where a convoy is successfully defended against a superior Italian naval force."
+        },
+        {
+            "event": "e_2",
+            "date": "19 March - 28 March 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation M.G. One takes place, aimed at escorting a convoy to Malta while evading enemy interception."
+        },
+        {
+            "event": "e_3",
+            "date": "March 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Convoy M.W.10 is initiated, with efforts to ensure its safe arrival at Malta amidst threats from enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "D.z",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Fullsize is executed as a feint advance to divert enemy air attacks from the convoy."
+        }
+    ]
+}

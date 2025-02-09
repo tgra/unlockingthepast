@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral Second in Command",
+            "p_2": "Soviet Government"
+        },
+        "locations": {
+            "l_1": "Cape Wrath",
+            "l_2": "Akureyri",
+            "l_3": "Bear Island",
+            "l_4": "Lofotens",
+            "l_5": "Narvik",
+            "l_6": "Kola Inlet",
+            "l_7": "Scapa",
+            "l_8": "Reykjavik",
+            "l_9": "Barentsburg"
+        },
+        "events": {
+            "e_1": "Convoy P.Q.18",
+            "e_2": "Convoy Q.P.14",
+            "e_3": "Operation to bring home Hampden crews",
+            "e_4": "Independent Sailings"
+        },
+        "organisations": {
+            "o_1": "Home Fleet",
+            "o_2": "German Air Force",
+            "o_3": "Admiralty"
+        }
+    },
+    "keywords": [
+        "Convoy",
+        "U-boat",
+        "British Forces",
+        "Soviet Government",
+        "Military Operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "International Cooperation",
+        "Naval Strategy",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "International Cooperation": [
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_4"
+        ],
+        "Logistics": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th September 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Convoy P.Q.18 successfully arrives at its destination despite attacks, with losses recorded from U-boats."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified (related to P.Q.18)",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Convoy Q.P.14 faces U-boat attacks but successfully completes its journey with some losses."
+        },
+        {
+            "event": "e_3",
+            "date": "21st October 1942",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Hampden crews return from Russia without significant incidents, carrying medical supplies for British forces."
+        },
+        {
+            "event": "e_4",
+            "date": "29th October 1942",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Independent Sailings commence with multiple ships traveling between Iceland and North Russia for logistics."
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Papagos"
+        },
+        "locations": {
+            "l_1": "Athens",
+            "l_2": "Argos",
+            "l_3": "Crete",
+            "l_4": "Thermopylae",
+            "l_5": "Nauplion",
+            "l_6": "Kalamata",
+            "l_7": "Peloponnesus",
+            "l_8": "Egypt"
+        },
+        "events": {
+            "e_1": "Embarkation from Greece",
+            "e_2": "German invasion of Greece",
+            "e_3": "Withdrawal from Thermopylae",
+            "e_4": "Destruction of Hurricanes at Argos",
+            "e_5": "Counterattack at Kalamata"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "New Zealand Division"
+        }
+    },
+    "keywords": [
+        "German invasion",
+        "embarkation",
+        "casualties",
+        "air superiority",
+        "military strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Strategic Decisions",
+        "Casualties"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_3"
+        ],
+        "Casualties": [
+            "e_1",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 24-27, 1941",
+            "locations": [
+                "l_1",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The embarkation from Greece begins as Allied forces strive to evacuate troops amid the advancing German invasion, facing severe air and ground assaults."
+        },
+        {
+            "event": "e_2",
+            "date": "April 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The German invasion of Greece commences, leading to significant strategic shifts and the eventual retreat of Allied forces."
+        },
+        {
+            "event": "e_3",
+            "date": "April 26, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The withdrawal from Thermopylae occurs, with the New Zealand Division covering the retreat and inflicting casualties on German forces."
+        },
+        {
+            "event": "e_4",
+            "date": "April 23, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "All remaining Hurricanes at Argos are destroyed by enemy action, complicating evacuation plans and air defense capabilities."
+        },
+        {
+            "event": "e_5",
+            "date": "April 28-29, 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A counterattack at Kalamata by Allied officers prevents the German forces from preventing the embarkation of troops at the port."
+        }
+    ]
+}

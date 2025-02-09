@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C.I.G.S.",
+            "p_2": "Commander-in-Chief",
+            "p_3": "Colonel Gubbins",
+            "p_4": "Wing-Commander Atcherley"
+        },
+        "locations": {
+            "l_1": "Skjelfiord",
+            "l_2": "Harstad",
+            "l_3": "Bogen",
+            "l_4": "Mo",
+            "l_5": "Mosjoen",
+            "l_6": "Bodo",
+            "l_7": "Narvik",
+            "l_8": "Hemnes",
+            "l_9": "Tjeldsundet South Channel"
+        },
+        "events": {
+            "e_1": "Sinking of U.49",
+            "e_2": "Evacuation of Mosjoen",
+            "e_3": "Landing of enemy forces at Hemnes",
+            "e_4": "Air Patrols in the vicinity"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "Home Fleet",
+            "o_3": "Irish Guards",
+            "o_4": "Independent Companies",
+            "o_5": "Air Ministry"
+        }
+    },
+    "keywords": [
+        "sinking",
+        "evacuation",
+        "patrols",
+        "enemy forces",
+        "air superiority"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation",
+        "Air Patrol",
+        "Naval Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Evacuation": [
+            "e_2"
+        ],
+        "Air Patrol": [
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 15, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The U.49 is sunk, impacting subsequent military operations and contacts with enemy submarines."
+        },
+        {
+            "event": "e_2",
+            "date": "May 17, 1940",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Mosjoen is evacuated, resulting in abandoned equipment and a strategic shift in military presence."
+        },
+        {
+            "event": "e_3",
+            "date": "May 10, 1940",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Enemy forces land at Hemnes near Mo, complicating the military situation and responding strategies."
+        },
+        {
+            "event": "e_4",
+            "date": "Around April 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air patrols are conducted in the region when Walrus Aircraft are available, enhancing reconnaissance efforts."
+        }
+    ]
+}

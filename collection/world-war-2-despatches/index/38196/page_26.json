@@ -1,0 +1,142 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Eisenhower",
+            "p_2": "Lieut.-General Anderson",
+            "p_3": "Admiral Darlan"
+        },
+        "locations": {
+            "l_1": "Tunisia",
+            "l_2": "Cairo",
+            "l_3": "Algeria",
+            "l_4": "Morocco",
+            "l_5": "Casablanca",
+            "l_6": "Oran",
+            "l_7": "Algiers",
+            "l_8": "Tuns",
+            "l_9": "Bizerta",
+            "l_10": "Medjez el Bab"
+        },
+        "events": {
+            "e_1": "Conquest of Tunisia",
+            "e_2": "Landings at Algiers",
+            "e_3": "Armistice with French forces",
+            "e_4": "Advance of First Army towards Tunisia"
+        },
+        "organisations": {
+            "o_1": "Allied Expeditionary Force",
+            "o_2": "First Army",
+            "o_3": "Eighteenth Army Group"
+        }
+    },
+    "keywords": [
+        "Tactical Headquarters",
+        "Axis forces",
+        "French resistance",
+        "American command",
+        "British Brigade Group",
+        "Advance Army",
+        "Armistice",
+        "Communications"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Allied Forces",
+        "French Resistance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
+        ],
+        "Allied Forces": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 1943",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "General Eisenhower commands the conquest of Tunisia, focusing on the swift destruction of Axis forces."
+        },
+        {
+            "event": "e_2",
+            "date": "November 8, 1942",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Allied forces execute landings at Algiers, aiming to establish a foothold in North Africa amid French opposition."
+        },
+        {
+            "event": "e_3",
+            "date": "November 10, 1942",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Admiral Darlan orders an armistice, enabling French troops in North Africa to cease resistance against the Allies."
+        },
+        {
+            "event": "e_4",
+            "date": "November - December 1942",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The First Army advances towards Tunisia following the cessation of French resistance, aiming to secure strategic locations."
+        }
+    ]
+}

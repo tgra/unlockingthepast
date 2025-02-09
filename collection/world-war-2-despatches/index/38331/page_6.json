@@ -1,0 +1,108 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieut. Marshall G. C. Warmington",
+            "p_2": "Major J. F. Durnford-Slater",
+            "p_3": "Captain A. S. Ronald",
+            "p_4": "Lieut. Colonel D. S. Lister",
+            "p_5": "Major M. E. Kerr",
+            "p_6": "Lieut. H. M. Turner",
+            "p_7": "Captain Martin Linge"
+        },
+        "locations": {
+            "l_1": "Stamsund",
+            "l_2": "Henningsvaer",
+            "l_3": "Svolvaer",
+            "l_4": "Brettesnes"
+        },
+        "events": {
+            "e_1": "Military operation landings on March 4th",
+            "e_2": "Norwegian troops assistance during operations"
+        },
+        "organisations": {
+            "o_1": "Royal Engineers",
+            "o_2": "The Buffs",
+            "o_3": "The Rifle Brigade",
+            "o_4": "Home Fleet"
+        }
+    },
+    "keywords": [
+        "military landings",
+        "communication",
+        "meteorological data",
+        "weapons operation",
+        "civilian reception",
+        "Norwegian cooperation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Communication",
+        "Weather Impact",
+        "Local Reception",
+        "Collaboration"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Weather Impact": [
+            "e_1"
+        ],
+        "Local Reception": [
+            "e_2"
+        ],
+        "Collaboration": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 4th",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The military operations involve multiple landings across various ports, successfully completed despite initial concerns over conditions. As planned, the landings are executed under clear skies and with no enemy opposition."
+        },
+        {
+            "event": "e_2",
+            "date": "During military operations",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Norwegian troops provide enthusiastic assistance during the operations, significantly aiding in the timely and effective completion of the mission."
+        }
+    ]
+}

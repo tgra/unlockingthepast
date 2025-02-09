@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A.C.r",
+            "p_2": "CINC PAC",
+            "p_3": "CINCPOA",
+            "p_4": "President of the United States"
+        },
+        "locations": {
+            "l_1": "Formosa",
+            "l_2": "Okinawa",
+            "l_3": "Sakishima Gunto",
+            "l_4": "Ishigaki",
+            "l_5": "Matsuyama",
+            "l_6": "Shinchiku",
+            "l_7": "Yonakuni Shima",
+            "l_8": "Leyte",
+            "l_9": "Cootie One"
+        },
+        "events": {
+            "e_1": "Sakishima Operations",
+            "e_2": "Death of the President",
+            "e_3": "Tanker Group Operations"
+        },
+        "organisations": {
+            "o_1": "Task Force 51",
+            "o_2": "Task Force 57",
+            "o_3": "Task Force 112",
+            "o_4": "United States Fleet"
+        }
+    },
+    "keywords": [
+        "Formosa",
+        "Sakishima Gunto",
+        "Tanker Group",
+        "Hellcats",
+        "Corsairs",
+        "air operations",
+        "losses",
+        "President",
+        "Fleet"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Command",
+        "Support Missions",
+        "Tragic Loss"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Tactical Command": [
+            "e_1",
+            "e_3"
+        ],
+        "Tragic Loss": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "13-16 April 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Sakishima Operations are ongoing, involving air strikes on enemy airfields and engagements with enemy aircraft while monitoring enemy activities in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "April 1945",
+            "locations": [],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The death of the President of the United States is recognized by Task Force 57, leading to a signal of sympathy being sent to CINCPOA."
+        },
+        {
+            "event": "e_3",
+            "date": "14-15 April 1945",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Tanker Group Operations involve the replenishment of Task Force 57, enabling subsequent military actions in the Sakishima area."
+        }
+    ]
+}

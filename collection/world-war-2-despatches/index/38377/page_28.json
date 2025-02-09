@@ -1,0 +1,101 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice-Admiral, Malta"
+        },
+        "locations": {
+            "l_1": "ARK ROYAL",
+            "l_2": "NORTH",
+            "l_3": "NELSON",
+            "l_4": "Marittimo Island"
+        },
+        "events": {
+            "e_1": "Flying Operations from ARK ROYAL",
+            "e_2": "Enemy Aircraft Engagement",
+            "e_3": "Shadowing Operation"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "H.M. Ships"
+        }
+    },
+    "keywords": [
+        "Fulmars",
+        "C.R.42",
+        "T/B attacks",
+        "aircraft engagement",
+        "shadowing"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Combat",
+        "Reconnaissance",
+        "Navy Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Aerial Combat": [
+            "e_2"
+        ],
+        "Reconnaissance": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 28, 1915",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "ARK ROYAL conducts flying operations with several Fulmars engaging in aerial combat against enemy aircraft."
+        },
+        {
+            "event": "e_2",
+            "date": "September 28, 1915",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During aircraft operations, Fulmars engage enemy aircraft, resulting in the downing of one T/B and the engagement of C.R.42 fighters."
+        },
+        {
+            "event": "e_3",
+            "date": "September 28, 1915",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Shadowers from ARK ROYAL attempt to monitor the positions of enemy battleships but encounter communication issues leading to difficulties in locating targets."
+        }
+    ]
+}

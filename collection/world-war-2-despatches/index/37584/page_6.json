@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major General Paget",
+            "p_2": "Lieutenant-General Massy",
+            "p_3": "General Ruge",
+            "p_4": "Brigadier Kent Lemon",
+            "p_5": "Brigadier Morgan"
+        },
+        "locations": {
+            "l_1": "Andalsnes",
+            "l_2": "Otta",
+            "l_3": "Kvam",
+            "l_4": "Trondheim",
+            "l_5": "Dombas",
+            "l_6": "Alvdal",
+            "l_7": "Osterdalen valley",
+            "l_8": "Foldal",
+            "l_9": "Hjerkinn",
+            "l_10": "Gudbrandsdal valley",
+            "l_11": "Sjoa",
+            "l_12": "Opdal"
+        },
+        "events": {
+            "e_1": "Arrival of 1 K.O.Y.L.I. at Otta",
+            "e_2": "General Paget's meeting with General Ruge",
+            "e_3": "Withdrawal of 1 K.O.Y.L.I.",
+            "e_4": "Defence preparations in Otta"
+        },
+        "organisations": {
+            "o_1": "British Army",
+            "o_2": "Norwegian Army"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "14th Brigade",
+        "casualties",
+        "German advance",
+        "reconnaissance",
+        "defence"
+    ],
+    "themes": [
+        "Military Operations",
+        "Collaboration",
+        "Challenges in Warfare",
+        "Defensive Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Collaboration": [
+            "e_2"
+        ],
+        "Defensive Strategy": [
+            "e_4"
+        ],
+        "Challenges in Warfare": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "24th April",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "1 K.O.Y.L.I. arrives at Otta with orders to occupy a position and faces significant challenges."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "General Paget meets General Ruge to discuss strategies against the German advance."
+        },
+        {
+            "event": "e_3",
+            "date": "26th/27th April",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "General Paget orders the withdrawal of 1 K.O.Y.L.I. due to overwhelming enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "Post 26th April",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Defensive preparations are conducted in Otta to strengthen the position against enemy advances."
+        }
+    ]
+}

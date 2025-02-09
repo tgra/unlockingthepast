@@ -1,0 +1,169 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain R. M. J. Hutton",
+            "p_2": "Acting Captain R. J. Onslow",
+            "p_3": "Rear-Admiral Lyster",
+            "p_4": "Captain T. H. Troubridge",
+            "p_5": "Captain H. C. Bovell",
+            "p_6": "Commander-in-Chief"
+        },
+        "locations": {
+            "l_1": "Mediterranean",
+            "l_2": "Gibraltar",
+            "l_3": "Treasureland",
+            "l_4": "Trapani",
+            "l_5": "Heraklon",
+            "l_6": "Greece",
+            "l_7": "Crete",
+            "l_8": "Malta",
+            "l_9": "Egypt",
+            "l_10": "Haifa",
+            "l_11": "Port Said",
+            "l_12": "Sardinia",
+            "l_13": "Sicily"
+        },
+        "events": {
+            "e_1": "Operation Berserk",
+            "e_2": "Refuelling of destroyers",
+            "e_3": "Air attacks on Sardinian and Sicilian aerodromes",
+            "e_4": "Fleet attacks on Malta",
+            "e_5": "Emergency turns during fleet passage"
+        },
+        "organisations": {
+            "o_1": "Force F",
+            "o_2": "Force X",
+            "o_3": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "convoy",
+        "refuelling",
+        "aircraft carrier",
+        "enemy action",
+        "intelligence",
+        "operations",
+        "aerodromes",
+        "Fortune",
+        "military"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Air Defense",
+        "Logistics",
+        "Leadership"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Air Defense": [
+            "e_3"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Leadership": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Preceding D.1",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Berserk aims to surprise the enemy by passing a convoy into the Mediterranean, although challenges arise due to intelligence and fuelling complications."
+        },
+        {
+            "event": "e_2",
+            "date": "D.2",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The refuelling of destroyers CAIRO and 24 others is accomplished successfully, showcasing effective logistical planning under favorable conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "D.2, D.3",
+            "locations": [
+                "l_12",
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Air attacks on aerodromes in Sardinia and Sicily are conducted by bomber forces from Malta and Egypt, contributing positively to military operations."
+        },
+        {
+            "event": "e_4",
+            "date": "D.1, D.2, D.3",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The fleet faces heavy attacks but displays resilience, with reports of significant defensive measures and the eventual delivery of supplies to Malta."
+        },
+        {
+            "event": "e_5",
+            "date": "D.1, D.2, D.3",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Amidst naval operations, the fleet executes emergency turns in response to threats, demonstrating the importance of vigilance during military engagements."
+        }
+    ]
+}

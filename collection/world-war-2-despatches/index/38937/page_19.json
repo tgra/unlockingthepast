@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Mark Clark",
+            "p_2": "General McCreery",
+            "p_3": "General Harding",
+            "p_4": "General Lemnitzer",
+            "p_5": "General Robertson"
+        },
+        "locations": {
+            "l_1": "Santerno River",
+            "l_2": "Florence",
+            "l_3": "Castel San Pietro",
+            "l_4": "Bologna",
+            "l_5": "Italy",
+            "l_6": "Mediterranean Theatre"
+        },
+        "events": {
+            "e_1": "Offensive Operation on Santerno River",
+            "e_2": "Army Commanders Conference in Florence",
+            "e_3": "Appointment as Supreme Allied Commander",
+            "e_4": "Disbandment of Headquarters, Allied Armies in Italy"
+        },
+        "organisations": {
+            "o_1": "Fifteenth Army Group",
+            "o_2": "Allied Force Headquarters"
+        }
+    },
+    "keywords": [
+        "Fifth Army",
+        "Eighth Army",
+        "offensive",
+        "Allied winter offensive",
+        "military intelligence",
+        "administrative staff",
+        "combined operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Administration",
+        "Intelligence Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
+        ],
+        "Administration": [
+            "e_4"
+        ],
+        "Intelligence Operations": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "21st November 1944",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An offensive operation aimed at securing bridgeheads across the Santerno River is planned, contingent on weather conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "26th November 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Army Commanders conference is held in Florence, where the timing and coordination of the planned offensive operations are agreed upon."
+        },
+        {
+            "event": "e_3",
+            "date": "12th December 1944",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "General Mark Clark assumes the role of Supreme Allied Commander in the Mediterranean Theatre, taking charge of tactical operations."
+        },
+        {
+            "event": "e_4",
+            "date": "28th November 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Headquarters, Allied Armies in Italy, is disbanded, transitioning responsibilities to the newly formed Fifteenth Army Group under General Clark."
+        }
+    ]
+}

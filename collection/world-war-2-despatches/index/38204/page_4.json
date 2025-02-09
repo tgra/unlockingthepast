@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral (Submarines)",
+            "p_2": "Sub-Lieutenant E. Kearon, R.N.V.R.",
+            "p_3": "Lieutenant B. M. McFarlane, R.A.N."
+        },
+        "locations": {
+            "l_1": "Norwegian coast",
+            "l_2": "position 68 51 N. 8 34 E.",
+            "l_3": "position 69 35 N. 10 16 E.",
+            "l_4": "position 71 04 N. 15 56 E.",
+            "l_5": "position 70 49 N. 11 40 E."
+        },
+        "events": {
+            "e_1": "Search for SEANYMPH",
+            "e_2": "Loss of X.8",
+            "e_3": "Contact between STUBBORN and SEANYMPH",
+            "e_4": "Explosion of jettisoned charge from X.8"
+        },
+        "organisations": {
+            "o_1": "Admiralty"
+        }
+    },
+    "keywords": [
+        "U-boat",
+        "signal",
+        "tow",
+        "dive",
+        "operation",
+        "search",
+        "loss",
+        "explosion"
+    ],
+    "themes": [
+        "Military Operations",
+        "Loss at Sea",
+        "Naval Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Naval Coordination": [
+            "e_1",
+            "e_3"
+        ],
+        "Loss at Sea": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "15th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 15th September, SEANYMPH initiates a search operation after losing contact with X.8."
+        },
+        {
+            "event": "e_2",
+            "date": "17th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On 17th September, the loss of X.8 is realized, marking a regrettable event in the operation."
+        },
+        {
+            "event": "e_3",
+            "date": "17th September",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 17th September, STUBBORN and SEANYMPH make contact, exchanging vital information regarding the search."
+        },
+        {
+            "event": "e_4",
+            "date": "17th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 17th September, an explosion occurs after the command to jettison a charge from X.8, which causes no damage."
+        }
+    ]
+}

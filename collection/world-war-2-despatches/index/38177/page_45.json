@@ -1,0 +1,106 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Rommel",
+            "p_2": "General Schmitt"
+        },
+        "locations": {
+            "l_1": "Tobruk",
+            "l_2": "Derna",
+            "l_3": "Bengasi",
+            "l_4": "Libya",
+            "l_5": "Tripoli",
+            "l_6": "Cyrenaica",
+            "l_7": "Tripolitania",
+            "l_8": "Gambut",
+            "l_9": "El Adem",
+            "l_10": "Ed Duda",
+            "l_11": "Sidi Rezegh",
+            "l_12": "Bardia"
+        },
+        "events": {
+            "e_1": "Bombardment of Enemy Supply Lines",
+            "e_2": "Offensive Against Tobruk"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Royal Navy",
+            "o_3": "Long Range Desert Group",
+            "o_4": "Eighth Army"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "reconnaissance",
+        "enemy forces",
+        "deception",
+        "supply lines",
+        "offensive",
+        "Tobruk"
+    ],
+    "themes": [
+        "Military Operations",
+        "Reconnaissance",
+        "Supply Disruption",
+        "Strategic Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Reconnaissance": [
+            "e_2"
+        ],
+        "Supply Disruption": [
+            "e_1"
+        ],
+        "Strategic Planning": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Mid-November",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Royal Navy and Royal Air Force conduct a bombardment of enemy supply lines, significantly disrupting enemy reinforcements and supplies in North Africa."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown (preparation before offensive)",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Preparations are underway for an offensive against Tobruk, with considerations to catch the enemy off-guard during their own anticipated attack."
+        }
+    ]
+}

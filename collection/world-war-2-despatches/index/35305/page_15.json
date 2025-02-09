@@ -1,0 +1,122 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir Ronald Adam",
+            "p_2": "Admiral Abrial",
+            "p_3": "General de la Laurencie",
+            "p_4": "General Weygand",
+            "p_5": "Major-General Hon. H. R. L. G. Alexander",
+            "p_6": "Generals Blanchard"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "Belgian frontier",
+            "l_3": "La Panne",
+            "l_4": "Furnes",
+            "l_5": "Bergues"
+        },
+        "events": {
+            "e_1": "Evacuation of the British Expeditionary Force (B.E.F.)",
+            "e_2": "Final withdrawal of 2nd Corps",
+            "e_3": "Embarkation operations at Dunkirk"
+        },
+        "organisations": {
+            "o_1": "British Army",
+            "o_2": "French Army",
+            "o_3": "G.H.Q."
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "Dunkirk",
+        "British Army",
+        "French Army",
+        "military strategy",
+        "final withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Strategy",
+        "Allied Cooperation",
+        "Command Structure"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Evacuation Strategy": [
+            "e_1",
+            "e_3"
+        ],
+        "Allied Cooperation": [
+            "e_1"
+        ],
+        "Command Structure": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "31st May 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of the British Expeditionary Force (B.E.F.) proceeds successfully, with over 211,000 fit men and additional allied troops evacuated from Dunkirk amidst increasing enemy pressure."
+        },
+        {
+            "event": "e_2",
+            "date": "1st June 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The final withdrawal of the 2nd Corps occurs under heavy enemy pressure as troops methodically move to beaches for evacuation."
+        },
+        {
+            "event": "e_3",
+            "date": "Around 31st May 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Embarkation operations at Dunkirk achieve significant success, with smooth organization aided by favorable weather, facilitating the extraction of allied troops."
+        }
+    ]
+}

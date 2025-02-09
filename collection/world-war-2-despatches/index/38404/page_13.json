@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Ministry",
+            "p_2": "German bomber force",
+            "p_3": "Pilots"
+        },
+        "locations": {
+            "l_1": "Northern Ireland",
+            "l_2": "East Coast",
+            "l_3": "West Coast Ports",
+            "l_4": "Clyde",
+            "l_5": "Mersey",
+            "l_6": "Bristol Channel",
+            "l_7": "Filton",
+            "l_8": "Pembrey",
+            "l_9": "Speke",
+            "l_10": "Prestwick",
+            "l_11": "Turahouse",
+            "l_12": "Drem"
+        },
+        "events": {
+            "e_1": "Decision to prioritize the defence of shipping",
+            "e_2": "Increase in coastal defence measures",
+            "e_3": "Formation of the Merchant Ship Fighter Unit"
+        },
+        "organisations": {
+            "o_1": "Coastal Command",
+            "o_2": "No. 9 Group",
+            "o_3": "Polish Squadrons"
+        }
+    },
+    "keywords": [
+        "barrages",
+        "pirate raids",
+        "defence",
+        "U-boats",
+        "aircraft",
+        "Coastal Command"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategy",
+        "Air Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defence Strategy": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Operations": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "28th February 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisation": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A decision is reached to prioritize the defence of shipping in NorthWestern approaches, threatened by U-boats and long-range aircraft."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1941",
+            "locations": [
+                "l_1",
+                "l_6",
+                "l_5",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The defence measures for shipping increase, with enhanced A.A. and night-fighter defences implemented in response to threats."
+        },
+        {
+            "event": "e_3",
+            "date": "May 1941",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The formation of the Merchant Ship Fighter Unit begins to equip merchant vessels with fighter capabilities."
+        }
+    ]
+}

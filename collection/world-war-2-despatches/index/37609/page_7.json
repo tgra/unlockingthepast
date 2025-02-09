@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General M. O Moore Creagh",
+            "p_2": "Major-General W. Platt",
+            "p_3": "Major-General L. M. Heath"
+        },
+        "locations": {
+            "l_1": "Western Frontier of Egypt",
+            "l_2": "Sidi Barrani",
+            "l_3": "Sudan",
+            "l_4": "Gallabat",
+            "l_5": "Metemma",
+            "l_6": "Italian East Africa",
+            "l_7": "Kassala"
+        },
+        "events": {
+            "e_1": "Operations in the Sudan, October-November 1940",
+            "e_2": "Capture of Gallabat",
+            "e_3": "Attack on Metemma"
+        },
+        "organisations": {
+            "o_1": "7th Armoured Division",
+            "o_2": "5th Indian Division",
+            "o_3": "6th Royal Tank Regiment",
+            "o_4": "3rd Garhwal Rifles",
+            "o_5": "1st Essex Regiment",
+            "o_6": "R.H.A.",
+            "o_7": "ist Cavalry Division",
+            "o_8": "rzth Hussars",
+            "o_9": "8th Hussars"
+        }
+    },
+    "keywords": [
+        "Gallabat",
+        "Metemma",
+        "Italian forces",
+        "British troops",
+        "military operations",
+        "air superiority",
+        "territorial gains"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Decisions",
+        "Logistics and Supply"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Tactical Decisions": [
+            "e_2",
+            "e_3"
+        ],
+        "Logistics and Supply": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October-November 1940",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "British troops execute operations in the Sudan aiming to capture Gallabat and target Metemma amidst logistical challenges and enemy resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "6th November",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The 3rd Garhwal Rifles along with the Royal Tank Regiment successfully capture Gallabat with minimal casualties."
+        },
+        {
+            "event": "e_3",
+            "date": "6th November",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The planned attack on Metemma is called off as enemy air superiority and logistics hinder British operations."
+        }
+    ]
+}

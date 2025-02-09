@@ -1,0 +1,104 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Frederick H. G. Dairymple-Harilton",
+            "p_2": "Arthur D. Read"
+        },
+        "locations": {
+            "l_1": "Reykjavik",
+            "l_2": "Gibraltar",
+            "l_3": "Malta"
+        },
+        "events": {
+            "e_1": "Attack by Aircraft of VICTORIOUS",
+            "e_2": "Action with the BISMARCK",
+            "e_3": "Action with HOOD"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "BISMARCK",
+        "VICTORIOUS",
+        "King George V",
+        "REPULSE",
+        "Air Attack",
+        "Naval Engagement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Aircraft Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_2",
+            "e_3"
+        ],
+        "Aircraft Engagement": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 25, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The attack by VICTORIOUS' aircraft marks a crucial operation against the BISMARCK, focusing on locating and attacking the enemy under challenging weather conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "May 26, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The action with the BISMARCK results in significant engagements, ultimately leading to her sinking due to coordinated attacks from various naval forces including aircraft from VICTORIOUS."
+        },
+        {
+            "event": "e_3",
+            "date": "May 24, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The action with HOOD involves early engagements with the BISMARCK that influence her subsequent movements and decisions in the following days."
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Japanese forces",
+            "p_2": "Allied ground forces",
+            "p_3": "R.A.F."
+        },
+        "locations": {
+            "l_1": "Toungoo",
+            "l_2": "Magwe",
+            "l_3": "Pegu Yomas",
+            "l_4": "Southern Burma",
+            "l_5": "Siam",
+            "l_6": "Malaya",
+            "l_7": "Rangoon",
+            "l_8": "Northern Burma",
+            "l_9": "IndoChina",
+            "l_10": "Netherlands East Indies"
+        },
+        "events": {
+            "e_1": "Operation Mastiff",
+            "e_2": "Operation Zipper",
+            "e_3": "Japanese Surrender"
+        },
+        "organisations": {
+            "o_1": "RAAF"
+        }
+    },
+    "keywords": [
+        "Air Supply",
+        "Transport Squadrons",
+        "Japanese Surrender",
+        "Allied Forces",
+        "P.O.W. Evacuation",
+        "Monsoon Weather"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Supply Operations",
+        "Prisoner Evacuation",
+        "Post-War Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Supply Operations": [
+            "e_1"
+        ],
+        "Prisoner Evacuation": [
+            "e_1"
+        ],
+        "Post-War Logistics": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 28, 1945",
+            "locations": [
+                "l_7",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Mastiff is launched to bring relief to thousands of Allied prisoners of war in Southeast Asia following the Japanese surrender."
+        },
+        {
+            "event": "e_2",
+            "date": "August 1945",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Zipper is planned for the assault on Malaya, following the shift in air supply operational focus after the Japanese surrender."
+        },
+        {
+            "event": "e_3",
+            "date": "August 15, 1945",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Japanese surrender takes place, marking a significant turning point that changes the nature of military operations in Southeast Asia."
+        }
+    ]
+}

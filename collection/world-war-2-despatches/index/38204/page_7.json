@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant B. C. G. Place, D.S.C., R.N.",
+            "p_2": "Lieutenant A. A. Duff, R.N."
+        },
+        "locations": {
+            "l_1": "Alten Fiord",
+            "l_2": "Soroy Sound",
+            "l_3": "Soroy Island",
+            "l_4": "Tarhalsen Point",
+            "l_5": "Hammerfest",
+            "l_6": "Port HHZ",
+            "l_7": "Kaafiord",
+            "l_8": "Brattholm group of islands"
+        },
+        "events": {
+            "e_1": "Operation against TIRPITZ",
+            "e_2": "Passage of X-craft",
+            "e_3": "Sighting of U-boat"
+        },
+        "organisations": {
+            "o_1": "H.M.S SYRTIS",
+            "o_2": "H.M.S STUBBORN",
+            "o_3": "H.M.S THRASHER",
+            "o_4": "H.M.S TRUCULENT",
+            "o_5": "H.M.S SCEPTRE"
+        }
+    },
+    "keywords": [
+        "X-craft",
+        "U-boat",
+        "H.M.S STUBBORN",
+        "Alten Fiord",
+        "TIRPITZ",
+        "Operation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Tactics",
+        "Submarine Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Submarine Warfare": [
+            "e_3"
+        ],
+        "Naval Tactics": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd September",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The operation against TIRPITZ is executed with plans to detonate charges between 0500 and 0800Z, aiming for an effective attack on the target."
+        },
+        {
+            "event": "e_2",
+            "date": "21st September",
+            "locations": [
+                "l_6",
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The passage of X-craft from their parent submarines occurs, demonstrating skillful navigation under challenging conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "21st September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "H.M.S SYRTIS sights a U-boat on the surface, which poses a potential threat to the ongoing military operations but is allowed to pass to maintain operational secrecy."
+        }
+    ]
+}

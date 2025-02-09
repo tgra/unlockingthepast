@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "F",
+            "p_3": "Mr. Duff Cooper"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Pearl Harbour",
+            "l_4": "Manila",
+            "l_5": "Penang Island",
+            "l_6": "Kedah",
+            "l_7": "Sourabaya",
+            "l_8": "Port Darwin",
+            "l_9": "Java",
+            "l_10": "South China Sea",
+            "l_11": "Netherlands East Indies",
+            "l_12": "Georgetown"
+        },
+        "events": {
+            "e_1": "Attack on Ships",
+            "e_2": "Japanese Attack on Pearl Harbour",
+            "e_3": "First Attack on Penang",
+            "e_4": "Bombing of Georgetown"
+        },
+        "organisations": {
+            "o_1": "Eastern Fleet",
+            "o_2": "United States Pacific Fleet",
+            "o_3": "Asiatic Fleet",
+            "o_4": "Royal Air Force",
+            "o_5": "British Empire"
+        }
+    },
+    "keywords": [
+        "military",
+        "defence",
+        "bombing",
+        "Japanese",
+        "Pearl Harbour",
+        "Penang",
+        "casualties",
+        "operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Psychological Impact",
+        "Strategic Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Psychological Impact": [
+            "e_4"
+        ],
+        "Strategic Defense": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th December",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_2"
+            ],
+            "eventSummary": "Ships are attacked by bombers, causing significant distress and highlighting the need for improved defenses."
+        },
+        {
+            "event": "e_2",
+            "date": "7th December",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Japanese forces launch a surprise attack on the United States Pacific Fleet, drastically altering military balance."
+        },
+        {
+            "event": "e_3",
+            "date": "8th December",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Penang suffers its first bombing attack by Japanese aircraft, prompting serious operational concerns and civilian casualties."
+        },
+        {
+            "event": "e_4",
+            "date": "11th December",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Georgetown is bombed resulting in heavy casualties among the local population, accentuating the urgency of military responses."
+        }
+    ]
+}

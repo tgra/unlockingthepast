@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Dobbie",
+            "p_2": "General Ritchie",
+            "p_3": "Prime Minister"
+        },
+        "locations": {
+            "l_1": "Egypt",
+            "l_2": "Cyrenaica",
+            "l_3": "Malta",
+            "l_4": "Gebel Akhdar",
+            "l_5": "Tobruk",
+            "l_6": "Derna",
+            "l_7": "Bengasi",
+            "l_8": "El Adem",
+            "l_9": "Cairo"
+        },
+        "events": {
+            "e_1": "Offensive in Cyrenaica",
+            "e_2": "Convoy to Malta",
+            "e_3": "Raids on landing grounds",
+            "e_4": "Consultation with Prime Minister"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "Middle East Defence Committee",
+            "o_3": "War Office"
+        }
+    },
+    "keywords": [
+        "offensive",
+        "Malta",
+        "Cyrenaica",
+        "convoy",
+        "air situation",
+        "armoured forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Strategic Decisions",
+        "Defence Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Allies plan a limited offensive in Cyrenaica to regain landing grounds while considering risks to their Northern Front."
+        },
+        {
+            "event": "e_2",
+            "date": "Middle of March 1942",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A convoy to Malta is attempted, drawing on a strategy to supply the island under enemy scrutiny."
+        },
+        {
+            "event": "e_3",
+            "date": "March 20th and 21st 1942",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Eighth Army conducts raids on landing grounds around Derna and Bengasi to support supply efforts, though faced with enemy reconnaissance."
+        },
+        {
+            "event": "e_4",
+            "date": "March 1942",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Prime Minister requests a consultation in England due to diverging views on the Eighth Army's capability to mount an offensive."
+        }
+    ]
+}

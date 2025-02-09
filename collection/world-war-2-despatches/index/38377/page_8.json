@@ -1,0 +1,140 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral",
+            "p_2": "Captain",
+            "p_3": "TARTAR",
+            "p_4": "ZETLAND",
+            "p_5": "BRAMHAM",
+            "p_6": "NELSON",
+            "p_7": "VICTORIOUS",
+            "p_8": "ITHURIEL",
+            "p_9": "DEUCALION",
+            "p_10": "LOOKOUT"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Skerki Channel",
+            "l_3": "H (port quarter)",
+            "l_4": "I (port quarter)",
+            "l_5": "U (starboard quarter)",
+            "l_6": "V"
+        },
+        "events": {
+            "e_1": "Torpedo Bomber Attacks",
+            "e_2": "Depth Charge Attack on U-Boat",
+            "e_3": "U-Boat Sinking Incident",
+            "e_4": "Air Raid Engagement"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "U-Boat",
+        "destroyer",
+        "air raid",
+        "torpedo bombers",
+        "mines",
+        "depth charge"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Air Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_3"
+        ],
+        "Air Defense": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Torpedo bombers attack the fleet without causing significant damage."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "A depth charge attack is carried out against a U-Boat, signalling defensive naval measures."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_8",
+                "p_9"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "ITHURIEL attacks and sinks an Italian U-Boat, capturing its crew."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An air raid engagement occurs with enemy formations targeting the navy."
+        }
+    ]
+}

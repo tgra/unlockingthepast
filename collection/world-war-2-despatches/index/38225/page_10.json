@@ -1,0 +1,97 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral Syfret",
+            "p_2": "Brigadier Tarleton"
+        },
+        "locations": {
+            "l_1": "Bachaquero",
+            "l_2": "Blue beach",
+            "l_3": "Courrier Bay",
+            "l_4": "Andrakaka Peninsula",
+            "l_5": "Diego Suarez"
+        },
+        "events": {
+            "e_1": "Disembarkation of 17 Infantry Brigade",
+            "e_2": "Landing and Assumption of Control by Force Commander"
+        },
+        "organisations": {
+            "o_1": "H.M.S. Ramullies",
+            "o_2": "H.M.S. Keren",
+            "o_3": "S.N.O.L.",
+            "o_4": "17 Infantry Brigade Group",
+            "o_5": "29 Independent Brigade",
+            "o_6": "2 Royal Scots Fusiliers",
+            "o_7": "5 Commando"
+        }
+    },
+    "keywords": [
+        "disembarkation",
+        "landing",
+        "military operation",
+        "beach",
+        "infantry brigade"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Command and Control"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ],
+        "Command and Control": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "4 March 1948",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4",
+                "o_6",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The personnel of 17 Infantry Brigade Group disembark from H.M.S. Oronsay and Duchess of Atholl, beginning their landing operations at Blue Beach."
+        },
+        {
+            "event": "e_2",
+            "date": "4 March 1948",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Force Commander embarks in H.M.S. Ramullies and attempts to transfer to H.M.S. Keren to assist the landing operations of 17 Infantry Brigade."
+        }
+    ]
+}

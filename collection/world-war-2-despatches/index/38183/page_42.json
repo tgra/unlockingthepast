@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir Tom Phillips",
+            "p_2": "Commander-in-Chief, China",
+            "p_3": "Admiral Colvin"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Indochina",
+            "l_4": "Netherlands East Indies",
+            "l_5": "South China Sea"
+        },
+        "events": {
+            "e_1": "Franco-British Conference",
+            "e_2": "Singapore Conference",
+            "e_3": "A.D.A. agreement",
+            "e_4": "A.D.B. agreement"
+        },
+        "organisations": {
+            "o_1": "General Headquarters, Far East",
+            "o_2": "Food Committee",
+            "o_3": "War Committee"
+        }
+    },
+    "keywords": [
+        "defence",
+        "conference",
+        "mutual reinforcement",
+        "naval operations",
+        "Japanese aggression"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 1939",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Franco-British Conference addresses general issues but is hindered by the collapse of French active collaboration."
+        },
+        {
+            "event": "e_2",
+            "date": "October 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Singapore Conference results in a tactical appreciation of military coordination among Allied forces."
+        },
+        {
+            "event": "e_3",
+            "date": "February 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The A.D.A. agreement is established focusing on mutual military support among British, Dutch, and Australian forces in response to impending Japanese threats."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The A.D.B. agreement consolidates naval strategies and introduces adjustments to previous agreements regarding military operations in the region."
+        }
+    ]
+}

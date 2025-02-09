@@ -1,0 +1,115 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admuralty",
+            "p_2": "Captain C. Caslon",
+            "p_3": "Lieut-Commander Shaw"
+        },
+        "locations": {
+            "l_1": "Scapa Flow",
+            "l_2": "Skaalefjord",
+            "l_3": "Lofoten Islands",
+            "l_4": "Vestfjord",
+            "l_5": "Brettnes",
+            "l_6": "Svolvaer",
+            "l_7": "Holen Skjoldver"
+        },
+        "events": {
+            "e_1": "Operation Rebel",
+            "e_2": "Landing at Svolvaer",
+            "e_3": "Landing at Brettnes"
+        },
+        "organisations": {
+            "o_1": "Home Fleet"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "landing craft",
+        "naval approach",
+        "strategic decisions",
+        "enemy observation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Navigation Challenges",
+        "Troop Coordination",
+        "Surprise Attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Navigation Challenges": [
+            "e_1"
+        ],
+        "Troop Coordination": [
+            "e_2",
+            "e_3"
+        ],
+        "Surprise Attacks": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Rebel commences from Scapa Flow, proceeding to Skaalefjord, followed by landings at Svolvaer and Brettnes."
+        },
+        {
+            "event": "e_2",
+            "date": "March 3, 1941",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Troops successfully land at Svolvaer during the early hours of March 3 amidst favorable conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "March 3, 1941",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Following operations at Svolvaer, forces proceed to land at Brettnes as planned."
+        }
+    ]
+}

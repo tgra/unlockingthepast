@@ -1,0 +1,175 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Squadron Leader Lewis",
+            "p_2": "Group Captain Rice"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Kluang",
+            "l_3": "Java",
+            "l_4": "Sumatra",
+            "l_5": "Johore causeway",
+            "l_6": "Batu Pahat",
+            "l_7": "Seletar",
+            "l_8": "Sembawang",
+            "l_9": "Tengah",
+            "l_10": "Banka Straits"
+        },
+        "events": {
+            "e_1": "Fighter Operations from Singapore",
+            "e_2": "Final evacuation of troops",
+            "e_3": "Japanese landing on the Island",
+            "e_4": "Convoy protection patrols",
+            "e_5": "Attack on aerodrome at Kluang",
+            "e_6": "Final day of operations"
+        },
+        "organisations": {
+            "o_1": "No. 232(F) Squadron",
+            "o_2": "No. 453(F) Squadron",
+            "o_3": "No. 258(F) Squadron",
+            "o_4": "H.M.S. Indomitable"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "fighter operations",
+        "Japanese attacks",
+        "aircraft losses",
+        "convoy protection",
+        "military air support"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Troop Evacuation",
+        "Air Combat",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Defensive Strategies": [
+            "e_1",
+            "e_3"
+        ],
+        "Troop Evacuation": [
+            "e_2"
+        ],
+        "Air Combat": [
+            "e_1",
+            "e_5",
+            "e_6"
+        ],
+        "Logistics": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "5th February",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "Fighter operations are conducted from Singapore to defend against Japanese air attacks and to protect troop evacuations, demonstrating the pilots' exemplary service under pressure."
+        },
+        {
+            "event": "e_2",
+            "date": "1st February",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A significant evacuation of troops occurs in response to the advancing Japanese forces, highlighting the urgency and strain on military resources."
+        },
+        {
+            "event": "e_3",
+            "date": "8th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Japanese successfully land on the Island, marking a crucial moment in the conflict and prompting intensified defensive operations."
+        },
+        {
+            "event": "e_4",
+            "date": "5th February",
+            "locations": [
+                "l_10",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Patrols are organized for convoy protection amidst ongoing conflict, ensuring the safe transport of troops and supplies to Singapore from Sumatra."
+        },
+        {
+            "event": "e_5",
+            "date": "2nd February",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An attack is launched against the Japanese aerodrome in Kluang, showcasing the ongoing air combat during this critical phase."
+        },
+        {
+            "event": "e_6",
+            "date": "9th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the final day of operations, fighter pilots manage to shoot down enemy aircraft, marking a resilient defense despite overwhelming odds."
+        }
+    ]
+}

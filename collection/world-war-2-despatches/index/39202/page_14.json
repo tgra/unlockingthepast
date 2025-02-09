@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C.M.O.",
+            "p_2": "A.O.C."
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "Arakan",
+            "l_3": "India",
+            "l_4": "Singapore",
+            "l_5": "Cocos Islands",
+            "l_6": "Kandy",
+            "l_7": "Ceylon",
+            "l_8": "China"
+        },
+        "events": {
+            "e_1": "Operation Zipper",
+            "e_2": "Withdrawal of No. 224 Group",
+            "e_3": "Re-organisation of Air Command"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "Headquarters, Base Air Forces",
+            "o_3": "Headquarters 230 Group",
+            "o_4": "Allied Land Forces",
+            "o_5": "U.S.A.A.F.",
+            "o_6": "Supreme Allied Command",
+            "o_7": "Headquarters, Allied Land Forces"
+        }
+    },
+    "keywords": [
+        "Burma",
+        "R.A.F.",
+        "Operation Zipper",
+        "withdrawal",
+        "reorganisation",
+        "Air Command"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 1945",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Zipper involves a planned military assault on Malaya, necessitating a significant withdrawal of units from various locations."
+        },
+        {
+            "event": "e_2",
+            "date": "early May 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The withdrawal of No. 224 Group begins in preparation for Operation Zipper, overseen by R.A.F. headquarters in Burma and affected by logistical challenges."
+        },
+        {
+            "event": "e_3",
+            "date": "1945-1946",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The reorganisation of Air Command addresses the changing responsibilities and deployment of formations in South East Asia post-Burma campaign."
+        }
+    ]
+}

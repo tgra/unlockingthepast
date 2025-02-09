@@ -1,0 +1,138 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Henri H. Giraud",
+            "p_2": "Mark W. Clark"
+        },
+        "locations": {
+            "l_1": "Sicily",
+            "l_2": "North Africa",
+            "l_3": "Reggio",
+            "l_4": "Cotrone",
+            "l_5": "Calabria",
+            "l_6": "Corsica",
+            "l_7": "Naples",
+            "l_8": "Sardinia",
+            "l_9": "Taranto",
+            "l_10": "Italy"
+        },
+        "events": {
+            "e_1": "Operation BUTTRESS",
+            "e_2": "Operation GOBLET",
+            "e_3": "Operation BRIMSTONE",
+            "e_4": "Operation FIREBRAND"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "United States Fifth Army",
+            "o_3": "Allied Force Headquarters"
+        }
+    },
+    "keywords": [
+        "Operation",
+        "landing",
+        "Allied forces",
+        "Italian forces",
+        "amphibious operations",
+        "capture",
+        "Sicily"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Planning",
+        "Allied Strategies",
+        "Italian Resistance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Planning": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Allied Strategies": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Italian Resistance": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation BUTTRESS is planned to initiate an assault on Reggio as part of a larger strategy in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "1st October",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation GOBLET is scheduled to land at Cotrone, aimed at securing critical airfields."
+        },
+        {
+            "event": "e_3",
+            "date": "if necessary following operation",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Operation BRIMSTONE will only be undertaken if initial mainland efforts prove unsuccessful, tasking the United States Fifth Army."
+        },
+        {
+            "event": "e_4",
+            "date": "15th June",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation FIREBRAND is being planned for the capture of Corsica, with Giraud tasked to assemble a command plan."
+        }
+    ]
+}

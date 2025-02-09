@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir Cecil Dormer",
+            "p_2": "Colonel Pollock",
+            "p_3": "Lord Cork",
+            "p_4": "General Bethouart",
+            "p_5": "General Fleischer"
+        },
+        "locations": {
+            "l_1": "Norway",
+            "l_2": "Tromso",
+            "l_3": "Narvik",
+            "l_4": "Rombaks Fjord",
+            "l_5": "Oijord",
+            "l_6": "Bjerkvik",
+            "l_7": "Sildvik",
+            "l_8": "Ankenes Peninsula",
+            "l_9": "Beisfjord",
+            "l_10": "Lilleberget",
+            "l_11": "Ofot Fjord",
+            "l_12": "Oijordneset"
+        },
+        "events": {
+            "e_1": "Postponement of Evacuation",
+            "e_2": "Landing Operation at Narvik",
+            "e_3": "Counterattack by Enemy Forces"
+        },
+        "organisations": {
+            "o_1": "His Majesty's Government",
+            "o_2": "Royal Navy",
+            "o_3": "Norwegian Army",
+            "o_4": "French Army"
+        }
+    },
+    "keywords": [
+        "Operation",
+        "Evacuation",
+        "Battalion",
+        "Helicopter",
+        "Counterattack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "International Relations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2nd June",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A telegram from Sir Cecil Dormer is received urging the postponement of the evacuation for twenty-four hours to allow the Norwegian Government to liaise with the Swedish Government."
+        },
+        {
+            "event": "e_2",
+            "date": "27th May",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_11"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The landing operation at Narvik begins with naval bombardment and the establishment of troops on the shore, despite challenges posed by enemy defenses and logistics."
+        },
+        {
+            "event": "e_3",
+            "date": "27th May",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "While operations are in progress at Narvik, enemy forces launch a strong counterattack in an attempt to reclaim territory."
+        }
+    ]
+}

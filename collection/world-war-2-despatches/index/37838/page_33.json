@@ -1,0 +1,76 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Neo Beach"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "Airborne Operations"
+        },
+        "organisations": {
+            "o_1": "U.S. Eighth A.F.",
+            "o_2": "AEAF",
+            "o_3": "RAF",
+            "o_4": "Fleet Air Arm",
+            "o_5": "R.A.F. Coastal Command"
+        }
+    },
+    "keywords": [
+        "D-Day",
+        "Airborne Operations",
+        "Total Air Effort",
+        "Sorties",
+        "Weather"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "6 June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "D-Day marks the historic landing of Allied forces in Normandy, establishing a crucial offensive against German forces."
+        },
+        {
+            "event": "e_2",
+            "date": "D+1 and onwards",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Airborne Operations carried out by various Allied forces aim to secure the area and support the D-Day landings, involving significant air sorties."
+        }
+    ]
+}

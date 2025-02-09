@@ -1,0 +1,110 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Blankney",
+            "p_2": "Commodore",
+            "p_3": "Masters"
+        },
+        "locations": {
+            "l_1": "Cairo",
+            "l_2": "Malta",
+            "l_3": "Convoy",
+            "l_4": "East"
+        },
+        "events": {
+            "e_1": "Air attack on convoy",
+            "e_2": "Enemy surface action",
+            "e_3": "Convoy steering adjustments"
+        },
+        "organisations": {
+            "o_1": "JU",
+            "o_2": "Beaufighter",
+            "o_3": "Spitfires"
+        }
+    },
+    "keywords": [
+        "Convoy",
+        "Air Attack",
+        "Enemy Surface Action",
+        "Cairo",
+        "Malta"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Air Support",
+        "Tactical Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_1",
+            "e_3"
+        ],
+        "Air Support": [
+            "e_1"
+        ],
+        "Tactical Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "0710",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "An air attack is carried out on the convoy, causing damage to vessels and prompting a tactical response to protect them."
+        },
+        {
+            "event": "e_2",
+            "date": "Various (ongoing)",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The enemy initiates surface actions against the convoy, necessitating the concentration of naval forces."
+        },
+        {
+            "event": "e_3",
+            "date": "0730-1030",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The commander makes several critical steering adjustments to the convoy to evade threats from the enemy."
+        }
+    ]
+}

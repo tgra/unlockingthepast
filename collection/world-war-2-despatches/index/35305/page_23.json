@@ -1,0 +1,163 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major General P. de Fonblanque",
+            "p_2": "Lieutenant General Sir Henry Karslake",
+            "p_3": "Brigadier W. Cave-Browne",
+            "p_4": "Brigadier W. A. F. L. Fox-Pitt",
+            "p_5": "Lieutenant General W. G. Lindsell"
+        },
+        "locations": {
+            "l_1": "Chateau de Pene",
+            "l_2": "Armentières",
+            "l_3": "Boulogne",
+            "l_4": "Somme",
+            "l_5": "Wimereux",
+            "l_6": "Etaples",
+            "l_7": "Calais",
+            "l_8": "Abbeville",
+            "l_9": "Canche",
+            "l_10": "Douai",
+            "l_11": "Lille",
+            "l_12": "Dunkirk"
+        },
+        "events": {
+            "e_1": "Enemy penetration into rearward areas",
+            "e_2": "Defence of Boulogne",
+            "e_3": "Evacuation under War Office orders",
+            "e_4": "Discontinuation of railway use",
+            "e_5": "Supply situation assessment"
+        },
+        "organisations": {
+            "o_1": "War Office",
+            "o_2": "British Army",
+            "o_3": "Auxiliary Military Pioneer Corps",
+            "o_4": "Expeditionary Force Institutes"
+        }
+    },
+    "keywords": [
+        "enemy penetration",
+        "communication severed",
+        "defence order",
+        "troop movements",
+        "evacuation",
+        "administrative situation",
+        "supply logistics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategies",
+        "Logistics and Supply",
+        "Administrative Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defence Strategies": [
+            "e_2"
+        ],
+        "Logistics and Supply": [
+            "e_4",
+            "e_5"
+        ],
+        "Administrative Coordination": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "21st May",
+            "locations": [
+                "l_4",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The enemy penetration into the rearward areas increases and communication across the Somme is severed."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd May",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Defence of Boulogne is established with the arrival of troops and logistics are organized to prevent enemy invasion."
+        },
+        {
+            "event": "e_3",
+            "date": "23/24th May",
+            "locations": [
+                "l_3",
+                "l_10"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Evacuation is carried out under orders of the War Office, completing the strategic withdrawal of personnel."
+        },
+        {
+            "event": "e_4",
+            "date": "17th May",
+            "locations": [
+                "l_8",
+                "l_7"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The decision to discontinue railway usage is made due to increasing threats from enemy actions."
+        },
+        {
+            "event": "e_5",
+            "date": "21st May",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Logistics analysis reveals a concerning supply situation affecting the operational capacity of the forces."
+        }
+    ]
+}

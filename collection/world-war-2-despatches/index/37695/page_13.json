@@ -1,0 +1,119 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Arthur Smith"
+        },
+        "locations": {
+            "l_1": "Western Desert",
+            "l_2": "El Alamein",
+            "l_3": "Matruh",
+            "l_4": "Bagush",
+            "l_5": "Qaret Agnes",
+            "l_6": "Sitra",
+            "l_7": "Siwa",
+            "l_8": "Jalo",
+            "l_9": "Delta Defenses"
+        },
+        "events": {
+            "e_1": "Western Desert Defence Plan",
+            "e_2": "El Alamein Position Holding",
+            "e_3": "Troop Withdrawal Arrangements"
+        },
+        "organisations": {
+            "o_1": "B.T.E.",
+            "o_2": "W.D.F.",
+            "o_3": "Command of G.H.Q."
+        }
+    },
+    "keywords": [
+        "Western Desert",
+        "El Alamein",
+        "Armoured Force",
+        "Troop Withdrawal",
+        "Defence Plan"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Defence Strategy": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "30 July 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Western Desert Defence Plan is receiving further consideration with instructions on troop positioning and readiness in case of enemy attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "21 July 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "X Corps is tasked to hold the El Alamein position, contingent on the availability of an Armoured Force, amidst the looming threat of an enemy advance."
+        },
+        {
+            "event": "e_3",
+            "date": "Post 30 July 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Mutual arrangements will be made for the withdrawal of W.D.F. troops to align with the B.T.E. Defence Plan, ensuring effective troop movement and control."
+        }
+    ]
+}

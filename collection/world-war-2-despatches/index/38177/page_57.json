@@ -1,0 +1,159 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Gott",
+            "p_2": "Brigadier Renton",
+            "p_3": "Brigadier Reid",
+            "p_4": "General Ritchie"
+        },
+        "locations": {
+            "l_1": "Mechili",
+            "l_2": "Msus",
+            "l_3": "Charruba",
+            "l_4": "Bengasi",
+            "l_5": "Gebel Akhdar",
+            "l_6": "Antelat",
+            "l_7": "Gialo",
+            "l_8": "Beda Fomm",
+            "l_9": "Agedabia",
+            "l_10": "Sidi Brahim",
+            "l_11": "Sceleidima"
+        },
+        "events": {
+            "e_1": "Operation at Bengasi",
+            "e_2": "Capture of Gialo",
+            "e_3": "Pursuit at Antelat",
+            "e_4": "Evacuation of Bengasi",
+            "e_5": "Operations around Agedabia"
+        },
+        "organisations": {
+            "o_1": "4th Armoured Brigade",
+            "o_2": "13th Corps",
+            "o_3": "Guards Brigade Group",
+            "o_4": "Support Group",
+            "o_5": "Oases Force"
+        }
+    },
+    "keywords": [
+        "Armoured Division",
+        "enemy retreat",
+        "supply difficulties",
+        "aircraft operations",
+        "evacuation",
+        "defensive positions"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Management",
+        "Defensive Strategies",
+        "Enemy Engagement",
+        "Tactical Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Supply Chain Management": [
+            "e_1",
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_5"
+        ],
+        "Enemy Engagement": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "21st December",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "General Gott orders the Support Group to abandon the attempt to reach Bengasi due to supply difficulties and redirects them to advance on Antelat instead."
+        },
+        {
+            "event": "e_2",
+            "date": "24th November",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Oases Force under Brigadier Reid successfully captures Gialo and begins attacking enemy supply lines from their base."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd December",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "General Ritchie sends the Guards Brigade Group to Antelat to fend off an enemy offensive as they attempt to secure the area."
+        },
+        {
+            "event": "e_4",
+            "date": "24th December",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Armoured cars survey the area south of Bengasi only to find the town evacuated and its harbour empty after the enemy's retreat."
+        },
+        {
+            "event": "e_5",
+            "date": "26th December",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The 13th Corps encounters strong enemy resistance around Agedabia, complicating their pursuit of the evacuation."
+        }
+    ]
+}

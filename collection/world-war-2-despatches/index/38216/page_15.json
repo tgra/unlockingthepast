@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "R.A.F.",
+            "p_2": "Air Ministry"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Singapore Island",
+            "l_3": "Kelantan State",
+            "l_4": "Alor Star",
+            "l_5": "Kota Bharu"
+        },
+        "events": {
+            "e_1": "Aerodrome Construction",
+            "e_2": "Labour Negotiations",
+            "e_3": "Joint Priorities Committee Establishment",
+            "e_4": "State of Construction Report"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Civil Government"
+        }
+    },
+    "keywords": [
+        "Malaya",
+        "aerodromes",
+        "construction",
+        "Labour Committee",
+        "air bases",
+        "war",
+        "tropical rainfall"
+    ],
+    "themes": [
+        "Military Operations",
+        "Construction Challenges",
+        "Labour Management",
+        "Supply Chain Issues"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Construction Challenges": [
+            "e_1",
+            "e_4"
+        ],
+        "Labour Management": [
+            "e_2"
+        ],
+        "Supply Chain Issues": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Aerodrome construction efforts face major challenges including site location, poor mechanical plant condition, and insufficient labor due to the growing demands of defense expansion."
+        },
+        {
+            "event": "e_2",
+            "date": "May 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Negotiations with the Civil Government begin to address labor shortages for defense expansion, leading to the formation of locally enlisted works units."
+        },
+        {
+            "event": "e_3",
+            "date": "Spring 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A Joint Priorities Committee is established to allocate supplies for construction projects amidst growing demands and material shortages."
+        },
+        {
+            "event": "e_4",
+            "date": "December 1, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A report on the state of construction reveals that existing R.A.F stations are at risk due to lack of dispersal and camouflage, underscoring major deficiencies in military preparedness."
+        }
+    ]
+}

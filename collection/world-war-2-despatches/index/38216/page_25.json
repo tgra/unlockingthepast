@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Sitwell",
+            "p_2": "Brigadier Blackburn",
+            "p_3": "A.H.K.",
+            "p_4": "Duich C.-in-C.",
+            "p_5": "Japanese C.-in-C.",
+            "p_6": "A.O.C.",
+            "p_7": "G.O.C."
+        },
+        "locations": {
+            "l_1": "Bandoeng",
+            "l_2": "Kalidjati",
+            "l_3": "Tjikadjang",
+            "l_4": "Singapore",
+            "l_5": "Java",
+            "l_6": " hills"
+        },
+        "events": {
+            "e_1": "Surrender Order Issuance",
+            "e_2": "Bridge Destruction Operations",
+            "e_3": "Military Reorganization Decision"
+        },
+        "organisations": {
+            "o_1": "Blackforce",
+            "o_2": "R.A.F.",
+            "o_3": "British Forces",
+            "o_4": "Australian Field Hospital"
+        }
+    },
+    "keywords": [
+        "surrender",
+        "Blackforce",
+        "Bandoeng",
+        "Japanese",
+        "resistance",
+        "military operations",
+        "negotiations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unspecified, around 1430 hours",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The A.O.C. and G.O.C. decide to surrender, complying with the order from A.H.K., emphasizing the need to destroy valuable materials and maintain silence regarding military information."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Japanese become aware of the British intention to destroy bridges as part of their withdrawal strategy, complicating surrender negotiations."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Military reorganization efforts are deemed impractical due to Japanese advancements and logistical setbacks, leading to ultimate compliance with the surrender."
+        }
+    ]
+}

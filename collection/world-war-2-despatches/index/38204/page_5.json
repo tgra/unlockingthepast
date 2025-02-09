@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commanding Officer",
+            "p_2": "Admiral (Submarines)",
+            "p_3": "H.M.S. SEANYMPH"
+        },
+        "locations": {
+            "l_1": "SEANYMPH",
+            "l_2": "X.8",
+            "l_3": "Lerwick",
+            "l_4": "LUTZOW",
+            "l_5": "Langfiord",
+            "l_6": "X.9",
+            "l_7": "X.7",
+            "l_8": "STUBBORN",
+            "l_9": "TRUCULENT",
+            "l_10": "THRASHER",
+            "l_11": "SCEPTRE",
+            "l_12": "SYRTIS"
+        },
+        "events": {
+            "e_1": "Detonation of charge",
+            "e_2": "Scuttling of X.8",
+            "e_3": "Crew transfer to X.7",
+            "e_4": "Submarine sighting"
+        },
+        "organisations": {}
+    },
+    "keywords": [
+        "charge",
+        "detonation",
+        "scuttle",
+        "crew transfer",
+        "submarine sighting",
+        "operation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Damage Assessment",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Damage Assessment": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "17th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The charge released at 1655Z detonates after 2 hours, causing significant damage to X.8 and flooding its compartment."
+        },
+        {
+            "event": "e_2",
+            "date": "19th September",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "X.8 is scuttled after the Commanding Officer decides to avoid compromising the operation due to her damage."
+        },
+        {
+            "event": "e_3",
+            "date": "18th September",
+            "locations": [
+                "l_8",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Operational crews are successfully transferred to X.7 amidst challenging weather conditions."
+        },
+        {
+            "event": "e_4",
+            "date": "20th September",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "SYRTIS sights a submarine which dives shortly after the sighting, indicating potential enemy activity."
+        }
+    ]
+}

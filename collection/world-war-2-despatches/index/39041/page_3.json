@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiralty"
+        },
+        "locations": {
+            "l_1": "North Russia",
+            "l_2": "United Kingdom",
+            "l_3": "Norway",
+            "l_4": "Barents Sea",
+            "l_5": "Archangel"
+        },
+        "events": {
+            "e_1": "Convoy P.Q.17 Disaster",
+            "e_2": "Convoy P.Q.18 Attack",
+            "e_3": "Allied Invasion of North Africa"
+        },
+        "organisations": {
+            "o_1": "British Home Fleet",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Russian convoys",
+        "Nazis",
+        "war supplies",
+        "heavy attacks",
+        "Arctic weather",
+        "Allied forces",
+        "merchant ships",
+        "losses"
+    ],
+    "themes": [
+        "Military Operations",
+        "Nautical Logistics",
+        "Wartime Strategy",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Wartime Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "July, 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "In July 1942, Convoy P.Q.17 suffers severe losses, losing twenty-one of its thirty-four ships to enemy attacks over a week."
+        },
+        {
+            "event": "e_2",
+            "date": "September, 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "In September 1942, Convoy P.Q.18 is heavily attacked by enemy forces, losing thirteen of its forty ships."
+        },
+        {
+            "event": "e_3",
+            "date": "November, 1942",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "In November 1942, all available escorts participate in the Allied invasion of North Africa, temporarily halting Russian convoys."
+        }
+    ]
+}

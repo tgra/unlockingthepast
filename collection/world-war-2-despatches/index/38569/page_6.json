@@ -1,0 +1,104 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C. D. Edgar"
+        },
+        "locations": {
+            "l_1": "Algiers",
+            "l_2": "H. GREEN Beach",
+            "l_3": "H. WITE Beach",
+            "l_4": "Sidi Ferruch",
+            "l_5": "Cap Caxine"
+        },
+        "events": {
+            "e_1": "Assault on Algiers",
+            "e_2": "Landings at A Sector",
+            "e_3": "Landings at B Sector"
+        },
+        "organisations": {
+            "o_1": "U.S. Navy",
+            "o_2": "Vice-Admiral Commanding, North Atlantic (V.A.C.N.A.)"
+        }
+    },
+    "keywords": [
+        "submarine",
+        "convoy",
+        "depth charges",
+        "emergency turn",
+        "escort",
+        "landing craft",
+        "assault flights"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Landings"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagements": [
+            "e_1"
+        ],
+        "Landings": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "7th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The assault on Algiers is conducted by the fast assault convoy, with submarines marking the release positions for successful troop landings."
+        },
+        {
+            "event": "e_2",
+            "date": "7th November",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The landing at A Sector is executed successfully, with pilots transferred from submarines to landing craft for troop deployment."
+        },
+        {
+            "event": "e_3",
+            "date": "7th November",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The landing at B Sector encounters avoidable mistakes, leading to confusion regarding troop deployment and approach directions."
+        }
+    ]
+}

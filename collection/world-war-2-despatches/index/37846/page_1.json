@@ -1,0 +1,110 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Prime Minister",
+            "p_2": "Commander-in-Chief",
+            "p_3": "Unnamed British officer"
+        },
+        "locations": {
+            "l_1": "Greece",
+            "l_2": "Albania",
+            "l_3": "Salonika",
+            "l_4": "Athens",
+            "l_5": "Larissa"
+        },
+        "events": {
+            "e_1": "Greek Air Force Operations",
+            "e_2": "British RAF Contingent Deployment",
+            "e_3": "Italian Advance Stemming"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Greek Air Force",
+            "o_3": "General Staff of Greece"
+        }
+    },
+    "keywords": [
+        "air force",
+        "mobilisation",
+        "bomber squadrons",
+        "aerodromes",
+        "Italian forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "International Support",
+        "National Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "International Support": [
+            "e_2"
+        ],
+        "National Defense": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 1940",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Greek Air Force is engaged in operations facing overwhelming Italian air superiority, suffering casualties but demonstrating bravery."
+        },
+        {
+            "event": "e_2",
+            "date": "6th November 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In response to an urgent appeal, the British Government sends a contingent of the RAF to Greece to support the Greek Air Force and counter the Italian advances."
+        },
+        {
+            "event": "e_3",
+            "date": "End of November 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The combined efforts of the RAF and Greek forces manage to stem the Italian advance, allowing Greek forces to take the offensive."
+        }
+    ]
+}

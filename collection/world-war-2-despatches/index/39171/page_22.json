@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Stilwell",
+            "p_2": "Colonel Richards",
+            "p_3": "Major-General R. P. L. Ranking",
+            "p_4": "Brigadier H. U. Richards"
+        },
+        "locations": {
+            "l_1": "Imphal",
+            "l_2": "Bishenpur",
+            "l_3": "Kohima",
+            "l_4": "Ukhrul",
+            "l_5": "Palel Tamu",
+            "l_6": "Kanglatongbi",
+            "l_7": "Jorhat",
+            "l_8": "Dimapur",
+            "l_9": "Manipur Road",
+            "l_10": "Assam",
+            "l_11": "North Burma",
+            "l_12": "China"
+        },
+        "events": {
+            "e_1": "Attack on Imphal",
+            "e_2": "Siege of Kohima",
+            "e_3": "Japanese Advance on Kohima"
+        },
+        "organisations": {
+            "o_1": "33 Indian Corps",
+            "o_2": "5 Indian Division",
+            "o_3": "20 Indian Division",
+            "o_4": "23 Indian Division",
+            "o_5": "1 Assam Regiment",
+            "o_6": "The Queen's Own Royal West Kent Regiment"
+        }
+    },
+    "keywords": [
+        "Japanese advance",
+        "garrison",
+        "counterattack",
+        "military operation",
+        "defence",
+        "supply routes"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategy",
+        "Supply Chain Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Defensive Strategy": [
+            "e_2"
+        ],
+        "Supply Chain Management": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The forces engage the enemy closely south of Bishenpur, making a flank movement against the Japanese that takes them by surprise while protecting the supply routes."
+        },
+        {
+            "event": "e_2",
+            "date": "4th-5th April",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_3",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Japanese launch an intense assault on Kohima, which is held by the garrison despite being cut off from water and supplies for several days."
+        },
+        {
+            "event": "e_3",
+            "date": "28th March",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The situation in Kohima escalates as the 31 Japanese Division begins advancing, prompting a redirection of troops to reinforce the area."
+        }
+    ]
+}

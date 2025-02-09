@@ -1,0 +1,168 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rashid Ali",
+            "p_2": "Air Vice-Marshal Smart",
+            "p_3": "Major-General J. G. W. Clark",
+            "p_4": "General Sir Claude Auchinleck",
+            "p_5": "General Quinan"
+        },
+        "locations": {
+            "l_1": "Iraq",
+            "l_2": "Basra",
+            "l_3": "Habbaniyah",
+            "l_4": "Baghdad",
+            "l_5": "Euphrates",
+            "l_6": "Fallujah",
+            "l_7": "Rutbah",
+            "l_8": "Transjordan",
+            "l_9": "Palestine",
+            "l_10": "Syria"
+        },
+        "events": {
+            "e_1": "Landing of Troops at Basra",
+            "e_2": "Attack on Royal Air Force Station at Habbaniyah",
+            "e_3": "Iraqi Forces Occupying High Ground",
+            "e_4": "Sortie by Garrison at Habbaniyah",
+            "e_5": "Major-General Clark's Advance to Baghdad",
+            "e_6": "Counter Attack on Fallujah"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "British Army",
+            "o_3": "Arab Legion",
+            "o_4": "Iraqi Air Force",
+            "o_5": "War Cabinet"
+        }
+    },
+    "keywords": [
+        "Iraq",
+        "Basra",
+        "Troops",
+        "Habbaniyah",
+        "Air Force",
+        "Attack",
+        "Reinforcements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date Not Provided",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Troops land at Basra, with India assuming command for operations in Iraq."
+        },
+        {
+            "event": "e_2",
+            "date": "29th April",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Rashid Ali and pro-Axis elements attack the RAF station at Habbaniyah as tensions escalate."
+        },
+        {
+            "event": "e_3",
+            "date": "30th April",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Iraqi forces occupy high ground near Habbaniyah, threatening the air station."
+        },
+        {
+            "event": "e_4",
+            "date": "7th May",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Garrison at Habbaniyah conducts a successful sortie against occupying Iraqi troops."
+        },
+        {
+            "event": "e_5",
+            "date": "Date Not Provided",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Major-General Clark leads a force towards Baghdad after reinforcing the garrison at Habbaniyah."
+        },
+        {
+            "event": "e_6",
+            "date": "22nd May",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Iraqi forces launch a determined attack on Fallujah but are eventually repelled by a British counter-attack."
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commanding Officer of H.M.S. ULSTER PRINCE",
+            "p_2": "Naval Officer-in-Charge, Suda",
+            "p_3": "F.O.A.M."
+        },
+        "locations": {
+            "l_1": "Nauplia",
+            "l_2": "Raphtis",
+            "l_3": "Suda",
+            "l_4": "Alexandria",
+            "l_5": "Megara",
+            "l_6": "Githion",
+            "l_7": "Monemvasia",
+            "l_8": "Kalamata"
+        },
+        "events": {
+            "e_1": "Bombing of H.M.S. GLENEARN",
+            "e_2": "Grounding of H.M.S. ULSTER PRINCE",
+            "e_3": "Embarkation at Nauplia",
+            "e_4": "Embarkation at Megara",
+            "e_5": "Convoy to Alexandria Diversion",
+            "e_6": "Damage to S.S. PENNLAND"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Embarkation",
+        "Bombing",
+        "Grounding",
+        "Naval Operations",
+        "Military Situation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_5"
+        ],
+        "Evacuation": [
+            "e_3",
+            "e_4"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2",
+            "e_6"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "24th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "H.M.S. GLENEARN is bombed by Heinkel bombers while en route to Nauplia, resulting in damage but allowing the ship to continue."
+        },
+        {
+            "event": "e_2",
+            "date": "25th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_6"
+            ],
+            "eventSummary": "H.M.S. ULSTER PRINCE runs aground while attempting to dock, complicating the embarkation process after being bombed and severely damaged."
+        },
+        {
+            "event": "e_3",
+            "date": "24th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Significant embarkation efforts are carried out at Nauplia, with thousands of troops being loaded onto various naval vessels."
+        },
+        {
+            "event": "e_4",
+            "date": "25th April",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A successful embarkation operation occurs at Megara with additional troop movements."
+        },
+        {
+            "event": "e_5",
+            "date": "25th April",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A convoy, including H.M.S. GRIMSBY, is dispatched to Alexandria, ensuring vital supplies are transferred back to Suda."
+        },
+        {
+            "event": "e_6",
+            "date": "25th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "S.S. PENNLAND is bombed, sustaining damage, leading to further naval assistance and rescue operations."
+        }
+    ]
+}

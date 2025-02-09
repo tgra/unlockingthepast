@@ -1,0 +1,134 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "H. D. Pridham-Wippell",
+            "p_2": "Captain (D)"
+        },
+        "locations": {
+            "l_1": "Messina",
+            "l_2": "unknown northward area",
+            "l_3": "southward",
+            "l_4": "at sea"
+        },
+        "events": {
+            "e_1": "Battle Action involving ORION and GLOUCESTER",
+            "e_2": "Dusk Torpedo Attack",
+            "e_3": "Enemy Battleship Engagement",
+            "e_4": "Retaliation from Enemy"
+        },
+        "organisations": {
+            "o_1": "14th Destroyer Flotilla",
+            "o_2": "2nd Destroyer Flotilla"
+        }
+    },
+    "keywords": [
+        "battleship",
+        "torpedoes",
+        "enemy fire",
+        "cruiser",
+        "destroyers",
+        "GLOUCESTER",
+        "ORION"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Strategy",
+        "Intelligence Gathering"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Engagement": [
+            "e_1",
+            "e_4"
+        ],
+        "Strategy": [
+            "e_2",
+            "e_3"
+        ],
+        "Intelligence Gathering": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Timeframe of battle action (around 1058 to 1148)",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A battle action occurs involving ships including ORION and GLOUCESTER under fire from an enemy battleship, during which ships maneuver and engage in both offensive and defensive operations."
+        },
+        {
+            "event": "e_2",
+            "date": "Specific time not given (around dusk)",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "A dusk torpedo attack is launched by friendly aircraft against an enemy vessel, impacting enemy operations."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specifically dated (around 2033)",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Engagement with the enemy battleship is initiated as more intelligence becomes available, indicating strategic maneuvers towards an identified target."
+        },
+        {
+            "event": "e_4",
+            "date": "Around 1935 and 1945",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "During this naval engagement, enemy retaliation is observed, highlighting the hostilities faced while attempting to launch torpedo attacks."
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral Commanding, Second Cruiser Squadron",
+            "p_2": "Rear-Admiral Commanding, First Cruiser Squadron",
+            "p_3": "Commanding Officer",
+            "p_4": "Admiralty"
+        },
+        "locations": {
+            "l_1": "Bismarck",
+            "l_2": "Davis Strait",
+            "l_3": "North Sea",
+            "l_4": "Brest",
+            "l_5": "Straits of Gibraltar",
+            "l_6": "Dakar"
+        },
+        "events": {
+            "e_1": "Operation Shadowing",
+            "e_2": "Torpedo Attack by VICTORIOUS",
+            "e_3": "Loss of Touch Incident",
+            "e_4": "Search on 25th May"
+        },
+        "organisations": {
+            "o_1": "VICTORIOUS",
+            "o_2": "PRINCE OF WALES",
+            "o_3": "NORFOLK",
+            "o_4": "SUFFOLK",
+            "o_5": "PRINZ EUGEN"
+        }
+    },
+    "keywords": [
+        "Bismarck",
+        "torpedo attack",
+        "shadowing",
+        "submarines",
+        "raf",
+        "RADAR",
+        "search operation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Tactics",
+        "Search and Rescue",
+        "Enemy Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Naval Tactics": [
+            "e_1",
+            "e_3"
+        ],
+        "Search and Rescue": [
+            "e_4"
+        ],
+        "Enemy Engagement": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 24, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Rear-Admiral Commanding First and Second Cruiser Squadrons shadow the enemy, attempting to engage and disrupt their movements."
+        },
+        {
+            "event": "e_2",
+            "date": "May 24, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The torpedo attack by aircraft on VICTORIOUS develops as the shadowing ships face confusion due to an American coastguard cutter appearance."
+        },
+        {
+            "event": "e_3",
+            "date": "May 24, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A critical loss of touch occurs primarily due to over-confidence, hindering effective tracking of the enemy."
+        },
+        {
+            "event": "e_4",
+            "date": "May 25, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On the morning of May 25th, SUFFOLK searches towards the last known enemy position but determines they have evaded and report their findings."
+        }
+    ]
+}

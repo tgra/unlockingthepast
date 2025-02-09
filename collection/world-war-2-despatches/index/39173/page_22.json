@@ -1,0 +1,164 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Not specified",
+            "p_2": "Not specified"
+        },
+        "locations": {
+            "l_1": "Maldives",
+            "l_2": "Pondicherry",
+            "l_3": "Ceylon",
+            "l_4": "Trincomalee",
+            "l_5": "Bombay",
+            "l_6": "Madras",
+            "l_7": "Arabian Sea",
+            "l_8": "Bay of Bengal",
+            "l_9": "Freemantle",
+            "l_10": "Colombo",
+            "l_11": "Sabang",
+            "l_12": "NorthWest Sumatra",
+            "l_13": "Andamans",
+            "l_14": "Nicobars",
+            "l_15": "Indian Ocean"
+        },
+        "events": {
+            "e_1": "Attack off Pondicherry",
+            "e_2": "Sinking of a merchant vessel",
+            "e_3": "Operations involving submarines",
+            "e_4": "Rescue operations",
+            "e_5": "Cover for the floating dock",
+            "e_6": "Threat from Japanese Fleet",
+            "e_7": "Hunt for surfaced submarine",
+            "e_8": "Sinking of merchant vessels in Arabian Sea",
+            "e_9": "Eastern Fleet strike against Sabang"
+        },
+        "organisations": {
+            "o_1": "No. 240 Squadron",
+            "o_2": "No. 225 Group",
+            "o_3": "No. 222 Group",
+            "o_4": "Eastern Fleet",
+            "o_5": "No. 200 Squadron",
+            "o_6": "No. 47 Squadron",
+            "o_7": "No. 27 Squadron",
+            "o_8": "No. 230 Squadron",
+            "o_9": "No. 354 Squadron",
+            "o_10": "173 Wing",
+            "o_11": "224 Group"
+        }
+    },
+    "keywords": [
+        "convoy",
+        "submarine",
+        "Catalina",
+        "Beaufort",
+        "rescue",
+        "patrol",
+        "Eastern Fleet",
+        "air cover",
+        "sinking",
+        "Japanese Fleet"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Rescue Operations",
+        "Defensive Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_6",
+            "e_7",
+            "e_9"
+        ],
+        "Naval Engagements": [
+            "e_1",
+            "e_3",
+            "e_9"
+        ],
+        "Rescue Operations": [
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_2",
+            "e_5",
+            "e_8"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "16th",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_7"
+            ],
+            "eventSummary": "A U-boat attacks a vessel off Pondicherry, prompting a search and rescue operation."
+        },
+        {
+            "event": "e_2",
+            "date": "25th",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The increased activity of submarines leads to a focus on defensive patrols, resulting in limited sinkings."
+        },
+        {
+            "event": "e_8",
+            "date": "March",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_10"
+            ],
+            "connectedEvents": [
+                "e_7"
+            ],
+            "eventSummary": "Further enemy submarine attacks in March result in several merchant vessels being sunk."
+        },
+        {
+            "event": "e_5",
+            "date": "February",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Cover is provided for a floating dock moving from Bombay to Trincomalee."
+        }
+    ]
+}

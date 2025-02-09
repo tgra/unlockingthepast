@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major the Lord Jellicoe",
+            "p_2": "Admiral Campione",
+            "p_3": "General Eisenhower",
+            "p_4": "Von Kleeman"
+        },
+        "locations": {
+            "l_1": "Haifa",
+            "l_2": "Castelrosso",
+            "l_3": "Rhodes",
+            "l_4": "Marizza",
+            "l_5": "Cos",
+            "l_6": "Leros",
+            "l_7": "Samos",
+            "l_8": "Crete"
+        },
+        "events": {
+            "e_1": "Armistice with Italy",
+            "e_2": "Capture of Rhodes",
+            "e_3": "Occupation of Cos, Leros, Samos",
+            "e_4": "Drop of Officers on Rhodes"
+        },
+        "organisations": {
+            "o_1": "Special Boat Squadron",
+            "o_2": "Royal Air Force",
+            "o_3": "234th Infantry Brigade",
+            "o_4": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Aegean",
+        "military operations",
+        "parachute drop",
+        "Italian collapse",
+        "German occupation",
+        "transport of troops",
+        "airfield"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Italian Collapse"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The armistice with Italy is announced, impacting military strategies in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "throth September",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The Germans establish control over Rhodes after exploiting the indecision of Admiral Campione."
+        },
+        {
+            "event": "e_3",
+            "date": "15th September",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Small forces are dispatched to Cos, Leros, and Samos to support Italian defenses against potential German efforts."
+        },
+        {
+            "event": "e_4",
+            "date": "oth September",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The first attempt to drop officers onto Rhodes fails, leading to further delays in military plans."
+        }
+    ]
+}

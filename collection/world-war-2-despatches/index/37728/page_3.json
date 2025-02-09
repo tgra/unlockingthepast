@@ -1,0 +1,151 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "FIELD-MARSHAL The VISCOUNT WAVELL"
+        },
+        "locations": {
+            "l_1": "India",
+            "l_2": "Ceylon",
+            "l_3": "Burma",
+            "l_4": "Rangoon",
+            "l_5": "Calcutta",
+            "l_6": "Bay of Bengal",
+            "l_7": "Upper Burma",
+            "l_8": "Trincomalee",
+            "l_9": "Colombo"
+        },
+        "events": {
+            "e_1": "Fall of Rangoon",
+            "e_2": "Japanese invasion of India",
+            "e_3": "Defence operations in Ceylon",
+            "e_4": "Air raids in Ceylon",
+            "e_5": "Attack at Magwe"
+        },
+        "organisations": {
+            "o_1": "British Army",
+            "o_2": "Eastern Fleet",
+            "o_3": "Royal Air Force"
+        }
+    },
+    "keywords": [
+        "japanese invasion",
+        "defence",
+        "Burma",
+        "Rangoon",
+        "Calcutta",
+        "Ceylon",
+        "air raids"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategy",
+        "Air Force Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Defence Strategy": [
+            "e_2",
+            "e_3"
+        ],
+        "Air Force Challenges": [
+            "e_4",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1942",
+            "locations": [
+                "l_4",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_5"
+            ],
+            "eventSummary": "The fall of Rangoon occurs, presenting a serious threat of Japanese invasion to India and Ceylon."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Japanese invasion of India is anticipated following the fall of Rangoon, raising concerns about the defence of India and Ceylon."
+        },
+        {
+            "event": "e_3",
+            "date": "April 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Defence operations are initiated in Ceylon as air raids are expected in response to Japanese advances."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Japan conducts air raids on Ceylon, testing the island's defenses and military readiness."
+        },
+        {
+            "event": "e_5",
+            "date": "21st and 22nd March 1942",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An attack at Magwe leads to significant destruction of air force resources, compelling reform for India's defense."
+        }
+    ]
+}

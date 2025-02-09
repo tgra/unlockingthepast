@@ -1,0 +1,86 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C.S.10",
+            "p_2": "D.17",
+            "p_3": "Admiral Doenitz",
+            "p_4": "C.S.1o"
+        },
+        "locations": {
+            "l_1": "Belfast",
+            "l_2": "J.W.55B",
+            "l_3": "North Sea",
+            "l_4": "Convoy"
+        },
+        "events": {
+            "e_1": "First Engagement with the Enemy",
+            "e_2": "Second Engagement with the Enemy"
+        },
+        "organisations": {
+            "o_1": "Force 1",
+            "o_2": "36th Division"
+        }
+    },
+    "keywords": [
+        "destroyers",
+        "convoy",
+        "enemy",
+        "engagement",
+        "radar"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Tactical Maneuvers"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [],
+        "Strategic Decisions": []
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Force 1 engages the enemy, detecting radar echoes and maneuvering to intercept them while attempting to protect the convoy."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Force 1 closes in on the convoy and engages the enemy again, managing radar contacts and tactical formations against the enemy."
+        }
+    ]
+}

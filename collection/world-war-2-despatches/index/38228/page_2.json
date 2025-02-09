@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Prime Minister",
+            "p_2": "C.I.G.S.",
+            "p_3": "Air Vice-Marshal Stevenson"
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "India",
+            "l_3": "Thailand",
+            "l_4": "Indo-China",
+            "l_5": "Assam",
+            "l_6": "Rangoon",
+            "l_7": "Mideast",
+            "l_8": "Ceylon",
+            "l_9": "Malaya"
+        },
+        "events": {
+            "e_1": "Entry of Japan into the war",
+            "e_2": "Placement of Burma under Commander-in-Chief, India",
+            "e_3": "Despatch of additional troops to Burma"
+        },
+        "organisations": {
+            "o_1": "War Office",
+            "o_2": "Far East Command",
+            "o_3": "Burma Army",
+            "o_4": "Burma Frontier Force"
+        }
+    },
+    "keywords": [
+        "Burma",
+        "India",
+        "Japan",
+        "defense",
+        "military operations",
+        "British Division",
+        "air reinforcements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Defense Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Japan enters the war leading to increased military action in Asia, prompting urgent defense measures in Burma."
+        },
+        {
+            "event": "e_2",
+            "date": "December 12, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Burma is placed under the Commander-in-Chief of India for enhanced military defense in response to Japanese threats."
+        },
+        {
+            "event": "e_3",
+            "date": "Late December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Additional troops and artillery are dispatched to bolster Burma's defense as the threat from Japan intensifies."
+        }
+    ]
+}

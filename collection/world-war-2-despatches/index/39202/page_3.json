@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Japanese Commander",
+            "p_2": "British Air Forces",
+            "p_3": "Joint Planning Staff"
+        },
+        "locations": {
+            "l_1": "Rangoon",
+            "l_2": "Puket",
+            "l_3": "Singapore",
+            "l_4": "Burma",
+            "l_5": "Malayan Peninsula",
+            "l_6": "Port Dickson",
+            "l_7": "Swettenham",
+            "l_8": "Singapore Island"
+        },
+        "events": {
+            "e_1": "Puket operation",
+            "e_2": "Operation Dracula",
+            "e_3": "Operation Zipper",
+            "e_4": "Mailfist"
+        },
+        "organisations": {
+            "o_1": "No. 34 Indian Corps",
+            "o_2": "15 Corps",
+            "o_3": "224 Group"
+        }
+    },
+    "keywords": [
+        "Burma",
+        "Allied Malayan Offensive",
+        "Rangoon",
+        "Puket",
+        "Singapore",
+        "Operation Zipper"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Planning and Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
+        ],
+        "Planning and Logistics": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Mid-June 1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Puket operation is abandoned, impacting subsequent strategies for capturing Singapore."
+        },
+        {
+            "event": "e_2",
+            "date": "September 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Dracula is initiated to ensure Rangoon's capture, causing delays in future operations."
+        },
+        {
+            "event": "e_3",
+            "date": "Early September 1945",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Operation Zipper aims to establish a bridgehead in Malaya, supporting the final assault on Singapore."
+        },
+        {
+            "event": "e_4",
+            "date": "TBD",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Planning for the occupation of Singapore Island, known as Mailfist, is underway as part of the broader strategy."
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Military Attaché, Ankara"
+        },
+        "locations": {
+            "l_1": "Castelrosso",
+            "l_2": "Cos",
+            "l_3": "Leros",
+            "l_4": "Samos",
+            "l_5": "Kusadasi",
+            "l_6": "Turkey",
+            "l_7": "Beirut",
+            "l_8": "Haifa",
+            "l_9": "Alexandria",
+            "l_10": "Abuqir Bay",
+            "l_11": "Port Said",
+            "l_12": "Cyprus"
+        },
+        "events": {
+            "e_1": "Supply Operations to Leros and Samos",
+            "e_2": "Turkish Supply Route Development",
+            "e_3": "British and Italian Submarine Operation to Leros",
+            "e_4": "Destroyer Supply Operations"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Turkish Government"
+        }
+    },
+    "keywords": [
+        "Supply Operations",
+        "Caique",
+        "Submarine",
+        "Destroyer",
+        "Military Maintenance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Logistics",
+        "International Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Supply Chain Logistics": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "International Cooperation": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 28 - November 16",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Supply operations to Leros and Samos involve various means, including caiques, submarines, and destroyers to ensure military and civilian supplies reach the islands."
+        },
+        {
+            "event": "e_2",
+            "date": "October 11",
+            "locations": [
+                "l_4",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Military Attaché at Ankara is formally tasked with overseeing supply routes through Turkey for Samos and Leros after initial improvised efforts."
+        },
+        {
+            "event": "e_3",
+            "date": "October 16 - November 7",
+            "locations": [
+                "l_3",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "British and Italian submarines facilitate the transport of military supplies to Leros despite operational challenges."
+        },
+        {
+            "event": "e_4",
+            "date": "During Operation Period",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Destroyers conduct supply operations primarily from Alexandria, maneuvering through hazardous conditions to deliver essential supplies."
+        }
+    ]
+}

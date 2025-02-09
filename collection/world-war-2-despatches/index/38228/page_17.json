@@ -1,0 +1,138 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Ekin",
+            "p_2": "Brigadier Jones"
+        },
+        "locations": {
+            "l_1": "Bridgehead",
+            "l_2": "Mokpalin",
+            "l_3": "River"
+        },
+        "events": {
+            "e_1": "Attack on the bridgehead",
+            "e_2": "Blowing of the bridge",
+            "e_3": "Withdrawal of troops"
+        },
+        "organisations": {
+            "o_1": "3/7 G.R.",
+            "o_2": "7/10 Baluch",
+            "o_3": "3 Burma Rifles",
+            "o_4": "4/12 F.F.R.",
+            "o_5": "1/3 G.R.",
+            "o_6": "2/5 R.G.R.",
+            "o_7": "1/4 G.R.",
+            "o_8": "5/17 Dogras",
+            "o_9": "2 D.W.R.",
+            "o_10": "Divisional Artillery",
+            "o_11": "48 Brigade",
+            "o_12": "46 Brigade",
+            "o_13": "16 Indian Infantry Brigade"
+        }
+    },
+    "keywords": [
+        "bridgehead",
+        "attack",
+        "withdrawal",
+        "artillery",
+        "defence",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Heroism",
+        "Strategic Decisions",
+        "Casualties and Consequences"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Heroism": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Casualties and Consequences": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8",
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A heavy attack by the enemy on the bridgehead occurs, forcing the defending forces to face significant casualties."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_10",
+                "o_11",
+                "o_12",
+                "o_13"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "After intense fighting, the decision to blow the bridge is made, isolating troops on the far side."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_11"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A difficult withdrawal is conducted under enemy fire, showcasing the gallantry and determination of the troops."
+        }
+    ]
+}

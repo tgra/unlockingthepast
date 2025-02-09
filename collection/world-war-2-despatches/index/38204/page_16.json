@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Senior British Naval Officer",
+            "p_2": "Commanding Officer of H.M.S. STUBBORN",
+            "p_3": "Commanding Officer of TRUCULENT",
+            "p_4": "Commanding Officer of SYRTIS"
+        },
+        "locations": {
+            "l_1": "Alten Fiord",
+            "l_2": "Polyarnoe",
+            "l_3": "Kola Inlet",
+            "l_4": "Soroy",
+            "l_5": "Bondoy Island",
+            "l_6": "Store Kamoy",
+            "l_7": "Finn Fiord"
+        },
+        "events": {
+            "e_1": "Operation Source",
+            "e_2": "Air raid on Polyarnoe",
+            "e_3": "Attempt to recover X-craft",
+            "e_4": "Patrol by submarines"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "submarine",
+        "patrol",
+        "recovery",
+        "enemy air raid",
+        "X-craft"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Recovery Missions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd September",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Source is believed to involve the enemy's attempt to hinder the Royal Navy's operations regarding X-craft in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "24th September",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 24th September, an enemy air raid is reported on Polyarnoe, directed against the submarine base."
+        },
+        {
+            "event": "e_3",
+            "date": "27th September",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 27th September, efforts to recover X-craft are made by the submarines in their designated patrol sectors."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd-26th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Between 23rd and 26th September, four submarines patrol Alten Fiord without incident, indicating the enemy is unaware of the X-craft's movements."
+        }
+    ]
+}

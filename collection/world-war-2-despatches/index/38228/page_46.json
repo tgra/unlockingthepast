@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General Wood",
+            "p_2": "Brigadier Gilpin",
+            "p_3": "Lieut.-General T. Hutton",
+            "p_4": "Lieut.-General D. K. MacLeod"
+        },
+        "locations": {
+            "l_1": "India",
+            "l_2": "Burma",
+            "l_3": "Assam",
+            "l_4": "Dimapur",
+            "l_5": "Imphal",
+            "l_6": "Tamu",
+            "l_7": "Kalewa",
+            "l_8": "Ye-U",
+            "l_9": "Rangoon",
+            "l_10": "Thailand"
+        },
+        "events": {
+            "e_1": "Withdrawal of the Burma Army",
+            "e_2": "Road Project from India to Burma",
+            "e_3": "Operations in Burma from 27th December 1941 to 5th March 1942"
+        },
+        "organisations": {
+            "o_1": "Women's Auxiliary Service, Burma",
+            "o_2": "Army Headquarters (A.H.Q.)"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Road Construction",
+        "Withdrawal",
+        "Infrastructure",
+        "Burma Army",
+        "Intelligence",
+        "Logistics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Infrastructure Development",
+        "Withdrawal Strategies",
+        "Intelligence Challenges",
+        "Military Organisation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Infrastructure Development": [
+            "e_2"
+        ],
+        "Withdrawal Strategies": [
+            "e_1"
+        ],
+        "Intelligence Challenges": [
+            "e_3"
+        ],
+        "Military Organisation": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th December 1941",
+            "locations": [
+                "l_2",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Burma Army withdraws under challenging conditions, emphasizing the logistical difficulties of the road that was only partially completed."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The road project facilitating movement between India and Burma gains urgency as military operations intensify, leading to eventual withdrawal."
+        },
+        {
+            "event": "e_3",
+            "date": "27th December 1941 to 5th March 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Lieut.-General T. Hutton reviews operational challenges faced in Burma, detailing deficiencies and the necessity for improved military structures."
+        }
+    ]
+}

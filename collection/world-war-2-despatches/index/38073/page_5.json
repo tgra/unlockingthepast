@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain (D)",
+            "p_2": "St. J. A. Micklethwait",
+            "p_3": "G. Grantham",
+            "p_4": "H. W. U. McCall",
+            "p_5": "E. W. Bush",
+            "p_6": "A. L. Poland",
+            "p_7": "C. T. Jellicoe",
+            "p_8": "D. M. L. Neame",
+            "p_9": "C. A. G. Hutchison"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Alexandria",
+            "l_3": "Tobruk",
+            "l_4": "Mediterranean Sea"
+        },
+        "events": {
+            "e_1": "Torpedo Attack",
+            "e_2": "Air Attack",
+            "e_3": "Convoy M.W.10 Departure",
+            "e_4": "Rendezvous with M.W.10"
+        },
+        "organisations": {
+            "o_1": "Twenty-Second Destroyer Flotilla",
+            "o_2": "Fourteenth Destroyer Flotilla",
+            "o_3": "Fifteenth Cruiser Squadron",
+            "o_4": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "torpedo",
+        "convoy",
+        "destroyer",
+        "air attack",
+        "military operation",
+        "naval battle"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Tactical Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_3",
+            "e_4"
+        ],
+        "Tactical Engagements": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th March, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A torpedo attack is launched against the enemy by Captain (D) of the Fourteenth Destroyer Flotilla, resulting in hits on the enemy ship LITTORIO while under heavy fire."
+        },
+        {
+            "event": "e_2",
+            "date": "20th March, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During air raids on a convoy in conjunction with naval operations, 4 enemy aircraft are shot down, showcasing the effectiveness of the escort's air defense."
+        },
+        {
+            "event": "e_3",
+            "date": "20th March, 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_9",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Convoy M.W.10 departs Alexandria at 0800, escorted by the Twenty-Second Destroyer Flotilla, to safely navigate towards Malta amidst concerns of enemy activity."
+        },
+        {
+            "event": "e_4",
+            "date": "21st March, 1942",
+            "locations": [
+                "l_3",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The convoy M.W.10 successfully rendezvous at 0940 in Mediterranean waters, consolidating forces with additional destroyers for enhanced security."
+        }
+    ]
+}

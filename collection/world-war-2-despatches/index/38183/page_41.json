@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Governor",
+            "p_2": "Commander-in-Chief, China",
+            "p_3": "General Officers Commanding",
+            "p_4": "Air Officer Commanding"
+        },
+        "locations": {
+            "l_1": "Hong Kong",
+            "l_2": "Kowloon",
+            "l_3": "Aberdeen Harbour",
+            "l_4": "Kai Tak aerodrome",
+            "l_5": "New Territories",
+            "l_6": "Singapore"
+        },
+        "events": {
+            "e_1": "Defence Preparations of Hong Kong",
+            "e_2": "Movement of Women and Children",
+            "e_3": "General Headquarters Functioning"
+        },
+        "organisations": {
+            "o_1": "A.R.P. organisation",
+            "o_2": "F.E.C.B."
+        }
+    },
+    "keywords": [
+        "defence",
+        "preparations",
+        "Japanese",
+        "civil population",
+        "aircraft",
+        "shelters",
+        "General Headquarters"
+    ],
+    "themes": [
+        "Military Operations",
+        "Civil Defense",
+        "Strategic Relocation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Civil Defense": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Preparations for the defense of Hong Kong are comprehensive, including the construction of shelters and planning for offensive operations against nearby islands."
+        },
+        {
+            "event": "e_2",
+            "date": "July 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The movement of European women and children from Hong Kong is initiated as a precaution, resulting in the evacuation of about 1,680 women and children."
+        },
+        {
+            "event": "e_3",
+            "date": "November 18, 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "General Headquarters begins its operations, addressing logistical and command structure issues to maintain effective military oversight."
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain C. H. L. Woodhouse",
+            "p_2": "Lieutenant E. D. G. Lewin",
+            "p_3": "Captain W. H. G. Fallowfield",
+            "p_4": "Captain W. E. Parry"
+        },
+        "locations": {
+            "l_1": "Falkland Islands",
+            "l_2": "River Plate",
+            "l_3": "Uruguayan coast",
+            "l_4": "Punta Negra"
+        },
+        "events": {
+            "e_1": "Engagement with GRAF SPEE",
+            "e_2": "Recovery of aircraft by AJAX",
+            "e_3": "Signal sent to British Naval Attache in Buenos Aires",
+            "e_4": "Shadowing of GRAF SPEE"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "British Naval Attache"
+        }
+    },
+    "keywords": [
+        "GRAF SPEE",
+        "AJAX",
+        "ACHILLES",
+        "engagement",
+        "shadowing",
+        "military signals"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Battles",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "N/A",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "During the engagement with GRAF SPEE, AJAX and ACHILLES display tactical maneuvers to counter the enemy's gunfire."
+        },
+        {
+            "event": "e_2",
+            "date": "N/A",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "AJAX successfully performs the recovery of its aircraft under challenging conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "N/A",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A signal is sent to the British Naval Attache in Buenos Aires regarding GRAF SPEE's movements."
+        },
+        {
+            "event": "e_4",
+            "date": "N/A",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Shadowing of GRAF SPEE by ACHILLES and AJAX is conducted to monitor the enemy's movements and ensure tactical advantage."
+        }
+    ]
+}

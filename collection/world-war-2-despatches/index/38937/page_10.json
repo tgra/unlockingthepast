@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Robertson",
+            "p_2": "Sir Brian Robertson"
+        },
+        "locations": {
+            "l_1": "Italy",
+            "l_2": "Algiers",
+            "l_3": "Cairo",
+            "l_4": "North Africa",
+            "l_5": "Tripolitania",
+            "l_6": "Venice",
+            "l_7": "Treviso",
+            "l_8": "Modena",
+            "l_9": "Genoa",
+            "l_10": "Franco-Italian frontier"
+        },
+        "events": {
+            "e_1": "Invasion of Italy",
+            "e_2": "Operations against Europe",
+            "e_3": "Campaign in Sicily"
+        },
+        "organisations": {
+            "o_1": "Allied Force Headquarters",
+            "o_2": "General Headquarters, Middle East Forces",
+            "o_3": "Fifteenth Army Group Headquarters",
+            "o_4": "Eighth Army"
+        }
+    },
+    "keywords": [
+        "Invasion",
+        "Planning",
+        "Operations",
+        "Headquarters",
+        "Administrative"
+    ],
+    "themes": [
+        "Military Operations",
+        "Administrative Planning",
+        "Allied Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Administrative Planning": [
+            "e_1"
+        ],
+        "Allied Coordination": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of event unspecified",
+            "locations": [
+                "l_1",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The invasion of Italy involves complex planning among Allied forces, with coordination and operational execution based from multiple headquarters."
+        },
+        {
+            "event": "e_2",
+            "date": "Date of event unspecified",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operations against Europe are guided by Allied Force Headquarters, focusing on the logistical and military strategy for success."
+        },
+        {
+            "event": "e_3",
+            "date": "Date of event unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The campaign in Sicily is characterized by similar challenges and administrative hurdles faced by the Allied forces."
+        }
+    ]
+}

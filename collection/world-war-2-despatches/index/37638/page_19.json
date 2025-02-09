@@ -1,0 +1,177 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Freyberg",
+            "p_2": "General Weston",
+            "p_3": "Brigadier Puttick",
+            "p_4": "Brigadier Chappell",
+            "p_5": "Brigadier Hargest",
+            "p_6": "Brigadier Vasey",
+            "p_7": "Colonel Campbell",
+            "p_8": "Admiral Sir Andrew Cunningham",
+            "p_9": "Rashid Ali Ghailani",
+            "p_10": "Sir Kinahan Cornwallis"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "France",
+            "l_3": "Egypt",
+            "l_4": "Cyprus",
+            "l_5": "Syria",
+            "l_6": "Iraq",
+            "l_7": "Tobruk",
+            "l_8": "Baghdad",
+            "l_9": "Basra",
+            "l_10": "Transjordan",
+            "l_11": "Habbaniyah"
+        },
+        "events": {
+            "e_1": "Defense of Crete",
+            "e_2": "Revolt in Iraq",
+            "e_3": "Buildup of Iraqi Government tensions",
+            "e_4": "Evacuation of troops from Crete",
+            "e_5": "Iraqi Government's diplomatic relations decisions"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Royal Air Force",
+            "o_3": "British Military Mission",
+            "o_4": "Iraq Levies"
+        }
+    },
+    "keywords": [
+        "Crete",
+        "Iraq",
+        "Evacuation",
+        "Military Operations",
+        "Axis Powers",
+        "Rashid Ali",
+        "Royal Navy",
+        "Royal Air Force"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Military Support",
+        "Political Intrigue"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_2",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ],
+        "Military Support": [
+            "e_1",
+            "e_4"
+        ],
+        "Political Intrigue": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 1941",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The troops defend Crete against overwhelming enemy forces, fighting valiantly under severe conditions despite heavy losses."
+        },
+        {
+            "event": "e_2",
+            "date": "April 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_9",
+                "p_10"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The revolt in Iraq poses significant risks for British operations, leading to diplomatic actions aimed at stabilizing relations with the Iraqi Government."
+        },
+        {
+            "event": "e_3",
+            "date": "Early 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_9"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The build-up of tensions in the Iraqi Government leads to concerns over pro-Axis influence and challenges to British control."
+        },
+        {
+            "event": "e_4",
+            "date": "May 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Royal Navy facilitates the evacuation of British and Commonwealth troops from Crete, in response to the unfolding military crisis."
+        },
+        {
+            "event": "e_5",
+            "date": "April 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_9"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Iraqi Government's decisions regarding diplomatic relations with Axis powers lead to increased instability and anti-British sentiment."
+        }
+    ]
+}

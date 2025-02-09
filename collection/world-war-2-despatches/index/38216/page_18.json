@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Commodore Silly",
+            "p_2": "General Schilling",
+            "p_3": "Colonel Gulik",
+            "p_4": "Heer Koffman"
+        },
+        "locations": {
+            "l_1": "Bandoeng",
+            "l_2": "Andir",
+            "l_3": "Tasik Malaja",
+            "l_4": "Poerwokerto",
+            "l_5": "Garoet",
+            "l_6": "south central Java",
+            "l_7": "Tyikadjang",
+            "l_8": "Santosa"
+        },
+        "events": {
+            "e_1": "Surrender Orders Issued",
+            "e_2": "Concentration of British Forces",
+            "e_3": "Dutch C.-in-C. Broadcast"
+        },
+        "organisations": {
+            "o_1": "A.H.Q.",
+            "o_2": "R.A.F.",
+            "o_3": "Dutch Commander",
+            "o_4": "Blackforce"
+        }
+    },
+    "keywords": [
+        "defence",
+        "reconnaissance",
+        "surrender",
+        "concentration",
+        "resistance",
+        "open town"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Surrender Orders",
+        "Allied Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Surrender Orders": [
+            "e_1",
+            "e_3"
+        ],
+        "Allied Cooperation": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th March",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Orders for surrender are received from the Dutch headquarters indicating the cessation of organized resistance in Java to the Japanese forces."
+        },
+        {
+            "event": "e_2",
+            "date": "7th March",
+            "locations": [
+                "l_2",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_2",
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The British forces start concentrating in a more defensible area following reconnaissance suggestions, amassing a total combined force of about 8,000 men."
+        },
+        {
+            "event": "e_3",
+            "date": "8th March",
+            "locations": [
+                "l_7",
+                "l_5"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A broadcast from the Dutch commander announces the cancellation of fighting orders and urges compliance from all troops in Java to cease resistance."
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier C. G. Phillips",
+            "p_2": "Brigadier Morgan",
+            "p_3": "Brigadier Kent Lemon",
+            "p_4": "Major General B. C. T. Paget, D.S.O., M.C.",
+            "p_5": "Major-General Carton de Wiart",
+            "p_6": "Brigadier Hogg",
+            "p_7": "Lieutenant General H.R. S. Massy, D.S.O., M.C.",
+            "p_8": "Major General Mackesy",
+            "p_9": "Lord Cork and Orrery"
+        },
+        "locations": {
+            "l_1": "Steinkjer",
+            "l_2": "Southern Norway",
+            "l_3": "Hamar",
+            "l_4": "Elverum",
+            "l_5": "Bergen",
+            "l_6": "Stavanger",
+            "l_7": "Trondheim",
+            "l_8": "Vaernes",
+            "l_9": "Levanger",
+            "l_10": "Verdalen",
+            "l_11": "Namsos",
+            "l_12": "Geiranger",
+            "l_13": "Dombås",
+            "l_14": "Central Norway",
+            "l_15": "Narvik",
+            "l_16": "Trondheim Fjord"
+        },
+        "events": {
+            "e_1": "German Army Operation in Southern Norway",
+            "e_2": "Arrival of Allied Forces in Namsos",
+            "e_3": "British and French Command in Central Scandinavia",
+            "e_4": "Evacuation Plan for Central Norway"
+        },
+        "organisations": {
+            "o_1": "5th Corps",
+            "o_2": "British Expeditionary Force"
+        }
+    },
+    "keywords": [
+        "German Army",
+        "Norwegian Army",
+        "Allied Forces",
+        "Evacuation",
+        "Military Command"
+    ],
+    "themes": [
+        "Military Operations",
+        "Leadership",
+        "Defense Strategy",
+        "International Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Leadership": [
+            "e_1",
+            "e_3"
+        ],
+        "Defense Strategy": [
+            "e_1",
+            "e_4"
+        ],
+        "International Cooperation": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 1940",
+            "locations": [
+                "l_2",
+                "l_8",
+                "l_7",
+                "l_16"
+            ],
+            "persons": [
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The German army conducts operations in Southern Norway, prompting a response from the Norwegian Army which engages in delaying actions."
+        },
+        {
+            "event": "e_2",
+            "date": "2nd April 1940",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Allied forces, including a demi-brigade under Major-General Carton de Wiart, arrive at Namsos to counter German advances."
+        },
+        {
+            "event": "e_3",
+            "date": "April 1940",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_7",
+                "p_8",
+                "p_9"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Lieutenant General H.R. S. Massy assumes command of all British and French troops operating in Central Scandinavia."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1940",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The policy is established for the evacuation of troops from Central Norway, emphasizing military security and operational coordination."
+        }
+    ]
+}

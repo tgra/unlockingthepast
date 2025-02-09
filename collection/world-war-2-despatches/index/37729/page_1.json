@@ -1,0 +1,188 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "No. 113 Squadron",
+            "p_2": "No. 55 Squadron",
+            "p_3": "No. 33 Squadron",
+            "p_4": "No. 73 Squadron",
+            "p_5": "No. 274 Squadron",
+            "p_6": "No. 208 Squadron",
+            "p_7": "No. 3 R.A.A.F. Squadron",
+            "p_8": "Headquarters No. 202 Group",
+            "p_9": "Free French companies"
+        },
+        "locations": {
+            "l_1": "Bardia",
+            "l_2": "Tobruk",
+            "l_3": "Derna",
+            "l_4": "Cyrenaica",
+            "l_5": "El Adem",
+            "l_6": "Sollum",
+            "l_7": "Gambut",
+            "l_8": "Gazala",
+            "l_9": "Benghazi",
+            "l_10": "Sidi Mahmoud",
+            "l_11": "Mechili"
+        },
+        "events": {
+            "e_1": "Bombardment of Bardia",
+            "e_2": "Assault on Bardia",
+            "e_3": "Bombardment of Tobruk",
+            "e_4": "Assault on Tobruk",
+            "e_5": "Operations in Cyrenaica",
+            "e_6": "Capture of El Adem aerodrome",
+            "e_7": "Advance to Derna"
+        },
+        "organisations": {
+            "o_1": "Army",
+            "o_2": "Italian Air Force",
+            "o_3": "Fleet Air Arm"
+        }
+    },
+    "keywords": [
+        "bombers",
+        "reconnaissance",
+        "assault",
+        "aircraft",
+        "naval bombardment",
+        "air protection",
+        "enemy air force",
+        "troop concentrations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Warfare",
+        "Tactical Reconnaissance",
+        "Strategic Bombing"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_4",
+            "e_6",
+            "e_7"
+        ],
+        "Air Warfare": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Bombing": [
+            "e_1",
+            "e_3",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 1st-2nd",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Heavy naval and air bombardment occurs at Bardia, inflicting significant damage on enemy defenses."
+        },
+        {
+            "event": "e_2",
+            "date": "January 3rd",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Army assaults Bardia at dawn, utilizing armoured forces and Australian infantry, achieving significant gains."
+        },
+        {
+            "event": "e_3",
+            "date": "January 19th-21st",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Bombardment precedes the assault on Tobruk, inflicting heavy damage on enemy defenses."
+        },
+        {
+            "event": "e_4",
+            "date": "January 21st",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3",
+                "p_5",
+                "p_6",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Army launches an assault on Tobruk at dawn, supported by coordinated air attacks."
+        },
+        {
+            "event": "e_6",
+            "date": "January 6th",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Armoured forces capture El Adem aerodrome, taking control of abandoned Italian aircraft."
+        },
+        {
+            "event": "e_7",
+            "date": "February 1st",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The main body of forces advances towards Derna as air activity from the enemy decreased."
+        }
+    ]
+}

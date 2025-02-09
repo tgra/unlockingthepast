@@ -1,0 +1,149 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Clark",
+            "p_2": "General Freyberg",
+            "p_3": "General Leese"
+        },
+        "locations": {
+            "l_1": "Cassino",
+            "l_2": "Rapido",
+            "l_3": "Cairo",
+            "l_4": "Monte Castelione",
+            "l_5": "Colle Majola",
+            "l_6": "Monte Cassino",
+            "l_7": "Anzio",
+            "l_8": "Liri valley",
+            "l_9": "Pontine Marshes"
+        },
+        "events": {
+            "e_1": "First Battle of Cassino",
+            "e_2": "Attack of the 34 United States Division",
+            "e_3": "Counter-attack at Anzio",
+            "e_4": "Destruction of the Monastery of Monte Cassino"
+        },
+        "organisations": {
+            "o_1": "II Corps",
+            "o_2": "Fifth Army",
+            "o_3": "Eighth Army",
+            "o_4": "New Zealand Corps",
+            "o_5": "French Expeditionary Corps"
+        }
+    },
+    "keywords": [
+        "Cassino",
+        "Rapido",
+        "Monastery Hill",
+        "destruction",
+        "attack",
+        "reinforcement",
+        "counter-attack",
+        "division",
+        "enemy resistance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Reinforcements",
+        "Counter-offensive"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ],
+        "Reinforcements": [
+            "e_2",
+            "e_3"
+        ],
+        "Counter-offensive": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "31st January 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The First Battle of Cassino is ongoing as tactical engagements unfold, with II Corps attempting to capture defensive positions amidst strong enemy resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "2nd February 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The 34th United States Division continues its attack, capturing key positions despite limited success against entrenched German forces."
+        },
+        {
+            "event": "e_3",
+            "date": "16th February 1944",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The counter-attack at Anzio takes place, coinciding with assaults in Cassino, underscoring the escalating tensions on multiple fronts."
+        },
+        {
+            "event": "e_4",
+            "date": "16th February 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The destruction of the Monastery of Monte Cassino occurs as an integral part of II Corps' tactical approach to counter enemy defenses."
+        }
+    ]
+}

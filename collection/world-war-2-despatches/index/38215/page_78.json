@@ -1,0 +1,172 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander Western Area",
+            "p_2": "Commander 22 Australian Infantry Brigade",
+            "p_3": "Commander 3 Indian Corps"
+        },
+        "locations": {
+            "l_1": "Ama Keng Village",
+            "l_2": "River Murai",
+            "l_3": "Namazie Estate",
+            "l_4": "Singapore Town",
+            "l_5": "Tengah",
+            "l_6": "Bukit Panjang Keat Hong Village",
+            "l_7": "Kranji Jurong Line",
+            "l_8": "Bukit Timah Village",
+            "l_9": "Racecourse"
+        },
+        "events": {
+            "e_1": "Attack on Ama Keng Village",
+            "e_2": "Withdrawal of Troops to Perimeters",
+            "e_3": "Counter-Attack Preparations at Tengah",
+            "e_4": "Air Attack on Pasir Laba Battery",
+            "e_5": "Formation of New Command Reserve",
+            "e_6": "Discussion of Defensive Positions"
+        },
+        "organisations": {
+            "o_1": "2/20 Battalion A.I.F.",
+            "o_2": "2/18 Battalion A.I.F.",
+            "o_3": "2/19 Battalion A.I.F.",
+            "o_4": "22 Australian Infantry Brigade",
+            "o_5": "12 Indian Infantry Brigade",
+            "o_6": "6/15 Indian Infantry Brigade"
+        }
+    },
+    "keywords": [
+        "enemy attack",
+        "battalion withdrawal",
+        "counter-attack",
+        "coast defence",
+        "defensive positions"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Decisions",
+        "Defensive Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Defensive Strategy": [
+            "e_2",
+            "e_5",
+            "e_6"
+        ],
+        "Tactical Decisions": [
+            "e_3",
+            "e_6"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The enemy launches a strong attack on Ama Keng Village, targeting the positions of the 2/18 and 2/19 Battalions."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Amidst confusion, battalion commanders order forward troops to withdraw to their perimeters, leading to significant disorganization."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Preparations for a counter-attack at Tengah are initiated after receiving orders for the 2/29 Battalion to reinforce."
+        },
+        {
+            "event": "e_4",
+            "date": "0700 hrs.",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Pasir Laba Battery is attacked by enemy dive-bombers, resulting in the destruction of both guns and casualties among the crew."
+        },
+        {
+            "event": "e_5",
+            "date": "Not specified",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "The Commander of the 3 Indian Corps is directed to prepare a new reserve, ensuring troops are on standby for deployment."
+        },
+        {
+            "event": "e_6",
+            "date": "Not specified",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A strategic discussion is held regarding the defensive positions of the 44 Brigade Group, assessing their viability against enemy advances."
+        }
+    ]
+}

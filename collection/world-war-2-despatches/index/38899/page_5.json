@@ -1,0 +1,77 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commanding General Fifth Army"
+        },
+        "locations": {
+            "l_1": "Oran",
+            "l_2": "Sicily",
+            "l_3": "Tunisia"
+        },
+        "events": {
+            "e_1": "Decision to Advance H-Hour",
+            "e_2": "Operation Orders Distribution"
+        },
+        "organisations": {}
+    },
+    "keywords": [
+        "convoy tracks",
+        "assault forces",
+        "minefields",
+        "advance",
+        "Operation Orders"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "24th August",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Commanding General Fifth Army decides to advance H-Hour by 30 minutes, necessitating significant changes to the convoy sailing and route planning."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Operation Orders are in the process of being distributed, reflecting the changes necessitated by the H-Hour adjustment."
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "G. A. Maunsell"
+        },
+        "locations": {
+            "l_1": "Germany",
+            "l_2": "Russia",
+            "l_3": "Birmingham",
+            "l_4": "Southampton",
+            "l_5": "Hull",
+            "l_6": "Thames Estuary",
+            "l_7": "St. George's Channel",
+            "l_8": "Mersey",
+            "l_9": "Exeter",
+            "l_10": "Canterbury",
+            "l_11": "Penzance",
+            "l_12": "York",
+            "l_13": "North Africa",
+            "l_14": "Far East",
+            "l_15": "North Europe",
+            "l_16": "Aldeburgh",
+            "l_17": "St. Ives"
+        },
+        "events": {
+            "e_1": "German Air Raids in May 1941",
+            "e_2": "Battle of the Atlantic",
+            "e_3": "Baedeker Raids",
+            "e_4": "Day Battle of March 27, 1942",
+            "e_5": "Deployment of Maunsell Forts",
+            "e_6": "Attack on Coastal Towns"
+        },
+        "organisations": {
+            "o_1": "Bomber Command",
+            "o_2": "Anti-Aircraft Command"
+        }
+    },
+    "keywords": [
+        "German Air Forces",
+        "Raids",
+        "Battle of the Atlantic",
+        "Anti-aircraft guns",
+        "Baedeker raids",
+        "Low-flying raids",
+        "Defence"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Air Defence",
+        "Strategic Resource Allocation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_6"
+        ],
+        "Defensive Strategies": [
+            "e_5"
+        ],
+        "Air Defence": [
+            "e_1",
+            "e_4"
+        ],
+        "Strategic Resource Allocation": [
+            "e_2",
+            "e_6"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "In May 1941, the greater part of the German air forces are transferred to the Russian front while launching major raids on various UK cities."
+        },
+        {
+            "event": "e_2",
+            "date": "Throughout 1941",
+            "locations": [
+                "l_2",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The Battle of the Atlantic continues as German forces focus on shipping attacks, leading to concerns about shipping difficulties."
+        },
+        {
+            "event": "e_3",
+            "date": "April 1942",
+            "locations": [
+                "l_9",
+                "l_10",
+                "l_11",
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The so-called Baedeker raids begin as German raiders aim for revenge against Bomber Command, focusing on undefended towns and cities."
+        },
+        {
+            "event": "e_4",
+            "date": "March 27, 1942",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A day battle begins with German fighter-bombers targeting coastal towns, highlighting the need for adequate air defences."
+        },
+        {
+            "event": "e_5",
+            "date": "October 1942",
+            "locations": [
+                "l_6",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Maunsell Forts are deployed to strengthen coastal defences as the first tower becomes operational, assisting in defending London."
+        },
+        {
+            "event": "e_6",
+            "date": "1942 (June and beyond)",
+            "locations": [
+                "l_8",
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Low-flying raids continue against coastal towns, emphasizing the critical defense role of Anti-Aircraft Command amid significant gun shortages."
+        }
+    ]
+}

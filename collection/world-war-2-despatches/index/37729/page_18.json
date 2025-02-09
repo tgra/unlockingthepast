@@ -1,0 +1,156 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mr. Eden",
+            "p_2": "General Sir John Dill",
+            "p_3": "General Sir Archibald Wavell",
+            "p_4": "Captain Dick"
+        },
+        "locations": {
+            "l_1": "Salonika",
+            "l_2": "Greece",
+            "l_3": "Macedonia",
+            "l_4": "Tripoli",
+            "l_5": "Bulgaria",
+            "l_6": "Yugo-Slavia",
+            "l_7": "Athens",
+            "l_8": "Tsaritsani",
+            "l_9": "Yannina",
+            "l_10": "Koritza",
+            "l_11": "Florina",
+            "l_12": "Prilep",
+            "l_13": "Sofia",
+            "l_14": "Vardar River",
+            "l_15": "Axiopolis",
+            "l_16": "Polykastron"
+        },
+        "events": {
+            "e_1": "Landing of British Troops in the Athens area",
+            "e_2": "German invasion of Greece",
+            "e_3": "First encounter with the German air force",
+            "e_4": "Attack on enemy M.T. columns on the Prilep-Bitolj road",
+            "e_5": "Formation of the front along the Aliakmon River"
+        },
+        "organisations": {
+            "o_1": "British Forces",
+            "o_2": "German Forces",
+            "o_3": "G.H.Q. British Forces",
+            "o_4": "B.A.F., Greece"
+        }
+    },
+    "keywords": [
+        "British Troops",
+        "German invasion",
+        "Macedonia",
+        "Salonika",
+        "Greek commitment",
+        "air support"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Operations",
+        "Resistance",
+        "Invasion"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Air Operations": [
+            "e_3"
+        ],
+        "Resistance": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The British Troops land in the Athens area with minimal air interference as preparations against a German invasion unfold."
+        },
+        {
+            "event": "e_2",
+            "date": "5th April 1941",
+            "locations": [
+                "l_6",
+                "l_3",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Germany declares war on Greece and Yugoslavia and launches an invasion, advancing through Macedonia."
+        },
+        {
+            "event": "e_3",
+            "date": "6th April 1941",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The German air force's first encounter occurs as British forces engage and shoot down enemy aircraft."
+        },
+        {
+            "event": "e_4",
+            "date": "10th April 1941",
+            "locations": [
+                "l_12",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "British air forces attack enemy motor transport columns on the Prilep-Bitolj road, inflicting considerable damage."
+        },
+        {
+            "event": "e_5",
+            "date": "12th April 1941",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "As the enemy pressure increases, the British front line is established along the Aliakmon River."
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander Third Fleet",
+            "p_2": "A.C.1",
+            "p_3": "Captain D."
+        },
+        "locations": {
+            "l_1": "Ishigaki",
+            "l_2": "Miyara",
+            "l_3": "Leyte",
+            "l_4": "Manus",
+            "l_5": "Sydney",
+            "l_6": "Cootie",
+            "l_7": "Sakishima"
+        },
+        "events": {
+            "e_1": "Ishigaki strikes",
+            "e_2": "Dusk CAP landing",
+            "e_3": "Operational plans for British Pacific Fleet",
+            "e_4": "Aircraft exchanges and repairs"
+        },
+        "organisations": {
+            "o_1": "British Pacific Fleet",
+            "o_2": "CTF 57",
+            "o_3": "American Task Unit 52.1.3",
+            "o_4": "CTF 112"
+        }
+    },
+    "keywords": [
+        "Ishigaki",
+        "airfield",
+        "strikes",
+        "bombing",
+        "Fleet",
+        "H.M.S.",
+        "CGT",
+        "tactical command",
+        "aircraft"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Command",
+        "Air Strikes",
+        "Fleet Coordination",
+        "Repairs"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Tactical Command": [
+            "e_2",
+            "e_3"
+        ],
+        "Repairs": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "23rd May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Ishigaki strikes occur, damaging the airfield and resulting in significant enemy aircraft losses."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd May",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The dusk CAP were landed while radar pickets were recalled, leading to the withdrawal of the Fleet."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd May",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Communication detailing future operations is received, influencing decisions about the repair and utilization of H.M.S. FORMIDABLE."
+        },
+        {
+            "event": "e_4",
+            "date": "24th May",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Efforts on repairs and resupplies are conducted throughout the day following the operational plans established."
+        }
+    ]
+}

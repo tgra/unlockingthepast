@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unspecified Military Leader"
+        },
+        "locations": {
+            "l_1": "Tell el Eisa",
+            "l_2": "Miteiriya Ridge",
+            "l_3": "Ruweisat Ridge",
+            "l_4": "Qaret el Himeimat",
+            "l_5": "El Daba",
+            "l_6": "El Imayid Station"
+        },
+        "events": {
+            "e_1": "Battle Codename LIGHTFOOT",
+            "e_2": "30 Corps Operations",
+            "e_3": "13 Corps Operations"
+        },
+        "organisations": {
+            "o_1": "30 Corps",
+            "o_2": "13 Corps",
+            "o_3": "1 Fighting French Brigade",
+            "o_4": "4 Indian Division",
+            "o_5": "10 Corps",
+            "o_6": "7 Armoured Division",
+            "o_7": "44 Division",
+            "o_8": "50 Division",
+            "o_9": "4 Light Armoured Brigade"
+        }
+    },
+    "keywords": [
+        "Battle",
+        "Deception",
+        "Military Operations",
+        "Concealment",
+        "Armoured Divisions"
+    ],
+    "themes": [
+        "Military Operations",
+        "Deception Tactics",
+        "Operational Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Deception Tactics": [
+            "e_2",
+            "e_3"
+        ],
+        "Operational Planning": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October 23, 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle Codename LIGHTFOOT is launched by 30 Corps, aiming to create two corridors through the enemy defenses for subsequent advances."
+        },
+        {
+            "event": "e_2",
+            "date": "October 1942",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "30 Corps engages in operations to breach enemy lines while coordinating diversionary tactics led by various divisions."
+        },
+        {
+            "event": "e_3",
+            "date": "October 1942",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_7",
+                "o_8",
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "13 Corps initiates offensive movements to distract the enemy and support the main thrust of 30 Corps."
+        }
+    ]
+}

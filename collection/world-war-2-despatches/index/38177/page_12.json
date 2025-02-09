@@ -1,0 +1,109 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unnamed Commander"
+        },
+        "locations": {
+            "l_1": "Western Desert",
+            "l_2": "Persia",
+            "l_3": "Iraq",
+            "l_4": "Egypt",
+            "l_5": "Caucasus",
+            "l_6": "Persian Gulf",
+            "l_7": "Cairo",
+            "l_8": "Cardiff"
+        },
+        "events": {
+            "e_1": "Defensive Operations in Persia",
+            "e_2": "Offensive Operations in the Western Desert",
+            "e_3": "Independent Command in Iraq Persia"
+        },
+        "organisations": {
+            "o_1": "Committee on the implications of setting up an independent command"
+        }
+    },
+    "keywords": [
+        "Western Desert",
+        "Persia",
+        "Iraq",
+        "Egypt",
+        "military command",
+        "offensive operations",
+        "defensive operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Resource Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ],
+        "Resource Management": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1948",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Commander expresses concern over the risks of conducting defensive operations in Persia while engaging in offensive actions in the Western Desert, emphasizing limitations in resources."
+        },
+        {
+            "event": "e_2",
+            "date": "1948",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Commander discusses the challenges and impracticality of launching offensive campaigns in the Western Desert, identifying strategic weaknesses in the Middle East."
+        },
+        {
+            "event": "e_3",
+            "date": "1948",
+            "locations": [
+                "l_3",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Commander reviews proposals for establishing an independent command in Iraq and Persia, expressing skepticism about the practicality and risks involved."
+        }
+    ]
+}

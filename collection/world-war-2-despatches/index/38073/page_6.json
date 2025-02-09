@@ -1,0 +1,102 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral Commanding",
+            "p_2": "Captain (D)"
+        },
+        "locations": {
+            "l_1": "northeast",
+            "l_2": "south",
+            "l_3": "west",
+            "l_4": "eastward",
+            "l_5": "northward",
+            "l_6": "Sea",
+            "l_7": "ZULU",
+            "l_8": "EURYALUS",
+            "l_9": "HASTY",
+            "l_10": "CLEOPATRA"
+        },
+        "events": {
+            "e_1": "Air Attack",
+            "e_2": "Engagement between Convoy and Enemy"
+        },
+        "organisations": {
+            "o_1": "Fifteenth Cruiser Squadron",
+            "o_2": "Fourteenth Destroyer Flotilla",
+            "o_3": "Twenty-Second Destroyer Flotilla"
+        }
+    },
+    "keywords": [
+        "convoy",
+        "air attack",
+        "engagement",
+        "smoke-laying",
+        "naval action",
+        "ammunition",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Casualties",
+        "Tactical Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Casualties": [
+            "e_2"
+        ],
+        "Tactical Movements": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "N/A",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Throughout the period, a heavy air attack targets the convoy and the striking force, leading to a tactical adjustment to counter the threats."
+        },
+        {
+            "event": "e_2",
+            "date": "N/A",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the engagement, the Convoy actively maneuvers against enemy fire and suffers casualties, leading to defensive tactics such as smoke laying and strategic repositioning."
+        }
+    ]
+}

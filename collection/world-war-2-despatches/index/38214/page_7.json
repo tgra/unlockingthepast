@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant Commander Gill",
+            "p_2": "Captain William Tennant",
+            "p_3": "Lieutenant Commander A. G. Skipwith"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "H.M.S. Prince of Wales"
+        },
+        "events": {
+            "e_1": "First Air Attack",
+            "e_2": "Loss of H.M.S. Prince of Wales",
+            "e_3": "Final Torpedo Attack"
+        },
+        "organisations": {
+            "o_1": "Eastern Fleet",
+            "o_2": "H.M.S. Repulse",
+            "o_3": "H.M.S. Vampire",
+            "o_4": "H.M.S. Electra"
+        }
+    },
+    "keywords": [
+        "Torpedo",
+        "Aircraft",
+        "Air Attack",
+        "Survivors",
+        "Damage",
+        "Bombing"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Rescue Operations",
+        "Command Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_2"
+        ],
+        "Rescue Operations": [
+            "e_3"
+        ],
+        "Command Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "11th December, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "At 1113 hours, fire is opened on eight twin-engined high-level bombers that attack H.M.S. Repulse in close formation."
+        },
+        {
+            "event": "e_2",
+            "date": "10th December, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "H.M.S. Prince of Wales is attacked by torpedo bombers at 1144 hours, resulting in significant damage and the eventual loss of the ship."
+        },
+        {
+            "event": "e_3",
+            "date": "14th December, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "After the last torpedo attacks, destroyers Vampire and Electra efficiently pick up survivors from H.M.S. Prince of Wales."
+        }
+    ]
+}

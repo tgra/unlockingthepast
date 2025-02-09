@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Ryder",
+            "p_2": "Darlan",
+            "p_3": "Captain O. R. Bennehoff",
+            "p_4": "Commander H. G. Scott",
+            "p_5": "Captain N. V. Dickinson"
+        },
+        "locations": {
+            "l_1": "Algiers",
+            "l_2": "Bougie",
+            "l_3": "Djidjelli",
+            "l_4": "C Sector",
+            "l_5": "BULOLO",
+            "l_6": "Cap Carbon"
+        },
+        "events": {
+            "e_1": "Air attack at C Sector",
+            "e_2": "Arrival of H.M.S. SPEY",
+            "e_3": "Assault on Bougie",
+            "e_4": "Landing at Djidjelli"
+        },
+        "organisations": {
+            "o_1": "U.S. Navy",
+            "o_2": "Royal Navy",
+            "o_3": "R.A.F."
+        }
+    },
+    "keywords": [
+        "air attack",
+        "casualties",
+        "unloading",
+        "Assault",
+        "November 10",
+        "naval operation",
+        "troops"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Naval Engagement",
+        "Assault Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_1",
+            "e_2"
+        ],
+        "Assault Planning": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 10",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Axis air attack focuses on ships at C Sector, resulting in heavy damage to U.S.S. LEEDSTOWN and other vessels, while defensive actions prevent further casualties."
+        },
+        {
+            "event": "e_2",
+            "date": "November 10",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "H.M.S. SPEY arrives in Algiers with American soldiers after navigating through dangerous waters to participate in the assault."
+        },
+        {
+            "event": "e_3",
+            "date": "November 10",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The slow assault convoy departs for Bougie, with multiple ships and escorts, initiating the military operation against the coastal defense batteries."
+        },
+        {
+            "event": "e_4",
+            "date": "November 11",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Troops land at Djidjelli as part of the planned assault, following the earlier operations at Bougie."
+        }
+    ]
+}

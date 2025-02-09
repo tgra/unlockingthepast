@@ -1,0 +1,109 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Subhas Chandra Bose"
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "India",
+            "l_3": "Singapore",
+            "l_4": "Malaya",
+            "l_5": "Mogaung",
+            "l_6": "Chindwin"
+        },
+        "events": {
+            "e_1": "Arakan Operations",
+            "e_2": "Formation of I.N.A.",
+            "e_3": "Japanese Army Infiltration in Burma"
+        },
+        "organisations": {
+            "o_1": "Hikari Kikan",
+            "o_2": "Indian National Army (I.N.A)",
+            "o_3": "Indian Independence League"
+        }
+    },
+    "keywords": [
+        "Japanese Army",
+        "Burma",
+        "I.N.A.",
+        "Arakan",
+        "Hikari Kikan"
+    ],
+    "themes": [
+        "Military Operations",
+        "Espionage",
+        "Recruitment",
+        "Loyalty"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Espionage": [
+            "e_3"
+        ],
+        "Recruitment": [
+            "e_2"
+        ],
+        "Loyalty": []
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 1944",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Arakan Operations involve elements of the Indian National Army first appearing in the fighting but primarily focusing on foraging and support roles."
+        },
+        {
+            "event": "e_2",
+            "date": "End of 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Indian National Army, reformed by Subhas Chandra Bose, is primarily composed of Indian prisoners of war taken in Singapore and is organized to oppose British forces in Burma."
+        },
+        {
+            "event": "e_3",
+            "date": "Ongoing since 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Japanese army employs subversive tactics by raising local forces, including the I.N.A. and disaffected Burmans to counter British forces in Burma."
+        }
+    ]
+}

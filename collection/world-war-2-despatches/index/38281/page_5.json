@@ -1,0 +1,94 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral Commanding",
+            "p_2": "Captain (D)"
+        },
+        "locations": {
+            "l_1": "Renown",
+            "l_2": "Malta",
+            "l_3": "ARK ROYAL",
+            "l_4": "Manchester",
+            "l_5": "Sheffield",
+            "l_6": "Southampton",
+            "l_7": "Force D"
+        },
+        "events": {
+            "e_1": "Engagement with Enemy Fleet",
+            "e_2": "Sunderland Report of Enemy Position"
+        },
+        "organisations": {
+            "o_1": "18th Cruiser Squadron",
+            "o_2": "8th Destroyer Flotilla"
+        }
+    },
+    "keywords": [
+        "enemy fleet",
+        "position report",
+        "battleships",
+        "cruisers",
+        "destroyers",
+        "reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Reconnaissance",
+        "Engagement Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Reconnaissance": [
+            "e_2"
+        ],
+        "Engagement Strategy": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The forces under Vice Admiral Commanding have effectively concentrated and are ready to engage the enemy fleet, which is reported to consist of multiple battleships and cruisers."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A Sunderland flying-boat reports the position of enemy battleships and cruisers, contributing to the tactical assessment of enemy strength and movements."
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Marshal Coningham",
+            "p_2": "General Pile",
+            "p_3": "Chief Intelligence Officer"
+        },
+        "locations": {
+            "l_1": "Hague",
+            "l_2": "Wassenaar",
+            "l_3": "Hook of Holland",
+            "l_4": "Amersfoort",
+            "l_5": "Haagsche Bosch",
+            "l_6": "Duindigt"
+        },
+        "events": {
+            "e_1": "Rocket Attacks",
+            "e_2": "Bombing of the Haagsche Bosch",
+            "e_3": "Operational Trial Request by General Pile"
+        },
+        "organisations": {
+            "o_1": "Second Tactical Air Force",
+            "o_2": "No. 2 Group",
+            "o_3": "Bomber Command",
+            "o_4": "Defence Committee"
+        }
+    },
+    "keywords": [
+        "rocket attacks",
+        "bombing",
+        "operational trial",
+        "fighter-bomber",
+        "air defense"
+    ],
+    "themes": [
+        "Military Operations",
+        "Countermeasures",
+        "Bombing Campaigns",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Countermeasures": [
+            "e_3"
+        ],
+        "Bombing Campaigns": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Rocket attacks are intensified in response to rising scale of attacks, leading to strategic military decisions."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd February 1945",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The bombing of the Haagsche Bosch occurs, leading to significant destruction of German storage facilities and a temporary cessation of rocket fire."
+        },
+        {
+            "event": "e_3",
+            "date": "26th March 1945",
+            "locations": [],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "General Pile requests an operational trial for a new air defense scheme against approaching rockets, emphasizing the urgency for testing."
+        }
+    ]
+}

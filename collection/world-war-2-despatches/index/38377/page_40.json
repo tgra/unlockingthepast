@@ -1,0 +1,92 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A. T. B. Curteis",
+            "p_2": "Vice-Admiral"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Palermo",
+            "l_3": "Gibraltar",
+            "l_4": "Sardinia",
+            "l_5": "Marittimo",
+            "l_6": "Force W",
+            "l_7": "Force X",
+            "l_8": "Force T"
+        },
+        "events": {
+            "e_1": "Operation against Italian cruisers",
+            "e_2": "Convoy operations"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty",
+            "o_3": "HM Ships EAGLE and ARGUS"
+        }
+    },
+    "keywords": [
+        "Force W",
+        "Italian cruisers",
+        "malta",
+        "Hurricanes",
+        "torpedo bombers",
+        "convoy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Air Attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_1"
+        ],
+        "Air Attacks": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 15-16, 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Force W is searched for by flare-dropping aircraft, while Vice-Admiral reports on the movement of Italian cruisers and destroyers, leading to strategic decisions on the reinforcement of Force X."
+        },
+        {
+            "event": "e_2",
+            "date": "June 16-17, 1942",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Force X engages in convoy operations, dealt with multiple air attacks, and later successfully returns to Gibraltar despite challenging circumstances."
+        }
+    ]
+}

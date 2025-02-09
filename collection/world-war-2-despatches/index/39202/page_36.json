@@ -1,0 +1,92 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "President Truman"
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "India",
+            "l_3": "Ceylon",
+            "l_4": "Rangoon",
+            "l_5": "Malaya",
+            "l_6": "Singapore",
+            "l_7": "Seletar",
+            "l_8": "South East Asia"
+        },
+        "events": {
+            "e_1": "Surrender of Japan",
+            "e_2": "Termination of Lend/Lease"
+        },
+        "organisations": {
+            "o_1": "U.S.A.A.F.",
+            "o_2": "Headquarters, Base Air Forces",
+            "o_3": "Repair and Salvage Units"
+        }
+    },
+    "keywords": [
+        "Re-organisation",
+        "Air Forces",
+        "Maintenance",
+        "Aircraft repairs",
+        "Lend/Lease",
+        "Supply shortages"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Air Operations",
+        "Diplomacy",
+        "Supply Chain Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Supply Chain Management": [
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "President Truman announces the Surrender of Japan, leading to the end of Lend/Lease for Allied Governments except for ongoing assistance against remaining Japanese forces."
+        },
+        {
+            "event": "e_2",
+            "date": "September 1945",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The termination of Lend/Lease creates serious supply shortages for Air Command in South East Asia, as aircraft and spares become increasingly unserviceable."
+        }
+    ]
+}

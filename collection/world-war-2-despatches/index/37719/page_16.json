@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Detachment Commander",
+            "p_2": "Controller"
+        },
+        "locations": {
+            "l_1": "Dover",
+            "l_2": "Calais",
+            "l_3": "Uxbridge",
+            "l_4": "London",
+            "l_5": "Beachy Head"
+        },
+        "events": {
+            "e_1": "Battle of Britain",
+            "e_2": "Tactical employment of Searchlights",
+            "e_3": "G.L. Equipment experiments",
+            "e_4": "Night raids on London",
+            "e_5": "Detection of mine-laying aircraft"
+        },
+        "organisations": {
+            "o_1": "6th A.A. Division",
+            "o_2": "R.A.F."
+        }
+    },
+    "keywords": [
+        "Searchlights",
+        "G.L. Equipment",
+        "Enemy aircraft",
+        "Battle of Britain",
+        "Tactical control"
+    ],
+    "themes": [
+        "Military Operations",
+        "Surveillance Technology",
+        "Coordination of Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4",
+            "e_5"
+        ],
+        "Surveillance Technology": [
+            "e_2",
+            "e_3"
+        ],
+        "Coordination of Defense": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "July-October 1940",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "During the Battle of Britain, the tactical deployment of Searchlights plays a crucial role in engaging enemy aircraft while G.L. equipment provides essential data for unseen target engagements."
+        },
+        {
+            "event": "e_4",
+            "date": "Night Raids 1940",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "As night raids on London increase, the tactical use of Searchlights is enhanced with G.L. equipment to assist Night Fighters in targeting enemy aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "August 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Experiments with G.L. equipment demonstrate its effectiveness as a ship detector and increase the role of anti-aircraft surveillance."
+        },
+        {
+            "event": "e_5",
+            "date": "1940",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Detection of mine-laying aircraft reveals the versatility of G.L. equipment in tracking low-flying threats beyond the capability of conventional stations."
+        }
+    ]
+}

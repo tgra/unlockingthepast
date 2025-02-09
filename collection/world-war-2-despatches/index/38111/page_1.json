@@ -1,0 +1,93 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Commander-in-Chief",
+            "p_2": "N/A"
+        },
+        "locations": {
+            "l_1": "S.W. Approaches",
+            "l_2": "Plymouth",
+            "l_3": "Chatham",
+            "l_4": "Liverpool",
+            "l_5": "North Sea",
+            "l_6": "English Channel",
+            "l_7": "The Nore",
+            "l_8": "Beachy Head",
+            "l_9": "France"
+        },
+        "events": {
+            "e_1": "Operation Overlord",
+            "e_2": "Exercise FABIUS"
+        },
+        "organisations": {
+            "o_1": "Fleet Air Arm",
+            "o_2": "A.E.A.F."
+        }
+    },
+    "keywords": [
+        "U-Boats",
+        "Fighter Cover",
+        "Convoy",
+        "Reconnaissance",
+        "Air Cover"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Air Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1"
+        ],
+        "Air Defense": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-day",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Overlord is a major Allied operation focused on the invasion and liberation of Europe from Nazi control."
+        },
+        {
+            "event": "e_2",
+            "date": "Pre-D-day",
+            "locations": [
+                "l_1",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Exercise FABIUS is a significant military exercise intended to mislead the enemy about the timing and location of the D-day assault."
+        }
+    ]
+}

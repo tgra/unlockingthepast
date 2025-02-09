@@ -1,0 +1,98 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Anzio",
+            "l_2": "Italy",
+            "l_3": "Adriatic Coast",
+            "l_4": "Garigliano",
+            "l_5": "Aurunci Mountains",
+            "l_6": "Apennine"
+        },
+        "events": {
+            "e_1": "Order of Battle of Allied Armies in Italy",
+            "e_2": "Arrival of Independent Regiments",
+            "e_3": "German forces in Anzio bridgehead"
+        },
+        "organisations": {
+            "o_1": "Fourteenth Army",
+            "o_2": "U.S. Army",
+            "o_3": "French Expeditionary Corps",
+            "o_4": "S.S. Battle Group",
+            "o_5": "Luftwaffe"
+        }
+    },
+    "keywords": [
+        "Independent Regiments",
+        "German Divisions",
+        "Allied Armies",
+        "Anzio Beachhead",
+        "Order of Battle"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Deployments",
+        "Military Organisation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Deployments": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "11th May, 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Order of Battle of Allied Armies in Italy is established, detailing the composition and deployment of the various units involved in operations."
+        },
+        {
+            "event": "e_2",
+            "date": "Before 16th February, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Independent Regiments arrive before 16th February, contributing to the German military presence in the Anzio area."
+        },
+        {
+            "event": "e_3",
+            "date": "6th February, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "German forces in the Anzio bridgehead area are reported to be equivalent to nine divisions as of 6th February."
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Hermann Goering"
+        },
+        "locations": {
+            "l_1": "Syracuse",
+            "l_2": "Sicily",
+            "l_3": "Gela",
+            "l_4": "Cape Scalambri",
+            "l_5": "Malta",
+            "l_6": "Gozo",
+            "l_7": "Pantellaria"
+        },
+        "events": {
+            "e_1": "Landings",
+            "e_2": "Counter Attack by Hermann Goering Panzer Division",
+            "e_3": "Capture of Syracuse"
+        },
+        "organisations": {
+            "o_1": "Western Task Force",
+            "o_2": "Eastern Task Force",
+            "o_3": "Air Command"
+        }
+    },
+    "keywords": [
+        "assault",
+        "weather conditions",
+        "naval support",
+        "air opposition",
+        "landing operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Air Support",
+        "Counter Attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_1"
+        ],
+        "Air Support": [
+            "e_1"
+        ],
+        "Counter Attacks": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The landings proceed successfully despite the adverse weather conditions, with assault waves arriving at their designated beaches almost on time and with minimal opposition."
+        },
+        {
+            "event": "e_2",
+            "date": "D+1",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A determined counter attack by the Hermann Goering Panzer Division occurs, successfully reaching near the beaches before naval gunfire intervenes, restoring the situation."
+        },
+        {
+            "event": "e_3",
+            "date": "D+1",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Troops enter Syracuse and secure the port, which is swept and declared open."
+        }
+    ]
+}

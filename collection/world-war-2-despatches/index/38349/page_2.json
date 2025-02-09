@@ -1,0 +1,86 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A. W. S. Agar, V.C., D.S.O",
+            "p_2": "A. U. WiLus"
+        },
+        "locations": {
+            "l_1": "South Atlantic Station",
+            "l_2": "Freetown",
+            "l_3": "St. Helena",
+            "l_4": "Latitude 27 degrees 53 minutes South, Longitude 3 degrees 55 minutes West",
+            "l_5": "Latitude 26 degrees 45 minutes South, Longitude 6 degrees 25 minutes West"
+        },
+        "events": {
+            "e_1": "Sinking of enemy vessel by H.M.S. DORSETSHIRE",
+            "e_2": "Search operation by H.M.S. DORSETSHIRE"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "H.M.S. DORSETSHIRE",
+        "U-Boat",
+        "enemy vessel",
+        "search",
+        "reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Leadership"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_1"
+        ],
+        "Leadership": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1st December, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "H.M.S. DORSETSHIRE sinks an enemy vessel believed to be a supply ship during a search operation in the South Atlantic."
+        },
+        {
+            "event": "e_2",
+            "date": "26th November, 1941",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "H.M.S. DORSETSHIRE embarks on a search operation from Freetown to locate enemy ships, culminating in the sinking of an enemy vessel."
+        }
+    ]
+}

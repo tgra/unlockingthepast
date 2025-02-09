@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "P. C. Maltby",
+            "p_2": "W. E. Staton",
+            "p_3": "Abdair",
+            "p_4": "Wing Commander Maguire"
+        },
+        "locations": {
+            "l_1": "Palembang",
+            "l_2": "Singapore",
+            "l_3": "Sumatra",
+            "l_4": "Java",
+            "l_5": "Banka Island",
+            "l_6": "Palembang river",
+            "l_7": "P.I. aerodrome",
+            "l_8": "P.II.",
+            "l_9": "Pladjoe"
+        },
+        "events": {
+            "e_1": "Parachute attack on Palembang I Aerodrome",
+            "e_2": "Reconnaissance operations by No. 225 (B) Group",
+            "e_3": "Offensive reconnaissance of 5 Hudsons"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "R.A.A.F.",
+            "o_3": "Westgroup"
+        }
+    },
+    "keywords": [
+        "signals traffic",
+        "operational control",
+        "reconnaissance",
+        "confused shipping situation",
+        "Japanese naval forces",
+        "aerodrome defences"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Operational Challenges",
+        "Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Defense": [
+            "e_1"
+        ],
+        "Operational Challenges": [
+            "e_2"
+        ],
+        "Reconnaissance": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "14th February",
+            "locations": [
+                "l_1",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 14th February, Palembang I Aerodrome is attacked by bombers and parachutists, leading to a fierce defense by R.A.F. personnel and Dutch infantry."
+        },
+        {
+            "event": "e_2",
+            "date": "12th to 14th February",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_3",
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "From 12th to 14th February, No. 225 (B) Group ceases reconnaissance under Abdair's orders due to operational shifts and growing threats in the Sumatra area."
+        },
+        {
+            "event": "e_3",
+            "date": "14th February",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 14th February, an offensive reconnaissance by five Hudsons leads to a confrontation with Japanese shipping, reporting threats near Banka Island."
+        }
+    ]
+}

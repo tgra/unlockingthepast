@@ -1,0 +1,92 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_001": "Commander-in-Chief, Portsmouth"
+        },
+        "locations": {
+            "l_001": "Isle of Wight",
+            "l_002": "Southampton",
+            "l_003": "France",
+            "l_004": "United Kingdom",
+            "l_005": "Channel"
+        },
+        "events": {
+            "e_001": "D-Day Landings",
+            "e_002": "Operation Overlord"
+        },
+        "organisations": {
+            "o_001": "Admiralty",
+            "o_002": "S.H.A.E.F."
+        }
+    },
+    "keywords": [
+        "naval operations",
+        "ammunition supply",
+        "air observation",
+        "E-Boats",
+        "coastal forces",
+        "minesweeping"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Management",
+        "Air Support",
+        "Casualties Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_001",
+            "e_002"
+        ],
+        "Supply Chain Management": [
+            "e_002"
+        ],
+        "Air Support": [
+            "e_001"
+        ],
+        "Casualties Management": [
+            "e_001"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_001",
+            "date": "D+28",
+            "locations": [
+                "l_003"
+            ],
+            "persons": [
+                "p_001"
+            ],
+            "organisations": [
+                "o_001",
+                "o_002"
+            ],
+            "connectedEvents": [
+                "e_002"
+            ],
+            "eventSummary": "By D+9, half a million men are landed in France as part of the D-Day Landings, demonstrating swift progress despite some logistical challenges."
+        },
+        {
+            "event": "e_002",
+            "date": "D-Day",
+            "locations": [
+                "l_002",
+                "l_001",
+                "l_003",
+                "l_004"
+            ],
+            "persons": [
+                "p_001"
+            ],
+            "organisations": [
+                "o_001",
+                "o_002"
+            ],
+            "connectedEvents": [
+                "e_001"
+            ],
+            "eventSummary": "Operation Overlord commences, featuring a massive amphibious assault that encounters various enemy threats but successfully progresses the buildup of forces in France."
+        }
+    ]
+}

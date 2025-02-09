@@ -1,0 +1,84 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "Hong Kong",
+            "l_3": "Malaya"
+        },
+        "events": {
+            "e_1": "Outbreak of War",
+            "e_2": "Mobilization of Forces"
+        },
+        "organisations": {
+            "o_1": "Burma Rifles",
+            "o_2": "Hong Kong Volunteer Defence Corps",
+            "o_3": "R.A.A.F.",
+            "o_4": "Indian Mountain Sacral"
+        }
+    },
+    "keywords": [
+        "Infantry",
+        "Artillery",
+        "Strength of Army",
+        "Garrison Company",
+        "Volunteer Defence Corps"
+    ],
+    "themes": [
+        "Military Operations",
+        "Mobilization",
+        "Strategic Strength",
+        "Defence"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Mobilization": [
+            "e_2"
+        ],
+        "Strategic Strength": [
+            "e_2"
+        ],
+        "Defence": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 8, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "At the outbreak of hostilities, the military forces in Hong Kong are mobilizing in response to the war declaration."
+        },
+        {
+            "event": "e_2",
+            "date": "December 8, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The mobilization of various military units including the Burma Rifles and auxiliary forces is taking place amidst heightened tensions."
+        }
+    ]
+}

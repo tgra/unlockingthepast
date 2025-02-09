@@ -1,0 +1,112 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Sir Tom Phillips",
+            "p_2": "C.-in-C., Far East"
+        },
+        "locations": {
+            "l_1": "Kota Bahru",
+            "l_2": "Seletar",
+            "l_3": "Cambodia",
+            "l_4": "Gulf of Siam",
+            "l_5": "Siam",
+            "l_6": "Bangkok",
+            "l_7": "Ko Kong",
+            "l_8": "Patani",
+            "l_9": "Sungei Patani"
+        },
+        "events": {
+            "e_1": "Operation Matador",
+            "e_2": "Reconnaissance of Ko Kong",
+            "e_3": "Sightings of Japanese vessels"
+        },
+        "organisations": {
+            "o_1": "No. 205 (FB) Squadron",
+            "o_2": "No. 8 (GR) Squadron, R.A.A.F.",
+            "o_3": "G.H.Q.",
+            "o_4": "B.O.A.C."
+        }
+    },
+    "keywords": [
+        "Reconnaissance",
+        "Japanese convoys",
+        "Gulf of Siam",
+        "Operation Matador",
+        "Military Patrol"
+    ],
+    "themes": [
+        "Military Operations",
+        "Reconnaissance Efforts",
+        "Naval Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Reconnaissance Efforts": [
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagements": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "7th December 1941",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Matador is decided against due to the lack of reestablished contact with the main Japanese convoys and the poor reconnaissance conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "7th December 1941",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The reconnaissance of Ko Kong is initiated to locate Japanese convoy activities as per G.H.Q.'s orders."
+        },
+        {
+            "event": "e_3",
+            "date": "7th December 1941",
+            "locations": [
+                "l_4",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Multiple sightings of Japanese vessels occur, prompting military responses and adjustments in reconnaissance activities."
+        }
+    ]
+}

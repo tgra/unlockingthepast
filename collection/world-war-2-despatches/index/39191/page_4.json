@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Avenger Wing Leaders"
+        },
+        "locations": {
+            "l_1": "Engano Island",
+            "l_2": "Cocos Island",
+            "l_3": "Palembang",
+            "l_4": "Songei Gerong",
+            "l_5": "Lembak Airfield",
+            "l_6": "Talangbetoetoe Airfield",
+            "l_7": "Mana Airfield",
+            "l_8": "Sumatra"
+        },
+        "events": {
+            "e_1": "First Strike",
+            "e_2": "Second Strike",
+            "e_3": "Withdrawal and Second Oiling",
+            "e_4": "Ramrod Sweeps"
+        },
+        "organisations": {
+            "o_1": "Force 63",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "strike",
+        "enemy aircraft",
+        "withdrawal",
+        "oiling",
+        "combat air patrol",
+        "fighter sweep",
+        "bombers",
+        "airfields"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Planning",
+        "Combat Strategy",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Tactical Planning": [
+            "e_2",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 24, 1806",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the first strike on Palembang, the fleet encounters no significant opposition and successfully damages the target."
+        },
+        {
+            "event": "e_2",
+            "date": "January 29, 1806",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The second strike is executed at Songei Gerong with improved coordination among the aircraft, resulting in tactical advantages despite adverse weather."
+        },
+        {
+            "event": "e_3",
+            "date": "January 25-27, 1806",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Force 63 conducts a series of operations to replenish fuel and prepare for upcoming strikes, ensuring combat readiness."
+        },
+        {
+            "event": "e_4",
+            "date": "January 29, 1806",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Ramrod sweeps are executed to secure airfields, limiting enemy responses during the second strike, leading to minimal opposition."
+        }
+    ]
+}

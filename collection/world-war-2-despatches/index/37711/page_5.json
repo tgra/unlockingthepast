@@ -1,0 +1,150 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "American Ranger units",
+            "p_2": "British brigade of two Commandos",
+            "p_3": "Commando troops",
+            "p_4": "Bomber Command",
+            "p_5": "Eighth United States Air Force",
+            "p_6": "Ninth United States Air Force"
+        },
+        "locations": {
+            "l_1": "Utah beach",
+            "l_2": "Ste. Mère-Église",
+            "l_3": "Cotentin peninsula",
+            "l_4": "Caen",
+            "l_5": "Omaha beach",
+            "l_6": "Carentan estuary",
+            "l_7": "Juno sector",
+            "l_8": "Sword sector",
+            "l_9": "Ouistreham",
+            "l_10": "Cabourg",
+            "l_11": "Bénouville",
+            "l_12": "Ranville"
+        },
+        "events": {
+            "e_1": "D Day Assault",
+            "e_2": "Joint Fire Plan Execution",
+            "e_3": "Bomber Command Operations",
+            "e_4": "Allied Air Forces Offensive"
+        },
+        "organisations": {
+            "o_1": "United States Airborne Divisions",
+            "o_2": "Second British Army",
+            "o_3": "Allied Air Forces"
+        }
+    },
+    "keywords": [
+        "airborne forces",
+        "assault wave",
+        "naval bombardment",
+        "air support",
+        "coast artillery",
+        "defended beach"
+    ],
+    "themes": [
+        "Military Operations",
+        "Joint Fire Planning",
+        "Air Support Strategy",
+        "Allied Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [],
+        "Strategic Decisions": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D Day",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The D Day assault involves a massive coordinated effort by Allied forces to land on the beaches of Normandy, engaging in complex military operations supported by naval and air forces."
+        },
+        {
+            "event": "e_2",
+            "date": "D Day",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Joint Fire Plan is executed to allocate military resources and target enemy coastal defenses to ensure the success of the D Day assault."
+        },
+        {
+            "event": "e_3",
+            "date": "D Day",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Bomber Command operations are launched to attack key enemy positions leading up to the D Day assault, ensuring air superiority."
+        },
+        {
+            "event": "e_4",
+            "date": "D Day",
+            "locations": [
+                "l_3",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_6"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "During the Allied Air Forces offensive, approximately 11,000 sorties are flown to support ground forces during the D Day landings."
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigade Commander"
+        },
+        "locations": {
+            "l_1": "Porto Maggiore",
+            "l_2": "Argenta Gap",
+            "l_3": "Po River",
+            "l_4": "Massa Lombarda",
+            "l_5": "Medicina",
+            "l_6": "Conselice",
+            "l_7": "Imola",
+            "l_8": "Castel San Pietro",
+            "l_9": "Bologna",
+            "l_10": "Reno River",
+            "l_11": "Montese",
+            "l_12": "Casalecchio"
+        },
+        "events": {
+            "e_1": "Fifth Army Offensive",
+            "e_2": "Attack on Porto Maggiore",
+            "e_3": "Occupation of Conselice",
+            "e_4": "Air raid on Casalecchio"
+        },
+        "organisations": {
+            "o_1": "8th Army",
+            "o_2": "Fifth Army",
+            "o_3": "15th Air Force",
+            "o_4": "No. 205 Group",
+            "o_5": "Desert Air Force",
+            "o_6": "XXII Tactical Air Command"
+        }
+    },
+    "keywords": [
+        "amphibious landing",
+        "air support",
+        "enemy movement",
+        "bridgehead",
+        "tactical operations",
+        "air raids",
+        "enemy resistance",
+        "bombing campaign"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Warfare",
+        "Offensive Strategies",
+        "Ground Assaults"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Aerial Warfare": [
+            "e_2",
+            "e_4"
+        ],
+        "Offensive Strategies": [
+            "e_1"
+        ],
+        "Ground Assaults": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "14th April",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Fifth Army launches a major offensive aimed at encircling the enemy south of the Po River, marking a significant push in military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "Night 13th/14th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Heavy bombers of No. 205 Group attack Porto Maggiore, targeting key routes for the retreating Germans."
+        },
+        {
+            "event": "e_3",
+            "date": "14th April",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Polish Corps successfully captures Conselice, enabling further advancement towards Bologna during the offensive."
+        },
+        {
+            "event": "e_4",
+            "date": "16th/17th April",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A successful air raid is carried out on Casalecchio to disrupt the flow of German reserves, significantly hindering their efforts to counter the Fifth Army's advance."
+        }
+    ]
+}

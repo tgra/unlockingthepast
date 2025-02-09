@@ -1,0 +1,98 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Southern Siam",
+            "l_2": "Malaya",
+            "l_3": "Johore",
+            "l_4": "Penang-Province Wellesley Area",
+            "l_5": "Singapore",
+            "l_6": "China Coasts",
+            "l_7": "Siglap",
+            "l_8": "Ayer Gomureh",
+            "l_9": "Changi"
+        },
+        "events": {
+            "e_1": "Attack on Singapore 1937",
+            "e_2": "Combined Operations by Japanese"
+        },
+        "organisations": {
+            "o_1": "Federated Malay States Volunteer Force",
+            "o_2": "Johore Military Forces",
+            "o_3": "Johore Volunteer Engineers",
+            "o_4": "Local Naval Craft"
+        }
+    },
+    "keywords": [
+        "defence",
+        "military operations",
+        "attack",
+        "sabotage",
+        "civil disturbance",
+        "air forces",
+        "naval forces",
+        "food supply"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategy",
+        "Sabotage Threat",
+        "Civil Disturbance",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defence Strategy": [
+            "e_1"
+        ],
+        "Sabotage Threat": [
+            "e_1"
+        ],
+        "Civil Disturbance": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1937",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The attack on Singapore in 1937 highlights the increasing military threat originating from Southern Siam, necessitating enhanced defense strategies and intelligence due to risks of sabotage and civil disturbance."
+        },
+        {
+            "event": "e_2",
+            "date": "1937",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Japanese Combined Operations on the China Coasts introduce advanced military equipment and strategies, increasing the threat level to Singapore and necessitating urgent defensive upgrades."
+        }
+    ]
+}

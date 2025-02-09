@@ -1,0 +1,140 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A.D.G.B.",
+            "p_2": "No. 31 Group",
+            "p_3": "Royal Air Force"
+        },
+        "locations": {
+            "l_1": "Uxbridge",
+            "l_2": "United Kingdom",
+            "l_3": "Beach-head area",
+            "l_4": "assault area",
+            "l_5": "shipping lanes"
+        },
+        "events": {
+            "e_1": "Attacks on Coastal Garrisons",
+            "e_2": "Dieppe operation",
+            "e_3": "D-Day",
+            "e_4": "Invasion operations"
+        },
+        "organisations": {
+            "o_1": "US Eighth Air Force",
+            "o_2": "R.A.F.",
+            "o_3": "Combined Control Centre",
+            "o_4": "A.E.A.F."
+        }
+    },
+    "keywords": [
+        "attacks",
+        "garrisons",
+        "sorties",
+        "fighter cover",
+        "Royal Air Force",
+        "D-Day",
+        "invasion"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Ground Forces Protection"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_4"
+        ],
+        "Ground Forces Protection": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Attacks on Coastal Garrisons are conducted to support ground forces by providing air superiority and protection against enemy attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "August 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Dieppe operation involves significant air cover and support from the Royal Air Force to facilitate the operation."
+        },
+        {
+            "event": "e_3",
+            "date": "D-Day",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "On D-Day, various squadrons provide continuous cover over the beach-head and naval approach to ensure successful landings."
+        },
+        {
+            "event": "e_4",
+            "date": "June 1944",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Invasion operations see the deployment of fighter and bomber units to support ground forces and secure the area from enemy attacks."
+        }
+    ]
+}

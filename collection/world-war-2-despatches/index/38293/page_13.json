@@ -1,0 +1,138 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Carlisle",
+            "p_2": "Macky",
+            "p_3": "Smith-Dorrien",
+            "p_4": "Willmot",
+            "p_5": "H. D. Pridham-Wippell"
+        },
+        "locations": {
+            "l_1": "Auckland",
+            "l_2": "Kandahar",
+            "l_3": "Kingston",
+            "l_4": "Suda",
+            "l_5": "Kalamata",
+            "l_6": "Milo",
+            "l_7": "Nio",
+            "l_8": "Syra",
+            "l_9": "Kyparissi",
+            "l_10": "Monemvasia",
+            "l_11": "Alexandria"
+        },
+        "events": {
+            "e_1": "Convoy Operation",
+            "e_2": "Evacuation from Kalamata",
+            "e_3": "Naval Operation at Milo",
+            "e_4": "Convoy Attack in Kaso Straits"
+        },
+        "organisations": {
+            "o_1": "H.M.S. Kimberley",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "convoy",
+        "evacuation",
+        "naval operation",
+        "military",
+        "Suda",
+        "Kalamata"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuations",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Evacuations": [
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 29, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "A convoy operation is taking place, involving several naval vessels and the transport of over 5,000 troops from Greece."
+        },
+        {
+            "event": "e_2",
+            "date": "April 29 - May 1, 1941",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "British naval vessels are executing an evacuation operation at Kalamata, successfully retrieving 202 troops under challenging conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "April 29 - May 1, 1941",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Naval assets visit Milo to gather intelligence and assist in the evacuation of troops as the situation deteriorates."
+        },
+        {
+            "event": "e_4",
+            "date": "April 29-30, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The convoy operating from Suda is attacked by enemy vessels during its transit through the Kaso Straits, but maintains operational integrity."
+        }
+    ]
+}

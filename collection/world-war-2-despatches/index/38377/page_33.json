@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A. S. Rosenthal",
+            "p_2": "Rear-Admiral Commanding",
+            "p_3": "Vice-Admiral, Malta"
+        },
+        "locations": {
+            "l_1": "Pantellaria",
+            "l_2": "Malta",
+            "l_3": "Gozo",
+            "l_4": "Grand Harbour"
+        },
+        "events": {
+            "e_1": "Torpedoing of S.S. SYDNEY STAR",
+            "e_2": "Transfer of troops from SYDNEY STAR to NESTOR",
+            "e_3": "Barrage fire against attacking aircraft",
+            "e_4": "Arrival of HERMIONE, NESTOR, and SYDNEY STAR at Malta",
+            "e_5": "Attack by JU.87 dive bombers"
+        },
+        "organisations": {
+            "o_1": "Royal Australian Navy",
+            "o_2": "18th Cruiser Squadron",
+            "o_3": "Force X",
+            "o_4": "Force H"
+        }
+    },
+    "keywords": [
+        "Torpedo",
+        "Transfer",
+        "Barrage fire",
+        "Malta",
+        "SYDNEY STAR"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Rescue Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_5"
+        ],
+        "Rescue Operations": [
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "24th July 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The S.S. SYDNEY STAR is torpedoed, sustaining significant damage and taking on water in the process."
+        },
+        {
+            "event": "e_2",
+            "date": "24th July 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Troops from SYDNEY STAR, numbering 470, are successfully transferred to NESTOR under challenging circumstances."
+        },
+        {
+            "event": "e_3",
+            "date": "24th July 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Barrage fire is opened by NESTOR against enemy T/B aircraft attempting to target SYDNEY STAR and NESTOR."
+        },
+        {
+            "event": "e_4",
+            "date": "24th July 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "HERMIONE, NESTOR, and SYDNEY STAR arrive at Malta safely after a series of attacks during their mission."
+        },
+        {
+            "event": "e_5",
+            "date": "24th July 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An attack by JU.87 dive bombers with German markings is launched against SYDNEY STAR, HERMIONE, and NESTOR, although no major hits occur."
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Wingate",
+            "p_2": "Lieut.-Colonel Gamble"
+        },
+        "locations": {
+            "l_1": "Mandalay-Lashio railway",
+            "l_2": "Irrawaddy",
+            "l_3": "India",
+            "l_4": "Inywa",
+            "l_5": "Katha",
+            "l_6": "Chindwin",
+            "l_7": "Sittaung",
+            "l_8": "Tamanthi",
+            "l_9": "Kohima",
+            "l_10": "Paoshan",
+            "l_11": "Burma",
+            "l_12": "North-East Assam",
+            "l_13": "Myitkyina",
+            "l_14": "Fort Hertz",
+            "l_15": "Sumprabum"
+        },
+        "events": {
+            "e_1": "Operations against the Mandalay-Lashio railway",
+            "e_2": "Supply operations in N.-E. Burma",
+            "e_3": "Construction of road from Ledo to Myitkyina",
+            "e_4": "Reoccupation of Fort Hertz",
+            "e_5": "Air operations of R.A.F."
+        },
+        "organisations": {
+            "o_1": "23rd Division",
+            "o_2": "Chinese Army",
+            "o_3": "Americans",
+            "o_4": "Royal Indian Navy",
+            "o_5": "R.A.F.",
+            "o_6": "U.S.A.A.F."
+        }
+    },
+    "keywords": [
+        "supply dropping",
+        "Mandalay-Lashio railway",
+        "Irrawaddy",
+        "operations",
+        "Chinese troops",
+        "American Air Force",
+        "air superiority"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Operations",
+        "Construction Projects",
+        "Strategic Military Leadership"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Supply Chain Operations": [
+            "e_3",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operations against the Mandalay-Lashio railway are abandoned after attempts to cross the Irrawaddy fail, leading to a decision to regroup forces for a return to India."
+        },
+        {
+            "event": "e_2",
+            "date": "early June 1942",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Supply operations in N.-E. Burma demonstrate the importance of effective training and physical fitness in troops, even as a third of the entering force is lost."
+        },
+        {
+            "event": "e_3",
+            "date": "1942",
+            "locations": [
+                "l_12",
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The construction of a road from Ledo to Myitkyina begins early in 1942 but faces interruptions due to evacuation and monsoon, later resumed by American forces."
+        },
+        {
+            "event": "e_4",
+            "date": "early 1943",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The reoccupation of Fort Hertz occurs to support the Kachin Levies engaging Japanese forces, enhancing their operational effectiveness despite initial threats."
+        },
+        {
+            "event": "e_5",
+            "date": "1943",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The R.A.F. air operations expand during 1943, aiming to establish air superiority over Japanese forces and support ground operations across Burma."
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commadder-in-Chief"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Jobore",
+            "l_3": "Burma",
+            "l_4": "Hong Kong",
+            "l_5": "Rangoon"
+        },
+        "events": {
+            "e_1": "Summary of Sirength of Army in Malaya",
+            "e_2": "Anti-Aircraft Position Declaration"
+        },
+        "organisations": {
+            "o_1": "Royal Engineers",
+            "o_2": "Indian State Forces"
+        }
+    },
+    "keywords": [
+        "Infantry Battalions",
+        "Artillery",
+        "Anti-Aircraft Position",
+        "Military Forces",
+        "Volunteer Battalions"
+    ],
+    "themes": [
+        "Military Strength Assessment",
+        "Military Equipment Allocation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 7, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A summary outlines the strength of military forces stationed in Malaya, detailing the composition and resources available, including various infantry and artillery units."
+        },
+        {
+            "event": "e_2",
+            "date": "December 7, 1941",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The document outlines the positioning and status of anti-aircraft units, specifying the distribution of artillery across locations, including those allocated but not yet shipped."
+        }
+    ]
+}

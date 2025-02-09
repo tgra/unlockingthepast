@@ -1,0 +1,155 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General Osborne",
+            "p_2": "General Prioux",
+            "p_3": "General de la Laurencie",
+            "p_4": "Sir Ronald Adam"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "Ypres",
+            "l_3": "Proven",
+            "l_4": "Poperinghe",
+            "l_5": "Beveren",
+            "l_6": "Bergues",
+            "l_7": "Cassel",
+            "l_8": "Vieux Berquin",
+            "l_9": "Merville",
+            "l_10": "Sailly-sur-la-Lys",
+            "l_11": "Nieuport",
+            "l_12": "Houtkerque",
+            "l_13": "La Panne",
+            "l_14": "Seclin",
+            "l_15": "Steenvorde",
+            "l_16": "French-Belgian Frontier"
+        },
+        "events": {
+            "e_1": "Withdrawal from the front line",
+            "e_2": "Occupation of the Dunkirk perimeter",
+            "e_3": "Belgian armistice",
+            "e_4": "Attack by enemy tanks",
+            "e_5": "Establishment of enemy bridgehead"
+        },
+        "organisations": {
+            "o_1": "French Army",
+            "o_2": "G.H.Q.",
+            "o_3": "12th Lancers",
+            "o_4": "Royal Artillery"
+        }
+    },
+    "keywords": [
+        "withdrawal",
+        "Dunkirk",
+        "Ypres",
+        "enemy attack",
+        "Belgian armistice",
+        "occupation",
+        "evacuation",
+        "tank attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation",
+        "Armistice",
+        "Defensive Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Evacuation": [
+            "e_2"
+        ],
+        "Armistice": [
+            "e_3"
+        ],
+        "Defensive Strategy": [
+            "e_4",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "28/29 May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "All corps are withdrawing to a new position under enemy pressure."
+        },
+        {
+            "event": "e_2",
+            "date": "28/29 May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The occupation of the Dunkirk perimeter is completed as forces prepare for evacuation."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Belgian armistice is announced, affecting military operations."
+        },
+        {
+            "event": "e_4",
+            "date": "29 May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "There is a strong enemy tank attack compelling divisions to withdraw."
+        },
+        {
+            "event": "e_5",
+            "date": "29 May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Enemy forces establish a bridgehead at Nieuport, complicating evacuation efforts."
+        }
+    ]
+}

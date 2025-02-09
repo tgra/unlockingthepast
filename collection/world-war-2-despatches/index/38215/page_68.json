@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Thai officers",
+            "p_2": "Indian formations",
+            "p_3": "Food Controller"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Singapore Island",
+            "l_3": "Penang",
+            "l_4": "Perak River",
+            "l_5": "Kelantan",
+            "l_6": "Kuantan",
+            "l_7": "Kuala Lumpur",
+            "l_8": "Ipoh",
+            "l_9": "Jerantut",
+            "l_10": "Netherlands East Indies",
+            "l_11": "Bali"
+        },
+        "events": {
+            "e_1": "Outbreak of Hostilities",
+            "e_2": "Operation MATADOR",
+            "e_3": "World War II"
+        },
+        "organisations": {
+            "o_1": "Asiatic Petroleum Company",
+            "o_2": "British North Borneo Volunteers",
+            "o_3": "Sarawak Rangers",
+            "o_4": "Civil Government"
+        }
+    },
+    "keywords": [
+        "War",
+        "Military Operations",
+        "Supplies",
+        "Food Rationing",
+        "Ammunition",
+        "Thailand",
+        " Singapore",
+        "Malaya"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Management",
+        "Diplomacy",
+        "Food Supply",
+        "War Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Supply Chain Management": [
+            "e_1"
+        ],
+        "Food Supply": [
+            "e_1"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "War Strategy": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The outbreak of hostilities marks the beginning of military operations in Malaya."
+        },
+        {
+            "event": "e_2",
+            "date": "Early 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation MATADOR is a planned military operation to fulfill strategic needs in Malaya."
+        },
+        {
+            "event": "e_3",
+            "date": "1939-1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "World War II impacts the logistical and military operations in Malaya."
+        }
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "His Majesty's Government",
+            "p_2": "Eighth Army",
+            "p_3": "Commander-in-Chief, Middle East"
+        },
+        "locations": {
+            "l_1": "Central Mediterranean",
+            "l_2": "Tobruk",
+            "l_3": "Libya",
+            "l_4": "Malta",
+            "l_5": "Syria",
+            "l_6": "Iraq",
+            "l_7": "Persia",
+            "l_8": "Caucasus",
+            "l_9": "Stalingrad",
+            "l_10": "Cyrenaica",
+            "l_11": "Western Desert",
+            "l_12": "Egypt",
+            "l_13": "Sudan",
+            "l_14": "Eritrea",
+            "l_15": "Aden",
+            "l_16": "Turkey",
+            "l_17": "Balkans",
+            "l_18": "Crete",
+            "l_19": "French Equatorial Africa",
+            "l_20": "Arabia"
+        },
+        "events": {
+            "e_1": "Withdrawal of Eighth Army",
+            "e_2": "Enemy advance",
+            "e_3": "Battle at El Alamein",
+            "e_4": "Establishment of separate command for Persia and Iraq"
+        },
+        "organisations": {
+            "o_1": "His Majesty's Government",
+            "o_2": "Middle East Defence Committee"
+        }
+    },
+    "keywords": [
+        "offensive",
+        "defensive",
+        "enemy advance",
+        "reinforcements",
+        "battle",
+        "administration"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Logistics",
+        "Training and Organization"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Training and Organization": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Early 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Eighth Army withdraws to a defensive position covering Tobruk due to an unsuccessful attempt to oppose the enemy advance."
+        },
+        {
+            "event": "e_2",
+            "date": "26th May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "An enemy advance begins, which ultimately leads to a battle with the objective to repel the enemy and initiate a counter-offensive."
+        },
+        {
+            "event": "e_3",
+            "date": "Continue through early June",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_1"
+            ],
+            "eventSummary": "The battle at El Alamein takes place as the Eighth Army makes a counter-offensive attempt against the enemy."
+        },
+        {
+            "event": "e_4",
+            "date": "Early January 1942",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A proposal is made to establish a separate command for Persia and Iraq to allow for a focused offensive in North Africa."
+        }
+    ]
+}

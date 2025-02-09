@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral",
+            "p_2": "Vice-Admiral",
+            "p_3": "Captam F. R Garside",
+            "p_4": "Admwalty"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Zante",
+            "l_3": "Alexandria",
+            "l_4": "Benghazi",
+            "l_5": "Taranto",
+            "l_6": "Dodecanese"
+        },
+        "events": {
+            "e_1": "Bombing attacks on WARSPITE",
+            "e_2": "U-boat attacks",
+            "e_3": "Enemy Fleet sightings",
+            "e_4": "Operation adjustments towards Taranto"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Flying boats",
+        "U-boats",
+        "Bombing attacks",
+        "Enemy battleships",
+        "Convoy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Surveillance",
+        "Strategic Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Surveillance": [
+            "e_3"
+        ],
+        "Strategic Movements": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th July, 1940",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Bombing attacks are delivered on WARSPITE, but fortunately, there are no hits despite approximately 50 bombs being dropped over the course of the day."
+        },
+        {
+            "event": "e_2",
+            "date": "8th July, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "At 2339 on 7th July, HASTY spots an Italian U-boat 1,000 yards away and launches a full pattern depth charge attack, leading to the probable sinking of the U-boat."
+        },
+        {
+            "event": "e_3",
+            "date": "8th July, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Multiple enemy battleships, cruisers, and destroyers are reported, prompting the Vice-Admiral in Malta to arrange a flying boat to locate and shadow this naval force."
+        },
+        {
+            "event": "e_4",
+            "date": "8th July, 1940",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "In response to enemy fleet sightings, it is decided to adjust the fleet's course towards Taranto to intercept the enemy and prevent them from reaching their base."
+        }
+    ]
+}

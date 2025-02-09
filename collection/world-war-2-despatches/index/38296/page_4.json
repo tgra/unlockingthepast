@@ -1,0 +1,133 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C.S.7",
+            "p_2": "R.A.D",
+            "p_3": "D.14",
+            "p_4": "Commander-in-Chief, Mediterranean"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Alexandria",
+            "l_3": "Maleme",
+            "l_4": "Heraklion",
+            "l_5": "Retimo",
+            "l_6": "Kaso Strait",
+            "l_7": "Anti Kithera Strait",
+            "l_8": "Canea",
+            "l_9": "Suda Bay"
+        },
+        "events": {
+            "e_1": "Attack on Crete",
+            "e_2": "Forces Withdrawal",
+            "e_3": "Naval Movements",
+            "e_4": "Air Reconnaissance Reports"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "German Air Force"
+        }
+    },
+    "keywords": [
+        "naval forces",
+        "air attacks",
+        "military operations",
+        "troop landings"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategies",
+        "Aerial Warfare",
+        "Troop Movement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategies": [
+            "e_3"
+        ],
+        "Aerial Warfare": [
+            "e_1"
+        ],
+        "Troop Movement": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th May 1941",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "On 20th May 1941, the Germans initiate an attack on Crete, focusing on intense bombing at Maleme aerodrome followed closely by airborne troop landings."
+        },
+        {
+            "event": "e_2",
+            "date": "19th May 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 19th May 1941, naval forces begin their withdrawal to Alexandria in anticipation of enemy air attacks on Crete."
+        },
+        {
+            "event": "e_3",
+            "date": "20th May 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 20th May 1941, following reconnaissance, naval forces adjust their positions in response to enemy threats surrounding Crete."
+        },
+        {
+            "event": "e_4",
+            "date": "20th May 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the night of 20th/21st May 1941, air reconnaissance reports indicated enemy movement in the Aegean, prompting adjustments to naval forces' operations."
+        }
+    ]
+}

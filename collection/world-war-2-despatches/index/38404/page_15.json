@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Officer Commanding No. 1 Group",
+            "p_2": "Stirling bombers of No. 3 Group"
+        },
+        "locations": {
+            "l_1": "Bethune",
+            "l_2": "Lens",
+            "l_3": "Lille",
+            "l_4": "North-East France",
+            "l_5": "Ruhr",
+            "l_6": "Straits of Dover",
+            "l_7": "Germany",
+            "l_8": "Brest",
+            "l_9": "La Pallice"
+        },
+        "events": {
+            "e_1": "Circus Offensive",
+            "e_2": "Attack on German Capital Ships at Brest",
+            "e_3": "Conference at Air Ministry"
+        },
+        "organisations": {
+            "o_1": "Air Ministry",
+            "o_2": "Bomber Command",
+            "o_3": "Fighter Command"
+        }
+    },
+    "keywords": [
+        "Luftwaffe Units",
+        "Germany",
+        "Circus Offensive",
+        "Air Ministry",
+        "Fighter Command",
+        "Bomber Command"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Aerial Combat",
+        "Inter-Unit Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "From 14th June 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Circus Offensive is launched to intensify attacks on enemy objectives within range of escorting fighters, with hopes to influence the positioning of enemy units."
+        },
+        {
+            "event": "e_2",
+            "date": "During July 1943",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Attacks on German capital ships take place, contributing notably to the Circus Offensive's objectives."
+        },
+        {
+            "event": "e_3",
+            "date": "29th July 1943",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A conference is held to assess the continuation of Circus operations, leading to a shift in strategy regarding bombing operations."
+        }
+    ]
+}

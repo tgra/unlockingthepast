@@ -1,0 +1,172 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieut.-Colonel J. L R. Sutcliffe",
+            "p_2": "Major C. Manners",
+            "p_3": "Major Young",
+            "p_4": "Major C R. Boxer",
+            "p_5": "Brigadier Wallis",
+            "p_6": "Lieut. Bompas",
+            "p_7": "Lt. Tresidder",
+            "p_8": "Lt.-Colonel Kidd"
+        },
+        "locations": {
+            "l_1": "Wanchai Gap",
+            "l_2": "Blacks Link",
+            "l_3": "Wong Nei Chong Gap",
+            "l_4": "Repulse Bay Hotel",
+            "l_5": "Aberdeen",
+            "l_6": "Brick Hill",
+            "l_7": "Central District of Victoria",
+            "l_8": "Gauge Basin",
+            "l_9": "Stanley",
+            "l_10": "Hong Kong",
+            "l_11": "Deepwater Bay"
+        },
+        "events": {
+            "e_1": "Counter Attack on Wong Nei Chong Gap",
+            "e_2": "Arrival of Canadian Troops",
+            "e_3": "Reports of Fires in Victoria",
+            "e_4": "Major Attack on Repulse Bay Hotel",
+            "e_5": "Enemy Engagement at Brick Hill",
+            "e_6": "Patrol Reconnaissance from Repulse Bay"
+        },
+        "organisations": {
+            "o_1": "Winnipeg Grenadiers",
+            "o_2": "2/14 Punjab Regt.",
+            "o_3": "Royal Rifles of Canada",
+            "o_4": "Royal Scots",
+            "o_5": "East Infantry Brigade",
+            "o_6": "West Infantry Brigade",
+            "o_7": "Civil Fire Brigade",
+            "o_8": "H.M.S Cicala"
+        }
+    },
+    "keywords": [
+        "counter attack",
+        "Canadian troops",
+        "fires",
+        "enemy engagement",
+        "patrol reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Troop Movements",
+        "Casualties",
+        "Firefighting Assistance",
+        "Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4",
+            "e_5"
+        ],
+        "Troop Movements": [
+            "e_2"
+        ],
+        "Firefighting Assistance": [
+            "e_3"
+        ],
+        "Reconnaissance": [
+            "e_6"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th December",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_2"
+            ],
+            "eventSummary": "A counter-attack is launched by the Winnipeg Grenadiers at 1930 hours to reclaim Wong Nei Chong Gap but fails to achieve its objectives."
+        },
+        {
+            "event": "e_2",
+            "date": "20th December",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Major C. Manners reports the arrival of Canadian troops from Repulse Bay Hotel, indicating reinforcements are present."
+        },
+        {
+            "event": "e_3",
+            "date": "20th December",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Serious fires are reported in the Central District of Victoria with the Civil Fire Brigade requesting military assistance."
+        },
+        {
+            "event": "e_4",
+            "date": "21st December",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3",
+                "p_5"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A major attack is ordered at 0700 hours on Repulse Bay Hotel due to perceived inadequate defenses."
+        },
+        {
+            "event": "e_5",
+            "date": "21st December",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Enemy engagement occurs at Brick Hill involving British and Chinese prisoners."
+        },
+        {
+            "event": "e_6",
+            "date": "21st December",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A patrol reconnaissance is conducted from Repulse Bay Hotel, highlighting the strength and positions of enemy forces."
+        }
+    ]
+}

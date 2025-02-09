@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant K. R. Hudspeth"
+        },
+        "locations": {
+            "l_1": "Stjernsund",
+            "l_2": "Smalfiord",
+            "l_3": "Stjernoy Island",
+            "l_4": "Kaafiord",
+            "l_5": "Tommerholm Island",
+            "l_6": "Alten Fiord",
+            "l_7": "Langfiord"
+        },
+        "events": {
+            "e_1": "Operation of X.10",
+            "e_2": "Detonation of X-craft charges",
+            "e_3": "Attempted Attack by X.10"
+        },
+        "organisations": {
+            "o_1": "Royal Australian Navy Volunteer Reserve (R.A.N.V.R.)",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "X-craft",
+        "submarine",
+        "defects",
+        "explosions",
+        "attack",
+        "dive"
+    ],
+    "themes": [
+        "Military Operations",
+        "Technical Defects",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Technical Defects": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th September",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Lieutenant Hudspeth navigates X.10 through mined areas and experiences electrical and periscope defects. He decides to address the defects in Smalfiord."
+        },
+        {
+            "event": "e_2",
+            "date": "21st September",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Heavy explosions are heard around 0830Z suggesting detonations of X-craft charges, which may impact X.10's planned attack."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd September",
+            "locations": [
+                "l_4",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Lieutenant Hudspeth makes the strategic decision to abort the attack after defects lead to a lack of navigation capabilities, despite other attacks taking place."
+        }
+    ]
+}

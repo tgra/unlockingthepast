@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Slim",
+            "p_2": "General Sultan"
+        },
+        "locations": {
+            "l_1": "Mandalay",
+            "l_2": "Thabeikkyin",
+            "l_3": "Alethaung Village",
+            "l_4": "Nyaungu",
+            "l_5": "Myingyan",
+            "l_6": "Pakokku",
+            "l_7": "Point 468",
+            "l_8": "Mongmit",
+            "l_9": "Shweli River",
+            "l_10": "Namtu",
+            "l_11": "Lashio",
+            "l_12": "Hsenwi"
+        },
+        "events": {
+            "e_1": "Battle for Singu",
+            "e_2": "Battle of Mongmit",
+            "e_3": "Capture of Hsenwi"
+        },
+        "organisations": {
+            "o_1": "Fourteenth Army",
+            "o_2": "36 British Division",
+            "o_3": "19 Indian Division",
+            "o_4": "20 Indian Division",
+            "o_5": "7 Indian Division",
+            "o_6": "50 Chinese Division",
+            "o_7": "30 Chinese Division"
+        }
+    },
+    "keywords": [
+        "Indian Division",
+        "Japanese forces",
+        "air support",
+        "offensive",
+        "counterattack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Superiority",
+        "Counter-offensive",
+        "Strategic Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Superiority": [
+            "e_2"
+        ],
+        "Counter-offensive": [
+            "e_2"
+        ],
+        "Strategic Planning": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 20, 1900",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "19 Indian Division captures Singu after heavy fighting, indicating the enemy's weakening position."
+        },
+        {
+            "event": "e_2",
+            "date": "February 17, 1900",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "36 British Division crosses the Shweli River towards Mongmit, leading to a strong counterattack from Japanese forces."
+        },
+        {
+            "event": "e_3",
+            "date": "February 23, 1900",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "50 Chinese Division successfully captures Hsenwi, facilitating further advances along the Burma Road."
+        }
+    ]
+}

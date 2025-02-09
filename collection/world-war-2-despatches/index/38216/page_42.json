@@ -1,0 +1,162 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain, Flight Lieutenant A. S. K. Scarf"
+        },
+        "locations": {
+            "l_1": "Kota Bahru",
+            "l_2": "Singora",
+            "l_3": "Patani",
+            "l_4": "N. Malaya",
+            "l_5": "Alor Star",
+            "l_6": "Butterworth",
+            "l_7": "Bukit Martajim",
+            "l_8": "Kuantan",
+            "l_9": "South China Sea"
+        },
+        "events": {
+            "e_1": "Japanese expedition to capture Kota Bahru",
+            "e_2": "Japanese forces landing in Singora-Patani area",
+            "e_3": "First attack against Singora aerodrome",
+            "e_4": "Second attack against Singora aerodrome",
+            "e_5": "Evacuation of N.W. bases",
+            "e_6": "Evacuation of Kuantan Aerodrome"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "No. 34 (B) Squadron",
+            "o_3": "No. 62 (B) Squadron",
+            "o_4": "No. 21 (F) Squadron, R.A.A.F."
+        }
+    },
+    "keywords": [
+        "Japanese expedition",
+        "aerodrome",
+        "air operations",
+        "reconnaissance",
+        "attack",
+        "evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defense Strategies",
+        "Aerial Combat"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_6"
+        ],
+        "Defense Strategies": [
+            "e_5"
+        ],
+        "Aerial Combat": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Japanese expedition to capture the Kota Bahru aerodrome is succeeding, denying Royal Air Force support to their troops."
+        },
+        {
+            "event": "e_2",
+            "date": "8th December 1941",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Japanese main forces land unimpeded in the Singora-Patani area, with opposition encountered from Royal Air Force aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "9th December 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The first attack against Singora aerodrome is initiated; Royal Air Force aircraft encounter heavy fighter opposition."
+        },
+        {
+            "event": "e_4",
+            "date": "9th December 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The planned second attack against Singora is cancelled due to Japanese bombing, although Captain Scarf manages to attack before being mortally wounded."
+        },
+        {
+            "event": "e_5",
+            "date": "9th December 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Adv. H.Q. Norgroup opens at Bukit Martajim, and preparations for evacuation of N.W. bases become evident due to ongoing threats."
+        },
+        {
+            "event": "e_6",
+            "date": "9th December 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Evacuation preparations for Kuantan Aerodrome begin amidst fears of further landings along the East coast."
+        }
+    ]
+}

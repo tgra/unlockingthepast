@@ -1,0 +1,116 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Senior Officers",
+            "p_2": "Svenner"
+        },
+        "locations": {
+            "l_1": "Cape Barfleur",
+            "l_2": "Havre",
+            "l_3": "Omaha Beach",
+            "l_4": "Eastern Flank"
+        },
+        "events": {
+            "e_1": "Minesweeping Operation",
+            "e_2": "Naval Bombardment",
+            "e_3": "Assault on Beaches"
+        },
+        "organisations": {
+            "o_1": "Western Task Force",
+            "o_2": "Eastern Task Force",
+            "o_3": "British Forces",
+            "o_4": "U.S. Forces"
+        }
+    },
+    "keywords": [
+        "Minesweeping",
+        "Naval Bombardment",
+        "Assault",
+        "Tidal Streams",
+        "Enemy Coast"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Tactical Challenges",
+        "Enemy Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Tactical Challenges": [
+            "e_3"
+        ],
+        "Enemy Engagement": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "5th June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The minesweeping operation is successfully conducted ahead of the assault, demonstrating high skill despite challenging conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "5th June",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Naval bombardment successfully neutralizes enemy resistance with coordinated fire despite initial challenges and surprises."
+        },
+        {
+            "event": "e_3",
+            "date": "6th June",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Assault forces engage the beaches, facing varying enemy resistance, with significant air and naval support contributing to their success."
+        }
+    ]
+}

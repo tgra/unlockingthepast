@@ -1,0 +1,98 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Sir Geoffrey Layton",
+            "p_2": "Admiral Palliser",
+            "p_3": "Sir Tom Phillips",
+            "p_4": "General Percival"
+        },
+        "locations": {
+            "l_1": "Pulo Obi",
+            "l_2": "Indo-China",
+            "l_3": "Koh Tron",
+            "l_4": "Siam",
+            "l_5": "Kota Bharu",
+            "l_6": "Singora",
+            "l_7": "Patani",
+            "l_8": "Singapore",
+            "l_9": "Gulf of Siam",
+            "l_10": "Kra Isthmus"
+        },
+        "events": {
+            "e_1": "Japanese landing at Kota Bharu",
+            "e_2": "Singapore attack by Japanese bombers"
+        },
+        "organisations": {
+            "o_1": "Royal Australian Air Force",
+            "o_2": "A.R.P. organisation"
+        }
+    },
+    "keywords": [
+        "Japanese convoys",
+        "air reconnaissance",
+        "warships",
+        "convoy",
+        "war footing",
+        "bombing",
+        "casualties",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence Reporting",
+        "War Preparations",
+        "Diplomacy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Intelligence Reporting": [
+            "e_1"
+        ],
+        "War Preparations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th December",
+            "locations": [
+                "l_1",
+                "l_10"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Japanese land forces from about ten ships at Kota Bharu, prompting immediate military preparations."
+        },
+        {
+            "event": "e_2",
+            "date": "8th December",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Singapore is attacked by Japanese bombers around 0300 hours, causing significant casualties primarily among the Chinese population."
+        }
+    ]
+}

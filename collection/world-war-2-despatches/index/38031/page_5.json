@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "Vice-Admiral, Light Forces"
+        },
+        "locations": {
+            "l_1": "Alexandria",
+            "l_2": "Gavdo Island",
+            "l_3": "Crete",
+            "l_4": "Kithera Straits"
+        },
+        "events": {
+            "e_1": "First Air Attack",
+            "e_2": "Contact with the Vice-Admiral, Light Forces",
+            "e_3": "Surface Contact Lost"
+        },
+        "organisations": {
+            "o_1": "Force X",
+            "o_2": "Force Y",
+            "o_3": "Force Z",
+            "o_4": "Light Forces"
+        }
+    },
+    "keywords": [
+        "battleships",
+        "air striking force",
+        "enemy force",
+        "force sightings",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Enemy Engagement",
+        "Strategic Movement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Enemy Engagement": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Movement": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "31 JULY, 1947",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The first air attack is launched against an enemy squadron, signaling a continued engagement with naval forces."
+        },
+        {
+            "event": "e_2",
+            "date": "31 JULY, 1947",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Contact is made with the Vice-Admiral, Light Forces, indicating the alignment of naval forces during the engagement."
+        },
+        {
+            "event": "e_3",
+            "date": "31 JULY, 1947",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Surface contact with the enemy is lost, leading to a reevaluation of naval strategies and positions."
+        }
+    ]
+}

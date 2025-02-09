@@ -1,0 +1,162 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral Commanding, Home Fleet Destroyers",
+            "p_2": "Commander A. H. Wynne-Edwards, R.N.",
+            "p_3": "Lieutenant Commander C. D. Maud, D.S.C., R.N."
+        },
+        "locations": {
+            "l_1": "White Sea",
+            "l_2": "Archangel",
+            "l_3": "Cape Kanin",
+            "l_4": "Nova Zemlya",
+            "l_5": "Spitzbergen",
+            "l_6": "Lowe Sound",
+            "l_7": "Iceland",
+            "l_8": "Loch Ewe"
+        },
+        "events": {
+            "e_1": "Air Attacks on Convoy",
+            "e_2": "U-Boat Attacks on Convoy",
+            "e_3": "Transfer of Convoy Q.P.14",
+            "e_4": "Sinking of the SOMALI",
+            "e_5": "Sinking of the ATHEL TEMPLAR",
+            "e_6": "Sinking of Merchant Ships by U-boats"
+        },
+        "organisations": {
+            "o_1": "Home Fleet Destroyers",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "U-boats",
+        "Air Attacks",
+        "Convoy",
+        "Naval Operations",
+        "Escort",
+        "Torpedo",
+        "Merchant Ships"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Air Assaults"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "14th September",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "Air attacks on the convoy commenced with bombers and torpedo aircraft, resulting in the sinking of eight ships."
+        },
+        {
+            "event": "e_2",
+            "date": "20th September",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4",
+                "e_6"
+            ],
+            "eventSummary": "U-boat attacks lead to the sinking of several merchant ships, including the minesweeper LEDA and heavily damaging SOMALI."
+        },
+        {
+            "event": "e_3",
+            "date": "16th/17th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The convoy was successfully transferred from P.Q.18 to Q.P.14 with effective cover."
+        },
+        {
+            "event": "e_4",
+            "date": "22nd September",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The SOMALI sinks after being tow under dangerous conditions during an ongoing U-boat threat."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                ""
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The ATHEL TEMPLAR is sunk by a U-boat during a series of attacks."
+        },
+        {
+            "event": "e_6",
+            "date": "22nd September",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Multiple merchant ships are lost to U-boats in a continuation of assaults on the convoy."
+        }
+    ]
+}

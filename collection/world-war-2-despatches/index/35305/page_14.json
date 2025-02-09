@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Blanchard",
+            "p_2": "Sir Roger Keyes",
+            "p_3": "His Majesty the King of the Belgians",
+            "p_4": "General Michiels",
+            "p_5": "General Neissens"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "Lille",
+            "l_3": "Thumeries",
+            "l_4": "Pont-4-Vendin",
+            "l_5": "Deulemont",
+            "l_6": "Ypres",
+            "l_7": "West",
+            "l_8": "Gravelines",
+            "l_9": "Yser",
+            "l_10": "Menin",
+            "l_11": "Nevele",
+            "l_12": "Eecloo",
+            "l_13": "Ghent"
+        },
+        "events": {
+            "e_1": "Plan for Withdrawal",
+            "e_2": "Belgian Army withdrawal",
+            "e_3": "French offensive from Somme"
+        },
+        "organisations": {
+            "o_1": "B.E.F.",
+            "o_2": "French First Group of Armies",
+            "o_3": "Belgian Army",
+            "o_4": "War Office"
+        }
+    },
+    "keywords": [
+        "withdrawal",
+        "ammunition",
+        "supply situation",
+        "military operations",
+        "Belgian Army",
+        "French Army",
+        "embarkation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th May",
+            "locations": [
+                "Dunkirk",
+                "Lille"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The plan for withdrawal is discussed with Corps Commanders, detailing the arrangements with French forces for the evacuation of British troops."
+        },
+        {
+            "event": "e_2",
+            "date": "26th May",
+            "locations": [
+                "Yser"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Belgian Army is under extreme pressure and is being forced to withdraw, impacting the defensive efforts alongside the B.E.F."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "Somme"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Concerns arise regarding the French offensive from Somme, indicating a lack of strength to support the Allies in the North."
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Winston Churchill",
+            "p_2": "Shinichi Kamimura"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Hong Kong",
+            "l_4": "Tokyo",
+            "l_5": "United Kingdom"
+        },
+        "events": {
+            "e_1": "State of War with Japan",
+            "e_2": "Japanese Landing Attempt on Malaya"
+        },
+        "organisations": {
+            "o_1": "Imperial Japanese Government",
+            "o_2": "His Majesty's Government in the United Kingdom"
+        }
+    },
+    "keywords": [
+        "State of War",
+        "Japan",
+        "Malaya",
+        "Singapore",
+        "Hong Kong",
+        "Winston Churchill",
+        "International Law"
+    ],
+    "themes": [
+        "War Declaration",
+        "Aggression",
+        "International Law"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "11 December 1941",
+            "locations": [
+                "l_5",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "His Majesty's Government in the United Kingdom formally declares a state of war with Japan in response to Japanese aggression."
+        },
+        {
+            "event": "e_2",
+            "date": "7 December 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Japanese forces attempt a landing on the coast of Malaya and bomb Singapore and Hong Kong, marking the beginning of hostilities."
+        }
+    ]
+}

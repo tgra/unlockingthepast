@@ -1,0 +1,95 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant-General N. M. Ritchie"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Alexandria",
+            "l_3": "Egypt",
+            "l_4": "Tripoli",
+            "l_5": "Bengasi",
+            "l_6": "Cyrenaica",
+            "l_7": "Sicily",
+            "l_8": "Italy",
+            "l_9": "Central Mediterranean",
+            "l_10": "El Agheila"
+        },
+        "events": {
+            "e_1": "Convoy Despatch to Malta",
+            "e_2": "Libyan Offensive"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "Commanders-in-Chief"
+        }
+    },
+    "keywords": [
+        "convoy",
+        "malta",
+        "supply situation",
+        "naval operation",
+        "air attack",
+        "Cyrenaica",
+        "libya",
+        "offensive operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th March 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A convoy is dispatched to Malta to alleviate a serious supply situation after the previous convoy failed to arrive."
+        },
+        {
+            "event": "e_2",
+            "date": "21st March 1942",
+            "locations": [
+                "l_3",
+                "l_6",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Libyan Offensive aims to secure bases in Egypt and Tripoli against enemy attacks through three main phases."
+        }
+    ]
+}

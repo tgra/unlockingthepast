@@ -1,0 +1,159 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "M. Reynaud",
+            "p_2": "General Weygand",
+            "p_3": "Sir John Dill",
+            "p_4": "General Billotte",
+            "p_5": "Prime Minister"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "La Panne",
+            "l_3": "Douai",
+            "l_4": "Cambrai",
+            "l_5": "Paris",
+            "l_6": "Amiens",
+            "l_7": "Peronne",
+            "l_8": "Somme",
+            "l_9": "Belgium",
+            "l_10": "Mons",
+            "l_11": "Northern Armies"
+        },
+        "events": {
+            "e_1": "Evacuation at Dunkirk",
+            "e_2": "French 1st Army advance",
+            "e_3": "Weygand's plan execution",
+            "e_4": "Conference in Paris",
+            "e_5": "Communication loss of Northern Armies"
+        },
+        "organisations": {
+            "o_1": "B.E.F.",
+            "o_2": "French VII Army",
+            "o_3": "Belgian Cavalry Corps",
+            "o_4": "Casualty Clearing Stations"
+        }
+    },
+    "keywords": [
+        "Dunkirk",
+        "evacuation",
+        "Weygand's plan",
+        "French Army",
+        "British Expeditionary Force"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Supply Chain Challenges",
+        "Evacuations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_4"
+        ],
+        "Supply Chain Challenges": [
+            "e_1"
+        ],
+        "Evacuations": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "23rd May - 1st June",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation at Dunkirk unfolds with supplies dwindling and constant air raids affecting operations, culminating in the use of boats and lighters to rescue troops until the night of 31st May/1st June."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd May",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On 23rd May, the French 1st Army advances southwards from Douai, facing increased threats and interruptions from enemy air attacks."
+        },
+        {
+            "event": "e_3",
+            "date": "Circa 24th May",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The execution of Weygand's plan involves a coordinated counter-offensive aimed at restoring the situation, relying heavily on communication with Allied forces."
+        },
+        {
+            "event": "e_4",
+            "date": "24th May",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A diplomatic conference occurs in Paris where the Prime Minister discusses the situation with M. Reynaud and General Weygand regarding military strategy and execution."
+        },
+        {
+            "event": "e_5",
+            "date": "23rd May",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On 23rd May, communications to the Northern Armies are cut off due to enemy forces, creating a critical situation for Allied troops in the region."
+        }
+    ]
+}

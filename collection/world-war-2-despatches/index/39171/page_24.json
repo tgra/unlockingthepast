@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander",
+            "p_2": "Major General"
+        },
+        "locations": {
+            "l_1": "Kohima",
+            "l_2": "Dimapur",
+            "l_3": "Imphal",
+            "l_4": "Manipur",
+            "l_5": "North-East Assam",
+            "l_6": "Summer Hill",
+            "l_7": "Jessami"
+        },
+        "events": {
+            "e_1": "Relief of Kohima",
+            "e_2": "Capture of Kohima",
+            "e_3": "Battle for Imphal Plain"
+        },
+        "organisations": {
+            "o_1": "2 British Division",
+            "o_2": "7 Indian Division",
+            "o_3": "33 Corps",
+            "o_4": "23 Long-Range Penetration Brigade",
+            "o_5": "15 Japanese Division",
+            "o_6": "31 Japanese Division"
+        }
+    },
+    "keywords": [
+        "Kohima",
+        "Dimapur",
+        "Imphal",
+        "Japanese offensive",
+        "British Divisions",
+        "Indian Divisions",
+        "battle",
+        "operation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Offensive Strategies",
+        "Casualties Assessment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Defensive Strategies": [
+            "e_1"
+        ],
+        "Offensive Strategies": [
+            "e_2",
+            "e_3"
+        ],
+        "Casualties Assessment": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 20",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Kohima is successfully relieved by the 6 Brigade of the 2 British Division after intense fighting, marking a significant moment in the campaign."
+        },
+        {
+            "event": "e_2",
+            "date": "June 2",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The capture of Kohima is completed, providing a crucial step in the counter-offensive against Japanese forces."
+        },
+        {
+            "event": "e_3",
+            "date": "June",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Battle for the Imphal Plain unfolds, involving multiple divisions and resulting in significant losses for the Japanese, marking a turning point in the campaign."
+        }
+    ]
+}

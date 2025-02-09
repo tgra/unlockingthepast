@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Maletti",
+            "p_2": "Brigadier Savory",
+            "p_3": "Brigadier Lloyd",
+            "p_4": "Brigadier Lomax"
+        },
+        "locations": {
+            "l_1": "Sofafi",
+            "l_2": "Nibeiwa",
+            "l_3": "Tummar",
+            "l_4": "Sidi Barrani",
+            "l_5": "Maktila",
+            "l_6": "Buq Buq"
+        },
+        "events": {
+            "e_1": "Battle of Nibeiwa",
+            "e_2": "Battle of Tummar",
+            "e_3": "Operation Sidi Barrani"
+        },
+        "organisations": {
+            "o_1": "7th Armoured Division",
+            "o_2": "4th Indian Division",
+            "o_3": "7th Battalion R.T.R."
+        }
+    },
+    "keywords": [
+        "attack",
+        "enemy camps",
+        "Indian Division",
+        "Armoured Division",
+        "air attacks",
+        "artillery",
+        "infantry"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Planning",
+        "Combat Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Tactical Planning": [
+            "e_1",
+            "e_3"
+        ],
+        "Combat Engagement": [
+            "e_2",
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "09 December",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The attack on Nibeiwa begins with a coordinated effort by the 13th Indian Infantry Brigade and the 7th Battalion R.T.R., successfully capturing the camp by 0830 hours after overcoming enemy defenses."
+        },
+        {
+            "event": "e_2",
+            "date": "09 December",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Following the success at Nibeiwa, an attack is launched on the Tummar camps by the 4th Indian Division, swiftly overcoming enemy positions and capturing Tummar West."
+        },
+        {
+            "event": "e_3",
+            "date": "Following Operation Nibeiwa and Tummar",
+            "locations": [
+                "l_4",
+                "l_6"
+            ],
+            "persons": [
+                "p_4",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The forces continue their operations to advance toward Sidi Barrani, coordinating artillery support as they move into position for further engagement."
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Hermann Goering"
+        },
+        "locations": {
+            "l_1": "Monte Cassino",
+            "l_2": "Mignano",
+            "l_3": "Capua",
+            "l_4": "Rappaido",
+            "l_5": "Liri Valley"
+        },
+        "events": {
+            "e_1": "Assumption of Command of 8 Ind. Div. Sector",
+            "e_2": "Takeover of Monte Cassino Sector",
+            "e_3": "Concentration of Tenth Army",
+            "e_4": "Reserve Movements on 11th May 1944"
+        },
+        "organisations": {
+            "o_1": "Tenth Army",
+            "o_2": "Fourteenth Army",
+            "o_3": "Armeegruppe von Zangen"
+        }
+    },
+    "keywords": [
+        "Assumed Command",
+        "Concentration",
+        "Takeover",
+        "Divisions",
+        "Battalions",
+        "Army Group"
+    ],
+    "themes": [
+        "Military Operations",
+        "Military Command",
+        "Army Organization"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Military Command": [
+            "e_1",
+            "e_4"
+        ],
+        "Army Organization": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "9th May 1944",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 9th May 1944, command of the 8 Ind. Division sector is assumed at 2230 hours."
+        },
+        {
+            "event": "e_2",
+            "date": "27th April 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 27th April 1944, the Monte Cassino sector is taken over, marking a significant operational milestone."
+        },
+        {
+            "event": "e_3",
+            "date": "11th May 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "As of 11th May 1944, the Tenth Army is concentrated, reinforcing operational capabilities."
+        },
+        {
+            "event": "e_4",
+            "date": "11th May 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Reserve movements are organized on 11th May 1944, enhancing tactical positions within the Army Groups."
+        }
+    ]
+}

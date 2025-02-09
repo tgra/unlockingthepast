@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Marshal Sir Arthur Coningham",
+            "p_2": "Commander-in-Chief, 21st Army Group",
+            "p_3": "Air Officer Commanding No. 11 Group, Royal Air Force",
+            "p_4": "Commanding General, United States TXth Fighter Command",
+            "p_5": "Commander, Advanced A.E.A.F."
+        },
+        "locations": {
+            "l_1": "Uxbridge",
+            "l_2": "Continent",
+            "l_3": "Paris",
+            "l_4": "Cotentin Peninsula",
+            "l_5": "Julouville",
+            "l_6": "Versailles",
+            "l_7": "Germany",
+            "l_8": "United Kingdom",
+            "l_9": "Mediterranean",
+            "l_10": "Russia"
+        },
+        "events": {
+            "e_1": "Operation Overlord",
+            "e_2": "Operation Neptune",
+            "e_3": "Initial phases of Operation Overlord"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "United States Army",
+            "o_3": "Advanced Allied Expeditionary Air Force (A.E.A.F.)",
+            "o_4": "United States Ninth Air Force",
+            "o_5": "US Army Vilith Fighter Command",
+            "o_6": "Supreme Headquarters Allied Expeditionary Force (S.H.A.E.F.)"
+        }
+    },
+    "keywords": [
+        "Air Force",
+        "tactical",
+        "Operation Overlord",
+        "Operation Neptune",
+        "Combined Operations Room",
+        "reconnaissance",
+        "strategic plan"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Planning",
+        "Air Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Planning": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Coordination": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day",
+            "locations": [
+                "l_8",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Overlord is a large-scale military operation to defeat Germany through substantial assaults on occupied Europe, initiated from multiple fronts."
+        },
+        {
+            "event": "e_2",
+            "date": "July 1943",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Neptune involves launching an assault across the English Channel to establish a foothold on the continent for subsequent military actions."
+        },
+        {
+            "event": "e_3",
+            "date": "1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The initial phases of Operation Overlord focus on air coordination and the planning efforts required to support ground forces in the lead-up to D-Day."
+        }
+    ]
+}

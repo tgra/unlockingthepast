@@ -1,0 +1,88 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commodore J. Hughes-Hallett",
+            "p_2": "Rear-Admiral W. G. Tennant"
+        },
+        "locations": {
+            "l_1": "Portsmouth",
+            "l_2": "French coast",
+            "l_3": "Channel Island",
+            "l_4": "Pas de Calais",
+            "l_5": "United Kingdom"
+        },
+        "events": {
+            "e_1": "MULBERRY Project",
+            "e_2": "Operation Neptune"
+        },
+        "organisations": {
+            "o_1": "War Office",
+            "o_2": "Combined Operations Headquarters",
+            "o_3": "Admiralty"
+        }
+    },
+    "keywords": [
+        "MULBERRY Project",
+        "Operation Neptune",
+        "artificial harbours",
+        "reconnaissance",
+        "Admiralty"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Logistical Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1"
+        ],
+        "Logistical Challenges": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The MULBERRY Project involves the construction of artificial harbours for military operations, spearheaded by Commodore J. Hughes-Hallett's innovative idea and naval support under Rear-Admiral W. G. Tennant."
+        },
+        {
+            "event": "e_2",
+            "date": "D-Day, June 6, 1944",
+            "locations": [
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Neptune is the code name for the naval operation supporting the D-Day landings, facing logistical challenges regarding craft and personnel amid the preparation for land assaults on the French coast."
+        }
+    ]
+}

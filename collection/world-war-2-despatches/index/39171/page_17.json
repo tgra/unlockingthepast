@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Headquarters, India",
+            "p_2": "United States Transportation Corps",
+            "p_3": "Supreme Allied Commander, South-East Asia Command",
+            "p_4": "11 Army Group"
+        },
+        "locations": {
+            "l_1": "Lumding",
+            "l_2": "Badarpur",
+            "l_3": "Chittagong",
+            "l_4": "Calcutta",
+            "l_5": "Dimapur",
+            "l_6": "Siliguri",
+            "l_7": "Bongaigaon",
+            "l_8": "Akhaura",
+            "l_9": "Shillong",
+            "l_10": "Sylhet",
+            "l_11": "Comilla",
+            "l_12": "Vizagapatam",
+            "l_13": "Brahmaputra",
+            "l_14": "Ganges"
+        },
+        "events": {
+            "e_1": "Investigation by 11 Army Group",
+            "e_2": "Control Assumption by Fourteenth Army",
+            "e_3": "Increase in Port Capacity"
+        },
+        "organisations": {
+            "o_1": "US Forces",
+            "o_2": "Fourteenth Army"
+        }
+    },
+    "keywords": [
+        "Communication Lines",
+        "Capacity Increase",
+        "Railway",
+        "Transport",
+        "Military Transportation",
+        "Port Operations",
+        "Flooding"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Infrastructure Development",
+        "Diplomacy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_3"
+        ],
+        "Infrastructure Development": [
+            "e_3"
+        ],
+        "Diplomacy": []
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_4",
+                "p_1",
+                "p_3",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "In June, an investigation is carried out by representatives from various military groups to address communication difficulties."
+        },
+        {
+            "event": "e_2",
+            "date": "1st February 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Fourteenth Army assumes control over Chittagong Port, leading to improvements in operational efficiency."
+        },
+        {
+            "event": "e_3",
+            "date": "November 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Since November 1943, the stores imported at Chittagong Port have significantly increased due to enhancements in port operations."
+        }
+    ]
+}

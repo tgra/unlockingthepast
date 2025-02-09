@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Commander-in-Chief",
+            "p_2": "Air Ministry"
+        },
+        "locations": {
+            "l_1": "United Kingdom",
+            "l_2": "France",
+            "l_3": "London",
+            "l_4": "northern France"
+        },
+        "events": {
+            "e_1": "D Day",
+            "e_2": "baby Blitz",
+            "e_3": "bombing attacks on ski sites"
+        },
+        "organisations": {
+            "o_1": "Second Tactical Air Force",
+            "o_2": "American Ninth Bomber Command",
+            "o_3": "Bomber Command",
+            "o_4": "American Eighth Bomber Command",
+            "o_5": "Air Ministry"
+        }
+    },
+    "keywords": [
+        "German air operations",
+        "secret weapons",
+        "daylight attacks",
+        "nights of maximum activity",
+        "pilotless aircraft",
+        "missiles",
+        "neutralization",
+        "bombing attacks",
+        "defensive offensive"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence Gathering",
+        "Defensive Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Intelligence Gathering": [
+            "e_2"
+        ],
+        "Defensive Strategy": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D Day",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "D Day marks the commencement of military operations in France by the Anglo-American forces."
+        },
+        {
+            "event": "e_2",
+            "date": "Early 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The baby Blitz consists of a series of night attacks launched by the German bomber force against London, which do not take the British by surprise due to effective defensive measures."
+        },
+        {
+            "event": "e_3",
+            "date": "5th December 1943",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 5th December 1943, the Second Tactical Air Force and the American Ninth Bomber Command initiate bombing attacks on ski sites to disrupt German missile launching capabilities."
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "First Canadian Army",
+            "p_2": "Twelfth United States Army Group",
+            "p_3": "30 Corps",
+            "p_4": "8 Corps",
+            "p_5": "Second British Army",
+            "p_6": "VII United States Corps",
+            "p_7": "XV Corps"
+        },
+        "locations": {
+            "l_1": "Villers Bocage",
+            "l_2": "Aunay-sur-Odon",
+            "l_3": "B ny Bocage",
+            "l_4": "Vire",
+            "l_5": "Cahagnes",
+            "l_6": "Orne",
+            "l_7": "Laval-Mayenne-Domfront",
+            "l_8": "Caen",
+            "l_9": "Falaise",
+            "l_10": "Seine",
+            "l_11": "Nantes",
+            "l_12": "Argentan",
+            "l_13": "Laigle",
+            "l_14": "Paris",
+            "l_15": "Mortain",
+            "l_16": "Avranches",
+            "l_17": "Le Mans",
+            "l_18": "Brittany",
+            "l_19": "St. Malo",
+            "l_20": "Brest",
+            "l_21": "Lorient",
+            "l_22": "Enemy Corridor"
+        },
+        "events": {
+            "e_1": "Attack by 30 Corps",
+            "e_2": "Major Counter Attack on American Forces",
+            "e_3": "Thrust Southwards by First Canadian Army",
+            "e_4": "Encirclement Operations",
+            "e_5": "Heavy Fighting in Brittany"
+        },
+        "organisations": {
+            "o_1": "Allied Air Forces"
+        }
+    },
+    "keywords": [
+        "attack",
+        "counter-attack",
+        "advance",
+        "heavy fighting",
+        "encirclement",
+        "military strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Counter Attacks",
+        "Strategic Movements",
+        "Heavy Fighting",
+        "Air Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Counter Attacks": [
+            "e_2"
+        ],
+        "Strategic Movements": [
+            "e_3",
+            "e_4"
+        ],
+        "Heavy Fighting": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "30th July",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The attack by 30 Corps initiated on 30th July, aiming to secure strategic positions in Normandy."
+        },
+        {
+            "event": "e_2",
+            "date": "7th August",
+            "locations": [
+                "l_15"
+            ],
+            "persons": [
+                "p_2",
+                "p_6"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 7th August, a major counter-attack was launched against American forces near Mortain, showcasing intense fighting."
+        },
+        {
+            "event": "e_3",
+            "date": "7th August",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The First Canadian Army launched a thrust southwards on the night of 7th August, aiming to break enemy defenses."
+        },
+        {
+            "event": "e_4",
+            "date": "8th August",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Enveloping operations commenced on 8th August, aiming to trap enemy forces in Normandy."
+        },
+        {
+            "event": "e_5",
+            "date": "7th August to 12th August",
+            "locations": [
+                "l_18",
+                "l_19",
+                "l_20"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Heavy fighting occurred in Brittany from 7th August to 12th August as American units engaged German forces."
+        }
+    ]
+}

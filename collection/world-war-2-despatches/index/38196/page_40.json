@@ -1,0 +1,140 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Franco",
+            "p_2": "Mr. Casey",
+            "p_3": "Adm. Harwood",
+            "p_4": "Air Chief Marshal Tedder",
+            "p_5": "Rommel",
+            "p_6": "General Stumme",
+            "p_7": "General von Thoma"
+        },
+        "locations": {
+            "l_1": "French North Africa",
+            "l_2": "Alamein",
+            "l_3": "Spain",
+            "l_4": "Spanish Morocco",
+            "l_5": "Middle East",
+            "l_6": "Tobruk",
+            "l_7": "Benghazi",
+            "l_8": "Egypt",
+            "l_9": "Sidi Abd el Rahman",
+            "l_10": "Tell el Eisa",
+            "l_11": "Qaret el Himeimat",
+            "l_12": "Ruweisat ridge",
+            "l_13": "Deir el Mreir"
+        },
+        "events": {
+            "e_1": "Operation TORCH",
+            "e_2": "Battle of Alamein",
+            "e_3": "Rommel's health deterioration",
+            "e_4": "Rommel's presentation of Field-Marshal's baton"
+        },
+        "organisations": {
+            "o_1": "Axis forces",
+            "o_2": "German Army",
+            "o_3": "Italian Army"
+        }
+    },
+    "keywords": [
+        "decisive victory",
+        "military operations",
+        "Axis forces",
+        "preparations",
+        "minefields",
+        "reinforcements",
+        "sickness rate",
+        "Field-Marshal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Health and Logistics",
+        "Leadership Changes"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Health and Logistics": [
+            "e_3"
+        ],
+        "Leadership Changes": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation TORCH is scheduled to commence, aimed at a decisive impact on the Axis forces."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd October",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Alamein is planned to be launched with the objective of a decisive victory over the Axis forces."
+        },
+        {
+            "event": "e_3",
+            "date": "September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Rommel's health deteriorates as he leaves for Germany, affecting command structure."
+        },
+        {
+            "event": "e_4",
+            "date": "3rd October",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Rommel is presented with his Field-Marshal's baton in Berlin, reaffirming commitment to hold the front."
+        }
+    ]
+}

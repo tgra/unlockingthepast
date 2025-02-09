@@ -1,0 +1,183 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rommel",
+            "p_2": "Major-General Brink",
+            "p_3": "Lieutenant-General A. R. Godwin-Austen",
+            "p_4": "Major-General B. Freyberg",
+            "p_5": "Major-General F. W. Messervy",
+            "p_6": "Brigadier H. R. B. Watkins",
+            "p_7": "Lieutenant-General C. W. M. Norrie",
+            "p_8": "Major-General W. H. E. Gott",
+            "p_9": "Brigadier A. H. Gatehouse",
+            "p_10": "Major-General G. E. Brink",
+            "p_11": "Brigadier J. C. O. Marriott",
+            "p_12": "Major-General R. MacK. Scobie",
+            "p_13": "Major-General I. P. de Villiers",
+            "p_14": "General Cunningham",
+            "p_15": "Major-General $ Kopanski",
+            "p_16": "Brigadier D. W. Reid"
+        },
+        "locations": {
+            "l_1": "Tobruk",
+            "l_2": "Gabr Saleh",
+            "l_3": "South-Eastern Ridgelines (Ed Duda and Sidi Rezegh)",
+            "l_4": "Bir el Gubi",
+            "l_5": "Trigh el Abd",
+            "l_6": "Trigh Capuzzo"
+        },
+        "events": {
+            "e_1": "Offensive to begin on 11th November",
+            "e_2": "Postponed Offensive Rescheduled to 18th November",
+            "e_3": "Concentration of Eighth Army",
+            "e_4": "Main Attack by 30th Corps",
+            "e_5": "Relief Operation of Tobruk"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "30th Corps",
+            "o_3": "1st South African Division",
+            "o_4": "Polish Carpathian Brigade Group",
+            "o_5": "Tobruk Garrison"
+        }
+    },
+    "keywords": [
+        "Rommel",
+        "Tobruk",
+        "Offensive",
+        "Eighth Army",
+        "30th Corps",
+        "Training",
+        "Attack Plans",
+        "Garrison",
+        "Reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Delays",
+        "Training Challenges",
+        "Relief Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Delays": [
+            "e_1",
+            "e_2"
+        ],
+        "Training Challenges": [
+            "e_1"
+        ],
+        "Relief Operations": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "11th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The offensive was initially set to begin on 11th November, but logistical issues delayed the operation."
+        },
+        {
+            "event": "e_2",
+            "date": "18th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_10"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The opening of the offensive was finally rescheduled to 18th November due to various delays."
+        },
+        {
+            "event": "e_3",
+            "date": "17th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_10"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "By the evening of 17th November, the Eighth Army formations were all concentrated and ready to execute the advance."
+        },
+        {
+            "event": "e_4",
+            "date": "Date unspecified, awaiting signal",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_7",
+                "p_12"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "The main attack is to be spearheaded by the 30th Corps while ensuring support of the Tobruk Garrison."
+        },
+        {
+            "event": "e_5",
+            "date": "Date unspecified, following signal",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_12",
+                "p_7"
+            ],
+            "organisations": [
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "There are plans to undertake operations to relieve Tobruk when conditions allow it after the enemy's forces are managed."
+        }
+    ]
+}

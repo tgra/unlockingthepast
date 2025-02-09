@@ -1,0 +1,113 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Supreme Allied Commander",
+            "p_2": "Gencral Headquarters",
+            "p_3": "medical officers",
+            "p_4": "nursing personnel"
+        },
+        "locations": {
+            "l_1": "Imphal",
+            "l_2": "Arakan",
+            "l_3": "Kaladan Valley",
+            "l_4": "Kabaw Valley"
+        },
+        "events": {
+            "e_1": "Air evacuation from Imphal Front",
+            "e_2": "Hospital ships allotted to Fourteenth Army",
+            "e_3": "Medical evacuation from Arakan"
+        },
+        "organisations": {
+            "o_1": "Fourteenth Army",
+            "o_2": "11 Army Group",
+            "o_3": "R.A.F."
+        }
+    },
+    "keywords": [
+        "air evacuation",
+        "medical units",
+        "hospital ships",
+        "sick rate",
+        "malaria",
+        "anti-malarial discipline"
+    ],
+    "themes": [
+        "Military Operations",
+        "Medical Evacuation",
+        "Health Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Medical Evacuation": [
+            "e_2",
+            "e_1"
+        ],
+        "Health Management": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "First half of 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Air evacuation from the Imphal Front prevents a serious situation as hospitals close, facilitating the swift movement of over 24,000 casualties by air."
+        },
+        {
+            "event": "e_2",
+            "date": "Beginning of 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Six hospital ships are allocated to the Fourteenth Army following representations to the Supreme Allied Commander, enhancing medical evacuation capabilities."
+        },
+        {
+            "event": "e_3",
+            "date": "Early 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Medical evacuation operations from Arakan involve various transport methods, effectively addressing the complex needs of casualty clearance."
+        }
+    ]
+}

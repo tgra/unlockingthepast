@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Hutton",
+            "p_2": "General Wavell"
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Singapore",
+            "l_4": "Tenasserim",
+            "l_5": "Mergui",
+            "l_6": "Tavoy",
+            "l_7": "Moulmein",
+            "l_8": "Calcutta",
+            "l_9": "Maymyo",
+            "l_10": "India",
+            "l_11": "Sittang"
+        },
+        "events": {
+            "e_1": "Evacuation of Rangoon",
+            "e_2": "Fall of Singapore",
+            "e_3": "Air Operations in Tenasserim",
+            "e_4": "Telegram from ABDA Command"
+        },
+        "organisations": {
+            "o_1": "ABDA Command",
+            "o_2": "R.A.F.",
+            "o_3": "Joint Commanders Committee"
+        }
+    },
+    "keywords": [
+        "air operations",
+        "evacuation",
+        "reinforcements",
+        "military strategy",
+        "Japanese attacks"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Strategy",
+        "Resistance Against Japanese Invasion",
+        "Joint Command Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 20, 1942",
+            "locations": [
+                "l_2",
+                "l_11"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of Rangoon is ordered as the city is under imminent threat from Japanese forces, prompting strategic discussions on relocating air support to India."
+        },
+        {
+            "event": "e_2",
+            "date": "February 15, 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Singapore falls to Japanese forces, marking a significant setback for Allied forces in Southeast Asia."
+        },
+        {
+            "event": "e_3",
+            "date": "February 11, 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air operations in support of the Army in Tenasserim are detailed, highlighting reconnaissance efforts before the evacuation of key positions."
+        },
+        {
+            "event": "e_4",
+            "date": "February 18, 1942",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A telegram indicating the situation regarding potential evacuation plans is sent to ABDA Command in light of the deteriorating situation."
+        }
+    ]
+}

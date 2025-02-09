@@ -1,0 +1,155 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A. K. Scott-Monctieff",
+            "p_2": "E. Mack",
+            "p_3": "G. Blessas",
+            "p_4": "C. A. de W. Kitcat",
+            "p_5": "J. I. Jones",
+            "p_6": "C. Nikitiades",
+            "p_7": "N. Sarris",
+            "p_8": "W. E. Agnew",
+            "p_9": "G. D. Belben",
+            "p_10": "P. W. B. Brooking",
+            "p_11": "J. Terry"
+        },
+        "locations": {
+            "l_1": "Rhodes",
+            "l_2": "Greece",
+            "l_3": "Dodecanese",
+            "l_4": "Casteloriso",
+            "l_5": "Piraeus",
+            "l_6": "Cyclades",
+            "l_7": "Malta",
+            "l_8": "Kos",
+            "l_9": "Naxos",
+            "l_10": "Alexandria",
+            "l_11": "Scarpanto",
+            "l_12": "Crete",
+            "l_13": "Leros",
+            "l_14": "Stampalia"
+        },
+        "events": {
+            "e_1": "Surrender of Rhodes",
+            "e_2": "Operation Accolade",
+            "e_3": "Kos Invasion",
+            "e_4": "Air Operations in the Aegean",
+            "e_5": "Sinking of H.M.S. INTREPID"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Italian Army",
+            "o_3": "German Army",
+            "o_4": "R.A.F.",
+            "o_5": "Admiralty"
+        }
+    },
+    "keywords": [
+        "surrender",
+        "naval forces",
+        "military administration",
+        "air reconnaissance",
+        "invasion"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Surrender and Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_4"
+        ],
+        "Surrender and Cooperation": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 28",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Italian Governor of Rhodes surrenders the island to German troops after minimal resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "October",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Accolade is approved to reinforce the British military presence in the Aegean, contingent on capturing Rhodes."
+        },
+        {
+            "event": "e_3",
+            "date": "October 3",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "German forces land on Kos and capture the island despite resistance from British troops."
+        },
+        {
+            "event": "e_4",
+            "date": "September 5 - October 12",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "British naval forces conduct air operations in the Aegean, targeting enemy shipping and reconnaissance."
+        }
+    ]
+}

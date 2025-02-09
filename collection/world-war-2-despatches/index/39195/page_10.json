@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General F.L.S. Tuker",
+            "p_2": "General Messervy"
+        },
+        "locations": {
+            "l_1": "Yomas",
+            "l_2": "Malaya",
+            "l_3": "Singapore",
+            "l_4": "Fort William",
+            "l_5": "Rangoon",
+            "l_6": "Phuket Island",
+            "l_7": "Port Dickson",
+            "l_8": "Port Swettenham",
+            "l_9": "Straits of Malacca"
+        },
+        "events": {
+            "e_1": "The Battle of the Break-out",
+            "e_2": "Operation Roger",
+            "e_3": "Operation Zipper",
+            "e_4": "Operation Mailfist"
+        },
+        "organisations": {
+            "o_1": "V Force",
+            "o_2": "Royal Air Force",
+            "o_3": "Joint Planning Staff"
+        }
+    },
+    "keywords": [
+        "Japanese troops",
+        "military operations",
+        "intelligence",
+        "battle",
+        "Malaya",
+        "Singapore",
+        "planning"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Planning",
+        "Battles"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Planning": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Intelligence": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "July 4th, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Japanese forces suffer severe casualties during the Battle of the Break-out as British Corps effectively block their escape routes."
+        },
+        {
+            "event": "e_2",
+            "date": "February 23, 1945",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "A conference at Fort William takes place where plans for military operations Roger, Zipper, and Mailfist are critically evaluated and prioritized."
+        },
+        {
+            "event": "e_3",
+            "date": "June 1, 1945",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Operation Zipper is planned with a targeted date for landing in Port Swettenham/Port Dickson to disrupt Japanese forces in Malaya."
+        },
+        {
+            "event": "e_4",
+            "date": "December 1945",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operation Mailfist is scheduled at the end of the year aiming to secure Singapore from Japanese control."
+        }
+    ]
+}

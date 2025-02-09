@@ -1,0 +1,84 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Sir John C. Tovey",
+            "p_2": "Rear-Admiral H. M. Burrough",
+            "p_3": "Brigadier J. C. Haydon"
+        },
+        "locations": {
+            "l_1": "Vaagso Island",
+            "l_2": "S.W. Norway",
+            "l_3": "London"
+        },
+        "events": {
+            "e_1": "Operation Archery",
+            "e_2": "Operation Anklet"
+        },
+        "organisations": {
+            "o_1": "Home Fleet",
+            "o_2": "Coastal Command",
+            "o_3": "Bomber Command"
+        }
+    },
+    "keywords": [
+        "military raid",
+        "economic objectives",
+        "cooperation",
+        "naval operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Planning",
+        "Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Planning": [
+            "e_1"
+        ],
+        "Cooperation": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27 December 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Archery is a well-conceived and executed military raid on military and economic objectives in the vicinity of Vaagso Island, intended to harass enemy coastal defenses and divert attention from larger operations."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Anklet is mentioned as a longer-term operation taking place in the Lofoten Islands."
+        }
+    ]
+}

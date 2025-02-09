@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unnamed Commander",
+            "p_2": "Crew of Fulmar",
+            "p_3": "Crew of SPEEDY"
+        },
+        "locations": {
+            "l_1": "Gibraltar",
+            "l_2": "Malta",
+            "l_3": "EAGLE",
+            "l_4": "ARGUS"
+        },
+        "events": {
+            "e_1": "Air Combat Incidents",
+            "e_2": "Torpedo Bomber Attack",
+            "e_3": "Convoy Defense Operations"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Enemy Air Forces"
+        }
+    },
+    "keywords": [
+        "air combat",
+        "torpedo bombers",
+        "convoy",
+        "enemy attack",
+        "bombers",
+        "Fulmars",
+        "Royal Navy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Aerial Attacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_3",
+            "e_2"
+        ],
+        "Aerial Attacks": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "17th June",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Air combat incidents involving Hurricanes and JU.88 aircraft occur, resulting in some enemy losses."
+        },
+        {
+            "event": "e_2",
+            "date": "17th June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Torpedo bomber attacks are launched against the convoy, but effective defense results in minimal damage."
+        },
+        {
+            "event": "e_3",
+            "date": "17th June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Defensive operations take place as the convoy comes under repeated air attacks, with various ships responding effectively."
+        }
+    ]
+}

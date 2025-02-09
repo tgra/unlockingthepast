@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Mountbatten",
+            "p_2": "British Foreign Secretary"
+        },
+        "locations": {
+            "l_1": "Hong Kong",
+            "l_2": "South East Asia",
+            "l_3": "Ceylon",
+            "l_4": "Cocos Islands",
+            "l_5": "Bengal",
+            "l_6": "Burma",
+            "l_7": "Malaya",
+            "l_8": "Sumatra",
+            "l_9": "Java",
+            "l_10": "Singapore",
+            "l_11": "Changi Gaol"
+        },
+        "events": {
+            "e_1": "Operation Birdcage",
+            "e_2": "Operation Mastiff",
+            "e_3": "Liberation of Allied prisoners of war"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "Air Command",
+            "o_3": "International Red Cross"
+        }
+    },
+    "keywords": [
+        "prisoners of war",
+        "Japanese surrender",
+        "air power",
+        "liberation",
+        "supply drops",
+        "medical aid"
+    ],
+    "themes": [
+        "Military Operations",
+        "Humanitarian Assistance",
+        "Strategic Air Power",
+        "Post-War Recovery"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Humanitarian Assistance": [
+            "e_3"
+        ],
+        "Strategic Air Power": [
+            "e_1",
+            "e_2"
+        ],
+        "Post-War Recovery": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 28th, 1945",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Birdcage is launched to inform Allied prisoners of their impending liberation through leaflet drops over multiple regions."
+        },
+        {
+            "event": "e_2",
+            "date": "August 31st, 1945",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Mastiff is executed to ensure medical aid and supplies reach liberated prisoners of war."
+        },
+        {
+            "event": "e_3",
+            "date": "Post-August 1945",
+            "locations": [
+                "l_2",
+                "l_10",
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The liberation of nearly 100,000 Allied prisoners of war happens, marking an important humanitarian achievement aided by air power."
+        }
+    ]
+}

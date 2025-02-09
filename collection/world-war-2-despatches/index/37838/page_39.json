@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Field Marshal Rommel"
+        },
+        "locations": {
+            "l_1": "Cotentin Peninsula",
+            "l_2": "St. Mere Eglise",
+            "l_3": "St. Martin",
+            "l_4": "Orne River",
+            "l_5": "Dives River",
+            "l_6": "Bonowville",
+            "l_7": "Ranville",
+            "l_8": "U.S. sector",
+            "l_9": "Germany"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "Airborne Operations",
+            "e_3": "Air Operations against German Communications"
+        },
+        "organisations": {
+            "o_1": "First United States Army",
+            "o_2": "82nd United States Airborne Division",
+            "o_3": "6th British Airborne Division",
+            "o_4": "A.E.A.F.",
+            "o_5": "No. 38 Group"
+        }
+    },
+    "keywords": [
+        "fighter cover",
+        "D-Day",
+        "air operations",
+        "balloon defence",
+        "paratroop",
+        "assault forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Strategic Disruption"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Defense": [
+            "e_1"
+        ],
+        "Strategic Disruption": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "D-Day marks the landing of Allied forces on the beaches of Normandy, where extensive air operations and ground assaults are conducted to establish a foothold in Europe."
+        },
+        {
+            "event": "e_2",
+            "date": "June 5-6, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_1",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Airborne Operations involve the deployment of three divisions of airborne troops to secure key locations and support the seaborne landings in the Cotentin Peninsula."
+        },
+        {
+            "event": "e_3",
+            "date": "June 5-6, 1944",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air Operations specifically target German communications and military infrastructure, significantly disrupting enemy coordination during the Allied assault."
+        }
+    ]
+}

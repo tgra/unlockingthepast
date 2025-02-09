@@ -1,0 +1,109 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Japanese officers",
+            "p_2": "R.A.F. officers"
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Sumatra",
+            "l_3": "Java",
+            "l_4": "French Indo-China",
+            "l_5": "Siam",
+            "l_6": "Cocos Islands",
+            "l_7": "Rangoon",
+            "l_8": "Southern Burma"
+        },
+        "events": {
+            "e_1": "Operation Zipper",
+            "e_2": "Re-occupation of Rangoon",
+            "e_3": "Termination of hostilities"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "United Nations"
+        }
+    },
+    "keywords": [
+        "Japanese Air Force",
+        "Lend/Lease",
+        "Maintenance Organisation",
+        "surprise attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence",
+        "Logistics",
+        "Air Force Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ],
+        "Intelligence": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operation Zipper involves a large-scale Allied invasion aimed at surprising Japanese forces in Malaya and Sumatra."
+        },
+        {
+            "event": "e_2",
+            "date": "May 1945",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The re-occupation of Rangoon marks a significant Allied advance, addressing maintenance challenges faced by air forces in the region."
+        },
+        {
+            "event": "e_3",
+            "date": "August 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The sudden termination of hostilities in August leads to logistical difficulties for the maintenance of American aircraft in the region."
+        }
+    ]
+}

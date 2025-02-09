@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "B. H. Ramsay",
+            "p_2": "R. R. McGrigor",
+            "p_3": "Sir Philip L. Vian",
+            "p_4": "T. H. Troubridge",
+            "p_5": "C. E. Douglas-Pennant"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Sousse",
+            "l_3": "Tripoli",
+            "l_4": "Middle East",
+            "l_5": "United Kingdom",
+            "l_6": "Syracuse",
+            "l_7": "Calafrana"
+        },
+        "events": {
+            "e_1": "Operation Husky",
+            "e_2": "D-Day Assaults",
+            "e_3": "Naval Operations from Malta"
+        },
+        "organisations": {
+            "o_1": "Eastern Naval Task Force",
+            "o_2": "Combined Operations"
+        }
+    },
+    "keywords": [
+        "Naval Coordination",
+        "Air Raid",
+        "Assault Convoys",
+        "Operational Control",
+        "Seamanship",
+        "Weather Conditions",
+        "Casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Coordination",
+        "Weather Challenges",
+        "Casualties in Combat"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Coordination": [
+            "e_3"
+        ],
+        "Weather Challenges": [
+            "e_2"
+        ],
+        "Casualties in Combat": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "9th July 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 9th July 1943, Operation Husky commences as Naval Commander Eastern Task Force controls all ships departing from Malta, which involves coordination with various assault convoys."
+        },
+        {
+            "event": "e_2",
+            "date": "10th July 1943",
+            "locations": [
+                "l_6",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On D-Day, 10th July 1943, the assaults begin, successfully landing troops on the beaches with minimal opposition, despite challenging weather conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "Ongoing during July 1943",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Naval Operations from Malta are executed throughout July 1943, involving the organization and deployment of various assault crafts and units."
+        }
+    ]
+}

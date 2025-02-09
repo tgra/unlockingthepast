@@ -1,0 +1,108 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Hitler",
+            "p_2": "Keitel"
+        },
+        "locations": {
+            "l_1": "London",
+            "l_2": "Norwich",
+            "l_3": "Orpington",
+            "l_4": "Kent",
+            "l_5": "Deptford",
+            "l_6": "Stepney",
+            "l_7": "Duindigt",
+            "l_8": "Haagsche Bosch"
+        },
+        "events": {
+            "e_1": "German offensive",
+            "e_2": "Second World War",
+            "e_3": "Countermeasures to the flying bomb and A-4 rocket"
+        },
+        "organisations": {
+            "o_1": "OKW",
+            "o_2": "Bataafsche Petroleum Company",
+            "o_3": "Bomber Command",
+            "o_4": "Fighter Command"
+        }
+    },
+    "keywords": [
+        "A-4 rocket",
+        "German offensive",
+        "rocket attacks",
+        "Countermeasures",
+        "Air Defence"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategies",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defence Strategies": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th March",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The German offensive concludes with the firing of one thousand one hundred and fifteen rockets, resulting in significant casualties in London."
+        },
+        {
+            "event": "e_2",
+            "date": "1942 - 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Second World War is a global conflict involving major world powers, leading to unprecedented military strategies and operations."
+        },
+        {
+            "event": "e_3",
+            "date": "During Second World War",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Countermeasures against the flying bomb and A-4 rocket reflect a significant element of the Allied air defense strategy during the war."
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major J. E. S. Simon",
+            "p_2": "Captain P. L. Palmer",
+            "p_3": "LieutenantColonel J. L. Moulton"
+        },
+        "locations": {
+            "l_1": "Antsirane",
+            "l_2": "Col de Bonne Nouvelle",
+            "l_3": "Ambararata road",
+            "l_4": "Conlieux"
+        },
+        "events": {
+            "e_1": "Advance to Antsirane",
+            "e_2": "Battle at Col de Bonne Nouvelle",
+            "e_3": "Landing of 29 Independent Brigade",
+            "e_4": "Attack on 6th May"
+        },
+        "organisations": {
+            "o_1": "Royal Tank Regiment",
+            "o_2": "Royal Hussars",
+            "o_3": "Royal Scots Fusiliers",
+            "o_4": "2 Royal Welsh Fusiliers",
+            "o_5": "29 Independent Brigade",
+            "o_6": "5 Commando"
+        }
+    },
+    "keywords": [
+        "tanks",
+        "infantry",
+        "advance",
+        "attack",
+        "enemy",
+        "Col de Bonne Nouvelle",
+        "Antsirane",
+        "landing",
+        "siege"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualties",
+        "Battlefield Strategy",
+        "Reinforcements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Casualties": [
+            "e_2"
+        ],
+        "Battlefield Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Reinforcements": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "5th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The tanks engage and silence enemy positions while advancing towards Antsirane, encountering resistance and sustaining casualties."
+        },
+        {
+            "event": "e_2",
+            "date": "5th May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The battle at Col de Bonne Nouvelle results in heavy firefights, leading to significant troop engagements and the death of Captain Palmer."
+        },
+        {
+            "event": "e_3",
+            "date": "5th May",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "29 Independent Brigade successfully lands at Red and Green beaches, marking a significant military operation."
+        },
+        {
+            "event": "e_4",
+            "date": "6th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "An expected dawn attack is planned, but the situation evolves with unexpected enemy movements and strategic recalibrations."
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral Malaya",
+            "p_2": "Brigadier General Staff Headquarters Malaya Command",
+            "p_3": "Commander A.J.F."
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Java",
+            "l_3": "Alexandra",
+            "l_4": "Tyersall Tanglin",
+            "l_5": "Braddell Road",
+            "l_6": "Thomson Road",
+            "l_7": "Paya Lebar",
+            "l_8": "Kallang aerodrome",
+            "l_9": "Tekong Island",
+            "l_10": "Pulau Brani",
+            "l_11": "Pulau Bukum",
+            "l_12": "Blakang Mati",
+            "l_13": "Pengerang Area"
+        },
+        "events": {
+            "e_1": "Evacuation from Singapore",
+            "e_2": "Defense conference at Fort Canning",
+            "e_3": "Counter-attack discussion",
+            "e_4": "Shelling and mortaring of Malay Regiment"
+        },
+        "organisations": {
+            "o_1": "A.I.F.",
+            "o_2": "18 British Division",
+            "o_3": "11 Indian Division",
+            "o_4": "G.H.Q. South-West Pacific"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Defense",
+        "Counter-attack",
+        "Military Operations",
+        "Shelling"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Efforts",
+        "Strategic Decisions",
+        "Defense Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Evacuation Efforts": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 13-14, 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Rear-Admiral Malaya decides to evacuate all remaining ships and personnel from Singapore to Java, marking the last organized opportunity for evacuation."
+        },
+        {
+            "event": "e_2",
+            "date": "February 13, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "At Fort Canning, a conference is held discussing military strategies to defend Singapore, highlighting the grave situation yet underscoring the necessity of continued action."
+        },
+        {
+            "event": "e_3",
+            "date": "February 13, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the defense conference, commanders agree that due to the exhaustion of troops, a counter-attack would be unsuccessful at this time."
+        },
+        {
+            "event": "e_4",
+            "date": "February 13, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Heavy shelling and mortaring are carried out against the Malay Regiment, resulting in significant casualties and the enemy capturing a key position."
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain A. D. Nicholl, D.S.O.",
+            "p_2": "Rear Admiral Commanding, Fifteenth Cruiser Squadron"
+        },
+        "locations": {
+            "l_1": "Libya",
+            "l_2": "Crete",
+            "l_3": "Tobruk",
+            "l_4": "Malta",
+            "l_5": "Taranto",
+            "l_6": "Mediterranean Sea"
+        },
+        "events": {
+            "e_1": "Convoy Engagement",
+            "e_2": "Enemy Aircraft Interception",
+            "e_3": "Enemy Cruiser Encounter"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "Convoy",
+        "Enemy Aircraft",
+        "Cruisers",
+        "Engagement",
+        "Fleet"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 21-23, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The convoy engages in naval operations to avoid enemy forces while en route to Malta, altering courses multiple times to evade interception."
+        },
+        {
+            "event": "e_2",
+            "date": "March 21, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Enemy aircraft sight the convoy, prompting evasive maneuvers as the forces aim to avoid engagement while continuing towards Malta."
+        },
+        {
+            "event": "e_3",
+            "date": "March 23, 1941",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Encounter with enemy cruisers occurs as the Royal Navy ships engage in firefights, successfully driving off the enemy forces."
+        }
+    ]
+}

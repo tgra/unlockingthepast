@@ -1,0 +1,150 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Hartley",
+            "p_2": "Divisional Commander"
+        },
+        "locations": {
+            "l_1": "Martaban",
+            "l_2": "Mouimein",
+            "l_3": "Salween",
+            "l_4": "Paan",
+            "l_5": "Duyinzaik",
+            "l_6": "Sittang",
+            "l_7": "Pegu",
+            "l_8": "Rangoon",
+            "l_9": "Bilin",
+            "l_10": "Nyaunglebin",
+            "l_11": "Toungoo",
+            "l_12": "Yinbaing",
+            "l_13": "Mepli",
+            "l_14": "Thaton",
+            "l_15": "Yinnein",
+            "l_16": "Danyigon"
+        },
+        "events": {
+            "e_1": "Loss of Martaban",
+            "e_2": "Counterattack by 1/4 G.R.",
+            "e_3": "Withdrawal to the River Bilin",
+            "e_4": "Evacuation of Thaton"
+        },
+        "organisations": {
+            "o_1": "3/7 G.R.",
+            "o_2": "5/17 Dogras",
+            "o_3": "7/10 Baluch",
+            "o_4": "48 Indian Infantry Brigade",
+            "o_5": "2 Burma Infantry Brigade",
+            "o_6": "Burma Rifles",
+            "o_7": "Burma Frontier Force",
+            "o_8": "Burma Military Police"
+        }
+    },
+    "keywords": [
+        "Japanese",
+        "counterattack",
+        "withdrawal",
+        "defensive position",
+        "evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Troop Movements",
+        "Casualties and Losses",
+        "Defensive Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Troop Movements": [
+            "e_3",
+            "e_4"
+        ],
+        "Casualties and Losses": [
+            "e_1",
+            "e_4"
+        ],
+        "Defensive Strategy": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "13th February",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 3/7 G.R. faces the loss of Martaban while engaged in heavy fighting against invading Japanese forces."
+        },
+        {
+            "event": "e_2",
+            "date": "15th February",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The 1/4 G.R. carries out a counterattack to restore the situation on the left flank after heavy fighting."
+        },
+        {
+            "event": "e_3",
+            "date": "15th February",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Divisional Commander decides to withdraw troops to the River Bilin due to pressure from enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "15th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Thaton is evacuated and important strategic measures are taken to secure the remaining positions."
+        }
+    ]
+}

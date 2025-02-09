@@ -1,0 +1,84 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief, Mediterranean Station"
+        },
+        "locations": {
+            "l_1": "Benghazi",
+            "l_2": "Malta",
+            "l_3": "Alexandria",
+            "l_4": "Tobruk"
+        },
+        "events": {
+            "e_1": "Return Passage",
+            "e_2": "Air Attack"
+        },
+        "organisations": {
+            "o_1": "Force B"
+        }
+    },
+    "keywords": [
+        "south-easterly",
+        "east-southeasterly",
+        "gale",
+        "destroyers",
+        "convoy",
+        "Fighter Direction",
+        "JU.87s",
+        "JU.88s",
+        "A.S.V.",
+        "Sunderland"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Operations",
+        "Weather Conditions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Operations": [
+            "e_2"
+        ],
+        "Weather Conditions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "23rd March, 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Return Passage occurs where destroyers join a convoy in challenging weather conditions near Benghazi, progressing gradually towards Malta and then Alexandria."
+        },
+        {
+            "event": "e_2",
+            "date": "24th March, 1942",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air Attack unfolds with enemy aircraft initiating sporadic attacks on the allied forces, yet without significant damage as they progress towards Alexandria."
+        }
+    ]
+}

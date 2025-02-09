@@ -1,0 +1,157 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Van Overstraeten",
+            "p_2": "General Georges",
+            "p_3": "General Billotte",
+            "p_4": "General Blanchard",
+            "p_5": "General Corap",
+            "p_6": "Lieutenant-General M. G. H. Barker",
+            "p_7": "General Sir John Dill",
+            "p_8": "Lieutenant-General A. F. Brooke",
+            "p_9": "Major-General H. C. Loyd",
+            "p_10": "Major-General Hon. H. R. L. G. Alexander",
+            "p_11": "Major-General B. L. Montgomery"
+        },
+        "locations": {
+            "l_1": "Belgium",
+            "l_2": "Brussels",
+            "l_3": "Maulde",
+            "l_4": "Ghent",
+            "l_5": "Wavre",
+            "l_6": "Namur",
+            "l_7": "Louvain",
+            "l_8": "Antwerp",
+            "l_9": "Dyle",
+            "l_10": "Gembloux",
+            "l_11": "Meuse"
+        },
+        "events": {
+            "e_1": "Defence Plans of Belgium",
+            "e_2": "French Alternative Plans",
+            "e_3": "Advance to the Dyle Position",
+            "e_4": "B.E.F. Sector Occupation"
+        },
+        "organisations": {
+            "o_1": "Belgian General Staff",
+            "o_2": "French High Command",
+            "o_3": "British Expeditionary Force (B.E.F.)",
+            "o_4": "French 1st Army",
+            "o_5": "French 7th Army",
+            "o_6": "French Cavalry Corps"
+        }
+    },
+    "keywords": [
+        "Belgian Government",
+        "military assistance",
+        "French authorities",
+        "defensive plans",
+        "Alied forces",
+        "advance",
+        "B.E.F. Sector"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Allied Coordination",
+        "War Readiness"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October-November 1939",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Belgian Government establishes defensive plans in anticipation of an invasion, coordinating with French military authorities."
+        },
+        {
+            "event": "e_2",
+            "date": "October-November 1939",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The French High Command develops alternative military plans in response to potential invasions during discussions with allied commanders."
+        },
+        {
+            "event": "e_3",
+            "date": "Specific Dates in 1939",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_2",
+                "p_5",
+                "p_6",
+                "p_8"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Allied forces organize to advance to the Dyle position, establishing a sector that integrates both British and French military units."
+        },
+        {
+            "event": "e_4",
+            "date": "1939",
+            "locations": [
+                "l_5",
+                "l_7"
+            ],
+            "persons": [
+                "p_6",
+                "p_9"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The British Expeditionary Force sector is occupied, preparing for an advance transition following the agreed upon strategies."
+        }
+    ]
+}

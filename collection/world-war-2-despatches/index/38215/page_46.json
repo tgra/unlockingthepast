@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lt.-Colonel Moorhead",
+            "p_2": "A.O.C. Far East"
+        },
+        "locations": {
+            "l_1": "Kota Bharu",
+            "l_2": "Singora",
+            "l_3": "Patani",
+            "l_4": "Thailand",
+            "l_5": "Kroh",
+            "l_6": "Ban Sadao",
+            "l_7": "Klong Gnea",
+            "l_8": "Padang Besar",
+            "l_9": "Kelantan"
+        },
+        "events": {
+            "e_1": "Operation MATADOR",
+            "e_2": "Japanese attack on Kota Bharu",
+            "e_3": "Crossing of the Thai frontier",
+            "e_4": "Engagement with Japanese mechanised column"
+        },
+        "organisations": {
+            "o_1": "3 Indian Corps",
+            "o_2": "11 Indian Division",
+            "o_3": "Royal Air Force (R.A.F.)"
+        }
+    },
+    "keywords": [
+        "high level bombing",
+        "air reconnaissance",
+        "defensive positions",
+        "psychological effect",
+        "counterattacks",
+        "evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Preparations",
+        "Engagements",
+        "Evacuations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3"
+        ],
+        "Defensive Preparations": [
+            "e_1"
+        ],
+        "Engagements": [
+            "e_4"
+        ],
+        "Evacuations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th December 1941",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation MATADOR is not implemented due to Japanese attacks at Kota Bharu, leading to defensive actions instead."
+        },
+        {
+            "event": "e_2",
+            "date": "8th December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Japanese forces launch an attack on Kota Bharu, prompting a response from the British defenses."
+        },
+        {
+            "event": "e_3",
+            "date": "8th December 1941",
+            "locations": [
+                "l_4",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "British forces cross into Thailand to engage with the enemy as plans shift from offensive to defensive."
+        },
+        {
+            "event": "e_4",
+            "date": "8th December 1941",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "British forces encounter and engage a Japanese mechanised column near Ban Sadao."
+        }
+    ]
+}

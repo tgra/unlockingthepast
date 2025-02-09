@@ -1,0 +1,139 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Headquarters, India",
+            "p_2": "Middle East Command"
+        },
+        "locations": {
+            "l_1": "Sicily",
+            "l_2": "Middle East",
+            "l_3": "Tripoli",
+            "l_4": "Sfax",
+            "l_5": "Malta",
+            "l_6": "Alexandria",
+            "l_7": "Persia and Iraq Command",
+            "l_8": "Tobruk",
+            "l_9": "Delta",
+            "l_10": "Algeria"
+        },
+        "events": {
+            "e_1": "Operation in Sicily",
+            "e_2": "Tunisian Campaign",
+            "e_3": "Formation of Eighth Army",
+            "e_4": "Force 545 Preparation"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "Royal Electrical and Mechanical Engineers",
+            "o_3": "Indian and African Pioneer Companies",
+            "o_4": "Superior Military and Logistics Command"
+        }
+    },
+    "keywords": [
+        "assault",
+        "malaria control",
+        "Eighth Army",
+        "Tunisian campaign",
+        "medical troops",
+        "expeditionary force"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics and Supply",
+        "Health and Safety",
+        "Training and Readiness",
+        "Unit Formation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics and Supply": [
+            "e_4"
+        ],
+        "Health and Safety": [
+            "e_1"
+        ],
+        "Training and Readiness": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Preparation and planning for military operations in Sicily is underway, focusing on logistics and supplies to mitigate health concerns like malaria."
+        },
+        {
+            "event": "e_2",
+            "date": "May 1943",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Tunisian Campaign is concluded, impacting the deployment and readiness of the Eighth Army for upcoming ops."
+        },
+        {
+            "event": "e_3",
+            "date": "Early May 1943",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Eighth Army is being formed and prepared in response to operational needs following the Tunisian Campaign."
+        },
+        {
+            "event": "e_4",
+            "date": "March 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Force 545 is being prepared for operations in Sicily, addressing the challenges of supply and equipment provision for successful execution."
+        }
+    ]
+}

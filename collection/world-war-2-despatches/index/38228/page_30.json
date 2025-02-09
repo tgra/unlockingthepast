@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Divisional Commander",
+            "p_2": "Brigadier Ekin",
+            "p_3": "Major Ward"
+        },
+        "locations": {
+            "l_1": "Moulmein",
+            "l_2": "Bilin Kyaikto",
+            "l_3": "River Sittang",
+            "l_4": "Martaban",
+            "l_5": "Paan",
+            "l_6": "Salween"
+        },
+        "events": {
+            "e_1": "Withdrawal Commencement",
+            "e_2": "Attack on Moulmein",
+            "e_3": "Decision to Withdraw"
+        },
+        "organisations": {
+            "o_1": "2 Burma Brigade",
+            "o_2": "Kokine Battalion",
+            "o_3": "Burma Frontier Force",
+            "o_4": "1/7 G.R.",
+            "o_5": "4 Burma Rifles",
+            "o_6": "7 Burma Rifles",
+            "o_7": "8 Burma Rifles",
+            "o_8": "12 Mountain Battery R.A.",
+            "o_9": "4/12 F.F.R.",
+            "o_10": "1 Field Company Burma Sappers and Miners"
+        }
+    },
+    "keywords": [
+        "withdrawal",
+        "attack",
+        "Japanese",
+        "Moulmein",
+        "troops",
+        "defence",
+        "enemy",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Troop Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ],
+        "Troop Movements": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 2nd",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The withdrawal of troops from Moulmein commences amidst confusion, leading to the loss of equipment and animal transport."
+        },
+        {
+            "event": "e_2",
+            "date": "January 30th",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Japanese launch an attack on Moulmein where the Burma Frontier Force holds temporary positions before being ordered to withdraw."
+        },
+        {
+            "event": "e_3",
+            "date": "January 31st",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_5",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "As the situation worsens, the decision to withdraw troops is made, leading to an embarkation process while under fire from the Japanese."
+        }
+    ]
+}

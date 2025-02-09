@@ -1,0 +1,106 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Officer",
+            "p_2": "Rating"
+        },
+        "locations": {
+            "l_1": "Gibraltar",
+            "l_2": "Port Chalmers",
+            "l_3": "Torx"
+        },
+        "events": {
+            "e_1": "Attack on Fleet",
+            "e_2": "Loss of FEARLESS",
+            "e_3": "High Level Bombing Attack"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Torpedo Bombing",
+        "High Level Bombing",
+        "Attack",
+        "Convoy",
+        "Destroyer"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Torpedo Attacks",
+        "Survivor Rescue",
+        "Damage Control"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Damage Control": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "23rd July",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A fleet is attacked by enemy aircraft using torpedo bombing and high-level bombing tactics."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The destroyer FEARLESS is hit by a torpedo during an attack, resulting in significant damage and loss of life."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A high-level bombing attack occurs simultaneously with a torpedo attack, resulting in inaccurate bombing and no significant damage."
+        }
+    ]
+}

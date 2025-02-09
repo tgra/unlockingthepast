@@ -1,0 +1,136 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Italian commander",
+            "p_2": "Commander 10th Indian Infantry",
+            "p_3": "emissaries of the enemy"
+        },
+        "locations": {
+            "l_1": "Keren",
+            "l_2": "Massawa",
+            "l_3": "Asmara",
+            "l_4": "Chelamet",
+            "l_5": "Adi Ugri",
+            "l_6": "Amba Alagi",
+            "l_7": "Mersa Cuba",
+            "l_8": "Gondar",
+            "l_9": "Red Sea littoral",
+            "l_10": "Arresa Front"
+        },
+        "events": {
+            "e_1": "Action at Ad Teclesan",
+            "e_2": "Fall of Asmara",
+            "e_3": "Capture of Massawa",
+            "e_4": "Dealings with Italian Civil Authorities"
+        },
+        "organisations": {
+            "o_1": "7th Indian Infantry Brigade",
+            "o_2": "5th Indian Division",
+            "o_3": "Free French",
+            "o_4": "British authorities",
+            "o_5": "Italian military authorities"
+        }
+    },
+    "keywords": [
+        "road-block",
+        "traffic control",
+        "enemy resistance",
+        "military pursuit",
+        "civil authorities",
+        "communications"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Civil Governance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_4"
+        ],
+        "Civil Governance": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1st April",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 9th Indian Infantry Brigade successfully forces their way past enemy road-blocks at Ad Teclesan after hard fighting."
+        },
+        {
+            "event": "e_2",
+            "date": "1st April",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Troops enter Asmara at 1315 hours following the surrender of enemy forces and the declaration of the city as an open town."
+        },
+        {
+            "event": "e_3",
+            "date": "After the fall of Asmara",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The focus shifts to the capture of Massawa, with plans to move eastwards from Chelamet amidst challenging conditions."
+        },
+        {
+            "event": "e_4",
+            "date": "2nd April",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The British authorities engage with civil authorities in Massawa to ensure cooperation and maintain order amidst military operations."
+        }
+    ]
+}

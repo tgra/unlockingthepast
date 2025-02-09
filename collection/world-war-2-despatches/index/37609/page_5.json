@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier W. H. E. Gott",
+            "p_2": "Lieut.-Colonel J. C. Campbell"
+        },
+        "locations": {
+            "l_1": "Egyptian frontier",
+            "l_2": "Sollum",
+            "l_3": "Fort Maddalena",
+            "l_4": "Halfaya Pass",
+            "l_5": "Sidi Barrani",
+            "l_6": "Maktila",
+            "l_7": "Sofafi"
+        },
+        "events": {
+            "e_1": "Withdrawal of Frontier Force",
+            "e_2": "Enemy Advance on Sollum",
+            "e_3": "Engagement at Sidi Barrani"
+        },
+        "organisations": {
+            "o_1": "7th Armoured Brigade",
+            "o_2": "3rd Coldstream Guards",
+            "o_3": "1st K.R.R.C.",
+            "o_4": "2nd Rifle Brigade",
+            "o_5": "1st Royal Tank Regiment",
+            "o_6": "Royal Horse Artillery",
+            "o_7": "7th Medium Regiment",
+            "o_8": "Maletti Group",
+            "o_9": "French Battalion"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "casualties",
+        "enemy advance",
+        "withdrawal",
+        "artillery"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Tactical Movements",
+        "Casualty Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Defensive Strategies": [
+            "e_1",
+            "e_3"
+        ],
+        "Tactical Movements": [
+            "e_1",
+            "e_2"
+        ],
+        "Casualty Management": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 16",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The withdrawal of our small force is executed skillfully along the coast road from Sollum to Sidi Barrani, with minimal losses."
+        },
+        {
+            "event": "e_2",
+            "date": "September 13",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_6",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "An enemy advance begins on the coast road, with heavy artillery preparation against the escarpment above Sollum."
+        },
+        {
+            "event": "e_3",
+            "date": "September 16",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The enemy reaches Sidi Barrani but halts, facing continuous harassment and losses from small mobile columns formed from the 7th Armoured Division."
+        }
+    ]
+}

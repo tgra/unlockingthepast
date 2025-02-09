@@ -1,0 +1,133 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Supreme Commander",
+            "p_2": "U.S. Rangers",
+            "p_3": "British Commando Brigades",
+            "p_4": "American combat teams"
+        },
+        "locations": {
+            "l_1": "Carentan estuary",
+            "l_2": "Normandy",
+            "l_3": "Caen",
+            "l_4": "Cherbourg",
+            "l_5": "Pas de Calais",
+            "l_6": "Seine",
+            "l_7": "Loire",
+            "l_8": "Paris",
+            "l_9": "Atlantic",
+            "l_10": "Low Countries",
+            "l_11": "Western Germany",
+            "l_12": "Cotentin Peninsula",
+            "l_13": "Gold beach",
+            "l_14": "Juno beach",
+            "l_15": "Sword beach",
+            "l_16": "Utah beach",
+            "l_17": "Omaha beach",
+            "l_18": "Asnelles",
+            "l_19": "Ouistreham",
+            "l_20": "Vierville",
+            "l_21": "Colleville",
+            "l_22": "St. L"
+        },
+        "events": {
+            "e_1": "D Day",
+            "e_2": "Battle of the Atlantic",
+            "e_3": "Operation NEPTUNE"
+        },
+        "organisations": {
+            "o_1": "First United States Army",
+            "o_2": "Second British Army"
+        }
+    },
+    "keywords": [
+        "assault",
+        "inundations",
+        "defensive tactics",
+        "air offensive",
+        "interdiction",
+        "reconnaissance",
+        "naval operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Planning",
+        "Defensive Tactics",
+        "Air Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Planning": [
+            "e_2",
+            "e_3"
+        ],
+        "Defensive Tactics": [
+            "e_1"
+        ],
+        "Air Operations": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D Day",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On D Day, coordinated landings are executed across multiple beaches in Normandy, involving combined forces of American, British, and Canadian troops aiming to secure a foothold in north-western Europe."
+        },
+        {
+            "event": "e_2",
+            "date": "Prior to D Day",
+            "locations": [
+                "l_10",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In the lead-up to D Day, the Battle of the Atlantic is initiated to ensure supply routes to Europe are secure, significantly affecting logistical capabilities for the upcoming assault."
+        },
+        {
+            "event": "e_3",
+            "date": "Preceding D Day",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation NEPTUNE involves comprehensive pre-landing air and sea operations aimed at disabling enemy defenses and laying the groundwork for a successful D Day."
+        }
+    ]
+}

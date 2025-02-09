@@ -1,0 +1,101 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "COSSAC",
+            "p_3": "Supreme Commander",
+            "p_4": "Air Commander-in-Chief",
+            "p_5": "Commander-in-Chief, 21st Army Group",
+            "p_6": "Commanding General of the American land forces"
+        },
+        "locations": {
+            "l_1": "France",
+            "l_2": "London",
+            "l_3": "Bushy Park",
+            "l_4": "Stanmore",
+            "l_5": "St. Pauls School"
+        },
+        "events": {
+            "e_1": "Operation Overlord",
+            "e_2": "Neptune"
+        },
+        "organisations": {
+            "o_1": "Supreme Headquarters Allied Expeditionary Force",
+            "o_2": "Allied Expeditionary Air Force",
+            "o_3": "United States Army",
+            "o_4": "British Army"
+        }
+    },
+    "keywords": [
+        "Command and Control",
+        "Air Forces",
+        "Army",
+        "Naval Forces",
+        "Operation Overlord",
+        "Allied Expeditionary Force",
+        "integrated planning"
+    ],
+    "themes": [
+        "Military Operations",
+        "Command Structure",
+        "Strategic Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Command Structure": [
+            "e_1"
+        ],
+        "Strategic Coordination": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Overlord represents a major Allied offensive aimed at the liberation of France during World War II, initiated through a coordinated assault involving land, sea, and air forces."
+        },
+        {
+            "event": "e_2",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Neptune is the naval operation component of Operation Overlord, facilitating the transportation of troops and resources for the invasion."
+        }
+    ]
+}

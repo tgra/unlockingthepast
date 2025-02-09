@@ -1,0 +1,141 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral",
+            "p_2": "Senior Officers",
+            "p_3": "Liaison Officer",
+            "p_4": "Commander-in-Chief, Western Approaches",
+            "p_5": "Commander-in-Chief, Portsmouth",
+            "p_6": "Commander-in-Chief, Nore",
+            "p_7": "S.N.O. Dunkirk"
+        },
+        "locations": {
+            "l_1": "Dover",
+            "l_2": "Dunkirk",
+            "l_3": "Calais",
+            "l_4": "La Panne",
+            "l_5": "Belgian-French coast",
+            "l_6": "Hawkinge"
+        },
+        "events": {
+            "e_1": "Evacuation from Dunkirk",
+            "e_2": "Military Operation to supply water on beaches",
+            "e_3": "Operation to manage personnel vessels during daylight",
+            "e_4": "Deployment of Naval ships to Dunkirk"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Merchant Navy",
+            "o_3": "Fishing Fleets"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "military operation",
+        "casualties",
+        "personnel carriers",
+        "Royal Navy",
+        "Dunkirk",
+        "water supply",
+        "daylight work",
+        "naval forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Naval Strategy",
+        "Humanitarian Aid"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_3"
+        ],
+        "Humanitarian Aid": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "28th May 1940",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The evacuation from Dunkirk is underway, with Vice Admiral coordinating Naval forces to facilitate the rescue of thousands of troops amid significant challenges from enemy action."
+        },
+        {
+            "event": "e_2",
+            "date": "28th May 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Joint Naval and Military measures are initiated to supply water on the beaches, addressing the critical needs of personnel involved in the evacuation."
+        },
+        {
+            "event": "e_3",
+            "date": "28th May 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Due to increasing risks from enemy forces, it is decided to restrict the use of personnel carriers during daylight hours for safety."
+        },
+        {
+            "event": "e_4",
+            "date": "28th May 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Multiple Naval ships are deployed towards Dunkirk as part of the ongoing evacuation efforts, ensuring adequate resources are available."
+        }
+    ]
+}

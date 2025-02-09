@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander 5th Fleet",
+            "p_2": "A.C.1",
+            "p_3": "CIF 57"
+        },
+        "locations": {
+            "l_1": "Leyte",
+            "l_2": "Sakishima",
+            "l_3": "Miyako",
+            "l_4": "Ishigaki",
+            "l_5": "Hirara",
+            "l_6": "Formosa"
+        },
+        "events": {
+            "e_1": "Unconditional Surrender of German Armed Forces",
+            "e_2": "Bombing Operation on Miyako and Ishigaki",
+            "e_3": "Kamikaze Attacks on H.M.S. Victorious"
+        },
+        "organisations": {
+            "o_1": "H.M.A.S. NORMAN",
+            "o_2": "R.F.A. WAVE KING",
+            "o_3": "R.F.A. WAVE MONARCH",
+            "o_4": "H.M. Ships WHIMBREL",
+            "o_5": "H.M. Ships AVON",
+            "o_6": "H.M.S. FORMIDABLE",
+            "o_7": "H.M.S. VICTORIOUS",
+            "o_8": "H.M.S. HOWE",
+            "o_9": "H.M.S. INDOMITABLE"
+        }
+    },
+    "keywords": [
+        "Fuelling",
+        "Surrender",
+        "Bombing",
+        "Kamikaze",
+        "Tactical Command",
+        "Weather Conditions"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Decisions",
+        "War Strategy",
+        "Casualties"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Casualties": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 7, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The unconditional surrender of the German Armed Forces to the Allies is reported, leading to the cessation of active operations."
+        },
+        {
+            "event": "e_2",
+            "date": "May 8, 1945",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The plan to bomb Miyako and Ishigaki is executed, but weather conditions lead to cancellations and adjustments in operations."
+        },
+        {
+            "event": "e_3",
+            "date": "May 8, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_7",
+                "o_8",
+                "o_9"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. Victorious faces multiple Kamikaze attacks resulting in significant damage and casualties among the crew."
+        }
+    ]
+}

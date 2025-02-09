@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Patton",
+            "p_2": "General Messe",
+            "p_3": "Air Vice Marshal Broadhurst",
+            "p_4": "General Montgomery"
+        },
+        "locations": {
+            "l_1": "Medenine",
+            "l_2": "Bir Soltane",
+            "l_3": "Ksar el Hallouf",
+            "l_4": "Mareth",
+            "l_5": "Gabes",
+            "l_6": "Maknassy",
+            "l_7": "El Hamma",
+            "l_8": "Cheguimi",
+            "l_9": "Gebel Tebaga",
+            "l_10": "Gebel Melab",
+            "l_11": "southern Tunisia",
+            "l_12": "Medjez"
+        },
+        "events": {
+            "e_1": "Operation SUPERCHARGE",
+            "e_2": "Battle of El Hamma",
+            "e_3": "First Army Offensive"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "II Corps",
+            "o_3": "10 Corps",
+            "o_4": "Royal Air Force",
+            "o_5": "Hermann Goering Division",
+            "o_6": "Division"
+        }
+    },
+    "keywords": [
+        "German armoured",
+        "infantry division",
+        "battle",
+        "tanks",
+        "supply routes",
+        "defensive position"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Battle Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "25th March",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation SUPERCHARGE commences with a coordinated attack involving multiple divisions as they prepare to outmaneuver the enemy in southern Tunisia."
+        },
+        {
+            "event": "e_2",
+            "date": "26th March",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of El Hamma unfolds as the New Zealand Division, after a successful air attack, pushes forward and engages in fierce fighting against German forces."
+        },
+        {
+            "event": "e_3",
+            "date": "After 26th February",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "First Army resumes operations following a period of reorganization and training in response to the changing battlefield dynamics and enemy movements."
+        }
+    ]
+}

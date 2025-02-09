@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander 1 Burcorps",
+            "p_2": "Commander 1 Burcorps",
+            "p_3": "Commander 1 Burcorps"
+        },
+        "locations": {
+            "l_1": "India",
+            "l_2": "Ye-U",
+            "l_3": "Kalewa",
+            "l_4": "Kaduma",
+            "l_5": "Pyingyaing",
+            "l_6": "Thetkegyin",
+            "l_7": "Shwegyin",
+            "l_8": "Kalemyo",
+            "l_9": "Tamu",
+            "l_10": "Budalin",
+            "l_11": "Sittaung",
+            "l_12": "Kywe"
+        },
+        "events": {
+            "e_1": "Withdrawal to Kalewa",
+            "e_2": "Fight at Shwegyin",
+            "e_3": "Transport of troops via steamer"
+        },
+        "organisations": {
+            "o_1": "17 Division",
+            "o_2": "48 Infantry Brigade",
+            "o_3": "7 Armoured Brigade",
+            "o_4": "Field Engineering units",
+            "o_5": "x Burma"
+        }
+    },
+    "keywords": [
+        "Withdrawal",
+        "Kalewa",
+        "Transport",
+        "Steamer",
+        "Enemy Attack",
+        "Supplies",
+        "Road Conditions",
+        "Casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Transport Challenges",
+        "Enemy Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_3"
+        ],
+        "Transport Challenges": [
+            "e_3"
+        ],
+        "Enemy Engagement": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "4th May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The forces are compelled to execute a withdrawal to Kalewa, faced with difficult road conditions and limited transportation resources."
+        },
+        {
+            "event": "e_2",
+            "date": "9th May",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An enemy force attacks the covering troops at Shwegyin, leading to a day of fighting, though embarkation of troops continues amidst the chaos."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unspecified",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Troops and equipment face challenges in transport via steamer due to limited capacity, while solutions involve staging camps to ease logistical burdens."
+        }
+    ]
+}

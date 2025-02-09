@@ -1,0 +1,112 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief, India",
+            "p_2": "General Headquarters, Far East"
+        },
+        "locations": {
+            "l_1": "Brisbane",
+            "l_2": "Sourabaya",
+            "l_3": "Malaya",
+            "l_4": "India",
+            "l_5": "Middle East",
+            "l_6": "London",
+            "l_7": "Kuala Kangsar",
+            "l_8": "River Perak",
+            "l_9": "River Krian",
+            "l_10": "Ipoh",
+            "l_11": "Kuala Lumpur",
+            "l_12": "Sungei Patani",
+            "l_13": "Singapore"
+        },
+        "events": {
+            "e_1": "Inter-Allied Conference",
+            "e_2": "Scorched Earth Policy",
+            "e_3": "Heavy Enemy Air Attack"
+        },
+        "organisations": {
+            "o_1": "General Headquarters, Far East"
+        }
+    },
+    "keywords": [
+        "Reinforcements",
+        "Military Operations",
+        "Japanese Attacks",
+        "Air Power"
+    ],
+    "themes": [
+        "Military Operations",
+        "Reinforcements",
+        "Strategic Decisions",
+        "Defensive Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Reinforcements": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 8, 1941",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Inter-Allied Conference convenes to discuss urgent reinforcement needs for Malaya amid Japanese military advances."
+        },
+        {
+            "event": "e_2",
+            "date": "December 19-21, 1941",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A scorched earth policy is ordered to prevent enemy advances while troops struggle to maintain defensive positions along key river lines."
+        },
+        {
+            "event": "e_3",
+            "date": "December 23, 1941",
+            "locations": [
+                "l_10",
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Heavy enemy air attacks target Ipoh aerodrome, forcing allied fighters further south to Kuala Lumpur as Japanese air operations escalate."
+        }
+    ]
+}

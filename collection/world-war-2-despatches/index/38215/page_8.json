@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Johore",
+            "l_3": "Singapore",
+            "l_4": "Kluang",
+            "l_5": "Kahang",
+            "l_6": "Batu Pahat",
+            "l_7": "Mersing",
+            "l_8": "Kelantan"
+        },
+        "events": {
+            "e_1": "Attacks against Kluang aerodrome",
+            "e_2": "Japanese military operations in Malaya",
+            "e_3": "Japanese landings on the West Coast",
+            "e_4": "Potential airborne landing on Singapore Island"
+        },
+        "organisations": {
+            "o_1": "Japanese Air Force",
+            "o_2": "Commonwealth Forces"
+        }
+    },
+    "keywords": [
+        "Air Troops",
+        "Armoured Component",
+        "Brigades",
+        "Infantry",
+        "Aircraft",
+        "Naval Control",
+        "Guerilla Bands",
+        "Morale",
+        "Imperial Defence"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Operations",
+        "Naval Strategy",
+        "Political Strategy",
+        "Guerilla Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Air Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Political Strategy": [
+            "e_4"
+        ],
+        "Guerilla Warfare": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 1945",
+            "locations": [
+                "l_4",
+                "l_1"
+            ],
+            "persons": {},
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Attacks against the Kluang aerodrome are frequently conducted by the Japanese Air Force, demonstrating a persistent threat to Allied air capabilities in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "January 1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": {},
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Japanese military operations in Malaya intensify as they press down the West Coast and prepare for potential landings, putting pressure on the Commonwealth forces."
+        },
+        {
+            "event": "e_3",
+            "date": "January 1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": {},
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Japanese forces aim to establish control over the waters of the West Coast through coordinated military actions, threatening supply routes and Commonwealth defences."
+        },
+        {
+            "event": "e_4",
+            "date": "January 1945",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": {},
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The possibility of an airborne landings either in Johore or on Singapore Island is considered, indicating a potential escalation in the conflict."
+        }
+    ]
+}

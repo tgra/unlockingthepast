@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral",
+            "p_2": "Commander-in-Chief, Home Fleet",
+            "p_3": "Admiralty"
+        },
+        "locations": {
+            "l_1": "Narvik",
+            "l_2": "Tjel Sundet",
+            "l_3": "Vaagsfiord",
+            "l_4": "Ofot Fiord",
+            "l_5": "Skjel Fiord"
+        },
+        "events": {
+            "e_1": "Battle of Narvik",
+            "e_2": "Operation to transfer the wounded",
+            "e_3": "German air attack on British destroyers"
+        },
+        "organisations": {
+            "o_1": "Home Fleet",
+            "o_2": "British Royal Navy",
+            "o_3": "Admiralty"
+        }
+    },
+    "keywords": [
+        "destroyers",
+        "wounded",
+        "aircraft",
+        "bombing",
+        "enemy forces",
+        "submarine",
+        "transfer",
+        "occupation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualties and Medical Procedures",
+        "Naval Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Casualties and Medical Procedures": [
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A naval battle occurs at Narvik, resulting in the destruction of seven enemy destroyers and one submarine."
+        },
+        {
+            "event": "e_2",
+            "date": "April 14, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Wounded soldiers are transferred from destroyers to the battleship WARSPITE under cover of darkness."
+        },
+        {
+            "event": "e_3",
+            "date": "April 14, 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Enemy air forces approach but do not attack British destroyers, as reported by IVANHOE."
+        }
+    ]
+}

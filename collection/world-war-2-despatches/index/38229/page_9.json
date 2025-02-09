@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_001": "Group Captain Seton Broughall",
+            "p_002": "General Chennault",
+            "p_003": "General Alexander"
+        },
+        "locations": {
+            "l_001": "Upper Burma",
+            "l_002": "Akyab",
+            "l_003": "Magwe",
+            "l_004": "Loiwing",
+            "l_005": "Lashio",
+            "l_006": "Sittang Valley",
+            "l_007": "Irrawaddy Valley",
+            "l_008": "Andaman Islands",
+            "l_009": "Chittagong",
+            "l_010": "Maymyo"
+        },
+        "events": {
+            "e_001": "Enemy Attacks at Magwe",
+            "e_002": "Intercept at Akyab",
+            "e_003": "Convoy Withdrawal from Magwe"
+        },
+        "organisations": {
+            "o_001": "R.D.F.",
+            "o_002": "A.V.G.",
+            "o_003": "R.A.F.",
+            "o_004": "Air Headquarters, India"
+        }
+    },
+    "keywords": [
+        "enemy attacks",
+        "Hurricanes",
+        "reconnaissance",
+        "Blenheims",
+        "aircraft",
+        "withdrawal",
+        "airfield"
+    ],
+    "themes": [
+        "Military Operations",
+        "Enemy Actions",
+        "Strategic Decisions",
+        "Aerial Combat"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_001",
+            "e_002",
+            "e_003"
+        ],
+        "Enemy Actions": [
+            "e_001",
+            "e_002"
+        ],
+        "Strategic Decisions": [
+            "e_003"
+        ],
+        "Aerial Combat": [
+            "e_001",
+            "e_002"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_001",
+            "date": "22nd March",
+            "locations": [
+                "l_003"
+            ],
+            "persons": [
+                "p_001",
+                "p_002"
+            ],
+            "organisations": [
+                "o_001",
+                "o_003"
+            ],
+            "connectedEvents": [
+                "e_002",
+                "e_003"
+            ],
+            "eventSummary": "At Magwe, significant enemy raids occur resulting in considerable damage, prompting immediate action from the R.A.F."
+        },
+        {
+            "event": "e_002",
+            "date": "23rd to 27th March",
+            "locations": [
+                "l_002"
+            ],
+            "persons": [
+                "p_001"
+            ],
+            "organisations": [
+                "o_001",
+                "o_003"
+            ],
+            "connectedEvents": [
+                "e_001"
+            ],
+            "eventSummary": "Fighter intercepts at Akyab result in some enemy aircraft losses, but many Hurricanes are destroyed, challenging R.A.F. efforts."
+        },
+        {
+            "event": "e_003",
+            "date": "23rd March",
+            "locations": [
+                "l_003",
+                "l_004"
+            ],
+            "persons": [
+                "p_001",
+                "p_003"
+            ],
+            "organisations": [
+                "o_001"
+            ],
+            "connectedEvents": [
+                "e_001"
+            ],
+            "eventSummary": "A convoy departs Magwe to relocate support to Loiwing due to increasing danger and lack of resources."
+        }
+    ]
+}

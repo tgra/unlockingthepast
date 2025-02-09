@@ -1,0 +1,101 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Castellano",
+            "p_2": "Marshal Badoglio",
+            "p_3": "Mr. Churchill",
+            "p_4": "Mr. Roosevelt",
+            "p_5": "General Eisenhower",
+            "p_6": "General Smith",
+            "p_7": "Major-General K. W. D. Strong"
+        },
+        "locations": {
+            "l_1": "Italy",
+            "l_2": "Calabria",
+            "l_3": "Salerno",
+            "l_4": "Madrid",
+            "l_5": "Lisbon",
+            "l_6": "Algiers",
+            "l_7": "Quebec",
+            "l_8": "Chile"
+        },
+        "events": {
+            "e_1": "Negotiations for Surrender",
+            "e_2": "Invasion of Italy"
+        },
+        "organisations": {
+            "o_1": "Italian Commando Supremo",
+            "o_2": "British Embassy",
+            "o_3": "Allied Force Headquarters"
+        }
+    },
+    "keywords": [
+        "surrender",
+        "capitulation",
+        "invasion",
+        "military operations",
+        "negotiations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "16th August 1943",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On the 16th of August, negotiations for surrender are opened by General Castellano on behalf of Marshal Badoglio, indicating that the Italian Government is prepared to cease hostilities against the Allies."
+        },
+        {
+            "event": "e_2",
+            "date": "N/A",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The invasion of Italy is planned with military operations set in motion following the negotiations for surrender initiated by Castellano."
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General de Larminat",
+            "p_2": "General Wladyslaw Anders",
+            "p_3": "Field-Marshal Kesselring"
+        },
+        "locations": {
+            "l_1": "Montefiascone",
+            "l_2": "Radicofani",
+            "l_3": "Rome",
+            "l_4": "Florence",
+            "l_5": "Ancona",
+            "l_6": "Fermo",
+            "l_7": "Pedaso",
+            "l_8": "Chienti",
+            "l_9": "Elba",
+            "l_10": "Piombino",
+            "l_11": "Lake Bolsena",
+            "l_12": "Perugia",
+            "l_13": "Lake Trasimene",
+            "l_14": "Chiusi",
+            "l_15": "Orcia",
+            "l_16": "Ombrone"
+        },
+        "events": {
+            "e_1": "Capture of Ancona",
+            "e_2": "Battle of the Trasimene Line",
+            "e_3": "Capture of Elba"
+        },
+        "organisations": {
+            "o_1": "Fifth Army",
+            "o_2": "Tenth Army",
+            "o_3": "Fourteenth Army",
+            "o_4": "LI Mountain Corps",
+            "o_5": "LXXVI Panzer Corps",
+            "o_6": "1 Parachute Corps",
+            "o_7": "XIV Panzer Corps"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "advance",
+        "defensive action",
+        "capture",
+        "counter-attack",
+        "reinforcements",
+        "strategic decision",
+        "battle"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Defensive Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ],
+        "Defensive Strategies": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th June",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Polish forces, under orders from General Anders, rapidly advance and secure the capture of Ancona, positioning themselves for further operations."
+        },
+        {
+            "event": "e_2",
+            "date": "20th June",
+            "locations": [
+                "l_12",
+                "l_13",
+                "l_16"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of the Trasimene Line commences as German forces, under Kesselring, organize a defensive stand against advancing Allied troops."
+        },
+        {
+            "event": "e_3",
+            "date": "17th June",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Capture of Elba occurs as Allied forces take control of the island, completing the operation successfully by the afternoon."
+        }
+    ]
+}

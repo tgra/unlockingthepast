@@ -1,0 +1,148 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "M. G. Low",
+            "p_2": "Lieutenant C.P. N. Wells-Cole"
+        },
+        "locations": {
+            "l_1": "Port Y",
+            "l_2": "Port X",
+            "l_3": "Port A",
+            "l_4": "Port B",
+            "l_5": "Vaeroy",
+            "l_6": "Scapa",
+            "l_7": "Vestfjord"
+        },
+        "events": {
+            "e_1": "Landing Operation at Port Y",
+            "e_2": "Sinking of the MIRA",
+            "e_3": "Re-embarkation of troops",
+            "e_4": "Engagement with German reconnaissance aircraft",
+            "e_5": "Return Passage of Force Rebel"
+        },
+        "organisations": {
+            "o_1": "H.M.S. RODNEY",
+            "o_2": "H.M.H.S. AMARAPOORA",
+            "o_3": "18th Cruiser Squadron"
+        }
+    },
+    "keywords": [
+        "landing operation",
+        "sinking",
+        "German soldiers",
+        "re-embarkation",
+        "aircraft engagement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Humanitarian Efforts",
+        "Re-embarkation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Engagement": [
+            "e_2",
+            "e_4"
+        ],
+        "Humanitarian Efforts": [
+            "e_5"
+        ],
+        "Re-embarkation": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of event unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "At Port Y, the naval ship BEDOUIN leads a landing operation, successfully completing tasks despite encountering enemy resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "Date of event unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The ferry MIRA is attacked and subsequently sunk by the naval ship BEDOUIN after initial attempts to stop it failed."
+        },
+        {
+            "event": "e_3",
+            "date": "Date of event unspecified",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The re-embarkation of troops takes place, with the ship QUEEN EMMA prepared to carry personnel back after successful landing operations."
+        },
+        {
+            "event": "e_4",
+            "date": "On 5th March",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The naval forces, including BEDOUIN, engage a German reconnaissance aircraft sighted while passing Vaeroy."
+        },
+        {
+            "event": "e_5",
+            "date": "On 6th March",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Force Rebel completes its return passage and arrives safely at Scapa, facilitating the disembarkation of prisoners and wounded."
+        }
+    ]
+}

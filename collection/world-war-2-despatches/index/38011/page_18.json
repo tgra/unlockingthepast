@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Group Capt. Moore",
+            "p_2": "Wing Comd. Atcherley",
+            "p_3": "Brigadier Pyne",
+            "p_4": "Wing Commander Maxton"
+        },
+        "locations": {
+            "l_1": "Bardu Foss",
+            "l_2": "Skaanland",
+            "l_3": "Narvik",
+            "l_4": "Elvenes",
+            "l_5": "Salangen",
+            "l_6": "Harstad",
+            "l_7": "Bjerkvik",
+            "l_8": "Bodo",
+            "l_9": "Forsanger Fjord",
+            "l_10": "Hammerfest"
+        },
+        "events": {
+            "e_1": "Evacuation of Norway",
+            "e_2": "Landing of the first Squadron of Gladiator Fighters",
+            "e_3": "Successful French Landing on 13th May"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "Fleet Air Arm"
+        }
+    },
+    "keywords": [
+        "landing grounds",
+        "air superiority",
+        "fighter aircraft",
+        "military operations",
+        "enemy bombers",
+        "naval anchorage"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Strategic Decisions",
+        "Preparation of Landing Grounds"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Support": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ],
+        "Preparation of Landing Grounds": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th May",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Norway is initiated, hindering further operations in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "21st May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The first squadron of Gladiator Fighters is launched from an aircraft carrier and successfully establishes at Bardu Foss."
+        },
+        {
+            "event": "e_3",
+            "date": "13th May",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A successful French landing occurs, leading to the preparation of additional landing grounds."
+        }
+    ]
+}

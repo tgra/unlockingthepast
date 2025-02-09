@@ -1,0 +1,134 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral Commanding",
+            "p_2": "RODNEY"
+        },
+        "locations": {
+            "l_1": "INDOMITABLE",
+            "l_2": "Gibraltar",
+            "l_3": "Cape Bon",
+            "l_4": "Cani Rocks",
+            "l_5": "Kelibia Light"
+        },
+        "events": {
+            "e_1": "Air Attack on INDOMITABLE",
+            "e_2": "Torpedo Incident involving H.M.S. NIGERIA",
+            "e_3": "Bombing of H.M.S. CAIRO",
+            "e_4": "General Air Attack on Convoy",
+            "e_5": "Engagements with E-Boats"
+        },
+        "organisations": {
+            "o_1": "Force Z",
+            "o_2": "Force X"
+        }
+    },
+    "keywords": [
+        "air attack",
+        "torpedo",
+        "H.M.S.",
+        "submarine",
+        "bombing",
+        "convoy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Engagements",
+        "Damage Control"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Engagements": [
+            "e_2",
+            "e_5"
+        ],
+        "Damage Control": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Air attack on INDOMITABLE involves 40 torpedo bombers and Stuka aircraft, causing damage and fires onboard."
+        },
+        {
+            "event": "e_2",
+            "date": "12th August",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "H.M.S. NIGERIA hit by a torpedo, leading to damage control measures and transfer of command to H.M.S. ASHANTI."
+        },
+        {
+            "event": "e_3",
+            "date": "Date Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "H.M.S. CAIRO is sunk after severe damage sustained from enemy attacks."
+        },
+        {
+            "event": "e_4",
+            "date": "Date Unknown",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A series of air attacks targets the convoy leading to multiple vessels being hit."
+        },
+        {
+            "event": "e_5",
+            "date": "14th August",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Engagement with E-Boats detected by radar leading to several surface engagements."
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral",
+            "p_2": "Squadron Leader"
+        },
+        "locations": {
+            "l_1": "Sardinia",
+            "l_2": "Cagliari"
+        },
+        "events": {
+            "e_1": "Air Attack on ARK ROYAL",
+            "e_2": "Attack on Enemy Cruisers"
+        },
+        "organisations": {
+            "o_1": "ARK ROYAL",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "cruisers",
+        "bombing",
+        "T/B Striking Force",
+        "enemy forces",
+        "convoy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Enemy Engagement",
+        "Naval Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1"
+        ],
+        "Enemy Engagement": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified in the text",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The ARK ROYAL faces multiple bombing attacks while trying to protect the convoy. Despite the enemy's efforts, no significant damage is reported."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified in the text",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The second T/B Striking Force attacks enemy cruisers off the coast of Sardinia, with some hits observed on a rear cruiser."
+        }
+    ]
+}

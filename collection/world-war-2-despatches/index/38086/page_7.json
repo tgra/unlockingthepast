@@ -1,0 +1,73 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Y Eddystone",
+            "l_2": "Scilly",
+            "l_3": "Ushant",
+            "l_4": "Belle Ile",
+            "l_5": "St Nazaire"
+        },
+        "events": {
+            "e_1": "Attack on St Nazaire",
+            "e_2": "Sinking of French hawlers"
+        },
+        "organisations": {
+            "o_1": "M.L's"
+        }
+    },
+    "keywords": [
+        "U-Boat",
+        "Attack",
+        "St Nazaire",
+        "Sinking",
+        "French hawlers",
+        "Passage"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27 March 1942",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The attack on St Nazaire occurs, marking a pivotal maritime operation."
+        },
+        {
+            "event": "e_2",
+            "date": "27 March 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Multiple French hawlers are sunk by naval forces, contributing to the maritime conflict."
+        }
+    ]
+}

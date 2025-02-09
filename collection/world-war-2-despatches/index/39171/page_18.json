@@ -1,0 +1,133 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Supreme Allied Commander",
+            "p_2": "Commander-in-Chief, India",
+            "p_3": "General Headquarters, India"
+        },
+        "locations": {
+            "l_1": "India",
+            "l_2": "Burma",
+            "l_3": "Kohima",
+            "l_4": "Asam",
+            "l_5": "Dimapur",
+            "l_6": "Imphal Front",
+            "l_7": "Ledo",
+            "l_8": "Chabua",
+            "l_9": "Eastern Bengal",
+            "l_10": "Surma Valley"
+        },
+        "events": {
+            "e_1": "Supreme Allied Commander's Proclamation No. 1 of 1944",
+            "e_2": "Defence of Kohima",
+            "e_3": "Leave Regulations during 1944",
+            "e_4": "Military Traitors Interrogation"
+        },
+        "organisations": {
+            "o_1": "British Military Administration Courts",
+            "o_2": "Red Cross",
+            "o_3": "Y.M.C.A.",
+            "o_4": "Toc H"
+        }
+    },
+    "keywords": [
+        "Indian Army",
+        "medical personnel",
+        "dental facilities",
+        "leave restrictions",
+        "morale",
+        "Japanese soldiers",
+        "repatriation",
+        "lines of communication"
+    ],
+    "themes": [
+        "Military Operations",
+        "Medical Services",
+        "Morale and Welfare",
+        "Administrative Procedures"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Medical Services": [
+            "e_3"
+        ],
+        "Morale and Welfare": [
+            "e_3",
+            "e_4"
+        ],
+        "Administrative Procedures": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Supreme Allied Commander issues Proclamation No. 1, establishing British Military Administration Courts in re-occupied territory in Burma."
+        },
+        {
+            "event": "e_2",
+            "date": "During the siege",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Patients in the British Depot at Kohima contribute significantly to the defense of Kohima during its siege."
+        },
+        {
+            "event": "e_3",
+            "date": "1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Leave for British personnel is limited to fourteen days due to accommodation and transportation challenges, with particular concerns regarding the situation of Indian troops."
+        },
+        {
+            "event": "e_4",
+            "date": "Ongoing",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In response to the apprehension regarding military traitors, detailed interrogations are being organized at Forward Interrogation Centres."
+        }
+    ]
+}

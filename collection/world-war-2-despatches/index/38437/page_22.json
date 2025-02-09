@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unspecified Military Leader",
+            "p_2": "Unspecified Intelligence Officer"
+        },
+        "locations": {
+            "l_1": "Normandy",
+            "l_2": "Pas de Calais",
+            "l_3": "Flanders",
+            "l_4": "London",
+            "l_5": "Western Holland"
+        },
+        "events": {
+            "e_1": "Rocket Campaign",
+            "e_2": "First Rocket Attack Preparations",
+            "e_3": "Armed Reconnaissance Sorties",
+            "e_4": "Review of Defensive Measures"
+        },
+        "organisations": {
+            "o_1": "Allied Armies",
+            "o_2": "Air Staff",
+            "o_3": "Tactical Air Forces"
+        }
+    },
+    "keywords": [
+        "rocket",
+        "Allied troops",
+        "fire control",
+        "intelligence",
+        "reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence",
+        "Countermeasures",
+        "Strategic Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Intelligence": [
+            "e_2",
+            "e_4"
+        ],
+        "Countermeasures": [
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Defense": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "30th August to 7th September, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Rocket Campaign is about to begin as Allied forces prepare for coordinated offensive actions in response to German threats."
+        },
+        {
+            "event": "e_2",
+            "date": "30th August, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Allied intelligence prepares for the possibility of imminent rocket attacks and establishes a system for detecting rocket firing."
+        },
+        {
+            "event": "e_3",
+            "date": "30th August, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Armed reconnaissance sorties commence to identify potential rocket launch sites in anticipation of German attacks."
+        },
+        {
+            "event": "e_4",
+            "date": "31st August, 1944",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A review by the Vice-Chiefs of Staff leads to the conclusion to maintain defensive measures against potential attacks from Western Holland."
+        }
+    ]
+}

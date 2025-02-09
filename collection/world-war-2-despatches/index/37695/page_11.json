@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Royal Artillery",
+            "p_2": "RJA.O.C."
+        },
+        "locations": {
+            "l_1": "East Africa",
+            "l_2": "Greece",
+            "l_3": "Middle East",
+            "l_4": "Syria",
+            "l_5": "Western Desert",
+            "l_6": "Union"
+        },
+        "events": {
+            "e_1": "Transport Resupply of 1st South African Division",
+            "e_2": "Equipping of Australian Divisional Light Anti-Aircraft Regiments",
+            "e_3": "Medical Services Transport Challenges",
+            "e_4": "Improvement in Passive Air Defence"
+        },
+        "organisations": {
+            "o_1": "Royal Artillery Field Branch",
+            "o_2": "Royal Engineers",
+            "o_3": "Royal Corps of Signals",
+            "o_4": "Royal Army Service Corps",
+            "o_5": "Royal Army Medical Corps"
+        }
+    },
+    "keywords": [
+        "Anti-Aircraft",
+        "Transport",
+        "Medical Services",
+        "Equipment",
+        "Artillery",
+        "Defence"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Equipment Shortages",
+        "Medical Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_4"
+        ],
+        "Equipment Shortages": [
+            "e_3"
+        ],
+        "Medical Challenges": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The transport of the 1st South African Division is successfully resupplied within six days, enhancing their capabilities in desert warfare."
+        },
+        {
+            "event": "e_2",
+            "date": "October",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Australian units are reorganized into divisional light anti-aircraft regiments, enhancing the firepower of the Eighth Army."
+        },
+        {
+            "event": "e_3",
+            "date": "October",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Despite nearing complete equipage, the Royal Army Medical Corps struggles with transport resources, impacting their mobility in the Middle East."
+        },
+        {
+            "event": "e_4",
+            "date": "October",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Passive Air Defence measures are markedly improved following the integration of additional anti-aircraft units."
+        }
+    ]
+}

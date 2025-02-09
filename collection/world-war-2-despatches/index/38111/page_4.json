@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Flying Officer Moore"
+        },
+        "locations": {
+            "l_1": "Channel",
+            "l_2": "Bay of Biscay",
+            "l_3": "Norwegian ports",
+            "l_4": "Brest",
+            "l_5": "Boulogne",
+            "l_6": "Cherbourg",
+            "l_7": "Gironde",
+            "l_8": "Le Havre"
+        },
+        "events": {
+            "e_1": "Assault on Channel",
+            "e_2": "Battle in the Bay of Biscay",
+            "e_3": "Attack on destroyers from Gironde"
+        },
+        "organisations": {
+            "o_1": "Coastal Command",
+            "o_2": "Royal Navy",
+            "o_3": "Bomber Command"
+        }
+    },
+    "keywords": [
+        "U-Boats",
+        "Schnorkel",
+        "Coastal Command",
+        "Royal Navy",
+        "anti-aircraft",
+        "patrols",
+        "anti-shipping"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Air Operations",
+        "Enemy Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_2",
+            "e_3"
+        ],
+        "Air Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Enemy Tactics": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day to end of August",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Coastal Command conducts extensive operations against U-Boats in the Channel, resulting in the destruction of multiple enemy vessels during various assaults."
+        },
+        {
+            "event": "e_2",
+            "date": "August",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Intense engagements occur in the Bay of Biscay as U-Boats attempt to escape, with Coastal Command accounting for several enemy vessels in brutal confrontations."
+        },
+        {
+            "event": "e_3",
+            "date": "June 6th",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Royal Navy engages and inflicts damage on enemy destroyers approaching from the Gironde, notably succeeding in cutting off reinforcements to the assault area."
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Gubbins",
+            "p_2": "Lt.-Col. Stockwell",
+            "p_3": "General Bethouart",
+            "p_4": "Lord Cork",
+            "p_5": "Sir Cecil Dormer"
+        },
+        "locations": {
+            "l_1": "Bodo",
+            "l_2": "Fauske",
+            "l_3": "Hopen",
+            "l_4": "Lake Soloi",
+            "l_5": "United Kingdom",
+            "l_6": "Borkenes",
+            "l_7": "Harstad",
+            "l_8": "Narvik",
+            "l_9": "Ankenes-Beisford",
+            "l_10": "Sildvik",
+            "l_11": "Rombaks Fjord",
+            "l_12": "Stromsnes",
+            "l_13": "Bjornefjell"
+        },
+        "events": {
+            "e_1": "Evacuation of Bodo",
+            "e_2": "Bombing attacks on Bodo",
+            "e_3": "Operational movements around Narvik",
+            "e_4": "Postponement of evacuation for Mowinckel Plan"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Norwegian Government"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "destroyers",
+        "military",
+        "operations",
+        "bombing attacks",
+        "strategic withdrawal",
+        "Confidential Operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Withdrawal",
+        "Evacuation Strategy",
+        "Air Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Evacuation Strategy": [
+            "e_1",
+            "e_4"
+        ],
+        "Air Defense": [
+            "e_2"
+        ],
+        "Strategic Withdrawal": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "30th - 31st May 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The evacuation of troops from Bodo is executed effectively, facilitated by the Royal Navy destroyers, ensuring the safe transfer of personnel despite some nearby enemy activities."
+        },
+        {
+            "event": "e_2",
+            "date": "During the evacuation",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Enemy bombing attacks occur around Bodo while the evacuation is underway, yet no significant interference is noted during the key embarkation times."
+        },
+        {
+            "event": "e_3",
+            "date": "During the operations around Narvik",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Military operations around Narvik are characterized by ongoing engagements with enemy forces, involving multiple allied battalions."
+        },
+        {
+            "event": "e_4",
+            "date": "May 31, 1940",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The evacuation program is temporarily postponed to enable the Norwegian Government to negotiate the Mowinckel Plan through Sweden for neutralizing Narvik."
+        }
+    ]
+}

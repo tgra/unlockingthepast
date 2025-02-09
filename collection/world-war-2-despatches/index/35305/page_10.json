@@ -1,0 +1,104 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir John Dill",
+            "p_2": "General Blanchard",
+            "p_3": "Ronald Adam",
+            "p_4": "Major-General Eastwood"
+        },
+        "locations": {
+            "l_1": "Ypres",
+            "l_2": "Menin",
+            "l_3": "Ledeghem",
+            "l_4": "Dunkirk",
+            "l_5": "Bruges",
+            "l_6": "Carvin",
+            "l_7": "Bois d'Epinoy",
+            "l_8": "Lys position"
+        },
+        "events": {
+            "e_1": "Counter-attack at Ypres",
+            "e_2": "Withdrawal behind the Lys"
+        },
+        "organisations": {
+            "o_1": "British Expeditionary Force (B.E.F.)",
+            "o_2": "French Army",
+            "o_3": "Belgian Army",
+            "o_4": "C.I.G.S."
+        }
+    },
+    "keywords": [
+        "infantry brigade",
+        "defence",
+        "counter-attack",
+        "enemy pressure",
+        "withdrawal",
+        "armistice",
+        "operations",
+        "G.H.Q."
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Defence Planning",
+        "Withdrawal Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Defence Planning": [
+            "e_1"
+        ],
+        "Withdrawal Strategies": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "25th May",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Belgians attempt a counter-attack at Ypres amidst enemy pressure, though its success remains questionable."
+        },
+        {
+            "event": "e_2",
+            "date": "26th May",
+            "locations": [
+                "l_4",
+                "l_8"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A strategic decision is made to withdraw behind the Lys to secure Allied forces in response to deteriorating conditions."
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Maund",
+            "p_2": "Bull",
+            "p_3": "Kiggell",
+            "p_4": "Janvrin",
+            "p_5": "Lamb",
+            "p_6": "Grieve",
+            "p_7": "Patch",
+            "p_8": "Goodwin",
+            "p_9": "Sarra",
+            "p_10": "Bowker",
+            "p_11": "Forde",
+            "p_12": "Mardel-Ferreira",
+            "p_13": "Murray",
+            "p_14": "Paine"
+        },
+        "locations": {
+            "l_1": "San Pietro Island",
+            "l_2": "Rondinella Point",
+            "l_3": "Cape San Vito",
+            "l_4": "Mar Piccolo",
+            "l_5": "Taranto harbour",
+            "l_6": "Lo Scanno Point",
+            "l_7": "Mar Grande",
+            "l_8": "San Gorgio",
+            "l_9": "commercial basin",
+            "l_10": "western mainland"
+        },
+        "events": {
+            "e_1": "Torpedo attack on LITTORIO",
+            "e_2": "Flares drop along eastern shore",
+            "e_3": "Dive bombing attack on cruisers and destroyers in Mar Piccolo",
+            "e_4": "Attack on the oil storage depot",
+            "e_5": "Dive bombing attack on seaplane base"
+        },
+        "organisations": {
+            "o_1": "ILLUSTRIOUS Squadron"
+        }
+    },
+    "keywords": [
+        "Torpedo attack",
+        "Dive bombing",
+        "Anti-aircraft fire",
+        "Flares",
+        "Mar Piccolo",
+        "LITTORIO",
+        "oil storage depot"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Attacks",
+        "Naval Engagements",
+        "Anti-Aircraft Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Aerial Attacks": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Anti-Aircraft Defense": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Engagements": [
+            "e_1",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Aircraft conducts a torpedo attack on the battleship LITTORIO, successfully launching a torpedo after encountering anti-aircraft fire."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Aircraft drop flares along the eastern shore to illuminate potential targets, followed by a dive bombing run on an oil storage depot."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_4",
+                "l_6"
+            ],
+            "persons": [
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Multiple dive bombing attacks are executed on cruisers and destroyers moored in the Mar Piccolo, encountering heavy anti-aircraft fire."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_9",
+                "p_10"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "An attack targets an oil storage depot, with results showing large fires but with uncertain damage to enemy ships."
+        },
+        {
+            "event": "e_5",
+            "date": "Unknown",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_11",
+                "p_12"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The aircraft successfully bomb the seaplane base amidst intense anti-aircraft fire, resulting in notable explosions."
+        }
+    ]
+}

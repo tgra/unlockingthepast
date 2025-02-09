@@ -1,0 +1,112 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Morgan",
+            "p_2": "Norwegian Commander-in-Chief",
+            "p_3": "Major-General Paget",
+            "p_4": "Brigadier Kent Lemon",
+            "p_5": "Lieutenant-Colonel Robinson"
+        },
+        "locations": {
+            "l_1": "Norway",
+            "l_2": "Namsos",
+            "l_3": "Andalsnes"
+        },
+        "events": {
+            "e_1": "Evacuation of Central Norway",
+            "e_2": "Operations supporting Norwegian forces",
+            "e_3": "Bombing of Andalsnes"
+        },
+        "organisations": {
+            "o_1": "Royal Engineers",
+            "o_2": "Royal Navy",
+            "o_3": "Fleet Air Arm",
+            "o_4": "German Air Force"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Norwegian Army",
+        "German advance",
+        "Air Support",
+        "Retreat",
+        "Combined Forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Retreat",
+        "Air Support",
+        "Cooperation between Services"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ],
+        "Air Support": [
+            "e_2",
+            "e_3"
+        ],
+        "Cooperation between Services": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "29 May 1946",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Evacuation of Central Norway occurs as forces strategically withdraw in response to the German advance."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operations supporting Norwegian forces are conducted with skill and energy, showcasing the effective leadership of Major-General Paget."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The bombing of Andalsnes by German aircraft is continuous and persistent, having serious implications for the operational effectiveness of the allied forces."
+        }
+    ]
+}

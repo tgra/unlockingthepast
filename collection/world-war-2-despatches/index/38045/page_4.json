@@ -1,0 +1,150 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieut. E. L. Graham",
+            "p_2": "Lieut.-Commander J. H. Dathan",
+            "p_3": "Major-General Roberts",
+            "p_4": "Commander R. E. D. Ryder",
+            "p_5": "Commander Wyburd",
+            "p_6": "Lieutenant-Commander H. W. Goulding",
+            "p_7": "Lieutenant-Commander C. W. McMullen",
+            "p_8": "Commander McClintock"
+        },
+        "locations": {
+            "l_1": "Red Beach",
+            "l_2": "White Beach",
+            "l_3": "Yellow Beach",
+            "l_4": "Blue Beach",
+            "l_5": "Green Beach",
+            "l_6": "Dieppe Sea Front",
+            "l_7": "Boulogne"
+        },
+        "events": {
+            "e_1": "Main Landings on Red and White Beaches",
+            "e_2": "Landing at Blue Beach",
+            "e_3": "Landing at Green Beach",
+            "e_4": "Enemy E-Boat Approach",
+            "e_5": "Landing at White Beach",
+            "e_6": "Transfer of Royal Marine Commando"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Royal Marine Commando",
+            "o_3": "Chasseurs"
+        }
+    },
+    "keywords": [
+        "Naval Operations",
+        "Landing Crafts",
+        "Air Support",
+        "Heavy Fire",
+        "Casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Challenges in Operations",
+        "Coordination among Forces"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_5",
+            "e_6"
+        ],
+        "Challenges in Operations": [
+            "e_1",
+            "e_2",
+            "e_6"
+        ],
+        "Coordination among Forces": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Main landings on Red and White Beaches are successfully executed despite challenges, with no losses of landing craft initially."
+        },
+        {
+            "event": "e_5",
+            "date": "Date unspecified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Royal Marine Commando's landing at White Beach is ordered and executed with heavy opposition faced."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The report regarding the landing at Blue Beach reveals that heavy opposition prevented any effective action."
+        },
+        {
+            "event": "e_4",
+            "date": "At about 0750",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Enemy E-boats are reported approaching from Boulogne, with naval forces ordered to patrol."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unspecified",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The landing at Green Beach is unable to proceed due to heavy fire from the enemy."
+        }
+    ]
+}

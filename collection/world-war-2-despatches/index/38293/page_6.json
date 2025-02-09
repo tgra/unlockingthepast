@@ -1,0 +1,157 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieut. Commander Carr",
+            "p_2": "H.M. King George",
+            "p_3": "Colonel Renton",
+            "p_4": "Captain Clark-Hall",
+            "p_5": "General Wilson",
+            "p_6": "Brigadier Galloway",
+            "p_7": "Group Captain Pelly",
+            "p_8": "General Sir H. Maitland Wilson",
+            "p_9": "Major-General T. G. G. Heywood",
+            "p_10": "Rear Admiral C. E. Turtle",
+            "p_11": "Brigadier A. G. Mission Jones",
+            "p_12": "Prince Peter of Greece",
+            "p_13": "Admiral Sakellarion"
+        },
+        "locations": {
+            "l_1": "Athens",
+            "l_2": "Nauplia",
+            "l_3": "Crete",
+            "l_4": "Piraeus",
+            "l_5": "Myli",
+            "l_6": "Megara",
+            "l_7": "Corinth Canal"
+        },
+        "events": {
+            "e_1": "Embarkation from Athens and Nauplia",
+            "e_2": "Bombing of the HELLAS",
+            "e_3": "Establishment of new H.Q. near Myli",
+            "e_4": "Arrival of German parachute troops",
+            "e_5": "Embarkation of troops from Megara"
+        },
+        "organisations": {
+            "o_1": "British Military Mission",
+            "o_2": "Royal Navy",
+            "o_3": "R.A.F."
+        }
+    },
+    "keywords": [
+        "D.x Day",
+        "embarkation",
+        "bombing",
+        "communications failure",
+        "military operation",
+        "evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Efforts",
+        "Communications Challenges",
+        "Diplomatic Actions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_5"
+        ],
+        "Evacuation Efforts": [
+            "e_1",
+            "e_5"
+        ],
+        "Communications Challenges": [
+            "e_3"
+        ],
+        "Diplomatic Actions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "24th April",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Embarkation is successfully executed from Athens and Nauplia, involving the transport of 10,200 personnel despite logistical challenges."
+        },
+        {
+            "event": "e_2",
+            "date": "24th April",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Greek yacht HELLAS is bombed while docked in Piraeus, leading to significant casualties among those evacuated."
+        },
+        {
+            "event": "e_3",
+            "date": "26th April",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A new headquarters is established near Myli in an olive grove, enhancing the military's position against enemy aerial assaults."
+        },
+        {
+            "event": "e_4",
+            "date": "26th April",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "German parachute troops arrive at dawn, signaling an escalation of enemy operations in the region."
+        },
+        {
+            "event": "e_5",
+            "date": "25th April",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Approximately 5,700 troops are embarked from the Megara area, amidst perilous conditions and logistical setbacks."
+        }
+    ]
+}

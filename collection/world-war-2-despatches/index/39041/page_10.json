@@ -1,0 +1,141 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain (D), 8th Destroyer Flotilla",
+            "p_2": "Rear Admiral L. H. K. Hamilton, D.S.O."
+        },
+        "locations": {
+            "l_1": "Jan Mayen Island",
+            "l_2": "Archangel",
+            "l_3": "South Cape",
+            "l_4": "Spitzbergen",
+            "l_5": "Iceland",
+            "l_6": "Akureyri",
+            "l_7": "Barents Sea",
+            "l_8": "French North Africa",
+            "l_9": "White Sea",
+            "l_10": "Bear Island",
+            "l_11": "Altenfiord",
+            "l_12": "Kola Inlet",
+            "l_13": "Loch Ewe",
+            "l_14": "Arctic"
+        },
+        "events": {
+            "e_1": "Attack by the NORTHERN SPRAY on a U-boat",
+            "e_2": "Convoy QP15 sailed on 17th November",
+            "e_3": "Operations for occupation of French North Africa",
+            "e_4": "Sailing of a convoy on 22nd December"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "Home Fleet",
+            "o_3": "Russian Navy",
+            "o_4": "British Navy"
+        }
+    },
+    "keywords": [
+        "U-boat",
+        "Convoy",
+        "Air reconnaissance",
+        "Attack",
+        "Escort"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Coordination",
+        "Leadership",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Coordination": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 17, 1943",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The NORTHERN SPRAY attacks a U-boat near Jan Mayen Island, likely prompting an increase in enemy air reconnaissance and U-boat patrols."
+        },
+        {
+            "event": "e_2",
+            "date": "November 17, 1943",
+            "locations": [
+                "l_2",
+                "l_8",
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Convoy QP15 departs on November 17, with plans for careful navigation through dark conditions, aiming to evade enemy patrols."
+        },
+        {
+            "event": "e_3",
+            "date": "Late November 1943",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operations for the occupation of French North Africa are underway, affecting naval resources and convoy operations."
+        },
+        {
+            "event": "e_4",
+            "date": "December 22, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A new convoy is set to sail on December 22, featuring a large escort in response to expected enemy actions."
+        }
+    ]
+}

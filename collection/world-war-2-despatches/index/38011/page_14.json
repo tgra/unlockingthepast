@@ -1,0 +1,89 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander Hubback",
+            "p_2": "British officers"
+        },
+        "locations": {
+            "l_1": "Narvik",
+            "l_2": "Bodo",
+            "l_3": "Hemnes Peninsula",
+            "l_4": "Beisfjord",
+            "l_5": "Denmark"
+        },
+        "events": {
+            "e_1": "Evacuation of Bodo",
+            "e_2": "Action on the Hemnes Peninsula"
+        },
+        "organisations": {
+            "o_1": "French Army",
+            "o_2": "German Army",
+            "o_3": "Naval and Air Force"
+        }
+    },
+    "keywords": [
+        "air power",
+        "low-flying attacks",
+        "surprise landings",
+        "supply by air",
+        "Casualties",
+        "losses",
+        "Naval operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Superiority",
+        "Troop Movements",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Superiority": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "13th May - 8th June",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Bodo is undertaken with 2,500 French troops transported into destroyers under Commander Hubback's supervision amidst heavy air operations."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On the Hemnes Peninsula, German forces conduct surprise landings backed by low-flying air attacks, disrupting the defensive positions of Allied troops."
+        }
+    ]
+}

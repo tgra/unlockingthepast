@@ -1,0 +1,150 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Maj.-Gen. Weston R.M.",
+            "p_2": "Brigadier Puttick",
+            "p_3": "General Freyberg",
+            "p_4": "His Majesty the King of Greece"
+        },
+        "locations": {
+            "l_1": "Suda Bay",
+            "l_2": "Maleme",
+            "l_3": "Canea",
+            "l_4": "Crete",
+            "l_5": "Heraklion",
+            "l_6": "Retimo",
+            "l_7": "Akrotiri Peninsula"
+        },
+        "events": {
+            "e_1": "Main enemy attack on Crete",
+            "e_2": "Air attacks on Suda Bay",
+            "e_3": "Parachute landings near Maleme",
+            "e_4": "Attempt to eject enemy from Maleme",
+            "e_5": "Night attacks by New Zealand troops"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "New Zealand forces"
+        }
+    },
+    "keywords": [
+        "Suda Bay",
+        "Maleme",
+        "New Zealand Brigade",
+        "enemy attack",
+        "aircraft",
+        "troop carriers",
+        "heavy casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial bombardment",
+        "Ground combat",
+        "Defensive strategies",
+        "Leadership decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Aerial bombardment": [
+            "e_2"
+        ],
+        "Defensive strategies": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The main enemy attack begins with heavy bombing on Maleme aerodrome, followed by aerial deploys of troops."
+        },
+        {
+            "event": "e_2",
+            "date": "Before and during 20th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air attacks precede the main enemy strike on Suda Bay, increasing in intensity and targeting shipping."
+        },
+        {
+            "event": "e_3",
+            "date": "20th May",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Parachutists land near Maleme during the enemy attack, leading to significant conflicts."
+        },
+        {
+            "event": "e_4",
+            "date": "21st May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "Troops make several attempts to eject the enemy from Maleme aerodrome but face heavy air support from enemy forces."
+        },
+        {
+            "event": "e_5",
+            "date": "During 21st and 22nd May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Night attacks launched by the New Zealand battalions attempt to regain control of Maleme aerodrome against overwhelming odds."
+        }
+    ]
+}

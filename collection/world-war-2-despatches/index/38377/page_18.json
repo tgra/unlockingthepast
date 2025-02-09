@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "NELSON",
+            "p_2": "ARK ROYAL",
+            "p_3": "PRINCE OF WALES",
+            "p_4": "RODNEY",
+            "p_5": "KENYA",
+            "p_6": "EDINBURGH",
+            "p_7": "SHEFFIELD",
+            "p_8": "EURYALUS",
+            "p_9": "HERMIONE",
+            "p_10": "PIORUN",
+            "p_11": "LEGION",
+            "p_12": "Admiral"
+        },
+        "locations": {
+            "l_1": "Taranto",
+            "l_2": "Naples",
+            "l_3": "Messina",
+            "l_4": "Palermo",
+            "l_5": "Skerki Channel"
+        },
+        "events": {
+            "e_1": "Third Attack",
+            "e_2": "Emergency Report from B (R.A.F. Malta)",
+            "e_3": "Attempt to Intercept Enemy Battlefleet"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)"
+        }
+    },
+    "keywords": [
+        "convoy",
+        "torpedo",
+        "aircraft",
+        "attack",
+        "enemy",
+        "reconnaissance",
+        "battleships"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Reconnaissance",
+        "Naval Tactics",
+        "Engagement Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Reconnaissance": [
+            "e_2"
+        ],
+        "Naval Tactics": [
+            "e_1",
+            "e_3"
+        ],
+        "Engagement Strategy": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th September",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "During the Third Attack, enemy torpedo bombers are repelled by the gunfire from the destroyers, with six enemy aircraft destroyed before they can cause any damage to H.M. Ships or the convoy."
+        },
+        {
+            "event": "e_2",
+            "date": "26th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_12"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "An emergency report from R.A.F. Malta indicates the position of two battleships and eight destroyers, allowing the allies to position their forces effectively."
+        },
+        {
+            "event": "e_3",
+            "date": "27th September",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "In an attempt to intercept the enemy battlefleet, Admiral decides to organize his battleships and destroyers to protect the convoy while flying off reconnaissance aircraft."
+        }
+    ]
+}

@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Eisenhower"
+        },
+        "locations": {
+            "l_1": "London",
+            "l_2": "Cuckmere Haven",
+            "l_3": "East Hastings",
+            "l_4": "St. Margaret's Bay",
+            "l_5": "Sandwich",
+            "l_6": "Southampton",
+            "l_7": "Bristol",
+            "l_8": "River Blackwater",
+            "l_9": "Whitstable",
+            "l_10": "Thames Estuary",
+            "l_11": "Harwich",
+            "l_12": "North Sea"
+        },
+        "events": {
+            "e_1": "Attack on London",
+            "e_2": "Closure of the Coastal Belt",
+            "e_3": "Deployment of Diver Box Defense",
+            "e_4": "Renewed Attacks on London"
+        },
+        "organisations": {
+            "o_1": "Anti-Aircraft Command",
+            "o_2": "R.E.M.E. Services",
+            "o_3": "21st Army Group",
+            "o_4": "Ministry of Aircraft Production"
+        }
+    },
+    "keywords": [
+        "Heavy guns",
+        "Anti-Aircraft",
+        "flying bombs",
+        "defence",
+        "training",
+        "rocket batteries"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Training and Development"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_2",
+            "e_3"
+        ],
+        "Training and Development": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "General Eisenhower sustains a pivotal role in the defense of London against flying bomb attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "August 10, 1944",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The closure of the coastal belt is executed as the eastward advance of the armies in France changes strategic needs."
+        },
+        {
+            "event": "e_3",
+            "date": "July 1944",
+            "locations": [
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Deployment of the Diver Box defense occurs in response to German launching sites, enhancing coastal protections."
+        },
+        {
+            "event": "e_4",
+            "date": "September 16, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Renewed attacks on London demonstrate the persistence of aerial assaults, calling for increased defenses."
+        }
+    ]
+}

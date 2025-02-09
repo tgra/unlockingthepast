@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Carton de Wiart",
+            "p_2": "Admiral Vivian",
+            "p_3": "General Audet",
+            "p_4": "Brigadier Phillips",
+            "p_5": "Captain Fleming",
+            "p_6": "Captain Lindsay"
+        },
+        "locations": {
+            "l_1": "Namsos",
+            "l_2": "Trondheim",
+            "l_3": "Mosjoen",
+            "l_4": "Grong",
+            "l_5": "Namsen Fiord"
+        },
+        "events": {
+            "e_1": "Evacuation of Namsos",
+            "e_2": "Air attacks on Namsos",
+            "e_3": "Landing of military units at Namsos",
+            "e_4": "Operation to delay enemy advance"
+        },
+        "organisations": {
+            "o_1": "North Western Expeditionary Force",
+            "o_2": "Fleet Air Arm",
+            "o_3": "R.A.F.",
+            "o_4": "French battalion",
+            "o_5": "Royal Marine Howitzer battery"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "military operation",
+        "Namsos",
+        "air attack",
+        "rearguard",
+        "landing",
+        "French contingent"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation",
+        "Air Support",
+        "Strategic Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Evacuation": [
+            "e_1"
+        ],
+        "Air Support": [
+            "e_2"
+        ],
+        "Strategic Defense": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1st May to 3rd May 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of Namsos is planned and executed between 1st and 3rd May 1940, following heavy air attacks and military logistics challenges."
+        },
+        {
+            "event": "e_2",
+            "date": "25th April to 3rd May 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "British aircraft begin providing air support over Namsos, improving the air situation temporarily amidst ongoing enemy attacks."
+        },
+        {
+            "event": "e_3",
+            "date": "28th April 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Military units, including a Royal Marine Howitzer battery, successfully land at Namsos to bolster defenses."
+        },
+        {
+            "event": "e_4",
+            "date": "30th April 1940",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "General Carton de Wiart plans a strategic defense to delay enemy forces entering Mosjoen during the evacuation."
+        }
+    ]
+}

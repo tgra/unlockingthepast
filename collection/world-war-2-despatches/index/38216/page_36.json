@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "R. D. I. Scott"
+        },
+        "locations": {
+            "l_1": "Kuantan",
+            "l_2": "Singora",
+            "l_3": "Sembawang",
+            "l_4": "Kallang",
+            "l_5": "N.E.I.",
+            "l_6": "Alor Star",
+            "l_7": "Butterworth",
+            "l_8": "Taiping",
+            "l_9": "Ipoh",
+            "l_10": "Sungei Patani",
+            "l_11": "Malaya",
+            "l_12": "S.E. Siam",
+            "l_13": "Indo-China"
+        },
+        "events": {
+            "e_1": "Japanese attack on ships",
+            "e_2": "Arrival of Dutch Reinforcements",
+            "e_3": "Bombing of aerodromes in N.W. Malaya",
+            "e_4": "Withdrawal of ground parties"
+        },
+        "organisations": {
+            "o_1": "A.H.Q.",
+            "o_2": "R.A.F.",
+            "o_3": "R.A.A.F."
+        }
+    },
+    "keywords": [
+        "Japanese attack",
+        "Dutch Reinforcements",
+        "aerodrome bombing",
+        "R.A.F. withdrawal",
+        "military operations",
+        "air units",
+        "morale"
+    ],
+    "themes": [
+        "Military Operations",
+        "Reinforcement Strategies",
+        "Air Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Reinforcement Strategies": [
+            "e_2"
+        ],
+        "Air Defense": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 10, 1941",
+            "locations": [
+                "l_1",
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Japanese forces press an attack leading to the sinking of allied ships, which severely impacts morale."
+        },
+        {
+            "event": "e_2",
+            "date": "December 10, 1941",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Dutch Bomber and Fighter Squadrons arrive in Malaya as part of a mutual reinforcement plan."
+        },
+        {
+            "event": "e_3",
+            "date": "December 10, 1941",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Continuous bombings of RAF aerodromes in Northern Malaya force a strategic evacuation."
+        },
+        {
+            "event": "e_4",
+            "date": "December 10, 1941",
+            "locations": [
+                "l_1",
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Ground parties successfully withdraw under severe enemy attacks while facing significant challenges."
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Clark"
+        },
+        "locations": {
+            "l_1": "Bologna",
+            "l_2": "Florence",
+            "l_3": "Pisa",
+            "l_4": "Assisi",
+            "l_5": "Siena",
+            "l_6": "Adriatic Coast",
+            "l_7": "Pontedera",
+            "l_8": "Empoli",
+            "l_9": "Lucca",
+            "l_10": "Pistoia",
+            "l_11": "Dicomano",
+            "l_12": "Imola",
+            "l_13": "Modena",
+            "l_14": "Ferrara",
+            "l_15": "Ostiglia"
+        },
+        "events": {
+            "e_1": "Attack on the Gothic Line",
+            "e_2": "Creation of Task Force 45",
+            "e_3": "Operational Plans for Fifth Army and Eighth Army"
+        },
+        "organisations": {
+            "o_1": "Fifth Army",
+            "o_2": "Eighth Army"
+        }
+    },
+    "keywords": [
+        "Gothic Line",
+        "Task Force 45",
+        "Fifth Army",
+        "Eighth Army",
+        "operational plans"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Force Organization"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ],
+        "Force Organization": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Between 5th and 10th August",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4",
+                "l_9",
+                "l_10",
+                "l_13",
+                "l_14"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The attack on the Gothic Line is planned to penetrate the center between Dicomano and Pistoia, aiming to secure key locations and destroy enemy forces south of the Po."
+        },
+        {
+            "event": "e_2",
+            "date": "24th July",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Creation of Task Force 45, a collective strength from American and British units, is established to bolster Fifth Army's defensive capabilities."
+        },
+        {
+            "event": "e_3",
+            "date": "Various Dates (not specified)",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Operational plans are formed for both Fifth and Eighth Armies, with strategic considerations for their advances and attacks against the enemy."
+        }
+    ]
+}

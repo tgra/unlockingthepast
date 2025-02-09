@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A.E.A.F.",
+            "p_2": "R.A.F.",
+            "p_3": "A.D.G.B.",
+            "p_4": "R.A.F. Bomber Command",
+            "p_5": "Second British Tactical Air Force"
+        },
+        "locations": {
+            "l_1": "Scillies",
+            "l_2": "Ushant",
+            "l_3": "St. Albans Head",
+            "l_4": "Cap de la Hague",
+            "l_5": "Brest",
+            "l_6": "Bay of Biscay",
+            "l_7": "Channel",
+            "l_8": "Channel Islands",
+            "l_9": "Frisian Islands"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "Anti-U-Boat Operations",
+            "e_3": "Anti-Shipping Operations"
+        },
+        "organisations": {
+            "o_1": "R.A.F. Coastal Command",
+            "o_2": "A.E.A.F.",
+            "o_3": "R.A.F. Bomber Command",
+            "o_4": "Second British Tactical Air Force",
+            "o_5": "Allied forces"
+        }
+    },
+    "keywords": [
+        "U-boats",
+        "aircraft",
+        "naval vessels",
+        "Channel Stop squadrons",
+        "anti-submarine patrols"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Air Operations",
+        "Anti-Shipping"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_2",
+            "e_3"
+        ],
+        "Air Operations": [
+            "e_2",
+            "e_3"
+        ],
+        "Anti-Shipping": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "6 June 1944",
+            "locations": [
+                "l_7",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "D-Day marks the start of the Normandy invasion, where Allied forces land on the beaches of France to initiate a critical military operation."
+        },
+        {
+            "event": "e_2",
+            "date": "June - September 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Anti-U-Boat Operations involve coordinated efforts by R.A.F. Coastal Command to patrol and attack enemy U-boats attempting to disrupt the Allied invasion."
+        },
+        {
+            "event": "e_3",
+            "date": "June - August 1944",
+            "locations": [
+                "l_6",
+                "l_5",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Anti-Shipping Operations entail aggressive attacks against enemy surface vessels and merchant shipping, resulting in significant damage to the enemy fleet."
+        }
+    ]
+}

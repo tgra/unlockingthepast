@@ -1,0 +1,91 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Senior Officer",
+            "p_2": "pom-pom gunner"
+        },
+        "locations": {
+            "l_1": "Vir light",
+            "l_2": "Zara",
+            "l_3": "Vir Point",
+            "l_4": "south",
+            "l_5": "north"
+        },
+        "events": {
+            "e_1": "Engagement with enemy F-lighters",
+            "e_2": "Sinkage of E-boat"
+        },
+        "organisations": {
+            "o_1": "H.M.M.T.B.637",
+            "o_2": "H.M.M.T.B.638",
+            "o_3": "H.M.M.G.B.662"
+        }
+    },
+    "keywords": [
+        "engagement",
+        "F-lighter",
+        "E-boat",
+        "torpedoes",
+        "starshell",
+        "fire"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Tactical Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_1"
+        ],
+        "Tactical Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Engagement with enemy F-lighters occurs with significant gunfire and torpedo attacks. Multiple vessels are set ablaze, showcasing effective naval combat tactics."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An E-boat is observed and successfully targeted, resulting in its sinking amidst the engagement with enemy forces."
+        }
+    ]
+}

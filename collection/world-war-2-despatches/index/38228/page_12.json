@@ -1,0 +1,136 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commodore Graham",
+            "p_2": "General Hutton",
+            "p_3": "General Alexander"
+        },
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "Mandalay",
+            "l_3": "Lashio",
+            "l_4": "Chindwin",
+            "l_5": "Assam",
+            "l_6": "Andaman Islands",
+            "l_7": "Bhamo",
+            "l_8": "Myitkyina",
+            "l_9": "Rangoon",
+            "l_10": "Akyab",
+            "l_11": "Tenasserim",
+            "l_12": "Salween River",
+            "l_13": "Thailand",
+            "l_14": "Kalewa",
+            "l_15": "Tamu",
+            "l_16": "Port Blair"
+        },
+        "events": {
+            "e_1": "Withdrawal of Imperial Forces",
+            "e_2": "Capture of Lashio",
+            "e_3": "Occupation of Port Blair",
+            "e_4": "Withdrawal of Garrison from Akyab"
+        },
+        "organisations": {
+            "o_1": "Imperial Forces",
+            "o_2": "Fifth Army",
+            "o_3": "British Military Authorities"
+        }
+    },
+    "keywords": [
+        "Burma Campaign",
+        "Japanese Invasion",
+        "Military Strategy",
+        "Air Support"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Deficiencies",
+        "Geopolitical Impact",
+        "Intelligence Failures"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Deficiencies": [
+            "e_1",
+            "e_4"
+        ],
+        "Geopolitical Impact": [
+            "e_1",
+            "e_3"
+        ],
+        "Intelligence Failures": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "End of March",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Imperial Forces decide to withdraw due to enemy pressure and strategic needs."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Enemy forces quickly capture Lashio, exacerbating the need for a tactical withdrawal."
+        },
+        {
+            "event": "e_3",
+            "date": "March 23rd",
+            "locations": [
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Japanese forces occupy Port Blair, marking a significant loss in the Burma Campaign."
+        },
+        {
+            "event": "e_4",
+            "date": "Early May",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The garrison at Akyab is withdrawn due to rising Japanese threats."
+        }
+    ]
+}

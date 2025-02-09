@@ -1,0 +1,104 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Not specified"
+        },
+        "locations": {
+            "l_1": "Far East",
+            "l_2": "Japan",
+            "l_3": "United Kingdom"
+        },
+        "events": {
+            "e_1": "Outbreak of War with Japan",
+            "e_2": "Flying Bomb Battle",
+            "e_3": "Disbanding of Batteries"
+        },
+        "organisations": {
+            "o_1": "Anti-Aircraft Command",
+            "o_2": "R.A.S.C."
+        }
+    },
+    "keywords": [
+        "Anti-Aircraft",
+        "Equipment",
+        "Batteries",
+        "Flying Bomb",
+        "Searchlights"
+    ],
+    "themes": [
+        "Military Operations",
+        "Equipment Development",
+        "Manpower Challenges",
+        "Tactical Employment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Equipment Development": [
+            "e_2"
+        ],
+        "Manpower Challenges": [
+            "e_3"
+        ],
+        "Tactical Employment": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 1941",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The outbreak of war with Japan causes significant shifts in military resource allocation within the Anti-Aircraft Command."
+        },
+        {
+            "event": "e_2",
+            "date": "June 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "During the flying bomb battle, various anti-aircraft weapons are employed and new tactics are implemented to counter the aerial threat."
+        },
+        {
+            "event": "e_3",
+            "date": "November 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Batteries that had become non-operational are officially disbanded due to manpower and equipment shortages."
+        }
+    ]
+}

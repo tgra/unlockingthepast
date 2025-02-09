@@ -1,0 +1,156 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral Syfret",
+            "p_2": "Vice-Admiral"
+        },
+        "locations": {
+            "l_1": "Gibraltar",
+            "l_2": "Malta",
+            "l_3": "Skerki Channel",
+            "l_4": "Cape Bon",
+            "l_5": "Galita Channel",
+            "l_6": "Cape Tarifa",
+            "l_7": "Europa"
+        },
+        "events": {
+            "e_1": "Operation M.G.z",
+            "e_2": "Departure from Gibraltar",
+            "e_3": "Movement of destroyers from Gibraltar",
+            "e_4": "Meeting of Forces H and X",
+            "e_5": "Reconnaissance flight by Swordfish"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Operation",
+        "Destroyers",
+        "Forces",
+        "Gibraltar",
+        "Malta",
+        "Reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Logistics",
+        "Weather Impact"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_4"
+        ],
+        "Weather Impact": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "July 13",
+            "locations": [
+                "l_2",
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The operation M.G.z begins with plans to sail and split into three groups while maintaining best speed and strategy based on the Admiralty's priorities."
+        },
+        {
+            "event": "e_2",
+            "date": "July 21",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The HM ships depart from Gibraltar, facing delays caused by heavy squalls and fog, requiring adjustments to their sailing programme before proceeding eastward."
+        },
+        {
+            "event": "e_3",
+            "date": "July 14",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The first movement of destroyers from Gibraltar occurs, aimed at ensuring safe transfer of personnel and optimal fuel capacity under the cover of darkness."
+        },
+        {
+            "event": "e_4",
+            "date": "July 21",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Forces H and X rendezvous as planned, ensuring coordination between naval units during the operation's execution."
+        },
+        {
+            "event": "e_5",
+            "date": "July 21",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A reconnaissance mission is conducted by Swordfish aircraft to locate ships involved in the operation, contributing to operational intelligence."
+        }
+    ]
+}

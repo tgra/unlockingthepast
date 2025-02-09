@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral Syfret",
+            "p_2": "Capitaine Clavel",
+            "p_3": "Brigadier Festing",
+            "p_4": "Brigadier Tarleton",
+            "p_5": "Lieutenant-Colonel H. C. Stockwell",
+            "p_6": "Lieutenant-Colonel B. H. Hanaut",
+            "p_7": "Colonel Claerebout",
+            "p_8": "Capitaine de Vaisseau Maerten",
+            "p_9": "Capitaine de Vaisseau Simon",
+            "p_10": "Colonel Rouves"
+        },
+        "locations": {
+            "l_1": "Antsirane",
+            "l_2": "Orangea Peninsula",
+            "l_3": "Bellevue Fort",
+            "l_4": "Ambatolambo",
+            "l_5": "Diego Suarez"
+        },
+        "events": {
+            "e_1": "Assault by H.M.S. Anthony",
+            "e_2": "Final Occupation of Antsirane",
+            "e_3": "Negotiation for Surrender of the Garrison",
+            "e_4": "Bombardment of Enemy Positions"
+        },
+        "organisations": {
+            "o_1": "Royal Marines",
+            "o_2": "2 Royal Welsh Fusiliers",
+            "o_3": "17 Infantry Brigade",
+            "o_4": "29 Independent Brigade",
+            "o_5": "Royal Navy",
+            "o_6": "Fleet Air Arm"
+        }
+    },
+    "keywords": [
+        "Assault",
+        "Negotiate Surrender",
+        "Bombardment",
+        "Occupation",
+        "Prisoners of War"
+    ],
+    "themes": [
+        "Military Operations",
+        "Surrender Negotiations",
+        "Strategic Decisions",
+        "Naval Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Surrender Negotiations": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "7th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "H.M.S. Anthony, under the command of Rear Admiral Syfret, performs a direct assault on the town of Antsirane with 50 Royal Marines, engaging in firefights and successfully disembarking despite enemy fire."
+        },
+        {
+            "event": "e_2",
+            "date": "After 7th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_3",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Brigadier Festing takes command of Antsirane, following the cessation of resistance and strategizes to capture the Orangea Peninsula to enhance naval operations."
+        },
+        {
+            "event": "e_3",
+            "date": "8th May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_7",
+                "p_8",
+                "p_9",
+                "p_10"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Negotiations for the surrender of the garrison at the Orangea Peninsula occur, despite initial bombardment plans, leading to discussions with French commanders."
+        },
+        {
+            "event": "e_4",
+            "date": "8th May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A planned bombardment of enemy positions on the Orangea Peninsula takes place to support the advancing troops before a ceasefire is established during surrender negotiations."
+        }
+    ]
+}

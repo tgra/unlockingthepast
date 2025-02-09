@@ -1,0 +1,116 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Crisbecq",
+            "l_2": "St. Martin de Varreville",
+            "l_3": "Quistreham",
+            "l_4": "Maisy",
+            "l_5": "Mont Fleury",
+            "l_6": "La Parnelle",
+            "l_7": "St. Pierre du Mont",
+            "l_8": "Merville/Franceville",
+            "l_9": "Houlgate",
+            "l_10": "Longues",
+            "l_11": "Cherbourg",
+            "l_12": "St. Malo",
+            "l_13": "Brest"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "D + 1"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "United States Eighth Air Force",
+            "o_3": "Fleet Air Arm",
+            "o_4": "A.E.A.F.",
+            "o_5": "R.A.F. Bomber Command",
+            "o_6": "R.A.F. Second Tactical Air Force"
+        }
+    },
+    "keywords": [
+        "Coastal Command",
+        "sorties",
+        "naval forces",
+        "air bombardment",
+        "D-Day",
+        "naval gunfire"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Naval Operations",
+        "Coastal Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Operations": [
+            "e_1"
+        ],
+        "Coastal Defense": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "6th June",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On D-Day, the Allied air forces conduct extensive sorties to provide air cover and bombard coastal defenses prior to the assault landing."
+        },
+        {
+            "event": "e_2",
+            "date": "7th June",
+            "locations": [
+                "l_11",
+                "l_12",
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On D + 1, the United States Eighth Air Force continues bombardment efforts and supports naval operations following the initial landings."
+        }
+    ]
+}

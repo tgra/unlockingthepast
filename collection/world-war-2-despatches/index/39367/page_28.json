@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Marshal Tito"
+        },
+        "locations": {
+            "l_1": "Germany",
+            "l_2": "Italy",
+            "l_3": "Jugoslavia",
+            "l_4": "Austria",
+            "l_5": "Danubian Plains",
+            "l_6": "SouthEast Europe",
+            "l_7": "Vienna",
+            "l_8": "Western Hungary",
+            "l_9": "Rubland"
+        },
+        "events": {
+            "e_1": "Italian Offensive",
+            "e_2": "Air Campaign against Enemy Oil Resources",
+            "e_3": "Bombing Campaign in March and April 1945"
+        },
+        "organisations": {
+            "o_1": "Mediterranean Allied Tactical Air Force",
+            "o_2": "Mediterranean Allied Coastal Air Force",
+            "o_3": "Balkan Air Force",
+            "o_4": "M.A.A.F.",
+            "o_5": "M.A.S.A.F.",
+            "o_6": "M.A.C.A.F.",
+            "o_7": "VIIIth Air Force",
+            "o_8": "Bomber Command"
+        }
+    },
+    "keywords": [
+        "bombing",
+        "communications",
+        "oil targets",
+        "offensive air operations",
+        "support",
+        "supply dumps",
+        "reconnaissance",
+        "Jugoslav Army"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence and Reconnaissance",
+        "Support for Local Forces",
+        "Air Campaigns"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Intelligence and Reconnaissance": [
+            "e_3"
+        ],
+        "Support for Local Forces": [
+            "e_1"
+        ],
+        "Air Campaigns": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_2",
+            "date": "March 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The air campaign against enemy oil targets reaches near complete success as Allied forces target key refineries, significantly diminishing the enemy's fuel production capabilities."
+        },
+        {
+            "event": "e_1",
+            "date": "March 1945",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Italian Offensive aims to provide support for the Fourth Jugoslav Army, leveraging air support from the BAF and allied forces to disrupt enemy communications and supply lines."
+        },
+        {
+            "event": "e_3",
+            "date": "March-April 1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2",
+                "e_1"
+            ],
+            "eventSummary": "The bombing efforts in March and early April focus on the destruction of enemy oil resources and the interdiction of their communications as part of strategic military operations."
+        }
+    ]
+}

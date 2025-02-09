@@ -1,0 +1,91 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant-Commander J. E. H. McBeath, D.S.O., R.N.",
+            "p_2": "Captain G. N. Oliver, R.N."
+        },
+        "locations": {
+            "l_1": "Gibraltar",
+            "l_2": "Malta",
+            "l_3": "Sicilian coast",
+            "l_4": "Pantellaria harbour",
+            "l_5": "Talbot Bank"
+        },
+        "events": {
+            "e_1": "Torpedoing of M.V. IMPERIAL STAR",
+            "e_2": "Bombardment of Pantellaria harbour",
+            "e_3": "Operation Substance"
+        },
+        "organisations": {
+            "o_1": "Naval Liaison Officer",
+            "o_2": "10th Cruiser Squadron",
+            "o_3": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "torpedo",
+        "damaged",
+        "tow",
+        "scuttled",
+        "bombardment"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Tactics",
+        "Rescue Operations",
+        "Minefields"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Tactics": [
+            "e_3"
+        ],
+        "Rescue Operations": [
+            "e_1"
+        ],
+        "Minefields": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2032",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The M.V. IMPERIAL STAR is torpedoed, causing severe flooding and loss of propulsion, leading to efforts to tow her for safety."
+        },
+        {
+            "event": "e_2",
+            "date": "2030",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The ship HERMIONE executes a successful bombardment of Pantellaria harbour, creating a significant diversion for the convoy."
+        }
+    ]
+}

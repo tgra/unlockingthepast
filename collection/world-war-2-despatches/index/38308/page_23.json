@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Bernard Rawlings",
+            "p_2": "Philip Vian",
+            "p_3": "Kincaid",
+            "p_4": "J. L. Kauffman",
+            "p_5": "R. O. Davis",
+            "p_6": "E. M. Evans-Lombe",
+            "p_7": "J. R. Allfrey",
+            "p_8": "E. C. Ewen"
+        },
+        "locations": {
+            "l_1": "Leyte",
+            "l_2": "San Pedro Roads",
+            "l_3": "Ulithi",
+            "l_4": "Manus",
+            "l_5": "Guam"
+        },
+        "events": {
+            "e_1": "Operation on 27th March",
+            "e_2": "Bombardment cancelled on 6th May",
+            "e_3": "Arrival at Leyte on 23rd April"
+        },
+        "organisations": {
+            "o_1": "United States Fifth Fleet",
+            "o_2": "Fleet Train",
+            "o_3": "British Fleet",
+            "o_4": "R.A.F.T."
+        }
+    },
+    "keywords": [
+        "night fighters",
+        "air-sea rescue",
+        "bombardment",
+        "fleet replenishment",
+        "morale"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Personnel Welfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_3"
+        ],
+        "Personnel Welfare": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th March",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Night operations on 27th March were marked by successful strikes from the aircraft carrier Indomitable, which launched a Hellcat that drove off enemy aircraft."
+        },
+        {
+            "event": "e_2",
+            "date": "6th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A planned bombardment on 6th May is cancelled due to adverse weather and damage to carrier aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Task Force 57 arrives at Leyte on 23rd April to conduct repairs and replenishment after extensive operations."
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mussolini",
+            "p_2": "Marshal Badoglio",
+            "p_3": "General Eisenhower",
+            "p_4": "Admiral Cunningham",
+            "p_5": "Air Marshal Tedder",
+            "p_6": "General Clark"
+        },
+        "locations": {
+            "l_1": "Naples",
+            "l_2": "Taranto",
+            "l_3": "Calabria",
+            "l_4": "Apulia",
+            "l_5": "Cotrone",
+            "l_6": "Scalea",
+            "l_7": "Catania",
+            "l_8": "Balkans",
+            "l_9": "Carthage",
+            "l_10": "Gulf of Salerno",
+            "l_11": "Sicily",
+            "l_12": "Campania",
+            "l_13": "Bay of Naples"
+        },
+        "events": {
+            "e_1": "Operation AVALANCHE",
+            "e_2": "Fall of Mussolini",
+            "e_3": "Conference at Carthage"
+        },
+        "organisations": {
+            "o_1": "Fascist Party",
+            "o_2": "Allied Forces",
+            "o_3": "VI United States Corps",
+            "o_4": "10 British Corps",
+            "o_5": "Fifth Army"
+        }
+    },
+    "keywords": [
+        "Naples",
+        "Taranto",
+        "Mussolini",
+        "Badoglio",
+        "Allied Forces",
+        "Operation AVALANCHE",
+        "Carthage",
+        "Calabria",
+        "Catania"
+    ],
+    "themes": [
+        "Military Operations",
+        "Political Changes",
+        "Strategic Decisions",
+        "Military Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Political Changes": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "7th September",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_10"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operation AVALANCHE is planned for an assault landing in Naples to secure a base for further offensive operations."
+        },
+        {
+            "event": "e_2",
+            "date": "25th July",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The fall of Mussolini leads to the suppression of the Fascist party and the rise of Marshal Badoglio."
+        },
+        {
+            "event": "e_3",
+            "date": "26th July",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A conference at Carthage is attended by Allied leaders to discuss increased risks following the fall of Mussolini."
+        }
+    ]
+}

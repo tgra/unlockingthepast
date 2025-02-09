@@ -1,0 +1,145 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C.-in-C. Far East",
+            "p_2": "A.O.C.",
+            "p_3": "G.H.Q.",
+            "p_4": "Commander of IIIrd Corps",
+            "p_5": "the Dutch Fighter Squadron",
+            "p_6": "H.Q.M.C."
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "Bangka Straits",
+            "l_4": "E. Sumatra",
+            "l_5": "Kallang",
+            "l_6": "Palembang",
+            "l_7": "Kuala Lumpur",
+            "l_8": "Port Swettenham",
+            "l_9": "Johore",
+            "l_10": "Mersing",
+            "l_11": "Kota Bahru",
+            "l_12": "Central Malaya",
+            "l_13": "Batu Pahat"
+        },
+        "events": {
+            "e_1": "Arrival of Reinforcement Convoy",
+            "e_2": "Withdrawal of the Army to Johore",
+            "e_3": "Japanese Landing at Telok Anson",
+            "e_4": "Evacuation of Kuala Lumpur and Port Swettenham"
+        },
+        "organisations": {
+            "o_1": "IIIrd Corps",
+            "o_2": "R.A.F.",
+            "o_3": "Air Force in Malaya",
+            "o_4": "Dutch Fighter Squadron"
+        }
+    },
+    "keywords": [
+        "Reinforcement Convoy",
+        "Air Protection",
+        "Japanese Army",
+        "Strategic Movements",
+        "Defensive Operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategy",
+        "Air Force Coordination",
+        "Reinforcement Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defensive Strategy": [
+            "e_3",
+            "e_4"
+        ],
+        "Air Force Coordination": [
+            "e_1"
+        ],
+        "Reinforcement Logistics": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "3rd January",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The first convoy arrives in Singapore, carrying crucial troops and equipment."
+        },
+        {
+            "event": "e_2",
+            "date": "mid-January",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Army withdraws to Johore as the situation deteriorates."
+        },
+        {
+            "event": "e_3",
+            "date": "27th December",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Japanese forces successfully land at Telok Anson, forcing an Army withdrawal."
+        },
+        {
+            "event": "e_4",
+            "date": "10th January",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Kuala Lumpur and Port Swettenham occurs, marking a significant tactical retreat."
+        }
+    ]
+}

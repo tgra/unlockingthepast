@@ -1,0 +1,90 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Vice-Marshal E. L. Gossage",
+            "p_2": "Commander-in-Chief, Home Forces"
+        },
+        "locations": {
+            "l_1": "Kenley",
+            "l_2": "Biggin Hill",
+            "l_3": "Manston",
+            "l_4": "Hawkinge",
+            "l_5": "Salisbury Plain"
+        },
+        "events": {
+            "e_1": "Bombing Attacks on Fighter Aerodromes",
+            "e_2": "Aerodrome Defense Strategies"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Air Ministry"
+        }
+    },
+    "keywords": [
+        "Fighter aerodromes",
+        "Bombing attacks",
+        "Aerodrome defense",
+        "Morale",
+        "Operations Room",
+        "Dispersal",
+        "Home Defence"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Defense": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October 1940",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Bombing attacks on Fighter aerodromes result in significant damage, particularly through direct hits on shelter trenches and hangars, yet many aerodromes remain operational due to numerous alternatives."
+        },
+        {
+            "event": "e_2",
+            "date": "1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Aerodrome defense strategies are devised to cope with mounting bombing threats, including troop allocations and the construction of Operations Rooms away from direct hits to ensure continuity of command."
+        }
+    ]
+}

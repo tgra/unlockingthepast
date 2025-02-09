@@ -1,0 +1,119 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Kesselring",
+            "p_2": "Graziani"
+        },
+        "locations": {
+            "l_1": "Zagreb",
+            "l_2": "Southern France",
+            "l_3": "Genoa",
+            "l_4": "Franco-Italian frontier",
+            "l_5": "Pontassieve",
+            "l_6": "Sansepolcro",
+            "l_7": "Bologna",
+            "l_8": "Florence",
+            "l_9": "Viareggio",
+            "l_10": "Northern Italy",
+            "l_11": "Spezia",
+            "l_12": "Mediterranean theatre"
+        },
+        "events": {
+            "e_1": "Allied invasion of Southern France",
+            "e_2": "Kesselring's strategic deployment to Genoa",
+            "e_3": "Defensive actions of the Army of Liguria"
+        },
+        "organisations": {
+            "o_1": "Hermann Goering Panzer Division",
+            "o_2": "Nineteenth Army",
+            "o_3": "Eighth Army",
+            "o_4": "Armoured Brigade",
+            "o_5": "Army Group command"
+        }
+    },
+    "keywords": [
+        "German divisions",
+        "Italian divisions",
+        "Panzer Grenadier",
+        "Allied invasion",
+        "military strategy",
+        "defensive actions"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Deployments",
+        "Allied Invasions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Deployments": [
+            "e_2"
+        ],
+        "Allied Invasions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 15, 1944",
+            "locations": [
+                "l_2",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Allied forces initiate an invasion of Southern France, significantly impacting German troop deployments in the Mediterranean region."
+        },
+        {
+            "event": "e_2",
+            "date": "August 13, 1944",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "In response to the Allied invasion, Kesselring directs the Panzer Grenadier Division to Genoa to fortify defenses against the anticipated attack."
+        },
+        {
+            "event": "e_3",
+            "date": "Post-August 15, 1944",
+            "locations": [
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Army of Liguria, led by Marshal Graziani, undertakes defensive operations along the Ligurian coast, although struggling against the Allied advances."
+        }
+    ]
+}

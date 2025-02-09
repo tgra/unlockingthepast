@@ -1,0 +1,130 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral",
+            "p_2": "Commander J. C. Clouston"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "Gravelines",
+            "l_3": "United Kingdom",
+            "l_4": "Bergues",
+            "l_5": "Ramsgate",
+            "l_6": "Channel",
+            "l_7": "W. Buoy"
+        },
+        "events": {
+            "e_1": "Evacuation from Dunkirk",
+            "e_2": "Hospital Ship Attacks",
+            "e_3": "Counter Attack near Bergues",
+            "e_4": "B.E.F. Evacuation"
+        },
+        "organisations": {
+            "o_1": "British Expeditionary Force (B.E.F.)",
+            "o_2": "R.A.F."
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Hospital Ships",
+        "Dunkirk",
+        "Naval Conference",
+        "Air Attacks"
+    ],
+    "themes": [
+        "Military Operations",
+        "Casualties and Rescue",
+        "Naval Logistics",
+        "Counter-Offensive Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "3rd June",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The evacuation from Dunkirk is ongoing, focusing on a night operation to transport troops amidst various challenges and enemy actions."
+        },
+        {
+            "event": "e_2",
+            "date": "3rd June",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "As the evacuation continues, Hospital Ships are attacked while attempting to rescue the wounded, facing enemy aircraft in the Channel."
+        },
+        {
+            "event": "e_3",
+            "date": "3rd June",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A counter-attack by French forces occurs near Bergues as the Germans penetrate the front line, affecting the overall evacuation strategy."
+        },
+        {
+            "event": "e_4",
+            "date": "3rd June",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The British Expeditionary Force (B.E.F.) reports successful evacuation efforts amidst dwindling troop numbers and logistical challenges."
+        }
+    ]
+}

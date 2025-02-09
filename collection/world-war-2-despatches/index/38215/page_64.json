@@ -1,0 +1,145 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Group Captain Rice",
+            "p_2": "Commander, 3 Indian Corps",
+            "p_3": "C.-in-C. Far East",
+            "p_4": "Rajah of Sarawak"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Penang",
+            "l_3": "Alor Star",
+            "l_4": "Sungei Patani",
+            "l_5": "Kota Bharu",
+            "l_6": "Kuantan",
+            "l_7": "Kuala Lumpur",
+            "l_8": "Ipoh",
+            "l_9": "Borneo",
+            "l_10": "British North Borneo",
+            "l_11": "Labuan Island",
+            "l_12": "Brunei",
+            "l_13": "Sarawak"
+        },
+        "events": {
+            "e_1": "Opening of Hostilities",
+            "e_2": "Air Defence Scheme Implementation",
+            "e_3": "Defense of Aerodromes Strategy",
+            "e_4": "Garrison Strength Assessment in Borneo"
+        },
+        "organisations": {
+            "o_1": "Anti-Aircraft Artillery",
+            "o_2": "British North Borneo Company",
+            "o_3": "Malayan Volunteer Units",
+            "o_4": "Indian State Force Units"
+        }
+    },
+    "keywords": [
+        "anti-aircraft artillery",
+        "defence",
+        "hostilities",
+        "aerodromes",
+        "Borneo",
+        "Singapore"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategy",
+        "Air Defence Coordination",
+        "Colonial Administration"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Defensive Strategy": [
+            "e_2",
+            "e_4"
+        ],
+        "Air Defence Coordination": [
+            "e_2"
+        ],
+        "Colonial Administration": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1941",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_6",
+                "l_9"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Hostilities open with a significant lack of trained personnel and available artillery, requiring organizational changes."
+        },
+        {
+            "event": "e_2",
+            "date": "Summer 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Group Captain Rice leads the implementation of a coordinated Air Defence scheme to strengthen responses."
+        },
+        {
+            "event": "e_3",
+            "date": "1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A strategy prioritizes the defence of aerodromes over other military objectives, though resources are limited."
+        },
+        {
+            "event": "e_4",
+            "date": "September 1941",
+            "locations": [
+                "l_10",
+                "l_11",
+                "l_12",
+                "l_13"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Assessment of garrison strength in Borneo shows inadequate resources for effective defense amidst strategic importance."
+        }
+    ]
+}

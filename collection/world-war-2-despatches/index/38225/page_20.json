@@ -1,0 +1,107 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain R. M. J. Hurton",
+            "p_2": "Captain B. Clark"
+        },
+        "locations": {
+            "l_1": "Red Beach",
+            "l_2": "Windsor Castle",
+            "l_3": "Nosi Hara",
+            "l_4": "Diego Suarez",
+            "l_5": "Nosi Fati"
+        },
+        "events": {
+            "e_1": "Bombardment of Red Beach",
+            "e_2": "A/S patrol and submarine hunt",
+            "e_3": "Escort of convoy to Diego Suarez"
+        },
+        "organisations": {
+            "o_1": "Royal Artillery",
+            "o_2": "Nineteenth Destroyer Flotilla"
+        }
+    },
+    "keywords": [
+        "bombardment",
+        "submarine",
+        "A.S. patrol",
+        "convoy",
+        "artillery"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Coordination": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The bombardment of Red Beach takes place, aiming to support ground forces and provide artillery fire at enemy positions."
+        },
+        {
+            "event": "e_2",
+            "date": "Date not specified",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The LAFOREY conducts anti-submarine patrols and seeks out a submarine reported by GENISTA, providing protection for forces in the area."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not specified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "LAFOREY escorts a convoy from the anchorage to Diego Suarez, successfully entering the harbour."
+        }
+    ]
+}

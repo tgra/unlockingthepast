@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Ritchie",
+            "p_2": "General Koenig"
+        },
+        "locations": {
+            "l_1": "Sidi Muftah",
+            "l_2": "Temrad",
+            "l_3": "Knightsbridge",
+            "l_4": "Bir Hacheim",
+            "l_5": "El Adem",
+            "l_6": "Tobruk",
+            "l_7": "Gazala",
+            "l_8": "Alem Hamza",
+            "l_9": "Cyrenaica",
+            "l_10": "Gebel Akhdar"
+        },
+        "events": {
+            "e_1": "Counter-attack by the Eighth Army",
+            "e_2": "Evacuation of Bir Hacheim",
+            "e_3": "Engagement at El Adem and Knightsbridge",
+            "e_4": "Withdrawal from Gazala"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "150th Infantry Brigade",
+            "o_3": "rst Free French Brigade"
+        }
+    },
+    "keywords": [
+        "Eighth Army",
+        "armoured formations",
+        "anti-tank artillery",
+        "minefields",
+        "counter-attack",
+        "withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Withdrawal",
+        "Armoured Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Tactical Withdrawal": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "4th June",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Eighth Army launches a counter-attack against the enemy's salient, initially recovering ground but eventually faces strong opposition and is halted."
+        },
+        {
+            "event": "e_2",
+            "date": "10th June",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Bir Hacheim is evacuated following heavy enemy pressure, after a heroic defense sustained for nearly two weeks."
+        },
+        {
+            "event": "e_3",
+            "date": "12th June",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Engagements between armoured forces occur around El Adem and Knightsbridge, marking a decisive point in the battle's outcome."
+        },
+        {
+            "event": "e_4",
+            "date": "14th June",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The decision is made to withdraw forces from Gazala due to weakened armoured capabilities and enemy threats."
+        }
+    ]
+}

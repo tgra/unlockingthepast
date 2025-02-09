@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Kesselring",
+            "p_2": "General Hauck",
+            "p_3": "General von Vietinghoff"
+        },
+        "locations": {
+            "l_1": "Alfadena",
+            "l_2": "Civitavecchia",
+            "l_3": "Anzio",
+            "l_4": "Cassino",
+            "l_5": "Liri Valley",
+            "l_6": "Terracina",
+            "l_7": "Naples",
+            "l_8": "Salerno",
+            "l_9": "Monastery Hill",
+            "l_10": "Gustav line"
+        },
+        "events": {
+            "e_1": "Troop Movements and Deception Operations",
+            "e_2": "Attack on the Garigliano",
+            "e_3": "D-Day Planning"
+        },
+        "organisations": {
+            "o_1": "Tenth Army",
+            "o_2": "305 Division",
+            "o_3": "LI Mountain Corps",
+            "o_4": "XIV Panzer Corps",
+            "o_5": "14th Army",
+            "o_6": "Canadian Corps",
+            "o_7": "15 Panzer Grenadier Division",
+            "o_8": "3 Carpathian Division"
+        }
+    },
+    "keywords": [
+        "Deception",
+        "Troop Movements",
+        "Amphibious Operations",
+        "Concealment",
+        "Attack"
+    ],
+    "themes": [
+        "Military Strategy",
+        "Deception Operations",
+        "Amphibious Assault Planning",
+        "Troop Dispositions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 18, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Kesselring adapts enemy troop dispositions to match Allied movements, focusing on deception to mislead about the actual plans for an attack."
+        },
+        {
+            "event": "e_2",
+            "date": "May 12, 1944",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The attack on the Garigliano takes place with significant strategic advantages resulting from deception and misperceptions of troop strengths."
+        },
+        {
+            "event": "e_3",
+            "date": "May 24, 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "D-Day is planned, with significant mistakes made by the enemy regarding the timing and scale of the Allied forces."
+        }
+    ]
+}

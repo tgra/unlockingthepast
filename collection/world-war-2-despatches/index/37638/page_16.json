@@ -1,0 +1,115 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General Freyberg",
+            "p_2": "Brigadier Chappell",
+            "p_3": "Brigadier Vasey"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Palestine",
+            "l_3": "Egypt",
+            "l_4": "Suda Bay",
+            "l_5": "Maleme",
+            "l_6": "Canea",
+            "l_7": "Heraklion",
+            "l_8": "Albania"
+        },
+        "events": {
+            "e_1": "German attack on Crete",
+            "e_2": "Evacuation from Greece",
+            "e_3": "British forces sent to Crete"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Mobile Naval Base Defence Organisation (M.N.B.D.O.)",
+            "o_3": "2nd Battalion The Black Watch",
+            "o_4": "1st York and Lancaster Regiment"
+        }
+    },
+    "keywords": [
+        "Crete",
+        "German attack",
+        "defensive operations",
+        "evacuation",
+        "Royal Navy",
+        "British forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategy",
+        "Logistics and Supply",
+        "International Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Defensive Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "International Cooperation": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A large scale German attack occurs on Crete, necessitating an immediate defensive response from the troops stationed there."
+        },
+        {
+            "event": "e_2",
+            "date": "April 1941",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Prior to the German attack on Crete, British forces are evacuated from Greece due to increasing threats from Axis powers."
+        },
+        {
+            "event": "e_3",
+            "date": "November 1, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "British forces are first sent to Crete to secure Suda Bay, establishing a foothold in the Mediterranean."
+        }
+    ]
+}

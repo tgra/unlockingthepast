@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General Carton de Wiart",
+            "p_2": "General Audet"
+        },
+        "locations": {
+            "l_1": "Andalsnes",
+            "l_2": "Namsos",
+            "l_3": "Trondheim",
+            "l_4": "Steinkjer",
+            "l_5": "Kirkenesvaag",
+            "l_6": "Hylla",
+            "l_7": "Tronestangen",
+            "l_8": "Sandvollan",
+            "l_9": "Bangsund"
+        },
+        "events": {
+            "e_1": "Evacuation of Namsos",
+            "e_2": "Landing of Allied Expedition in Central Norway",
+            "e_3": "Arrival of 5th Demi-Brigade of Chasseurs Alpins",
+            "e_4": "Enemy Detachment Landing at Kirkenesvaag"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Allied Forces"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "military operation",
+        "Namsos",
+        "landing",
+        "German forces",
+        "Allied troops",
+        "artillery",
+        "air support"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2nd May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Namsos is successfully completed, with a total of 5,400 troops embarked during the night, amidst challenging fog conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "14th April",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Major-General Carton de Wiart is appointed to command Allied forces in landing operations in Central Norway aimed at securing the Trondheim area."
+        },
+        {
+            "event": "e_3",
+            "date": "19th April",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The 5th Demi-Brigade of Chasseurs Alpins arrives in Namsos but faces heavy bombing and destruction of port facilities upon arrival."
+        },
+        {
+            "event": "e_4",
+            "date": "21st April",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An enemy detachment of 400 German troops lands at Kirkenesvaag, posing a strategic threat to the British 146th Infantry Brigade."
+        }
+    ]
+}

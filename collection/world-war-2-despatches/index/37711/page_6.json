@@ -1,0 +1,168 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unnamed Military Officers",
+            "p_2": "Civil Affairs Personnel",
+            "p_3": "Members of 6 Airborne Division",
+            "p_4": "Members of 3 Parachute Brigades",
+            "p_5": "Members of 5 Parachute Brigades",
+            "p_6": "Members of United States Airborne Division",
+            "p_7": "Members of Bomber Command",
+            "p_8": "Members of Eighth United States Air Force"
+        },
+        "locations": {
+            "l_1": "Caen",
+            "l_2": "Cherbourg",
+            "l_3": "Brittany",
+            "l_4": "Baie de la Seine",
+            "l_5": "Ste. Mère Église",
+            "l_6": "Pouppeville",
+            "l_7": "St. Martin-de-Varreville",
+            "l_8": "Carentan",
+            "l_9": "France"
+        },
+        "events": {
+            "e_1": "Battle of Normandy",
+            "e_2": "Airborne Operations on June 6",
+            "e_3": "Landing Operations at Utah Beaches",
+            "e_4": "Bombing of Coastal Defenses"
+        },
+        "organisations": {
+            "o_1": "British Forces",
+            "o_2": "United States Army",
+            "o_3": "Bomber Command",
+            "o_4": "Eighth United States Air Force",
+            "o_5": "6 Airborne Division",
+            "o_6": "3 Parachute Brigades",
+            "o_7": "5 Parachute Brigades",
+            "o_8": "United States Airborne Division"
+        }
+    },
+    "keywords": [
+        "operations",
+        "airborne",
+        "territory",
+        "advance",
+        "logistics",
+        "communication",
+        "beaches",
+        "civil affairs",
+        "battle"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics and Administration",
+        "Civil Affairs",
+        "Airborne Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics and Administration": [
+            "e_1"
+        ],
+        "Civil Affairs": [
+            "e_1"
+        ],
+        "Airborne Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Battle of Normandy unfolds on June 6, involving complex military operations aimed at securing territory in France."
+        },
+        {
+            "event": "e_2",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The airborne operations commence at 0200 hours, successfully capturing critical bridges and establishing a bridgehead."
+        },
+        {
+            "event": "e_3",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Landing operations commence at Utah Beaches, supporting the broader aims of the Battle of Normandy."
+        },
+        {
+            "event": "e_4",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Bomber Command executes a successful bombing campaign against coastal defenses to support the Normandy invasion."
+        }
+    ]
+}

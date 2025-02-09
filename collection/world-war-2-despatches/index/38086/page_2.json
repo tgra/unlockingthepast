@@ -1,0 +1,110 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief, Plymouth",
+            "p_2": "Captain"
+        },
+        "locations": {
+            "l_1": "Falmouth",
+            "l_2": "Old Entrance",
+            "l_3": "Old Mole",
+            "l_4": "Northern waters",
+            "l_5": "latitude 47",
+            "l_6": "position 46 34 North 05 41 West"
+        },
+        "events": {
+            "e_1": "Operation Chariot",
+            "e_2": "Landing at Old Mole",
+            "e_3": "Engagement with U-Boat"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "H.M.S. CAMPBELTOWN",
+            "o_3": "H.M.S. TYNEDALE",
+            "o_4": "H.M.S. ATHERSTONE"
+        }
+    },
+    "keywords": [
+        "Operation Chariot",
+        "naval forces",
+        "submarine engagement",
+        "trawler sinking",
+        "Falmouth"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Tactics",
+        "Engagements with Enemy Forces"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Tactics": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 26, 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Chariot consists of a daring naval operation to attack enemy targets. The forces sail from Falmouth, aiming to achieve surprise."
+        },
+        {
+            "event": "e_2",
+            "date": "March 27, 1942",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The landing at Old Mole is carried out, facing challenges as the assault is repulsed, resulting in heavy losses."
+        },
+        {
+            "event": "e_3",
+            "date": "March 27, 1942",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An engagement with a U-boat occurs, where TYNEDALE successfully interacts with the enemy submarine, culminating in depth charges being dropped."
+        }
+    ]
+}

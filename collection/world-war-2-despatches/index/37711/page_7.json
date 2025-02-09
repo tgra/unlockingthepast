@@ -1,0 +1,89 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Allied Tactical Air Forces",
+            "p_2": "Build-up Control (BUCO)"
+        },
+        "locations": {
+            "l_1": "Uxbridge",
+            "l_2": "Portsmouth",
+            "l_3": "Normandy",
+            "l_4": "Seine",
+            "l_5": "Loire",
+            "l_6": "Caen"
+        },
+        "events": {
+            "e_1": "D Day",
+            "e_2": "OVERLORD"
+        },
+        "organisations": {
+            "o_1": "Anglo-American Army Staff"
+        }
+    },
+    "keywords": [
+        "Direct Air Support",
+        "Amphibious Operations",
+        "Air Support Control",
+        "Build-up",
+        "Flexible Operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Command Structure",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Command Structure": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D Day",
+            "locations": [
+                "l_3",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On D Day, the Allied forces execute a complex series of amphibious operations, establishing multiple beachheads in Normandy while coordinating air support from Uxbridge."
+        },
+        {
+            "event": "e_2",
+            "date": "During the planning phase of OVERLORD",
+            "locations": [
+                "l_3",
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the planning of OVERLORD, Allied commanders devise strategies for sustaining momentum after landing, emphasizing the need for rapid advancement to control critical areas while managing resources flexibly."
+        }
+    ]
+}

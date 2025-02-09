@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Subhas Chandra Bose"
+        },
+        "locations": {
+            "l_1": "Rangoon",
+            "l_2": "Malaya",
+            "l_3": "India",
+            "l_4": "Comilla",
+            "l_5": "Arakan",
+            "l_6": "Tiddim",
+            "l_7": "Burma"
+        },
+        "events": {
+            "e_1": "Liberation of prisoners of war in Rangoon",
+            "e_2": "Japanese retreat from Burma",
+            "e_3": "Establishment of Corps Medical Centres",
+            "e_4": "Assault landings in the Arakan",
+            "e_5": "Air-drop supply to medical centre in Tiddim"
+        },
+        "organisations": {
+            "o_1": "Indian National Army",
+            "o_2": "Allied Land Forces",
+            "o_3": "USAAF",
+            "o_4": "RAF"
+        }
+    },
+    "keywords": [
+        "prisoners of war",
+        "evacuation",
+        "medical services",
+        "Japanese retreat",
+        "Indian National Army"
+    ],
+    "themes": [
+        "Military Operations",
+        "Medical Services",
+        "Evacuation",
+        "Prisoner Treatment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_1",
+            "e_4"
+        ],
+        "Medical Services": [
+            "e_3",
+            "e_5"
+        ],
+        "Prisoner Treatment": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "3rd May 1950",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 3rd May 1950, allied forces re-enter Rangoon, liberating approximately 600-700 prisoners of war from the gaol, who are in surprisingly better condition than expected."
+        },
+        {
+            "event": "e_2",
+            "date": "1950",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "As Japanese forces retreat from Burma, they leave behind the Indian National Army, totaling around 16,000 troops, who surrender upon the advancing Allied approach."
+        },
+        {
+            "event": "e_3",
+            "date": "1950",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "In response to communication difficulties, Corps Medical Centres are established to facilitate casualty evacuation and ensure effective medical treatment in the field."
+        },
+        {
+            "event": "e_4",
+            "date": "1950",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "In the Arakan, assault landings are conducted in treacherous conditions, complicating the early evacuation of casualties."
+        },
+        {
+            "event": "e_5",
+            "date": "1950",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A medical centre in the Tiddim area is successfully supplied by air-drop, effectively treating a large number of wounded and sick."
+        }
+    ]
+}

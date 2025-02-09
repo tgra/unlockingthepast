@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Crew of Fulmar",
+            "p_2": "Crew of NELSON",
+            "p_3": "Crew of RODNEY",
+            "p_4": "Crew of DUNCAN",
+            "p_5": "Crew of LAFOREY",
+            "p_6": "Crew of FORESTER"
+        },
+        "locations": {
+            "l_1": "Fleet",
+            "l_2": "NELSON",
+            "l_3": "RODNEY",
+            "l_4": "DUNCAN",
+            "l_5": "LANCE",
+            "l_6": "LIVELY",
+            "l_7": "S.E."
+        },
+        "events": {
+            "e_1": "First Attack",
+            "e_2": "Second Attack",
+            "e_3": "Third Attack"
+        },
+        "organisations": {
+            "o_1": "R.D.F.",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "Torpedo",
+        "Attack",
+        "Fighter",
+        "Fulmar",
+        "Nelson",
+        "Rodney"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Naval Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Defense": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "7th September",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The first attack sees two formations approaches the fleet with multiple fighters engaging, resulting in the loss of five enemy aircraft but no hits on ships. One Fulmar is accidentally shot down by friendly fire."
+        },
+        {
+            "event": "e_2",
+            "date": "7th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The second attack involves enemy aircraft launching a torpedo at NELSON, hitting her. Meanwhile, several enemy aircraft are shot down by the fleet's responding destroyers."
+        },
+        {
+            "event": "e_3",
+            "date": "7th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the third attack, multiple S.79s are sighted and engaged by escort ships, with some enemy aircraft retreating under fire."
+        }
+    ]
+}

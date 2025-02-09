@@ -1,0 +1,163 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Sturges",
+            "p_2": "First Lieutenant Poole",
+            "p_3": "H.M.S. Anthony",
+            "p_4": "H.M.S. Ramillies"
+        },
+        "locations": {
+            "l_1": "Windsor Castle",
+            "l_2": "Red Beach",
+            "l_3": "Andrakaka Peninsula",
+            "l_4": "Antsirane",
+            "l_5": "Diego Suarez",
+            "l_6": "Scotch Bay",
+            "l_7": "Nosi Hara",
+            "l_8": "Nosi Fati",
+            "l_9": "Cape Amber",
+            "l_10": "Durban"
+        },
+        "events": {
+            "e_1": "Landing at Antsirane",
+            "e_2": "Occupation of Antsirane",
+            "e_3": "Conveying of Submarine Survivors",
+            "e_4": "Slow and Fast Convoys to Diego Suarez",
+            "e_5": "Submarine Attack by ILLUSTROUS"
+        },
+        "organisations": {
+            "o_1": "H.M.S. Poole",
+            "o_2": "H.M.S. Indomitable",
+            "o_3": "S.O.F.",
+            "o_4": "D.12",
+            "o_5": "H.M.S. Illustrious",
+            "o_6": "H.M.S. Laforey",
+            "o_7": "H.M.S. Pakenham"
+        }
+    },
+    "keywords": [
+        "Landing",
+        "Submarine",
+        "Convoy",
+        "Military Operations",
+        "Patrol",
+        "Casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Casualties & Survivor Retrieval",
+        "Logistics & Supplies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_5"
+        ],
+        "Naval Engagements": [
+            "e_5"
+        ],
+        "Casualties & Survivor Retrieval": [
+            "e_3"
+        ],
+        "Logistics & Supplies": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 6th",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The landing at Antsirane is executed with various brigades being deployed ashore while facing enemy opposition."
+        },
+        {
+            "event": "e_2",
+            "date": "May 7th",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Reports indicate the successful occupation of Antsirane, along with negotiations for further military actions."
+        },
+        {
+            "event": "e_3",
+            "date": "May 7th",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Survivors from the submarine LE HEROS are brought on board for interrogation after being retrieved from the water."
+        },
+        {
+            "event": "e_4",
+            "date": "May 8th",
+            "locations": [
+                "l_4",
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Preparations are finalized for the slow and fast convoys to Diego Suarez, ensuring effective transportation and logistics."
+        },
+        {
+            "event": "e_5",
+            "date": "May 6th",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Naval engagements occur as ships attempt to neutralize threats controlling access routes in Diego Suarez."
+        }
+    ]
+}

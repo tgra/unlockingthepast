@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Personnel",
+            "p_2": "Airfield Construction engineers",
+            "p_3": "Maintenance personnel",
+            "p_4": "Supply organisation"
+        },
+        "locations": {
+            "l_1": "Continent",
+            "l_2": "U.K.",
+            "l_3": "France",
+            "l_4": "Gold area",
+            "l_5": "Southern France",
+            "l_6": "Denmark",
+            "l_7": "Norway"
+        },
+        "events": {
+            "e_1": "Transfer of Fighter Forces",
+            "e_2": "D-Day",
+            "e_3": "Allied Operations from the Continent",
+            "e_4": "Enemy Airy Opposition"
+        },
+        "organisations": {
+            "o_1": "Royal Observer Corps",
+            "o_2": "G.A.F.",
+            "o_3": "R.C.A.F."
+        }
+    },
+    "keywords": [
+        "Fighter forces",
+        "Operational planning",
+        "Airfield construction",
+        "Squadron deployment",
+        "D-Day",
+        "Allied air forces"
+    ],
+    "themes": [
+        "Military Operations",
+        "Allied Air Operations",
+        "Enemy Forces Assessment",
+        "Resource Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Enemy Forces Assessment": [
+            "e_4"
+        ],
+        "Resource Management": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Fighter forces are transferred to the Continent to improve operational capabilities as D-Day approaches."
+        },
+        {
+            "event": "e_2",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "D-Day marks the beginning of Allied operations on the beaches of France, enabling significant fighter operations."
+        },
+        {
+            "event": "e_3",
+            "date": "Post D-Day",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Allied squadrons commence operations from the Continent, leading to increased air support over the beachheads."
+        },
+        {
+            "event": "e_4",
+            "date": "June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The enemy air forces assess their response to the assault, focusing on defending the Reich while managing losses."
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant-General Sir Montague Stopford"
+        },
+        "locations": {
+            "l_1": "Moulmein",
+            "l_2": "Rangoon",
+            "l_3": "Singapore",
+            "l_4": "Burma",
+            "l_5": "Siam",
+            "l_6": "Andaman Islands",
+            "l_7": "Victoria Point",
+            "l_8": "Bay of Bengal",
+            "l_9": "Phoenix Bay",
+            "l_10": "Hope Town",
+            "l_11": "Tenasserim"
+        },
+        "events": {
+            "e_1": "Break-out Battle",
+            "e_2": "Bombing raid on May 17th"
+        },
+        "organisations": {
+            "o_1": "Twelfth Army",
+            "o_2": "Royal Air Force (R.A.F.)",
+            "o_3": "231 Group",
+            "o_4": "7th Bombardment Group",
+            "o_5": "U.S. Army Air Forces (US.A.AF.)"
+        }
+    },
+    "keywords": [
+        "Japanese",
+        "R.A.F.",
+        "heavy bombers",
+        "communications",
+        "Burma",
+        "Bangkok",
+        "Singapore",
+        "bombing raid"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Strategy",
+        "Communcation Disruption",
+        "Allied Forces",
+        "Japanese Forces"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Communication Disruption": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Lieutenant-General Sir Montague Stopford expresses gratitude towards the Royal Air Force for their support during the break-out battle, acknowledging the difficult flying conditions and praising the pilots' determination."
+        },
+        {
+            "event": "e_2",
+            "date": "May 17th",
+            "locations": [
+                "l_2",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On May 17th, a significant bombing raid is conducted against the Japanese base in Port Blair, targeting critical harbor installations and resulting in substantial explosions."
+        }
+    ]
+}

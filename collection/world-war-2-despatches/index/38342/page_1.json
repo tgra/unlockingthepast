@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Not specified",
+            "p_2": "Not specified"
+        },
+        "locations": {
+            "l_1": "Scapa Flow",
+            "l_2": "Sullom Voe",
+            "l_3": "Maaloy Island",
+            "l_4": "Rugsundo",
+            "l_5": "South Vaagso",
+            "l_6": "Vaagsfiord",
+            "l_7": "Norwegian Coast",
+            "l_8": "Northeast Coast of Scotland"
+        },
+        "events": {
+            "e_1": "Operation Archery",
+            "e_2": "Naval Bombardment of Maaloy Island",
+            "e_3": "Landing Operation at Maaloy Island"
+        },
+        "organisations": {
+            "o_1": "Royal Norwegian Army",
+            "o_2": "Royal Air Force",
+            "o_3": "Special Service Brigade",
+            "o_4": "War Office (M.I.9)",
+            "o_5": "R.A.M.C.",
+            "o_6": "R.E."
+        }
+    },
+    "keywords": [
+        "H.M.S. PRINCE CHARLES",
+        "H.M.S. PRINCE LEOPOLD",
+        "submarine TUNA",
+        "Commando",
+        "Hampden aircraft",
+        "bombardment",
+        "Operation Archery"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Aerial Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Aerial Support": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th December",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Archery takes place at dawn, with naval forces landing on Maaloy Island after a planned bombardment and air support."
+        },
+        {
+            "event": "e_2",
+            "date": "27th December",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The naval bombardment of Maaloy Island is successfully executed, providing support for the landing forces."
+        },
+        {
+            "event": "e_3",
+            "date": "27th December",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Landing operations on Maaloy Island proceed as planned, leading to a significant military success."
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "von Vietinghoff",
+            "p_2": "Eighth Army Commander",
+            "p_3": "Fifth Army Commander"
+        },
+        "locations": {
+            "l_1": "Argenta Gap",
+            "l_2": "Idice River",
+            "l_3": "Budrio",
+            "l_4": "Bologna",
+            "l_5": "Ferrara",
+            "l_6": "Bondeno",
+            "l_7": "Cento",
+            "l_8": "San Benedetto",
+            "l_9": "Reggio",
+            "l_10": "Parma",
+            "l_11": "La Spezia",
+            "l_12": "Po River",
+            "l_13": "Ostiglia",
+            "l_14": "Crespini",
+            "l_15": "Polesella",
+            "l_16": "Berra"
+        },
+        "events": {
+            "e_1": "Capture of Bologna",
+            "e_2": "Crossing of the Po River",
+            "e_3": "Air Assault on German Positions"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "Fifth Army",
+            "o_3": "57th Bombardment Wing",
+            "o_4": "XXII Tactical Air Command",
+            "o_5": "D.A.F."
+        }
+    },
+    "keywords": [
+        "German Commander",
+        "Eighth Army",
+        "Fifth Army",
+        "B-25 aircraft",
+        "air reconnaissance",
+        "pontoon bridges",
+        "Tactical Air Force"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Campaign",
+        "Allied Offensive",
+        "Strategic Withdrawal"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Campaign": [
+            "e_3"
+        ],
+        "Allied Offensive": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Withdrawal": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "21st April",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On April 21st, Bologna is captured as Polish and American troops enter the city, signaling a significant Allied advance."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd-25th April",
+            "locations": [
+                "l_12",
+                "l_6"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "From April 23rd to 25th, the Fifth Army crosses the Po River at San Benedetto, marking a crucial point in the Allied advance."
+        },
+        {
+            "event": "e_3",
+            "date": "21st-24th April",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Between April 21st and 24th, the Tactical Air Force conducts a series of air assaults to disrupt German movements across the Po River."
+        }
+    ]
+}

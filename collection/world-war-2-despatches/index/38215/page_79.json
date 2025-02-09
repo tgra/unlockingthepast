@@ -1,0 +1,141 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Alexandra Military Hospital",
+            "p_2": "Tyersall Park Hospital",
+            "p_3": "Australian Base Hospital",
+            "p_4": "Royal Air Force"
+        },
+        "locations": {
+            "l_1": "Singapore Town",
+            "l_2": "Malacca",
+            "l_3": "Tanglin",
+            "l_4": "Changi",
+            "l_5": "Seletar",
+            "l_6": "Johore Straits",
+            "l_7": "South Sumatra",
+            "l_8": "Kota Tinggi"
+        },
+        "events": {
+            "e_1": "Japanese air raids",
+            "e_2": "Naval Base under attack",
+            "e_3": "Military operations against Singapore",
+            "e_4": "Evaluation of troop strength"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Singapore Harbour Board",
+            "o_3": "Civil Medical Services",
+            "o_4": "Main Army Ordnance Depot",
+            "o_5": "Singapore Club",
+            "o_6": "Cricket Club"
+        }
+    },
+    "keywords": [
+        "medical accommodation",
+        "Japanese air raids",
+        "naval base",
+        "military stores"
+    ],
+    "themes": [
+        "Medical Services",
+        "Military Operations",
+        "Strategic Assessments",
+        "Logistics and Infrastructure"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics and Infrastructure": [
+            "e_4"
+        ],
+        "Medical Services": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 31, 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Japanese air raids intensify, leading to significant impacts on military logistics and accommodation for medical services in Singapore."
+        },
+        {
+            "event": "e_2",
+            "date": "January 31, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Naval Base comes under observed artillery and air attack, highlighting the vulnerability of Singapore's defenses."
+        },
+        {
+            "event": "e_3",
+            "date": "January 31, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Plans are reevaluated for military operations against Singapore in light of enemy strength and tactical positions."
+        },
+        {
+            "event": "e_4",
+            "date": "January 31, 1942",
+            "locations": [
+                "l_6",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A strategic assessment reveals vulnerabilities in troop strength and logistics as enemy forces prepare to strike."
+        }
+    ]
+}

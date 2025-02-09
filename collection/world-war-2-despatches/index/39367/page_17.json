@@ -1,0 +1,154 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Alps",
+            "l_2": "Austria",
+            "l_3": "Bologna",
+            "l_4": "Po Valley",
+            "l_5": "Santerno River",
+            "l_6": "Sillaro River",
+            "l_7": "Idice River",
+            "l_8": "Comacchio lagoon",
+            "l_9": "Massa",
+            "l_10": "Monte Grande",
+            "l_11": "Ferrara",
+            "l_12": "Bondeno",
+            "l_13": "Lake Comacchio",
+            "l_14": "Verona",
+            "l_15": "Adige River",
+            "l_16": "Ravenna",
+            "l_17": "Porto Corsini Canal",
+            "l_18": "Porto Garibaldi",
+            "l_19": "Viareggio",
+            "l_20": "Spezia",
+            "l_21": "Genoa",
+            "l_22": "Trieste",
+            "l_23": "Savona",
+            "l_24": "Venice"
+        },
+        "events": {
+            "e_1": "Airborne Assault Planning",
+            "e_2": "Battle Planning of 15th Army Group",
+            "e_3": "Operational Phases of the Battle",
+            "e_4": "Amphibious Operation Planning",
+            "e_5": "Naval Support Planning"
+        },
+        "organisations": {
+            "o_1": "15th Army Group",
+            "o_2": "Fifth Army",
+            "o_3": "Eighth Army",
+            "o_4": "Royal Marines"
+        }
+    },
+    "keywords": [
+        "Airborne Assault",
+        "Battle",
+        "Fifth Army",
+        "Eighth Army",
+        "Amphibious Operation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Naval Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Support": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Plans for an airborne assault at brigade strength are made, but ultimately not executed."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_4",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The 15th Army Group's strategic plan aims to destroy enemy divisions before they retreat to fortified positions in the Alps."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_4",
+                "l_3",
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operational phases are planned, including multiple assaults and advances towards significant locations like Bologna and the Po River."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_5",
+                "l_9",
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An amphibious operation is planned to capture the isthmus between Lake Comacchio and the Adriatic."
+        },
+        {
+            "event": "e_5",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Naval plans are drawn up to support the Army in their offensive movements near the coastal areas."
+        }
+    ]
+}

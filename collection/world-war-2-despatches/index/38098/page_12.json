@@ -1,0 +1,87 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Not specified"
+        },
+        "locations": {
+            "l_1": "Bay of Biscay",
+            "l_2": "Bergen",
+            "l_3": "Cardiff"
+        },
+        "events": {
+            "e_1": "Search for PRINZ EUGEN and BISMARCK",
+            "e_2": "Sorties flown by Coastal Command"
+        },
+        "organisations": {
+            "o_1": "Coastal Command",
+            "o_2": "No. 10 Squadron",
+            "o_3": "No. 206 Squadron",
+            "o_4": "No. 22 Squadron"
+        }
+    },
+    "keywords": [
+        "PRINZ EUGEN",
+        "BISMARCK",
+        "Coastal Command",
+        "Bay of Biscay",
+        "searches",
+        "sorties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Aerial Surveillance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_1"
+        ],
+        "Aerial Surveillance": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 25th - May 27th",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Coastal Command actively searches for the unaccounted Hipper class cruiser PRINZ EUGEN and the battleship BISMARCK from May 25th to May 27th, maintaining several patrols across the Bay of Biscay."
+        },
+        {
+            "event": "e_2",
+            "date": "May 21st - May 27th",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "From May 21st to May 27th, aircraft from Coastal Command have flown 69 sorties totaling 580 hours while searching for two enemy ships near Bergen, demonstrating extensive aerial surveillance operations."
+        }
+    ]
+}

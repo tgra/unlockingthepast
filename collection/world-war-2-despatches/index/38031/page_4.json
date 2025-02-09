@@ -1,0 +1,107 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "Vice-Admiral",
+            "p_3": "Rear-Admiral"
+        },
+        "locations": {
+            "l_1": "Mediterranean",
+            "l_2": "Aegean",
+            "l_3": "Dodecanese",
+            "l_4": "Cyrenaica",
+            "l_5": "Greece",
+            "l_6": "Malta",
+            "l_7": "Crete",
+            "l_8": "Piraeus",
+            "l_9": "Gavdo Island",
+            "l_10": "Suda Bay",
+            "l_11": "Alexandria",
+            "l_12": "Ionian Sea"
+        },
+        "events": {
+            "e_1": "First Sight and Contact with the Enemy",
+            "e_2": "Operation against Convoys"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "H.M. Ships",
+            "o_3": "Greek Naval Forces"
+        }
+    },
+    "keywords": [
+        "Mediterranean Fleet",
+        "convoy routes",
+        "Cyrenaica",
+        "Crete",
+        "Aegean",
+        "enemy surface forces",
+        "reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Reconnaissance",
+        "Convoy Protection"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1"
+        ],
+        "Reconnaissance": [
+            "e_1",
+            "e_2"
+        ],
+        "Convoy Protection": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 28, 1941",
+            "locations": [
+                "l_1",
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The battlefleet first makes contact with enemy surface forces near Gavdo Island, revealing an imminent naval engagement."
+        },
+        {
+            "event": "e_2",
+            "date": "March 27-28, 1941",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Plans are set to protect convoys in the face of a known threat from enemy surface forces, leading to preparations for possible combat."
+        }
+    ]
+}

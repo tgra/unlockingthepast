@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Wavell",
+            "p_2": "Major-General W. H. Ramsden",
+            "p_3": "H.E. Sir William Battershill",
+            "p_4": "Captain J. V. 'W. Shaw"
+        },
+        "locations": {
+            "l_1": "Cyprus",
+            "l_2": "Turkey",
+            "l_3": "Iran",
+            "l_4": "Iraq",
+            "l_5": "Syria",
+            "l_6": "Russia",
+            "l_7": "Saudi Arabia"
+        },
+        "events": {
+            "e_1": "Troop Reinforcement to Cyprus",
+            "e_2": "Expulsion of Germans from Iran",
+            "e_3": "Russian Troops Enter Iran",
+            "e_4": "Turkish Approach to Staff Talks"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "British Army",
+            "o_3": "Russian Army",
+            "o_4": "War Office"
+        }
+    },
+    "keywords": [
+        "garrison",
+        "defence",
+        "troops",
+        "expulsion",
+        "influence",
+        "military action"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategies",
+        "Diplomacy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_2",
+            "e_4"
+        ],
+        "Defence Strategies": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "12th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 12th July, troop reinforcement to Cyprus is decided by General Wavell, who plans to increase the garrison in response to potential threats from Turkey, with approval from the Minister for Defence."
+        },
+        {
+            "event": "e_2",
+            "date": "24th July",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On 24th July, a plan for the expulsion of Germans from Iran gains agreement from the Chiefs of Staff due to rising nationalist sentiments and concerns over German influence."
+        },
+        {
+            "event": "e_3",
+            "date": "25th August",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 25th August, Russian troops enter Iran from the north and quickly advance with minimal resistance following joint diplomatic and military efforts from Britain and Russia."
+        },
+        {
+            "event": "e_4",
+            "date": "End of July",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "At the end of July, Turkey tentatively approaches for renewed staff talks to discuss military cooperation against German threats amid growing tensions in the region."
+        }
+    ]
+}

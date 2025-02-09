@@ -1,0 +1,136 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "J. von Arnim",
+            "p_2": "Eisenhower",
+            "p_3": "Koeltz"
+        },
+        "locations": {
+            "l_1": "Bou Ficha",
+            "l_2": "Ferryville",
+            "l_3": "Bizerta",
+            "l_4": "Pont du Fahs",
+            "l_5": "Cap Bon peninsula",
+            "l_6": "First Army"
+        },
+        "events": {
+            "e_1": "Surrender of German Army",
+            "e_2": "Final Attack of 6 Armoured Division",
+            "e_3": "Encirclement of the Enemy",
+            "e_4": "Unconditional Surrender of United States 2 Corps"
+        },
+        "organisations": {
+            "o_1": "Royal Army Service Corps",
+            "o_2": "Royal Army Ordnance Corps",
+            "o_3": "Western Desert Air Force",
+            "o_4": "First Army",
+            "o_5": "United States 1 Armoured Division",
+            "o_6": "United States 2 Corps",
+            "o_7": "French 19 Corps",
+            "o_8": "Eighth Army"
+        }
+    },
+    "keywords": [
+        "Surrender",
+        "Encirclement",
+        "Military Operations",
+        "Victory",
+        "Collaboration",
+        "Air Support",
+        "Casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Collaboration among Allies",
+        "Victory",
+        "Surrender"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Collaboration among Allies": [
+            "e_1",
+            "e_4"
+        ],
+        "Victory": [
+            "e_1"
+        ],
+        "Surrender": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "12th May 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "On 12th May, Colonel-General J. von Arnim surrenders with his staff to the 4 Indian Division, marking a significant military victory."
+        },
+        {
+            "event": "e_2",
+            "date": "12th May 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The final attack of 6 Armoured Division commences on 12th May, supported by artillery and air bombardment, leading to the enemy's organized resistance ending."
+        },
+        {
+            "event": "e_3",
+            "date": "Ongoing until May 12, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An encirclement operation carried out by various divisions aims to trap and exhaust enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "9th May 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On the afternoon of 9th May, the Commander of United States 2 Corps accepts the unconditional surrender of his opponents."
+        }
+    ]
+}

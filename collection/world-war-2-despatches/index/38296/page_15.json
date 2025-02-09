@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major General J. F. Evetts",
+            "p_2": "General Wavell",
+            "p_3": "General Blamey",
+            "p_4": "Air Marshal Tedder",
+            "p_5": "Commander-in-Chief, Mediterranean",
+            "p_6": "Colonel R. B. Jennings"
+        },
+        "locations": {
+            "l_1": "Alexandria",
+            "l_2": "Crete",
+            "l_3": "Cairo",
+            "l_4": "Sphakia",
+            "l_5": "Retimo",
+            "l_6": "Plaka Bay",
+            "l_7": "PERTH"
+        },
+        "events": {
+            "e_1": "Evacuation of Troops from Crete",
+            "e_2": "Airattacks on Force D",
+            "e_3": "Major General Evetts' Meeting in Cairo"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "CREFORCE",
+            "o_3": "Admiralty"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Air Attacks",
+        "Military Strategy",
+        "CREFORCE",
+        "Troops"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Warfare",
+        "Evacuation Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_3"
+        ],
+        "Evacuation Strategy": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "29th May to 30th May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Troops are evacuated from Crete via Sphakia, with around 6,000 men successfully boarded on ships despite air attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "29th May",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Force D experiences multiple air attacks while en route to Alexandria."
+        },
+        {
+            "event": "e_3",
+            "date": "29th May",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Major General Evetts meets with military leaders in Cairo to discuss and strategize on the evacuation of troops."
+        }
+    ]
+}

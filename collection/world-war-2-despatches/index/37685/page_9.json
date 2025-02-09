@@ -1,0 +1,168 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lt. General Quinan",
+            "p_2": "Major General Slim",
+            "p_3": "Brigadier Aizlewood",
+            "p_4": "Colonel Popov",
+            "p_5": "Major-General J. N. Thomson"
+        },
+        "locations": {
+            "l_1": "Kermanshah",
+            "l_2": "Hamadan",
+            "l_3": "Khuzistan",
+            "l_4": "Ahwaz",
+            "l_5": "Sultanabad",
+            "l_6": "Iranian Kurdistan",
+            "l_7": "Teheran",
+            "l_8": "Basra",
+            "l_9": "Kazvin",
+            "l_10": "Pahlevi",
+            "l_11": "Senna",
+            "l_12": "Zibiri"
+        },
+        "events": {
+            "e_1": "Request for Truce",
+            "e_2": "Occupation of Kermanshah",
+            "e_3": "Meeting with Russian Forces",
+            "e_4": "Tribal Risings in Iranian Kurdistan",
+            "e_5": "Joint Advance to Teheran",
+            "e_6": "Withdrawal of Troops from Teheran"
+        },
+        "organisations": {
+            "o_1": "British Armed Forces",
+            "o_2": "Russian Mission",
+            "o_3": "Indian Division"
+        }
+    },
+    "keywords": [
+        "truce",
+        "occupation",
+        "Russian forces",
+        "tribal risings",
+        "joint advance",
+        "withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Cooperation",
+        "Conflict",
+        "Casualties"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Diplomacy": [
+            "e_1",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_6"
+        ],
+        "Casualties": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An Iranian Officer arrives under a white flag to request a truce, which is granted."
+        },
+        {
+            "event": "e_2",
+            "date": "30th August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "British forces, led by Major General Slim, occupy Kermanshah to secure the oil refinery."
+        },
+        {
+            "event": "e_3",
+            "date": "29th August",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Major-General Slim is ordered to contact Russian forces in Hamadan, establishing coordination."
+        },
+        {
+            "event": "e_4",
+            "date": "From 1st September onwards",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Reports of tribal risings in Iranian Kurdistan lead to increased instability and armed conflict."
+        },
+        {
+            "event": "e_5",
+            "date": "17th September",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "A joint Anglo-Russian advance into Teheran is executed successfully, with coordination between troops."
+        },
+        {
+            "event": "e_6",
+            "date": "18th October",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "British and Russian troops withdraw from Teheran after a planned combined parade."
+        }
+    ]
+}

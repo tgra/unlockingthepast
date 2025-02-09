@@ -1,0 +1,108 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "E. D. G. Lewin",
+            "p_2": "H. A. Rowe",
+            "p_3": "T. W. Harrington",
+            "p_4": "A. M. Tritton",
+            "p_5": "C. C. Tomkinson",
+            "p_6": "V. B. G. Cheesman",
+            "p_7": "D. R. Foster",
+            "p_8": "N. S. Luard",
+            "p_9": "R. C. Hay"
+        },
+        "locations": {
+            "l_1": "H.M.S. INDOMITABLE",
+            "l_2": "H.M.S. VICTORIOUS",
+            "l_3": "H.M.S. ILLUSTRIOUS",
+            "l_4": "H.M.S. MICTORIOUS"
+        },
+        "events": {
+            "e_1": "Air attacks on airfields",
+            "e_2": "Operation of Aircraft under impending attack"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "United States Navy",
+            "o_3": "H.M. Ships INDOMITABLE",
+            "o_4": "H.M. Ships VICTORIOUS"
+        }
+    },
+    "keywords": [
+        "air attack",
+        "fighter direction",
+        "operational efficiency",
+        "bombing runs",
+        "flak",
+        "aircraft"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Aerial Combat",
+        "Naval Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Defense": [
+            "e_1"
+        ],
+        "Naval Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Air attacks on airfields are ongoing, facing challenges from camouflaged and dispersed enemy aircraft, increasing the complexity and cost of operations."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_6",
+                "p_8",
+                "p_9"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation of Aircraft under impending attack is crucial as plans are made to intercept enemy aircraft threatening naval fleets."
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "R. D. OLiver"
+        },
+        "locations": {
+            "l_1": "Diego Suarez Bay",
+            "l_2": "Nosi Anambo",
+            "l_3": "Nosi Fati",
+            "l_4": "Nosi Hara",
+            "l_5": "Nosi Anjombavola"
+        },
+        "events": {
+            "e_1": "Operation Tricorn",
+            "e_2": "Commando Landing"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Force F"
+        }
+    },
+    "keywords": [
+        "bombardment",
+        "minesweeping",
+        "landing craft",
+        "troops",
+        "buoys"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Commando Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_1"
+        ],
+        "Commando Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th May 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Royal Navy undertakes Operation Tricorn with a focus on minesweeping and providing cover for landing crafts as they prepare for a Commando operation, ensuring strategic positioning and the laying of navigation buoys."
+        },
+        {
+            "event": "e_2",
+            "date": "8th May 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Commandos land unopposed on the shore, with naval support ensuring all operational conditions are met for safe troop movement and mission success."
+        }
+    ]
+}

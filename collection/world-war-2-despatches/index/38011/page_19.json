@@ -1,0 +1,156 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Auchinleck",
+            "p_2": "General Bethouart",
+            "p_3": "Brigadier Gubbins",
+            "p_4": "Sir Cecil Dormer",
+            "p_5": "Colonel Ljungberg",
+            "p_6": "King of Norway"
+        },
+        "locations": {
+            "l_1": "Gratangen",
+            "l_2": "Bodo",
+            "l_3": "Ankenes peninsula",
+            "l_4": "Beisfjord",
+            "l_5": "Scapa",
+            "l_6": "Harstad",
+            "l_7": "Norway"
+        },
+        "events": {
+            "e_1": "Evacuation of North Norway",
+            "e_2": "Meeting of Generals Auchinleck and Bethouart",
+            "e_3": "Preparation for operation against Narvik",
+            "e_4": "Evacuation operation logistics",
+            "e_5": "Communication to Norwegian Government"
+        },
+        "organisations": {
+            "o_1": "Norwegian Government",
+            "o_2": "H.M. Government",
+            "o_3": "Admiralty",
+            "o_4": "Allied Governments"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Military Operation",
+        "Air Attack",
+        "Secrecy",
+        "Norwegian Army"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 20th, 30th and 31st",
+            "locations": [
+                "l_7",
+                "l_6"
+            ],
+            "persons": [
+                "p_4",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Allies decide on the evacuation of their forces from North Norway, informed by the situation in Bodo due to pressures from enemy forces."
+        },
+        {
+            "event": "e_2",
+            "date": "May 26th",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Generals Auchinleck and Bethouart meet to discuss the evacuation plan and the importance of maintaining secrecy about their military operations."
+        },
+        {
+            "event": "e_3",
+            "date": "May 24th-25th",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An operation against Narvik is planned and emphasized as critical to distract the enemy's attention from the evacuation efforts."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Logistical plans for the evacuation are established, including a strategy to minimize air attack risks during nighttime operations."
+        },
+        {
+            "event": "e_5",
+            "date": "June 1st",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Sir Cecil Dormer is briefed about the evacuation plan and is tasked with communicating with the King of Norway and the Norwegian Minister of Defence."
+        }
+    ]
+}

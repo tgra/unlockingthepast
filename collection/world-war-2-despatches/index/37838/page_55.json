@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Assistant Deputy Engineer",
+            "p_2": "Air Officer Commanding British Second Tactical Air Force",
+            "p_3": "Director of Military Survey",
+            "p_4": "Chief Engineer"
+        },
+        "locations": {
+            "l_1": "Bayeux",
+            "l_2": "Carentan",
+            "l_3": "Rennes",
+            "l_4": "River Seine",
+            "l_5": "River Scheldt",
+            "l_6": "Belgium",
+            "l_7": "Holland",
+            "l_8": "Germany",
+            "l_9": "Paris",
+            "l_10": "Brussels",
+            "l_11": "United Kingdom"
+        },
+        "events": {
+            "e_1": "Establishment of Base Map Depot",
+            "e_2": "Demand for Map Supply",
+            "e_3": "Reconnaissance Operations",
+            "e_4": "Crisis in Map Supply"
+        },
+        "organisations": {
+            "o_1": "Ninth U.S.A.A.F.",
+            "o_2": "British Second Tactical Air Force",
+            "o_3": "660th Engineer Topo Battalion",
+            "o_4": "942nd Engineer Topo Battalion",
+            "o_5": "Allied Expeditionary Air Force",
+            "o_6": "Directorate of Military Survey",
+            "o_7": "War Office"
+        }
+    },
+    "keywords": [
+        "Base Map Depot",
+        "Map Supply",
+        "Air Forces",
+        "Allied Armies",
+        "Advance Through France",
+        "Map Distribution"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Management",
+        "Logistics",
+        "Allied Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Supply Chain Management": [
+            "e_4"
+        ],
+        "Logistics": [
+            "e_3",
+            "e_4"
+        ],
+        "Allied Cooperation": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 1, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Base Map Depot is established near Bayeux to supply allied air formations during operations."
+        },
+        {
+            "event": "e_2",
+            "date": "August 1944",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Allied armies create demand for various maps as they advance rapidly beyond expected lines."
+        },
+        {
+            "event": "e_4",
+            "date": "August-September 1944",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A crisis arises in map supply as the rapid advance of the Allied forces creates shortages."
+        }
+    ]
+}

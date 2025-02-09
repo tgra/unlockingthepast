@@ -1,0 +1,91 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Senior Officer",
+            "p_2": "Vice-Admiral, Dover"
+        },
+        "locations": {
+            "l_1": "Point du Haut Banc",
+            "l_2": "Le Havre",
+            "l_3": "Etaples"
+        },
+        "events": {
+            "e_1": "Action on the night of 26th/27th September",
+            "e_2": "Intercept and destroy enemy convoy"
+        },
+        "organisations": {
+            "o_1": "gth M.T.B. Flotilla",
+            "o_2": "H.M.M.T.B.s"
+        }
+    },
+    "keywords": [
+        "Action",
+        "Convoy",
+        "Radar",
+        "M.T.B.",
+        "M.G.B.",
+        "Engagement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Engagement",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Tactical Engagement": [
+            "e_1"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th-27th September, 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A naval engagement occurs as a combined Motor Torpedo Boat and Motor Gun Boat force intercepts an enemy convoy off Point du Haut Banc, utilizing radar and tactical maneuvers amidst challenging weather conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "26th-27th September, 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The objective to intercept and destroy a northbound enemy convoy is executed by the M.T.B. and M.G.B. forces, marking a significant tactical effort during WWII operations."
+        }
+    ]
+}

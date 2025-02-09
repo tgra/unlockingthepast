@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Weygand",
+            "p_2": "General Koeltz",
+            "p_3": "Sir Ronald Adam"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "La Panne",
+            "l_3": "Bergues",
+            "l_4": "Belgian frontier",
+            "l_5": "Malo-les-Bains"
+        },
+        "events": {
+            "e_1": "Evacuation of the British Expeditionary Force",
+            "e_2": "Arrival of French Troops",
+            "e_3": "Bombing of Dunkirk",
+            "e_4": "Casualty Clearing Stations establishment"
+        },
+        "organisations": {
+            "o_1": "H.M. Government",
+            "o_2": "Royal Air Force"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "embarkation",
+        "counterattacks",
+        "military operations",
+        "bombing",
+        "medical arrangements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Strategy",
+        "Medical Assistance",
+        "International Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Evacuation Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Medical Assistance": [
+            "e_4"
+        ],
+        "International Coordination": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 29-30, 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The British Expeditionary Force is evacuated from Dunkirk amidst heavy enemy bombardment, with troops coordinated for embarkation amidst complex logistical challenges."
+        },
+        {
+            "event": "e_2",
+            "date": "May 29, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "French troops arrive at Dunkirk, complicating the embarkation process for all forces involved due to previously uncoordinated naval arrangements."
+        },
+        {
+            "event": "e_3",
+            "date": "May 29, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Dunkirk is subjected to continuous bombing by enemy forces, impacting the operations and safety of the troops during the evacuation."
+        },
+        {
+            "event": "e_4",
+            "date": "May 29, 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Casualty Clearing Stations are established at Dunkirk and La Panne to manage and treat the wounded amidst the ongoing evacuation."
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander 3 Indian Corps",
+            "p_2": "Commander 11 Indian Division",
+            "p_3": "Divisional Commander"
+        },
+        "locations": {
+            "l_1": "River Perak",
+            "l_2": "Ipoh",
+            "l_3": "Kampar",
+            "l_4": "Kroh",
+            "l_5": "Grik",
+            "l_6": "Bidor",
+            "l_7": "Telok Anson",
+            "l_8": "Dipang",
+            "l_9": "Blanja",
+            "l_10": "Gopeng",
+            "l_11": "Chemor"
+        },
+        "events": {
+            "e_1": "Operation MATADOR",
+            "e_2": "Delaying action north of Chemor",
+            "e_3": "Withdrawal of the 12 and 28 Brigade Groups",
+            "e_4": "Successful raid by Rose Force"
+        },
+        "organisations": {
+            "o_1": "3 Indian Corps",
+            "o_2": "11 Indian Division",
+            "o_3": "Kedah Armoured Car Company",
+            "o_4": "Perak Volunteer Force"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Delaying Action",
+        "Withdrawal",
+        "Raids",
+        "Casualties",
+        "Defensive Strategies"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Tactics",
+        "Strategic Withdrawal",
+        "Communication Disruption"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Defence Tactics": [
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Withdrawal": [
+            "e_3"
+        ],
+        "Communication Disruption": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation MATADOR is speculated to have impacted the air situation and enemy bases had it been implemented timely."
+        },
+        {
+            "event": "e_2",
+            "date": "26th and 27th December",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The 12 Brigade Group engages in a delaying action north of Chemor, inflicting heavy casualties on the advancing enemy forces."
+        },
+        {
+            "event": "e_3",
+            "date": "27th December",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The withdrawal of the 12 and 28 Brigade Groups begins early in the morning to reposition for a better defensive stance."
+        },
+        {
+            "event": "e_4",
+            "date": "End of December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Rose Force conducts a successful raid against enemy communications west of the River Perak, despite encountering operational challenges."
+        }
+    ]
+}

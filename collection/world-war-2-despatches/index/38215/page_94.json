@@ -1,0 +1,95 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander Singapore Fortress",
+            "p_2": "Supreme Commander South-West Pacific"
+        },
+        "locations": {
+            "l_1": "Johore",
+            "l_2": "Singapore Naval Base",
+            "l_3": "Kuala Lumpur",
+            "l_4": "Port Swettenham",
+            "l_5": "Slim River Village",
+            "l_6": "Tanjong Malim"
+        },
+        "events": {
+            "e_1": "Withdrawal to Johore",
+            "e_2": "Slim River Battle"
+        },
+        "organisations": {
+            "o_1": "3 Indian Corps",
+            "o_2": "A.I.F.",
+            "o_3": "155 Field Regiment",
+            "o_4": "12 Brigade Group",
+            "o_5": "28 Brigade Group"
+        }
+    },
+    "keywords": [
+        "withdrawal",
+        "defence",
+        "enemy attack",
+        "battle",
+        "tanks",
+        "artillery",
+        "reinforcements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Defensive Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ],
+        "Defensive Tactics": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 7, 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The orders are issued to withdraw to Johore and defend the Singapore Naval Base, ensuring no withdrawal occurs without permission."
+        },
+        {
+            "event": "e_2",
+            "date": "January 4-8, 1942",
+            "locations": [
+                "l_5",
+                "l_4",
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Slim River Battle begins when enemy tanks attack forward troops. Despite heavy losses, the battle reveals the weariness of the allied forces, leading to strategic withdrawal orders."
+        }
+    ]
+}

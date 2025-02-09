@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Montgomery"
+        },
+        "locations": {
+            "l_1": "Mediterranean",
+            "l_2": "Agheila",
+            "l_3": "Buerat",
+            "l_4": "Tripoli",
+            "l_5": "Sollum",
+            "l_6": "Bardia",
+            "l_7": "Tobruk",
+            "l_8": "Benghazi",
+            "l_9": "Capuzzo",
+            "l_10": "Cyrenaica",
+            "l_11": "Agedabia",
+            "l_12": "Wadi Matratin"
+        },
+        "events": {
+            "e_1": "Battle of Agheila",
+            "e_2": "New Zealand Division flank maneuver",
+            "e_3": "German withdrawal from Agheila"
+        },
+        "organisations": {
+            "o_1": "30 Corps",
+            "o_2": "10 Corps",
+            "o_3": "51 Division",
+            "o_4": "7 Armoured Division",
+            "o_5": "8 Armoured Brigade",
+            "o_6": "22 Armoured Brigade"
+        }
+    },
+    "keywords": [
+        "artillery",
+        "maintenance",
+        "demolitions",
+        "evacuation",
+        "rearguard",
+        "advance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Withdrawal Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ],
+        "Withdrawal Strategies": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "12th December",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The forces prepare for an offensive to capture Agheila, with General Montgomery overseeing strategic movements."
+        },
+        {
+            "event": "e_2",
+            "date": "15th December",
+            "locations": [
+                "l_2",
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The New Zealand Division executes a strategic maneuver to outflank enemy positions near Agheila."
+        },
+        {
+            "event": "e_3",
+            "date": "16th December",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The enemy forces begin their withdrawal from Agheila as Allied forces close in."
+        }
+    ]
+}

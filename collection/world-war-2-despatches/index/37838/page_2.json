@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unidentified Pilot",
+            "p_2": "Personnel engaged in Air/Sea Rescue work"
+        },
+        "locations": {
+            "l_1": "Cherbourg",
+            "l_2": "Portsmouth",
+            "l_3": "Pouppeville",
+            "l_4": "St. Laurent sur Mer",
+            "l_5": "Asnelles",
+            "l_6": "Great Britain",
+            "l_7": "American Sector",
+            "l_8": "British Sector"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "Operation Neptune",
+            "e_3": "Air/Sea Rescue operations"
+        },
+        "organisations": {
+            "o_1": "IX Engineer Command",
+            "o_2": "Royal Air Force",
+            "o_3": "No. 275 Squadron",
+            "o_4": "Air Force Coastal Command"
+        }
+    },
+    "keywords": [
+        "airfield construction",
+        "Air/Sea Rescue",
+        "D-Day",
+        "Operation Neptune",
+        "tactical aerodrome",
+        "high speed launches"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Rescue Operations",
+        "Engineering and Construction"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Defense": [
+            "e_3"
+        ],
+        "Rescue Operations": [
+            "e_3"
+        ],
+        "Engineering and Construction": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day (June 6, 1944)",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On D-Day, allied forces successfully land on the beaches of Normandy as part of Operation Neptune."
+        },
+        {
+            "event": "e_2",
+            "date": "June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Neptune encompasses the naval and aerial operations that support the D-Day landings."
+        },
+        {
+            "event": "e_3",
+            "date": "June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "During the first 48 hours after the D-Day landings, Air/Sea Rescue operations successfully save numerous pilots from the sea."
+        }
+    ]
+}

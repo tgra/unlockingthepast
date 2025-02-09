@@ -1,0 +1,157 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mr. Eden",
+            "p_2": "C.1.G.S."
+        },
+        "locations": {
+            "l_1": "Tripolitania",
+            "l_2": "Sirte",
+            "l_3": "Cairo",
+            "l_4": "Cyrenaica",
+            "l_5": "Agheila",
+            "l_6": "Tamet",
+            "l_7": "Syrte",
+            "l_8": "El Makina",
+            "l_9": "Agedabia",
+            "l_10": "Benghazi",
+            "l_11": "Benina",
+            "l_12": "Tripoli",
+            "l_13": "Antelat",
+            "l_14": "Msus"
+        },
+        "events": {
+            "e_1": "Wellington operations",
+            "e_2": "Evacuation of Benina",
+            "e_3": "Enemy occupation of Agheila",
+            "e_4": "Enemy advance in Cyrenaica",
+            "e_5": "Bombing of enemy M.T. concentrations"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "No. 55 Squadron",
+            "o_3": "No. 45 Squadron",
+            "o_4": "No. 3 Australian Squadron",
+            "o_5": "No. 73 Squadron",
+            "o_6": "No. 6 A.C. Squadron",
+            "o_7": "No. 2 Armoured Division"
+        }
+    },
+    "keywords": [
+        "Wellington operations",
+        "enemy advance",
+        "evacuation",
+        "Blenheims",
+        "Hurricanes",
+        "reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Enemy Activity",
+        "Strategic Withdrawal"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4",
+            "e_3"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_5"
+        ],
+        "Strategic Withdrawal": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Wellington operations include attacks on aerodromes in Tripolitania and on shipping at Sirte, aimed at disrupting German plans."
+        },
+        {
+            "event": "e_2",
+            "date": "April 2, 1941",
+            "locations": [
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Evacuation of Benina occurs in the early evening after all demolitions are completed, due to the precarious situation in Benghazi."
+        },
+        {
+            "event": "e_3",
+            "date": "March 24, 1941",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Enemy forces occupy Agheila, leading to the withdrawal of our outposts due to increased enemy activity."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1941",
+            "locations": [
+                "l_6",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The enemy continues to press forward in Cyrenaica, compelling our forward troops to fall back."
+        },
+        {
+            "event": "e_5",
+            "date": "March 30, 1941",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Blenheims of No. 55 Squadron bomb and attack enemy M.T. concentrations in support of operations against advancing forces."
+        }
+    ]
+}

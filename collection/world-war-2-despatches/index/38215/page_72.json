@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander 3 Indian Corps",
+            "p_2": "Inspector General of Police",
+            "p_3": "Commander-in-Chief China"
+        },
+        "locations": {
+            "l_1": "Port Dickson",
+            "l_2": "Malaya",
+            "l_3": "Singapore",
+            "l_4": "Far East",
+            "l_5": "British Borneo",
+            "l_6": "Thailand"
+        },
+        "events": {
+            "e_1": "Exercise with Troops",
+            "e_2": "Outbreak of War with Japan",
+            "e_3": "Senior Military Commanders Conference"
+        },
+        "organisations": {
+            "o_1": "Far East Combined Bureau",
+            "o_2": "Malayan Security Service"
+        }
+    },
+    "keywords": [
+        "bush warfare",
+        "intelligence organization",
+        "training exercises",
+        "Malaya",
+        "Japanese intentions"
+    ],
+    "themes": [
+        "Military Training",
+        "Intelligence Operations",
+        "Security Coordination",
+        "Military Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Intelligence Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Security Coordination": [
+            "e_2"
+        ],
+        "Military Training": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Early December 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "An exercise with troops is organized to study the problems of a withdrawal from Kedah; however, it gets cancelled due to the imminent threat of war."
+        },
+        {
+            "event": "e_2",
+            "date": "Late October 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The outbreak of war with Japan occurs, revealing the inadequacies in training and intelligence where the Malayan forces are less prepared than those in the South."
+        },
+        {
+            "event": "e_3",
+            "date": "Late October 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A Senior Military Commanders Conference is held to survey defense arrangements and consider the Far East situation, highlighting a lack of information regarding Japanese intentions."
+        }
+    ]
+}

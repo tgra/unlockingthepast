@@ -1,0 +1,135 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Cowan",
+            "p_2": "General Wavell",
+            "p_3": "Brigadier Bourke",
+            "p_4": "MajorGeneral Cowan"
+        },
+        "locations": {
+            "l_1": "Pegu",
+            "l_2": "Waw",
+            "l_3": "Toungoo",
+            "l_4": "Pyinbon",
+            "l_5": "Tharrawaddy",
+            "l_6": "Hlegu",
+            "l_7": "Rangoon",
+            "l_8": "Syriam",
+            "l_9": "Kyaikhla",
+            "l_10": "Payagyi",
+            "l_11": "Tandawgyi",
+            "l_12": "Jungle of the Pegu Yomas"
+        },
+        "events": {
+            "e_1": "Fighting in front of Pegu",
+            "e_2": "Enemy Infiltration",
+            "e_3": "Landings on the Coast"
+        },
+        "organisations": {
+            "o_1": "17 Indian Division",
+            "o_2": "1 W. Yorks",
+            "o_3": "Cameronians",
+            "o_4": "Burma Traitor forces",
+            "o_5": "Navy"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "enemy infiltration",
+        "supply dumps",
+        "reinforcements",
+        "defensive tactics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Enemy Actions",
+        "Supply Management",
+        "Defensive Strategies",
+        "Reinforcements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Enemy Actions": [
+            "e_1",
+            "e_2"
+        ],
+        "Supply Management": [
+            "e_1"
+        ],
+        "Defensive Strategies": [
+            "e_2",
+            "e_3"
+        ],
+        "Reinforcements": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 26, 2023",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Fighting occurs in front of Pegu as Burma Traitor forces participate in military operations. The enemy tries to infiltrate into the jungle under the cover of darkness."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_12"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The enemy successfully infiltrates across the open country to the north of Pegu, using the cover of darkness to advance into the jungle."
+        },
+        {
+            "event": "e_3",
+            "date": "March 1, 2023",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Landings are reported on the coast west of the Rangoon River, with enemy forces successfully reaching the area, posing a risk to the oil refineries."
+        }
+    ]
+}

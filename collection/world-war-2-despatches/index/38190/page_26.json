@@ -1,0 +1,165 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain C. E. Otway",
+            "p_2": "Brigadier Wallis",
+            "p_3": "Hon. Major J. J. Paterson",
+            "p_4": "Lieut Carruthers",
+            "p_5": "Captains Ega",
+            "p_6": "Captains Jacosta"
+        },
+        "locations": {
+            "l_1": "Hong Kong Island",
+            "l_2": "Saiwan",
+            "l_3": "Devil's Peak",
+            "l_4": "Lyemun Peninsula",
+            "l_5": "North Point",
+            "l_6": "Kowloon Point",
+            "l_7": "Tytam Gap",
+            "l_8": "Leighton Hill",
+            "l_9": "Quarry Bay",
+            "l_10": "Aldrich Bay",
+            "l_11": "Tai Hang Road",
+            "l_12": "Taikoo",
+            "l_13": "Sugar Factory",
+            "l_14": "Causeway Bay",
+            "l_15": "Power Station"
+        },
+        "events": {
+            "e_1": "Shelling of Braemar beach defence gun position",
+            "e_2": "Heavy bombardment of Lyemun Peninsula",
+            "e_3": "Japanese patrol attack on Saiwan A.A. position",
+            "e_4": "Occupation of Sugar Factory by enemy forces",
+            "e_5": "Establishment of Hughesiliers at Power Station"
+        },
+        "organisations": {
+            "o_1": "HKVDC",
+            "o_2": "Anglo-Persian Company",
+            "o_3": "5/7 Rajput Regiment",
+            "o_4": "1 Middlesex Regiment",
+            "o_5": "Hughesiliers",
+            "o_6": "China Light and Power Company"
+        }
+    },
+    "keywords": [
+        "Shelling",
+        "Bombardment",
+        "Artillery",
+        "Defence",
+        "Enemy Attack",
+        "Occupation",
+        "Mobile Reserve"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Enemy Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_5"
+        ],
+        "Enemy Engagement": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 18, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "At noon, the defense gun position at Braemar beach is shelled and suffers several direct hits, resulting in the destruction of two 18-pounders."
+        },
+        {
+            "event": "e_2",
+            "date": "December 18, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "From 1500 hours onwards, significant bombardment occurs on Lyemun Peninsula, impacting the defense setups."
+        },
+        {
+            "event": "e_3",
+            "date": "December 18, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "At 2200 hours, Japanese troops launch a patrol attack on the Saiwan A.A. position, which had already endured heavy shelling."
+        },
+        {
+            "event": "e_4",
+            "date": "December 18, 1941",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "At 2200 hours, it is reported that the enemy occupies the Sugar Factory, indicating their advance in the area."
+        },
+        {
+            "event": "e_5",
+            "date": "December 16-19, 1941",
+            "locations": [
+                "l_15"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Hughesiliers, under Major J. J. Paterson, defend the Power Station against enemy actions and play a crucial role in delaying the enemy's advance."
+        }
+    ]
+}

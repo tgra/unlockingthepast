@@ -1,0 +1,107 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain A. D. Nicholl",
+            "p_2": "Mr. Murphy",
+            "p_3": "Captain C. A. G. Hutchison"
+        },
+        "locations": {
+            "l_1": "Alexandria",
+            "l_2": "Malta",
+            "l_3": "Grand Harbour",
+            "l_4": "Marsa Xlokk",
+            "l_5": "Gibraltar",
+            "l_6": "Kelibia",
+            "l_7": "Tunis"
+        },
+        "events": {
+            "e_1": "Arrival of the Convoy at Malta",
+            "e_2": "Dispersal of H.M. Ships from Malta",
+            "e_3": "Air Attacks on the Convoy"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Convoy",
+        "Air Attack",
+        "Malta",
+        "Naval Operations",
+        "H.M.S. Ships",
+        "Evacuation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd March",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The convoy arrives at Malta, facing immediate risks but achieving a crucial delivery after a lengthy journey."
+        },
+        {
+            "event": "e_2",
+            "date": "25th March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "In response to increasing air attacks, ships begin to disperse from Malta, indicating urgent measures to minimize losses."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Heavy air attacks target the convoy after its arrival, leading to significant naval engagements and losses."
+        }
+    ]
+}

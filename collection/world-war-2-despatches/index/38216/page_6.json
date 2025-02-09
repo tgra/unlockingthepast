@@ -1,0 +1,144 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General van Oyen",
+            "p_2": "Wing Commander Alexander",
+            "p_3": "General ter Poorten"
+        },
+        "locations": {
+            "l_1": "Bandoeng",
+            "l_2": "Batavia",
+            "l_3": "Oesthaven",
+            "l_4": "Ceylon",
+            "l_5": "Australia",
+            "l_6": "Sumatra",
+            "l_7": "Borneo",
+            "l_8": "Sourabaya",
+            "l_9": "Poerwokerto",
+            "l_10": "Eritanwetan",
+            "l_11": "Kalidjati",
+            "l_12": "Tasik Malaja",
+            "l_13": "Djojacarta",
+            "l_14": "Soekaboem",
+            "l_15": "Sunda Straits"
+        },
+        "events": {
+            "e_1": "Evacuation of Batavia",
+            "e_2": "Attack on Kalidjati aerodrome",
+            "e_3": "Disbandment of No. 205 (F.B.) Squadron",
+            "e_4": "Final Air Operations"
+        },
+        "organisations": {
+            "o_1": "No. 205 (F.B.) Squadron",
+            "o_2": "Britair",
+            "o_3": "R.A.A.F.",
+            "o_4": "Dutch Command",
+            "o_5": "No. 232 (F) Squadron",
+            "o_6": "No. 36 (T.B.) Squadron",
+            "o_7": "Blackforce"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "Java",
+        "Japanese forces",
+        "aerodrome",
+        "reconnaissance",
+        "anti-submarine patrols"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation",
+        "Air Defense",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Evacuation": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1, 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of Batavia is ordered as Japanese forces successfully land, pressuring Dutch defenses."
+        },
+        {
+            "event": "e_2",
+            "date": "March 3, 1942",
+            "locations": [
+                "l_2",
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "No. 36 (T.B.) Squadron attacks Kalidjati aerodrome, engaging Japanese forces that captured the location."
+        },
+        {
+            "event": "e_3",
+            "date": "March 3, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The No. 205 (F.B.) Squadron disbands after their operations become ineffective due to enemy pressures."
+        },
+        {
+            "event": "e_4",
+            "date": "March 4-8, 1942",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Final air operations are conducted as remnants of the squadrons attempt to fend off further enemy advances."
+        }
+    ]
+}

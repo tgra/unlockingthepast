@@ -1,0 +1,110 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Versailles",
+            "l_2": "France",
+            "l_3": "Belgium",
+            "l_4": "Pas de Calais",
+            "l_5": "Denmark",
+            "l_6": "Brest"
+        },
+        "events": {
+            "e_1": "Operation Neptune",
+            "e_2": "D-Day",
+            "e_3": "Operation Overlord"
+        },
+        "organisations": {
+            "o_1": "Air Forces",
+            "o_2": "German High Command"
+        }
+    },
+    "keywords": [
+        "headquarters",
+        "static situation",
+        "air operations",
+        "strategic bombing",
+        "D-Day",
+        "operational needs",
+        "disorganization",
+        "diversionary operations",
+        "inter-Service Fire Plan"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Force Strategy",
+        "Logistics",
+        "Inter-Service Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Force Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_3"
+        ],
+        "Inter-Service Cooperation": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of event not specified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Neptune is carried out to prepare the battlefield for subsequent military actions, where effective air operations disrupt the enemy's logistics."
+        },
+        {
+            "event": "e_2",
+            "date": "D-Day",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On D-Day, forces launch a major assault after extensive air operations have taken place, leading to critical victories against the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "Date of event not specified",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Operation Overlord encompasses a series of planned military operations, integrating air, ground, and naval forces to secure a foothold in occupied territories."
+        }
+    ]
+}

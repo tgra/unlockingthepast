@@ -1,0 +1,93 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral Parry",
+            "p_2": "Admiral Sir H. M. Burrough",
+            "p_3": "General of the Armies D. D. Eisenhower"
+        },
+        "locations": {
+            "l_1": "Minden",
+            "l_2": "Frankfurt",
+            "l_3": "United Kingdom",
+            "l_4": "Europe"
+        },
+        "events": {
+            "e_1": "Termination of the Combined Command",
+            "e_2": "Departure of the Last U.S. Naval Forces from Europe"
+        },
+        "organisations": {
+            "o_1": "Allied Naval Commander-in-Chief, Expeditionary Force",
+            "o_2": "Royal Navy",
+            "o_3": "U.S. Naval Forces in Europe",
+            "o_4": "Allied Expeditionary Force"
+        }
+    },
+    "keywords": [
+        "Combined Command",
+        "Termination",
+        "Naval Forces",
+        "Victory in Europe"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Allied Cooperation",
+        "Leadership Transition"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Allied Cooperation": [
+            "e_2"
+        ],
+        "Leadership Transition": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th July 1945",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Combined Command officially terminates, marking the end of a significant cooperative military effort during World War II led by Admiral Burrough and General Eisenhower."
+        },
+        {
+            "event": "e_2",
+            "date": "9th July 1945",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The last United States Naval Forces depart from Europe, concluding the largest combined amphibious operation to date and highlighting the successful cooperation between Allied nations."
+        }
+    ]
+}

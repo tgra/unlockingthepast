@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "I.W.T.",
+            "p_2": "Royal Navy"
+        },
+        "locations": {
+            "l_1": "Cox's Bazaar",
+            "l_2": "Maungdaw",
+            "l_3": "Akyab",
+            "l_4": "Kyaukpyu",
+            "l_5": "Chittagong",
+            "l_6": "Kalapanzin Valley",
+            "l_7": "Ramree Island",
+            "l_8": "Pathangar",
+            "l_9": "Comilla",
+            "l_10": "India",
+            "l_11": "Eastern Bengal Railway"
+        },
+        "events": {
+            "e_1": "15 Indian Corps Offensive",
+            "e_2": "Capture of Akyab",
+            "e_3": "Landing on the Myebon Peninsula",
+            "e_4": "Landing at Kyaukpyu",
+            "e_5": "Ramree operation"
+        },
+        "organisations": {
+            "o_1": "53 Brigade (25 Indian Division)",
+            "o_2": "81 (West African) Division",
+            "o_3": "Headquarters L. of C. Command"
+        }
+    },
+    "keywords": [
+        "inland water transport",
+        "military operations",
+        "logistics",
+        "air supply",
+        "construction"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Supply Chain Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4",
+            "e_5"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Supply Chain Management": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The 15 Indian Corps Offensive is launched in December, utilizing the smaller Arakan ports for increased operations."
+        },
+        {
+            "event": "e_2",
+            "date": "3rd January",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Akyab is captured through a river-crossing operation on the 3rd of January."
+        },
+        {
+            "event": "e_4",
+            "date": "12th January",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The landing at Kyaukpyu is mounted shortly after the capture of Akyab."
+        },
+        {
+            "event": "e_5",
+            "date": "Mid-March",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Ramree operation unfolds, highlighting the use of logistical support and coordination for successful military engagement."
+        }
+    ]
+}

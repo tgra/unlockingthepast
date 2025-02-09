@@ -1,0 +1,144 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General E. Wood",
+            "p_2": "General Stilwell"
+        },
+        "locations": {
+            "l_1": "Assam",
+            "l_2": "Ledo",
+            "l_3": "Doinaigon",
+            "l_4": "Brahmaputra",
+            "l_5": "Jorhat",
+            "l_6": "Gauhati",
+            "l_7": "Imphal",
+            "l_8": "Chittagong",
+            "l_9": "Myitkyina",
+            "l_10": "Lashio",
+            "l_11": "Kachin",
+            "l_12": "Ramgarh"
+        },
+        "events": {
+            "e_1": "British and Chinese troop movements",
+            "e_2": "Malaria epidemic in India",
+            "e_3": "Congress rebellion against communications",
+            "e_4": "Japanese raid into the Bay of Bengal",
+            "e_5": "Evacuation of civilian refugees from Burma"
+        },
+        "organisations": {
+            "o_1": "Indian Government",
+            "o_2": "Indian Tea Association"
+        }
+    },
+    "keywords": [
+        "transportation",
+        "refugees",
+        "malaria",
+        "Japanese raid",
+        "Congress",
+        "troop movements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Public Health Crisis",
+        "Civil Unrest",
+        "Supply Chain Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Public Health Crisis": [
+            "e_2"
+        ],
+        "Civil Unrest": [
+            "e_3"
+        ],
+        "Supply Chain Challenges": [
+            "e_1",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "British and Chinese troops are repositioning in response to significant infrastructural challenges and rising threats in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A severe malaria epidemic hits India, exacerbating the difficulties faced by troops and affecting operational capabilities."
+        },
+        {
+            "event": "e_3",
+            "date": "August 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Congress party launches a rebellion against British communications, further complicating supply and logistics in the region."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1942",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A Japanese raid into the Bay of Bengal restricts maritime logistics and adds strain to the railway infrastructure."
+        },
+        {
+            "event": "e_5",
+            "date": "1942",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "India deals with an influx of approximately 400,000 civilian refugees from Burma, creating significant humanitarian and security challenges."
+        }
+    ]
+}

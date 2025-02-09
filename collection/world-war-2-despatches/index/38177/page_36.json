@@ -1,0 +1,151 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Godwin-Austen",
+            "p_2": "General Ritchie",
+            "p_3": "Brigadier H. R. Briggs",
+            "p_4": "General Tuker"
+        },
+        "locations": {
+            "l_1": "Beda Fomm",
+            "l_2": "Antelat",
+            "l_3": "Saunnu",
+            "l_4": "Msus",
+            "l_5": "Mechili",
+            "l_6": "Gebel Akhdar",
+            "l_7": "Derna",
+            "l_8": "Bengasi",
+            "l_9": "Sceleidima",
+            "l_10": "El Abiar",
+            "l_11": "Solluch",
+            "l_12": "Lamluda",
+            "l_13": "Bir Tengeder",
+            "l_14": "Barce",
+            "l_15": "Charruba"
+        },
+        "events": {
+            "e_1": "Enemy Advance on 25th January",
+            "e_2": "Evacuation of Bengasi on 28th January",
+            "e_3": "Counter-attack Planning",
+            "e_4": "Retreat through the Gebel Akhdar"
+        },
+        "organisations": {
+            "o_1": "4th Indian Division",
+            "o_2": "Eighth Army",
+            "o_3": "2nd Armoured Brigade",
+            "o_4": "Polish Brigade Group",
+            "o_5": "Free French Brigade Group",
+            "o_6": "1st Armoured Brigade",
+            "o_7": "Guards Brigade",
+            "o_8": "7th Indian Infantry Brigade"
+        }
+    },
+    "keywords": [
+        "enemy advance",
+        "evacuation",
+        "counter-attack",
+        "retreat",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Evacuations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ],
+        "Evacuations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "25th January",
+            "locations": [
+                "Msus",
+                "Antelat"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "On 25th January, the enemy aggressively advances with converging columns, prompting a reconsideration of military positions and strategies."
+        },
+        {
+            "event": "e_2",
+            "date": "28th January",
+            "locations": [
+                "Bengasi",
+                "Solluch"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "On 28th January, as enemy forces close in, permission is obtained for the evacuation of Bengasi amidst chaos and confusion."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd January",
+            "locations": [
+                "Cairo",
+                "Tmimi"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 23rd January, plans for a counter-attack are discussed after the enemy's unexpected success, with strategies devised to halt their advance."
+        },
+        {
+            "event": "e_4",
+            "date": "30th January",
+            "locations": [
+                "Gebel Akhdar",
+                "Mechili"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Following the fall of Bengasi, the 4th Indian Division's retreat through the Gebel Akhdar begins as they prepare to establish a defensive line."
+        }
+    ]
+}

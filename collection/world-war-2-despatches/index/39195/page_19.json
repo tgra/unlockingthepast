@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Giffard",
+            "p_2": "General Slim"
+        },
+        "locations": {
+            "l_1": "Rangoon",
+            "l_2": "Chittagong",
+            "l_3": "Akyab Island",
+            "l_4": "Myebon",
+            "l_5": "Minbya",
+            "l_6": "Kaladan Valley",
+            "l_7": "Northern Combat Area",
+            "l_8": "Myitkyina",
+            "l_9": "Central Burma",
+            "l_10": "Mayu Peninsula",
+            "l_11": "Cocos Islands"
+        },
+        "events": {
+            "e_1": "Operation Dracula",
+            "e_2": "Operation Romulus",
+            "e_3": "Operation Capital"
+        },
+        "organisations": {
+            "o_1": "Supreme Allied Command",
+            "o_2": "Fourteenth Army",
+            "o_3": "Fifteenth Corps"
+        }
+    },
+    "keywords": [
+        "Operation Dracula",
+        "Operation Romulus",
+        "Operation Capital",
+        "Rangoon",
+        "Arakan",
+        "Akyab Island",
+        "Supreme Allied Command"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Command Structure",
+        "Air and Sea Invasion"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Dracula is planned to launch an air and sea invasion of Rangoon after the 1945 monsoon, adapting initial strategies due to previous constraints."
+        },
+        {
+            "event": "e_2",
+            "date": "Post-November 1944",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Romulus is designed to address the unsatisfactory military situation in Arakan, focusing on capturing critical locations to release divisions for post-monsoon operations."
+        },
+        {
+            "event": "e_3",
+            "date": "19th November 1944",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Capital is ordered to secure vital air supply routes and prepare for further advances into Central Burma, emphasizing the destruction of Japanese forces."
+        }
+    ]
+}

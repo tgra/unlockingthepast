@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unknown Officer"
+        },
+        "locations": {
+            "l_1": "Ramree Island",
+            "l_2": "Akyab",
+            "l_3": "Arakan",
+            "l_4": "India",
+            "l_5": "Chittagong",
+            "l_6": "Burma",
+            "l_7": "Malaya",
+            "l_8": "Sumatra",
+            "l_9": "Taungup"
+        },
+        "events": {
+            "e_1": "Assault on Akyab",
+            "e_2": "Assault on Ramree",
+            "e_3": "Quebec Conference",
+            "e_4": "Amphibious Operation in Spring 1944"
+        },
+        "organisations": {
+            "o_1": "Chiefs of Staff"
+        }
+    },
+    "keywords": [
+        "assault",
+        "operation",
+        "shipping",
+        "Akyab",
+        "Ramree",
+        "brigades",
+        "Japanese strength",
+        "monsoon",
+        "air defense",
+        "air superiority"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Planning",
+        "Communication",
+        "Logistics",
+        "International Relations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ],
+        "International Relations": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 1943",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The planning for an assault on Akyab is underway, focusing on logistics, expected opposition, and resource allocation."
+        },
+        {
+            "event": "e_2",
+            "date": "Post-Akyab Operation Planning",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Discussions are ongoing regarding the assault on Ramree, considering resources and timetable in relation to the Akyab operation."
+        },
+        {
+            "event": "e_3",
+            "date": "August 26, 1943",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The resolutions from the Quebec Conference are received, influencing future amphibious operations in the region."
+        },
+        {
+            "event": "e_4",
+            "date": "Spring 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Preparations are ongoing for an amphibious operation planned for the spring of 1944 as part of larger strategic goals."
+        }
+    ]
+}

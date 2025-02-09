@@ -1,0 +1,125 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Stilwell",
+            "p_2": "Lieut.-Colonel Reynolds",
+            "p_3": "Colonel Upton"
+        },
+        "locations": {
+            "l_1": "Mandalay",
+            "l_2": "Kalewa",
+            "l_3": "Shwebo",
+            "l_4": "Bhamo",
+            "l_5": "Myitkyina",
+            "l_6": "Monywa",
+            "l_7": "Kyaukse",
+            "l_8": "Lashio",
+            "l_9": "Tamu",
+            "l_10": "Chindwin",
+            "l_11": "Irrawaddy",
+            "l_12": "Hsipaw",
+            "l_13": "Maymyo",
+            "l_14": "Mogok",
+            "l_15": "Thabeikkyin"
+        },
+        "events": {
+            "e_1": "Abandonment of the Mandalay-Irrawaddy Line",
+            "e_2": "Withdrawal from Myitkyina",
+            "e_3": "Battle of Monywa"
+        },
+        "organisations": {
+            "o_1": "Chinese Fifth Army",
+            "o_2": "Imperial Force",
+            "o_3": "1 Glosters",
+            "o_4": "1 Burcorps",
+            "o_5": "Burma Army"
+        }
+    },
+    "keywords": [
+        "withdrawal",
+        "battle",
+        "Japanese forces",
+        "Mandalay-Irrawaddy Line",
+        "supplies",
+        "strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain",
+        "Evacuation Procedures",
+        "Strategic Withdrawal"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Supply Chain": [
+            "e_2"
+        ],
+        "Evacuation Procedures": [
+            "e_2"
+        ],
+        "Strategic Withdrawal": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 29, 1942",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Allied forces attempt to hold the Mandalay-Irrawaddy position as the Japanese forces advance, leading to a strategic withdrawal."
+        },
+        {
+            "event": "e_2",
+            "date": "April 30, 1942",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The 1 Burma Division and the Imperial Force successfully carry out a strategic withdrawal north of the Irrawaddy, evacuating personnel and supplies."
+        },
+        {
+            "event": "e_3",
+            "date": "April 30, 1942",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A Japanese force surprises the defenses in Monywa, resulting in an occupation of the town amidst chaotic evacuation efforts."
+        }
+    ]
+}

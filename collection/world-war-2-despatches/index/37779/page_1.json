@@ -1,0 +1,168 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General Ryder",
+            "p_2": "Major-General Evelegh",
+            "p_3": "Captain N. V. Dickinson",
+            "p_4": "General Anderson"
+        },
+        "locations": {
+            "l_1": "Algiers",
+            "l_2": "Gibraltar",
+            "l_3": "Maison Blanche",
+            "l_4": "Bougie",
+            "l_5": "Djidjelli",
+            "l_6": "Tunis",
+            "l_7": "Bizerta",
+            "l_8": "Philippeville",
+            "l_9": "Bone",
+            "l_10": "Blida",
+            "l_11": "El Aouana"
+        },
+        "events": {
+            "e_1": "Landing at Algiers",
+            "e_2": "Opening of Algiers Harbour",
+            "e_3": "Capture of Bougie Port",
+            "e_4": "Failed Race for Tunis",
+            "e_5": "German Landings at El Aouana",
+            "e_6": "Landing of 36 Brigade at Bougie"
+        },
+        "organisations": {
+            "o_1": "First Army",
+            "o_2": "United States 34 Infantry Division",
+            "o_3": "British 78 Division",
+            "o_4": "6 Armoured Division"
+        }
+    },
+    "keywords": [
+        "Landing",
+        "Operation",
+        "Algiers",
+        "Tunis",
+        "Military Strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Logistics",
+        "Alliances"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "9th November 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The landing at Algiers occurs unopposed, establishing a key base for First Army."
+        },
+        {
+            "event": "e_2",
+            "date": "9th November 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Algiers harbour is opened, allowing for the unloading of ships and support for operations."
+        },
+        {
+            "event": "e_3",
+            "date": "11th November 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_6"
+            ],
+            "eventSummary": "The capture of Bougie Port by 36 Brigade occurs following the landing operations."
+        },
+        {
+            "event": "e_4",
+            "date": "Late December 1942",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Allies fail to secure Tunis in a race against the Axis forces, leading to increased defensive efforts."
+        },
+        {
+            "event": "e_5",
+            "date": "9th November 1942",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "German forces successfully land at El Aouana airport without opposition."
+        },
+        {
+            "event": "e_6",
+            "date": "13th November 1942",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The 36 Brigade lands at Bougie but faces delays in seizing Djidjelli airfield due to rough conditions."
+        }
+    ]
+}

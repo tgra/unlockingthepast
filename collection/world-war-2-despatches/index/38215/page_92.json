@@ -1,0 +1,171 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lt.-Col. Thomas",
+            "p_2": "Commander 11 Indian Division",
+            "p_3": "Commander Northern Area",
+            "p_4": "Commander Western Area",
+            "p_5": "Commander Southern Area",
+            "p_6": "Supreme Commander South-West Pacific",
+            "p_7": "Brigade Commander"
+        },
+        "locations": {
+            "l_1": "Bukit Panjang Village",
+            "l_2": "Bukit Timah Village",
+            "l_3": "Jurong road",
+            "l_4": "Causeway",
+            "l_5": "Racecourse",
+            "l_6": "Kranji-Jurong Switch Line",
+            "l_7": "Bukit Gombok",
+            "l_8": "Keat Hong Village",
+            "l_9": "Ulu Pandan",
+            "l_10": "Pasir Panjang",
+            "l_11": "Singapore",
+            "l_12": "Bukit Timah Rifle Range",
+            "l_13": "Jurong Road"
+        },
+        "events": {
+            "e_1": "Tom Force Counterattack",
+            "e_2": "Defense Orders Issued by the Supreme Commander",
+            "e_3": "Capture of Hill 95",
+            "e_4": "Destruction of Reserve Petrol Depot",
+            "e_5": "Enemy Attack on Bukit Timah Village",
+            "e_6": "Enemy Aircraft Activity"
+        },
+        "organisations": {
+            "o_1": "11 Indian Division",
+            "o_2": "3 Indian Corps",
+            "o_3": "44 Indian Infantry Brigade",
+            "o_4": "18 British Division",
+            "o_5": "12 Brigade",
+            "o_6": "6/15 Brigade",
+            "o_7": "2/29 Battalion A.I.F.",
+            "o_8": "27 Australian Infantry Brigade"
+        }
+    },
+    "keywords": [
+        "Bukit Panjang",
+        "Jurong",
+        "Tom Force",
+        "Counterattack",
+        "Infantry",
+        "Enemy Attack",
+        "Combat",
+        "Defense",
+        "Supreme Commander"
+    ],
+    "themes": [
+        "Military Operations",
+        "Troop Movements",
+        "Strategic Defense",
+        "Enemy Engagement",
+        "Logistical Decisions",
+        "Leadership Decision-making"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_1"
+        ],
+        "Troop Movements": [
+            "e_1",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 11, 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "Tom Force moves forward to recapture Bukit Timah Village but encounters enemy fire, leading to close-range fighting."
+        },
+        {
+            "event": "e_2",
+            "date": "February 10, 1942",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Supreme Commander South-West Pacific arrives in Singapore, emphasizing the necessity to hold the territory to the last."
+        },
+        {
+            "event": "e_3",
+            "date": "February 10, 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A battalion of the 8 Brigade successfully re-captures Hill 95, strategically important for controlling the Causeway."
+        },
+        {
+            "event": "e_4",
+            "date": "February 11, 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Orders are given to destroy the Reserve Petrol Depot before enemy approaches, securing resources against capture."
+        },
+        {
+            "event": "e_5",
+            "date": "February 10, 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 12 Brigade is attacked by enemy tanks supported by infantry, creating chaotic conditions amidst troop engagements."
+        },
+        {
+            "event": "e_6",
+            "date": "February 10-11, 1942",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Enemy aircraft exhibit active engagement over the forward positions and Singapore Town, with little opposition."
+        }
+    ]
+}

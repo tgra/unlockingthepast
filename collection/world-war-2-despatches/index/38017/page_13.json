@@ -1,0 +1,81 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Dover",
+            "p_2": "Naval officers"
+        },
+        "locations": {
+            "l_1": "Dover",
+            "l_2": "beaches"
+        },
+        "events": {
+            "e_1": "Evacuation Operations",
+            "e_2": "Naval Engagements"
+        },
+        "organisations": {
+            "o_1": "British Army",
+            "o_2": "French Army",
+            "o_3": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "air attacks",
+        "embarkation",
+        "disorganisation",
+        "Naval officers",
+        "troops"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Disorganisation and Order Restoration"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Naval Engagements": [
+            "e_2"
+        ],
+        "Disorganisation and Order Restoration": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "18.6.40",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Naval and military operations are taking place at the beaches near Dover, with troops experiencing disorganisation during embarkation. Naval officers step in to restore order amidst air attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "Between 27th May and 1st June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Naval engagements occur as ships participate in various military operations, suffering losses due to attacks, contributing significantly to the overall evacuation efforts."
+        }
+    ]
+}

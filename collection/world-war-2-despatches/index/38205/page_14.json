@@ -1,0 +1,85 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "eastern Sicily",
+            "l_2": "Palermo",
+            "l_3": "mainland of Italy"
+        },
+        "events": {
+            "e_1": "capture of an island",
+            "e_2": "administration of ports and beaches"
+        },
+        "organisations": {
+            "o_1": "FoRTBASE",
+            "o_2": "Fifteenth Army Group",
+            "o_3": "Eighth Army",
+            "o_4": "United States Island Base Section",
+            "o_5": "Army Administrative Staff"
+        }
+    },
+    "keywords": [
+        "administration",
+        "ports",
+        "beaches",
+        "Fifteenth Army Group",
+        "Eighth Army",
+        "capture",
+        "supply axes"
+    ],
+    "themes": [
+        "Military Operations",
+        "Administration",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Administration": [
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The capture of an island occurs with two armies operating initially on separate supply axes."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "FoRTBASE assumes responsibility for the general administration of all ports and beaches in eastern Sicily, managed through various Base Areas and Sub-Areas."
+        }
+    ]
+}

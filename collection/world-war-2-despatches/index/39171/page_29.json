@@ -1,0 +1,138 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief, India",
+            "p_2": "Assistant Military Attach",
+            "p_3": "Supreme Allied Commander"
+        },
+        "locations": {
+            "l_1": "Arakan",
+            "l_2": "China",
+            "l_3": "Kunming",
+            "l_4": "Burma",
+            "l_5": "Ceylon",
+            "l_6": "Delhi",
+            "l_7": "Calcutta",
+            "l_8": "Kandy",
+            "l_9": "Yunnan"
+        },
+        "events": {
+            "e_1": "Military Operations in Arakan",
+            "e_2": "Re-occupation of Burma",
+            "e_3": "Establishment of H.Q. 11 Army Group",
+            "e_4": "Supreme Allied Command move to Kandy"
+        },
+        "organisations": {
+            "o_1": "C.A.S.B.",
+            "o_2": "Government of Burma",
+            "o_3": "Supreme Allied Command",
+            "o_4": "11 Army Group"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Civil Affairs",
+        "Re-occupation",
+        "Welfare Organization",
+        "Administration"
+    ],
+    "themes": [
+        "Military Operations",
+        "Administration",
+        "Civil Affairs",
+        "Logistical Challenges",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [],
+        "Strategic Decisions": [
+            "e_3",
+            "e_4"
+        ],
+        "Administration": [
+            "e_2",
+            "e_3"
+        ],
+        "Logistical Challenges": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1943–1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Military operations in Arakan result in significant civilian displacement, with 50,000 civilians currently being accommodated and supported by welfare organizations."
+        },
+        {
+            "event": "e_2",
+            "date": "Post-1943",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Future commitments under British Military Administration focus on the re-occupation of Burma after gaining operational control."
+        },
+        {
+            "event": "e_3",
+            "date": "1944",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Establishment of H.Q. 11 Army Group is crucial for the administration of forces; logistical challenges experienced delay its formation."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1944",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Supreme Allied Commander moves H.Q. to Kandy, resulting in operational challenges due to distance from troops in Assam and Arakan."
+        }
+    ]
+}

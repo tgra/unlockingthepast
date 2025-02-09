@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief"
+        },
+        "locations": {
+            "l_1": "Jebels",
+            "l_2": "Butana Bridge",
+            "l_3": "Gedaref",
+            "l_4": "Gash Delta",
+            "l_5": "Kassala",
+            "l_6": "Port Sudan",
+            "l_7": "Gebeit",
+            "l_8": "Wadi Halfa",
+            "l_9": "Gallabat",
+            "l_10": "Metemma",
+            "l_11": "Khartoum",
+            "l_12": "Gondar",
+            "l_13": "Gura",
+            "l_14": "Asmara",
+            "l_15": "Ethiopia",
+            "l_16": "Upper Blue Nile"
+        },
+        "events": {
+            "e_1": "Arrival of Force Emily",
+            "e_2": "Operations during the Concentration Period",
+            "e_3": "Enemy Action"
+        },
+        "organisations": {
+            "o_1": "4th Indian Division",
+            "o_2": "Gazelle Force",
+            "o_3": "2 M.M.G. Group, S.D.F.",
+            "o_4": "203 Group, R.A.F.",
+            "o_5": "Rhodesian Army Co-operation Squadron"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "patrols",
+        "concentration",
+        "enemy intelligence",
+        "artillery",
+        "air support",
+        "logistics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics and Supply",
+        "Enemy Engagement",
+        "Intelligence Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics and Supply": [
+            "e_1"
+        ],
+        "Enemy Engagement": [
+            "e_3"
+        ],
+        "Intelligence Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "30th December",
+            "locations": [
+                "l_6",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The arrival of Force Emily in the Sudan occurs on December 30, taxing the Sudan Staff and Railways due to logistical challenges and limited communication."
+        },
+        {
+            "event": "e_2",
+            "date": "December - January",
+            "locations": [
+                "l_5",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "During the concentration of Force Emily in December and January, active patrolling continues to monitor enemy movements, leading to various tactical advantages."
+        },
+        {
+            "event": "e_3",
+            "date": "December - January",
+            "locations": [
+                "l_12",
+                "l_13",
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Enemy forces concentrate between Gondar and Metemma during the same period of concentration for Force Emily, raising concerns for Allied operations."
+        }
+    ]
+}

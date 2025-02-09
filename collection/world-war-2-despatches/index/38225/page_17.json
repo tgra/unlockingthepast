@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Colonel S. A. Melville",
+            "p_2": "Lieutenant-Colonel A. F, J. Elmslie",
+            "p_3": "Lieutenant-Colonel E, J. Savage",
+            "p_4": "Major A. Blunt",
+            "p_5": "Rear Admiral Syfret",
+            "p_6": "Brigadier Festing",
+            "p_7": "Captain Garnons-Williams",
+            "p_8": "Brigadier J. Daniels",
+            "p_9": "Brigadier A, G. Salisbury-Jones",
+            "p_10": "Lieutenant-Colonel A. W. Bryant",
+            "p_11": "Major R. O. Nash"
+        },
+        "locations": {
+            "l_1": "Durban",
+            "l_2": "Pretoria",
+            "l_3": "Tamatave",
+            "l_4": "Majunga",
+            "l_5": "Diego Suarez",
+            "l_6": "Ambararata Bay",
+            "l_7": "Antsirane",
+            "l_8": "Andrakaka Peninsula"
+        },
+        "events": {
+            "e_1": "Operations to Capture Tamatave and Majunga",
+            "e_2": "Capture of Diego Suarez",
+            "e_3": "Assault Landing at Ambararata Bay"
+        },
+        "organisations": {
+            "o_1": "S.A.A.F.",
+            "o_2": "Royal Navy",
+            "o_3": "Government of the Union of South Africa",
+            "o_4": "Imperial Movement Control"
+        }
+    },
+    "keywords": [
+        "squadron",
+        "capture",
+        "operations",
+        "convoy",
+        "assault",
+        "reconnaissance",
+        "patrols"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Military Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_2",
+            "e_3"
+        ],
+        "Military Logistics": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26 April",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_5",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Rear Admiral Syfret and the author assess the viability of capturing Tamatave and Majunga simultaneously with operations at Diego Suarez."
+        },
+        {
+            "event": "e_2",
+            "date": "5 May",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_5",
+                "p_11"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "A coordinated assault at Diego Suarez is launched, involving the 29 Independent Brigade and 5 Commando, aimed at securing key objectives."
+        },
+        {
+            "event": "e_3",
+            "date": "5 May",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_5",
+                "p_9"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 29 Independent Brigade successfully lands at Ambararata Bay, initiating the capture of strategic locations along the coast."
+        }
+    ]
+}

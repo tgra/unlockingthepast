@@ -1,0 +1,87 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Pile"
+        },
+        "locations": {
+            "l_1": "Southern England",
+            "l_2": "Kent",
+            "l_3": "Bristol",
+            "l_4": "London",
+            "l_5": "Westminster",
+            "l_6": "Northern France",
+            "l_7": "Low Countries"
+        },
+        "events": {
+            "e_1": "Operation Intruder",
+            "e_2": "Raids on London and Westminster"
+        },
+        "organisations": {
+            "o_1": "Air Ministry",
+            "o_2": "No. 2 Group, Bomber Command"
+        }
+    },
+    "keywords": [
+        "night-fighter",
+        "airfields",
+        "security patrols",
+        "incendiary bombs",
+        "Radar",
+        "A.A. guns"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defence",
+        "Bombing Raids",
+        "Radar Development"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Radar Development": [
+            "e_1"
+        ],
+        "Air Defence": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 1940",
+            "locations": [
+                "l_1",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Intruder aims to improve night-fighter capabilities for defending against enemy aircraft, including adopting new tactics and increasing squadron numbers."
+        },
+        {
+            "event": "e_2",
+            "date": "20th December 1940",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 20th December, London and Westminster experience one of the worst bombing raids of the war, resulting in significant fires and destruction but limited success in defensive operations."
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander P. Stubbs, R.N.",
+            "p_2": "Rear-Admiral Commanding, 10th Cruiser Squadron",
+            "p_3": "Commander Thery",
+            "p_4": "Lieutenant R. H. H. Webber, R.N.",
+            "p_5": "Major Jordan"
+        },
+        "locations": {
+            "l_1": "Djidjelli",
+            "l_2": "Bougie",
+            "l_3": "Algiers",
+            "l_4": "Bougie Bay"
+        },
+        "events": {
+            "e_1": "Assault on Djidjelli",
+            "e_2": "Air Attack on shipping",
+            "e_3": "Withdrawal of Force O",
+            "e_4": "Sinking of S.S. AWATEA",
+            "e_5": "Incidents involving HMS ROBERTS and CATHAY"
+        },
+        "organisations": {
+            "o_1": "Royal Navy (R.N.)",
+            "o_2": "Royal Air Force (R.A.F.)"
+        }
+    },
+    "keywords": [
+        "Military Operation",
+        "Convoy",
+        "Air Attack",
+        "Torpedo Bombers",
+        "Supply Logistics",
+        "Sea Transport"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Attacks",
+        "Naval Operations",
+        "Logistics and Supply"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Air Attacks": [
+            "e_2",
+            "e_4"
+        ],
+        "Logistics and Supply": [
+            "e_1",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The decision to abandon the assault on Djidjelli due to heavy swell significantly impacts the military operation."
+        },
+        {
+            "event": "e_2",
+            "date": "1315, Date unspecified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Five S.M. 79 torpedo bombers attack the shipping in the bay, resulting in damage to enemy aircraft but no damage to the ships."
+        },
+        {
+            "event": "e_3",
+            "date": "1140, Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Force O is ordered to withdraw to the westward, ceasing the fighter protection of shipping."
+        },
+        {
+            "event": "e_4",
+            "date": "1640, Date unspecified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "S.S. AWATEA is hit and subsequently sinks after failing to extinguish the fire caused by several bombs."
+        },
+        {
+            "event": "e_5",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "CATHAY experiences various explosions, with depth charges on board causing concern, leading to disastrous losses."
+        }
+    ]
+}

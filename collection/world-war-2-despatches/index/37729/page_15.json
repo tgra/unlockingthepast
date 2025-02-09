@@ -1,0 +1,168 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A.O.C. Malta"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Sicily",
+            "l_3": "Southern Italy",
+            "l_4": "Alexandria",
+            "l_5": "Suda Bay",
+            "l_6": "Cyrenaica",
+            "l_7": "Tripoli",
+            "l_8": "Benghazi",
+            "l_9": "Tunisian Coast",
+            "l_10": "Kerkenna Islands"
+        },
+        "events": {
+            "e_1": "German Air Force Arrival",
+            "e_2": "Attack on Catania aerodrome",
+            "e_3": "Counter-Offensive in Cyrenaica",
+            "e_4": "Attacks on Tripoli",
+            "e_5": "Blenheims Bombing Attacks",
+            "e_6": "Severe Air Attacks on Malta"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "No. 26x (F) Squadron",
+            "o_3": "No. 228 (F/B) Squadron",
+            "o_4": "No. 431 G.R. Flight",
+            "o_5": "No. 148 (B) Squadron",
+            "o_6": "No. 21 (B) Squadron",
+            "o_7": "Fleet Air Arm"
+        }
+    },
+    "keywords": [
+        "German Air Force",
+        "Malta",
+        "A.O.C. Malta",
+        "Blenheims",
+        "Tripoli",
+        "Wellingtons",
+        "air attacks"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Warfare",
+        "Defence Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Defence Strategy": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4",
+                "e_5",
+                "e_6"
+            ],
+            "eventSummary": "The arrival of the German Air Force in Sicily and Southern Italy significantly escalates the air attacks on Malta."
+        },
+        {
+            "event": "e_2",
+            "date": "January 15/16, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An especially successful attack occurs on Catania aerodrome, destroying 35 German aircraft on the ground."
+        },
+        {
+            "event": "e_3",
+            "date": "April 1943",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "After the Italian-German counter-offensive, operations against Tripoli resume from Malta, with significant bombing sorties conducted."
+        },
+        {
+            "event": "e_4",
+            "date": "January 13/14 and 24/25, 1943",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_6"
+            ],
+            "eventSummary": "A detachment of Wellingtons makes 34 night sorties against Tripoli, effectively bombing harbor facilities."
+        },
+        {
+            "event": "e_5",
+            "date": "May 1, 1943",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Blenheims bomb a destroyer and merchant ship, obtaining several direct hits near the Kerkenna Islands."
+        },
+        {
+            "event": "e_6",
+            "date": "January 16, 18, 19, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The enemy conducts persistent and heavy air attacks on Malta, targeting key infrastructure with notable intensity."
+        }
+    ]
+}

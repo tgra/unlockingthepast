@@ -1,0 +1,107 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A. B. Cunnmncuam"
+        },
+        "locations": {
+            "l_1": "Cape Bon peninsula",
+            "l_2": "Bizerta",
+            "l_3": "Bone",
+            "l_4": "Cape Blanc"
+        },
+        "events": {
+            "e_1": "Bombing of H.M. Ships BICESTER and ZETLAND",
+            "e_2": "Destroyer patrols off Cape Bon peninsula",
+            "e_3": "Sweeping of channel to Bizerta"
+        },
+        "organisations": {
+            "o_1": "H.M. Ships"
+        }
+    },
+    "keywords": [
+        "air support",
+        "naval forces",
+        "destroyers",
+        "minesweeping",
+        "enemy evacuation",
+        "patrol"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Cooperation",
+        "Minefield Operations",
+        "Enemy Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Cooperation": [
+            "e_1",
+            "e_2"
+        ],
+        "Minefield Operations": [
+            "e_3"
+        ],
+        "Enemy Engagements": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "gth May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On gth May, H.M. Ships BICESTER and ZETLAND are bombed by own fighter-bombers due to failure in communication about destroyer movements."
+        },
+        {
+            "event": "e_2",
+            "date": "9th May onwards",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "From 9th May onwards, destroyers continuously patrol off the Cape Bon peninsula, capturing 700 prisoners and blocking enemy evacuations."
+        },
+        {
+            "event": "e_3",
+            "date": "11th May",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 11th May, minesweepers navigate a channel to Bizerta, significantly supporting the operations of the destroyer patrols."
+        }
+    ]
+}

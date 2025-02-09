@@ -1,0 +1,89 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain Bell",
+            "p_2": "Lieutenant-Commander R. B. Jennings",
+            "p_3": "Lieutenant R. E. Washbourn",
+            "p_4": "Captain Parry"
+        },
+        "locations": {
+            "l_1": "EXETER",
+            "l_2": "ACHILLES",
+            "l_3": "AJAX",
+            "l_4": "GRAF SPEE",
+            "l_5": "First Division"
+        },
+        "events": {
+            "e_1": "Actions of H.M.S. EXETER",
+            "e_2": "Actions of H.M.S. AJAX and ACHILLES"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "torpedoes",
+        "gunfire",
+        "damage",
+        "smoke",
+        "control"
+    ],
+    "themes": [
+        "Military Operations",
+        "Damage Control",
+        "Tactical Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Damage Control": [
+            "e_1"
+        ],
+        "Tactical Engagements": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "0638-0740",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "H.M.S. EXETER takes multiple hits during combat, leading to damage control efforts as Captain Bell maintains ship's fire under difficult conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "0638-0740",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "H.M.S. AJAX and ACHILLES adjust their tactics to engage the enemy while dealing with loss of communication and control complications."
+        }
+    ]
+}

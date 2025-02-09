@@ -1,0 +1,138 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain Garnons-Wilhams"
+        },
+        "locations": {
+            "l_1": "Nosi Fati",
+            "l_2": "Nosi Hara",
+            "l_3": "Courrier Bay",
+            "l_4": "Red Beach",
+            "l_5": "Green Beach",
+            "l_6": "White Beach",
+            "l_7": "Blue Beach",
+            "l_8": "Ambararata Bay",
+            "l_9": "Mangoaka Point",
+            "l_10": "Nosi Famaho"
+        },
+        "events": {
+            "e_1": "Landing at Red Beach",
+            "e_2": "Assault Operation Initiation",
+            "e_3": "Capture of No. 7 Battery",
+            "e_4": "Mine Encountering Incident"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "No. 5 Commando",
+            "o_3": "2 East Lancashire Regiment",
+            "o_4": "Royal Scots Fusiliers",
+            "o_5": "2 Royal Welsh Fusiliers"
+        }
+    },
+    "keywords": [
+        "Assault Craft",
+        "Royal Navy",
+        "Landing Operation",
+        "Mines",
+        "Troops",
+        "Troop Transport",
+        "Naval Diversion"
+    ],
+    "themes": [
+        "Military Operations",
+        "Navigation Challenges",
+        "Mine Sweeping",
+        "Troop Deployment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Navigation Challenges": [
+            "e_1",
+            "e_4"
+        ],
+        "Troop Deployment": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Ongoing",
+            "locations": [
+                "l_4",
+                "l_2",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The landing craft deploy troops from No. 5 Commando and 2 East Lancashire Regiment to Red Beach, successfully achieving complete surprise and initiating an assault operation."
+        },
+        {
+            "event": "e_2",
+            "date": "Ongoing",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The assault operation commences in the early hours, with reports of troop movements and enemy positions being communicated back to the flagship."
+        },
+        {
+            "event": "e_3",
+            "date": "Ongoing",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The capture of No. 7 Battery signals strong progress in the assault operation, as troops advance with minimal casualties."
+        },
+        {
+            "event": "e_4",
+            "date": "0303-0315",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Multiple mines detonate in close proximity to the assault craft, highlighting the hazardous conditions in the channel swept for the landing operation."
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "R.A.D.",
+            "p_2": "Commander-in-Chief, Mediterranean"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Kithera Strait",
+            "l_3": "Alexandria",
+            "l_4": "Canea",
+            "l_5": "Heraklion"
+        },
+        "events": {
+            "e_1": "Airborne attacks on Crete",
+            "e_2": "Engagements with enemy troop convoys",
+            "e_3": "Bombardment of Scarpanto"
+        },
+        "organisations": {
+            "o_1": "Force A",
+            "o_2": "Force B",
+            "o_3": "Force C",
+            "o_4": "Force D",
+            "o_5": "Force E",
+            "o_6": "Force Ax",
+            "o_7": "Force Ar"
+        }
+    },
+    "keywords": [
+        "naval forces",
+        "air attacks",
+        "bombardment",
+        "enemy troops",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Air Assaults",
+        "Strategic Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagements": [
+            "e_2"
+        ],
+        "Air Assaults": [
+            "e_1"
+        ],
+        "Strategic Movements": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "21st May 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During daylight on the 21st May, airborne attacks on Crete intensify, leading to significant military engagements."
+        },
+        {
+            "event": "e_2",
+            "date": "21st May 1941",
+            "locations": [
+                "l_4",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 21st May, Force D encounters an enemy troop convoy north of Canea, resulting in engagements that lead to significant troop casualties."
+        },
+        {
+            "event": "e_3",
+            "date": "21st May 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Force E bombards Scarpanto, damaging enemy aircraft, as reported by intelligence later."
+        }
+    ]
+}

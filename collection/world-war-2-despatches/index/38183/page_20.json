@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mr. Duff Cooper"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "Kuala Lumpur",
+            "l_4": "Kowloon",
+            "l_5": "Perak River",
+            "l_6": "Kuala Kangsar",
+            "l_7": "Kelantan",
+            "l_8": "Kuala Krai",
+            "l_9": "Kuala Lipis",
+            "l_10": "Raub",
+            "l_11": "Port Swettenham",
+            "l_12": "Kuala Trengganu",
+            "l_13": "Dungun",
+            "l_14": "Hong Kong Island",
+            "l_15": "Devil's Peak"
+        },
+        "events": {
+            "e_1": "Japanese air attack on Kowloon",
+            "e_2": "Evacuation of British women and children from Malaya",
+            "e_3": "Attack on Hong Kong",
+            "e_4": "Japanese advances in Malaya"
+        },
+        "organisations": {
+            "o_1": "8th Indian Infantry Brigade",
+            "o_2": "28th Indian Infantry Brigade",
+            "o_3": "III Corps",
+            "o_4": "Royal Scots",
+            "o_5": "Winnipeg Grenadiers"
+        }
+    },
+    "keywords": [
+        "Japanese air attack",
+        "evacuation",
+        "infantry brigade",
+        "military advances",
+        "reinforcements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuations",
+        "Strategic Decisions",
+        "Air Combat",
+        "Withdrawal"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Evacuations": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th December",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On the 8th of December, Japanese forces launch an air attack on Kowloon, initiating hostilities and prompting the withdrawal of British troops according to a pre-planned strategy."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd December",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On December 22nd, a meeting is held to discuss the evacuation of British women and children from Malaya, emphasizing the necessity of maintaining morale while managing the crisis."
+        },
+        {
+            "event": "e_3",
+            "date": "December 1941",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During December 1941, heavy fighting occurs as Japanese forces launch attacks, leading to significant military engagements on the island of Hong Kong."
+        },
+        {
+            "event": "e_4",
+            "date": "December 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Throughout December, Japanese forces make significant advances in Malaya, forcing British troops to retreat and evacuate while assessing the need for reinforcements."
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice-Admiral Commanding",
+            "p_2": "Admiralty"
+        },
+        "locations": {
+            "l_1": "MANCHESTER",
+            "l_2": "Galita",
+            "l_3": "Malta",
+            "l_4": "Gibraltar",
+            "l_5": "Sardinia"
+        },
+        "events": {
+            "e_1": "Operation of Swordfish for Search",
+            "e_2": "AIR ATTACK on Fleet",
+            "e_3": "Departure of Force X from Malta",
+            "e_4": "Reconnaissance of 3 Swordfish"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Beaufighters"
+        }
+    },
+    "keywords": [
+        "Swordfish",
+        "Force H",
+        "Convoy M.G.",
+        "ASDIC",
+        "depth charges",
+        "U-Boat"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Attacks",
+        "Reconnaissance",
+        "Naval Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Reconnaissance": [
+            "e_4"
+        ],
+        "Air Attacks": [
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_1",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "July 25, 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Swordfish aircraft conduct a search operation without sighting any enemy surface forces."
+        },
+        {
+            "event": "e_2",
+            "date": "July 23, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "An enemy air attack targets the fleet, resulting in significant danger and bringing forth calls for help."
+        },
+        {
+            "event": "e_3",
+            "date": "July 24, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Force X departs from Malta with a strong send-off, facing a few alarms but no significant threats."
+        },
+        {
+            "event": "e_4",
+            "date": "July 25, 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A reconnaissance mission with three Swordfish is conducted to ascertain the absence of enemy forces."
+        }
+    ]
+}

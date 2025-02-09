@@ -1,0 +1,133 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "German High Command",
+            "p_2": "R.A.F. Bomber Command",
+            "p_3": "United States Eighth Air Force",
+            "p_4": "Royal Air Force Bomber Command",
+            "p_5": "Second British Army"
+        },
+        "locations": {
+            "l_1": "Cotentin Peninsula",
+            "l_2": "Caen",
+            "l_3": "Normandy",
+            "l_4": "Escoville",
+            "l_5": "Herouvillette"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "Close Support Operations",
+            "e_3": "Operation Goodwood",
+            "e_4": "Large Scale Attacks on Caen"
+        },
+        "organisations": {
+            "o_1": "A.E.A.F.",
+            "o_2": "Allied Expeditionary Air Force"
+        }
+    },
+    "keywords": [
+        "Allied fighters",
+        "German High Command",
+        "reconnaissance",
+        "Close Support Operations",
+        "heavy bombers",
+        "air warfare"
+    ],
+    "themes": [
+        "Military Operations",
+        "Ground Assault",
+        "Air Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Air Support": [
+            "e_2",
+            "e_4"
+        ],
+        "Ground Assault": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Allied forces launched an extensive amphibious invasion on the beaches of Normandy, marking the beginning of a significant military operation against Nazi-occupied France."
+        },
+        {
+            "event": "e_2",
+            "date": "June 1944 - September 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Allied air forces carry out extensive Close Support Operations to assist ground forces through reconnaissance and direct strikes against enemy positions."
+        },
+        {
+            "event": "e_3",
+            "date": "July 18, 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Operation Goodwood commences, featuring the largest air assault supporting ground troops ever attempted, aimed at breaking through enemy defenses around Caen."
+        },
+        {
+            "event": "e_4",
+            "date": "July 8, 1944 - July 18, 1944",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A series of large scale attacks occur involving heavy bombers in support of the Allied forces' attempts to capture strategic positions in and around Caen."
+        }
+    ]
+}

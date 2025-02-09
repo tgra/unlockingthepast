@@ -1,0 +1,81 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "Calais",
+            "l_3": "Boulogne",
+            "l_4": "Cherbourg"
+        },
+        "events": {
+            "e_1": "Operation Dynamo",
+            "e_2": "Evacuation of French Troops"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Coastal Command",
+            "o_3": "French Navy"
+        }
+    },
+    "keywords": [
+        "Aircraft",
+        "Squadrons",
+        "Evacuation",
+        "Naval Operations",
+        "Troops",
+        "Dunkirk",
+        "French Navy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Cooperation",
+        "Evacuation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Cooperation": [
+            "e_2"
+        ],
+        "Evacuation": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th May - 1st June",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Dynamo is an evacuation operation occurring from Dunkirk, involving British squadrons attacking enemy positions and providing air support while French naval assets assist in evacuating troops."
+        },
+        {
+            "event": "e_2",
+            "date": "Last three nights of May 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "French Navy vessels are involved in the evacuation of French troops from Dunkirk harbour and surrounding beaches, collaborating closely with British forces during Operation Dynamo."
+        }
+    ]
+}

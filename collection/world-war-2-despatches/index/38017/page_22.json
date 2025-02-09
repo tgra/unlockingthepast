@@ -1,0 +1,89 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral",
+            "p_2": "Vice Admiral",
+            "p_3": "Commander-in-Chief, Nore"
+        },
+        "locations": {
+            "l_1": "Dunkirk",
+            "l_2": "La Panne",
+            "l_3": "Dover",
+            "l_4": "Ramsgate",
+            "l_5": "United Kingdom"
+        },
+        "events": {
+            "e_1": "Evacuation of B.E.F. from Dunkirk",
+            "e_2": "Heavy air and artillery attacks on evacuation ships"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Bombing",
+        "Naval Operations",
+        "Casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Casualty Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1"
+        ],
+        "Casualty Management": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 1-2, 1940",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of over 60,000 troops from Dunkirk, facilitated by the Royal Navy, faces intense air attacks and naval casualties, leading to a revised evacuation strategy."
+        },
+        {
+            "event": "e_2",
+            "date": "June 1-2, 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Intense bombing and shelling by enemy forces disrupt evacuation efforts, causing significant damage to ships and prompting the Vice Admiral to reconsider operational strategies."
+        }
+    ]
+}

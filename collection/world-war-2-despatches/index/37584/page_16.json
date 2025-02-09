@@ -1,0 +1,152 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Morgan",
+            "p_2": "General Paget",
+            "p_3": "General Ruge",
+            "p_4": "Lieut. Colonel Clarke",
+            "p_5": "Lieutenant-Colonel Cass"
+        },
+        "locations": {
+            "l_1": "Dombas",
+            "l_2": "Andalsnes",
+            "l_3": "Rost",
+            "l_4": "Dovre",
+            "l_5": "Lesja",
+            "l_6": "Lesjaverk",
+            "l_7": "Lesjaskog",
+            "l_8": "Verma",
+            "l_9": "Botheim",
+            "l_10": "Hjerkinn",
+            "l_11": "Foldal",
+            "l_12": "Otta"
+        },
+        "events": {
+            "e_1": "Demolitions at Rost and Dovre",
+            "e_2": "Withdrawal of Norwegian troops",
+            "e_3": "K.O.Y.L.I. positioning",
+            "e_4": "Enemy reconnaissance and engagement",
+            "e_5": "Enemy bombing and machine gunning"
+        },
+        "organisations": {
+            "o_1": "K.O.Y.L.I.",
+            "o_2": "Green Howards",
+            "o_3": "15th Infantry Brigade",
+            "o_4": "Norwegian Field Battery",
+            "o_5": "Norwegian G.H.Q."
+        }
+    },
+    "keywords": [
+        "Demolitions",
+        "Withdrawal",
+        "Enemy reconnaissance",
+        "Troop movements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Battlefield Engagement",
+        "Enemy Activity"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Battlefield Engagement": [
+            "e_4",
+            "e_5"
+        ],
+        "Enemy Activity": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Night of 28th/29th April",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Demolitions at Rost and Dovre are executed after the rear parties have crossed the bridges."
+        },
+        {
+            "event": "e_2",
+            "date": "Night of 28th/29th April",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Many Norwegian troops are withdrawn from the Lines of Communication, creating a risk of enemy landings."
+        },
+        {
+            "event": "e_3",
+            "date": "Night of 28th/29th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Brigadier Morgan's forces are stationed in detachments to guard against enemy parachute attacks."
+        },
+        {
+            "event": "e_4",
+            "date": "April 30th",
+            "locations": [
+                "l_1",
+                "l_12"
+            ],
+            "persons": [
+                "p_3",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The enemy conducts reconnaissance and is spotted advancing towards Dombas, leading to heightened activity."
+        },
+        {
+            "event": "e_5",
+            "date": "April 30th",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Enemy aircraft are frequently bombing and machine gunning the Lines of Communication."
+        }
+    ]
+}

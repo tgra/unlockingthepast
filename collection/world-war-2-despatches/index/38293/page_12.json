@@ -1,0 +1,62 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {},
+        "events": {
+            "e_1": "Report dated 5th May, 1941",
+            "e_2": "Nightly total count of embarked personnel"
+        },
+        "organisations": {
+            "o_1": "Licur Forces"
+        }
+    },
+    "keywords": [
+        "embarked",
+        "personnel",
+        "report",
+        "total",
+        "losses"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "5th May, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A report details the embarked personnel and total counts during military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "During the nights of 24th to 30th May, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A summary of nightly total counts of embarked personnel from the Licur Forces operations."
+        }
+    ]
+}

@@ -1,0 +1,153 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral Commanding, 18th Cruiser Squadron",
+            "p_2": "Vice-Admiral, 2nd-in-Command",
+            "p_3": "Rear-Admiral Commanding, 18th Cruiser Squadron",
+            "p_4": "Captain of LIVELY",
+            "p_5": "Captain of NELSON",
+            "p_6": "Captain of GURKHA"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Gozo",
+            "l_3": "Tunisian coast",
+            "l_4": "Cape Bon",
+            "l_5": "Gibraltar"
+        },
+        "events": {
+            "e_1": "Westward Passage of Force X",
+            "e_2": "Passage of NELSON to Gibraltar",
+            "e_3": "Passage of Forces A and X to the Westward",
+            "e_4": "Return of Units under Vice-Admiral Commanding, 2nd-in-Command to Gibraltar",
+            "e_5": "Return of Units under Rear-Admiral Commanding, 18th Cruiser Squadron to Gibraltar"
+        },
+        "organisations": {
+            "o_1": "Force X",
+            "o_2": "North Atlantic Station"
+        }
+    },
+    "keywords": [
+        "Force X",
+        "Gibraltar",
+        "A/S vessels",
+        "submarine",
+        "naval operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Battles",
+        "Coordination of Forces",
+        "Search and Destroy Missions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Naval Battles": [
+            "e_3",
+            "e_4"
+        ],
+        "Coordination of Forces": [
+            "e_1",
+            "e_2"
+        ],
+        "Search and Destroy Missions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "28th/29th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Force X sails from Malta, follows a course towards the Tunisian coast, and searches for enemy destroyers."
+        },
+        {
+            "event": "e_2",
+            "date": "29th/30th September",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "NELSON transmits its position and seeks additional A/S vessels before entering Gibraltar harbor."
+        },
+        {
+            "event": "e_3",
+            "date": "29th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Forces A and X proceed westward, engaging in a search for submarines."
+        },
+        {
+            "event": "e_4",
+            "date": "30th September",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Vice-Admiral leads units to Gibraltar, with no further incidents reported after torpedo echoes."
+        },
+        {
+            "event": "e_5",
+            "date": "30th September/1st October",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Rear-Admiral Commanding returns with the remainder of the 18th Cruiser Squadron to Gibraltar."
+        }
+    ]
+}

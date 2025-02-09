@@ -1,0 +1,156 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "G.H.Q.",
+            "p_2": "A.H.Q.",
+            "p_3": "General"
+        },
+        "locations": {
+            "l_1": "Siam",
+            "l_2": "Malaya",
+            "l_3": "Singora",
+            "l_4": "Patani",
+            "l_5": "Kuala Lumpur",
+            "l_6": "Butterworth",
+            "l_7": "Singapore Island",
+            "l_8": "Sime Road",
+            "l_9": "Indo-China",
+            "l_10": "Borneo",
+            "l_11": "Kota Bahru"
+        },
+        "events": {
+            "e_1": "Demolition Operation",
+            "e_2": "Formation of Norgroup Headquarters",
+            "e_3": "Construction of Army/Air Operations Room",
+            "e_4": "Japanese Occupation of Indo-China",
+            "e_5": "Strained Relations with Japan"
+        },
+        "organisations": {
+            "o_1": "G.H.Q.",
+            "o_2": "A.H.Q.",
+            "o_3": "IIIrd Corps",
+            "o_4": "R.A.F.",
+            "o_5": "F.E.C.B.",
+            "o_6": "Siamese Government"
+        }
+    },
+    "keywords": [
+        "Japanese aggression",
+        "Air strength",
+        "Army resources",
+        "Military operations",
+        "Strategic decision-making"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Resource Allocation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
+        ],
+        "Resource Allocation": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "A demolition operation is planned near the Siamese coast, but the implementation is uncertain due to limited air strength and resources."
+        },
+        {
+            "event": "e_2",
+            "date": "July 1941",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Norgroup Headquarters is established to control air operations supporting the Army in Northern Malaya."
+        },
+        {
+            "event": "e_3",
+            "date": "Before the outbreak of war, November 1941",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An Army/Air Operations Room is constructed in Singapore prior to the war."
+        },
+        {
+            "event": "e_4",
+            "date": "1941",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "The Japanese occupation of Indo-China leads to increased tensions and military preparation in Malaya."
+        },
+        {
+            "event": "e_5",
+            "date": "Throughout 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Relations between Britain and Japan deteriorate significantly, with Japan preparing to utilize Siam as a base."
+        }
+    ]
+}

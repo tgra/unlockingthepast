@@ -1,0 +1,134 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Po Valley",
+            "l_2": "North-West Italy",
+            "l_3": "Milan",
+            "l_4": "Turin",
+            "l_5": "Genoa",
+            "l_6": "Brenner Line",
+            "l_7": "Venetian plain",
+            "l_8": "Piedicolle",
+            "l_9": "Trieste",
+            "l_10": "Istrian ports"
+        },
+        "events": {
+            "e_1": "Allied Offensive",
+            "e_2": "M.A.T.A.F. Efforts",
+            "e_3": "M.A.S.A.F. April Effort",
+            "e_4": "Interdiction Program"
+        },
+        "organisations": {
+            "o_1": "M.A.T.A.F.",
+            "o_2": "Desert Air Force",
+            "o_3": "M.A.S.A.F.",
+            "o_4": "German Army"
+        }
+    },
+    "keywords": [
+        "interdiction",
+        "air attacks",
+        "railway communications",
+        "Battle of Italy",
+        "enemy repair organisation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Campaigns",
+        "Logistics and Supply Chain",
+        "Enemy Countermeasures"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Campaigns": [
+            "e_2",
+            "e_3"
+        ],
+        "Logistics and Supply Chain": [
+            "e_4"
+        ],
+        "Enemy Countermeasures": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 9, 1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On April 9, 1945, the Allied offensive is launched, responding to previous efforts to weaken enemy positions in North-West Italy."
+        },
+        {
+            "event": "e_2",
+            "date": "March - April 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "From March to April 1945, M.A.T.A.F. conducts extensive air operations targeting enemy communications and infrastructure in North-West Italy."
+        },
+        {
+            "event": "e_3",
+            "date": "April 1945",
+            "locations": [
+                "l_1",
+                "l_6",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In April 1945, M.A.S.A.F. intensifies bombing efforts against railway communications to support Allied ground operations."
+        },
+        {
+            "event": "e_4",
+            "date": "1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Throughout 1945, the enemy employs an effective repair organisation to counteract the interdiction efforts being conducted by Allied forces."
+        }
+    ]
+}

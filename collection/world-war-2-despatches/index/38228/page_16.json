@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unnamed Military Officer",
+            "p_2": "Unnamed Official"
+        },
+        "locations": {
+            "l_1": "Pegu",
+            "l_2": "Hlegu",
+            "l_3": "Taukkyan",
+            "l_4": "Rangoon",
+            "l_5": "Thonze",
+            "l_6": "Tharrawaddy",
+            "l_7": "Letpadan",
+            "l_8": "Henzada",
+            "l_9": "Sanywe Ferry",
+            "l_10": "Prome",
+            "l_11": "Irrawaddy Valley"
+        },
+        "events": {
+            "e_1": "Attack on Road Block North of Taukkyan",
+            "e_2": "Withdrawal from Rangoon",
+            "e_3": "Concentration of 17 Division",
+            "e_4": "Regrouping of Forces after Fall of Rangoon"
+        },
+        "organisations": {
+            "o_1": "63 Infantry Brigade",
+            "o_2": "16 Indian Infantry Brigade",
+            "o_3": "R.A.F.",
+            "o_4": "Japanese Forces",
+            "o_5": "17 Division",
+            "o_6": "Chinese Fifth Army"
+        }
+    },
+    "keywords": [
+        "military",
+        "withdrawal",
+        "attack",
+        "Japanese",
+        "Rangoon",
+        "infantry brigade",
+        "concentration",
+        "operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Logistics",
+        "Regrouping of Forces"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th March",
+            "locations": [
+                "l_3",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 63 Infantry Brigade is ordered to attack a road block north of Taukkyan but fails to clear it immediately; however, a subsequent attack by the 16 Indian Infantry Brigade successfully clears the route."
+        },
+        {
+            "event": "e_2",
+            "date": "7th - 11th March",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Following the fall of Rangoon, the 17 Division conducts a withdrawal to regroup and concentrate forces in a safer area, dealing with logistical challenges amidst enemy activity."
+        },
+        {
+            "event": "e_3",
+            "date": "9th - 11th March",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The 17 Division is concentrated in the Thonze, Tharrawaddy, and Letpadan areas as part of the strategic regrouping after the withdrawal from Rangoon."
+        },
+        {
+            "event": "e_4",
+            "date": "After 11th March",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "In the aftermath of the fall of Rangoon, the military pivots its strategy, regrouping forces in preparation for ongoing operations to retain control over Upper Burma."
+        }
+    ]
+}

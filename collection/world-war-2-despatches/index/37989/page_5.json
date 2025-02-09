@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain Parry",
+            "p_2": "Captain L. N. Hill",
+            "p_3": "His Britannic Majesty's Minister"
+        },
+        "locations": {
+            "l_1": "Montevideo",
+            "l_2": "English Bank",
+            "l_3": "Rouen",
+            "l_4": "San Antonio",
+            "l_5": "Falkland Islands"
+        },
+        "events": {
+            "e_1": "Engagement of GRAF SPEE",
+            "e_2": "Patrol Orders of AJAX and ACHILLES",
+            "e_3": "Reconnaissance of the harbour",
+            "e_4": "Landing of funeral party by GRAF SPEE"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty",
+            "o_3": "British Government"
+        }
+    },
+    "keywords": [
+        "GRAF SPEE",
+        "AJAX",
+        "ACHILLES",
+        "CUMBERLAND",
+        "patrol",
+        "naval engagement",
+        "Montevideo"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategies",
+        "Reinforcements and Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Reinforcements and Logistics": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "14th December",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "GRAF SPEE engages with H.M. ships but remains in harbor, prompting strategic decisions by Captain Parry to manage the threat."
+        },
+        {
+            "event": "e_2",
+            "date": "14th December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "AJAX and ACHILLES receive orders to patrol specific sectors to monitor GRAF SPEE's potential movements."
+        },
+        {
+            "event": "e_3",
+            "date": "16th December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "AJAX conducts a reconnaissance mission over the harbor, revealing GRAF SPEE's efforts to avoid detection."
+        },
+        {
+            "event": "e_4",
+            "date": "16th December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "GRAF SPEE is reported to have landed a funeral party, extending her stay in the harbor to regain seaworthiness."
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Ritchie",
+            "p_2": "General Messervy"
+        },
+        "locations": {
+            "l_1": "Sghifet es Sidra",
+            "l_2": "Aslagh ridge",
+            "l_3": "Sidi Muftah",
+            "l_4": "Dahar el Aslagh",
+            "l_5": "Bir Hacheim",
+            "l_6": "Knightsbridge",
+            "l_7": "Tobruk",
+            "l_8": "Metifel"
+        },
+        "events": {
+            "e_1": "13th Corps attack",
+            "e_2": "Failure of the 69th Brigade",
+            "e_3": "30th Corps operation",
+            "e_4": "Counterattack on Dahar el Aslagh",
+            "e_5": "Battle of Bir Hacheim",
+            "e_6": "Armoured battle around Knightsbridge"
+        },
+        "organisations": {
+            "o_1": "8th Army",
+            "o_2": "1st South African Division",
+            "o_3": "Free French"
+        }
+    },
+    "keywords": [
+        "military operation",
+        "counterattack",
+        "infantry",
+        "armoured brigade",
+        "enemy tanks",
+        "communication failure"
+    ],
+    "themes": [
+        "Military Operations",
+        "Counteroffensive Actions",
+        "Failures in Communication",
+        "Tactical Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Counteroffensive Actions": [
+            "e_5",
+            "e_6"
+        ],
+        "Failures in Communication": [
+            "e_4"
+        ],
+        "Tactical Decisions": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 1",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 13th Corps launches an attack aimed at capturing Sghifet es Sidra, but it is delayed, allowing the enemy to fortify their position."
+        },
+        {
+            "event": "e_2",
+            "date": "June 4",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The failure of the 69th Brigade to capture Sghifet es Sidra results in their inability to support the 30th Corps, leading to subsequent operational difficulties."
+        },
+        {
+            "event": "e_3",
+            "date": "June 4",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The 30th Corps successfully captures Aslagh ridge but faces challenges as plans begin to unravel due to enemy resistance."
+        },
+        {
+            "event": "e_4",
+            "date": "June 5",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "A counterattack is launched to regain control of Dahar el Aslagh, but communication breakdowns hinder efforts significantly."
+        },
+        {
+            "event": "e_5",
+            "date": "June 5",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_6"
+            ],
+            "eventSummary": "The Eighth Army's counterattack on Bir Hacheim is a turning point in the battle, prompting the need for reorganization without immediate evacuation."
+        },
+        {
+            "event": "e_6",
+            "date": "June 6",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "An armoured battle around Knightsbridge begins, with both sides heavily engaged, although neither gains a strategic advantage."
+        }
+    ]
+}

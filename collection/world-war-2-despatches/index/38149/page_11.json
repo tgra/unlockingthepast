@@ -1,0 +1,137 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "R.A.S.C. drivers",
+            "p_2": "Anti-Aircraft Command units"
+        },
+        "locations": {
+            "l_1": "Great Yarmouth",
+            "l_2": "Low Countries",
+            "l_3": "England",
+            "l_4": "Yorkshire",
+            "l_5": "Lincolnshire",
+            "l_6": "Lancashire",
+            "l_7": "Skegness",
+            "l_8": "Flamborough Head",
+            "l_9": "London",
+            "l_10": "Dutch coast"
+        },
+        "events": {
+            "e_1": "Deployment of Diver Strip",
+            "e_2": "Deployment of Diver Fringe",
+            "e_3": "Flying bomb attacks",
+            "e_4": "Land-launched attacks"
+        },
+        "organisations": {
+            "o_1": "U.S. Air Force",
+            "o_2": "War Office",
+            "o_3": "Construction Batteries",
+            "o_4": "Anti-Aircraft Command"
+        }
+    },
+    "keywords": [
+        "Diver Strip",
+        "Anti-Aircraft Command",
+        "flying bombs",
+        "deployments",
+        "batteries",
+        "reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Deployment Strategies",
+        "Air Defense",
+        "Logistics",
+        "War Establishments"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Deployment Strategies": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Defense": [
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ],
+        "War Establishments": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "22nd September 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_2"
+            ],
+            "eventSummary": "On 22nd September 1944, orders for the deployment of the Diver Strip are issued to enhance air defense against flying bomb attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "24th December 1944",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_1"
+            ],
+            "eventSummary": "On 24th December 1944, a further deployment, known as Diver Fringe, is ordered to defend against flying bombs launched across the coasts."
+        },
+        {
+            "event": "e_3",
+            "date": "14th January 1945",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The series of air-launched flying bomb attacks continues until 14th January 1945, with only a fraction reaching London despite extensive defensive measures."
+        },
+        {
+            "event": "e_4",
+            "date": "2nd/3rd March 1945",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Land-launched attacks from the Dutch coast commence on 2nd/3rd March 1945 and continue until the end of March, targeting London."
+        }
+    ]
+}

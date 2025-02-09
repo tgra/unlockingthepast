@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General von Vietinghoff",
+            "p_2": "Field-Marshal Kesselring"
+        },
+        "locations": {
+            "l_1": "Italy",
+            "l_2": "Capo Passero",
+            "l_3": "Brenner",
+            "l_4": "Modena",
+            "l_5": "Ostiglia",
+            "l_6": "Verona",
+            "l_7": "Ferrara",
+            "l_8": "Rovigo",
+            "l_9": "Padua",
+            "l_10": "Argenta",
+            "l_11": "Venetia",
+            "l_12": "Tyrol",
+            "l_13": "Salzburg",
+            "l_14": "Western Carinthia",
+            "l_15": "Northern Italy"
+        },
+        "events": {
+            "e_1": "Italian Campaign",
+            "e_2": "Operation against German defenses",
+            "e_3": "Transference of divisions"
+        },
+        "organisations": {
+            "o_1": "Combined Chiefs of Staff",
+            "o_2": "German Army Group C",
+            "o_3": "Psychological Warfare Organization"
+        }
+    },
+    "keywords": [
+        "Supreme Allied Commander",
+        "Italian campaign",
+        "enemy defenses",
+        "Fifth Army",
+        "Eighth Army",
+        "German Order of Battle",
+        "psychological warfare"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Psychological Warfare",
+        "Resilience"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defensive Strategies": [
+            "e_2"
+        ],
+        "Psychological Warfare": [
+            "e_3",
+            "o_3"
+        ],
+        "Resilience": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 1945",
+            "locations": [
+                "l_1",
+                "l_12",
+                "l_13",
+                "l_14",
+                "l_15"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Italian campaign unfolds as Allied forces strategize to dismantle German defenses in Italy, ultimately leading to the final capitulation of enemy forces."
+        },
+        {
+            "event": "e_2",
+            "date": "April 1945",
+            "locations": [
+                "l_1",
+                "l_6",
+                "l_7",
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation aiming at breaking German defenses employs two separate attacking points, focusing on surrounding enemy forces and exploiting weaknesses to prevent their reorganization."
+        },
+        {
+            "event": "e_3",
+            "date": "April 10, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The transference of divisions indicates shifting military strategies as commands are adjusted in response to ongoing military challenges in the Italian front."
+        }
+    ]
+}

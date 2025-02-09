@@ -1,0 +1,66 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Sardinia",
+            "l_2": "Cagliari",
+            "l_3": "LONDON",
+            "l_4": "Bristol",
+            "l_5": "Belfast"
+        },
+        "events": {
+            "e_1": "Eastern group attack",
+            "e_2": "Action cease"
+        },
+        "organisations": {}
+    },
+    "keywords": [
+        "cruisers",
+        "battlefleet",
+        "destroyers",
+        "attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagement": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1520",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Eastern group of cruisers is attacked by the second T/B Striking Force while on an Easterly course south of Sardinia. They are screened by four destroyers during this naval engagement."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "After the attack ceases, the Western group remains at a considerable distance while the Eastern group likely turns towards Cagliari to rejoin their battlefleet."
+        }
+    ]
+}

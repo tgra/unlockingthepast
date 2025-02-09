@@ -1,0 +1,115 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant-General McCreery",
+            "p_2": "General Dawley",
+            "p_3": "Major-General John P. Lucas",
+            "p_4": "Lieutenant-General (now General Sir Richard) McCreery",
+            "p_5": "Major-General Ernest J. Dawley",
+            "p_6": "Rear-Admiral (now Admiral Sir Rhoderick) McGrigor"
+        },
+        "locations": {
+            "l_1": "Salerno",
+            "l_2": "Sele River",
+            "l_3": "Montecorvino Airfield",
+            "l_4": "Naples",
+            "l_5": "Capodichino",
+            "l_6": "Pomigliano",
+            "l_7": "River Volturno",
+            "l_8": "Triflisco",
+            "l_9": "Capua",
+            "l_10": "Cancello",
+            "l_11": "Sicily",
+            "l_12": "Bizerta",
+            "l_13": "Oran",
+            "l_14": "Tripoli",
+            "l_15": "Malta",
+            "l_16": "Spezia",
+            "l_17": "Genoa"
+        },
+        "events": {
+            "e_1": "Assault on Salerno",
+            "e_2": "Operation BAYTOWN"
+        },
+        "organisations": {
+            "o_1": "United States Army",
+            "o_2": "Eighth Army",
+            "o_3": "Seventh Army",
+            "o_4": "Desert Air Force",
+            "o_5": "XII U.S. Air Support Command",
+            "o_6": "Tactical Bomber Force",
+            "o_7": "Royal Artillery"
+        }
+    },
+    "keywords": [
+        "assault",
+        "beach-head",
+        "reinforcements",
+        "air cover",
+        "naval operations",
+        "infantry divisions"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Support",
+        "Air Support",
+        "Reinforcements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Reinforcements": [
+            "e_1"
+        ],
+        "Naval Support": [
+            "e_2"
+        ],
+        "Air Support": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D-Day",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Lieutenant-General McCreery leads an assault between Salerno and the Sele River to establish a beach-head and capture Naples amid substantial naval and air support."
+        },
+        {
+            "event": "e_2",
+            "date": "16th August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_6"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation BAYTOWN involves a landing by two infantry divisions reinforced by an armoured brigade, aiming for a quick and effective crossing with substantial artillery and air support."
+        }
+    ]
+}

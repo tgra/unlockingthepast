@@ -1,0 +1,74 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Smith",
+            "p_2": "President Johnson"
+        },
+        "locations": {
+            "l_1": "Washington D.C.",
+            "l_2": "New York"
+        },
+        "events": {
+            "e_1": "Operation Freedom",
+            "e_2": "Summit Meeting"
+        },
+        "organisations": {
+            "o_1": "United Nations",
+            "o_2": "US Military"
+        }
+    },
+    "keywords": [
+        "Military",
+        "Diplomacy",
+        "Operation",
+        "Summit"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2023-10-10",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Freedom is launched by General Smith, aiming to secure strategic locations."
+        },
+        {
+            "event": "e_2",
+            "date": "2023-10-12",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A summit meeting is held in New York where President Johnson addresses the outcomes of Operation Freedom."
+        }
+    ]
+}

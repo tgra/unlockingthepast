@@ -1,0 +1,139 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander J. Jefferies",
+            "p_2": "Lieutenant-Commander L. F. Ramseyer",
+            "p_3": "Lieutenant Stowell"
+        },
+        "locations": {
+            "l_1": "Leros",
+            "l_2": "Samos",
+            "l_3": "Kos",
+            "l_4": "Alexandria",
+            "l_5": "Haifa",
+            "l_6": "Alinda Bay",
+            "l_7": "Portolago",
+            "l_8": "Kalymnos",
+            "l_9": "Casteloriso"
+        },
+        "events": {
+            "e_1": "Fall of Leros",
+            "e_2": "Evacuation from Samos",
+            "e_3": "Bombardment of Alinda Bay",
+            "e_4": "Withdrawal from Aegean"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Greek Sacred Squadron",
+            "o_3": "Royal Air Force",
+            "o_4": "Special Boat Squadron"
+        }
+    },
+    "keywords": [
+        "Leros",
+        "Samos",
+        "Evacuation",
+        "Royal Navy",
+        "Air Reconnaissance",
+        "Bombing",
+        "Naval Operations",
+        "Military Withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuations",
+        "Naval Warfare",
+        "Reconnaissance",
+        "Tactical Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Evacuations": [
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_3",
+            "e_4"
+        ],
+        "Reconnaissance": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "16th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_2"
+            ],
+            "eventSummary": "The fall of Leros occurs as enemy reinforcements overrun British defenses, leading to a critical loss of territory."
+        },
+        {
+            "event": "e_2",
+            "date": "19th-20th November",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Evacuation from Samos is successfully conducted, removing British and Greek forces in response to increasing threats."
+        },
+        {
+            "event": "e_3",
+            "date": "15th November",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Bombardment of Alinda Bay is executed by H.M.S. Penn and Aldenham, aimed at disrupting enemy landings."
+        },
+        {
+            "event": "e_4",
+            "date": "By 2nd December",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The withdrawal from the Aegean occurs, with remaining forces being extracted to ensure minimal losses."
+        }
+    ]
+}

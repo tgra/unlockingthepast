@@ -1,0 +1,109 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "Lieutenant R. M. Marshall"
+        },
+        "locations": {
+            "l_1": "Z23",
+            "l_2": "Sheringham buoy",
+            "l_3": "Smiths Knoll buoy",
+            "l_4": "Brown Ridge",
+            "l_5": "position Z18"
+        },
+        "events": {
+            "e_1": "Engagement involving H.M.S. MACKAY",
+            "e_2": "Sinking of H.M.T. WILLIAM STEPHEN",
+            "e_3": "Coastal Force Engagements"
+        },
+        "organisations": {
+            "o_1": "H.M.S. MACKAY",
+            "o_2": "H.M.S. WORCESTER",
+            "o_3": "M.G.B.s"
+        }
+    },
+    "keywords": [
+        "E-boats",
+        "Coastal Force Engagements",
+        "Torpedo",
+        "Patrol",
+        "Military Action"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Engagement Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_3"
+        ],
+        "Engagement Tactics": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown Date",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "H.M.S. MACKAY engages multiple E-boats, successfully driving some off, despite engine failures hindering the speed of units."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown Date",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "H.M.T. WILLIAM STEPHEN is torpedoed after falling behind the convoy during E-boat activity, leading to notable regret from the commanding officer who initially ordered her towards shore."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown Date",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "In a series of coastal force engagements, several units encounter E-boats with varied success, noting tactical movements and combat intricacies."
+        }
+    ]
+}

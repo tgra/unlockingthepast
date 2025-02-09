@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "PRINCE LEOPOLD",
+            "p_2": "Lieutenant-Colonel J. F. Durnford-Slater",
+            "p_3": "Major J. M. T. F. Churchill",
+            "p_4": "PRINCE CHARLES"
+        },
+        "locations": {
+            "l_1": "South Vaagso",
+            "l_2": "Vaagsfiord",
+            "l_3": "KENYA",
+            "l_4": "Hollevik",
+            "l_5": "Halnoesvik",
+            "l_6": "Maaloy Island",
+            "l_7": "Ulvesund",
+            "l_8": "North Vaagso"
+        },
+        "events": {
+            "e_1": "Operation against Rugsundo battery",
+            "e_2": "Landing at South Vaagso",
+            "e_3": "Capture of Maaloy Island"
+        },
+        "organisations": {
+            "o_1": "Military Forces",
+            "o_2": "Hampden bombers"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Bombing",
+        "Naval Bombardment",
+        "Troop Landings",
+        "Resistance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Air Support",
+        "Ground Assaults"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_2"
+        ],
+        "Air Support": [
+            "e_1"
+        ],
+        "Ground Assaults": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Troops conduct an operation against the Rugsundo battery with significant air support that results in a successful bombing despite losses."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_4",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Troops land at South Vaagso with naval bombardment support; despite stiff German resistance, they manage to secure the area."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_6",
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Troops successfully capture Maaloy Island, where they encounter demoralised enemy forces who surrender after heavy bombardment."
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C.S.15",
+            "p_2": "C.S.7",
+            "p_3": "Commander-in-Chief, Mediterranean"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Crete",
+            "l_3": "Alexandria",
+            "l_4": "Caique",
+            "l_5": "Kaso Strait",
+            "l_6": "Milo",
+            "l_7": "Kithera Channel",
+            "l_8": "Canea",
+            "l_9": "Aegean",
+            "l_10": "Anti Kithera Channel",
+            "l_11": "Pori Island"
+        },
+        "events": {
+            "e_1": "Sinking of the German caique",
+            "e_2": "Engagement between Force C and enemy aircraft",
+            "e_3": "Attack on Force B by dive bombers",
+            "e_4": "Warspite bombed",
+            "e_5": "GREYHOUND hit and sunk"
+        },
+        "organisations": {
+            "o_1": "Force C",
+            "o_2": "Force B",
+            "o_3": "Force A"
+        }
+    },
+    "keywords": [
+        "Military Engagement",
+        "Air Attacks",
+        "Naval Operations",
+        "Ammunition Shortage"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Aerial Bombing",
+        "Force Coordination"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Aerial Bombing": [
+            "e_3",
+            "e_4"
+        ],
+        "Force Coordination": [
+            "e_1",
+            "e_2",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "21st May",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Force C engages and sinks a German caique carrying troops."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd May",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Force C encounters continuous air attacks causing significant damage."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd May",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Force B is attacked by dive bombers causing some damage."
+        },
+        {
+            "event": "e_4",
+            "date": "22nd May",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Warspite is bombed while stationed in support of other forces."
+        },
+        {
+            "event": "e_5",
+            "date": "22nd May",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The GREYHOUND is hit by bombs and ultimately sinks while conducting rescue operations."
+        }
+    ]
+}

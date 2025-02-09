@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "T. Troubridge",
+            "p_2": "Rear-Admiral Sir Harold Burrough"
+        },
+        "locations": {
+            "l_1": "Gibraltar",
+            "l_2": "Oran",
+            "l_3": "Cape Trafalgar",
+            "l_4": "Mostaganem",
+            "l_5": "Arzeu"
+        },
+        "events": {
+            "e_1": "Operation Torch",
+            "e_2": "Rendezvous with AURORA",
+            "e_3": "Assault at Z Beach"
+        },
+        "organisations": {
+            "o_1": "NavaL COMMANDER CENTRE TASK Force",
+            "o_2": "U.S. Rangers"
+        }
+    },
+    "keywords": [
+        "Operation Torch",
+        "Gibraltar",
+        "Oran",
+        "assault",
+        "convoy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Troop Deployment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Troop Deployment": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th October",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Torch involves the sailing of the combined fast convoy from the Clyde to Gibraltar, leading to subsequent operations."
+        },
+        {
+            "event": "e_2",
+            "date": "5th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Rendezvous with AURORA occurs on 5th November as the convoy maneuvers towards Gibraltar."
+        },
+        {
+            "event": "e_3",
+            "date": "8th November",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Assault at Z Beach is successfully executed with U.S. Rangers landing undetected as part of the Operation Torch."
+        }
+    ]
+}

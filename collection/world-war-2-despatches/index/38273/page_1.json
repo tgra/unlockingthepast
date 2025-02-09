@@ -1,0 +1,141 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "C.B.",
+            "p_2": "A.M. Bridge",
+            "p_3": "A.B. Cunningham",
+            "p_4": "H.D. Pridham-Wippell",
+            "p_5": "J.C. Tovey"
+        },
+        "locations": {
+            "l_1": "Calabrian Coast",
+            "l_2": "Alexandria",
+            "l_3": "Malta",
+            "l_4": "Sicilian Coast",
+            "l_5": "Central Mediterranean",
+            "l_6": "Augusta"
+        },
+        "events": {
+            "e_1": "Operation M.A.5",
+            "e_2": "Chase of Enemy Cruiser Squadron",
+            "e_3": "Attack on Shipping in Augusta",
+            "e_4": "Meeting with Italian Fleet"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "British Fleet",
+            "o_3": "201 Group (R.A.F.)"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "bombing attacks",
+        "carrier operations",
+        "convoys",
+        "Torpedo bombers"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Tactics",
+        "Air Superiority",
+        "Fleet Maneuvering",
+        "Engagement with Enemy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Tactics": [
+            "e_2",
+            "e_4"
+        ],
+        "Air Superiority": [
+            "e_3"
+        ],
+        "Fleet Maneuvering": [
+            "e_1",
+            "e_4"
+        ],
+        "Engagement with Enemy": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "7th to 13th July 1940",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Mediterranean Fleet embarks on Operation M.A.5 to escort two convoys safely to Alexandria, detaching forces for additional operations against the Sicilian coastline."
+        },
+        {
+            "event": "e_2",
+            "date": "During Operation M.A.5",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The British Fleet engages in a chase against the enemy cruiser squadron, employing various naval tactics as they navigate the Calabrian Coast."
+        },
+        {
+            "event": "e_3",
+            "date": "24 hours after the chase",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "H.M.S. EAGLE launches a torpedo striking force against shipping in Augusta, maintaining constant anti-submarine patrols despite previous bombing attacks."
+        },
+        {
+            "event": "e_4",
+            "date": "July 1940",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The brief encounter with the Italian Fleet demonstrates the challenges posed by air superiority and emphasizes the need for commanding control in the Mediterranean."
+        }
+    ]
+}

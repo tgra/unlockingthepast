@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Commandez"
+        },
+        "locations": {
+            "l_1": "Buthidaung",
+            "l_2": "Maungdaw",
+            "l_3": "Arakan",
+            "l_4": "Razabil",
+            "l_5": "Godusara",
+            "l_6": "Rathedaung",
+            "l_7": "Chindwin",
+            "l_8": "Imphal",
+            "l_9": "Ukhrul",
+            "l_10": "Tamu",
+            "l_11": "Tiddim",
+            "l_12": "HomaJin",
+            "l_13": "Taung Bazaar",
+            "l_14": "Assam"
+        },
+        "events": {
+            "e_1": "Battle in Arakan",
+            "e_2": "Enemy Offensive across the Chindwin",
+            "e_3": "Fly-in Operation"
+        },
+        "organisations": {
+            "o_1": "Strategic Air Force",
+            "o_2": "R.A.F.",
+            "o_3": "U.S. Squadron",
+            "o_4": "Indian Divisions"
+        }
+    },
+    "keywords": [
+        "air superiority",
+        "bombing operations",
+        "defensive battle",
+        "military strategy",
+        "enemy offensive"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Defensive Tactics",
+        "Strategic Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Support": [
+            "e_3"
+        ],
+        "Defensive Tactics": [
+            "e_2"
+        ],
+        "Strategic Planning": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 4th",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle in Arakan concludes successfully, attributed to air supremacy that supported ground troops."
+        },
+        {
+            "event": "e_2",
+            "date": "March 7/8",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The enemy launched an offensive across the Chindwin, leading to significant military maneuvers."
+        },
+        {
+            "event": "e_3",
+            "date": "March 5/6",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The fly-in operation commences to aid the military response to the enemy's actions across the Chindwin."
+        }
+    ]
+}

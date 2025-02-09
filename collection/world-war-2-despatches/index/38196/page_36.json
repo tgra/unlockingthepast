@@ -1,0 +1,120 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Harwood",
+            "p_2": "Air Chief Marshal Tedder",
+            "p_3": "Rommel",
+            "p_4": "Admiral Sir Henry Harwood",
+            "p_5": "Marshal of the Royal Air Force Lord Tedder"
+        },
+        "locations": {
+            "l_1": "Alamein line",
+            "l_2": "El Alamein",
+            "l_3": "Tobruk",
+            "l_4": "Benghazi",
+            "l_5": "Kufra",
+            "l_6": "Gialo",
+            "l_7": "Barce",
+            "l_8": "Bardia",
+            "l_9": "Matruh",
+            "l_10": "Belhamed",
+            "l_11": "Middle East"
+        },
+        "events": {
+            "e_1": "Raids on Tobruk and Benghazi",
+            "e_2": "Alam el Halfa battle",
+            "e_3": "Sabotage of Desert Railway"
+        },
+        "organisations": {
+            "o_1": "Long Range Desert Group",
+            "o_2": "Royal Air Force",
+            "o_3": "Eighth Army"
+        }
+    },
+    "keywords": [
+        "operations",
+        "battles",
+        "supply lines",
+        "military strategy",
+        "psychological effects"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Strategic Decisions",
+        "Morale"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "13th September",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The raids are launched to capture key ports and disrupt enemy supply lines, although they ultimately fail with heavy losses on our side."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown (after Alam el Halfa)",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Following the Alam el Halfa battle, the Light Division is moved back to Daba for defense against potential enemy landings."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown (during the time leading to Gazala battles)",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Sabotage attempts against the desert railway are successfully carried out, disrupting enemy supply lines."
+        }
+    ]
+}

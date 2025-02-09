@@ -1,0 +1,90 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Wilson",
+            "p_2": "Commodore Delane"
+        },
+        "locations": {
+            "l_1": "Kalamata",
+            "l_2": "Alexandria",
+            "l_3": "Monemvasia",
+            "l_4": "Suda",
+            "l_5": "Cape Matapan",
+            "l_6": "Leonidion",
+            "l_7": "Kithera"
+        },
+        "events": {
+            "e_1": "Evacuation from Kalamata",
+            "e_2": "Convoy GA. 15"
+        },
+        "organisations": {
+            "o_1": "British Navy"
+        }
+    },
+    "keywords": [
+        "Evacuation",
+        "Convoy",
+        "Troops",
+        "German Occupation",
+        "Salvage",
+        "Refugees"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Evacuation Plans"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Navel Strategy": [
+            "e_1"
+        ],
+        "Evacuation Plans": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 28-29, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation from Kalamata is initiated as German forces occupy the town, with British troops attempting to withdraw."
+        },
+        {
+            "event": "e_2",
+            "date": "April 29, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Convoy GA. 15 departs from Suda carrying a significant number of troops and other personnel as part of the evacuation strategy."
+        }
+    ]
+}

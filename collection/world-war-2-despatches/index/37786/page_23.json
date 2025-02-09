@@ -1,0 +1,167 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "commander",
+            "p_2": "battalion commander",
+            "p_3": "Royal Irish Fusiliers",
+            "p_4": "His Majesty",
+            "p_5": "King's Own",
+            "p_6": "Buffs",
+            "p_7": "Royal West Kents",
+            "p_8": "Italian garrison"
+        },
+        "locations": {
+            "l_1": "Leros",
+            "l_2": "Gurna Bay",
+            "l_3": "Meraviglia",
+            "l_4": "Pandeli Bay",
+            "l_5": "Quirico",
+            "l_6": "Dellapalma Bay",
+            "l_7": "Grifo",
+            "l_8": "Mt. Vedetta",
+            "l_9": "Mt. Clidi",
+            "l_10": "Ste. Madonne",
+            "l_11": "Mt. Appetici",
+            "l_12": "Gachi Ridge",
+            "l_13": "Alinda Bay"
+        },
+        "events": {
+            "e_1": "Enemy landing at Leros",
+            "e_2": "Counter-attack at Appetici",
+            "e_3": "Buffs recapture Mt. Clidi",
+            "e_4": "Heavy attack on Meraviglia",
+            "e_5": "Surrender of the garrison"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Royal Irish Fusiliers",
+            "o_3": "King's Own",
+            "o_4": "Buffs",
+            "o_5": "Royal West Kents"
+        }
+    },
+    "keywords": [
+        "enemy",
+        "attack",
+        "landing",
+        "counter-attack",
+        "recapture",
+        "surrender",
+        "bombardment"
+    ],
+    "themes": [
+        "Military Operations",
+        "Counterattacks",
+        "Air Warfare",
+        "Land Operations",
+        "Surrender"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Counterattacks": [
+            "e_2",
+            "e_3"
+        ],
+        "Air Warfare": [
+            "e_4"
+        ],
+        "Surrender": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "12th November",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The enemy begins their assault on Leros, landing troops at multiple points including Pandeli Bay and gaining significant ground despite facing resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "13th November",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "A counter-attack is launched by the reserve company of the King's Own against the enemy at Appetici but fails to achieve its goals amidst heavy bombardments."
+        },
+        {
+            "event": "e_3",
+            "date": "14th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Buffs manage to recapture Mt. Clidi during the night, helping to gain a stronger tactical position against the enemy."
+        },
+        {
+            "event": "e_4",
+            "date": "16th November",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "A heavy enemy attack occurs at Meraviglia, leading to significant challenges for the defending forces as aerial bombardments escalate."
+        },
+        {
+            "event": "e_5",
+            "date": "16th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The garrison at Leros ultimately surrenders after a prolonged engagement, marking a critical turning point in the battle."
+        }
+    ]
+}

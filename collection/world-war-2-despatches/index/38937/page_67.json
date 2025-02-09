@@ -1,0 +1,145 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Eisenhower",
+            "p_2": "General Smith",
+            "p_3": "General Castellano",
+            "p_4": "Marshal Badoglio",
+            "p_5": "Castellano",
+            "p_6": "Kesselring",
+            "p_7": "Jodl"
+        },
+        "locations": {
+            "l_1": "Rome",
+            "l_2": "Salerno",
+            "l_3": "Straits of Messina",
+            "l_4": "Cassibile",
+            "l_5": "Tunisia",
+            "l_6": "France",
+            "l_7": "Peloponese",
+            "l_8": "Balkans",
+            "l_9": "South Russia"
+        },
+        "events": {
+            "e_1": "Operation Avalanche",
+            "e_2": "Military Terms of Surrender",
+            "e_3": "First invasion of the continent of Europe",
+            "e_4": "Loss of Stalingrad",
+            "e_5": "Final capitulation"
+        },
+        "organisations": {
+            "o_1": "United States Airborne Division",
+            "o_2": "Eighth Army",
+            "o_3": "Fifth Army"
+        }
+    },
+    "keywords": [
+        "Airborne Division",
+        "Military Terms",
+        "Surrender",
+        "Invasion",
+        "German Forces",
+        "Italian Government",
+        "Operation Salerno"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Alliances",
+        "Invasions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 1, 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "General Eisenhower decides to proceed with Operation Avalanche, planning to land an airborne division near Rome, with the collaboration of Italian divisions."
+        },
+        {
+            "event": "e_2",
+            "date": "September 3, 1943",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On September 3rd, General Smith, together with General Eisenhower and General Castellano, signs the Military Terms of Surrender on behalf of the Italian government."
+        },
+        {
+            "event": "e_3",
+            "date": "September 3, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Eighth Army, under General Eisenhower, begins the first invasion of the continent of Europe amidst intense artillery fire on September 3rd."
+        },
+        {
+            "event": "e_4",
+            "date": "February 1943",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The loss of Stalingrad occurs, marking a significant defeat for German forces in South Russia."
+        },
+        {
+            "event": "e_5",
+            "date": "1943",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The final capitulation of Axis forces is confirmed, with substantial losses being recorded for German soldiers."
+        }
+    ]
+}

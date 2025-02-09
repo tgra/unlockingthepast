@@ -1,0 +1,142 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant W. E. A. Blount, D.S.C., R.N.V.R.",
+            "p_2": "Lieutenant R. C. Davidson, D.S.C., R.N.V.R.",
+            "p_3": "Lieutenant D. Lummis"
+        },
+        "locations": {
+            "l_1": "Zara",
+            "l_2": "Vis",
+            "l_3": "Ist",
+            "l_4": "Kok Point",
+            "l_5": "Mulat",
+            "l_6": "Vir Island",
+            "l_7": "Maon Channel",
+            "l_8": "Veli Rat Light"
+        },
+        "events": {
+            "e_1": "Patrol Operation North of Zara",
+            "e_2": "Convoy Sighted",
+            "e_3": "Land Battle at Ist",
+            "e_4": "Engagement Near Mulat"
+        },
+        "organisations": {
+            "o_1": "His Majesty's Royal Navy",
+            "o_2": "L.R.D.G. (Long Range Desert Group)"
+        }
+    },
+    "keywords": [
+        "Patrol",
+        "Convoy",
+        "Partisan",
+        "Intelligence",
+        "Military Operation",
+        "Naval Engagement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence Gathering",
+        "Naval Patrols",
+        "Engagements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Intelligence Gathering": [
+            "e_2",
+            "e_3"
+        ],
+        "Naval Patrols": [
+            "e_1"
+        ],
+        "Engagements": [
+            "e_3",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October 10, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A naval unit embarks on a patrol operation north of Zara, aiming to intercept a northbound convoy based on recent intel."
+        },
+        {
+            "event": "e_2",
+            "date": "October 10, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Lieutenant W. E. A. Blount reports sighting of a convoy that had entered Zara days prior, indicating a potential encounter with enemy vessels."
+        },
+        {
+            "event": "e_3",
+            "date": "October 10, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Gunfire and flares indicate a land battle occurring at Ist, leading to strategic considerations about remaining persistent in the patrol area."
+        },
+        {
+            "event": "e_4",
+            "date": "October 10, 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The naval unit engages in response to military activity detected near Mulat, seeking understanding of the situation amidst reported enemy presence."
+        }
+    ]
+}

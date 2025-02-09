@@ -1,0 +1,130 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain E. C. Ewen",
+            "p_2": "Unnamed Fleet Commander"
+        },
+        "locations": {
+            "l_1": "Sakishima",
+            "l_2": "Ishigaki",
+            "l_3": "Miyako",
+            "l_4": "Leyte",
+            "l_5": "Mosquito"
+        },
+        "events": {
+            "e_1": "Operation to cover Sakishima Gunto",
+            "e_2": "Fleet Disengagement",
+            "e_3": "Refuelling Operations",
+            "e_4": "Air Operations against enemy airfields"
+        },
+        "organisations": {
+            "o_1": "H.M.S. Indomitable",
+            "o_2": "H.M.S. Illustrious",
+            "o_3": "TF 58",
+            "o_4": "CTF 57"
+        }
+    },
+    "keywords": [
+        "Japanese airfields",
+        "Fleet operations",
+        "Refuelling",
+        "Military engagement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Tactical Command",
+        "Refuelling",
+        "Air Defense"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Tactical Command": [
+            "e_2"
+        ],
+        "Refuelling": [
+            "e_3"
+        ],
+        "Air Defense": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 3, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "An American Task Group of TF 58 is ordered to cover Sakishima Gunto, preparing the fleet for forthcoming military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "April 4, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Fleet disengages to a designated area for refuelling amidst challenging weather conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "April 5, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Refuelling operations commence after favorable weather conditions develop, allowing the fleet to prep for future engagement."
+        },
+        {
+            "event": "e_4",
+            "date": "April 6, 1945",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Fighters are flown off H.M.S. Indomitable to attack enemy airfields; initial reports indicate limited enemy activity."
+        }
+    ]
+}

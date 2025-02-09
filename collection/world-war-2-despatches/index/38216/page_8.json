@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General van Oyen",
+            "p_2": "Air Vice Marshal Maltby",
+            "p_3": "Group Captain Whistondale"
+        },
+        "locations": {
+            "l_1": "Batavia",
+            "l_2": "Kalidjati",
+            "l_3": "Entanwetan",
+            "l_4": "Soebang",
+            "l_5": "Cheribon",
+            "l_6": "Andir",
+            "l_7": "Bandoeng"
+        },
+        "events": {
+            "e_1": "Bombing of Japanese Convoy",
+            "e_2": "Disembarkation at Entanwetan",
+            "e_3": "Aerodrome Overrun at Kalidjati"
+        },
+        "organisations": {
+            "o_1": "Dutch Home Guard",
+            "o_2": "British RAF",
+            "o_3": "Japanese Imperial Army"
+        }
+    },
+    "keywords": [
+        "Convoy",
+        "Disembarkation",
+        "Blenheims",
+        "Hudsons",
+        "Aerodrome",
+        "Kalidjati",
+        "Japanese tanks",
+        "Counter-attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Coordination Failures",
+        "Defense Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Coordination Failures": [
+            "e_3"
+        ],
+        "Defense Strategies": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 1, 1942",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Blenheims and Hudsons execute sorties against a Japanese convoy approaching Batavia, achieving significant results despite challenging weather."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1, 1942",
+            "locations": [
+                "l_3",
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Disembarkation at Entanwetan proceeds despite ongoing aerial attacks as Japanese forces land along the coast."
+        },
+        {
+            "event": "e_3",
+            "date": "March 1, 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Kalidjati aerodrome is overrun by advancing Japanese forces, capturing remaining aircraft and leading to heavy losses among the defenders."
+        }
+    ]
+}

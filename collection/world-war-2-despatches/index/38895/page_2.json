@@ -1,0 +1,121 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Officer Commanding-in-Chief",
+            "p_2": "Commander-in-Chief"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Algiers",
+            "l_3": "Marsa",
+            "l_4": "Egypt",
+            "l_5": "Clyde",
+            "l_6": "Oran",
+            "l_7": "Tunisian war channel"
+        },
+        "events": {
+            "e_1": "Beach Intelligence Collection",
+            "e_2": "Assault Operation",
+            "e_3": "Convoy Attacks"
+        },
+        "organisations": {
+            "o_1": "8th and 10th Flotillas",
+            "o_2": "North-West African Coastal Air Force",
+            "o_3": "No. 201 (Naval Co-operation) Group",
+            "o_4": "Air Headquarters Air Defence, Eastern Mediterranean",
+            "o_5": "North-West African Tactical Air Force"
+        }
+    },
+    "keywords": [
+        "beach reconnaissance",
+        "assault operation",
+        "convoy attack",
+        "air operations",
+        "naval forces",
+        "army",
+        "combined headquarters"
+    ],
+    "themes": [
+        "Military Operations",
+        "Coordination Challenges",
+        "Logistical Planning",
+        "Casualties",
+        "Air Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Coordination Challenges": [
+            "e_2"
+        ],
+        "Logistical Planning": [
+            "e_1",
+            "e_2"
+        ],
+        "Casualties": [
+            "e_1"
+        ],
+        "Air Support": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of operation unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Beach reconnaissance parties successfully gather vital information about beach gradients and sand bars despite heavy casualties."
+        },
+        {
+            "event": "e_2",
+            "date": "Dates of operation unspecified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The assault operation proceeds with careful coordination among naval and air forces, facing logistical challenges due to communication issues and troop dispersion."
+        },
+        {
+            "event": "e_3",
+            "date": "4th July to 6th July",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Convoys experience submarine attacks resulting in the loss of ships, yet the air cover effectively protects the majority from enemy sighting."
+        }
+    ]
+}

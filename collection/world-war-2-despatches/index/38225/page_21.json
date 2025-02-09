@@ -1,0 +1,190 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Aldis",
+            "p_2": "S.N.O.(L)",
+            "p_3": "F.O.C. Force F",
+            "p_4": "First Lieutenant of AURICULA",
+            "p_5": "Captain of AURICULA",
+            "p_6": "LIGHTNING",
+            "p_7": "F.0.0.3",
+            "p_8": "F.0.0.2",
+            "p_9": "F.O.0.1"
+        },
+        "locations": {
+            "l_1": "Windsor Castle",
+            "l_2": "Diego Suarez",
+            "l_3": "Blue Beach",
+            "l_4": "Nosi Famaho",
+            "l_5": "Mangoaka",
+            "l_6": "Basse Point",
+            "l_7": "Red Beach",
+            "l_8": "English Bay",
+            "l_9": "Antsirane"
+        },
+        "events": {
+            "e_1": "Capture of Windsor Castle",
+            "e_2": "Landing at Blue Beach",
+            "e_3": "Mine operations in the area",
+            "e_4": "Bombardment by LAFOREY",
+            "e_5": "Incidents with AURICULA",
+            "e_6": "Enemy aircraft reconnaissance",
+            "e_7": "Attacks on observation tower at Windsor Castle"
+        },
+        "organisations": {
+            "o_1": "Royal Ulsterman",
+            "o_2": "Commando",
+            "o_3": "British Navy"
+        }
+    },
+    "keywords": [
+        "Windsor Castle",
+        "Landing",
+        "Commando",
+        "Minesweeping",
+        "Bombardment",
+        "Enemy Aircraft"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Mine Clearing",
+        "Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
+        ],
+        "Diplomacy": [],
+        "Strategic Decisions": []
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1600",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_7"
+            ],
+            "eventSummary": "Windsor Castle is captured with minimal opposition and enemy native troops begin surrendering, signaling the success of advancing British forces."
+        },
+        {
+            "event": "e_2",
+            "date": "1600",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Troops land at Blue Beach amidst gunfire, establishing communication and moving inland to secure the area."
+        },
+        {
+            "event": "e_3",
+            "date": "1600",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_6",
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Mine operations are conducted in the vicinity of Nosi Famaho and Mangoaka, ensuring safe passage for advancing ships."
+        },
+        {
+            "event": "e_4",
+            "date": "1615",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "LAFOREY provides bombardment support during the operation, targeting enemy positions observed from Windsor Castle."
+        },
+        {
+            "event": "e_5",
+            "date": "1630",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_5",
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The AURICULA suffers damages as mines are cut, and further actions are coordinated for rescue amid ongoing bombardment."
+        },
+        {
+            "event": "e_6",
+            "date": "1300",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Enemy reconnaissance aircraft are spotted overhead but do not engage with British forces."
+        },
+        {
+            "event": "e_7",
+            "date": "1830",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "British forces engage in combat against enemy positions atop Windsor Castle, resulting in the surrender of the opposing crew."
+        }
+    ]
+}

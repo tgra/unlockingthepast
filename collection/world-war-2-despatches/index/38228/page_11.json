@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mr. Morton",
+            "p_2": "Sir John Rowland",
+            "p_3": "Lieut-Colonel C. P. Brewitt"
+        },
+        "locations": {
+            "l_1": "Rangoon",
+            "l_2": "Mandalay",
+            "l_3": "Sittaung",
+            "l_4": "Shwebo",
+            "l_5": "Myitkyina",
+            "l_6": "Lashio",
+            "l_7": "Yunman-Burma Railway"
+        },
+        "events": {
+            "e_1": "Destruction of Oilfields",
+            "e_2": "Evacuation of Sick and Wounded",
+            "e_3": "Withdrawal North of Mandalay"
+        },
+        "organisations": {
+            "o_1": "Irrawaddy Flotilla Company",
+            "o_2": "Chinese Expeditionary Force"
+        }
+    },
+    "keywords": [
+        "Ammunition",
+        "Ordnance Stores",
+        "Evacuation",
+        "Transportation",
+        "Supplies",
+        "Railways",
+        "Desertion",
+        "Oilfields"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Medical Evacuation",
+        "Administrative Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_3"
+        ],
+        "Medical Evacuation": [
+            "e_2"
+        ],
+        "Administrative Challenges": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 16",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On April 16, the destruction of oilfields takes place, critically limiting the campaign's length and impacting supply lines, particularly for rice distribution."
+        },
+        {
+            "event": "e_2",
+            "date": "April 2023",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Throughout April, sick and wounded personnel are evacuated to India amidst serious transport challenges, with many enduring hardships along the way."
+        },
+        {
+            "event": "e_3",
+            "date": "Late April 2023",
+            "locations": [
+                "l_2",
+                "l_6"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "As Japanese forces capture Lashio, the withdrawal of allied troops north of Mandalay starts, prompting urgent evacuations and logistical maneuvers."
+        }
+    ]
+}

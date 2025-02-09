@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "A.V.M. P.C. Maltby",
+            "p_2": "Wing Commander Councell",
+            "p_3": "Squadron Leader Wilkins",
+            "p_4": "G/Capt. Ridgway",
+            "p_5": "Squadron Leader S. G. Aylwin",
+            "p_6": "Air Commodore Silly"
+        },
+        "locations": {
+            "l_1": "Singapore Island",
+            "l_2": "South Sumatra",
+            "l_3": "Java",
+            "l_4": "Bandoeng",
+            "l_5": "Batavia",
+            "l_6": "Oesthaven",
+            "l_7": "Djocjacarta",
+            "l_8": "Poerbolinggo",
+            "l_9": "Buitenzorg"
+        },
+        "events": {
+            "e_1": "Capture of Singapore",
+            "e_2": "Evacuation from Sumatra",
+            "e_3": "R.A.F. Re-organisation in Java",
+            "e_4": "Battle of Java"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "Abdacom",
+            "o_3": "Abdair"
+        }
+    },
+    "keywords": [
+        "Japanese Capture",
+        "Singapore",
+        "Evacuation",
+        "Java",
+        "R.A.F.",
+        "reinforcements",
+        "confusion",
+        "Battle"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuations",
+        "Strategic Organisation",
+        "Defense Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Evacuations": [
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Organisation": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 8, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Japanese secure a foothold on Singapore Island, leading to the capitulation of British forces."
+        },
+        {
+            "event": "e_2",
+            "date": "February 14, 1942",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_4",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "British forces and R.A.F. personnel evacuate from South Sumatra under heavy attack, arriving in Java facing chaos."
+        },
+        {
+            "event": "e_3",
+            "date": "February 16, 1942",
+            "locations": [
+                "l_3",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "R.A.F. re-organisation in Java occurs amidst the chaos from the Sumatra evacuation, as troops regroup."
+        }
+    ]
+}

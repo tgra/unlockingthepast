@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "NESTOR",
+            "p_2": "BROWN RANGER",
+            "p_3": "Vice-Admiral",
+            "p_4": "ARK ROYAL"
+        },
+        "locations": {
+            "l_1": "Gibraltar",
+            "l_2": "Galita Island",
+            "l_3": "North Atlantic",
+            "l_4": "Italy"
+        },
+        "events": {
+            "e_1": "High Level Bombing Attack on the Fleet",
+            "e_2": "Movements of Force H and Force X",
+            "e_3": "Arrival at Gibraltar"
+        },
+        "organisations": {
+            "o_1": "Force X",
+            "o_2": "Force H",
+            "o_3": "Fulmar",
+            "o_4": "FIREDRAKE",
+            "o_5": "MANCHESTER"
+        }
+    },
+    "keywords": [
+        "Militay Operations",
+        "Air Attacks",
+        "Naval Maneuvers",
+        "Survivors",
+        "Towing"
+    ],
+    "themes": [
+        "Military Operations",
+        "Survival and Rescue",
+        "Naval Strategy",
+        "Aerial Combat"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Survival and Rescue": [
+            "e_3"
+        ],
+        "Aerial Combat": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "25th July",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A group of high-level bombers attacks the fleet but is intercepted by Fulmars, resulting in the destruction of four enemy planes."
+        },
+        {
+            "event": "e_2",
+            "date": "25th July",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Movements of Force H and Force X are reported as they join together and maneuver westward following the sighting of enemy aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "27th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The ships of Group 3 successfully arrive at Gibraltar, including the damaged FIREDRAKE and her escort."
+        }
+    ]
+}

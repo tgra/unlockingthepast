@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Hitler"
+        },
+        "locations": {
+            "l_1": "Brittany Peninsula",
+            "l_2": "Loire",
+            "l_3": "Mortain",
+            "l_4": "Avranches",
+            "l_5": "Alencon",
+            "l_6": "Argentan",
+            "l_7": "Falaise",
+            "l_8": "France"
+        },
+        "events": {
+            "e_1": "Break-through of the Allied Armies",
+            "e_2": "Counter-attack at Mortain",
+            "e_3": "Encirclement of the German 7th Army"
+        },
+        "organisations": {
+            "o_1": "United States Ninth Air Force",
+            "o_2": "A.E.A.F.",
+            "o_3": "R.A.F. Second Tactical Air Force"
+        }
+    },
+    "keywords": [
+        "Fighter Bombers",
+        "Tactical Air Forces",
+        "Counter-attack",
+        "Allied Armies",
+        "Air Superiority"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Tactical Strategy",
+        "Counter-offensive",
+        "Encirclement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_2"
+        ],
+        "Tactical Strategy": [
+            "e_2",
+            "e_3"
+        ],
+        "Counter-offensive": [
+            "e_2"
+        ],
+        "Encirclement": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "August 7-11, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The United States armies achieve a significant break-through during their advance into Brittany, supported by continuous air cover that protects ground forces and destroys enemy targets."
+        },
+        {
+            "event": "e_2",
+            "date": "August 7, 1944",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On August 7th, the enemy launches a large-scale counter-attack against Mortain, which results in significant aerial and ground engagements leading to heavy losses for the enemy armored forces."
+        },
+        {
+            "event": "e_3",
+            "date": "August 7-11, 1944",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The encirclement of the German 7th Army occurs as American forces cut off their retreat, complicating the situation for German commanders and leading to eventual destruction."
+        }
+    ]
+}

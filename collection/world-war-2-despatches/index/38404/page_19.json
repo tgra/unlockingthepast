@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Officer Commanding",
+            "p_2": "War Cabinet",
+            "p_3": "Bomber Command",
+            "p_4": "No 2 Group",
+            "p_5": "No 11 Group",
+            "p_6": "No 10 Group",
+            "p_7": "Blenheims",
+            "p_8": "Whirlwinds",
+            "p_9": "Spitfires"
+        },
+        "locations": {
+            "l_1": "Brest",
+            "l_2": "La Pallice",
+            "l_3": "Cologne",
+            "l_4": "Cherbourg",
+            "l_5": "Hazebrouck",
+            "l_6": "Dutch Coast",
+            "l_7": "Flushing",
+            "l_8": "Western Front"
+        },
+        "events": {
+            "e_1": "Circus operations",
+            "e_2": "Attack on German warships",
+            "e_3": "Attack on Power Stations at Cologne",
+            "e_4": "Fighter sweep",
+            "e_5": "Blenheim bombing missions"
+        },
+        "organisations": {
+            "o_1": "No 2 Group",
+            "o_2": "No 11 Group",
+            "o_3": "No 10 Group",
+            "o_4": "Bomber Command",
+            "o_5": "Air Ministry"
+        }
+    },
+    "keywords": [
+        "Circus operations",
+        "fighter-bombers",
+        "Blenheim bombers",
+        "aircraft losses",
+        "War Cabinet",
+        "Bomber Command",
+        "shipping strikes",
+        "German warships"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aircraft Management",
+        "Resource Conservation",
+        "Tactical Advantages"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Resource Conservation": [
+            "e_2"
+        ],
+        "Tactical Advantages": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Fighter-bombers conduct Circus operations targeting an alcohol distillation plant, suffering significant aircraft losses due to adverse weather and enemy defenses."
+        },
+        {
+            "event": "e_2",
+            "date": "18th December & 30th December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Bomber Command executes attacks on German warships at Brest, receiving fighter support but encountering substantial losses."
+        },
+        {
+            "event": "e_3",
+            "date": "rath August",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Blenheims of Bomber Command attack two Power Stations at Cologne, achieving satisfactory results despite significant bomber losses."
+        }
+    ]
+}

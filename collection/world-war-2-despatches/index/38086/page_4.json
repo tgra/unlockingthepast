@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant Colonel A. C. Newman",
+            "p_2": "Commander-in-Chief, Plymouth"
+        },
+        "locations": {
+            "l_1": "St. Nazaire",
+            "l_2": "Nantes",
+            "l_3": "Le Chatelier Shoal",
+            "l_4": "Les Morees Tower",
+            "l_5": "Charpentier Channel",
+            "l_6": "Old Breakwater Light",
+            "l_7": "Old Entrance"
+        },
+        "events": {
+            "e_1": "Action at St. Nazaire",
+            "e_2": "Transfer to M.G.B. 314",
+            "e_3": "Gunfire Encounter at Le Chatelier Shoal"
+        },
+        "organisations": {
+            "o_1": "Military Force"
+        }
+    },
+    "keywords": [
+        "Torpedo boats",
+        "Air activity",
+        "Flak",
+        "Naval operation",
+        "Searchlights"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagement": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 28, 1943",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A naval operation unfolds as torpedo boats are reported near St. Nazaire, leading to an encounter with defensive forces. The situation escalates with heavy flak and gunfire as military commanders execute their strategic plans."
+        },
+        {
+            "event": "e_2",
+            "date": "March 27, 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Commander-in-Chief in Plymouth issues communications regarding the positioning of naval forces, influencing the tactical movements of the military operation."
+        },
+        {
+            "event": "e_3",
+            "date": "March 28, 1943",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the naval operation near Le Chatelier Shoal, multiple gun flashes are observed, indicating significant air activity and leading to a vigorous exchange of fire."
+        }
+    ]
+}

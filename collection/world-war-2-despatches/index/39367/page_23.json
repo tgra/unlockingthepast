@@ -1,0 +1,123 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General",
+            "p_2": "Air Force's chief"
+        },
+        "locations": {
+            "l_1": "Northern Italy",
+            "l_2": "Austria",
+            "l_3": "Vienna",
+            "l_4": "Linz",
+            "l_5": "Jugoslavia",
+            "l_6": "Freilassing",
+            "l_7": "Dravograd",
+            "l_8": "Maribor",
+            "l_9": "Graz",
+            "l_10": "St. Polten",
+            "l_11": "Nove Zamky",
+            "l_12": "Germany",
+            "l_13": "Switzerland"
+        },
+        "events": {
+            "e_1": "Battle for Vienna",
+            "e_2": "Air attacks by M.A.S.A.F.",
+            "e_3": "Interdiction of Italian communications"
+        },
+        "organisations": {
+            "o_1": "M.A.S.A.F.",
+            "o_2": "Red Army",
+            "o_3": "Air C.-in-C"
+        }
+    },
+    "keywords": [
+        "M.A.S.A.F.",
+        "Vienna",
+        "railway communications",
+        "air attacks",
+        "strategic fighters",
+        "Interdiction",
+        "January 1945"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Air Warfare",
+        "Railway Interdiction",
+        "Allied Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ],
+        "Air Warfare": [
+            "e_2"
+        ],
+        "Railway Interdiction": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 7-13, 1945",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Bitter street fighting occurs in Vienna, culminating in its complete occupation by the Red Army."
+        },
+        {
+            "event": "e_2",
+            "date": "Throughout April 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "M.A.S.A.F. executes a series of air attacks targeting railway communication lines to support the Red Army's advance."
+        },
+        {
+            "event": "e_3",
+            "date": "Beginning of 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Air Force focuses on disrupting enemy supply routes into Italy, preventing the mobility of German forces."
+        }
+    ]
+}

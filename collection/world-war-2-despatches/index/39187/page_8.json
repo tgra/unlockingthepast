@@ -1,0 +1,112 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "medical officer",
+            "p_2": "consulting physician",
+            "p_3": "surgeon",
+            "p_4": "malariologist",
+            "p_5": "psychiatrist"
+        },
+        "locations": {
+            "l_1": "North Burma",
+            "l_2": "India",
+            "l_3": "Ledo",
+            "l_4": "Imphal",
+            "l_5": "South-East Asia Command"
+        },
+        "events": {
+            "e_1": "Evacuation of Casualties",
+            "e_2": "Decrease in Disease Incidence",
+            "e_3": "British Troops Morale Improvement"
+        },
+        "organisations": {
+            "o_1": "Fourteenth Army",
+            "o_2": "36 British Division",
+            "o_3": "Colonial Office"
+        }
+    },
+    "keywords": [
+        "casualties",
+        "air evacuation",
+        "malaria",
+        "dysentery",
+        "scrub typhus",
+        "soldier morale"
+    ],
+    "themes": [
+        "Military Operations",
+        "Health and Medical Response",
+        "Troop Welfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Health and Medical Response": [
+            "e_2"
+        ],
+        "Troop Welfare": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 25, 1944 - November 12, 1944",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Casualties from North Burma are evacuated by air to hospitals in the Ledo area. This operation is crucial to maintaining troop health while reducing pressure on hospitals in India."
+        },
+        {
+            "event": "e_2",
+            "date": "June 1944 - November 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The incidence of disease among troops has significantly decreased due to improved malaria discipline and sanitation measures."
+        },
+        {
+            "event": "e_3",
+            "date": "Post-November 1944",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Morale among British troops has significantly improved with better mail services, rations, and facilities, as they await repatriation."
+        }
+    ]
+}

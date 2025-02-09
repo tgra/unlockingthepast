@@ -1,0 +1,159 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "General Clark"
+        },
+        "locations": {
+            "l_1": "Pesaro",
+            "l_2": "Cattolica",
+            "l_3": "Rimini",
+            "l_4": "Bologna",
+            "l_5": "Ferrara",
+            "l_6": "Florence",
+            "l_7": "Empoli",
+            "l_8": "Cesano",
+            "l_9": "Metaure",
+            "l_10": "Modena",
+            "l_11": "Toulon",
+            "l_12": "Marseilles",
+            "l_13": "Grenoble",
+            "l_14": "Ostiglia",
+            "l_15": "Mantua",
+            "l_16": "Verona",
+            "l_17": "Venice",
+            "l_18": "Rhone"
+        },
+        "events": {
+            "e_1": "Operation OLIVE",
+            "e_2": "D-day",
+            "e_3": "Preliminary Offensive Operations",
+            "e_4": "Assault on Pesaro"
+        },
+        "organisations": {
+            "o_1": "Eighth Army",
+            "o_2": "Fifth Army",
+            "o_3": "Canadian Corps",
+            "o_4": "Polish Corps",
+            "o_5": "II Corps",
+            "o_6": "13 Corps",
+            "o_7": "General Staff"
+        }
+    },
+    "keywords": [
+        "Operation OLIVE",
+        "D-day",
+        "Eighth Army",
+        "Fifth Army",
+        "Polish Corps",
+        "offensive",
+        "battle plan",
+        "strategic movement"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Planning",
+        "Offensive Assaults",
+        "Army Coordination",
+        "Geopolitical Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
+        ],
+        "Army Coordination": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "6th August",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The planning phase of Operation OLIVE is in progress with discussions between high command aimed at strategic offensives against enemy positions."
+        },
+        {
+            "event": "e_2",
+            "date": "25th August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A date is set for D-day, marking the ostensible beginning of the offensive operations despite expectations of limited initial contact with enemy forces."
+        },
+        {
+            "event": "e_3",
+            "date": "13th August",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Key orders are issued for the offensive operations, emphasizing strategic coordination and preparation among the different army corps."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd August",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Polish Corps solidifies its position ahead of the assault on Pesaro, laying the groundwork for the broader offensive against the Gothic line."
+        }
+    ]
+}

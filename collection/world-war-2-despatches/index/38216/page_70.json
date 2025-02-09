@@ -1,0 +1,127 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "G.H.Q.",
+            "p_2": "A.O.C."
+        },
+        "locations": {
+            "l_1": "Malaya",
+            "l_2": "Sumatra",
+            "l_3": "Java",
+            "l_4": "Kuantan",
+            "l_5": "Bangkok",
+            "l_6": "Gulf of Siam",
+            "l_7": "Endau/Mersing",
+            "l_8": "Singora"
+        },
+        "events": {
+            "e_1": "Air Reconnaissance of approaching Japanese Convoy",
+            "e_2": "Initial Action at Kota Bahru",
+            "e_3": "Main Japanese Attack",
+            "e_4": "Attempt to Neutralise Enemy Air Bases"
+        },
+        "organisations": {
+            "o_1": "No. 8 (R.A.A.F.) Squadron",
+            "o_2": "Japanese Expedition"
+        }
+    },
+    "keywords": [
+        "air reconnaissance",
+        "Japanese convoy",
+        "Kota Bahru",
+        "Singora",
+        "morale",
+        "mobile warfare"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Morale",
+        "Reconnaissance",
+        "Tactical Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Tactical Decisions": [
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Morale": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "7th/8th December 1941",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An air reconnaissance attempts to regain contact with a lost Japanese convoy during poor weather in the Gulf of Siam, leading to minimal efforts in re-establishing contact despite the vital nature of the situation."
+        },
+        {
+            "event": "e_2",
+            "date": "8th December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The station commander at Kota Bahru decides not to launch an immediate attack upon receiving news of Japanese ships, influencing the subsequent stages of engagement."
+        },
+        {
+            "event": "e_3",
+            "date": "8th December 1941",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Japanese successfully land at Singora after achieving tactical surprise, setting the stage for further military conflict in Malaya."
+        },
+        {
+            "event": "e_4",
+            "date": "December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Following the loss of airbases in Northern Malaya, Allied forces find themselves subjected to enemy attacks, highlighting the critical need for air support in military operations."
+        }
+    ]
+}

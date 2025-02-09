@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral Sir Bruce A. Fraser",
+            "p_2": "Vice Admiral Second in Command, Home Fleet",
+            "p_3": "Rear Admiral Commanding, Home Fleet Destroyers",
+            "p_4": "Admiral S. S. Bonham-Carter"
+        },
+        "locations": {
+            "l_1": "Loch Ewe",
+            "l_2": "Iceland",
+            "l_3": "Spitzbergen",
+            "l_4": "North Russia",
+            "l_5": "Scapa",
+            "l_6": "Akureyri",
+            "l_7": "Bear Island",
+            "l_8": "Skagi",
+            "l_9": "Jan Mayen",
+            "l_10": "Lofoten Islands",
+            "l_11": "Narvik",
+            "l_12": "Altenfiord"
+        },
+        "events": {
+            "e_1": "P.Q.18 Convoy Operation",
+            "e_2": "Q.P.14 Convoy Operation",
+            "e_3": "First Contact with Enemy Aircraft",
+            "e_4": "U-Boat Attacks on Convoy"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Home Fleet",
+            "o_3": "P.R.U. (Photographic Reconnaissance Unit)"
+        }
+    },
+    "keywords": [
+        "convoy",
+        "escort",
+        "antisubmarine",
+        "air reconnaissance",
+        "destroyers",
+        "fueling"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Air Reconnaissance",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defensive Strategies": [
+            "e_3",
+            "e_4"
+        ],
+        "Air Reconnaissance": [
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2nd September 1943",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The P.Q.18 convoy sets sail from Loch Ewe with the Royal Air Force providing air cover until its arrival off Iceland."
+        },
+        {
+            "event": "e_2",
+            "date": "7th September 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Q.P.14 convoy operation proceeds under the command of the Home Fleet, with additional cover provided by destroyers."
+        },
+        {
+            "event": "e_3",
+            "date": "8th September 1943",
+            "locations": [
+                "l_2",
+                "l_9"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The convoy first sighted by an enemy aircraft but experienced delayed contact due to adverse weather conditions."
+        },
+        {
+            "event": "e_4",
+            "date": "10th September 1943",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "U-boats begin to shadow the convoy, marking the start of increased enemy air and sea attacks."
+        }
+    ]
+}

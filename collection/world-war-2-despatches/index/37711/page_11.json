@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander",
+            "p_2": "Officers",
+            "p_3": "Troops",
+            "p_4": "Infantrymen",
+            "p_5": "Canadian Army"
+        },
+        "locations": {
+            "l_1": "Cherbourg",
+            "l_2": "Seine",
+            "l_3": "Rouen",
+            "l_4": "Boulogne",
+            "l_5": "Rhine",
+            "l_6": "Meuse",
+            "l_7": "Weser",
+            "l_8": "Pas de Calais",
+            "l_9": "Normandy"
+        },
+        "events": {
+            "e_1": "Demolitions Campaign",
+            "e_2": "Airborne Operations",
+            "e_3": "First Major Attack by Canadian Army"
+        },
+        "organisations": {
+            "o_1": "Pioneer Corps",
+            "o_2": "Signals",
+            "o_3": "Searchlight Batteries"
+        }
+    },
+    "keywords": [
+        "Demolition",
+        "Airfields",
+        "Pipelines",
+        "Armour",
+        "Bailey bridges",
+        "Signals",
+        "Infantry",
+        "Airborne Forces",
+        "Tactics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Engineering Challenges",
+        "Communication in Warfare",
+        "Infantry Tactics",
+        "Airborne Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Engineering Challenges": [
+            "e_1"
+        ],
+        "Communication in Warfare": [
+            "e_1"
+        ],
+        "Infantry Tactics": [
+            "e_3"
+        ],
+        "Airborne Strategy": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "During campaign",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Demolitions are conducted on a grand scale, overcoming extensive destruction of critical infrastructure including ports and airfields, which poses a major challenge for engineers."
+        },
+        {
+            "event": "e_2",
+            "date": "Throughout the campaign",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Airborne forces play a vital role in operations, causing the enemy to disperse their forces in anticipation of potential attacks."
+        },
+        {
+            "event": "e_3",
+            "date": "7 August",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The first major attack by the Canadian Army occurs astride the Falaise road, demonstrating the effectiveness of infantry tactics supported by armoured personnel carriers."
+        }
+    ]
+}

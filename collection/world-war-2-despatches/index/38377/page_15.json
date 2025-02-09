@@ -1,0 +1,107 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Gibraltar",
+            "l_3": "Pantellaria",
+            "l_4": "Almeria Bay",
+            "l_5": "French coast",
+            "l_6": "Bizerta",
+            "l_7": "Galita Channel"
+        },
+        "events": {
+            "e_1": "Attack on the Italian U-Boat",
+            "e_2": "Convoy M.G.2 passage from Malta to Gibraltar",
+            "e_3": "Attack on CITY OF PRETORIA by T/B aircraft"
+        },
+        "organisations": {
+            "o_1": "Royal Navy"
+        }
+    },
+    "keywords": [
+        "submarine",
+        "attack",
+        "explosion",
+        "convoy",
+        "GURKHA",
+        "LEGION",
+        "Italian aircraft"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "GURKHA and LEGION attack and destroy an Italian U-Boat after confirming its contact."
+        },
+        {
+            "event": "e_2",
+            "date": "26th September - 30th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Convoy M.G.2 traverses from Malta to Gibraltar, facing enemy attacks but arriving successfully."
+        },
+        {
+            "event": "e_3",
+            "date": "1725/28",
+            "locations": [
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "CITY OF PRETORIA is attacked by enemy aircraft while trying to evade an unidentified following vessel."
+        }
+    ]
+}

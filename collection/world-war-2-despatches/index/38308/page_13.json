@@ -1,0 +1,143 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Officer of H.M.S. VICTORIOUS",
+            "p_2": "Pilot of H.M.S. INDOMITABLE",
+            "p_3": "Commanding Officer of H.M.S. FORMIDABLE"
+        },
+        "locations": {
+            "l_1": "H.M.S. VICTORIOUS",
+            "l_2": "H.M.S. INDOMITABLE",
+            "l_3": "H.M.S. FORMIDABLE",
+            "l_4": "Miyako",
+            "l_5": "Ohama",
+            "l_6": "Hirara",
+            "l_7": "Cootie",
+            "l_8": "Leyte"
+        },
+        "events": {
+            "e_1": "Operations on 17th May",
+            "e_2": "Fire incident on H.M.S. FORMIDABLE",
+            "e_3": "Tankers Rendezvous and Supplying on 18th May",
+            "e_4": "Task Group Formation on 19th May"
+        },
+        "organisations": {
+            "o_1": "British Naval Forces",
+            "o_2": "U.S. Navy"
+        }
+    },
+    "keywords": [
+        "Kamikaze",
+        "Ford",
+        "Corsairs",
+        "Airborne Aircraft",
+        "Enemy Aircraft",
+        "Tanker Group",
+        "Fire Fighting"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aircraft Operations",
+        "Fire Suppression",
+        "Replenishment",
+        "Naval Command"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Aircraft Operations": [
+            "e_1"
+        ],
+        "Fire Suppression": [
+            "e_2"
+        ],
+        "Replenishment": [
+            "e_3",
+            "e_4"
+        ],
+        "Naval Command": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "17th May",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 17th May, operational challenges arise due to damage to ships and adverse weather, affecting planned air strikes against enemy positions."
+        },
+        {
+            "event": "e_2",
+            "date": "18th May",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 18th May, an accidental fire on H.M.S. FORMIDABLE leads to significant losses of aircraft, prompting emergency fire suppression efforts."
+        },
+        {
+            "event": "e_3",
+            "date": "18th May",
+            "locations": [
+                "l_8",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On 18th May, the Fleet establishes a rendezvous with oil tankers and begins transferring supplies while addressing issues from prior operations."
+        },
+        {
+            "event": "e_4",
+            "date": "19th May",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On 19th May, the Fleet continues operations, forming on the Tanker Group for replenishment and supply in preparation for upcoming missions."
+        }
+    ]
+}

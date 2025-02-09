@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Bradley",
+            "p_2": "Rear-Admiral M. L. Deyo"
+        },
+        "locations": {
+            "l_1": "Portsmouth",
+            "l_2": "Cherbourg",
+            "l_3": "South Coast of France",
+            "l_4": "Portland"
+        },
+        "events": {
+            "e_1": "Operation Anvil (later Dragoon)",
+            "e_2": "Naval Bombardment of Cherbourg",
+            "e_3": "Capture of Cherbourg"
+        },
+        "organisations": {
+            "o_1": "COREP",
+            "o_2": "Admiralty",
+            "o_3": "COMINCH"
+        }
+    },
+    "keywords": [
+        "naval bombardment",
+        "military operation",
+        "warships",
+        "landing craft",
+        "minesweeping",
+        "air attacks"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategies",
+        "Losses due to Enemy Actions",
+        "Coordination of Forces"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategies": [
+            "e_2"
+        ],
+        "Losses due to Enemy Actions": [
+            "e_3"
+        ],
+        "Coordination of Forces": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 20, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The operation known as Anvil, later called Dragoon, is planned for the South Coast of France, focusing on the release of warships and landing craft."
+        },
+        {
+            "event": "e_2",
+            "date": "June 27, 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Rear-Admiral Deyo leads a naval bombardment of Cherbourg to assist General Bradley's land forces in their assault on the city."
+        },
+        {
+            "event": "e_3",
+            "date": "June 27, 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The capture of Cherbourg is completed, leading to reconnaissance and assessment of the port for salvage operations."
+        }
+    ]
+}

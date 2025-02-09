@@ -1,0 +1,90 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unnamed Military Officer"
+        },
+        "locations": {
+            "l_1": "Dover",
+            "l_2": "London",
+            "l_3": "Thames Estuary"
+        },
+        "events": {
+            "e_1": "Battle of Britain",
+            "e_2": "German Air Raids on London"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force (R.A.F.)",
+            "o_2": "Anti-Aircraft Command"
+        }
+    },
+    "keywords": [
+        "air raids",
+        "German pilots",
+        "anti-aircraft defense",
+        "Dover",
+        "London",
+        "R.A.F.",
+        "heavy guns",
+        "Light anti-aircraft",
+        "night raids"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategies",
+        "Air Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defence Strategies": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Warfare": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "From 10th July 1940 to 30th September 1940",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of Britain is a series of engagements primarily between air forces, where the R.A.F. destroys 296 enemy aircraft and damages others."
+        },
+        {
+            "event": "e_2",
+            "date": "Starting 7th September 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The German Air Raids on London commence with severe attacks, but the R.A.F., using increased defenses, begins to break up formations and reduce enemy success."
+        }
+    ]
+}

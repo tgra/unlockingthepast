@@ -1,0 +1,134 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Von Senger"
+        },
+        "locations": {
+            "l_1": "Po Valley",
+            "l_2": "Bologna",
+            "l_3": "Modena",
+            "l_4": "Argenta",
+            "l_5": "Ferrara",
+            "l_6": "Porto Maggiore",
+            "l_7": "Malalbergo",
+            "l_8": "Sillaro River",
+            "l_9": "Idice River"
+        },
+        "events": {
+            "e_1": "Fifth Army Offensive",
+            "e_2": "Eighth Army Offensive",
+            "e_3": "Operation Herring",
+            "e_4": "Desert Air Force Effort"
+        },
+        "organisations": {
+            "o_1": "Fifth Army",
+            "o_2": "Eighth Army",
+            "o_3": "Desert Air Force",
+            "o_4": "No. 205 Group",
+            "o_5": "51st Troop Carrier Wing"
+        }
+    },
+    "keywords": [
+        "Fifth Army",
+        "Eighth Army",
+        "Bologna",
+        "Argenta Gap",
+        "artillery",
+        "air support",
+        "Parachutists",
+        "military strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Strategic Advances",
+        "Resistance Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Support": [
+            "e_4"
+        ],
+        "Strategic Decisions": []
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "20th April",
+            "locations": [
+                "Po Valley",
+                "Bologna",
+                "Modena"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Fifth Army launches its offensive across the Po Valley, effectively advancing towards Bologna after achieving high ground."
+        },
+        {
+            "event": "e_2",
+            "date": "15th to 20th April",
+            "locations": [
+                "Argenta",
+                "Bologna",
+                "Ferrara",
+                "Porto Maggiore"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Eighth Army engages in significant military operations, breaking through the Argenta Gap and threatening enemy positions."
+        },
+        {
+            "event": "e_3",
+            "date": "20th/21st April",
+            "locations": [
+                "Po Valley",
+                "Bologna"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Herring is executed, involving the deployment of paratroopers who disrupt enemy lines and inflict significant losses."
+        },
+        {
+            "event": "e_4",
+            "date": "15th to 20th April",
+            "locations": [
+                "Argenta"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Desert Air Force conducts extensive air support for the Eighth Army, flying numerous sorties to target enemy positions."
+        }
+    ]
+}

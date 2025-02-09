@@ -1,0 +1,91 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Blamey",
+            "p_2": "Major-General Gambier-Parry",
+            "p_3": "General Papagos"
+        },
+        "locations": {
+            "l_1": "Italy",
+            "l_2": "Sicily",
+            "l_3": "North Africa",
+            "l_4": "Tripoli",
+            "l_5": "Cyrenaica",
+            "l_6": "Greece",
+            "l_7": "Macedonia",
+            "l_8": "Salonika",
+            "l_9": "Western Thrace",
+            "l_10": "Aliakhmon",
+            "l_11": "Sudan"
+        },
+        "events": {
+            "e_1": "Landing of German Light Armoured Division at Tripoli",
+            "e_2": "Conversations held at Tatoi Palace"
+        },
+        "organisations": {
+            "o_1": "Australian Forces",
+            "o_2": "Greek Government"
+        }
+    },
+    "keywords": [
+        "German troops",
+        "North Africa",
+        "Cyrenaica",
+        "Greek defence",
+        "Aliakhmon Line"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "International Relations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Defensive Strategies": [
+            "e_2"
+        ],
+        "International Relations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Early February",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The landing of a German Light Armoured Division begins at Tripoli, indicating an imminent threat to Cyrenaica."
+        },
+        {
+            "event": "e_2",
+            "date": "Evening of February 2nd",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Conversations at Tatoi Palace involve General Papagos discussing defensive proposals against a potential German attack on Greece."
+        }
+    ]
+}

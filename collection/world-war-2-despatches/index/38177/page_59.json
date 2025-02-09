@@ -1,0 +1,160 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant-General Gott",
+            "p_2": "Lieutenant-General Norrie",
+            "p_3": "Admiral Cunningham",
+            "p_4": "Lieutenant-General Sir William Dobbie"
+        },
+        "locations": {
+            "l_1": "Acroma",
+            "l_2": "El Adem",
+            "l_3": "Bir e Gubi",
+            "l_4": "Giarabub",
+            "l_5": "Capuzzo",
+            "l_6": "Cyrenaica",
+            "l_7": "Malta",
+            "l_8": "Tripoli",
+            "l_9": "Iraq",
+            "l_10": "Persia",
+            "l_11": "Syria",
+            "l_12": "Mosul",
+            "l_13": "Central Iraq",
+            "l_14": "Southern Syria",
+            "l_15": "Euphrates",
+            "l_16": "Damascus",
+            "l_17": "Ras Baalbek"
+        },
+        "events": {
+            "e_1": "Libyan Offensive",
+            "e_2": "Withdrawal of Divisions",
+            "e_3": "Supply Situation in Malta",
+            "e_4": "Enemy Convoy to Tripoli",
+            "e_5": "Defensive Policy in Libya"
+        },
+        "organisations": {
+            "o_1": "Middle East Defence Committee",
+            "o_2": "Chiefs of Staff",
+            "o_3": "Royal New Zealand Railway Construction Companies",
+            "o_4": "Indian Pioneer Companies"
+        }
+    },
+    "keywords": [
+        "Libyan Offensive",
+        "Malta",
+        "Enemy Convoy",
+        "Troop Withdrawal",
+        "Defensive Strategies"
+    ],
+    "themes": [
+        "Military Operations",
+        "Supply Chain Issues",
+        "Defensive Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Supply Chain Issues": [
+            "e_3"
+        ],
+        "Defensive Strategies": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 1942",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Libyan Offensive is underway, with the situation in Malta jeopardizing supply lines critical for operations."
+        },
+        {
+            "event": "e_2",
+            "date": "February 17-18, 1942",
+            "locations": [
+                "l_9",
+                "l_12",
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "The withdrawal of several divisions is ordered, raising concerns about the viability of current operations and the defense of Cyrenaica."
+        },
+        {
+            "event": "e_3",
+            "date": "February 1942",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The supply situation in Malta becomes precarious, prompting urgent requests for reinforcements to sustain operations."
+        },
+        {
+            "event": "e_4",
+            "date": "February 1942",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An enemy convoy reaching Tripoli raises alarms about upcoming offensive threats to Cyrenaica operations."
+        },
+        {
+            "event": "e_5",
+            "date": "February 1942",
+            "locations": [
+                "l_12",
+                "l_13",
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The situation results in an adoption of a defensive policy in Libya due to significant troop withdrawals and increased enemy activity."
+        }
+    ]
+}

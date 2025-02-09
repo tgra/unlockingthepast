@@ -1,0 +1,119 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major General Weston",
+            "p_2": "Commander-in-Chief, Middle East",
+            "p_3": "First Sea Lord",
+            "p_4": "Commander-in-Chief, Mediterranean"
+        },
+        "locations": {
+            "l_1": "Sphakia",
+            "l_2": "Crete",
+            "l_3": "Egypt",
+            "l_4": "Alexandria",
+            "l_5": "Western Desert",
+            "l_6": "Syria"
+        },
+        "events": {
+            "e_1": "Embarkation at Sphakia",
+            "e_2": "Evacuation of Troops from Crete",
+            "e_3": "Battle of Crete"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Mediterranean Fleet",
+            "o_3": "British Army",
+            "o_4": "M.N.B.D.O.",
+            "o_5": "Special Service Troops"
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "embarkation",
+        "battle",
+        "military",
+        "aircraft",
+        "Royal Marines"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation",
+        "Air Support",
+        "Rearguard Action"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_3"
+        ],
+        "Evacuation": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Support": [
+            "e_1"
+        ],
+        "Rearguard Action": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "31st May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Major General Weston embarks 4,000 troops at Sphakia while being attacked by enemy aircraft."
+        },
+        {
+            "event": "e_2",
+            "date": "1st June",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of troops from Crete concludes with significant losses and the decision for remaining troops to capitulate."
+        },
+        {
+            "event": "e_3",
+            "date": "Ending June 1st",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of Crete ends with the Mediterranean Fleet successfully evacuating British and Imperial troops."
+        }
+    ]
+}

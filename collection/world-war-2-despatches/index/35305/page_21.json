@@ -1,0 +1,130 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Général de Division Voruz"
+        },
+        "locations": {
+            "l_1": "France",
+            "l_2": "Holland",
+            "l_3": "Maastricht",
+            "l_4": "Sedan",
+            "l_5": "Boulogne"
+        },
+        "events": {
+            "e_1": "Spanish War",
+            "e_2": "Polish Campaign",
+            "e_3": "B.E.F. Operations"
+        },
+        "organisations": {
+            "o_1": "G.H.Q.",
+            "o_2": "French G.Q.G.",
+            "o_3": "Royal Air Force",
+            "o_4": "Royal Corps of Signals"
+        }
+    },
+    "keywords": [
+        "liaison",
+        "flanking",
+        "defence in depth",
+        "anti-tank defence",
+        "air forces",
+        "bombers",
+        "demolitions",
+        "signal communications",
+        "traffic control"
+    ],
+    "themes": [
+        "Military Operations",
+        "International Cooperation",
+        "Defence Strategies",
+        "Communication Systems",
+        "Air Warfare",
+        "Engineering Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_3"
+        ],
+        "International Cooperation": [
+            "e_1",
+            "e_2"
+        ],
+        "Defence Strategies": [
+            "e_3"
+        ],
+        "Communication Systems": [
+            "e_3"
+        ],
+        "Air Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Engineering Operations": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "N/A",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Spanish War showcases early modern military strategies, highlighting the importance of air support and coordination among forces."
+        },
+        {
+            "event": "e_2",
+            "date": "N/A",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Polish Campaign illustrates tactical shifts in warfare, particularly in aerial tactics and ground troop movements."
+        },
+        {
+            "event": "e_3",
+            "date": "N/A",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The B.E.F. Operations emphasize the significance of communication and organization in military strategies during operations."
+        }
+    ]
+}

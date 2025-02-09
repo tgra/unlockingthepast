@@ -1,0 +1,146 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Catroux",
+            "p_2": "General de Gaulle",
+            "p_3": "General Wilson",
+            "p_4": "Brigadier Lloyd"
+        },
+        "locations": {
+            "l_1": "Syria",
+            "l_2": "Palestine",
+            "l_3": "Damascus",
+            "l_4": "Lebanon",
+            "l_5": "Egypt",
+            "l_6": "Cyprus",
+            "l_7": "Transjordan",
+            "l_8": "Sudan",
+            "l_9": "Deraa",
+            "l_10": "Beirut",
+            "l_11": "Merjayun",
+            "l_12": "Baghdad",
+            "l_13": "Euphrates",
+            "l_14": "Homs",
+            "l_15": "Rayak"
+        },
+        "events": {
+            "e_1": "Occupation of Syria",
+            "e_2": "Advance into Syria",
+            "e_3": "Capture of Damascus",
+            "e_4": "Reinforcements from Iraq"
+        },
+        "organisations": {
+            "o_1": "Free French Forces",
+            "o_2": "7th Australian Division",
+            "o_3": "5th Indian Brigade",
+            "o_4": "6th Division",
+            "o_5": "Royal Fusiliers",
+            "o_6": "Habforce"
+        }
+    },
+    "keywords": [
+        "Syria",
+        "Free French",
+        "General",
+        "Advance",
+        "Damascus",
+        "Occupation",
+        "Reinforcements",
+        "Military"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Resistance",
+        "Counterattacks"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ],
+        "Counterattacks": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "21st May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 21st May, General Catroux realizes the need for a larger military presence in Syria amid misleading intel."
+        },
+        {
+            "event": "e_2",
+            "date": "8th June",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "An advance into Syria begins early on 8th June, facing stiff resistance despite initial progress."
+        },
+        {
+            "event": "e_3",
+            "date": "21st June",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_3",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "By 21st June, Damascus is captured after fierce fighting involving heavy casualties."
+        },
+        {
+            "event": "e_4",
+            "date": "Towards end of June",
+            "locations": [
+                "l_1",
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Troops from Iraq increase pressure on Syria, moving towards key locations after capturing Damascus."
+        }
+    ]
+}

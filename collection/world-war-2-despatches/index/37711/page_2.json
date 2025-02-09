@@ -1,0 +1,140 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rommel",
+            "p_2": "von Rundstedt",
+            "p_3": "Kesselring"
+        },
+        "locations": {
+            "l_1": "Cherbourg",
+            "l_2": "Le Havre",
+            "l_3": "Normandy",
+            "l_4": "Varreville",
+            "l_5": "Caen",
+            "l_6": "France",
+            "l_7": "Crimea"
+        },
+        "events": {
+            "e_1": "OVERLORD",
+            "e_2": "D Day",
+            "e_3": "D+4 Counter Attack",
+            "e_4": "D+8 Bridgehead Expansion"
+        },
+        "organisations": {
+            "o_1": "French Resistance",
+            "o_2": "Allies",
+            "o_3": "German Forces"
+        }
+    },
+    "keywords": [
+        "batteries",
+        "coastal defence",
+        "artillery",
+        "Rommel",
+        "von Rundstedt",
+        "OVERLORD",
+        "D Day",
+        "counter-attack",
+        "bridgehead",
+        "French Resistance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defensive Strategies",
+        "Intelligence Gatherings",
+        "Allied Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_3",
+            "e_4"
+        ],
+        "Intelligence Gatherings": [
+            "e_1",
+            "e_2"
+        ],
+        "Allied Operations": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "OVERLORD, the Allied invasion plan, is executed, leading to significant military engagement on the beaches of Normandy."
+        },
+        {
+            "event": "e_2",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "On D Day, Allied forces land on the Normandy beaches, facing immediate German counterattacks."
+        },
+        {
+            "event": "e_3",
+            "date": "June 10, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "By D+4, German forces launch counterattacks against the Allied beachhead, striving to reclaim control."
+        },
+        {
+            "event": "e_4",
+            "date": "June 14, 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On D+8, the German military attempts to cordon off Allied forces to limit their beachhead expansion."
+        }
+    ]
+}

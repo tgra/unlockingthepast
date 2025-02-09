@@ -1,0 +1,119 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain (D)",
+            "p_2": "Rear-Admiral Commanding",
+            "p_3": "Commander-in-Chief"
+        },
+        "locations": {
+            "l_1": "Sheffield",
+            "l_2": "Bismarck",
+            "l_3": "Londonderry",
+            "l_4": "Edinburgh",
+            "l_5": "King George V",
+            "l_6": "Rodney",
+            "l_7": "Maori",
+            "l_8": "Cossack",
+            "l_9": "Renown",
+            "l_10": "Dorchester",
+            "l_11": "Home Fleet",
+            "l_12": "Admiralty"
+        },
+        "events": {
+            "e_1": "Contact by Zulu",
+            "e_2": "Reports of attacks by destroyers",
+            "e_3": "Position reports from Rear-Admiral Commanding"
+        },
+        "organisations": {
+            "o_1": "Home Fleet",
+            "o_2": "4th Destroyer Flotilla",
+            "o_3": "1st Cruiser Squadron",
+            "o_4": "18th Cruiser Squadron"
+        }
+    },
+    "keywords": [
+        "enemy report",
+        "salvos",
+        "casualties",
+        "torpedoed",
+        "attacks",
+        "visibility",
+        "position reports"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Casualties",
+        "Communication Difficulty"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [],
+        "Strategic Decisions": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "At 2251, Zulu makes contact and reports enemy steering 110, leading to further strategic movements."
+        },
+        {
+            "event": "e_2",
+            "date": "Date not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the night, destroyers attack the enemy and report positions and movements, prompting strategic responses."
+        },
+        {
+            "event": "e_3",
+            "date": "Early hours of 27th May",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Rear-Admiral Commanding reports his position and actions taken, contributing to the overall military strategy of the Home Fleet."
+        }
+    ]
+}

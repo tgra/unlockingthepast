@@ -1,0 +1,193 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Cick",
+            "p_2": "General Clark",
+            "p_3": "Rashid Ali",
+            "p_4": "Mayor of Baghdad",
+            "p_5": "General Dentz",
+            "p_6": "General de Gaulle",
+            "p_7": "General Legentilhomme",
+            "p_8": "General Catroux"
+        },
+        "locations": {
+            "l_1": "Shaibah",
+            "l_2": "Baghdad",
+            "l_3": "Fallujah",
+            "l_4": "Ramadi",
+            "l_5": "Transjordan",
+            "l_6": "Mosul",
+            "l_7": "Crete",
+            "l_8": "Syria",
+            "l_9": "Palestine",
+            "l_10": "Qastima",
+            "l_11": "Jaffa",
+            "l_12": "Lebanon",
+            "l_13": "Damascus"
+        },
+        "events": {
+            "e_1": "Counter Attack at Fallujah",
+            "e_2": "Advance on Baghdad",
+            "e_3": "Capitulation of Baghdad",
+            "e_4": "Formation of Free French Division",
+            "e_5": "German Infiltration into Syria",
+            "e_6": "Withdrawal of French troops in Syria"
+        },
+        "organisations": {
+            "o_1": "Iraqi Army",
+            "o_2": "Gurkha Battalion",
+            "o_3": "Household Cavalry Regiment",
+            "o_4": "Free French Forces"
+        }
+    },
+    "keywords": [
+        "reinforcements",
+        "capitulation",
+        "military operations",
+        "advance",
+        "German infiltration"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Counterinsurgency",
+        "Military Reinforcements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Diplomacy": [
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_5",
+            "e_6"
+        ],
+        "Counterinsurgency": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown Date",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "General Cick's forces successfully repel the Iraqi counter attack at Fallujah."
+        },
+        {
+            "event": "e_2",
+            "date": "30th May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "General Cick's force advances on Baghdad, overcoming communication difficulties and enemy action."
+        },
+        {
+            "event": "e_3",
+            "date": "1st June",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Baghdad Mayor requests terms of capitulation after the Iraqi forces lose morale and retreat."
+        },
+        {
+            "event": "e_4",
+            "date": "Mid May",
+            "locations": [
+                "l_9",
+                "l_8"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Formation of the Free French division in Egypt with troops organized to oppose German actions in Syria."
+        },
+        {
+            "event": "e_5",
+            "date": "End of April",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_6",
+                "p_8"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_6"
+            ],
+            "eventSummary": "General Dentz is noted to be colluding with Vichy, raising concerns on German advances in Syria."
+        },
+        {
+            "event": "e_6",
+            "date": "Late May",
+            "locations": [
+                "l_8",
+                "l_12"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "General Catroux reports French troops in Syria are retreating, necessitating a review of British military involvement."
+        }
+    ]
+}

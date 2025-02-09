@@ -1,0 +1,102 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "S.N.O.L. (N)",
+            "p_2": "D. Acw Souts",
+            "p_3": "Actp Nortu"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Acip NorTH",
+            "l_3": "Rocer sector",
+            "l_4": "Spaccaforno",
+            "l_5": "Casa Guiliano",
+            "l_6": "Casa Chiusa",
+            "l_7": "Casa Basile",
+            "l_8": "Sucar Rep beach"
+        },
+        "events": {
+            "e_1": "Landing Assault Operation",
+            "e_2": "Gun Support Operation"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Admiralty"
+        }
+    },
+    "keywords": [
+        "Assault Convoy",
+        "Mines",
+        "Troop Landings",
+        "Gun Support",
+        "Enemy Fire",
+        "Disembarkation",
+        "Fire Support"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Support",
+        "Logistics",
+        "Combat Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Support": [
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Combat Engagement": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "N/A",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Landing assault operation features minimal organized resistance, allowing for successful troop disembarkation and support from naval units."
+        },
+        {
+            "event": "e_2",
+            "date": "N/A",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Naval units provide gun support during landing operations, silencing enemy fire and facilitating troop movements."
+        }
+    ]
+}

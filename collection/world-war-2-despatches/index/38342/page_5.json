@@ -1,0 +1,170 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "PRINCE CHARLES",
+            "p_2": "PRINCE LEOPOLD",
+            "p_3": "CHIDDINGFOLD",
+            "p_4": "Rugsundo Battery",
+            "p_5": "Lieutenant J. N. Kempton",
+            "p_6": "OFFA",
+            "p_7": "DONNER",
+            "p_8": "s.s. ANHALT",
+            "p_9": "s.s. NORMAR",
+            "p_10": "REGMAR EDZARD FRITZEN"
+        },
+        "locations": {
+            "l_1": "Slaaken Bay",
+            "l_2": "Ulvesund",
+            "l_3": "Maaloy Island",
+            "l_4": "Maaloysund",
+            "l_5": "Vaagsfiord",
+            "l_6": "Brandhaunnes' Point"
+        },
+        "events": {
+            "e_1": "Bombardment of Maaloy Island",
+            "e_2": "Engagement with Enemy Aircraft",
+            "e_3": "Pursuit of Enemy Bombers",
+            "e_4": "Engagement with Armed Trawler",
+            "e_5": "Sinking of Enemy Boats",
+            "e_6": "Air Raids"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force"
+        }
+    },
+    "keywords": [
+        "Naval Operations",
+        "Air Operations",
+        "Enemy Engagement",
+        "Artillery Fire",
+        "Bombardment",
+        "Merchant Shipping"
+    ],
+    "themes": [
+        "Military Operations",
+        "Enemy Engagement",
+        "Naval Warfare",
+        "Air Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_4"
+        ],
+        "Air Support": [
+            "e_2",
+            "e_3",
+            "e_6"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date of Bombardment",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The bombardment of Maaloy Island is conducted successfully by the naval force to secure the area."
+        },
+        {
+            "event": "e_2",
+            "date": "Date of Engagement with Enemy Aircraft",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "Enemy aircraft engage our Blenheims, leading to a chaotic air battle with losses reported."
+        },
+        {
+            "event": "e_3",
+            "date": "Date of Pursuit of Enemy Bombers",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Following the enemy attack, our forces pursue retreating enemy bombers but are unable to establish effective communication."
+        },
+        {
+            "event": "e_4",
+            "date": "Date of Engagement with Armed Trawler",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_6",
+                "p_9"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Engagement occurs with the armed trawler DONNER, with several hits reported before the vessel is abandoned."
+        },
+        {
+            "event": "e_5",
+            "date": "Date of Sinking of Enemy Boats",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3",
+                "p_8"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The crew of s.s. ANHALT is ordered to surrender; upon non-compliance, the commanding ship CHIDDINGFOLD sinks one boat."
+        },
+        {
+            "event": "e_6",
+            "date": "Date of Air Raids",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A series of air raids occur, causing damage and prompting defensive fire from our ships."
+        }
+    ]
+}

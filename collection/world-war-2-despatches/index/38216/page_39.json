@@ -1,0 +1,155 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Sir Tom Phillips",
+            "p_2": "Rear Admiral Palliser"
+        },
+        "locations": {
+            "l_1": "Kuantan",
+            "l_2": "Singapore",
+            "l_3": "Singora",
+            "l_4": "Patani",
+            "l_5": "eastern coast of Malaya"
+        },
+        "events": {
+            "e_1": "First bombing of Kuantan",
+            "e_2": "Evacuation of Kuantan",
+            "e_3": "Landing report at Kuantan",
+            "e_4": "Sinking of H.M.S. Prince of Wales",
+            "e_5": "Sinking of H.M.S. Repulse"
+        },
+        "organisations": {
+            "o_1": "R.A.A.F.",
+            "o_2": "H.M.S. Prince of Wales",
+            "o_3": "H.M.S. Repulse",
+            "o_4": "Eastern Fleet"
+        }
+    },
+    "keywords": [
+        "Kuantan",
+        "bombing",
+        "evacuation",
+        "landing",
+        "reconnaissance",
+        "H.M.S. Prince of Wales",
+        "H.M.S. Repulse",
+        "Japanese air attacks",
+        "Eastern Fleet"
+    ],
+    "themes": [
+        "Military Operations",
+        "Aerial Warfare",
+        "Naval Engagements",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4",
+            "e_5"
+        ],
+        "Aerial Warfare": [
+            "e_1",
+            "e_4"
+        ],
+        "Naval Engagements": [
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "10th December, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Kuantan experiences its first bombing, leading to significant damage and prompting a decision to evacuate."
+        },
+        {
+            "event": "e_2",
+            "date": "10th December, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "The evacuation of Kuantan occurs after the bombing, with surviving aircraft returning to Singapore."
+        },
+        {
+            "event": "e_3",
+            "date": "9-10th December, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Reports of a reconnaissance landing at Kuantan prompt military responses, though found to be exaggerated."
+        },
+        {
+            "event": "e_4",
+            "date": "10th December, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "H.M.S. Prince of Wales is subjected to a surprise air attack resulting in its sinking along with H.M.S. Repulse."
+        },
+        {
+            "event": "e_5",
+            "date": "10th December, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "In conjunction with H.M.S. Prince of Wales, H.M.S. Repulse is also sunk due to air attacks during military operations."
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Montgomery",
+            "p_2": "General Clark",
+            "p_3": "Admiral Cunningham",
+            "p_4": "Major-General A. A. Richardson"
+        },
+        "locations": {
+            "l_1": "Salerno",
+            "l_2": "Altavilla",
+            "l_3": "Albanella",
+            "l_4": "Agropoli",
+            "l_5": "Battipaglia",
+            "l_6": "Eboli",
+            "l_7": "Rome",
+            "l_8": "Apulia",
+            "l_9": "Calabria",
+            "l_10": "Oran",
+            "l_11": "Gulf"
+        },
+        "events": {
+            "e_1": "Battle of Salerno",
+            "e_2": "Operation Avalanche",
+            "e_3": "German Counter-attacks",
+            "e_4": "Deployment of 82nd Airborne Division"
+        },
+        "organisations": {
+            "o_1": "VI Corps",
+            "o_2": "10 Corps",
+            "o_3": "Eighth Army",
+            "o_4": "German Army",
+            "o_5": "U.S. Army",
+            "o_6": "Strategic Air-Force"
+        }
+    },
+    "keywords": [
+        "fighting",
+        "advancement",
+        "counter-attack",
+        "reinforcements",
+        "strategic",
+        "operations",
+        "logistics"
+    ],
+    "themes": [
+        "Military Operations",
+        "Reinforcements",
+        "Counter-attacks",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Reinforcements": [
+            "e_2",
+            "e_4"
+        ],
+        "Counter-attacks": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "11th September",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Salerno sees heavy fighting, with VI Corps making significant ground by capturing key locations along the coast despite facing strong resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "13th September",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Avalanche is critical as pressure mounts for reinforcements amid increasing German counter-attacks, emphasizing strategic defense."
+        },
+        {
+            "event": "e_3",
+            "date": "12th-14th September",
+            "locations": [
+                "l_1",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "German counter-attacks escalate, threatening VI Corps until heavy air and sea support helps stabilize the situation."
+        },
+        {
+            "event": "e_4",
+            "date": "13th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The deployment of the 82nd Airborne Division occurs under urgent circumstances, reinforcing the bridgehead just before critical enemy advances."
+        }
+    ]
+}

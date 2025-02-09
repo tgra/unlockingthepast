@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mr. Eden",
+            "p_2": "General Sir John Dill",
+            "p_3": "Air Chief Marshal Sir Arthur Longmore",
+            "p_4": "Major-General J. C. Tilly"
+        },
+        "locations": {
+            "l_1": "Cairo",
+            "l_2": "Greece",
+            "l_3": "Tatoi Palace",
+            "l_4": "Athens",
+            "l_5": "Middle East",
+            "l_6": "Cyrenaica",
+            "l_7": "Bardia",
+            "l_8": "Benghazi",
+            "l_9": "Palestine",
+            "l_10": "Eritrea",
+            "l_11": "East Africa",
+            "l_12": "South Africa",
+            "l_13": "Italian Dodecanese"
+        },
+        "events": {
+            "e_1": "Visit to Cairo",
+            "e_2": "Conversations at Tatoi Palace",
+            "e_3": "Cyrenaican campaign"
+        },
+        "organisations": {
+            "o_1": "British Army",
+            "o_2": "7th Armoured Division",
+            "o_3": "2nd Armoured Division",
+            "o_4": "6th Australian Division",
+            "o_5": "New Zealand Division",
+            "o_6": "Polish Brigade Group",
+            "o_7": "1st South African Division",
+            "o_8": "6th British Division",
+            "o_9": "4th Indian Division",
+            "o_10": "5th Indian Division"
+        }
+    },
+    "keywords": [
+        "Military Position",
+        "Middle East",
+        "Operations",
+        "Troops readiness",
+        "Cyrenaica"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Assessments",
+        "Troop Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "February 19, 1941",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "British representatives arrive in Cairo after a five-day delay due to bad weather to discuss policy in the Middle East."
+        },
+        {
+            "event": "e_2",
+            "date": "February 20, 1941",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Key British military figures engage in discussions at Tatoi Palace near Athens, focusing on strategies for operations in Greece."
+        },
+        {
+            "event": "e_3",
+            "date": "February 1941",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Cyrenaican campaign sees continued efforts in North Africa as various divisions prepare for engagements."
+        }
+    ]
+}

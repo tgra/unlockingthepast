@@ -1,0 +1,109 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain Bovell"
+        },
+        "locations": {
+            "l_1": "Tromso",
+            "l_2": "Bear Island",
+            "l_3": "Seidisfiord",
+            "l_4": "Scapa",
+            "l_5": "Narvik",
+            "l_6": "Kirkenes"
+        },
+        "events": {
+            "e_1": "Attack on Tromso",
+            "e_2": "Operation with Force A and Force P",
+            "e_3": "Closure towards flying-off position"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "H.M.S. VICTORIOUS",
+            "o_3": "H.M.S. DEVONSHIRE",
+            "o_4": "H.M.S. FURIOUS"
+        }
+    },
+    "keywords": [
+        "Force A",
+        "Force P",
+        "VICTORIOUS",
+        "DEVONSHIRE",
+        "air operations",
+        "Tromso",
+        "attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Aerial Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_2",
+            "e_3"
+        ],
+        "Aerial Reconnaissance": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "4th August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The first Fulmar returns after successfully attacking armed trawlers near Tromso, although it reports a loss among its crew."
+        },
+        {
+            "event": "e_2",
+            "date": "3rd-5th August",
+            "locations": [
+                "l_2",
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Force A executes maneuvers leading to the aerial attack on Tromso, demonstrating strategic planning amidst operational challenges."
+        },
+        {
+            "event": "e_3",
+            "date": "4th August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Force prepares for an aerial operation, moving closer to the launching point for an attack on Tromso."
+        }
+    ]
+}

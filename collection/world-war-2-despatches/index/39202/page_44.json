@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General J. T. Durrant",
+            "p_2": "Air Commodore F. J. W. Mellersh"
+        },
+        "locations": {
+            "l_1": "Bay of Bandon",
+            "l_2": "Isthmus of Kra",
+            "l_3": "Jumbhorn",
+            "l_4": "Siam",
+            "l_5": "Malaya",
+            "l_6": "Bangkok",
+            "l_7": "Surasdhani",
+            "l_8": "Bay of Bengal",
+            "l_9": "Andaman Sea",
+            "l_10": "Gulf of Siam",
+            "l_11": "Malay Peninsula",
+            "l_12": "Akyab",
+            "l_13": "Arakan",
+            "l_14": "Mingaladon Airfield",
+            "l_15": "Rangoon",
+            "l_16": "Salbani"
+        },
+        "events": {
+            "e_1": "Attack on railyards at Surasdhani",
+            "e_2": "Shipping strike against Japanese tanker",
+            "e_3": "Sinking of the Angthong submarine depot ship"
+        },
+        "organisations": {
+            "o_1": "R.A.F. Liberators",
+            "o_2": "Bomber Command",
+            "o_3": "231 Group",
+            "o_4": "222 Group"
+        }
+    },
+    "keywords": [
+        "R.A.F.",
+        "Liberators",
+        "monsoon",
+        "aircrews",
+        "Japanese tanker",
+        "shipping strike",
+        "military operations",
+        "Bangkok",
+        "Surasdhani"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Campaigns",
+        "Supply Chain Disruption",
+        "Enemy Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Campaigns": [
+            "e_1",
+            "e_2"
+        ],
+        "Supply Chain Disruption": [
+            "e_2",
+            "e_3"
+        ],
+        "Enemy Tactics": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 5th, 1945",
+            "locations": [
+                "l_7",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On June 5th, seven Liberators successfully attack the important railyards at Surasdhani, causing significant disruption to Japanese supply lines."
+        },
+        {
+            "event": "e_2",
+            "date": "June 15th, 1945",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On June 15th, a shipping strike results in the sinking of a 10,000-ton Japanese tanker, severely impacting Japanese supply capabilities in South East Asia."
+        },
+        {
+            "event": "e_3",
+            "date": "June 1st, 1945",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On June 1st, 1945, R.A.F. Liberators sink the Angthong, a submarine depot ship, further crippling enemy resources."
+        }
+    ]
+}

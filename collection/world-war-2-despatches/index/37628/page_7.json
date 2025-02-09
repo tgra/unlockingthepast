@@ -1,0 +1,131 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Babini"
+        },
+        "locations": {
+            "l_1": "Tobruk",
+            "l_2": "Bardia",
+            "l_3": "Sidi Mahmoud",
+            "l_4": "Cyrenaica",
+            "l_5": "Derna",
+            "l_6": "Mechili",
+            "l_7": "Palastrino"
+        },
+        "events": {
+            "e_1": "Assault on Tobruk",
+            "e_2": "Fall of Tobruk",
+            "e_3": "Preparations for further Advance"
+        },
+        "organisations": {
+            "o_1": "6th Australian Division",
+            "o_2": "7th Armoured Division",
+            "o_3": "7th Battalion Royal Tank Regiment",
+            "o_4": "1st Battalion Royal Northumberland Fusiliers",
+            "o_5": "Cheshire Regiment",
+            "o_6": "Royal Air Force",
+            "o_7": "Royal Navy",
+            "o_8": "Free French companies"
+        }
+    },
+    "keywords": [
+        "Tobruk",
+        "Assault",
+        "Artillery",
+        "Military Operations",
+        "Cooperation",
+        "Air Support",
+        "Naval Bombardment"
+    ],
+    "themes": [
+        "Military Operations",
+        "Artillery Support",
+        "Strategic Advances",
+        "Cooperation"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Artillery Support": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ],
+        "Cooperation": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 21",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Assault on Tobruk is launched at 0530 hours with coordinated advances by Australian Brigades. Initial artillery support is effective against limited enemy opposition, resulting in the capture of strategic areas by noon."
+        },
+        {
+            "event": "e_2",
+            "date": "January 22",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_6",
+                "o_7",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The fall of Tobruk occurs with the entry of Allied forces into the town, leading to the capture of nearly 30,000 prisoners and significant enemy equipment."
+        },
+        {
+            "event": "e_3",
+            "date": "January 22 - February 7",
+            "locations": [
+                "l_1",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Preparations for further advance follow the fall of Tobruk, with remaining Italian forces reorganizing in Cyrenaica for a potential counter."
+        }
+    ]
+}

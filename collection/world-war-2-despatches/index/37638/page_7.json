@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Neame",
+            "p_2": "Brigadier Wootten"
+        },
+        "locations": {
+            "l_1": "Cyrenaica",
+            "l_2": "Agheila",
+            "l_3": "Benghazi",
+            "l_4": "Jarabub Oasis",
+            "l_5": "Tobruk",
+            "l_6": "Greece",
+            "l_7": "Iraq",
+            "l_8": "Syria",
+            "l_9": "Mechili"
+        },
+        "events": {
+            "e_1": "Evacuation of Greece",
+            "e_2": "Capture of Jarabub Oasis",
+            "e_3": "Enemy Counter Offensive in Cyrenaica"
+        },
+        "organisations": {
+            "o_1": "2nd Armoured Division",
+            "o_2": "6th Australian Division",
+            "o_3": "5th German Light Armoured Division"
+        }
+    },
+    "keywords": [
+        "transport shortage",
+        "military operations",
+        "Cyrenaica",
+        "enemy counter offensive",
+        "Benghazi",
+        "Jarabub Oasis"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistical Challenges",
+        "Defensive Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistical Challenges": [
+            "e_1",
+            "e_3"
+        ],
+        "Defensive Strategies": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Ongoing during the first six months",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of Greek forces occurs due to logistical problems and the need for transport."
+        },
+        {
+            "event": "e_2",
+            "date": "21st March",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Brigadier Wootten leads the successful attack capturing the Italian garrison at Jarabub Oasis."
+        },
+        {
+            "event": "e_3",
+            "date": "31st March",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The enemy counter-offensive in Cyrenaica begins with significant forces attacking the British. "
+        }
+    ]
+}

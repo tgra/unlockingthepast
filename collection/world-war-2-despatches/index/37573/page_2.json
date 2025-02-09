@@ -1,0 +1,106 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Lieutenant-General J. H. Marshall-Coriwall",
+            "p_2": "Prime Minister"
+        },
+        "locations": {
+            "l_1": "Cherbourg",
+            "l_2": "Brest",
+            "l_3": "St. Malo",
+            "l_4": "Le Mans",
+            "l_5": "Rouen",
+            "l_6": "Conches",
+            "l_7": "Alençon",
+            "l_8": "Tours",
+            "l_9": "Vitre",
+            "l_10": "Laval",
+            "l_11": "Chartres",
+            "l_12": "St. Sauveur"
+        },
+        "events": {
+            "e_1": "Withdrawal of British Expeditionary Force (B.E.F.)",
+            "e_2": "Evacuation of 52nd Division"
+        },
+        "organisations": {
+            "o_1": "Tenth French Army",
+            "o_2": "Norman Force",
+            "o_3": "B.E.F.",
+            "o_4": "C.I.G.S."
+        }
+    },
+    "keywords": [
+        "evacuation",
+        "withdrawal",
+        "military operations",
+        "enemy reconnaissance",
+        "troop movements"
+    ],
+    "themes": [
+        "Military Operations",
+        "Evacuation Strategies",
+        "Command Coordination",
+        "Enemy Movements"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Evacuation Strategies": [
+            "e_1",
+            "e_2"
+        ],
+        "Command Coordination": [
+            "e_1"
+        ],
+        "Enemy Movements": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "15th June",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The withdrawal of the British Expeditionary Force starts as British troops are placed under the command of Lieutenant-General J. H. Marshall-Coriwall to cooperate with the Tenth French Army for an organized retreat to Cherbourg."
+        },
+        {
+            "event": "e_2",
+            "date": "16th June",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The evacuation of the 52nd Division is confirmed to begin, allowing for safe embarkation at Cherbourg while ensuring coordination with the Tenth French Army."
+        }
+    ]
+}

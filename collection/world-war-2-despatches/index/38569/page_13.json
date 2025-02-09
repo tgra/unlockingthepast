@@ -1,0 +1,113 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear Admiral Bennett",
+            "p_2": "U.S. Browning"
+        },
+        "locations": {
+            "l_1": "Oran",
+            "l_2": "Gibraltar",
+            "l_3": "Arzeu",
+            "l_4": "X Beaches",
+            "l_5": "Y Beaches"
+        },
+        "events": {
+            "e_1": "Sinking of U.S. Browning",
+            "e_2": "Unloading Operation at Arzeu",
+            "e_3": "Sailing Convoy to Gibraltar",
+            "e_4": "Centre Naval Task Force Ceasing to Exist"
+        },
+        "organisations": {
+            "o_1": "U.S. Navy"
+        }
+    },
+    "keywords": [
+        "Oran",
+        "Gibraltar",
+        "Convoy",
+        "Unloading",
+        "Naval Task Force"
+    ],
+    "themes": [
+        "Naval Operations",
+        "Military Logistics",
+        "Maritime Incidents"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Logistics": [
+            "e_2",
+            "e_3"
+        ],
+        "Maritime Incidents": [
+            "e_1"
+        ],
+        "Organisational Changes": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 13th",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The U.S. Browning is sunk en route to Oran, possibly by torpedo, while carrying T.N.T. and motor transport."
+        },
+        {
+            "event": "e_2",
+            "date": "November 13th",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Ships complete unloading at Arzeu and prepare to sail in convoys to Gibraltar."
+        },
+        {
+            "event": "e_3",
+            "date": "November 14th",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The remaining ships of the convoy arrive safely in Gibraltar after being escorted from Arzeu."
+        },
+        {
+            "event": "e_4",
+            "date": "November 14th",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Centre Naval Task Force is officially disbanded at sunset."
+        }
+    ]
+}

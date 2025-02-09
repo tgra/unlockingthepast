@@ -1,0 +1,106 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Officer Commanding Malaya",
+            "p_2": "Hitler"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "North Malaya",
+            "l_4": "South Thailand",
+            "l_5": "French Indo-China"
+        },
+        "events": {
+            "e_1": "Fall of France",
+            "e_2": "Japanese Occupation of French Indo-China",
+            "e_3": "Scorched Earth Policy Implementation"
+        },
+        "organisations": {
+            "o_1": "British Fleet",
+            "o_2": "Japanese Army",
+            "o_3": "War Office"
+        }
+    },
+    "keywords": [
+        "Morale",
+        "Scorched Earth Policy",
+        "Defence",
+        "Air Power",
+        "Military Equipment"
+    ],
+    "themes": [
+        "Military Operations",
+        "Defence Strategy",
+        "International Relations",
+        "Psychological Effects of War"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Defence Strategy": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Fall of France occurs, significantly impacting the regional defence strategy."
+        },
+        {
+            "event": "e_2",
+            "date": "1940",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Japan occupies French Indo-China, changing the strategic landscape and bringing them closer to Malaya."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown (during the conflict)",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The implementation of the Scorched Earth Policy affects the morale and self-respect of the troops involved."
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "France",
+            "l_2": "Belgium",
+            "l_3": "Normandy"
+        },
+        "events": {
+            "e_1": "Operation Neptune",
+            "e_2": "D-Day"
+        },
+        "organisations": {}
+    },
+    "keywords": [
+        "signals security",
+        "scientific research",
+        "strategical air forces",
+        "tactical air forces",
+        "air operations",
+        "bombing accuracy",
+        "heavy bombers",
+        "medium bombers",
+        "coastal defences",
+        "inter-service operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Technological Integration",
+        "Air Combat Strategy",
+        "Logistics and Resource Management"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Technological Integration": [],
+        "Air Combat Strategy": [],
+        "Logistics and Resource Management": []
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Neptune is executed, marking the beginning of the Allied invasion of Normandy, which significantly hampers enemy logistics and air resources."
+        },
+        {
+            "event": "e_2",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "D-Day signifies the largest amphibious invasion in history as Allied forces land on the beaches of Normandy, directly impacting the course of the war in Europe."
+        }
+    ]
+}

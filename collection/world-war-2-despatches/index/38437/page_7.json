@@ -1,0 +1,133 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Ministry",
+            "p_2": "Chiefs of Staff"
+        },
+        "locations": {
+            "l_1": "London",
+            "l_2": "Bristol",
+            "l_3": "Cobham",
+            "l_4": "Limpsfield",
+            "l_5": "Solent"
+        },
+        "events": {
+            "e_1": "D Day",
+            "e_2": "Overlord",
+            "e_3": "German attacks",
+            "e_4": "Emergence of modified sites"
+        },
+        "organisations": {
+            "o_1": "R.A.F. Regiment",
+            "o_2": "Royal Armoured Corps"
+        }
+    },
+    "keywords": [
+        "Diver",
+        "barrage",
+        "balloons",
+        "defence",
+        "pilotless aircraft",
+        "bombing",
+        "air attack"
+    ],
+    "themes": [
+        "Military Strategy",
+        "Air Defence",
+        "Technological Developments",
+        "Enemy Threat Assessment"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "D Day",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "D Day is planned for the withdrawal of heavy and light guns, with expectations that threats will be neutralized by bombing."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Overlord involves preparations for military operations, necessitating a dual role for the guns."
+        },
+        {
+            "event": "e_3",
+            "date": "April 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The German attacks prompt a reassessment of aviation defence strategies against pilotless aircraft."
+        },
+        {
+            "event": "e_4",
+            "date": "April 27, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The emergence of modified sites, which complicate bombing targets, is first documented by reconnaissance photography."
+        }
+    ]
+}

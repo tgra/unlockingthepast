@@ -1,0 +1,129 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Papagos",
+            "p_2": "General Sir H. M. Wilson",
+            "p_3": "Lieut.-General P. Neame"
+        },
+        "locations": {
+            "l_1": "Turkey",
+            "l_2": "Greece",
+            "l_3": "Bulgaria",
+            "l_4": "Macedonia",
+            "l_5": "Salonika",
+            "l_6": "Piraeus",
+            "l_7": "Volos",
+            "l_8": "Albania",
+            "l_9": "Florina",
+            "l_10": "Larissa",
+            "l_11": "Western Thrace",
+            "l_12": "Aegean Sea"
+        },
+        "events": {
+            "e_1": "Entry of Germans into Bulgaria",
+            "e_2": "Conversations with Turkish Government",
+            "e_3": "Dispatched British forces to Greece",
+            "e_4": "Conferences in Athens"
+        },
+        "organisations": {
+            "o_1": "British Army",
+            "o_2": "Turkish Government",
+            "o_3": "Greek Army"
+        }
+    },
+    "keywords": [
+        "British forces",
+        "Greek troops",
+        "German entry",
+        "support Greece",
+        "Aliakhmon Line",
+        "Macedonia",
+        "Salonika",
+        "operation",
+        "military strategy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_4"
+        ],
+        "Logistics": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1st March",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Germans enter Bulgaria, prompting concerns regarding military support from neighboring nations."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Discussions take place between British and Turkish military officials regarding support for Greece."
+        },
+        {
+            "event": "e_3",
+            "date": "5th March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The British force begins its dispatch to Greece to support Greek troops amidst a deteriorating military situation."
+        },
+        {
+            "event": "e_4",
+            "date": "2nd-5th March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A series of conferences are held in Athens to discuss the positioning of Greek troops and the British contingent in light of German advances."
+        }
+    ]
+}

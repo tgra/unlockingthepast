@@ -1,0 +1,94 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir Arthur Longmore",
+            "p_2": "Air Commodore R. Collishaw"
+        },
+        "locations": {
+            "l_1": "Sollum",
+            "l_2": "Bardia",
+            "l_3": "Tobruk",
+            "l_4": "Western Desert",
+            "l_5": "Cardiff"
+        },
+        "events": {
+            "e_1": "Royal Air Force Operations",
+            "e_2": "Ground Forces Movements"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Air Superiority",
+        "Ground Forces",
+        "Field Supply Depots",
+        "Enemy Air Attack"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Power",
+        "Coordination",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Power": [
+            "e_1"
+        ],
+        "Coordination": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26 June 1946",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Royal Air Force, under the direction of Air Chief Marshal Sir Arthur Longmore, achieves air superiority over the Italian air force, allowing ground forces to operate effectively."
+        },
+        {
+            "event": "e_2",
+            "date": "26 June 1946",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Ground forces are able to move with minimal losses due to the support provided by the Royal Air Force, particularly under the leadership of Air Commodore R. Collishaw."
+        }
+    ]
+}

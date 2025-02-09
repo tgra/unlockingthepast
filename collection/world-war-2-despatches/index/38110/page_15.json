@@ -1,0 +1,85 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Enemy coast",
+            "l_2": "beaches",
+            "l_3": "JIG beach"
+        },
+        "events": {
+            "e_1": "Assault Force Operations",
+            "e_2": "D-Day Landings"
+        },
+        "organisations": {
+            "o_1": "British Armed Forces",
+            "o_2": "U.S. Armed Forces"
+        }
+    },
+    "keywords": [
+        "Assault Force",
+        "D.D. tanks",
+        "beaches",
+        "enemy fire",
+        "landing craft",
+        "TELLER mines"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Assault",
+        "Weather Impact",
+        "Enemy Opposition"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Assault": [
+            "e_1"
+        ],
+        "Weather Impact": [
+            "e_1"
+        ],
+        "Enemy Opposition": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "6 June",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Assault Force Operations on the enemy coast achieve mixed results. While the majority of the assault craft land on time, challenges from weather conditions and enemy fire impact the operation, leading to delayed and damaged landings."
+        },
+        {
+            "event": "e_2",
+            "date": "6 June",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The D-Day Landings commence successfully with most forces landing on time. However, issues with weather and enemy opposition create obstacles in reaching objectives, highlighting the resilience and coordination of the forces involved."
+        }
+    ]
+}

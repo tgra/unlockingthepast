@@ -1,0 +1,100 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Rangoon",
+            "l_3": "Burma",
+            "l_4": "Thailand",
+            "l_5": "Bangkok",
+            "l_6": "Lampang",
+            "l_7": "Chiengmai",
+            "l_8": "Nagorn Sawan",
+            "l_9": "Moulmein",
+            "l_10": "Akyab",
+            "l_11": "Tharrawaddy",
+            "l_12": "Toungoo",
+            "l_13": "Magwe",
+            "l_14": "Bhisanuloke",
+            "l_15": "Mesoht"
+        },
+        "events": {
+            "e_1": "Fall of Singapore",
+            "e_2": "Fall of Rangoon",
+            "e_3": "Magwe action commences"
+        },
+        "organisations": {
+            "o_1": "Japanese Army Air Force"
+        }
+    },
+    "keywords": [
+        "air force",
+        "reinforcement",
+        "Japanese bombers",
+        "fighter equipment",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Superiority",
+        "Intelligence Gathering"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Superiority": [
+            "e_2"
+        ],
+        "Intelligence Gathering": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "15th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Singapore falls to enemy forces, marking a significant loss in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "7th March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Rangoon falls to enemy forces, compounding the losses sustained by the Allied forces."
+        },
+        {
+            "event": "e_3",
+            "date": "21st March",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Magwe action commences, indicating continued conflict in the region."
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Vir",
+            "l_2": "Komiza",
+            "l_3": "Sibenik",
+            "l_4": "Zara"
+        },
+        "events": {
+            "e_1": "First Attack",
+            "e_2": "Second Attack",
+            "e_3": "Third Attack"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "L.R.D.G.",
+            "o_3": "Partisan authorities"
+        }
+    },
+    "keywords": [
+        "F-lighter",
+        "torpedoes",
+        "gunfire",
+        "casualties",
+        "convoy",
+        "enemy vessels"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagement",
+        "Damage Assessment",
+        "Casualties"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Damage Assessment": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Casualties": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Undated",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "During the first attack, several F-lighters are heavily hit and begin to sink as gunfire from multiple vessels is opened."
+        },
+        {
+            "event": "e_2",
+            "date": "Undated",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "In the second attack, additional F-lighters are sunk and damage is assessed across multiple enemy vessels."
+        },
+        {
+            "event": "e_3",
+            "date": "Undated",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The third attack results in the sinking of more F-lighters, with significant damage reported."
+        }
+    ]
+}

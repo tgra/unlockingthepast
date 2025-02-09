@@ -1,0 +1,108 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Major-General Messervy",
+            "p_2": "General Godwin-Austen"
+        },
+        "locations": {
+            "l_1": "Marsa el Brega",
+            "l_2": "Agedabia",
+            "l_3": "Maaten Burruei",
+            "l_4": "Wadi Faregh",
+            "l_5": "Saunnu",
+            "l_6": "Antelat",
+            "l_7": "Giof el Matar",
+            "l_8": "Msus"
+        },
+        "events": {
+            "e_1": "Enemy Counter-Attack on January 21",
+            "e_2": "Advance to Agedabia on January 23"
+        },
+        "organisations": {
+            "o_1": "1st Armoured Division",
+            "o_2": "2nd Armoured Brigade",
+            "o_3": "7th Armoured Division",
+            "o_4": "4th Indian Division",
+            "o_5": "Guards Brigade",
+            "o_6": "3rd Corps"
+        }
+    },
+    "keywords": [
+        "Armoured Division",
+        "Counter-Attack",
+        "Infantry",
+        "Enemy Tanks",
+        "Supply Issues",
+        "Operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Counter-Attacks",
+        "Tactical Movements",
+        "Terrain Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Tactical Movements": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 21",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The enemy stages a counter-attack against forward troops under Major-General Messervy, leading to engagements at Agedabia and Saunnu."
+        },
+        {
+            "event": "e_2",
+            "date": "January 23",
+            "locations": [
+                "l_2",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On January 23, the 2nd Armoured Brigade is ordered to the area near Agedabia to counter the enemy's advance, leading to engagements with enemy tanks."
+        }
+    ]
+}

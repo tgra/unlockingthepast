@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral",
+            "p_2": "officers from HOUSTON",
+            "p_3": "officers from PERTH",
+            "p_4": "Gunnery Officer"
+        },
+        "locations": {
+            "l_1": "Western Channel",
+            "l_2": "Bawean Island",
+            "l_3": "N.E.",
+            "l_4": "Northward",
+            "l_5": "N.N.E."
+        },
+        "events": {
+            "e_1": "Naval Engagement on 27th February",
+            "e_2": "Torpedo Attack",
+            "e_3": "Counter-Attack by ELECTRA"
+        },
+        "organisations": {
+            "o_1": "Allied Force",
+            "o_2": "ELECTRA",
+            "o_3": "HOUSTON",
+            "o_4": "PERTH",
+            "o_5": "KORTENAER"
+        }
+    },
+    "keywords": [
+        "Naval Engagement",
+        "Torpedo Attack",
+        "Cruisers",
+        "Destroyers",
+        "Allied Force"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare",
+        "Battle Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_3"
+        ],
+        "Battle Strategy": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th February",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Allied force engages in a naval battle against enemy cruisers and destroyers, resulting in multiple tactical maneuvers and significant damage to EXETER."
+        },
+        {
+            "event": "e_2",
+            "date": "27th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the naval engagement, enemy destroyers launch a torpedo attack against the Allied forces, prompting a tactical retreat."
+        },
+        {
+            "event": "e_3",
+            "date": "27th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "ELECTRA makes a bold counter-attack against enemy destroyers, attempting to protect EXETER as the naval conflict intensifies."
+        }
+    ]
+}

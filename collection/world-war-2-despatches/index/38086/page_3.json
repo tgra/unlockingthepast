@@ -1,0 +1,96 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Sir Charles Wm. Forbes",
+            "p_2": "Commander R. E. D. Ryder"
+        },
+        "locations": {
+            "l_1": "St. Nazaire",
+            "l_2": "Plymouth",
+            "l_3": "Loire",
+            "l_4": "Biscay"
+        },
+        "events": {
+            "e_1": "The Attack on St. Nazaire",
+            "e_2": "Operation against the Tirpitz"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "H.M.S. Campbeltown",
+            "o_3": "H.M.S. Tynedale",
+            "o_4": "H.M.S. Brocklesby",
+            "o_5": "No. 19 Group, R.A.F."
+        }
+    },
+    "keywords": [
+        "Attack",
+        "St. Nazaire",
+        "Operation",
+        "Royal Navy",
+        "Tirpitz",
+        "Demolition",
+        "Casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Leadership"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Leadership": [
+            "p_1",
+            "p_2"
+        ],
+        "Naval Strategy": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "28 March 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Attack on St. Nazaire is a significant military operation conducted on 28 March 1942, involving a naval assault that aimed to disable key enemy facilities and infrastructure."
+        },
+        {
+            "event": "e_2",
+            "date": "28 March 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation against the Tirpitz is part of the Attack on St. Nazaire, targeting the destruction of significant enemy naval assets."
+        }
+    ]
+}

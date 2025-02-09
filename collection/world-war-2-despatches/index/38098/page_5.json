@@ -1,0 +1,75 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral",
+            "p_2": "Commander-in-Chief"
+        },
+        "locations": {
+            "l_1": "PRINCE OF WALES",
+            "l_2": "BISMARCK",
+            "l_3": "PRINZ EUGEN"
+        },
+        "events": {
+            "e_1": "Engagement with BISMARCK",
+            "e_2": "Interception by the Commander-in-Chief"
+        },
+        "organisations": {
+            "o_1": "Admiralty"
+        }
+    },
+    "keywords": [
+        "engagement",
+        "efficiency",
+        "interception",
+        "destruction",
+        "cruisers"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "May 24, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A decision is made to break off engagement with the BISMARCK due to concerns about the PRINCE OF WALES's efficiency and the enemy's capability."
+        },
+        {
+            "event": "e_2",
+            "date": "May 25, 1941",
+            "locations": [],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The expectation is set for the Commander-in-Chief to contact the enemy, attempting interception and continuing to monitor the situation."
+        }
+    ]
+}

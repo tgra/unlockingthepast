@@ -1,0 +1,153 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Stilwell"
+        },
+        "locations": {
+            "l_1": "Taungdwingyi",
+            "l_2": "Pyinmana",
+            "l_3": "Mandalay",
+            "l_4": "Magwe",
+            "l_5": "Yenangyaung",
+            "l_6": "Kadaung Chaung",
+            "l_7": "Myingun",
+            "l_8": "Pinchaung",
+            "l_9": "Kyaukpadaung",
+            "l_10": "Meiktila",
+            "l_11": "Pyawbwe"
+        },
+        "events": {
+            "e_1": "Order to hold Taungdwingyi",
+            "e_2": "Destruction of the Yenangyaung oilfields",
+            "e_3": "Fight at Yenangyaung",
+            "e_4": "Chinese counterattack planning",
+            "e_5": "Operations on the Chinese Front"
+        },
+        "organisations": {
+            "o_1": "1 Burcorps",
+            "o_2": "1 Burma Division",
+            "o_3": "17 Division",
+            "o_4": "7 Hussars",
+            "o_5": "2 Royal Tanks",
+            "o_6": "Chinese 38 Division",
+            "o_7": "Chinese 200 Division",
+            "o_8": "Chinese 22 Division"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "oilfields",
+        "enemy",
+        "counterattack",
+        "communications"
+    ],
+    "themes": [
+        "Military Operations",
+        "Destruction of Resources",
+        "Counterattack Plans",
+        "Communications Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Destruction of Resources": [
+            "e_2"
+        ],
+        "Counterattack Plans": [
+            "e_4"
+        ],
+        "Communications Strategy": [
+            "e_1",
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 12-13, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Orders are given to 1 Burcorps to hold Taungdwingyi at all costs amidst increasing enemy pressure."
+        },
+        {
+            "event": "e_2",
+            "date": "April 14-16, 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Yenangyaung oilfields are successfully destroyed as orders are issued for their denial, taking two full days to complete."
+        },
+        {
+            "event": "e_3",
+            "date": "April 17-21, 1944",
+            "locations": [
+                "l_5",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "1 Burma Division engages in fierce fighting at Yenangyaung while facing enemy roadblocks that cut off communications."
+        },
+        {
+            "event": "e_4",
+            "date": "April 17-18, 1944",
+            "locations": [
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "General Stilwell discusses plans for a counterattack with 1 Burcorps, but the attack does not materialize as expected."
+        },
+        {
+            "event": "e_5",
+            "date": "April 1-21, 1944",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The operations on the Chinese front adjust after the withdrawal of the Chinese 200 Division, regrouping in response to the larger conflict."
+        }
+    ]
+}

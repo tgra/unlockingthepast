@@ -1,0 +1,159 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General O'Connor"
+        },
+        "locations": {
+            "l_1": "Benghazi",
+            "l_2": "Derna",
+            "l_3": "Mechili",
+            "l_4": "Tobruk",
+            "l_5": "Bardia",
+            "l_6": "Cyrenaica",
+            "l_7": "Jebel Akhdar",
+            "l_8": "Slonta",
+            "l_9": "Msus",
+            "l_10": "Soluch",
+            "l_11": "Agedabia",
+            "l_12": "Barce",
+            "l_13": "Antelat",
+            "l_14": "Beda Fomm"
+        },
+        "events": {
+            "e_1": "Fall of Tobruk",
+            "e_2": "Advance on Benghazi",
+            "e_3": "Enemy Withdrawal from Derna",
+            "e_4": "Operations towards Msus",
+            "e_5": "Engagement at Beda Fomm"
+        },
+        "organisations": {
+            "o_1": "7th Armoured Division",
+            "o_2": "Royal Air Force",
+            "o_3": "6th Australian Division",
+            "o_4": "13th Corps"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Advance",
+        "Enemy Withdrawal",
+        "Armoured Division",
+        "Supply Lines"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Enemy Engagement",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_4"
+        ],
+        "Enemy Engagement": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 1941",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The fall of Tobruk occurs, enabling allied forces to shorten lines of communication."
+        },
+        {
+            "event": "e_2",
+            "date": "January 23, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The advance on Benghazi is initiated by the Armoured Division following strategic logistical gains."
+        },
+        {
+            "event": "e_3",
+            "date": "January 30, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The enemy withdraws from advanced positions East of Derna, indicating a significant strategic shift."
+        },
+        {
+            "event": "e_4",
+            "date": "February 5, 1941",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "7th Armoured Division commences operations moving towards Msus for a tactical advantage."
+        },
+        {
+            "event": "e_5",
+            "date": "February 6, 1941",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Engagement at Beda Fomm involves coordinated efforts by multiple divisions against retreating enemy forces."
+        }
+    ]
+}

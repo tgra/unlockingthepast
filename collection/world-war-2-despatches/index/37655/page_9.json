@@ -1,0 +1,161 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Monsieur Annet",
+            "p_2": "Rear-Admiral Tennant"
+        },
+        "locations": {
+            "l_1": "Majunga",
+            "l_2": "Mombasa",
+            "l_3": "Tamatave",
+            "l_4": "Tananarive",
+            "l_5": "Antsirabe",
+            "l_6": "Ambositra",
+            "l_7": "Fianarantsoa",
+            "l_8": "Diego Suarez",
+            "l_9": "Fort Dauphin",
+            "l_10": "Tulear",
+            "l_11": "Mozambique Channel",
+            "l_12": "Mananjary",
+            "l_13": "Manakara"
+        },
+        "events": {
+            "e_1": "Landing at Majunga",
+            "e_2": "Request for Terms",
+            "e_3": "Advance on Tananarive",
+            "e_4": "Landing at Tamatave",
+            "e_5": "Landing at Diego Suarez"
+        },
+        "organisations": {
+            "o_1": "H.M.S. Birmingham",
+            "o_2": "H.M.S. Inconstant",
+            "o_3": "H.M.A.S. Napier",
+            "o_4": "H.M.N.S. Vangalen",
+            "o_5": "Pretoria Regiment"
+        }
+    },
+    "keywords": [
+        "disembarkation",
+        "military operations",
+        "headquarters",
+        "conflict",
+        "hostilities",
+        "naval bombardment",
+        "surrender"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Logistics",
+        "Combat Strategy",
+        "Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_4"
+        ],
+        "Combat Strategy": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "September 13-18, 3718",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The disembarkation at Majunga is disappointing due to logistical challenges, despite prior knowledge of the inadequate facilities."
+        },
+        {
+            "event": "e_2",
+            "date": "September 16, 3718",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Monsieur Annet, the Governor General, sends a request for terms to cease hostilities before the last battle occurs."
+        },
+        {
+            "event": "e_3",
+            "date": "September 18, 3718",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the advance on Tananarive, troops face multiple obstacles as they encounter resistance from Senegalese soldiers."
+        },
+        {
+            "event": "e_4",
+            "date": "September 18, 3718",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The landing at Tamatave proceeds without prior bombardment; troops successfully secure the town after calling for surrender."
+        },
+        {
+            "event": "e_5",
+            "date": "September 29, 3718",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "At Diego Suarez, various ships land troops from the Pretoria Regiment to establish a small garrison amidst logistical challenges."
+        }
+    ]
+}

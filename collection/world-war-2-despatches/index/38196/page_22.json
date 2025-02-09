@@ -1,0 +1,94 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Montgomery"
+        },
+        "locations": {
+            "l_1": "Tel el Eisa",
+            "l_2": "Sidi Abd el Rahman",
+            "l_3": "Aqqaqir",
+            "l_4": "Sidi Barrani"
+        },
+        "events": {
+            "e_1": "Battle of Tell el Aqqaqir",
+            "e_2": "Operation on 31st October"
+        },
+        "organisations": {
+            "o_1": "New Zealand Division",
+            "o_2": "30 Corps",
+            "o_3": "10 Corps",
+            "o_4": "21 Panzer Division",
+            "o_5": "50 Division",
+            "o_6": "51 Division",
+            "o_7": "44 Division"
+        }
+    },
+    "keywords": [
+        "military operations",
+        "artillery",
+        "infantry",
+        "armoured brigade",
+        "enemy positions"
+    ],
+    "themes": [
+        "Military Operations",
+        "Strategy",
+        "Artillery Support"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategy": [
+            "e_2"
+        ],
+        "Artillery Support": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 1st",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of Tell el Aqqaqir occurs as the 9 Armoured Brigade faces strong resistance from enemy positions along the Rahman track, marking one of the largest clashes of the operation."
+        },
+        {
+            "event": "e_2",
+            "date": "October 31st",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation on October 31st is intended to advance westward from the current defensive positions with significant artillery support, although it is postponed due to delays."
+        }
+    ]
+}

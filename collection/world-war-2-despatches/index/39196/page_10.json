@@ -1,0 +1,98 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Unnamed Officer",
+            "p_2": "Unnamed Personnel"
+        },
+        "locations": {
+            "l_1": "India",
+            "l_2": "Ceylon",
+            "l_3": "Burma",
+            "l_4": "Assam",
+            "l_5": "Imphal",
+            "l_6": "Rangoon",
+            "l_7": "Calcutta",
+            "l_8": "Naga Hills",
+            "l_9": "Chin Hills",
+            "l_10": "Brahmaputra"
+        },
+        "events": {
+            "e_1": "Siege of Imphal",
+            "e_2": "Capture of Rangoon",
+            "e_3": "Campaign in Malaya"
+        },
+        "organisations": {
+            "o_1": "Air Force",
+            "o_2": "Maintenance Organisation",
+            "o_3": "Repair and Salvage Units"
+        }
+    },
+    "keywords": [
+        "maintenance",
+        "air supply",
+        "logistics",
+        "military campaign",
+        "improvisation",
+        "transport"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics and Maintenance",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics and Maintenance": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1944",
+            "locations": [
+                "l_5",
+                "l_10",
+                "l_3",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Siege of Imphal takes place, marking a critical point in the military campaign, requiring increased logistics and maintenance efforts for air forces."
+        },
+        {
+            "event": "e_2",
+            "date": "1945",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Capture of Rangoon is achieved, necessitating an extensive maintenance organization due to climatic challenges and strained supply lines."
+        }
+    ]
+}

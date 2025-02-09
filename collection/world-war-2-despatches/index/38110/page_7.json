@@ -1,0 +1,115 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Rear-Admiral Kirk"
+        },
+        "locations": {
+            "l_1": "Devonshire",
+            "l_2": "Portland",
+            "l_3": "Weymouth Bay",
+            "l_4": "Channel",
+            "l_5": "French coast",
+            "l_6": "Sicily",
+            "l_7": "Pas de Calais",
+            "l_8": "Cap d'Antifer"
+        },
+        "events": {
+            "e_1": "D-Day",
+            "e_2": "Operation Neptune",
+            "e_3": "Operation Husky"
+        },
+        "organisations": {
+            "o_1": "Force U",
+            "o_2": "Force O",
+            "o_3": "Force U2A",
+            "o_4": "Royal Air Force",
+            "o_5": "H.D.M.L.",
+            "o_6": "Admiralty"
+        }
+    },
+    "keywords": [
+        "postponement",
+        "weather forecast",
+        "assault forces",
+        "strategical surprise",
+        "minesweeping",
+        "Channel crossing"
+    ],
+    "themes": [
+        "Military Operations",
+        "Weather Impact",
+        "Strategic Decisions",
+        "Surprise Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Weather Impact": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Surprise Tactics": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "6th June",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On D-Day, despite unfavourable weather, Rear-Admiral Kirk decides to proceed with the operation after assessing the situation, leading to the launch of the assault forces across the Channel."
+        },
+        {
+            "event": "e_2",
+            "date": "5th June",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the day before D-Day, operations are adjusted due to challenging weather conditions, resulting in a decision to postpone for 24 hours to ensure operational effectiveness."
+        },
+        {
+            "event": "e_3",
+            "date": "N/A",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Husky is referenced as a prior campaign that involved strategic surprise, drawing parallels to the efforts made during Operation Neptune."
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Commander 5th Fleet",
+            "p_2": "A.C.1"
+        },
+        "locations": {
+            "l_1": "Guam",
+            "l_2": "Yonakuni Shima",
+            "l_3": "North Formosa",
+            "l_4": "Matsuyama",
+            "l_5": "Shinchiku",
+            "l_6": "Kiirun harbour",
+            "l_7": "Tansui",
+            "l_8": "Ishigaki"
+        },
+        "events": {
+            "e_1": "Operation Iceberg Oolong",
+            "e_2": "Heavy enemy air attacks on 12th April"
+        },
+        "organisations": {
+            "o_1": "American forces",
+            "o_2": "Task Force '58",
+            "o_3": "CTF 57"
+        }
+    },
+    "keywords": [
+        "air-sea rescue",
+        "tactical command",
+        "enemy air attacks",
+        "Fighter Direction",
+        "operations",
+        "bombing"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Combat",
+        "Tactical Command",
+        "Enemy Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Combat": [
+            "e_2"
+        ],
+        "Tactical Command": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 1st",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Fleet arrives at a flying-off position 30 miles 202 degrees from Yonakuni Shima and receives signals for Operations upon the commencement of 'Iceberg Oolong'."
+        },
+        {
+            "event": "e_2",
+            "date": "April 12th",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Heavy enemy air attacks are reported against American forces in the Okinawa area, with notable fighter direction leading to successful interceptions."
+        }
+    ]
+}

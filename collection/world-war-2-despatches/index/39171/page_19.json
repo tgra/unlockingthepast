@@ -1,0 +1,102 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Headquarters",
+            "p_2": "General"
+        },
+        "locations": {
+            "l_1": "Chittagong",
+            "l_2": "Mymensingh",
+            "l_3": "Manipur Road",
+            "l_4": "Dimapur",
+            "l_5": "Assam",
+            "l_6": "Burma",
+            "l_7": "India"
+        },
+        "events": {
+            "e_1": "Burma Campaign",
+            "e_2": "Construction of Airfields"
+        },
+        "organisations": {
+            "o_1": "Fourteenth Army",
+            "o_2": "Sino-American forces",
+            "o_3": "British Base Reinforcement Camp",
+            "o_4": "52 Training Brigade"
+        }
+    },
+    "keywords": [
+        "Arakan front",
+        "Lines of Communication",
+        "Air supply",
+        "Transport",
+        "Reinforcements",
+        "Burma campaign",
+        "High sick rate"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Administrative Services",
+        "Reinforcement Strategy"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ],
+        "Administrative Services": [
+            "e_2"
+        ],
+        "Reinforcement Strategy": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Burma Campaign is active, with forces preparing advanced bases and maintaining logistics under challenging conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Construction of airfields begins amid logistical challenges to support military operations in the ongoing Burma Campaign."
+        }
+    ]
+}

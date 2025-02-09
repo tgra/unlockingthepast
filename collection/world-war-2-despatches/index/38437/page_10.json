@@ -1,0 +1,114 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Air Marshal Coningham"
+        },
+        "locations": {
+            "l_1": "Brussels",
+            "l_2": "Norwich",
+            "l_3": "London",
+            "l_4": "Hague",
+            "l_5": "Bloemendaal",
+            "l_6": "Leiden",
+            "l_7": "Antwerp",
+            "l_8": "Zuyder Zee",
+            "l_9": "Vlieland",
+            "l_10": "Terschelling",
+            "l_11": "Rijs",
+            "l_12": "Norfolk"
+        },
+        "events": {
+            "e_1": "Rocket attacks on Norwich",
+            "e_2": "Resumption of rocket attacks on London",
+            "e_3": "Armed reconnaissance by Second Tactical Air Force"
+        },
+        "organisations": {
+            "o_1": "Second Tactical Air Force"
+        }
+    },
+    "keywords": [
+        "rockets",
+        "armed reconnaissance",
+        "intelligence",
+        "military operations",
+        "Allied",
+        "Hague"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence Gathering",
+        "Civilian Targeting"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Intelligence Gathering": [
+            "e_3"
+        ],
+        "Civilian Targeting": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October 3rd to October 12th, 1944",
+            "locations": [
+                "l_2",
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "From October 3rd to October 12th, a series of rockets aimed at Norwich occur, impacting the area but sparing the city itself."
+        },
+        {
+            "event": "e_2",
+            "date": "October 3rd to November 18th, 1944",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "By October 3rd, the resumption of rocket attacks on London signals a shift in enemy tactics, with multiple rockets falling in Greater London."
+        },
+        {
+            "event": "e_3",
+            "date": "October 1st, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On October 1st, the Second Tactical Air Force assumes responsibility for armed reconnaissance in response to rocket attacks."
+        }
+    ]
+}

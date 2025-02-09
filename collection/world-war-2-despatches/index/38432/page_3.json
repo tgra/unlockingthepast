@@ -1,0 +1,86 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Admiral Sir Henry H. Harwood",
+            "p_2": "Lieutenant J. B. Sturgeon"
+        },
+        "locations": {
+            "l_1": "Levant",
+            "l_2": "Maritimo Island",
+            "l_3": "Sicily"
+        },
+        "events": {
+            "e_1": "Coastal Force Actions",
+            "e_2": "Torpedo Attack on Enemy Convoy"
+        },
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "7th Motor Torpedo Boat Flotilla",
+            "o_3": "Royal Naval Volunteer Reserve"
+        }
+    },
+    "keywords": [
+        "Coastal Force Actions",
+        "Motor Torpedo Boats",
+        "Torpedo Attack",
+        "Merchant Ship"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Strategic Decision Making"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decision Making": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "15th/16th February 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Coastal Force Actions are reported, detailing torpedo hits on enemy merchant ships with valuable experience gained."
+        },
+        {
+            "event": "e_2",
+            "date": "15th/16th February 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A torpedo attack was executed on an enemy convoy, resulting in damage to one medium-sized merchant vessel."
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Clark",
+            "p_2": "General Eisenhower",
+            "p_3": "General Wilson",
+            "p_4": "General Lucas",
+            "p_5": "Prime Minister"
+        },
+        "locations": {
+            "l_1": "Anzio",
+            "l_2": "Cairo",
+            "l_3": "London",
+            "l_4": "Tunis",
+            "l_5": "Cassino",
+            "l_6": "Frosinone",
+            "l_7": "Aurunci",
+            "l_8": "Alban Hills",
+            "l_9": "Italian Ocean"
+        },
+        "events": {
+            "e_1": "Operation SHINGLE",
+            "e_2": "Commanders-in-Chief conference",
+            "e_3": "Assault Landing at Anzio",
+            "e_4": "Cassino attack",
+            "e_5": "French Expeditionary Corps attack",
+            "e_6": "II Corps attack",
+            "e_7": "VI Corps landing"
+        },
+        "organisations": {
+            "o_1": "Fifth Army",
+            "o_2": "British Division",
+            "o_3": "VI United States Corps",
+            "o_4": "Eighth Army"
+        }
+    },
+    "keywords": [
+        "Operation SHINGLE",
+        "Fifth Army",
+        "General Eisenhower",
+        "Anzio",
+        "Cassino"
+    ],
+    "themes": [
+        "Military Operations",
+        "Command Strategy",
+        "International Relations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
+        ],
+        "Command Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "International Relations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 20",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4",
+                "e_6",
+                "e_7"
+            ],
+            "eventSummary": "The plan for Operation SHINGLE, the assault landing at Anzio, is finalized to occur on or around January 20, involving two assault divisions."
+        },
+        {
+            "event": "e_2",
+            "date": "December 25",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Commanders-in-Chief conference takes place in Tunis, where adjustments to the Operation SHINGLE plans are discussed."
+        },
+        {
+            "event": "e_4",
+            "date": "January 15",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "Fifth Army launches an attack towards Cassino and Frosinone in conjunction with the planned landing at Anzio."
+        },
+        {
+            "event": "e_5",
+            "date": "January 12",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The French Expeditionary Corps launches an assault against the high ground north of Cassino."
+        }
+    ]
+}

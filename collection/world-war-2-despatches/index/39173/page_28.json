@@ -1,0 +1,111 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Moulmein",
+            "l_4": "Tavoy",
+            "l_5": "Mergui",
+            "l_6": "Bangkok",
+            "l_7": "Gulf of Siam",
+            "l_8": "Myitkyina",
+            "l_9": "Imphal Plain",
+            "l_10": "Chindwin",
+            "l_11": "Yenangyaung",
+            "l_12": "Chauk",
+            "l_13": "Lanywa",
+            "l_14": "Thilawa",
+            "l_15": "Mokpalin",
+            "l_16": "Salween River"
+        },
+        "events": {
+            "e_1": "Operation against railway communications",
+            "e_2": "Bombing of airfield installations",
+            "e_3": "Destruction of industrial targets at Yenangyaung"
+        },
+        "organisations": {
+            "o_1": "Strategic Air Force",
+            "o_2": "Third Tactical Air Force"
+        }
+    },
+    "keywords": [
+        "Military Operations",
+        "Air Forces",
+        "Bombing",
+        "Railway Attacks",
+        "Industrial Targets"
+    ],
+    "themes": [
+        "Military Operations",
+        "Logistics",
+        "Destruction of Infrastructure"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Destruction of Infrastructure": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 1944",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operations against railway communications are conducted to disrupt enemy supply lines, targeting vital railway bridges across Burma."
+        },
+        {
+            "event": "e_2",
+            "date": "February 1944",
+            "locations": [
+                "l_1",
+                "l_15",
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A large-scale nighttime operation targets airfield installations, achieving successful outcomes as airforces persist in neutralizing the enemy's air capabilities."
+        },
+        {
+            "event": "e_3",
+            "date": "Late 1943 - May 1944",
+            "locations": [
+                "l_11",
+                "l_12",
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A concentrated bombing campaign is executed against oil installations at Yenangyaung, significantly reducing the enemy's crude oil production capabilities."
+        }
+    ]
+}

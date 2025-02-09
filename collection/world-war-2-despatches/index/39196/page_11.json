@@ -1,0 +1,132 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Group Captain S. G. Wise"
+        },
+        "locations": {
+            "l_1": "Bangkok",
+            "l_2": "Chiengmai",
+            "l_3": "Kra Isthmus",
+            "l_4": "Singapore",
+            "l_5": "Rangoon",
+            "l_6": "Toungoo",
+            "l_7": "Mandalay",
+            "l_8": "Sumatra",
+            "l_9": "Alipore",
+            "l_10": "Ceylon",
+            "l_11": "Tingawk Sakan",
+            "l_12": "Imphal",
+            "l_13": "Comilla",
+            "l_14": "Chittagong"
+        },
+        "events": {
+            "e_1": "Destruction of the Rangoon Dumps",
+            "e_2": "Attack on Japanese Headquarters",
+            "e_3": "Special Operations Air Efforts",
+            "e_4": "Photographic Reconnaissance"
+        },
+        "organisations": {
+            "o_1": "XXth Bomber Command",
+            "o_2": "Strategic Air Force",
+            "o_3": "Royal Air Force (R.A.F.)",
+            "o_4": "United States Army Air Forces (U.S.A.A.F.)"
+        }
+    },
+    "keywords": [
+        "Operations",
+        "Enemy Destruction",
+        "Rangoon Dumps",
+        "Japanese Headquarters",
+        "Guerilla Activities",
+        "Special Operations",
+        "Photographic Reconnaissance"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence",
+        "Air Force Operations",
+        "Guerilla Warfare",
+        "Destruction of Enemy Supply Lines"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Intelligence": [
+            "e_3",
+            "e_4"
+        ],
+        "Guerilla Warfare": [
+            "e_3"
+        ],
+        "Destruction of Enemy Supply Lines": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March-April 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The systematic destruction of large storage units in Rangoon is initiated to disrupt the enemy's supply, achieving significant destruction."
+        },
+        {
+            "event": "e_2",
+            "date": "29th March 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An attack targets the Japanese Burma Area Army Headquarters, resulting in significant enemy casualties and boosting morale among Allied prisoners."
+        },
+        {
+            "event": "e_3",
+            "date": "1944-1945",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Expanded air operations support intelligence and guerilla activities, significantly impacting enemy movements and logistics."
+        },
+        {
+            "event": "e_4",
+            "date": "1944-1945",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Photographic reconnaissance is conducted in challenging conditions, aiding in planning and preparation for military campaigns."
+        }
+    ]
+}

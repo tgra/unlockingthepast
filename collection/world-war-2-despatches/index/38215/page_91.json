@@ -1,0 +1,118 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Brigadier Ballantine",
+            "p_2": "Major-General M. Beckwith-Smith"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "Ceylon",
+            "l_4": "Sumatra",
+            "l_5": "Java",
+            "l_6": "Netherlands East Indies",
+            "l_7": "Borneo",
+            "l_8": "South Pacific"
+        },
+        "events": {
+            "e_1": "Battle of Malaya",
+            "e_2": "Withdrawal of Air Force from Singapore",
+            "e_3": "Reinforcements arrival in Singapore"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "Malayan Volunteer Air Force",
+            "o_3": "3 Indian Corps",
+            "o_4": "British Army"
+        }
+    },
+    "keywords": [
+        "air superiority",
+        "Hurricane Fighters",
+        "Japanese Navy Zero Fighters",
+        "air raids",
+        "recce missions",
+        "reinforcements",
+        "anti-aircraft artillery"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Defense",
+        "Reinforcements",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Air Defense": [
+            "e_1",
+            "e_2"
+        ],
+        "Reinforcements": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "January 13, 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Malaya sees air formations face significant challenges against Japanese forces, resulting in casualties and a struggle for air superiority."
+        },
+        {
+            "event": "e_2",
+            "date": "January 30, 1942",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Due to continuous air pressure from the enemy, the decision is made to withdraw the majority of the Air Force from Singapore to the Netherlands East Indies, leaving only one fighter squadron to defend."
+        },
+        {
+            "event": "e_3",
+            "date": "January 24, 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Reinforcements arrive in Singapore, including the 44 Indian Infantry Brigade and Australian Machine-Gun Battalion, albeit comprised mostly of inexperienced personnel."
+        }
+    ]
+}

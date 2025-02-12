@@ -1,98 +1,116 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Wavell",
-            "p_2": "Governor of Jibuti"
+            "p_1": "General Pralormo",
+            "p_2": "General Wetherall"
         },
         "locations": {
-            "l_1": "Loyada",
-            "l_2": "Galla Sidamo",
-            "l_3": "Jibuti",
-            "l_4": "Madagascar",
-            "l_5": "Addis Abeba",
-            "l_6": "South Abyssinia",
-            "l_7": "North Abyssinia",
-            "l_8": "Assab-Dessie-Bethor"
+            "l_1": "Mogadiscio",
+            "l_2": "Addis Abeba",
+            "l_3": "Soddu",
+            "l_4": "Colito",
+            "l_5": "Gimma",
+            "l_6": "Abalti",
+            "l_7": "Dalle",
+            "l_8": "Berbera",
+            "l_9": "River Billate",
+            "l_10": "River Omo",
+            "l_11": "Sciola",
+            "l_12": "Kenya",
+            "l_13": "Tavello",
+            "l_14": "Neghelli",
+            "l_15": "Diredaua"
         },
         "events": {
-            "e_1": "Blockade of French Somaliland",
-            "e_2": "Battle in Galla Sidamo",
-            "e_3": "Evacuation proposal for Italian women and children",
-            "e_4": "Fall of Addis Abeba",
-            "e_5": "Capture of Dessie",
-            "e_6": "Fall of Amba Alagi"
+            "e_1": "Capture of Soddu",
+            "e_2": "Battle of the Omo",
+            "e_3": "Establishment of a bridgehead at Colito"
         },
         "organisations": {
-            "o_1": "E.A. Force",
-            "o_2": "South African units"
+            "o_1": "2nd Nigeria Regiment",
+            "o_2": "1 N.M.R.",
+            "o_3": "1 F.F. Battalion",
+            "o_4": "22nd E.A. Brigade",
+            "o_5": "1/6 K.A.R.",
+            "o_6": "24th Division",
+            "o_7": "11th Division",
+            "o_8": "7th (A) Division",
+            "o_9": "12th (A) Division",
+            "o_10": "Nigerian Brigade",
+            "o_11": "24th G. C. Brigade",
+            "o_12": "5th K.A.R."
         }
     },
     "keywords": [
-        "blockade",
-        "evacuation",
-        "artillery",
-        "propaganda",
-        "military operations"
+        "defensive flank",
+        "counter-attack",
+        "prisoners",
+        "heavy rains",
+        "bridgehead",
+        "enemy position"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions"
+        "Defensive Strategy",
+        "Counter-Attacks",
+        "Occupation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4",
-            "e_5",
-            "e_6"
-        ],
-        "Diplomacy": [
             "e_3"
         ],
-        "Strategic Decisions": [
+        "Defensive Strategy": [
+            "e_1"
+        ],
+        "Counter-Attacks": [
+            "e_2"
+        ],
+        "Occupation": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown date",
+            "date": "22nd May",
             "locations": [
                 "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The town of Soddu is occupied with slight opposition on 22nd May."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_5"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_10"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The blockade of French Somaliland is expected to pressure the Governor towards compliance."
-        },
-        {
-            "event": "e_2",
-            "date": "Unknown date",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "A battle takes place in Galla Sidamo with the E.A. Force engaging Italian troops."
+            "connectedEvents": [],
+            "eventSummary": "Preparations are made for operations towards Gimma, associated with the ongoing Battle of the Omo."
         },
         {
             "event": "e_3",
-            "date": "Unknown date",
+            "date": "19th May",
             "locations": [
                 "l_4"
             ],
@@ -100,51 +118,10 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_5"
             ],
             "connectedEvents": [],
-            "eventSummary": "An official proposal is made to evacuate Italian women and children to Madagascar."
-        },
-        {
-            "event": "e_4",
-            "date": "After fall of Addis Abeba",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_5",
-                "e_6"
-            ],
-            "eventSummary": "Addis Abeba falls, marking a significant victory in the conflict."
-        },
-        {
-            "event": "e_5",
-            "date": "Before the fall of Addis Abeba",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4",
-                "e_6"
-            ],
-            "eventSummary": "Dessie is captured as part of the continued military advances."
-        },
-        {
-            "event": "e_6",
-            "date": "Unknown date",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Amba Alagi falls, contributing to the overall military success."
+            "eventSummary": "A bridgehead is established at Colito by 1/6 K.A.R. on 19th May."
         }
     ]
 }

@@ -1,69 +1,50 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain of the VICTORIOUS",
-            "p_2": "Commander-in-Chief, Home Fleet",
-            "p_3": "Captain of the FURIOUS",
-            "p_4": "Commander of Force A",
-            "p_5": "Captain of the VICTORIOUS",
-            "p_6": "Captain of the DEVONSHIRE"
+            "p_1": "Captain of the VICTORIOUS"
         },
         "locations": {
-            "l_1": "Heinasaari",
-            "l_2": "Smalfiord",
-            "l_3": "Seidisfiord",
-            "l_4": "Tromso",
-            "l_5": "Hammerfest",
-            "l_6": "Tana Fiord",
-            "l_7": "Honningsvaag",
-            "l_8": "Bear Island",
-            "l_9": "Faeroes"
+            "l_1": "Seidisfiord",
+            "l_2": "Bear Island",
+            "l_3": "Tromso",
+            "l_4": "Hammerfest",
+            "l_5": "Tana Fiord",
+            "l_6": "Honningsvaag",
+            "l_7": "Smalfiord"
         },
         "events": {
             "e_1": "Operation against Tromso",
-            "e_2": "Reconnaissance of Smalfiord",
-            "e_3": "Transfer of aircraft",
-            "e_4": "Shadowing by enemy aircraft"
+            "e_2": "Transfer of aircraft",
+            "e_3": "Shadowing by aircraft"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Force A",
-            "o_3": "Force P"
+            "o_1": "Force A",
+            "o_2": "Force P",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
-        "Walrus aircraft",
-        "Fulmar",
+        "despatch",
+        "operation",
+        "aircraft",
         "destroyers",
-        "supply ships",
-        "fighter protection",
-        "aircraft reconnaissance",
-        "naval operations"
+        "reconnoitre"
     ],
     "themes": [
         "Military Operations",
-        "Reconnaissance",
-        "Naval Strategy",
-        "Deception Tactics",
-        "Aerial Combat"
+        "Aerial Reconnaissance",
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Reconnaissance": [
+        "Aerial Reconnaissance": [
             "e_2"
         ],
         "Naval Strategy": [
-            "e_3",
-            "e_4"
-        ],
-        "Deception Tactics": [
             "e_3"
-        ],
-        "Aerial Combat": [
-            "e_4"
         ]
     },
     "eventConnections": [
@@ -71,74 +52,60 @@
             "event": "e_1",
             "date": "2nd August",
             "locations": [
+                "l_3",
                 "l_4",
                 "l_5",
-                "l_6",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 2nd August, plans are prepared for possible operations against Tromso, Hammerfest, Tana Fiord, and Honningsvaag."
+        },
+        {
+            "event": "e_2",
+            "date": "31st July",
+            "locations": [
+                "l_1",
                 "l_7"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The Force plans an operation against Tromso, coordinating efforts with other units and preparing for potential enemy engagement while executing reconnaissance of key locations."
-        },
-        {
-            "event": "e_2",
-            "date": "31st July",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A Fulmar aircraft is sent to reconnoitre Smalfiord, but fails to perform its mission due to enemy aircraft patrolling the area."
+            "eventSummary": "Transfer of aircraft is completed at 1530 on 31st July, with the Force altering course to avoid enemy observation."
         },
         {
             "event": "e_3",
-            "date": "1st August",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Aircraft transfer occurs as operations prepare to engage the enemy, with arrangements being made to cloud the Force's movements from enemy observation."
-        },
-        {
-            "event": "e_4",
             "date": "2nd August",
             "locations": [
-                "l_8"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "Reports indicate Force A is being shadowed by enemy aircraft, prompting alerts and coordination among naval units for fighter support."
+            "eventSummary": "At 1033 on 2nd August, a signal is received from Force A reporting that they are being shadowed by aircraft."
         }
     ]
 }

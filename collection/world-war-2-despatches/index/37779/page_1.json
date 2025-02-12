@@ -1,168 +1,149 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General Ryder",
-            "p_2": "Major-General Evelegh",
-            "p_3": "Captain N. V. Dickinson",
-            "p_4": "General Anderson"
+            "p_1": "Lieutenant-General Eisenhower",
+            "p_2": "Lieutenant-General Anderson",
+            "p_3": "General De Gaulle",
+            "p_4": "General Anderson",
+            "p_5": "General Alexander",
+            "p_6": "Lieutenant General K. A. N. Anderson"
         },
         "locations": {
-            "l_1": "Algiers",
-            "l_2": "Gibraltar",
-            "l_3": "Maison Blanche",
-            "l_4": "Bougie",
-            "l_5": "Djidjelli",
-            "l_6": "Tunis",
-            "l_7": "Bizerta",
-            "l_8": "Philippeville",
-            "l_9": "Bone",
-            "l_10": "Blida",
-            "l_11": "El Aouana"
+            "l_1": "North West Africa",
+            "l_2": "French Morocco",
+            "l_3": "Algeria",
+            "l_4": "Tunisia",
+            "l_5": "Casablanca",
+            "l_6": "Algiers",
+            "l_7": "Tunis",
+            "l_8": "Bizerta",
+            "l_9": "Tripolitania",
+            "l_10": "North Africa",
+            "l_11": "Oran"
         },
         "events": {
-            "e_1": "Landing at Algiers",
-            "e_2": "Opening of Algiers Harbour",
-            "e_3": "Capture of Bougie Port",
-            "e_4": "Failed Race for Tunis",
-            "e_5": "German Landings at El Aouana",
-            "e_6": "Landing of 36 Brigade at Bougie"
+            "e_1": "Anglo-American expedition to French North Africa",
+            "e_2": "Operations in North Africa",
+            "e_3": "Landings in North Africa",
+            "e_4": "Conference in Casablanca"
         },
         "organisations": {
-            "o_1": "First Army",
-            "o_2": "United States 34 Infantry Division",
-            "o_3": "British 78 Division",
-            "o_4": "6 Armoured Division"
+            "o_1": "British Government",
+            "o_2": "Vichy Government",
+            "o_3": "First Army",
+            "o_4": "2 U.S. Corps",
+            "o_5": "19 French Corps",
+            "o_6": "18 Army Group",
+            "o_7": "Eighth Army"
         }
     },
     "keywords": [
-        "Landing",
-        "Operation",
-        "Algiers",
-        "Tunis",
-        "Military Strategy"
+        "North West Africa",
+        "Algeria",
+        "Tunisia",
+        "Anglo-American",
+        "French North Africa",
+        "United States",
+        "British",
+        "General"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Logistics",
-        "Alliances"
+        "Campaign Strategy",
+        "International Relations",
+        "Allied Forces Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4",
-            "e_5",
-            "e_6"
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1",
-            "e_4"
+        "International Relations": [
+            "e_1"
         ],
-        "Logistics": [
-            "e_2",
-            "e_3",
+        "Campaign Strategy": [
             "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "9th November 1942",
+            "date": "July 1942",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Anglo-American expedition to French North Africa is approved, aiming to secure strategic areas."
+        },
+        {
+            "event": "e_2",
+            "date": "8th November 1942 to 13th May 1943",
             "locations": [
                 "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operations in North Africa commence, involving various Allied forces."
+        },
+        {
+            "event": "e_3",
+            "date": "7th/8th November 1942",
+            "locations": [
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "The landing at Algiers occurs unopposed, establishing a key base for First Army."
-        },
-        {
-            "event": "e_2",
-            "date": "9th November 1942",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Algiers harbour is opened, allowing for the unloading of ships and support for operations."
-        },
-        {
-            "event": "e_3",
-            "date": "11th November 1942",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_6"
-            ],
-            "eventSummary": "The capture of Bougie Port by 36 Brigade occurs following the landing operations."
+            "connectedEvents": [],
+            "eventSummary": "The initial assault landings in North Africa are conducted, primarily by United States troops."
         },
         {
             "event": "e_4",
-            "date": "Late December 1942",
+            "date": "January 1943",
             "locations": [
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Allies fail to secure Tunis in a race against the Axis forces, leading to increased defensive efforts."
-        },
-        {
-            "event": "e_5",
-            "date": "9th November 1942",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "German forces successfully land at El Aouana airport without opposition."
-        },
-        {
-            "event": "e_6",
-            "date": "13th November 1942",
-            "locations": [
-                "l_4",
                 "l_5"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
             "organisations": [
-                "o_3"
+                "o_7"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The 36 Brigade lands at Bougie but faces delays in seizing Djidjelli airfield due to rough conditions."
+            "connectedEvents": [],
+            "eventSummary": "A conference in Casablanca decides the command structure for the upcoming operations."
         }
     ]
 }

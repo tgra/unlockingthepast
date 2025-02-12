@@ -1,70 +1,78 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Ritchie",
-            "p_2": "Rommel",
-            "p_3": "General Wavell",
-            "p_4": "Prime Minister",
-            "p_5": "Chief of the Imperial General Staff"
+            "p_1": "General Norrie",
+            "p_2": "General Ritchie"
         },
         "locations": {
-            "l_1": "Tripolitania",
-            "l_2": "Agheila",
-            "l_3": "Bengasi",
-            "l_4": "Cyrenaica",
-            "l_5": "Malay Peninsula",
-            "l_6": "Burma",
-            "l_7": "Iraq",
-            "l_8": "Persia",
-            "l_9": "Singapore",
-            "l_10": "Tobruk",
-            "l_11": "Malta"
+            "l_1": "Matruh Fortress",
+            "l_2": "El Adem",
+            "l_3": "Bardia",
+            "l_4": "Sidi Rezegh",
+            "l_5": "Belhamed",
+            "l_6": "Tobruk",
+            "l_7": "Bir el Gubi",
+            "l_8": "Acroma",
+            "l_9": "Gambut",
+            "l_10": "Sidi Azeiz",
+            "l_11": "Trigh Capuzzo",
+            "l_12": "Sidi Rezegh",
+            "l_13": "Tobruk salient"
         },
         "events": {
-            "e_1": "Invasion of Tripolitania",
-            "e_2": "Japan's War Declaration",
-            "e_3": "Eighth Army's entry into Bengasi"
+            "e_1": "Attack on El Adem",
+            "e_2": "Final thrust towards the frontier",
+            "e_3": "Heavy assault on Tobruk salient",
+            "e_4": "Second stage of the offensive",
+            "e_5": "Raid by 1st South African Brigade"
         },
         "organisations": {
-            "o_1": "Middle East Defence Committee",
-            "o_2": "Eighth Army",
-            "o_3": "Imperial General Staff"
+            "o_1": "Eighth Army",
+            "o_2": "11th Indian Infantry Brigade",
+            "o_3": "1st South African Brigade",
+            "o_4": "5th New Zealand Infantry Brigade",
+            "o_5": "5th Indian Infantry Brigade",
+            "o_6": "2nd South African Division",
+            "o_7": "Bologna Division",
+            "o_8": "Afrika Korps",
+            "o_9": "Italian Mobile Corps",
+            "o_10": "4th Indian Infantry Division",
+            "o_11": "32nd Army Tank Brigade"
         }
     },
     "keywords": [
-        "American light tanks",
-        "German tanks",
-        "Cyrenaica",
-        "anti-tank weapons",
-        "armoured forces",
-        "Militärische Strategien",
-        "reinforcements"
+        "offensive",
+        "attack",
+        "raid",
+        "evacuation"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Diverting Forces",
-        "Leadership and Tactics"
+        "Conflicts",
+        "Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Conflicts": [
+            "e_2",
             "e_3"
         ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
+        "Tactics": [
             "e_1",
-            "e_2"
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Summer of 1942",
+            "date": "December 4, 1941",
             "locations": [
-                "l_1",
                 "l_2"
             ],
             "persons": [
@@ -72,43 +80,79 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "General Ritchie plans the invasion of Tripolitania, stating that the enemy's defenses have significantly weakened, making the offensive feasible."
+            "eventSummary": "The Eighth Army embarks on an attack on El Adem, central to the ongoing offensive."
         },
         {
             "event": "e_2",
-            "date": "December 8, 1941",
+            "date": "December 3, 1941",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_3",
+                "l_9"
             ],
-            "persons": [
-                "p_4"
-            ],
+            "persons": [],
             "organisations": [
-                "o_3"
+                "o_1",
+                "o_4",
+                "o_5"
             ],
-            "connectedEvents": [],
-            "eventSummary": "War breaks out with Japan, prompting a diversion of reinforcements from the Middle East to address the threat in the Far East."
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The enemy makes a final thrust towards the frontier with two strong fighting patrols."
         },
         {
             "event": "e_3",
-            "date": "Date unspecified, shortly after Eighth Army operations",
+            "date": "December 4, 1941",
             "locations": [
-                "l_3"
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Heavy shelling and a day of attack and counter-attack occur at the Tobruk salient."
+        },
+        {
+            "event": "e_4",
+            "date": "December 6, 1941",
+            "locations": [
+                "l_6",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_10"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The Eighth Army prepares for the second stage of the offensive aimed at El Adem."
+        },
+        {
+            "event": "e_5",
+            "date": "December 5, 1941",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "The Eighth Army successfully enters Bengasi, marking a significant moment in the North African campaign."
+            "eventSummary": "A raid by the 1st South African Brigade successfully destroys a major enemy supply dump."
         }
     ]
 }

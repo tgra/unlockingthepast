@@ -1,130 +1,89 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General R. G. Sturges",
-            "p_2": "Rear-Admiral E. N. Syfret",
-            "p_3": "Captain G. A. Garnons-Williams",
-            "p_4": "Brigadier F. W. Festing"
+            "p_1": "Brigadier Tarleton",
+            "p_2": "Brigadier Festing",
+            "p_3": "Brigadier M. S. Lush",
+            "p_4": "Marshal Jotfre"
         },
         "locations": {
-            "l_1": "Durban",
-            "l_2": "Diego Suarez",
-            "l_3": "Mombasa",
-            "l_4": "Wilham Pitt Bay",
-            "l_5": "Mozambique"
+            "l_1": "Antsirane",
+            "l_2": "Andrakaka Peninsula",
+            "l_3": "Diego Suarez",
+            "l_4": "Bachaquero",
+            "l_5": "Blue beach",
+            "l_6": "Native village"
         },
         "events": {
-            "e_1": "Operation Ironclad",
-            "e_2": "Assembly of Ships at Durban",
-            "e_3": "Convoy Y",
-            "e_4": "Convoy Z"
+            "e_1": "Attack by 17 Infantry Brigade",
+            "e_2": "Landing of 13 Infantry Brigade Group"
         },
         "organisations": {
-            "o_1": "South Atlantic Command",
-            "o_2": "Royal Navy"
+            "o_1": "17 Infantry Brigade",
+            "o_2": "29 Independent Brigade",
+            "o_3": "29 Independent Brigade",
+            "o_4": "Royal Navy",
+            "o_5": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "Operation Ironclad",
-        "Naval Convoys",
-        "Military Preparations"
+        "serviceable tanks",
+        "mules",
+        "reconnaissance",
+        "Artillery support",
+        "night advance"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Logistics"
+        "Tactical Planning",
+        "Assault Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Naval Strategy": [
-            "e_1",
             "e_2"
         ],
-        "Logistics": [
+        "Tactical Planning": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th May 1942",
+            "date": "6 May",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_6"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "Operation Ironclad is being executed with Naval forces assembling at Durban and proceeding towards Diego Suarez, aimed at strategic military objectives."
-        },
-        {
-            "event": "e_2",
-            "date": "22nd April 1942",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Assembly of Ships at Durban proceeds as various naval vessels arrive to prepare for Operation Ironclad."
-        },
-        {
-            "event": "e_3",
-            "date": "25th April 1942",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Convoy Y departs from Durban, comprising several ships escorting military personnel toward their operational destination."
-        },
-        {
-            "event": "e_4",
-            "date": "28th April 1942",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
                 "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 6 May, 17 Infantry Brigade conducts an attack with the objective of securing enemy positions near Antsirane, amidst challenging reconnaissance conditions and artillery support."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Following Convoy Y, Convoy Z sets sail from Durban, carrying critical naval units including Headquarters ships under Major-General Sturges' command."
+            "eventSummary": "The landing of 13 Infantry Brigade Group commences at daybreak, aiming to reinforce the operations in Antsirane."
         }
     ]
 }

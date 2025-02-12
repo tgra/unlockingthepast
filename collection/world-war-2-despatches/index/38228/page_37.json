@@ -1,71 +1,60 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Generalissimo",
-            "p_2": "Lt.-General Kan Li Chu",
-            "p_3": "Lt.-General Lu Kuo Chuan",
-            "p_4": "Major-General Fisher T. How",
-            "p_5": "Colonel Gordon W. K. Chu",
-            "p_6": "Air Vice-Marshal D. F. Stevenson",
-            "p_7": "Gp. Capt. E. R. Manning",
-            "p_8": "Captain J. I. Hallet",
-            "p_9": "Commodore C. M. Graham"
+            "p_1": "General Lin Wei",
+            "p_2": "General Stilwell",
+            "p_3": "Lieut.-General Slim",
+            "p_4": "General Lo"
         },
         "locations": {
-            "l_1": "Northern Thailand",
-            "l_2": "Burma",
-            "l_3": "Toungoo",
-            "l_4": "Northern Shan States",
-            "l_5": "Rangoon",
-            "l_6": "Akyab",
-            "l_7": "Calcutta",
-            "l_8": "Magwe",
-            "l_9": "Mergui",
-            "l_10": "Tavoy",
-            "l_11": "Moulmein",
-            "l_12": "Malaya"
+            "l_1": "Shwebo",
+            "l_2": "Lashio",
+            "l_3": "Mandalay",
+            "l_4": "Irrawaddy",
+            "l_5": "Yenangyaung",
+            "l_6": "Taungdwingyi",
+            "l_7": "Natmauk",
+            "l_8": "Meiktila",
+            "l_9": "Mount Popa",
+            "l_10": "Kyaukpadaung",
+            "l_11": "Kalaw",
+            "l_12": "Thazi",
+            "l_13": "Pyawbwe",
+            "l_14": "Mandalay-Pyawbwe",
+            "l_15": "Ava Bridge",
+            "l_16": "Myitinge"
         },
         "events": {
-            "e_1": "Offensive by the Chinese",
-            "e_2": "Fall of Rangoon",
-            "e_3": "Battle of Rangoon",
-            "e_4": "Withdrawal of R.A.F. from Rangoon"
+            "e_1": "Operation Instruction No. 46",
+            "e_2": "Withdrawal North of Mandalay",
+            "e_3": "Offensive Operations in Yenangyaung"
         },
         "organisations": {
-            "o_1": "Sixth Army",
-            "o_2": "Fifth Army",
-            "o_3": "A.V.G.",
-            "o_4": "R.A.F.",
-            "o_5": "Burma Royal Naval Volunteer Reserve"
+            "o_1": "Chinese Fifth Army",
+            "o_2": "1 Burcorps",
+            "o_3": "1 Burma Division",
+            "o_4": "200 Chinese Division",
+            "o_5": "22 Division",
+            "o_6": "38 Chinese Division",
+            "o_7": "7 Armoured Brigade"
         }
     },
     "keywords": [
-        "Chinese Offensive",
-        "Rangoon",
-        "Army Coordination",
-        "Air Superiority",
-        "Naval Cooperation"
+        "withdraw",
+        "offensive",
+        "operations",
+        "communication",
+        "defence"
     ],
     "themes": [
         "Military Operations",
-        "Air Warfare",
-        "Cooperation",
         "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Air Warfare": [
-            "e_3",
-            "e_4"
-        ],
-        "Cooperation": [
-            "e_1",
-            "e_4"
+            "e_3"
         ],
         "Strategic Decisions": [
             "e_1",
@@ -75,13 +64,15 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "23rd April",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_3",
+                "l_4",
+                "l_8"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
                 "o_1",
@@ -90,66 +81,47 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Chinese forces consider launching an offensive in Northern Thailand due to the availability of rice, but the Generalissimo decides against it."
+            "eventSummary": "On the 23rd April, Operation Instruction No. 46 is issued, detailing the new military plan agreed upon by General Stilwell's staff for operations in the Mandalay region."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "Date Unspecified",
             "locations": [
-                "l_2"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "The fall of Rangoon occurs as the Sixth Army deploys, marking a significant setback."
+            "eventSummary": "The decision to withdraw north of Mandalay is made due to the deteriorating situation in the Shan States, impacting the concentration and readiness of the Allied forces."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
+            "date": "20th April",
             "locations": [
-                "l_2"
+                "l_5"
             ],
             "persons": [
-                "p_6",
-                "p_7"
+                "p_2"
             ],
             "organisations": [
-                "o_4"
+                "o_6"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The air battle of Rangoon exemplifies the struggle for air superiority amid significant operational challenges."
-        },
-        {
-            "event": "e_4",
-            "date": "Not specified",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_8"
-            ],
-            "persons": [
-                "p_6",
-                "p_8",
-                "p_9"
-            ],
-            "organisations": [
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The R.A.F. withdraws from Rangoon following operational challenges, causing discontent among the troops."
+            "eventSummary": "On the 20th April, General Stilwell agrees to undertake offensive operations in the Yenangyaung area, setting the stage for future actions in the region."
         }
     ]
 }

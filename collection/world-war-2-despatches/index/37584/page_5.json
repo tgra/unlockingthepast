@@ -13,77 +13,75 @@
             "l_2": "Trondheim",
             "l_3": "Mosjoen",
             "l_4": "Grong",
-            "l_5": "Namsen Fiord"
+            "l_5": "Namsen Fiord",
+            "l_6": "Steinkjer",
+            "l_7": "Verdalen"
         },
         "events": {
             "e_1": "Evacuation of Namsos",
-            "e_2": "Air attacks on Namsos",
-            "e_3": "Landing of military units at Namsos",
-            "e_4": "Operation to delay enemy advance"
+            "e_2": "Appearance of British aircraft over Namsos",
+            "e_3": "Landing of a battery of Bofors guns at Namsos",
+            "e_4": "Final evacuation from Namsos",
+            "e_5": "Attack on H.M.S. Afridi and French destroyer Bison"
         },
         "organisations": {
             "o_1": "North Western Expeditionary Force",
             "o_2": "Fleet Air Arm",
-            "o_3": "R.A.F.",
-            "o_4": "French battalion",
-            "o_5": "Royal Marine Howitzer battery"
+            "o_3": "Military Intelligence Directorate"
         }
     },
     "keywords": [
-        "evacuation",
-        "military operation",
-        "Namsos",
-        "air attack",
-        "rearguard",
-        "landing",
-        "French contingent"
+        "Evacuation",
+        "Air Attack",
+        "Military Operations",
+        "Troop Movements"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation",
-        "Air Support",
-        "Strategic Defense"
+        "Evacuation Planning",
+        "Air Defense"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Evacuation": [
-            "e_1"
-        ],
-        "Air Support": [
-            "e_2"
-        ],
-        "Strategic Defense": [
+        "Evacuation Planning": [
+            "e_1",
             "e_4"
+        ],
+        "Air Defense": [
+            "e_2",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st May to 3rd May 1940",
+            "date": "28th April - 3rd May 1940",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1",
                 "p_2",
+                "p_3",
                 "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "The evacuation of Namsos is planned and executed between 1st and 3rd May 1940, following heavy air attacks and military logistics challenges."
+            "eventSummary": "The evacuation of Namsos is planned and executed with significant military coordination, involving the assembly of troops and equipment amidst challenging conditions from 28th April to 3rd May 1940."
         },
         {
             "event": "e_2",
-            "date": "25th April to 3rd May 1940",
+            "date": "25th April 1940",
             "locations": [
                 "l_1"
             ],
@@ -93,10 +91,8 @@
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "British aircraft begin providing air support over Namsos, improving the air situation temporarily amidst ongoing enemy attacks."
+            "connectedEvents": [],
+            "eventSummary": "British aircraft make their first appearance over Namsos on 25th April 1940, temporarily improving the air situation despite later enemy air activity."
         },
         {
             "event": "e_3",
@@ -107,25 +103,37 @@
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_1"
-            ],
             "connectedEvents": [],
-            "eventSummary": "Military units, including a Royal Marine Howitzer battery, successfully land at Namsos to bolster defenses."
+            "eventSummary": "On 28th April 1940, a battery of Bofors guns is landed at Namsos, although they arrive without predictors, limiting their effectiveness."
         },
         {
             "event": "e_4",
-            "date": "30th April 1940",
+            "date": "1st - 2nd May 1940",
             "locations": [
-                "l_3",
-                "l_4"
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "All arrangements for the evacuation from Namsos are finalized on 1st May 1940, but the operation is delayed until the next night due to fog."
+        },
+        {
+            "event": "e_5",
+            "date": "3rd May 1940",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "General Carton de Wiart plans a strategic defense to delay enemy forces entering Mosjoen during the evacuation."
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "On 3rd May 1940, H.M.S. Afridi and the French destroyer Bison are sunk after intense enemy air attacks during the evacuation of troops from Namsos."
         }
     ]
 }

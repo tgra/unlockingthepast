@@ -1,94 +1,125 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Montgomery"
+            "p_1": "General Montgomery",
+            "p_2": "Rommel"
         },
         "locations": {
-            "l_1": "Tel el Eisa",
-            "l_2": "Sidi Abd el Rahman",
-            "l_3": "Aqqaqir",
-            "l_4": "Sidi Barrani"
+            "l_1": "Martuba",
+            "l_2": "Derna",
+            "l_3": "Malta",
+            "l_4": "Agedabia",
+            "l_5": "Maraua",
+            "l_6": "Tmimi",
+            "l_7": "Msus",
+            "l_8": "Benghazi",
+            "l_9": "Gebel Akhdar",
+            "l_10": "Agheila",
+            "l_11": "Sebkha es Seghira",
+            "l_12": "Sebkhet Gheizel",
+            "l_13": "Tobruk",
+            "l_14": "French North Africa",
+            "l_15": "Morocco",
+            "l_16": "Algeria",
+            "l_17": "Tunis"
         },
         "events": {
-            "e_1": "Battle of Tell el Aqqaqir",
-            "e_2": "Operation on 31st October"
+            "e_1": "Siege of Malta",
+            "e_2": "Engagement at Sceleidima and Antelat",
+            "e_3": "Conquest of Tripolitania"
         },
         "organisations": {
-            "o_1": "New Zealand Division",
-            "o_2": "30 Corps",
-            "o_3": "10 Corps",
-            "o_4": "21 Panzer Division",
-            "o_5": "50 Division",
-            "o_6": "51 Division",
-            "o_7": "44 Division"
+            "o_1": "Royal Air Force",
+            "o_2": "Eighth Army",
+            "o_3": "New Zealand Division",
+            "o_4": "First Army",
+            "o_5": "10 Corps",
+            "o_6": "22 Armoured Brigade",
+            "o_7": "4 Light Armoured Brigade",
+            "o_8": "7 Armoured Division",
+            "o_9": "rz Hussars",
+            "o_10": "Royals",
+            "o_11": "Pistoia Division",
+            "o_12": "Young Fascists Division",
+            "o_13": "Spezia Division"
         }
     },
     "keywords": [
-        "military operations",
-        "artillery",
-        "infantry",
-        "armoured brigade",
-        "enemy positions"
+        "enemy",
+        "retreat",
+        "advance",
+        "forces",
+        "transport",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Strategy",
-        "Artillery Support"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategy": [
-            "e_2"
-        ],
-        "Artillery Support": [
-            "e_1",
-            "e_2"
+        "Strategic Decisions": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 1st",
+            "date": "November 1942",
             "locations": [
-                "l_2",
                 "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Battle of Tell el Aqqaqir occurs as the 9 Armoured Brigade faces strong resistance from enemy positions along the Rahman track, marking one of the largest clashes of the operation."
+            "eventSummary": "The siege of Malta concludes, allowing for the safe arrival of supplies and troops, marking a critical point in the war effort."
         },
         {
             "event": "e_2",
-            "date": "October 31st",
+            "date": "18th November 1942",
             "locations": [
-                "l_2",
-                "l_1"
+                "l_4",
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
+                "o_5",
+                "o_6",
+                "o_9",
+                "o_10"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Engagement occurs at Sceleidima and Antelat where British forces encounter enemy rearguards but struggle to advance."
+        },
+        {
+            "event": "e_3",
+            "date": "November 1942",
+            "locations": [
+                "l_10",
+                "l_12"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
                 "o_2",
-                "o_3",
                 "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Operation on October 31st is intended to advance westward from the current defensive positions with significant artillery support, although it is postponed due to delays."
+            "connectedEvents": [],
+            "eventSummary": "The conquest of Tripolitania involves strategic maneuvering against enemy positions and results in the secure control of the region."
         }
     ]
 }

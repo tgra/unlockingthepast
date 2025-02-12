@@ -1,126 +1,139 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Gazette",
-            "p_2": "Skinner"
+            "p_1": "General Brink",
+            "p_2": "Brigadier J. K. Edwards, M.C.",
+            "p_3": "Colonel A. C. Duff, O.B.E., M.C.",
+            "p_4": "Colonel Sir Brian H. Robertson, Bt., D.S.O., M.C.",
+            "p_5": "Lady Sidney Farrar"
         },
         "locations": {
-            "l_1": "Keren",
-            "l_2": "M. Dologorodoc",
-            "l_3": "Dongolaas gorge",
-            "l_4": "Happy Valley",
-            "l_5": "M. Zelale",
-            "l_6": "Rajputana Ridge",
-            "l_7": "Fort Dologorodoc",
-            "l_8": "Barentu",
-            "l_9": "Arresa",
-            "l_10": "Agordat",
-            "l_11": "M. Sanchil"
+            "l_1": "Uaddara",
+            "l_2": "Neghelli",
+            "l_3": "Middle East",
+            "l_4": "Lugh Ferrandi-Oddur-Iscia Baidoa",
+            "l_5": "Nairobi",
+            "l_6": "Garissa",
+            "l_7": "Chisimaio",
+            "l_8": "Mogadiscio",
+            "l_9": "Gabredarre",
+            "l_10": "Giggiga",
+            "l_11": "Harrar",
+            "l_12": "Addis Abeba"
         },
         "events": {
-            "e_1": "Fall of Agordat",
-            "e_2": "Battle of Keren",
-            "e_3": "First Attack on Acqua Gap"
+            "e_1": "Expansion of Force H.Q.",
+            "e_2": "Division of Force H.Q.",
+            "e_3": "Formation of Advanced H.Q.",
+            "e_4": "Operation logistics and administration"
         },
         "organisations": {
-            "o_1": "4th Indian Division",
-            "o_2": "Colonial Brigade",
-            "o_3": "Grenadier Division",
-            "o_4": "5th Indian Infantry Brigade",
-            "o_5": "3/14 Punjab Regiment",
-            "o_6": "1/6 Rajputana Rifles"
+            "o_1": "A.Q.M.G.",
+            "o_2": "F.A.N.Y."
         }
     },
     "keywords": [
-        "military tactics",
-        "strategy",
-        "reinforcements",
-        "enemy positions",
-        "natural terrain",
-        "observational advantages"
+        "Uaddara",
+        "Neghelli",
+        "Military Operations",
+        "Administration",
+        "Intelligence"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Reconnaissance",
-        "Engagements and Conflicts"
+        "Administration",
+        "Logistical Challenges"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2",
-            "e_3"
-        ],
-        "Strategic Decisions": [
             "e_1",
-            "e_2"
-        ],
-        "Reconnaissance": [
-            "e_2"
-        ],
-        "Engagements and Conflicts": [
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
+        ],
+        "Administration": [
+            "e_4"
+        ],
+        "Logistical Challenges": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 1946",
+            "date": "6th April 1941",
             "locations": [
-                "l_10"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The fall of Agordat is a crucial moment leading to significant troop movements towards Keren."
+            "eventSummary": "On 6th April 1941, the Force H.Q. expanded due to the complexity of operational control, incorporating input from various branches."
         },
         {
             "event": "e_2",
-            "date": "February 1946",
+            "date": "8th February 1941",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_4",
-                "o_5",
-                "o_6"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "The battle of Keren involves multiple units engaging in a fierce conflict against a numerically superior enemy positioned on the high ground."
+            "eventSummary": "On 8th February 1941, the Force H.Q. was divided into Rear Force H.Q. at Nairobi and Advanced Force H.Q. at Garissa."
         },
         {
             "event": "e_3",
-            "date": "February 6, 1946",
+            "date": "February 1941",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_4",
-                "o_5"
+                "o_1"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "The first attack on Acqua Gap sees the 5th Indian Infantry Brigade moving to attack the right flank, despite the challenges posed by the enemy's advantageous position."
+            "eventSummary": "In February 1941, Advanced Force H.Q. was formed to improve operational efficiency."
+        },
+        {
+            "event": "e_4",
+            "date": "January 1941",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "By January 1941, significant logistical and administrative challenges arose, prompting initiatives to better manage resources and personnel."
         }
     ]
 }

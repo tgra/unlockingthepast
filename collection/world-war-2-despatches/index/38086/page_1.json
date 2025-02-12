@@ -1,57 +1,56 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C. M. Forses",
-            "p_2": "R. E. D. Ryper"
+            "p_1": "Sir CHARLES WM. FORBES",
+            "p_2": "Commander R. E. D. Ryder"
         },
         "locations": {
-            "l_1": "Loire",
-            "l_2": "St. Nazaire"
+            "l_1": "St. Nazaire",
+            "l_2": "Loire",
+            "l_3": "Biscay"
         },
         "events": {
-            "e_1": "Operation Chariot",
-            "e_2": "Zeebrugge raid"
+            "e_1": "The attack on St. Nazaire",
+            "e_2": "The attack on Zeebrugge"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "No. 2 Commando",
-            "o_3": "H.M.S. CAMPBELTOWN"
+            "o_1": "Royal Navy",
+            "o_2": "No. 19 Group, R.A.F."
         }
     },
     "keywords": [
-        "surprise",
-        "military operation",
-        "forces",
         "attack",
-        "naval forces",
-        "demolitions"
+        "operation",
+        "demolition",
+        "naval losses",
+        "military force"
     ],
     "themes": [
         "Military Operations",
-        "Naval Tactics",
-        "Surprise Attacks",
-        "Repair and Maintenance"
+        "Naval Warfare",
+        "Leadership"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
             "e_1"
         ],
-        "Naval Tactics": [
-            "e_1"
-        ],
-        "Surprise Attacks": [
-            "e_1"
-        ],
-        "Repair and Maintenance": [
-            "e_3"
+        "Leadership": [
+            "p_1",
+            "p_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st April, 1942",
+            "date": "28th March, 1942",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1",
@@ -59,13 +58,23 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Chariot, a frontal attack on the port of St. Nazaire, is executed with an emphasis on surprise and high-stakes demolitions aimed at crippling the enemy's infrastructure."
+            "eventSummary": "The attack on St. Nazaire is conducted successfully, significantly damaging the enemy's facilities with various naval forces participating."
+        },
+        {
+            "event": "e_2",
+            "date": null,
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The attack on Zeebrugge is mentioned as a prior event deemed easier compared to the attack on St. Nazaire."
         }
     ]
 }

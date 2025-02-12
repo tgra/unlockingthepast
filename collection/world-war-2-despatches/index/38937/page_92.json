@@ -1,150 +1,128 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Anders"
+            "p_1": "Major-General Robertson",
+            "p_2": "General Eisenhower"
         },
         "locations": {
-            "l_1": "Monte Lignano",
-            "l_2": "Monte Gavino",
-            "l_3": "Arezzo",
-            "l_4": "Florence",
-            "l_5": "Ancona",
-            "l_6": "Leghorn",
-            "l_7": "Osimo",
-            "l_8": "Poggibonsi",
-            "l_9": "Terni",
-            "l_10": "Narni",
-            "l_11": "Rome",
-            "l_12": "Orte",
-            "l_13": "Civita Castellana",
-            "l_14": "San Gimignano",
-            "l_15": "Pisa",
-            "l_16": "Citta di Castello"
+            "l_1": "Naples",
+            "l_2": "Italy",
+            "l_3": "Bari",
+            "l_4": "Anzio",
+            "l_5": "Middle East",
+            "l_6": "North Africa",
+            "l_7": "Sicily",
+            "l_8": "Garigliano",
+            "l_9": "Arno"
         },
         "events": {
-            "e_1": "Battle for Arezzo",
-            "e_2": "Capture of Ancona",
-            "e_3": "Capture of Monte Lignano",
-            "e_4": "Capture of Poggibonsi",
-            "e_5": "Capture of Citta di Castello"
+            "e_1": "Establishment of Advanced Administrative Echelon",
+            "e_2": "Reorganisation at Headquarters Allied Armies in Italy",
+            "e_3": "Ammunition shortage in Italy",
+            "e_4": "Gothic line battles"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "IV Corps",
-            "o_3": "Fifth Army",
-            "o_4": "13 Corps"
+            "o_1": "A.F.H.Q.",
+            "o_2": "Fifteenth Army Group",
+            "o_3": "Strategic Air Force",
+            "o_4": "War Office"
         }
     },
     "keywords": [
-        "Armoured Division",
-        "German Defence",
-        "Gothic line",
-        "air support",
-        "infantry",
-        "battle",
-        "divisions",
-        "attack"
+        "administration",
+        "supply lines",
+        "military operations",
+        "reorganisation",
+        "ammunition"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Tactical Advances",
-        "Allied Forces Movements"
+        "Logistics",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3",
-            "e_4",
-            "e_5"
+            "e_4"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
-            "e_1",
             "e_2"
-        ],
-        "Tactical Advances": [
-            "e_3",
-            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th July",
+            "date": "24th October",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_4",
-                "e_5"
+                "e_3"
             ],
-            "eventSummary": "The battle for Arezzo concludes as German forces break contact after sustained assaults from the Allies, leading to captured strategic positions."
+            "eventSummary": "On 24th October, the Advanced Administrative Echelon of A.F.H.Q. is established in Naples, taking over administration from Fortbase, led by Major-General Robertson."
         },
         {
             "event": "e_2",
-            "date": "18th July",
+            "date": "24th February, 1944",
             "locations": [
-                "l_5"
+                "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The Allies successfully capture Ancona after heavy fighting, marking a significant victory in their campaign."
+            "eventSummary": "On 24th February, 1944, the A.F.H.Q. Administrative Echelon is transferred to the Headquarters Allied Armies in Italy, facilitating greater autonomy over administrative functions."
         },
         {
             "event": "e_3",
-            "date": "Before dawn on 16th July",
+            "date": "winter of 1943-44",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "Monte Lignano is captured by New Zealand forces, contributing to the overall success in the battle for Arezzo."
+            "eventSummary": "During the winter of 1943-44, operations in Italy face significant challenges due to a shortage of ammunition caused by logistical issues and heavy fighting."
         },
         {
             "event": "e_4",
-            "date": "14th July",
+            "date": "autumn of 1944",
             "locations": [
-                "l_8"
+                "l_2"
             ],
             "persons": [],
-            "organisations": [
-                "o_3"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "French forces celebrate the capture of Poggibonsi, further advancing toward Florence."
-        },
-        {
-            "event": "e_5",
-            "date": "22nd July",
-            "locations": [
-                "l_16"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Citta di Castello falls to Allied forces, continuing the pressure on German defenses in the region."
+            "eventSummary": "In the autumn of 1944, battles along the Gothic line are impacted by a world-wide ammunition shortage affecting both British and American forces."
         }
     ]
 }

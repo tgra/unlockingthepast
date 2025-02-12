@@ -1,150 +1,80 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "G. H. Creswell",
-            "p_2": "A. L. Poland",
-            "p_3": "F. M. Smith",
-            "p_4": "H. R. M. Nicholl",
-            "p_5": "J. W. Best",
-            "p_6": "E. R. E. Black",
-            "p_7": "R. D. Williams",
-            "p_8": "C. W. Morle",
-            "p_9": "W. C. Mackintosh",
-            "p_10": "H. M. Briscoe",
-            "p_11": "Egyptian Prime Minister",
-            "p_12": "Lieutenant-General Sir Alan Cunningham"
-        },
-        "locations": {
-            "l_1": "Egypt",
-            "l_2": "Cairo",
-            "l_3": "Alexandria",
-            "l_4": "Tobruk",
-            "l_5": "Mersa Matruh",
-            "l_6": "Cyrenaica",
-            "l_7": "Suez Canal",
-            "l_8": "Gulf of Suez",
-            "l_9": "Western Desert",
-            "l_10": "Siwa",
-            "l_11": "Abu Zenima",
-            "l_12": "Ras Ghemsa",
-            "l_13": "Palestine",
-            "l_14": "Syria",
-            "l_15": "Bahig"
-        },
+        "persons": {},
+        "locations": {},
         "events": {
-            "e_1": "Declaration of Cairo as an Open City",
-            "e_2": "Formation of the Eighth and Ninth Armies",
-            "e_3": "Air raid threats to shipping",
-            "e_4": "Projected Offensive in Cyrenaica"
+            "e_1": "State of increase, Equipment Field Arty.",
+            "e_2": "State of Equipt.",
+            "e_3": "NOTICE"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Royal Air Force",
-            "o_3": "British Military",
-            "o_4": "Egyptian Army",
-            "o_5": "His Majesty's Government",
-            "o_6": "Egyptian State Telegraphs and Telephones Departments"
+            "o_1": "British",
+            "o_2": "Free French",
+            "o_3": "Egyptian Units"
         }
     },
     "keywords": [
-        "Military Operations",
-        "Egypt",
-        "Air Raids",
-        "Shipping Threats",
-        "Communications",
-        "Royal Navy",
-        "Egyptian Army",
-        "Cairo",
-        "Open City"
+        "Equipment",
+        "Field Arty",
+        "Artillery",
+        "Anti-Aircraft",
+        "Figures",
+        "Units"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions",
-        "Communication Security"
+        "Equipment Status"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_2"
         ],
-        "Diplomacy": [
-            "e_1"
-        ],
-        "Strategic Decisions": [
+        "Equipment Status": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Mid-September",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_11"
-            ],
-            "organisations": [
-                "o_6",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "In mid-September, the Egyptian Prime Minister is handed a memorandum stating that moving British troops from Cairo is out of the question, highlighting rising tensions regarding Cairo's status as an Open City."
-        },
-        {
-            "event": "e_2",
-            "date": "26th September",
-            "locations": [
-                "l_1",
-                "l_13",
-                "l_14"
-            ],
-            "persons": [
-                "p_12"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "On 26th September, the Eighth Army headquarters assumes command of troops in the Western Desert, marking a reorganization of forces following earlier campaigns."
-        },
-        {
-            "event": "e_3",
-            "date": "Ongoing threats",
-            "locations": [
-                "l_7",
-                "l_8"
-            ],
+            "date": "1st July, 1941; 4th November, 1941",
+            "locations": [],
             "persons": [],
             "organisations": [
                 "o_1",
-                "o_4"
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The state of equipment for Field Artillery shows an increase on specified dates."
+        },
+        {
+            "event": "e_2",
+            "date": "1st July, 1941; 31st October, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Air raids are threatening shipping in the Suez Canal and Gulf of Suez, intensifying the strategic concerns surrounding military and civilian operations."
+            "eventSummary": "The state of equipment shows the percentage readiness of various units."
         },
         {
-            "event": "e_4",
-            "date": "October",
-            "locations": [
-                "l_6"
-            ],
+            "event": "e_3",
+            "date": "",
+            "locations": [],
             "persons": [],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "In October, arrangements are set to take over communications in the forward area as preparations for a projected offensive in Cyrenaica are underway."
+            "eventSummary": "A notice refers to adjustments in operational procedures."
         }
     ]
 }

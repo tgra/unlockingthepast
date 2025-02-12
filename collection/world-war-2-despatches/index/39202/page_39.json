@@ -1,95 +1,81 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant General Sir Oliver Leese",
-            "p_2": "Major-General Bastyan"
+            "p_1": "President Truman"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Ramree",
-            "l_3": "Akyab",
-            "l_4": "Kandy"
+            "l_1": "Burma",
+            "l_2": "India",
+            "l_3": "Ceylon",
+            "l_4": "Rangoon",
+            "l_5": "Malaya",
+            "l_6": "Singapore",
+            "l_7": "Seletar",
+            "l_8": "South East Asia"
         },
         "events": {
-            "e_1": "Zipper/Mailfist Operation",
-            "e_2": "Air Supply Planning for June"
+            "e_1": "Surrender of Japan",
+            "e_2": "Termination of Lend/Lease"
         },
         "organisations": {
-            "o_1": "No. 238 Squadron",
-            "o_2": "US.A.A.F",
-            "o_3": "B.AF.S.E.A",
-            "o_4": "ALFSE.A"
+            "o_1": "U.S.A.A.F.",
+            "o_2": "Air Command"
         }
     },
     "keywords": [
-        "Transport Aircraft",
-        "Air Supply",
-        "Army Requirements",
-        "Airlift Capacity",
-        "Military Coordination"
+        "Lend Lease",
+        "aircraft maintenance",
+        "supply of spares",
+        "Rangoon"
     ],
     "themes": [
         "Military Operations",
-        "Supply Chain Management",
-        "Air Transport Challenges"
+        "Logistics",
+        "Supply Chain"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
+            "e_1"
+        ],
+        "Logistics": [
             "e_2"
         ],
-        "Supply Chain Management": [
-            "e_2"
-        ],
-        "Air Transport Challenges": [
+        "Supply Chain": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 1945",
+            "date": "August 1945",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Zipper/Mailfist Operation prioritizes the airlift of tactical squadrons from Burma due to overloaded land and sea lines of communication."
+            "eventSummary": "President Truman announces the Surrender of Japan, bringing significant changes to military logistics and operations in the region."
         },
         {
             "event": "e_2",
-            "date": "June 1945",
+            "date": "August 1945",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_8"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Air supply discussions take place regarding the shortfall in air transport, necessitating better planning and allocation of resources."
+            "eventSummary": "The termination of Lend/Lease is declared, causing serious repercussions for Air Command in South East Asia due to supply shortages."
         }
     ]
 }

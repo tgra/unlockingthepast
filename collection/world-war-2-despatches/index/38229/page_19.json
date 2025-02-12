@@ -2,95 +2,127 @@
     "namedEntities": {
         "persons": {
             "p_1": "General Alexander",
-            "p_2": "General Sir Archibald Wavell",
-            "p_3": "General Hutton",
-            "p_4": "Jim ow",
-            "p_5": "General Chennault"
+            "p_2": "Lt.-Col. Takeo Kato"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Pegu Road",
-            "l_3": "Taukkyan",
-            "l_4": "Prome Road",
-            "l_5": "Maymyo",
-            "l_6": "Toungoo",
-            "l_7": "Bassein",
-            "l_8": "Magwe",
-            "l_9": "Highland Queen",
-            "l_10": "Mingaladon",
-            "l_11": "Sittang"
+            "l_1": "Lashio",
+            "l_2": "Loiwing",
+            "l_3": "Calcutta",
+            "l_4": "China",
+            "l_5": "Myitkyina",
+            "l_6": "Mandalay",
+            "l_7": "Shwebo",
+            "l_8": "River Chindwin",
+            "l_9": "Kalewa",
+            "l_10": "Manipur Road",
+            "l_11": "Imphal",
+            "l_12": "Northern Burma",
+            "l_13": "Taunggyi",
+            "l_14": "Mawlaik",
+            "l_15": "Andaman Islands",
+            "l_16": "Bay of Bengal",
+            "l_17": "Rangoon",
+            "l_18": "Assam",
+            "l_19": "Tezpur",
+            "l_20": "Chittagong",
+            "l_21": "Nyaungbintha",
+            "l_22": "Singbaungwe",
+            "l_23": "Allanmyo",
+            "l_24": "Magwe",
+            "l_25": "Sandoway",
+            "l_26": "Taungup",
+            "l_27": "Mingaladon",
+            "l_28": "Akyab",
+            "l_29": "Myitkyina",
+            "l_30": "Monywa"
         },
         "events": {
-            "e_1": "Battle of Pegu",
-            "e_2": "Evacuation of Rangoon",
-            "e_3": "Air attacks on Highland Queen"
+            "e_1": "Magwe action",
+            "e_2": "Burma Army withdrawal to India",
+            "e_3": "First attack in support of General Alexander's right flank",
+            "e_4": "Attack on Japanese troops at Nyaungbintha"
         },
         "organisations": {
-            "o_1": "63rd Brigade",
-            "o_2": "R.D.F.",
-            "o_3": "A.V.G.",
-            "o_4": "Royal Air Force"
+            "o_1": "U.S.A.A.-C.",
+            "o_2": "R.A.F.",
+            "o_3": "No. 31 Air Transport Squadron"
         }
     },
     "keywords": [
-        "reconnaissance",
-        "evacuation",
-        "air superiority",
-        "demolition",
-        "fighter patrols",
-        "casualties"
+        "air forces",
+        "bombers",
+        "Hurricanes",
+        "Japanese attacks",
+        "Chinese air bases",
+        "British refuelling parties",
+        "Army's withdrawal",
+        "bomber operations",
+        "enemy air force",
+        "bombing action",
+        "tactical reconnaissance"
     ],
     "themes": [
         "Military Operations",
-        "Air Warfare",
-        "Evacuations",
-        "Strategic Air Defense"
+        "Strategic Movements",
+        "Supply and Logistics",
+        "Air Support Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Movements": [
             "e_2"
         ],
-        "Air Warfare": [
-            "e_1",
-            "e_3"
-        ],
-        "Evacuations": [
+        "Supply and Logistics": [
             "e_2"
         ],
-        "Strategic Air Defense": [
-            "e_3"
+        "Air Support Operations": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 2, 1942",
+            "date": "21st March",
             "locations": [
-                "l_2",
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_30"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The Battle of Pegu involves significant air actions, with attacks against enemy positions resulting in heavy casualties for the enemy air force."
+            "eventSummary": "The Magwe action takes place against the Japanese in Burma, leading to ongoing military engagements."
         },
         {
             "event": "e_2",
-            "date": "March 8, 1942",
+            "date": "20th May",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Burma Army is finally withdrawn to India, marking a significant realignment of forces."
+        },
+        {
+            "event": "e_3",
+            "date": "12th April",
+            "locations": [
+                "l_21"
             ],
             "persons": [
                 "p_1"
@@ -98,28 +130,23 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The evacuation of Rangoon is completed, with the final demolition of infrastructure ensuring no enemy interference during troop withdrawal."
+            "connectedEvents": [],
+            "eventSummary": "General Alexander's forces carry out the first bombing attack in support of their right flank."
         },
         {
-            "event": "e_3",
-            "date": "March 6, 1942",
+            "event": "e_4",
+            "date": "12th April",
             "locations": [
-                "l_9"
+                "l_21"
             ],
             "persons": [
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "An enemy air formation mistakenly attacks the Highland Queen, where friendly forces are stationed. Despite the surprise, some friendly aircraft manage to take off and engage the enemy."
+            "connectedEvents": [],
+            "eventSummary": "Japanese troops at Nyaungbintha are attacked, with substantial ordnance released."
         }
     ]
 }

@@ -1,112 +1,156 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Duke of Aosta",
-            "p_2": "Major-General Sir Noel Beresford-Peirse"
+            "p_1": "General Gazzera",
+            "p_2": "Colone! D. A. Sandford",
+            "p_3": "Azajh Kabada"
         },
         "locations": {
-            "l_1": "Massawa",
-            "l_2": "Keren",
-            "l_3": "Adigrat",
-            "l_4": "Adi Ugri",
-            "l_5": "Asmera",
-            "l_6": "Gondar",
-            "l_7": "Amba Alagi",
-            "l_8": "Eritrea",
-            "l_9": "Toselli Pass",
-            "l_10": "Addis Ababa"
+            "l_1": "Dabus River",
+            "l_2": "Mendi",
+            "l_3": "Ghimbi",
+            "l_4": "Dembi Dollo",
+            "l_5": "Yubdo",
+            "l_6": "Lekempti",
+            "l_7": "Gore",
+            "l_8": "Bortai River",
+            "l_9": "Gambela",
+            "l_10": "Asosa",
+            "l_11": "Afodu",
+            "l_12": "Ghidame",
+            "l_13": "Lake Rudolph",
+            "l_14": "Boma Plateau",
+            "l_15": "Maji",
+            "l_16": "Zilmanu",
+            "l_17": "Beru",
+            "l_18": "Maji",
+            "l_19": "Sho Gimira",
+            "l_20": "Gojjam",
+            "l_21": "Dangila",
+            "l_22": "Burye",
+            "l_23": "Debra Markos"
         },
         "events": {
-            "e_1": "Terms of Surrender of Massawa",
-            "e_2": "Capture of Massawa",
-            "e_3": "Battle of Amba Alagi"
+            "e_1": "Operation at the Dabus River",
+            "e_2": "Capture of Dembi Dollo",
+            "e_3": "Evacuation of Maji",
+            "e_4": "Battle of Zilmanu",
+            "e_5": "Occupation of Maji",
+            "e_6": "Patriot Campaign 1940"
         },
         "organisations": {
-            "o_1": "5th Indian Division",
-            "o_2": "4th Indian Division",
-            "o_3": "Mounted Infantry",
-            "o_4": "Royal Artillery"
+            "o_1": "2/6 K.A.R.",
+            "o_2": "Belgian Contingent",
+            "o_3": "Equatorial Corps",
+            "o_4": "25th East African Brigade",
+            "o_5": "18th Colonial Brigade",
+            "o_6": "Sudan forces"
         }
     },
     "keywords": [
-        "Massawa",
-        "Italian Forces",
-        "British",
-        "Prisoners of War",
-        "Middle East",
-        "Military Operation"
+        "patrol actions",
+        "enemy positions",
+        "air superiority",
+        "evacuation",
+        "occupation",
+        "colonial brigades",
+        "military operations"
     ],
     "themes": [
         "Military Operations",
-        "Surrender and Truce",
-        "Prisoners of War",
-        "Defensive Strategy"
+        "Defensive Strategy",
+        "Colonial Conflict",
+        "Logistical Challenges"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
-        ],
-        "Surrender and Truce": [
-            "e_1"
-        ],
-        "Prisoners of War": [
-            "e_2"
+            "e_4",
+            "e_5",
+            "e_6"
         ],
         "Defensive Strategy": [
+            "e_3"
+        ],
+        "Colonial Conflict": [
+            "e_6"
+        ],
+        "Logistical Challenges": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd April 1946",
+            "date": "April 21",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The Admiral commanding the Italian Forces in Massawa sends a flag of truce and requests terms for surrender, which are dictated to the Commander of the 5th Indian Division."
-        },
-        {
-            "event": "e_2",
-            "date": "8th April 1946",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "After intense fighting, the enemy in Massawa surrenders to the Commander of the 5th Indian Division, leading to significant damage and the capture of prisoners."
+            "eventSummary": "On April 21st, 2/6 K.A.R. heads south and southeast towards Mendi and Ghimbi, collaborating with a Belgian battalion after capturing Dembi Dollo."
         },
         {
             "event": "e_3",
-            "date": "Date not specified",
+            "date": "April 8",
             "locations": [
-                "l_7",
-                "l_6"
+                "l_18"
             ],
-            "persons": [],
+            "persons": [
+                "p_3"
+            ],
             "organisations": [
-                "o_1"
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "On April 8th, Maji is reported evacuated and the decision is made for the Equatorial Corps to occupy it amidst challenging conditions and unrest."
+        },
+        {
+            "event": "e_5",
+            "date": "May",
+            "locations": [
+                "l_18"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "By early May, the Equatorial Corps occupies Maji after overcoming logistical difficulties and adverse conditions."
+        },
+        {
+            "event": "e_6",
+            "date": "November 1940",
+            "locations": [
+                "l_20"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_6"
             ],
             "connectedEvents": [],
-            "eventSummary": "The 5th Indian Division is tasked with attacking the Amba Alagi position, which is strategically important for further advances toward Addis Ababa."
+            "eventSummary": "In November 1940, a forward policy in Gojjam is initiated amidst a potential revolt with a significant enemy presence."
         }
     ]
 }

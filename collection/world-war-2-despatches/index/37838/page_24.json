@@ -1,217 +1,125 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "A.E.A.F.",
-            "p_2": "German Army",
-            "p_3": "United States Ninth Air Force",
-            "p_4": "United States Eighth Air Force",
-            "p_5": "R.A.F. Second Tactical Air Force",
-            "p_6": "G.A.F.",
-            "p_7": "Army Commanders"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Northern France",
-            "l_2": "Belgium",
-            "l_3": "Seine",
-            "l_4": "Rheims",
-            "l_5": "Rouen",
-            "l_6": "Brest",
-            "l_7": "Le Havre",
-            "l_8": "Boulogne",
-            "l_9": "Calais",
-            "l_10": "Rhine",
-            "l_11": "Moselle"
+            "l_1": "Tonga"
         },
         "events": {
-            "e_1": "Retreat across Northern France and Belgium",
-            "e_2": "Air attacks on enemy ambulances",
-            "e_3": "Enemy rail movement",
-            "e_4": "Tactical air forces operations on 18th and 25th August",
-            "e_5": "G.A.F. protection efforts on 25th August",
-            "e_6": "Bombing of Brest",
-            "e_7": "Bombing of Le Havre",
-            "e_8": "Attacks on Coastal Garrisons"
+            "e_1": "Operation Neptune",
+            "e_2": "D-Day",
+            "e_3": "Operations subsequent to D-Day",
+            "e_4": "Attacks on Enemy Communications",
+            "e_5": "Close Support Operations",
+            "e_6": "Attacks on Coastal Garrisons",
+            "e_7": "Fighter Cover to the Assault and the Shipping Lanes",
+            "e_8": "Enemy Air Reaction and the Allied Attacks on the G.A.F. and its bases",
+            "e_9": "Defence against Flying Bombs and Attacks on Crossbow targets",
+            "e_10": "Operations of First Allied Airborne Army",
+            "e_11": "Attacks on Naval Targets",
+            "e_12": "Strategical Bombing Pointblank"
         },
         "organisations": {
-            "o_1": "United States Air Force",
-            "o_2": "R.A.F. Bomber Command"
+            "o_1": "U.S. IXth Troop Carrier Command",
+            "o_2": "Royal Air Force"
         }
     },
     "keywords": [
-        "Retreat",
-        "Air Attacks",
-        "Ambulances",
-        "Rail Movement",
-        "Bombing",
-        "Casualties",
-        "German Army"
+        "Operation Neptune",
+        "D-Day",
+        "Air Lift",
+        "Troops",
+        "Communications",
+        "Support Operations",
+        "Coastal Garrisons",
+        "Fighter Cover",
+        "Air Reaction",
+        "Flying Bombs",
+        "Naval Targets",
+        "Strategical Bombing"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Air Assaults",
-        "Casualty Management"
+        "Airborne Operations",
+        "Logistics",
+        "Combat Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_3",
+            "e_4",
+            "e_5",
             "e_6",
             "e_7",
-            "e_8"
+            "e_8",
+            "e_9",
+            "e_10",
+            "e_11",
+            "e_12"
         ],
-        "Air Assaults": [
-            "e_2",
+        "Logistics": [
+            "e_1"
+        ],
+        "Airborne Operations": [
+            "e_10"
+        ],
+        "Combat Operations": [
             "e_4",
-            "e_5"
-        ],
-        "Strategic Decisions": [
-            "e_2"
+            "e_5",
+            "e_6",
+            "e_7",
+            "e_8",
+            "e_11",
+            "e_12"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Various Dates",
+            "date": null,
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The retreat of enemy forces across Northern France and Belgium unfolds, marked by significant air assaults on their movements."
+            "eventSummary": "Operation Neptune involves the air lift operations carried out by the U.S. IXth Troop Carrier Command."
         },
         {
             "event": "e_2",
-            "date": "Various Dates",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "date": null,
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "Decisions are made regarding whether to attack suspected enemy ambulances during their retreat, reflecting the complexity of targeting amid combat."
+            "eventSummary": "D-Day marks the beginning of operations in the European theater."
         },
         {
             "event": "e_3",
-            "date": "Various Dates",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Reconnaissance reveals enemy rail movements aimed at stabilizing their line, prompting targeted air efforts against these movements."
-        },
-        {
-            "event": "e_4",
-            "date": "18th and 25th August",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_5",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "date": "30th September, 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1",
-                "e_5"
-            ],
-            "eventSummary": "Tactical air forces achieve significant success with numerous enemy aircraft destroyed during operations on key dates in August."
-        },
-        {
-            "event": "e_5",
-            "date": "25th August",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_6",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The German Army attempts to protect their river crossings, resulting in a fierce aerial battle where many enemy aircraft are destroyed."
-        },
-        {
-            "event": "e_6",
-            "date": "24th August to 6th September",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_7"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Intensive bombing campaigns target the garrison at Brest, resulting in significant destruction of enemy positions."
-        },
-        {
-            "event": "e_7",
-            "date": "1st to 12th September",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_7"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A significant number of sorties are flown against Le Havre, leading to substantial bombing efforts aimed at disabling enemy defenses."
-        },
-        {
-            "event": "e_8",
-            "date": "September",
-            "locations": [
-                "l_9",
-                "l_10",
-                "l_11"
-            ],
-            "persons": [
-                "p_7"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
+                "e_4",
+                "e_5",
                 "e_6",
-                "e_7"
+                "e_7",
+                "e_8",
+                "e_9",
+                "e_10",
+                "e_11",
+                "e_12"
             ],
-            "eventSummary": "Coastal garrisons are relentlessly bombed throughout September, impacting enemy operations significantly."
+            "eventSummary": "Operations subsequent to D-Day are categorized under various types of military operations carried out until September 30, 1944."
         }
     ]
 }

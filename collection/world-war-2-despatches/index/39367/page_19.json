@@ -1,76 +1,66 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Drapsin",
-            "p_2": "Marshal Tito"
+            "p_1": "General von Senger",
+            "p_2": "General von Vietinghoff"
         },
         "locations": {
-            "l_1": "Zadar",
-            "l_2": "Biferno",
-            "l_3": "Sarajevo",
-            "l_4": "Brod",
-            "l_5": "Zagreb",
-            "l_6": "Dalmatia",
-            "l_7": "Cherso",
-            "l_8": "Rab",
-            "l_9": "Lussin",
-            "l_10": "Montenegro",
-            "l_11": "Gospic",
-            "l_12": "Bihac",
-            "l_13": "Northern Albania",
-            "l_14": "Italy"
+            "l_1": "Italy",
+            "l_2": "Brenner",
+            "l_3": "Po Valley",
+            "l_4": "Argenta Gap",
+            "l_5": "Austria",
+            "l_6": "Venice",
+            "l_7": "Trieste",
+            "l_8": "Istrian ports"
         },
         "events": {
-            "e_1": "Operation Accomplish",
-            "e_2": "Operation Bingham",
-            "e_3": "Final Offensive in Northern Jugoslavia"
+            "e_1": "Interdiction policy",
+            "e_2": "Final Offensive in the Italian Theatre",
+            "e_3": "Eighth Army Battle",
+            "e_4": "Fifth Army Battle",
+            "e_5": "Combined Eighth and Fifth Armies Offensives"
         },
         "organisations": {
-            "o_1": "B.A.F.",
+            "o_1": "M.A.S.A.F.",
             "o_2": "M.A.T.A.F.",
-            "o_3": "Jugoslav Fourth Army",
-            "o_4": "Long Range Desert Group",
-            "o_5": "Special Boating Service",
-            "o_6": "Combined Operations, Zadar (C.O.Z.A.)"
+            "o_3": "German XIV Panzer Corps"
         }
     },
     "keywords": [
-        "Air Force",
-        "Coastal Defence Batteries",
-        "Naval Operations",
-        "German Army Withdrawal",
-        "Jugoslav Army",
-        "Retreat",
-        "Offensive"
+        "interdiction",
+        "bombing",
+        "sorties",
+        "ammunition",
+        "fuel",
+        "offensive",
+        "supplies",
+        "troop movement",
+        "German power",
+        "Eighth Army",
+        "Fifth Army"
     ],
     "themes": [
         "Military Operations",
         "Strategic Decisions",
-        "Cooperation",
-        "Air Support"
+        "Resource Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
         "Strategic Decisions": [
-            "e_1",
-            "e_2"
-        ],
-        "Cooperation": [
-            "e_1",
-            "e_3"
-        ],
-        "Air Support": [
-            "e_2"
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "7th February 1945",
+            "date": "1945",
             "locations": [
                 "l_1"
             ],
@@ -80,50 +70,66 @@
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Accomplish is completed after protracted negotiations, establishing an air base in Zadar to support Allied operations."
+            "eventSummary": "The interdiction policy aims to stop the flow of supplies into Italy for enemy ground forces, achieving significant destruction of enemy resources."
         },
         {
             "event": "e_2",
-            "date": "2nd April 1945",
+            "date": "April 9th to May 2nd, 1945",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Operation Bingham begins as a modified plan to support the Jugoslav Army in their efforts against the remaining German forces."
-        },
-        {
-            "event": "e_3",
-            "date": "March 1945",
-            "locations": [
-                "l_6",
-                "l_9",
-                "l_11"
-            ],
-            "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_3"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "The final offensive in Northern Jugoslavia occurs with the Jugoslav Army aiming to clear enemy forces from the region."
+            "eventSummary": "The final offensive in the Italian theatre leads to the complete destruction of German power over 24 days."
+        },
+        {
+            "event": "e_3",
+            "date": "April 9th to 14th, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Eighth Army engages in combat breaching the Senio and Santerno River lines."
+        },
+        {
+            "event": "e_4",
+            "date": "April 19th to 20th, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Fifth Army battles to advance towards the Po Valley."
+        },
+        {
+            "event": "e_5",
+            "date": "April 21st to 24th, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The combined offensives of the Eighth and Fifth Armies take place as the enemy attempts to flee across the Po."
         }
     ]
 }

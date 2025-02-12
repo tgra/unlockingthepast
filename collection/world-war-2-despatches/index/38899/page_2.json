@@ -1,126 +1,120 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Commander-in-Chief, Mediterranean",
+            "p_2": "Naval Commander Western Task Force"
+        },
         "locations": {
-            "l_1": "Maiori",
-            "l_2": "Vietri",
-            "l_3": "Malta",
-            "l_4": "Bizerta",
-            "l_5": "Taranto",
-            "l_6": "Monte Corvino",
-            "l_7": "Paestum",
-            "l_8": "Salerno",
-            "l_9": "Tripoli"
+            "l_1": "Sicily",
+            "l_2": "Gulf of Salerno",
+            "l_3": "Gulf of Gaeta",
+            "l_4": "Naples",
+            "l_5": "Tripoli",
+            "l_6": "Milazzo",
+            "l_7": "Messina",
+            "l_8": "Reggio"
         },
         "events": {
-            "e_1": "Operation Gibbon",
-            "e_2": "Operation Slapstick",
-            "e_3": "Operation Dragoon",
-            "e_4": "Operation Avalanche"
+            "e_1": "Operation Husky",
+            "e_2": "Operation Avalanche",
+            "e_3": "Operation Baytown",
+            "e_4": "Italian Armistice"
         },
         "organisations": {
-            "o_1": "X Corps",
-            "o_2": "Force H",
-            "o_3": "Force V",
-            "o_4": "12th Air Support Command",
-            "o_5": "Fifth Army"
+            "o_1": "Eighth Army",
+            "o_2": "B.B.C."
         }
     },
     "keywords": [
-        "landing",
-        "military operations",
+        "Military Operations",
         "Italian Armistice",
-        "Fighter cover",
-        "naval forces",
-        "enemy air activity"
+        "Naval Task Forces",
+        "Intelligence",
+        "Assault"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Naval Operations",
-        "Air Support"
+        "Intelligence",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Strategic Decisions": [
-            "e_1",
             "e_3"
         ],
-        "Naval Operations": [
-            "e_2",
+        "Intelligence": [
             "e_4"
         ],
-        "Air Support": [
+        "Logistics": [
+            "e_2",
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "10th July, 1943",
             "locations": [
-                "l_4"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Gibbon involves the covering of escape routes for units of the Italian Fleet to Malta."
+            "connectedEvents": [],
+            "eventSummary": "Operation Husky is a military operation involving the Allied invasion of Sicily, aiming to weaken Axis powers."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "3rd September, 1943",
             "locations": [
-                "l_5"
+                "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Operation Slapstick aims to load elements of the First British Airborne Division for discharge at Taranto."
+            "eventSummary": "Operation Avalanche is a military operation launched by the Allies to assault the Gulf of Salerno area, following Operation Husky."
         },
         {
             "event": "e_3",
-            "date": "August 1944",
-            "locations": [
-                "l_6"
+            "date": "3rd September, 1943",
+            "locations": [],
+            "persons": [
+                "p_1",
+                "p_2"
             ],
-            "persons": [],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "Operation Dragoon initiates landings on the South coast of France, impacting several military decisions."
+            "eventSummary": "Operation Baytown involves the assault across the Straits of Messina, playing a critical role in the Sicilian campaign."
         },
         {
             "event": "e_4",
-            "date": "N/A",
-            "locations": [
-                "l_1",
-                "l_2"
+            "date": "August 1943",
+            "locations": [],
+            "persons": [
+                "p_1"
             ],
-            "persons": [],
             "organisations": [
-                "o_5"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Operation Avalanche's landings experience significant challenges due to infrastructure delays and enemy resistance."
+            "connectedEvents": [],
+            "eventSummary": "The Italian Armistice is signed, formally ending hostilities between the Allies and Italian forces, affecting subsequent military operations."
         }
     ]
 }

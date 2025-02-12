@@ -1,68 +1,66 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Dwight D. Eisenhower",
-            "p_2": "Field-Marshal Lord Wilson"
+            "p_1": "General Mark W. Clark",
+            "p_2": "General Henri H. Giraud"
         },
         "locations": {
-            "l_1": "North Africa",
-            "l_2": "Sicily",
-            "l_3": "Italy",
-            "l_4": "United Kingdom",
-            "l_5": "Mediterranean",
-            "l_6": "Thrace",
-            "l_7": "Pyrenees"
+            "l_1": "Sicily",
+            "l_2": "Cotrone",
+            "l_3": "Calabria",
+            "l_4": "Sardinia",
+            "l_5": "Naples",
+            "l_6": "Taranto",
+            "l_7": "Corsica"
         },
         "events": {
-            "e_1": "Casablanca conference",
-            "e_2": "Trident conference",
-            "e_3": "Italian campaign"
+            "e_1": "Operation BUTTRESS",
+            "e_2": "Operation GOBLET",
+            "e_3": "Operation BRIMSTONE",
+            "e_4": "Operation FIREBRAND",
+            "e_5": "Invasion of Sicily"
         },
         "organisations": {
-            "o_1": "Combined Chiefs of Staff",
-            "o_2": "Supreme Allied Command"
+            "o_1": "Eighth Army",
+            "o_2": "Fifth Army",
+            "o_3": "Joint Intelligence Committee",
+            "o_4": "Allied Force Headquarters"
         }
     },
     "keywords": [
-        "invasion",
-        "Sicily",
-        "North Africa",
-        "Combined Chiefs of Staff",
-        "Supreme Allied Commander",
-        "Germany",
-        "Italy",
-        "Allied Forces",
-        "amphibious operations",
-        "military strategy"
+        "Eighth Army",
+        "Operation",
+        "Invasion",
+        "Landing",
+        "Forces"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Campaign Planning",
-        "Allied Cooperation"
+        "Strategic Decision Making",
+        "Allied Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
         "Strategic Decisions": [
-            "e_2"
-        ],
-        "Campaign Planning": [
-            "e_3"
-        ],
-        "Allied Cooperation": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 1943",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -71,13 +69,30 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_5"
             ],
-            "eventSummary": "The Casablanca conference outlines the strategy for the invasion of Sicily as part of the military efforts clearing North Africa."
+            "eventSummary": "Operation BUTTRESS plans an assault against Cotrone as part of the strategic objectives following the Sicilian campaign."
         },
         {
             "event": "e_2",
-            "date": "May 1943",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Operation GOBLET is planned to exploit the landings at Cotrone and accelerate the capture of key airfields in Calabria."
+        },
+        {
+            "event": "e_3",
+            "date": "",
             "locations": [
                 "l_4"
             ],
@@ -85,19 +100,18 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_5"
             ],
-            "eventSummary": "At the Trident conference, the Combined Chiefs of Staff advise the Supreme Allied Commander to prepare for a major attack on Europe from the United Kingdom."
+            "eventSummary": "Operation BRIMSTONE is prepared to launch against Sardinia only if mainland resistance is assessed as too strong."
         },
         {
-            "event": "e_3",
-            "date": "1943-1944",
+            "event": "e_4",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_7"
             ],
             "persons": [
                 "p_2"
@@ -105,11 +119,26 @@
             "organisations": [
                 "o_2"
             ],
+            "connectedEvents": [],
+            "eventSummary": "Operation FIREBRAND is discussed for the capture of Corsica, with General Giraud tasked to nominate a commander."
+        },
+        {
+            "event": "e_5",
+            "date": "1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
             "connectedEvents": [
                 "e_1",
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Italian campaign is planned to eliminate Italy from World War II, requiring flexible military strategies to exploit successes in the region."
+            "eventSummary": "The Invasion of Sicily commences, leading to significant changes in military planning and operations by Allied forces."
         }
     ]
 }

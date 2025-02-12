@@ -1,102 +1,84 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Wilson"
+            "p_1": "Doolittle"
         },
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Bologna",
-            "l_3": "Ravenna",
-            "l_4": "Adige",
-            "l_5": "Alps",
-            "l_6": "Jugoslavia",
-            "l_7": "Forli",
-            "l_8": "Route 67",
-            "l_9": "Adriatic",
-            "l_10": "Pennine",
-            "l_11": "Apennines",
-            "l_12": "Po",
-            "l_13": "Ticino",
-            "l_14": "northwestern Italy"
+            "l_1": "Salerno",
+            "l_2": "Heel",
+            "l_3": "Sicily",
+            "l_4": "Naples",
+            "l_5": "Sardinia",
+            "l_6": "Lombardy",
+            "l_7": "Mediterranean",
+            "l_8": "N.W. Scotland",
+            "l_9": "Trapani",
+            "l_10": "Rome"
         },
         "events": {
-            "e_1": "Offensive Operations in Italy",
-            "e_2": "Planning for Spring Offensive",
-            "e_3": "Capture of Bologna",
-            "e_4": "Capture of Ravenna"
+            "e_1": "Salerno assault",
+            "e_2": "airborne operations"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "Fifth Army",
-            "o_3": "British District Headquarters",
-            "o_4": "Supreme Allied Command",
-            "o_5": "South African Armoured Division",
-            "o_6": "War Office"
+            "o_1": "S.E.F.",
+            "o_2": "T.E.F.",
+            "o_3": "F.B."
         }
     },
     "keywords": [
-        "Offensive",
-        "Operations",
-        "Bologna",
-        "Ravenna",
-        "Eighth Army",
-        "Fifth Army",
-        "September 1943",
-        "December 1944",
-        "Ammunition",
-        "Spring Offensive"
+        "airfield",
+        "fighter",
+        "bomber",
+        "Salerno",
+        "airborne operations"
     ],
     "themes": [
-        "Military Strategy",
-        "Planning",
-        "Supply Issues",
-        "Defense Operations"
+        "Military Operations",
+        "Air Support Operations",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Planning": [
             "e_2"
         ],
-        "Supply Issues": [
-            "e_2"
+        "Air Support Operations": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 1944",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Salerno assault requires the capture of airfields to support operations."
+        },
+        {
+            "event": "e_2",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The offensive operations in Italy continue as the commanders strategize on the next steps, aiming to capture critical areas such as Bologna and Ravenna while managing troop rest and reorganizations."
-        },
-        {
-            "event": "e_2",
-            "date": "October 23, 1944",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
@@ -104,41 +86,7 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Plans for the spring offensive are discussed, focusing on operations in Jugoslavia and strategies for halting the offensive in Italy as troop exhaustion grows."
-        },
-        {
-            "event": "e_3",
-            "date": "November 15, 1944",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The capture of Bologna is targeted for a significant push, as commanders assess military strength and the impact of supply shortages on their offensive efforts."
-        },
-        {
-            "event": "e_4",
-            "date": "November 30, 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Eighth Army aims to capture Ravenna while managing troop coalition and adverse weather conditions to execute the planned offensive."
+            "eventSummary": "Airborne operations may be necessary to secure airfields in the Salerno area."
         }
     ]
 }

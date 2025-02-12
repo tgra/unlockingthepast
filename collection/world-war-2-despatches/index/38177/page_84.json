@@ -1,106 +1,138 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Ritchie",
-            "p_2": "Rommel"
+            "p_1": "Commander",
+            "p_2": "Commander-in-Chief",
+            "p_3": "Major-General F. I. S. Tuker",
+            "p_4": "Messervy",
+            "p_5": "De Guingand"
         },
         "locations": {
-            "l_1": "Acroma",
-            "l_2": "Bir Hacheim",
-            "l_3": "Trigh Capuzzo",
-            "l_4": "Gebel Akhdar",
-            "l_5": "Tmimi",
-            "l_6": "Afrag",
-            "l_7": "Mechili"
+            "l_1": "Bir Hacheim",
+            "l_2": "Sidra",
+            "l_3": "Harmat",
+            "l_4": "Mteifel",
+            "l_5": "Gazala",
+            "l_6": "El Harmat",
+            "l_7": "E] Adem",
+            "l_8": "Temrad",
+            "l_9": "Segnali",
+            "l_10": "5oth Division",
+            "l_11": "Cauldron",
+            "l_12": "Tmimi Afrag",
+            "l_13": "Alem Hamza",
+            "l_14": "Got el Scerab",
+            "l_15": "Martuba",
+            "l_16": "Derna",
+            "l_17": "Cyprus"
         },
         "events": {
-            "e_1": "Battle of Gazala",
-            "e_2": "Counter-attack by the Eighth Army"
+            "e_1": "Destruction of 150th Brigade",
+            "e_2": "Consolidation by the enemy",
+            "e_3": "Operation Instruction No. 128",
+            "e_4": "Offensive directed on the line Tmimi Afrag",
+            "e_5": "Defence of Cyprus"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "Royal Air Force",
-            "o_3": "Ariete Division",
-            "o_4": "1st Armoured Brigade",
-            "o_5": "Trieste Division",
-            "o_6": "1st South African Division",
-            "o_7": "50th Division",
-            "o_8": "5th Indian Division"
+            "o_2": "G.H.Q., M.E.F."
         }
     },
     "keywords": [
-        "Counter-attack",
-        "Armoured Brigade",
-        "Enemy Armour",
-        "Supply Convoy",
-        "Minefield"
+        "offensive",
+        "enemy",
+        "armour",
+        "division",
+        "supply",
+        "tanks",
+        "operation",
+        "defence"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Advancements",
-        "Supply Chain Issues"
+        "Defence Strategies",
+        "Command Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_4",
+            "e_5"
+        ],
+        "Defence Strategies": [
+            "e_3"
+        ],
+        "Command Decisions": [
+            "e_1",
             "e_2"
-        ],
-        "Tactical Advancements": [
-            "e_1"
-        ],
-        "Supply Chain Issues": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "30th May",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3",
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On 30th May, the Battle of Gazala unfolds as General Ritchie coordinates an armoured strategy while Rommel's forces regroup, marking a critical juncture in the fight for control."
-        },
-        {
-            "event": "e_2",
-            "date": "31st May",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_6",
-                "o_7",
-                "o_8"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "On the night of 31st May, the Eighth Army initiates a counter-attack after assessing the enemy's intentions, aligning its forces for a strategic offensive."
+            "eventSummary": "The destruction of the 150th Brigade is viewed with misgiving, as it indicates the enemy's consolidation in the area."
+        },
+        {
+            "event": "e_3",
+            "date": "1st July, 1942",
+            "locations": [
+                "l_17"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Instruction No. 128 outlines the defence strategy for Cyprus, superseding a previous instruction."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "An offensive is planned toward the line Tmimi Afrag, emphasizing the need for rapid action."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_17"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The defence of Cyprus is discussed in the context of upcoming military operations."
         }
     ]
 }

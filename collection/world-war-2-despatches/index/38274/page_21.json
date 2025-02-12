@@ -1,96 +1,140 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Governor-General",
-            "p_2": "H.M. Government",
-            "p_3": "South East Asia Command",
-            "p_4": "Fourteenth Army"
+            "p_1": "United States military personnel",
+            "p_2": "Fourteenth Army"
         },
         "locations": {
-            "l_1": "India",
-            "l_2": "Assam",
-            "l_3": "Bengal",
-            "l_4": "Calcutta",
-            "l_5": "China",
-            "l_6": "Southern India"
+            "l_1": "Calcutta",
+            "l_2": "Bombay",
+            "l_3": "Assam",
+            "l_4": "Parbatupur",
+            "l_5": "Ledo",
+            "l_6": "Amingaon",
+            "l_7": "Pandu",
+            "l_8": "Namrup",
+            "l_9": "Margherita",
+            "l_10": "Neamati",
+            "l_11": "Jorhat",
+            "l_12": "Brahmaputra",
+            "l_13": "Dohazari",
+            "l_14": "Chittagong",
+            "l_15": "East Bengal",
+            "l_16": "Iraq",
+            "l_17": "Vizagapatam",
+            "l_18": "India",
+            "l_19": "United Kingdom"
         },
         "events": {
-            "e_1": "Line of Communication Development",
-            "e_2": "Manpower and Recruiting Update"
+            "e_1": "completion of the Dohazari railhead",
+            "e_2": "fluctuations due to flooding",
+            "e_3": "development of inland water transport",
+            "e_4": "serious food scarcity in India",
+            "e_5": "joint investigation into port congestion in Calcutta"
         },
         "organisations": {
-            "o_1": "Indian Air Force",
-            "o_2": "Royal Indian Navy",
-            "o_3": "Women's Auxiliary Corps (India)",
-            "o_4": "Joint Transportation Committee"
+            "o_1": "Bengal and Assam Railway",
+            "o_2": "Food Department of the Government of India"
         }
     },
     "keywords": [
-        "Manpower",
-        "Recruitment",
         "Transportation",
-        "War Effort",
-        "Military Operations"
+        "Flooding",
+        "Railways",
+        "Food Scarcity",
+        "Ports"
     ],
     "themes": [
-        "Military Operations",
-        "Manpower Challenges",
-        "Logistics"
+        "Logistics",
+        "Natural Disasters",
+        "Supply Chain Issues"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Manpower Challenges": [
-            "e_2"
-        ],
         "Logistics": [
-            "e_1"
+            "e_1",
+            "e_3"
+        ],
+        "Supply Chain Issues": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 21, 1943",
+            "date": "1st September, 1946",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_13",
+                "l_14"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_5"
             ],
-            "eventSummary": "The recommendations for short-term improvements on the Assam Line of Communication are accepted and telegraphed to H.M. Government, emphasizing the need to enhance transportation and logistical support."
+            "eventSummary": "The completion of the Dohazari railhead is achieved despite previous delays caused by flooding."
         },
         {
             "event": "e_2",
-            "date": "October-November 1943",
+            "date": "18th July, 1946",
             "locations": [
+                "l_12",
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Severe flooding on the banks of the Damodar River affects communication and transportation routes north-west of Calcutta."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_12"
             ],
-            "eventSummary": "A significant decrease in recruitment for both British and Indian military forces is reported, highlighting an acute shortage of officers amidst increased commitments due to war demands."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Development of inland water transport is impeded by floods; however, measures are being taken to address the issues."
+        },
+        {
+            "event": "e_4",
+            "date": "Early November 1946",
+            "locations": [
+                "l_18"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Food scarcity in India becomes critical, especially affecting army supplies in the Fourteenth Army area."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A joint investigation is conducted into the port congestion in Calcutta."
         }
     ]
 }

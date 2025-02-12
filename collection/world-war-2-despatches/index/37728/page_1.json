@@ -1,68 +1,64 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief, Eastern Fleet"
+            "p_1": "FIELD-MARSHAL The VISCOUNT WAVELL"
         },
         "locations": {
-            "l_1": "North-East India",
+            "l_1": "India",
             "l_2": "Ceylon",
-            "l_3": "Calcutta",
-            "l_4": "Dinjan",
-            "l_5": "Colombo",
-            "l_6": "Trincomalee",
-            "l_7": "Vizagapatam",
-            "l_8": "Burma",
-            "l_9": "Bombay"
+            "l_3": "Burma",
+            "l_4": "Rangoon",
+            "l_5": "Calcutta",
+            "l_6": "Bay of Bengal",
+            "l_7": "Magwe",
+            "l_8": "N.E. India",
+            "l_9": "Trincomalee",
+            "l_10": "Colombo"
         },
         "events": {
-            "e_1": "Japanese Naval Raid",
-            "e_2": "Attack on Colombo",
-            "e_3": "Attack on Trincomalee",
-            "e_4": "Cripps Mission"
+            "e_1": "Fall of Rangoon",
+            "e_2": "Japanese invasion",
+            "e_3": "Defence of Calcutta",
+            "e_4": "Air raids in April 1942",
+            "e_5": "Attack at Magwe"
         },
         "organisations": {
-            "o_1": "Eastern Fleet",
-            "o_2": "War Cabinet"
+            "o_1": "The War Office",
+            "o_2": "Eastern Fleet",
+            "o_3": "British Division",
+            "o_4": "Air Force"
         }
     },
     "keywords": [
-        "Japanese naval raid",
-        "defence of India",
-        "military operations",
-        "Eastern Fleet",
-        "air protection",
-        "Ceylon"
+        "Despatch",
+        "defence",
+        "offensive",
+        "invasion",
+        "air raids"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategies",
-        "Air Defence",
-        "Geopolitical Tensions"
+        "Strategic Decisions",
+        "Defensive Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_5"
         ],
-        "Diplomacy": [
+        "Strategic Decisions": [
+            "e_3",
             "e_4"
-        ],
-        "Naval Strategies": [
-            "e_1"
-        ],
-        "Air Defence": [
-            "e_2",
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 5-6, 1942",
+            "date": "March 1942",
             "locations": [
-                "l_2",
-                "l_1"
+                "l_4",
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -73,14 +69,31 @@
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "A Japanese naval raid enters Indian waters, attacking Colombo and Trincomalee, leading to significant air and naval engagements."
+            "eventSummary": "The fall of Rangoon occurs, escalating the threat of Japanese invasion in the region."
         },
         {
             "event": "e_2",
-            "date": "April 5, 1942",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Japanese invasion becomes a serious threat following the fall of Rangoon."
+        },
+        {
+            "event": "e_3",
+            "date": "",
             "locations": [
                 "l_5"
             ],
@@ -89,47 +102,43 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "Colombo is attacked by Japanese carrier-borne aircraft, resulting in losses for defending forces."
-        },
-        {
-            "event": "e_3",
-            "date": "April 6, 1942",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Trincomalee is attacked on this day during the Japanese raid, with defending forces inflicting some damage on enemy aircraft."
+            "eventSummary": "Measures are taken for the defence of Calcutta against impending air raids."
         },
         {
             "event": "e_4",
             "date": "April 1942",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The Cripps Mission proposals are discussed in Delhi amidst security concerns regarding a Japanese invasion."
+            "eventSummary": "Air raids on Ceylon occur, testing the effectiveness of the available air force."
+        },
+        {
+            "event": "e_5",
+            "date": "21st and 22nd March",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An enemy attack destroys a significant portion of the air force based in Upper Burma."
         }
     ]
 }

@@ -1,120 +1,135 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "R. S. Site",
-            "p_2": "C. T. Jellicoe",
-            "p_3": "P. L. Vian",
-            "p_4": "St. J. A. Micklethwait",
-            "p_5": "A. L. Poland"
+            "p_1": "Admiral Sir Henry H. Harwood",
+            "p_2": "Admiral Sir Andrew B. Cunningham"
         },
         "locations": {
-            "l_1": "Malta",
-            "l_2": "Alexandria",
-            "l_3": "Tobruk",
-            "l_4": "Taranto",
-            "l_5": "Crete",
-            "l_6": "Cyrenaica"
+            "l_1": "Mediterranean",
+            "l_2": "Malta",
+            "l_3": "Alexandria",
+            "l_4": "Cyrenaica",
+            "l_5": "Greece",
+            "l_6": "Crete",
+            "l_7": "Messina",
+            "l_8": "Gulf of Taranto"
         },
         "events": {
-            "e_1": "Convoy M.W.10 Departure",
-            "e_2": "Enemy Air Attacks",
-            "e_3": "Critical Naval Engagement"
+            "e_1": "Battle of Sirte",
+            "e_2": "Operation M.G. One",
+            "e_3": "Operation M.W.10",
+            "e_4": "Operation Fullsize"
         },
         "organisations": {
-            "o_1": "H.M.S. CARLISLE",
-            "o_2": "Fifth Destroyer Flotilla",
-            "o_3": "Fifteenth Cruiser Squadron",
-            "o_4": "Fourteenth Destroyer Flotilla",
-            "o_5": "H.M.S. LIVELY",
-            "o_6": "Naval Co-operation Group 201"
+            "o_1": "Eighth Army",
+            "o_2": "Royal Air Force",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
-        "escort force",
-        "torpedoed",
-        "naval engagement",
-        "air attack",
+        "Admiralty",
         "convoy",
-        "destroyer",
-        "battleship"
+        "operation",
+        "air attack",
+        "submarine patrols"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Air Attacks",
-        "Convoy Protection"
+        "Naval Strategy",
+        "Air Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Air Attacks": [
+        "Naval Strategy": [
+            "e_1",
             "e_2"
         ],
-        "Naval Warfare": [
-            "e_3"
-        ],
-        "Convoy Protection": [
-            "e_1"
+        "Air Warfare": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 19, 1943",
+            "date": "22 March 1942",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_4"
+                "p_2"
             ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Battle of Sirte takes place on 22 March 1942, involving a convoy and significant naval engagement."
+        },
+        {
+            "event": "e_2",
+            "date": "19 March - 28 March 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation M.G. One is conducted from 19 March to 28 March 1942, aimed at facilitating the movement of a convoy."
+        },
+        {
+            "event": "e_3",
+            "date": "March 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Operation M.W.10 is conducted in March 1942 to support the convoy to Malta."
+        },
+        {
+            "event": "e_4",
+            "date": "D.z",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The convoy M.W.10 departs Alexandria with multiple naval escorts.",
-            "eventSignificance": "Initiates a critical naval operation amidst escalating conflicts."
-        },
-        {
-            "event": "e_2",
-            "date": "March 22, 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Enemy air attacks on the convoy begin early on March 22, posing a significant threat.",
-            "eventSignificance": "Tests the defenses of the convoy, showcasing the effectiveness of the naval escorts."
-        },
-        {
-            "event": "e_3",
-            "date": "March 22, 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_3"
-            ],
             "connectedEvents": [],
-            "eventSummary": "A critical naval engagement occurs as enemy surface forces attempt to intercept the convoy.",
-            "eventSignificance": "Highlights the bravery and strategic planning of the naval commanders in safeguarding the convoy."
+            "eventSummary": "Operation Fullsize is executed to distract enemy air forces on D.z."
         }
     ]
 }

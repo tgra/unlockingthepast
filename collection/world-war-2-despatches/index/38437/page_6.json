@@ -1,46 +1,39 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Air Commander-in-Chief"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Belgium",
-            "l_2": "Maidstone",
-            "l_3": "Otham",
-            "l_4": "Folkestone",
-            "l_5": "London",
-            "l_6": "Swanscombe",
-            "l_7": "Gravesend",
-            "l_8": "Cuckfield",
-            "l_9": "Bethnal Green",
-            "l_10": "Platt",
-            "l_11": "Sevenoaks",
-            "l_12": "North Downs",
-            "l_13": "Kent"
+            "l_1": "London",
+            "l_2": "Bristol",
+            "l_3": "Cobham",
+            "l_4": "Kent",
+            "l_5": "Limpsfield",
+            "l_6": "Solent"
         },
         "events": {
-            "e_1": "Diver Campaign",
-            "e_2": "Bombardment of Maidstone",
-            "e_3": "Shelling in Kent"
+            "e_1": "Overlord",
+            "e_2": "Diver",
+            "e_3": "German attacks",
+            "e_4": "Eve of the Attacks"
         },
         "organisations": {
-            "o_1": "Royal Observer Corps",
-            "o_2": "Air Ministry",
-            "o_3": "Chiefs of Staff"
+            "o_1": "Air Ministry",
+            "o_2": "R.A.F. Regiment",
+            "o_3": "Royal Armoured Corps"
         }
     },
     "keywords": [
-        "German reconnaissance",
-        "modified sites",
+        "searchlights",
+        "balloons",
+        "defence",
+        "bombing",
         "pilotless aircraft",
-        "air opposition",
-        "anti-aircraft fire"
+        "missiles",
+        "modified sites"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Psychological Warfare",
-        "Aerial Warfare"
+        "Defensive Planning",
+        "Enemy Tactics"
     ],
     "topicModel": {
         "Military Operations": [
@@ -48,79 +41,67 @@
             "e_2",
             "e_3"
         ],
-        "Defensive Strategies": [
+        "Defensive Planning": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_4"
         ],
-        "Aerial Warfare": [
-            "e_1",
-            "e_2"
-        ],
-        "Psychological Warfare": [
-            "e_2"
+        "Enemy Tactics": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 12-13, 1944",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_7",
-                "l_10"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "The Diver Campaign commences with German forces launching pilotless aircraft against British targets, leading to immediate responses from the Royal Observer Corps and subsequent aerial engagements."
+            "eventSummary": "Overlord represents a significant military operation focusing on the defense of key locations like London and Bristol."
         },
         {
             "event": "e_2",
-            "date": "June 12, 1944",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_4"
             ],
-            "eventSummary": "The Bombardment of Maidstone occurs as German long-range guns shell towns, creating uncertainty and demonstrating new forms of aerial attack."
+            "eventSummary": "Diver indicates a defensive strategy against the threat posed by enemy missiles during the war."
         },
         {
             "event": "e_3",
-            "date": "Early June 1944",
-            "locations": [
-                "l_9",
-                "l_8"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "The Shelling in Kent features the first use of long-range guns against non-coastal targets, raising alarms about possible new German weaponry and tactics."
+            "eventSummary": "The German attacks initiate a series of developments that lead to increased tension and military readiness."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Eve of the Attacks describes the preparations and strategic considerations leading up to the anticipated German offensives."
         }
     ]
 }

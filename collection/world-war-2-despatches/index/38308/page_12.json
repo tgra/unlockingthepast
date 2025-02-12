@@ -1,102 +1,84 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A.C.1",
-            "p_2": "Spruance"
+            "p_1": "Captain D.7",
+            "p_2": "Captain D.27",
+            "p_3": "Rear Admiral E. J. P. Brind",
+            "p_4": "Captain J. BE Wright"
         },
         "locations": {
-            "l_1": "Miyako",
-            "l_2": "Nobara",
-            "l_3": "Hirara",
-            "l_4": "Osaki",
-            "l_5": "Sukama",
-            "l_6": "Ishigaki",
-            "l_7": "Ashigaki",
-            "l_8": "Miyara",
-            "l_9": "Hegina",
-            "l_10": "Guam",
-            "l_11": "Manus",
-            "l_12": "Cardiff"
+            "l_1": "Mosquito",
+            "l_2": "Leyte",
+            "l_3": "Myako",
+            "l_4": "Ishigaki",
+            "l_5": "San Pedro Bay"
         },
         "events": {
-            "e_1": "Operation at Miyako",
-            "e_2": "Fleet Withdrawal"
+            "e_1": "Strike on Myako and Ishigaki airfields",
+            "e_2": "Operations concluded"
         },
         "organisations": {
-            "o_1": "Fifth Fleet Task Force",
-            "o_2": "British Pacific Fleet"
+            "o_1": "British Pacific Fleet",
+            "o_2": "U.S. Naval Mariner"
         }
     },
     "keywords": [
-        "Tactical Command",
-        "Air Strikes",
-        "Fleet Operations",
-        "Corporate Cooperation"
+        "Task Force 57",
+        "CINCPAC",
+        "5th Fleet",
+        "aircraft losses",
+        "Kamikaze"
     ],
     "themes": [
         "Military Operations",
-        "Airstrikes",
-        "Naval Strategy",
-        "International Military Cooperation"
+        "Tactical Command",
+        "Air Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
+        "Tactical Command": [
             "e_1"
+        ],
+        "Air Operations": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3314 ath May",
+            "date": "20th April",
             "locations": [
-                "Miyako",
-                "Nobara",
-                "Hirara",
-                "Osaki",
-                "Sukama",
-                "Ishigaki",
-                "Hegina"
+                "l_1",
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Tactical command is assumed with air strikes launched at various locations including Miyako, with observed hits damaging runways and facilities. The operation shows coordination with U.S. forces and a strategic intent to disrupt enemy airfields."
+            "eventSummary": "On 20th April, the Fleet executes a strike on Myako and Ishigaki airfields, aiming to crater their runways and engage enemy forces."
         },
         {
             "event": "e_2",
-            "date": "3314 ath May",
-            "locations": [
-                "Guam",
-                "Manus",
-                "Cardiff"
-            ],
+            "date": "26th April, 1945",
+            "locations": [],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Following the successful operation, the fleet begins to withdraw to Guam for refueling and preparing for future missions while expressing gratitude for cooperation between British and American naval forces."
+            "connectedEvents": [],
+            "eventSummary": "The operations concluded have resulted in significant aircraft losses, with a net result of 30 enemy aircraft shot down and 59 own aircraft lost."
         }
     ]
 }

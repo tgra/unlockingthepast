@@ -12,45 +12,75 @@
             "l_5": "Kuantan"
         },
         "events": {
-            "e_1": "Attack on the PRINCE OF WALES and REPULSE",
-            "e_2": "Operation against Japanese communications"
+            "e_1": "Operation against Japanese communications",
+            "e_2": "Attack on the PRINCE OF WALES",
+            "e_3": "Loss of PRINCE OF WALES and REPULSE"
         },
         "organisations": {
             "o_1": "Eastern Fleet",
-            "o_2": "British Royal Navy"
+            "o_2": "H.M.S. PRINCE OF WALES",
+            "o_3": "H.M.S. REPULSE",
+            "o_4": "Destroyers ELECTRA, EXPRESS and VAMPIRE"
         }
     },
     "keywords": [
+        "Japanese",
+        "aircraft",
         "torpedo",
-        "Japanese attacks",
-        "survivors",
-        "rescue work",
-        "military operation"
+        "operation",
+        "communication",
+        "naval base"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Survivor Rescue Efforts"
+        "Survivor Rescue",
+        "Enemy Engagement"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3"
+        ],
+        "Naval Warfare": [
             "e_2"
         ],
-        "Survivor Rescue Efforts": [
-            "e_1"
+        "Survivor Rescue": [
+            "e_3"
+        ],
+        "Enemy Engagement": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "10th December",
+            "date": "8th December 1941",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1",
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "An operation to raid Japanese communications is planned by the Eastern Fleet, involving sailing from Naval Base with PRINCE OF WALES and REPULSE."
+        },
+        {
+            "event": "e_2",
+            "date": "10th December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
                 "p_2"
             ],
             "organisations": [
@@ -58,28 +88,29 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The PRINCE OF WALES and REPULSE are attacked by Japanese forces, resulting in significant damage and loss, leading to a rescue operation for the surviving crew members."
+            "eventSummary": "The PRINCE OF WALES is attacked multiple times by Japanese forces, resulting in significant damage."
         },
         {
-            "event": "e_2",
-            "date": "8th December",
+            "event": "e_3",
+            "date": "10th December 1941",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "A military operation is initiated by the Eastern Fleet to raid Japanese communications at several specified locations, involving both strategic planning and execution."
+            "eventSummary": "Both PRINCE OF WALES and REPULSE are ultimately lost during the course of the operation due to repeated Japanese air assaults."
         }
     ]
 }

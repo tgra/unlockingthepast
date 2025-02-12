@@ -1,37 +1,37 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "R.A.F. Bomber Command",
+            "p_2": "United States Eighth Air Force",
+            "p_3": "Second British Army",
+            "p_4": "A.E.A.F."
+        },
         "locations": {
-            "l_1": "United Kingdom"
+            "l_1": "Cotentin Peninsula",
+            "l_2": "Caen",
+            "l_3": "Escoville",
+            "l_4": "Herouvillette"
         },
         "events": {
-            "e_1": "D-Day",
-            "e_2": "Preparatory Operations"
+            "e_1": "Operation Goodwood",
+            "e_2": "D-Day"
         },
         "organisations": {
-            "o_1": "U.S. Eighth Air Force",
-            "o_2": "RAF",
-            "o_3": "A.E.AF",
-            "o_4": "Ninth A.F.",
-            "o_5": "T.A.F.",
-            "o_6": "R.A.F. Coastal Command"
+            "o_1": "Allied Expeditionary Air Force"
         }
     },
     "keywords": [
-        "heavy attacks",
-        "special supply sites",
-        "reconnaissance",
-        "flying bombs",
-        "air operations",
-        "Allied air forces",
-        "D-Day",
-        "Preparatory Operations"
+        "armed reconnaissance",
+        "bombing",
+        "close support",
+        "tactical support",
+        "heavy bombers",
+        "ground forces"
     ],
     "themes": [
         "Military Operations",
         "Air Warfare",
-        "Strategic Bombing",
-        "Preparatory Attacks"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -39,48 +39,44 @@
             "e_2"
         ],
         "Air Warfare": [
-            "e_2"
+            "e_1"
         ],
-        "Strategic Bombing": [
-            "e_2"
-        ],
-        "Preparatory Attacks": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
+            "date": "18th July, 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 18th July, 1944, Operation Goodwood is executed as the largest air attack in support of ground forces, utilizing 1,676 heavy bombers and 343 medium and light bombers to facilitate an advance by the Second British Army in the Caen area."
+        },
+        {
+            "event": "e_2",
+            "date": "6th June, 1944",
             "locations": [
                 "l_1"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "D-Day marks the commencement of Allied forces' invasion of Western Europe."
-        },
-        {
-            "event": "e_2",
-            "date": "April 1, 1944 - June 5, 1944",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Preparatory Operations involve extensive air attacks on German targets to weaken enemy defenses before D-Day."
+            "eventSummary": "D-Day, occurring on 6th June, 1944, marks the initial Allied assault securing a bridgehead from the Cotentin Peninsula."
         }
     ]
 }

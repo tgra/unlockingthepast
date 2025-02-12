@@ -1,153 +1,104 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander, 3 Indian Corps",
-            "p_2": "Lt.-Col. McKellar"
+            "p_1": "Commander Singapore Fortress",
+            "p_2": "Supreme Commander South-West Pacific"
         },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Netherlands East Indies",
-            "l_3": "Seletar",
-            "l_4": "Sembawang",
-            "l_5": "Tengah",
-            "l_6": "Kallang",
-            "l_7": "Taiping",
-            "l_8": "Kelantan",
-            "l_9": "Kuala Krai"
+            "l_1": "Singapore Naval Base",
+            "l_2": "Johore",
+            "l_3": "Mersing",
+            "l_4": "Batu Anam",
+            "l_5": "Segamat",
+            "l_6": "Muar",
+            "l_7": "Kuala Lumpur",
+            "l_8": "Port Swettenham",
+            "l_9": "Singapore Island",
+            "l_10": "Slim River Village",
+            "l_11": "Trolak",
+            "l_12": "Tanjong Malim",
+            "l_13": "Malacca"
         },
         "events": {
-            "e_1": "Arrival of Dutch Air Reinforcements",
-            "e_2": "Decision on Air Policy",
-            "e_3": "Withdraw from Kelantan",
-            "e_4": "Counter-attack by 2/10 Baluch Regt.",
-            "e_5": "Evacuation of surplus stores and troops"
+            "e_1": "Withdrawal to Johore",
+            "e_2": "Slim River Battle"
         },
         "organisations": {
-            "o_1": "Dutch Air Force",
-            "o_2": "3 Indian Corps",
-            "o_3": "Malay Regiment",
-            "o_4": "Pahang Volunteers"
+            "o_1": "3 Indian Corps",
+            "o_2": "A.I.F.",
+            "o_3": "12 Brigade Group",
+            "o_4": "28 Brigade Group",
+            "o_5": "155 Field Regt.",
+            "o_6": "x1 Indian Division"
         }
     },
     "keywords": [
-        "Dutch air reinforcements",
-        "Malaya",
-        "Kelantan Force",
-        "air strategy",
-        "withdrawal"
+        "withdrawal",
+        "defence",
+        "enemy attack",
+        "artillery",
+        "battalion",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Strategic Withdrawal",
-        "Counter-offensive"
+        "Strategic Decisions",
+        "Defence Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4",
-            "e_5"
-        ],
-        "Air Support": [
-            "e_1",
             "e_2"
         ],
-        "Strategic Withdrawal": [
-            "e_3",
-            "e_5"
-        ],
-        "Counter-offensive": [
-            "e_4"
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 9-10, 1941",
+            "date": "7th January",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Dutch air reinforcements comprising bombers and fighters arrive in Malaya to assist operations."
+            "eventSummary": "Orders are issued for the withdrawal to Johore to ensure the security of the Singapore Naval Base."
         },
         {
             "event": "e_2",
-            "date": "December 11, 1941",
+            "date": "4th January to 8th January",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The air policy is decided to allow bombing primarily at night due to enemy air superiority."
-        },
-        {
-            "event": "e_3",
-            "date": "December 12, 1941",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Decision is made to withdraw the Kelantan Force due to the precarious situation and lack of resources."
-        },
-        {
-            "event": "e_4",
-            "date": "December 12-13, 1941",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The 2/10 Baluch Regt. launches counter-attacks against enemy forces, inflicting casualties."
-        },
-        {
-            "event": "e_5",
-            "date": "December 16, 1941",
-            "locations": [
-                "l_9"
+                "l_10",
+                "l_11",
+                "l_12"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
+                "o_1",
                 "o_3",
-                "o_4"
+                "o_4",
+                "o_6"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The systematic withdrawal of troops and surplus stores takes place, with minimal losses."
+            "eventSummary": "The Slim River Battle takes place, involving heavy fighting and significant losses for the Allied forces."
         }
     ]
 }

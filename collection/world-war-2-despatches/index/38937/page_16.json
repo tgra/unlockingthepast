@@ -1,124 +1,146 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Field-Marshal Lord Alexander",
-            "p_2": "Field-Marshal Lord Wilson",
-            "p_3": "His Excellency Field-Marshal The Viscount Alexander Tunis"
+            "p_1": "General Allfrey",
+            "p_2": "Brigadier General Taylor",
+            "p_3": "General Eisenhower",
+            "p_4": "Marshal Badoglio"
         },
         "locations": {
-            "l_1": "Italy",
-            "l_2": "North Africa",
-            "l_3": "Cyrenaica",
-            "l_4": "Normandy"
+            "l_1": "Taranto",
+            "l_2": "Brindisi",
+            "l_3": "Sicily",
+            "l_4": "Rome",
+            "l_5": "Bizerta",
+            "l_6": "Licata",
+            "l_7": "Calabria",
+            "l_8": "Locri",
+            "l_9": "Cittanova",
+            "l_10": "Polistena",
+            "l_11": "Rosarno",
+            "l_12": "River Mesima",
+            "l_13": "Pizzo",
+            "l_14": "Ustica",
+            "l_15": "Palermo"
         },
         "events": {
-            "e_1": "Allied Armies in Italy Campaign",
-            "e_2": "Invasion of Sicily",
-            "e_3": "Invasion of Italy",
-            "e_4": "Battle of Normandy"
+            "e_1": "Operation SLAPSTICK",
+            "e_2": "Cotrone operation (GOBLET)",
+            "e_3": "Operation AVALANCHE",
+            "e_4": "Italian surrender announcement"
         },
         "organisations": {
-            "o_1": "Allied Nations",
-            "o_2": "Fifteenth Army Group",
-            "o_3": "United Nations"
+            "o_1": "82 Airborne Division",
+            "o_2": "5 Corps",
+            "o_3": "Eighth Army",
+            "o_4": "1 Canadian Division",
+            "o_5": "1 Airborne Division",
+            "o_6": "5 Division",
+            "o_7": "231 Infantry Brigade",
+            "o_8": "Commandos",
+            "o_9": "United States Airborne Forces"
         }
     },
     "keywords": [
-        "Allied Armies",
-        "Italy",
-        "Campaign",
+        "Operation",
+        "Surrender",
         "Invasion",
-        "Normandy",
-        "Sicily"
+        "Allied Forces",
+        "Airborne"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Communication",
+        "Allied Strategy",
+        "Italian Response"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_4"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12th December, 1944",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation SLAPSTICK involves securing Taranto and Brindisi with the goal of advancing through Italy."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
             "locations": [
                 "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Cotrone operation (GOBLET) is cancelled, freeing up resources for other missions."
+        },
+        {
+            "event": "e_3",
+            "date": "8th September",
+            "locations": [
+                "l_5"
             ],
             "persons": [
                 "p_1",
                 "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "The Allied Armies in Italy campaign involves strategic military operations that span from September 1943 to December 1944, focusing on the land battles and operations during that period."
-        },
-        {
-            "event": "e_2",
-            "date": "3rd September, 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The invasion of Sicily is a key military operation that paved the way for subsequent operations in Italy, marking an important stage in the Allied campaign during World War II."
-        },
-        {
-            "event": "e_3",
-            "date": "Following the Sicilian campaign",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The invasion of Italy follows closely after the conquest of Sicily, representing a critical phase in the Grand Strategy of World War II aimed at defeating German forces."
+            "eventSummary": "Operation AVALANCHE is finalized with assaults planned for the Italian mainland."
         },
         {
             "event": "e_4",
-            "date": "D-Day, 6th June 1944",
+            "date": "8th September",
             "locations": [
                 "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_4",
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The Battle of Normandy marks a significant Allied offensive where trained divisions, initially engaged in Italy, form the spearhead of the assault on German defenses in Western Europe."
+            "eventSummary": "The announcement of the Italian surrender is synchronized with military operations, involving coordination among Allied forces."
         }
     ]
 }

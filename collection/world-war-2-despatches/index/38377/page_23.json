@@ -2,7 +2,7 @@
     "namedEntities": {
         "persons": {
             "p_1": "Vice-Admiral",
-            "p_2": "Rear-Admiral",
+            "p_2": "Rear-Admiral Commanding",
             "p_3": "NELSON",
             "p_4": "ARK ROYAL",
             "p_5": "DUNCAN",
@@ -12,57 +12,50 @@
             "p_9": "ISAAC SWEERS"
         },
         "locations": {
-            "l_1": "Malta",
-            "l_2": "Gozo",
-            "l_3": "Grand Harbour",
+            "l_1": "Gozo",
+            "l_2": "Grand Harbour",
+            "l_3": "Malta",
             "l_4": "Cagliari",
-            "l_5": "Algerian shore",
-            "l_6": "Cape de Fer",
+            "l_5": "Cape de Fer",
+            "l_6": "Algerian shore",
             "l_7": "Gibraltar"
         },
         "events": {
-            "e_1": "Convoy Entry into Grand Harbour",
-            "e_2": "Attack on Cant 506",
-            "e_3": "Submarine Attacks on Force A",
-            "e_4": "GURKHA's Attack on Submarine"
+            "e_1": "Arrival of the convoy",
+            "e_2": "Detachment of cruisers to Malta",
+            "e_3": "Report of enemy surface forces",
+            "e_4": "Landing of aircraft",
+            "e_5": "Enemy battleship sighting",
+            "e_6": "Submarine Attacks on Force A"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Force A",
+            "o_1": "10th Cruiser Squadron",
+            "o_2": "Royal Air Force",
             "o_3": "Home Fleet"
         }
     },
     "keywords": [
         "convoy",
         "aircraft",
-        "attack",
+        "enemy forces",
         "submarine",
-        "ground forces",
-        "surface forces"
+        "cruisers",
+        "patrol"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Aerial Surveillance",
-        "Tactical Maneuvering"
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_4",
+            "e_6"
+        ],
+        "Naval Strategy": [
             "e_3",
-            "e_4"
-        ],
-        "Naval Engagement": [
-            "e_1",
-            "e_2"
-        ],
-        "Aerial Surveillance": [
-            "e_2"
-        ],
-        "Tactical Maneuvering": [
-            "e_3",
-            "e_4"
+            "e_5"
         ]
     },
     "eventConnections": [
@@ -74,66 +67,76 @@
                 "l_2",
                 "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The convoy, except for IMPERIAL STAR, enters Grand Harbour undamaged and is warmly welcomed by the people of Malta."
+            "eventSummary": "The convoy arrives at Gozo in the morning and enters Grand Harbour undamaged in the early afternoon."
         },
         {
             "event": "e_2",
             "date": "28th September",
             "locations": [
-                "l_5"
+                "l_3"
             ],
             "persons": [
+                "p_2",
                 "p_3"
             ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "organisations": [
+                "o_1"
             ],
-            "eventSummary": "The NELSON sighted and pursued a Cant 506 aircraft but was shot down near the Algerian shore."
+            "connectedEvents": [],
+            "eventSummary": "Cruisers are detached from the 10th Cruiser Squadron to proceed ahead to Malta for refueling."
         },
         {
             "event": "e_3",
-            "date": "29th September",
-            "locations": [
-                "l_6",
-                "l_7"
-            ],
+            "date": "28th September",
+            "locations": [],
             "persons": [
-                "p_6",
-                "p_7",
-                "p_8",
-                "p_9"
+                "p_1"
             ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Submarine attacks occur on Force A as GURKHA and ISAAC SWEERS engage in detecting and pursuing the submarine."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A report from the Vice-Admiral in Malta indicates no enemy surface forces near the convoy's track."
         },
         {
             "event": "e_4",
+            "date": "28th September",
+            "locations": [],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Force A lands all aircraft and proceeds westward at 14 knots."
+        },
+        {
+            "event": "e_5",
+            "date": "29th September",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An enemy report indicates the presence of battleships, cruisers, and destroyers near Cagliari."
+        },
+        {
+            "event": "e_6",
             "date": "29th September",
             "locations": [],
             "persons": [
-                "p_8"
+                "p_6",
+                "p_8",
+                "p_9"
             ],
             "organisations": [],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "GURKHA makes an attack on a detected submarine, leading to a significant underwater explosion."
+            "connectedEvents": [],
+            "eventSummary": "Submarine attacks are reported on Force A, with GURKHA and ISAAC SWEERS searching for the attackers."
         }
     ]
 }

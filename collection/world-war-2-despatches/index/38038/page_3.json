@@ -1,53 +1,70 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Bruce A. Fraser"
+            "p_1": "C.S.10",
+            "p_2": "C.S.1o",
+            "p_3": "D.17",
+            "p_4": "SHEFFIELD",
+            "p_5": "NORFOLK",
+            "p_6": "Admiral Doenitz"
         },
         "locations": {
-            "l_1": "Kola Inlet",
-            "l_2": "North Cape",
-            "l_3": "Bear Island",
-            "l_4": "Akureyri"
+            "l_1": "BELFAST",
+            "l_2": "convoy",
+            "l_3": "northward",
+            "l_4": "north east",
+            "l_5": "southward",
+            "l_6": "south west",
+            "l_7": "position 73 35 N. 23 21 E."
         },
         "events": {
-            "e_1": "Sinking of the German Battlecruiser Scharnhorst",
-            "e_2": "Battle of 26th December, 1943"
+            "e_1": "First Contact WITH THE ENEMY BY Force 1",
+            "e_2": "SECOND ENGAGEMENT WITH THE ENEMY BY Force I"
         },
         "organisations": {
-            "o_1": "Home Fleet",
-            "o_2": "The Lords Commissioners of the Admiralty"
+            "o_1": "36th Division",
+            "o_2": "Force 1",
+            "o_3": "Force 2"
         }
     },
     "keywords": [
-        "Admiral",
-        "German Battlecruiser",
+        "destroyers",
         "convoy",
-        "tactics",
-        "destroyers"
+        "enemy",
+        "action",
+        "engagement",
+        "radar",
+        "echo"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Strategic Decisions"
+        "Naval Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
+        "Naval Engagements": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26 December, 1943",
+            "date": "",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_7"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
             ],
             "organisations": [
                 "o_1",
@@ -56,25 +73,25 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The German battlecruiser Scharnhorst is sunk during a maritime engagement off the North Cape, marking a significant victory in naval warfare."
+            "eventSummary": "At 0840, Force 1 makes its first contact with the enemy. The engagement involves radar tracking of enemy positions and adjustments in bearing and course to avoid weather challenges."
         },
         {
             "event": "e_2",
-            "date": "26 December, 1943",
+            "date": "",
             "locations": [
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_5",
+                "p_6"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The battle of 26th December, 1943 is a decisive engagement where strategic naval maneuvers lead to the destruction of the German battlecruiser Scharnhorst."
+            "connectedEvents": [],
+            "eventSummary": "Force 1 closes the convoy and engages in a second confrontation with the enemy after being joined by 36th Division."
         }
     ]
 }

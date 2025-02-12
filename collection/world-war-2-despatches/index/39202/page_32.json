@@ -1,175 +1,148 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Japanese prisoners",
-            "p_2": "Allied prisoners-of-war",
-            "p_3": "R.A.A.F. squadron",
-            "p_4": "12th Army",
-            "p_5": "Dakota aircrews",
-            "p_6": "U.S. prisoners-of-war",
-            "p_7": "British and Allied sick"
+            "p_1": "Air Vice-Marshal Bandon",
+            "p_2": "William MacClurry"
         },
         "locations": {
-            "l_1": "Hanoi",
-            "l_2": "Tourane",
-            "l_3": "Saigon",
-            "l_4": "Bangkok",
-            "l_5": "Moulmein",
-            "l_6": "Burma",
-            "l_7": "Ceylon",
-            "l_8": "Singapore",
-            "l_9": "Malaya",
-            "l_10": "Sumatra",
-            "l_11": "Cocos Islands",
-            "l_12": "Rangoon",
-            "l_13": "Kanchanaburi",
-            "l_14": "Java"
+            "l_1": "Kelanang airfield",
+            "l_2": "Telok Datok",
+            "l_3": "Kuala Lumpur",
+            "l_4": "Singapore",
+            "l_5": "Port Dickson",
+            "l_6": "Swettenham",
+            "l_7": "Morib Beach",
+            "l_8": "Bangkok",
+            "l_9": "Rangoon",
+            "l_10": "Saigon",
+            "l_11": "French Indo-China",
+            "l_12": "Phu My aerodrome"
         },
         "events": {
-            "e_1": "Operation Birdcage",
-            "e_2": "Japanese surrender",
-            "e_3": "Leaflet dropping campaign",
-            "e_4": "Operation Mastiff",
-            "e_5": "Evacuation of prisoners-of-war"
+            "e_1": "Landing at Port Dickson",
+            "e_2": "Landing at Morib",
+            "e_3": "Negotiation with Japanese Ambassador",
+            "e_4": "Allied Forces entry into French Indo-China",
+            "e_5": "R.A.F. party arrival in Saigon"
         },
         "organisations": {
-            "o_1": "Air Forces Command",
-            "o_2": "R.A.A.F.",
-            "o_3": "No. 232 Group, R.A.F."
+            "o_1": "Siamese Air Force",
+            "o_2": "R.A.F.",
+            "o_3": "Allied Forces",
+            "o_4": "Japanese Air Force"
         }
     },
     "keywords": [
-        "Operation Birdcage",
-        "leaflet dropping",
-        "Japanese surrender",
-        "Operation Mastiff",
-        "psychological warfare",
-        "prisoners-of-war",
-        "medical supplies",
-        "airlift"
+        "convoy",
+        "landing",
+        "occupation",
+        "negotiation",
+        "reception",
+        "airfield",
+        "forces"
     ],
     "themes": [
         "Military Operations",
-        "Psychological Warfare",
-        "Humanitarian Aid",
-        "Evacuation"
+        "Diplomacy",
+        "Resistance",
+        "Occupation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_4"
-        ],
-        "Psychological Warfare": [
-            "e_3",
-            "e_2"
-        ],
-        "Humanitarian Aid": [
+            "e_2",
             "e_4",
             "e_5"
         ],
-        "Evacuation": [
+        "Diplomacy": [
+            "e_3",
+            "e_4",
             "e_5"
+        ],
+        "Resistance": [
+            "e_4"
+        ],
+        "Occupation": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August, 1945",
+            "date": "September 10th",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Operation Birdcage is executed successfully under challenging conditions, with a high percentage of crews reaching their targets, including areas in Vietnam."
-        },
-        {
-            "event": "e_2",
-            "date": "August, 1945",
-            "locations": [
-                "l_4",
-                "l_5"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The Japanese surrender is announced, and the news spreads quickly through millions of leaflets dropped over South East Asia, bringing hope to the civilian and imprisoned population."
-        },
-        {
-            "event": "e_3",
-            "date": "August, 1945",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "A large-scale leaflet dropping campaign informs Japanese troops of their surrender and promotes the safe return of prisoners, serving as a form of psychological warfare."
+            "eventSummary": "The landing at Port Dickson goes forward as planned and without untoward incident."
+        },
+        {
+            "event": "e_2",
+            "date": "September 11th",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The landings at Morib take place, but they do not achieve the same success as those at Port Dickson due to difficult conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "December 8th",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Units of the Siamese Air Force attempt to resist the Japanese invader but are overwhelmed."
         },
         {
             "event": "e_4",
-            "date": "September 1 to 5, 1945",
+            "date": "September 12th",
             "locations": [
-                "l_12",
-                "l_4"
+                "l_10"
             ],
-            "persons": [
-                "p_4",
-                "p_5"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_5"
             ],
-            "eventSummary": "Operation Mastiff is launched to deliver urgent medical supplies and comfort to emaciated prisoners-of-war in the region, marking a significant humanitarian effort."
+            "eventSummary": "Allied Forces receive a divided reception upon entry into French Indo-China."
         },
         {
             "event": "e_5",
-            "date": "September, 1945",
+            "date": "September 12th",
             "locations": [
-                "l_12",
-                "l_4"
+                "l_10"
             ],
-            "persons": [
-                "p_4",
-                "p_6",
-                "p_7"
-            ],
+            "persons": [],
             "organisations": [
-                "o_3"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The evacuation of prisoners-of-war is successfully executed, with thousands being transported from the Bangkok area back to Rangoon as part of Operation Mastiff."
+            "connectedEvents": [],
+            "eventSummary": "The main R.A.F. party arrives in Saigon, receiving a demonstrative reception from the French."
         }
     ]
 }

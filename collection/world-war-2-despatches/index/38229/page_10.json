@@ -1,74 +1,134 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "General Smith",
-            "p_2": "President Johnson"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Washington D.C.",
-            "l_2": "New York"
+            "l_1": "Mergui",
+            "l_2": "Tavoy",
+            "l_3": "Kawkareik",
+            "l_4": "Mesoht",
+            "l_5": "Raheng",
+            "l_6": "Moulmein",
+            "l_7": "Bilin",
+            "l_8": "Salween",
+            "l_9": "Pa an",
+            "l_10": "Tenasserim",
+            "l_11": "Bangkok",
+            "l_12": "Myawaddy",
+            "l_13": "Gulf of Martaban",
+            "l_14": "Toungoo"
         },
         "events": {
-            "e_1": "Operation Freedom",
-            "e_2": "Summit Meeting"
+            "e_1": "Japanese Offensive Begins",
+            "e_2": "Action at Kawkareik",
+            "e_3": "The Action at Moulmein",
+            "e_4": "The Action on the Bilin",
+            "e_5": "The Battle of the Sitiang"
         },
         "organisations": {
-            "o_1": "United Nations",
-            "o_2": "US Military"
+            "o_1": "B.C.S. Burmarmy"
         }
     },
     "keywords": [
-        "Military",
-        "Diplomacy",
-        "Operation",
-        "Summit"
+        "offensive",
+        "evacuation",
+        "reconnaissance",
+        "bombing",
+        "fighter support"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy"
+        "Air Actions",
+        "Strategic Withdrawals"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Diplomacy": [
-            "e_2"
+        "Air Actions": [
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Withdrawals": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2023-10-10",
+            "date": "18th January",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Freedom is launched by General Smith, aiming to secure strategic locations."
-        },
-        {
-            "event": "e_2",
-            "date": "2023-10-12",
-            "locations": [
+                "l_1",
                 "l_2"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "A summit meeting is held in New York where President Johnson addresses the outcomes of Operation Freedom."
+            "eventSummary": "The Japanese offensive begins with deteriorating conditions at Mergui and Tavoy, leading to an evacuation order."
+        },
+        {
+            "event": "e_2",
+            "date": "20th January",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The enemy commences their attack on the Kawkareik position, leading to air support actions."
+        },
+        {
+            "event": "e_3",
+            "date": "30th January",
+            "locations": [
+                "l_6",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Japanese attack Moulmein while our forces are deployed to hold the right bank of the Salween."
+        },
+        {
+            "event": "e_4",
+            "date": "15th February",
+            "locations": [
+                "l_7",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The action on the Bilin involves extensive bombing operations in support of the troops holding this position."
+        },
+        {
+            "event": "e_5",
+            "date": "17th February",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The battle of the Sitiang occurs as Japanese forces attack the Bilin River position."
         }
     ]
 }

@@ -1,111 +1,124 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant General Louis Brereton"
+            "p_1": "R.A.F.",
+            "p_2": "Typhoon",
+            "p_3": "Spitfire"
         },
         "locations": {
-            "l_1": "United States",
-            "l_2": "Royal Air Force",
-            "l_3": "Leeuwarden",
-            "l_4": "Steewijk-Havelte",
-            "l_5": "Hopsten",
-            "l_6": "Salzbergen",
-            "l_7": "Moerdijk",
-            "l_8": "Walcheren",
-            "l_9": "Eindhoven",
-            "l_10": "sHertogenbosch",
-            "l_11": "North Sea",
-            "l_12": "Channel"
+            "l_1": "Norway",
+            "l_2": "Spanish Border",
+            "l_3": "Ostend",
+            "l_4": "Cherbourg",
+            "l_5": "Channel Islands",
+            "l_6": "Cap de la Hague",
+            "l_7": "Dieppe",
+            "l_8": "Caudecote",
+            "l_9": "Cap q Antifer",
+            "l_10": "Sortosville",
+            "l_11": "Lanmeur",
+            "l_12": "Boulogne",
+            "l_13": "Mt. Couple",
+            "l_14": "Beaumont Hague",
+            "l_15": "Au Feure"
         },
         "events": {
-            "e_1": "Operation Market",
-            "e_2": "Airborne Operations"
+            "e_1": "Disruption of Enemy Radar Cover",
+            "e_2": "Attacks on Radar Installations",
+            "e_3": "D-Day Assault"
         },
         "organisations": {
-            "o_1": "First Allied Airborne Army",
-            "o_2": "United States Ninth Air Force",
-            "o_3": "United States Eighth Air Force",
-            "o_4": "R.A.F. Bomber Command",
-            "o_5": "R.A.F. Coastal Command",
-            "o_6": "Air/Sea Rescue Service"
+            "o_1": "A.E.A.F.",
+            "o_2": "R.A.F. Second Tactical Air Force",
+            "o_3": "R.A.F. Bomber Command"
         }
     },
     "keywords": [
-        "troop carrier forces",
-        "airborne forces",
-        "heavy bombers",
-        "flak positions",
-        "diversions",
-        "re-supply",
-        "military operations"
+        "Radar",
+        "Attacks",
+        "Air Operations",
+        "Naval Operations",
+        "Sorties"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Logistics"
+        "Attacks on Enemy Installations",
+        "Air Superiority"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Attacks on Enemy Installations": [
             "e_2"
         ],
-        "Air Support": [
+        "Air Superiority": [
             "e_1"
-        ],
-        "Logistics": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 12, 1944",
+            "date": "",
             "locations": [
                 "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Disruption of enemy radar cover occurs across the Western Front, weakening the enemy's operational capabilities."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
                 "l_3",
                 "l_4",
                 "l_5",
                 "l_6",
                 "l_7",
-                "l_8"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Market involves extensive air support and logistics coordinated among various Allied air forces to attack and neutralize enemy positions."
-        },
-        {
-            "event": "e_2",
-            "date": "September 16-18, 1944",
-            "locations": [
-                "l_1",
+                "l_8",
                 "l_9",
                 "l_10",
                 "l_11",
-                "l_12"
+                "l_12",
+                "l_13",
+                "l_14",
+                "l_15"
             ],
             "persons": [
-                "p_1"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_3",
-                "o_4",
-                "o_6"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Airborne Operations see significant coordination of air forces where heavy bombers drop supplies and engage in attacks on enemy flak positions to support ground forces."
+            "eventSummary": "A series of targeted attacks on enemy radar stations are launched to reduce the enemy's situational awareness prior to D-Day."
+        },
+        {
+            "event": "e_3",
+            "date": "6th June 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "D-Day marks a significant offensive operation with the coordinated efforts of air and naval forces following extensive radar disruption."
         }
     ]
 }

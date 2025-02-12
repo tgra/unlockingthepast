@@ -1,103 +1,131 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C. J. Auchinleck"
+            "p_1": "General Cunningham",
+            "p_2": "Major-General N. M. Ritchie",
+            "p_3": "Air Marshal Tedder",
+            "p_4": "Lieutenant-General Sir Arthur Smith",
+            "p_5": "General Messervy"
         },
         "locations": {
-            "l_1": "Northern Front",
-            "l_2": "Persia",
-            "l_3": "Iraq",
-            "l_4": "Abu Kemal Qasr Muhaiwir",
-            "l_5": "Saudi Arabia",
-            "l_6": "Mosul",
-            "l_7": "Basra Shaiba",
-            "l_8": "Haffa",
-            "l_9": "Amman",
-            "l_10": "Palmyra",
-            "l_11": "Raqqa",
-            "l_12": "Deir ez Zor",
-            "l_13": "Khabur",
-            "l_14": "Rutba",
-            "l_15": "Tel Ghosain",
-            "l_16": "Western Desert"
+            "l_1": "Egypt",
+            "l_2": "Sidi Rezegh",
+            "l_3": "Tobruk",
+            "l_4": "Cairo",
+            "l_5": "Gabr Saleh",
+            "l_6": "Taieb el Essem",
+            "l_7": "Sidi Omar",
+            "l_8": "Halfaya",
+            "l_9": "Capuzzo",
+            "l_10": "Musaid",
+            "l_11": "Sollum Barracks",
+            "l_12": "Bardia",
+            "l_13": "Sidi Azeiz"
         },
         "events": {
-            "e_1": "Operation Instruction No. 117",
-            "e_2": "Operation Instruction No. 118"
+            "e_1": "Counterstroke on 24th November",
+            "e_2": "Assumption of Command by General Ritchie on 26th November",
+            "e_3": "Enemy tanks attack on 27th November"
         },
         "organisations": {
-            "o_1": "Middle East Forces (M.E.F.)"
+            "o_1": "Eighth Army",
+            "o_2": "1st South African Infantry Brigade",
+            "o_3": "7th Armoured Brigade",
+            "o_4": "4th Indian Division",
+            "o_5": "New Zealand Division",
+            "o_6": "5th New Zealand Infantry Brigade",
+            "o_7": "Guards Brigade"
         }
     },
     "keywords": [
-        "hostilities",
-        "garrisons",
-        "defences",
-        "supplies",
-        "operations",
-        "security"
+        "tanks",
+        "offensive",
+        "counter-stroke",
+        "brigade",
+        "armoured",
+        "headquarters"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Defensive Strategies",
-        "Logistics"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
-            "e_1",
             "e_2"
-        ],
-        "Defensive Strategies": [
-            "e_2"
-        ],
-        "Logistics": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1942-05-19",
+            "date": "24th November",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation Instruction No. 117 outlines the actions of the Ninth and Tenth Armies regarding the deployment of forces and construction of defenses to prepare for potential enemy movements in the region."
+            "eventSummary": "On 24th November, the enemy executed a counterstroke with armoured divisions, causing chaos in the rear areas."
         },
         {
             "event": "e_2",
-            "date": "1942-05-19",
+            "date": "26th November",
             "locations": [
-                "l_2",
-                "l_3",
                 "l_1",
                 "l_4"
             ],
             "persons": [
+                "p_2",
                 "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On 26th November, General Ritchie assumes command, taking over from General Cunningham in response to strategical concerns."
+        },
+        {
+            "event": "e_3",
+            "date": "27th November",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_12"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation Instruction No. 118 describes the defensive posture required by the Middle East Forces in response to a possible enemy attack through Persia, emphasizing the protection of critical resources in Iraq and Persia."
+            "eventSummary": "On 27th November, enemy tanks attacked the 5th New Zealand Infantry Brigade at Sidi Azeiz."
         }
     ]
 }

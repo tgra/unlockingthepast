@@ -1,55 +1,62 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C.-in-C.",
-            "p_2": "Rear Admiral Commanding Fleet Train",
-            "p_3": "Rear Admiral Commanding Destroyers",
-            "p_4": "Capt. D. 25",
-            "p_5": "Capt. D. 4",
-            "p_6": "Capt. D. 7",
-            "p_7": "Commander"
+            "p_1": "Captain",
+            "p_2": "Squadron Leader",
+            "p_3": "Commander 5th Fleet"
         },
         "locations": {
-            "l_1": "Leyte",
-            "l_2": "Borneo",
-            "l_3": "Sakishima Gunto",
-            "l_4": "Lae, New Guinea",
-            "l_5": "Sydney",
-            "l_6": "Miyako",
-            "l_7": "Ishigaki"
+            "l_1": "Ishigaki",
+            "l_2": "Miyako",
+            "l_3": "Hirara",
+            "l_4": "Nobara",
+            "l_5": "Keramo Retto",
+            "l_6": "Fleet Centre",
+            "l_7": "Cootie"
         },
         "events": {
-            "e_1": "Operation Iceberg",
-            "e_2": "Borneo operation"
+            "e_1": "First Bomber Strike",
+            "e_2": "Second Bomber Strike",
+            "e_3": "Dusk CAP",
+            "e_4": "Tactical Command Assumption by CTF 57",
+            "e_5": "Possible Submarine Contact",
+            "e_6": "Bomb Transfer Operation"
         },
         "organisations": {
-            "o_1": "Task Force 57",
-            "o_2": "Royal Navy"
+            "o_1": "1844 Squadron",
+            "o_2": "U.S.S. BLUEFISH",
+            "o_3": "H.M.S. KEMPENFELT",
+            "o_4": "H.M.S. FORMIDABLE",
+            "o_5": "H.M.S. INDOMITABLE",
+            "o_6": "H.M.S. BLACK PRINCE",
+            "o_7": "H.M.S. INDEFATIGABLE",
+            "o_8": "CIF 57"
         }
     },
     "keywords": [
-        "Operation Iceberg",
-        "Task Force 57",
-        "Leyte",
-        "Borneo",
-        "Sakishima Gunto",
-        "air fields",
-        "bombardment"
+        "Radar Pickets",
+        "Bomber Strikes",
+        "Counter-Kamikaze",
+        "A.A. Fire",
+        "Operational Losses",
+        "Submarine Contact"
     ],
     "themes": [
         "Military Operations",
-        "Command Decisions",
-        "Naval Strategy"
+        "Tactical Command",
+        "Aerial Bombing"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_5"
         ],
-        "Command Decisions": [
-            "e_1"
+        "Tactical Command": [
+            "e_4",
+            "e_6"
         ],
-        "Naval Strategy": [
+        "Aerial Bombing": [
             "e_1",
             "e_2"
         ]
@@ -57,11 +64,10 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 1, 1945",
+            "date": "13th May",
             "locations": [
                 "l_1",
-                "l_6",
-                "l_7"
+                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -70,29 +76,93 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "On May 1, 1945, Task Force 57 departs Leyte to continue Operation Iceberg, which aims to neutralize Sakishima Gunto. The fleet engages in a cycle of air strikes and replenishments."
+            "eventSummary": "The first bomber strike is executed at 0540, attacking Ishigaki and Miyako, causing damage to A.A. positions."
         },
         {
             "event": "e_2",
-            "date": "April 27, 1945",
+            "date": "13th May",
             "locations": [
+                "l_1",
                 "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "A second bomber strike targets Ishigaki and Miyako while another strike is cancelled due to weather."
+        },
+        {
+            "event": "e_5",
+            "date": "13th May",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "A possible submarine contact is reported close to the Fleet requiring a coordinated hunt."
+        },
+        {
+            "event": "e_4",
+            "date": "13th May",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5",
+                "e_6"
+            ],
+            "eventSummary": "CTF 57 assumes tactical command during the operations."
+        },
+        {
+            "event": "e_6",
+            "date": "14th May",
+            "locations": [
+                "l_7"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "On April 27, 1945, a signal from C.-in-C. indicates that the Fleet will not participate in the Borneo operation as previously planned, shifting focus back to Operation Iceberg."
+            "connectedEvents": [],
+            "eventSummary": "In area Cootie, a bomb transfer operation is conducted between H.M.S. BLACK PRINCE and H.M.S. INDEFATIGABLE."
         }
     ]
 }

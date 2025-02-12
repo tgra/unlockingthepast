@@ -1,86 +1,103 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Minton W. Kaye",
-            "p_2": "S. G. Wise"
+            "p_1": "Supreme Allied Commander",
+            "p_2": "pilot"
         },
         "locations": {
-            "l_1": "South East Asia",
-            "l_2": "Ceylon",
-            "l_3": "Bangkok",
-            "l_4": "Sumatra",
-            "l_5": "Singapore",
-            "l_6": "Java",
-            "l_7": "Andaman Islands",
-            "l_8": "Nicobar Islands",
-            "l_9": "Penang Island",
-            "l_10": "Rangoon",
-            "l_11": "Malaya",
-            "l_12": "Alipore"
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Central Burma",
+            "l_4": "Meiktila",
+            "l_5": "Akyab",
+            "l_6": "Ramree Island",
+            "l_7": "Toungoo",
+            "l_8": "Chittagong"
         },
         "events": {
-            "e_1": "Lysander Operations",
-            "e_2": "Photographic Reconnaissance",
-            "e_3": "Operation Zipper",
-            "e_4": "Long-Distance Flight Record"
+            "e_1": "Zipper/Mailfist Operation",
+            "e_2": "Allied advance down through Central Burma",
+            "e_3": "hazards of Weather in Monsoon",
+            "e_4": "supply dropping in the Toungoo area"
         },
         "organisations": {
-            "o_1": "Force 136",
-            "o_2": "R.A.F.",
-            "o_3": "United States Army Air Force"
+            "o_1": "12th Army",
+            "o_2": "R.A.F. Transport Squadrons",
+            "o_3": "No. 232 Group",
+            "o_4": "A.LF.S.E.A."
         }
     },
     "keywords": [
-        "Lysander Aircraft",
-        "Photographic Reconnaissance",
-        "Operation Zipper",
-        "South East Asia Theatre",
-        "Squadrons"
+        "air transport",
+        "monsoon",
+        "supply",
+        "weather"
     ],
     "themes": [
         "Military Operations",
-        "Aviation",
-        "Cooperation between Forces"
+        "Logistics",
+        "Weather Effects"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Aviation": [
+        "Logistics": [
             "e_1",
-            "e_2"
+            "e_4"
         ],
-        "Cooperation between Forces": [
-            "e_2"
+        "Weather Effects": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "From May, 1945 to October, 1945",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Lysander operations demonstrate the aircraft's unique capabilities in performing evacuations and reconnaissance during a critical period."
+            "eventSummary": "The Zipper/Mailfist Operation focuses on the commitment of air transport requirements to supply the 12th Army operations in Burma, facing challenges due to logistics and weather conditions."
         },
         {
             "event": "e_2",
-            "date": "Beginning of 1944",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Allied advance down through Central Burma is significantly affected by logistical challenges and the severe weather during the monsoon."
+        },
+        {
+            "event": "e_3",
+            "date": "",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
                 "o_2",
@@ -88,41 +105,25 @@
             ],
             "connectedEvents": [
                 "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Photographic reconnaissance provides critical mapping and intelligence information that aids in preparing for major military operations."
-        },
-        {
-            "event": "e_3",
-            "date": "July, 1945",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "As part of Operation Zipper, photographic reconnaissance efforts accelerate to gather vital information for upcoming military actions."
+            "eventSummary": "Weather conditions during the monsoon create hazardous flying conditions for air transport operations in Burma, illustrating the challenges faced by pilots and logistics crews."
         },
         {
             "event": "e_4",
-            "date": "March 22, 1945 and August 20, 1945",
+            "date": "July 1945",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_7"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Long-distance flight records are established by Mosquito aircraft, showing significant advancements in reconnaissance capabilities."
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "In July 1945, special instructions for supply dropping in the Toungoo area are issued as preparations are made to support ground operations against Japanese forces in Burma."
         }
     ]
 }

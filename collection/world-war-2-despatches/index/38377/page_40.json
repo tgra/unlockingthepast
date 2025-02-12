@@ -1,64 +1,67 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A. T. B. Curteis",
-            "p_2": "Vice-Admiral"
+            "p_1": "Rear-Admiral",
+            "p_2": "Vice-Admiral",
+            "p_3": "Captain (D)",
+            "p_4": "Captain (D), 6th Destroyer Flotilla",
+            "p_5": "Captain (D), 19th Destroyer Flotilla"
         },
         "locations": {
             "l_1": "Malta",
-            "l_2": "Palermo",
-            "l_3": "Gibraltar",
-            "l_4": "Sardinia",
-            "l_5": "Marittimo",
-            "l_6": "Force W",
-            "l_7": "Force X",
-            "l_8": "Force T"
+            "l_2": "Galita",
+            "l_3": "Elmas",
+            "l_4": "Decimomannu",
+            "l_5": "Middle East"
         },
         "events": {
-            "e_1": "Operation against Italian cruisers",
-            "e_2": "Convoy operations"
+            "e_1": "Dusk Attack on Force F",
+            "e_2": "Attack on Elmas and Decimomannu aerodromes",
+            "e_3": "First raid of the day by bombers",
+            "e_4": "U-Boat contact investigation"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Admiralty",
-            "o_3": "HM Ships EAGLE and ARGUS"
+            "o_1": "Force R",
+            "o_2": "Force F",
+            "o_3": "19th Destroyer Flotilla",
+            "o_4": "6th Destroyer Flotilla"
         }
     },
     "keywords": [
-        "Force W",
-        "Italian cruisers",
-        "malta",
-        "Hurricanes",
-        "torpedo bombers",
-        "convoy"
+        "enemy aircraft",
+        "JU.88",
+        "destroyer",
+        "depth charge",
+        "bombers"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Air Attacks"
+        "Air Attack",
+        "Naval Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Naval Engagement": [
-            "e_1"
-        ],
-        "Air Attacks": [
-            "e_2"
+        "Diplomacy": [],
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 15-16, 1942",
+            "date": "Unknown",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
@@ -67,26 +70,54 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Force W is searched for by flare-dropping aircraft, while Vice-Admiral reports on the movement of Italian cruisers and destroyers, leading to strategic decisions on the reinforcement of Force X."
+            "eventSummary": "The dusk attack on Force F involves enemy aircraft, specifically JU.88s, engaging the fleet at approximately 2045."
         },
         {
             "event": "e_2",
-            "date": "June 16-17, 1942",
+            "date": "Unknown",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Beaufighters from Malta execute an attack on Elmas and Decimomannu aerodromes with reported satisfactory results."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The first raid of the day by around 20 high-level bombers occurs, engaging with our fighters, resulting in several enemy aircraft shot down."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Force X engages in convoy operations, dealt with multiple air attacks, and later successfully returns to Gibraltar despite challenging circumstances."
+            "connectedEvents": [],
+            "eventSummary": "Investigations into asdic contacts by destroyers, particularly in response to possible U-Boat activity, take place."
         }
     ]
 }

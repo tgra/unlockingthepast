@@ -1,83 +1,162 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander",
-            "p_2": "Officers",
-            "p_3": "Troops",
-            "p_4": "Infantrymen",
-            "p_5": "Canadian Army"
+            "p_1": "First Canadian Army",
+            "p_2": "Twelfth United States Army Group",
+            "p_3": "30 Corps",
+            "p_4": "8 Corps",
+            "p_5": "2 Canadian Corps",
+            "p_6": "30 United States Infantry Division",
+            "p_7": "XV Corps",
+            "p_8": "Third United States Army",
+            "p_9": "Second British Army"
         },
         "locations": {
-            "l_1": "Cherbourg",
-            "l_2": "Seine",
-            "l_3": "Rouen",
-            "l_4": "Boulogne",
-            "l_5": "Rhine",
-            "l_6": "Meuse",
-            "l_7": "Weser",
-            "l_8": "Pas de Calais",
-            "l_9": "Normandy"
+            "l_1": "Villers Bocage",
+            "l_2": "Aunay-sur-Odon",
+            "l_3": "Bany Bocage",
+            "l_4": "Vire",
+            "l_5": "Tinchebray",
+            "l_6": "River Soulevre",
+            "l_7": "Cahagnes",
+            "l_8": "Laval-Mayenne-Domfront",
+            "l_9": "Caen",
+            "l_10": "Seine",
+            "l_11": "Falaise",
+            "l_12": "Lisieux",
+            "l_13": "Rouen",
+            "l_14": "Argentan",
+            "l_15": "Laigle",
+            "l_16": "Nantes",
+            "l_17": "Mortain",
+            "l_18": "Avranches",
+            "l_19": "Le Mans",
+            "l_20": "St. Malo",
+            "l_21": "Brest",
+            "l_22": "Lorient",
+            "l_23": "Alencon",
+            "l_24": "Vire",
+            "l_25": "River Orne",
+            "l_26": "River Laize"
         },
         "events": {
-            "e_1": "Demolitions Campaign",
-            "e_2": "Airborne Operations",
-            "e_3": "First Major Attack by Canadian Army"
+            "e_1": "Attack of 30 Corps",
+            "e_2": "Counter attack on American forces in Mortain",
+            "e_3": "Advance towards the Seine",
+            "e_4": "Major attacks astride the Caen-Falaise road",
+            "e_5": "Advance of First Canadian Army towards Falaise",
+            "e_6": "Fighting in Brittany",
+            "e_7": "Heavy fighting on Second Army Front",
+            "e_8": "Reconnaissance reports on enemy movement"
         },
         "organisations": {
-            "o_1": "Pioneer Corps",
-            "o_2": "Signals",
-            "o_3": "Searchlight Batteries"
+            "o_1": "Canadian Army",
+            "o_2": "British Army",
+            "o_3": "United States Army"
         }
     },
     "keywords": [
-        "Demolition",
-        "Airfields",
-        "Pipelines",
-        "Armour",
-        "Bailey bridges",
-        "Signals",
-        "Infantry",
-        "Airborne Forces",
-        "Tactics"
+        "Attack",
+        "Advance",
+        "Counter attack",
+        "Falaise",
+        "Seine",
+        "Caen",
+        "Air Forces",
+        "Reconnaissance"
     ],
     "themes": [
         "Military Operations",
-        "Engineering Challenges",
-        "Communication in Warfare",
-        "Infantry Tactics",
-        "Airborne Strategy"
+        "Counterattacks",
+        "Strategic Movements",
+        "Coordination among Allied Forces"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
         ],
-        "Engineering Challenges": [
-            "e_1"
-        ],
-        "Communication in Warfare": [
-            "e_1"
-        ],
-        "Infantry Tactics": [
-            "e_3"
-        ],
-        "Airborne Strategy": [
+        "Counterattacks": [
             "e_2"
+        ],
+        "Strategic Movements": [
+            "e_3",
+            "e_5"
+        ],
+        "Coordination among Allied Forces": [
+            "e_4",
+            "e_6",
+            "e_7"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "During campaign",
+            "date": "30th July",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_4"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "On 30th July, the attack of 30 Corps commenced, focusing on the area between Villers Bocage and Aunay-sur-Odon."
+        },
+        {
+            "event": "e_2",
+            "date": "7th August",
+            "locations": [
+                "l_17"
+            ],
+            "persons": [
+                "p_6",
+                "p_8"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "On 7th August, a major counter-attack was launched against American forces in Mortain, impacting the ongoing operations."
+        },
+        {
+            "event": "e_3",
+            "date": "6th August",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "On 6th August, the advance towards the Seine was ordered to gain strategic ground against enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "6th August",
+            "locations": [
+                "l_9"
             ],
             "persons": [
                 "p_1",
@@ -88,44 +167,68 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_5"
             ],
-            "eventSummary": "Demolitions are conducted on a grand scale, overcoming extensive destruction of critical infrastructure including ports and airfields, which poses a major challenge for engineers."
+            "eventSummary": "On 6th August, the First Canadian Army prepared to launch major attacks astride the Caen-Falaise road to disrupt enemy defenses."
         },
         {
-            "event": "e_2",
-            "date": "Throughout the campaign",
+            "event": "e_5",
+            "date": "7th August",
             "locations": [
-                "l_8",
-                "l_9"
+                "l_11"
             ],
             "persons": [
-                "p_1",
-                "p_4"
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the night of 7th August, the First Canadian Army launched its thrust southwards towards Falaise, aiming to breach enemy lines."
+        },
+        {
+            "event": "e_6",
+            "date": "Between 7th and 11th August",
+            "locations": [
+                "l_20",
+                "l_21",
+                "l_22"
+            ],
+            "persons": [
+                "p_8"
             ],
             "organisations": [
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Airborne forces play a vital role in operations, causing the enemy to disperse their forces in anticipation of potential attacks."
+            "connectedEvents": [],
+            "eventSummary": "Between 7th and 11th August, units of the Third United States Army engaged in heavy fighting at the approaches to St. Malo, Brest, and Lorient."
         },
         {
-            "event": "e_3",
-            "date": "7 August",
+            "event": "e_7",
+            "date": "12th August",
             "locations": [
-                "l_9"
+                "l_24"
             ],
             "persons": [
-                "p_5"
+                "p_9"
             ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 12th August, heavy fighting was reported on the Second Army Front, indicating ongoing confrontation with enemy forces."
+        },
+        {
+            "event": "e_8",
+            "date": "12th August",
+            "locations": [
+                "l_14",
+                "l_15"
+            ],
+            "persons": [],
             "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The first major attack by the Canadian Army occurs astride the Falaise road, demonstrating the effectiveness of infantry tactics supported by armoured personnel carriers."
+            "connectedEvents": [],
+            "eventSummary": "On 12th August, reconnaissance reports indicated a general trend of enemy movement to the east from the Mortain area."
         }
     ]
 }

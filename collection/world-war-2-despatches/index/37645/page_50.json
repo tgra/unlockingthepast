@@ -1,72 +1,76 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Gen. Lorenzini",
-            "p_2": "Commander of 5th Indian Division",
-            "p_3": "Commander 7th Indian Infantry Brigade"
+            "p_1": "Vice-Admiral R. Leatham",
+            "p_2": "Air Commodore W. Sowrey",
+            "p_3": "Brigadier H. Daniel",
+            "p_4": "Brigadier General the Hon. Sir Godfrey Rhodes",
+            "p_5": "Lady Moore"
         },
         "locations": {
-            "l_1": "Fort Dologorodoc",
-            "l_2": "M. Sanchil",
-            "l_3": "Keren",
-            "l_4": "Happy Valley",
-            "l_5": "Railway Bumps",
-            "l_6": "Dongolaas gorge"
+            "l_1": "Chisimaio",
+            "l_2": "Merca",
+            "l_3": "Mogadiscio",
+            "l_4": "Berbera",
+            "l_5": "Kenya",
+            "l_6": "Tanganyika",
+            "l_7": "Nyasaland",
+            "l_8": "Northern Rhodesia",
+            "l_9": "Uganda",
+            "l_10": "Abyssinian hills"
         },
         "events": {
-            "e_1": "Death of Gen. Lorenzini",
-            "e_2": "Resumption of Offensive",
-            "e_3": "Initial Assault on Fort Dologorodoc"
+            "e_1": "Operations in the Northern Frontier District",
+            "e_2": "Bombardment of the coast before the capture of Chisimaio",
+            "e_3": "Forcing of the Giuba",
+            "e_4": "Campaign in East Africa"
         },
         "organisations": {
-            "o_1": "5th Indian Division",
-            "o_2": "7th Indian Infantry Brigade",
-            "o_3": "roth Indian Infantry Brigade",
-            "o_4": "2gth Indian Infantry Brigade",
-            "o_5": "No. 2 M.M.G. Group",
-            "o_6": "Skinner's Horse",
-            "o_7": "2 Highland Light Infantry",
-            "o_8": "I Worcesters"
+            "o_1": "Royal Navy",
+            "o_2": "Force T",
+            "o_3": "S.A.A.F.",
+            "o_4": "Communication Flight, R.A.F.",
+            "o_5": "East African Governors Conference",
+            "o_6": "Kenya and Uganda Railways and Harbours Administration",
+            "o_7": "Kenya Women's Emergency Organisation"
         }
     },
     "keywords": [
-        "Fort Dologorodoc",
-        "M. Sanchil",
-        "5th Indian Division",
-        "7th Indian Infantry Brigade",
-        "enemy counter-attacks",
-        "mechanised forces",
-        "Gen. Lorenzini"
+        "casualties",
+        "operations",
+        "enemy",
+        "support",
+        "air superiority"
     ],
     "themes": [
         "Military Operations",
-        "Casualties",
-        "Tactical Retreat",
-        "Artillery Support",
-        "Counter-attacks"
+        "Logistical Support",
+        "Air Operations",
+        "Civilian Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_4"
+        ],
+        "Logistical Support": [
             "e_2",
-            "e_3"
+            "e_4"
         ],
-        "Casualties": [
-            "e_1"
+        "Air Operations": [
+            "e_4"
         ],
-        "Tactical Retreat": [
-            "e_3"
-        ],
-        "Counter-attacks": [
-            "e_2"
+        "Civilian Support": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "19th March",
+            "date": "sth February to 5th April",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_10"
             ],
             "persons": [
                 "p_1"
@@ -75,46 +79,74 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "General Lorenzini is killed on 19th March, which is a significant loss for the enemy forces."
+            "eventSummary": "Operations in the Northern Frontier District occur under challenging conditions, leading to significant logistical and operational efforts."
         },
         {
             "event": "e_2",
-            "date": "25th March",
+            "date": "Not specified",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "After a week of heavy counter-attacks, the 5th Indian Division resumes the offensive to secure the road to Keren."
+            "eventSummary": "The bombardment of the coast before the capture of Chisimaio demonstrates effective naval support for ground operations."
         },
         {
             "event": "e_3",
-            "date": "March",
+            "date": "Not specified",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
             "persons": [
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "An assault is launched against Fort Dologorodoc, marking a significant tactical effort to gain control over the area."
+            "eventSummary": "Forcing of the Giuba represents crucial military actions in the campaign."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The campaign in East Africa involved extensive military operations supported by air and civilian efforts."
         }
     ]
 }

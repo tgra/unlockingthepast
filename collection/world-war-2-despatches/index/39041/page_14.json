@@ -1,130 +1,104 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral R. L. Burnett, CB., O.B.E.",
-            "p_2": "Captain R. St. V. Sherbrooke, D.S.O., R.N.",
-            "p_3": "Lieutenant Commander D. C. Kinloch, R.N.",
-            "p_4": "Lieutenant Commander N. H. G. Austen, D.S.O., R.N.",
-            "p_5": "Lieutenant Commander C. E. L. Sclater, D.S.O., R.N.",
-            "p_6": "Lieutenant Commander A. H. T. Johns, R.N.",
-            "p_7": "Lieutenant Commander L. A. Sayers, R.N.R.",
-            "p_8": "Lieutenant S. C. B. Hickman, D.S.C., R.N.R.",
-            "p_9": "Skipper Lieutenant W. J. Mullender, R.D., R.N.R.",
-            "p_10": "Temporary Lieutenant J.R. Anglebeck, R.N.V.R.",
-            "p_11": "Commander H. T. Rust, D.S.O., R.N.",
-            "p_12": "Vice Admiral Sir Bruce A. Fraser, K.B.E., C.B."
+            "p_1": "Captain R. St. V. Sherbrooke",
+            "p_2": "Lieutenant Commander D. C. Kinloch",
+            "p_3": "Lieutenant Commander N. H. G. Austen",
+            "p_4": "Lieutenant Commander C. E. L. Sclater",
+            "p_5": "Lieutenant Commander A. H. T. Johns",
+            "p_6": "Lieutenant Commander L. A. Sayers",
+            "p_7": "Lieutenant S. C. B. Hickman",
+            "p_8": "Skipper Lieutenant W. J. Mullender",
+            "p_9": "Temporary Lieutenant J.R. Anglebeck",
+            "p_10": "Commander H. T. Rust",
+            "p_11": "Rear Admiral R. L. Burnett",
+            "p_12": "Captain A. W. Clarke",
+            "p_13": "Captain J. L. Storey",
+            "p_14": "Vice Admiral Sir Bruce A. Fraser"
         },
         "locations": {
             "l_1": "Barents Sea",
             "l_2": "Iceland",
             "l_3": "Loch Ewe",
             "l_4": "Kola Inlet",
-            "l_5": "Seidisfiord",
-            "l_6": "Altenfiord",
-            "l_7": "Kildin Island",
-            "l_8": "Molotovsk",
-            "l_9": "White Sea"
+            "l_5": "Altenfiord",
+            "l_6": "Kildin Island",
+            "l_7": "Molotovsk",
+            "l_8": "Faroes",
+            "l_9": "Scapa",
+            "l_10": "Akureyri",
+            "l_11": "Seidisfiord"
         },
         "events": {
-            "e_1": "Convoy J.W.51A",
-            "e_2": "Convoy J.W.51B",
-            "e_3": "Convoy R.A.51",
-            "e_4": "Action on New Year's Eve"
+            "e_1": "Action on New Year's Eve",
+            "e_2": "Convoy Passage of J.W.51A",
+            "e_3": "Convoy Passage of J.W.51B",
+            "e_4": "Departure of Convoy R.A.51"
         },
         "organisations": {
             "o_1": "Home Fleet",
             "o_2": "Admiralty",
-            "o_3": "8th Destroyer Flotilla",
-            "o_4": "17th Destroyer Flotilla"
+            "o_3": "17th Destroyer Flotilla",
+            "o_4": "8th Destroyer Flotilla"
         }
     },
     "keywords": [
-        "convoy",
         "cruisers",
+        "convoys",
         "U-boats",
-        "escorts",
-        "Barents Sea",
-        "Iceland",
-        "Home Fleet",
-        "surface action"
+        "escort",
+        "destroyers",
+        "military action"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy"
+        "Naval Strategy",
+        "Convoy Protection"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
         "Naval Strategy": [
             "e_1",
-            "e_3",
             "e_4"
+        ],
+        "Convoy Protection": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th December",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Convoy J.W.51A is escorted from Loch Ewe, facing numerous risks from U-boats but arrives intact at Kola Inlet."
-        },
-        {
-            "event": "e_2",
-            "date": "22nd December",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Convoy J.W.51B departs Loch Ewe with a strong escort but suffers challenges due to adverse weather."
-        },
-        {
-            "event": "e_3",
-            "date": "30th December",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Convoy R.A.51 leaves Kola Inlet under escort intending to reach its destination amid potential enemy threats."
-        },
-        {
-            "event": "e_4",
             "date": "31st December",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1",
+                "p_11",
+                "p_12",
+                "p_13"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On New Year's Eve, the convoy encounters challenges amidst U-boat reports but manages to keep the majority of its ships intact."
+        },
+        {
+            "event": "e_2",
+            "date": "15th December",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
                 "p_2",
                 "p_3"
             ],
@@ -133,10 +107,45 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "On New Year's Eve, a surface action occurs involving the escort of convoy J.W.51A amid threats from U-boats."
+            "eventSummary": "The convoy J.W.51A departs from Loch Ewe escorted by various naval vessels."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd December",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_11",
+                "p_10"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The following convoy J.W.51B leaves Loch Ewe with a reinforced escort to navigate the hostile seas."
+        },
+        {
+            "event": "e_4",
+            "date": "30th December",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_11"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The convoy R.A.51 departs from Kola Inlet amidst prior disruptions."
         }
     ]
 }

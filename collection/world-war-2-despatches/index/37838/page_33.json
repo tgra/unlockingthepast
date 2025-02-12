@@ -2,46 +2,61 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Neo Beach"
+            "l_1": "England",
+            "l_2": "Continent",
+            "l_3": "Portsmouth",
+            "l_4": "Uxbridge"
         },
         "events": {
             "e_1": "D-Day",
-            "e_2": "Airborne Operations"
+            "e_2": "Assault period",
+            "e_3": "13th June",
+            "e_4": "11th June"
         },
         "organisations": {
-            "o_1": "U.S. Eighth A.F.",
-            "o_2": "AEAF",
-            "o_3": "RAF",
-            "o_4": "Fleet Air Arm",
-            "o_5": "R.A.F. Coastal Command"
+            "o_1": "F.D.T. 217",
+            "o_2": "F.D.T. 216",
+            "o_3": "F.D.T. 13",
+            "o_4": "Advanced A.E.A.F.",
+            "o_5": "Combined Control Centre",
+            "o_6": "A.D.G.B."
         }
     },
     "keywords": [
-        "D-Day",
-        "Airborne Operations",
-        "Total Air Effort",
-        "Sorties",
-        "Weather"
+        "fighter cover",
+        "squadrons",
+        "patrol",
+        "assault",
+        "naval",
+        "air support"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Operations"
+        "Air Support",
+        "Naval Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Air Support": [
+            "e_1",
             "e_2"
         ],
-        "Strategic Operations": [
+        "Naval Coordination": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6 June 1944",
+            "date": "Not specified",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [],
             "organisations": [
@@ -53,24 +68,61 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "D-Day marks the historic landing of Allied forces in Normandy, establishing a crucial offensive against German forces."
+            "eventSummary": "D-Day commences with sustained fighter cover over assault areas."
         },
         {
             "event": "e_2",
-            "date": "D+1 and onwards",
+            "date": "Not specified",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Airborne Operations carried out by various Allied forces aim to secure the area and support the D-Day landings, involving significant air sorties."
+            "eventSummary": "During the assault period, fighter squadrons provide continuous cover."
+        },
+        {
+            "event": "e_3",
+            "date": "13th June",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 13th June, the force is reduced to fewer squadrons."
+        },
+        {
+            "event": "e_4",
+            "date": "11th June",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 11th June, the number of fighter squadrons is further reduced."
         }
     ]
 }

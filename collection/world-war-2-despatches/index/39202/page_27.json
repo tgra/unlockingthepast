@@ -1,104 +1,144 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Supreme Allied Commander",
-            "p_2": "R.A.F."
+            "p_1": "Lieut.-Colonel Maugham",
+            "p_2": "Lieut.-Commander Galley",
+            "p_3": "Admiral Moody",
+            "p_4": "2nd Officer Price",
+            "p_5": "General MacArthur",
+            "p_6": "Lt-Gen. Kawaba Takashiro",
+            "p_7": "General Kenney",
+            "p_8": "General Blamey"
         },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Sumatra",
-            "l_3": "Kandy",
-            "l_4": "Ceylon",
-            "l_5": "Calcutta",
-            "l_6": "Rangoon",
-            "l_7": "Colombo",
-            "l_8": "Cocos Islands",
-            "l_9": "Palembang",
-            "l_10": "Malaya",
-            "l_11": "Java"
+            "l_1": "Manila",
+            "l_2": "Okinawa",
+            "l_3": "Japan",
+            "l_4": "Tokio",
+            "l_5": "Singapore",
+            "l_6": "South West Pacific Area",
+            "l_7": "Hong Kong",
+            "l_8": "Malaya",
+            "l_9": "Quajalin",
+            "l_10": "Burma"
         },
         "events": {
-            "e_1": "Operation Mastiff",
-            "e_2": "Zipper operation"
+            "e_1": "Mission arrival at Manila",
+            "e_2": "Japanese Mission's arrival at Manila",
+            "e_3": "Conference at G.H.Q.",
+            "e_4": "Surrender terms implementation",
+            "e_5": "American airborne division standing by at Okinawa"
         },
         "organisations": {
-            "o_1": "RAPWI",
-            "o_2": "S.D. Squadrons",
-            "o_3": "Japanese Forces"
+            "o_1": "Intelligence Branch, S.A.C.S.E.A.",
+            "o_2": "W.R.N.S.",
+            "o_3": "Far Eastern Air Forces"
         }
     },
     "keywords": [
-        "prisoners-of-war",
-        "evacuation",
-        "air superiority",
-        "military operations",
-        "joint cooperation"
+        "surrender",
+        "mission",
+        "conference",
+        "occupation",
+        "Japan",
+        "bombing",
+        "political situation"
     ],
     "themes": [
         "Military Operations",
-        "Inter-Allied Cooperation",
-        "Humanitarian Efforts",
-        "Strategic Decisions"
+        "Diplomacy",
+        "Strategic Decisions",
+        "Occupation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_4",
+            "e_5"
         ],
-        "Inter-Allied Cooperation": [
-            "e_1"
-        ],
-        "Humanitarian Efforts": [
-            "e_1"
+        "Diplomacy": [
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
-            "e_2"
+            "e_4"
+        ],
+        "Occupation": [
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 29, 2162",
+            "date": "17th August",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10",
-                "l_11"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Mastiff is currently underway, focusing on the evacuation of prisoners-of-war and internees, requiring extensive collaboration between naval, land, and air forces."
+            "eventSummary": "The Mission arrives at Manila shortly after dawn on 17th August."
         },
         {
             "event": "e_2",
-            "date": "Date not specified",
+            "date": "19th August",
             "locations": [
-                "l_10"
+                "l_1"
             ],
             "persons": [
-                "p_2"
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Japanese Mission, led by Lt-Gen. Kawaba Takashiro, arrives at Manila on the evening of August 19th."
+        },
+        {
+            "event": "e_3",
+            "date": "August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A conference at G.H.Q. is held where the Japanese Mission is presented with the terms of surrender."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The implementation of the surrender terms is discussed, pending formal agreement by the Japanese Government."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_7"
             ],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "The Zipper operation is planned by the Allies as a strategic invasion of Malaya, highlighting the importance of air superiority."
+            "eventSummary": "The American airborne division is on standby at Okinawa for potential deployment into Japan."
         }
     ]
 }

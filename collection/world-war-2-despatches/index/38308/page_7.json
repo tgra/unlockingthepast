@@ -1,130 +1,130 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain E. C. Ewen",
-            "p_2": "Unnamed Fleet Commander"
+            "p_1": "Nimitz"
         },
         "locations": {
-            "l_1": "Sakishima",
-            "l_2": "Ishigaki",
-            "l_3": "Miyako",
-            "l_4": "Leyte",
-            "l_5": "Mosquito"
+            "l_1": "Miyako",
+            "l_2": "Hirara",
+            "l_3": "Nobara",
+            "l_4": "Sukhama",
+            "l_5": "Myara",
+            "l_6": "Okinawa",
+            "l_7": "Ishigaki",
+            "l_8": "Inland Sea",
+            "l_9": "Cootie",
+            "l_10": "Midge",
+            "l_11": "Mosquito"
         },
         "events": {
-            "e_1": "Operation to cover Sakishima Gunto",
-            "e_2": "Fleet Disengagement",
-            "e_3": "Refuelling Operations",
-            "e_4": "Air Operations against enemy airfields"
+            "e_1": "Bombardment of Ishigaki",
+            "e_2": "Air operations over Okinawa",
+            "e_3": "Encounter with enemy aircraft",
+            "e_4": "Fleet's tactical movements",
+            "e_5": "Rescue mission for Corsair pilot"
         },
         "organisations": {
-            "o_1": "H.M.S. Indomitable",
-            "o_2": "H.M.S. Illustrious",
-            "o_3": "TF 58",
-            "o_4": "CTF 57"
+            "o_1": "5th Fleet",
+            "o_2": "CTF 57",
+            "o_3": "CTF 58",
+            "o_4": "Admiralty"
         }
     },
     "keywords": [
-        "Japanese airfields",
-        "Fleet operations",
-        "Refuelling",
-        "Military engagement"
+        "CAP",
+        "ASP",
+        "Fleet",
+        "Hellcats",
+        "Avengers",
+        "Judy",
+        "enemy aircraft",
+        "tactical command",
+        "bombing",
+        "airfields"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Command",
-        "Refuelling",
-        "Air Defense"
+        "Tactical Movements",
+        "Aerial Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4"
+            "e_3",
+            "e_5"
         ],
-        "Tactical Command": [
-            "e_2"
-        ],
-        "Refuelling": [
-            "e_3"
-        ],
-        "Air Defense": [
+        "Tactical Movements": [
             "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 3, 1945",
+            "date": "April 3295",
             "locations": [
-                "l_1"
+                "l_7"
             ],
             "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "An American Task Group of TF 58 is ordered to cover Sakishima Gunto, preparing the fleet for forthcoming military operations."
-        },
-        {
-            "event": "e_2",
-            "date": "April 4, 1945",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The bombardment of Ishigaki is cancelled in favour of air operations only due to adverse cloud conditions."
+        },
+        {
+            "event": "e_2",
+            "date": "April 3295",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "The Fleet disengages to a designated area for refuelling amidst challenging weather conditions."
+            "eventSummary": "Air operations are conducted over Okinawa, with an increase in enemy air activity and tactical adjustments made."
         },
         {
             "event": "e_3",
-            "date": "April 5, 1945",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
+            "date": "April 3295",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Refuelling operations commence after favorable weather conditions develop, allowing the fleet to prep for future engagement."
+            "eventSummary": "The Fleet encounters enemy aircraft, leading to aerial engagements involving Hellcats and Corsairs."
         },
         {
             "event": "e_4",
-            "date": "April 6, 1945",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "date": "April 3295",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "Fighters are flown off H.M.S. Indomitable to attack enemy airfields; initial reports indicate limited enemy activity."
+            "eventSummary": "The Fleet's tactical movements are directed by CTF 57 after establishing command."
+        },
+        {
+            "event": "e_5",
+            "date": "April 3295",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A rescue mission is launched for a Corsair pilot who lost his way at sea; unfortunately, the pilot is found deceased."
         }
     ]
 }

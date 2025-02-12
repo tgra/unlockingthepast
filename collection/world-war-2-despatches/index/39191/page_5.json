@@ -5,124 +5,166 @@
         },
         "locations": {
             "l_1": "Mana airfield",
-            "l_2": "Pladjoe",
-            "l_3": "Fleet",
-            "l_4": "Indian Ocean",
-            "l_5": "INDOMITABLE",
-            "l_6": "ILLUSTRIOUS",
-            "l_7": "INDEFATIGABLE",
-            "l_8": "VICTORIOUS"
+            "l_2": "fleet",
+            "l_3": "west of the fleet",
+            "l_4": "eastward",
+            "l_5": "north",
+            "l_6": "southward",
+            "l_7": "to the eastward",
+            "l_8": "eastward",
+            "l_9": "50 feet",
+            "l_10": "45 to 60 miles to the eastward"
         },
         "events": {
-            "e_1": "Air Combat Operations",
-            "e_2": "Balloon Barrage Engagement",
-            "e_3": "Bombing Strike",
-            "e_4": "Enemy Aircraft Interception"
+            "e_1": "Attack on the target by No. 849 Squadron",
+            "e_2": "First strike by No. 857 Squadron",
+            "e_3": "Bombing operation results",
+            "e_4": "Air combat victories claimed",
+            "e_5": "Seafire patrol intercepts",
+            "e_6": "Attack on ILLUSTRIOUS",
+            "e_7": "Enemy aircraft approach the fleet"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Japanese Army"
+            "o_1": "No. 849 Squadron",
+            "o_2": "No. 857 Squadron",
+            "o_3": "No. 854 Squadron",
+            "o_4": "Seafires",
+            "o_5": "Corsairs",
+            "o_6": "Fireflies",
+            "o_7": "INDOMITABLE",
+            "o_8": "VICTORIOUS",
+            "o_9": "ILLUSTRIOUS",
+            "o_10": "INDEFATIGABLE"
         }
     },
     "keywords": [
-        "squadron",
         "attack",
         "bombing",
-        "enemy fighters",
-        "losses",
-        "aircraft"
+        "enemy",
+        "aircraft",
+        "patrol",
+        "combat"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Combat",
-        "Aircraft Losses",
-        "Naval Operations"
+        "Air Combat",
+        "Aircraft Losses"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_6"
         ],
-        "Aerial Combat": [
-            "e_1",
-            "e_4"
+        "Air Combat": [
+            "e_4",
+            "e_5",
+            "e_7"
         ],
         "Aircraft Losses": [
-            "e_1",
-            "e_3"
-        ],
-        "Naval Operations": [
-            "e_1"
+            "e_4",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 29",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3",
                 "e_4"
             ],
-            "eventSummary": "The air combat operations involve various squadrons engaging enemy fighters and executing bombing strikes while dealing with their own losses."
+            "eventSummary": "The attack on the target by No. 849 Squadron is reported, highlighting the absence of close escort."
         },
         {
             "event": "e_2",
-            "date": "January 29",
+            "date": "",
             "locations": [
                 "l_2"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The balloon barrage was encountered, showing a less severe engagement compared to previous strikes, allowing some Avengers to successfully drop bombs."
+            "eventSummary": "The first strike by No. 857 Squadron is noted for taking heavy A.A. fire without significant losses."
         },
         {
             "event": "e_3",
-            "date": "January 29",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "The bombing strike initiates with excellent results, as bombs are effectively concentrated on targeted areas, resulting in significant destruction."
+            "eventSummary": "The bombing results of the operation are deemed excellent, with significant impacts on target areas."
         },
         {
             "event": "e_4",
-            "date": "January 29",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The air combat victories are recorded with enemy aircraft claimed as destroyed."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Seafire patrol successfully intercepts approaching enemy aircraft."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_9"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_9",
+                "o_10"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The ILLUSTRIOUS is attacked, resulting in fatalities and injuries from friendly fire."
+        },
+        {
+            "event": "e_7",
+            "date": "",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4"
             ],
-            "eventSummary": "Enemy aircraft are intercepted during air operations, resulting in the destruction of several enemy fighters, amidst the confusion and damage seen in the fleet."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Enemy aircraft approach the fleet but are intercepted by fighter patrols preparing to defend."
         }
     ]
 }

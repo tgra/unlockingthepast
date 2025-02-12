@@ -1,117 +1,90 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice-Admiral, Light Forces",
-            "p_2": "Commander-in-Chief",
-            "p_3": "Rear-Admiral Commanding, 3rd Cruiser Squadron"
+            "p_1": "Vice-Admiral",
+            "p_2": "Admiralty",
+            "p_3": "Rear-Admiral",
+            "p_4": "Captain",
+            "p_5": "E. N. Syfret"
         },
         "locations": {
             "l_1": "Malta",
-            "l_2": "Filfla",
-            "l_3": "Crete",
-            "l_4": "Elaphonisos Channel",
-            "l_5": "Position 36 11 N., 12 56 E.",
-            "l_6": "Position 34 54 N., 18 24 E."
+            "l_2": "Cape Bon",
+            "l_3": "Gibraltar",
+            "l_4": "Skerki Channel",
+            "l_5": "Cape Tarifa",
+            "l_6": "Europa"
         },
         "events": {
-            "e_1": "Attack on ILLUSTRIOUS",
-            "e_2": "Abandonment of SOUTHAMPTON",
-            "e_3": "Convoy M.E.6",
-            "e_4": "Convoy M.E.54"
+            "e_1": "Departure from Gibraltar",
+            "e_2": "Operation movements on 21st July"
         },
         "organisations": {
-            "o_1": "Battlefleet",
-            "o_2": "Royal Navy"
+            "o_1": "Force X",
+            "o_2": "Force H",
+            "o_3": "18th Cruiser Squadron",
+            "o_4": "Naval Liaison Officer"
         }
     },
     "keywords": [
-        "dive bombing",
-        "aircraft",
-        "attack",
-        "convoy",
-        "battleship",
-        "ship casualties",
-        "operations"
+        "Operation",
+        "Sail",
+        "Group",
+        "Destroyers",
+        "Convoy"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
-        "Damage Control"
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": [
-            "e_3",
-            "e_4"
+        "Naval Strategy": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "11 January 1941",
+            "date": "21st July",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_3",
+                "l_5",
+                "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The aircraft engage in a heavy dive bombing attack on ILLUSTRIOUS causing heavy damage, while ILLUSTRIOUS manages to make for Malta after a series of attacks."
+            "eventSummary": "The departure from Gibraltar is delayed due to heavy squalls and fog, resulting in a late slip of ships from the harbour."
         },
         {
             "event": "e_2",
-            "date": "11 January 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "SOUTHAMPTON suffers multiple attacks leading to severe damage, prompting the Commander-in-Chief to approve abandonment of the ship."
-        },
-        {
-            "event": "e_3",
-            "date": "11 January 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Convoy M.E.6 proceeds according to plan despite the ongoing attack on ILLUSTRIOUS."
-        },
-        {
-            "event": "e_4",
-            "date": "12 January 1941",
+            "date": "21st July",
             "locations": [
                 "l_4"
             ],
             "persons": [
-                "p_2"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
-                "o_2"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "Convoy M.E.54 detaches from Convoy Excess to navigate south of Crete, separating from the larger movement."
+            "eventSummary": "Operations movements on 21st July involved searching for the position of units, with sightings reported despite poor visibility."
         }
     ]
 }

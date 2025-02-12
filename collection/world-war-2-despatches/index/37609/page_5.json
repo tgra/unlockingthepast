@@ -1,131 +1,107 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier W. H. E. Gott",
-            "p_2": "Lieut.-Colonel J. C. Campbell"
+            "p_1": "Brigadier W. H. E. Gott, M.C.",
+            "p_2": "Lieut.-Colonel J. C. Campbell, M.C."
         },
         "locations": {
             "l_1": "Egyptian frontier",
             "l_2": "Sollum",
-            "l_3": "Fort Maddalena",
-            "l_4": "Halfaya Pass",
-            "l_5": "Sidi Barrani",
-            "l_6": "Maktila",
-            "l_7": "Sofafi"
+            "l_3": "Sidi Barrani",
+            "l_4": "Matruh",
+            "l_5": "Fort Maddalena",
+            "l_6": "Halfaya Pass",
+            "l_7": "Maktila",
+            "l_8": "Sofafi"
         },
         "events": {
-            "e_1": "Withdrawal of Frontier Force",
-            "e_2": "Enemy Advance on Sollum",
-            "e_3": "Engagement at Sidi Barrani"
+            "e_1": "Withdrawal of the Armoured Brigade",
+            "e_2": "Enemy advance on Sidi Barrani"
         },
         "organisations": {
-            "o_1": "7th Armoured Brigade",
-            "o_2": "3rd Coldstream Guards",
-            "o_3": "1st K.R.R.C.",
-            "o_4": "2nd Rifle Brigade",
-            "o_5": "1st Royal Tank Regiment",
-            "o_6": "Royal Horse Artillery",
-            "o_7": "7th Medium Regiment",
-            "o_8": "Maletti Group",
-            "o_9": "French Battalion"
+            "o_1": "7th Hussars",
+            "o_2": "8th Hussars",
+            "o_3": "7th Armoured Brigade",
+            "o_4": "4th Armoured Brigade",
+            "o_5": "Support Group of the Armoured Division",
+            "o_6": "3rd Coldstream Guards",
+            "o_7": "1st K.R.R.C.",
+            "o_8": "2nd Rifle Brigade",
+            "o_9": "1st Royal Tank Regiment",
+            "o_10": "Royal Horse Artillery",
+            "o_11": "7th Medium Regiment",
+            "o_12": "French battalion",
+            "o_13": "Maletti Group"
         }
     },
     "keywords": [
-        "military operations",
-        "casualties",
+        "Armoured Brigade",
         "enemy advance",
+        "artillery",
         "withdrawal",
-        "artillery"
+        "casualties"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Tactical Movements",
-        "Casualty Management"
+        "Tactical Maneuvers",
+        "Logistics and Supply Issues"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Defensive Strategies": [
-            "e_1",
-            "e_3"
-        ],
-        "Tactical Movements": [
-            "e_1",
             "e_2"
         ],
-        "Casualty Management": [
-            "e_1",
-            "e_2"
+        "Tactical Maneuvers": [
+            "e_1"
+        ],
+        "Logistics and Supply Issues": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 16",
+            "date": "13th September",
             "locations": [
                 "l_1",
-                "l_4",
-                "l_5"
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
+                "o_1",
                 "o_2",
                 "o_3",
                 "o_4",
                 "o_5",
                 "o_6",
-                "o_7"
+                "o_7",
+                "o_8",
+                "o_9",
+                "o_10",
+                "o_11",
+                "o_12"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The withdrawal of our small force is executed skillfully along the coast road from Sollum to Sidi Barrani, with minimal losses."
+            "eventSummary": "The Armoured Brigade withdraws under command of Brigadier Gott, inflicting heavy casualties on the enemy during the operation along the coast road from Sollum to Sidi Barrani."
         },
         {
             "event": "e_2",
-            "date": "September 13",
+            "date": "16th September",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_3"
             ],
             "persons": [],
-            "organisations": [
-                "o_2",
-                "o_6",
-                "o_3"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "An enemy advance begins on the coast road, with heavy artillery preparation against the escarpment above Sollum."
-        },
-        {
-            "event": "e_3",
-            "date": "September 16",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_6",
-                "o_7"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The enemy reaches Sidi Barrani but halts, facing continuous harassment and losses from small mobile columns formed from the 7th Armoured Division."
+            "eventSummary": "The enemy advances on Sidi Barrani, encountering resistance from the withdrawing British force."
         }
     ]
 }

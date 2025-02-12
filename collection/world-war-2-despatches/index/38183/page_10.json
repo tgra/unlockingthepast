@@ -1,89 +1,124 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "R. Brooxe-Popnam",
-            "p_2": "G. Layton"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Japan",
-            "l_2": "China",
-            "l_3": "Far East",
-            "l_4": "London",
-            "l_5": "Edinburgh"
+            "l_1": "Luzon",
+            "l_2": "Hong Kong",
+            "l_3": "China",
+            "l_4": "Japan",
+            "l_5": "Philippines",
+            "l_6": "Malaya",
+            "l_7": "Singapore",
+            "l_8": "Netherlands East Indies",
+            "l_9": "South China Sea",
+            "l_10": "Far East"
         },
         "events": {
-            "e_1": "Japan's Onslaught on China",
-            "e_2": "Campaign for Preservation of Truth and Justice"
+            "e_1": "A.D.B. report",
+            "e_2": "A.D.B. 2 agreement",
+            "e_3": "outbreak of war with Japan",
+            "e_4": "training exercises in Malaya"
         },
         "organisations": {
-            "o_1": "Government of Japan",
-            "o_2": "Fighting Services"
+            "o_1": "United States Pacific Fleet",
+            "o_2": "General Headquarters",
+            "o_3": "Royal Air Force",
+            "o_4": "Army",
+            "o_5": "Air Ministry",
+            "o_6": "War Office"
         }
     },
     "keywords": [
-        "war",
-        "campaign",
-        "victory",
-        "justice",
-        "patience"
+        "defence",
+        "offensive operations",
+        "collective action",
+        "military counter-action",
+        "guerrilla operations"
     ],
     "themes": [
-        "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions"
+        "Military Strategy",
+        "Defensive Operations",
+        "Cooperation among Allies",
+        "Training and Preparation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4"
         ],
         "Diplomacy": [
-            "e_1"
+            "e_2"
         ],
         "Strategic Decisions": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": null,
+            "date": "August 1941",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_8",
+                "l_10"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Japan engages in an aggressive military campaign against China, which has left Japan's trade and industry destabilized, indicating the country's desperation."
+            "eventSummary": "The A.D.B. report emphasizes the need for strategic military operations in the Far East against Japan."
         },
         {
             "event": "e_2",
-            "date": null,
+            "date": "August 1941",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_1",
+                "l_2",
+                "l_10"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The campaign is framed as a struggle for truth, justice, and freedom, calling for unity and perseverance from both military and civilian sectors in the region."
+            "eventSummary": "An amended A.D.B. agreement, known as A.D.B. 2, is drawn up in London to address objections from the United States while retaining key features."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The outbreak of war with Japan necessitates urgent military action and planning among allied forces."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Training exercises take place in Malaya to prepare troops for operating in unfamiliar terrain."
         }
     ]
 }

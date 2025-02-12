@@ -1,85 +1,63 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Tom Phillips",
-            "p_2": "Vice-Admiral Sir Geoffrey Layton",
-            "p_3": "C.-in-C. Far East"
+            "p_1": "Brigadier Taylor",
+            "p_2": "Lt.-Col. Stewart",
+            "p_3": "Major-General Barstow"
         },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Malaya",
-            "l_3": "Indo-China",
-            "l_4": "Thailand",
-            "l_5": "Sarawak",
-            "l_6": "China"
+            "l_1": "Kota Tinggi",
+            "l_2": "Benut",
+            "l_3": "River Ponggor",
+            "l_4": "Singapore",
+            "l_5": "Pontian Besar",
+            "l_6": "Gunong Pulai Reservoir",
+            "l_7": "Layang Layang",
+            "l_8": "Johore Bahru",
+            "l_9": "Singapore Island"
         },
         "events": {
-            "e_1": "Outbreak of World War II",
-            "e_2": "Mobilization of Volunteer Forces",
-            "e_3": "Outbreak of Hostilities with Japan"
+            "e_1": "Withdrawal of Eastforce",
+            "e_2": "Evacuation from River Ponggor",
+            "e_3": "Ambush of Major-General Barstow",
+            "e_4": "Final withdrawal through Johore Bahru",
+            "e_5": "Air operations on Singapore Island"
         },
         "organisations": {
-            "o_1": "Ministry of Information Far East",
-            "o_2": "Malayan Information Bureau",
-            "o_3": "China Fleet"
+            "o_1": "Royal Navy",
+            "o_2": "Japanese Air Striking Force",
+            "o_3": "Singapore Air Defence Organization"
         }
     },
     "keywords": [
-        "Press",
-        "Censorship",
-        "Military Operations",
-        "Public Relations",
-        "Emergency",
-        "Naval Base"
+        "withdrawal",
+        "evacuation",
+        "ambush",
+        "air operations",
+        "Royal Navy",
+        "Japanese Air Striking Force"
     ],
     "themes": [
         "Military Operations",
-        "Censorship",
-        "Diplomacy",
-        "Information Warfare",
-        "Emergency Preparedness"
+        "Evacuations",
+        "Air Defense",
+        "Ground Defense"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Information Warfare": [
-            "e_1"
-        ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Emergency Preparedness": [
-            "e_3"
+        "Air Defense": [
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1939-09-01",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The outbreak of World War II leads to a strategic reallocation of naval resources and increases political tensions in the region."
-        },
-        {
-            "event": "e_2",
-            "date": "1941-12-01",
+            "date": "January, 1942",
             "locations": [
                 "l_1"
             ],
@@ -90,26 +68,63 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The mobilization of Volunteer Forces occurs as a response to escalating military tensions in Southeast Asia."
+            "eventSummary": "The withdrawal of Eastforce is carried out according to plan without enemy interference."
+        },
+        {
+            "event": "e_2",
+            "date": "January 27th-28th, 1942",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The evacuation from River Ponggor occurs during four successive nights by the Royal Navy."
         },
         {
             "event": "e_3",
-            "date": "1941-12-08",
+            "date": "January 28th, 1942",
             "locations": [
-                "l_1"
+                "l_7"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Major-General Barstow is ambushed by the enemy while visiting the forward brigade."
+        },
+        {
+            "event": "e_4",
+            "date": "January 30th-31st, 1942",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The final withdrawal through Johore Bahru is executed with little interference from the enemy."
+        },
+        {
+            "event": "e_5",
+            "date": "January, 1942",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
             "organisations": [
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Hostilities with Japan commence, leading to immediate naval engagements and heightened military alertness in the region."
+            "connectedEvents": [],
+            "eventSummary": "The Japanese Air Striking Force concentrates their attacks chiefly on the aerodromes on Singapore Island."
         }
     ]
 }

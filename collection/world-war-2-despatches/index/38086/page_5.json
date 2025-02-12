@@ -1,63 +1,82 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sub. Lieut. Wynn"
+            "p_1": "Sub. Lieut. Wynn",
+            "p_2": "God",
+            "p_3": "H.M.S. CLEVELAND",
+            "p_4": "H.M.S. BROCKLESBY"
         },
         "locations": {
             "l_1": "Old Entrance",
             "l_2": "Old Mole",
-            "l_3": "Le Chatelier Shoal",
-            "l_4": "Les Morees Towet",
-            "l_5": "position Y",
-            "l_6": "position T"
+            "l_3": "Les Morees Towet",
+            "l_4": "Le Chatelier Shoal"
         },
         "events": {
-            "e_1": "Torpedoing of lock gates at the Old Entrance",
-            "e_2": "Assault on the Old Mole",
-            "e_3": "Withdrawal of M.G.B.314 and M.L.270",
-            "e_4": "Engagement with armed trawler",
-            "e_5": "Transfer of wounded to ATHERSTONE"
+            "e_1": "Assault on the Old Mole",
+            "e_2": "Attacks by enemy forces",
+            "e_3": "Transfer of wounded to ATHERSTONE",
+            "e_4": "Enemy aircraft encounters"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "M.G.B.314",
+            "o_2": "M.T.B.74",
+            "o_3": "M.L.270",
+            "o_4": "ATHERSTONE",
+            "o_5": "TYNEDALE"
         }
     },
     "keywords": [
-        "M.G.B.314",
-        "CAMPBELTOWN",
-        "flak positions",
-        "naval smoke float",
-        "Beaufighter",
-        "Junkers 88",
-        "H.M.S. CLEVELAND"
+        "military",
+        "demolition",
+        "bombing",
+        "naval operations"
     ],
     "themes": [
         "Military Operations",
-        "Withdrawal Maneuvers",
-        "Combat Engagements",
-        "Medical Evacuations"
+        "Tactics",
+        "Casualties",
+        "Aircraft Engagement"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Withdrawal Maneuvers": [
-            "e_3"
+        "Tactics": [
+            "e_1"
         ],
-        "Combat Engagements": [
-            "e_2",
+        "Casualties": [
             "e_4"
         ],
-        "Medical Evacuations": [
-            "e_5"
+        "Aircraft Engagement": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Assault on the Old Mole is underway as military parties conduct demolitions nearby."
+        },
+        {
+            "event": "e_2",
+            "date": "",
             "locations": [
                 "l_1"
             ],
@@ -68,81 +87,31 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Sub. Lieut. Wynn leads an operation to torpedo the lock gates at the Old Entrance."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The assault on the Old Mole is met with strong resistance as M.G.B.314 tries to support the landing."
+            "eventSummary": "Attacks by enemy forces escalate as M.G.B.314 attempts to retreat under heavy fire."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "M.G.B.314 and M.L.270 conduct a withdrawal under heavy enemy fire."
+            "connectedEvents": [],
+            "eventSummary": "Wounded transferred to ATHERSTONE from M.G.B.314."
         },
         {
             "event": "e_4",
-            "date": "Not specified",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "M.G.B.314 engages an armed trawler while attempting its withdrawal."
-        },
-        {
-            "event": "e_5",
-            "date": "Not specified",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Wounded crew members are transferred to H.M.S. ATHERSTONE for medical assistance."
+            "connectedEvents": [],
+            "eventSummary": "M.G.B.314 faces various enemy aircraft, leading to intense confrontations."
         }
     ]
 }

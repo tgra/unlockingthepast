@@ -1,72 +1,177 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Burma",
-            "l_2": "Rangoon",
-            "l_3": "Myitkyina",
-            "l_4": "Chin Hills",
-            "l_5": "Northern Shan States",
-            "l_6": "Southern Shan States",
-            "l_7": "Kokine"
+        "persons": {
+            "p_1": "Governor",
+            "p_2": "Rajah Brooke"
         },
-        "events": {},
+        "locations": {
+            "l_1": "Victoria",
+            "l_2": "Leighton Hill",
+            "l_3": "Wanchai",
+            "l_4": "Stanley Mound",
+            "l_5": "Mount Cameron",
+            "l_6": "Hong Kong",
+            "l_7": "Canton",
+            "l_8": "Burma",
+            "l_9": "Prachuabkhirikun",
+            "l_10": "Mergui",
+            "l_11": "Tenasserim Peninsula",
+            "l_12": "Tavoy",
+            "l_13": "Chumporn",
+            "l_14": "Victoria Point",
+            "l_15": "Kuching",
+            "l_16": "Miri",
+            "l_17": "Lutong",
+            "l_18": "Sinkawang",
+            "l_19": "Palembang",
+            "l_20": "Pontianak",
+            "l_21": "Sarawak"
+        },
+        "events": {
+            "e_1": "Battle of Hong Kong",
+            "e_2": "Japanese air attack on Kuching",
+            "e_3": "Japanese landing at Prachuabkhirikun",
+            "e_4": "Japanese bombing of Tavoy",
+            "e_5": "Japanese air attacks on Kuching aerodrome and town",
+            "e_6": "Japanese attack on Miri",
+            "e_7": "Operational activities of the 2/15 Punjab Regiment"
+        },
         "organisations": {
-            "o_1": "1st Burma Division",
-            "o_2": "Maymyo Brigade",
-            "o_3": "Tenasserim Brigade",
-            "o_4": "13th Indian Infantry Brigade",
-            "o_5": "Rangoon Brigade",
-            "o_6": "16th Indian Infantry Brigade",
-            "o_7": "Burma Frontier Force",
-            "o_8": "Burma Rifles",
-            "o_9": "Burma Auxiliary Force",
-            "o_10": "Field Company",
-            "o_11": "Armed Police",
-            "o_12": "1st Gloucesters",
-            "o_13": "5th/1st Punjab",
-            "o_14": "7th Rajputs",
-            "o_15": "1st/8th R. Garh Rifles",
-            "o_16": "23rd Mountain Battery",
-            "o_17": "Burma Railways Battalion",
-            "o_18": "1 A.A. Regiment"
+            "o_1": "Middlesex Regiment",
+            "o_2": "Royal Scots",
+            "o_3": "2/15 Punjab Regiment",
+            "o_4": "Netherlands East Indies Air Force"
         }
     },
     "keywords": [
-        "Burma",
-        "Hostilities",
-        "Infantry Brigade",
-        "Rifles",
-        "Battalions",
-        "Garrison"
+        "Japanese",
+        "bombarded",
+        "counterattack",
+        "surrender",
+        "military",
+        "defence",
+        "operations"
     ],
     "themes": [
-        "Military Organisation",
-        "Hostilities Preparation"
+        "Military Operations",
+        "Civilian Morale",
+        "Defense Strategy"
     ],
     "topicModel": {
-        "Military Operations": [],
-        "Diplomacy": [],
-        "Strategic Decisions": [
-            "o_1",
-            "o_2",
-            "o_3",
-            "o_4",
-            "o_5",
-            "o_6",
-            "o_7",
-            "o_8",
-            "o_9",
-            "o_10",
-            "o_11",
-            "o_12",
-            "o_13",
-            "o_14",
-            "o_15",
-            "o_16",
-            "o_17",
-            "o_18"
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
+        ],
+        "Civilian Morale": [
+            "e_1",
+            "e_5"
+        ],
+        "Defense Strategy": [
+            "e_2",
+            "e_4",
+            "e_7"
         ]
     },
-    "eventConnections": []
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": null,
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The Battle of Hong Kong takes place involving intense street fighting and ultimate surrender, amidst the struggle of the local population."
+        },
+        {
+            "event": "e_2",
+            "date": null,
+            "locations": [
+                "l_15"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Japanese forces bomb Kuching, significantly affecting civilian infrastructure and military operations."
+        },
+        {
+            "event": "e_3",
+            "date": "9th December",
+            "locations": [
+                "l_9",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A Japanese landing reported at Prachuabkhirikun marks the start of military operations threatening positions in Southern Burma."
+        },
+        {
+            "event": "e_4",
+            "date": "11th December",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Japanese forces bomb Tavoy, indicating an escalation in military efforts."
+        },
+        {
+            "event": "e_5",
+            "date": "10th December",
+            "locations": [
+                "l_15"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Kuching is bombed by Japanese aircraft, causing civilian casualties and material destruction."
+        },
+        {
+            "event": "e_6",
+            "date": "16th December",
+            "locations": [
+                "l_15",
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Japanese naval forces are sighted near Miri, prompting military responses from local forces."
+        },
+        {
+            "event": "e_7",
+            "date": null,
+            "locations": [
+                "l_15"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 2/15 Punjab Regiment engages in various defense activities, including demolitions and troop movements."
+        }
+    ]
 }

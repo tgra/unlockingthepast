@@ -1,87 +1,74 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major H. Marsh",
-            "p_2": "Major A. J. Dewar",
-            "p_3": "Lt.-Colonel R. A. P. Macpherson"
+            "p_1": "Brigadier J. K. Lawson",
+            "p_2": "Major Temple",
+            "p_3": "Major Duncan",
+            "p_4": "Lt Gen. Kitajama",
+            "p_5": "Lieut Colonel J. L. Willcocks",
+            "p_6": "Brigadier Wallis"
         },
         "locations": {
-            "l_1": "Little Hong Kong",
-            "l_2": "Wong Nei Chong Gap",
-            "l_3": "Blacks Link",
-            "l_4": "Mount Cameron",
-            "l_5": "Jardines Corner",
-            "l_6": "Kai Tak aerodrome",
-            "l_7": "Garden Road-Kennedy Road",
-            "l_8": "Wanchai Gap",
-            "l_9": "King's Road",
-            "l_10": "R.N. Yard",
-            "l_11": "Repulse Bay",
-            "l_12": "Aberdeen",
-            "l_13": "Causeway Bay",
-            "l_14": "North Point",
-            "l_15": "Cheung Chau Island",
-            "l_16": "Stanley"
+            "l_1": "Wong Nei Chong Gap",
+            "l_2": "North Point",
+            "l_3": "Jardines Lookout",
+            "l_4": "Stanley Gap",
+            "l_5": "Aberdeen",
+            "l_6": "Wanchai Gap",
+            "l_7": "Tytam Gap",
+            "l_8": "Lyemun Gap",
+            "l_9": "Green Island",
+            "l_10": "Stanley Prison",
+            "l_11": "Mount Parker",
+            "l_12": "Aguilar Peninsula",
+            "l_13": "Kowloon Dock"
         },
         "events": {
-            "e_1": "Air Raid on Peak District",
-            "e_2": "Japanese Ground Attack",
-            "e_3": "Retreat of 5/7 Rajput Regt."
+            "e_1": "Battle for Wong Nei Chong Gap",
+            "e_2": "Attack of M.T.B.s on enemy vessels",
+            "e_3": "Defence of Stanley Prison"
         },
         "organisations": {
-            "o_1": "Winnipeg Grenadiers",
-            "o_2": "2/14 Punjab Regt.",
-            "o_3": "Royal Artillery",
-            "o_4": "HKVDC",
-            "o_5": "Royal Rifles of Canada",
-            "o_6": "5/7 Rajput Regt."
+            "o_1": "Royal Army",
+            "o_2": "Royal Navy",
+            "o_3": "Royal Air Force",
+            "o_4": "Canadian Brigade H.Q.",
+            "o_5": "East Infantry Brigade"
         }
     },
     "keywords": [
-        "Air Raid",
-        "Ground Attack",
-        "Mortar Fire",
-        "Defensive Operations",
-        "Casualties"
+        "Wong Nei Chong Gap",
+        "Battle",
+        "Defence",
+        "Artillery",
+        "Air Force"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Defense",
-        "Casualty Reporting"
+        "Casualties",
+        "Defensive Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Casualties": [
+            "e_1",
             "e_2"
         ],
-        "Tactical Defense": [
-            "e_2"
-        ],
-        "Casualty Reporting": [
+        "Defensive Strategies": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "21st December",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "At 0950 hours on December 21st, a second air raid on the Peak District occurs, resulting in bombs being dropped near Jardines Corner, disrupting communications and blocking roads."
-        },
-        {
-            "event": "e_2",
-            "date": "21st December",
+            "date": "December 19",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_6",
+                "l_3",
                 "l_4"
             ],
             "persons": [
@@ -91,26 +78,41 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_5"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "On December 21st, heavy mortar and ground attacks by Japanese forces lead to increased casualties and threaten critical defenses in the Little Hong Kong and Mount Cameron areas."
+            "connectedEvents": [],
+            "eventSummary": "The Battle for Wong Nei Chong Gap involves various military units and results in significant casualties, including Brigadier Lawson who was killed during the fighting."
         },
         {
-            "event": "e_3",
-            "date": "21st December",
+            "event": "e_2",
+            "date": "December",
             "locations": [
-                "l_16"
+                "l_9"
             ],
             "persons": [],
             "organisations": [
-                "o_6"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "At 1330 hours on December 21st, a report indicates that a motor torpedo boat evacuates the Commanding Officer of 5/7 Rajput Regt. from Stanley due to heavy casualties."
+            "eventSummary": "M.T.B.s launch an attack on enemy vessels near Green Island, resulting in the sinking of an enemy landing craft and damage to multiple M.T.B.s."
+        },
+        {
+            "event": "e_3",
+            "date": "December 19",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Defence of Stanley Prison is coordinated by Lieut Colonel Willcocks as he reports on the positioning of prison officers amidst heavy fighting."
         }
     ]
 }

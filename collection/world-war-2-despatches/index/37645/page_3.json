@@ -1,55 +1,55 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Mr. Anthony Eden",
-            "p_2": "Lieut.-Colonel O. C. Wingate",
-            "p_3": "Brigadier Sandford",
-            "p_4": "General Platt",
-            "p_5": "Emperor Haille Selassie",
-            "p_6": "Brigadier Messervy",
-            "p_7": "Marshal Graziani"
+            "p_1": "General Platt",
+            "p_2": "General Cunningham",
+            "p_3": "Major-General N. M. de la P. Beresford-Peirse",
+            "p_4": "Major-General L. M. Heath",
+            "p_5": "Major-General A. R. Godwin-Austen",
+            "p_6": "Major-General H. E. de R. Wetherall",
+            "p_7": "Major-General G. E. Brink",
+            "p_8": "Air Vice-Marshal G. R. M. Reid"
         },
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Egypt",
-            "l_3": "Abyssinia",
-            "l_4": "Kenya",
-            "l_5": "Moyale",
-            "l_6": "Kismayu",
-            "l_7": "Sudan",
-            "l_8": "Jibuti",
-            "l_9": "Asmara",
-            "l_10": "Massawa",
-            "l_11": "Eritrea",
-            "l_12": "British Somaliland",
-            "l_13": "Port Sudan",
-            "l_14": "Khartoum",
-            "l_15": "Gojjam"
+            "l_1": "Kassala",
+            "l_2": "Eritrea",
+            "l_3": "Asmara",
+            "l_4": "Sudan",
+            "l_5": "Western Desert",
+            "l_6": "Egypt",
+            "l_7": "Kenya",
+            "l_8": "Kismayu",
+            "l_9": "Mogadiscio",
+            "l_10": "Addis Ababa",
+            "l_11": "Harrar",
+            "l_12": "Jibuti",
+            "l_13": "Berbera",
+            "l_14": "British Somaliland",
+            "l_15": "Cyrenaica",
+            "l_16": "Diredawa",
+            "l_17": "Aden"
         },
         "events": {
-            "e_1": "Desert Offensive",
-            "e_2": "Advance to Kismayu",
-            "e_3": "Transfer of the 4th Indian Division",
-            "e_4": "Rebellion in Abyssinia",
-            "e_5": "Crossing of the Frontier by Emperor Haille Selassie",
-            "e_6": "Withdrawal from Kassala",
-            "e_7": "Operation against Italian East Africa"
+            "e_1": "Operation against Kismayu",
+            "e_2": "Capture of Asmara",
+            "e_3": "Capture of Keren",
+            "e_4": "Occupation of Addis Ababa"
         },
         "organisations": {
-            "o_1": "4th Indian Division",
-            "o_2": "Gazelle Force"
+            "o_1": "Free French troops",
+            "o_2": "Indian Divisions",
+            "o_3": "South African Division"
         }
     },
     "keywords": [
-        "Rebellion",
-        "Military Operations",
-        "Advance",
-        "Patriot Movement",
-        "Italian East Africa"
+        "occupation",
+        "operations",
+        "capture",
+        "coast",
+        "supplies"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
         "Strategic Decisions"
     ],
     "topicModel": {
@@ -57,128 +57,86 @@
             "e_1",
             "e_2",
             "e_3",
-            "e_6",
-            "e_7"
-        ],
-        "Diplomacy": [
             "e_4"
         ],
         "Strategic Decisions": [
-            "e_5"
+            "e_2",
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1941",
+            "date": "February 1941",
             "locations": [
-                "l_1",
+                "l_8",
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "General Cunningham is instructed to capture Kismayu in early February."
+        },
+        {
+            "event": "e_2",
+            "date": "March 27, 1941",
+            "locations": [
+                "l_3",
                 "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_7"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The Desert Offensive is being planned in early 1941, depending on reinforcements from Egypt and aiming to maintain pressure in the Gallabat area."
-        },
-        {
-            "event": "e_2",
-            "date": "May or June 1941",
-            "locations": [
-                "l_4",
-                "l_6"
-            ],
-            "persons": [
+                "p_3",
                 "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "There are plans to advance to Kismayu post-rainy season, with considerations about transport difficulties discussed at a military meeting."
+            "eventSummary": "General Platt aims to capture Asmara following the success at Keren."
         },
         {
             "event": "e_3",
-            "date": "January 1941",
+            "date": "March 27, 1941",
             "locations": [
-                "l_7",
-                "l_1"
+                "l_2"
             ],
             "persons": [
+                "p_1",
+                "p_3",
                 "p_4"
             ],
             "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The 4th Indian Division is transferred from the Western Desert to the Sudan to support planned military operations with urgency."
-        },
-        {
-            "event": "e_4",
-            "date": "January 20, 1941",
-            "locations": [
-                "l_3",
-                "l_15"
-            ],
-            "persons": [
-                "p_5",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_6"
-            ],
-            "eventSummary": "Emperor Haille Selassie crosses the frontier into Abyssinia, marking an initial success for the operations supporting the rebellion."
-        },
-        {
-            "event": "e_6",
-            "date": "January 1941",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "An enemy withdrawal from Kassala is noted, prompting General Platt to prepare for an advance to counter the enemy movements."
+            "eventSummary": "The Keren position is captured after gallant efforts by the Indian Divisions on March 27."
         },
         {
-            "event": "e_7",
-            "date": "1941",
+            "event": "e_4",
+            "date": "April 6, 1941",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_10"
             ],
             "persons": [
-                "p_1"
+                "p_2",
+                "p_5",
+                "p_6",
+                "p_7"
             ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_4",
-                "e_6"
-            ],
-            "eventSummary": "Operational strategies against Italian East Africa are comprehensively planned, focusing on creating conditions for the rebellion's success."
+            "connectedEvents": [],
+            "eventSummary": "Addis Ababa is occupied on April 6 after a successful campaign by General Cunningham."
         }
     ]
 }

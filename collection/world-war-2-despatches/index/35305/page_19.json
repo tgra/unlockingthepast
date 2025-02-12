@@ -1,106 +1,170 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Alan Brooke",
-            "p_2": "M. G. H. Barker",
-            "p_3": "Sir Ronald Adam",
-            "p_4": "Major-General P. de Fonblanque",
-            "p_5": "GORT",
-            "p_6": "Major-General Hon. H. R. L. G. Alexander",
-            "p_7": "Brigadier M. B. Beckwith-Smith",
-            "p_8": "Admiral Abrial",
-            "p_9": "General Fagalde",
-            "p_10": "Captain W. G. Tennant"
+            "p_1": "Major-General Franklyn",
+            "p_2": "General Prioux",
+            "p_3": "General Martel",
+            "p_4": "General Blanchard",
+            "p_5": "General Altmeyer",
+            "p_6": "Major-General R. P. Pakenham-Walsh",
+            "p_7": "Général de Brigade Bertschi",
+            "p_8": "Général de Brigade Barthélémy"
         },
         "locations": {
-            "l_1": "Dunkirk",
-            "l_2": "Gravelines",
-            "l_3": "Bergues",
-            "l_4": "Les Moeres",
-            "l_5": "Channel",
-            "l_6": "France"
+            "l_1": "Vimy",
+            "l_2": "Arras",
+            "l_3": "Scarpe",
+            "l_4": "Cojeul",
+            "l_5": "Sens",
+            "l_6": "Bapaume",
+            "l_7": "Cambrai",
+            "l_8": "Douai",
+            "l_9": "Mont St. Eloi",
+            "l_10": "Béthune",
+            "l_11": "Lens",
+            "l_12": "Carvin",
+            "l_13": "Seclin",
+            "l_14": "Canal line",
+            "l_15": "Escaut",
+            "l_16": "La Basse",
+            "l_17": "St. Omer"
         },
         "events": {
-            "e_1": "Operations of 1st Corps",
-            "e_2": "Evacuation from Dunkirk"
+            "e_1": "Defense of Arras",
+            "e_2": "Operation Frankforce",
+            "e_3": "Attack on 22nd May",
+            "e_4": "Withdrawal of Frankforce",
+            "e_5": "Reconnaissance on 23rd May"
         },
         "organisations": {
-            "o_1": "British Expeditionary Force",
-            "o_2": "French Army"
+            "o_1": "5th Division",
+            "o_2": "50th Division",
+            "o_3": "1st Army Tank Brigade",
+            "o_4": "231st Division",
+            "o_5": "French Cavalry Corps",
+            "o_6": "12th Lancers",
+            "o_7": "Macforce",
+            "o_8": "Petreforce"
         }
     },
     "keywords": [
-        "Dunkirk",
-        "Evacuation",
-        "Military Operations",
-        "British Expeditionary Force",
-        "French Army",
-        "Major-General",
-        "Artillery Fire",
-        "Enemy Attacks"
+        "Defense",
+        "Withdrawal",
+        "Reconnaissance",
+        "Counter-attack"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Strategies",
-        "Allied Cooperation",
-        "War Strategy"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Evacuation Strategies": [
-            "e_2"
-        ],
-        "Allied Cooperation": [
-            "e_1"
-        ],
-        "War Strategy": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "31st May to midnight 2nd/3rd June, 1940",
+            "date": "20th May 1940",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
-                "p_6",
-                "p_7",
-                "p_8",
-                "p_9"
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Defense of Arras is concluded by a small garrison determined to fight against a superior enemy force."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd May 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Major-General Alexander takes command of the 1st Corps during critical operations in Dunkirk, coordinating with French commanders to manage troop movements amidst deteriorating conditions."
+            "eventSummary": "Operation Frankforce is executed to secure bridgeheads on the eastern banks of the Scarpe River."
         },
         {
-            "event": "e_2",
-            "date": "1st June to midnight 2nd/3rd June, 1940",
+            "event": "e_3",
+            "date": "22nd May 1940",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
-                "p_6",
-                "p_10"
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An attack is launched by General Franklyn on the 22nd May to exploit successes from previous engagements."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd May 1940",
+            "locations": [
+                "l_10",
+                "l_13"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The withdrawal of Frankforce is ordered as the enemy advances towards their positions."
+        },
+        {
+            "event": "e_5",
+            "date": "23rd May 1940",
+            "locations": [
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "The evacuation from Dunkirk becomes urgent as heavy enemy attacks force British troops to withdraw. All remaining British soldiers embark by midnight on 2nd/3rd June."
+            "eventSummary": "Reconnaissance by the enemy reveals their advance towards the southern outskirts of Béthune."
         }
     ]
 }

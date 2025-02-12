@@ -1,117 +1,88 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Ministry",
-            "p_2": "German bomber force",
-            "p_3": "Pilots"
+            "p_1": "Air Officer Commanding No. 1",
+            "p_2": "Air Mistry"
         },
         "locations": {
-            "l_1": "Northern Ireland",
-            "l_2": "East Coast",
-            "l_3": "West Coast Ports",
-            "l_4": "Clyde",
-            "l_5": "Mersey",
-            "l_6": "Bristol Channel",
-            "l_7": "Filton",
-            "l_8": "Pembrey",
-            "l_9": "Speke",
-            "l_10": "Prestwick",
-            "l_11": "Turahouse",
-            "l_12": "Drem"
+            "l_1": "France",
+            "l_2": "Bethune",
+            "l_3": "Lens",
+            "l_4": "Lille",
+            "l_5": "Germany",
+            "l_6": "Ruhr",
+            "l_7": "Straits of Dover",
+            "l_8": "Brest",
+            "l_9": "La Pallice"
         },
         "events": {
-            "e_1": "Decision to prioritize the defence of shipping",
-            "e_2": "Increase in coastal defence measures",
-            "e_3": "Formation of the Merchant Ship Fighter Unit"
+            "e_1": "Operation Circus",
+            "e_2": "Battle of Britain",
+            "e_3": "German attack on Russia",
+            "e_4": "Intensive period beginning on 14th June"
         },
         "organisations": {
-            "o_1": "Coastal Command",
-            "o_2": "No. 9 Group",
-            "o_3": "Polish Squadrons"
+            "o_1": "Bomber Command",
+            "o_2": "No. 1 Group",
+            "o_3": "No. 2 Group",
+            "o_4": "No. 3 Group",
+            "o_5": "Air Ministry",
+            "o_6": "Fighter Command"
         }
     },
     "keywords": [
-        "barrages",
-        "pirate raids",
-        "defence",
-        "U-boats",
-        "aircraft",
-        "Coastal Command"
+        "Circus",
+        "operations",
+        "attack",
+        "bombers",
+        "fighters"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategy",
-        "Air Operations"
+        "Intelligence Assessment",
+        "Strategic Bombing"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Intelligence Assessment": [
             "e_2"
         ],
-        "Defence Strategy": [
-            "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Air Operations": [
-            "e_2",
-            "e_3"
+        "Strategic Bombing": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "28th February 1941",
+            "date": "Various dates in June and July 1940",
             "locations": [
                 "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisation": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "A decision is reached to prioritize the defence of shipping in NorthWestern approaches, threatened by U-boats and long-range aircraft."
-        },
-        {
-            "event": "e_2",
-            "date": "March 1941",
-            "locations": [
-                "l_1",
-                "l_6",
-                "l_5",
-                "l_4"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
             ],
             "persons": [
                 "p_1",
-                "p_3"
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The defence measures for shipping increase, with enhanced A.A. and night-fighter defences implemented in response to threats."
-        },
-        {
-            "event": "e_3",
-            "date": "May 1941",
-            "locations": [
-                "l_9"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The formation of the Merchant Ship Fighter Unit begins to equip merchant vessels with fighter capabilities."
+            "eventSummary": "Operation Circus aims to intensify bombing against German targets. It is part of a strategy to force the enemy's fighter units to return from the Eastern front."
         }
     ]
 }

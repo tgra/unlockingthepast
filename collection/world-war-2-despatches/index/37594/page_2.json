@@ -1,61 +1,53 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Legentilhomme",
-            "p_2": "Colonel Chater",
-            "p_3": "Air Vice Marshal Reid"
+            "p_1": "General Sir ARCHIBALD P. WAVELL",
+            "p_2": "LieutenantColonel A. R. Chater"
         },
         "locations": {
-            "l_1": "Jibuti",
-            "l_2": "Somaliland",
-            "l_3": "Abyssinia",
+            "l_1": "British Somaliland",
+            "l_2": "Abyssinia",
+            "l_3": "Jibuti",
             "l_4": "Berbera",
-            "l_5": "Dobo",
-            "l_6": "Jirre",
-            "l_7": "Zeilah",
-            "l_8": "Hargeisa",
-            "l_9": "Burao",
-            "l_10": "Harar",
-            "l_11": "Diredawa",
-            "l_12": "Jijiga"
+            "l_5": "Burao",
+            "l_6": "Hargeisa",
+            "l_7": "Sheikh Pass",
+            "l_8": "Tug Argan Gap",
+            "l_9": "Southern Rhodesia"
         },
         "events": {
-            "e_1": "Outbreak of War with Italy",
-            "e_2": "French Armistice Announcement",
-            "e_3": "Approval of Reinforcement of Somaliland Garrison"
+            "e_1": "Japanese occupation of Abyssinia",
+            "e_2": "Outbreak of war with Germany",
+            "e_3": "Anglo-French conference at Aden"
         },
         "organisations": {
-            "o_1": "King's African Rifles",
-            "o_2": "Camel Corps",
-            "o_3": "Northern Rhodesia Regiment",
-            "o_4": "French Colonial Office",
-            "o_5": "War Office",
-            "o_6": "Colonial Office",
-            "o_7": "Middle East Command"
+            "o_1": "Somaliland Camel Corps",
+            "o_2": "War Office",
+            "o_3": "Colonial Office",
+            "o_4": "French authorities"
         }
     },
     "keywords": [
-        "Somaliland",
-        "Italian attack",
-        "defences",
-        "military operations",
+        "military",
+        "defense",
+        "invasion",
+        "occupation",
         "reinforcement"
     ],
     "themes": [
         "Military Operations",
         "Strategic Decisions",
-        "International Relations"
+        "Defence Policy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
         "Strategic Decisions": [
             "e_3"
         ],
-        "International Relations": [
+        "Defence Policy": [
             "e_1",
             "e_2"
         ]
@@ -63,10 +55,27 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12th June 1940",
+            "date": "1935-36",
             "locations": [
                 "l_1",
                 "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Japanese occupation of Abyssinia results in increased military concerns for British Somaliland."
+        },
+        {
+            "event": "e_2",
+            "date": "July 1939",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1",
@@ -74,50 +83,25 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The outbreak of war with Italy sees British and French forces preparing defenses in Somaliland against expected Italian aggression."
-        },
-        {
-            "event": "e_2",
-            "date": "17th June 1940",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_3",
-                "p_1"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "News of the French armistice arrives, raising concerns for the continuity of allied resistance against Italian advances."
+            "connectedEvents": [],
+            "eventSummary": "The outbreak of war with Germany finds the Somaliland Camel Corps inadequately prepared for defense."
         },
         {
             "event": "e_3",
-            "date": "January 1940",
+            "date": "May 1939",
             "locations": [
-                "l_2"
+                "l_3",
+                "l_4"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_5",
-                "o_6"
+                "o_1",
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The approval in principle for reinforcing the garrison of Somaliland is made, highlighting the strategic importance of the region."
+            "connectedEvents": [],
+            "eventSummary": "An Anglo-French conference is held at Aden to discuss the defense of Jibuti and Berbera."
         }
     ]
 }

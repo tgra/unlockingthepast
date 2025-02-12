@@ -1,77 +1,86 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander of the 5th Indian Division",
-            "p_2": "Fletcher"
+            "p_1": "Air Vice-Marshal G. R. M. Reid, D.S.O., M.C.",
+            "p_2": "Colonel A. H. Pollock, M.C.",
+            "p_3": "General Bertello"
         },
         "locations": {
-            "l_1": "Amba Alagi",
-            "l_2": "Falaga Pass",
-            "l_3": "Sandy Hill",
-            "l_4": "Castle Hill",
-            "l_5": "Bald Hill",
-            "l_6": "Enda Medani Alem",
-            "l_7": "Barentu",
-            "l_8": "Agordat",
-            "l_9": "Keren",
-            "l_10": "Massawa",
-            "l_11": "Socota"
+            "l_1": "Dire Daua",
+            "l_2": "Giggiga",
+            "l_3": "Marda Pass",
+            "l_4": "Abyssinia",
+            "l_5": "Berbera",
+            "l_6": "Mogadiscio",
+            "l_7": "British Somaliland",
+            "l_8": "Hargeisa",
+            "l_9": "Tug Wajale",
+            "l_10": "Aden",
+            "l_11": "Kenya"
         },
         "events": {
-            "e_1": "Battle of Amba Alagi",
-            "e_2": "Attack on Falaga Pass"
+            "e_1": "Fighter Ground Attack",
+            "e_2": "Capture of Giggiga",
+            "e_3": "Occupation of Marda Pass",
+            "e_4": "Withdrawal of 70th Colonial Brigade"
         },
         "organisations": {
-            "o_1": "5th Indian Division",
-            "o_2": "29th Indian Infantry Brigade",
-            "o_3": "Skinner's Horse",
-            "o_4": "51 Commando",
-            "o_5": "3/12 Frontier Force Regiment",
-            "o_6": "3/18 Garhwal Rifles"
+            "o_1": "11th (A) Division",
+            "o_2": "Nigerian Brigade",
+            "o_3": "1st S.A. Brigade",
+            "o_4": "22nd E.A. Brigade",
+            "o_5": "A.O.C. Aden",
+            "o_6": "Royal Navy",
+            "o_7": "E.A. Force"
         }
     },
     "keywords": [
-        "Military Strategy",
-        "Tactical Importance",
-        "Deception",
-        "Logistics",
-        "Reconnaissance",
-        "Infantry Brigade"
+        "Fighter Ground Attack",
+        "Invasion",
+        "Withdrawal",
+        "Occupation"
     ],
     "themes": [
         "Military Operations",
-        "Tactics and Strategy",
-        "Logistics and Preparation",
-        "Enemy Deception"
+        "Logistics",
+        "Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
             "e_2"
         ],
-        "Tactics and Strategy": [
-            "e_1",
-            "e_2"
-        ],
-        "Logistics and Preparation": [
-            "e_2"
-        ],
-        "Enemy Deception": [
-            "e_1",
-            "e_2"
+        "Tactics": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "4th May",
+            "date": "March 15, 1941",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On March 15, 1941, a fighter ground attack is organized resulting in the destruction of 20 enemy aircraft."
+        },
+        {
+            "event": "e_2",
+            "date": "March 17, 1941",
+            "locations": [
+                "l_2"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
@@ -79,33 +88,40 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The Battle of Amba Alagi commences with a strategic plan involving multiple formations aimed at deceiving enemy forces."
+            "eventSummary": "On March 17, 1941, Giggiga is captured by advanced forces of the 23rd Nigerian Brigade, marking a significant progress in the campaign."
         },
         {
-            "event": "e_2",
-            "date": "4th May",
+            "event": "e_3",
+            "date": "March 23, 1941",
             "locations": [
-                "l_2",
-                "l_8",
-                "l_9"
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "On March 23, 1941, an attack on the Marda Pass is planned by the Commander of 11th (A) Division, indicating the strategic movements in the region."
+        },
+        {
+            "event": "e_4",
+            "date": "March 20, 1941",
+            "locations": [
+                "l_7"
             ],
-            "eventSummary": "The attack on Falaga Pass is executed, involving coordinated demonstrations and strategic actions to mislead the enemy while they prepare for the main offensive."
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On March 20, 1941, the 70th Colonial Brigade attempts to withdraw from British Somaliland under General Bertello's command amidst advancing enemy forces."
         }
     ]
 }

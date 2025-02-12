@@ -2,60 +2,119 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Simla",
-            "l_2": "DehraDun",
-            "l_3": "Changsha",
-            "l_4": "Siliguei",
-            "l_5": "Cawnpore",
-            "l_6": "Bihar",
-            "l_7": "Ramgach",
-            "l_8": "Ranch",
-            "l_9": "Calcutta",
-            "l_10": "Chhundwara",
-            "l_11": "ORapur",
-            "l_12": "Hainan",
-            "l_13": "PARACEL",
-            "l_14": "Manila",
-            "l_15": "Chagos Arch",
-            "l_16": "Diego Garcia",
-            "l_17": "Cocos"
+            "l_1": "Delhi",
+            "l_2": "Karachi",
+            "l_3": "Calcutta",
+            "l_4": "Rangoon",
+            "l_5": "India",
+            "l_6": "Burma",
+            "l_7": "Malaya",
+            "l_8": "Java",
+            "l_9": "Karachi",
+            "l_10": "Kunming",
+            "l_11": "Ceylon"
         },
-        "events": {},
-        "organisations": {}
+        "events": {
+            "e_1": "Growth of air routes",
+            "e_2": "Formation of No. 52 Squadron",
+            "e_3": "Re-organisation of R.A.F. Regiment",
+            "e_4": "Re-conquest of Burma campaign"
+        },
+        "organisations": {
+            "o_1": "R.A.F.",
+            "o_2": "South-East Asia Command",
+            "o_3": "Transport Command"
+        }
     },
     "keywords": [
-        "Simla",
-        "DehraDun",
-        "Changsha",
-        "Cawnpore",
-        "Bihar",
-        "Calcutta",
-        "Hainan",
-        "Diego Garcia"
+        "air routes",
+        "Freight Mail",
+        "maintenance organisation",
+        "squadrons",
+        "air transport",
+        "R.A.F. Regiment",
+        "Burma campaign"
     ],
     "themes": [
-        "Geopolitical Locations"
+        "Military Operations",
+        "Strategic Planning",
+        "Transportation Logistics"
     ],
     "topicModel": {
-        "Geopolitical Locations": [
-            "l_1",
-            "l_2",
-            "l_3",
-            "l_4",
-            "l_5",
-            "l_6",
-            "l_7",
-            "l_8",
-            "l_9",
-            "l_10",
-            "l_11",
-            "l_12",
-            "l_13",
-            "l_14",
-            "l_15",
-            "l_16",
-            "l_17"
+        "Military Operations": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Planning": [
+            "e_1"
+        ],
+        "Transportation Logistics": [
+            "e_1",
+            "e_2"
         ]
     },
-    "eventConnections": []
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1944-1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The growth of air routes is demonstrated by a significant increase in freight and mail transport from May 1944 to April 1945."
+        },
+        {
+            "event": "e_2",
+            "date": "July, 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The No. 52 Squadron is formed and quickly earns a reputation for safety and efficiency in operations."
+        },
+        {
+            "event": "e_3",
+            "date": "1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The R.A.F. Regiment undergoes a major re-organisation to enhance its operational effectiveness in South-East Asia."
+        },
+        {
+            "event": "e_4",
+            "date": "1944-1945",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The campaign for the re-conquest of Burma is characterized by rapid advances supported by air power."
+        }
+    ]
 }

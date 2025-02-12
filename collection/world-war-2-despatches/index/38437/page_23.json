@@ -1,82 +1,103 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Hitler",
-            "p_2": "Navigator/Radio Operator"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "France",
-            "l_2": "Cuckmere Haven",
-            "l_3": "St. Margaret's Bay"
+            "l_1": "London",
+            "l_2": "Walcheren",
+            "l_3": "Hague",
+            "l_4": "Wassenaar",
+            "l_5": "Utrecht",
+            "l_6": "Lambeth",
+            "l_7": "Raaphorst",
+            "l_8": "Eikenhorst",
+            "l_9": "Terhorst",
+            "l_10": "Woerden"
         },
         "events": {
-            "e_1": "Diver attacks",
-            "e_2": "Modification of aircraft"
+            "e_1": "rocket offensive phase",
+            "e_2": "Bomber Command attack on Eikenhorst",
+            "e_3": "armed reconnaissance sorties"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "R.E.M.E. detachment at Anti-Aircraft Command"
+            "o_1": "Bomber Command",
+            "o_2": "No. 2 Group, Second Tactical Air Force",
+            "o_3": "Fighter Groups"
         }
     },
     "keywords": [
-        "flying bombs",
-        "Mosquito squadrons",
-        "fighter aircraft",
-        "Diver deployment"
+        "rockets",
+        "reconnaissance",
+        "air operations",
+        "bombing",
+        "German troops"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Combat",
-        "Aircraft Modification",
-        "Anti-Aircraft Artillery"
+        "Intelligence",
+        "Air Force Coordination"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Intelligence": [
             "e_1"
         ],
-        "Aerial Combat": [
-            "e_1"
-        ],
-        "Aircraft Modification": [
+        "Air Force Coordination": [
+            "e_1",
             "e_2"
-        ],
-        "Anti-Aircraft Artillery": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 15",
+            "date": "September 17, 1944",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_3",
+                "l_4"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
             ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The rocket offensive phase continues with reconnaissance efforts against German positions and the planning of air strikes on suspected rocket storage sites."
+        },
+        {
+            "event": "e_2",
+            "date": "September 17, 1944",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Bomber Command conducts an attack on Eikenhorst, resulting in significant bombing with 172 tons dropped."
+        },
+        {
+            "event": "e_3",
+            "date": "September 10, 1944 to September 25, 1944",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The Diver attacks commence, forcing the deployment of modified aircraft and strategic use of artillery as enemies employ flying bombs over southern England."
-        },
-        {
-            "event": "e_2",
-            "date": "June",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "In late June, aircraft modifications take place, enhancing speed and efficiency against flying bomb threats in preparation for the Diver attacks."
+            "eventSummary": "Reconnaissance sorties are flown over the Hague and Wassenaar to assess rocket firing positions and to gather intelligence."
         }
     ]
 }

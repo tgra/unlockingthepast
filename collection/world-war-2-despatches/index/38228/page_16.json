@@ -1,143 +1,121 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unnamed Military Officer",
-            "p_2": "Unnamed Official"
+            "p_1": "Colonel Treffrey Thomson",
+            "p_2": "Lieut.-Colonel A. Campbell",
+            "p_3": "Mr. Morton",
+            "p_4": "Mr. John Wise",
+            "p_5": "Mr. Potter",
+            "p_6": "Mr. Forster",
+            "p_7": "Captain Scott"
         },
         "locations": {
-            "l_1": "Pegu",
-            "l_2": "Hlegu",
-            "l_3": "Taukkyan",
-            "l_4": "Rangoon",
-            "l_5": "Thonze",
-            "l_6": "Tharrawaddy",
-            "l_7": "Letpadan",
-            "l_8": "Henzada",
-            "l_9": "Sanywe Ferry",
-            "l_10": "Prome",
-            "l_11": "Irrawaddy Valley"
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Upper Burma",
+            "l_4": "India"
         },
         "events": {
-            "e_1": "Attack on Road Block North of Taukkyan",
-            "e_2": "Withdrawal from Rangoon",
-            "e_3": "Concentration of 17 Division",
-            "e_4": "Regrouping of Forces after Fall of Rangoon"
+            "e_1": "Establishment of Defence Services (Burma) Canteen",
+            "e_2": "Institution of Martial Law",
+            "e_3": "Evacuation Policy for Rangoon",
+            "e_4": "Planning for Oil Resource Denial"
         },
         "organisations": {
-            "o_1": "63 Infantry Brigade",
-            "o_2": "16 Indian Infantry Brigade",
-            "o_3": "R.A.F.",
-            "o_4": "Japanese Forces",
-            "o_5": "17 Division",
-            "o_6": "Chinese Fifth Army"
+            "o_1": "Free Burma Army",
+            "o_2": "Docks Operating Company",
+            "o_3": "Irrawaddy Flotilla Company",
+            "o_4": "various oil companies"
         }
     },
     "keywords": [
-        "military",
-        "withdrawal",
-        "attack",
-        "Japanese",
-        "Rangoon",
-        "infantry brigade",
-        "concentration",
-        "operations"
+        "medical situation",
+        "Chinese troops",
+        "morale",
+        "transportation",
+        "Martial Law",
+        "evacuation",
+        "oilfields",
+        "demolition"
     ],
     "themes": [
-        "Military Operations",
-        "Strategic Decisions",
         "Logistics",
-        "Regrouping of Forces"
+        "Military Operations",
+        "Local Collaboration",
+        "Civil-Military Relations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Strategic Decisions": [
             "e_3",
             "e_4"
         ],
+        "Civil-Military Relations": [
+            "e_2"
+        ],
         "Logistics": [
-            "e_2",
+            "e_1",
             "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8th March",
+            "date": "January or February, 1942",
             "locations": [
-                "l_3",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The 63 Infantry Brigade is ordered to attack a road block north of Taukkyan but fails to clear it immediately; however, a subsequent attack by the 16 Indian Infantry Brigade successfully clears the route."
+            "connectedEvents": [],
+            "eventSummary": "The establishment of the Defence Services (Burma) Canteen is aimed at improving the morale of troops in the absence of previous canteen organization."
         },
         {
             "event": "e_2",
-            "date": "7th - 11th March",
+            "date": null,
             "locations": [
-                "l_4"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "Following the fall of Rangoon, the 17 Division conducts a withdrawal to regroup and concentrate forces in a safer area, dealing with logistical challenges amidst enemy activity."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Martial Law is considered by the Government, particularly during the chaotic last days in Rangoon, but its implementation comes too late to improve the worsening situation."
         },
         {
             "event": "e_3",
-            "date": "9th - 11th March",
+            "date": null,
             "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_2",
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_5"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The 17 Division is concentrated in the Thonze, Tharrawaddy, and Letpadan areas as part of the strategic regrouping after the withdrawal from Rangoon."
+            "eventSummary": "The evacuation policy regarding Rangoon emphasizes the need for the military to strategically withdraw to maintain operations in Upper Burma and protect vital resources."
         },
         {
             "event": "e_4",
-            "date": "After 11th March",
+            "date": null,
             "locations": [
-                "l_11"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_6",
+                "p_7"
             ],
             "organisations": [
-                "o_6"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3"
             ],
-            "eventSummary": "In the aftermath of the fall of Rangoon, the military pivots its strategy, regrouping forces in preparation for ongoing operations to retain control over Upper Burma."
+            "eventSummary": "Planning for the denial of oil resources takes place, highlighting the potential impact on the enemy's war effort."
         }
     ]
 }

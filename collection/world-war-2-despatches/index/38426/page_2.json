@@ -1,228 +1,146 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-Commander T. F. Taylor",
-            "p_2": "Lieutenant J. P. Fyfe",
-            "p_3": "Captain H. F. Nalder",
-            "p_4": "Lieutenant-Commander Viscount Jocelyn",
-            "p_5": "General Eisenhower",
-            "p_6": "Admiral of the Fleet Sir Andrew B. Cunningham",
-            "p_7": "Admiral Sir John H. D. Cunningham",
-            "p_8": "Vice-Admiral Sir Algernon U. Willis",
-            "p_9": "Lieutenant-Commander A. N. G. Campbell",
-            "p_10": "Lieutenant-Commander L. W. Napier",
-            "p_11": "Lieutenant J. F. D. Bush",
-            "p_12": "Lieutenant-Commander Sir Standish O. G. Roche",
-            "p_13": "Captain C. P. Frend",
-            "p_14": "Captain M. S. Thomas",
-            "p_15": "Lieutenant R. J. Clutterbuck",
-            "p_16": "Lieutenant-Commander W. J. P. Church",
-            "p_17": "Commander E. Boudouris"
+            "p_1": "A. K. Scott-Monctieff",
+            "p_2": "E. Mack",
+            "p_3": "G. Blessas",
+            "p_4": "C. A. de W. Kitcat",
+            "p_5": "J. I. Jones",
+            "p_6": "C. Nikitiades",
+            "p_7": "N. Sarris",
+            "p_8": "W. E. Agnew",
+            "p_9": "G. D. Belben",
+            "p_10": "P. W. B. Brooking",
+            "p_11": "J. Terry"
         },
         "locations": {
-            "l_1": "Aegean Sea",
-            "l_2": "Scarpanto Strait",
-            "l_3": "Dodecanese",
-            "l_4": "Piraeus",
-            "l_5": "Leros",
-            "l_6": "Samos",
-            "l_7": "Rhodes",
-            "l_8": "Tunis",
-            "l_9": "Kos",
-            "l_10": "Kalymnos",
-            "l_11": "Naxos",
-            "l_12": "Alexandria",
-            "l_13": "Levitha"
+            "l_1": "Rhodes",
+            "l_2": "Casteloriso",
+            "l_3": "Piraeus",
+            "l_4": "Cyclades",
+            "l_5": "Stampalia",
+            "l_6": "Kos",
+            "l_7": "Cyprus",
+            "l_8": "Malta",
+            "l_9": "Alexandria",
+            "l_10": "Leros"
         },
         "events": {
-            "e_1": "Attack on enemy convoy",
-            "e_2": "Sweep operation by H.M.S. CARLISLE",
-            "e_3": "Meeting in Tunis",
-            "e_4": "Operation Accolade decision",
-            "e_5": "Discovery of enemy invasion plan",
-            "e_6": "Intercepting enemy convoy off Naxos",
-            "e_7": "Destruction of merchant ship by H.M. Submarine TORBAY",
-            "e_8": "Search operations by H.M.S. HURSLEY and H.H.M.S. MIAOULIS"
+            "e_1": "Italian Governor surrendering Rhodes",
+            "e_2": "Landing operation on Rhodes",
+            "e_3": "Landing on Kos",
+            "e_4": "Sinking of H.M.S. INTREPID"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "British Government"
+            "o_1": "Royal Naval crews",
+            "o_2": "British forces",
+            "o_3": "H.M.S. Fleet",
+            "o_4": "12th Cruiser Squadron",
+            "o_5": "R.A.F."
         }
     },
     "keywords": [
-        "convoy",
-        "reconnaissance",
-        "sweep operation",
-        "invasion",
-        "air reconnaissance",
-        "anti-shipping patrols"
+        "Italian Governor",
+        "Germans",
+        "British forces",
+        "naval forces",
+        "invasion"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Strategic Decisions",
-        "Diplomacy"
+        "Naval Engagements",
+        "Surrender",
+        "Troop Movements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_5",
-            "e_6",
-            "e_7",
-            "e_8"
+            "e_3"
         ],
-        "Diplomacy": [
-            "e_3",
+        "Naval Engagements": [
+            "e_2",
             "e_4"
         ],
-        "Strategic Decisions": [
-            "e_4",
-            "e_5"
+        "Surrender": [
+            "e_1"
+        ],
+        "Troop Movements": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "7th October",
+            "date": "September 5, 1943",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Italian Governor surrenders Rhodes to the Germans after a brief resistance."
+        },
+        {
+            "event": "e_2",
+            "date": "September 28, 1943",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_5"
+                "e_3"
             ],
-            "eventSummary": "H.M. Ships SIRIUS, PENELOPE, FAULKNOR, and FURY sink an enemy convoy after reconnaissance reports, delaying their retirement."
-        },
-        {
-            "event": "e_2",
-            "date": "8th October",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "H.M.S. CARLISLE executes a sweep operation against enemy forces but comes under heavy attack."
+            "eventSummary": "British forces land supplies and reinforcements on Rhodes."
         },
         {
             "event": "e_3",
-            "date": "9th October",
+            "date": "October 3, 1943",
             "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_5",
-                "p_6",
-                "p_7"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "A critical meeting in Tunis discusses the operational situation in the Mediterranean among top military leaders."
-        },
-        {
-            "event": "e_4",
-            "date": "9th October",
-            "locations": [
-                "l_5",
                 "l_6"
             ],
             "persons": [
-                "p_5",
-                "p_6",
-                "p_7"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_4"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The decision against mounting Operation Accolade is made due to resource limitations."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An invasion force successfully lands on Kos, capturing the island."
         },
         {
-            "event": "e_5",
-            "date": "14th October",
-            "locations": [
-                "l_5",
-                "l_9",
-                "l_10"
-            ],
-            "persons": [
-                "p_8"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Intelligence indicates an imminent enemy invasion of Leros, prompting a strategic response."
-        },
-        {
-            "event": "e_6",
-            "date": "15th October",
+            "event": "e_4",
+            "date": "September 26, 1943",
             "locations": [
                 "l_10"
             ],
             "persons": [
-                "p_11",
-                "p_12"
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "H.M. Ships BELVOIR and BEAUFORT are engaged to intercept an enemy convoy off Naxos but have to withdraw due to fuel shortages."
-        },
-        {
-            "event": "e_7",
-            "date": "16th October",
-            "locations": [
-                "l_13"
-            ],
-            "persons": [
-                "p_15"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "H.M. Submarine TORBAY successfully sinks a merchant ship from an enemy convoy."
-        },
-        {
-            "event": "e_8",
-            "date": "16th October",
-            "locations": [
-                "l_9",
-                "l_10"
-            ],
-            "persons": [
-                "p_16",
-                "p_17"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "H.M.S. HURSLEY and H.H.M.S. MIAOULIS conduct search operations which result in the sinking of an enemy E-boat."
+            "eventSummary": "H.M.S. INTREPID is sunk in Leros harbour during enemy air operations."
         }
     ]
 }

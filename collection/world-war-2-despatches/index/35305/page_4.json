@@ -6,56 +6,55 @@
             "p_3": "Air Vice-Marshal C. H. B. Blount",
             "p_4": "General Jeauneaud",
             "p_5": "General Armengeaud",
-            "p_6": "General Mouchard",
-            "p_7": "General d Astier"
+            "p_6": "General d Astier",
+            "p_7": "General Mouchard"
         },
         "locations": {
-            "l_1": "France",
-            "l_2": "Maginot Line",
-            "l_3": "Saar front",
+            "l_1": "Maginot Line",
+            "l_2": "Saar front",
+            "l_3": "France",
             "l_4": "British zone"
         },
         "events": {
             "e_1": "Completion of the First Contingent",
-            "e_2": "Development of Air Forces and Air Defence",
+            "e_2": "Air Forces and Anti-Aircraft Defence",
             "e_3": "Air Reconnaissance",
             "e_4": "Preparation of Aerodromes"
         },
         "organisations": {
             "o_1": "British Army",
-            "o_2": "Royal Air Force",
-            "o_3": "British Expeditionary Force",
-            "o_4": "French Air Forces",
+            "o_2": "British Expeditionary Force",
+            "o_3": "Royal Air Force",
+            "o_4": "French R gion A rienne",
             "o_5": "Air Ministry"
         }
     },
     "keywords": [
         "Maginot Line",
+        "Saar front",
         "British Army",
+        "French fortress troops",
+        "Infantry Brigades",
         "Royal Air Force",
-        "Aerial Defence",
-        "Saar Front",
-        "Infantry Brigades"
+        "air reconnaissance"
     ],
     "themes": [
         "Military Operations",
         "Air Defence",
-        "Strategic Decisions",
-        "Collaboration with French Forces"
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Air Defence": [
             "e_2"
         ],
-        "Strategic Decisions": [
+        "Strategic Planning": [
             "e_1",
-            "e_4"
-        ],
-        "Collaboration with French Forces": [
             "e_3",
             "e_4"
         ]
@@ -63,10 +62,10 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October - December 1939",
+            "date": "October to November",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_3"
             ],
             "persons": [
                 "p_1",
@@ -74,18 +73,20 @@
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The first contingent of Infantry Brigades is completed as British forces are sent to bolster the front lines in France, where collaboration with French troops is crucial."
+            "eventSummary": "The completion of the first contingent occurs as multiple Infantry Brigades are sent from home to bolster the British Expeditionary Force."
         },
         {
             "event": "e_2",
-            "date": "September - December 1939",
+            "date": "Not specified",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
                 "p_3",
@@ -95,41 +96,47 @@
             ],
             "organisations": [
                 "o_2",
+                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_3"
             ],
-            "eventSummary": "Development of the Air Forces and Anti-Aircraft Defence proceeds as British and French forces prepare for potential aerial threats, enhancing collaborative military strategies."
+            "eventSummary": "Air forces and anti-aircraft defense efforts are coordinated to ensure protection during troop movements and disembarkations."
         },
         {
             "event": "e_3",
-            "date": "1939",
+            "date": "Not specified",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
-                "p_6"
+                "p_7"
             ],
             "organisations": [
-                "o_4",
                 "o_5"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Air reconnaissance operations are conducted in coordination with the French Air Forces, focusing on obtaining intelligence in the face of enemy aerial opposition."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Strategical plans for air reconnaissance are executed to gather important information, often in the face of enemy opposition."
         },
         {
             "event": "e_4",
-            "date": "Before and during 1939",
+            "date": "Before mobilisation",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [],
             "organisations": [
+                "o_2",
                 "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The preparation of aerodromes in France is initiated as British forces establish their operational bases to support air operations and logistics."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The preparation of aerodromes begins before mobilization, highlighting the significant logistical challenges encountered in establishing a presence in France."
         }
     ]
 }

@@ -1,130 +1,202 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General van Oyen",
-            "p_2": "Wing Commander Alexander",
-            "p_3": "General ter Poorten"
+            "p_1": "C. W. Bailey"
         },
         "locations": {
-            "l_1": "Bandoeng",
-            "l_2": "Batavia",
-            "l_3": "Oesthaven",
-            "l_4": "Ceylon",
-            "l_5": "Australia",
-            "l_6": "Sumatra",
-            "l_7": "Borneo",
-            "l_8": "Sourabaya",
-            "l_9": "Poerwokerto",
-            "l_10": "Eritanwetan",
-            "l_11": "Kalidjati",
-            "l_12": "Tasik Malaja",
-            "l_13": "Djojacarta",
-            "l_14": "Soekaboem",
-            "l_15": "Sunda Straits"
+            "l_1": "Malaya",
+            "l_2": "Kota Bahru",
+            "l_3": "Indo-China",
+            "l_4": "Great Natunas",
+            "l_5": "Kuantan",
+            "l_6": "Gulf of Siam",
+            "l_7": "Singapore",
+            "l_8": "Hong Kong",
+            "l_9": "British Borneo",
+            "l_10": "Kuching",
+            "l_11": "Miri",
+            "l_12": "Burma",
+            "l_13": "Mergui",
+            "l_14": "Lashio",
+            "l_15": "Siamese frontier"
         },
         "events": {
-            "e_1": "Evacuation of Batavia",
-            "e_2": "Attack on Kalidjati aerodrome",
-            "e_3": "Disbandment of No. 205 (F.B.) Squadron",
-            "e_4": "Final Air Operations"
+            "e_1": "Preparation of Initial Reconnaissance Plan",
+            "e_2": "Concentration of Squadrons in War",
+            "e_3": "Transition to a War Footing",
+            "e_4": "Co-ordination of Night Flying Arrangements",
+            "e_5": "Establishment of Air Corridors",
+            "e_6": "Establishment of Operations Rooms",
+            "e_7": "Mobility of Squadrons",
+            "e_8": "Developments in Hong Kong",
+            "e_9": "Developments in British Borneo",
+            "e_10": "Developments in Burma"
         },
         "organisations": {
-            "o_1": "No. 205 (F.B.) Squadron",
-            "o_2": "Britair",
-            "o_3": "R.A.A.F.",
-            "o_4": "Dutch Command",
-            "o_5": "No. 232 (F) Squadron",
-            "o_6": "No. 36 (T.B.) Squadron",
-            "o_7": "Blackforce"
+            "o_1": "Allies",
+            "o_2": "R.A.F",
+            "o_3": "Far East Command",
+            "o_4": "A.H.Q.",
+            "o_5": "G.H.Q.",
+            "o_6": "Dutch Army Air Service"
         }
     },
     "keywords": [
-        "military operations",
-        "Java",
-        "Japanese forces",
-        "aerodrome",
-        "reconnaissance",
-        "anti-submarine patrols"
+        "Reconnaissance",
+        "Squadrons",
+        "War",
+        "Air",
+        "Defence",
+        "Military"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation",
-        "Air Defense",
-        "Strategic Decisions"
+        "Strategic Decisions",
+        "Defence Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3",
-            "e_4"
-        ],
-        "Evacuation": [
-            "e_1"
+            "e_7",
+            "e_8",
+            "e_9",
+            "e_10"
         ],
         "Strategic Decisions": [
-            "e_3",
-            "e_4"
+            "e_4",
+            "e_5",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1, 1942",
+            "date": "Not specified",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_4",
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The evacuation of Batavia is ordered as Japanese forces successfully land, pressuring Dutch defenses."
+            "eventSummary": "A reconnaissance plan is drawn up to detect the Japanese approach to Malaya."
         },
         {
             "event": "e_2",
-            "date": "March 3, 1942",
-            "locations": [
-                "l_2",
-                "l_11"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "No. 36 (T.B.) Squadron attacks Kalidjati aerodrome, engaging Japanese forces that captured the location."
-        },
-        {
-            "event": "e_3",
-            "date": "March 3, 1942",
+            "date": "Not specified",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The No. 205 (F.B.) Squadron disbands after their operations become ineffective due to enemy pressures."
+            "connectedEvents": [
+                "e_3",
+                "e_1"
+            ],
+            "eventSummary": "Squadrons are concentrated in the defence of areas threatened by enemy attack."
+        },
+        {
+            "event": "e_3",
+            "date": "May, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "A transition to a full war footing ensures that codes and readiness are standardized."
         },
         {
             "event": "e_4",
-            "date": "March 4-8, 1942",
+            "date": "November, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Arrangements for night flying are coordinated to ensure effective operations."
+        },
+        {
+            "event": "e_5",
+            "date": "July, 1941",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Air corridors are established for operations in and out of Singapore."
+        },
+        {
+            "event": "e_6",
+            "date": "Not specified",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Operations rooms are opened at each base to standardize layouts and procedures."
+        },
+        {
+            "event": "e_7",
+            "date": "Autumn, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Dutch Army Air Service offers Lodestars for mobility assistance."
+        },
+        {
+            "event": "e_8",
+            "date": "Summer, 1941",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An urgent request for fighter aircraft is received from Hong Kong but cannot be met."
+        },
+        {
+            "event": "e_9",
+            "date": "Not specified",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Facilities for land planes in British Borneo are described, including aerodromes."
+        },
+        {
+            "event": "e_10",
+            "date": "Autumn, 1940",
             "locations": [
                 "l_12"
             ],
@@ -132,13 +204,10 @@
                 "p_1"
             ],
             "organisations": [
-                "o_4",
-                "o_1"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Final air operations are conducted as remnants of the squadrons attempt to fend off further enemy advances."
+            "connectedEvents": [],
+            "eventSummary": "Plans for constructing air bases in Burma are developed in cooperation with the government."
         }
     ]
 }

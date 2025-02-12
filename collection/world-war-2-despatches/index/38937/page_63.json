@@ -1,101 +1,121 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Castellano",
-            "p_2": "Marshal Badoglio",
-            "p_3": "Mr. Churchill",
-            "p_4": "Mr. Roosevelt",
-            "p_5": "General Eisenhower",
-            "p_6": "General Smith",
-            "p_7": "Major-General K. W. D. Strong"
+            "p_1": "Kesselring",
+            "p_2": "Hitler",
+            "p_3": "Mussolini"
         },
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Calabria",
-            "l_3": "Salerno",
-            "l_4": "Madrid",
-            "l_5": "Lisbon",
-            "l_6": "Algiers",
-            "l_7": "Quebec",
-            "l_8": "Chile"
+            "l_1": "Florence",
+            "l_2": "Tyrrhenian Sea",
+            "l_3": "Forli",
+            "l_4": "Cesena",
+            "l_5": "La Spezia",
+            "l_6": "Foglia river",
+            "l_7": "Futa Pass",
+            "l_8": "Rome",
+            "l_9": "Gothic line",
+            "l_10": "Carrara",
+            "l_11": "Apuan Mountains",
+            "l_12": "Borgo a Mozzano",
+            "l_13": "Lucca",
+            "l_14": "Modena",
+            "l_15": "Porretta",
+            "l_16": "Po valley",
+            "l_17": "Dicomano",
+            "l_18": "Pistoia",
+            "l_19": "Bologna"
         },
         "events": {
-            "e_1": "Negotiations for Surrender",
-            "e_2": "Invasion of Italy"
+            "e_1": "Feltre conference",
+            "e_2": "spring offensive",
+            "e_3": "withdrawal for operations in Southern France",
+            "e_4": "attack on the Adriatic"
         },
         "organisations": {
-            "o_1": "Italian Commando Supremo",
-            "o_2": "British Embassy",
-            "o_3": "Allied Force Headquarters"
+            "o_1": "Slovak Technical Brigade"
         }
     },
     "keywords": [
-        "surrender",
-        "capitulation",
-        "invasion",
-        "military operations",
-        "negotiations"
+        "demolitions",
+        "defence",
+        "mountain warfare",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy"
+        "Defensive Strategies",
+        "Battle Planning"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Defensive Strategies": [
+            "e_1"
+        ],
+        "Battle Planning": [
             "e_1",
             "e_2"
-        ],
-        "Diplomacy": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th August 1943",
+            "date": "July, 1943",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_5"
+                "l_1"
             ],
             "persons": [
-                "p_1",
                 "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7"
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "On the 16th of August, negotiations for surrender are opened by General Castellano on behalf of Marshal Badoglio, indicating that the Italian Government is prepared to cease hostilities against the Allies."
+            "eventSummary": "At the Feltre conference in July 1943, Hitler informs Mussolini about the German plan for Italy."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "Spring 1943",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_8"
             ],
-            "persons": [
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
-            "organisations": [
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The invasion of Italy is planned with military operations set in motion following the negotiations for surrender initiated by Castellano."
+            "eventSummary": "In the spring offensive, the Allies achieve significant victories with Rome under their control."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The withdrawal of forces for operations in Southern France leads to a significant reduction of resources available to the Allies."
+        },
+        {
+            "event": "e_4",
+            "date": "25th August, 1943",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "An attack on the Adriatic on August 25th exposes unfinished defenses along the Foglia river."
         }
     ]
 }

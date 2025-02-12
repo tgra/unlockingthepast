@@ -1,97 +1,111 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral Syfret",
-            "p_2": "Brigadier Tarleton"
+            "p_1": "Rear Admiral",
+            "p_2": "HERMIONE",
+            "p_3": "DEVONSHIRE",
+            "p_4": "ANTHONY"
         },
         "locations": {
-            "l_1": "Bachaquero",
-            "l_2": "Blue beach",
-            "l_3": "Courrier Bay",
-            "l_4": "Andrakaka Peninsula",
-            "l_5": "Diego Suarez"
+            "l_1": "Ambararata Bay",
+            "l_2": "Oranjia Point",
+            "l_3": "Antsirane",
+            "l_4": "Oranjia Peninsula",
+            "l_5": "Cape Amber",
+            "l_6": "Diego Suarez",
+            "l_7": "English Bay",
+            "l_8": "Andrakaka"
         },
         "events": {
-            "e_1": "Disembarkation of 17 Infantry Brigade",
-            "e_2": "Landing and Assumption of Control by Force Commander"
+            "e_1": "Bombardment of Oranjia Peninsula",
+            "e_2": "Action of the cruisers DEVONSHIRE and HERMIONE",
+            "e_3": "Occupation of Diego Suarez"
         },
         "organisations": {
-            "o_1": "H.M.S. Ramullies",
-            "o_2": "H.M.S. Keren",
-            "o_3": "S.N.O.L.",
-            "o_4": "17 Infantry Brigade Group",
-            "o_5": "29 Independent Brigade",
-            "o_6": "2 Royal Scots Fusiliers",
-            "o_7": "5 Commando"
+            "o_1": "14th Minesweeping Flotilla",
+            "o_2": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "disembarkation",
-        "landing",
-        "military operation",
-        "beach",
-        "infantry brigade"
+        "bombardment",
+        "operations",
+        "cruisers",
+        "ammunition",
+        "coast defences"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Command and Control"
+        "Naval Warfare",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Logistics": [
+        "Naval Warfare": [
             "e_1",
             "e_2"
         ],
-        "Command and Control": [
+        "Strategic Planning": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "4 March 1948",
+            "date": "May 7, 1948",
             "locations": [
-                "l_1",
-                "l_2",
                 "l_4"
             ],
             "persons": [
-                "p_2"
+                "p_1",
+                "p_4"
             ],
             "organisations": [
-                "o_4",
-                "o_6",
-                "o_5"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The personnel of 17 Infantry Brigade Group disembark from H.M.S. Oronsay and Duchess of Atholl, beginning their landing operations at Blue Beach."
+            "eventSummary": "The intention to bombard Oranjia Peninsula is received at 0415, and preparations are made to proceed towards the target."
         },
         {
             "event": "e_2",
-            "date": "4 March 1948",
+            "date": "1948",
             "locations": [
                 "l_1",
-                "l_5"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Force Commander embarks in H.M.S. Ramullies and attempts to transfer to H.M.S. Keren to assist the landing operations of 17 Infantry Brigade."
+            "eventSummary": "The cruisers DEVONSHIRE and HERMIONE take positions for action against coast defenses and prepare for bombardment as they engage in naval operations."
+        },
+        {
+            "event": "e_3",
+            "date": "1948",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The occupation of Diego Suarez is communicated, indicating strategic movements in naval operations."
         }
     ]
 }

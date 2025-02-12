@@ -1,115 +1,190 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General Freyberg",
-            "p_2": "Brigadier Chappell",
-            "p_3": "Brigadier Vasey"
+            "p_1": "Rashid Ali",
+            "p_2": "Air Vice-Marshal Smart",
+            "p_3": "Brigadier Kingstone",
+            "p_4": "Major-General J. G. W. Clark",
+            "p_5": "General Sir Claude Auchinleck",
+            "p_6": "General Quinan"
         },
         "locations": {
-            "l_1": "Crete",
-            "l_2": "Palestine",
-            "l_3": "Egypt",
-            "l_4": "Suda Bay",
-            "l_5": "Maleme",
-            "l_6": "Canea",
-            "l_7": "Heraklion",
-            "l_8": "Albania"
+            "l_1": "Iraq",
+            "l_2": "Basra",
+            "l_3": "Baghdad",
+            "l_4": "Habbaniyah",
+            "l_5": "Lake Habbaniyah",
+            "l_6": "River Euphrates",
+            "l_7": "Fallujah",
+            "l_8": "Rutbah",
+            "l_9": "Transjordan",
+            "l_10": "Palestine",
+            "l_11": "Syria",
+            "l_12": "Haifa"
         },
         "events": {
-            "e_1": "German attack on Crete",
-            "e_2": "Evacuation from Greece",
-            "e_3": "British forces sent to Crete"
+            "e_1": "Landing of troops at Basra",
+            "e_2": "Attacks on Royal Air Force station at Habbaniyah",
+            "e_3": "Iraqi forces' occupation of high ground",
+            "e_4": "Air bombing of Iraqi troops",
+            "e_5": "Garrison's sortie at Habbaniyah",
+            "e_6": "Recapture of Fallujah",
+            "e_7": "Counter-attack on Fallujah"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Mobile Naval Base Defence Organisation (M.N.B.D.O.)",
-            "o_3": "2nd Battalion The Black Watch",
-            "o_4": "1st York and Lancaster Regiment"
+            "o_1": "Royal Air Force",
+            "o_2": "Iraqi Air Force",
+            "o_3": "1st King's Own Royal Regiment",
+            "o_4": "Arab Legion",
+            "o_5": "War Cabinet"
         }
     },
     "keywords": [
-        "Crete",
-        "German attack",
-        "defensive operations",
-        "evacuation",
-        "Royal Navy",
-        "British forces"
+        "Iraq",
+        "British forces",
+        "Royal Air Force",
+        "Habbaniyah",
+        "Fallujah",
+        "bombing",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategy",
-        "Logistics and Supply",
-        "International Cooperation"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
         ],
-        "Defensive Strategy": [
-            "e_1",
+        "Diplomacy": [
             "e_2"
         ],
-        "International Cooperation": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 1941",
+            "date": "Date not specified",
             "locations": [
-                "l_1"
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Troops land at Basra to take command and operations in Iraq."
+        },
+        {
+            "event": "e_2",
+            "date": "29th April",
+            "locations": [
+                "l_4"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "A large scale German attack occurs on Crete, necessitating an immediate defensive response from the troops stationed there."
-        },
-        {
-            "event": "e_2",
-            "date": "April 1941",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Prior to the German attack on Crete, British forces are evacuated from Greece due to increasing threats from Axis powers."
+            "eventSummary": "Rashid Ali acts against the British Royal Air Force at Habbaniyah."
         },
         {
             "event": "e_3",
-            "date": "November 1, 1940",
+            "date": "30th April",
             "locations": [
-                "l_1"
+                "l_4"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "British forces are first sent to Crete to secure Suda Bay, establishing a foothold in the Mediterranean."
+            "eventSummary": "Iraqi forces occupy high ground overlooking Habbaniyah."
+        },
+        {
+            "event": "e_4",
+            "date": "Date not specified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The British Royal Air Force conducts an air bombing against Iraqi troops."
+        },
+        {
+            "event": "e_5",
+            "date": "7th May",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_5",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The garrison at Habbaniyah makes a successful sortie against Iraqi troops."
+        },
+        {
+            "event": "e_6",
+            "date": "10th May",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Major-General Clark's column recaptures Fallujah during battle."
+        },
+        {
+            "event": "e_7",
+            "date": "22nd May",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An Iraqi force temporarily reoccupies Fallujah before being driven out."
         }
     ]
 }

@@ -1,85 +1,104 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Field-Marshal Rommel",
-            "p_2": "General Montgomery",
-            "p_3": "General Anderson"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Tunisia",
-            "l_2": "Sidi Bou Zid",
-            "l_3": "Gebel Lessouda",
-            "l_4": "Sbeitla",
-            "l_5": "Gafsa",
-            "l_6": "Kairouan",
-            "l_7": "Enfidaville",
-            "l_8": "Tripolitania",
-            "l_9": "Mareth line",
-            "l_10": "Matmata mountains",
-            "l_11": "Bizerta"
+            "l_1": "Baqqush",
+            "l_2": "Mersa Matruh",
+            "l_3": "Fuka",
+            "l_4": "Sidi Haneish",
+            "l_5": "Tobruk",
+            "l_6": "Benghazi",
+            "l_7": "French North Africa",
+            "l_8": "Agheila",
+            "l_9": "Sidi Barrani",
+            "l_10": "Buq Bug",
+            "l_11": "Halfaya Pass",
+            "l_12": "Capuzzo",
+            "l_13": "Sollum",
+            "l_14": "Bardia",
+            "l_15": "Gambut",
+            "l_16": "El Adem",
+            "l_17": "Tmimi",
+            "l_18": "Martuba",
+            "l_19": "Derna",
+            "l_20": "Mechili",
+            "l_21": "Gebel Akhdar",
+            "l_22": "Cyrenaica"
         },
         "events": {
-            "e_1": "Battle of Kasserine"
+            "e_1": "Pursuit to Matruh",
+            "e_2": "Occupation of Tobruk",
+            "e_3": "Attack on Halfaya Pass"
         },
         "organisations": {
-            "o_1": "Axis forces",
-            "o_2": "Allied forces",
-            "o_3": "United States Armoured Division",
-            "o_4": "Italian 131 Centauro Armoured Division"
+            "o_1": "4/6 South African Armoured Car Regiment",
+            "o_2": "7 Armoured Division",
+            "o_3": "New Zealand Division",
+            "o_4": "10 Corps"
         }
     },
     "keywords": [
-        "German High Command",
-        "North African landings",
-        "panzer division",
-        "airborne troops",
-        "artillery units",
-        "Battle of Kasserine",
-        "counter-attack"
+        "Pursuit",
+        "Attack",
+        "Occupation"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Reinforcements",
-        "Air Superiority"
+        "Engagements",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Strategic Decisions": [
-            "e_1"
-        ],
-        "Reinforcements": [
-            "e_1"
-        ],
-        "Air Superiority": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "14th February",
+            "date": "6th November",
             "locations": [
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3",
-                "o_4"
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The forces reach Baqqush and engage in pursuit of the enemy towards Matruh, capturing numerous prisoners and destroying enemy equipment."
+        },
+        {
+            "event": "e_2",
+            "date": "13th November",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "On the morning of February 14, a strong German force attacks positions held by the United States Armoured Division at Sidi Bou Zid with around a hundred tanks, leading to heavy American tank losses and a difficult battle that requires a subsequent withdrawal."
+            "eventSummary": "7 Armoured Division enters Tobruk without opposition, securing the port after a swift advance."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A surprise night attack leads to the capture of Halfaya Pass and six hundred prisoners from the enemy."
         }
     ]
 }

@@ -1,68 +1,113 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unspecified"
+            "p_1": "Air Chief Marshal Sir Richard Peirse",
+            "p_2": "Air Vice-Marshal Goddard"
         },
         "locations": {
-            "l_1": "Imphal",
-            "l_2": "Arakan",
-            "l_3": "Gangaw",
-            "l_4": "Kabaw Valley",
-            "l_5": "coastal road at Kangaw"
+            "l_1": "South East Asia",
+            "l_2": "Ceylon",
+            "l_3": "Kandy",
+            "l_4": "New Delhi",
+            "l_5": "Delhi",
+            "l_6": "India",
+            "l_7": "London"
         },
         "events": {
-            "e_1": "Earthquake Operation",
-            "e_2": "Battle of the Bridgeheads"
+            "e_1": "The move of Headquarters, Air Command, to Ceylon",
+            "e_2": "Establishment of H.Q. Base Air Forces at New Delhi",
+            "e_3": "Visit of Air Vice-Marshal Goddard to London",
+            "e_4": "Crystallization of administrative directives in October 1944"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "Tenth U.S.A.AF.",
-            "o_3": "Fourteenth Army",
-            "o_4": "Strategic Air Force",
-            "o_5": "Twelfth Bombardment Group",
-            "o_6": "224 Group",
-            "o_7": "221 Group"
+            "o_1": "Royal Air Force",
+            "o_2": "Government of India",
+            "o_3": "War Projects Co-ordination and Administrative Committee",
+            "o_4": "General Headquarters, India"
         }
     },
     "keywords": [
-        "air support",
-        "ground attack",
-        "close support",
-        "flying hours",
-        "Hurribomber",
-        "earthquake operations",
-        "morale effect"
+        "administration",
+        "Air Command",
+        "Kandy",
+        "New Delhi",
+        "Allied Air Command"
     ],
     "themes": [
-        "Military Operations",
-        "Air Support",
-        "Ground Forces Cooperation",
-        "Morale Impact",
-        "Tactical Strategy"
+        "Military Administration",
+        "Allied Operations",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Air Support": [
-            "e_1"
+        "Diplomacy": [
+            "e_4"
         ],
-        "Ground Forces Cooperation": [
-            "e_1"
-        ],
-        "Morale Impact": [
-            "e_1"
-        ],
-        "Tactical Strategy": [
-            "e_1",
-            "e_2"
+        "Strategic Decisions": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "10th January",
+            "date": "October 1944",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The move of Headquarters, Air Command, to Ceylon occurs under the insistence of the Supreme Allied Commander."
+        },
+        {
+            "event": "e_2",
+            "date": "October 1944",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The establishment of H.Q. Base Air Forces at New Delhi liberates the Air Commander-in-Chief from direct responsibilities for developing India as a base."
+        },
+        {
+            "event": "e_3",
+            "date": "July 1944",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air Vice-Marshal Goddard visits London to discuss new administrative schemes."
+        },
+        {
+            "event": "e_4",
+            "date": "October 1944",
             "locations": [
                 "l_3",
                 "l_4"
@@ -72,32 +117,10 @@
             ],
             "organisations": [
                 "o_1",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On January 10th, a significant air operation known as the Earthquake Operation is conducted against the enemy stronghold at Gangaw in the Kabaw Valley, resulting in the capture of five out of six Japanese positions within 90 minutes."
-        },
-        {
-            "event": "e_2",
-            "date": "January-February",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "During late January and February, the Battle of the Bridgeheads occurs, where the Fourteenth Army receives direct air support in its efforts to secure strategic positions against Japanese forces."
+            "connectedEvents": [],
+            "eventSummary": "A revised directive is issued to the Air Marshal Commanding Base Air Forces clarifying the responsibilities of administrative services."
         }
     ]
 }

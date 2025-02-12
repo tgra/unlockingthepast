@@ -1,110 +1,123 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lt.-Colonel Stewart",
-            "p_2": "H.E. The Governor",
-            "p_3": "C.-in-C."
+            "p_1": "Brigadier Wallis",
+            "p_2": "Brigadier Lawson",
+            "p_3": "General Yu Han Mou"
         },
         "locations": {
-            "l_1": "Bennets Hill",
-            "l_2": "Stanley",
-            "l_3": "North shore",
-            "l_4": "Central District",
-            "l_5": "Hong Kong"
+            "l_1": "Wanchai Gap",
+            "l_2": "Kowloon",
+            "l_3": "Kowloon Peninsula",
+            "l_4": "Aberdeen Island",
+            "l_5": "Lyemun",
+            "l_6": "Saiwan Hill",
+            "l_7": "Kowloon Bay",
+            "l_8": "Mount Davis",
+            "l_9": "Shaukiwan",
+            "l_10": "Shek O"
         },
         "events": {
-            "e_1": "Capitulation Decision",
-            "e_2": "Enemy Offensive"
+            "e_1": "Shelling of pill boxes",
+            "e_2": "Attempted landing",
+            "e_3": "Last of the Priority A anti-personnel minefields completed",
+            "e_4": "Bombing and shelling by the enemy"
         },
         "organisations": {
-            "o_1": "1 Middlesex Regt.",
-            "o_2": "HQ China Command",
-            "o_3": "Coast Regt RA",
-            "o_4": "AA Regt RA",
-            "o_5": "Hong Kong Regt HKSRA",
-            "o_6": "Field Coy RE",
-            "o_7": "Royal Scots",
-            "o_8": "Canadian Staff",
-            "o_9": "Winnipeg Grenadiers",
-            "o_10": "Royal Rifles of Canada",
-            "o_11": "5/7 Rajput Regt",
-            "o_12": "2/14 Punjab Regt",
-            "o_13": "Royal Corps of Signals",
-            "o_14": "RASC",
-            "o_15": "Royal Army Dental Corps",
-            "o_16": "Hong Kong Mule Corps",
-            "o_17": "Indian Medical Services",
-            "o_18": "HKVDC"
+            "o_1": "Fortress",
+            "o_2": "Fortress H.Q.",
+            "o_3": "HKYVDC",
+            "o_4": "2/14 Punjab Regt.",
+            "o_5": "Chinese General Staff",
+            "o_6": "Chungking Government"
         }
     },
     "keywords": [
-        "Capitulation",
-        "Military Resistance",
-        "Enemy Offensive",
-        "Gaps",
-        "Casualties"
+        "Japanese artillery",
+        "anti-personnel minefields",
+        "civilian casualties",
+        "enemy planes",
+        "air raid"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Casualties"
+        "Civil Defense",
+        "Enemy Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Civil Defense": [
+            "e_4"
         ],
-        "Casualties": [
-            "e_2"
+        "Enemy Engagements": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "15th December",
             "locations": [
                 "l_1",
-                "l_2",
                 "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
+                "p_2"
             ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Shelling of pill boxes occurs, with three knocked out and one damaged by enemy artillery from a concealed position."
+        },
+        {
+            "event": "e_2",
+            "date": "15th December",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The commanding officer decides that further military resistance is futile and orders a capitulation."
+            "connectedEvents": [],
+            "eventSummary": "An attempted landing by the enemy is reported, utilizing small boats and rafts, which ultimately results in all attackers being shot."
         },
         {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_1",
-                "l_3",
-                "l_5"
-            ],
-            "persons": [
-                ""
-            ],
+            "event": "e_3",
+            "date": "15th December",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_10",
-                "o_11"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The last of the Priority A anti-personnel minefields is completed by Fortress R.E."
+        },
+        {
+            "event": "e_4",
+            "date": "16th December",
+            "locations": [
+                "l_8",
+                "l_9",
+                "l_10"
             ],
-            "eventSummary": "The enemy's decisive offensive threatens the garrison, prompting the decision to halt the fighting."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Bombing and shelling show increased accuracy with enemy planes bombing Mount Davis and causing civilian casualties in Shaukiwan."
         }
     ]
 }

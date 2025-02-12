@@ -1,152 +1,112 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier Morgan",
-            "p_2": "General Paget",
-            "p_3": "General Ruge",
-            "p_4": "Lieut. Colonel Clarke",
-            "p_5": "Lieutenant-Colonel Cass"
+            "p_1": "EDMUND IRONSIDE",
+            "p_2": "Brigadier Phillips",
+            "p_3": "Brigadier Morgan"
         },
         "locations": {
-            "l_1": "Dombas",
-            "l_2": "Andalsnes",
-            "l_3": "Rost",
-            "l_4": "Dovre",
-            "l_5": "Lesja",
-            "l_6": "Lesjaverk",
-            "l_7": "Lesjaskog",
-            "l_8": "Verma",
-            "l_9": "Botheim",
-            "l_10": "Hjerkinn",
-            "l_11": "Foldal",
-            "l_12": "Otta"
+            "l_1": "Northern Norway",
+            "l_2": "Central Norway",
+            "l_3": "Trondheim",
+            "l_4": "Namsos",
+            "l_5": "Fjord",
+            "l_6": "LONDON"
         },
         "events": {
-            "e_1": "Demolitions at Rost and Dovre",
-            "e_2": "Withdrawal of Norwegian troops",
-            "e_3": "K.O.Y.L.I. positioning",
-            "e_4": "Enemy reconnaissance and engagement",
-            "e_5": "Enemy bombing and machine gunning"
+            "e_1": "Operation in Northern Norway",
+            "e_2": "Landing at Namsos",
+            "e_3": "Landing at Trondheim"
         },
         "organisations": {
-            "o_1": "K.O.Y.L.I.",
-            "o_2": "Green Howards",
-            "o_3": "15th Infantry Brigade",
-            "o_4": "Norwegian Field Battery",
-            "o_5": "Norwegian G.H.Q."
+            "o_1": "Allied forces",
+            "o_2": "Royal Navy",
+            "o_3": "War Office",
+            "o_4": "Chasseurs Alpins"
         }
     },
     "keywords": [
-        "Demolitions",
-        "Withdrawal",
-        "Enemy reconnaissance",
-        "Troop movements"
+        "operation",
+        "landing",
+        "force",
+        "communication",
+        "German forces"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Battlefield Engagement",
-        "Enemy Activity"
+        "Command and Control",
+        "Allied Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Logistics": [
-            "e_2"
+        "Command and Control": [
+            "e_1"
         ],
-        "Battlefield Engagement": [
-            "e_4",
-            "e_5"
-        ],
-        "Enemy Activity": [
-            "e_5"
+        "Allied Strategy": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Night of 28th/29th April",
+            "date": "April 1940",
             "locations": [
-                "l_3",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The operation in Northern Norway involves Allied forces being dispatched to secure strategic locations."
+        },
+        {
+            "event": "e_2",
+            "date": "15th April 1940",
+            "locations": [
                 "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The landing at Namsos is carried out by Morgan's and Phillips Brigades to secure the area and coordinate with naval forces."
+        },
+        {
+            "event": "e_3",
+            "date": "around April 1940",
+            "locations": [
+                "l_3"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Demolitions at Rost and Dovre are executed after the rear parties have crossed the bridges."
-        },
-        {
-            "event": "e_2",
-            "date": "Night of 28th/29th April",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Many Norwegian troops are withdrawn from the Lines of Communication, creating a risk of enemy landings."
-        },
-        {
-            "event": "e_3",
-            "date": "Night of 28th/29th April",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Brigadier Morgan's forces are stationed in detachments to guard against enemy parachute attacks."
-        },
-        {
-            "event": "e_4",
-            "date": "April 30th",
-            "locations": [
-                "l_1",
-                "l_12"
-            ],
-            "persons": [
-                "p_3",
-                "p_5"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "The enemy conducts reconnaissance and is spotted advancing towards Dombas, leading to heightened activity."
-        },
-        {
-            "event": "e_5",
-            "date": "April 30th",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Enemy aircraft are frequently bombing and machine gunning the Lines of Communication."
+            "eventSummary": "A second landing at Trondheim is suggested, pending clearance of German vessels by the Navy."
         }
     ]
 }

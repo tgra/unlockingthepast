@@ -1,58 +1,60 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A. W. S. Agar, V.C., D.S.O",
-            "p_2": "A. U. WiLus"
+            "p_1": "R. D. OLiver",
+            "p_2": "A. U. Willis"
         },
         "locations": {
-            "l_1": "South Atlantic Station",
-            "l_2": "Freetown",
-            "l_3": "St. Helena",
-            "l_4": "Latitude 27 degrees 53 minutes South, Longitude 3 degrees 55 minutes West",
-            "l_5": "Latitude 26 degrees 45 minutes South, Longitude 6 degrees 25 minutes West"
+            "l_1": "Balboa",
+            "l_2": "South Atlantic",
+            "l_3": "Cape"
         },
         "events": {
-            "e_1": "Sinking of enemy vessel by H.M.S. DORSETSHIRE",
-            "e_2": "Search operation by H.M.S. DORSETSHIRE"
+            "e_1": "Sinking of the German Supply Ship PYTHON",
+            "e_2": "Action of H.M.S. DEVONSHIRE on 23rd November"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Admiralty"
+            "o_1": "Admiralty",
+            "o_2": "H.M.S. DEVONSHIRE",
+            "o_3": "DORSETSHIRE",
+            "o_4": "Corvettes ASTER",
+            "o_5": "Corvettes MARGUERITE"
         }
     },
     "keywords": [
-        "H.M.S. DORSETSHIRE",
-        "U-Boat",
-        "enemy vessel",
-        "search",
-        "reconnaissance"
+        "sinking",
+        "raider",
+        "submarine threat",
+        "survivors",
+        "Admiralty"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
-        "Leadership"
+        "Naval Warfare",
+        "Survival and Rescue"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Engagements": [
-            "e_1"
-        ],
-        "Leadership": [
+        "Naval Warfare": [
+            "e_1",
             "e_2"
+        ],
+        "Survival and Rescue": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st December, 1941",
+            "date": "29th December, 1941",
             "locations": [
-                "l_4"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
@@ -62,25 +64,27 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "H.M.S. DORSETSHIRE sinks an enemy vessel believed to be a supply ship during a search operation in the South Atlantic."
+            "eventSummary": "On 29th December, 1941, Vice-Admiral A. U. Willis submits a report on the sinking of the German supply ship PYTHON, noting its significant impact on submarine threats in the Cape area."
         },
         {
             "event": "e_2",
-            "date": "26th November, 1941",
+            "date": "23rd November",
             "locations": [
-                "l_2",
                 "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "H.M.S. DORSETSHIRE embarks on a search operation from Freetown to locate enemy ships, culminating in the sinking of an enemy vessel."
+            "eventSummary": "On 23rd November, H.M.S. DEVONSHIRE sinks an enemy raider, contributing to a strategic reduction of the submarine threat in the region."
         }
     ]
 }

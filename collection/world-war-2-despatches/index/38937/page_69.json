@@ -1,66 +1,93 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Marshal Badoglio",
-            "p_2": "General Eisenhower"
+            "p_1": "Kesselring"
         },
         "locations": {
-            "l_1": "Rome",
-            "l_2": "Pescara",
-            "l_3": "Brindisi",
-            "l_4": "Milan",
-            "l_5": "Gulf of Salerno",
-            "l_6": "Capri",
-            "l_7": "North Italy",
-            "l_8": "Campania"
+            "l_1": "Gothic line",
+            "l_2": "Coriano ridge",
+            "l_3": "Conca",
+            "l_4": "Gemmano",
+            "l_5": "Florence",
+            "l_6": "Monte Morello",
+            "l_7": "Monte Senario",
+            "l_8": "Monte Calvana",
+            "l_9": "Monte Giovi",
+            "l_10": "Pisa",
+            "l_11": "Lucca",
+            "l_12": "Pistoia",
+            "l_13": "Urbino",
+            "l_14": "Pontassieve",
+            "l_15": "Rimini",
+            "l_16": "River Sieve",
+            "l_17": "Dicomano",
+            "l_18": "Borgo San Lorenzo",
+            "l_19": "Scarperia"
         },
         "events": {
-            "e_1": "Italian Armistice",
-            "e_2": "Battle of Salerno"
+            "e_1": "Withdrawal from Gothic line",
+            "e_2": "Fifth Army attack",
+            "e_3": "Attack on Coriano ridge",
+            "e_4": "Eighth Army reopening attack",
+            "e_5": "Capture of Monte Calvi"
         },
         "organisations": {
-            "o_1": "Allies",
-            "o_2": "Italian Armed Forces",
-            "o_3": "16 Panzer Division",
-            "o_4": "Eighth Army"
+            "o_1": "Eighth Army",
+            "o_2": "Fifth Army",
+            "o_3": "II Corps",
+            "o_4": "13 Corps",
+            "o_5": "IV Corps",
+            "o_6": "1 Parachute Division",
+            "o_7": "26 Panzer Division",
+            "o_8": "29 Panzer Grenadier Division",
+            "o_9": "LI Mountain Corps",
+            "o_10": "10 Corps",
+            "o_11": "LXXVI Corps",
+            "o_12": "6 South African Armoured Division",
+            "o_13": "Negro Regimental Combat Team",
+            "o_14": "Task Force 45",
+            "o_15": "34th Division",
+            "o_16": "85th Division",
+            "o_17": "88th Division",
+            "o_18": "91st Division",
+            "o_19": "3rd Division",
+            "o_20": "1 British Infantry Division"
         }
     },
     "keywords": [
-        "Italian armistice",
-        "Battle of Salerno",
-        "surrender",
-        "counter-attacks",
-        "military dispositions"
+        "Gothic line",
+        "Coriano ridge",
+        "Fifth Army",
+        "Eighth Army",
+        "II Corps",
+        "13 Corps",
+        "Withdrawal"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions",
-        "Resistance"
+        "Tactical Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Diplomacy": [
-            "e_1"
-        ],
-        "Strategic Decisions": [
-            "e_2"
-        ],
-        "Resistance": [
-            "e_2"
+        "Tactical Maneuvers": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 1943",
+            "date": "30th August",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_4"
             ],
             "persons": [
                 "p_1"
@@ -72,26 +99,81 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Italy announces its unconditional surrender, leaving Rome in confusion and resulting in the flight of Badoglio and the King to Brindisi."
+            "eventSummary": "Kesselring begins the withdrawal of German troops into the Gothic line, prioritizing the reinforcement of front lines."
         },
         {
             "event": "e_2",
-            "date": "September 9-15, 1943",
+            "date": "8th September",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_1",
+                "l_16"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_5"
             ],
-            "eventSummary": "The Battle of Salerno commences with Fiercest fighting as Allied forces engage German troops, following the unexpected news of the Italian armistice, leading to key developments in the Italian campaign."
+            "eventSummary": "Fifth Army prepares to launch an offensive against the Gothic line, coordinating with II Corps and 13 Corps to exploit enemy weaknesses."
+        },
+        {
+            "event": "e_3",
+            "date": "13th September",
+            "locations": [
+                "l_1",
+                "l_13"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Eighth Army resumes its attack on Coriano ridge as Fifth Army simultaneously assaults the main positions in the Gothic line."
+        },
+        {
+            "event": "e_4",
+            "date": "13th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Eighth Army conducts a renewed attack on the Coriano ridge, coordinating with the ongoing efforts of the Fifth Army."
+        },
+        {
+            "event": "e_5",
+            "date": "12th September",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The capture of Monte Calvi signifies significant progress in the Allies' endeavor to break through the Gothic line."
         }
     ]
 }

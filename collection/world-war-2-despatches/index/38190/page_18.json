@@ -1,139 +1,168 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander MainJand",
-            "p_2": "Brigadier Wallis",
-            "p_3": "Major A. J. Dewar",
-            "p_4": "Captain C. G. Turner",
-            "p_5": "Lt.-General Sakai"
+            "p_1": "Lt. Grounds",
+            "p_2": "Lt. Tresidder",
+            "p_3": "Colonel H. B. Rose",
+            "p_4": "Brigadier Wallis",
+            "p_5": "Lieut -Colonel W. J. Home"
         },
         "locations": {
-            "l_1": "Lyemun Strait",
-            "l_2": "Devils Peak Peninsula",
-            "l_3": "Aberdeen",
-            "l_4": "Hang Hau area",
-            "l_5": "Victoria Pier",
-            "l_6": "Kowloon",
-            "l_7": "Green Island",
-            "l_8": "Tytam Gap",
-            "l_9": "Bailey's Shipyard",
-            "l_10": "Victoria Peninsula",
-            "l_11": "Kennedy Town"
+            "l_1": "Jardines Lookout",
+            "l_2": "Wong Nei Chong Gap",
+            "l_3": "Leighton Hill",
+            "l_4": "Mount Nicholson",
+            "l_5": "Repulse Bay Hotel",
+            "l_6": "Aberdeen",
+            "l_7": "Happy Valley",
+            "l_8": "Deepwater Bay",
+            "l_9": "Stone Hill",
+            "l_10": "Aberdeen Island",
+            "l_11": "Wanchai Gap",
+            "l_12": "Stanley",
+            "l_13": "North Point",
+            "l_14": "Shouson Hill",
+            "l_15": "Tytam Reservoir",
+            "l_16": "Gauge Basin",
+            "l_17": "Little Hong Kong"
         },
         "events": {
-            "e_1": "Evacuation of Ma Lau Tong line",
-            "e_2": "Counter-offensive operations against Japanese forces",
-            "e_3": "Delivery of surrender demand",
-            "e_4": "Dynamite launch explosion"
+            "e_1": "Battle of Repulse Bay Hotel",
+            "e_2": "Japanese troop movements",
+            "e_3": "Withdrawal of troops from Mount Nicholson",
+            "e_4": "Occupation of Repulse Bay Hotel by enemy",
+            "e_5": "Enemy attacks at Wong Nei Chong Gap"
         },
         "organisations": {
-            "o_1": "Royal Artillery",
+            "o_1": "2 Royal Scots",
             "o_2": "2/14 Punjab Regt.",
             "o_3": "5/7 Rajput Regt.",
-            "o_4": "Royal Navy",
-            "o_5": "WD fleet"
+            "o_4": "1 Middlesex Regt.",
+            "o_5": "Winnipeg Grenadiers",
+            "o_6": "Royal Artillery",
+            "o_7": "HKVDC",
+            "o_8": "Royal Rifles of Canada"
         }
     },
     "keywords": [
-        "evacuation",
-        "morning assault",
-        "surrender demand",
-        "dynamite explosion",
-        "casualties"
+        "troops",
+        "enemy",
+        "defence",
+        "attack",
+        "withdrawal"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Strategies",
-        "Diplomacy",
-        "Combat Engagement",
-        "Logistical Challenges"
+        "Defensive Strategies",
+        "Enemy Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Diplomacy": [
+        "Defensive Strategies": [
+            "e_1",
             "e_3"
         ],
-        "Logistical Challenges": [
-            "e_1",
-            "e_4"
-        ],
-        "Evacuation Strategies": [
-            "e_1"
-        ],
-        "Casualties and Conflict": [
-            "e_2"
+        "Enemy Engagements": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12th/13th December",
+            "date": "20th December",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_5",
+                "l_17"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_3"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_8"
             ],
             "connectedEvents": [
-                "e_2",
+                "e_3",
                 "e_4"
             ],
-            "eventSummary": "The evacuation of the Ma Lau Tong line begins due to intense Japanese attacks and logistical difficulties, securing personnel and equipment under fire while attempting to maintain a critical defensive position."
+            "eventSummary": "The Battle of Repulse Bay Hotel takes place where Lt. Grounds leads a defense against an enemy attack on the hotel, while enemy forces surround the location."
         },
         {
             "event": "e_2",
-            "date": "12th/13th December",
+            "date": "20th December",
             "locations": [
-                "l_6",
-                "l_7"
+                "l_1",
+                "l_4"
             ],
             "persons": [
-                "p_4",
-                "p_5"
+                "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "During the ongoing conflict, there is a counter-offensive against Japanese forces in an effort to maintain control over critical areas under siege."
+            "eventSummary": "Japanese troop movements are reported, indicating a significant presence and intention to attack in the vicinity of Repulse Bay."
         },
         {
             "event": "e_3",
-            "date": "13th December",
+            "date": "20th December",
             "locations": [
-                "l_6"
+                "l_4"
             ],
             "persons": [
                 "p_5"
             ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A launch bearing a truce flag arrives at Victoria Pier, delivering a demand for unconditional surrender from the Japanese forces, which is categorically rejected."
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Troops from Mount Nicholson are withdrawn due to the need for reorganization in response to increasing enemy activity."
         },
         {
             "event": "e_4",
-            "date": "13th December",
+            "date": "20th December",
             "locations": [
-                "l_7"
+                "l_5"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A tragic incident occurs when a launch carrying dynamite explodes at the Vehicular Ferry after arriving unexpectedly, leading to significant casualties."
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Enemy forces occupy the large garage at the Repulse Bay Hotel, marking a critical point in the battle."
+        },
+        {
+            "event": "e_5",
+            "date": "20th December",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Enemy attacks occur at Wong Nei Chong Gap, forcing a response from units including 2 Royal Scots."
         }
     ]
 }

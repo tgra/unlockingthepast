@@ -1,125 +1,105 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A.C.",
-            "p_2": "Commander 5th Fleet",
-            "p_3": "Commander Admiralty",
-            "p_4": "A.C.1"
+            "p_1": "Comdr. A. Kimmins"
         },
         "locations": {
-            "l_1": "Ishigaki",
-            "l_2": "Miyako",
-            "l_3": "Okinawa",
-            "l_4": "Hirara",
-            "l_5": "King George V",
-            "l_6": "Triomote"
+            "l_1": "H.M.S. FORMIDABLE",
+            "l_2": "H.M.S. INDOMITABLE",
+            "l_3": "H.M.S. INDEFATIGABLE",
+            "l_4": "H.M.S. VICTORIOUS",
+            "l_5": "H.M.S. UNDAUNTED",
+            "l_6": "Keramo Retto",
+            "l_7": "Miyako",
+            "l_8": "Ishigaki",
+            "l_9": "area Cootie",
+            "l_10": "Leyte",
+            "l_11": "Sakishima"
         },
         "events": {
-            "e_1": "Airstrike on Ishigaki Airfields",
-            "e_2": "Airstrike on Miyako Airfields",
-            "e_3": "Engagement with bogeys",
-            "e_4": "Privateer aircraft incident"
+            "e_1": "Air operations on 5th May",
+            "e_2": "Fleet formation and operations on 6th May"
         },
         "organisations": {
-            "o_1": "U.S. Navy",
-            "o_2": "Task Force 57"
+            "o_1": "Royal Navy",
+            "o_2": "U.S. Navy"
         }
     },
     "keywords": [
-        "airstrike",
-        "Miyako",
-        "Ishigaki",
-        "bogeys",
-        "CAP",
-        "enemy attacks"
+        "aircraft",
+        "operations",
+        "bombing",
+        "tactical command",
+        "losses"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Combat",
-        "Air Defense"
+        "Tactical Command",
+        "Aerial Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Aerial Combat": [
-            "e_3"
+        "Tactical Command": [
+            "e_1",
+            "e_2"
         ],
-        "Air Defense": [
-            "e_4"
+        "Aerial Engagements": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "17th April",
+            "date": "5th May",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The first strike is initiated at 0630, targeting Ishigaki airfields, resulting in all airfields becoming unserviceable."
-        },
-        {
-            "event": "e_2",
-            "date": "17th April",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "A second strike takes off at 0930 and another at 1533, both targeting Miyako airfields, leaving them out of action."
-        },
-        {
-            "event": "e_3",
-            "date": "17th April",
-            "locations": [
-                "l_2"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Multiple engagements with bogeys occur throughout the day, with fighters shooting down several enemy aircraft."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 5th May, air operations are conducted with a focus on engagement and maintaining aerial superiority, resulting in the destruction of several enemy aircraft."
         },
         {
-            "event": "e_4",
-            "date": "17th April",
+            "event": "e_2",
+            "date": "6th May",
             "locations": [
-                "l_6"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_9",
+                "l_10",
+                "l_11"
             ],
             "persons": [
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "A Privateer American aircraft is mistakenly identified as an enemy bandit, but no damage occurs following clarification with U.S. authorities."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 6th May, naval operations involve a meeting of various ships in area Cootie as they prepare for continued engagement and support for ground forces."
         }
     ]
 }

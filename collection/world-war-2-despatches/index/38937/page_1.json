@@ -1,73 +1,92 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander",
-            "p_2": "Army Group Commander"
+            "p_1": "Field-Marshal Lord Alexander",
+            "p_2": "Field-Marshal Lord Wilson",
+            "p_3": "HIS EXCELLENCY FIELDMARSHAL THE VISCOUNT ALEXANDER TUNIS"
         },
         "locations": {
-            "l_1": "Sicily",
-            "l_2": "Syracuse",
-            "l_3": "Catania",
-            "l_4": "Messina",
-            "l_5": "Milazzo",
-            "l_6": "Taranto",
-            "l_7": "Brindisi",
-            "l_8": "Bari",
-            "l_9": "Salerno",
-            "l_10": "Naples",
-            "l_11": "Calabria",
-            "l_12": "North African Theatre of Operations",
-            "l_13": "Torre Annunziata",
-            "l_14": "Castellamare"
+            "l_1": "Italy",
+            "l_2": "North Africa",
+            "l_3": "Cyrenaica",
+            "l_4": "Sicily",
+            "l_5": "Normandy",
+            "l_6": "Straits of Messina",
+            "l_7": "Mediterranean"
         },
         "events": {
-            "e_1": "SLAPSTICK - Landing by 1 Airborne Division",
-            "e_2": "Initial Eighth Army landings",
-            "e_3": "Landings at Salerno",
-            "e_4": "Capture of Naples"
+            "e_1": "Italian Campaign",
+            "e_2": "Invasion of Italy",
+            "e_3": "Conquest of Sicily",
+            "e_4": "Invasion of North Africa",
+            "e_5": "Assault on the beaches of Normandy",
+            "e_6": "Capture of Rome",
+            "e_7": "Gothic Line Battles"
         },
         "organisations": {
-            "o_1": "Eighth Army",
+            "o_1": "Allied Armies",
             "o_2": "Fifteenth Army Group",
-            "o_3": "A.F.H.Q.",
-            "o_4": "Fifth Army",
-            "o_5": "NATOUSA"
+            "o_3": "United Nations"
         }
     },
     "keywords": [
-        "Military Operations",
-        "Supply Chains",
-        "Logistics",
-        "Landings",
-        "Coordination"
+        "Despatch",
+        "Military operations",
+        "Strategy",
+        "Command",
+        "Victory"
     ],
     "themes": [
         "Military Operations",
-        "Logistics Management",
-        "Administrative Coordination"
+        "Strategic Decisions",
+        "Coalition Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
         ],
-        "Logistics Management": [
+        "Strategic Decisions": [
             "e_2",
-            "e_3"
-        ],
-        "Administrative Coordination": [
-            "e_1",
             "e_4"
+        ],
+        "Coalition Warfare": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "From 3rd September, 1943 to 12th December, 1944",
             "locations": [
-                "l_6",
-                "l_7"
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_6",
+                "e_7"
+            ],
+            "eventSummary": "The Italian Campaign consists of the military operations carried out by the Allied Armies in Italy from 3rd September, 1943, to 12th December, 1944."
+        },
+        {
+            "event": "e_2",
+            "date": "June, 1943",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -76,64 +95,84 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1",
+                "e_5"
             ],
-            "eventSummary": "The SLAPSTICK operation involves the initial landing by 1 Airborne Division at Taranto, requiring improvised logistics."
-        },
-        {
-            "event": "e_2",
-            "date": "After 25th August, 1943",
-            "locations": [
-                "l_1",
-                "l_9",
-                "l_10"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "Initial Eighth Army landings proceed successfully, aiding in the eventual capture of major ports."
+            "eventSummary": "The Invasion of Italy follows closely after the conquest of Sicily, marking a significant strategic military operation."
         },
         {
             "event": "e_3",
-            "date": "1st October 1943",
+            "date": "July, 1943",
             "locations": [
-                "l_9"
+                "l_4"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "The Landings at Salerno face stiff opposition, affecting supply accumulation under enemy fire."
+            "eventSummary": "The Conquest of Sicily is completed, setting the stage for the subsequent operations in Italy."
         },
         {
             "event": "e_4",
-            "date": "1st October 1943",
+            "date": "November, 1942",
             "locations": [
-                "l_10"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The capture of Naples marks a major logistical breakthrough despite previous obstacles; the port is resuscitated to discharge supplies."
+            "eventSummary": "The Invasion of North Africa is a precursor to the Italian Campaign."
+        },
+        {
+            "event": "e_5",
+            "date": "June, 1944",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Assault on the beaches of Normandy is planned as the next major operation following the success in Italy."
+        },
+        {
+            "event": "e_6",
+            "date": "June, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Capture of Rome occurs as a pivotal moment in the Italian Campaign."
+        },
+        {
+            "event": "e_7",
+            "date": "Autumn, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Gothic Line Battles represent the ongoing military engagements in Italy."
         }
     ]
 }

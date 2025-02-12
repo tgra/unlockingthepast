@@ -3,115 +3,112 @@
         "persons": {
             "p_1": "Commanding Officer",
             "p_2": "Admiral (Submarines)",
-            "p_3": "H.M.S. SEANYMPH"
+            "p_3": "Commanding Officer, H.M.S. SEANYMPH"
         },
         "locations": {
-            "l_1": "SEANYMPH",
-            "l_2": "X.8",
-            "l_3": "Lerwick",
-            "l_4": "LUTZOW",
-            "l_5": "Langfiord",
-            "l_6": "X.9",
-            "l_7": "X.7",
-            "l_8": "STUBBORN",
-            "l_9": "TRUCULENT",
-            "l_10": "THRASHER",
-            "l_11": "SCEPTRE",
-            "l_12": "SYRTIS"
+            "l_1": "Lerwick",
+            "l_2": "Langfiord",
+            "l_3": "position 71 41.5 N. 18 11 E.",
+            "l_4": "position 70 57 N. 20 35 E.",
+            "l_5": "position 91 03 40 N. 22 13 E."
         },
         "events": {
-            "e_1": "Detonation of charge",
-            "e_2": "Scuttling of X.8",
-            "e_3": "Crew transfer to X.7",
-            "e_4": "Submarine sighting"
+            "e_1": "Scuttling of X.8",
+            "e_2": "Transfer of operational crews",
+            "e_3": "Signal reporting the loss of X.9",
+            "e_4": "Patrol sector assignment of SEANYMPH"
         },
-        "organisations": {}
+        "organisations": {
+            "o_1": "H.M.S. SEANYMPH",
+            "o_2": "Admiralty"
+        }
     },
     "keywords": [
-        "charge",
-        "detonation",
-        "scuttle",
+        "explosion",
+        "scuttling",
         "crew transfer",
-        "submarine sighting",
-        "operation"
+        "patrol"
     ],
     "themes": [
         "Military Operations",
-        "Damage Assessment",
-        "Strategic Decisions"
+        "Naval Strategy",
+        "Weather Conditions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
+            "e_3"
+        ],
+        "Naval Strategy": [
             "e_4"
         ],
-        "Damage Assessment": [
-            "e_1",
+        "Weather Conditions": [
             "e_2"
-        ],
-        "Strategic Decisions": [
-            "e_2",
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "17th September",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The charge released at 1655Z detonates after 2 hours, causing significant damage to X.8 and flooding its compartment."
-        },
-        {
-            "event": "e_2",
             "date": "19th September",
             "locations": [
-                "l_2",
-                "l_1"
+                "l_1",
+                "l_3"
             ],
             "persons": [
                 "p_1",
+                "p_2",
                 "p_3"
             ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "organisations": [
+                "o_1"
             ],
-            "eventSummary": "X.8 is scuttled after the Commanding Officer decides to avoid compromising the operation due to her damage."
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 19th September, the Commanding Officer of H.M.S. SEANYMPH decides to scuttle X.8 due to severe damage and the need to maintain operational secrecy, carrying out the orders received from Admiral (Submarines)."
         },
         {
-            "event": "e_3",
-            "date": "18th September",
+            "event": "e_2",
+            "date": "17th September",
             "locations": [
-                "l_8",
                 "l_2"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [],
-            "eventSummary": "Operational crews are successfully transferred to X.7 amidst challenging weather conditions."
+            "eventSummary": "On 17th September, the operational crew transfers are set to occur, but adverse weather conditions prevent the transfer from taking place."
+        },
+        {
+            "event": "e_3",
+            "date": "3rd October",
+            "locations": [],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 3rd October, Admiral (Submarines) becomes aware through a signal that X.9 has broken adrift and had not participated since an earlier date."
         },
         {
             "event": "e_4",
-            "date": "20th September",
+            "date": "21st September",
             "locations": [],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [],
-            "eventSummary": "SYRTIS sights a submarine which dives shortly after the sighting, indicating potential enemy activity."
+            "eventSummary": "On 21st September, H.M.S. SEANYMPH is ordered to patrol in the vicinity of a specific position until her assignment in recovering X-craft."
         }
     ]
 }

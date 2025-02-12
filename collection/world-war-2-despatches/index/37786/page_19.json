@@ -1,80 +1,93 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Field Marshal The Viscount Gort",
-            "p_2": "Maj.-Gen. R. MacK. Scobie",
-            "p_3": "Maj.-Gen. B. O. Hutchison"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Malta",
-            "l_2": "Sudan",
-            "l_3": "Aden"
+            "l_1": "Cos",
+            "l_2": "Antimachia",
+            "l_3": "Naxos",
+            "l_4": "Rhodes",
+            "l_5": "Crete",
+            "l_6": "Greece",
+            "l_7": "Cyclades",
+            "l_8": "Leros",
+            "l_9": "Calino",
+            "l_10": "Gairos",
+            "l_11": "Kythnos",
+            "l_12": "Stampalia",
+            "l_13": "Simi"
         },
         "events": {
-            "e_1": "Military Deployment in Malta",
-            "e_2": "Sudan Defence Force Operations"
+            "e_1": "Attack on Cos",
+            "e_2": "Destruction of Enemy Convoy off Stampalia"
         },
         "organisations": {
-            "o_1": "Royal Tanks",
-            "o_2": "Sudan Defence Force",
-            "o_3": "R.A.F. Command"
+            "o_1": "Royal Air Force",
+            "o_2": "U.S.A.A.F",
+            "o_3": "Royal Navy",
+            "o_4": "Durham Light Infantry"
         }
     },
     "keywords": [
-        "Infantry Brigade",
-        "Motorised Battalion",
-        "Royal Tanks",
-        "Sudan Defence Force"
+        "German Air Force",
+        "British anti-aircraft defence",
+        "Bofors guns",
+        "garrison",
+        "air reconnaissance",
+        "enemy convoy",
+        "sea transport"
     ],
     "themes": [
         "Military Operations",
-        "Defense Strategies"
+        "Defence Strategy",
+        "Air Assault",
+        "Naval Engagement"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
+        "Naval Engagement": [
+            "e_2"
+        ],
+        "Defence Strategy": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1946",
+            "date": "3rd October",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": {},
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Military units including various infantry brigades and specialized tanks are deployed in Malta under the command of Field Marshal The Viscount Gort and Maj.-Gen. R. MacK. Scobie."
+            "eventSummary": "On 3rd October, the enemy assault on Cos begins with forces landing from merchant vessels, resulting in the overwhelming of the small garrison."
         },
         {
             "event": "e_2",
-            "date": "1946",
+            "date": "7th October",
             "locations": [
-                "l_2"
+                "l_6"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": {},
             "organisations": [
+                "o_1",
                 "o_2",
                 "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Sudan Defence Force, led by Maj.-Gen. B. O. Hutchison, organizes various battalions to bolster defense efforts in Sudan."
+            "eventSummary": "On 7th October, the Royal Navy intercepts and destroys a large enemy convoy off Stampalia, dealing a heavy blow to enemy shipping."
         }
     ]
 }

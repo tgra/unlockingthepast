@@ -1,124 +1,140 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General W. H. E. Gott",
-            "p_2": "Major-General W. H. C. Ramsden",
-            "p_3": "Major-General D. H. Pienaar",
-            "p_4": "Major-General D. Klopper",
-            "p_5": "Brigadier H. R. B. Watkins",
-            "p_6": "Brigadier B. C. Fletcher",
-            "p_7": "Lieutenant-General C. W. M. Norrie",
-            "p_8": "Major-General H. Lumsden",
-            "p_9": "Brigadier R. Briggs",
-            "p_10": "Brigadier W. G. Carr",
-            "p_11": "Brigadier J. C. O. Marriott",
-            "p_12": "Major-General F. W. Messervy",
-            "p_13": "Brigadier G. W. Richards",
-            "p_14": "Brigadier J. M. L. Renton",
-            "p_15": "Brigadier A. E. Filose",
-            "p_16": "Brigadier D. Reid",
-            "p_17": "Brigadier-General J. P. F. Koenig",
-            "p_18": "Air Vice Marshal Coningham",
-            "p_19": "General Ritchie",
-            "p_20": "Major-General T. W. Rees"
+            "p_1": "General Cunningham",
+            "p_2": "Major-General N. M. Ritchie",
+            "p_3": "General Norrie"
         },
         "locations": {
             "l_1": "Tobruk",
-            "l_2": "El Adem",
-            "l_3": "Segnali",
-            "l_4": "Bir Hacheim",
-            "l_5": "Sidi Muftah",
-            "l_6": "Gazala",
-            "l_7": "Alem Hamza",
-            "l_8": "Sidi Rezegh",
-            "l_9": "Ed Buda",
-            "l_10": "Bir el Gubi",
-            "l_11": "Gambut"
+            "l_2": "Sidi Omar",
+            "l_3": "Bir el Gubi",
+            "l_4": "Sidi Rezegh",
+            "l_5": "Halfaya",
+            "l_6": "Sollum",
+            "l_7": "Bardia",
+            "l_8": "Ed Duda"
         },
         "events": {
-            "e_1": "Battle of Gazala",
-            "e_2": "Planned Enemy Attack on Tobruk"
+            "e_1": "Battle of Tobruk",
+            "e_2": "Counterstrike at Sidi Rezegh",
+            "e_3": "Operations of the 13th Corps",
+            "e_4": "Advance of the 30th Corps"
         },
         "organisations": {
-            "o_1": "Afrika Korps",
-            "o_2": "Eighth Army",
-            "o_3": "5th Indian Division",
-            "o_4": "Free French Brigade"
+            "o_1": "30th Corps",
+            "o_2": "13th Corps",
+            "o_3": "5th South African Infantry Brigade",
+            "o_4": "7th Armoured Brigade",
+            "o_5": "New Zealand Division",
+            "o_6": "Ariete Armoured Division"
         }
     },
     "keywords": [
-        "Tobruk",
-        "Afrika Korps",
-        "battle",
-        "defensive positions",
-        "attack",
-        "divisions",
-        "infantry",
-        "armoured forces"
+        "armoured divisions",
+        "offensive",
+        "communications",
+        "counterstroke",
+        "resistance"
     ],
     "themes": [
-        "Military Strategy",
-        "Defensive Operations",
-        "Enemy Planning"
+        "Military Operations",
+        "Leadership Decisions",
+        "Battle Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_2"
+        "Leadership Decisions": [
+            "e_2",
+            "e_1"
+        ],
+        "Battle Engagements": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 26-28, 1942",
+            "date": "November 17-24, 1941",
             "locations": [
                 "l_1",
                 "l_4",
-                "l_6",
-                "l_7"
+                "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_19"
+                "p_3"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The Battle of Gazala unfolds as Allied forces prepare to defend against a large-scale attack led by the Afrika Korps, showcasing intricate military strategies and defensive preparations."
+            "eventSummary": "The Battle of Tobruk involves intense fighting as the 30th Corps and 13th Corps engage the enemy, aiming to secure communications and counter enemy advances."
         },
         {
             "event": "e_2",
-            "date": "May 26-28, 1942",
+            "date": "November 23, 1941",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
                 "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_5",
-                "p_19"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The enemy's plan of attack reveals a coordinated strategy by the Afrika Korps and Italian divisions aimed at capturing Tobruk and positioning themselves advantageously against Allied forces."
+            "eventSummary": "The counterstrike at Sidi Rezegh leads to considerable fighting as enemy forces attempt to reclaim lost territory, prompting leadership decisions regarding command."
+        },
+        {
+            "event": "e_3",
+            "date": "November 17-27, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operations of the 13th Corps focus on securing positions and providing critical resistance against enemy advances, demonstrating effective military strategy."
+        },
+        {
+            "event": "e_4",
+            "date": "November 17-19, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The advance of the 30th Corps begins as forces are redirected to tackle enemy communications, forming a significant part of the broader military engagements."
         }
     ]
 }

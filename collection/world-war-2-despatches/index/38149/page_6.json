@@ -1,83 +1,132 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Major-General M. F. Grove-White",
-            "p_2": "Mr. Bedford"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "United Kingdom"
+            "l_1": "London",
+            "l_2": "Thames Estuary",
+            "l_3": "Midlands",
+            "l_4": "West",
+            "l_5": "Liverpool",
+            "l_6": "Isle of Dogs",
+            "l_7": "Hyde Park"
         },
         "events": {
-            "e_1": "First Use of Radar in Anti-Aircraft Gunfire",
-            "e_2": "Development of Fighter Nights"
+            "e_1": "Sporadic night raids",
+            "e_2": "Attacks on provincial cities",
+            "e_3": "Greater concentration of enemy attacks",
+            "e_4": "First heavy raid on London",
+            "e_5": "Geographical barrages fired"
         },
         "organisations": {
-            "o_1": "A. C. Cossor Limited",
-            "o_2": "Royal Air Force (R.A.F.)"
+            "o_1": "London Gun Operations Room"
         }
     },
     "keywords": [
-        "Radar",
-        "Anti-aircraft",
-        "Height-finding",
-        "Visual Indicating Equipment",
-        "Sound-locators",
-        "Elevation Finding",
-        "Unseen Barrages",
-        "Fighter Nights"
+        "sound-locators",
+        "barrage",
+        "gunfire",
+        "enemy aircraft",
+        "German aircrews"
     ],
     "themes": [
-        "Military Technology",
-        "Anti-aircraft Defense",
-        "Military Strategy",
-        "Radar Development"
+        "Military Operations",
+        "Defence Strategies",
+        "Civilian Morale"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Military Technology": [
+        "Defence Strategies": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Civilian Morale": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st October, 1940",
+            "date": "Summer 1940",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The radar is first used to effectively control anti-aircraft gunfire, marking a significant advancement in military technology during World War II."
+            "eventSummary": "Sporadic night raids against this country begin during the Summer of 1940."
         },
         {
             "event": "e_2",
-            "date": "January, 1941",
+            "date": "8th/9th August 1940",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On 8th/9th August 1940, provincial cities are attacked by raiders making precision attacks on certain factories."
+        },
+        {
+            "event": "e_3",
+            "date": "25th/26th August - 6th/7th September 1940",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Between 25th/26th August and 6th/7th September 1940, there is a noticeable increase in enemy attacks."
+        },
+        {
+            "event": "e_4",
+            "date": "7th/8th September 1940",
             "locations": [
                 "l_1"
             ],
             "persons": [],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The Fighter Nights technique is introduced to allow night fighters to engage enemy bombers, although it faces criticism due to the perceived lack of anti-aircraft fire."
+            "eventSummary": "On the night of 7th/8th September 1940, London is singled out as a major objective for continued attacks."
+        },
+        {
+            "event": "e_5",
+            "date": "26th/27th September 1940",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Geographical barrages designed to explode over the Isle of Dogs and Hyde Park are fired for the first time."
         }
     ]
 }

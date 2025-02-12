@@ -1,124 +1,155 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Montgomery",
-            "p_2": "Lieut.-General Stone",
-            "p_3": "Mussolini",
-            "p_4": "Field-Marshal Rommel",
-            "p_5": "Marshal Bastico"
+            "p_1": "Admiral Harwood",
+            "p_2": "Air Chief Marshal Tedder",
+            "p_3": "Rommel",
+            "p_4": "Admiral Sir Henry Harwood",
+            "p_5": "Lord Tedder"
         },
         "locations": {
-            "l_1": "Cairo",
-            "l_2": "Alexandria",
-            "l_3": "Lake Maryut",
-            "l_4": "Bahariya Oasis",
-            "l_5": "Wadi Natrun",
-            "l_6": "Nile Valley",
-            "l_7": "Delta",
-            "l_8": "Alamein"
+            "l_1": "El Alamein",
+            "l_2": "Tobruk",
+            "l_3": "Benghazi",
+            "l_4": "Kufra",
+            "l_5": "Gialo",
+            "l_6": "Barce",
+            "l_7": "Bardia",
+            "l_8": "Matruh",
+            "l_9": "Belhamed"
         },
         "events": {
-            "e_1": "Battle of Gazala",
-            "e_2": "Defence of the Delta",
-            "e_3": "Campaign in Egypt"
+            "e_1": "Raid on Tobruk",
+            "e_2": "Attack on Benghazi",
+            "e_3": "Third force attack on Gialo",
+            "e_4": "Diversionary raid on Barce",
+            "e_5": "Alam el Halfa battle",
+            "e_6": "Sabotage of the desert railway"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "British Troops in Egypt",
-            "o_3": "German-Italian Armoured Army of Africa",
-            "o_4": "Superlibia",
-            "o_5": "Commando Supremo"
+            "o_1": "Royal Air Force",
+            "o_2": "Eighth Army",
+            "o_3": "Long Range Desert Group"
         }
     },
     "keywords": [
+        "Alamein",
+        "operations",
+        "supply",
+        "offensive",
         "morale",
-        "defensive battle",
-        "infantry brigades",
-        "armoured divisions",
-        "Axis forces",
-        "Nile",
-        "desert training"
+        "raids"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategy",
-        "Military Command Structure",
-        "Morale Restoration"
+        "Logistics",
+        "Combat Strategy",
+        "Psychological Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Defensive Strategy": [
-            "e_2"
+        "Logistics": [
+            "e_1",
+            "e_6"
         ],
-        "Military Command Structure": [
-            "e_3"
-        ],
-        "Morale Restoration": [
-            "e_2"
+        "Psychological Warfare": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "End of May 1942",
+            "date": "13th September",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The Battle of Gazala opens, marking intense conflicts in which various divisions engage."
+            "eventSummary": "Raids are launched on Tobruk with the plan to capture the port from two sides. The operation faces challenges as few forces manage to land, leading to a failure."
         },
         {
             "event": "e_2",
-            "date": "20th August 1942",
+            "date": "13th September",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_3"
             ],
             "persons": [
-                "p_2",
-                "p_1"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
-                "o_2",
                 "o_1"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_3"
             ],
-            "eventSummary": "The Defence of the Delta is reorganized as directives are issued to fortify positions following policy adjustments."
+            "eventSummary": "An attack is planned on Benghazi. A small motorized column completes its journey but must abandon the operation due to a last-minute plan alteration."
         },
         {
             "event": "e_3",
-            "date": "Throughout 1942",
+            "date": "14th September",
             "locations": [
-                "l_1",
-                "l_6",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A third force attacks Gialo to cover the retirement of the Benghazi raiding force, but is unsuccessful in capturing the oasis."
+        },
+        {
+            "event": "e_4",
+            "date": null,
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A successful diversionary raid on Barce is executed, providing strategic advantages amidst other attacks."
+        },
+        {
+            "event": "e_5",
+            "date": null,
+            "locations": [
                 "l_7"
             ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Following the Alam el Halfa battle, the Light Division is moved back to Daba for defense against potential enemy incursions."
+        },
+        {
+            "event": "e_6",
+            "date": null,
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Campaign in Egypt witnesses strategic interactions between Axis and Allied forces amidst growing tensions."
+            "connectedEvents": [],
+            "eventSummary": "Sabotage operations on the desert railway are conducted, aiming to disrupt the enemy's logistics."
         }
     ]
 }

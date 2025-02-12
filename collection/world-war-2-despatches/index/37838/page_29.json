@@ -1,101 +1,166 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Quesada",
+            "p_2": "Air Vice-Marshal Broadhurst",
+            "p_3": "General Warlimont",
+            "p_4": "Hitler",
+            "p_5": "C.-in-C. West (Von Kluge)"
+        },
         "locations": {
-            "l_1": "Marne",
-            "l_2": "Strasbourg",
-            "l_3": "Saarbrucken",
-            "l_4": "Metz",
-            "l_5": "Poland",
-            "l_6": "Germany",
-            "l_7": "Nancy",
-            "l_8": "Mulhouse",
-            "l_9": "Pas de Calais",
-            "l_10": "Paris",
-            "l_11": "Low Countries",
-            "l_12": "Seine",
-            "l_13": "Loire",
-            "l_14": "North-Western France",
-            "l_15": "Belgium",
-            "l_16": "Elbeuf",
-            "l_17": "Rouen"
+            "l_1": "Periers-St. Lo highway",
+            "l_2": "Caumont",
+            "l_3": "Falaise",
+            "l_4": "Avranches",
+            "l_5": "France",
+            "l_6": "Northern France",
+            "l_7": "Belgium"
         },
         "events": {
-            "e_1": "Attacks on Rail Centres",
-            "e_2": "Destruction of Bridges"
+            "e_1": "Attack on 25th July",
+            "e_2": "Attack on 30th July",
+            "e_3": "Attack on 7-8th August",
+            "e_4": "Attack on 14th August",
+            "e_5": "Battle of Normandy"
         },
         "organisations": {
-            "o_1": "A.E.A.F.",
-            "o_2": "U.S. Eighth Air Force",
-            "o_3": "R.A.F. Bomber Command"
+            "o_1": "United States Eighth Air Force",
+            "o_2": "United States Ninth Air Force",
+            "o_3": "First United States Army",
+            "o_4": "Second British Army",
+            "o_5": "R.A.F. Bomber Command",
+            "o_6": "A.E.A.F.",
+            "o_7": "First Canadian Army",
+            "o_8": "Second Tactical Air Force",
+            "o_9": "United States IXth Tactical Air Command"
         }
     },
     "keywords": [
-        "tactical area",
-        "air attacks",
-        "enemy supplies",
-        "Panzer Divisions",
-        "attack on bridges",
-        "communications"
+        "bombing",
+        "air support",
+        "ground forces",
+        "military operations",
+        "tactical air forces"
     ],
     "themes": [
         "Military Operations",
-        "Air Campaign",
-        "Supply Lines",
-        "Infrastructure Attacks"
+        "Air Support",
+        "Casualties",
+        "Army Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Air Campaign": [
-            "e_1"
+        "Air Support": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Supply Lines": [
-            "e_1"
+        "Casualties": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Infrastructure Attacks": [
-            "e_2"
+        "Army Coordination": [
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June - July 1944",
+            "date": "25th July",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_10",
-                "l_11"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Allied air forces conduct extensive attacks on enemy rail centres, disrupting supply lines and movement of troops during the critical period of military operations in June and July 1944."
+            "eventSummary": "On 25th July, heavy bombers from the United States Eighth and Ninth Air Forces drop 4,790 tons of bombs along the Periers-St. Lo highway in preparation for an advance by the First United States Army."
         },
         {
             "event": "e_2",
-            "date": "June - July 1944",
+            "date": "30th July",
             "locations": [
-                "l_12",
-                "l_13",
-                "l_14"
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The fourth attack on 30th July involves 693 heavy bombers of R.A.F. Bomber Command dropping 2,227 tons of bombs in support of the Second British Army south of Caumont."
+        },
+        {
+            "event": "e_3",
+            "date": "7-8th August",
+            "locations": [
+                "l_3"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_5",
+                "o_7",
+                "o_8"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The destruction of significant bridges in the area hampers enemy transport and supply operations, further complicating their logistical efforts amid ongoing air attacks."
+            "eventSummary": "On the night of 7-8th August, 1,450 heavy bombers support the First Canadian Army along the Caen-Falaise road, dropping 5,210 tons of bombs."
+        },
+        {
+            "event": "e_4",
+            "date": "14th August",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On 14th August, R.A.F. Bomber Command conducts an attack that assists Canadian forces to advance into Falaise with 3,723 tons of bombs dropped."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Battle of Normandy ultimately leads to the liberation of France, supported by a series of bombing attacks that enabled ground forces to make significant advances."
         }
     ]
 }

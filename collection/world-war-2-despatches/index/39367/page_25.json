@@ -1,72 +1,94 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "von Vietinghoff"
+        },
         "locations": {
-            "l_1": "Hungary",
-            "l_2": "Austria",
-            "l_3": "Western Hungary",
-            "l_4": "Northern Jugoslavia",
-            "l_5": "Linz",
-            "l_6": "Vienna",
-            "l_7": "Zagreb",
-            "l_8": "North-East Italy",
-            "l_9": "Bratislava",
-            "l_10": "Komarom",
-            "l_11": "Hegyeshalom",
-            "l_12": "Sopron",
-            "l_13": "Szombathely",
-            "l_14": "Graz",
-            "l_15": "Bruck",
-            "l_16": "Maribor",
-            "l_17": "Budapest",
-            "l_18": "Czechoslovakia",
-            "l_19": "Southern Germany"
+            "l_1": "Argenta Gap",
+            "l_2": "Idice River",
+            "l_3": "Budrio",
+            "l_4": "Bologna",
+            "l_5": "Ferrara",
+            "l_6": "Bondeno",
+            "l_7": "Cento",
+            "l_8": "San Benedetto",
+            "l_9": "Reggio",
+            "l_10": "Parma",
+            "l_11": "La Spezia",
+            "l_12": "Po River",
+            "l_13": "Ostiglia",
+            "l_14": "Crespini",
+            "l_15": "Polesella",
+            "l_16": "Berra"
         },
         "events": {
-            "e_1": "Air Offensive",
-            "e_2": "Disruption of Railway Communications",
-            "e_3": "Operational Support to Russian Forces"
+            "e_1": "Capture of Bologna",
+            "e_2": "Drive to the Po along Route 16",
+            "e_3": "Crossing at San Benedetto",
+            "e_4": "Occupation of La Spezia",
+            "e_5": "Air Effort from 21st to 24th April"
         },
         "organisations": {
-            "o_1": "M.A.S.A.F.",
-            "o_2": "Fifteenth Air Force",
-            "o_3": "No. 205 Group"
+            "o_1": "Eighth Army",
+            "o_2": "Fifth Army",
+            "o_3": "Tactical Air Force",
+            "o_4": "D.A.F.",
+            "o_5": "57th Bombardment Wing",
+            "o_6": "XXII T.A.C."
         }
     },
     "keywords": [
-        "Air Offensive",
-        "Soviet forces",
-        "Railway Disruption",
-        "Marshalling Yards",
-        "Bombing Attacks",
-        "Military Supply"
+        "withdrawal",
+        "garrison",
+        "crossing",
+        "air attacks",
+        "reconnaissance"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Allied Support"
+        "Air Warfare",
+        "Strategic Advances"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Logistics": [
-            "e_2"
+        "Air Warfare": [
+            "e_5"
         ],
-        "Allied Support": [
+        "Strategic Advances": [
+            "e_2",
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1945",
+            "date": "21st April",
             "locations": [
-                "l_1",
-                "l_2",
                 "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Bologna is captured by Polish troops of the Eighth Army entering from the east and American troops of the Fifth Army from the south-west."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd April",
+            "locations": [
+                "l_13",
+                "l_12"
             ],
             "persons": [],
             "organisations": [
@@ -74,46 +96,54 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
+                "e_1",
                 "e_3"
             ],
-            "eventSummary": "The M.A.S.A.F. conducts a massive air offensive focused on disrupting the enemy's railway systems to aid the Soviet advance."
-        },
-        {
-            "event": "e_2",
-            "date": "February 1945",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Railway communications disruption is a primary goal to impair Axis troop movements."
+            "eventSummary": "The drive to the Po along Route 16 is completed, with leading elements reaching the Po."
         },
         {
             "event": "e_3",
-            "date": "November 1944",
+            "date": "23rd April",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_4"
+                "l_12"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The M.A.S.A.F. begins providing operational support to the Russian forces through coordinated airstrikes."
+            "eventSummary": "A crossing is made at San Benedetto by Fifth Army troops."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd April",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "La Spezia is occupied without opposition."
+        },
+        {
+            "event": "e_5",
+            "date": "21st to 24th April",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Air Effort is significant during this period, with numerous attacks against enemy crossings, crippling losses in armor and equipment inflicted on the enemy."
         }
     ]
 }

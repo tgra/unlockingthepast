@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Mr. Murnane",
+            "p_2": "Mr. Rayman",
+            "p_3": "Mr. Fraser",
+            "p_4": "Governor"
+        },
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Singapore Club",
+            "l_3": "Fort Canning",
+            "l_4": "Mount Pleasant Ridge",
+            "l_5": "Alexandra Depots area",
+            "l_6": "Keppel Golf Links"
+        },
+        "events": {
+            "e_1": "Events of the 15th February, 1942",
+            "e_2": "Conference at Municipal Offices",
+            "e_3": "Senior Commanders Conference"
+        },
+        "organisations": {
+            "o_1": "Royal Engineers",
+            "o_2": "Civil Defence",
+            "o_3": "18 British Division",
+            "o_4": "11 Indian Divisions",
+            "o_5": "A.I.F."
+        }
+    },
+    "keywords": [
+        "water supply",
+        "bombing",
+        "Civil Defence",
+        "Singapore",
+        "military operations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Crisis Management",
+        "Water Supply Issues"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Crisis Management": [
+            "e_2",
+            "e_3"
+        ],
+        "Water Supply Issues": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "15th February, 1942",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "During the night of the 14th-15th February, enemy infantry infiltrated on all sectors of the 18 British Division front, leading to local counter-attacks to regain lost positions."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A conference was held at the Municipal Offices to address the imminent water supply failure and its consequences."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Senior Commanders Conference met at Fort Canning to discuss military operations and water supply issues."
+        }
+    ]
+}

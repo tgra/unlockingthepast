@@ -1,72 +1,142 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Eisenhower",
-            "p_2": "General Montgomery",
-            "p_3": "Kesselring"
+            "p_1": "Hitler",
+            "p_2": "General Truscott",
+            "p_3": "Kesselring",
+            "p_4": "General Leese"
         },
         "locations": {
-            "l_1": "Capua",
-            "l_2": "Monte Massico",
-            "l_3": "Santo Spirito",
-            "l_4": "Bari",
-            "l_5": "Naples",
-            "l_6": "Apulia",
-            "l_7": "Termoli",
-            "l_8": "Volturno",
-            "l_9": "Southern Italy",
-            "l_10": "Carthage",
-            "l_11": "Via Valeria",
-            "l_12": "Pescara"
+            "l_1": "Aquino",
+            "l_2": "Esperia",
+            "l_3": "Sant Oliva",
+            "l_4": "Pontecorvo",
+            "l_5": "Monte d Oro",
+            "l_6": "Monte della Commune",
+            "l_7": "Formia",
+            "l_8": "Itri",
+            "l_9": "Gaeta",
+            "l_10": "Piedimonte",
+            "l_11": "Pico",
+            "l_12": "Monte Leucic",
+            "l_13": "Fondi",
+            "l_14": "Terracina",
+            "l_15": "Castro dei Volsci",
+            "l_16": "Valmontone",
+            "l_17": "Liri Valley",
+            "l_18": "Villa Santa Lucia",
+            "l_19": "Caesar Line",
+            "l_20": "Rome",
+            "l_21": "Anzio",
+            "l_22": "Leghorn"
         },
         "events": {
-            "e_1": "Crossing at Capua",
-            "e_2": "Winter Operations Planning",
-            "e_3": "Conference at Carthage"
+            "e_1": "Capture of Pico",
+            "e_2": "Breakout from Anzio",
+            "e_3": "Assault on the Hitler Line",
+            "e_4": "Canadian attack"
         },
         "organisations": {
-            "o_1": "VICorps",
-            "o_2": "Fifth Army",
+            "o_1": "Canadian Corps",
+            "o_2": "French Army",
             "o_3": "Eighth Army",
-            "o_4": "Combined Chiefs of Staff"
+            "o_4": "II Corps",
+            "o_5": "Tenth Army",
+            "o_6": "Fifth Army",
+            "o_7": "78 Division",
+            "o_8": "x Canadian Division",
+            "o_9": "8 Indian Division",
+            "o_10": "6 British Armoured Division",
+            "o_11": "Henmann Goering Division"
         }
     },
     "keywords": [
-        "military operations",
-        "strategy",
-        "Allied divisions",
-        "German divisions",
-        "initiative",
-        "counter-offensive",
-        "C-in-C West"
+        "attack",
+        "defend",
+        "capture",
+        "operations",
+        "rearguards",
+        "advance"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Allied-German Conflict",
-        "Command Coordination"
+        "Assault Strategies",
+        "Defensive Lines"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Strategic Decisions": [
-            "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Allied-German Conflict": [
-            "e_1"
+        "Assault Strategies": [
+            "e_1",
+            "e_3",
+            "e_4"
         ],
-        "Command Coordination": [
+        "Defensive Lines": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th October",
+            "date": "",
+            "locations": [
+                "l_11",
+                "l_12"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The French capture Pico after two days of violent fighting."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_21",
+                "l_20"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Fifth Army begins its attack from Anzio."
+        },
+        {
+            "event": "e_3",
+            "date": "between 20th and 22nd May",
+            "locations": [
+                "l_17"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Eighth Army prepares for the assault on the Hitler Line."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd",
             "locations": [
                 "l_1"
             ],
@@ -77,46 +147,9 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "VICorps successfully crosses in the mountainous area east of Capua, establishing a foothold for the subsequent military strategy."
-        },
-        {
-            "event": "e_2",
-            "date": "21st October",
-            "locations": [
-                "l_1",
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Plans for Winter Operations are reviewed as Allied and German forces prepare for a challenging military engagement in Italy, amid concerns over troop numbers and strategy."
-        },
-        {
-            "event": "e_3",
-            "date": "24th October",
-            "locations": [
-                "l_10"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "A conference at Carthage concludes with the approval of a plan of campaign to maintain Allied initiative and coordinate forces in the face of German resistance."
+            "eventSummary": "The Canadian attack begins with heavy resistance."
         }
     ]
 }

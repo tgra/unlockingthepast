@@ -1,114 +1,130 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Air Marshal Sir Roderic Hill"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Holland",
-            "l_2": "Belgium",
-            "l_3": "France",
-            "l_4": "Low Countries",
-            "l_5": "United Kingdom",
-            "l_6": "London",
-            "l_7": "Kent"
+            "l_1": "Scillies",
+            "l_2": "Ushant",
+            "l_3": "St. Albans Head",
+            "l_4": "Cap de la Hague",
+            "l_5": "North-Western France",
+            "l_6": "Bay of Biscay",
+            "l_7": "Brest",
+            "l_8": "Channel Islands",
+            "l_9": "Frisian Islands"
         },
         "events": {
-            "e_1": "Operation Overlord",
-            "e_2": "Flying Bomb Attacks",
-            "e_3": "Bombing Operations on Airfields"
+            "e_1": "D-Day",
+            "e_2": "Anti-U-Boat Operations",
+            "e_3": "Anti-Shipping Operations",
+            "e_4": "Attacks on Shipping in Ports"
         },
         "organisations": {
             "o_1": "R.A.F. Bomber Command",
-            "o_2": "United States Eighth Air Force",
-            "o_3": "A.E.A.F.",
-            "o_4": "A.D.G.B."
+            "o_2": "A.E.A.F.",
+            "o_3": "Second British Tactical Air Force",
+            "o_4": "R.A.F. Coastal Command",
+            "o_5": "A.D.G.B."
         }
     },
     "keywords": [
-        "Flying Bombs",
-        "Air Defence",
-        "Bombing Operations",
-        "Interception Patrols"
+        "D-Day",
+        "U-Boat",
+        "Anti-Shipping",
+        "R.A.F.",
+        "Coastal Command"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategies",
-        "Counter-Insurgency"
+        "Naval Tactics",
+        "Aerial Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Defence Strategies": [
+        "Naval Tactics": [
             "e_2",
             "e_3"
         ],
-        "Counter-Insurgency": [
-            "e_2"
+        "Aerial Warfare": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "D-Day to 30th September 1944",
+            "date": "6th June 1944",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3",
-                "l_4"
+                "l_6"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Operation Overlord marks the beginning of significant military operations during World War II, focused on liberating occupied territories in Western Europe."
-        },
-        {
-            "event": "e_2",
-            "date": "12/13th June to 30th September 1944",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Flying Bomb Attacks begin with enemy launched jet-propelled bombs targeting London, prompting immediate air defense responses."
-        },
-        {
-            "event": "e_3",
-            "date": "6th June to 30th September 1944",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Bombing Operations on Airfields are executed by R.A.F. and U.S. forces, resulting in a significant decrease in enemy air operations."
+            "eventSummary": "D-Day marks the Allied invasion of Normandy, with extensive operations involving both aerial and naval forces."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Anti-U-Boat Operations involve R.A.F. Coastal Command flying patrols to thwart U-boat movements into invasion waters."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Anti-Shipping Operations consist of coordinated attacks by R.A.F. Coastal Command and A.E.A.F. against enemy vessels."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Attacks on Shipping in Ports pertain to initial aggressive actions against enemy naval and merchant vessels to disrupt their logistics."
         }
     ]
 }

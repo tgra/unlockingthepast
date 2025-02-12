@@ -1,94 +1,121 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain Warburton-Lee",
-            "p_2": "Lieutenant-Commander R. C. Gordon-Smith",
-            "p_3": "Captain (D)"
+            "p_1": "R. H. C. Hallifax",
+            "p_2": "B. A. W. Warburton-Lee",
+            "p_3": "L. de Villiers",
+            "p_4": "H. F. Layman",
+            "p_5": "R. E. Courage",
+            "p_6": "J. P. Wright"
         },
         "locations": {
             "l_1": "Narvik",
-            "l_2": "Norway",
-            "l_3": "Ofot Fiord",
-            "l_4": "Ramsundet",
-            "l_5": "Skjomnes",
-            "l_6": "Framnesodden",
-            "l_7": "Rombaks Fiord",
-            "l_8": "Herjangs Fiord"
+            "l_2": "Sullom Voe",
+            "l_3": "Eggeloysa",
+            "l_4": "Lofoten Islands",
+            "l_5": "Vest Fiord",
+            "l_6": "Shetland Islands"
         },
         "events": {
-            "e_1": "Attack on Narvik",
-            "e_2": "Second Destroyer Flotilla Operation"
+            "e_1": "First Battle of Narvik",
+            "e_2": "Second Battle of Narvik",
+            "e_3": "destroyer raid on Narvik",
+            "e_4": "encounter with SCHARNHORST",
+            "e_5": "encounter with HIPPER"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "Home Fleet",
-            "o_3": "Second Destroyer Flotilla"
+            "o_1": "Royal Navy",
+            "o_2": "Second Destroyer Flotilla",
+            "o_3": "Twentieth Destroyer Flotilla",
+            "o_4": "Home Fleet"
         }
     },
     "keywords": [
-        "destroyers",
-        "torpedoes",
-        "naval battle",
-        "surprise attack",
-        "enemy ships",
-        "harbour",
-        "shore batteries",
-        "high water"
+        "Narvik",
+        "destroyer",
+        "reports",
+        "enemy destroyers",
+        "minefield",
+        "destroyer flotilla"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Engagement",
-        "Surprise Attack"
+        "Naval Engagements",
+        "Strategic Movement"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Naval Strategy": [
-            "e_1"
-        ],
-        "Engagement": [
+        "Naval Engagements": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Surprise Attack": [
-            "e_1"
+        "Strategic Movement": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 10, 1940",
+            "date": "10th April 1940",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The flotilla, led by HARDY, attacks enemy ships and installations in Narvik, launching a surprise operation that involves multiple naval engagements and considerable use of torpedoes."
+            "eventSummary": "The First Battle of Narvik takes place as British destroyers attempt to engage enemy forces and secure the port."
         },
         {
             "event": "e_2",
-            "date": "April 10, 1940",
+            "date": "13th April 1940",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_3"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Second Battle of Narvik occurs following the initial engagements, continuing the conflict over the strategic port."
+        },
+        {
+            "event": "e_3",
+            "date": "10th April 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
@@ -97,7 +124,45 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Second Destroyer Flotilla executes a coordinated naval strike against enemy assets in Narvik, emphasizing strategic positioning and surprise tactics amid challenging sea conditions."
+            "eventSummary": "The destroyer raid on Narvik is launched, involving multiple ships targeting enemy positions in the port."
+        },
+        {
+            "event": "e_4",
+            "date": "10th April 1940",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The British fleet, including RENOWN, encounters the German battleship SCHARNHORST during operations."
+        },
+        {
+            "event": "e_5",
+            "date": "10th April 1940",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The British fleet, during the Battle of Narvik, encounters the German destroyer HIPPER, showcasing naval conflict."
         }
     ]
 }

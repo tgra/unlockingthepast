@@ -1,137 +1,163 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Dentz",
-            "p_2": "General de Gaulle",
-            "p_3": "General Catroux",
-            "p_4": "Brigadier A. S. Mavrogordato"
+            "p_1": "Lieutenant-General P. Quinan",
+            "p_2": "General Wavell",
+            "p_3": "General Dentz",
+            "p_4": "Air Commodore L. O. Brown",
+            "p_5": "Captain J. A. V. Morse",
+            "p_6": "General Sir Henry Wilson",
+            "p_7": "General Catroux",
+            "p_8": "General de Verdillac",
+            "p_9": "Major-General J. I. Chrystall"
         },
         "locations": {
-            "l_1": "Palestine",
-            "l_2": "Syria",
-            "l_3": "Cairo",
-            "l_4": "Lebanon",
-            "l_5": "Euphrates",
-            "l_6": "Syrian Desert",
-            "l_7": "Abu Kemal",
-            "l_8": "Cyprus"
+            "l_1": "Middle East",
+            "l_2": "Iraq",
+            "l_3": "Deir ez Zor",
+            "l_4": "Tel Kotchek",
+            "l_5": "Kameschle",
+            "l_6": "Lebanon",
+            "l_7": "Anti-Lebanon",
+            "l_8": "Euphrates Province",
+            "l_9": "Homs",
+            "l_10": "Beirut",
+            "l_11": "Damascus",
+            "l_12": "Acre",
+            "l_13": "Ain Sofar",
+            "l_14": "Syria",
+            "l_15": "Lebanon",
+            "l_16": "France"
         },
         "events": {
-            "e_1": "Capitulation of Vichy Forces",
-            "e_2": "Evacuation of 37,000 strong army",
-            "e_3": "Tribal outbreaks in Abu Kemal district",
-            "e_4": "Military security discussions in London and Middle East"
+            "e_1": "Syrian Campaign",
+            "e_2": "suspension of hostilities",
+            "e_3": "Convention signed",
+            "e_4": "Commission of Control assembly",
+            "e_5": "repatriation"
         },
         "organisations": {
-            "o_1": "Commission of Control",
-            "o_2": "Free French Forces",
-            "o_3": "British Commander-in-Chief",
-            "o_4": "Anglo-French Commission"
+            "o_1": "Middle East War Council",
+            "o_2": "Middle East Defence Committee",
+            "o_3": "Inter-Service Intelligence Staff",
+            "o_4": "Inter-Service Operational Staff",
+            "o_5": "Troupes Francais du Levant",
+            "o_6": "British Government",
+            "o_7": "Vichy French"
         }
     },
     "keywords": [
-        "prisoners",
-        "detention",
-        "evacuation",
-        "military security",
-        "civil administration",
-        "political unrest",
-        "tribal outbreaks"
+        "Middle East",
+        "war council",
+        "defence committee",
+        "Syrian Campaign",
+        "repatriation"
     ],
     "themes": [
         "Military Operations",
         "Diplomacy",
-        "Crisis Management",
-        "Political Unrest"
+        "Strategic Decisions",
+        "Repatriation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Diplomacy": [
-            "e_1",
-            "e_4"
-        ],
-        "Crisis Management": [
             "e_2"
         ],
-        "Political Unrest": [
+        "Diplomacy": [
+            "e_2",
             "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_4"
+        ],
+        "Repatriation": [
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "Date Unspecified",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_4",
+                "l_5",
+                "l_8",
+                "l_10"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_7"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The capitulation of the Vichy Forces and the occupation of Syria by the British and Free French necessitate various political and military decisions."
+            "connectedEvents": [],
+            "eventSummary": "The Syrian Campaign is drawing to a close as Lieutenant-General P. Quinan commands operations."
         },
         {
             "event": "e_2",
-            "date": "Date unspecified",
+            "date": "12th July 1941",
             "locations": [
-                "l_2"
+                "l_10"
             ],
             "persons": [
-                "p_2"
+                "p_3"
             ],
             "organisations": [
-                "o_3"
+                "o_1",
+                "o_7"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "In ten weeks, the Commission of Control successfully arranges the orderly evacuation of a strong army, ensuring the transfer of public services despite chaotic conditions."
+            "eventSummary": "General Dentz proposes a suspension of hostilities, initiating diplomatic discussions with British representatives."
         },
         {
             "event": "e_3",
-            "date": "Late September",
+            "date": "14th July 1941",
             "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_12"
             ],
             "persons": [
-                "p_2",
-                "p_3"
+                "p_6",
+                "p_8"
             ],
             "organisations": [
-                "o_4"
+                "o_5"
             ],
             "connectedEvents": [],
-            "eventSummary": "Tribal outbreaks occur in the Abu Kemal district, leading to clashes between Arabs and Free French troops, requiring British intervention."
+            "eventSummary": "The Convention is signed at Acre by General Sir Henry Wilson and General de Verdillac, formalizing terms of surrender."
         },
         {
             "event": "e_4",
-            "date": "October",
+            "date": "16th July 1941",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_13"
             ],
             "persons": [
-                "p_2",
-                "p_3"
+                "p_9"
             ],
             "organisations": [
-                "o_1"
+                "o_5"
             ],
             "connectedEvents": [],
-            "eventSummary": "Military security discussions take place in London and the Middle East, resulting in agreements on authority delegation to the British Command."
+            "eventSummary": "The Commission of Control is formally assembled to supervise the execution of the terms of the Convention."
+        },
+        {
+            "event": "e_5",
+            "date": "Between 7th August and 27th September 1941",
+            "locations": [
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A total of 37,563 persons are repatriated, representing the culmination of evacuation efforts from Syria."
         }
     ]
 }

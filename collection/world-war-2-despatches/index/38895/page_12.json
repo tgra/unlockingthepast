@@ -1,0 +1,124 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "D. Acw Souts",
+            "p_2": "Actp Nortu",
+            "p_3": "Forward Observation Officer"
+        },
+        "locations": {
+            "l_1": "Malta",
+            "l_2": "Acip North",
+            "l_3": "Rocer sector",
+            "l_4": "Casa Guiliano",
+            "l_5": "Spaccaforno",
+            "l_6": "Casa Basile",
+            "l_7": "Casa Chiusa"
+        },
+        "events": {
+            "e_1": "Assault Convoy Arrival",
+            "e_2": "Landing Operations",
+            "e_3": "Gun Support Operations"
+        },
+        "organisations": {
+            "o_1": "H.M.S. ALYNBANK",
+            "o_2": "H.M.S. KEREN",
+            "o_3": "H.M.S. ROBERTS",
+            "o_4": "H.M.S. BRISSENDEN",
+            "o_5": "H.M.S. PUCKERIDGE",
+            "o_6": "M.M.S. (L.L.)"
+        }
+    },
+    "keywords": [
+        "assault",
+        "gun support",
+        "landing",
+        "Miltiary vehicles",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Support",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Support": [
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The assault convoy arrives, and personnel are disembarked by noon."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Landing operations commence with relatively little organized resistance, leading to the successful disembarkation of troops."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Gun support operations are conducted to silence enemy batteries during the landings."
+        }
+    ]
+}

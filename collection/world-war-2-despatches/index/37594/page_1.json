@@ -1,79 +1,68 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Sir Archibald P. Wavell",
-            "p_2": "Lieutenant Colonel A. R. Chater"
+            "p_1": "General Sir Archibald Wavell"
         },
         "locations": {
-            "l_1": "British Somaliland",
-            "l_2": "Abyssinia",
-            "l_3": "Berbera",
-            "l_4": "Jibuti",
-            "l_5": "Burao",
-            "l_6": "Hargeisa",
-            "l_7": "Southern Rhodesia",
-            "l_8": "Sheikh Pass",
-            "l_9": "Tug Argan Gap"
+            "l_1": "Somaliland Protectorate",
+            "l_2": "Egypt",
+            "l_3": "Palestine",
+            "l_4": "Transjordan",
+            "l_5": "Sudan",
+            "l_6": "Cyprus",
+            "l_7": "Iraq",
+            "l_8": "British Somaliland",
+            "l_9": "Persian Gulf",
+            "l_10": "East Africa",
+            "l_11": "French Somaliland",
+            "l_12": "Jibuti",
+            "l_13": "Zeilah",
+            "l_14": "Berbera"
         },
         "events": {
-            "e_1": "Outbreak of War with Germany",
-            "e_2": "Embodiment of the Reserve",
-            "e_3": "Anglo-French Conference at Aden"
+            "e_1": "Outbreak of war with Germany",
+            "e_2": "Evacuation of British Forces from Somaliland",
+            "e_3": "Entry of Italy into the war",
+            "e_4": "Crossing of Italian troops into Somaliland"
         },
         "organisations": {
-            "o_1": "Somaliland Camel Corps",
+            "o_1": "War Office",
             "o_2": "Colonial Office",
-            "o_3": "H.M. Government",
-            "o_4": "Chiefs of Staff's Committee"
+            "o_3": "G.O.C.-in-C., Middle East"
         }
     },
     "keywords": [
-        "Military",
-        "Defence Policy",
-        "Somaliland",
-        "Italian Occupation",
-        "Anglo-French Conference"
+        "British Forces",
+        "Italian invasion",
+        "French garrisons",
+        "defence policy",
+        "administrative control",
+        "Anglo-French Staff conversations"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategy",
-        "International Relations"
+        "Defence Strategy",
+        "Colonial Administration"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Defensive Strategy": [
+        "Defence Strategy": [
+            "e_2",
             "e_3"
         ],
-        "International Relations": []
+        "Colonial Administration": [
+            "e_1"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 12, 1940",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The outbreak of war with Germany leads to significant military mobilization and strategic changes in the region, involving the Somaliland Camel Corps."
-        },
-        {
-            "event": "e_2",
-            "date": "July 1939",
+            "date": "September, 1939",
             "locations": [
                 "l_1"
             ],
@@ -85,23 +74,61 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Approval is given for the embodiment of the Reserve as tensions rise prior to the outbreak of World War II."
+            "eventSummary": "The outbreak of war with Germany occurs in September, 1939, prompting immediate military responses."
+        },
+        {
+            "event": "e_2",
+            "date": "August, 1940",
+            "locations": [
+                "l_1",
+                "l_14"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "British Forces undergo evacuation from Somaliland in August, 1940, following significant military challenges."
         },
         {
             "event": "e_3",
-            "date": "May 1939",
+            "date": "June 11, 1940",
             "locations": [
-                "l_4",
-                "l_3"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Italy enters the war on June 11, 1940, escalating military tensions in the region."
+        },
+        {
+            "event": "e_4",
+            "date": "August 5, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "An Anglo-French conference is held to discuss the defence strategies of key locations in Somaliland against potential Italian aggression."
+            "eventSummary": "Italian troops cross the frontier into Somaliland on August 5, 1940, leading to the subsequent British evacuation."
         }
     ]
 }

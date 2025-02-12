@@ -1,111 +1,143 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "NESTOR",
-            "p_2": "BROWN RANGER",
-            "p_3": "Vice-Admiral",
-            "p_4": "ARK ROYAL"
+            "p_1": "Rear-Admiral Commanding",
+            "p_2": "Captain (D)",
+            "p_3": "H.M.S. ITHURIEL",
+            "p_4": "H.M. Ships NIGERIA",
+            "p_5": "H.M. Ships CAIRO",
+            "p_6": "H.M.S. ASHANTI",
+            "p_7": "H.M.S. KENYA"
         },
         "locations": {
-            "l_1": "Gibraltar",
-            "l_2": "Galita Island",
-            "l_3": "North Atlantic",
-            "l_4": "Italy"
+            "l_1": "Galita",
+            "l_2": "Malta",
+            "l_3": "Skerki Channel",
+            "l_4": "Skerki Banks",
+            "l_5": "Cani Rocks",
+            "l_6": "Kelibia",
+            "l_7": "Cape Bon",
+            "l_8": "Tunis"
         },
         "events": {
-            "e_1": "High Level Bombing Attack on the Fleet",
-            "e_2": "Movements of Force H and Force X",
-            "e_3": "Arrival at Gibraltar"
+            "e_1": "Attack on Force X",
+            "e_2": "Torpedoing of NIGERIA and CAIRO",
+            "e_3": "E-Boat attacks",
+            "e_4": "Sinking of DEUCALION",
+            "e_5": "Disorganization of the convoy"
         },
         "organisations": {
-            "o_1": "Force X",
-            "o_2": "Force H",
-            "o_3": "Fulmar",
-            "o_4": "FIREDRAKE",
-            "o_5": "MANCHESTER"
+            "o_1": "H.M. Ships"
         }
     },
     "keywords": [
-        "Militay Operations",
-        "Air Attacks",
-        "Naval Maneuvers",
-        "Survivors",
-        "Towing"
+        "submarine",
+        "air attack",
+        "torpedo",
+        "attack",
+        "fleet"
     ],
     "themes": [
         "Military Operations",
-        "Survival and Rescue",
-        "Naval Strategy",
-        "Aerial Combat"
+        "Naval Warfare",
+        "Aerial Assault"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Survival and Rescue": [
+            "e_2",
             "e_3"
         ],
-        "Aerial Combat": [
+        "Naval Warfare": [
+            "e_2",
+            "e_4",
+            "e_5"
+        ],
+        "Aerial Assault": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "25th July",
+            "date": "12th August",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "A group of high-level bombers attacks the fleet but is intercepted by Fulmars, resulting in the destruction of four enemy planes."
+            "eventSummary": "Throughout the day, Force X is subjected to multiple heavy air attacks while under observation by enemy aircraft."
         },
         {
             "event": "e_2",
-            "date": "25th July",
+            "date": "12th August",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_5"
+                "o_1"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_3"
             ],
-            "eventSummary": "Movements of Force H and Force X are reported as they join together and maneuver westward following the sighting of enemy aircraft."
+            "eventSummary": "At 2000 hours, NIGERIA and CAIRO are torpedoed during an unexpected attack, causing significant disruption."
         },
         {
             "event": "e_3",
-            "date": "27th July",
+            "date": "12th August",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The convoy faces further disruption due to coordinated E-Boat attacks, worsening the state of the operation."
+        },
+        {
+            "event": "e_4",
+            "date": "12th August",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "DEUCALION is sunk by a torpedo bomber at 2130 hours near the Cani Rocks amidst ongoing conflict."
+        },
+        {
+            "event": "e_5",
+            "date": "12th August",
+            "locations": [
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_6",
+                "p_7"
             ],
-            "organisations": [
-                "o_4",
-                "o_5"
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The ships of Group 3 successfully arrive at Gibraltar, including the damaged FIREDRAKE and her escort."
+            "eventSummary": "The convoy becomes disorganized following several attacks, creating a chaotic scenario for the involved ships."
         }
     ]
 }

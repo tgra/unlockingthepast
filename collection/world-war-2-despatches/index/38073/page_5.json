@@ -1,143 +1,98 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain (D)",
-            "p_2": "St. J. A. Micklethwait",
-            "p_3": "G. Grantham",
-            "p_4": "H. W. U. McCall",
-            "p_5": "E. W. Bush",
-            "p_6": "A. L. Poland",
-            "p_7": "C. T. Jellicoe",
-            "p_8": "D. M. L. Neame",
-            "p_9": "C. A. G. Hutchison"
+            "p_1": "Captain (D), Twenty-Second Destroyer Flotilla",
+            "p_2": "Captain (D), Fourteenth Destroyer Flotilla",
+            "p_3": "Captain C. A. G. Hutchison, R.N.",
+            "p_4": "Captain St, J. A. Micklethwait, D.S.O., R.N.",
+            "p_5": "Captain D. M. L. Neame, D.S.O., R.N.",
+            "p_6": "Captain G. Grantham, D.S.O., R.N.",
+            "p_7": "Captain H. W. U. McCall, R.N.",
+            "p_8": "Captain E. W. Bush, D.S.O., D.S.C., R.N.",
+            "p_9": "Commander C. T. Jellicoe, D.S.C., R.N."
         },
         "locations": {
             "l_1": "Malta",
             "l_2": "Alexandria",
             "l_3": "Tobruk",
-            "l_4": "Mediterranean Sea"
+            "l_4": "position 33 degs. 20 mins. N., 24 degs. 40 mins. E."
         },
         "events": {
             "e_1": "Torpedo Attack",
-            "e_2": "Air Attack",
-            "e_3": "Convoy M.W.10 Departure",
-            "e_4": "Rendezvous with M.W.10"
+            "e_2": "Convoy M.W.10"
         },
         "organisations": {
             "o_1": "Twenty-Second Destroyer Flotilla",
             "o_2": "Fourteenth Destroyer Flotilla",
             "o_3": "Fifteenth Cruiser Squadron",
-            "o_4": "Royal Navy"
+            "o_4": "H.M. Ships",
+            "o_5": "Beaufort (Naval Cooperation) Group"
         }
     },
     "keywords": [
-        "torpedo",
+        "torpedoes",
+        "air attack",
         "convoy",
         "destroyer",
-        "air attack",
-        "military operation",
-        "naval battle"
+        "cruiser"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Tactical Engagements"
+        "Naval Engagements",
+        "Transport Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Warfare": [
-            "e_3",
-            "e_4"
+        "Naval Engagements": [
+            "e_1"
         ],
-        "Tactical Engagements": [
-            "e_1",
+        "Transport Logistics": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "20th March, 1942",
+            "date": "March 20, 1942",
             "locations": [
+                "l_2",
                 "l_1"
             ],
             "persons": [
-                "p_1",
                 "p_2",
-                "p_3",
-                "p_6"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "A torpedo attack is launched against the enemy by Captain (D) of the Fourteenth Destroyer Flotilla, resulting in hits on the enemy ship LITTORIO while under heavy fire."
+            "connectedEvents": [],
+            "eventSummary": "A torpedo attack is launched by Captain (D), Fourteenth Destroyer Flotilla against enemy ships amidst heavy fire."
         },
         {
             "event": "e_2",
-            "date": "20th March, 1942",
+            "date": "March 20, 1942",
             "locations": [
-                "l_1"
+                "l_2",
+                "l_4"
             ],
             "persons": [
-                "p_1",
                 "p_3",
                 "p_4",
-                "p_5"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "During air raids on a convoy in conjunction with naval operations, 4 enemy aircraft are shot down, showcasing the effectiveness of the escort's air defense."
-        },
-        {
-            "event": "e_3",
-            "date": "20th March, 1942",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_9",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Convoy M.W.10 departs Alexandria at 0800, escorted by the Twenty-Second Destroyer Flotilla, to safely navigate towards Malta amidst concerns of enemy activity."
-        },
-        {
-            "event": "e_4",
-            "date": "21st March, 1942",
-            "locations": [
-                "l_3",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_6"
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8",
+                "p_9"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The convoy M.W.10 successfully rendezvous at 0940 in Mediterranean waters, consolidating forces with additional destroyers for enhanced security."
+            "connectedEvents": [],
+            "eventSummary": "Convoy M.W.10 departs from Alexandria escorted by several destroyers and engages in operations."
         }
     ]
 }

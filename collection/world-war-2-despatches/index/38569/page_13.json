@@ -1,113 +1,98 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral Bennett",
-            "p_2": "U.S. Browning"
+            "p_1": "T. TROUBRIDGE",
+            "p_2": "Rear-Admiral Sir Harold Burrough",
+            "p_3": "U.S. Rangers"
         },
         "locations": {
-            "l_1": "Oran",
+            "l_1": "Clyde",
             "l_2": "Gibraltar",
-            "l_3": "Arzeu",
-            "l_4": "X Beaches",
-            "l_5": "Y Beaches"
+            "l_3": "Algiers",
+            "l_4": "Oran",
+            "l_5": "Cape Trafalgar",
+            "l_6": "Arzeu",
+            "l_7": "Mostaganem",
+            "l_8": "Cape Carbon"
         },
         "events": {
-            "e_1": "Sinking of U.S. Browning",
-            "e_2": "Unloading Operation at Arzeu",
-            "e_3": "Sailing Convoy to Gibraltar",
-            "e_4": "Centre Naval Task Force Ceasing to Exist"
+            "e_1": "Operation Torch",
+            "e_2": "Rendezvous with AURORA",
+            "e_3": "Landing at Z Beach"
         },
         "organisations": {
-            "o_1": "U.S. Navy"
+            "o_1": "Royal Navy",
+            "o_2": "U.S. Rangers"
         }
     },
     "keywords": [
-        "Oran",
-        "Gibraltar",
-        "Convoy",
-        "Unloading",
-        "Naval Task Force"
+        "Operation Torch",
+        "rendezvous",
+        "assault",
+        "convoy"
     ],
     "themes": [
-        "Naval Operations",
-        "Military Logistics",
-        "Maritime Incidents"
+        "Military Operations",
+        "Naval Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
             "e_3"
         ],
-        "Naval Logistics": [
-            "e_2",
-            "e_3"
-        ],
-        "Maritime Incidents": [
-            "e_1"
-        ],
-        "Organisational Changes": [
-            "e_4"
+        "Naval Tactics": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 13th",
+            "date": "8th November 1942",
             "locations": [
-                "l_1"
+                "l_4",
+                "l_6"
             ],
             "persons": [
-                "p_2"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The U.S. Browning is sunk en route to Oran, possibly by torpedo, while carrying T.N.T. and motor transport."
+            "eventSummary": "Operation Torch commences, involving various landings, including at Arzeu Beach, with U.S. Rangers landing unopposed."
         },
         {
             "event": "e_2",
-            "date": "November 13th",
+            "date": "5th November 1942",
             "locations": [
-                "l_1",
                 "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Ships complete unloading at Arzeu and prepare to sail in convoys to Gibraltar."
+            "connectedEvents": [],
+            "eventSummary": "Rendezvous with AURORA occurs as planned to coordinate operations in the vicinity of Gibraltar."
         },
         {
             "event": "e_3",
-            "date": "November 14th",
+            "date": "8th November 1942",
             "locations": [
-                "l_2"
+                "l_6"
             ],
-            "persons": [],
-            "organisations": [
-                "o_1"
+            "persons": [
+                "p_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The remaining ships of the convoy arrive safely in Gibraltar after being escorted from Arzeu."
-        },
-        {
-            "event": "e_4",
-            "date": "November 14th",
-            "locations": [],
-            "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The Centre Naval Task Force is officially disbanded at sunset."
+            "eventSummary": "At Z Beach, assault craft successfully land undetected during Operation Torch, with U.S. Rangers gaining the upper hand."
         }
     ]
 }

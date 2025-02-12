@@ -1,92 +1,115 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A. B. Cunningham",
-            "p_2": "J. F. Evetts",
-            "p_3": "E. C. Weston"
+            "p_1": "Vice Admiral 1st Battle Squadron",
+            "p_2": "General Wavell",
+            "p_3": "Sir Andrew B. Cunningham",
+            "p_4": "Major General J. F. Evetts",
+            "p_5": "Group Captain C. B. R. Pelly",
+            "p_6": "Rear Admiral H. B. Rawlings"
         },
         "locations": {
-            "l_1": "Crete",
-            "l_2": "Alexandria",
-            "l_3": "Heraklion",
-            "l_4": "Suda Bay",
-            "l_5": "Maleme",
-            "l_6": "Retimo",
-            "l_7": "Plaka Bay",
-            "l_8": "Tymbaki",
-            "l_9": "Kaso Strait"
+            "l_1": "Mediterranean",
+            "l_2": "Crete",
+            "l_3": "Suda Bay",
+            "l_4": "Kaso Strait",
+            "l_5": "Alexandria",
+            "l_6": "Heraklion",
+            "l_7": "Sphakia",
+            "l_8": "Egypt"
         },
         "events": {
-            "e_1": "Evacuation of the British and Imperial Forces from Crete",
-            "e_2": "Battle of Crete"
+            "e_1": "Battle of Crete",
+            "e_2": "Evacuation of British and Imperial Troops from Crete",
+            "e_3": "Operation Lustre"
         },
         "organisations": {
             "o_1": "Royal Air Force",
-            "o_2": "CREFORCE"
+            "o_2": "Admiralty"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Military Operations",
-        "Battle of Crete",
-        "Naval Operations",
-        "Rearguard Action"
+        "Convoy A.N.31",
+        "air attacks",
+        "losses",
+        "evacuation",
+        "operations",
+        "embarkation"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Strategies",
-        "Air Support Challenges"
+        "Evacuation",
+        "Air Support",
+        "Naval Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3"
+        ],
+        "Evacuation": [
             "e_2"
         ],
-        "Evacuation Strategies": [
-            "e_1"
+        "Air Support": [
+            "e_2"
         ],
-        "Air Support Challenges": [
+        "Naval Operations": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "28th/29th May 1941",
+            "date": "27th May 1941",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The British and Imperial Forces successfully evacuate approximately 4,000 troops from Heraklion amidst critical conditions, overcoming significant challenges from enemy air attacks and logistical complications."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of Crete continues with heavy air attacks on naval forces."
+        },
+        {
+            "event": "e_2",
+            "date": "26th May - 1st June 1941",
+            "locations": [
+                "l_2",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Battle of Crete involves prolonged fighting between British and German forces, culminating in a strategic evacuation as the British are unable to sustain a defensive position."
+            "eventSummary": "The evacuation of British and Imperial troops from the island of Crete is completed."
+        },
+        {
+            "event": "e_3",
+            "date": "4th March 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Operation Lustre involves the transport of the Army to Greece."
         }
     ]
 }

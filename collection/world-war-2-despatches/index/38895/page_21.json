@@ -1,60 +1,81 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-Commander K. A. Sellar"
+            "p_1": "H.M.S. QUEEN EMMA",
+            "p_2": "Royal Marine Commandos",
+            "p_3": "H.M.S. WARSPITE",
+            "p_4": "SN.OLL.",
+            "p_5": "NCET.F.",
+            "p_6": "Vice-Admiral Malta",
+            "p_7": "Flag Officer Sicily",
+            "p_8": "Lieutenant J. R. L. Moore, R.N."
         },
         "locations": {
-            "l_1": "Bark East",
-            "l_2": "Bark South",
-            "l_3": "Bark West",
-            "l_4": "Gozo",
-            "l_5": "Acip"
+            "l_1": "Guardia",
+            "l_2": "Augusta",
+            "l_3": "Malta",
+            "l_4": "Syracuse",
+            "l_5": "Catania",
+            "l_6": "Bark SouTH",
+            "l_7": "Bark Sours"
         },
         "events": {
-            "e_1": "Operation Husky",
-            "e_2": "Torch"
+            "e_1": "U-boat engagement near Augusta",
+            "e_2": "Patrols off the ports",
+            "e_3": "Combined sweep for U-boats",
+            "e_4": "Final inspection by Naval Commander Eastern Task Force"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "Royal Navy",
+            "o_2": "Royal Engineers"
         }
     },
     "keywords": [
-        "L.C.T",
-        "asault formations",
-        "naval forces",
-        "beach defences",
-        "transport ashore"
+        "destroyers",
+        "casualties",
+        "air activity",
+        "patrols",
+        "fire",
+        "causeway",
+        "convoy"
     ],
     "themes": [
         "Military Operations",
-        "Naval Tactics",
-        "Beach Assaults"
+        "Naval Engagements",
+        "Logistics",
+        "Engineering",
+        "Transition of Command"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3"
         ],
-        "Naval Tactics": [
+        "Naval Engagements": [
             "e_1"
         ],
-        "Beach Assaults": [
-            "e_1"
+        "Logistics": [
+            "e_2",
+            "e_4"
+        ],
+        "Engineering": [
+            "e_4"
+        ],
+        "Transition of Command": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "10th July",
+            "date": "17th/18th July",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1"
@@ -62,7 +83,61 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Husky involves the landing of troops at multiple beaches with some persevering delays due to weather, though notable efforts from naval forces alleviate initial resistance on the beaches."
+            "eventSummary": "In the early hours of 17th/18th July, H.M.S. QUEEN EMMA with Royal Marine Commandos on board suffers casualties near Augusta due to enemy aircraft activity."
+        },
+        {
+            "event": "e_2",
+            "date": "19th July",
+            "locations": [
+                "l_6",
+                "l_4"
+            ],
+            "persons": [
+                "p_4",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On 19th July, continued operations at Bark SouTH and other locations result in the successful landing of personnel and materials."
+        },
+        {
+            "event": "e_3",
+            "date": "17th/18th July",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the night of 17th/18th July, a combined sweep east of Augusta locates and attacks two U-boats."
+        },
+        {
+            "event": "e_4",
+            "date": "19th July",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 19th July, the Naval Commander Eastern Task Force completes his final inspection from Malta."
         }
     ]
 }

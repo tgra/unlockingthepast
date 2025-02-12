@@ -1,132 +1,104 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Reginald Dorman Smith",
-            "p_2": "Hon. Sir Archibald Cochrane",
-            "p_3": "Lieut.-General Hutton",
-            "p_4": "Lieut.-General McLeod"
+            "p_1": "Sir Reginald Dorman Smith"
         },
         "locations": {
-            "l_1": "Borneo",
-            "l_2": "Singapore",
-            "l_3": "Kuching",
-            "l_4": "Brunei",
-            "l_5": "Sarawak",
-            "l_6": "Burma",
-            "l_7": "Tenasserim Peninsula",
-            "l_8": "Myawadi"
+            "l_1": "Burma",
+            "l_2": "Moulmein",
+            "l_3": "Chieng Rai",
+            "l_4": "Kentung",
+            "l_5": "Taunggyi",
+            "l_6": "Bangkok",
+            "l_7": "Chieng Mai",
+            "l_8": "India",
+            "l_9": "Tenasserim Peninsula",
+            "l_10": "Tavoy",
+            "l_11": "Mergui",
+            "l_12": "Victoria Point",
+            "l_13": "Mekong",
+            "l_14": "China",
+            "l_15": "Puerhfu",
+            "l_16": "Lashio",
+            "l_17": "Kunming",
+            "l_18": "Bhamo",
+            "l_19": "Salween River",
+            "l_20": "Singapore"
         },
         "events": {
-            "e_1": "Defense of British Borneo",
-            "e_2": "Change of Governor in Burma",
-            "e_3": "Operational plan for Kuching",
-            "e_4": "Military liaison establishment in Burma"
+            "e_1": "War with Japan",
+            "e_2": "Singapore Conference",
+            "e_3": "Breakout of war"
         },
         "organisations": {
-            "o_1": "2nd/15th Punjab Regiment",
-            "o_2": "Royal Air Force",
-            "o_3": "Government of Burma"
+            "o_1": "Royal Air Force",
+            "o_2": "Burma Frontier Force",
+            "o_3": "General Officer Commanding",
+            "o_4": "Chiefs of Staff"
         }
     },
     "keywords": [
-        "military operations",
-        "defense",
-        "coordination",
-        "communications",
-        "inter-service",
-        "naval",
-        "air force",
-        "British Borneo",
         "Burma",
-        "Japanese-occupied territory"
+        "Japan",
+        "War",
+        "Moulmein",
+        "Chieng Rai",
+        "Singapore",
+        "Royal Air Force"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Communication Challenges",
-        "Inter-service Relations"
+        "Infrastructure Development",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_3"
         ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Communication Challenges": [
-            "e_4"
-        ],
-        "Inter-service Relations": [
+        "Infrastructure Development": [
             "e_1"
+        ],
+        "Strategic Planning": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 1941",
+            "date": "1941",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_19"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_2",
                 "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The defense of British Borneo is discussed, emphasizing the inability to defend the territory fully while focusing on holding Kuching due to its strategic importance."
+            "eventSummary": "War with Japan breaks out affecting military strategy and infrastructure in Burma."
         },
         {
             "event": "e_2",
-            "date": "May 6, 1941",
+            "date": "October 1940",
             "locations": [
-                "l_6"
+                "l_20"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Sir Reginald Dorman Smith replaces Hon. Sir Archibald Cochrane as Governor of Burma."
-        },
-        {
-            "event": "e_3",
-            "date": "May 1941",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
+                "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "An operational plan is developed to defend Kuching due to its aerodrome and strategic significance in the context of broader military operations."
-        },
-        {
-            "event": "e_4",
-            "date": "1941",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A military liaison officer is established in the Governor's personal staff to improve communication and coordination in military matters."
+            "eventSummary": "The Singapore Conference recommends military requirements for the defense of Burma."
         }
     ]
 }

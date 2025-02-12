@@ -1,107 +1,166 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Naval Commander Force A",
-            "p_2": "Bombardment Liaison Officer"
+            "p_1": "S.N.O.L.",
+            "p_2": "Deputy S.N.O.L.",
+            "p_3": "Naval Commander Force A",
+            "p_4": "Flag Officer Sicily",
+            "p_5": "Commander-in-Chief",
+            "p_6": "H.M.S. CARLISLE",
+            "p_7": "H.M.S. LARGS",
+            "p_8": "H.M.S. MAURITIUS",
+            "p_9": "H.M.S. MENDIP",
+            "p_10": "H.M.S. WALLACE",
+            "p_11": "Commander-in-Chief, Mediterranean",
+            "p_12": "S.N.O.L. (H)"
         },
         "locations": {
-            "l_1": "Syracuse",
-            "l_2": "Pozzallo",
-            "l_3": "Gela",
-            "l_4": "Mellili",
-            "l_5": "Priolo",
-            "l_6": "Augusta",
-            "l_7": "Bark West",
-            "l_8": "Bark South",
-            "l_9": "Amber beach",
-            "l_10": "AwC South"
+            "l_1": "Punta Portopalo",
+            "l_2": "Tripoli",
+            "l_3": "Syracuse",
+            "l_4": "Augusta",
+            "l_5": "Malta",
+            "l_6": "Lentini",
+            "l_7": "Bark South",
+            "l_8": "Bark East",
+            "l_9": "Bark West",
+            "l_10": "Acip"
         },
         "events": {
-            "e_1": "Bombardment of Pozzallo",
-            "e_2": "Landing and unloading operations on D+2 Day"
+            "e_1": "Operation Turnover",
+            "e_2": "Night Air Raids",
+            "e_3": "Convoy Departures",
+            "e_4": "Naval Engagement",
+            "e_5": "Day D + 5 Situation Report"
         },
         "organisations": {
-            "o_1": "H.M.S. BRISSENDEN",
-            "o_2": "H.M.S. DELHI",
-            "o_3": "H.M.S. COLOMBO",
-            "o_4": "H.M.S. MAURITIUS",
-            "o_5": "H.M.S. ULSTER MONARCH",
-            "o_6": "H.M.S. TETCOTT"
+            "o_1": "Commander-in-Chief",
+            "o_2": "Naval Commander Force A",
+            "o_3": "Flag Officer",
+            "o_4": "Hunts"
         }
     },
     "keywords": [
-        "Naval Commander",
-        "Bombardment",
-        "Surrender",
-        "Landing Operations",
-        "Unloading",
         "Assault Convoy",
-        "Air Attacks",
-        "Convoy",
-        "Military Support"
+        "M.T. Ships",
+        "Landing Craft",
+        "Night Air Raids",
+        "Naval Operations"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Surrender",
-        "Logistics"
+        "Logistics",
+        "Air Raids"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4"
         ],
         "Naval Warfare": [
-            "e_1"
+            "e_4"
         ],
         "Logistics": [
-            "e_2"
+            "e_3"
         ],
-        "Surrender": [
-            "e_1"
+        "Air Raids": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12th July",
+            "date": "Date not specified",
             "locations": [
-                "l_2"
+                "l_3",
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Naval Commander Force A turns over operations from Syracuse northwards to Flag Officer Sicily."
+        },
+        {
+            "event": "e_2",
+            "date": "13th/14th July",
+            "locations": [
+                "l_7",
+                "l_9",
+                "l_6"
+            ],
+            "persons": [
+                "p_6",
+                "p_9",
+                "p_10"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Night air raids are reported, with decreased intensity and no significant damage caused."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not specified",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_12"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Various M.T. ships and landing craft are reported to be sailing towards Tripoli."
+        },
+        {
+            "event": "e_4",
+            "date": "Date not specified",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Gun support and naval engagements continue as required to assist ground forces."
+        },
+        {
+            "event": "e_5",
+            "date": "15th July",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_5"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The town of Pozzallo is bombarded by H.M.S. BRISSENDEN, leading to its surrender at 1315, resulting in the capture of 98 prisoners and making the port ineffective for unloading."
-        },
-        {
-            "event": "e_2",
-            "date": "12th July",
-            "locations": [
-                "l_1",
-                "l_3",
-                "l_7",
-                "l_8"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "On D+2 Day, various naval forces conduct landing operations at multiple beaches, reinforcing positions and ensuring the discharge of personnel and stores after the successful bombardment of Pozzallo."
+            "eventSummary": "A situation report details the ongoing logistical efforts at the beaches and the readiness of the naval forces."
         }
     ]
 }

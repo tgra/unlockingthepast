@@ -1,140 +1,122 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A.D.G.B.",
-            "p_2": "No. 31 Group",
-            "p_3": "Royal Air Force"
+            "p_1": "Hitler",
+            "p_2": "German Commander"
         },
         "locations": {
-            "l_1": "Uxbridge",
-            "l_2": "United Kingdom",
-            "l_3": "Beach-head area",
-            "l_4": "assault area",
-            "l_5": "shipping lanes"
+            "l_1": "Brittany Peninsula",
+            "l_2": "Loire",
+            "l_3": "Mortain",
+            "l_4": "Avranches",
+            "l_5": "Alencon",
+            "l_6": "Argentan",
+            "l_7": "Falaise",
+            "l_8": "France"
         },
         "events": {
-            "e_1": "Attacks on Coastal Garrisons",
-            "e_2": "Dieppe operation",
-            "e_3": "D-Day",
-            "e_4": "Invasion operations"
+            "e_1": "Break-through of the Allied Armies",
+            "e_2": "Counter-attack at Mortain",
+            "e_3": "Encirclement of the German 7th Army"
         },
         "organisations": {
-            "o_1": "US Eighth Air Force",
-            "o_2": "R.A.F.",
-            "o_3": "Combined Control Centre",
-            "o_4": "A.E.A.F."
+            "o_1": "United States Army",
+            "o_2": "Ninth Air Force",
+            "o_3": "A.E.A.F.",
+            "o_4": "R.A.F. Second Tactical Air Force",
+            "o_5": "IXth Tactical Air Command"
         }
     },
     "keywords": [
-        "attacks",
-        "garrisons",
-        "sorties",
-        "fighter cover",
-        "Royal Air Force",
-        "D-Day",
-        "invasion"
+        "fighter bombers",
+        "air forces",
+        "tanks",
+        "counter-attack",
+        "bombs",
+        " sorties"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Ground Forces Protection"
+        "Tactical Air Support",
+        "Enemy Engagements",
+        "Armoured Combat"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Air Support": [
+        "Tactical Air Support": [
             "e_1",
-            "e_4"
+            "e_2"
         ],
-        "Ground Forces Protection": [
-            "e_3",
-            "e_4"
+        "Enemy Engagements": [
+            "e_2"
+        ],
+        "Armoured Combat": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 1944",
+            "date": "August 1944",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Attacks on Coastal Garrisons are conducted to support ground forces by providing air superiority and protection against enemy attacks."
-        },
-        {
-            "event": "e_2",
-            "date": "August 1942",
-            "locations": [
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Dieppe operation involves significant air cover and support from the Royal Air Force to facilitate the operation."
-        },
-        {
-            "event": "e_3",
-            "date": "D-Day",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "On D-Day, various squadrons provide continuous cover over the beach-head and naval approach to ensure successful landings."
-        },
-        {
-            "event": "e_4",
-            "date": "June 1944",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The United States armies achieve a break-through, moving towards the Brittany Peninsula and engaging enemy forces."
+        },
+        {
+            "event": "e_2",
+            "date": "7th August 1944",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Invasion operations see the deployment of fighter and bomber units to support ground forces and secure the area from enemy attacks."
+            "eventSummary": "A large-scale counter-attack is launched by the enemy at Mortain under orders from Hitler to disrupt the American advance."
+        },
+        {
+            "event": "e_3",
+            "date": "August 1944",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The German 7th Army faces encirclement due to the American and British forces' advance towards key locations."
         }
     ]
 }

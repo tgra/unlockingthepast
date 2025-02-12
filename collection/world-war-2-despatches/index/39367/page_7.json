@@ -1,111 +1,127 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Chief of the Air Staff",
-            "p_2": "Marshal Tito"
+            "p_1": "M.A.A.F.",
+            "p_2": "A.V.M. Elliot",
+            "p_3": "A.V.M. Mills",
+            "p_4": "Marshal Tito"
         },
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Nothern Italy",
+            "l_1": "Bari",
+            "l_2": "Taranto",
             "l_3": "Jugoslavia",
-            "l_4": "Greece",
-            "l_5": "Bari"
+            "l_4": "Albania",
+            "l_5": "Hungary",
+            "l_6": "Greece",
+            "l_7": "Vis",
+            "l_8": "Zadar"
         },
         "events": {
-            "e_1": "Final Italian Offensive",
-            "e_2": "Jugoslav Fourth Army Offensive",
-            "e_3": "Formation of Balkan Air Force"
+            "e_1": "trans-Adriatic operations",
+            "e_2": "formation of Balkan Air Force",
+            "e_3": "directive from Supreme Allied Commander",
+            "e_4": "inter-service command establishment"
         },
         "organisations": {
-            "o_1": "U.S.A.A.F.",
-            "o_2": "M.A.T.A.F.",
-            "o_3": "B.A.F.",
-            "o_4": "M.A.S.A.F.",
-            "o_5": "Royal Air Force",
-            "o_6": "Allied Force Headquarters"
+            "o_1": "Balkan Air Force",
+            "o_2": "Land Forces Adriatic",
+            "o_3": "No. 37 Military Mission",
+            "o_4": "Force 399",
+            "o_5": "Headquarters Special Operations (Mediterranean)",
+            "o_6": "Combined Operations Zadar"
         }
     },
     "keywords": [
-        "military operations",
-        "offensive",
-        "air support",
-        "Manpower",
-        "co-ordination",
-        "partisans"
+        "air force",
+        "trans-Adriatic operations",
+        "military missions",
+        "Balkan operations",
+        "political advisers"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Co-ordination",
-        "Strategic Decisions"
+        "Inter-Service Coordination",
+        "Political Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
+        "Inter-Service Coordination": [
+            "e_4"
+        ],
+        "Political Strategy": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 16, 1944",
+            "date": "15th June 1944",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The final Italian offensive continues with unchanged order of battle and preparation for support despite overall manpower deficiencies."
+            "eventSummary": "The trans-Adriatic operations aim to contain and destroy enemy forces in the Balkans, coordinated by the A.O.C. of the Balkan Air Force."
         },
         {
             "event": "e_2",
-            "date": "1944",
+            "date": "7th June 1944",
             "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_4",
-                "o_5",
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Jugoslav Fourth Army offensive is initiated with the support of Allied forces and Partisans against substantial German resistance."
-        },
-        {
-            "event": "e_3",
-            "date": "May 1944",
-            "locations": [
-                "l_4",
-                "l_5"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A directive leads to the formation of the Balkan Air Force, comprising a diverse array of air squadrons for regional operations."
+        },
+        {
+            "event": "e_3",
+            "date": "15th June 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A directive from the Supreme Allied Commander delineates the responsibilities of various military forces in the trans-Adriatic operations."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
                 "o_6"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The formation of the Balkan Air Force is decided to enable operational co-ordination for trans-Adriatic operations against Axis forces."
+            "connectedEvents": [],
+            "eventSummary": "The establishment of combined operations command on the islands of Vis and the mainland at Zadar is initiated for better coordination."
         }
     ]
 }

@@ -1,51 +1,55 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain (D), 8th Destroyer Flotilla",
-            "p_2": "Rear Admiral L. H. K. Hamilton, D.S.O."
+            "p_1": "Vice Admiral Sir Bruce A. Fraser",
+            "p_2": "pa Admiral S. S. Bonham-Carter",
+            "p_3": "Rear Admiral Commanding, Home Fleet Destroyers",
+            "p_4": "Rear Admiral Commanding, Home Fleet Destroyers",
+            "p_5": "Vice Admiral Second in Command, Home Fleet"
         },
         "locations": {
-            "l_1": "Jan Mayen Island",
-            "l_2": "Archangel",
-            "l_3": "South Cape",
-            "l_4": "Spitzbergen",
-            "l_5": "Iceland",
+            "l_1": "Iceland",
+            "l_2": "Loch Ewe",
+            "l_3": "Spitzbergen",
+            "l_4": "North Russia",
+            "l_5": "Jan Mayen",
             "l_6": "Akureyri",
-            "l_7": "Barents Sea",
-            "l_8": "French North Africa",
-            "l_9": "White Sea",
-            "l_10": "Bear Island",
-            "l_11": "Altenfiord",
-            "l_12": "Kola Inlet",
-            "l_13": "Loch Ewe",
-            "l_14": "Arctic"
+            "l_7": "Bear Island",
+            "l_8": "Scapa",
+            "l_9": "Denmark Strait",
+            "l_10": "Hvalfiord",
+            "l_11": "Seidisfiord",
+            "l_12": "Skagi",
+            "l_13": "Northern Lofoten Islands",
+            "l_14": "Altenfiord",
+            "l_15": "Narvik"
         },
         "events": {
-            "e_1": "Attack by the NORTHERN SPRAY on a U-boat",
-            "e_2": "Convoy QP15 sailed on 17th November",
-            "e_3": "Operations for occupation of French North Africa",
-            "e_4": "Sailing of a convoy on 22nd December"
+            "e_1": "Sailing of the eastbound convoy",
+            "e_2": "Arrival off Skagi",
+            "e_3": "First sighting by enemy aircraft",
+            "e_4": "First contact with U-boats",
+            "e_5": "Fuelling at Lowe Sound"
         },
         "organisations": {
-            "o_1": "Admiralty",
+            "o_1": "Royal Air Force",
             "o_2": "Home Fleet",
-            "o_3": "Russian Navy",
-            "o_4": "British Navy"
+            "o_3": "P.R.U."
         }
     },
     "keywords": [
+        "convoy",
+        "escort",
         "U-boat",
-        "Convoy",
-        "Air reconnaissance",
-        "Attack",
-        "Escort"
+        "reconnaissance",
+        "air cover",
+        "destroyer",
+        "submarine"
     ],
     "themes": [
         "Military Operations",
         "Naval Strategy",
-        "Coordination",
-        "Leadership",
-        "Logistics"
+        "Aerial Support"
     ],
     "topicModel": {
         "Military Operations": [
@@ -58,84 +62,89 @@
             "e_1",
             "e_2"
         ],
-        "Coordination": [
-            "e_2",
-            "e_4"
+        "Aerial Support": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 17, 1943",
+            "date": "2nd September",
             "locations": [
-                "l_1",
-                "l_7"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_4"
             ],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The NORTHERN SPRAY attacks a U-boat near Jan Mayen Island, likely prompting an increase in enemy air reconnaissance and U-boat patrols."
+            "eventSummary": "The convoy sails from Loch Ewe on 2nd September."
         },
         {
             "event": "e_2",
-            "date": "November 17, 1943",
+            "date": "7th September",
             "locations": [
-                "l_2",
-                "l_8",
-                "l_10"
+                "l_12"
             ],
             "persons": [
-                "p_1"
+                "p_5"
             ],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "Convoy QP15 departs on November 17, with plans for careful navigation through dark conditions, aiming to evade enemy patrols."
+            "eventSummary": "The convoy arrives off Skagi on 7th September."
         },
         {
             "event": "e_3",
-            "date": "Late November 1943",
+            "date": "8th September",
             "locations": [
-                "l_8"
+                "l_5"
             ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "Operations for the occupation of French North Africa are underway, affecting naval resources and convoy operations."
+            "eventSummary": "The convoy is first sighted by an enemy aircraft late on 8th September."
         },
         {
             "event": "e_4",
-            "date": "December 22, 1943",
+            "date": "10th September",
             "locations": [
-                "l_3"
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "The U-boats are in contact and shadowing from 10th September onwards."
+        },
+        {
+            "event": "e_5",
+            "date": "11th September",
+            "locations": [
+                "l_9"
             ],
             "persons": [
-                "p_1"
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "A new convoy is set to sail on December 22, featuring a large escort in response to expected enemy actions."
+            "eventSummary": "The SCYLLA and five destroyers part company with the convoy for fuelling on 11th September."
         }
     ]
 }

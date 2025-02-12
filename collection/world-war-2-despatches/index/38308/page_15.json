@@ -1,103 +1,110 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander sth Fleet",
-            "p_2": "A.C.x",
-            "p_3": "A.C.1",
-            "p_4": "CS.4"
+            "p_1": "BERNARD RAWLINGS",
+            "p_2": "Vice-Admiral Sir Philip Vian",
+            "p_3": "Admiral Kincaid",
+            "p_4": "Vice Admiral J. L. Kauffman",
+            "p_5": "Rear Admiral R. O. Davis",
+            "p_6": "Commodore E. M. Evans-Lombe",
+            "p_7": "Captain (S) J. R. Allfrey",
+            "p_8": "Captain E. C. Ewen"
         },
         "locations": {
-            "l_1": "Sakishima",
-            "l_2": "Ishigaki",
-            "l_3": "Leyte"
+            "l_1": "Leyte",
+            "l_2": "Ulithi",
+            "l_3": "San Pedro Roads",
+            "l_4": "Guam",
+            "l_5": "Philippine Sea"
         },
         "events": {
-            "e_1": "Engagement on May 10",
-            "e_2": "Operational Review on May 11",
-            "e_3": "Tanker Group Formation on May 12"
+            "e_1": "Operation of Task Force 57",
+            "e_2": "Bombardment Plan Cancellation",
+            "e_3": "First Strikes on 27th March"
         },
         "organisations": {
-            "o_1": "Fleet",
-            "o_2": "TF 57",
-            "o_3": "HMS. FORMIDABLE",
-            "o_4": "HMS. VICTORIOUS",
-            "o_5": "H.M. Ships SPEAKER",
-            "o_6": "American Task Unit 52.1.3"
+            "o_1": "United States Fifth Fleet",
+            "o_2": "Fleet Train",
+            "o_3": "R.A.F.T.",
+            "o_4": "Dumbo Aircraft"
         }
     },
     "keywords": [
-        "Engagement",
-        "Air Operations",
-        "Casualties",
-        "Tactics",
-        "Fleet Operations",
-        "Kamikaze"
+        "Operation",
+        "Fleet",
+        "Night Fighters",
+        "Bombardment",
+        "Lifeguard submarines"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Air Defense"
+        "Naval Strategy",
+        "Logistics",
+        "Air Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_2"
-        ],
-        "Air Defense": [
+        "Naval Strategy": [
             "e_1"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Support": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 10",
+            "date": "23rd April",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The engagement results in the downing of multiple enemy aircraft while sustaining light casualties and damaging several friendly aircraft."
-        },
-        {
-            "event": "e_2",
-            "date": "May 11",
-            "locations": [],
-            "persons": [
                 "p_3",
-                "p_4"
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "An operational review leads to tactical adjustments in fleet positioning to enhance air defense against changing enemy tactics."
+            "eventSummary": "On 23rd April, Task Force 57 anchors in San Pedro Roads, Leyte, and begins repairs and replenishments."
+        },
+        {
+            "event": "e_2",
+            "date": "8th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A planned bombardment is cancelled on 8th May due to weather conditions affecting the fleet."
         },
         {
             "event": "e_3",
-            "date": "May 12",
+            "date": "27th March",
             "locations": [],
             "persons": [],
-            "organisations": [
-                "o_5"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The tanker group is formed to facilitate fuelling and resupply operations for the fleet ahead of further engagements."
+            "eventSummary": "On 27th March, the Fleet launched its first strikes, during which 'INDOMITABLE' successfully engaged enemy aircraft."
         }
     ]
 }

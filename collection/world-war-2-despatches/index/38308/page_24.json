@@ -1,62 +1,66 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Bruce A. Fraser, G.C.B., K.B.E.",
-            "p_2": "Vice Admiral Sir Philip Vian",
-            "p_3": "Captain M. M. Denny, C.B., CBE, RN",
-            "p_4": "Captain Q. D. Graham, C.B.E., D.S.O., RN",
-            "p_5": "Captain C. E. Lambe, C.B., G.V.O., RN",
-            "p_6": "Captain J. A. S. Eccles, R.N.",
-            "p_7": "Captain P. Ruck-Keene, CBE, RN"
+            "p_1": "Captain D. 27",
+            "p_2": "Captain D. 4",
+            "p_3": "A.C.1",
+            "p_4": "Commander Logistic Support Group"
         },
         "locations": {
-            "l_1": "Okinawa",
-            "l_2": "Sakishima Gunto",
-            "l_3": "Myako",
-            "l_4": "Formosa",
-            "l_5": "Leyte"
+            "l_1": "Leyte",
+            "l_2": "Cootie",
+            "l_3": "Miyako",
+            "l_4": "Ishigaki",
+            "l_5": "Sakishima"
         },
         "events": {
-            "e_1": "Operation Iceberg",
-            "e_2": "Air attacks on enemy positions"
+            "e_1": "Collision of H.M.S. QUILLIAM with H.M.S. INDOMITABLE",
+            "e_2": "Air strikes on Miyako and Ishigaki",
+            "e_3": "Flying-off operations"
         },
         "organisations": {
-            "o_1": "British Pacific Fleet",
-            "o_2": "Task Force 57",
-            "o_3": "Task Force 58"
+            "o_1": "H.M.A.S.",
+            "o_2": "British Royal Navy",
+            "o_3": "American Task Group",
+            "o_4": "CTF 112"
         }
     },
     "keywords": [
-        "Air attacks",
-        "Operational sorties",
-        "Aircraft carriers",
-        "Enemy aircraft"
+        "hospital ship",
+        "task group",
+        "aircraft",
+        "destroyers",
+        "fleet",
+        "escort",
+        "collided",
+        "bombers",
+        "strikes"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Combat",
-        "Naval Strategy"
+        "Naval Logistics",
+        "Aerial Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Aerial Combat": [
-            "e_2"
-        ],
-        "Naval Strategy": [
+        "Naval Logistics": [
             "e_1"
+        ],
+        "Aerial Warfare": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 23, 1945 - May 25, 1945",
+            "date": "21st May",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_4"
+                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -69,32 +73,42 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Iceberg is a significant military operation aimed at neutralizing enemy airfields in the Sakishima Gunto group, participating in extensive air and naval attacks, ultimately leading the British Pacific Fleet to prevent enemy usage of these airfields."
+            "eventSummary": "At 0524, H.M.S. QUILLIAM collides with H.M.S. INDOMITABLE causing damage but no casualties. H.M.A.S. NORMAN is ordered to tow QUILLIAM."
         },
         {
             "event": "e_2",
-            "date": "April 23, 1945 - May 25, 1945",
+            "date": "20th May",
             "locations": [
                 "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Air strikes on Miyako and Ishigaki are conducted involving multiple aircraft to attack ground installations amidst challenging weather conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "20th May",
+            "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7"
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "A series of air attacks conducted against enemy positions, resulting in the destruction of numerous enemy aircraft and the completion of thousands of operational sorties by the carrier-based forces."
+            "connectedEvents": [],
+            "eventSummary": "Flying-off operations encounter delays due to fog, but ultimately involve coordinated strikes against targets in the region."
         }
     ]
 }

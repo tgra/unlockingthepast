@@ -1,122 +1,191 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Marshal Tito"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Gulf of Trieste",
-            "l_2": "Slavonia",
-            "l_3": "Koptivnica",
-            "l_4": "Bjelovar",
-            "l_5": "Zagreb",
-            "l_6": "Kocevje",
-            "l_7": "Ljubljana",
-            "l_8": "Novo Mesto",
-            "l_9": "Generalski Stol",
-            "l_10": "Karlovac",
-            "l_11": "Fiume",
-            "l_12": "Central Austria",
-            "l_13": "Austrian territory",
-            "l_14": "Italy",
-            "l_15": "Slovenia"
+            "l_1": "Santerno River",
+            "l_2": "Castel Bolognese",
+            "l_3": "Massa Lombarda",
+            "l_4": "Po Valley",
+            "l_5": "Lugo Canal",
+            "l_6": "Lugo",
+            "l_7": "Menate",
+            "l_8": "Lake Comacchio",
+            "l_9": "Bastia",
+            "l_10": "Ferrara",
+            "l_11": "Argenta",
+            "l_12": "Route 16",
+            "l_13": "Solarolo",
+            "l_14": "Gaiano",
+            "l_15": "Bagnara",
+            "l_16": "Reno"
         },
         "events": {
-            "e_1": "Fourth Army Offensive",
-            "e_2": "Special Operations",
-            "e_3": "Evacuation of refugees from Slovenia"
+            "e_1": "Attack on the Santerno defences",
+            "e_2": "Eighth Army's push to Lugo Canal",
+            "e_3": "Capture of Lugo town",
+            "e_4": "Desert Air Force sorties",
+            "e_5": "Attack on Argenta by the army",
+            "e_6": "Consolidation of bridgeheads across the Santerno",
+            "e_7": "Polish forces capturing Castel Bolognese and Mordano",
+            "e_8": "Amphibious assault on the north-western shore of Lake Comacchio"
         },
         "organisations": {
-            "o_1": "Balkan Air Force",
-            "o_2": "Jugoslav Army",
-            "o_3": "Royal Air Force (R.A.F)"
+            "o_1": "No. 205 Group",
+            "o_2": "Desert Air Force",
+            "o_3": "Eighth Army",
+            "o_4": "Polish Corps",
+            "o_5": "V Corps",
+            "o_6": "S.A.A.F."
         }
     },
     "keywords": [
-        "Hurricanes",
-        "Jugoslav Army",
-        "sorties",
-        "air operations",
-        "special operations",
-        "refugees"
+        "Bombing",
+        "Air Assault",
+        "Attack",
+        "Troops",
+        "Sorties",
+        "Battlefield"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Humanitarian Efforts",
-        "Strategic Decisions"
+        "Ground Assaults",
+        "Aerial Bombing",
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_5",
+            "e_6",
+            "e_7",
+            "e_8"
         ],
-        "Humanitarian Efforts": [
-            "e_3"
+        "Aerial Bombing": [
+            "e_1",
+            "e_4"
         ],
-        "Logistics": [
-            "e_2"
+        "Ground Assaults": [
+            "e_2",
+            "e_3",
+            "e_7"
+        ],
+        "Reconnaissance": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 3, 1945",
+            "date": "Day 10th April",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_8",
-                "l_10"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_4",
+                "e_6"
             ],
-            "eventSummary": "The Fourth Army Offensive concludes with the successful air support for the Jugoslav Army, leading to significant victories in Slavonia and the capture of key locations."
+            "eventSummary": "The Santerno defences are attacked by No. 205 Group in conjunction with other air force operations."
         },
         {
             "event": "e_2",
-            "date": "March 6 - May 3, 1945",
+            "date": "Day 10th April",
             "locations": [
-                "l_1",
-                "l_5",
-                "l_11"
+                "l_5"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_3",
+                "e_6"
             ],
-            "eventSummary": "During this period, more than 7,000 sorties are flown by the Balkan Air Force, providing vital air support and delivering supplies and humanitarian aid."
+            "eventSummary": "The Eighth Army pushes forward to the line of the Lugo Canal, launching additional attacks."
         },
         {
             "event": "e_3",
-            "date": "1945",
+            "date": "Day 10th April",
             "locations": [
-                "l_15"
+                "l_6"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_3"
             ],
+            "connectedEvents": [],
+            "eventSummary": "Lugo town is captured as Eighth Army operations progress."
+        },
+        {
+            "event": "e_4",
+            "date": "Day 11th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_5"
             ],
-            "eventSummary": "A Special Operation is carried out to evacuate approximately 2,000 refugees from Slovenia, requested by Marshal Tito in response to the imminent danger from German forces."
+            "eventSummary": "Desert Air Force conducts close air support and fighter operations over the battle area."
+        },
+        {
+            "event": "e_5",
+            "date": "Day 11th April",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An attack is launched by the army on the right flank near Argenta."
+        },
+        {
+            "event": "e_6",
+            "date": "Day 11th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The consolidation of bridgeheads across the Santerno River is carried out."
+        },
+        {
+            "event": "e_7",
+            "date": "Day 12th April",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Polish forces capture key locations including Castel Bolognese and Mordano."
+        },
+        {
+            "event": "e_8",
+            "date": "Day 13th April",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An amphibious assault is launched on the north-western shore of Lake Comacchio."
         }
     ]
 }

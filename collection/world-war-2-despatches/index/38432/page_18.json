@@ -1,142 +1,102 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Lieutenant W. E. A. Blount, D.S.C., R.N.V.R.",
-            "p_2": "Lieutenant R. C. Davidson, D.S.C., R.N.V.R.",
-            "p_3": "Lieutenant D. Lummis"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Zara",
-            "l_2": "Vis",
-            "l_3": "Ist",
-            "l_4": "Kok Point",
-            "l_5": "Mulat",
-            "l_6": "Vir Island",
-            "l_7": "Maon Channel",
-            "l_8": "Veli Rat Light"
+            "l_1": "Vir",
+            "l_2": "Komiza",
+            "l_3": "Sibenik",
+            "l_4": "Zara"
         },
         "events": {
-            "e_1": "Patrol Operation North of Zara",
-            "e_2": "Convoy Sighted",
-            "e_3": "Land Battle at Ist",
-            "e_4": "Engagement Near Mulat"
+            "e_1": "First attack",
+            "e_2": "Second attack",
+            "e_3": "Third attack"
         },
         "organisations": {
-            "o_1": "His Majesty's Royal Navy",
-            "o_2": "L.R.D.G. (Long Range Desert Group)"
+            "o_1": "H.M.M.G.B.662",
+            "o_2": "H.M.M.T.B.634",
+            "o_3": "H.M.M.T.B.637",
+            "o_4": "H.M.M.T.B.638",
+            "o_5": "L.R.D.G.",
+            "o_6": "Royal Air Force"
         }
     },
     "keywords": [
-        "Patrol",
-        "Convoy",
-        "Partisan",
-        "Intelligence",
-        "Military Operation",
-        "Naval Engagement"
+        "F-lighter",
+        "torpedo",
+        "gunfire",
+        "convoy"
     ],
     "themes": [
         "Military Operations",
-        "Intelligence Gathering",
-        "Naval Patrols",
-        "Engagements"
+        "Naval Engagement",
+        "Enemy Assessment"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4"
+            "e_3"
         ],
-        "Intelligence Gathering": [
+        "Naval Engagement": [
+            "e_1",
             "e_2",
             "e_3"
         ],
-        "Naval Patrols": [
-            "e_1"
-        ],
-        "Engagements": [
-            "e_3",
-            "e_4"
+        "Enemy Assessment": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 10, 1944",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "A naval unit embarks on a patrol operation north of Zara, aiming to intercept a northbound convoy based on recent intel."
+            "eventSummary": "First attack involves targeted strikes against enemy F-lighters, resulting in significant damage."
         },
         {
             "event": "e_2",
-            "date": "October 10, 1944",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_1",
-                "e_3",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "Lieutenant W. E. A. Blount reports sighting of a convoy that had entered Zara days prior, indicating a potential encounter with enemy vessels."
+            "eventSummary": "Second attack results in additional F-lighter sunk, further weakening the enemy's efforts."
         },
         {
             "event": "e_3",
-            "date": "October 10, 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "Gunfire and flares indicate a land battle occurring at Ist, leading to strategic considerations about remaining persistent in the patrol area."
-        },
-        {
-            "event": "e_4",
-            "date": "October 10, 1944",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The naval unit engages in response to military activity detected near Mulat, seeking understanding of the situation amidst reported enemy presence."
+            "eventSummary": "Third attack sees the sinking of multiple enemy vessels, demonstrating tactical effectiveness."
         }
     ]
 }

@@ -1,117 +1,142 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Andrew B. Cunningham",
-            "p_2": "H. K. Hewitt",
-            "p_3": "O. R. Bennehoff",
-            "p_4": "H. G. Scott",
-            "p_5": "Lieutenant-Commander Willmott"
+            "p_1": "Rear Admiral",
+            "p_2": "Captain R. O. Hamer",
+            "p_3": "Commander E. A. Divers",
+            "p_4": "Captain T. H. Back",
+            "p_5": "Lieutenant-Commander A. G. Poe",
+            "p_6": "Captain W. G. Agnew",
+            "p_7": "Acting Commander D. S. Hore-Lacy"
         },
         "locations": {
-            "l_1": "Algiers",
-            "l_2": "Gibraltar",
-            "l_3": "Bone",
-            "l_4": "Mediterranean",
-            "l_5": "United Kingdom"
+            "l_1": "La Senia aerodrome",
+            "l_2": "Torch area",
+            "l_3": "Oran",
+            "l_4": "Algiers",
+            "l_5": "Gibraltar",
+            "l_6": "Mediterranean",
+            "l_7": "United States of America"
         },
         "events": {
-            "e_1": "Operation Torch",
-            "e_2": "Landings in North Africa",
-            "e_3": "Torpedoing of USS Thomas Stone"
+            "e_1": "Dive bombing of La Senia aerodrome",
+            "e_2": "Operation Torch",
+            "e_3": "Surrender of Algiers",
+            "e_4": "Destruction of ETTRICK and WARWICK CASTLE",
+            "e_5": "Surface action with French destroyers"
         },
         "organisations": {
-            "o_1": "United States Navy",
-            "o_2": "Royal Navy"
+            "o_1": "Royal Navy",
+            "o_2": "Royal Fleet Auxiliary",
+            "o_3": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "Operation Torch",
-        "Landings",
-        "North Africa",
-        "Admiral",
-        "Reconnaissance",
-        "Gibraltar",
-        "USS Thomas Stone"
+        "operations",
+        "carrier-borne fighters",
+        "dive bombing",
+        "close support bombing",
+        "communications",
+        "combined operations",
+        "Naval operations",
+        "shipping casualties"
     ],
     "themes": [
         "Military Operations",
-        "Naval Assaults",
-        "Seamanship",
-        "Strategic Movements"
+        "Naval Strategy",
+        "Aerial Warfare",
+        "Logistics",
+        "Communications"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_5"
+        ],
+        "Naval Strategy": [
+            "e_4"
+        ],
+        "Aerial Warfare": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_2",
             "e_3"
         ],
-        "Naval Assaults": [
+        "Communications": [
             "e_2"
-        ],
-        "Seamanship": [
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "30th March, 1943",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_3",
-                "l_4"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Operation Torch is reported on, covering the British naval assaults during the landings in North Africa."
+            "connectedEvents": [],
+            "eventSummary": "The dive bombing of La Senia aerodrome is noted for its accuracy and gallant execution."
         },
         {
             "event": "e_2",
-            "date": "5th November, 1942",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_2",
+                "l_7"
             ],
-            "persons": [
-                "p_1",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The landings in North Africa commence, focusing on naval operations and coordination among Allied forces."
+            "eventSummary": "Operation Torch involves complex naval and air operations in the Torch area with significant logistical challenges."
         },
         {
             "event": "e_3",
-            "date": "7th November, 1942",
+            "date": "",
             "locations": [
                 "l_4"
             ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The surrender of Algiers assists in the unloading of convoys during military operations."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
             "persons": [
-                "p_3"
+                "p_5"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The destruction of the troopships ETTRICK and WARWICK CASTLE occurs during convoy M.K.F.1."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The USS Thomas Stone is torpedoed, leading to a courageous decision by Captain O. R. Bennehoff to assist in the assault."
+            "connectedEvents": [],
+            "eventSummary": "Surface actions with French destroyers unfold, highlighting the challenges faced in submarine-infested waters."
         }
     ]
 }

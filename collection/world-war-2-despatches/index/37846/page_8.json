@@ -1,131 +1,100 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Army Commander",
-            "p_2": "R.A.F. Officer",
-            "p_3": "British Commanders"
+            "p_1": "wing commander",
+            "p_2": "force commander",
+            "p_3": "B.G.S.",
+            "p_4": "squadron commander",
+            "p_5": "A.L.O."
         },
         "locations": {
-            "l_1": "Albania",
-            "l_2": "Koritsa",
-            "l_3": "Yannina",
-            "l_4": "Paramythia",
-            "l_5": "Athens",
-            "l_6": "Kazaklar",
-            "l_7": "Larissa",
-            "l_8": "Pharsala",
-            "l_9": "Amphiklia",
-            "l_10": "Thermopylae",
-            "l_11": "Crete",
-            "l_12": "Struma Valley",
-            "l_13": "Petrich",
-            "l_14": "Simitli",
-            "l_15": "Gorna Djumaya",
-            "l_16": "Sofia",
-            "l_17": "Monastir Gap",
-            "l_18": "Skoplje",
-            "l_19": "Veles",
-            "l_20": "Prilep",
-            "l_21": "Bitolj",
-            "l_22": "Vardar"
+            "l_1": "Elason",
+            "l_2": "Larissa",
+            "l_3": "Niamata",
+            "l_4": "Almyros",
+            "l_5": "Mt. Beles",
+            "l_6": "Rupel Pass",
+            "l_7": "Strima valley",
+            "l_8": "Sofia",
+            "l_9": "Gorna Djumaya",
+            "l_10": "Simitli",
+            "l_11": "Petrich",
+            "l_12": "Athens",
+            "l_13": "Strumitsa"
         },
         "events": {
-            "e_1": "Withdrawal from Albania",
-            "e_2": "Evacuation of R.A.F. Western Wing",
-            "e_3": "Bombing Operations Against German Forces",
-            "e_4": "Withdrawal of Fighter Squadrons"
+            "e_1": "German Advance",
+            "e_2": "Balkan Campaign",
+            "e_3": "interceptions of Italian aircraft",
+            "e_4": "successful bombings of Sofia, Gorna Djumaya, Simitli, and Petrich"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "Anzac Corps"
+            "o_1": "Air Defence Centre",
+            "o_2": "squadron",
+            "o_3": "fighter squadron"
         }
     },
     "keywords": [
-        "Withdrawal",
-        "Morale",
-        "R.A.F. Operations",
-        "German Forces",
-        "Bombing",
-        "Evacuation"
+        "communication",
+        "operation orders",
+        "fighter defence",
+        "German Advance",
+        "reconnaissance",
+        "bomber raids"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Retreat",
-        "Air Warfare",
-        "Collaboration"
+        "Air Defence",
+        "Reconnaissance",
+        "Fighter Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3",
             "e_4"
         ],
-        "Strategic Retreat": [
-            "e_1",
-            "e_2",
-            "e_4"
-        ],
-        "Air Warfare": [
+        "Air Defence": [
             "e_3"
         ],
-        "Collaboration": [
+        "Reconnaissance": [
+            "e_4"
+        ],
+        "Fighter Support": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 15",
+            "date": "6th April",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_7",
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The Greek army is forced to withdraw from Albania due to increased pressure from German forces, resulting in a collapse of morale and organization."
-        },
-        {
-            "event": "e_2",
-            "date": "April 15",
-            "locations": [
-                "l_3",
-                "l_5"
-            ],
-            "persons": [
-                "p_2"
+                "p_2",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The R.A.F. Western Wing evacuates from the Athens area, attempting to coordinate the withdrawal amid escalating challenges."
+            "eventSummary": "On the morning of 6th April, the German forces begin their advance, moving west from the Strima valley with air reports indicating attacks on Mt. Beles and the Rupel Pass."
         },
         {
             "event": "e_3",
-            "date": "April 14-15",
+            "date": null,
             "locations": [
-                "l_12",
-                "l_13",
-                "l_14",
-                "l_15",
-                "l_16",
-                "l_17",
-                "l_18",
-                "l_19",
-                "l_20",
-                "l_21"
+                "l_10",
+                "l_11"
             ],
             "persons": [
                 "p_1",
@@ -134,27 +103,25 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "R.A.F. bombing operations target German forces to hinder their advance, focusing on supply lines and critical junctions."
+            "connectedEvents": [],
+            "eventSummary": "The Greek observer system achieves various interceptions of Italian aircraft over the Larissa area."
         },
         {
             "event": "e_4",
-            "date": "April 15",
+            "date": null,
             "locations": [
-                "l_5"
+                "l_8",
+                "l_9",
+                "l_10"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Fighter squadrons are withdrawn to Athens as ground straffing by German forces threatens their positions."
+            "connectedEvents": [],
+            "eventSummary": "Successful bombings of Sofia, Gorna Djumaya, Simitli, and Petrich occur by Wellington and Blenheim aircraft from Athens and the Larissa plain."
         }
     ]
 }

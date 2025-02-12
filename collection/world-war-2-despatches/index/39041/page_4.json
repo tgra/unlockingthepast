@@ -2,178 +2,154 @@
     "namedEntities": {
         "persons": {
             "p_1": "FORESIGHT",
-            "p_2": "FORESTER",
-            "p_3": "NIGERIA",
-            "p_4": "EDINBURGH",
-            "p_5": "KING GEORGE V",
-            "p_6": "DUKE OF YORK",
-            "p_7": "VICTORIOUS",
-            "p_8": "KENT",
-            "p_9": "AMAZON",
-            "p_10": "LIVERPOOL",
-            "p_11": "WASHINGTON",
-            "p_12": "WICHITA",
-            "p_13": "TUSCALOOSA",
-            "p_14": "KENYA"
+            "p_2": "FORESTER"
         },
         "locations": {
-            "l_1": "Bear Island",
-            "l_2": "Murmansk",
+            "l_1": "Jan Mayen Island",
+            "l_2": "Iceland",
             "l_3": "Kola Inlet",
-            "l_4": "Jan Mayen Island",
-            "l_5": "Norwegian Coast",
-            "l_6": "Iceland",
+            "l_4": "Bear Island",
+            "l_5": "Murmansk",
+            "l_6": "Norwegian Coast",
             "l_7": "Hvalfiord"
         },
         "events": {
-            "e_1": "Convoy P.Q.14 Incident",
-            "e_2": "Convoy Q.P.10 Attack",
-            "e_3": "Convoy P.Q.15 Incident",
-            "e_4": "Convoy Q.P.11 Incident",
-            "e_5": "Sinking of EDINBURGH"
+            "e_1": "P.Q.14",
+            "e_2": "Q.P.10",
+            "e_3": "P.Q.15",
+            "e_4": "Q.P.11",
+            "e_5": "Attack on EDINBURGH"
         },
         "organisations": {
-            "o_1": "U-boats",
-            "o_2": "Royal Navy",
-            "o_3": "Home Fleet",
-            "o_4": "German Navy"
+            "o_1": "Royal Navy",
+            "o_2": "U-boats",
+            "o_3": "German Navy"
         }
     },
     "keywords": [
         "Convoy",
-        "Escort",
-        "U-boat",
-        "Attacks",
-        "Torpedo",
-        "Warship"
+        "Destroyers",
+        "Torpedoes",
+        "U-boats",
+        "Air Attacks",
+        "Russian Convoys"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
+        "Naval Warfare",
         "Convoy Protection"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
             "e_4",
             "e_5"
         ],
-        "Naval Engagements": [
-            "e_1",
+        "Naval Warfare": [
+            "e_3",
             "e_5"
         ],
         "Convoy Protection": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 13-16, 1943",
+            "date": "13th April",
             "locations": [
-                "l_4",
-                "l_6"
+                "l_1",
+                "l_2",
+                "l_4"
             ],
             "persons": [
-                "p_4",
-                "p_5",
-                "p_11"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The westbound convoy encounters ice and subsequently splits, leading to delays that allow enemy aircraft to attack on April 13 and U-boats to attack on April 16."
+            "eventSummary": "P.Q.14 encounters ice, causing delays and losses before being attacked by U-boats."
         },
         {
             "event": "e_2",
-            "date": "April 28-May 1, 1943",
+            "date": "17th April",
             "locations": [
-                "l_3",
-                "l_1"
+                "l_2",
+                "l_4"
             ],
             "persons": [
-                "p_3",
-                "p_8"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3",
-                "e_5"
+                "e_4"
             ],
-            "eventSummary": "Convoy Q.P.10 faces air and U-boat attacks for three days while traversing the waters between Kola Inlet and Bear Island."
+            "eventSummary": "Q.P.10 faces multiple attacks, leading to the sinking of ships during transit."
         },
         {
             "event": "e_3",
-            "date": "April 26, 1943",
+            "date": "1st May",
             "locations": [
-                "l_6",
-                "l_1"
+                "l_4"
             ],
-            "persons": [
-                "p_4",
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "P.Q.15 is reported by enemy aircraft two days post-departure, followed by significant bombing attempts that notably result in one enemy Ju.88 being shot down."
-        },
-        {
-            "event": "e_4",
-            "date": "April 28-May 2, 1943",
-            "locations": [
-                "l_3",
-                "l_1"
-            ],
-            "persons": [
-                "p_4",
-                "p_8"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "During Q.P.11, the convoy is attacked, and despite sustaining some damage, the commanding officers successfully drive off German destroyers."
-        },
-        {
-            "event": "e_5",
-            "date": "May 2, 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_4",
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The EDINBURGH, after being torpedoed and towed, is ultimately abandoned and sunk after heroic defensive efforts against German destroyers."
+            "eventSummary": "P.Q.15 is bombed by enemy aircraft, yet remains unscathed against U-boat threats."
+        },
+        {
+            "event": "e_4",
+            "date": "30th April",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Q.P.11 engages in combat with German destroyers while escorting the convoy back to safety."
+        },
+        {
+            "event": "e_5",
+            "date": "2nd May",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The EDINBURGH is attacked and eventually sunk after being helplessly towed."
         }
     ]
 }

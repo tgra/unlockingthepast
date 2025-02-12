@@ -1,94 +1,113 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Bertram H. Ramsay"
+            "p_1": "Commodore J. Hughes-Hallett",
+            "p_2": "Rear-Admiral W. G. Tennant",
+            "p_3": "Admiral Tennant"
         },
         "locations": {
-            "l_1": "London",
-            "l_2": "Normandy"
+            "l_1": "Portsmouth",
+            "l_2": "United Kingdom",
+            "l_3": "French coast",
+            "l_4": "Channel Island",
+            "l_5": "Pas de Calais"
         },
         "events": {
-            "e_1": "Operation Neptune",
-            "e_2": "Assault Phase of the Normandy Landings"
+            "e_1": "MULBERRY Project",
+            "e_2": "Pre-D Day Reconnaissance",
+            "e_3": "Operation Neptune"
         },
         "organisations": {
-            "o_1": "Allied Expeditionary Force",
-            "o_2": "Allied Naval Commander-in-Chief",
-            "o_3": "TURCO",
-            "o_4": "BUCO",
-            "o_5": "COREP",
-            "o_6": "COTUG"
+            "o_1": "War Office",
+            "o_2": "Admiralty",
+            "o_3": "Combined Operations Pilotage Parties",
+            "o_4": "Combined Operations Headquarters"
         }
     },
     "keywords": [
-        "Normandy Landings",
-        "Operation Neptune",
-        "Allied Forces",
-        "Naval Command",
-        "Amphibious Operation"
+        "MULBERRY",
+        "Neptune",
+        "reconnaissance",
+        "gale",
+        "tugs",
+        "D-Day"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Coordination and Control",
-        "Historical Operations"
+        "Logistics",
+        "Naval Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Naval Strategy": [
-            "e_1"
-        ],
-        "Coordination and Control": [
-            "e_2"
-        ],
-        "Historical Operations": [
+        "Logistics": [
             "e_1",
+            "e_3"
+        ],
+        "Naval Operations": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th October, 1944",
+            "date": "June 1944",
             "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Admiral Sir Bertram H. Ramsay submits a report on the opening phase of Operation Neptune, detailing its extensive planning and execution amidst significant logistical challenges."
-        },
-        {
-            "event": "e_2",
-            "date": "30th October, 1947",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The MULBERRY Project involves the construction of artificial harbours to support Allied forces during the D-Day landings."
+        },
+        {
+            "event": "e_2",
+            "date": "November 1943 - January 1944",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Assault Phase of the Normandy Landings is recognized in the London Gazette, highlighting the critical naval and military operations involved in this historic endeavor."
+            "eventSummary": "Pre-D Day Reconnaissance is conducted to assess the operational area prior to the Neptune operation."
+        },
+        {
+            "event": "e_3",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Operation Neptune, part of the D-Day landings, requires comprehensive planning and logistical support from various departments."
         }
     ]
 }

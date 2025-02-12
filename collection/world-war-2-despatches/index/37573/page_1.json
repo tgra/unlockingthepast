@@ -1,105 +1,156 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Altmayer",
-            "p_2": "General Weygand",
-            "p_3": "General Georges",
-            "p_4": "Major-General Sir Richard Howard-Vyse",
-            "p_5": "Lieutenant-General J. H. Marshall-Cornwall",
-            "p_6": "Prime Minister"
+            "p_1": "Lieutenant-General Sir ALAN BROOKE",
+            "p_2": "Brigadier G. Thorpe",
+            "p_3": "Lieutenant-General Sir Henry Karslake",
+            "p_4": "Major-General P. de Fonblanque",
+            "p_5": "Brigadier j. G. des R. Swayne",
+            "p_6": "General Weygand",
+            "p_7": "Major-General Sir Richard Howard-Vyse"
         },
         "locations": {
-            "l_1": "Brittany",
-            "l_2": "Rennes",
-            "l_3": "Briare",
-            "l_4": "Le Mans",
-            "l_5": "Brest",
-            "l_6": "St. Malo",
-            "l_7": "Cherbourg",
-            "l_8": "St. Nazaire",
-            "l_9": "Nantes",
-            "l_10": "La Pallice"
+            "l_1": "Southampton",
+            "l_2": "Cherbourg",
+            "l_3": "Le Mans",
+            "l_4": "Paris",
+            "l_5": "Rouen",
+            "l_6": "Neubourg",
+            "l_7": "Conches",
+            "l_8": "Drevx",
+            "l_9": "Bonnecourt"
         },
         "events": {
-            "e_1": "Defence of Brittany",
-            "e_2": "Evacuation of the B.E.F."
+            "e_1": "Operations of the British Expeditionary Force, France",
+            "e_2": "Meeting with General Weygand",
+            "e_3": "Departure from Southampton",
+            "e_4": "Arrival in Cherbourg",
+            "e_5": "Journey to Le Mans",
+            "e_6": "Interview with General Weygand"
         },
         "organisations": {
-            "o_1": "B.E.F.",
-            "o_2": "Tenth French Army",
-            "o_3": "Allied Governments"
+            "o_1": "British Expeditionary Force",
+            "o_2": "No. 1 Mission"
         }
     },
     "keywords": [
-        "B.E.F.",
-        "Evacuation",
-        "Defence",
-        "Allied Governments",
+        "British Expeditionary Force",
+        "Cherbourg",
+        "Le Mans",
         "General Weygand",
-        "General Georges",
-        "military orders"
+        "French Army"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Leadership",
+        "French Army Situation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Strategic Decisions": [
-            "e_1",
+        "Leadership": [
+            "e_2",
+            "e_6"
+        ],
+        "French Army Situation": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 14-15, 1940",
+            "date": "12th June 1940 to 19th June 1940",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Allied Governments decide to defend Brittany by holding a line across the peninsula, but the project is deemed impractical due to lack of resources."
-        },
-        {
-            "event": "e_2",
-            "date": "June 14-15, 1940",
-            "locations": [
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10"
-            ],
-            "persons": [
-                "p_4",
-                "p_5",
-                "p_6"
+                "p_2"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "Arrangements for the evacuation of the British Expeditionary Force are approved, with up to 150,000 personnel and extensive material set to be evacuated from various ports."
+            "eventSummary": "The British Expeditionary Force operates in France from 12th June 1940 to 19th June 1940."
+        },
+        {
+            "event": "e_2",
+            "date": "14th June 1940",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Lieutenant-General Sir Alan Brooke meets General Weygand to discuss the situation of the French Army."
+        },
+        {
+            "event": "e_3",
+            "date": "12th June 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Lieutenant-General Sir Alan Brooke departs from Southampton on 12th June 1940."
+        },
+        {
+            "event": "e_4",
+            "date": "12th June 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Lieutenant-General Sir Alan Brooke arrives in Cherbourg at 2130 hours on 12th June 1940."
+        },
+        {
+            "event": "e_5",
+            "date": "13th June 1940",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Lieutenant-General Sir Alan Brooke travels to Le Mans in France on 13th June 1940."
         }
     ]
 }

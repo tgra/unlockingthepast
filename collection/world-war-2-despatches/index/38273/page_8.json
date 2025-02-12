@@ -1,50 +1,44 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General John Smith",
-            "p_2": "President Jane Doe"
+            "p_1": "General Eisenhower",
+            "p_2": "Admiral King"
         },
         "locations": {
-            "l_1": "Washington D.C.",
-            "l_2": "Middle East"
+            "l_1": "North Africa",
+            "l_2": "Italy"
         },
         "events": {
-            "e_1": "Operation Freedom Rise",
-            "e_2": "Peace Talks 2023"
+            "e_1": "Operation Torch",
+            "e_2": "Battle of Sicily"
         },
         "organisations": {
-            "o_1": "United States Army",
-            "o_2": "United Nations"
+            "o_1": "Allied Forces",
+            "o_2": "United States Navy"
         }
     },
     "keywords": [
-        "military operation",
-        "diplomacy",
-        "peace talks"
+        "Operation",
+        "Battle",
+        "Strategy"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
         "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
             "e_1",
             "e_2"
-        ]
+        ],
+        "Strategic Decisions": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 15, 2023",
+            "date": "November 8, 1942",
             "locations": [
-                "l_2"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -55,24 +49,23 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Freedom Rise is launched by General John Smith to secure strategic points in the Middle East."
+            "eventSummary": "Operation Torch occurs, marking the Allied invasion of North Africa."
         },
         {
             "event": "e_2",
-            "date": "April 10, 2023",
+            "date": "July 9, 1943",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Peace Talks 2023 are held in Washington D.C. led by President Jane Doe aiming to negotiate peace in the region."
+            "connectedEvents": [],
+            "eventSummary": "The Battle of Sicily begins, a critical step in the Allied campaign in Italy."
         }
     ]
 }

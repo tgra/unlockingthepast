@@ -1,117 +1,90 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Adjutant General",
-            "p_2": "U.S.A.A.F. personnel",
-            "p_3": "R.A.F. personnel"
+            "p_1": "Chief Engineer",
+            "p_2": "Deputy Chief Engineer"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Burma",
-            "l_3": "Akyab",
-            "l_4": "Ramree",
+            "l_1": "Akyab Island",
+            "l_2": "Ramree Island",
+            "l_3": "Kyaukpyu",
+            "l_4": "Kaladan",
             "l_5": "Comilla",
-            "l_6": "Dohazari",
-            "l_7": "Hathazari",
-            "l_8": "Kangla"
+            "l_6": "Gauhati",
+            "l_7": "Chittagong",
+            "l_8": "Dibrugarh"
         },
         "events": {
-            "e_1": "Capture of Rangoon",
-            "e_2": "Opening of No. 4 R.A.M.O.",
-            "e_3": "Air evacuation of casualties"
+            "e_1": "Arakan operations",
+            "e_2": "Meiktila fighting"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "R.A.M.O.",
-            "o_3": "U.S.A.A.F."
+            "o_1": "15 Indian Corps",
+            "o_2": "224 Group, R.A.F.",
+            "o_3": "Fourteenth Army",
+            "o_4": "Indian National Army",
+            "o_5": "Northern Combat Area Command"
         }
     },
     "keywords": [
-        "air supply",
-        "casualty evacuation",
-        "Rangoon",
-        "Burma",
-        "military logistics"
+        "airstrips",
+        "reinforcements",
+        "airfield",
+        "operations",
+        "engineers"
     ],
     "themes": [
         "Military Operations",
-        "Air Supply",
-        "Casualty Evacuation",
-        "Construction Efforts"
+        "Airfield Construction",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Air Supply": [
-            "e_1",
             "e_2"
         ],
-        "Casualty Evacuation": [
-            "e_3"
+        "Airfield Construction": [
+            "e_1"
         ],
-        "Construction Efforts": [
+        "Logistics": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1945",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The capture of Rangoon marks a critical point in the supply line, facilitating improved air logistics despite ongoing challenges in the region."
+            "eventSummary": "Arakan operations involve the construction of transport airfields on Akyab and Ramree, and elaborate logistics by Indian Corps engineers."
         },
         {
             "event": "e_2",
-            "date": "16th April 1945",
+            "date": "",
             "locations": [
-                "l_4",
-                "l_8"
+                "l_2",
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The opening of No. 4 R.A.M.O. on 16th April enhances operational capacity for air supply, essential to support ongoing military efforts."
-        },
-        {
-            "event": "e_3",
-            "date": "March 1945",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "In March 1945, 13,000 casualties are evacuated by air, underscoring the reliance on air transport for medical emergencies in a combat zone."
+            "connectedEvents": [],
+            "eventSummary": "Meiktila fighting sees significant reinforcement efforts, highlighting the logistical challenges faced by Fourteenth Army."
         }
     ]
 }

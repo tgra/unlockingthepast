@@ -8,104 +8,70 @@
             "p_5": "Mr. J. A. de C. Hamilton"
         },
         "locations": {
-            "l_1": "South Russia",
-            "l_2": "North Africa",
-            "l_3": "North Persia",
-            "l_4": "Cairo",
-            "l_5": "Mosul",
-            "l_6": "Kirkuk",
-            "l_7": "Persian Gulf",
-            "l_8": "Baghdad",
-            "l_9": "Teheran"
+            "l_1": "Cairo",
+            "l_2": "Mosul-Kirkuk",
+            "l_3": "Persian Gulf",
+            "l_4": "Baghdad",
+            "l_5": "Teheran",
+            "l_6": "North Persia"
         },
         "events": {
-            "e_1": "Conference with Prime Minister",
-            "e_2": "Despatch of 5 British Division",
-            "e_3": "Order of 56 (London) Division to Middle East Command",
-            "e_4": "Transition of Command in Persia"
+            "e_1": "Despatch of 5 British Division",
+            "e_2": "Conference with the Prime Minister",
+            "e_3": "Order for 56 (London) Division",
+            "e_4": "Re-grouping of Command formations",
+            "e_5": "Arrival of American forces"
         },
         "organisations": {
-            "o_1": "Tenth Army",
-            "o_2": "3 Corps",
-            "o_3": "21 Corps",
-            "o_4": "Polish Army",
-            "o_5": "United States Persian Gulf Service Command",
-            "o_6": "Royal Air Force",
-            "o_7": "Royal Navy",
-            "o_8": "His Majesty's Embassy"
+            "o_1": "British Army",
+            "o_2": "Polish Army",
+            "o_3": "Royal Air Force",
+            "o_4": "Royal Navy",
+            "o_5": "His Majesty's Embassy",
+            "o_6": "Minister of State's Branch Office"
         }
     },
     "keywords": [
+        "invasion",
         "Allied Nations",
-        "Kirkuk",
-        "Mosul",
-        "Cairo",
-        "5 British Division",
-        "56 (London) Division",
-        "Persian Gulf",
-        "military co-operation"
+        "German war machine",
+        "Middle East Command",
+        "training",
+        "equipment",
+        "command"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "International Co-operation"
+        "Diplomacy",
+        "Co-operation",
+        "Re-organization"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
             "e_3",
-            "e_4"
+            "e_4",
+            "e_5"
         ],
         "Diplomacy": [
-            "e_1"
+            "e_2"
         ],
-        "Strategic Decisions": [
+        "Co-operation": [
             "e_2",
-            "e_3"
+            "e_5"
+        ],
+        "Re-organization": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd January 1943",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Command receives notification of a conference with the Prime Minister in Cairo to discuss military strategy."
-        },
-        {
-            "event": "e_2",
             "date": "January 1943",
             "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The despatch of the 5 British Division to the Middle East Command is executed as part of military reorganization efforts."
-        },
-        {
-            "event": "e_3",
-            "date": "roth February 1943",
-            "locations": [
-                "l_7"
+                "l_1",
+                "l_6"
             ],
             "persons": [
                 "p_1"
@@ -116,30 +82,71 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The order for the 56 (London) Division to relocate to the Middle East Command is issued, indicating a shift in military resources."
+            "eventSummary": "The 5 British Division is despatched to the Middle East Command, indicating a strategic shift in military resources."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd January 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The author is summoned for a conference with the Prime Minister in Cairo, reflecting on important military strategies."
+        },
+        {
+            "event": "e_3",
+            "date": "roth February 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The 56 (London) Division is ordered to the Middle East Command, further emphasizing military mobilization."
         },
         {
             "event": "e_4",
-            "date": "17th February 1943",
+            "date": "February 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Orders are issued to regroup remaining formations within the Command in the Mosul-Kirkuk area."
+        },
+        {
+            "event": "e_5",
+            "date": "Recent",
             "locations": [
                 "l_3"
             ],
             "persons": [
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
+                "p_2"
             ],
             "organisations": [
-                "o_5",
-                "o_6",
-                "o_7",
-                "o_8"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Transition of command in Persia involves coordination and cooperation with various military leaders and organizations."
+            "connectedEvents": [],
+            "eventSummary": "American forces arrive and take over the Persian L of C, highlighting international military collaboration."
         }
     ]
 }

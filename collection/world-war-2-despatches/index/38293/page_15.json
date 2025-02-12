@@ -1,161 +1,181 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander Fearn",
-            "p_2": "General Wilson",
-            "p_3": "General Freyberg",
-            "p_4": "Brigadiers Charrington and Puttock",
-            "p_5": "Colonel Smith-Dorrien",
-            "p_6": "Brigadier Galloway",
-            "p_7": "Commander James",
-            "p_8": "Lieut. Harrison"
+            "p_1": "Carlisle",
+            "p_2": "H. D. Pridham-Wippell",
+            "p_3": "Colonel Macky",
+            "p_4": "Colonel Smith-Dorrien",
+            "p_5": "Lieutenant Commander Willmot"
         },
         "locations": {
-            "l_1": "Myli",
-            "l_2": "Athens",
-            "l_3": "Suda Bay",
-            "l_4": "Monemvasia",
-            "l_5": "Nauplia",
-            "l_6": "Tripolis",
-            "l_7": "Morea",
-            "l_8": "Kalamata",
-            "l_9": "Raphena"
+            "l_1": "Auckland",
+            "l_2": "Kandahar",
+            "l_3": "Kingston",
+            "l_4": "Suda",
+            "l_5": "Kalamata",
+            "l_6": "Milo",
+            "l_7": "Nio",
+            "l_8": "Syra",
+            "l_9": "Kyparissi",
+            "l_10": "Monemvasia",
+            "l_11": "Port Livadhi",
+            "l_12": "Serpho Island",
+            "l_13": "Alexandria",
+            "l_14": "Kaso Straits"
         },
         "events": {
-            "e_1": "Evacuation of Monemvasia",
-            "e_2": "Attack on the Corinth Canal",
-            "e_3": "Bombing of the transport SLAMAT",
-            "e_4": "Emergency signal operations",
-            "e_5": "Troop embarkation from Nauplia"
+            "e_1": "Arrival of Troops from Greece",
+            "e_2": "Uncompleted Evacuations",
+            "e_3": "Evacuations from Kalamata",
+            "e_4": "Evacuation from Milo",
+            "e_5": "Rendezvous at Suda",
+            "e_6": "Convoy attacked by E-boats",
+            "e_7": "Escort of Convoy to Alexandria"
         },
         "organisations": {
-            "o_1": "V.A.L.F.",
-            "o_2": "Army",
-            "o_3": "Royal Navy",
-            "o_4": "Nicknamed Boats GLENEARN and GLENGYLE"
+            "o_1": "H.M.S. Kimberley",
+            "o_2": "H.M.S. Ajax",
+            "o_3": "H.M.S. Perth",
+            "o_4": "H.M.S. Phoebe",
+            "o_5": "H.M.S. Hasty",
+            "o_6": "H.M.S. Nubian",
+            "o_7": "H.M.S. Hereward",
+            "o_8": "First Battle Squadron",
+            "o_9": "Royal Navy"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Bombing",
-        "Troop movements",
-        "Military communication"
+        "evacuations",
+        "naval operations",
+        "troops",
+        "convoy",
+        "German forces"
     ],
     "themes": [
         "Military Operations",
-        "Communication Issues",
-        "Evacuation Plans",
-        "Enemy Engagement"
+        "Evacuation Efforts"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3",
-            "e_5"
+            "e_4",
+            "e_6",
+            "e_7"
         ],
-        "Communication Issues": [
-            "e_4"
-        ],
-        "Evacuation Plans": [
-            "e_1",
-            "e_5"
-        ],
-        "Enemy Engagement": [
+        "Evacuation Efforts": [
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th-28th April",
+            "date": "April 29, 1941",
             "locations": [
-                "l_4",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Troops from Greece arrive at Suda for redistribution."
+        },
+        {
+            "event": "e_2",
+            "date": "April 29, 1941",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Various evacuations remain uncompleted due to logistical challenges."
+        },
+        {
+            "event": "e_3",
+            "date": "April 30, 1941",
+            "locations": [
                 "l_5"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
                 "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Approximately 18,000 troops are evacuated from Monemvasia amidst challenging conditions, including enemy air superiority."
-        },
-        {
-            "event": "e_2",
-            "date": "Late April",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_5",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Corinth Canal suffers an attack by German parachute troops, necessitating changes in evacuation plans."
-        },
-        {
-            "event": "e_3",
-            "date": "26th April",
-            "locations": [],
-            "persons": [
-                "p_7"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The transport SLAMAT is bombed, facilitating enemy engagement and impacting troop movements."
-        },
-        {
-            "event": "e_4",
-            "date": "Late April",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_8"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "Communications are strained leading to the use of an Army Marconi W/T set, ultimately deemed unnecessary."
+            "eventSummary": "Ships evacuate a total of 202 troops from Kalamata during complex operations."
+        },
+        {
+            "event": "e_4",
+            "date": "April 30, 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Evacuation of troops from Milo occurs amidst risky operations."
         },
         {
             "event": "e_5",
-            "date": "27th-28th April",
+            "date": "April 29, 1941",
             "locations": [
-                "l_5"
+                "l_4"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Naval forces rendezvous at Suda to prepare for convoy operations."
+        },
+        {
+            "event": "e_6",
+            "date": "April 30, 1941",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The convoy faces an attack by E-boats while traversing the Kaso Straits."
+        },
+        {
+            "event": "e_7",
+            "date": "April 30, 1941",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3",
+                "o_9"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_6"
             ],
-            "eventSummary": "Troops faced logistical challenges including a stranding incident, significantly reducing the number evacuated from Nauplia."
+            "eventSummary": "The escorting forces proceed to Alexandria following convoy operations."
         }
     ]
 }

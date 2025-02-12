@@ -2,71 +2,70 @@
     "namedEntities": {
         "persons": {
             "p_1": "Eisenhower",
-            "p_2": "A. B. Cunningham",
+            "p_2": "A. B. CuNNINGHaM",
             "p_3": "General Ryder",
-            "p_4": "Major-General V. Evelegh",
-            "p_5": "Dwight D. Eisenhower",
+            "p_4": "V. Evelegh",
+            "p_5": "Dwight D.",
             "p_6": "Commander M/S",
             "p_7": "Lieutenant-Colonel Swenson",
             "p_8": "Captain H. St. J. Fancourt"
         },
         "locations": {
-            "l_1": "Greenock",
-            "l_2": "Clyde",
-            "l_3": "Loch Fyne",
-            "l_4": "Algiers",
+            "l_1": "U.K.",
+            "l_2": "Greenock",
+            "l_3": "Clyde",
+            "l_4": "Loch Fyne",
             "l_5": "Cape St. Vincent"
         },
         "events": {
             "e_1": "Operation Torch",
-            "e_2": "Exercise Flaxman",
-            "e_3": "Operation Terminal",
-            "e_4": "Convoy K.M.S.1",
-            "e_5": "Convoy K.M.F.1"
+            "e_2": "Convoy Conference",
+            "e_3": "Exercise Flaxman",
+            "e_4": "Operation Terminal"
         },
         "organisations": {
             "o_1": "Allied Forces",
-            "o_2": "U.S. Army",
-            "o_3": "Royal Navy",
-            "o_4": "Admiralty",
-            "o_5": "H.M.S. BULOLO",
-            "o_6": "H.M.S. AVENGER",
-            "o_7": "H.M.S. SHEFFIELD",
-            "o_8": "H.M.S. BITER"
+            "o_2": "H.M.S. BULOLO",
+            "o_3": "H.M.S. AVENGER",
+            "o_4": "H.M.S. SHEFFIELD",
+            "o_5": "British 78th Division",
+            "o_6": "U.S. Army"
         }
     },
     "keywords": [
-        "naval operations",
-        "military exercises",
-        "convoys",
-        "bombardment",
-        "landing craft",
-        "patrols",
-        "U-Boats"
+        "Operation Torch",
+        "Convoy Conference",
+        "Exercise Flaxman",
+        "U-Boats",
+        "military personnel"
     ],
     "themes": [
         "Military Operations",
         "Naval Strategy",
-        "Training Exercises",
-        "Convoy Missions"
+        "Convoy Operations",
+        "Air Patrols"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_4"
         ],
         "Naval Strategy": [
-            "e_4",
-            "e_5"
+            "e_1",
+            "e_2",
+            "e_3"
         ],
-        "Training Exercises": [
+        "Convoy Operations": [
             "e_2"
+        ],
+        "Air Patrols": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1942-10-14",
+            "date": "14th October, 1942",
             "locations": [
                 "l_1",
                 "l_2"
@@ -80,81 +79,59 @@
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3",
-                "o_4"
+                "o_5"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4",
-                "e_5"
+                "e_3"
             ],
-            "eventSummary": "Operation Torch is reported, highlighting the preparation and organization of allied naval and military personnel for the mission."
+            "eventSummary": "Operation Torch is prepared and executed under the command of the Allied Forces with multiple naval units and personnel involved."
         },
         {
             "event": "e_2",
-            "date": "1942-10-20",
+            "date": "22nd October, 1942",
             "locations": [
-                "l_3"
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_5"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
                 "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Exercise Flaxman is conducted to prepare naval and military personnel for combined operations, albeit on a reduced scale due to unavailability of ships."
+            "eventSummary": "Convoy Conference for K.M.S.1 is held aboard H.M.S. AVENGER to discuss operation orders in detail."
         },
         {
             "event": "e_3",
-            "date": "1942-10-27",
+            "date": "20th/21st October, 1942",
             "locations": [
                 "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Exercise Flaxman is conducted to prepare ships and units for combined military operations but faces limitations due to the unavailability of many ships."
+        },
+        {
+            "event": "e_4",
+            "date": "27th October, 1942",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_7",
                 "p_8"
             ],
             "organisations": [
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Terminal involves a direct assault on Algiers, with U.S. troops and naval ratings participating under the command of key military leaders."
-        },
-        {
-            "event": "e_4",
-            "date": "1942-10-22",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_5",
+                "o_4",
                 "o_6"
             ],
             "connectedEvents": [],
-            "eventSummary": "Convoy K.M.S.1 sets sail from Clyde, marking a crucial step in the naval operations supporting Allied objectives."
-        },
-        {
-            "event": "e_5",
-            "date": "1942-10-26",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_6"
-            ],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Convoy K.M.F.1 departs Clyde with key naval support, aimed at ensuring safe passage for military operations against Axis forces."
+            "eventSummary": "Operation Terminal involves U.S. troops and naval ratings as part of the direct assault on Algiers."
         }
     ]
 }

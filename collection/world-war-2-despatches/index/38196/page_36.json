@@ -1,120 +1,138 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Harwood",
-            "p_2": "Air Chief Marshal Tedder",
-            "p_3": "Rommel",
-            "p_4": "Admiral Sir Henry Harwood",
-            "p_5": "Marshal of the Royal Air Force Lord Tedder"
+            "p_1": "General Monigomery",
+            "p_2": "General Patton",
+            "p_3": "General Fredendall",
+            "p_4": "General Mannerim",
+            "p_5": "General Freyberg"
         },
         "locations": {
-            "l_1": "Alamein line",
-            "l_2": "El Alamein",
-            "l_3": "Tobruk",
-            "l_4": "Benghazi",
-            "l_5": "Kufra",
-            "l_6": "Gialo",
-            "l_7": "Barce",
-            "l_8": "Bardia",
-            "l_9": "Matruh",
-            "l_10": "Belhamed",
-            "l_11": "Middle East"
+            "l_1": "Tripoli",
+            "l_2": "Mareth",
+            "l_3": "Sfax",
+            "l_4": "Gafsa",
+            "l_5": "El Guettar",
+            "l_6": "Maknassy",
+            "l_7": "Foum Tatahouine",
+            "l_8": "Gebel Tebaga",
+            "l_9": "Gebel Melab",
+            "l_10": "El Alamein",
+            "l_11": "Tunis",
+            "l_12": "Wadi Zigzaou"
         },
         "events": {
-            "e_1": "Raids on Tobruk and Benghazi",
-            "e_2": "Alam el Halfa battle",
-            "e_3": "Sabotage of Desert Railway"
+            "e_1": "Attack on Gafsa",
+            "e_2": "Counter-attack at Wadi Zigzaou",
+            "e_3": "Operation PUGILIST",
+            "e_4": "Breakthrough at Gebel Melab"
         },
         "organisations": {
-            "o_1": "Long Range Desert Group",
-            "o_2": "Royal Air Force",
-            "o_3": "Eighth Army"
+            "o_1": "II United States Corps",
+            "o_2": "Eighth Army",
+            "o_3": "30 Corps",
+            "o_4": "New Zealand Corps",
+            "o_5": "50 Division",
+            "o_6": "201 Guards Brigade",
+            "o_7": "XX Corps",
+            "o_8": "XXI Corps",
+            "o_9": "Saharan Group"
         }
     },
     "keywords": [
-        "operations",
-        "battles",
-        "supply lines",
-        "military strategy",
-        "psychological effects"
+        "military operation",
+        "counter-attack",
+        "reinforcements",
+        "enemy positions",
+        "minefields"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Strategic Decisions",
-        "Morale"
+        "Counter-Offensive Strategy",
+        "Logistical Challenges",
+        "Weather Impact"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Logistics": [
-            "e_1",
-            "e_3"
-        ],
-        "Strategic Decisions": [
+        "Logistical Challenges": [
             "e_1",
             "e_2"
+        ],
+        "Counter-Offensive Strategy": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "13th September",
+            "date": "15th March",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_4"
             ],
             "persons": [
-                "p_1",
                 "p_2",
                 "p_3"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The raids are launched to capture key ports and disrupt enemy supply lines, although they ultimately fail with heavy losses on our side."
+            "eventSummary": "The attack on Gafsa is planned by General Patton, aiming to boost morale and secure supply routes for the Eighth Army, involving 1 Armoured and 1 Infantry Divisions."
         },
         {
             "event": "e_2",
-            "date": "Unknown (after Alam el Halfa)",
+            "date": "22nd March",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The counter-attack at Wadi Zigzaou occurs, with heavy enemy resistance leading to a dangerous situation for 50 Division, resulting in a tactical fallback."
+        },
+        {
+            "event": "e_3",
+            "date": "around 20th March",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation PUGILIST is initiated but has to be abandoned due to unexpected enemy resistance and logistical challenges."
+        },
+        {
+            "event": "e_4",
+            "date": "after 22nd March",
             "locations": [
                 "l_8",
                 "l_9"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "persons": [
+                "p_5"
             ],
-            "eventSummary": "Following the Alam el Halfa battle, the Light Division is moved back to Daba for defense against potential enemy landings."
-        },
-        {
-            "event": "e_3",
-            "date": "Unknown (during the time leading to Gazala battles)",
-            "locations": [
-                "l_9",
-                "l_10"
-            ],
-            "persons": [],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Sabotage attempts against the desert railway are successfully carried out, disrupting enemy supply lines."
+            "connectedEvents": [],
+            "eventSummary": "The breakthrough at Gebel Melab is achieved by General Freyberg's forces after engaging with the enemy and overcoming a minefield."
         }
     ]
 }

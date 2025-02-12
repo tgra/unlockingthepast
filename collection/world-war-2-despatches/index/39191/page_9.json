@@ -1,116 +1,75 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Strike Leader",
-            "p_2": "Aircraft Crew"
+            "p_1": "R.C. Hay"
         },
         "locations": {
-            "l_1": "Lake Ranau",
-            "l_2": "Sumatra",
-            "l_3": "Pladjoe"
+            "l_1": "LONDON",
+            "l_2": "Great Britain"
         },
         "events": {
-            "e_1": "Air Strike Mission",
-            "e_2": "Encounter with Enemy Fighters",
-            "e_3": "Bombing of Target"
+            "e_1": "Operation Meridian One",
+            "e_2": "Operation Meridian Two"
         },
         "organisations": {
             "o_1": "INDOMITABLE",
-            "o_2": "No. 1 Wing",
-            "o_3": "No. 2 Wing"
+            "o_2": "VICTORIOUS"
         }
     },
     "keywords": [
-        "Aviation",
-        "Air Strike",
-        "Bombing",
-        "Weather Conditions",
-        "Escort Formation",
-        "Enemy Fighters"
+        "emergency drill",
+        "operations",
+        "fighter escort",
+        "Avenger pilots"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Engagement",
-        "Command Decisions",
-        "Weather Impact"
+        "Aerial Combat"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Aerial Engagement": [
             "e_2"
         ],
-        "Command Decisions": [
-            "e_1"
-        ],
-        "Weather Impact": [
-            "e_1"
+        "Aerial Combat": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1810",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "An air strike mission is conducted with mixed success as weather conditions impact operations. The strike leader observes multiple complications during departure, including positioning issues among squadrons and poor visibility due to clouds."
-        },
-        {
-            "event": "e_2",
-            "date": "1810",
+            "date": "",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "During the air strike, enemy fighters engage with the bombers, leading to an aerial battle. No protection is provided to the bombers, but some aircraft defend themselves successfully, while others fall prey to enemy fire."
-        },
-        {
-            "event": "e_3",
-            "date": "1810",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "The bombing of the intended target is executed, with significant damage reported. Challenges with visibility and deployment of aircraft are noted, as strategic decisions lead to confusion during the attack."
+            "eventSummary": "Operation Meridian One succeeds in its objective, with commendation for the Avenger pilots' accurate bombing despite facing maximum discouragement."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Meridian Two achieves success similar to its predecessor, highlighting the effectiveness of the fighter escorts against serious air opposition."
         }
     ]
 }

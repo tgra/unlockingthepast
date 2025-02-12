@@ -1,117 +1,81 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Major-General Keith Simmons",
-            "p_2": "Brigadier Wildey",
-            "p_3": "Group Captain Rice",
-            "p_4": "Major-General Dobbie"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "South Johore",
-            "l_3": "Malaya",
-            "l_4": "Fort Canning",
-            "l_5": "Pasir Panjang",
-            "l_6": "Changi",
-            "l_7": "Pulau Brani",
-            "l_8": "Blakang Mati",
-            "l_9": "Serangoon",
-            "l_10": "Kallang",
-            "l_11": "Paya Lebar",
-            "l_12": "Kranji",
-            "l_13": "Jurong",
-            "l_14": "Kota Tinggi",
-            "l_15": "Mersing"
+            "l_1": "South Thailand",
+            "l_2": "Malaya",
+            "l_3": "Singapore Island",
+            "l_4": "Kluang",
+            "l_5": "Johore",
+            "l_6": "Indo-China"
         },
         "events": {
-            "e_1": "Malayan campaign",
-            "e_2": "Japanese invasion",
-            "e_3": "Defensive operations in Singapore"
+            "e_1": "Initial Japanese Landings",
+            "e_2": "Attack on Singapore Island"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "War Office"
+            "o_1": "Japanese Imperial Guards",
+            "o_2": "British Army"
         }
     },
     "keywords": [
-        "defence",
-        "Singapore Fortress",
-        "Japanese invasion",
-        "military",
-        "operations"
+        "Japanese",
+        "divisions",
+        "tank regiment",
+        "attack",
+        "hostilities"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Historical Context"
+        "Casualties",
+        "Reinforcements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Defensive Strategies": [
-            "e_3"
+        "Casualties": [
+            "e_1",
+            "e_2"
         ],
-        "Historical Context": [
-            "e_1"
+        "Reinforcements": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October - March (seasonal reference)",
+            "date": "December 1941",
             "locations": [
                 "l_1",
                 "l_2"
             ],
-            "persons": [
-                "p_4"
-            ],
+            "persons": [],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "During the Malayan campaign, the weather in Singapore is exceptionally dry, affecting military operations."
+            "eventSummary": "The Japanese initiated landings in South Thailand and Malaya with the equivalent of two divisions and one tank regiment."
         },
         {
             "event": "e_2",
-            "date": "January (specific reference for air bombing casualties)",
+            "date": "December 1941",
             "locations": [
-                "l_1"
+                "l_2",
+                "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Japanese forces invade Malaya and necessitate rapid defensive arrangements within Singapore, aiming to repurpose existing fortifications."
-        },
-        {
-            "event": "e_3",
-            "date": "Preceding outbreak of hostilities (no specific date given)",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Defensive operations in Singapore are organized to protect key areas from an anticipated sea-borne attack as tensions rise with Japan."
+            "connectedEvents": [],
+            "eventSummary": "The initial attack on Singapore Island was carried out by three Japanese divisions, with significant troop numbers involved from both sides."
         }
     ]
 }

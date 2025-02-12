@@ -9,60 +9,66 @@
             "l_2": "Sirte",
             "l_3": "Cairo",
             "l_4": "Cyrenaica",
-            "l_5": "Agheila",
-            "l_6": "Tamet",
-            "l_7": "Syrte",
-            "l_8": "El Makina",
-            "l_9": "Agedabia",
-            "l_10": "Benghazi",
-            "l_11": "Benina",
-            "l_12": "Tripoli",
-            "l_13": "Antelat",
-            "l_14": "Msus"
+            "l_5": "Greece",
+            "l_6": "Malta",
+            "l_7": "Takoradi",
+            "l_8": "Red Sea",
+            "l_9": "Suez",
+            "l_10": "Agheila",
+            "l_11": "Tamet",
+            "l_12": "Syrte",
+            "l_13": "El Makina",
+            "l_14": "Marada",
+            "l_15": "Agedabia",
+            "l_16": "Benghazi",
+            "l_17": "Benina",
+            "l_18": "Tripoli",
+            "l_19": "Msus",
+            "l_20": "Antelat"
         },
         "events": {
             "e_1": "Wellington operations",
-            "e_2": "Evacuation of Benina",
-            "e_3": "Enemy occupation of Agheila",
-            "e_4": "Enemy advance in Cyrenaica",
-            "e_5": "Bombing of enemy M.T. concentrations"
+            "e_2": "withdrawal of R.A.F. Units",
+            "e_3": "enemy occupied landing ground at Marada",
+            "e_4": "demolitions issued in Benghazi",
+            "e_5": "forward troops fell back on Agedabia"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)",
+            "o_1": "R.A.F.",
             "o_2": "No. 55 Squadron",
             "o_3": "No. 45 Squadron",
             "o_4": "No. 3 Australian Squadron",
             "o_5": "No. 73 Squadron",
-            "o_6": "No. 6 A.C. Squadron",
+            "o_6": "No. 6 Squadron",
             "o_7": "No. 2 Armoured Division"
         }
     },
     "keywords": [
-        "Wellington operations",
-        "enemy advance",
-        "evacuation",
-        "Blenheims",
-        "Hurricanes",
+        "operations",
+        "withdrawal",
+        "occupy",
+        "demolitions",
         "reconnaissance"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Enemy Activity",
-        "Strategic Withdrawal"
+        "Withdrawals",
+        "Reconnaissance",
+        "Enemy Advances"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_4",
-            "e_3"
-        ],
-        "Air Support": [
-            "e_1",
+            "e_2",
+            "e_3",
             "e_5"
         ],
-        "Strategic Withdrawal": [
-            "e_2"
+        "Withdrawals": [
+            "e_2",
+            "e_4"
+        ],
+        "Reconnaissance": [
+            "e_1"
         ]
     },
     "eventConnections": [
@@ -74,45 +80,68 @@
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_3",
-                "e_4"
+                "e_5"
             ],
-            "eventSummary": "Wellington operations include attacks on aerodromes in Tripolitania and on shipping at Sirte, aimed at disrupting German plans."
+            "eventSummary": "Wellington operations include attacks on aerodromes in Tripolitania and shipping at Sirte, crucial for establishing air dominance."
         },
         {
             "event": "e_2",
-            "date": "April 2, 1941",
+            "date": "April 2nd, 1941",
             "locations": [
-                "l_10",
-                "l_11"
+                "l_16",
+                "l_19"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_4"
             ],
-            "eventSummary": "Evacuation of Benina occurs in the early evening after all demolitions are completed, due to the precarious situation in Benghazi."
+            "eventSummary": "The withdrawal of R.A.F. Units from Benghazi is ordered due to enemy advances, leading to a precarious situation in the region."
         },
         {
             "event": "e_3",
-            "date": "March 24, 1941",
+            "date": "March 10th, 1941",
             "locations": [
-                "l_5"
+                "l_14",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On March 10th, an enemy patrol occupies the landing ground at Marada, indicating increased enemy activity."
+        },
+        {
+            "event": "e_4",
+            "date": "April 2nd, 1941",
+            "locations": [
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On April 2nd, demolition orders are issued in Benghazi as enemy forces advance, reflecting the deteriorating situation."
+        },
+        {
+            "event": "e_5",
+            "date": "March 31st, 1941",
+            "locations": [
+                "l_15"
             ],
             "persons": [],
             "organisations": [
@@ -121,37 +150,7 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Enemy forces occupy Agheila, leading to the withdrawal of our outposts due to increased enemy activity."
-        },
-        {
-            "event": "e_4",
-            "date": "April 1941",
-            "locations": [
-                "l_6",
-                "l_8"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The enemy continues to press forward in Cyrenaica, compelling our forward troops to fall back."
-        },
-        {
-            "event": "e_5",
-            "date": "March 30, 1941",
-            "locations": [
-                "l_10"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Blenheims of No. 55 Squadron bomb and attack enemy M.T. concentrations in support of operations against advancing forces."
+            "eventSummary": "On March 31st, forward troops are compelled to fall back on Agedabia due to the advancing enemy."
         }
     ]
 }

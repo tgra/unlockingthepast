@@ -1,106 +1,129 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Rommel",
-            "p_2": "General Schmitt"
+            "p_1": "Lieutenant-Colonel P. Matthews",
+            "p_2": "General Ritchie",
+            "p_3": "Rommel"
         },
         "locations": {
-            "l_1": "Tobruk",
-            "l_2": "Derna",
-            "l_3": "Bengasi",
-            "l_4": "Libya",
-            "l_5": "Tripoli",
-            "l_6": "Cyrenaica",
-            "l_7": "Tripolitania",
-            "l_8": "Gambut",
-            "l_9": "El Adem",
-            "l_10": "Ed Duda",
-            "l_11": "Sidi Rezegh",
-            "l_12": "Bardia"
+            "l_1": "Belhamed",
+            "l_2": "Sollum",
+            "l_3": "Halfaya Pass",
+            "l_4": "Tobruk",
+            "l_5": "Buq Buq",
+            "l_6": "Bardia",
+            "l_7": "Mischeifa",
+            "l_8": "Gazala",
+            "l_9": "Martuba",
+            "l_10": "Msus",
+            "l_11": "Tmimi",
+            "l_12": "Bir Temrad",
+            "l_13": "Mechili",
+            "l_14": "Malta",
+            "l_15": "Barce",
+            "l_16": "Benina",
+            "l_17": "Bengasi",
+            "l_18": "Bir Hamarin",
+            "l_19": "Segnali",
+            "l_20": "Sidi Breghisc"
         },
         "events": {
-            "e_1": "Bombardment of Enemy Supply Lines",
-            "e_2": "Offensive Against Tobruk"
+            "e_1": "Operation against Segnali area",
+            "e_2": "Convoy to Malta",
+            "e_3": "Raids on landing grounds"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Royal Navy",
-            "o_3": "Long Range Desert Group",
-            "o_4": "Eighth Army"
+            "o_1": "Eighth Army",
+            "o_2": "Long Range Desert Group",
+            "o_3": "rst South African Division",
+            "o_4": "s50th Division",
+            "o_5": "13th Corps",
+            "o_6": "Ist Armoured Division",
+            "o_7": "Ist Free French Brigade"
         }
     },
     "keywords": [
-        "military operations",
-        "reconnaissance",
-        "enemy forces",
-        "deception",
-        "supply lines",
-        "offensive",
-        "Tobruk"
+        "railhead",
+        "water ration",
+        "tank delivery",
+        "enemy attack",
+        "supply bases",
+        "military operations"
     ],
     "themes": [
         "Military Operations",
-        "Reconnaissance",
-        "Supply Disruption",
-        "Strategic Planning"
+        "Logistics",
+        "Enemy Engagement"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Reconnaissance": [
-            "e_2"
+        "Logistics": [
+            "e_1",
+            "e_3"
         ],
-        "Supply Disruption": [
-            "e_1"
-        ],
-        "Strategic Planning": [
+        "Enemy Engagement": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Mid-November",
+            "date": "12th April",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_19"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 12th April, General Ritchie carried out an operation against the Segnali area to deceive the enemy and test reactions to an advance."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1942",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "In March 1942, a convoy sailed from the east to Malta, while General Ritchie arranged for raids deep into the enemy lines."
+        },
+        {
+            "event": "e_3",
+            "date": "20th March",
+            "locations": [
+                "l_15",
+                "l_16",
+                "l_17"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Royal Navy and Royal Air Force conduct a bombardment of enemy supply lines, significantly disrupting enemy reinforcements and supplies in North Africa."
-        },
-        {
-            "event": "e_2",
-            "date": "Unknown (preparation before offensive)",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Preparations are underway for an offensive against Tobruk, with considerations to catch the enemy off-guard during their own anticipated attack."
+            "eventSummary": "On the night of 20th March, the Long Range Desert Group conducted raids on enemy landing grounds at Barce, Benina, and Bengasi."
         }
     ]
 }

@@ -1,85 +1,137 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "General Pile"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "built-up areas",
-            "l_2": "northern edge"
+            "l_1": "Norwich",
+            "l_2": "Suffolk",
+            "l_3": "Hague",
+            "l_4": "Holland",
+            "l_5": "Cleves",
+            "l_6": "East Anglia",
+            "l_7": "Garderen",
+            "l_8": "Amersfoort",
+            "l_9": "Apeldoorn",
+            "l_10": "Frisians",
+            "l_11": "Ameland",
+            "l_12": "Schiermonnikoog",
+            "l_13": "Terhorst",
+            "l_14": "Eikenhorst",
+            "l_15": "Raaphorst"
         },
         "events": {
-            "e_1": "Overlord",
-            "e_2": "Baby Blitz"
+            "e_1": "Second Phase Attacks",
+            "e_2": "Rocket Impact near Diss",
+            "e_3": "Rocket Impact near Norwich",
+            "e_4": "Armed reconnaissance by No. 12 Group"
         },
         "organisations": {
-            "o_1": "German Air Force"
+            "o_1": "Bomber Command",
+            "o_2": "No. 2 Group",
+            "o_3": "No. 100 Group",
+            "o_4": "Air Ministry",
+            "o_5": "No. 12 Group"
         }
     },
     "keywords": [
-        "Overlord",
-        "Diver Plan",
-        "light guns",
-        "heavy guns",
-        "radar sets",
-        "balloon barrage",
-        "flying bomb",
-        "cooperation"
+        "rocket",
+        "Bomber Command",
+        "reconnaissance",
+        "attack",
+        "military activity",
+        "Diss",
+        "Norwich",
+        "Hague",
+        "Holland"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Tactics",
-        "Strategic Adjustments",
-        "Inter-arm Cooperation"
+        "Intelligence Gathering",
+        "Reconnaissance",
+        "Air Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Defensive Tactics": [
+        "Intelligence Gathering": [
+            "e_2",
+            "e_3"
+        ],
+        "Reconnaissance": [
+            "e_4"
+        ],
+        "Air Operations": [
             "e_1"
-        ],
-        "Strategic Adjustments": [
-            "e_1"
-        ],
-        "Inter-arm Cooperation": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 21",
+            "date": "25th September to 12th October, 1944",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_6",
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "General Pile makes adjustments to military defenses due to the evolving nature of enemy attacks, focusing on improving cooperation between various defense systems."
+            "eventSummary": "The Second Phase Attacks begin on the evening of 25th September with multiple rockets impacting near Diss and Norwich."
         },
         {
             "event": "e_2",
-            "date": "1940s",
+            "date": "25th September, 1944",
             "locations": [
                 "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Baby Blitz presents new challenges for cooperation between gun crews and fighter pilots, highlighting difficulties in preventing friendly fire and ensuring coordinated defenses."
+            "eventSummary": "A rocket falls near Diss at 1910 hours, with no useful data obtained about its origin."
+        },
+        {
+            "event": "e_3",
+            "date": "26th September, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Another rocket lands near Norwich, which subsequently proves to be the target."
+        },
+        {
+            "event": "e_4",
+            "date": "27th September, 1944",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "No. 12 Group sends four Tempest pilots to conduct armed reconnaissance in the area between Amersfoort and Apeldoorn."
         }
     ]
 }

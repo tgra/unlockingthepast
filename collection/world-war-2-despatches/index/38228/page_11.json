@@ -1,44 +1,56 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Mr. Morton",
-            "p_2": "Sir John Rowland",
-            "p_3": "Lieut-Colonel C. P. Brewitt"
+            "p_1": "Major Taylor",
+            "p_2": "General Hartley",
+            "p_3": "Generalissimo",
+            "p_4": "General Wavell"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Mandalay",
-            "l_3": "Sittaung",
-            "l_4": "Shwebo",
-            "l_5": "Myitkyina",
-            "l_6": "Lashio",
-            "l_7": "Yunman-Burma Railway"
+            "l_1": "Burma",
+            "l_2": "India",
+            "l_3": "River Salween",
+            "l_4": "Pegu",
+            "l_5": "Rangoon",
+            "l_6": "Kengtung",
+            "l_7": "Southern Shan States",
+            "l_8": "Mekong River",
+            "l_9": "Mongyawng",
+            "l_10": "Puerh",
+            "l_11": "China",
+            "l_12": "Paoshan",
+            "l_13": "Yunnan-Kweichow border",
+            "l_14": "Wanting",
+            "l_15": "Takaw",
+            "l_16": "Lashio"
         },
         "events": {
-            "e_1": "Destruction of Oilfields",
-            "e_2": "Evacuation of Sick and Wounded",
-            "e_3": "Withdrawal North of Mandalay"
+            "e_1": "Battle of the Sittang",
+            "e_2": "Recruitment of the 46 Indian Infantry Brigade",
+            "e_3": "Reinforcements to Burma",
+            "e_4": "Movement of the 93 Division",
+            "e_5": "Arrival of the 49 Division",
+            "e_6": "Visit to Kengtung"
         },
         "organisations": {
-            "o_1": "Irrawaddy Flotilla Company",
-            "o_2": "Chinese Expeditionary Force"
+            "o_1": "Burma Auxiliary Force (B.A.F.)",
+            "o_2": "Indian Army",
+            "o_3": "Sixth Army",
+            "o_4": "Fifth Army",
+            "o_5": "SouthWest Pacific Command (A B.D.A. Command)"
         }
     },
     "keywords": [
-        "Ammunition",
-        "Ordnance Stores",
-        "Evacuation",
-        "Transportation",
-        "Supplies",
-        "Railways",
-        "Desertion",
-        "Oilfields"
+        "Reinforcements",
+        "Battle",
+        "Troops",
+        "Infantry",
+        "Brigade"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Medical Evacuation",
-        "Administrative Challenges"
+        "Supply Logistics",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
@@ -46,66 +58,96 @@
             "e_2",
             "e_3"
         ],
-        "Logistics": [
-            "e_1",
-            "e_3"
+        "Supply Logistics": [
+            "e_4",
+            "e_5"
         ],
-        "Medical Evacuation": [
-            "e_2"
-        ],
-        "Administrative Challenges": [
-            "e_1",
-            "e_2",
-            "e_3"
+        "Command Structure": [
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 16",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On April 16, the destruction of oilfields takes place, critically limiting the campaign's length and impacting supply lines, particularly for rice distribution."
-        },
-        {
-            "event": "e_2",
-            "date": "April 2023",
+            "date": "Date not specified",
             "locations": [
                 "l_4",
                 "l_5"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_1"
             ],
+            "connectedEvents": [],
+            "eventSummary": "The Battle of the Sittang impacts the strategic situation in Burma."
+        },
+        {
+            "event": "e_2",
+            "date": "January 1942",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 46 Indian Infantry Brigade arrives to bolster defenses in Burma."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1",
+                "e_5"
             ],
-            "eventSummary": "Throughout April, sick and wounded personnel are evacuated to India amidst serious transport challenges, with many enduring hardships along the way."
+            "eventSummary": "Reinforcements sent to Burma during critical military engagements."
         },
         {
-            "event": "e_3",
-            "date": "Late April 2023",
+            "event": "e_4",
+            "date": "Date not specified",
             "locations": [
-                "l_2",
+                "l_1",
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The movement of the 93 Division begins to secure the Southern Shan States."
+        },
+        {
+            "event": "e_5",
+            "date": "January 1942",
+            "locations": [
+                "l_1",
+                "l_10"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The 49 Division is authorized to enter Southern Shan States for operations."
+        },
+        {
+            "event": "e_6",
+            "date": "January 15, 1942",
+            "locations": [
                 "l_6"
             ],
             "persons": [
-                "p_2",
                 "p_3"
             ],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "As Japanese forces capture Lashio, the withdrawal of allied troops north of Mandalay starts, prompting urgent evacuations and logistical maneuvers."
+            "eventSummary": "A visit to Kengtung addresses troop movements and supply routes."
         }
     ]
 }

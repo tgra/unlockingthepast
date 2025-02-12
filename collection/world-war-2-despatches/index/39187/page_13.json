@@ -1,38 +1,172 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Tashkent",
-            "l_2": "Shanghai",
-            "l_3": "Simla",
-            "l_4": "Dehradun",
-            "l_5": "Ramgarh",
-            "l_6": "Chungking",
-            "l_7": "Changsha",
-            "l_8": "Manila",
-            "l_9": "Palawan",
-            "l_10": "Maldive",
-            "l_11": "Chagos Archipelago",
-            "l_12": "Cocos"
+        "persons": {
+            "p_1": "Commander, Fourteenth Army",
+            "p_2": "Commander, 15 Indian Corps"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Arakan",
+            "l_2": "Akyab",
+            "l_3": "Chittagong",
+            "l_4": "Cox's Bazaar",
+            "l_5": "Kalapanzin",
+            "l_6": "Kaladan Valley",
+            "l_7": "Fort Hertz",
+            "l_8": "Paletwa",
+            "l_9": "Milestone 14",
+            "l_10": "Milestone 15",
+            "l_11": "Kennedy Peak",
+            "l_12": "Milestone 22",
+            "l_13": "Milestone 23",
+            "l_14": "Milestone 25",
+            "l_15": "Vownalu Mual",
+            "l_16": "Milestone 29",
+            "l_17": "Milestone 31",
+            "l_18": "Milestone 40",
+            "l_19": "Kabaw Valley",
+            "l_20": "Chindwin",
+            "l_21": "Yazagyo",
+            "l_22": "Indainggyi",
+            "l_23": "Kalemyo",
+            "l_24": "Dolluang",
+            "l_25": "Mawlaik",
+            "l_26": "Mawku"
+        },
+        "events": {
+            "e_1": "Operation in Arakan",
+            "e_2": "Formation of Line of Communication Command",
+            "e_3": "Advance in Chindwin Front",
+            "e_4": "Capture of Vital Corner",
+            "e_5": "Storming of Kennedy Peak",
+            "e_6": "Occupying Mawlaik"
+        },
+        "organisations": {
+            "o_1": "Fourteenth Army",
+            "o_2": "15 Indian Corps",
+            "o_3": "25 Indian Division",
+            "o_4": "26 Indian Division",
+            "o_5": "81 (West African) Division",
+            "o_6": "82 (West African) Division",
+            "o_7": "50 Indian Tank Brigade",
+            "o_8": "3 Commando Brigade",
+            "o_9": "33 Corps",
+            "o_10": "11 (East African) Division"
+        }
     },
     "keywords": [
-        "Tashkent",
-        "Shanghai",
-        "Simla",
-        "Dehradun",
-        "Ramgarh",
-        "Chungking",
-        "Changsha",
-        "Manila",
-        "Palawan",
-        "Maldive",
-        "Chagos Archipelago",
-        "Cocos"
+        "Arakan",
+        "Indian Corps",
+        "advance",
+        "operations",
+        "Japanese forces"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November 15, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Fourteenth Army undertakes operations in Arakan focusing on clearing the area of Japanese forces."
+        },
+        {
+            "event": "e_2",
+            "date": "November 9, 1943",
+            "locations": [],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Formation of a command and staff for the lines of communication aims to centralize control and relieve responsibilities for the rear areas."
+        },
+        {
+            "event": "e_3",
+            "date": "November 11, 1943",
+            "locations": [
+                "l_20",
+                "l_26"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_5",
+                "e_6"
+            ],
+            "eventSummary": "33 Corps advances in the Chindwin Front and occupies key locations despite strong enemy resistance."
+        },
+        {
+            "event": "e_4",
+            "date": "November 4, 1943",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Capture of Vital Corner as 5 Indian Division assaults Japanese positions with significant success."
+        },
+        {
+            "event": "e_5",
+            "date": "November 4, 1943",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Storming of Kennedy Peak by 5 Indian Division under challenging conditions after multiple failed attacks."
+        },
+        {
+            "event": "e_6",
+            "date": "November 11, 1943",
+            "locations": [
+                "l_26"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_10"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Occupying Mawlaik as 11 (East African) Division defeats resistance, securing strategic positions in the area."
+        }
+    ]
 }

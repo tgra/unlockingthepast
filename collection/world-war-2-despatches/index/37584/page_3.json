@@ -1,93 +1,114 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General A. Carton de Wiart",
-            "p_2": "Brigadier H. de R. Morgan",
-            "p_3": "Major-General B. C. T. Paget",
-            "p_4": "Lieutenant-General H. R. S. Massy"
+            "p_1": "General Paget",
+            "p_2": "General Carton de Wiart",
+            "p_3": "General Audet"
         },
         "locations": {
-            "l_1": "Central Norway",
-            "l_2": "Namsos",
-            "l_3": "Andalsnes",
-            "l_4": "Narvik",
-            "l_5": "Trondheim",
-            "l_6": "Oslo",
-            "l_7": "United Kingdom"
+            "l_1": "Namsos",
+            "l_2": "Andalsnes",
+            "l_3": "Trondheim",
+            "l_4": "Gudbrandsdal valley",
+            "l_5": "Mosjoen",
+            "l_6": "Dombås"
         },
         "events": {
-            "e_1": "Operations in Central Norway",
-            "e_2": "Landings at Namsos",
-            "e_3": "Landings at Andalsnes",
-            "e_4": "Capture of Narvik",
-            "e_5": "Withdrawal from Central Norway"
+            "e_1": "Evacuation from Namsos",
+            "e_2": "Evacuation from Andalsnes",
+            "e_3": "German advance in Southern Norway"
         },
         "organisations": {
-            "o_1": "War Office",
-            "o_2": "North Western Expeditionary Force"
+            "o_1": "Military Co-ordinating Committee",
+            "o_2": "Air Ministry",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
-        "Military Operations",
-        "Norway",
-        "British Troops",
-        "French Troops",
-        "Polish Troops",
-        "World War II"
+        "evacuation",
+        "bombing",
+        "German advance",
+        "artillery",
+        "air support"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Military Leadership",
-        "Military Withdrawals"
+        "Evacuation Planning",
+        "Air Support",
+        "Ground Conditions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4",
-            "e_5"
+            "e_3"
         ],
-        "Strategic Decisions": [
+        "Evacuation Planning": [
             "e_1",
-            "e_5"
+            "e_2"
         ],
-        "Military Leadership": [
-            "e_1",
-            "e_2",
-            "e_4"
-        ],
-        "Military Withdrawals": [
-            "e_5"
+        "Air Support": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1940",
+            "date": "April 28 to May 2, 1940",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4",
-                "e_5"
+                "e_3"
             ],
-            "eventSummary": "The Operations in Central Norway involve landings at Namsos and Andalsnes by British and French forces as part of a strategy to support Norwegian resistance against German advances."
+            "eventSummary": "The evacuation from Namsos commences, with plans concerted with the Admiralty and orders issued to key generals on how it should take place."
+        },
+        {
+            "event": "e_2",
+            "date": "April 29 to May 2, 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The evacuation from Andalsnes begins, coordinated alongside the evacuation from Namsos, with specific timelines planned for the extraction of troops."
+        },
+        {
+            "event": "e_3",
+            "date": "April 26 to April 30, 1940",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The German advance in Southern Norway becomes increasingly evident, impacting the Allied troops' ability to respond to enemy artillery and air threats."
         }
     ]
 }

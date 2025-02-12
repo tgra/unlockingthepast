@@ -1,90 +1,70 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "R.A.F. Regiment",
-            "p_2": "British Forces",
-            "p_3": "Pioneer Corps"
+            "p_1": "General Eisenhower"
         },
         "locations": {
-            "l_1": "North Foreland",
-            "l_2": "Land's End",
-            "l_3": "Canterbury",
-            "l_4": "London",
-            "l_5": "Northern Europe",
-            "l_6": "Eastbourne",
-            "l_7": "Hastings",
-            "l_8": "Great Yarmouth",
-            "l_9": "South Wales"
+            "l_1": "London",
+            "l_2": "Cuckmere Haven",
+            "l_3": "East Hastings",
+            "l_4": "St. Margaret's Bay",
+            "l_5": "Sandwich",
+            "l_6": "Southampton",
+            "l_7": "Bristol",
+            "l_8": "River Blackwater",
+            "l_9": "Whitstable",
+            "l_10": "Thames Estuary",
+            "l_11": "Harwich"
         },
         "events": {
-            "e_1": "German attacks on Canterbury",
-            "e_2": "Bomber Command attack on German dams",
-            "e_3": "Smoke Defences operational",
-            "e_4": "Renewal of German attacks"
+            "e_1": "Advance of the Armies in France",
+            "e_2": "Closure of the Belt",
+            "e_3": "Renewed Attacks",
+            "e_4": "Creation of a New Belt"
         },
         "organisations": {
-            "o_1": "Ministry of Home Security",
-            "o_2": "Anti-Aircraft Command",
-            "o_3": "Home Forces",
-            "o_4": "Canadian Forces"
+            "o_1": "Anti-Aircraft Command",
+            "o_2": "R.E.M.E. Services",
+            "o_3": "21st Army Group",
+            "o_4": "Ministry of Aircraft Production",
+            "o_5": "Petroleum Warfare Department"
         }
     },
     "keywords": [
-        "anti-aircraft",
-        "raiders",
-        "defences",
-        "smoke screens",
-        "attacks",
-        "dams",
-        "light guns",
-        "heavy guns"
+        "Flying bombs",
+        "Anti-Aircraft",
+        "Training",
+        "Defences",
+        "Combat",
+        "Military operations"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategy",
-        "Aerial Combat",
-        "Technological Advancements"
+        "Training and Development",
+        "Combat Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
             "e_4"
         ],
-        "Defence Strategy": [
-            "e_3"
-        ],
-        "Aerial Combat": [
-            "e_1",
-            "e_4"
-        ],
-        "Technological Advancements": [
+        "Training and Development": [
             "e_2"
+        ],
+        "Combat Strategy": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "31st October, 1942",
+            "date": "August 10, 1944",
             "locations": [
-                "l_3"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "A significant German air raid occurs on Canterbury, marking a sharp escalation in aerial assaults on British territories."
-        },
-        {
-            "event": "e_2",
-            "date": "May, 1943",
-            "locations": [],
             "persons": [
                 "p_1"
             ],
@@ -92,39 +72,56 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The Bomber Command successfully executes an attack on German dams, raising fears of retaliatory actions."
+            "eventSummary": "The advance of the armies in France occurs, leading to adjustments in the military strategy and defenses."
         },
         {
-            "event": "e_3",
-            "date": "1st April, 1943",
-            "locations": [],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Smoke Defences are established to protect against precision air attacks, marking a shift towards using smoke screens for defence."
-        },
-        {
-            "event": "e_4",
-            "date": "7th May, 1943 to 6th June, 1943",
+            "event": "e_2",
+            "date": "August 10, 1944",
             "locations": [
+                "l_2",
+                "l_3",
+                "l_4",
                 "l_5"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The German attacks are renewed with intensified force, involving 300 aircraft executing 15 attacks over a month, targeting various towns in Northern Europe."
+            "eventSummary": "The westward end of the belt is closed down as it becomes superfluous."
+        },
+        {
+            "event": "e_3",
+            "date": "September 16, 1944",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Renewed attacks from flying bombs are resumed, targeting London."
+        },
+        {
+            "event": "e_4",
+            "date": "September 21, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A decision is made to create a new belt to counter the ongoing flying bomb threats."
         }
     ]
 }

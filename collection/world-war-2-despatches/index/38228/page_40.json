@@ -1,138 +1,132 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander 2 Burma Brigade",
-            "p_2": "Brigadier commanding Rangoon Area"
+            "p_1": "General Stilwell",
+            "p_2": "General Wakely",
+            "p_3": "General Li Jen Sun"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Prome",
-            "l_3": "Taungup",
-            "l_4": "Chittagong",
-            "l_5": "Mandalay",
-            "l_6": "Southern Shan States",
-            "l_7": "Tenasserim",
-            "l_8": "Pegu",
-            "l_9": "Moulmein",
-            "l_10": "Mergui",
-            "l_11": "Tavoy",
-            "l_12": "Thailand"
+            "l_1": "Monywa",
+            "l_2": "Ye-U",
+            "l_3": "Shwebo",
+            "l_4": "Chindwin",
+            "l_5": "Katha",
+            "l_6": "Kalewa",
+            "l_7": "Budalin",
+            "l_8": "Mandalay",
+            "l_9": "India",
+            "l_10": "Plyingyaing",
+            "l_11": "Kaduma",
+            "l_12": "Maymyo"
         },
         "events": {
-            "e_1": "Evacuation of Rangoon",
-            "e_2": "Demolitions in Rangoon",
-            "e_3": "Minor operations in the Southern Shan States",
-            "e_4": "Raids into Thailand"
+            "e_1": "Attack on Monywa by 1 Burma Division",
+            "e_2": "Withdrawal to India",
+            "e_3": "Race for Kalewa",
+            "e_4": "Coordination with Chinese Rear Guard"
         },
         "organisations": {
-            "o_1": "2 Burma Rifles",
-            "o_2": "3 Burma Rifles",
-            "o_3": "7 Burma Rifles",
-            "o_4": "1/7 Gurkha Rifles",
-            "o_5": "8 Burma Rifles",
-            "o_6": "Indian Mountain Regimen",
-            "o_7": "13 Indian Infantry Brigade",
-            "o_8": "Frontier Force Detachment"
+            "o_1": "Imperial Forces",
+            "o_2": "1 Burma Division",
+            "o_3": "G.H.Q. India",
+            "o_4": "38 Chinese Division"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Demolition",
-        "Scorched Earth",
-        "Cholera",
-        "Military Operations",
-        "Refugees"
+        "counter-attack",
+        "Japanese occupation",
+        "troops",
+        "infantry",
+        "withdrawal",
+        "operations",
+        "rear guard"
     ],
     "themes": [
         "Military Operations",
-        "Humanitarian Concerns",
-        "Evacuation Strategies"
+        "Strategy",
+        "Defense",
+        "Withdrawal"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
+            "e_3"
+        ],
+        "Diplomacy": [
             "e_4"
         ],
-        "Humanitarian Concerns": [
-            "e_1",
-            "e_2"
-        ],
-        "Evacuation Strategies": [
-            "e_1",
+        "Strategic Decisions": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "1st May",
             "locations": [
                 "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The evacuation of Rangoon is implemented in three stages, encouraging non-essential personnel to leave while ensuring vital services are maintained until the last moment."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Demolitions in Rangoon include the destruction of key facilities such as port installations and refineries, executed to hinder enemy access."
-        },
-        {
-            "event": "e_3",
-            "date": "Not specified",
-            "locations": [
-                "l_6"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "1 Burma Division launches an attack on Monywa, facing Japanese occupation, and progresses to temporarily regain control of the town."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A strategic withdrawal to India is agreed upon due to the untenable situation in Monywa and preparations are made for the movement of troops."
+        },
+        {
+            "event": "e_3",
+            "date": "3rd May",
+            "locations": [
+                "l_6",
+                "l_5"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [],
-            "eventSummary": "Minor operations take place in the Southern Shan States, with some raids conducted to gather intelligence and engage enemy forces."
+            "eventSummary": "The operations develop into a race with the enemy for the possession of Kalewa, necessitating local protections and blocking river approaches."
         },
         {
             "event": "e_4",
-            "date": "Not specified",
+            "date": "3rd May",
             "locations": [
-                "l_12"
+                "l_11"
             ],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
             "connectedEvents": [],
-            "eventSummary": "Raids into Thailand yield useful information, as guerrilla actions take place along the frontier."
+            "eventSummary": "General Li Jen Sun visits to coordinate actions of the 38 Chinese Division with those of 1 Burcorps, emphasizing the importance of timing their movements."
         }
     ]
 }

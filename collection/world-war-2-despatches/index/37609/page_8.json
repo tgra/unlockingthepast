@@ -1,132 +1,175 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Baron de Benoist",
-            "p_2": "Commandant des Essars",
-            "p_3": "General de Gaulle",
-            "p_4": "General Catroux",
-            "p_5": "General Kopanski",
-            "p_6": "General Gak",
-            "p_7": "Colonel Oeconnomopoulos"
+            "p_1": "Sir William Mitchell",
+            "p_2": "Sir Arthur Longmore",
+            "p_3": "General Sir Robert Cassels",
+            "p_4": "Prince Ismail Daoud",
+            "p_5": "Lieutenant-General Sir H. M. Wilson",
+            "p_6": "Major-General W. Platt",
+            "p_7": "Lieutenant-General M. G. H. Barker",
+            "p_8": "Lieutenant-General G. J. Giffard",
+            "p_9": "Lieutenant-General P. Neame",
+            "p_10": "Major-General D. P. Dickinson",
+            "p_11": "Major-General A. F. Smith",
+            "p_12": "Major-General B. O. Hutchison"
         },
         "locations": {
-            "l_1": "Palestine",
-            "l_2": "Moascar",
-            "l_3": "Daba",
-            "l_4": "Sudan",
-            "l_5": "Cairo",
-            "l_6": "Greece",
-            "l_7": "Syria",
-            "l_8": "French Equatorial Africa",
-            "l_9": "Egypt",
-            "l_10": "Alexandria",
-            "l_11": "Gedera",
-            "l_12": "Balkans",
-            "l_13": "Russia"
+            "l_1": "Somaliland",
+            "l_2": "Middle East",
+            "l_3": "India",
+            "l_4": "Egypt",
+            "l_5": "Matruh",
+            "l_6": "Siwa Oasis",
+            "l_7": "Alexandria",
+            "l_8": "Wadi Halfa",
+            "l_9": "Delta",
+            "l_10": "Sudan",
+            "l_11": "Palestine",
+            "l_12": "Trans-Jordan",
+            "l_13": "Cyprus"
         },
         "events": {
-            "e_1": "Movement of the French contingent to Moascar",
-            "e_2": "Formation of Officers Legion in Alexandria",
-            "e_3": "Czechoslovak recruitment of volunteers",
-            "e_4": "Negotiations with Greek authorities for units in Egypt"
+            "e_1": "Operations in Somaliland",
+            "e_2": "Defence of Egypt",
+            "e_3": "Work of the Royal Air Force in the Middle East",
+            "e_4": "Co-operation in planning between the three Services",
+            "e_5": "Military actions in the Sudan",
+            "e_6": "Comprehensive war effort in East Africa"
         },
         "organisations": {
-            "o_1": "French National Committee",
-            "o_2": "British Army",
-            "o_3": "Czechoslovak Military Mission"
+            "o_1": "Royal Navy",
+            "o_2": "Royal Air Force",
+            "o_3": "Egyptian Army",
+            "o_4": "Joint Planning Staff",
+            "o_5": "Army in India",
+            "o_6": "British Troops in Egypt",
+            "o_7": "Middle East Command"
         }
     },
     "keywords": [
-        "Allied Contingents",
-        "French",
-        "Polish Brigade",
-        "Czechoslovak",
-        "training depot",
-        "Greek Army"
+        "Royal Navy",
+        "Royal Air Force",
+        "Egyptian Army",
+        "Joint Planning Staff",
+        "Middle East",
+        "Operations",
+        "Defence",
+        "War Effort"
     ],
     "themes": [
         "Military Operations",
-        "Training and Recruitment",
-        "International Cooperation"
+        "Co-operation",
+        "Strategic Planning",
+        "Defence Strategy",
+        "Command and Control"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_5"
         ],
-        "Training and Recruitment": [
+        "Co-operation": [
+            "e_2",
             "e_3",
             "e_4"
         ],
-        "Diplomacy": []
+        "Strategic Planning": [
+            "e_4"
+        ],
+        "Defence Strategy": [
+            "e_2",
+            "e_3"
+        ],
+        "War Effort": [
+            "e_6"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8th September 1940",
+            "date": "Date not available",
             "locations": [
-                "l_1",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The operations in Somaliland illustrate the effectiveness of the Royal Navy."
+        },
+        {
+            "event": "e_2",
+            "date": "Date not available",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_3",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The defence of Egypt is facilitated by the Egyptian Army amidst strategic military challenges."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not available",
+            "locations": [
                 "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The French contingent forms a motorised infantry battalion and joins 7th Armoured Division for operations in the Western Desert."
-        },
-        {
-            "event": "e_2",
-            "date": "Early October 1940",
-            "locations": [
-                "l_10"
-            ],
-            "persons": [
-                "p_4",
-                "p_5"
+                "p_2"
             ],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "Surplus officers of the Polish Brigade are organized into an Officers Legion for garrison duties in Alexandria."
-        },
-        {
-            "event": "e_3",
-            "date": "August 1940",
-            "locations": [
-                "l_11",
-                "l_12"
-            ],
-            "persons": [
-                "p_6",
-                "p_7"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "General Gak coordinates the recruitment of Czech volunteers from Egypt, Palestine, Iran, and the Balkans."
+            "eventSummary": "The Royal Air Force provides vital support to ground forces in the Middle East."
         },
         {
             "event": "e_4",
-            "date": "Present",
+            "date": "Date not available",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Co-operation in planning between the three Services is maintained effectively."
+        },
+        {
+            "event": "e_5",
+            "date": "Date not available",
             "locations": [
-                "l_5",
-                "l_9"
+                "l_10"
             ],
             "persons": [
-                "p_7"
+                "p_6"
             ],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Negotiations are ongoing with Greek authorities to raise and train units of the Greek Army in Egypt."
+            "eventSummary": "Military actions in the Sudan are commanded with efficiency despite significant challenges."
+        },
+        {
+            "event": "e_6",
+            "date": "Date not available",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_10"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The comprehensive war effort in East Africa is organized under challenging conditions."
         }
     ]
 }

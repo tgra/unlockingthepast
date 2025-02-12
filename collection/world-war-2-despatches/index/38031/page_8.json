@@ -1,48 +1,96 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C.INC."
+            "p_1": "Chief of the Italian Naval Staff",
+            "p_2": "Commander-in-Chief",
+            "p_3": "Vice Admiral LicuT"
         },
         "locations": {
-            "l_1": "Matapan",
-            "l_2": "Eiume"
+            "l_1": "Athens",
+            "l_2": "Piraeus",
+            "l_3": "Suda Bay",
+            "l_4": "Alexandria",
+            "l_5": "Gavdo Island",
+            "l_6": "Great Pass"
         },
         "events": {
-            "e_1": "Battle of Matapan"
+            "e_1": "Convoy G.A.8",
+            "e_2": "Battle of the Aegean Sea"
         },
         "organisations": {
-            "o_1": "Destroyers"
+            "o_1": "Royal Air Force",
+            "o_2": "Italian Navy",
+            "o_3": "H.M.S. ORION",
+            "o_4": "H.M.S. FORMIDABLE",
+            "o_5": "H.M.S. GLOUCESTER",
+            "o_6": "H.M.S. VENDETTA"
         }
     },
     "keywords": [
-        "Battle",
-        "Matapan",
-        "Destroyers",
-        "Rendezvous"
+        "dive-bombing",
+        "convoy",
+        "shadower",
+        "barrage",
+        "cruiser",
+        "destroyer"
     ],
     "themes": [
-        "Military Operations"
+        "Military Operations",
+        "Naval Engagements",
+        "Survivor Rescue"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 29, 1941",
+            "date": "30th March, 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Battle of Matapan occurs from midnight to 0400, with destroyers conducting operations and coordinating a rendezvous at 0700."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Convoy G.A.8 is established for the safe passage of naval forces, with naval escorts conducting operations to ensure safe transit in the Aegean."
+        },
+        {
+            "event": "e_2",
+            "date": "30th March, 1941",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Battle of the Aegean Sea occurs, where naval forces engage enemy cruisers and attempts are made to confirm damage inflicted on enemy vessels."
         }
     ]
 }

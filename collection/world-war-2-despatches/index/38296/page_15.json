@@ -4,23 +4,21 @@
             "p_1": "Major General J. F. Evetts",
             "p_2": "General Wavell",
             "p_3": "General Blamey",
-            "p_4": "Air Marshal Tedder",
-            "p_5": "Commander-in-Chief, Mediterranean",
-            "p_6": "Colonel R. B. Jennings"
+            "p_4": "Air Marshal Tedder"
         },
         "locations": {
             "l_1": "Alexandria",
-            "l_2": "Crete",
-            "l_3": "Cairo",
-            "l_4": "Sphakia",
-            "l_5": "Retimo",
-            "l_6": "Plaka Bay",
-            "l_7": "PERTH"
+            "l_2": "Sphakia",
+            "l_3": "Crete",
+            "l_4": "Cairo",
+            "l_5": "Plaka Bay",
+            "l_6": "Retimo"
         },
         "events": {
-            "e_1": "Evacuation of Troops from Crete",
-            "e_2": "Airattacks on Force D",
-            "e_3": "Major General Evetts' Meeting in Cairo"
+            "e_1": "Evacuation of Crete",
+            "e_2": "Operation to Sphakia",
+            "e_3": "Bombing of PERTH",
+            "e_4": "Arrival at Alexandria"
         },
         "organisations": {
             "o_1": "Royal Air Force",
@@ -29,79 +27,44 @@
         }
     },
     "keywords": [
-        "Evacuation",
-        "Air Attacks",
-        "Military Strategy",
-        "CREFORCE",
-        "Troops"
+        "evacuation",
+        "military operations",
+        "C.S. 15",
+        "Force D",
+        "air attacks",
+        "naval situation"
     ],
     "themes": [
         "Military Operations",
-        "Air Warfare",
-        "Evacuation Strategy"
+        "Evacuations",
+        "Air Support",
+        "Naval Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Evacuations": [
+            "e_1",
             "e_2"
         ],
-        "Diplomacy": [
+        "Air Support": [
             "e_3"
         ],
-        "Evacuation Strategy": [
-            "e_1",
-            "e_3"
+        "Naval Engagements": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "29th May to 30th May",
+            "date": "29th May - 31st May, 1941",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Troops are evacuated from Crete via Sphakia, with around 6,000 men successfully boarded on ships despite air attacks."
-        },
-        {
-            "event": "e_2",
-            "date": "29th May",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Force D experiences multiple air attacks while en route to Alexandria."
-        },
-        {
-            "event": "e_3",
-            "date": "29th May",
-            "locations": [
-                "l_1",
-                "l_4"
+                "l_3"
             ],
             "persons": [
                 "p_1",
@@ -110,12 +73,67 @@
                 "p_4"
             ],
             "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The evacuation of troops from Crete is undertaken, highlighting the naval and aerial challenges faced during the operation."
+        },
+        {
+            "event": "e_2",
+            "date": "29th May, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Force D embarks from Alexandria to Sphakia to execute troop evacuation amidst worsening conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "30th May, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the operation, the PERTH cruiser is bombed, affecting naval capacity and troop safety."
+        },
+        {
+            "event": "e_4",
+            "date": "30th May, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Major General Evetts meets with military leaders in Cairo to discuss and strategize on the evacuation of troops."
+            "eventSummary": "Following the evacuation operations, surviving forces arrive back safely at Alexandria, reflecting on the losses faced."
         }
     ]
 }

@@ -1,216 +1,132 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General Godwin-Austen",
-            "p_2": "General Ritchie",
-            "p_3": "Major-General Gott",
-            "p_4": "Admiral Cunningham",
-            "p_5": "Air Chief Marshal Tedder"
+            "p_1": "General Gott",
+            "p_2": "General Ramsden"
         },
         "locations": {
-            "l_1": "Derna",
-            "l_2": "Gazala",
-            "l_3": "Msus",
-            "l_4": "Mechili",
-            "l_5": "Tengeder",
-            "l_6": "Martuba",
-            "l_7": "Cairo",
-            "l_8": "Tobruk",
-            "l_9": "Agedabia",
-            "l_10": "Giarabub",
-            "l_11": "Cyrenaica",
-            "l_12": "Bengasi",
-            "l_13": "Gebel Akhdar",
-            "l_14": "Sollum Maddalena",
-            "l_15": "Bir Hacheim",
-            "l_16": "Sidi Muftah"
+            "l_1": "Deir el Abyad",
+            "l_2": "El Alamein",
+            "l_3": "Ruweisat Ridge",
+            "l_4": "Tel el Eisa",
+            "l_5": "Tel el MakhKhad",
+            "l_6": "Miteiriya",
+            "l_7": "Taga plateau",
+            "l_8": "Sanyet el Miteiriya"
         },
         "events": {
-            "e_1": "Evacuation of Derna",
-            "e_2": "Withdrawal to Gazala",
-            "e_3": "Command change in 13th Corps",
-            "e_4": "Losses during withdrawal from Agedabia",
-            "e_5": "Preparation for defense of Tobruk",
-            "e_6": "Attack plans for Cyrenaica",
-            "e_7": "Consolidation of Gazala position",
-            "e_8": "Strong defensive position on 26th February"
+            "e_1": "Attack in the Centre",
+            "e_2": "Attack in the North",
+            "e_3": "Battle of El Alamein"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "Middle East Defence Committee"
+            "o_1": "16th Indian Infantry Brigade",
+            "o_2": "5th New Zealand Infantry Brigade",
+            "o_3": "6th New Zealand Infantry Brigade",
+            "o_4": "8th Australian Division",
+            "o_5": "1st South African Division",
+            "o_6": "69th Infantry Brigade",
+            "o_7": "7th Armoured Division",
+            "o_8": "23rd Armoured Brigade",
+            "o_9": "30th Corps",
+            "o_10": "1st Armoured Division",
+            "o_11": "13th Corps"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Withdrawal",
-        "Command Change",
-        "Defensive Positions",
-        "Military Operations",
-        "Armoured Division",
-        "Tobruk",
-        "Bengasi"
+        "attack",
+        "enemy",
+        "infantry",
+        "artillery",
+        "counter-attack",
+        "battle"
     ],
     "themes": [
         "Military Operations",
-        "Command Structure",
-        "Logistics and Supplies",
-        "Defensive Preparations",
-        "Strategic Planning"
+        "Strategic Decisions",
+        "Counter-Attacks"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4",
-            "e_5",
-            "e_6",
-            "e_7",
-            "e_8"
-        ],
-        "Command Structure": [
             "e_3"
         ],
-        "Logistics and Supplies": [
-            "e_4",
-            "e_6"
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
         ],
-        "Defensive Preparations": [
-            "e_5",
-            "e_8"
-        ],
-        "Strategic Planning": [
-            "e_5",
-            "e_6"
+        "Counter-Attacks": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st February 1942",
+            "date": "21st - 22nd July",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Evacuation of Derna is ordered due to the enemy's supply situation potentially allowing an advance."
+            "eventSummary": "On the night of 21st July, the expected attack by the 16th Indian Infantry Brigade and New Zealand Brigades begins on the enemy positions, aiming to sever communications. The initial advance proceeds well, clearing gaps for tanks, but counter-attacks ensue, leading to heavy losses and a failure to achieve strategic objectives."
         },
         {
             "event": "e_2",
-            "date": "1st February 1942",
+            "date": "26th July",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_4"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_9",
+                "o_10",
+                "o_11"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_5"
-            ],
-            "eventSummary": "Forces withdraw further to a defensive line running south from Gazala after assessing the enemy threat."
+            "connectedEvents": [],
+            "eventSummary": "On the night of 26th July, General Ramsden launches an attack against enemy positions to take advantage of the Tel el Eisa salient. Despite initial success, the attack ends in failure as the Australians face strong counter-attacks from German forces."
         },
         {
             "event": "e_3",
-            "date": "February 1942",
-            "locations": [],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Lieutenant-General Godwin-Austen requests relief from command due to lack of confidence from General Ritchie."
-        },
-        {
-            "event": "e_4",
-            "date": "February 1942",
+            "date": "Date not specified",
             "locations": [
                 "l_2"
             ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The 1st Armoured Division suffers significant losses during the withdrawal from Agedabia."
-        },
-        {
-            "event": "e_5",
-            "date": "1st February 1942",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1",
                 "e_2"
             ],
-            "eventSummary": "Preparations for defense of Tobruk are set in motion to prevent it from being besieged."
-        },
-        {
-            "event": "e_6",
-            "date": "February 1942",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Plans are examined for the attack on Cyrenaica, emphasizing the need for armoured superiority."
-        },
-        {
-            "event": "e_7",
-            "date": "February 1942",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Consolidation of the Gazala position is conducted with minimal disturbances from enemy activities."
-        },
-        {
-            "event": "e_8",
-            "date": "26th February 1942",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A strong, well-mined defensive position is established, blocking important routes along the coast."
+            "eventSummary": "The Battle of El Alamein is characterized by continuous fighting, culminating in multiple attacks aimed at breaking through enemy lines with significant casualties on both sides."
         }
     ]
 }

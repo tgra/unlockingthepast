@@ -1,141 +1,140 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier Galloway",
-            "p_2": "Brigadier Bninskill",
-            "p_3": "Lieutenant Colonel Davy",
-            "p_4": "Group Captain Pelly",
-            "p_5": "Rear Admiral Turle",
-            "p_6": "Captain Razikostikas"
+            "p_1": "Nicholas Embiricos",
+            "p_2": "Admiral Sir Andrew B. Cunningham",
+            "p_3": "Vice Admiral H. D. Endkan-Wippell",
+            "p_4": "Rear Admiral H Grohman"
         },
         "locations": {
             "l_1": "Greece",
-            "l_2": "Athens",
-            "l_3": "Epirus",
-            "l_4": "Thermopylae"
+            "l_2": "Piraeus",
+            "l_3": "Cairo",
+            "l_4": "Mediterranean"
         },
         "events": {
-            "e_1": "Evacuation Operation",
-            "e_2": "D.1 Operation",
-            "e_3": "Air Bombing Attacks",
-            "e_4": "Beach Reconnaissance"
+            "e_1": "Evacuation of Greece",
+            "e_2": "Operation Demon",
+            "e_3": "Convoy A.S.23 attack",
+            "e_4": "Convoy A.N.F.24 attack",
+            "e_5": "Convoy A.N.27 attack",
+            "e_6": "Convoy A.S.21 attack"
         },
         "organisations": {
-            "o_1": "British Troops in Greece",
-            "o_2": "Greek Navy",
-            "o_3": "Naval Control Service",
-            "o_4": "Divisional Sea Transport Service"
+            "o_1": "Mediterranean Fleet",
+            "o_2": "British naval authorities",
+            "o_3": "Lords Commissioners of the Admiralty"
         }
     },
     "keywords": [
-        "military situation",
-        "evacuation",
-        "air superiority",
-        "morale",
-        "shipping",
-        "reconnaissance",
-        "naval operations"
+        "Evacuation",
+        "Convoy",
+        "Attack",
+        "Mediterranean",
+        "Greece",
+        "Admiralty"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Morale Factors",
-        "Evacuation Planning",
-        "Air Support"
+        "Naval Warfare",
+        "Evacuation Operations",
+        "Air Attacks"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Logistics": [
-            "e_1",
-            "e_4"
+        "Naval Warfare": [
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Morale Factors": [
-            "e_2"
+        "Evacuation Operations": [
+            "e_1"
         ],
-        "Evacuation Planning": [
-            "e_1",
-            "e_2"
-        ],
-        "Air Support": [
-            "e_3"
+        "Air Attacks": [
+            "e_3",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of evacuation TBD",
+            "date": "17th April to 30th April, 1941",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_2"
             ],
             "persons": [
-                "p_1",
                 "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The Evacuation Operation is conducted with great urgency and complexity, as military and civil authorities manage logistical hurdles amidst a deteriorating military situation."
-        },
-        {
-            "event": "e_2",
-            "date": "48 hours before D.1 of the operation",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The D.1 Operation date proves difficult to determine, highlighting logistical challenges faced by the team."
-        },
-        {
-            "event": "e_3",
-            "date": "Specific days of air attacks",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The German air superiority demonstrates through mass attacks on shipping in Greek waters, significantly impacting the military operations."
-        },
-        {
-            "event": "e_4",
-            "date": "During the evacuation operation",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_6"
-            ],
-            "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Beach reconnaissance efforts provide critical information, aiding the success of the evacuation operation."
+            "eventSummary": "The British forces evacuate from Greece due to the deteriorating situation, successfully transporting troops amidst air attacks and logistical challenges."
+        },
+        {
+            "event": "e_2",
+            "date": "7th July, 1941",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Demon is reported, detailing the evacuation from Greece, showcasing naval strategies and challenges faced."
+        },
+        {
+            "event": "e_3",
+            "date": "3rd April, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Convoy A.S.23 is attacked by six D/B dive bombers, resulting in the ship being hit and abandoned."
+        },
+        {
+            "event": "e_4",
+            "date": "4th April, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Convoy A.N.F.24 is attacked, leading to significant casualties and damage to the S.S. DEVIS."
+        },
+        {
+            "event": "e_5",
+            "date": "3rd April, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Convoy A.N.27 is attacked, with the BRITISH SCIENCE sustaining damage and subsequently sinking."
+        },
+        {
+            "event": "e_6",
+            "date": "On or around 3rd April, 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Convoy A.S.21 is attacked by HE.111 aircraft, resulting in significant damage."
         }
     ]
 }

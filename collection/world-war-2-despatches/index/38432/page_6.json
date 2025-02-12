@@ -1,41 +1,41 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "E. H. Larrve"
+            "p_1": "Senior Officer",
+            "p_2": "Vice-Admiral, Dover"
         },
         "locations": {
-            "l_1": "Berck Buoy",
-            "l_2": "Dover"
+            "l_1": "Dover",
+            "l_2": "Point du Haut Banc",
+            "l_3": "Le Havre",
+            "l_4": "Etaples"
         },
         "events": {
-            "e_1": "Attack on enemy convoy",
-            "e_2": "Action on the night of 26th/27th September"
+            "e_1": "Action on the night of 26th/27th September",
+            "e_2": "Engagement with enemy convoy"
         },
         "organisations": {
-            "o_1": "R. Neth. N.",
-            "o_2": "Motor Torpedo Boat (M.T.B.)",
-            "o_3": "Motor Gun Boat (M.G.B.)"
+            "o_1": "M.T.B. Flotilla",
+            "o_2": "M.G.B.s"
         }
     },
     "keywords": [
-        "enemy convoy",
-        "attack",
-        "starshell",
-        "torpedo",
-        "visibility",
-        "gunfire"
+        "action",
+        "convoy",
+        "raid",
+        "weather",
+        "forces"
     ],
     "themes": [
         "Military Operations",
-        "Naval Combat",
-        "Tactics and Strategy"
+        "Naval Combat"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Tactics and Strategy": [
+        "Naval Combat": [
             "e_1",
             "e_2"
         ]
@@ -43,41 +43,42 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26th/27th September, 1943",
+            "date": "27th September, 1943",
             "locations": [
+                "l_2",
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Combined forces engage an escorted enemy convoy in a coordinated attack using torpedoes and gunfire, demonstrating adaptability under difficult visibility conditions."
+            "eventSummary": "The action occurs when combined Motor Torpedo Boat and Motor Gun Boat forces engage an escorted enemy convoy off Point du Haut Banc."
         },
         {
             "event": "e_2",
-            "date": "20th September, 1943",
+            "date": "27th September, 1943",
             "locations": [
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Senior Officer submits a report on a military action that involved combined Motor Torpedo Boats and Motor Gun Boats operating against an enemy convoy."
+            "eventSummary": "The engagement involves tactical maneuvers as the forces attempt to intercept and destroy the enemy convoy."
         }
     ]
 }

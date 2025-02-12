@@ -1,188 +1,82 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "S.N.OLAS",
-            "p_2": "Flag Officer Sicily",
-            "p_3": "N.C.F.A.",
-            "p_4": "Naval Commander Force A",
-            "p_5": "Commander-in-Chief",
-            "p_6": "H.M.S. CARLISLE",
-            "p_7": "H.M.S. MAURITIUS",
-            "p_8": "H.M.S. MENDIP",
-            "p_9": "H.M.S. WALLACE",
-            "p_10": "H.M.S. LARGS",
-            "p_11": "S.N.O.L.(H)"
+            "p_1": "Lieutenant-Commander K. A. Sellar"
         },
         "locations": {
-            "l_1": "Punta Portopalo",
-            "l_2": "Syracuse",
-            "l_3": "Tripoli",
-            "l_4": "Malta",
-            "l_5": "Algiers",
-            "l_6": "Augusta",
-            "l_7": "Lentini",
-            "l_8": "Bark South",
-            "l_9": "Bark East",
-            "l_10": "Acip"
+            "l_1": "Bark East",
+            "l_2": "Bark South",
+            "l_3": "Acipt",
+            "l_4": "Bark West",
+            "l_5": "Gozo"
         },
         "events": {
-            "e_1": "Sailing of Assault Convoy",
-            "e_2": "Transfer of Operations to Flag Officer Sicily",
-            "e_3": "Air Raids at Bark South",
-            "e_4": "Night Flares and Bombing",
-            "e_5": "Arrival of D.U.K.W and L.C.M.",
-            "e_6": "Convoy Departure for Tripoli"
+            "e_1": "Operation Husky",
+            "e_2": "Operation Torch"
         },
         "organisations": {
-            "o_1": "N.C.F.A.",
-            "o_2": "Naval Commander Force A",
-            "o_3": "HMS"
+            "o_1": "N.O.L.",
+            "o_2": "Task Group Commanders"
         }
     },
     "keywords": [
-        "Convoy",
-        "Military Operations",
-        "Syracuse",
-        "Air Raids",
-        "L.C.M.",
-        "D.U.K.W.",
-        "Flag Officer Sicily"
+        "Landing Craft",
+        "Assault",
+        "Coast Defences",
+        "Naval Forces",
+        "Barking Beaches"
     ],
     "themes": [
         "Military Operations",
-        "Naval Operations",
+        "Naval Support",
         "Logistics",
-        "Air Activity",
-        "Command Transfers"
+        "Assault Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Naval Operations": [
-            "e_4",
-            "e_5",
-            "e_6"
+        "Naval Support": [
+            "e_1"
         ],
         "Logistics": [
-            "e_5"
+            "e_1"
         ],
-        "Command Transfers": [
-            "e_2"
+        "Assault Strategies": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "14th July",
+            "date": "July 10, 1943",
             "locations": [
-                "l_8",
-                "l_9"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The assault convoy sails at 1400 to Bark South, leaving one M.T. ship in the anchorage."
+            "eventSummary": "Operation Husky begins with landings on Sicilian beaches. Initial landings are successful despite delays and challenges posed by weather. Naval forces provide critical support, while the beach defences are taken by surprise."
         },
         {
             "event": "e_2",
-            "date": "14th July",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_5"
-            ],
-            "eventSummary": "N.C.F.A. transfers operations from Syracuse northwards to Flag Officer Sicily."
-        },
-        {
-            "event": "e_3",
-            "date": "13th/14th July",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_5",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Night air raids at Bark South are less intense, allowing ships to operate with confidence."
-        },
-        {
-            "event": "e_4",
-            "date": "13th/14th July",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_7",
-                "p_8"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Multiple night flares and bombing occur, but no significant damage is reported."
-        },
-        {
-            "event": "e_5",
-            "date": "15th July",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_9",
-                "p_10"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_6"
-            ],
-            "eventSummary": "L.C.M. and D.U.K.W. increase availability at beaches as repair operations continue."
-        },
-        {
-            "event": "e_6",
-            "date": "15th July",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_11"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "The D + 3 convoy sails towards Tripoli after discharging a substantial quantity of stores."
+            "date": "November 8, 1942",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Operation Torch is the code name for the landings in North Africa. The event highlights initial landings involving multiple types of naval landing craft and signifies the beginning of Allied operations in the region."
         }
     ]
 }

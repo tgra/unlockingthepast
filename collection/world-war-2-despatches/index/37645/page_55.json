@@ -1,87 +1,66 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander 4th Indian Division",
-            "p_2": "Commander 11th Indian Infantry Brigade",
-            "p_3": "Air Officer Commanding"
+            "p_1": "Brigadier A. McD. Ritchie",
+            "p_2": "General Wavell",
+            "p_3": "General Wetherall"
         },
         "locations": {
-            "l_1": "Gallabat",
-            "l_2": "Gedaref",
-            "l_3": "Fort Dologorodoc",
-            "l_4": "M. Sanchil",
-            "l_5": "Brigs Peak",
-            "l_6": "Flat Top Hill",
-            "l_7": "Cameron Ridge",
-            "l_8": "Rajputana Ridge",
-            "l_9": "Acqua Gap",
-            "l_10": "Asmara",
-            "l_11": "M. Zeban",
-            "l_12": "M. Canabai",
-            "l_13": "Falestoh Col",
-            "l_14": "Agordat"
+            "l_1": "Abyssinia",
+            "l_2": "Uaddara",
+            "l_3": "Addis Abeba",
+            "l_4": "Neghelli",
+            "l_5": "Moggio",
+            "l_6": "Adama",
+            "l_7": "Kenya",
+            "l_8": "Sciasciamanna",
+            "l_9": "Bubissa",
+            "l_10": "Dessy",
+            "l_11": "Gimma",
+            "l_12": "Dalle"
         },
         "events": {
-            "e_1": "4th Indian Divisional attack",
-            "e_2": "5th Indian Division attack"
+            "e_1": "Attack on Uaddara position",
+            "e_2": "Advance of 12th (A) Division",
+            "e_3": "Air attacks on Dessie aerodrome",
+            "e_4": "Formation of Close Support Group"
         },
         "organisations": {
-            "o_1": "5th Indian Division",
-            "o_2": "4th Indian Division",
-            "o_3": "11th Indian Infantry Brigade",
-            "o_4": "Army Co-operation"
+            "o_1": "Gold Coast Brigade",
+            "o_2": "1st S.A. Brigade",
+            "o_3": "12th (A) Division",
+            "o_4": "Air Headquarters"
         }
     },
     "keywords": [
-        "Military Operation",
-        "Infantry Brigade",
-        "Attack",
-        "Reconnaissance",
-        "Artillery"
+        "Gold Coast Brigade",
+        "Abyssinia",
+        "military operations",
+        "Italian East Africa"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Advancements",
+        "Tactical Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_1",
-            "e_2"
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th March",
+            "date": "3rd May - 10th May",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_5"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The 4th Indian Divisional attack commences at 0700 hours on 15th March with an aim to capture strategic locations."
-        },
-        {
-            "event": "e_2",
-            "date": "8th March",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_11"
+                "Uaddara"
             ],
             "persons": [
                 "p_1"
@@ -90,9 +69,54 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "The 5th Indian Division prepares for its attack on M. Zeban via Fort Dologorodoc after reconnaissance."
+            "eventSummary": "The Gold Coast Brigade commences an attack on the Uaddara position on 3rd May, ultimately successful by the 10th May."
+        },
+        {
+            "event": "e_2",
+            "date": "April - July",
+            "locations": [
+                "Addis Abeba",
+                "Neghelli"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The advance of the 12th (A) Division is conducted under heavy rain from April to July, aiming to push the enemy back."
+        },
+        {
+            "event": "e_3",
+            "date": "6th April - 10th April",
+            "locations": [
+                "Dessie",
+                "Gimma"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air Force conducts successful attacks on enemy aerodromes at Dessie on 6th April and Gimma on 10th April."
+        },
+        {
+            "event": "e_4",
+            "date": "20th May",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A Close Support Group is formed on 20th May to provide additional air support for divisional operations."
         }
     ]
 }

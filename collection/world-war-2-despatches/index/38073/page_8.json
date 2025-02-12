@@ -1,84 +1,91 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief, Mediterranean Station"
+            "p_1": "Captain (D), Twenty-Second Destroyer Flotilla",
+            "p_2": "Rear Admiral Commanding, Fifteenth Cruiser Squadron",
+            "p_3": "Captain (D), Fourteenth Destroyer Flotilla"
         },
         "locations": {
-            "l_1": "Benghazi",
-            "l_2": "Malta",
-            "l_3": "Alexandria",
-            "l_4": "Tobruk"
+            "l_1": "Malta",
+            "l_2": "Leeward",
+            "l_3": "eastern end",
+            "l_4": "western end"
         },
         "events": {
-            "e_1": "Return Passage",
-            "e_2": "Air Attack"
+            "e_1": "Convoy Air Attack",
+            "e_2": "Operation B"
         },
         "organisations": {
-            "o_1": "Force B"
+            "o_1": "Twenty-Second Destroyer Flotilla",
+            "o_2": "Fifteenth Cruiser Squadron",
+            "o_3": "Fourteenth Destroyer Flotilla"
         }
     },
     "keywords": [
-        "south-easterly",
-        "east-southeasterly",
-        "gale",
-        "destroyers",
         "convoy",
-        "Fighter Direction",
-        "JU.87s",
-        "JU.88s",
-        "A.S.V.",
-        "Sunderland"
+        "torpedo",
+        "air attack",
+        "gunfire",
+        "smoke"
     ],
     "themes": [
         "Military Operations",
-        "Air Operations",
-        "Weather Conditions"
+        "Naval Engagement",
+        "Tactical Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Air Operations": [
-            "e_2"
-        ],
-        "Weather Conditions": [
+        "Naval Engagement": [
             "e_1"
+        ],
+        "Tactical Maneuvers": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd March, 1942",
+            "date": "N/A",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Return Passage occurs where destroyers join a convoy in challenging weather conditions near Benghazi, progressing gradually towards Malta and then Alexandria."
+            "eventSummary": "Continued heavy air attack is made on the convoy, with significant naval engagements and tactical maneuvers taking place."
         },
         {
             "event": "e_2",
-            "date": "24th March, 1942",
+            "date": "N/A",
             "locations": [
-                "l_3"
+                "l_1"
             ],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Air Attack unfolds with enemy aircraft initiating sporadic attacks on the allied forces, yet without significant damage as they progress towards Alexandria."
+            "eventSummary": "Operation B aims at the dispersal of the convoy to proceed independently to Malta during the dark hours."
         }
     ]
 }

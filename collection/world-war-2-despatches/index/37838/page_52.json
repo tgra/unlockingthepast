@@ -2,81 +2,73 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Mailly-le-Camp",
-            "l_2": "Châteaudun",
-            "l_3": "Bourg Leopold",
-            "l_4": "Domfront",
-            "l_5": "Bay of Biscay",
-            "l_6": "Dutch Coast",
-            "l_7": "Channel",
-            "l_8": "Le Havre",
-            "l_9": "Cherbourg",
-            "l_10": "Texel",
-            "l_11": "Baltic Sea",
-            "l_12": "France",
-            "l_13": "Belgium",
-            "l_14": "Holland",
-            "l_15": "Western Germany",
-            "l_16": "United Kingdom"
+            "l_1": "United Kingdom",
+            "l_2": "Mediterranean"
         },
         "events": {
-            "e_1": "Attack on tank depot at Mailly-le-Camp",
-            "e_2": "Attack on ammunition dump at Châteaudun",
-            "e_3": "Bombing of Bourg Leopold milit camp",
-            "e_4": "Attack on fuel dump at Domfront",
-            "e_5": "Anti-shipping and anti-U-Boat patrols",
-            "e_6": "Minelaying operations",
-            "e_7": "Direct attacks on enemy airfields",
-            "e_8": "Bombing campaigns from 11th May to D-Day"
+            "e_1": "Operation Neptune",
+            "e_2": "Battle of Britain"
         },
         "organisations": {
-            "o_1": "R.A.F. Bomber Command",
-            "o_2": "A.E.A.F.",
-            "o_3": "United States Ninth Air Force",
-            "o_4": "Royal Air Force Coastal Command",
-            "o_5": "British Admiralty",
-            "o_6": "United States Eighth Air Force",
-            "o_7": "United States Fifteenth Air Force"
+            "o_1": "Royal Air Force",
+            "o_2": "Fleet Air Arm",
+            "o_3": "Air Defence Commander",
+            "o_4": "A.A. guns",
+            "o_5": "No. 38 Group",
+            "o_6": "Strategic Bomber Forces",
+            "o_7": "S.O.E."
         }
     },
     "keywords": [
-        "bombing",
-        "military operations",
-        "ammunition dump",
-        "fuel dump",
-        "coastal shipping",
-        "air superiority",
-        "airfields",
-        "D-Day",
-        "anti-shipping"
+        "air forces",
+        "naval bombardment",
+        "anti-aircraft",
+        "reconnaissance",
+        "flying areas",
+        "air defence"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Bombing",
-        "Logistics and Supply Disruption",
-        "Naval Operations",
-        "Air Superiority and Operations"
+        "Air Defense",
+        "Reconnaissance",
+        "Morale"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4",
-            "e_7"
+            "e_2"
         ],
-        "Naval Operations": [
-            "e_5",
-            "e_6"
+        "Air Defense": [
+            "e_1"
         ],
-        "Strategic Decisions": [
-            "e_8"
-        ]
+        "Reconnaissance": [
+            "e_1"
+        ],
+        "Morale": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd/4th May 1944",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Neptune is launched as part of military operations requiring air and naval cooperation."
+        },
+        {
+            "event": "e_2",
+            "date": "",
             "locations": [
                 "l_1"
             ],
@@ -84,124 +76,8 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_4",
-                "e_7"
-            ],
-            "eventSummary": "R.A.F. Bomber Command attacks the tank depot at Mailly-le-Camp, dropping 1,924 tons of bombs, severely damaging the target."
-        },
-        {
-            "event": "e_2",
-            "date": "3rd/4th May 1944",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Eight Mosquitoes of R.A.F. Bomber Command accurately strike an ammunition dump at Châteaudun, leading to a massive explosion and total destruction of the target."
-        },
-        {
-            "event": "e_3",
-            "date": "8th/9th May 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "R.A.F. Bomber Command bombs the Bourg Leopold milit camp in Belgium, causing extensive damage with 585 tons of bombs dropped."
-        },
-        {
-            "event": "e_4",
-            "date": "April - June 1944",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3"
-            ],
             "connectedEvents": [],
-            "eventSummary": "A.E.A.F. aircraft attack a fuel dump at Domfront, using incendiary and G.P. bombs, resulting in significant destruction."
-        },
-        {
-            "event": "e_5",
-            "date": "1st April - 5th June 1944",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "R.A.F. Coastal Command conducts 4,340 sorties targeting coastal shipping and U-Boats during this period."
-        },
-        {
-            "event": "e_6",
-            "date": "1st April - 5th June 1944",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "R.A.F. Bomber Command lays 3,099 mines along crucial coastal areas to disrupt enemy shipping."
-        },
-        {
-            "event": "e_7",
-            "date": "11th May - D-Day",
-            "locations": [
-                "l_12",
-                "l_13",
-                "l_14",
-                "l_15"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_8"
-            ],
-            "eventSummary": "Plans for direct attacks on German airfields are executed to ensure air superiority ahead of D-Day."
-        },
-        {
-            "event": "e_8",
-            "date": "Ending of attacks around D-Day",
-            "locations": [
-                "l_12",
-                "l_13",
-                "l_14"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_7"
-            ],
-            "eventSummary": "Bombing campaigns by multiple air forces take place to weaken enemy air power prior to the Allied landings."
+            "eventSummary": "The Battle of Britain is characterized by significant air defense measures and conflicts between air force claims."
         }
     ]
 }

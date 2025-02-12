@@ -7,60 +7,61 @@
         },
         "locations": {
             "l_1": "Turkey",
-            "l_2": "Greece",
-            "l_3": "Bulgaria",
+            "l_2": "Bulgaria",
+            "l_3": "Greece",
             "l_4": "Macedonia",
-            "l_5": "Salonika",
-            "l_6": "Piraeus",
-            "l_7": "Volos",
-            "l_8": "Albania",
-            "l_9": "Florina",
-            "l_10": "Larissa",
-            "l_11": "Western Thrace",
-            "l_12": "Aegean Sea"
+            "l_5": "Albania",
+            "l_6": "Athens",
+            "l_7": "Salonika",
+            "l_8": "Piraeus",
+            "l_9": "Volos",
+            "l_10": "Cyrenaica",
+            "l_11": "Florina",
+            "l_12": "Larissa",
+            "l_13": "Western Thrace",
+            "l_14": "Valona"
         },
         "events": {
-            "e_1": "Entry of Germans into Bulgaria",
-            "e_2": "Conversations with Turkish Government",
-            "e_3": "Dispatched British forces to Greece",
-            "e_4": "Conferences in Athens"
+            "e_1": "German entry into Bulgaria",
+            "e_2": "Despatch of the British force to Greece",
+            "e_3": "Series of long conferences in Athens",
+            "e_4": "Counter-attack by Greek army in Albania",
+            "e_5": "Formation of W' Force"
         },
         "organisations": {
-            "o_1": "British Army",
-            "o_2": "Turkish Government",
-            "o_3": "Greek Army"
+            "o_1": "Turkish Government",
+            "o_2": "British Government",
+            "o_3": "Central Macedonian Army"
         }
     },
     "keywords": [
-        "British forces",
-        "Greek troops",
-        "German entry",
-        "support Greece",
-        "Aliakhmon Line",
+        "Bulgaria",
+        "Turkey",
+        "Greece",
         "Macedonia",
-        "Salonika",
-        "operation",
-        "military strategy"
+        "Albania",
+        "Defence",
+        "Military Operations"
     ],
     "themes": [
         "Military Operations",
         "Diplomacy",
-        "Strategic Decisions",
-        "Logistics"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_4",
+            "e_5"
         ],
         "Diplomacy": [
-            "e_2"
+            "e_1",
+            "e_3"
         ],
         "Strategic Decisions": [
+            "e_2",
             "e_4"
-        ],
-        "Logistics": [
-            "e_3"
         ]
     },
     "eventConnections": [
@@ -68,35 +69,20 @@
             "event": "e_1",
             "date": "1st March",
             "locations": [
-                "l_3"
+                "l_2"
             ],
             "persons": [],
-            "organisations": [
-                "o_1"
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Germans enter Bulgaria, prompting concerns regarding military support from neighboring nations."
+            "eventSummary": "On 1st March, the Germans enter Bulgaria."
         },
         {
             "event": "e_2",
-            "date": "Date unspecified",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Discussions take place between British and Turkish military officials regarding support for Greece."
-        },
-        {
-            "event": "e_3",
             "date": "5th March",
             "locations": [
-                "l_2"
+                "l_3"
             ],
             "persons": [
                 "p_2"
@@ -104,26 +90,53 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The British force begins its dispatch to Greece to support Greek troops amidst a deteriorating military situation."
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The despatch of the British force to Greece begins on 5th March."
         },
         {
-            "event": "e_4",
-            "date": "2nd-5th March",
+            "event": "e_3",
+            "date": "2nd to 5th March",
             "locations": [
-                "l_2"
+                "l_3"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A series of long conferences take place in Athens between 2nd and 5th March."
+        },
+        {
+            "event": "e_4",
+            "date": "End of 1940",
+            "locations": [
+                "l_6",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Greek army achieves a successful counter-attack against the Italians at the end of 1940."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "A series of conferences are held in Athens to discuss the positioning of Greek troops and the British contingent in light of German advances."
+            "connectedEvents": [],
+            "eventSummary": "W' Force, including British and Greek troops, is formed under the command of General Wilson."
         }
     ]
 }

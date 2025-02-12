@@ -1,114 +1,145 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Wilfred Lindsell",
-            "p_2": "Mr. Casey",
-            "p_3": "Sir Miles Lampson",
-            "p_4": "General Montgomery",
-            "p_5": "The Right Honourable Lord Killearn",
-            "p_6": "General Eisenhower"
+            "p_1": "General Patton",
+            "p_2": "General Messe",
+            "p_3": "General Montgomery",
+            "p_4": "Air Vice Marshal Broadhurst"
         },
         "locations": {
-            "l_1": "Egypt",
-            "l_2": "Middle East",
-            "l_3": "North Africa"
+            "l_1": "Medenine",
+            "l_2": "Bir Soltane",
+            "l_3": "Ksar el Hallouf",
+            "l_4": "Mareth line",
+            "l_5": "Gafsa",
+            "l_6": "Maknassy",
+            "l_7": "Gebel Tebaga",
+            "l_8": "Gebel Melab",
+            "l_9": "Cheguimi",
+            "l_10": "El Hamma",
+            "l_11": "Gabes",
+            "l_12": "southern Tunisia",
+            "l_13": "Medjez"
         },
         "events": {
-            "e_1": "Battle of Alam el Halfa",
-            "e_2": "D-day for the offensive",
-            "e_3": "Invasion of North Africa",
-            "e_4": "Operation under General Eisenhower"
+            "e_1": "Operation SUPERCHARGE",
+            "e_2": "Battle of El Hamma",
+            "e_3": "Defeat at Thala",
+            "e_4": "Enemy Offensive on 26th February"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "British First Army",
-            "o_3": "Combined Chiefs of Staff",
-            "o_4": "Royal Navy"
+            "o_2": "II Corps",
+            "o_3": "10 Corps",
+            "o_4": "Royal Air Force",
+            "o_5": "First Army",
+            "o_6": "3 Infantry Brigade",
+            "o_7": "Hermann Goering Division",
+            "o_8": "x Guards Brigade",
+            "o_9": "6 Armoured Division",
+            "o_10": "4 Indian Division"
         }
     },
     "keywords": [
-        "Logistics",
-        "Military Supplies",
-        "Offensive Planning",
-        "Transport Companies",
-        "Desert Campaign",
-        "Strategic Decision"
+        "armoured",
+        "infantry",
+        "attack",
+        "defensive",
+        "counterattack",
+        "air attack",
+        "training",
+        "offensive",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Support",
-        "Strategic Timing",
-        "Political Relations"
+        "Counteroffensive",
+        "Reorganization",
+        "Tactical Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
+            "e_2"
+        ],
+        "Counteroffensive": [
+            "e_2"
+        ],
+        "Reorganization": [
             "e_3"
         ],
-        "Logistics and Support": [
+        "Tactical Planning": [
             "e_1",
-            "e_2"
-        ],
-        "Strategic Timing": [
-            "e_2"
-        ],
-        "Political Relations": [
-            "e_3"
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd August",
+            "date": "25th March",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Eighth Army is supplied with the resources necessary for a strong advance, including numerous transport companies for supplies and equipment."
-        },
-        {
-            "event": "e_2",
-            "date": "23rd October",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The planned offensive against enemy positions is set for 23rd October, carefully timed according to lunar phases to benefit night assaults."
-        },
-        {
-            "event": "e_3",
-            "date": "1942",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_6"
-            ],
-            "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Allies prepare to launch a strategic invasion of North Africa, aligning resources and tactics while acknowledging possible political implications."
+            "eventSummary": "Operation SUPERCHARGE occurs as Eighth Army prepares an overwhelming force to attack the enemy's rear, setting off a series of operations in southern Tunisia."
+        },
+        {
+            "event": "e_2",
+            "date": "26th March",
+            "locations": [
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In the Battle of El Hamma, following heavy air attacks, the New Zealand Division successfully engages and overruns enemy defenses, opening the way to Gabes."
+        },
+        {
+            "event": "e_3",
+            "date": "16th March",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "First Army begins reorganization and training after overcoming the enemy at Thala."
+        },
+        {
+            "event": "e_4",
+            "date": "26th February",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The enemy starts an offensive, disrupting the reorganizing efforts of First Army."
         }
     ]
 }

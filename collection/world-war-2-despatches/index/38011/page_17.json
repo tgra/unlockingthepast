@@ -1,142 +1,120 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Colonel Gubbins",
-            "p_2": "Brigadier Fraser",
-            "p_3": "Lieut.-Colonel Trappes-Lomax",
-            "p_4": "Colonel Dowler",
-            "p_5": "General Bethouart"
+            "p_1": "General Fleischer",
+            "p_2": "Lieutenant-Colonel TrappesLomax",
+            "p_3": "Brigadier Fraser"
         },
         "locations": {
-            "l_1": "Bodo",
-            "l_2": "Scapa Flow",
-            "l_3": "Mo",
-            "l_4": "Harstad",
-            "l_5": "Rognan",
-            "l_6": "Southern Norway",
-            "l_7": "Messingletten"
+            "l_1": "BjerkvikOjijord",
+            "l_2": "Gratangen",
+            "l_3": "Hartvigvand",
+            "l_4": "Graesdalen valley",
+            "l_5": "Harstad",
+            "l_6": "Ballangen",
+            "l_7": "Ofot Fjord",
+            "l_8": "Salangen",
+            "l_9": "Mo",
+            "l_10": "Hemnes Peninsula",
+            "l_11": "Bodo",
+            "l_12": "Scapa",
+            "l_13": "Ankenes",
+            "l_14": "Fjord Head"
         },
         "events": {
-            "e_1": "Evacuation from Bodo",
-            "e_2": "Formation of BODOFORCE",
-            "e_3": "Enemy Air Attacks",
-            "e_4": "Reinforcement and Supply Difficulties"
+            "e_1": "Bombing of H.M. Ships",
+            "e_2": "Attacks on shipping in the Ofot Fjord",
+            "e_3": "Setting fire to an oil tank at Harstad"
         },
         "organisations": {
-            "o_1": "24th Guards Brigade",
-            "o_2": "South Wales Borderers",
-            "o_3": "Irish Guards",
-            "o_4": "Fleet Air Arm"
+            "o_1": "French Co-ordinating Staff",
+            "o_2": "Force H.Q.",
+            "o_3": "British Medical Units"
         }
     },
     "keywords": [
-        "Navy",
-        "equipment",
-        "fishing boats",
-        "aircraft",
-        "retreat",
-        "reinforcements",
-        "evacuation"
+        "enemy forces",
+        "supply",
+        "transport",
+        "maintenance",
+        "base area",
+        "medical plan",
+        "air attack"
     ],
     "themes": [
         "Military Operations",
         "Logistics",
-        "Evacuation",
-        "Air Support",
-        "Reinforcement Challenges"
+        "Medical Evacuation",
+        "Air Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Logistics": [
-            "e_4"
-        ],
-        "Evacuation": [
-            "e_1"
-        ],
-        "Air Support": [
+            "e_2",
             "e_3"
         ],
-        "Reinforcement Challenges": [
-            "e_4"
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ],
+        "Medical Evacuation": [
+            "e_1"
+        ],
+        "Air Operations": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "20th May",
+            "date": "May 20th",
             "locations": [
-                "l_1"
+                "l_5"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The evacuation of troops from Bodo is conducted amidst heavy enemy pressure, with significant equipment losses but also some successful rescues."
+            "eventSummary": "On May 20th, enemy bombers set light to an oil tank at Harstad and two oil tankers moored nearby."
         },
         {
             "event": "e_2",
-            "date": "23rd May",
+            "date": "N/A",
             "locations": [
-                "l_1"
+                "l_7",
+                "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "BODOFORCE is formed under Brigadier Gubbins as troops in the area are amalgamated to strengthen defense against enemy advances."
+            "eventSummary": "Throughout the period, the enemy was active in the air, conducting numerous attacks against H.M. Ships and other vessels in the Ofot Fjord and off Harstad."
         },
         {
             "event": "e_3",
-            "date": "23rd May",
+            "date": "May 20th",
             "locations": [
-                "l_1"
+                "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Troops at Bodo are subjected to bombings by enemy aircraft, raising concerns for their safety and effectiveness."
-        },
-        {
-            "event": "e_4",
-            "date": "On various dates leading up to evacuation",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Significant logistical challenges are encountered in supplying and reinforcing troops at Bodo after previous units suffer equipment losses."
+            "eventSummary": "On May 20th, significant damage occurred when an oil tank at Harstad was set ablaze during enemy bombings."
         }
     ]
 }

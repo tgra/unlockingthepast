@@ -1,118 +1,85 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Walter Campbell",
-            "p_2": "Sir Geoffrey Congreve",
-            "p_3": "Vice-Admiral",
-            "p_4": "Generals Auchinleck",
-            "p_5": "Generals Bethouart",
-            "p_6": "Brigadier J. A. H. Gammell",
-            "p_7": "Captain L. E. H. Maund",
-            "p_8": "Commander A. G. V. Hubback",
-            "p_9": "Wing Commander Atcherley",
-            "p_10": "Group Captain Moore",
-            "p_11": "Colonel A. A. B. Dowler",
-            "p_12": "Captain Louis Hamilton"
+            "p_1": "General Bethouart",
+            "p_2": "Colonel Pollock",
+            "p_3": "Lord Cork",
+            "p_4": "General Fleischer"
         },
         "locations": {
-            "l_1": "Tromso",
-            "l_2": "Clyde",
-            "l_3": "Svolvaer",
-            "l_4": "Andfiord",
-            "l_5": "Norwegian waters",
-            "l_6": "North Sea",
-            "l_7": "Norway",
-            "l_8": "Bodo",
-            "l_9": "Southampton"
+            "l_1": "Skaanland",
+            "l_2": "Tromso",
+            "l_3": "Harstad",
+            "l_4": "Fjeldal",
+            "l_5": "Bardu Foss",
+            "l_6": "Bodo",
+            "l_7": "Norway"
         },
         "events": {
-            "e_1": "Evacuation Operation",
-            "e_2": "Destruction of Oil Tanks",
-            "e_3": "Sailing of the 1st Group",
-            "e_4": "Landing of Guns and Vehicles",
-            "e_5": "Preparation of Aerodromes"
+            "e_1": "Capture of Narvik",
+            "e_2": "Evacuation of Bodo",
+            "e_3": "Arrival of Hurricane fighter squadron",
+            "e_4": "Bombing attacks on Harstad"
         },
         "organisations": {
-            "o_1": "Royal Australian Navy",
-            "o_2": "Norwegian Government",
-            "o_3": "Royal Air Force",
-            "o_4": "Fleet Air Arm"
+            "o_1": "Norwegian Government",
+            "o_2": "Army",
+            "o_3": "Navy",
+            "o_4": "Force Headquarters"
         }
     },
     "keywords": [
-        "Evacuation",
+        "Reconnaissance",
         "Military Operations",
-        "Norwegian Waters",
-        "Air Attack",
-        "Convoy",
-        "Combat",
-        "Success"
+        "Evacuation",
+        "Bombing",
+        "Air Activity"
     ],
     "themes": [
         "Military Operations",
-        "Evacuations",
-        "Cooperation",
-        "Air Defense",
-        "Strategic Planning",
-        "Environmental Challenges"
+        "Diplomacy",
+        "Security"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
-        ],
-        "Evacuations": [
-            "e_1"
-        ],
-        "Strategic Planning": [
-            "e_1",
-            "e_4",
-            "e_5"
-        ],
-        "Environmental Challenges": [
+            "e_3",
             "e_4"
         ],
-        "Cooperation": [
-            "e_5"
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Security": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 8th",
+            "date": "Date Unknown",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_6"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_8"
+                "p_1"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4",
-                "e_5"
+                "e_2"
             ],
-            "eventSummary": "The successful evacuation operation is concluded, marked by smooth arrangements and cooperation among the military staff."
+            "eventSummary": "The Capture of Narvik takes place, representing a significant military achievement."
         },
         {
             "event": "e_2",
-            "date": "June 7th",
+            "date": "30th May 1940",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_6"
             ],
             "persons": [
+                "p_4",
                 "p_2"
             ],
             "organisations": [
@@ -121,61 +88,35 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Commander Sir Geoffrey Congreve leads an operation to destroy oil tanks at Svolvaer, engaging with enemy forces in a significant attack."
+            "eventSummary": "The Evacuation of Bodo occurs following urgent requests for troop protection amidst deteriorating conditions."
         },
         {
             "event": "e_3",
-            "date": "June 7th",
+            "date": "26 May 1940",
             "locations": [
-                "l_2",
                 "l_1"
             ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_4"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "The 1st Group, under the command of Vice-Admiral, sails from Tromso for the Clyde with the intention of establishing security for the convoy."
+            "eventSummary": "The Hurricane fighter squadron arrives but initially fails to establish a base at Skaanland."
         },
         {
             "event": "e_4",
-            "date": "Initial stages of Operation",
+            "date": "Date Unknown",
             "locations": [
-                "l_1"
+                "l_3",
+                "l_5"
             ],
-            "persons": [
-                "p_6",
-                "p_10"
-            ],
+            "persons": [],
             "organisations": [
+                "o_2",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Efforts lead to the successful landing of guns and vehicles in challenging conditions, displaying resilience and coordination across services."
-        },
-        {
-            "event": "e_5",
-            "date": "During the Operation",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_9",
-                "p_10"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The preparation of aerodromes is highlighted as an outstanding combined effort, overcoming significant climatic and logistical challenges."
+            "connectedEvents": [],
+            "eventSummary": "Harstad experiences bombing attacks, leading to the dispersion of stores and intensified military actions."
         }
     ]
 }

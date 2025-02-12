@@ -8,72 +8,78 @@
             "l_1": "Leyte",
             "l_2": "Ishigaki",
             "l_3": "Miyako",
-            "l_4": "Hirara",
-            "l_5": "Midge",
-            "l_6": "South of 19 55 N 129 40 E"
+            "l_4": "Hirara"
         },
         "events": {
-            "e_1": "Operation CIF 57",
-            "e_2": "Fleet Engagement on April 1"
+            "e_1": "Operation on 28th March",
+            "e_2": "Fighter Sweep on 1st April",
+            "e_3": "Bombing Strike on 1st April"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "U.S. Navy"
+            "o_1": "H.M.S. EURYALUS",
+            "o_2": "H.M.S. WHIRLWIND",
+            "o_3": "H.M.S. ARGONAUT",
+            "o_4": "H.M.S. KING GEORGE V",
+            "o_5": "H.M.S. INDOMITABLE",
+            "o_6": "H.M.S. INDEFATIGABLE",
+            "o_7": "H.M.S. ULSTER",
+            "o_8": "H.M.A.S. QUIBERON",
+            "o_9": "H.M.N.Z.S. GAMBIA",
+            "o_10": "H.M.S. VICTORIOUS",
+            "o_11": "U.S.S. KINGFISH"
         }
     },
     "keywords": [
-        "fuelling",
-        "tactical command",
-        "naval operations",
-        "air strikes",
-        "enemy aircraft"
+        "Fleet",
+        "Fuelling",
+        "Task Unit",
+        "Bomber Strikes",
+        "Radar",
+        "Fighter Sweep"
     ],
     "themes": [
         "Military Operations",
-        "Naval Coordination",
-        "Aerial Attacks"
+        "Naval Strategy",
+        "Air Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Naval Coordination": [
+        "Naval Strategy": [
             "e_1"
         ],
-        "Aerial Attacks": [
-            "e_2"
+        "Air Operations": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 28-31",
+            "date": "28th March",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Fleet operations involving tactical command switches, fuelling, and coordination for air strikes occur over several days, culminating with effective aerial maneuvers against enemy forces."
+            "eventSummary": "On 28th March, the Fleet divided into two groups for fuelling operations in the area near Leyte, while maintaining contact with each group."
         },
         {
             "event": "e_2",
-            "date": "April 1",
+            "date": "1st April",
             "locations": [
-                "l_1",
                 "l_2",
                 "l_3"
             ],
@@ -82,13 +88,22 @@
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_10",
+                "o_11"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "On 1st April, a fighter sweep is executed after detecting enemy bogeys, resulting in engagements that down multiple enemy aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "1st April",
+            "locations": [
+                "l_2"
             ],
-            "eventSummary": "On April 1, the Fleet engages in defensive maneuvers against enemy aircraft, resulting in multiple interceptions and casualties on the opposing side, while sustaining minor damages."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On 1st April, a bombing strike is conducted against Ishigaki to target airfields and runways, leading to significant enemy losses."
         }
     ]
 }

@@ -1,83 +1,104 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Japanese officers",
-            "p_2": "R.A.F. officers"
+            "p_1": "Rear Admiral C. H. J. Harcourt",
+            "p_2": "Rear Admiral Cc. S. Daniel",
+            "p_3": "squadron leader"
         },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Sumatra",
-            "l_3": "Java",
-            "l_4": "French Indo-China",
-            "l_5": "Siam",
-            "l_6": "Cocos Islands",
-            "l_7": "Rangoon",
-            "l_8": "Southern Burma"
+            "l_1": "Hong Kong",
+            "l_2": "Kowloon",
+            "l_3": "Shamshui Po",
+            "l_4": "New Territories",
+            "l_5": "Taipo",
+            "l_6": "Fanling",
+            "l_7": "Okinawa"
         },
         "events": {
-            "e_1": "Operation Zipper",
-            "e_2": "Re-occupation of Rangoon",
-            "e_3": "Termination of hostilities"
+            "e_1": "Occupation of Hong Kong",
+            "e_2": "Surrender of Japanese at Hong Kong",
+            "e_3": "Arrival of Shield Convoy",
+            "e_4": "Establishment of air headquarters"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "United Nations"
+            "o_1": "Royal Air Force",
+            "o_2": "Japanese Imperial Army"
         }
     },
     "keywords": [
-        "Japanese Air Force",
-        "Lend/Lease",
-        "Maintenance Organisation",
-        "surprise attack"
+        "Hong Kong",
+        "surrender",
+        "occupation",
+        "Japanese",
+        "air defense",
+        "Royal Air Force",
+        "convoy"
     ],
     "themes": [
         "Military Operations",
-        "Intelligence",
-        "Logistics",
-        "Air Force Strategy"
+        "Occupation",
+        "Administrative Challenges"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Logistics": [
-            "e_2"
+        "Occupation": [
+            "e_1",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
-        ],
-        "Intelligence": [
+        "Administrative Challenges": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "D-Day",
+            "date": "August 30th, 1945",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_6"
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The occupation of Hong Kong begins on August 30th, 1945, with British forces landing after a strong naval force arrives."
+        },
+        {
+            "event": "e_2",
+            "date": "September 16th, 1945",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Operation Zipper involves a large-scale Allied invasion aimed at surprising Japanese forces in Malaya and Sumatra."
+            "eventSummary": "The formal surrender of the Japanese at Hong Kong takes place on September 16th, 1945."
         },
         {
-            "event": "e_2",
-            "date": "May 1945",
+            "event": "e_3",
+            "date": "September 4th, 1945",
             "locations": [
-                "l_7",
-                "l_8"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -85,25 +106,19 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The re-occupation of Rangoon marks a significant Allied advance, addressing maintenance challenges faced by air forces in the region."
+            "connectedEvents": [],
+            "eventSummary": "The Shield Convoy arrives in Hong Kong on September 4th, 1945, bringing 3,400 officers and men."
         },
         {
-            "event": "e_3",
-            "date": "August 1945",
+            "event": "e_4",
+            "date": "September 12th, 1945",
             "locations": [
                 "l_1"
             ],
             "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The sudden termination of hostilities in August leads to logistical difficulties for the maintenance of American aircraft in the region."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An air headquarters is established in Hong Kong on September 12th, 1945."
         }
     ]
 }

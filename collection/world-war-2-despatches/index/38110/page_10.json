@@ -1,39 +1,41 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Bradley",
-            "p_2": "Rear-Admiral M. L. Deyo"
+            "p_1": "Commander-in-Chief, Plymouth"
         },
         "locations": {
-            "l_1": "Portsmouth",
-            "l_2": "Cherbourg",
-            "l_3": "South Coast of France",
-            "l_4": "Portland"
+            "l_1": "Brest",
+            "l_2": "Bay of Biscay",
+            "l_3": "France",
+            "l_4": "SWORD sector",
+            "l_5": "Ile de Bas",
+            "l_6": "Havre",
+            "l_7": "Cherbourg"
         },
         "events": {
-            "e_1": "Operation Anvil (later Dragoon)",
-            "e_2": "Naval Bombardment of Cherbourg",
-            "e_3": "Capture of Cherbourg"
+            "e_1": "Construction of MULBERRIES",
+            "e_2": "Destroyer Action off Ile de Bas",
+            "e_3": "Increased Enemy Action"
         },
         "organisations": {
-            "o_1": "COREP",
-            "o_2": "Admiralty",
-            "o_3": "COMINCH"
+            "o_1": "Coastal Command",
+            "o_2": "Task Force Commanders",
+            "o_3": "A/U Support Groups",
+            "o_4": "Assault Force",
+            "o_5": "Assault Group Commanders"
         }
     },
     "keywords": [
-        "naval bombardment",
-        "military operation",
-        "warships",
-        "landing craft",
-        "minesweeping",
-        "air attacks"
+        "U-Boats",
+        "enemy action",
+        "assault area",
+        "mining",
+        "convoys"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategies",
-        "Losses due to Enemy Actions",
-        "Coordination of Forces"
+        "Naval Warfare",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
@@ -41,71 +43,60 @@
             "e_2",
             "e_3"
         ],
-        "Naval Strategies": [
-            "e_2"
-        ],
-        "Losses due to Enemy Actions": [
+        "Logistics": [
+            "e_1",
             "e_3"
         ],
-        "Coordination of Forces": [
-            "e_1",
+        "Naval Warfare": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 20, 1944",
+            "date": "8th June 1944",
             "locations": [
-                "l_3"
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_3",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The operation known as Anvil, later called Dragoon, is planned for the South Coast of France, focusing on the release of warships and landing craft."
-        },
-        {
-            "event": "e_2",
-            "date": "June 27, 1944",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2",
-                "p_1"
-            ],
-            "organisations": [
+                "o_1",
                 "o_2",
-                "o_3"
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "Rear-Admiral Deyo leads a naval bombardment of Cherbourg to assist General Bradley's land forces in their assault on the city."
+            "eventSummary": "The construction of the MULBERRIES devices commenced on D-Day, allowing for improved logistics for troop movement and supply."
         },
         {
-            "event": "e_3",
-            "date": "June 27, 1944",
+            "event": "e_2",
+            "date": "9th June 1944",
             "locations": [
-                "l_2"
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
+            "connectedEvents": [],
+            "eventSummary": "On 9th June, Force 26, comprising eight destroyers, engaged enemy destroyers in action off the Ile de Bas, resulting in two enemy destroyers being destroyed."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_4"
             ],
-            "eventSummary": "The capture of Cherbourg is completed, leading to reconnaissance and assessment of the port for salvage operations."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Enemy action increased following the successful landings, with intensified shelling and attempts to disrupt the build-up of convoys."
         }
     ]
 }

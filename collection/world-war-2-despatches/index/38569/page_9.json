@@ -1,135 +1,141 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Ryder",
-            "p_2": "Darlan",
-            "p_3": "Captain O. R. Bennehoff",
-            "p_4": "Commander H. G. Scott",
-            "p_5": "Captain N. V. Dickinson"
+            "p_1": "B Waite",
+            "p_2": "H. St. J. Fancourt",
+            "p_3": "J. V. Wilkinson",
+            "p_4": "General Mast"
         },
         "locations": {
-            "l_1": "Algiers",
-            "l_2": "Bougie",
-            "l_3": "Djidjelli",
-            "l_4": "C Sector",
-            "l_5": "BULOLO",
-            "l_6": "Cap Carbon"
+            "l_1": "BULOLO",
+            "l_2": "A WuiTe Beach",
+            "l_3": "Algiers",
+            "l_4": "Sidi Ferruch",
+            "l_5": "Fort Duperre",
+            "l_6": "Maison Blanche",
+            "l_7": "Blida aerodrome",
+            "l_8": "Fort L Empereur",
+            "l_9": "Hussein Dey",
+            "l_10": "Jet e du Nord",
+            "l_11": "Cap Matifou"
         },
         "events": {
-            "e_1": "Air attack at C Sector",
-            "e_2": "Arrival of H.M.S. SPEY",
-            "e_3": "Assault on Bougie",
-            "e_4": "Landing at Djidjelli"
+            "e_1": "Landing of the 11th Brigade at A Sector",
+            "e_2": "Bombing of Fort Duperre and Cap Matifou",
+            "e_3": "Occupation of Blida aerodrome",
+            "e_4": "Withdrawal of BROKE and damage from battery",
+            "e_5": "Attempted attacks on submarine"
         },
         "organisations": {
-            "o_1": "U.S. Navy",
-            "o_2": "Royal Navy",
-            "o_3": "R.A.F."
+            "o_1": "Royal Navy",
+            "o_2": "British Brigade",
+            "o_3": "Commandos",
+            "o_4": "U.S. R.C.T."
         }
     },
     "keywords": [
-        "air attack",
-        "casualties",
-        "unloading",
-        "Assault",
-        "November 10",
-        "naval operation",
-        "troops"
+        "Gunfire",
+        "Landing",
+        "Report",
+        "Withdrawal",
+        "Bombing",
+        "Occupation",
+        "Support"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Naval Engagement",
-        "Assault Planning"
+        "Naval Operations",
+        "Air Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Logistics": [
+        "Naval Operations": [
+            "e_4",
             "e_2"
         ],
-        "Naval Engagement": [
-            "e_1",
+        "Air Support": [
             "e_2"
-        ],
-        "Assault Planning": [
-            "e_3",
-            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 10",
+            "date": "Unknown",
             "locations": [
-                "l_4"
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "Landing of the 11th Brigade at A Sector appears to be successful."
+        },
+        {
+            "event": "e_2",
+            "date": "Around 1030",
+            "locations": [
+                "l_5",
+                "l_11"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Axis air attack focuses on ships at C Sector, resulting in heavy damage to U.S.S. LEEDSTOWN and other vessels, while defensive actions prevent further casualties."
-        },
-        {
-            "event": "e_2",
-            "date": "November 10",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "H.M.S. SPEY arrives in Algiers with American soldiers after navigating through dangerous waters to participate in the assault."
-        },
-        {
-            "event": "e_3",
-            "date": "November 10",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_5"
-            ],
-            "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_4"
             ],
-            "eventSummary": "The slow assault convoy departs for Bougie, with multiple ships and escorts, initiating the military operation against the coastal defense batteries."
+            "eventSummary": "Fort Duperre and Cap Matifou are bombed; Commandos occupy positions without resistance."
+        },
+        {
+            "event": "e_3",
+            "date": "Around 1130",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Blida aerodrome is occupied by military forces."
         },
         {
             "event": "e_4",
-            "date": "November 11",
+            "date": "Around 1000",
             "locations": [
-                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "BROKE withdraws after sustaining damage from cannon fire."
+        },
+        {
+            "event": "e_5",
+            "date": "Around 0632",
+            "locations": [
                 "l_3"
             ],
             "persons": [],
-            "organisations": [
-                "o_2"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Troops land at Djidjelli as part of the planned assault, following the earlier operations at Bougie."
+            "eventSummary": "An aircraft attacks a submarine leaving Algiers harbour."
         }
     ]
 }

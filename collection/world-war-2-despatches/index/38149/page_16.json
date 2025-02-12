@@ -1,104 +1,113 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Not specified"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Far East",
-            "l_2": "Japan",
-            "l_3": "United Kingdom"
+            "l_1": "United Kingdom",
+            "l_2": "London",
+            "l_3": "Great Yarmouth",
+            "l_4": "South Wales",
+            "l_5": "Dover",
+            "l_6": "Solent"
         },
         "events": {
-            "e_1": "Outbreak of War with Japan",
-            "e_2": "Flying Bomb Battle",
-            "e_3": "Disbanding of Batteries"
+            "e_1": "Resumption of Night Attacks",
+            "e_2": "Operation Harlequin",
+            "e_3": "Heavy Raids on London",
+            "e_4": "Intensive Raiding"
         },
         "organisations": {
-            "o_1": "Anti-Aircraft Command",
-            "o_2": "R.A.S.C."
+            "o_1": "R.A.F.",
+            "o_2": "U.S. Army"
         }
     },
     "keywords": [
-        "Anti-Aircraft",
-        "Equipment",
-        "Batteries",
-        "Flying Bomb",
-        "Searchlights"
+        "Night Attacks",
+        "German Air Forces",
+        "Raids",
+        "Searchlights",
+        "Radar",
+        "Gunnery",
+        "Defence"
     ],
     "themes": [
         "Military Operations",
-        "Equipment Development",
-        "Manpower Challenges",
-        "Tactical Employment"
+        "Aerial Warfare",
+        "Defence Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Aerial Warfare": [
+            "e_1",
             "e_3"
         ],
-        "Equipment Development": [
-            "e_2"
-        ],
-        "Manpower Challenges": [
-            "e_3"
-        ],
-        "Tactical Employment": [
-            "e_2"
+        "Defence Strategy": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 1941",
+            "date": "Autumn 1943",
             "locations": [
-                "l_2",
-                "l_3"
+                "l_1",
+                "l_6"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The outbreak of war with Japan causes significant shifts in military resource allocation within the Anti-Aircraft Command."
-        },
-        {
-            "event": "e_2",
-            "date": "June 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "During the flying bomb battle, various anti-aircraft weapons are employed and new tactics are implemented to counter the aerial threat."
-        },
-        {
-            "event": "e_3",
-            "date": "November 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Batteries that had become non-operational are officially disbanded due to manpower and equipment shortages."
+            "eventSummary": "In the autumn of 1943, German air forces resume night attacks on coastal towns, aiming again at London after a period of relative inactivity."
+        },
+        {
+            "event": "e_2",
+            "date": "July and August 1943",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A large-scale exercise known as Operation Harlequin takes place, aimed at increasing coastal defences."
+        },
+        {
+            "event": "e_3",
+            "date": "January 1944",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Heavy raids resume on London, with 200 aircraft participating in the first raid, leading to significant damage and losses for both sides."
+        },
+        {
+            "event": "e_4",
+            "date": "February 1944",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Intensive raiding begins, culminating in a week of sustained attacks on London."
         }
     ]
 }

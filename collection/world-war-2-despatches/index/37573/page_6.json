@@ -1,91 +1,171 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "J. H. MARSHALL-CORNWALL"
+            "p_1": "General Sir Henry Karslake",
+            "p_2": "Brigadier Beauman",
+            "p_3": "General Weygand",
+            "p_4": "General Altmayer",
+            "p_5": "General Evans",
+            "p_6": "General de la Laurencie",
+            "p_7": "Brigadier Sir John Laurie",
+            "p_8": "General Brooke"
         },
         "locations": {
-            "l_1": "Alengon",
-            "l_2": "Rennes",
-            "l_3": "Brittany",
-            "l_4": "Cherbourg",
-            "l_5": "St. Sauveur"
+            "l_1": "Rouen",
+            "l_2": "France",
+            "l_3": "Bethune",
+            "l_4": "Andelle",
+            "l_5": "Amiens",
+            "l_6": "Forges-Les-Eaux",
+            "l_7": "Lower Seine",
+            "l_8": "Alencon",
+            "l_9": "Conches",
+            "l_10": "Evreux",
+            "l_11": "Mortagne",
+            "l_12": "Cherbourg"
         },
         "events": {
-            "e_1": "Withdrawal of the Tenth Army",
-            "e_2": "Evacuation at Cherbourg"
+            "e_1": "German armoured attack",
+            "e_2": "Battle of the Seine",
+            "e_3": "Evacuation of the B.E.F.",
+            "e_4": "French withdrawal",
+            "e_5": "Attack on the 157th Infantry Brigade"
         },
         "organisations": {
-            "o_1": "Tenth Army",
-            "o_2": "52nd Division",
-            "o_3": "3rd Armoured Brigade",
-            "o_4": "157th Infantry Brigade",
-            "o_5": "K.O.S.B."
+            "o_1": "British Army",
+            "o_2": "Tenth French Army",
+            "o_3": "IX Corps"
         }
     },
     "keywords": [
-        "Withdrawal",
-        "Evacuation",
-        "Resistance",
-        "Embarkation"
+        "Cavalry Divisions",
+        "German tanks",
+        "Lines of Communication",
+        "infantry battalions",
+        "armoured attack"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Maneuvers",
-        "Strategic Decisions"
+        "Defensive Strategy",
+        "Withdrawals",
+        "Combat Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_4"
         ],
-        "Tactical Maneuvers": [
+        "Defensive Strategy": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Withdrawals": [
+            "e_3",
+            "e_4"
+        ],
+        "Combat Engagements": [
+            "e_1",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "20th June, 1940",
+            "date": "7th June",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
                 "o_1",
-                "o_3",
-                "o_4"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The Tenth Army issues orders for a general retirement towards Brittany in response to enemy pressure."
+            "eventSummary": "The German armoured attack is at its height as the Tenth Army Headquarters attempts to coordinate a response and maintain defense lines against the advancing Germans."
         },
         {
             "event": "e_2",
-            "date": "20th June, 1940",
+            "date": "8th June",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_1",
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_5",
+                "p_4",
+                "p_2"
             ],
             "organisations": [
-                "o_2",
-                "o_5"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_4"
             ],
-            "eventSummary": "The evacuation at Cherbourg is completed by 4 p.m. as German forces close in, leading to the abandonment of some military equipment."
+            "eventSummary": "The Germans renew their offensive along the Seine, leading to a tactical retreat of British forces as the situation deteriorates."
+        },
+        {
+            "event": "e_3",
+            "date": "18th June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The evacuation of the British Expeditionary Force is underway, marking a significant retreat in the face of overwhelming German advances."
+        },
+        {
+            "event": "e_4",
+            "date": "14th June",
+            "locations": [
+                "l_1",
+                "l_11"
+            ],
+            "persons": [
+                "p_4",
+                "p_2",
+                "p_7"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "As German pressure increases, the Tenth French Army begins a withdrawal south-west, creating vulnerabilities in their defensive lines."
+        },
+        {
+            "event": "e_5",
+            "date": "unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 157th Infantry Brigade is subjected to an attack, highlighting the intense ground combat and strategic challenges faced by the French Army."
         }
     ]
 }

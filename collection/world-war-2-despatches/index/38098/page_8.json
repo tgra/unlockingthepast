@@ -1,82 +1,94 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "J. F. Somerville"
+            "p_1": "Rear-Admiral Commanding, Second Cruiser Squadron",
+            "p_2": "Rear-Admiral Commanding, First Cruiser Squadron",
+            "p_3": "Commanding Officer"
         },
         "locations": {
-            "l_1": "Bergen",
-            "l_2": "Norwegian coast",
-            "l_3": "47 16 N, 15 51 W",
-            "l_4": "France"
+            "l_1": "Bismarck",
+            "l_2": "North Sea",
+            "l_3": "Davis Strait",
+            "l_4": "Brest",
+            "l_5": "Straits of Gibraltar",
+            "l_6": "Dakar"
         },
         "events": {
-            "e_1": "Operation to sink Bismarck",
-            "e_2": "Coastal Command Operations",
-            "e_3": "Air attack on Bismarck and Prinz Eugen",
-            "e_4": "Bombing by enemy aircraft"
+            "e_1": "search at dawn",
+            "e_2": "torpedo attack by the aircraft of VICTORIOUS",
+            "e_3": "loss of touch",
+            "e_4": "search morning of 25th May"
         },
         "organisations": {
-            "o_1": "Force H",
-            "o_2": "Royal Air Force",
-            "o_3": "Home Fleet"
+            "o_1": "Admiralty"
         }
     },
     "keywords": [
         "Bismarck",
-        "ARK ROYAL",
-        "RENOWN",
-        "SHEFFIELD",
-        "DORSETSHIRE",
-        "Coastal Command",
-        "air attacks"
+        "VICTORIOUS",
+        "SUFFOLK",
+        "NORFOLK",
+        "PRINCE OF WALES",
+        "PRINZ EUGEN",
+        "U-boat attack"
     ],
     "themes": [
         "Military Operations",
         "Naval Engagements",
-        "Aerial Warfare",
-        "Fleet Coordination"
+        "Search and Recovery"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Naval Engagements": [
-            "e_1",
+            "e_2",
+            "e_3",
             "e_4"
         ],
-        "Aerial Warfare": [
-            "e_3"
-        ],
-        "Fleet Coordination": [
-            "e_1",
+        "Naval Engagements": [
             "e_2"
+        ],
+        "Search and Recovery": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 27, 1941",
+            "date": "Date of event unknown",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "The operation to sink the Bismarck is ongoing, with several naval vessels involved in the action and air support anticipated."
+            "eventSummary": "Rear-Admiral Commanding, Second Cruiser Squadron, prepares to conduct a search at dawn for enemy vessels."
         },
         {
             "event": "e_2",
-            "date": "May 21-27, 1941",
+            "date": "Date of event unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The aircraft of VICTORIOUS develop a torpedo attack against enemy vessels."
+        },
+        {
+            "event": "e_3",
+            "date": "Date of event unknown",
             "locations": [
                 "l_1"
             ],
@@ -84,41 +96,29 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Coastal Command carries out operations in connection with the Bismarck and Prinz Eugen, including reconnaissance and attacks despite challenging weather conditions."
-        },
-        {
-            "event": "e_3",
-            "date": "May 27, 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Air attacks on the Bismarck and Prinz Eugen are launched, with limited success due to poor visibility."
+            "eventSummary": "The loss of touch occurs primarily due to over-confidence in R.D.F. systems."
         },
         {
             "event": "e_4",
-            "date": "May 27, 1941",
+            "date": "25th May",
             "locations": [
-                "l_3"
+                "l_1"
             ],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "Enemy aircraft are reported to have engaged naval vessels in the vicinity during the struggle against the Bismarck."
+            "eventSummary": "SUFFOLK searches towards the enemy's last bearing on the morning of May 25th."
         }
     ]
 }

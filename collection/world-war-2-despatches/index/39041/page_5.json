@@ -1,87 +1,82 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral S. S. Bonham-Carter",
-            "p_2": "Captain"
+            "p_1": "Rear Admiral S. S. Bonham-Carter, C.B., C.V.O."
         },
         "locations": {
             "l_1": "Kola Inlet",
             "l_2": "Scapa",
             "l_3": "Seidisfiord",
-            "l_4": "Murmansk",
-            "l_5": "Trondheim",
-            "l_6": "Narvik",
-            "l_7": "Bear Island",
-            "l_8": "Iceland"
+            "l_4": "Hvalfiord",
+            "l_5": "Murmansk",
+            "l_6": "Trondheim",
+            "l_7": "Narvik",
+            "l_8": "Bear Island",
+            "l_9": "Iceland",
+            "l_10": "Baltic",
+            "l_11": "North Russia",
+            "l_12": "North Norway"
         },
         "events": {
-            "e_1": "Sinking of Polish submarine P.551",
-            "e_2": "Collision of PUNJABI with KING GEORGE V",
-            "e_3": "Damage to H.M.S. TRINIDAD",
-            "e_4": "Air attack on TRINIDAD",
-            "e_5": "Attack by Luftwaffe on convoy",
-            "e_6": "Departure of LUTZOW from the Baltic",
-            "e_7": "Changes in convoy dispositions"
+            "e_1": "Sinking of the P.551 submarine",
+            "e_2": "Collision of the PUNJABI with the KING GEORGE V",
+            "e_3": "Loss of H.M.S. TRINIDAD",
+            "e_4": "Air attack on TRINIDAD on May 14th",
+            "e_5": "Departure of LUTZOW from the Baltic"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Luftwaffe",
-            "o_3": "Soviet Navy"
+            "o_1": "Home Fleet",
+            "o_2": "British Naval Officer, North Russia"
         }
     },
     "keywords": [
-        "Submarine",
-        "Torpedo",
-        "Convoy",
-        "Aircraft",
-        "Battleship",
-        "Escorts"
+        "submarine",
+        "convoy",
+        "battlefleet",
+        "escort",
+        "air attack",
+        "cruisers",
+        "destroyers"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Strategic Decisions",
-        "Allied Cooperation"
+        "Naval Engagements",
+        "Air Attacks",
+        "Command Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Naval Engagements": [
+            "e_2"
+        ],
+        "Air Attacks": [
             "e_4"
         ],
-        "Naval Warfare": [
-            "e_1",
-            "e_2",
+        "Command Decisions": [
             "e_3",
-            "e_4"
-        ],
-        "Strategic Decisions": [
-            "e_5",
-            "e_6",
-            "e_7"
-        ],
-        "Allied Cooperation": [
-            "e_6",
-            "e_7"
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2nd May",
+            "date": "May 2nd",
             "locations": [
                 "l_1"
             ],
             "persons": [],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The Polish submarine P.551 is sighted by convoy escorts and sunk, leading to subsequent attacks on the convoy."
+            "eventSummary": "The Polish submarine P.551 is sighted by the convoy escort and sunk 100 miles from her position."
         },
         {
             "event": "e_2",
-            "date": "1st May",
+            "date": "May 1st",
             "locations": [
                 "l_2",
                 "l_3"
@@ -91,74 +86,42 @@
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The PUNJABI collides with KING GEORGE V in fog, causing damage and sinking of the PUNJABI."
+            "eventSummary": "On May 1st, the PUNJABI collides with the KING GEORGE V in fog, leading to the sinking of the PUNJABI and damage to the KING GEORGE V."
         },
         {
             "event": "e_3",
-            "date": "9th May",
+            "date": "May 9th",
             "locations": [
-                "l_4"
+                "l_5"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "H.M.S. TRINIDAD, previously damaged, is scheduled for permanent repairs in the US but faces delays due to enemy movements."
+            "eventSummary": "The H.M.S. TRINIDAD, previously damaged, is set to leave for permanent repair in the United States after temporary repairs at Murmansk."
         },
         {
             "event": "e_4",
-            "date": "14th May",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The TRINIDAD is attacked by enemy aircraft and suffers severe damage, leading to her eventual sinking."
-        },
-        {
-            "event": "e_5",
-            "date": "15th May",
+            "date": "May 14th",
             "locations": [
                 "l_8"
             ],
             "persons": [],
-            "organisations": [
-                "o_2"
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "About 25 German Ju.88 bombers attack convoy ships but do not score any hits, highlighting ongoing air threats."
+            "eventSummary": "The TRINIDAD is sighted and attacked by enemy aircraft on the morning of May 14th, suffering a bomb hit that leads to it being abandoned."
         },
         {
-            "event": "e_6",
-            "date": "16th May",
+            "event": "e_5",
+            "date": "May 16th",
             "locations": [
-                "l_2"
+                "l_10"
             ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The pocket battleship LUTZOW departs the Baltic to join allied forces in Norway for convoy support."
-        },
-        {
-            "event": "e_7",
-            "date": "Not specified",
-            "locations": [],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Convoy dispositions are adjusted to account for reduced threats from enemy destroyers and to enhance protection measures."
+            "eventSummary": "The pocket battleship LUTZOW leaves the Baltic to join the force in Norway."
         }
     ]
 }

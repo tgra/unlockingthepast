@@ -1,67 +1,94 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Headquarters, Far East"
+            "p_1": "General Officer Commanding",
+            "p_2": "His Majesty's Government",
+            "p_3": "Chiefs of Staff"
         },
         "locations": {
-            "l_1": "Burma",
-            "l_2": "Hong Kong",
-            "l_3": "East Coast of Malaya",
-            "l_4": "Mersing",
-            "l_5": "Johore",
-            "l_6": "Kuantan",
-            "l_7": "Kota Bharu",
-            "l_8": "Singapore Island",
-            "l_9": "Penang",
-            "l_10": "Kra Isthmus",
-            "l_11": "Singora",
-            "l_12": "Haad Yai Junction",
-            "l_13": "Songhla"
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Northern Malaya",
+            "l_4": "Southern Johore",
+            "l_5": "Kelantan",
+            "l_6": "Kuantan"
         },
         "events": {
-            "e_1": "Defensive Preparations",
-            "e_2": "Operation Matador"
+            "e_1": "Japanese Army Tactics",
+            "e_2": "Matador plan",
+            "e_3": "First shock of the Japanese attack"
         },
         "organisations": {
-            "o_1": "Australian Brigade",
-            "o_2": "General Headquarters, Far East"
+            "o_1": "British Army",
+            "o_2": "Indian regiments",
+            "o_3": "General Headquarters",
+            "o_4": "F.E.C.B."
         }
     },
     "keywords": [
-        "Defensive Preparations",
-        "Operation Matador",
-        "Malaya",
-        "Counter-attack",
-        "Beaches",
-        "Japanese invasion"
+        "Japanese Army",
+        "Morale",
+        "Offensive Spirit",
+        "Defensive",
+        "Retreat"
     ],
     "themes": [
-        "Military Strategy",
-        "Defense Planning",
-        "Operational Logistics"
+        "Military Operations",
+        "Morale",
+        "Strategic Decisions",
+        "Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Defense Planning": [
-            "e_1"
+            "e_3"
         ],
         "Strategic Decisions": [
             "e_2"
+        ],
+        "Morale": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 1941",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_4",
-                "l_6",
-                "l_7"
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Japanese Army Tactics involve infiltration and the use of light infantry screens against enemy forces."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Matador plan is a tactical offensive initiative that ultimately proves impracticable."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -71,28 +98,10 @@
                 "o_2"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "Defensive preparations are underway, focusing on the effective defense of the beaches and establishing a general strategy amid discussions of troop allocation and fortification."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_10",
-                "l_11",
-                "l_12"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Operation Matador is strategized to preempt Japanese advances, requiring rapid mobilization of forces to secure key positions before enemy landings."
+            "eventSummary": "Young soldiers face the first shock of the Japanese attack under conditions of low morale and inexperience."
         }
     ]
 }

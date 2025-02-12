@@ -1,0 +1,110 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Vice Admiral",
+            "p_2": "Commander-in-Chief",
+            "p_3": "General Officer Commanding"
+        },
+        "locations": {
+            "l_1": "Melos harbour",
+            "l_2": "Crete",
+            "l_3": "Alexandria",
+            "l_4": "Suda Bay",
+            "l_5": "Kaso Strait",
+            "l_6": "Tymbaki"
+        },
+        "events": {
+            "e_1": "Attack on Force A",
+            "e_2": "Raids on Melos harbour",
+            "e_3": "Naval reinforcement landings in Crete"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "1st Battle Squadron",
+            "o_3": "Queens Regiment"
+        }
+    },
+    "keywords": [
+        "aircraft",
+        "bombing",
+        "convoy",
+        "reinforcements",
+        "military operation"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagements": [
+            "e_1"
+        ],
+        "Reconnaissance": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26th / 27th May",
+            "locations": [
+                "l_3",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "During the attack at 1320, Force A is engaged by 20 enemy aircraft approaching from the African coast, resulting in significant damage to FORMIDABLE and NUBIAN."
+        },
+        {
+            "event": "e_2",
+            "date": "26th / 27th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Vice Admiral orders a raid on Melos harbour due to intelligence about German preparations to invade Crete."
+        },
+        {
+            "event": "e_3",
+            "date": "26th May",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "ABDIEL, HERO, and NIZAM land 750 Special Service Troops and Army stores in Suda Bay, marking the last reinforcement sent to Crete."
+        }
+    ]
+}

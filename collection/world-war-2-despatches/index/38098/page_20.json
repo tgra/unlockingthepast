@@ -1,84 +1,154 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Jack C. Tovey",
-            "p_2": "James F. Somerville"
+            "p_1": "H.M. Ships SUFFOLK",
+            "p_2": "H.M. Ships NORFOLK",
+            "p_3": "H.M.S. NORFOLK",
+            "p_4": "H.M.S. HOOD",
+            "p_5": "H.M.S. PRINCE OF WALES",
+            "p_6": "A.O.C.-in-C."
         },
         "locations": {
-            "l_1": "Loch Ewe",
-            "l_2": "Gibraltar",
-            "l_3": "Londonderry",
-            "l_4": "Hvalfiord"
+            "l_1": "Bergen",
+            "l_2": "Norwegian coast",
+            "l_3": "Faeroes",
+            "l_4": "Iceland",
+            "l_5": "Shetlands",
+            "l_6": "Denmark Strait",
+            "l_7": "French Biscay",
+            "l_8": "Reykjavik",
+            "l_9": "Kaldadarnes",
+            "l_10": "Loch Erne"
         },
         "events": {
-            "e_1": "Destruction of BISMARCK",
-            "e_2": "Return of the Fleet"
+            "e_1": "Sinking of H.M.S. HOOD",
+            "e_2": "Action involving BISMARCK",
+            "e_3": "Patrol operations by No. 269 Squadron",
+            "e_4": "First sighting report of the enemy",
+            "e_5": "Shadowing of enemy ships"
         },
         "organisations": {
-            "o_1": "Home Fleet",
-            "o_2": "Admiralty"
+            "o_1": "No. 201 Squadron",
+            "o_2": "No. 220 Squadron",
+            "o_3": "No. 210 Squadron",
+            "o_4": "No. 240 Squadron",
+            "o_5": "No. 269 Squadron",
+            "o_6": "No. 22 Squadron",
+            "o_7": "Coastal Command"
         }
     },
     "keywords": [
+        "patrol",
+        "enemy contact",
+        "weather conditions",
+        "aircraft",
         "BISMARCK",
-        "Force H",
-        "Operation",
-        "Royal Navy",
-        "Admiralty"
+        "H.M.S. HOOD",
+        "H.M.S. PRINCE OF WALES"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Leadership"
+        "Naval Engagements",
+        "Aerial Surveillance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagements": [
+            "e_1",
             "e_2"
         ],
-        "Leadership": [
-            "e_1"
+        "Aerial Surveillance": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "28th May, 1941",
+            "date": "May 24",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_8"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_4",
+                "p_5"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3",
+                "o_7"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The destruction of the German battleship BISMARCK is reported, following a series of naval engagements by Force H under the command of Admiral Tovey, culminating in the successful sinking of the enemy battleship and showcasing the effectiveness of Royal Navy operations."
+            "eventSummary": "The action between the BISMARCK and H.M. Ships PRINCE OF WALES and HOOD is witnessed, leading to the eventual sinking of H.M.S. HOOD."
         },
         {
             "event": "e_2",
-            "date": "29th May, 1941",
+            "date": "May 24",
             "locations": [
                 "l_1",
-                "l_3",
-                "l_4"
+                "l_8"
             ],
             "persons": [
-                "p_1"
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3",
+                "o_7"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The return of the Fleet to various ports occurs, with units such as KING GEORGE V and DORSETSHIRE arriving at their destinations after successful operations against the BISMARCK."
+            "eventSummary": "The BISMARCK engages in battle with H.M. Ships PRINCE OF WALES and HOOD, marking a significant naval engagement."
+        },
+        {
+            "event": "e_3",
+            "date": "May 25",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "No. 269 Squadron conducts patrol operations in search of the enemy following the engagement."
+        },
+        {
+            "event": "e_4",
+            "date": "May 24",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Initial sighting report of the enemy is generated by the Sunderland of No. 201 Squadron."
+        },
+        {
+            "event": "e_5",
+            "date": "May 27",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Aircraft provide ongoing shadowing and reporting on enemy ship positions."
         }
     ]
 }

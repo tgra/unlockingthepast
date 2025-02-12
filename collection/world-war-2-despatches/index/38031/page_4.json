@@ -1,9 +1,8 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief",
-            "p_2": "Vice-Admiral",
-            "p_3": "Rear-Admiral"
+            "p_1": "Vice-Admiral",
+            "p_2": "Rear-Admiral"
         },
         "locations": {
             "l_1": "Mediterranean",
@@ -16,48 +15,47 @@
             "l_8": "Piraeus",
             "l_9": "Gavdo Island",
             "l_10": "Suda Bay",
-            "l_11": "Alexandria",
-            "l_12": "Ionian Sea"
+            "l_11": "Milo",
+            "l_12": "Alexandria",
+            "l_13": "Ionian Sea"
         },
         "events": {
-            "e_1": "First Sight and Contact with the Enemy",
-            "e_2": "Operation against Convoys"
+            "e_1": "Operation against enemy surface forces",
+            "e_2": "Fleet sailing from Alexandria",
+            "e_3": "First sight and contact with the enemy"
         },
         "organisations": {
             "o_1": "Royal Air Force",
-            "o_2": "H.M. Ships",
-            "o_3": "Greek Naval Forces"
+            "o_2": "Seventh Cruiser Squadron",
+            "o_3": "Fourteenth Destroyer Flotilla",
+            "o_4": "Tenth Destroyer Flotilla"
         }
     },
     "keywords": [
-        "Mediterranean Fleet",
-        "convoy routes",
-        "Cyrenaica",
-        "Crete",
-        "Aegean",
-        "enemy surface forces",
-        "reconnaissance"
+        "convoy",
+        "battlefleet",
+        "reconnaissance",
+        "destroyers",
+        "troops",
+        "aircraft"
     ],
     "themes": [
         "Military Operations",
         "Naval Strategy",
-        "Reconnaissance",
-        "Convoy Protection"
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Naval Strategy": [
-            "e_1"
-        ],
-        "Reconnaissance": [
             "e_1",
             "e_2"
         ],
-        "Convoy Protection": [
-            "e_2"
+        "Reconnaissance": [
+            "e_3"
         ]
     },
     "eventConnections": [
@@ -65,43 +63,60 @@
             "event": "e_1",
             "date": "March 28, 1941",
             "locations": [
-                "l_1",
-                "l_9"
+                "l_2",
+                "l_6",
+                "l_5"
             ],
             "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The battlefleet first makes contact with enemy surface forces near Gavdo Island, revealing an imminent naval engagement."
-        },
-        {
-            "event": "e_2",
-            "date": "March 27-28, 1941",
-            "locations": [
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Plans are set to protect convoys in the face of a known threat from enemy surface forces, leading to preparations for possible combat."
+            "eventSummary": "The Commander-in-Chief makes strategic decisions to position forces against possible enemy surface actions in the Aegean and surrounding regions."
+        },
+        {
+            "event": "e_2",
+            "date": "March 27, 1941",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The fleet sails from Alexandria to engage the enemy after a reconnaissance report indicates enemy forces near Gavdo Island."
+        },
+        {
+            "event": "e_3",
+            "date": "March 28, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Aircraft from the FORMIDABLE report enemy forces, leading to the engagement of the battlefleet with enemy cruisers and destroyers."
         }
     ]
 }

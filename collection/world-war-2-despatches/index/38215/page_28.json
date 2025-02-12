@@ -1,113 +1,124 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "G.O.C. Malaya",
-            "p_2": "General Officers Commanding"
+            "p_1": "Sultan of Kelantan",
+            "p_2": "Admiral Sir Tom Phillips",
+            "p_3": "Vice-Admiral Sir Geoffrey Layton"
         },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Mersing",
-            "l_3": "Johore",
-            "l_4": "Kelantan",
-            "l_5": "Kuantan",
-            "l_6": "Penang"
+            "l_1": "Kuala Krai",
+            "l_2": "Kota Bharu",
+            "l_3": "Chondong",
+            "l_4": "Machang",
+            "l_5": "Gong Kedah",
+            "l_6": "Besut",
+            "l_7": "Kuantan",
+            "l_8": "Kelantan",
+            "l_9": "Singapore",
+            "l_10": "Patani",
+            "l_11": "Gulf of Thailand",
+            "l_12": "Singora",
+            "l_13": "Alor Star"
         },
         "events": {
-            "e_1": "World War II",
-            "e_2": "Japanese withdrawal from the League of Nations",
-            "e_3": "Construction of Naval Base at Singapore",
-            "e_4": "Fortification of the Island of Penang"
+            "e_1": "Battle of Kota Bharu",
+            "e_2": "Sinking of the Prince of Wales and Repulse",
+            "e_3": "Japanese Landing at Kuantan",
+            "e_4": "Air Operations in Singora area"
         },
         "organisations": {
-            "o_1": "British Fleet",
-            "o_2": "Royal Air Force",
-            "o_3": "Committee of Imperial Defence"
+            "o_1": "Royal Netherlands Navy",
+            "o_2": "Eastern Fleet"
         }
     },
     "keywords": [
-        "defence",
-        "naval base",
-        "air power",
-        "military strategy",
-        "Japan",
-        "Singapore"
+        "Japanese",
+        "Kota Bharu",
+        "aerodrome",
+        "withdrawal",
+        "enemy",
+        "troops"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Defence Planning"
+        "Naval Operations",
+        "Aerial Warfare",
+        "Withdrawal Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Operations": [
+            "e_2"
+        ],
+        "Aerial Warfare": [
             "e_4"
         ],
-        "Strategic Decisions": [
-            "e_2"
+        "Withdrawal Strategies": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1939-1945",
+            "date": "December 8-9, 1941",
             "locations": [
+                "l_2",
                 "l_1"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_2",
                 "e_3"
             ],
-            "eventSummary": "World War II is ongoing and the defense efforts in the Far East are heavily influenced by military planning centered on safeguarding Singapore."
+            "eventSummary": "Heavy fighting occurs at the Kota Bharu aerodrome, leading to a strategic withdrawal of troops."
         },
         {
             "event": "e_2",
-            "date": "1933-04",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "As a result of Japan's withdrawal from the League of Nations, the Cabinet decides to enhance Singapore’s defenses to prepare for potential conflicts."
-        },
-        {
-            "event": "e_3",
-            "date": "1937",
+            "date": "December 10-13, 1941",
             "locations": [
-                "l_1"
+                "l_10",
+                "l_9"
             ],
             "persons": [
-                "p_1"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The construction of a Naval Base at Singapore is initiated, with expectations that naval control will secure the region's defense."
+            "eventSummary": "The Prince of Wales and Repulse are sunk by Japanese forces approximately 60 miles off Kuantan."
         },
         {
-            "event": "e_4",
-            "date": "1936",
+            "event": "e_3",
+            "date": "December 10, 1941",
             "locations": [
-                "l_6"
+                "l_7"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The decision to fortify the Island of Penang is made, reflecting ongoing military preparations in the region."
+            "eventSummary": "Japanese forces land at Kuantan, prompting a response from Allied naval forces."
+        },
+        {
+            "event": "e_4",
+            "date": "December 9, 1941",
+            "locations": [
+                "l_12",
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Allied Air Force conducts operations targeting Japanese positions in the Singora area, facing heavy losses."
         }
     ]
 }

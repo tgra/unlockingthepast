@@ -2,92 +2,121 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Manipur",
-            "l_2": "Silchar",
-            "l_3": "Chittagong",
-            "l_4": "Calcutta",
-            "l_5": "Akyab",
-            "l_6": "Burma"
+            "l_1": "Burma",
+            "l_2": "Imphal Plain",
+            "l_3": "Khopum Valley",
+            "l_4": "Palel",
+            "l_5": "Imphal Valley",
+            "l_6": "Onbauk",
+            "l_7": "Mandalay",
+            "l_8": "Shwebo",
+            "l_9": "Monywa",
+            "l_10": "Rangoon",
+            "l_11": "Siam",
+            "l_12": "Meiktila airfield"
         },
         "events": {
-            "e_1": "Burma Campaign",
-            "e_2": "Air Supply Operations"
+            "e_1": "destruction of enemy aircraft",
+            "e_2": "interception of sneak raids",
+            "e_3": "supply dropping near Onbauk",
+            "e_4": "raids against the Rangoon airfields"
         },
         "organisations": {
-            "o_1": "No. 67 Squadron",
-            "o_2": "British Air Force",
-            "o_3": "American Air Force",
-            "o_4": "Northern Combat Area Command",
-            "o_5": "Tenth Air Force"
+            "o_1": "Allied fighter organisation",
+            "o_2": "Japanese Air Force",
+            "o_3": "Air Commandos"
         }
     },
     "keywords": [
-        "Reconnaissance",
-        "Air Superiority",
-        "Supply Operations",
-        "Transport Aircraft",
-        "Burma Campaign",
-        "British Forces",
-        "Japanese Forces"
+        "Allied fighters",
+        "enemy aircraft",
+        "transport aircraft",
+        "supply dropping",
+        "raids",
+        "air superiority"
     ],
     "themes": [
         "Military Operations",
-        "Air Supply",
-        "Strategic Decisions",
-        "Operations Coordination"
+        "Air Superiority",
+        "Transport Logistics",
+        "Enemy Interception"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Air Superiority": [
             "e_1"
         ],
-        "Air Supply": [
-            "e_2"
+        "Transport Logistics": [
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
-        ],
-        "Operations Coordination": [
-            "e_2"
+        "Enemy Interception": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1944",
+            "date": "1943",
             "locations": [
-                "l_1",
-                "l_6"
+                "l_1"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Burma Campaign proves that achieving air superiority is critical for the success of ground operations."
+            "eventSummary": "During the eleven months covered by this despatch, 165 enemy aircraft are destroyed on the ground or in the air, showcasing the effectiveness of the Allied fighter force."
         },
         {
             "event": "e_2",
-            "date": "1944-1945",
+            "date": "November, 1943",
             "locations": [
-                "l_1",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Allied fighters focus on intercepting Japanese sneak raids, highlighting the ongoing threat posed by enemy forces."
+        },
+        {
+            "event": "e_3",
+            "date": "January 12, 1945",
+            "locations": [
                 "l_6"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "On this day, four transport aircraft are shot down while dropping supplies near Onbauk, illustrating the risks faced by Allied transport operations."
+        },
+        {
+            "event": "e_4",
+            "date": "October 1945",
+            "locations": [
+                "l_10"
             ],
-            "eventSummary": "Air Supply Operations significantly support ground forces during the Burma campaign, showcasing effective logistics under challenging conditions."
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A series of raids against the Rangoon airfields are undertaken to hinder the transfer of enemy units to the Philippines."
         }
     ]
 }

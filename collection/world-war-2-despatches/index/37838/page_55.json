@@ -1,131 +1,96 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Assistant Deputy Engineer",
-            "p_2": "Air Officer Commanding British Second Tactical Air Force",
-            "p_3": "Director of Military Survey",
-            "p_4": "Chief Engineer"
+            "p_1": "Commander-in-Chief",
+            "p_2": "Commander-in-Chief, 21st Army Group",
+            "p_3": "Supreme Commander",
+            "p_4": "Commanding General of the American land forces"
         },
         "locations": {
-            "l_1": "Bayeux",
-            "l_2": "Carentan",
-            "l_3": "Rennes",
-            "l_4": "River Seine",
-            "l_5": "River Scheldt",
-            "l_6": "Belgium",
-            "l_7": "Holland",
-            "l_8": "Germany",
-            "l_9": "Paris",
-            "l_10": "Brussels",
-            "l_11": "United Kingdom"
+            "l_1": "Normandy",
+            "l_2": "France",
+            "l_3": "London",
+            "l_4": "Bushy Park",
+            "l_5": "Norfolk House",
+            "l_6": "St. Pauls School",
+            "l_7": "Stanmore"
         },
         "events": {
-            "e_1": "Establishment of Base Map Depot",
-            "e_2": "Demand for Map Supply",
-            "e_3": "Reconnaissance Operations",
-            "e_4": "Crisis in Map Supply"
+            "e_1": "Operation Overlord",
+            "e_2": "Neptune"
         },
         "organisations": {
-            "o_1": "Ninth U.S.A.A.F.",
-            "o_2": "British Second Tactical Air Force",
-            "o_3": "660th Engineer Topo Battalion",
-            "o_4": "942nd Engineer Topo Battalion",
-            "o_5": "Allied Expeditionary Air Force",
-            "o_6": "Directorate of Military Survey",
-            "o_7": "War Office"
+            "o_1": "Allied Expeditionary Force",
+            "o_2": "Supreme Headquarters Allied Expeditionary Force",
+            "o_3": "21st Army Group",
+            "o_4": "Allied Expeditionary Air Force",
+            "o_5": "COSSAC",
+            "o_6": "ANCXF"
         }
     },
     "keywords": [
-        "Base Map Depot",
-        "Map Supply",
-        "Air Forces",
-        "Allied Armies",
-        "Advance Through France",
-        "Map Distribution"
+        "Command and Control",
+        "Heavy Bombers",
+        "Planning",
+        "Combined Operations"
     ],
     "themes": [
         "Military Operations",
-        "Supply Chain Management",
-        "Logistics",
-        "Allied Cooperation"
+        "Coordination",
+        "Leadership"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Supply Chain Management": [
-            "e_4"
+        "Coordination": [
+            "e_1"
         ],
-        "Logistics": [
-            "e_3",
-            "e_4"
-        ],
-        "Allied Cooperation": [
-            "e_1",
-            "e_2"
+        "Leadership": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 1, 1944",
+            "date": "June 6, 1944",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_3"
+                "p_2",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_6"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The Base Map Depot is established near Bayeux to supply allied air formations during operations."
+            "eventSummary": "Operation Overlord, a significant military campaign launched on June 6, 1944, aims to combat German forces in Normandy, France through a coordinated effort by Allied land and air forces."
         },
         {
             "event": "e_2",
-            "date": "August 1944",
+            "date": "June 6, 1944",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_1"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_6"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "Allied armies create demand for various maps as they advance rapidly beyond expected lines."
-        },
-        {
-            "event": "e_4",
-            "date": "August-September 1944",
-            "locations": [
-                "l_6",
-                "l_7",
-                "l_8"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "A crisis arises in map supply as the rapid advance of the Allied forces creates shortages."
+            "eventSummary": "Neptune represents the initial phase of Operation Overlord, involving the naval assault on the beaches of Normandy, marking a crucial point in World War II."
         }
     ]
 }

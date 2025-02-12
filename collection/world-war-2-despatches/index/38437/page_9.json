@@ -1,146 +1,143 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Albert Speer",
-            "p_2": "Koller",
-            "p_3": "Hitler",
-            "p_4": "Goering"
+            "p_1": "Commander-in-Chief",
+            "p_2": "Bomber Command"
         },
         "locations": {
-            "l_1": "Germany",
-            "l_2": "London",
-            "l_3": "north-west Europe",
-            "l_4": "Normandy",
-            "l_5": "Berchtesgaden",
-            "l_6": "Kent",
-            "l_7": "Sussex",
-            "l_8": "Surrey"
+            "l_1": "London",
+            "l_2": "France",
+            "l_3": "Oise",
+            "l_4": "Champagne",
+            "l_5": "Greater London"
         },
         "events": {
-            "e_1": "Development of the Flying Bomb",
-            "e_2": "Attempt to Coordinate Weapons in December 1943",
-            "e_3": "Operation of Flying Bombs Ordered on 12th June 1944",
-            "e_4": "Bombing Campaign Against London",
-            "e_5": "Landings in Normandy on 6th June 1944"
+            "e_1": "Blitz",
+            "e_2": "bombing attacks",
+            "e_3": "flying bomb attacks",
+            "e_4": "attack on storage depots",
+            "e_5": "7th July bombing raid"
         },
         "organisations": {
-            "o_1": "OKW",
-            "o_2": "Luftwaffe",
-            "o_3": "LXVI Army Korps",
-            "o_4": "Flakregiment 155 (W)"
+            "o_1": "Tactical and Strategic Air Forces",
+            "o_2": "Second Tactical Air Force"
         }
     },
     "keywords": [
-        "Flying Bomb",
-        "A-4 Rocket",
-        "Luftwaffe",
-        "Military Operations",
-        "Bombing Campaign",
-        "World War II"
+        "bombs",
+        "counter-measures",
+        "defences",
+        "aircraft",
+        "attack",
+        "casualties"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Propaganda",
-        "Technological Development"
+        "Defensive Strategies",
+        "Casualties and Impact"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3",
             "e_4"
         ],
-        "Strategic Decisions": [
-            "e_2"
+        "Defensive Strategies": [
+            "e_2",
+            "e_3"
         ],
-        "Propaganda": [
-            "e_4"
-        ],
-        "Technological Development": [
-            "e_1"
+        "Casualties and Impact": [
+            "e_1",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "End of 1942",
+            "date": "1940",
             "locations": [
                 "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Development of the flying bomb begins as the German Air Staff becomes jealous of the Army's success with the A-4 rocket."
-        },
-        {
-            "event": "e_2",
-            "date": "December 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "LXVI Army Korps is given control over both the flying bomb and A-4 rocket in an attempt to coordinate their use."
-        },
-        {
-            "event": "e_3",
-            "date": "12th June 1944",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "Following the surprise of the Normandy landings, operations using the flying bomb are ordered to commence."
-        },
-        {
-            "event": "e_4",
-            "date": "1944-1945",
-            "locations": [
-                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_4"
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Blitz refers to the sustained bombing campaign by the Germans against London and other cities in the UK during World War II."
+        },
+        {
+            "event": "e_2",
+            "date": "15th July 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "A series of bombing attacks were conducted on modified sites to disrupt supplies to the German forces, but the overall impact was limited."
+        },
+        {
+            "event": "e_3",
+            "date": "July 1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Between June and July, flying bomb attacks continued at a rate of about 100 bombs a day impacting the defensive efforts in London."
+        },
+        {
+            "event": "e_4",
+            "date": "July 1944",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "The Germans launch over 10,000 flying bombs at London, but only a fraction reach their target due to effective defense."
+            "eventSummary": "Successful attacks on underground storage depots in the valley of the Oise and Champagne were executed to hinder German bomb supply capabilities."
         },
         {
             "event": "e_5",
-            "date": "6th June 1944",
+            "date": "7th July 1944",
             "locations": [
-                "l_4"
+                "l_1"
             ],
             "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The landings in Normandy take the Germans by surprise, demonstrating their unpreparedness for a major Allied offensive."
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "On the night of 7th July, Bomber Command carried out an operation that successfully targeted a key storage depot, leading to a temporary decline in bombing efforts."
         }
     ]
 }

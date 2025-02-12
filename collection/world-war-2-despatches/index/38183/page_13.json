@@ -1,95 +1,112 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "President Roosevelt"
+            "p_1": "Sir George Sansom",
+            "p_2": "Commander-in-Chief, China"
         },
         "locations": {
-            "l_1": "Penang",
-            "l_2": "Kedah",
-            "l_3": "Alor Star",
-            "l_4": "Singapore",
-            "l_5": "Patani",
-            "l_6": "Kelantan",
-            "l_7": "Perak",
-            "l_8": "Kuala Kangsar",
-            "l_9": "Butterworth",
-            "l_10": "Taiping",
-            "l_11": "Kuantan",
-            "l_12": "Ipoh"
+            "l_1": "Southern Malaya",
+            "l_2": "Singapore",
+            "l_3": "Hong Kong",
+            "l_4": "Malaya",
+            "l_5": "Australia",
+            "l_6": "India"
         },
         "events": {
-            "e_1": "Retreat from Northern Malaya",
-            "e_2": "Inter-Allied Conference"
+            "e_1": "Formation of Army Labour Units",
+            "e_2": "Press Relations Organisation",
+            "e_3": "Japanese Advance",
+            "e_4": "Defensive Preparations in Malaya"
         },
         "organisations": {
-            "o_1": "Eastern Smelting Company",
-            "o_2": "11th Indian Infantry Brigade",
-            "o_3": "3rd Indian Corps",
-            "o_4": "Argyll and Sutherland Highlanders"
+            "o_1": "Government Post and Telegraph Service",
+            "o_2": "O.T.E.C.",
+            "o_3": "Malayan War Committee",
+            "o_4": "Services Press Bureau"
         }
     },
     "keywords": [
-        "Japanese attacks",
-        "retreat",
-        "reinforcements",
-        "aerodromes",
-        "air raids",
-        "defensive strategy"
+        "signalling equipment",
+        "camouflage",
+        "ammunition deficiency",
+        "war effort"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions"
+        "Communications",
+        "Press Relations"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_3",
+            "e_4"
         ],
-        "Diplomacy": [
+        "Press Relations": [
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_1",
+        "Communications": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12th-18th December",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
                 "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Between 12th and 18th December, the forces are pushed back significantly on the Kedah front as the enemy pressure mounts, leading to a large-scale retreat and necessitating the withdrawal of various brigades."
+            "connectedEvents": [],
+            "eventSummary": "The formation of Army Labour Units in Malaya is delayed. It was decided to recruit Chinese in Hong Kong; however, the project is not executed before the war breaks out."
         },
         {
             "event": "e_2",
-            "date": "18th December",
+            "date": "May, 1941",
             "locations": [
                 "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A Press relations organisation is worked out and brought into operation in May 1941 in anticipation of war with Japan."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
             "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "On 18th December, an inter-Allied conference is held in Singapore to discuss strategies in the war in the Far East, emphasizing Singapore's strategic importance and the need to coordinate forces against the enemy."
+            "eventSummary": "The Japanese advance forces a reduction in warning response times for hostile aircraft in Singapore."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Efforts are made to emphasize the growing strength of defenses in Malaya in an attempt to discourage Japanese aggression."
         }
     ]
 }

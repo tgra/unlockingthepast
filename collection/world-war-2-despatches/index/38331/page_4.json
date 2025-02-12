@@ -1,148 +1,145 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "M. G. Low",
-            "p_2": "Lieutenant C.P. N. Wells-Cole"
+            "p_1": "Lieutenant C.P. N. Wells-Cole, R.N.",
+            "p_2": "Surgeon Lieutenant M. G Low, R.N.V.R."
         },
         "locations": {
             "l_1": "Port Y",
-            "l_2": "Port X",
-            "l_3": "Port A",
-            "l_4": "Port B",
-            "l_5": "Vaeroy",
-            "l_6": "Scapa",
-            "l_7": "Vestfjord"
+            "l_2": "Norwegian",
+            "l_3": "Port X",
+            "l_4": "Port A",
+            "l_5": "Port B",
+            "l_6": "Vestfjord",
+            "l_7": "Vaeroy",
+            "l_8": "Scapa"
         },
         "events": {
-            "e_1": "Landing Operation at Port Y",
-            "e_2": "Sinking of the MIRA",
-            "e_3": "Re-embarkation of troops",
-            "e_4": "Engagement with German reconnaissance aircraft",
-            "e_5": "Return Passage of Force Rebel"
+            "e_1": "Operation at Port Y",
+            "e_2": "Completion of re-embarkation",
+            "e_3": "Engagement with German reconnaissance aircraft",
+            "e_4": "Successful completion of operation",
+            "e_5": "Return passage of Force Rebel"
         },
         "organisations": {
             "o_1": "H.M.S. RODNEY",
             "o_2": "H.M.H.S. AMARAPOORA",
-            "o_3": "18th Cruiser Squadron"
+            "o_3": "QUEEN EMMA",
+            "o_4": "SOMALI",
+            "o_5": "BEDOUIN",
+            "o_6": "LEGION",
+            "o_7": "ESKIMO",
+            "o_8": "PRINCESS BEATRIX",
+            "o_9": "Force Rebel"
         }
     },
     "keywords": [
-        "landing operation",
-        "sinking",
+        "Landing Craft",
+        "Norwegian ferry",
+        "German officer",
         "German soldiers",
+        "prisoners",
         "re-embarkation",
-        "aircraft engagement"
+        "smoke",
+        "reconnaissance aircraft"
     ],
     "themes": [
         "Military Operations",
         "Naval Engagement",
-        "Humanitarian Efforts",
-        "Re-embarkation"
+        "Troop Movement",
+        "Casualties Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
             "e_3",
             "e_4"
         ],
         "Naval Engagement": [
-            "e_2",
-            "e_4"
+            "e_1",
+            "e_3"
         ],
-        "Humanitarian Efforts": [
+        "Troop Movement": [
+            "e_2",
             "e_5"
         ],
-        "Re-embarkation": [
-            "e_3"
+        "Casualties Management": [
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of event unspecified",
+            "date": "Date unknown",
             "locations": [
                 "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "At Port Y, the naval ship BEDOUIN leads a landing operation, successfully completing tasks despite encountering enemy resistance."
-        },
-        {
-            "event": "e_2",
-            "date": "Date of event unspecified",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The ferry MIRA is attacked and subsequently sunk by the naval ship BEDOUIN after initial attempts to stop it failed."
-        },
-        {
-            "event": "e_3",
-            "date": "Date of event unspecified",
-            "locations": [
-                "l_2",
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The re-embarkation of troops takes place, with the ship QUEEN EMMA prepared to carry personnel back after successful landing operations."
-        },
-        {
-            "event": "e_4",
-            "date": "On 5th March",
-            "locations": [
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The naval forces, including BEDOUIN, engage a German reconnaissance aircraft sighted while passing Vaeroy."
-        },
-        {
-            "event": "e_5",
-            "date": "On 6th March",
-            "locations": [
-                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The operation at Port Y involves the engagement of the Norwegian ferry MIRA by the H.M.S. BEDOUIN which results in the ship being severely damaged and starting to sink."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unknown",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Force Rebel completes its return passage and arrives safely at Scapa, facilitating the disembarkation of prisoners and wounded."
+            "eventSummary": "Following the operation, re-embarkation of troops is successfully completed by QUEEN EMMA at Port X."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unknown",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "While passing Vaeroy, a German reconnaissance aircraft is spotted by BEDOUIN which engages in jamming procedures."
+        },
+        {
+            "event": "e_4",
+            "date": "Date unknown",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A report is sent concerning the successful completion of the operation as it becomes known that the Germans announced a raid."
+        },
+        {
+            "event": "e_5",
+            "date": "6th March",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Force Rebel returns to Scapa at 1300 on 6th March after the operation has concluded."
         }
     ]
 }

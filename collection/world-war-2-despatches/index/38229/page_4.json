@@ -1,70 +1,63 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Webber",
-            "p_2": "Chief of the Air Staff",
-            "p_3": "R.A.F. personnel"
+            "p_1": "Webber W.",
+            "p_2": "R.A.F."
         },
         "locations": {
             "l_1": "South Pacific theatre",
             "l_2": "Southern Malayan theatre",
             "l_3": "Burma",
             "l_4": "Ceylon",
-            "l_5": "Singapore",
-            "l_6": "Magwe",
+            "l_5": "Magwe",
+            "l_6": "Singapore",
             "l_7": "Rangoon",
-            "l_8": "Java",
-            "l_9": "Preparis Channel",
-            "l_10": "Gulf of Martaban"
+            "l_8": "Preparis Channel",
+            "l_9": "Gulf of Martaban"
         },
         "events": {
             "e_1": "Fall of Singapore",
             "e_2": "Air campaign in Burma",
             "e_3": "First heavy attack on Magwe",
-            "e_4": "Fall of Rangoon",
-            "e_5": "Re-equipment of Squadrons with modern aircraft",
-            "e_6": "Blenheim force operations"
+            "e_4": "Arrival of No. 4 Indian Flight",
+            "e_5": "Operational activities of Indian Air Force"
         },
         "organisations": {
-            "o_1": "ABDA Command",
-            "o_2": "Air Ministry",
-            "o_3": "A.V.G. Squadron",
-            "o_4": "Indian Air Force",
-            "o_5": "No. 3 Indian Flight",
-            "o_6": "No. 4 Indian Flight",
-            "o_7": "No. 1 Indian A.C. Squadron",
-            "o_8": "No. 28 A.C. Squadron"
+            "o_1": "A.V.G.",
+            "o_2": "Indian Air Force",
+            "o_3": "Air Ministry",
+            "o_4": "Deputy Chief of the Air Staff",
+            "o_5": "Chiefs of Staff"
         }
     },
     "keywords": [
         "Hurricane",
-        "Fighter reinforcements",
         "Blenheim",
-        "Air campaign",
-        "Maintenance",
-        "Squadrons"
+        "Squadron",
+        "Air campaign"
     ],
     "themes": [
         "Military Operations",
-        "Aviation Strategy",
-        "Logistics and Supply",
-        "Reconnaissance",
-        "Operational Challenges"
+        "Aviation Equipment",
+        "Fighter Reinforcement",
+        "Maintenance Challenges"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_5"
+        ],
+        "Aviation Equipment": [
+            "e_2",
             "e_3"
         ],
-        "Operational Challenges": [
-            "e_4",
-            "e_5",
-            "e_6"
+        "Fighter Reinforcement": [
+            "e_1"
         ],
-        "Aviation Strategy": [
-            "e_2",
-            "e_5"
+        "Maintenance Challenges": [
+            "e_2"
         ]
     },
     "eventConnections": [
@@ -72,84 +65,71 @@
             "event": "e_1",
             "date": "February 15, 1942",
             "locations": [
-                "l_5"
+                "l_6"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5"
             ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Fall of Singapore occurs, causing a reassessment of Fighter reinforcements in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "The Fall of Singapore occurs, leading to re-evaluating air resource allocation towards Burma."
-        },
-        {
-            "event": "e_2",
-            "date": "March 1942",
-            "locations": [
-                "l_3",
-                "l_6"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_6"
-            ],
-            "eventSummary": "The air campaign in Burma is hindered by a lack of available Hurricane Squadrons and supply issues."
+            "eventSummary": "The Air campaign in Burma unfolds, highlighting various operational challenges faced by the squadrons."
         },
         {
             "event": "e_3",
             "date": "March 21, 1942",
             "locations": [
-                "l_6"
+                "l_5"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [],
-            "eventSummary": "The first heavy attack on Magwe reveals a severe shortage of serviceable Hurricanes."
+            "eventSummary": "The first heavy attack on the air base at Magwe takes place, demonstrating the scarcity of serviceable Hurricanes."
         },
         {
             "event": "e_4",
-            "date": "1942",
+            "date": "End of December 1941",
             "locations": [
-                "l_7"
+                "l_3"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_2"
+            ],
             "connectedEvents": [],
-            "eventSummary": "The fall of Rangoon results in significant operational setbacks for the Allied forces."
+            "eventSummary": "No. 4 Indian Flight arrives in Burma, initially equipped with Wapiti and Audax aircraft."
         },
         {
             "event": "e_5",
-            "date": "1942",
-            "locations": [
-                "l_3"
-            ],
+            "date": "Not specified",
+            "locations": [],
             "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Constant requests for re-equipping squadrons with modern aircraft were made amidst operational challenges."
-        },
-        {
-            "event": "e_6",
-            "date": "1942",
-            "locations": [
-                "l_3"
+            "organisations": [
+                "o_2"
             ],
-            "persons": [],
-            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The operational capabilities of Bomber Squadrons are severely limited due to aircraft shortages."
+            "eventSummary": "The Indian Air Force showcases its efficiency and performs bomber sorties against enemy targets."
         }
     ]
 }

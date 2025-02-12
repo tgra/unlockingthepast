@@ -1,92 +1,92 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Sir Henry Pownall",
+            "p_2": "Air Chief Marshal Sir Robert Brooke Popham",
+            "p_3": "Group Captain E. B. Rice",
+            "p_4": "Air Vice Marshal P. C. Maltby"
+        },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Singapore",
-            "l_3": "Kahang",
-            "l_4": "Muar",
-            "l_5": "Batu Pahat",
-            "l_6": "Endau",
-            "l_7": "North Johore",
-            "l_8": "Central Malaya"
+            "l_1": "Singapore",
+            "l_2": "Ceylon",
+            "l_3": "Australia",
+            "l_4": "Middle East",
+            "l_5": "Sembawang",
+            "l_6": "Tengah",
+            "l_7": "Kluang",
+            "l_8": "Kallang",
+            "l_9": "Pakanbaroe",
+            "l_10": "Sumatra"
         },
         "events": {
-            "e_1": "Arrival of Further Convoys and of Air Reinforcements",
-            "e_2": "General Withdrawal of Forces to Singapore Island",
-            "e_3": "Air Action against the Japanese Advance"
+            "e_1": "Changes in Higher Command",
+            "e_2": "Japanese war outbreak"
         },
         "organisations": {
-            "o_1": "No. 205 (FB) Squadron",
-            "o_2": "No. 232 (F) Squadron",
-            "o_3": "Royal Australian Air Force (R.A.A.F.)"
+            "o_1": "R.A.A.F.",
+            "o_2": "A.H.Q.",
+            "o_3": "G.H.Q."
         }
     },
     "keywords": [
-        "air force",
+        "Order of Battle",
         "reinforcements",
-        "Japanese forces",
-        "convoys",
-        "withdrawal",
-        "Hurricanes",
-        "operations"
+        "squadrons",
+        "military policy",
+        "strategy"
     ],
     "themes": [
         "Military Operations",
-        "Reinforcements",
-        "Strategic Withdrawal"
+        "Command Changes",
+        "Reinforcement Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2"
         ],
-        "Reinforcements": [
+        "Command Changes": [
             "e_1"
         ],
-        "Strategic Withdrawal": [
-            "e_2"
+        "Reinforcement Strategy": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 22, 24, and 28, 1942",
+            "date": "27th December, 1941",
             "locations": [
-                "l_2"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
             "organisations": [
                 "o_1",
+                "o_2",
                 "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Reinforcements and convoys arrive at Singapore, including additional troops and anti-aircraft units, despite ongoing struggles against Japanese air superiority."
+            "eventSummary": "On 27th December, 1941, General Sir Henry Pownall relieves Air Chief Marshal Sir Robert Brooke Popham as Commander-in-Chief, Far East, with new instructions for military policy and strategy."
         },
         {
             "event": "e_2",
-            "date": "January 27, 1942",
+            "date": "January, 1942",
             "locations": [
-                "l_2"
+                "l_1"
             ],
             "persons": [],
             "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Due to adverse developments on land, British forces withdraw to Singapore Island, marking a crucial strategic decision amidst heavy Japanese advancements."
-        },
-        {
-            "event": "e_3",
-            "date": "January 1942",
-            "locations": [
-                "l_6",
-                "l_8"
+            "connectedEvents": [
+                "e_1"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Air actions are initiated against the Japanese advance across the west coast of Malaya, focusing on reconnaissance and attacking enemy-held aerodromes."
+            "eventSummary": "The outbreak of the Japanese war occurs while General Pownall is en route, altering the military command structure in the Far East."
         }
     ]
 }

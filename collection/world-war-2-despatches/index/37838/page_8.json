@@ -2,109 +2,139 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Versailles",
-            "l_2": "France",
-            "l_3": "Belgium",
-            "l_4": "Pas de Calais",
-            "l_5": "Denmark",
-            "l_6": "Brest"
+            "l_1": "Paris",
+            "l_2": "Trappes",
+            "l_3": "Southern France",
+            "l_4": "Charleroi",
+            "l_5": "Aachen",
+            "l_6": "Lille",
+            "l_7": "Le Bourget",
+            "l_8": "Aulnoye",
+            "l_9": "Villeneuve-St. Georges",
+            "l_10": "Acheres",
+            "l_11": "Montzen",
+            "l_12": "St. Ghislain",
+            "l_13": "Arras",
+            "l_14": "Bethune",
+            "l_15": "Mantes/Gassicourt",
+            "l_16": "Liege",
+            "l_17": "Ghent",
+            "l_18": "Courtrai",
+            "l_19": "Hasselt",
+            "l_20": "Louvain",
+            "l_21": "Boulogne",
+            "l_22": "Orleans",
+            "l_23": "Tours",
+            "l_24": "Le Mans",
+            "l_25": "Metz",
+            "l_26": "Mulhouse",
+            "l_27": "Rheims",
+            "l_28": "Troyes"
         },
         "events": {
-            "e_1": "Operation Neptune",
-            "e_2": "D-Day",
-            "e_3": "Operation Overlord"
+            "e_1": "D-Day",
+            "e_2": "Attack on Trappes",
+            "e_3": "Attack on Charleroi/St. Martin",
+            "e_4": "May Attacks",
+            "e_5": "Photographic Interpretation"
         },
         "organisations": {
-            "o_1": "Air Forces",
-            "o_2": "German High Command"
+            "o_1": "Royal Air Force Bomber Command",
+            "o_2": "United States Eighth Air Force",
+            "o_3": "United States Fifteenth Air Force",
+            "o_4": "United States Ninth Air Force"
         }
     },
     "keywords": [
-        "headquarters",
-        "static situation",
-        "air operations",
-        "strategic bombing",
-        "D-Day",
-        "operational needs",
-        "disorganization",
-        "diversionary operations",
-        "inter-Service Fire Plan"
+        "aircraft",
+        "bombs",
+        "attacks",
+        "railway",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Air Force Strategy",
-        "Logistics",
-        "Inter-Service Cooperation"
+        "Air Campaigns",
+        "Railway Disruption"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Air Force Strategy": [
+        "Air Campaigns": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_5"
         ],
-        "Logistics": [
-            "e_1",
-            "e_3"
-        ],
-        "Inter-Service Cooperation": [
-            "e_3"
+        "Railway Disruption": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of event not specified",
+            "date": "6th June 1944",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "D-Day marks the start of the Allied invasion of Normandy and a significant turning point in World War II."
+        },
+        {
+            "event": "e_2",
+            "date": "6th-7th March 1944",
+            "locations": [
+                "l_2"
             ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "Operation Neptune is carried out to prepare the battlefield for subsequent military actions, where effective air operations disrupt the enemy's logistics."
-        },
-        {
-            "event": "e_2",
-            "date": "D-Day",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "On D-Day, forces launch a major assault after extensive air operations have taken place, leading to critical victories against the enemy."
+            "eventSummary": "The attack on Trappes results in extensive damage to railway facilities, highlighting the effectiveness of Allied bombing campaigns."
         },
         {
             "event": "e_3",
-            "date": "Date of event not specified",
-            "locations": [],
+            "date": "18th April 1944",
+            "locations": [
+                "l_4"
+            ],
             "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_4"
             ],
+            "connectedEvents": [],
+            "eventSummary": "The attack on Charleroi/St. Martin results in significant damage to transportation hubs, illustrating the ongoing efforts to disrupt enemy logistics."
+        },
+        {
+            "event": "e_4",
+            "date": "May 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1",
                 "e_2"
             ],
-            "eventSummary": "Operation Overlord encompasses a series of planned military operations, integrating air, ground, and naval forces to secure a foothold in occupied territories."
+            "eventSummary": "The May attacks continue high levels of success in disrupting enemy railway networks across various locations in France."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Photographic interpretation reveals heavy damage inflicted by the recent bombing campaigns on transportation infrastructure."
         }
     ]
 }

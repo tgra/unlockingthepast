@@ -2,110 +2,147 @@
     "namedEntities": {
         "persons": {
             "p_1": "General Neame",
-            "p_2": "Brigadier Wootten"
+            "p_2": "Lieut.-General Sir Richard O Connor",
+            "p_3": "Lieut.-Colonel Combe"
         },
         "locations": {
-            "l_1": "Cyrenaica",
-            "l_2": "Agheila",
-            "l_3": "Benghazi",
-            "l_4": "Jarabub Oasis",
-            "l_5": "Tobruk",
-            "l_6": "Greece",
-            "l_7": "Iraq",
-            "l_8": "Syria",
-            "l_9": "Mechili"
+            "l_1": "Sceleidima",
+            "l_2": "Msus",
+            "l_3": "Regima",
+            "l_4": "Wadi Derna",
+            "l_5": "Mechili",
+            "l_6": "Tobruk",
+            "l_7": "Cyrenaica",
+            "l_8": "Sollum",
+            "l_9": "Barce",
+            "l_10": "Derna"
         },
         "events": {
-            "e_1": "Evacuation of Greece",
-            "e_2": "Capture of Jarabub Oasis",
-            "e_3": "Enemy Counter Offensive in Cyrenaica"
+            "e_1": "Evacuation of Benghazi",
+            "e_2": "Withdrawal of the 2nd Armoured Division",
+            "e_3": "Attack on Mechili",
+            "e_4": "Attempt to break out from Mechili",
+            "e_5": "Capture of Lieut.-General Sir Richard O Connor and Lieut.-Colonel Combe"
         },
         "organisations": {
-            "o_1": "2nd Armoured Division",
-            "o_2": "6th Australian Division",
-            "o_3": "5th German Light Armoured Division"
+            "o_1": "3rd Armoured Brigade",
+            "o_2": "Support Group",
+            "o_3": "2nd Armoured Division",
+            "o_4": "3rd Indian Motor Brigade",
+            "o_5": "Ist Royal Horse Artillery",
+            "o_6": "7th Australian Division",
+            "o_7": "gth Australian Division",
+            "o_8": "King's Dragoon Guards"
         }
     },
     "keywords": [
-        "transport shortage",
+        "armoured force",
+        "petrol",
+        "demolitions",
         "military operations",
-        "Cyrenaica",
-        "enemy counter offensive",
-        "Benghazi",
-        "Jarabub Oasis"
+        "communications",
+        "Tobruk",
+        "enemy air force",
+        "mechanical breakdowns"
     ],
     "themes": [
         "Military Operations",
-        "Logistical Challenges",
-        "Defensive Strategies"
+        "Logistics",
+        "Battles",
+        "Strategic Withdrawals"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_5"
+        ],
+        "Battles": [
             "e_3"
         ],
-        "Logistical Challenges": [
-            "e_1",
-            "e_3"
-        ],
-        "Defensive Strategies": [
-            "e_3"
+        "Strategic Withdrawals": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Ongoing during the first six months",
+            "date": "3rd April",
             "locations": [
-                "l_1",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Benghazi occurs after extensive demolitions are completed."
+        },
+        {
+            "event": "e_2",
+            "date": "From 4th April onwards",
+            "locations": [
+                "l_5",
                 "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "The evacuation of Greek forces occurs due to logistical problems and the need for transport."
-        },
-        {
-            "event": "e_2",
-            "date": "21st March",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Brigadier Wootten leads the successful attack capturing the Italian garrison at Jarabub Oasis."
+            "eventSummary": "The 2nd Armoured Division withdraws due to breakdowns and enemy actions while struggling with shortages of petrol."
         },
         {
             "event": "e_3",
-            "date": "31st March",
+            "date": "7th April",
             "locations": [
-                "l_1"
+                "l_5"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "The enemy counter-offensive in Cyrenaica begins with significant forces attacking the British. "
+            "eventSummary": "The 3rd Indian Motor Brigade successfully holds off enemy attacks in Mechili."
+        },
+        {
+            "event": "e_4",
+            "date": "8th April",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An attempt is made to break out of Mechili at dawn but results in the capture of most of the force."
+        },
+        {
+            "event": "e_5",
+            "date": "6th/7th April",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Lieut.-General Sir Richard O Connor and Lieut.-Colonel Combe are captured by an enemy patrol while trying to rejoin their Headquarters."
         }
     ]
 }

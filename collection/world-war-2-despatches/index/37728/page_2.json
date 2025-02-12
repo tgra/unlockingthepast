@@ -1,56 +1,49 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Sir Harold Alexander",
-            "p_2": "Lt.-General Sir Charles Broad",
-            "p_3": "Lt.-General N. M. S. Irwin",
-            "p_4": "Lt.-General Sir Noel Beresford Peirse"
+            "p_1": "Commander-in-Chief, Eastern Fleet"
         },
         "locations": {
-            "l_1": "N.E. India",
-            "l_2": "Burma",
-            "l_3": "Lashio",
-            "l_4": "Assam",
-            "l_5": "Bengal",
-            "l_6": "Ceylon",
-            "l_7": "Malta",
-            "l_8": "Madagascar",
-            "l_9": "Orissa",
-            "l_10": "Gauhati",
-            "l_11": "Chittagong",
-            "l_12": "Imphal"
+            "l_1": "Manila",
+            "l_2": "North-East India",
+            "l_3": "Ceylon",
+            "l_4": "Burma",
+            "l_5": "Calcutta",
+            "l_6": "Dinjan",
+            "l_7": "Colombo",
+            "l_8": "Trincomalee",
+            "l_9": "Bay of Bengal",
+            "l_10": "Vizagapatam",
+            "l_11": "Eastern Coasts of India",
+            "l_12": "Assam",
+            "l_13": "Bombay",
+            "l_14": "Delhi"
         },
         "events": {
-            "e_1": "Withdrawal of the Burma Army",
-            "e_2": "Defense of N.E. India",
-            "e_3": "Diverting Brigades to Madagascar",
-            "e_4": "Construction of Railhead at Manipur Road"
+            "e_1": "Japanese naval raid into Indian waters",
+            "e_2": "Attack on Colombo",
+            "e_3": "Attack on Trincomalee",
+            "e_4": "Discussion on defence of India",
+            "e_5": "Appreciation from the Chiefs of Staff in London"
         },
         "organisations": {
-            "o_1": "5th British Division",
-            "o_2": "Burma Army",
-            "o_3": "IV Corps",
-            "o_4": "XV Corps",
-            "o_5": "V Force",
-            "o_6": "Sundarbans Flotilla",
-            "o_7": "Australian Government"
+            "o_1": "War Cabinet",
+            "o_2": "Eastern Fleet"
         }
     },
     "keywords": [
-        "Japanese press",
-        "Eastern Fleet",
-        "air forces",
-        "grave danger",
-        "critical months",
-        "Bengal",
-        "defense",
-        "transportation problems"
+        "reinforcements",
+        "air strength",
+        "Japanese raid",
+        "defence",
+        "naval bases",
+        "fighter squadrons"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Defensive Strategies",
-        "Political Decisions"
+        "Defence Strategies",
+        "Naval Warfare",
+        "International Relations"
     ],
     "topicModel": {
         "Military Operations": [
@@ -58,20 +51,24 @@
             "e_2",
             "e_3"
         ],
-        "Logistics": [
-            "e_4"
+        "Defence Strategies": [
+            "e_4",
+            "e_5"
         ],
-        "Political Decisions": [
+        "Naval Warfare": [
+            "e_1",
+            "e_2",
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 20, 1942",
+            "date": "April 5, 1942",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_7",
+                "l_8",
+                "l_9"
             ],
             "persons": [
                 "p_1"
@@ -80,57 +77,70 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Burma Army is successfully withdrawn across the Indian frontier into Assam amid deteriorating conditions."
+            "eventSummary": "A Japanese naval raid into Indian waters takes place, resulting in an attack on Colombo by carrier-borne aircraft."
         },
         {
             "event": "e_2",
-            "date": "Ongoing until 1942",
+            "date": "April 5, 1942",
             "locations": [
-                "l_1"
+                "l_7"
             ],
             "persons": [
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "The Defense of N.E. India is organized with troops in multiple divisions while managing limited resources and logistics."
+            "eventSummary": "Colombo is attacked by Japanese aircraft, with defending forces inflicting considerable losses on the enemy."
         },
         {
             "event": "e_3",
-            "date": "April 1942",
+            "date": "April 6, 1942",
             "locations": [
-                "l_7",
                 "l_8"
             ],
             "persons": [
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_7"
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The decision is made to divert two brigades of the 5th British Division from reinforcing India to occupy Madagascar for strategic reasons."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Trincomalee is attacked by Japanese aircraft, sustaining defensive efforts with limited impact on land."
         },
         {
             "event": "e_4",
-            "date": "February 1942",
+            "date": "April 13-14, 1942",
             "locations": [
-                "l_12"
+                "l_13"
             ],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
             "connectedEvents": [],
-            "eventSummary": "Construction of a railhead at Manipur Road station is initiated to improve supply lines into Assam as logistics become a critical issue."
+            "eventSummary": "The Commander-in-Chief of the Eastern Fleet discusses the defence strategies for India, indicating limitations on naval resources."
+        },
+        {
+            "event": "e_5",
+            "date": "April 23, 1942",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An appreciation from the Chiefs of Staff in London confirms the imminent threats to India and assesses military readiness."
         }
     ]
 }

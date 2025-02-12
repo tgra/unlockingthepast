@@ -1,62 +1,58 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral D. W. Boyd",
-            "p_2": "Anthony"
+            "p_1": "E. N. Syfret",
+            "p_2": "R. G. Sturges",
+            "p_3": "R. D. Oliver",
+            "p_4": "Melville"
         },
         "locations": {
-            "l_1": "Mozambique Channel",
-            "l_2": "Majunga",
-            "l_3": "Tamatave",
-            "l_4": "Diego Suarez",
-            "l_5": "Mayotta Island",
-            "l_6": "Cape Amber"
+            "l_1": "Diego Suarez",
+            "l_2": "Durban",
+            "l_3": "Courrier Bay"
         },
         "events": {
-            "e_1": "Operation Ironclad",
-            "e_2": "Assault on Diego Suarez"
+            "e_1": "Capture of Diego Suarez",
+            "e_2": "Sailing of the convoy on 25th April, 1942",
+            "e_3": "Sailing of the fast convoy on 28th April, 1942"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "INDOMITABLE",
-            "o_3": "DEVONSHIRE",
-            "o_4": "HERMIONE",
-            "o_5": "EASEDALE"
+            "o_1": "Royal Marines",
+            "o_2": "South African Air Force"
         }
     },
     "keywords": [
-        "Mozambique Channel",
-        "submarine",
-        "U-boats",
-        "intelligence reports",
-        "assault orders",
-        "air patrols",
-        "convoy"
+        "Capture",
+        "Convoy",
+        "Operation",
+        "Relations",
+        "Success"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Intelligence Gathering"
+        "Cooperation between Services",
+        "Naval Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Naval Strategy": [
+        "Cooperation between Services": [
             "e_1"
         ],
-        "Intelligence Gathering": [
-            "e_1"
+        "Naval Operations": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2nd May",
+            "date": "8th and 9th May, 1942",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
             "persons": [
                 "p_1",
@@ -67,28 +63,46 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation Ironclad is set to proceed based on definitive orders received from the Admiralty, with instructions for an ultimatum to be delivered to the Governor following the assault on Diego Suarez."
+            "eventSummary": "The capture of Diego Suarez occurs as part of a coordinated operation involving several naval and air forces."
         },
         {
             "event": "e_2",
-            "date": "3rd May",
+            "date": "25th April, 1942",
             "locations": [
-                "l_4",
-                "l_6"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The slow convoy sails from Durban with various transports, marking a significant movement in naval logistics."
+        },
+        {
+            "event": "e_3",
+            "date": "28th April, 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The assault on Diego Suarez is executed, with naval forces proceeding as planned and conditions for landing reported to be good."
+            "eventSummary": "The fast convoy sets sail from Durban as part of preparations for the capture of Diego Suarez."
         }
     ]
 }

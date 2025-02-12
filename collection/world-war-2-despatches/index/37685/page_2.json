@@ -1,150 +1,143 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "His Majesty",
-            "p_2": "Rashid Ali",
-            "p_3": "Commodore C. M. Graham",
-            "p_4": "Brigadier Weld"
+            "p_1": "Lieut.-General E. P. Quinan",
+            "p_2": "Major-General Fraser",
+            "p_3": "Colonel O. L. Roberts",
+            "p_4": "Rashid Ali"
         },
         "locations": {
-            "l_1": "Maqil",
-            "l_2": "Ashar",
-            "l_3": "Basra City",
-            "l_4": "Northern Iraq",
-            "l_5": "Palestine",
-            "l_6": "Habbaniya",
-            "l_7": "Fallujah",
-            "l_8": "Baghdad",
-            "l_9": "Shaiba",
-            "l_10": "Samawa",
-            "l_11": "Kut",
-            "l_12": "Mosul",
-            "l_13": "Euphrates",
-            "l_14": "River Tigris",
-            "l_15": "Qurna",
-            "l_16": "Kirkuk",
-            "l_17": "Haditha",
-            "l_18": "Rutbah"
+            "l_1": "Basra",
+            "l_2": "Iraq",
+            "l_3": "Habbaniya",
+            "l_4": "Baghdad",
+            "l_5": "Kirkuk",
+            "l_6": "South West Iran",
+            "l_7": "Shat-el-Arab",
+            "l_8": "India",
+            "l_9": "Haifa"
         },
         "events": {
-            "e_1": "Occupation of Fallujah",
-            "e_2": "Destruction of Iraqi Air Forces",
-            "e_3": "Signing of Armistice at Baghdad",
-            "e_4": "Advance to Baghdad",
-            "e_5": "Occupation of Mosul"
+            "e_1": "Arrival of British Forces in Iraq",
+            "e_2": "Disembarkation at Basra",
+            "e_3": "Hostile Move by Iraqi Forces",
+            "e_4": "Shelling of Royal Air Force Station",
+            "e_5": "British Response to Hostilities"
         },
         "organisations": {
             "o_1": "Royal Air Force",
-            "o_2": "20th Indian Infantry Brigade Group",
-            "o_3": "1st Bn. King's Own Royal Regiment",
-            "o_4": "4th Ghurkha Rifles",
-            "o_5": "Trans-Jordan Frontier Force"
+            "o_2": "Anglo-Iranian Oil Company",
+            "o_3": "Iraq Army"
         }
     },
     "keywords": [
-        "military operations",
-        "occupation",
-        "air strike",
-        "armistice",
-        "advance",
-        "reinforcement"
+        "British Forces",
+        "Iraq Government",
+        "Disembarkation",
+        "Hostilities",
+        "Royal Air Force",
+        "Command"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Advances",
-        "Air Superiority"
+        "Conflict",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4",
             "e_5"
         ],
-        "Diplomacy": [
-            "e_3"
+        "Conflict": [
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Strategic Advances": [
-            "e_4"
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th May",
+            "date": "18th April",
             "locations": [
-                "l_7"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
                 "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "On May 6, our forces succeed in occupying Fallujah after nearly a day of fighting, with significant air support weakening Iraqi morale."
-        },
-        {
-            "event": "e_2",
-            "date": "8th May",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "British forces arrive in Iraq, surprising Rashid Ali and his supporters."
+        },
+        {
+            "event": "e_2",
+            "date": "19th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "By May 8, the Royal Air Force has effectively eliminated the Iraqi Air Forces, achieving air superiority."
+            "eventSummary": "Disembarkation at Basra is completed without organized resistance."
         },
         {
             "event": "e_3",
-            "date": "21st May",
+            "date": "30th April",
             "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "An armistice is signed in Baghdad at 15:00 on May 21, following chaos and rioting in the city."
-        },
-        {
-            "event": "e_4",
-            "date": "12th June",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "By June 12, troops advance from various locations towards Baghdad, facing logistical challenges but gaining ground."
-        },
-        {
-            "event": "e_5",
-            "date": "3rd June",
-            "locations": [
-                "l_12"
+                "l_3",
+                "l_2"
             ],
             "persons": [],
             "organisations": [
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "On June 3, troops from various regiments occupy Mosul, countering pro-Axis influence and stabilizing the region."
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Iraq forces initiate hostilities by concentrating around Habbaniya."
+        },
+        {
+            "event": "e_4",
+            "date": "2nd May",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "Shelling of the Royal Air Force station at Habbaniya occurs, leading to British countermeasures."
+        },
+        {
+            "event": "e_5",
+            "date": "Throughout Operations",
+            "locations": [
+                "l_3",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Royal Air Force responds to hostilities, successfully evacuating civilians."
         }
     ]
 }

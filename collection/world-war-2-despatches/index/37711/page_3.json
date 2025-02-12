@@ -1,116 +1,134 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Field Marshal The Viscount Montgomery of Alamein",
-            "p_2": "Admiral Sir Bertram Ramsay",
-            "p_3": "Air Chief Marshal Sir Trafford Leigh Mallory",
-            "p_4": "General Eisenhower",
-            "p_5": "General Omar N. Bradley",
-            "p_6": "Lieutenant-General Crerar",
-            "p_7": "Lieutenant-General Dempsey",
-            "p_8": "Lieutenant-General Browning"
+            "p_1": "Rommel",
+            "p_2": "von Rundstedt"
         },
         "locations": {
-            "l_1": "North-West Europe",
-            "l_2": "England",
+            "l_1": "Cherbourg",
+            "l_2": "Le Havre",
             "l_3": "Normandy",
-            "l_4": "Carentan estuary",
-            "l_5": "Cherbourg",
-            "l_6": "Caen"
+            "l_4": "France",
+            "l_5": "Varreville",
+            "l_6": "Cotentin peninsula",
+            "l_7": "Vierville-Caen"
         },
         "events": {
-            "e_1": "Operation OVERLORD",
-            "e_2": "Assault on Normandy beaches"
+            "e_1": "OVERLORD",
+            "e_2": "D Day",
+            "e_3": "D + 6",
+            "e_4": "D + 20",
+            "e_5": "D + 60"
         },
         "organisations": {
-            "o_1": "Allied Naval Expeditionary Force",
-            "o_2": "Allied Expeditionary Air Force",
-            "o_3": "Twelfth United States Army Group",
-            "o_4": "First Canadian Army",
-            "o_5": "Second British Army",
-            "o_6": "British Airborne Troops",
-            "o_7": "First United States Army",
-            "o_8": "Ninth United States Air Force",
-            "o_9": "Second Tactical Air Force"
+            "o_1": "French Resistance",
+            "o_2": "Allies"
         }
     },
     "keywords": [
-        "Military Operations",
-        "Allied Forces",
-        "Normandy",
-        "Overlord",
-        "Lodgement",
-        "Beach Assault"
+        "artillery",
+        "beach defences",
+        "Panzer divisions",
+        "counter attacks",
+        "intelligence"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Coalition Warfare"
+        "Defensive Strategy",
+        "Resistance Activities"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
+        "Defensive Strategy": [
+            "e_1"
+        ],
+        "Resistance Activities": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6 June 1944",
+            "date": "Not specified",
             "locations": [
-                "l_1",
                 "l_3",
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7",
-                "p_8"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6",
-                "o_7",
-                "o_8",
-                "o_9"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "Operation OVERLORD is designed as the Allied invasion of continental Europe, involving a coordinated military effort to secure a lodgement area for further offensive operations."
+            "eventSummary": "OVERLORD is anticipated as a major military operation against German forces in Normandy."
         },
         {
             "event": "e_2",
-            "date": "6 June 1944",
+            "date": "D Day",
             "locations": [
                 "l_3"
             ],
             "persons": [
                 "p_1",
-                "p_5"
+                "p_2"
             ],
             "organisations": [
-                "o_2",
-                "o_7"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "The assault on the Normandy beaches involves multiple Allied forces landing to establish a foothold necessary for the success of Operation OVERLORD."
+            "eventSummary": "D Day marks the beginning of the Allied invasion of Normandy, where enemy forces are expected to counterattack."
+        },
+        {
+            "event": "e_3",
+            "date": "D + 6",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "By D + 6, it is expected that enemy forces may be concentrated against the Allied bridgehead."
+        },
+        {
+            "event": "e_4",
+            "date": "D + 20",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "D + 20 is marked as a time when the Allies might face opposition from up to 30 enemy divisions."
+        },
+        {
+            "event": "e_5",
+            "date": "D + 60",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "By D + 60, the Allies must prepare for a potential total opposition from as many as 50 enemy divisions."
         }
     ]
 }

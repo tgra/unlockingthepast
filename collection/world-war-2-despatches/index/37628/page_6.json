@@ -1,86 +1,95 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General O'Connor"
+            "p_1": "General Babini"
         },
         "locations": {
-            "l_1": "Benghazi",
-            "l_2": "Derna",
-            "l_3": "Mechili",
-            "l_4": "Tobruk",
-            "l_5": "Bardia",
-            "l_6": "Cyrenaica",
-            "l_7": "Jebel Akhdar",
-            "l_8": "Slonta",
-            "l_9": "Msus",
-            "l_10": "Soluch",
-            "l_11": "Agedabia",
-            "l_12": "Barce",
-            "l_13": "Antelat",
-            "l_14": "Beda Fomm"
+            "l_1": "Tobruk",
+            "l_2": "Bardia",
+            "l_3": "Sidi Mahmoud",
+            "l_4": "Palastrino",
+            "l_5": "Cyrenaica",
+            "l_6": "Derna",
+            "l_7": "Mechili"
         },
         "events": {
-            "e_1": "Fall of Tobruk",
-            "e_2": "Advance on Benghazi",
-            "e_3": "Enemy Withdrawal from Derna",
-            "e_4": "Operations towards Msus",
-            "e_5": "Engagement at Beda Fomm"
+            "e_1": "Assault on Tobruk",
+            "e_2": "Attack on Tobruk"
         },
         "organisations": {
-            "o_1": "7th Armoured Division",
-            "o_2": "Royal Air Force",
-            "o_3": "6th Australian Division",
-            "o_4": "13th Corps"
+            "o_1": "6th Australian Division",
+            "o_2": "7th Armoured Division",
+            "o_3": "7th Battalion Royal Tank Regiment",
+            "o_4": "1st Battalion Royal Northumberland Fusiliers",
+            "o_5": "1st Battalion Cheshire Regiment",
+            "o_6": "Corps Artillery",
+            "o_7": "Royal Air Force",
+            "o_8": "Royal Navy",
+            "o_9": "Free French companies"
         }
     },
     "keywords": [
-        "Military Operations",
-        "Advance",
-        "Enemy Withdrawal",
-        "Armoured Division",
-        "Supply Lines"
+        "Tobruk",
+        "Assault",
+        "Operation",
+        "Artillery",
+        "Minefields",
+        "Reconnaissance",
+        "Prisoners"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Enemy Engagement",
-        "Logistics"
+        "Artillery Support",
+        "Reconnaissance",
+        "Attack Strategy",
+        "Naval Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Strategic Decisions": [
-            "e_4"
+        "Artillery Support": [
+            "e_1"
         ],
-        "Enemy Engagement": [
-            "e_5"
+        "Attack Strategy": [
+            "e_2"
+        ],
+        "Naval Support": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 1941",
+            "date": "January 21",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_1",
+                "l_3",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8",
+                "o_9"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The fall of Tobruk occurs, enabling allied forces to shorten lines of communication."
+            "eventSummary": "The Assault on Tobruk is launched at 0530 hours on January 21 with minimal enemy resistance and significant artillery support. By nightfall, a considerable portion of the perimeter is captured."
         },
         {
             "event": "e_2",
-            "date": "January 23, 1941",
+            "date": "January 22",
             "locations": [
                 "l_1"
             ],
@@ -90,70 +99,10 @@
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_9"
             ],
-            "connectedEvents": [
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The advance on Benghazi is initiated by the Armoured Division following strategic logistical gains."
-        },
-        {
-            "event": "e_3",
-            "date": "January 30, 1941",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The enemy withdraws from advanced positions East of Derna, indicating a significant strategic shift."
-        },
-        {
-            "event": "e_4",
-            "date": "February 5, 1941",
-            "locations": [
-                "l_9"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "7th Armoured Division commences operations moving towards Msus for a tactical advantage."
-        },
-        {
-            "event": "e_5",
-            "date": "February 6, 1941",
-            "locations": [
-                "l_14"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "Engagement at Beda Fomm involves coordinated efforts by multiple divisions against retreating enemy forces."
+            "connectedEvents": [],
+            "eventSummary": "On January 22, Tobruk is entered without resistance, with significant enemy demolitions noted overnight, leading to the capture of around 30,000 prisoners and considerable military equipment."
         }
     ]
 }

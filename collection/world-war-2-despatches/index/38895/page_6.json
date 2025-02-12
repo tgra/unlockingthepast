@@ -1,123 +1,133 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral T. H. Troubridge",
-            "p_2": "Admiral Sir Henry Harwood",
-            "p_3": "Admiral Sir Ralph Leatham",
-            "p_4": "Sir John H. D. Cunningham",
-            "p_5": "Vice-Admiral A. J. Power",
-            "p_6": "Rear-Admiral Sir Philip L. Vian"
+            "p_1": "A. B. CUNNINGHAM",
+            "p_2": "General Dwight D. Eisenhower",
+            "p_3": "RearAdmiral McGrigor",
+            "p_4": "Admiral Hewitt",
+            "p_5": "Admiral Ramsay",
+            "p_6": "Air Chief Marshal Tedder",
+            "p_7": "General Alexander"
         },
         "locations": {
-            "l_1": "Cairo",
-            "l_2": "Malta",
-            "l_3": "Gulf of Aqaba",
-            "l_4": "Tripoli",
-            "l_5": "Tunisia",
-            "l_6": "Mediterranean Sea"
+            "l_1": "Augusta",
+            "l_2": "Catania",
+            "l_3": "Messina",
+            "l_4": "Island of Sicily"
         },
         "events": {
             "e_1": "Operation Husky",
-            "e_2": "Landing in Malta",
-            "e_3": "Task Force operations"
+            "e_2": "Entry of Augusta",
+            "e_3": "Commando landing at Catania",
+            "e_4": "Entry of Messina"
         },
         "organisations": {
-            "o_1": "Eastern Naval Task Force",
-            "o_2": "Levant Station"
+            "o_1": "U.S. 7th Army",
+            "o_2": "8th Army",
+            "o_3": "Royal Navy",
+            "o_4": "Eastern Naval Task Force",
+            "o_5": "Western Task Force",
+            "o_6": "Allied Expeditionary Force"
         }
     },
     "keywords": [
         "Operation Husky",
-        "Task Force",
-        "Malta",
-        "Cairo",
-        "Landing Craft"
+        "Augusta",
+        "Catania",
+        "Messina",
+        "8th Army",
+        "U.S. 7th Army"
     ],
     "themes": [
         "Military Operations",
-        "Planning",
-        "Training",
-        "Multinational Coordination"
+        "Naval Strategy",
+        "Cooperation among Allies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Strategy": [
+            "e_2",
             "e_3"
         ],
-        "Planning": [
+        "Cooperation among Allies": [
             "e_1"
-        ],
-        "Training": [
-            "e_3"
-        ],
-        "Multinational Coordination": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "9th July 1943",
+            "date": "Not specified",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_4"
             ],
             "persons": [
-                "p_1",
                 "p_2",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Operation Husky involves a complex planning and execution phase led by Rear-Admiral T. H. Troubridge, addressing substantial logistical challenges with respect to vast distances, leading to operational adjustments as the operation date arrives."
+            "eventSummary": "Operation Husky is a major Allied military operation for the capture of the Island of Sicily and involves significant coordination among various allied forces."
         },
         {
             "event": "e_2",
-            "date": "2nd July 1943",
+            "date": "12th July, 1943",
             "locations": [
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_5"
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The planned landing in Malta concludes preparations and coordination among the Eastern Naval Task Force, assisted by Vice-Admiral A. J. Power, facilitating a seamless operational transition after thorough logistical preparations."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The army enters Augusta on the evening of 12th July after facing challenges from enemy fire."
         },
         {
             "event": "e_3",
-            "date": "2nd March 1943 to 9th July 1943",
+            "date": "16th August, 1943",
             "locations": [
-                "l_1",
-                "l_2",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A commando landing is made at Catania following its capture, showcasing the ongoing military operations."
+        },
+        {
+            "event": "e_4",
+            "date": "17th August, 1943",
+            "locations": [
                 "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_6"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "The Task Force operations include several preparatory events leading to the execution of Operation Husky, ensuring that all necessary resources and personnel were effectively mobilized for the complex undertaking."
+            "eventSummary": "The operation concludes with the entry of the Allied forces into Messina on the 17th August."
         }
     ]
 }

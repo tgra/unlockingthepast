@@ -2,71 +2,97 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "France",
-            "l_2": "Belgium",
-            "l_3": "Normandy"
+            "l_1": "Dieppe/Bernaval le Grand",
+            "l_2": "Cherbourg",
+            "l_3": "Urville-Hague",
+            "l_4": "Cap d Antifer",
+            "l_5": "Boulogne",
+            "l_6": "Somme",
+            "l_7": "Le Havre",
+            "l_8": "Barfleur",
+            "l_9": "Cherbourg Peninsula",
+            "l_10": "Channel Islands"
         },
         "events": {
-            "e_1": "Operation Neptune",
-            "e_2": "D-Day"
+            "e_1": "Attack on the German Signals Intelligence Service Headquarters",
+            "e_2": "Operation Neptune",
+            "e_3": "Counter-measures during the assault on June 5/6"
         },
-        "organisations": {}
+        "organisations": {
+            "o_1": "German Signals Intelligence Service",
+            "o_2": "Allied Naval Commander-in-Chief"
+        }
     },
     "keywords": [
-        "signals security",
-        "scientific research",
-        "strategical air forces",
-        "tactical air forces",
-        "air operations",
-        "bombing accuracy",
-        "heavy bombers",
-        "medium bombers",
-        "coastal defences",
-        "inter-service operations"
+        "Attack",
+        "Headquarters",
+        "Aerial operations",
+        "Counter-measures",
+        "Military Facilities"
     ],
     "themes": [
         "Military Operations",
-        "Technological Integration",
-        "Air Combat Strategy",
-        "Logistics and Resource Management"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3"
         ],
-        "Technological Integration": [],
-        "Air Combat Strategy": [],
-        "Logistics and Resource Management": []
+        "Strategic Decisions": [
+            "e_2"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
+            "date": "3/4th June",
             "locations": [
-                "l_1",
+                "l_2",
                 "l_3"
             ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The attack on the German Signals Intelligence Service Headquarters is completely successful, rendering the station completely useless."
+        },
+        {
+            "event": "e_2",
+            "date": "6th June",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Neptune involves crucial assaults and counter-measures to prepare the landing forces against the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "5/6th June",
+            "locations": [],
             "persons": [],
             "organisations": [],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Neptune is executed, marking the beginning of the Allied invasion of Normandy, which significantly hampers enemy logistics and air resources."
-        },
-        {
-            "event": "e_2",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_1",
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "D-Day signifies the largest amphibious invasion in history as Allied forces land on the beaches of Normandy, directly impacting the course of the war in Europe."
+            "eventSummary": "During the opening phase of the assault on June 5/6, various counter-measures are successfully put into operation."
         }
     ]
 }

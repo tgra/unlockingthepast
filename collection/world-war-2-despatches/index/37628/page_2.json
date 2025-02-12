@@ -1,43 +1,51 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Maletti",
-            "p_2": "Brigadier Savory",
-            "p_3": "Brigadier Lloyd",
-            "p_4": "Brigadier Lomax"
+            "p_1": "General Wilson",
+            "p_2": "General O'Connor",
+            "p_3": "Mr. Eden",
+            "p_4": "General Creagh",
+            "p_5": "General Beresford-Peirse",
+            "p_6": "Brigadier Lomax",
+            "p_7": "Brigadier Selby",
+            "p_8": "Wing Commander Collishaw"
         },
         "locations": {
-            "l_1": "Sofafi",
-            "l_2": "Nibeiwa",
-            "l_3": "Tummar",
-            "l_4": "Sidi Barrani",
-            "l_5": "Maktila",
-            "l_6": "Buq Buq"
+            "l_1": "Egypt",
+            "l_2": "Sofafi",
+            "l_3": "Western Desert",
+            "l_4": "Crete",
+            "l_5": "Greece",
+            "l_6": "Matruh",
+            "l_7": "Nibeiwa",
+            "l_8": "Sidi Barrani",
+            "l_9": "Maktila",
+            "l_10": "Tummar"
         },
         "events": {
-            "e_1": "Battle of Nibeiwa",
-            "e_2": "Battle of Tummar",
-            "e_3": "Operation Sidi Barrani"
+            "e_1": "Training Exercise",
+            "e_2": "Proposed Operation",
+            "e_3": "Attack on Enemy Camps"
         },
         "organisations": {
-            "o_1": "7th Armoured Division",
-            "o_2": "4th Indian Division",
-            "o_3": "7th Battalion R.T.R."
+            "o_1": "Royal Navy",
+            "o_2": "Royal Air Force",
+            "o_3": "7th Armoured Division",
+            "o_4": "4th Indian Division"
         }
     },
     "keywords": [
-        "attack",
-        "enemy camps",
-        "Indian Division",
-        "Armoured Division",
-        "air attacks",
-        "artillery",
-        "infantry"
+        "Operation",
+        "Attack",
+        "Military Planning",
+        "Air Support",
+        "Rehearsal",
+        "Co-operation"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Planning",
-        "Combat Engagement"
+        "Strategic Decisions",
+        "Co-operation"
     ],
     "topicModel": {
         "Military Operations": [
@@ -45,76 +53,83 @@
             "e_2",
             "e_3"
         ],
-        "Tactical Planning": [
-            "e_1",
-            "e_3"
+        "Strategic Decisions": [
+            "e_2"
         ],
-        "Combat Engagement": [
-            "e_2",
-            "e_1"
+        "Co-operation": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "09 December",
+            "date": "25th and 26th November",
             "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The attack on Nibeiwa begins with a coordinated effort by the 13th Indian Infantry Brigade and the 7th Battalion R.T.R., successfully capturing the camp by 0830 hours after overcoming enemy defenses."
-        },
-        {
-            "event": "e_2",
-            "date": "09 December",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_3",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Following the success at Nibeiwa, an attack is launched on the Tummar camps by the 4th Indian Division, swiftly overcoming enemy positions and capturing Tummar West."
-        },
-        {
-            "event": "e_3",
-            "date": "Following Operation Nibeiwa and Tummar",
-            "locations": [
-                "l_4",
                 "l_6"
             ],
             "persons": [
-                "p_4",
-                "p_3"
+                "p_1",
+                "p_2",
+                "p_5",
+                "p_8"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A training exercise is held near Matruh, serving as a rehearsal for the proposed operation against enemy camps."
+        },
+        {
+            "event": "e_2",
+            "date": "End of first week in December",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Plans for an offensive operation are developed and preparations are made for an attack on enemy positions."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
                 "e_1",
                 "e_2"
             ],
-            "eventSummary": "The forces continue their operations to advance toward Sidi Barrani, coordinating artillery support as they move into position for further engagement."
+            "eventSummary": "An attack on the enemy camps is planned and executed, relying on air and naval co-operation."
         }
     ]
 }

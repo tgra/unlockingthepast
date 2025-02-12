@@ -1,132 +1,108 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief, India"
+            "p_1": "Commander-in-Chief, India",
+            "p_2": "General Slim",
+            "p_3": "General Stilwell"
         },
         "locations": {
-            "l_1": "Arakan",
-            "l_2": "Imphal",
-            "l_3": "North Burma",
-            "l_4": "Kaladan Valley",
-            "l_5": "Dinjan",
-            "l_6": "Chindwin front",
-            "l_7": "Sylhet",
-            "l_8": "Agartala",
-            "l_9": "Comilla",
-            "l_10": "Chittagong",
-            "l_11": "Assam"
+            "l_1": "Burma",
+            "l_2": "Arakan",
+            "l_3": "Ceylon",
+            "l_4": "Comilla",
+            "l_5": "Calcutta",
+            "l_6": "Imphal"
         },
         "events": {
-            "e_1": "Air Supply Operations in Arakan and Imphal",
-            "e_2": "Introduction of new Field Service scale of rations for Indian troops",
-            "e_3": "Formation of Rear Airfield Maintenance Units",
-            "e_4": "Improvements in P.O.L. supply",
-            "e_5": "Development of local food supply projects"
+            "e_1": "Re-occupation of Burma",
+            "e_2": "Re-organization of the Chain of Command",
+            "e_3": "Transfer of Headquarters, Allied Land Forces"
         },
         "organisations": {
-            "o_1": "Headquarters, 11 Army Group",
-            "o_2": "R.E.M.E."
+            "o_1": "Fourteenth Army",
+            "o_2": "15 Indian Corps",
+            "o_3": "11 Army Group",
+            "o_4": "Burma Frontier Force",
+            "o_5": "Burma Military Police"
         }
     },
     "keywords": [
-        "air supply",
-        "operations",
-        "rations",
-        "food supply",
-        "maintenance",
-        "transport",
-        "vehicles"
+        "Internal Security",
+        "Burma Regiments",
+        "Kachin battalions",
+        "Lines of Communication",
+        "Brigades"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Food Supply",
-        "Equipment Maintenance"
+        "Re-organization",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2"
+        ],
+        "Re-organization": [
+            "e_2",
             "e_3"
         ],
-        "Logistics": [
-            "e_4",
-            "e_5"
-        ],
-        "Food Supply": [
-            "e_2"
+        "Command Structure": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 18",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "Air supply operations in Arakan and Imphal are established, demonstrating significant reliance on air transport for logistics amid challenges."
+            "eventSummary": "Re-occupation of Burma involves securing territory and establishing internal order."
         },
         {
             "event": "e_2",
-            "date": "November 1",
+            "date": "",
             "locations": [
+                "l_2",
                 "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "A new Field Service scale of rations for Indian troops is introduced, designed to provide higher calorific value for the challenging conditions."
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Re-organization of the Chain of Command outlines adjustments in military command from Fourteenth Army to 11 Army Group."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Rear Airfield Maintenance Units are formed to support air operations and ensure effective supply chain management."
-        },
-        {
-            "event": "e_4",
-            "date": "Early October",
+            "date": "",
             "locations": [
-                "l_10"
+                "l_5"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Improvements in the supply of petrol and lubricants are achieved, increasing reserve stocks to meet operational needs."
-        },
-        {
-            "event": "e_5",
-            "date": "Not specified",
-            "locations": [
-                "l_1"
+            "connectedEvents": [
+                "e_2"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Projects to enhance local food supplies progress, aiming to reduce dependence on external supply lines."
+            "eventSummary": "Transfer of Headquarters, Allied Land Forces is described as an important change in command structure."
         }
     ]
 }

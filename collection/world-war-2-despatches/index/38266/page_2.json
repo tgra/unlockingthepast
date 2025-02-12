@@ -1,90 +1,129 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Irwin",
-            "p_2": "Commander (not specifically named but implied)",
-            "p_3": "General Irwin Tecommended"
+            "p_1": "General Irwin"
         },
         "locations": {
-            "l_1": "Mayu peninsula",
-            "l_2": "Chittagong",
-            "l_3": "Akyab",
-            "l_4": "Donbaik",
-            "l_5": "Kaladan river",
-            "l_6": "Kaladan valley",
-            "l_7": "Rathedaung",
-            "l_8": "Kyauktaw",
-            "l_9": "Pakokku",
-            "l_10": "Irrawaddy",
-            "l_11": "Buthidaung",
-            "l_12": "Indin",
-            "l_13": "Maungdaw",
-            "l_14": "Naf river",
-            "l_15": "Ngakyedauk Pass",
-            "l_16": "Bawli Bazaar"
+            "l_1": "Arakan",
+            "l_2": "Akyab",
+            "l_3": "Burma",
+            "l_4": "Chittagong",
+            "l_5": "North Africa",
+            "l_6": "Sicily",
+            "l_7": "Foul Point",
+            "l_8": "Rathedaung",
+            "l_9": "Donbaik",
+            "l_10": "Laungchaung",
+            "l_11": "Maungdaw",
+            "l_12": "Buthidaung",
+            "l_13": "Cox's Bazaar",
+            "l_14": "Mayu River",
+            "l_15": "Naf River"
         },
         "events": {
-            "e_1": "Attack on Donbaik position",
-            "e_2": "Japanese counter-offensive against eastern flank",
-            "e_3": "Attack on 55th Brigade",
-            "e_4": "Withdrawal from Buthidaung",
-            "e_5": "Withdrawal from Maungdaw"
+            "e_1": "Operations in Arakan",
+            "e_2": "Capture of Akyab",
+            "e_3": "Attack on Rathedaung",
+            "e_4": "Attack on Donbaik",
+            "e_5": "Advance on January 6th",
+            "e_6": "Initial advance of the 14th Division",
+            "e_7": "Occupation of Maungdaw",
+            "e_8": "Occupation of Buthidaung",
+            "e_9": "Failure of 55th Brigade's attack on Donbaik",
+            "e_10": "Failure of 123rd Brigade's attack on Rathedaung"
         },
         "organisations": {
-            "o_1": "6th Brigade (British)",
-            "o_2": "71st Indian Brigade",
-            "o_3": "123rd Brigade",
-            "o_4": "55th Brigade",
-            "o_5": "Tripura Rifles (State Forces)"
+            "o_1": "6th British Brigade",
+            "o_2": "2nd Division",
+            "o_3": "20th British Brigade",
+            "o_4": "4th Indian Division",
+            "o_5": "47th Indian Infantry Brigade",
+            "o_6": "123rd Indian Infantry Brigade",
+            "o_7": "55th Indian Infantry Brigade",
+            "o_8": "71st Brigade",
+            "o_9": "26th Indian Division"
         }
     },
     "keywords": [
-        "Japanese",
-        "counter-offensive",
-        "defensive positions",
-        "attack",
-        "infantry",
-        "battalions",
-        "retreat",
         "operations",
-        "March",
-        "April",
-        "May",
-        "Buthidaung",
-        "Maungdaw"
+        "Arakan",
+        "Akyab",
+        "capture",
+        "attack",
+        "occupation",
+        "Brigade",
+        "Division",
+        "infantry",
+        "defences",
+        "malaria",
+        "transport"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Infiltration Tactics",
-        "Casualties",
-        "Troop Movements"
+        "Logistical Challenges",
+        "Communication Issues",
+        "Tactical Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7",
+            "e_8",
+            "e_9",
+            "e_10"
         ],
-        "Defensive Strategies": [
+        "Logistical Challenges": [
             "e_1",
             "e_4",
+            "e_9"
+        ],
+        "Communication Issues": [
+            "e_1",
             "e_5"
         ],
-        "Infiltration Tactics": [
-            "e_2"
-        ],
-        "Troop Movements": [
-            "e_4",
-            "e_5"
+        "Tactical Decisions": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 18th",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8",
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_6",
+                "e_7"
+            ],
+            "eventSummary": "The operations in Arakan focus on the limited objective of capturing the air-fields on Akyab island amidst challenging jungle terrain and poor communications."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -93,72 +132,128 @@
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The attack of the 6th Brigade on the Donbaik position fails as troops advance but struggle against enemy strong points."
+            "connectedEvents": [],
+            "eventSummary": "The capture of Akyab is initially planned as a seaborne expedition but faces numerous logistical challenges."
         },
         {
-            "event": "e_2",
-            "date": "March (exact date unspecified)",
+            "event": "e_3",
+            "date": "January 18th",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_9"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_3",
-                "o_4",
                 "o_5"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The Japanese launch a counter-offensive against the eastern flank, successfully infiltrating and targeting the 123rd Brigade."
-        },
-        {
-            "event": "e_3",
-            "date": "March 17th",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The 55th Brigade faces an attack in the flank and rear while attempting to maintain their position but suffers equipment losses."
+            "connectedEvents": [],
+            "eventSummary": "The 47th Brigade attacks the Donbaik position but fails, primarily due to difficulties in locating enemy positions."
         },
         {
             "event": "e_4",
-            "date": "May 10th",
+            "date": "February 1st",
             "locations": [
-                "l_8"
+                "l_9"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_3"
+            "persons": [
+                "p_1"
             ],
-            "eventSummary": "As the forces retreat from Buthidaung due to enemy advancement, they manage the withdrawal with minimal interference."
+            "organisations": [
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 123rd Brigade launches an attack on Rathedaung on February 1st which initially succeeds but later fails."
         },
         {
             "event": "e_5",
-            "date": "April (exact date unspecified)",
+            "date": "January 6th",
             "locations": [
-                "l_13"
+                "l_1"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4"
+            "persons": [
+                "p_1"
             ],
-            "eventSummary": "The decision is made to abandon Maungdaw as enemy forces continue to disrupt communication and infiltrate the area."
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The advance on January 6th resumes after a ten-day delay due to administrative difficulties."
+        },
+        {
+            "event": "e_6",
+            "date": "December 16th",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The initial advance of the 14th Division leads to the occupation of Maungdaw on December 16th."
+        },
+        {
+            "event": "e_7",
+            "date": "December 17th",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The occupation of Buthidaung occurs on December 17th as a result of the advance of the 14th Division."
+        },
+        {
+            "event": "e_8",
+            "date": "",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 55th Brigade's attack on Donbaik fails, demonstrating the logistical difficulties faced by the forces."
+        },
+        {
+            "event": "e_9",
+            "date": "February 17th",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_8"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Another attack on Donbaik by the 55th Brigade on February 17th fails again due to communication challenges."
+        },
+        {
+            "event": "e_10",
+            "date": "February 3rd",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An attack on Rathedaung by the 123rd Brigade on February 3rd fails after some initial success."
         }
     ]
 }

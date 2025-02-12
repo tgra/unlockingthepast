@@ -1,124 +1,110 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Commodore Silly",
-            "p_2": "Sir Archibald Wavell",
-            "p_3": "Air Commodore Vincent",
-            "p_4": "General Wavell",
-            "p_5": "Abdair"
+            "p_1": "Air Vice-Marshal P. C. Maltby",
+            "p_2": "Air Commodore W. E. Staton",
+            "p_3": "Abdair",
+            "p_4": "Wing Commander Maguire"
         },
         "locations": {
-            "l_1": "Singapore Island",
-            "l_2": "Sumatra",
-            "l_3": "Java",
-            "l_4": "Palembang",
-            "l_5": "Batavia",
-            "l_6": "N.E.I."
+            "l_1": "Palembang",
+            "l_2": "Singapore",
+            "l_3": "Sumatra",
+            "l_4": "Java",
+            "l_5": "Banka Island",
+            "l_6": "Palembang river",
+            "l_7": "P.I.",
+            "l_8": "Pladjoe"
         },
         "events": {
-            "e_1": "Fall of Singapore",
-            "e_2": "Military Operations in the N.E.I.",
-            "e_3": "Bombing of Singapore Docks"
+            "e_1": "Parachute attack on Palembang I Aerodrome",
+            "e_2": "Offensive reconnaissance on 14th February",
+            "e_3": "Attack on enemy shipping in Banka Straits"
         },
         "organisations": {
-            "o_1": "A.H.Q.",
-            "o_2": "H.Q. No. 224 (F) Group",
-            "o_3": "H.Q. No. 225 (B) Group",
-            "o_4": "No. 226 (F) Group",
-            "o_5": "18th Division",
-            "o_6": "Bomber Force"
+            "o_1": "R.A.F.",
+            "o_2": "R.A.A.F.",
+            "o_3": "225 (B) Group",
+            "o_4": "Reconnaissance Group",
+            "o_5": "Westgroup H.Qs"
         }
     },
     "keywords": [
-        "Rear A.H.Q.",
-        "Air Operations",
-        "Reinforcing Convoy",
-        "Japanese Air Attacks",
-        "Singapore Docks",
-        "Fighter Force",
-        "Bombing"
+        "signals",
+        "traffic",
+        "operations",
+        "reconnaissance"
     ],
     "themes": [
-        "Military Strategy",
-        "Logistical Challenges",
-        "Air Operations",
-        "Defense Strategy",
-        "Reinforcement Planning"
+        "Military Operations",
+        "Intelligence Gathering"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Logistical Challenges": [
+            "e_2",
             "e_3"
         ],
-        "Defense Strategy": [
-            "e_1",
+        "Intelligence Gathering": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "31st January",
+            "date": "14th February",
             "locations": [
-                "l_1"
+                "l_7"
             ],
             "persons": [
-                "p_2",
-                "p_5"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Army successfully withdraws into Singapore Island intending for defense as they prepare for the impending Fall of Singapore."
-        },
-        {
-            "event": "e_2",
-            "date": "Early February",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
                 "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Military operations intensify in the N.E.I. as reinforcements arrive and plans are made to reinforce the defending forces."
+            "connectedEvents": [],
+            "eventSummary": "On 14th February, P.I. is attacked by enemy bombers and parachutists. Defences manage to ward off an assault while the remaining personnel are withdrawn."
         },
         {
-            "event": "e_3",
-            "date": "January - February",
+            "event": "e_2",
+            "date": "14th February",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
-                "o_6"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On 14th February, 5 Hudsons are sent for reconnaissance over an enemy convoy near Banka Straits, which is attacked by multiple aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "14th February",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Severe logistical challenges at Singapore Docks arise due to Japanese air attacks, leading to shortages and delayed operations."
+            "eventSummary": "On 14th February, enemy shipping is discovered and subjected to attacks, resulting in significant enemy losses despite difficult conditions."
         }
     ]
 }

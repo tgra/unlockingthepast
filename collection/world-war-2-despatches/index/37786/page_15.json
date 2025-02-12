@@ -1,153 +1,89 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Admiral Godefroy",
-            "p_2": "General Catroux",
-            "p_3": "General Officer Commanding Ninth Army"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Lebanon",
-            "l_2": "Syria",
-            "l_3": "Palestine",
-            "l_4": "Cyrenaica",
-            "l_5": "Tripolitania",
-            "l_6": "Malta",
-            "l_7": "Sudan",
-            "l_8": "Eritrea",
-            "l_9": "Egypt"
+            "l_1": "Malta",
+            "l_2": "Sicily",
+            "l_3": "Italy",
+            "l_4": "Tripoli",
+            "l_5": "Cairo",
+            "l_6": "Algiers",
+            "l_7": "Salerno",
+            "l_8": "Naples",
+            "l_9": "Tripolitania"
         },
         "events": {
-            "e_1": "Political Crisis",
-            "e_2": "Release of Detainees",
-            "e_3": "November Political Riots",
-            "e_4": "Decision of Admiral Godefroy",
-            "e_5": "Attack on Sicily"
+            "e_1": "Assault landing at Salerno",
+            "e_2": "Eighth Army crossed from Sicily into Italy"
         },
         "organisations": {
-            "o_1": "His Majesty's Government",
-            "o_2": "Ninth Army",
-            "o_3": "French Military Authorities",
-            "o_4": "Sudan Defence Force"
+            "o_1": "Royal Navy",
+            "o_2": "Eighth Army",
+            "o_3": "Allied Force Headquarters",
+            "o_4": "Middle East Command",
+            "o_5": "Headquarters Tripolitania District"
         }
     },
     "keywords": [
-        "political crisis",
-        "security",
-        "independence",
-        "military operations",
-        "training",
-        "relationships",
-        "attack"
+        "operations",
+        "supply",
+        "assault",
+        "embarkation",
+        "administration"
     ],
     "themes": [
         "Military Operations",
-        "Political Crisis",
-        "Diplomacy",
-        "Security Management",
-        "Independence Movements"
+        "Logistics",
+        "Supply Chain Management"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_5"
-        ],
-        "Political Crisis": [
             "e_1",
-            "e_3"
+            "e_2"
         ],
-        "Diplomacy": [
+        "Logistics": [
             "e_1",
-            "e_4"
+            "e_2"
         ],
-        "Security Management": [
-            "e_2",
-            "e_1"
-        ],
-        "Independence Movements": [
+        "Supply Chain Management": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "11 days before resolution",
+            "date": "9th September 1943",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_3",
+                "l_7"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The political crisis in Lebanon creates high tensions that lead to demands for independence and increased autonomy from French authorities."
+            "eventSummary": "The assault landing at Salerno is carried out successfully after preparations were completed."
         },
         {
             "event": "e_2",
-            "date": "After political crisis",
+            "date": "3rd September 1943",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Following the resolution of the political crisis, the President is reinstated, and other detainees are released, allowing the situation in Lebanon to normalize."
-        },
-        {
-            "event": "e_3",
-            "date": "November",
-            "locations": [
-                "l_1"
+                "l_2",
+                "l_3"
             ],
             "persons": [],
             "organisations": [
                 "o_2",
-                "o_3"
+                "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The November political riots temporarily strain relations between British and French military authorities but the situation stabilizes shortly thereafter."
-        },
-        {
-            "event": "e_4",
-            "date": "21st May, 1943",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Admiral Godefroy's decision to join the Allies reduces tension in the region and allows for the reallocation of troops."
-        },
-        {
-            "event": "e_5",
-            "date": "Subsequent to 21st May, 1943",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The attack on Sicily is coordinated using Malta as a staging post, following successful military engagements in North Africa."
+            "eventSummary": "The Eighth Army crossed from Sicily into Italy, marking a significant advance in the campaign."
         }
     ]
 }

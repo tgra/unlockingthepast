@@ -2,56 +2,57 @@
     "namedEntities": {
         "persons": {
             "p_1": "Commander-in-Chief",
-            "p_2": "Vice-Admiral, Light Forces",
-            "p_3": "Captain (D), Fourteenth Destroyer Flotilla"
+            "p_2": "Captain (D), Fourteenth Destroyer Flotilla",
+            "p_3": "Captain (D), Tenth Destroyer Flotilla"
         },
         "locations": {
-            "l_1": "Maleme",
-            "l_2": "Commander-in-Chief"
+            "l_1": "Alexandria",
+            "l_2": "Corinth Canal",
+            "l_3": "Position 35 degs. 54 mins. N., 21 degs. 38 mins. E.",
+            "l_4": "Position 35 degs. 43 mins. N., 22 degs. 40 mins. E."
         },
         "events": {
-            "e_1": "Attack on LITTORIO",
-            "e_2": "Night Action"
+            "e_1": "Withdrawal Light Forces Engagement",
+            "e_2": "Battle of the ZARA Class Cruisers",
+            "e_3": "Fleet Re-formed"
         },
         "organisations": {
-            "o_1": "Maleme Fleet Air Arm",
-            "o_2": "Fourteenth Destroyer Flotilla",
-            "o_3": "Tenth Destroyer Flotilla",
-            "o_4": "Second Destroyer Flotilla"
+            "o_1": "Fourteenth Destroyer Flotilla",
+            "o_2": "Tenth Destroyer Flotilla"
         }
     },
     "keywords": [
-        "Battleship",
-        "Destroyers",
-        "Aircraft",
-        "Torpedo",
-        "Cruiser",
-        "Night action",
-        "Fleet"
+        "destroyer",
+        "battlefleet",
+        "cruisers",
+        "fire",
+        "torpedoes",
+        "reconnaissance",
+        "survivors"
     ],
     "themes": [
-        "Military Operations",
-        "Engagement Decisions",
-        "Aerial Attacks"
+        "Military Engagement",
+        "Naval Warfare",
+        "Tactical Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Engagement Decisions": [
+        "Tactical Decisions": [
+            "e_1",
             "e_2"
-        ],
-        "Aerial Attacks": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified (reported at 1515 and 1235)",
+            "date": "29th March, 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_3"
             ],
             "persons": [
                 "p_1",
@@ -63,13 +64,14 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The aerial striking force attacks the damaged battleship LITTORIO and reports three hits."
+            "eventSummary": "During the Withdrawal Light Forces Engagement, the battlefleet decides to withdraw to avoid friendly fire, altering course at 2330."
         },
         {
             "event": "e_2",
-            "date": "At 2040",
+            "date": "29th March, 1941",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_3"
             ],
             "persons": [
                 "p_1",
@@ -77,14 +79,29 @@
                 "p_3"
             ],
             "organisations": [
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The Commander-in-Chief decides to engage the enemy fleet at night, directing the destroyers to attack."
+            "eventSummary": "In the Battle of the ZARA Class Cruisers, the battlefleet engages two enemy cruisers, successfully inflicting severe damage."
+        },
+        {
+            "event": "e_3",
+            "date": "29th March, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Fleet Re-formed as various units regroup following engagements during the operation."
         }
     ]
 }

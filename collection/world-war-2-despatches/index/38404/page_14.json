@@ -1,42 +1,44 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Officer Commanding",
-            "p_2": "Mezog"
+            "p_1": "Air Officer Commanding No. 11 Group",
+            "p_2": "Chief of the Air Staff"
         },
         "locations": {
-            "l_1": "Dartmouth",
-            "l_2": "Nova Scotia",
-            "l_3": "England",
-            "l_4": "Scotland",
-            "l_5": "Kent",
-            "l_6": "Sussex",
-            "l_7": "Hastings",
-            "l_8": "Northern France"
+            "l_1": "Le Havre",
+            "l_2": "Rouen",
+            "l_3": "Amiens",
+            "l_4": "Ostend",
+            "l_5": "Dieppe",
+            "l_6": "North Foreland",
+            "l_7": "Beachy Head",
+            "l_8": "French departments of the Nord and Pas-de-Calais",
+            "l_9": "Low Countries"
         },
         "events": {
-            "e_1": "Battle of Britain",
-            "e_2": "Rhubarb patrols",
-            "e_3": "Circus operations"
+            "e_1": "Circus offensive",
+            "e_2": "operation Rhubarb",
+            "e_3": "Channel Stop"
         },
         "organisations": {
-            "o_1": "No. 10 Group",
-            "o_2": "No. 11 Group",
-            "o_3": "Bomber Command"
+            "o_1": "No. 2 Group",
+            "o_2": "No. 5 Group",
+            "o_3": "No. 11 Group",
+            "o_4": "Air Ministry"
         }
     },
     "keywords": [
-        "German aircraft",
-        "Fighter Directing Officers",
-        "pirate raids",
-        "high-altitude interceptions",
-        "balloon barrage control"
+        "Circus",
+        "operations",
+        "bomber force",
+        "fighter sorties",
+        "Eastern Front",
+        "offensive"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Aerial Reconnaissance",
-        "Defensive Tactics"
+        "Aerial Warfare",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -44,71 +46,72 @@
             "e_2",
             "e_3"
         ],
-        "Strategic Decisions": [
+        "Aerial Warfare": [
             "e_1",
-            "e_3"
+            "e_2"
         ],
-        "Defensive Tactics": [
+        "Strategic Decisions": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1940-06-13",
+            "date": "August 5th",
             "locations": [
-                "l_3",
+                "l_5",
+                "l_6",
+                "l_4",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Circus offensive resumes on August 5th, with 26 operations carried out during the month, led by Blenheims and Hampdens."
+        },
+        {
+            "event": "e_2",
+            "date": "October",
+            "locations": [
+                "l_6",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "New instructions for operation Rhubarb are issued in October, emphasizing the attack of surface objectives when enemy aircraft are not present."
+        },
+        {
+            "event": "e_3",
+            "date": "Early October",
+            "locations": [
+                "l_5",
                 "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "During the Battle of Britain, the initiative in daylight operations lies with the Germans, prompting plans for future British offensives."
-        },
-        {
-            "event": "e_2",
-            "date": "1940-12-20",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Rhubarb patrols are initiated, allowing British pilots to engage German aircraft and gather operational experience."
-        },
-        {
-            "event": "e_3",
-            "date": "1940-12-20",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Circus operations are planned to combine offensive sweeps with operations by Bomber Command, aiming to take the initiative from the enemy."
+            "connectedEvents": [],
+            "eventSummary": "Early in October, the Hurricane bomber becomes available for the Channel Stop operation, closing the area to hostile shipping."
         }
     ]
 }

@@ -2,55 +2,64 @@
     "namedEntities": {
         "persons": {
             "p_1": "General Ritchie",
-            "p_2": "American General Grant",
-            "p_3": "Commander, Eighth Army"
+            "p_2": "Rommel",
+            "p_3": "General Wavell",
+            "p_4": "Prime Minister",
+            "p_5": "Chief of the Imperial General Staff"
         },
         "locations": {
-            "l_1": "Middle East",
-            "l_2": "Bir Hacheim",
-            "l_3": "Tobruk",
-            "l_4": "Gazala",
-            "l_5": "Segnali",
-            "l_6": "Bir el Gubi",
-            "l_7": "El Adem",
-            "l_8": "Sidi Rezegh",
-            "l_9": "Buq Buq"
+            "l_1": "Tripolitania",
+            "l_2": "Agheila",
+            "l_3": "Cyrenaica",
+            "l_4": "Bengasi",
+            "l_5": "Malay Peninsula",
+            "l_6": "Burma",
+            "l_7": "Iraq",
+            "l_8": "Persia",
+            "l_9": "Singapore",
+            "l_10": "Malta",
+            "l_11": "Libya",
+            "l_12": "Mediterranean"
         },
         "events": {
-            "e_1": "Battle of Gazala",
-            "e_2": "Retreat from Cyrenaica",
-            "e_3": "Initial Failure of the Enemy Attack"
+            "e_1": "Invasion of Tripolitania",
+            "e_2": "War with Japan",
+            "e_3": "Diversion of Forces to the Far East",
+            "e_4": "Eighth Army entry into Bengasi"
         },
         "organisations": {
-            "o_1": "8th Army",
-            "o_2": "Eighth Army Forces",
-            "o_3": "7th Armoured Division",
-            "o_4": "3rd Indian Motor Brigade",
-            "o_5": "4th Armoured Brigade",
-            "o_6": "Ariete Division",
-            "o_7": "Trieste Division"
+            "o_1": "Middle East Command",
+            "o_2": "Middle East Defence Committee",
+            "o_3": "18th (United Kingdom) Division",
+            "o_4": "17th Indian Division",
+            "o_5": "Imperial General Staff"
         }
     },
     "keywords": [
-        "Field Artillery",
-        "Anti-tank guns",
-        "Armoured Divisions",
-        "Panzer Divisions",
-        "Enemy Movement"
+        "tanks",
+        "armoured forces",
+        "infantry",
+        "replacements",
+        "reinforcements",
+        "offensive",
+        "defensive",
+        "air forces"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Equipment Deployment"
+        "Strategic Decisions",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_1",
+            "e_3"
+        ],
+        "Logistics": [
             "e_2",
             "e_3"
         ]
@@ -58,51 +67,10 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 26, 1942",
+            "date": "",
             "locations": [
-                "l_4",
-                "l_3",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Battle of Gazala begins with the 7th Armoured Division reporting enemy movement as they prepare to defend their positions."
-        },
-        {
-            "event": "e_2",
-            "date": "May 26, 1942",
-            "locations": [
-                "l_2",
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Retreat from Cyrenaica takes place as enemy forces begin their advance, leading to strategic repositioning of the 7th Armoured Division."
-        },
-        {
-            "event": "e_3",
-            "date": "May 26, 1942",
-            "locations": [
-                "l_5",
-                "l_1"
+                "l_1",
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -111,9 +79,59 @@
                 "o_1"
             ],
             "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Invasion of Tripolitania takes place with significant military forces prepared to advance."
+        },
+        {
+            "event": "e_2",
+            "date": "8th December, 1941",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "War breaks out with Japan affecting military resources and reinforcements in the Middle East."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_4",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Initial reports of enemy movements kick off a series of defensive operations as the 7th Armoured Division reassesses its position against advancing Panzer Divisions."
+            "eventSummary": "The diversion of military forces to the Far East presents serious implications for the Middle East's defense."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Eighth Army enters Bengasi amid ongoing military operations in the region."
         }
     ]
 }

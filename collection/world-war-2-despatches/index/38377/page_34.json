@@ -1,80 +1,77 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain D.6",
-            "p_2": "Vice-Admiral Commanding, North Atlantic"
+            "p_1": "Rear-Admiral H. M. Burrough"
         },
         "locations": {
-            "l_1": "Port Said",
-            "l_2": "Haifa",
-            "l_3": "Formentera Island",
+            "l_1": "Gibraltar",
+            "l_2": "Freetown",
+            "l_3": "Clyde",
             "l_4": "Malta",
-            "l_5": "Western Mediterranean",
-            "l_6": "Gibraltar"
+            "l_5": "Scapa",
+            "l_6": "North Atlantic",
+            "l_7": "Straits",
+            "l_8": "United Kingdom"
         },
         "events": {
-            "e_1": "Operation Bellows",
-            "e_2": "Sinking of EAGLE"
+            "e_1": "Operation Berserk",
+            "e_2": "Operation Bellows",
+            "e_3": "Pedestal",
+            "e_4": "sinking of EAGLE"
         },
         "organisations": {
-            "o_1": "6th Destroyer Flotilla",
-            "o_2": "19th Destroyer Flotilla",
-            "o_3": "Force R",
-            "o_4": "Force F"
+            "o_1": "Admuralty"
         }
     },
     "keywords": [
         "convoy",
-        "torpedoes",
-        "German U-Boat",
-        "Spitfires",
-        "survivors"
+        "aircraft carriers",
+        "U-Boat",
+        "fighter direction",
+        "Spitfires"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Reconnaissance",
-        "Survivor Recovery"
+        "Aerial Combat"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Naval Warfare": [
-            "e_2"
+            "e_1",
+            "e_4"
         ],
-        "Reconnaissance": [
-            "e_1"
-        ],
-        "Survivor Recovery": [
+        "Aerial Combat": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 11",
+            "date": "2nd/3rd August",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation Bellows involves the launch of Spitfires from the aircraft carrier FURIOUS, with significant flights flown before delays occurred due to emergency maneuvers following the sinking of EAGLE."
+            "eventSummary": "Operation Berserk is carried out according to plan, benefiting fighter direction and cooperation among the carriers."
         },
         {
             "event": "e_2",
-            "date": "August 11",
+            "date": null,
             "locations": [
                 "l_4"
             ],
@@ -82,12 +79,34 @@
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The EAGLE is attacked and sunk by a German U-Boat while part of a convoy, leading to a recovery operation for survivors and further naval activities to search for the attacking submarine."
+            "eventSummary": "Operation Bellows is executed successfully, delivering 37 Spitfires to Malta."
+        },
+        {
+            "event": "e_3",
+            "date": null,
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Pedestal occurs concurrently with Operation Bellows."
+        },
+        {
+            "event": "e_4",
+            "date": null,
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The sinking of EAGLE results in the loss of a valuable aircraft carrier and significant fighter strength."
         }
     ]
 }

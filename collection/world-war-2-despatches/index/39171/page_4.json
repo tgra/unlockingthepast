@@ -1,114 +1,136 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Supreme Allied Commander",
-            "p_2": "Commander-in-Chief, India"
+            "p_1": "Commander-in-Chief, India",
+            "p_2": "G.O.C.-in-C., Eastern Army",
+            "p_3": "Supreme Allied Commander",
+            "p_4": "British Chiefs of Staff"
         },
         "locations": {
             "l_1": "Burma",
             "l_2": "Imphal",
             "l_3": "Yunnan",
             "l_4": "Ledo",
-            "l_5": "Katha Indaw",
-            "l_6": "Mogaung Myitkyina",
-            "l_7": "Bhamo",
-            "l_8": "Lashio",
-            "l_9": "Kalewa",
-            "l_10": "Kalemyo",
-            "l_11": "Kabaw Valley"
+            "l_5": "Shwebo",
+            "l_6": "Mandalay",
+            "l_7": "Katha Indaw",
+            "l_8": "Mogaung Myitkyina",
+            "l_9": "Bhamo Lashio",
+            "l_10": "Ye-U",
+            "l_11": "Assam",
+            "l_12": "Calcutta",
+            "l_13": "Kabaw Valley",
+            "l_14": "Kalewa Kalemyo",
+            "l_15": "Tamu",
+            "l_16": "Salween",
+            "l_17": "Tiddim"
         },
         "events": {
-            "e_1": "Quebec Conference",
-            "e_2": "Cairo Conference",
-            "e_3": "Imphal Battle"
+            "e_1": "Imphal battle",
+            "e_2": "Quebec Conference",
+            "e_3": "Cairo Conference",
+            "e_4": "airborne operation against Katha Indaw"
         },
         "organisations": {
-            "o_1": "British Chiefs of Staff",
-            "o_2": "Chinese-American forces",
-            "o_3": "Long-Range Penetration Forces",
-            "o_4": "Chinese Army in India (C.A.L)"
+            "o_1": "Chinese forces from Ledo",
+            "o_2": "Chinese Army in India",
+            "o_3": "Long-Range Penetration Troops"
         }
     },
     "keywords": [
-        "Burma",
         "Japanese forces",
+        "surrender",
         "air ferry route",
-        "offensive operations",
-        "Imphal front",
-        "Katha Indaw",
-        "Chinese forces"
+        "operations",
+        "Chinese-American forces",
+        "G.O.C.-in-C."
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Logistics",
-        "Allied Cooperation"
+        "Strategic Planning",
+        "Allied Command Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_4"
         ],
         "Diplomacy": [
-            "e_1"
-        ],
-        "Strategic Decisions": [
             "e_2",
             "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 1943",
+            "date": "1943",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "At the Quebec Conference, decisions are made regarding military operations in Burma aimed at improving security for the air route to China and engaging Japanese forces."
-        },
-        {
-            "event": "e_2",
-            "date": "November 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Cairo Conference results in an abandonment of an ambitious plan due to the unavailability of necessary aircraft, leading to a revised military strategy."
-        },
-        {
-            "event": "e_3",
-            "date": "July 1944",
-            "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_3",
-                "o_4"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "Despite initial plans, the Imphal Battle highlights the challenges and lack of initiative faced by Japanese forces in the face of an organized Allied offensive."
+            "eventSummary": "The Imphal battle is characterized by fierce fighting, contributing to the slow surrender rate of Japanese troops."
+        },
+        {
+            "event": "e_2",
+            "date": "1943",
+            "locations": [],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Quebec Conference results in directives for conducting operations in Burma aimed at assisting China."
+        },
+        {
+            "event": "e_3",
+            "date": "1943",
+            "locations": [],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Cairo Conference discusses future military strategies and cooperation among Allied forces."
+        },
+        {
+            "event": "e_4",
+            "date": "1943",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The planned airborne operation against Katha Indaw is considered but later abandoned due to resource limitations."
         }
     ]
 }

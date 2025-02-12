@@ -1,102 +1,135 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Alexander",
-            "p_2": "Lieutenant-General Alexander"
+            "p_1": "Mr. Morton",
+            "p_2": "Sir John Rowland",
+            "p_3": "Lieut -Colonel C. P. Brewitt"
         },
         "locations": {
-            "l_1": "Hlawga",
-            "l_2": "Hlegu",
-            "l_3": "Rangoon",
-            "l_4": "Syriam",
-            "l_5": "Prome",
-            "l_6": "Burma",
-            "l_7": "River Sittang"
+            "l_1": "Rangoon",
+            "l_2": "Mandalay",
+            "l_3": "Thabeikkyin",
+            "l_4": "Sittaung",
+            "l_5": "Lashio",
+            "l_6": "Yunman-Burma Railway",
+            "l_7": "India",
+            "l_8": "Shwebo",
+            "l_9": "Myitkyina",
+            "l_10": "Shwegyin",
+            "l_11": "Tamu",
+            "l_12": "Burma"
         },
         "events": {
-            "e_1": "Battle east of the River Sittang",
-            "e_2": "Loss of Rangoon",
-            "e_3": "Appointment of Commander-in-Chief Burma"
+            "e_1": "Evacuation of Rangoon",
+            "e_2": "Destruction of Oilfields",
+            "e_3": "Withdrawal north of Mandalay",
+            "e_4": "Arrival of Chinese Expeditionary Force in Burma"
         },
         "organisations": {
-            "o_1": "A.B.D.A. Command",
-            "o_2": "Burma Rifles",
-            "o_3": "Burma Frontier Force"
+            "o_1": "Irrawaddy Flotilla Company",
+            "o_2": "Burma Railways",
+            "o_3": "Medical Directorate",
+            "o_4": "Chinese Liaison Mission"
         }
     },
     "keywords": [
-        "Indian Infantry Brigade",
-        "transport",
-        "Japanese soldier",
-        "administration",
-        "offensive spirit",
-        "reinforcement",
-        "defensive preparations",
-        "jungle warfare"
+        "Ammunition",
+        "Ordnance Stores",
+        "Shortage",
+        "Transportation",
+        "Desertion",
+        "Medical Evacuation",
+        "Administrative Problems",
+        "Chinese Armies"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decision Making",
-        "Training",
-        "Enemy Tactics",
-        "Defensive Failures"
+        "Logistics",
+        "Evacuations",
+        "Administrative Challenges"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
+        "Evacuations": [
+            "e_1",
             "e_3"
         ],
-        "Training": []
+        "Administrative Challenges": [
+            "e_4"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "",
             "locations": [
-                "l_7"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The battle east of the River Sittang determines the fate of Rangoon as enemy forces await reinforcements before proceeding."
+            "eventSummary": "The evacuation of Rangoon is underway, facing challenges due to supplies and personnel issues."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "16th April",
             "locations": [
-                "l_3"
+                "l_12"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Rangoon falls due to late and insufficient reinforcements and inadequately prepared defenses."
+            "eventSummary": "On the 16th April, the destruction of oilfields occurs, severely impacting the logistical capabilities of the forces."
         },
         {
             "event": "e_3",
-            "date": "22nd February 1694",
+            "date": "",
             "locations": [
-                "l_6"
+                "l_2"
             ],
             "persons": [
-                "p_2"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "As the withdrawal north of Mandalay commences, efforts to maintain operational personnel against rising desertions are highlighted."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "Lieutenant-General Alexander is appointed Commander-in-Chief Burma as the War Cabinet decides on a significant increase in forces."
+            "eventSummary": "The arrival of the Chinese Expeditionary Force in Burma marks a significant point in operational dynamics, revealing administrative deficiencies."
         }
     ]
 }

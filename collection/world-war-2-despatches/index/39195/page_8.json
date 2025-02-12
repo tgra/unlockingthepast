@@ -1,90 +1,161 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General Sir William Slim",
-            "p_2": "General Kimura",
-            "p_3": "Lieutenant-General Sir Philip Christison",
-            "p_4": "Rear-Admiral Martin",
-            "p_5": "Air Vice-Marshal the Earl of Bandon",
-            "p_6": "Major-General G. P. Walsh",
-            "p_7": "Major-General E. M. Bastyan"
+            "p_1": "General Slim",
+            "p_2": "General Sultan"
         },
         "locations": {
-            "l_1": "Central Burma",
-            "l_2": "Rangoon",
-            "l_3": "Arakan"
+            "l_1": "Shwebo",
+            "l_2": "Bhamo",
+            "l_3": "Ye-U",
+            "l_4": "Bilaspur-Raipur",
+            "l_5": "Kohima",
+            "l_6": "Indaw",
+            "l_7": "Pinlebu",
+            "l_8": "Wuntho",
+            "l_9": "Burma"
         },
         "events": {
-            "e_1": "Battle in Central Burma",
-            "e_2": "Combined Operations in Arakan"
+            "e_1": "Operations in December",
+            "e_2": "Capital, Phase I",
+            "e_3": "Capital airborne operation",
+            "e_4": "Imphal battle",
+            "e_5": "Abandonment of airborne landing",
+            "e_6": "Advance with two Corps"
         },
         "organisations": {
-            "o_1": "Allied Land Forces"
+            "o_1": "44 Indian Airborne Division",
+            "o_2": "44 Indian Armoured Division",
+            "o_3": "Supreme Allied Commander",
+            "o_4": "Northern Combat Area Command",
+            "o_5": "Fourteenth Army",
+            "o_6": "19 Indian Division",
+            "o_7": "36 British Division",
+            "o_8": "Special Force"
         }
     },
     "keywords": [
-        "Military Triumph",
-        "Campaign Planning",
-        "Combined Operations",
-        "Inter-Service Cooperation"
+        "air superiority",
+        "air transport",
+        "tactical air support",
+        "airborne operation",
+        "combat",
+        "division",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Leadership",
-        "Strategic Planning"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Leadership": [
-            "e_1",
-            "e_2"
-        ],
-        "Strategic Planning": [
-            "e_1",
-            "e_2"
+        "Strategic Decisions": [
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date Undetermined",
+            "date": "December 1944",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_9"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_5",
+                "e_6"
             ],
-            "eventSummary": "The battle in Central Burma is a personal triumph for Lieutenant-General Sir William Slim, leading his army to defeat the Japanese armies by securing the initiative and forcing General Kimura to conform to his strategy."
+            "eventSummary": "An account is provided of military operations conducted in December 1944, detailing strategic decisions taken by commanders."
         },
         {
             "event": "e_2",
-            "date": "Date Undetermined",
+            "date": "End of November 1944",
             "locations": [
-                "l_3"
+                "l_3",
+                "l_1"
             ],
-            "persons": [
-                "p_3",
-                "p_4",
-                "p_5"
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
             ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "Phase I of Operation Capital is virtually completed, securing the Ye-U and Shwebo areas."
+        },
+        {
+            "event": "e_3",
+            "date": "February 1945",
+            "locations": [],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_5"
             ],
-            "eventSummary": "The combined operations in Arakan, commanded by Lieutenant-General Sir Philip Christison, illustrate remarkable planning and inter-Service cooperation, resulting in operational success and troop inspiration."
+            "eventSummary": "The airborne operation planned for Capital is abandoned due to a lack of available troops."
+        },
+        {
+            "event": "e_4",
+            "date": "Mid-1944",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_8"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Special Force suffers severe losses from disease during its campaign in 1944."
+        },
+        {
+            "event": "e_5",
+            "date": "February 23, 1945",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The plan for an airborne landing as part of Capital, Phase II is abandoned."
+        },
+        {
+            "event": "e_6",
+            "date": "December 7, 1944",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "General Slim recasts his plan and decides to advance with two Corps to maintain pressure on the enemy."
         }
     ]
 }

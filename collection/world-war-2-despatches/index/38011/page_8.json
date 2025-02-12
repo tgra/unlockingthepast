@@ -1,95 +1,80 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lord Cork",
-            "p_2": "Group Captain Moore",
-            "p_3": "Brigadier Rossiter",
-            "p_4": "General Bethouart"
+            "p_1": "Colonel Trappes-Lomax",
+            "p_2": "General Auchinleck",
+            "p_3": "Colonel Gubbins",
+            "p_4": "Brigadier Fraser",
+            "p_5": "LieutenantCommander W. R. Fell",
+            "p_6": "General Bethouart",
+            "p_7": "Commander Hubback"
         },
         "locations": {
-            "l_1": "Northern Norway",
-            "l_2": "Narvik",
-            "l_3": "Lulea",
-            "l_4": "Bodo",
-            "l_5": "Harstad",
-            "l_6": "Skaanland",
-            "l_7": "Tromso",
-            "l_8": "French territory",
-            "l_9": "Mo",
-            "l_10": "Elvenes",
-            "l_11": "Lodingen",
-            "l_12": "Tjelsundet Fjord",
-            "l_13": "Lofoten Islands"
+            "l_1": "Bodo",
+            "l_2": "Harstad",
+            "l_3": "Ankenes",
+            "l_4": "Narvik",
+            "l_5": "Bjerkvik",
+            "l_6": "Oydejord Peninsula",
+            "l_7": "Rombaks Fjord",
+            "l_8": "Skjelfiord",
+            "l_9": "U.K."
         },
         "events": {
-            "e_1": "Evacuation of Northern Norway",
-            "e_2": "Transfer of anti-aircraft artillery",
-            "e_3": "disembarkation of troops at Bodo",
-            "e_4": "Attack on the Chrobry",
-            "e_5": "Destruction of enemy forces in Narvik"
+            "e_1": "Evacuation of Bodo",
+            "e_2": "Capture of Narvik",
+            "e_3": "Bombing of Bodo",
+            "e_4": "Landing at Bjerkvik",
+            "e_5": "Communications from Chiefs of Staff"
         },
         "organisations": {
-            "o_1": "His Majesty's Government",
-            "o_2": "British Army",
-            "o_3": "RAF",
-            "o_4": "Norwegian Army",
-            "o_5": "French Contingent"
+            "o_1": "Scots Guards",
+            "o_2": "South Wales Borderers",
+            "o_3": "Foreign Legion",
+            "o_4": "French Command",
+            "o_5": "H.M.S. FAME"
         }
     },
     "keywords": [
-        "anti-aircraft guns",
-        "Northern Norway",
-        "Narvik",
         "Bodo",
-        "military operations",
-        "evacuation",
-        "air attack"
+        "Harstad",
+        "Narvik",
+        "Evacuation",
+        "Bombing",
+        "Communications",
+        "Military Operations"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Defense Strategy",
-        "International Cooperation"
+        "Evacuation",
+        "Air Power",
+        "Naval Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3",
+            "e_4"
+        ],
+        "Evacuation": [
+            "e_1",
             "e_5"
         ],
-        "Logistics": [
-            "e_2"
+        "Air Power": [
+            "e_3"
         ],
-        "Defense Strategy": [
-            "e_1"
+        "Naval Operations": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "24th May",
+            "date": "May 29-31",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "On 24th May, telegraphic instructions were received to evacuate Northern Norway as soon as possible due to the enemy's advancing forces."
-        },
-        {
-            "event": "e_2",
-            "date": "Throughout May",
-            "locations": [
-                "l_2",
-                "l_4"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_3"
@@ -98,60 +83,67 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The transfer of anti-aircraft artillery is executed under pressure to secure vital areas in Northern Norway, with Brigadier Rossiter overseeing the process."
+            "eventSummary": "The evacuation of Bodo is successfully accomplished with 1,000 men taken directly to U.K. in VINDICTIVE and the remainder brought to Harstad."
         },
         {
-            "event": "e_3",
-            "date": "17th May",
+            "event": "e_2",
+            "date": "May 23-24",
             "locations": [
-                "l_4"
+                "l_4",
+                "l_1"
             ],
             "persons": [
-                "p_4"
+                "p_7",
+                "p_6"
             ],
             "organisations": [
-                "o_2",
-                "o_5"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_4"
             ],
-            "eventSummary": "Troops disembark at Bodo on 17th May amidst urgent circumstances to strengthen defenses against enemy advances."
+            "eventSummary": "The operation for the capture of Narvik begins, with preparations made for advancing military actions in the area."
+        },
+        {
+            "event": "e_3",
+            "date": "May 28",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The enemy bombed the town of Bodo, causing significant destruction."
         },
         {
             "event": "e_4",
-            "date": "14th May",
+            "date": "May 13",
             "locations": [
-                "l_2"
+                "l_5",
+                "l_6"
             ],
             "persons": [
-                "p_4"
+                "p_7"
             ],
             "organisations": [
-                "o_2"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "On 14th May, the Chrobry carrying the Irish Guards is attacked by German aircraft near Bodo, resulting in casualties but with most troops saved."
+            "eventSummary": "The landing by the Foreign Legion at Bjerkvik establishes contact with French troops and sets the stage for the occupation of strategic locations."
         },
         {
             "event": "e_5",
-            "date": "14th May",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_2",
-                "o_5"
-            ],
+            "date": "May 24",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "General Bethouart receives instructions to destroy enemy forces and capture Narvik as part of the military strategy."
+            "eventSummary": "The Chiefs of Staff send instructions regarding the evacuation of all forces from North Norway."
         }
     ]
 }

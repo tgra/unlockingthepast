@@ -1,154 +1,157 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General Mackesy",
-            "p_2": "General Rug",
-            "p_3": "General Fleischer",
-            "p_4": "Colonel R. C. G. Pollock",
-            "p_5": "Sir Cecil Dormer",
-            "p_6": "Lord Cork",
-            "p_7": "General Bethouart"
+            "p_1": "Walter Campbell",
+            "p_2": "Sir Geoffrey Congreve",
+            "p_3": "Vice-Admiral",
+            "p_4": "Generals Auchinleck",
+            "p_5": "General Bethouart",
+            "p_6": "Brigadier J. A. H. Gammell",
+            "p_7": "Captain L. E. H. Maund",
+            "p_8": "Commander A. G. V. Hubback",
+            "p_9": "Wing Commander Atcherley",
+            "p_10": "Group Captain Moore",
+            "p_11": "Colonel A. A. B. Dowler",
+            "p_12": "Captain Louis Hamilton"
         },
         "locations": {
-            "l_1": "Norway",
-            "l_2": "Rombaks Fjord",
-            "l_3": "Mosjoen",
-            "l_4": "Tromso",
-            "l_5": "Harstad",
-            "l_6": "Narvik",
-            "l_7": "Bodo",
-            "l_8": "Lulea",
-            "l_9": "Beis Fjord"
+            "l_1": "Ellesmere",
+            "l_2": "Thirlmere",
+            "l_3": "Tromso",
+            "l_4": "Bodo",
+            "l_5": "Svolvaer",
+            "l_6": "Clyde",
+            "l_7": "Andfiord",
+            "l_8": "Norwegian waters",
+            "l_9": "North Sea",
+            "l_10": "Southampton"
         },
         "events": {
-            "e_1": "Meeting with Norwegian generals on 16th May",
-            "e_2": "Arrival of Sir Cecil Dormer",
-            "e_3": "Establishment of base facilities discussions in Tromso",
-            "e_4": "Report delivered to Chiefs of Staff on 16th May",
-            "e_5": "Operational planning by General Bethouart"
+            "e_1": "Evacuation operation",
+            "e_2": "Destruction of Oil Tanks at Svolvaer",
+            "e_3": "Voyage of the Convoy",
+            "e_4": "Final evacuation order",
+            "e_5": "Preparation of aerodromes"
         },
         "organisations": {
-            "o_1": "Allied Forces",
-            "o_2": "Norwegian Government",
-            "o_3": "French Forces"
+            "o_1": "Royal Air Force",
+            "o_2": "Admiralty",
+            "o_3": "Home Fleet"
         }
     },
     "keywords": [
-        "Morale",
-        "Cooperation",
-        "Diplomatic Channels",
-        "Military Mission",
-        "Defensive",
-        "Offensive",
-        "Base Facilities",
-        "Supplies",
-        "Artillery",
-        "Air Support"
+        "Evacuation",
+        "Military Operations",
+        "Naval Convoy",
+        "Destruction of Oil Tanks",
+        "Aerodrome Preparation"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Cooperation with Local Authorities",
-        "Strategic Planning"
+        "Evacuation Planning",
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_4",
+            "e_2",
             "e_5"
         ],
-        "Diplomacy": [
-            "e_2",
+        "Naval Strategy": [
             "e_3"
         ],
-        "Cooperation with Local Authorities": [
-            "e_1"
-        ],
-        "Strategic Planning": [
+        "Evacuation Planning": [
             "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th May",
+            "date": "June 8th",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_6",
+                "l_8"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8",
+                "p_9",
+                "p_10",
+                "p_11",
+                "p_12"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_2",
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "On the 16th May, a cordial meeting is held with Norwegian generals to address the military strategy and cooperation in combating enemy forces in the region."
+            "eventSummary": "The evacuation operation concludes successfully following extensive planning and collaboration across military branches and nations."
         },
         {
             "event": "e_2",
-            "date": "15th May",
+            "date": "Night of June 7th",
             "locations": [
-                "l_1"
+                "l_4",
+                "l_7"
             ],
             "persons": [
-                "p_5"
+                "p_2"
             ],
             "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Sir Cecil Dormer arrives from the UK to discuss the situation with Lord Cork and the Norwegian Government, emphasizing the need for better control in occupied areas."
-        },
-        {
-            "event": "e_3",
-            "date": "23rd May",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_6"
-            ],
-            "organisations": [
-                "o_1",
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "Lord Cork visits Tromso to discuss establishing military base facilities, stressing the importance of anti-aircraft protection."
+            "eventSummary": "A successful mission is carried out to destroy hostile Oil Tanks at Svolvaer, engaging the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "June 7th",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Convoy sails for the Clyde at 0300 under the command of Vice-Admiral."
         },
         {
             "event": "e_4",
-            "date": "16th May",
+            "date": "Period prior to June 8th",
             "locations": [
-                "l_1"
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "A report is prepared and sent to the Chiefs of Staff outlining the military situation and outlining the necessary forces required to maintain Northern Norway."
+            "eventSummary": "An order for final evacuation is given, marking the end of coordinated military operations and planning."
         },
         {
             "event": "e_5",
-            "date": "During assigned period",
-            "locations": [
-                "l_2",
-                "l_9"
-            ],
+            "date": "During the expedition",
+            "locations": [],
             "persons": [
-                "p_7"
+                "p_6",
+                "p_9"
             ],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "General Bethouart continues to perfect operational plans and moves troops successfully against German positions despite difficult conditions."
+            "eventSummary": "Efforts to prepare aerodromes amidst severe weather and logistical challenges demonstrate the commitment across services."
         }
     ]
 }

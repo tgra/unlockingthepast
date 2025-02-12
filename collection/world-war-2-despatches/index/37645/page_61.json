@@ -1,73 +1,86 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier M. S. Lush",
-            "p_2": "Duke of Harrar, Prince Mackonnen",
-            "p_3": "Brigadier A. Chater"
+            "p_1": "Colonel Maraventano",
+            "p_2": "O. C. Wingate",
+            "p_3": "G. R. Musgrave"
         },
         "locations": {
-            "l_1": "Addis Abeba",
-            "l_2": "Harrar",
-            "l_3": "Mogadiscio",
-            "l_4": "Hargeisa",
-            "l_5": "Middle East",
-            "l_6": "Abyssinia",
-            "l_7": "Nairobi",
-            "l_8": "Italian Somaliland",
-            "l_9": "British Somaliland",
-            "l_10": "Ogaden"
+            "l_1": "Dessie",
+            "l_2": "Combolcia",
+            "l_3": "Addis Abeba",
+            "l_4": "Debra Marcos",
+            "l_5": "Blue Nile",
+            "l_6": "Cuiu",
+            "l_7": "Quoziam",
+            "l_8": "Addis Dera",
+            "l_9": "Uorro Tlu",
+            "l_10": "Debre Sina",
+            "l_11": "Uoghidi",
+            "l_12": "Borena",
+            "l_13": "Ficche",
+            "l_14": "Cape Guardafui"
         },
         "events": {
-            "e_1": "Return of the Emperor to Addis Abeba",
-            "e_2": "Military operations in Galla Sidamo",
-            "e_3": "Evacuation of Italians from Abyssinia"
+            "e_1": "Battle of the Combolcia Pass",
+            "e_2": "Occupation of Dessie",
+            "e_3": "Evacuation of Debra Marcos",
+            "e_4": "Maraventano's Column Withdrawal",
+            "e_5": "Capitulation of Colonel Maraventano",
+            "e_6": "Internal Security Operations in North East Somaliland"
         },
         "organisations": {
-            "o_1": "E.A. Force",
-            "o_2": "O.E.T.A."
+            "o_1": "Sudan Defence Force",
+            "o_2": "R.A.F."
         }
     },
     "keywords": [
-        "Ethiopian State",
-        "patriot movement",
-        "internal security",
-        "disarming",
-        "political officers",
-        "military governor",
-        "law and order",
-        "evacuation"
+        "artillery",
+        "surrender",
+        "victory",
+        "engagement",
+        "occupation",
+        "defensive position",
+        "evacuation",
+        "pursuit",
+        "bombing",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Civil Administration",
-        "Evacuation"
+        "Surrender",
+        "Engagements",
+        "Pursuit"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2"
-        ],
-        "Diplomacy": [
-            "e_1"
-        ],
-        "Civil Administration": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_6"
         ],
-        "Evacuation": [
-            "e_3"
+        "Surrender": [
+            "e_5"
+        ],
+        "Engagements": [
+            "e_1",
+            "e_4"
+        ],
+        "Pursuit": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "5th May",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
@@ -75,13 +88,13 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Emperor ceremoniously enters Addis Abeba on the anniversary of the Italian entry, amid a secure environment due to successful disarmament efforts."
+            "eventSummary": "The Battle of the Combolcia Pass represents a significant engagement where substantial Italian forces were encountered and defeated. It highlights the strategic importance of the area."
         },
         {
             "event": "e_2",
-            "date": "18th June",
+            "date": "30th April",
             "locations": [
-                "l_6"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -90,25 +103,74 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "Military operations in Galla Sidamo are successfully reduced, leading to the move of headquarters back to Nairobi."
+            "eventSummary": "The occupation of Dessie marks a critical achievement following unconditional surrender by the Italians, allowing the advancing forces to secure a strategic location."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
+            "date": "4th April",
             "locations": [
-                "l_6"
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The evacuation of Debra Marcos initiates a series of events that significantly alter the tactical landscape and lead towards the engagement with Maraventano's troops."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "Maraventano's column withdrawal depicts the desperate retreat of Italian troops faced with British advances, leading to direct confrontations."
+        },
+        {
+            "event": "e_5",
+            "date": "22nd May",
+            "locations": [
+                "l_1",
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The capitulation of Colonel Maraventano concludes a protracted series of skirmishes and retreats, culminating in the surrender of his reduced forces."
+        },
+        {
+            "event": "e_6",
+            "date": "20th April - 21st May",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "Plans for the evacuation of Italians from Abyssinia are examined, necessitating the removal of civilians and prisoners of war."
+            "eventSummary": "Internal Security Operations in North East Somaliland focus on eliminating Italian posts and re-establishing British control in the region."
         }
     ]
 }

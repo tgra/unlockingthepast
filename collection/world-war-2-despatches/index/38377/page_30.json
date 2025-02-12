@@ -1,123 +1,121 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commanding Officer",
-            "p_2": "Rear-Admiral Commanding",
-            "p_3": "Captain (D), 6th Destroyer Flotilla"
+            "p_1": "BLANKNEY",
+            "p_2": "BEDOUIN",
+            "p_3": "CAIRO",
+            "p_4": "PARTRIDGE",
+            "p_5": "MARNE",
+            "p_6": "MATCHLESS",
+            "p_7": "ITHURIEL"
         },
         "locations": {
-            "l_1": "Galita",
-            "l_2": "Malta",
-            "l_3": "Skerki Channel",
-            "l_4": "Cani Rocks",
-            "l_5": "Kelibia",
-            "l_6": "Tunis"
+            "l_1": "MALTA",
+            "l_2": "Zembra",
+            "l_3": "Cape Bon",
+            "l_4": "Ras-el-Mirh",
+            "l_5": "Kelibia Road Light"
         },
         "events": {
-            "e_1": "Attack on H.M.S. ITHURIEL",
-            "e_2": "Torpedoing of H.M. Ships NIGERIA and CAIRO",
-            "e_3": "Sinking of merchant ships",
-            "e_4": "E-Boat attacks"
+            "e_1": "Operation Harpoon",
+            "e_2": "Passage of Force X and Convoy to Malta",
+            "e_3": "Engagement with enemy cruisers and destroyers"
         },
         "organisations": {
-            "o_1": "H.M.S. ITHURIEL",
-            "o_2": "H.M.S. INDOMITABLE",
-            "o_3": "H.M.S. ASHANTI",
-            "o_4": "H.M.S. KENYA"
+            "o_1": "Royal Navy"
         }
     },
     "keywords": [
-        "Submarine",
-        "Air Attack",
-        "Convoy",
-        "Torpedo",
-        "Merchant Ships"
+        "Operation Harpoon",
+        "Force X",
+        "convoy",
+        "enemy attack",
+        "MALTA",
+        "Zembra"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Strategic Decisions"
+        "Naval Engagements",
+        "Combat Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_2"
         ],
-        "Strategic Decisions": [
-            "e_2",
-            "e_1"
+        "Naval Engagements": [
+            "e_3"
+        ],
+        "Combat Tactics": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12th August",
+            "date": "14th June and 15th June, 1942",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "H.M.S. ITHURIEL achieves a kill of an Italian submarine by ramming, sustaining damage in the process."
+            "eventSummary": "Operation Harpoon is initiated as Force X is detached from Force T, aiming to transport convoy to Malta while engaging enemy forces."
         },
         {
             "event": "e_2",
-            "date": "13th August",
+            "date": "14th June and 15th June, 1942",
             "locations": [
-                "l_2",
-                "l_4"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_2"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "The ships NIGERIA and CAIRO are torpedoed during a critical maneuver, significantly impacting the convoy's leadership and protection."
+            "eventSummary": "The passage of Force X and convoy to Malta occurs, with encountered enemy dive bombing attacks and preparation for engagement."
         },
         {
             "event": "e_3",
-            "date": "13th August",
+            "date": "15th June, 1942",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_4"
             ],
             "persons": [
-                "p_3"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "Several merchant ships are sunk due to attacks by enemy forces while attempting to reach Malta."
-        },
-        {
-            "event": "e_4",
-            "date": "13th August",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "E-Boat attacks on scattered convoy ships lead to further disorganization and losses."
+            "eventSummary": "Engagement occurs with enemy cruisers and destroyers as Force X attempts to protect the convoy during the passage."
         }
     ]
 }

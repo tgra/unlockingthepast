@@ -1,102 +1,133 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Duncan",
-            "p_2": "Briggs",
-            "p_3": "Wightwick",
-            "p_4": "A. G. Bishop",
-            "p_5": "K. Powell"
+            "p_1": "F.L. Jackson",
+            "p_2": "P.O. Umphelby",
+            "p_3": "Wing Commander Maguire",
+            "p_4": "Group Captain McCauley",
+            "p_5": "A.O.C. No. 225 (B) Group",
+            "p_6": "A.O.C. 226 Group",
+            "p_7": "Dutch Territorial Commander",
+            "p_8": "Abdair"
         },
         "locations": {
-            "l_1": "Northern Sumatra",
-            "l_2": "Palembang",
-            "l_3": "Sabang",
-            "l_4": "Lho nga",
-            "l_5": "Medan",
-            "l_6": "Pakanbaroe",
-            "l_7": "Padang",
-            "l_8": "Oesthaven",
-            "l_9": "Lahat",
-            "l_10": "Singapore"
+            "l_1": "Balamig",
+            "l_2": "Palembang Town",
+            "l_3": "West Coast of Sumatra",
+            "l_4": "Java",
+            "l_5": "P.II aerodrome",
+            "l_6": "Banka Straits",
+            "l_7": "Banka Island",
+            "l_8": "Lahat",
+            "l_9": "Oesthaven"
         },
         "events": {
-            "e_1": "Formation of HQ 225 (B) Group",
-            "e_2": "Development of aerodromes in Sumatra"
+            "e_1": "Withdrawal from Sumatra",
+            "e_2": "Attack on Japanese Convoy off Palembang",
+            "e_3": "Reconnaissance on the 15th",
+            "e_4": "Further paratroop landing at P.I."
         },
         "organisations": {
             "o_1": "R.A.F.",
-            "o_2": "A.H.Q.",
-            "o_3": "No. 225 (B) Group"
+            "o_2": "Dutch Territorial Forces",
+            "o_3": "A.O.C. 225 Group",
+            "o_4": "A.O.C. 226 Group"
         }
     },
     "keywords": [
-        "aerodromes",
-        "Sumatra",
-        "refueling",
-        "military operations",
-        "group formation"
+        "paratroop",
+        "aerodrome",
+        "aircraft",
+        "Japanese convoy",
+        "evacuation",
+        "casualties"
     ],
     "themes": [
         "Military Operations",
-        "Infrastructure Development",
-        "Strategic Decisions"
+        "Air Action",
+        "Evacuation Efforts"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_4"
         ],
-        "Infrastructure Development": [
-            "e_2"
+        "Air Action": [
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Evacuation Efforts": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th January 1942",
+            "date": "14th February",
             "locations": [
-                "l_10",
-                "l_2"
+                "l_2",
+                "l_9"
+            ],
+            "persons": [
+                "p_6",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "On the evening of the 14th February, the A.O.C. 226 Group returns to Palembang from P.II to find the situation under control, leading to the decision of the immediate evacuation of remaining R.A.F. personnel."
+        },
+        {
+            "event": "e_2",
+            "date": "15th February",
+            "locations": [
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_4",
                 "p_5"
             ],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_1"
             ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On the 15th February, attacks commence on the Japanese convoy entering the Palembang River, resulting in heavy enemy casualties and the sinking of transports."
+        },
+        {
+            "event": "e_3",
+            "date": "15th February",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "On January 16, the A.H.Q. forms the HQ 225 (B) Group in Singapore, which is subsequently dispatched to Palembang in Sumatra."
+            "eventSummary": "Reconnaissance on the 15th pinpoints the position of Japanese transports and reveals their vulnerability to R.A.F. attacks."
         },
         {
-            "event": "e_2",
-            "date": "18th January 1942",
+            "event": "e_4",
+            "date": "15th February",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_10"
+                "l_5"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "By January 18, developments in aerodrome infrastructure in Northern Sumatra are prioritized, facilitating military refueling and support operations."
+            "eventSummary": "A further paratroop landing takes place at P.I. later during the morning of the 15th February, allowing Japanese forces to establish themselves near Palembang town."
         }
     ]
 }

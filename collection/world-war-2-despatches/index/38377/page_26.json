@@ -1,91 +1,106 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-Commander J. E. H. McBeath, D.S.O., R.N.",
-            "p_2": "Captain G. N. Oliver, R.N."
+            "p_1": "ViceAdmiral",
+            "p_2": "Rear-Admiral Commanding"
         },
         "locations": {
-            "l_1": "Gibraltar",
+            "l_1": "CITY OF PRETORIA",
             "l_2": "Malta",
-            "l_3": "Sicilian coast",
-            "l_4": "Pantellaria harbour",
-            "l_5": "Talbot Bank"
+            "l_3": "Messma",
+            "l_4": "Sicily",
+            "l_5": "Sardinia",
+            "l_6": "Cagliari",
+            "l_7": "Western Mediterranean"
         },
         "events": {
-            "e_1": "Torpedoing of M.V. IMPERIAL STAR",
-            "e_2": "Bombardment of Pantellaria harbour",
-            "e_3": "Operation Substance"
+            "e_1": "Operation on D.4",
+            "e_2": "Attack on CITY OF PRETORIA"
         },
         "organisations": {
-            "o_1": "Naval Liaison Officer",
-            "o_2": "10th Cruiser Squadron",
-            "o_3": "Royal Navy"
+            "o_1": "R.A.F.",
+            "o_2": "GURKHA",
+            "o_3": "NELSON",
+            "o_4": "ARK ROYAL",
+            "o_5": "PRINCE OF WALES",
+            "o_6": "LEGION",
+            "o_7": "DUNCAN",
+            "o_8": "LIVELY"
         }
     },
     "keywords": [
-        "torpedo",
-        "damaged",
-        "tow",
-        "scuttled",
-        "bombardment"
+        "submarine",
+        "aircraft",
+        "enemy",
+        "battlefleet",
+        "reconnaissance",
+        "operation",
+        "convoy"
     ],
     "themes": [
         "Military Operations",
-        "Naval Tactics",
-        "Rescue Operations",
-        "Minefields"
+        "Air Operations",
+        "Naval Strategy",
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2"
-        ],
-        "Naval Tactics": [
-            "e_3"
-        ],
-        "Rescue Operations": [
             "e_1"
         ],
-        "Minefields": [
-            "e_3"
+        "Air Operations": [
+            "e_1"
+        ],
+        "Naval Strategy": [
+            "e_2"
+        ],
+        "Reconnaissance": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2032",
+            "date": "27th September",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
+                "o_1",
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The M.V. IMPERIAL STAR is torpedoed, causing severe flooding and loss of propulsion, leading to efforts to tow her for safety."
+            "eventSummary": "The operation on D.4 aims to ensure the safe arrival of a convoy and involves coordinated air and naval efforts."
         },
         {
             "event": "e_2",
-            "date": "2030",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The ship HERMIONE executes a successful bombardment of Pantellaria harbour, creating a significant diversion for the convoy."
+            "connectedEvents": [],
+            "eventSummary": "CITY OF PRETORIA is attacked by T/B aircraft, aimed at disrupting operations."
         }
     ]
 }

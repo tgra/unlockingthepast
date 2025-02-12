@@ -1,132 +1,101 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Personnel",
-            "p_2": "Airfield Construction engineers",
-            "p_3": "Maintenance personnel",
-            "p_4": "Supply organisation"
+            "p_1": "Lieutenant General Louis Brereton"
         },
         "locations": {
-            "l_1": "Continent",
-            "l_2": "U.K.",
-            "l_3": "France",
-            "l_4": "Gold area",
-            "l_5": "Southern France",
-            "l_6": "Denmark",
-            "l_7": "Norway"
+            "l_1": "Leeuwarden",
+            "l_2": "Steewijk-Havelte",
+            "l_3": "Hopsten",
+            "l_4": "Salzbergen",
+            "l_5": "Moerdijk",
+            "l_6": "Walcheren",
+            "l_7": "Eindhoven",
+            "l_8": "s'Hertogenbosch"
         },
         "events": {
-            "e_1": "Transfer of Fighter Forces",
-            "e_2": "D-Day",
-            "e_3": "Allied Operations from the Continent",
-            "e_4": "Enemy Airy Opposition"
+            "e_1": "Operation Market",
+            "e_2": "Attacks against Enemy Naval Targets"
         },
         "organisations": {
-            "o_1": "Royal Observer Corps",
-            "o_2": "G.A.F.",
-            "o_3": "R.C.A.F."
+            "o_1": "Royal Air Force",
+            "o_2": "A.E.A.F.",
+            "o_3": "United States Eighth Air Force",
+            "o_4": "R.A.F. Bomber Command",
+            "o_5": "R.A.F. Coastal Command",
+            "o_6": "United States Ninth Air Force",
+            "o_7": "Air/Sea Rescue Service",
+            "o_8": "First Allied Airborne Army"
         }
     },
     "keywords": [
-        "Fighter forces",
-        "Operational planning",
-        "Airfield construction",
-        "Squadron deployment",
-        "D-Day",
-        "Allied air forces"
+        "troop carrier",
+        "airborne",
+        "bombing",
+        "flak",
+        "airfields"
     ],
     "themes": [
         "Military Operations",
-        "Allied Air Operations",
-        "Enemy Forces Assessment",
-        "Resource Management"
+        "Air Support",
+        "Naval Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Enemy Forces Assessment": [
-            "e_4"
-        ],
-        "Resource Management": [
+        "Air Support": [
             "e_1"
+        ],
+        "Naval Operations": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "D-Day",
+            "date": "September 1944",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Market is an extensive operation involving airborne forces, troop carriers, and air strikes against enemy positions, characterized by massive bombing campaigns on airfields and flak positions."
+        },
+        {
+            "event": "e_2",
+            "date": "End of September, 1944",
+            "locations": [],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Fighter forces are transferred to the Continent to improve operational capabilities as D-Day approaches."
-        },
-        {
-            "event": "e_2",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "D-Day marks the beginning of Allied operations on the beaches of France, enabling significant fighter operations."
-        },
-        {
-            "event": "e_3",
-            "date": "Post D-Day",
-            "locations": [
-                "l_1",
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Allied squadrons commence operations from the Continent, leading to increased air support over the beachheads."
-        },
-        {
-            "event": "e_4",
-            "date": "June 1944",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The enemy air forces assess their response to the assault, focusing on defending the Reich while managing losses."
+            "eventSummary": "Attacks against Enemy Naval Targets involve the air force supporting Allied navies by targeting enemy naval units to ensure safe ferrying of reinforcements and supplies across the Channel."
         }
     ]
 }

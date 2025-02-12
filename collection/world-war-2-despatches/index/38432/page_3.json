@@ -1,86 +1,112 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Henry H. Harwood",
-            "p_2": "Lieutenant J. B. Sturgeon"
+            "p_1": "Lieutenant D. M. W. Napier, R.N.V.R.",
+            "p_2": "Lieutenant P. R. A. Taylor, R.N.R.",
+            "p_3": "Lieutenant T. J. Bligh, R.N.V.R."
         },
         "locations": {
-            "l_1": "Levant",
-            "l_2": "Maritimo Island",
-            "l_3": "Sicily"
+            "l_1": "Malta",
+            "l_2": "convoy",
+            "l_3": "port column",
+            "l_4": "starboard column",
+            "l_5": "southward",
+            "l_6": "southeast",
+            "l_7": "south 48 degrees east"
         },
         "events": {
-            "e_1": "Coastal Force Actions",
-            "e_2": "Torpedo Attack on Enemy Convoy"
+            "e_1": "Attack on Merchant Vessels by M.T.B. 77",
+            "e_2": "Engagement of M.T.B. 82 with E-boat",
+            "e_3": "Action of M.T.B. 61 to create diversion"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "7th Motor Torpedo Boat Flotilla",
-            "o_3": "Royal Naval Volunteer Reserve"
+            "o_1": "Royal Naval Volunteer Reserve (R.N.V.R.)",
+            "o_2": "Royal Naval Reserve (R.N.R.)"
         }
     },
     "keywords": [
-        "Coastal Force Actions",
-        "Motor Torpedo Boats",
-        "Torpedo Attack",
-        "Merchant Ship"
+        "attack",
+        "merchant vessel",
+        "convoy",
+        "torpedo",
+        "gunfire",
+        "E-boat"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
-        "Strategic Decision Making"
+        "Naval Engagement",
+        "Tactical Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Naval Engagements": [
+        "Naval Engagement": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decision Making": [
-            "e_2"
+        "Tactical Maneuvers": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th/16th February 1943",
+            "date": "Date Unknown",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_3",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Coastal Force Actions are reported, detailing torpedo hits on enemy merchant ships with valuable experience gained."
+            "eventSummary": "M.T.B. 77 attacks merchant vessels in the convoy, aiming for the leading ship of the port column."
         },
         {
             "event": "e_2",
-            "date": "15th/16th February 1943",
+            "date": "Date Unknown",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_4"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "A torpedo attack was executed on an enemy convoy, resulting in damage to one medium-sized merchant vessel."
+            "eventSummary": "M.T.B. 82 engages an E-boat during the attack while altering course towards the convoy's starboard bow."
+        },
+        {
+            "event": "e_3",
+            "date": "Date Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "M.T.B. 61 creates a diversion by engaging enemy ships while the other M.T.B.s conduct attacks."
         }
     ]
 }

@@ -1,30 +1,29 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Archibald Wavell",
-            "p_2": "Air Vice Marshal Maltby",
-            "p_3": "Air Vice Marshal Pulford",
-            "p_4": "General Percival",
-            "p_5": "Admiral Spooner",
-            "p_6": "Staton"
+            "p_1": "Air Commodore Staton",
+            "p_2": "Sur Archibald Wavell",
+            "p_3": "Air Vice Marshal Maltby",
+            "p_4": "Air Vice Marshal Pulford",
+            "p_5": "General Percival",
+            "p_6": "Admiral Spooner"
         },
         "locations": {
             "l_1": "Malaya",
-            "l_2": "Singapore Island",
-            "l_3": "Sumatra",
-            "l_4": "Batavia",
-            "l_5": "Java",
-            "l_6": "Banka Island",
-            "l_7": "Palembang",
-            "l_8": "Oesthaven",
-            "l_9": "Seven Islands Group"
+            "l_2": "Sumatra",
+            "l_3": "Singapore Island",
+            "l_4": "N.E.I.",
+            "l_5": "Batavia",
+            "l_6": "Java",
+            "l_7": "Banka Island",
+            "l_8": "Tuyu or Seven Islands Group",
+            "l_9": "Palembang",
+            "l_10": "Oesthaven"
         },
         "events": {
-            "e_1": "Japanese Attack on Singapore Island",
-            "e_2": "Transfer of A.H.Q. to Sumatra",
-            "e_3": "Evacuation of R.A.F. personnel",
-            "e_4": "Fall of Singapore Fortress",
-            "e_5": "Survivor Surrender on Seven Islands"
+            "e_1": "Fall of Singapore",
+            "e_2": "Transfer of R.A.F. to Sumatra",
+            "e_3": "Japanese attack on Singapore Island"
         },
         "organisations": {
             "o_1": "R.A.F.",
@@ -33,124 +32,80 @@
     },
     "keywords": [
         "Japanese aircraft",
-        "R.A.F.",
         "evacuation",
-        "Singapore",
-        "Sumatra",
-        "Hurricanes",
-        "monsoon"
+        "combatant units",
+        "air bombardment"
     ],
     "themes": [
         "Military Operations",
         "Evacuations",
-        "Air Warfare",
-        "Strategic Relocation"
+        "Air Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4"
-        ],
-        "Evacuations": [
             "e_3"
         ],
-        "Air Warfare": [
-            "e_1"
+        "Evacuations": [
+            "e_1",
+            "e_2"
         ],
-        "Strategic Relocation": [
-            "e_2",
-            "e_4"
+        "Air Warfare": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8th February 1942",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "On 8th February 1942, the Japanese attack on Singapore Island rapidly gains momentum, prompting immediate military responses."
-        },
-        {
-            "event": "e_2",
-            "date": "10th February 1942",
+            "date": "15th February 1942",
             "locations": [
                 "l_3"
             ],
             "persons": [
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 15th February 1942, Singapore Fortress is compelled to surrender."
+        },
+        {
+            "event": "e_2",
+            "date": "8th February 1942",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_3"
             ],
-            "eventSummary": "On 10th February 1942, the transfer of A.H.Q. to Sumatra is initiated to maintain command amidst escalating Japanese assaults."
+            "eventSummary": "On 8th February 1942, the transfer of R.A.F. to Sumatra begins to take control of the military command."
         },
         {
             "event": "e_3",
-            "date": "11th February 1942",
+            "date": "8th February 1942",
             "locations": [
-                "l_2"
+                "l_3"
             ],
             "persons": [
-                "p_2",
-                "p_1"
+                "p_2"
             ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "On 11th February 1942, the immediate evacuation of remaining R.A.F personnel from Singapore is ordered as combat conditions worsen."
-        },
-        {
-            "event": "e_4",
-            "date": "15th February 1942",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "On 15th February 1942, the Singapore Fortress is compelled to surrender amidst overwhelming enemy forces."
-        },
-        {
-            "event": "e_5",
-            "date": "13th February 1942",
-            "locations": [
-                "l_9"
-            ],
-            "persons": [
-                "p_3",
-                "p_5"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "On 13th February 1942, survivors led by Air Vice Marshal Pulford surrender on the Seven Islands after two months of evasion."
+            "eventSummary": "On 8th February 1942, the Japanese launch an attack on Singapore Island and obtain a foothold."
         }
     ]
 }

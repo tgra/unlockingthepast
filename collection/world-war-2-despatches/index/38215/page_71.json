@@ -1,80 +1,108 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Lt.-Col. Coates",
+            "p_2": "Brigadier Challen",
+            "p_3": "Col. Trott"
+        },
         "locations": {
-            "l_1": "Singapore Island",
-            "l_2": "Malacca",
-            "l_3": "Johore",
-            "l_4": "Penang Island"
+            "l_1": "Singapore",
+            "l_2": "Muar",
+            "l_3": "Sembilan Islands"
         },
         "events": {
-            "e_1": "World War II outbreak",
-            "e_2": "N.A.A.F. expansion"
+            "e_1": "Japanese attack",
+            "e_2": "Arrival of Reinforcements",
+            "e_3": "Scorched Earth Policy",
+            "e_4": "Formation of Chinese District Watch Force"
         },
         "organisations": {
-            "o_1": "Australian Red Cross",
-            "o_2": "N.A.A.F."
+            "o_1": "18 Division",
+            "o_2": "Royal Navy",
+            "o_3": "His Majesty's Government",
+            "o_4": "11 Indian Division",
+            "o_5": "Director General of Civil Defence"
         }
     },
     "keywords": [
-        "water supply",
-        "medical facilities",
-        "Red Cross",
-        "troop accommodation",
-        "recreational facilities"
+        "reinforcements",
+        "Japanese attack",
+        "scorched earth",
+        "civil defence"
     ],
     "themes": [
         "Military Operations",
-        "Medical Services",
-        "Logistical Support",
-        "Civil-Military Relations"
+        "Civil Defence",
+        "Loss and Sacrifice"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Medical Services": [
+            "e_1",
             "e_2"
         ],
-        "Logistical Support": [
-            "e_2"
+        "Civil Defence": [
+            "e_3",
+            "e_4"
         ],
-        "Civil-Military Relations": [
+        "Loss and Sacrifice": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Starting in 1941",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "World War II outbreak prompts significant military and logistical adjustments in Singapore and Malacca, including the establishment of medical facilities and the expansion of the N.A.A.F."
+            "eventSummary": "The Japanese attack commences, significantly impacting military operations in Singapore."
         },
         {
             "event": "e_2",
-            "date": "Pre-war and ongoing during World War II",
+            "date": "5th February",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_3"
             ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A convoy bringing reinforcements to Singapore is attacked, leading to significant losses of personnel and equipment."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [],
             "persons": [],
             "organisations": [
-                "o_2"
+                "o_3",
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The N.A.A.F. expands its activities to meet the needs of British and Indian troops, although facing challenges in establishing full functionality."
+            "connectedEvents": [],
+            "eventSummary": "Plans for the implementation of the Scorched Earth Policy are established to ensure military resources are not captured by enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A Chinese District Watch Force is formed, tasked with maintaining order and assisting the populace in the crisis."
         }
     ]
 }

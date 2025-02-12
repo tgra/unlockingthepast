@@ -1,121 +1,172 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Group Captain Seton Broughall"
+            "p_1": "General Chennault",
+            "p_2": "Group Captain Seton Broughall",
+            "p_3": "General Alexander"
         },
         "locations": {
-            "l_1": "Bay of Bengal",
-            "l_2": "Akyab",
-            "l_3": "Calcutta",
-            "l_4": "Magwe",
-            "l_5": "Lashio",
-            "l_6": "Loiwing",
-            "l_7": "Mandalay",
-            "l_8": "Mingaladon",
-            "l_9": "Rangoon",
-            "l_10": "Tharrawaddy",
-            "l_11": "Toungoo",
-            "l_12": "Prome",
-            "l_13": "Pyinmana",
-            "l_14": "Kyaukpadaung"
+            "l_1": "Burwing",
+            "l_2": "Upper Burma",
+            "l_3": "Magwe",
+            "l_4": "Lashio",
+            "l_5": "Loiwing",
+            "l_6": "Akyab",
+            "l_7": "Chittagong",
+            "l_8": "Sittang Valley",
+            "l_9": "Valley of the Irrawaddy",
+            "l_10": "Andaman Islands"
         },
         "events": {
-            "e_1": "Attack on Magwe",
-            "e_2": "Bomber Attack at Mingaladon",
-            "e_3": "Enemy Air Action at Magwe"
+            "e_1": "enemy reconnaissance aircratt heard over the airfield",
+            "e_2": "attacks on the aerodrome",
+            "e_3": "Blenheims and P.40's destroyed",
+            "e_4": "convoy left Magwe for Lashio and Loiwing",
+            "e_5": "withdrawal of Burwing to Lashio and Loiwing",
+            "e_6": "actions at Akyab",
+            "e_7": "termination of the R.A.F. activities based in Burma"
         },
         "organisations": {
-            "o_1": "113 Squadron",
-            "o_2": "135 Squadron",
-            "o_3": "139 Squadron",
-            "o_4": "45 Squadron",
-            "o_5": "R.A.F."
+            "o_1": "R.A.F.",
+            "o_2": "Air Headquarters, India",
+            "o_3": "A.V.G."
         }
     },
     "keywords": [
+        "enemy attacks",
         "reconnaissance",
-        "enemy attack",
-        "air force",
-        "bombing",
-        "fighter aircraft"
+        "Hurricanes",
+        "Blenheims",
+        "P.40's",
+        "withdrawal",
+        "Magwe",
+        "Loiwing",
+        "Akyab",
+        "R.D.F.",
+        "fighter escort"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Assaults",
-        "Defensive Strategies"
+        "Air Defense",
+        "Strategic Withdrawals",
+        "Aircraft Losses"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_6"
         ],
-        "Aerial Assaults": [
-            "e_2",
-            "e_3"
+        "Strategic Withdrawals": [
+            "e_4",
+            "e_5"
         ],
-        "Defensive Strategies": [
-            "e_1",
-            "e_3"
+        "Aircraft Losses": [
+            "e_3",
+            "e_7"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "22nd March",
+            "date": "March 22",
             "locations": [
-                "l_4"
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_4"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "On the 22nd March, Magwe is attacked in force by approximately 230 enemy fighters and bombers, greatly impacting operational capabilities."
+            "eventSummary": "The enemy conducts a reconnaissance mission over the airfield."
         },
         {
             "event": "e_2",
-            "date": "20th March",
+            "date": "March 22",
             "locations": [
-                "l_8",
-                "l_9"
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_3"
             ],
-            "eventSummary": "On the 20th March, reconnaissance reveals enemy aircraft concentrations near Mingaladon, leading to a bombing raid aimed at reducing attacks in Burma."
+            "eventSummary": "Significant enemy attacks occur against the aerodrome, resulting in considerable damage."
         },
         {
             "event": "e_3",
-            "date": "21st March",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A total of 9 Blenheims and at least 3 P.40's are destroyed on the ground due to enemy action."
+        },
+        {
+            "event": "e_4",
+            "date": "March 23",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "A convoy departs from Magwe for Lashio and Loiwing."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_2",
+                "p_3"
             ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Confirmation is received that Burwing will be withdrawn to Loiwing and Lashio."
+        },
+        {
+            "event": "e_6",
+            "date": "March 23 to 27",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
             "organisations": [
-                "o_5"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
+            "connectedEvents": [],
+            "eventSummary": "Enemy actions occur at Akyab, with interception attempts by fighters."
+        },
+        {
+            "event": "e_7",
+            "date": "",
+            "locations": [
+                "l_1"
             ],
-            "eventSummary": "On the afternoon of the 21st March, Magwe experiences a heavy enemy air assault, resulting in significant damage despite a counter-response from available fighters."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The R.A.F. activities based in Burma effectively come to an end as a result of these engagements."
         }
     ]
 }

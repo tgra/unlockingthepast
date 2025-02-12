@@ -1,88 +1,111 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Bruce A. Fraser",
-            "p_2": "Vice-Admiral Sir Bernard Rawlings",
-            "p_3": "Rear-Admiral D. B. Fisher"
+            "p_1": "Admiral Spruance"
         },
         "locations": {
-            "l_1": "Okinawa",
-            "l_2": "Central Pacific"
+            "l_1": "Manus",
+            "l_2": "Ulithi",
+            "l_3": "Pacific",
+            "l_4": "Japan",
+            "l_5": "Leyte"
         },
         "events": {
-            "e_1": "Operation Iceberg",
-            "e_2": "Assault on Okinawa"
+            "e_1": "Sailing of Task Force 57",
+            "e_2": "Operation orders finalization",
+            "e_3": "Exercises of Task Force 57",
+            "e_4": "Communication exercises by H.M. Ships"
         },
         "organisations": {
             "o_1": "British Pacific Fleet",
-            "o_2": "Lords Commissioners of the Admiralty"
+            "o_2": "U.S. Pacific Fleet",
+            "o_3": "5th Fleet",
+            "o_4": "Task Unit 112.2.1",
+            "o_5": "Task Unit 112.2.5",
+            "o_6": "Fleet Carriers"
         }
     },
     "keywords": [
-        "British Pacific Fleet",
-        "Operation Iceberg",
-        "Okinawa",
-        "military operations",
-        "naval history"
+        "Sailing",
+        "Task Force",
+        "Operation Orders",
+        "Exercises",
+        "Fleet"
     ],
     "themes": [
         "Military Operations",
-        "Leadership",
+        "Naval Strategy",
         "International Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Leadership": [
-            "p_1",
-            "p_2",
-            "p_3"
-        ],
-        "International Cooperation": [
-            "e_2"
-        ]
+        "Diplomacy": [],
+        "Strategic Decisions": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 26, 1945 - April 20, 1945",
+            "date": "23rd March, 1945",
             "locations": [
-                "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation Iceberg involves the British Pacific Fleet's operations during the assault on Okinawa, showcasing their naval capabilities in the Central Pacific."
+            "eventSummary": "Task Force 57 sails from Ulithi at 0715, setting course for operational position in the Pacific."
         },
         {
             "event": "e_2",
-            "date": "1945",
+            "date": "21st to 23rd March",
             "locations": [
-                "l_1"
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Assault on Okinawa represents a significant military operation in the Pacific Theatre during World War II, where the collaboration between British and American forces played a pivotal role."
+            "eventSummary": "Final drafts of operation orders are completed and distributed during the period leading up to the sailing of Task Force 57."
+        },
+        {
+            "event": "e_3",
+            "date": "20th March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Task Force 57 conducts exercises while in passage."
+        },
+        {
+            "event": "e_4",
+            "date": "25th March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Communication exercises are carried out by H.M. Ships KING GEORGE V, HOWE and SWIFTSURE."
         }
     ]
 }

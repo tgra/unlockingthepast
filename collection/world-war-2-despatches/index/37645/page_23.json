@@ -1,53 +1,48 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief"
+            "p_1": "Skinner",
+            "p_2": "Major",
+            "p_3": "Colonel"
         },
         "locations": {
-            "l_1": "Jebels",
-            "l_2": "Butana Bridge",
-            "l_3": "Gedaref",
-            "l_4": "Gash Delta",
-            "l_5": "Kassala",
-            "l_6": "Port Sudan",
-            "l_7": "Gebeit",
-            "l_8": "Wadi Halfa",
-            "l_9": "Gallabat",
-            "l_10": "Metemma",
-            "l_11": "Khartoum",
-            "l_12": "Gondar",
-            "l_13": "Gura",
-            "l_14": "Asmara",
-            "l_15": "Ethiopia",
-            "l_16": "Upper Blue Nile"
+            "l_1": "Dessie",
+            "l_2": "Gondar",
+            "l_3": "Debra Tabor",
+            "l_4": "Chelga",
+            "l_5": "Gallabat",
+            "l_6": "Tankal",
+            "l_7": "Amanit",
+            "l_8": "Wolchefit Pass",
+            "l_9": "Tacazze River",
+            "l_10": "Gandwa River"
         },
         "events": {
-            "e_1": "Arrival of Force Emily",
-            "e_2": "Operations during the Concentration Period",
-            "e_3": "Enemy Action"
+            "e_1": "Advance against Gondar",
+            "e_2": "Action near Tankal",
+            "e_3": "Operations on 18th and 19th May"
         },
         "organisations": {
-            "o_1": "4th Indian Division",
-            "o_2": "Gazelle Force",
-            "o_3": "2 M.M.G. Group, S.D.F.",
-            "o_4": "203 Group, R.A.F.",
-            "o_5": "Rhodesian Army Co-operation Squadron"
+            "o_1": "3/12 Frontier Force Regiment",
+            "o_2": "21 Field Company, Sappers and Miners",
+            "o_3": "Composite Battalion",
+            "o_4": "Ethiopian Battalion",
+            "o_5": "S.D.F."
         }
     },
     "keywords": [
-        "military operations",
-        "patrols",
-        "concentration",
-        "enemy intelligence",
-        "artillery",
-        "air support",
-        "logistics"
+        "evacuate",
+        "patriot",
+        "operations",
+        "enemy",
+        "rain",
+        "road",
+        "Gondar"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Supply",
         "Enemy Engagement",
-        "Intelligence Operations"
+        "Logistical Challenges"
     ],
     "topicModel": {
         "Military Operations": [
@@ -55,72 +50,61 @@
             "e_2",
             "e_3"
         ],
-        "Logistics and Supply": [
-            "e_1"
-        ],
         "Enemy Engagement": [
-            "e_3"
-        ],
-        "Intelligence Operations": [
+            "e_1",
             "e_2"
+        ],
+        "Logistical Challenges": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "30th December",
+            "date": "3rd March",
             "locations": [
-                "l_6",
-                "l_8"
+                "l_2",
+                "l_5"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The arrival of Force Emily in the Sudan occurs on December 30, taxing the Sudan Staff and Railways due to logistical challenges and limited communication."
-        },
-        {
-            "event": "e_2",
-            "date": "December - January",
-            "locations": [
-                "l_5",
-                "l_9"
-            ],
-            "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "During the concentration of Force Emily in December and January, active patrolling continues to monitor enemy movements, leading to various tactical advantages."
+            "eventSummary": "On 3rd March, the 3/12 Frontier Force Regiment is withdrawn to Gedaref to join the Indian Infantry Brigade before moving to Keren."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd April",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 22nd April, an action takes place near Tankal where the enemy attempts to drive off forces, but they are unsuccessful."
         },
         {
             "event": "e_3",
-            "date": "December - January",
+            "date": "18th and 19th May",
             "locations": [
-                "l_12",
-                "l_13",
-                "l_14"
+                "l_4"
             ],
             "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
+            "organisations": [
+                "o_3"
             ],
-            "eventSummary": "Enemy forces concentrate between Gondar and Metemma during the same period of concentration for Force Emily, raising concerns for Allied operations."
+            "connectedEvents": [],
+            "eventSummary": "On 18th May, the Composite Battalion captures five officers and 300 other ranks."
         }
     ]
 }

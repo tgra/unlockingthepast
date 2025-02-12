@@ -1,145 +1,212 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Lieut.-General Sir W. Lindsell",
-            "p_2": "Major-General G. Surteez",
-            "p_3": "Major-General R. K. Hewer",
-            "p_4": "Major-General C. M. Smith",
-            "p_5": "Major-General C. Je B. Goldney",
-            "p_6": "Major-General C. H. Geake",
-            "p_7": "Major-General W. S. Tope",
-            "p_8": "Major-General Sir P. S. Tomlinson",
-            "p_9": "Lieut.-General R. W. G. H. Stone",
-            "p_10": "Lieut.-General W. G. Holmes",
-            "p_11": "Major-General D. F. McConnell"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Middle East",
-            "l_2": "Sicily",
-            "l_3": "Italy",
-            "l_4": "Egypt",
-            "l_5": "Syria",
-            "l_6": "Lebanon",
-            "l_7": "Palestine"
+            "l_1": "Leros",
+            "l_2": "Pandeli Bay",
+            "l_3": "Northeast",
+            "l_4": "Dellapalma Bay",
+            "l_5": "Grifo",
+            "l_6": "Mt. Vedetta",
+            "l_7": "Mt. Clidi",
+            "l_8": "Ste. Madonne",
+            "l_9": "Mt. Appetici",
+            "l_10": "Gurna-Alinda",
+            "l_11": "Gurna Bay",
+            "l_12": "Quirico",
+            "l_13": "Gachi Ridge",
+            "l_14": "Meraviglia",
+            "l_15": "Quaranta",
+            "l_16": "Samos",
+            "l_17": "Alinda Bay"
         },
         "events": {
-            "e_1": "North African Campaign",
-            "e_2": "Central Mediterranean Campaign",
-            "e_3": "Concentration Period"
+            "e_1": "Enemy attack on Leros",
+            "e_2": "Landing at Pandeli",
+            "e_3": "Battle for Mt. Clidi",
+            "e_4": "Counter-attack at Appetici",
+            "e_5": "Capture of Appetici",
+            "e_6": "Royal West Kents engage at Gachi Ridge",
+            "e_7": "Heavy attack on Meraviglia",
+            "e_8": "Surrender of the garrison on Leros"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Royal Air Force",
-            "o_3": "Middle East Supply Board",
-            "o_4": "Civil Affairs Committee",
-            "o_5": "G.H.Q.",
-            "o_6": "British Troops in Egypt",
-            "o_7": "Eighth Army"
+            "o_1": "Royal Irish Fusiliers",
+            "o_2": "4th Buffs",
+            "o_3": "1st King's Own",
+            "o_4": "Royal West Kents",
+            "o_5": "Royal Air Force"
         }
     },
     "keywords": [
-        "Middle East",
-        "North African Campaign",
-        "administrative commitments",
-        "military imports",
-        "military exports",
-        "troop training",
-        "good relations",
-        "political troubles"
+        "enemy",
+        "attack",
+        "landing",
+        "counter-attack",
+        "capture",
+        "surrender"
     ],
     "themes": [
         "Military Operations",
-        "Administrative Efforts",
-        "International Relations",
-        "Logistics and Supply",
-        "Troop Welfare"
+        "Battles",
+        "Reinforcement",
+        "Counter-offensive"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
         ],
-        "Administrative Efforts": [
-            "e_1"
+        "Battles": [
+            "e_1",
+            "e_4",
+            "e_5",
+            "e_7"
         ],
-        "International Relations": [
-            "e_3"
+        "Reinforcement": [
+            "e_2",
+            "e_6"
         ],
-        "Logistics and Supply": [
-            "e_2"
-        ],
-        "Troop Welfare": [
-            "e_3"
+        "Counter-offensive": [
+            "e_4",
+            "e_8"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1943",
+            "date": "12th November",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
+                "l_3",
+                "l_4",
+                "l_7"
             ],
-            "persons": [
-                "p_1",
-                "p_8"
-            ],
-            "organisations": [
-                "o_6",
-                "o_7"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The North African Campaign is being maintained with increased administrative efforts, showcasing the capacity for logistical operations amidst changing military dynamics."
-        },
-        {
-            "event": "e_2",
-            "date": "1943",
-            "locations": [
-                "l_1",
-                "l_3"
-            ],
-            "persons": [
-                "p_9",
-                "p_10",
-                "p_11"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_5"
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "An enemy attack begins on Leros, with German troops landing in the Northeast and at Pandeli Bay."
+        },
+        {
+            "event": "e_2",
+            "date": "12th November",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A smaller force attempts a landing at Pandeli, initially making some progress before facing a counter-attack."
+        },
+        {
+            "event": "e_3",
+            "date": "13th November",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "During the Central Mediterranean Campaign, the military logistics reflect heightened operational capabilities, bolstered by strong partnerships among the Armed Forces."
+            "eventSummary": "Troops hold their ground against the enemy attacks to secure Mt. Clidi throughout the day."
         },
         {
-            "event": "e_3",
-            "date": "February 1943 to January 1944",
+            "event": "e_4",
+            "date": "13th November",
+            "locations": [
+                "l_2",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A counter-attack is launched by the reserve company of the King's Own at Appetici but fails to achieve objectives."
+        },
+        {
+            "event": "e_5",
+            "date": "15th November",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The enemy unexpectedly captures Appetici, posing a threat to Allied forces."
+        },
+        {
+            "event": "e_6",
+            "date": "14th November",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_2"
             ],
-            "persons": [
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7"
-            ],
+            "persons": [],
             "organisations": [
-                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "Throughout the concentration period, administrative and logistical efforts remain robust, with a notable focus on troop welfare and maintaining good relations with the Egyptian government."
+            "eventSummary": "The Royal West Kents are deployed to reinforce the attack on Gachi Ridge."
+        },
+        {
+            "event": "e_7",
+            "date": "16th November",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A heavy attack is launched against the position of Meraviglia, severely impacting communications."
+        },
+        {
+            "event": "e_8",
+            "date": "16th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The garrison on Leros surrenders, marking a significant loss for Allied forces."
         }
     ]
 }

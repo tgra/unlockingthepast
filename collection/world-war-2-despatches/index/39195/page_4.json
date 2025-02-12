@@ -1,70 +1,74 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unnamed Military Officer"
+            "p_1": "General Giffard",
+            "p_2": "General Slim"
         },
         "locations": {
-            "l_1": "Burma",
-            "l_2": "Rangoon",
-            "l_3": "Mandalay",
-            "l_4": "Dimapur",
-            "l_5": "Kohima",
-            "l_6": "Imphal",
-            "l_7": "Tamu",
-            "l_8": "Kalemyo",
-            "l_9": "Chindwin River",
-            "l_10": "Shwebo",
-            "l_11": "Taungup",
-            "l_12": "Prome",
-            "l_13": "Myitkyina",
-            "l_14": "Ledo",
-            "l_15": "Bhamo",
-            "l_16": "Wanting",
-            "l_17": "Kunming",
-            "l_18": "Bay of Bengal",
-            "l_19": "Eastern Bengal",
-            "l_20": "Assam"
+            "l_1": "Rangoon",
+            "l_2": "Chittagong",
+            "l_3": "Akyab Island",
+            "l_4": "Myebon",
+            "l_5": "Minbya",
+            "l_6": "Arakan",
+            "l_7": "Burma",
+            "l_8": "Mayu Peninsula",
+            "l_9": "Kaladan Valley",
+            "l_10": "Ledo",
+            "l_11": "Myitkyina",
+            "l_12": "Central Burma",
+            "l_13": "Cocos Islands",
+            "l_14": "Ceylon",
+            "l_15": "Australia",
+            "l_16": "Kalewa",
+            "l_17": "Shwebo",
+            "l_18": "Mogok",
+            "l_19": "Lashio",
+            "l_20": "Pakokku",
+            "l_21": "Mandalay",
+            "l_22": "Maymyo"
         },
         "events": {
-            "e_1": "Operation Capital",
-            "e_2": "Operation Dracula"
+            "e_1": "Operation Dracula",
+            "e_2": "Operation Romulus",
+            "e_3": "Operational Directive",
+            "e_4": "Planning Directive",
+            "e_5": "Operation Capital"
         },
         "organisations": {
-            "o_1": "Fourteenth Army",
-            "o_2": "Northern Combat Area Command",
-            "o_3": "Eighth Army",
-            "o_4": "Chiefs of Staff"
+            "o_1": "Supreme Allied Command",
+            "o_2": "British Chiefs of Staff",
+            "o_3": "Allied Air Command"
         }
     },
     "keywords": [
-        "Topography",
-        "Climate",
-        "Military Operations",
-        "Monsoon",
-        "Air Route",
-        "Burma Road",
-        "Japanese Army"
+        "Operation",
+        "Directive",
+        "Invasion",
+        "Airborne",
+        "Assault",
+        "Garrison"
     ],
     "themes": [
-        "Military Strategy",
-        "Geography",
-        "Weather Conditions",
-        "Operations Planning"
+        "Military Operations",
+        "Strategic Decisions",
+        "Planning",
+        "Preparation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Geography": [
-            "l_1",
-            "l_19",
-            "l_20"
-        ],
-        "Weather Conditions": [
-            "keywords"
-        ],
         "Strategic Decisions": [
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Planning": [
+            "e_4"
+        ],
+        "Preparation": [
             "e_1",
             "e_2"
         ]
@@ -72,41 +76,89 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1945",
+            "date": "1945",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_4",
+                "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_3",
+                "e_4",
                 "e_2"
             ],
-            "eventSummary": "Operation Capital aims to reconquer Central Burma through a military advance from Kalewa into the Mandalay Plain, with a focus on leveraging firepower and mobility."
+            "eventSummary": "Operation Dracula is planned as an amphibious assault on Rangoon after the 1945 monsoon."
         },
         {
             "event": "e_2",
-            "date": "Planned for March 1945, not executed",
+            "date": "1945",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Romulus is initiated in Arakan to address the Japanese threat."
+        },
+        {
+            "event": "e_3",
+            "date": "1945-11-04",
+            "locations": [
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "Operation Dracula was planned as an air and sea invasion of Rangoon but was ultimately canceled due to resource constraints from Europe."
+            "eventSummary": "The Supreme Allied Commander issues an Operational Directive for an offensive in Arakan."
+        },
+        {
+            "event": "e_4",
+            "date": "1945-11-19",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A Planning Directive is issued by the Supreme Allied Commander."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Capital is defined as necessary for the security of air supply routes."
         }
     ]
 }

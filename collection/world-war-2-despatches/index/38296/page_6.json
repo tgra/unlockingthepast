@@ -1,74 +1,78 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief Mediterranean",
-            "p_2": "King of Greece"
+            "p_1": "C.S.15",
+            "p_2": "C.S.7"
         },
         "locations": {
-            "l_1": "Cape Elaphonisi",
+            "l_1": "Malta",
             "l_2": "Crete",
-            "l_3": "Maleme",
+            "l_3": "Kaso Strait",
             "l_4": "Alexandria",
-            "l_5": "Heraklion",
-            "l_6": "Canea Bay",
-            "l_7": "Cephalonia",
-            "l_8": "Levkas",
-            "l_9": "Gulf of Salonika",
-            "l_10": "Tymbaki"
+            "l_5": "Milo",
+            "l_6": "Kithera Channel",
+            "l_7": "Cap Matapan",
+            "l_8": "Heraklion",
+            "l_9": "Aegean",
+            "l_10": "Canea",
+            "l_11": "Pori Islands"
         },
         "events": {
-            "e_1": "Sinking of FIJI",
-            "e_2": "Withdrawal to Alexandria",
-            "e_3": "Counter Attack on Maleme",
-            "e_4": "Laying of Minefields"
+            "e_1": "Operation against German troops",
+            "e_2": "Attacks on Force B",
+            "e_3": "Encounter with enemy destroyer",
+            "e_4": "Support for badly damaged NAIAD",
+            "e_5": "Sinkage of GREYHOUND"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "16th Infantry Brigade"
+            "o_1": "Force A",
+            "o_2": "Force B",
+            "o_3": "Force C",
+            "o_4": "Force D",
+            "o_5": "Force Ar",
+            "o_6": "Commander-in-Chief, Mediterranean"
         }
     },
     "keywords": [
-        "FIJI",
-        "KANDAHAR",
-        "KINGSTON",
-        "GLOUCESTER",
-        "air attack",
-        "withdrawal",
-        "minefields",
-        "C.S.7",
-        "casualties",
-        "bombing"
+        "German troops",
+        "air attacks",
+        "battleship",
+        "dive bombers",
+        "destroyer"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Strategic Withdrawals",
-        "Aerial Bombardment"
+        "Damage Control",
+        "Ammunition Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
         "Naval Warfare": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Damage Control": [
+            "e_4",
+            "e_5"
+        ],
+        "Ammunition Management": [
+            "e_2",
             "e_4"
-        ],
-        "Strategic Withdrawals": [
-            "e_2"
-        ],
-        "Aerial Bombardment": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "22nd May, 1941",
+            "date": "May 21, 1941",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -77,61 +81,74 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The ship FIJI is hit and ultimately sinks following multiple bombing attacks near Cape Elaphonisi, leading to a severe loss of naval capabilities."
+            "eventSummary": "A military operation is conducted against German troops on Crete, aiming to engage and neutralize enemy forces."
         },
         {
             "event": "e_2",
-            "date": "23rd May, 1941",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "In response to losses, the Commander-in-Chief Mediterranean orders all forces to withdraw to Alexandria."
-        },
-        {
-            "event": "e_3",
-            "date": "22nd May, 1941",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Plans for a counter attack on the enemy at Maleme are abandoned as troops begin to withdraw."
-        },
-        {
-            "event": "e_4",
-            "date": "22nd May, 1941",
+            "date": "May 22, 1941",
             "locations": [
                 "l_7",
-                "l_8",
                 "l_9"
             ],
             "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Force B is bombarded by dive bombers off Cap Matapan, resulting in slight and superficial damage to the vessels involved."
+        },
+        {
+            "event": "e_3",
+            "date": "May 22, 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Minefields are successfully laid by ABDIEL in strategic locations to hinder enemy advances."
+            "eventSummary": "An enemy destroyer is engaged by Force C while attempting to chase enemy vessels in the Kithera Channel."
+        },
+        {
+            "event": "e_4",
+            "date": "May 22, 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "C.S.7 hears of the badly damaged NAIAD and decides to provide immediate support, increasing the fleet's speed."
+        },
+        {
+            "event": "e_5",
+            "date": "May 22, 1941",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The GREYHOUND is ordered to sink a large caique near Pori Islands and subsequently sustains damage from air attacks, leading to its sinking."
         }
     ]
 }

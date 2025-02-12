@@ -1,59 +1,73 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice-Admiral Commanding, North Atlantic",
-            "p_2": "Rear-Admiral Commanding, 18th Cruiser Squadron"
+            "p_1": "Rear-Admiral",
+            "p_2": "COSSACK",
+            "p_3": "EDINBURGH",
+            "p_4": "MANXMAN",
+            "p_5": "ARETHUSA",
+            "p_6": "FARNDALE",
+            "p_7": "NESTOR",
+            "p_8": "FOXHOUND"
         },
         "locations": {
-            "l_1": "Carnero Point",
-            "l_2": "Malta",
-            "l_3": "Almeria",
-            "l_4": "Cape Palos",
-            "l_5": "Formentera",
-            "l_6": "Gibraltar",
-            "l_7": "Oran"
+            "l_1": "Skerki Channel",
+            "l_2": "Pantellaria",
+            "l_3": "Italian convoy route",
+            "l_4": "Position K 12 E"
         },
         "events": {
-            "e_1": "Submarine Attack on Force H",
-            "e_2": "Operations of Group 4 and Group 5"
+            "e_1": "E-Boat Attack on Force X",
+            "e_2": "Convoy Alteration Course",
+            "e_3": "Enemy Aircraft Search for Convoy"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "Force X"
         }
     },
     "keywords": [
-        "Submarine Attack",
-        "Military Operations",
-        "Naval Strategy",
-        "Air Patrols"
+        "E-Boat",
+        "convoy",
+        "mines",
+        "aircraft",
+        "attack"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Air Defense"
+        "Naval Combat",
+        "Convoy Protection"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Naval Strategy": [
-            "e_2"
+        "Naval Combat": [
+            "e_1"
         ],
-        "Air Defense": [
-            "e_1",
-            "e_2"
+        "Convoy Protection": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd July",
+            "date": "0300 24th July",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
             ],
             "organisations": [
                 "o_1"
@@ -61,27 +75,39 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "At 2315 on 23rd July, NESTOR reports a torpedo approaching, leading to evasive maneuvers and subsequent explosions, indicating a submarine attack on Force H."
+            "eventSummary": "At 0300 on July 24th, an E-Boat attack occurs on Force X, leading to several naval engagements."
         },
         {
             "event": "e_2",
-            "date": "22nd-23rd July",
+            "date": "2000",
             "locations": [
-                "l_1",
-                "l_5",
-                "l_6"
+                "l_1"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "Throughout 22nd and 23rd July, Groups 4 and 5 operate in parallel, maintaining A.S. patrols while preparing for a possible submarine confrontation."
+            "eventSummary": "At 2000, Force X and the convoy alter course to enhance safety from enemy mines."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An enemy aircraft search for the convoy takes place, which is reported unsuccessful."
         }
     ]
 }

@@ -6,48 +6,56 @@
         "locations": {
             "l_1": "Msus",
             "l_2": "Benina-Tocra",
-            "l_3": "Barce escarpment",
-            "l_4": "Maraua",
-            "l_5": "Dera",
-            "l_6": "Tobruk",
-            "l_7": "Mechili",
-            "l_8": "Derna",
-            "l_9": "Gazala area",
-            "l_10": "Cyrenaica",
-            "l_11": "Egyptian frontier",
-            "l_12": "Fuka",
-            "l_13": "Sollum",
-            "l_14": "Bardia",
-            "l_15": "Maaten Bagush",
-            "l_16": "Tripolitania",
+            "l_3": "Maraua",
+            "l_4": "Dera",
+            "l_5": "Tobruk",
+            "l_6": "Mechili",
+            "l_7": "Derna",
+            "l_8": "Gazala",
+            "l_9": "Cyrenaica",
+            "l_10": "Fuka",
+            "l_11": "Bardia",
+            "l_12": "Sollum",
+            "l_13": "Maaten Bagush",
+            "l_14": "Sidi Barrani",
+            "l_15": "Tripolitania",
+            "l_16": "Eastern Mediterranean",
             "l_17": "Alexandria"
         },
         "events": {
-            "e_1": "Australian Division withdrawal to Barce escarpment",
-            "e_2": "Initial enemy A.F.V. movement towards Msus",
-            "e_3": "Investment of Tobruk",
-            "e_4": "German-Italian attack on Tobruk on April 4th"
+            "e_1": "attack on Tobruk",
+            "e_2": "withdrawal of the Australian Division",
+            "e_3": "occupation of Bardia",
+            "e_4": "German-Italian attack on Tobruk"
         },
         "organisations": {
             "o_1": "No. 3 Australian Squadron",
             "o_2": "No. 6 (A.C.) Squadron",
             "o_3": "No. 55 Squadron",
             "o_4": "No. 45 Squadron",
-            "o_5": "R.A.F.",
-            "o_6": "Indian Motor Brigade"
+            "o_5": "Nos. 3 and 73 Squadrons",
+            "o_6": "Indian Motor Brigade",
+            "o_7": "R.A.F.",
+            "o_8": "H.Q. No. 204 Group",
+            "o_9": "Advanced H.Q., Cyrenaica"
         }
     },
     "keywords": [
-        "enemy A.F.V",
         "Australian Division",
-        "Tobruk",
         "withdrawal",
-        "Hurricane patrols"
+        "enemy forces",
+        "Blenheims",
+        "Hurricane patrols",
+        "Tobruk",
+        "investment",
+        "air support",
+        "counterattacks"
     ],
     "themes": [
         "Military Operations",
-        "Enemy Engagement",
-        "Strategic Withdrawal"
+        "Tactical Withdrawal",
+        "Aerial Support",
+        "Supply Lines"
     ],
     "topicModel": {
         "Military Operations": [
@@ -56,81 +64,87 @@
             "e_3",
             "e_4"
         ],
-        "Enemy Engagement": [
+        "Tactical Withdrawal": [
+            "e_2"
+        ],
+        "Aerial Support": [
+            "e_1",
             "e_4"
         ],
-        "Strategic Withdrawal": [
-            "e_1",
-            "e_3"
+        "Supply Lines": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "5th April",
+            "date": "April 4th",
             "locations": [
-                "l_3"
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
+            "organisations": [
+                "o_7",
+                "o_6",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "On April 4th, enemy forces launch an attack on Tobruk, resulting in significant military engagement."
+        },
+        {
+            "event": "e_2",
+            "date": "April 5th",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3",
-                "o_4"
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_8"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Australian Division completes its withdrawal to the Barce escarpment, facilitated by protective Hurricane patrols."
-        },
-        {
-            "event": "e_2",
-            "date": "April 4th",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Enemy A.F.V.s are reported moving towards Msus, creating uncertainty about their intentions."
+            "connectedEvents": [],
+            "eventSummary": "On April 5th, the Australian Division executes a tactical withdrawal to new positions on the Barce escarpment."
         },
         {
             "event": "e_3",
-            "date": "12th April",
+            "date": "April 13th",
             "locations": [
-                "l_6"
+                "l_11",
+                "l_12"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "Tobruk is invested by enemy forces, with the R.A.F. adjusting their operations to support the garrison."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On April 13th, enemy forces occupy Bardia and the Sollum escarpment, temporarily halting their advance."
         },
         {
             "event": "e_4",
             "date": "April 4th",
             "locations": [
-                "l_6"
+                "l_5"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
-                "o_5"
+                "o_7",
+                "o_6",
+                "o_8"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "A significant German-Italian attack on Tobruk occurs, resulting in aerial engagements between R.A.F. and enemy forces."
+            "eventSummary": "On April 4th, a German-Italian attack on Tobruk sees the No. 73 (F) Squadron engaged in air combat."
         }
     ]
 }

@@ -1,130 +1,121 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Gott",
+            "p_2": "Brigadier Renton",
+            "p_3": "Brigadier Reid",
+            "p_4": "General Ritchie"
+        },
         "locations": {
-            "l_1": "Caucasus",
-            "l_2": "Persia",
-            "l_3": "Iraq",
-            "l_4": "Saudi Arabia",
-            "l_5": "Kerman",
-            "l_6": "Khorramshahr",
-            "l_7": "Pahlevi",
-            "l_8": "Teheran",
-            "l_9": "Hamadan",
-            "l_10": "Saqqiz",
-            "l_11": "Rowanduz Gorge",
-            "l_12": "Malatya",
-            "l_13": "Abu Kernal",
-            "l_14": "Qasr Muhaiwir",
-            "l_15": "Andimeshk",
-            "l_16": "Ahwaz"
+            "l_1": "Msus",
+            "l_2": "Charruba",
+            "l_3": "Gebel Akhdar",
+            "l_4": "Bengasi",
+            "l_5": "Mechili",
+            "l_6": "Antelat",
+            "l_7": "Gialo",
+            "l_8": "Beda Fomm",
+            "l_9": "Carcura",
+            "l_10": "Agedabia",
+            "l_11": "Sidi Brahim",
+            "l_12": "Sceleidima",
+            "l_13": "El Abiar"
         },
         "events": {
-            "e_1": "Russian Help Request",
-            "e_2": "Demolition of Bridges",
-            "e_3": "Construction of Persian Base",
-            "e_4": "Preparation of Defences"
+            "e_1": "Capture of Gialo",
+            "e_2": "Evacuation of Bengasi",
+            "e_3": "Engagement at Antelat"
         },
         "organisations": {
-            "o_1": "G.H.Q.",
-            "o_2": "R.A.F."
+            "o_1": "4th Armoured Brigade",
+            "o_2": "Support Group",
+            "o_3": "Oases Force",
+            "o_4": "Guards Brigade",
+            "o_5": "13th Corps",
+            "o_6": "21st Italian Corps",
+            "o_7": "2nd Armoured Brigade",
+            "o_8": "22nd Armoured Brigade"
         }
     },
     "keywords": [
-        "security",
-        "military",
-        "Caucasus",
-        "forces",
-        "defence",
-        "demolition",
-        "Persian base"
+        "Armoured Brigade",
+        "supply difficulties",
+        "enemy retreat",
+        "aircraft",
+        "maintenance",
+        "operation"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategy",
         "Logistics",
-        "International Relations"
+        "Engagements",
+        "Enemy Actions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4"
-        ],
-        "Defence Strategy": [
-            "e_3",
-            "e_4"
-        ],
-        "Logistics": [
             "e_3"
         ],
-        "International Relations": [
-            "e_1"
+        "Logistics": [
+            "e_1",
+            "e_2"
+        ],
+        "Engagements": [
+            "e_3"
+        ],
+        "Enemy Actions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "24th November",
             "locations": [
-                "l_1"
+                "l_7"
             ],
-            "persons": [],
+            "persons": [
+                "p_3"
+            ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Russians request assistance for the defence of the Caucasus amid anticipated enemy attacks."
+            "connectedEvents": [],
+            "eventSummary": "On 24th November, the Oases Force under Brigadier Reid captures Gialo, effectively hampering enemy supply lines and communications."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "24th December",
             "locations": [
-                "l_1"
+                "l_4",
+                "l_11"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Demolitions are planned for the bridges along the River Araxes to delay enemy advances."
+            "connectedEvents": [],
+            "eventSummary": "On 24th December, enemy forces complete the evacuation of Bengasi, leaving the town and harbour empty, as reported by the armoured cars."
         },
         {
             "event": "e_3",
-            "date": "N/A",
+            "date": "22nd December",
             "locations": [
-                "l_16"
+                "l_6"
             ],
-            "persons": [],
+            "persons": [
+                "p_4"
+            ],
             "organisations": [
-                "o_1"
+                "o_4",
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Construction and development of the Persian base at Ahwaz receive priority for military operations."
-        },
-        {
-            "event": "e_4",
-            "date": "N/A",
-            "locations": [
-                "l_7",
-                "l_9",
-                "l_8"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Defensive preparations are underway across multiple key locations to safeguard against enemy advancements."
+            "connectedEvents": [],
+            "eventSummary": "On 22nd December, the Guards Brigade reaches Antelat, only to encounter a hostile force by Beda Fomm, leading to an engagement the next day."
         }
     ]
 }

@@ -1,63 +1,60 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "KING GEORGE V",
-            "p_2": "Flag Officer Commanding, Force H",
-            "p_3": "Philip L. Vian"
+            "p_1": "Jack C. Tovey",
+            "p_2": "Sir James F. Somerville",
+            "p_3": "W. Davis"
         },
         "locations": {
-            "l_1": "United Kingdom",
-            "l_2": "Home Waters",
-            "l_3": "BISMARCK",
-            "l_4": "ARK ROYAL",
-            "l_5": "SHEFFIELD"
+            "l_1": "Loch Ewe",
+            "l_2": "Gibraltar",
+            "l_3": "Hvalfiord",
+            "l_4": "Londonderry",
+            "l_5": "Clyde",
+            "l_6": "Bay of Biscay"
         },
         "events": {
-            "e_1": "First T/B Attack",
-            "e_2": "Second T/B Attack",
-            "e_3": "Night Shadowing and Attack by Destroyers"
+            "e_1": "Destruction of the German battleship BISMARCK",
+            "e_2": "Action involving Force H",
+            "e_3": "Engagement of enemy aircraft"
         },
         "organisations": {
             "o_1": "Admiralty",
-            "o_2": "Fourth Destroyer Flotilla"
+            "o_2": "Home Fleet"
         }
     },
     "keywords": [
-        "Torpedo Attack",
-        "Aircraft",
         "BISMARCK",
-        "SHEFFIELD",
-        "KING GEORGE V"
+        "Force H",
+        "enemy aircraft",
+        "Gibraltar",
+        "Loch Ewe"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Tactical Engagements"
+        "Naval Engagement",
+        "Fleet Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Naval Warfare": [
-            "e_1",
             "e_2"
         ],
-        "Tactical Engagements": [
-            "e_2",
+        "Naval Engagement": [
+            "e_1",
             "e_3"
+        ],
+        "Fleet Operations": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26th May",
+            "date": "28th May, 1941",
             "locations": [
                 "l_1",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -69,47 +66,43 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "A first striking force of 15 Swordfish aircraft takes off at 1450 to attack the BISMARCK but mistakenly drops torpedoes on the SHEFFIELD, leading to complications."
+            "eventSummary": "The engagement leading to the destruction of the German battleship BISMARCK is reported, showcasing the strategic naval operations of Force H."
         },
         {
             "event": "e_2",
-            "date": "26th May",
+            "date": "25th May, 1941",
             "locations": [
                 "l_1",
-                "l_3",
-                "l_5"
+                "l_6"
             ],
             "persons": [
                 "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "A second striking force is launched at 1915 to engage the BISMARCK, encountering challenging weather conditions and managing to cause damage to the enemy ship."
-        },
-        {
-            "event": "e_3",
-            "date": "26th May",
-            "locations": [
-                "l_3",
-                "l_5"
-            ],
-            "persons": [
+                "p_2",
                 "p_3"
             ],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "SHEFFIELD engages in night shadowing and reports enemy fire from the BISMARCK, while collaborating with the Fourth Destroyer Flotilla led by Captain Philip L. Vian."
+            "eventSummary": "Force H is instructed to intercept the BISMARCK, involving maneuvering and engagement with enemy forces."
+        },
+        {
+            "event": "e_3",
+            "date": "27th May, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air attacks on the fleet are reported, resulting in a tactical response and protection of naval assets."
         }
     ]
 }

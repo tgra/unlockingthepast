@@ -1,115 +1,109 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Captain D. W. Mason",
-            "p_2": "Lieutenant Commander J. H. Swain, R.N.",
-            "p_3": "Lieutenant-Commander R. P. Hill, R.N.",
-            "p_4": "Lieutenant E. F. Baines, R.N.",
-            "p_5": "Rear-Admiral Commanding, 8th Cruiser Squadron"
-        },
+        "persons": {},
         "locations": {
             "l_1": "Malta",
             "l_2": "Gibraltar",
-            "l_3": "Alboran",
-            "l_4": "Algiers",
-            "l_5": "Galita",
-            "l_6": "Scapa Flow"
+            "l_3": "Pantellaria",
+            "l_4": "French coast",
+            "l_5": "Bizerta",
+            "l_6": "Galita Channel",
+            "l_7": "Almeria Bay"
         },
         "events": {
-            "e_1": "Operation Bellows",
-            "e_2": "Destruction of the Italian submarine DAGABUR",
-            "e_3": "Sinking of H.M.S. FORESIGHT",
-            "e_4": "Combined forces withdrawal to Gibraltar"
+            "e_1": "Destruction of Italian submarine ADUA",
+            "e_2": "Convoy M.G.2 passage from Malta to Gibraltar",
+            "e_3": "Attack on CITY OF PRETORIA by T/B aircraft",
+            "e_4": "Encounter with Italian reconnaissance seaplane"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Admiralty"
+            "o_1": "British Royal Navy",
+            "o_2": "Italian Navy"
         }
     },
     "keywords": [
-        "Operation Bellows",
-        "H.M.S. Nigeria",
-        "U-Boat",
-        "Malta Escort Force"
+        "submarine",
+        "convoy",
+        "attack",
+        "aircraft"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Strategic Withdrawal"
+        "Naval Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Strategic Withdrawal": [
+        "Naval Engagements": [
+            "e_1",
+            "e_2",
+            "e_3",
             "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Italian submarine ADUA is confirmed destroyed by British ships GURKHA and LEGION."
+        },
+        {
+            "event": "e_2",
+            "date": "26th September",
             "locations": [
                 "l_1",
                 "l_2"
             ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "During Operation Bellows, forces face enemy aircraft attacks, with some ships being hit but others managing to reach their destination safely."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The Italian submarine DAGABUR is confirmed destroyed during naval engagements."
+            "eventSummary": "Convoy M.G.2 sails from Malta to Gibraltar with multiple ships, including S.S. MELBOURNE STAR, and arrives on 29th September."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
-            "locations": [],
+            "date": "28th September",
+            "locations": [
+                "l_2"
+            ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "H.M.S. FORESIGHT is sunk as part of the broader military operations taking place."
+            "connectedEvents": [],
+            "eventSummary": "CITY OF PRETORIA is attacked by three T/B aircraft, during which it successfully defends against the attack."
         },
         {
             "event": "e_4",
-            "date": "Not specified",
+            "date": "",
             "locations": [
                 "l_2"
             ],
-            "persons": [
-                "p_5"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The combined forces successfully withdraw to Gibraltar as part of their strategic movements."
+            "connectedEvents": [],
+            "eventSummary": "An Italian reconnaissance seaplane circles CITY OF PRETORIA but does not attack."
         }
     ]
 }

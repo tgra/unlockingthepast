@@ -6,109 +6,117 @@
         "locations": {
             "l_1": "Middle East Base",
             "l_2": "Tripoli",
-            "l_3": "Syria",
-            "l_4": "Sudan",
-            "l_5": "Persia",
-            "l_6": "Iraq Command",
-            "l_7": "Benghazi",
-            "l_8": "Barce",
-            "l_9": "Kufra",
-            "l_10": "Tobruk",
-            "l_11": "Eastern Task Force",
-            "l_12": "Cyrenaica",
+            "l_3": "Benghazi",
+            "l_4": "Barce",
+            "l_5": "Kufra",
+            "l_6": "Syria",
+            "l_7": "Sudan",
+            "l_8": "Persia",
+            "l_9": "Iraq",
+            "l_10": "Cyrenaica",
+            "l_11": "Tobruk",
+            "l_12": "Western Desert",
             "l_13": "Egyptian frontier"
         },
         "events": {
-            "e_1": "Tunisian Campaign",
-            "e_2": "Invasion of Sicily"
+            "e_1": "Evacuation of casualties by air",
+            "e_2": "Invasion of Sicily",
+            "e_3": "Tunisian campaign"
         },
         "organisations": {
             "o_1": "Royal Air Force",
-            "o_2": "Headquarters Cyrenaica District",
-            "o_3": "Eighth Army",
-            "o_4": "Middle East Command",
+            "o_2": "Eighth Army",
+            "o_3": "Middle East Command",
+            "o_4": "Headquarters Cyrenaica District",
             "o_5": "Union Defence Force Lines of Communication Signals"
         }
     },
     "keywords": [
         "evacuation",
-        "casualties",
-        "air force",
+        "aircraft",
         "supplies",
-        "communications",
-        "administration",
-        "reinforcements",
-        "transportation"
+        "communication",
+        "operations"
     ],
     "themes": [
         "Military Operations",
         "Logistics",
-        "Supply Chain Management",
-        "Administrative Organization",
-        "Reinforcements",
-        "Training"
+        "Administration",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Logistics": [
-            "e_1"
+            "e_1",
+            "e_3"
         ],
-        "Supply Chain Management": [
-            "e_1"
+        "Administration": [
+            "e_3"
         ],
-        "Administrative Organization": [
-            "e_1"
-        ],
-        "Reinforcements": [
-            "e_2"
-        ],
-        "Training": [
+        "Strategic Planning": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1943",
+            "date": "",
             "locations": [
-                "l_1",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The successful evacuation of casualties by air occurs due to excellent cooperation between the medical services and the Royal Air Force."
+        },
+        {
+            "event": "e_2",
+            "date": "end of March 1943",
+            "locations": [
                 "l_2",
-                "l_7",
-                "l_8",
+                "l_3",
                 "l_10"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_3",
+                "o_2",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "During the Tunisian Campaign, the Eighth Army maintains a long supply line and overcomes significant challenges in logistics and communication, ensuring operational success despite heavy demands on resources."
+            "eventSummary": "Preparations for the invasion of Sicily are made as Eighth Army is diverted towards this new objective."
         },
         {
-            "event": "e_2",
-            "date": "End of March 1943",
+            "event": "e_3",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_12"
+                "l_10"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_3"
+                "o_2",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "Preparations for the Invasion of Sicily involve diverting reinforcements from other tasks, demonstrating the army's need to balance operations while advancing in the Tunisian Campaign."
+            "eventSummary": "The Tunisian campaign faces ongoing logistical challenges as the lines of communication are extended and maintained."
         }
     ]
 }

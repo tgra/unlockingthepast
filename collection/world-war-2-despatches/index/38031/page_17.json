@@ -2,39 +2,61 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Matapan"
+            "l_1": "V.VENETO",
+            "l_2": "BOLZANO"
         },
         "events": {
-            "e_1": "The Battle of Matapan"
+            "e_1": "BATTLE of MATAPAN",
+            "e_2": "Night Action"
         },
-        "organisations": {}
+        "organisations": {
+            "o_1": "DESTROYERS",
+            "o_2": "BATTLEFLEET"
+        }
     },
     "keywords": [
-        "Battle",
-        "Matapan",
-        "Dusk",
-        "Attack",
-        "Cruising Dispositions"
+        "BATTLE",
+        "Night Action",
+        "DESTROYERS"
     ],
     "themes": [
         "Military Operations"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1930",
+            "date": "",
             "locations": [
                 "l_1"
             ],
             "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The Battle of Matapan takes place during dusk, involving a T/B attack and marked by specific cruising dispositions."
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The BATTLE of MATAPAN is occurring, highlighting significant naval engagements."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A Night Action is taking place, presumably as part of the BATTLE of MATAPAN."
         }
     ]
 }

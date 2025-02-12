@@ -1,102 +1,162 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unnamed Military Official"
+            "p_1": "General Clark",
+            "p_2": "General Montgomery"
         },
         "locations": {
-            "l_1": "Sicily",
-            "l_2": "Milazzo",
-            "l_3": "Messina",
-            "l_4": "Capri",
-            "l_5": "Salerno",
-            "l_6": "Potenza",
-            "l_7": "Lucania",
-            "l_8": "Taranto",
-            "l_9": "Calabria",
-            "l_10": "Naples",
-            "l_11": "Reggio",
-            "l_12": "San Giovanni",
-            "l_13": "Gioia-Locri",
-            "l_14": "Francavilla-Squillace",
-            "l_15": "Scalea-Castrovillari-Villapiana",
-            "l_16": "Aspromonte",
-            "l_17": "Sila",
-            "l_18": "Sardinia",
-            "l_19": "Corsica"
+            "l_1": "Mignano Gap",
+            "l_2": "Monte Cesima",
+            "l_3": "Monte Lungo",
+            "l_4": "River Sangro",
+            "l_5": "Maiella massif",
+            "l_6": "Casoli-Pescocostanzo road",
+            "l_7": "Paglieta",
+            "l_8": "Eighth Army",
+            "l_9": "Salerno",
+            "l_10": "Pescara",
+            "l_11": "Chieti",
+            "l_12": "Orsogna",
+            "l_13": "Lanciano",
+            "l_14": "San Vito",
+            "l_15": "Molise",
+            "l_16": "Gran Sasso",
+            "l_17": "Via Valeria"
         },
         "events": {
-            "e_1": "Operation against Calabria",
-            "e_2": "Possible operation against Sardinia and Corsica"
+            "e_1": "Battle of the Sangro",
+            "e_2": "Attack on the Winter Line",
+            "e_3": "Main Eighth Army attack",
+            "e_4": "Capture of Mozzagrogna",
+            "e_5": "Capture of Castelfrentano"
         },
         "organisations": {
-            "o_1": "Allied Force Headquarters"
+            "o_1": "Fifth Army",
+            "o_2": "Eighth Army",
+            "o_3": "65 Division",
+            "o_4": "8 Indian Division",
+            "o_5": "New Zealand Division",
+            "o_6": "16 Panzer Division",
+            "o_7": "1 Parachute Division",
+            "o_8": "78 Division",
+            "o_9": "2905 Division"
         }
     },
     "keywords": [
-        "military planning",
-        "amphibious operations",
-        "strategic goals",
-        "Sicilian Campaign",
-        "Allied forces"
+        "Battle",
+        "Attack",
+        "Division"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Logistics and Supply",
-        "Geopolitical Strategy"
+        "Weather Conditions",
+        "Tactical Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Strategic Planning": [
-            "e_1",
-            "e_2"
+        "Weather Conditions": [
+            "e_3"
         ],
-        "Logistics and Supply": [
-            "e_1"
-        ],
-        "Geopolitical Strategy": [
+        "Tactical Maneuvers": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 1943",
+            "date": "November 3rd to December 14th, 1943",
             "locations": [
-                "l_9",
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_5",
+                "l_10",
+                "l_12"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_8"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "Allied forces plan an operation against Calabria focusing on the strategic elements of conducting a landing from Sicily."
+            "eventSummary": "The Battle of the Sangro is fought, leading to heavy casualties on both sides and the inability of the Eighth Army to break through the enemy's strong prepared positions."
         },
         {
             "event": "e_2",
-            "date": "June 1943",
+            "date": "20th November, 1943",
             "locations": [
-                "l_18",
-                "l_19"
+                "l_4",
+                "l_5",
+                "l_10"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The attack on the Winter Line is initiated, facing challenges from adverse weather conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "27th November, 1943",
+            "locations": [
+                "l_1",
+                "l_10"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The main Eighth Army attack commences, aiming to take advantage of previous gains in the Mignano Gap."
+        },
+        {
+            "event": "e_4",
+            "date": "20th November, 1943",
+            "locations": [
+                "l_1",
+                "l_10"
             ],
-            "eventSummary": "Planning a potential operation against Sardinia and Corsica as an alternative strategy to reinforce Allied control in the Mediterranean."
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Mozzagrogna is captured during the operations, marking a significant tactical gain for the Eighth Army."
+        },
+        {
+            "event": "e_5",
+            "date": "2nd December, 1943",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Castelfrentano is captured as part of the offensive movements during the Battle of the Sangro, further solidifying the Eighth Army's position."
         }
     ]
 }

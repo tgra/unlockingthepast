@@ -1,95 +1,147 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Air Chief Marshal Sir Richard Peirse",
-            "p_2": "Air Vice-Marshal Goddard",
-            "p_3": "Supreme Allied Commander"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "South East Asia",
-            "l_2": "Kandy",
-            "l_3": "New Delhi"
+            "l_1": "Martaban",
+            "l_2": "Pegu",
+            "l_3": "Mandalay",
+            "l_4": "Bangkok",
+            "l_5": "Nampang",
+            "l_6": "Southern Burma",
+            "l_7": "Mergui",
+            "l_8": "Khao Huagang",
+            "l_9": "Pakchan river",
+            "l_10": "Tenasserim Coast",
+            "l_11": "Gulf of Siam",
+            "l_12": "Victoria Point",
+            "l_13": "Moulmein"
         },
         "events": {
-            "e_1": "Move of Headquarters, Air Command to Kandy",
-            "e_2": "Establishment of Base Air Forces at New Delhi"
+            "e_1": "Return of the Seventh Bombardment Group to Strategic Air Force",
+            "e_2": "Operations against shipping and harbour installations",
+            "e_3": "Attacks against shipping and harbours",
+            "e_4": "Mining operations in the Pakchan river",
+            "e_5": "Interdiction of the Southern Burma Supply Routes"
         },
         "organisations": {
-            "o_1": "Government of India",
-            "o_2": "War Projects Co-ordination and Administrative Committee",
-            "o_3": "G.H.Q. India"
+            "o_1": "Fourteenth Army",
+            "o_2": "Strategic Air Force",
+            "o_3": "No. 99 Squadron",
+            "o_4": "No. 215 Squadron",
+            "o_5": "No. 358 Squadron",
+            "o_6": "No. 159 Squadron R.A.F."
         }
     },
     "keywords": [
-        "Air Command",
-        "RAF",
-        "Administration",
-        "Operational Control",
-        "Military Coordination"
+        "Operational Directive",
+        "strategic bombers",
+        "supply routes",
+        "enemy shipping",
+        "mining"
     ],
     "themes": [
         "Military Operations",
-        "Administrative Structure",
-        "Leadership Decisions",
-        "Strategic Planning"
+        "Air Campaigns",
+        "Logistics and Supply"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Administrative Structure": [
+        "Air Campaigns": [
             "e_1",
-            "e_2"
+            "e_3"
         ],
-        "Leadership Decisions": [
-            "e_1"
-        ],
-        "Strategic Planning": [
-            "e_2"
+        "Logistics and Supply": [
+            "e_2",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 1944",
+            "date": "October 1943",
             "locations": [
+                "l_1",
                 "l_2",
-                "l_3"
+                "l_3",
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Headquarters of Air Command is moved to Kandy to enhance operational efficiency and administration."
+            "eventSummary": "The Seventh Bombardment Group returns to Strategic Air Force, reequipping its squadrons in preparation for upcoming military operations."
         },
         {
             "event": "e_2",
-            "date": "October 1944",
+            "date": "September 1943",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_5"
             ],
-            "eventSummary": "Base Air Forces is established in New Delhi to support Air Command operations and administration."
+            "eventSummary": "Operations are categorized with a focus on targeting shipping and harbor installations in preparation for a longer-term strategic objective."
+        },
+        {
+            "event": "e_3",
+            "date": "March 1944",
+            "locations": [
+                "l_4",
+                "l_1",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Attacks are carried out against shipping and harbors, achieving significant destruction and impacting enemy supply lines."
+        },
+        {
+            "event": "e_4",
+            "date": "September 1943",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A mining operation in the Pakchan river disrupts coastal traffic, affecting enemy supply routes."
+        },
+        {
+            "event": "e_5",
+            "date": "January to April 1944",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Attacks on the Bangkok-Moulmein railway successfully reduce enemy supply capacity, affecting logistics in the region."
         }
     ]
 }

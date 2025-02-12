@@ -1,102 +1,108 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Chiefs of Staff",
-            "p_2": "Air Officer Commanding",
-            "p_3": "Japanese Naval fighter"
+            "p_1": "Sir Reginald Dorman Smith",
+            "p_2": "General Norton",
+            "p_3": "Sir Geoffrey Northcote",
+            "p_4": "Sir Mark Young",
+            "p_5": "Major General Maltby",
+            "p_6": "Major-General Grasett",
+            "p_7": "General Chiang Kai-shek"
         },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "N. Sumatra",
-            "l_3": "Borneo",
-            "l_4": "Far East"
+            "l_1": "Moulmein",
+            "l_2": "Rangoon",
+            "l_3": "Burma",
+            "l_4": "Mandalay",
+            "l_5": "Shan States",
+            "l_6": "Hong Kong",
+            "l_7": "Peking",
+            "l_8": "Tientsin",
+            "l_9": "Shanghai",
+            "l_10": "Philippines"
         },
         "events": {
-            "e_1": "Japanese action on December 8, 1941",
-            "e_2": "Air Ministry telegram from February 23, 1941",
-            "e_3": "Buffalo performance tests"
+            "e_1": "Transfer of Command to Commander-in-Chief, India",
+            "e_2": "Defence of Hong Kong",
+            "e_3": "Arrival of Canadian battalions in Hong Kong"
         },
         "organisations": {
-            "o_1": "A. & A.E.E.",
-            "o_2": "Empire Naval, Army and Air Forces"
+            "o_1": "Commander-in-Chief, Far East",
+            "o_2": "Commander-in-Chief, India"
         }
     },
     "keywords": [
-        "aircraft",
-        "bombers",
-        "fighters",
-        "performance",
-        "Japanese action",
-        "deficiency",
-        "reserves",
-        "defence",
-        "preparations"
+        "Military",
+        "Politics",
+        "Defence",
+        "Strategy"
     ],
     "themes": [
         "Military Operations",
-        "Aviation Performance",
-        "Strategic Decisions",
-        "Defence Strategies"
+        "Political Factors",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Aviation Performance": [
+            "e_1",
+            "e_2",
             "e_3"
         ],
-        "Strategic Decisions": [
+        "Political Factors": [
+            "e_1",
             "e_2"
         ],
-        "Defence Strategies": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 8, 1941",
+            "date": "December 15, 1941",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Japan's action signals the initiation of combined efforts for military action among the Empire Naval, Army, and Air Forces, highlighting their readiness and preparations to defend their territories."
+            "connectedEvents": [],
+            "eventSummary": "The command of the defence of Burma is transferred from the Commander-in-Chief, Far East to the Commander-in-Chief, India."
         },
         {
             "event": "e_2",
-            "date": "February 23, 1941",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_1"
+            "date": "",
+            "locations": [
+                "l_6"
             ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "An Air Ministry telegram sets the standard of 100% reserves for land-based aircraft, influencing later military preparations."
+            "eventSummary": "The defence of Hong Kong is undertaken with significant strategic implications and challenges."
         },
         {
             "event": "e_3",
-            "date": "July 3, 1941",
+            "date": "November 16, 1941",
             "locations": [
-                "l_1"
+                "l_6"
             ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Performance tests of the Buffalo aircraft compare its capabilities against the Japanese Zero fighter, revealing weaknesses in altitude performance."
+            "eventSummary": "Two Canadian battalions arrive in Hong Kong, bolstering the garrison's defensive capabilities."
         }
     ]
 }

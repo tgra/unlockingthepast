@@ -1,38 +1,39 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C. D. Edgar"
+            "p_1": "T. H. Troubridge",
+            "p_2": "C. D. Edgar"
         },
         "locations": {
-            "l_1": "Algiers",
-            "l_2": "H. GREEN Beach",
-            "l_3": "H. WITE Beach",
-            "l_4": "Sidi Ferruch",
-            "l_5": "Cap Caxine"
+            "l_1": "Gibraltar",
+            "l_2": "Ponta Delgada",
+            "l_3": "Oran",
+            "l_4": "Casa Blanca",
+            "l_5": "Cape Spartel",
+            "l_6": "Spanish coast"
         },
         "events": {
-            "e_1": "Assault on Algiers",
-            "e_2": "Landings at A Sector",
-            "e_3": "Landings at B Sector"
+            "e_1": "Rendezvous with Destroyers",
+            "e_2": "Convoy K.M.F.A. 1 Movement",
+            "e_3": "Sighted Enemy Aircraft"
         },
         "organisations": {
-            "o_1": "U.S. Navy",
-            "o_2": "Vice-Admiral Commanding, North Atlantic (V.A.C.N.A.)"
+            "o_1": "Royal Navy",
+            "o_2": "K.M.S.",
+            "o_3": "U.S. Navy"
         }
     },
     "keywords": [
-        "submarine",
         "convoy",
-        "depth charges",
-        "emergency turn",
-        "escort",
-        "landing craft",
-        "assault flights"
+        "destroyers",
+        "escorts",
+        "aircraft",
+        "fishing vessel"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
-        "Landings"
+        "Naval Engagement",
+        "Rendezvous and Escort"
     ],
     "topicModel": {
         "Military Operations": [
@@ -40,18 +41,37 @@
             "e_2",
             "e_3"
         ],
-        "Naval Engagements": [
-            "e_1"
-        ],
-        "Landings": [
-            "e_2",
+        "Naval Engagement": [
             "e_3"
+        ],
+        "Rendezvous and Escort": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "7th November",
+            "date": "31st October",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The convoy was supposed to rendezvous with destroyers ESCAPADE, ISAAC SWEERS, and MARNE at coordinates 45 50 N., 26 08 W. However, due to an incorrect cypher message, the rendezvous was missed."
+        },
+        {
+            "event": "e_2",
+            "date": "3rd November",
             "locations": [
                 "l_1"
             ],
@@ -63,42 +83,22 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The assault on Algiers is conducted by the fast assault convoy, with submarines marking the release positions for successful troop landings."
-        },
-        {
-            "event": "e_2",
-            "date": "7th November",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The landing at A Sector is executed successfully, with pilots transferred from submarines to landing craft for troop deployment."
+            "eventSummary": "After the formation of the convoy K.M.F.A. 1, it was provided additional escorts and continued its movement until it sighted enemy aircraft."
         },
         {
             "event": "e_3",
-            "date": "7th November",
+            "date": "6th November",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The landing at B Sector encounters avoidable mistakes, leading to confusion regarding troop deployment and approach directions."
+            "eventSummary": "The first enemy aircraft, a German reconnaissance Ju.88, was sighted passing over the convoy, prompting an engagement."
         }
     ]
 }

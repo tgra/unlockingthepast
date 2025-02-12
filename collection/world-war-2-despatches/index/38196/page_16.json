@@ -1,81 +1,70 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General von Arnim"
+            "p_1": "General Montgomery",
+            "p_2": "General Stumme",
+            "p_3": "General von Thoma"
         },
         "locations": {
-            "l_1": "Tunisia",
-            "l_2": "Medjez",
-            "l_3": "Goubellat",
-            "l_4": "Kourzia salt marshes",
-            "l_5": "Bou Arada",
-            "l_6": "Pont du Fahs",
-            "l_7": "Gebel Fkirine",
-            "l_8": "Grich el Oued",
-            "l_9": "Gebel Bou Aoukaz",
-            "l_10": "Sidi Nsir",
-            "l_11": "El Aouana"
+            "l_1": "Himeimat",
+            "l_2": "Rasel-Kenayis",
+            "l_3": "El Alamein",
+            "l_4": "Tell el Eisa"
         },
         "events": {
-            "e_1": "Operation LILACBLOSSOM",
-            "e_2": "Battle of the Kourzia salt marshes",
-            "e_3": "Capture of Gebel Ahmera"
+            "e_1": "Plan LIGHTFOOT",
+            "e_2": "Attack on Himeimat",
+            "e_3": "Counter-attacks on 25th October",
+            "e_4": "Midnight attack by 26 Australian Brigade"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "First Army",
-            "o_3": "Hermann Goering Division",
-            "o_4": "German Africa Corps",
-            "o_5": "XIX Corps",
-            "o_6": "78 Division",
-            "o_7": "4 Division",
-            "o_8": "II Corps",
-            "o_9": "9 Infantry Division"
+            "o_1": "13 Corps",
+            "o_2": "7 Armoured Division",
+            "o_3": "1 Fighting French Brigade",
+            "o_4": "30 Corps",
+            "o_5": "1 Armoured Division",
+            "o_6": "10 Armoured Division",
+            "o_7": "21 Panzer Division",
+            "o_8": "Ariete",
+            "o_9": "German Africa Corps",
+            "o_10": "90 Light Division"
         }
     },
     "keywords": [
-        "Eighth Army",
-        "First Army",
-        "Tunis",
-        "Operation LILACBLOSSOM",
-        "Kourzia salt marshes",
-        "Gebel Ahmera",
-        "tank battles",
-        "German Africa Corps"
+        "attack",
+        "armoured division",
+        "minefield",
+        "casualties",
+        "operations",
+        "bridgehead"
     ],
     "themes": [
         "Military Operations",
-        "Battles",
-        "Offensive Tactics",
-        "Enemy Tactics",
-        "Logistics",
-        "Strategic Movements"
+        "Counter-attacks",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Counter-attacks": [
             "e_3"
         ],
-        "Battles": [
-            "e_2",
-            "e_3"
-        ],
-        "Offensive Tactics": [
+        "Strategic Decisions": [
             "e_1",
-            "e_2"
-        ],
-        "Logistics": [
-            "e_1"
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 20-21, 1943",
+            "date": "October 23-25, 1942",
             "locations": [
                 "l_1",
-                "l_2",
                 "l_3"
             ],
             "persons": [
@@ -84,19 +73,19 @@
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation LILACBLOSSOM is initiated by the Germans, showing their last tactics before the First Army's offensive begins."
+            "eventSummary": "The Plan LIGHTFOOT commences with various armoured divisions engaging in operations towards Himeimat, although the advance is delayed due to minefields."
         },
         {
             "event": "e_2",
-            "date": "April 20-26, 1943",
+            "date": "October 25, 1942",
             "locations": [
-                "l_4",
-                "l_5",
                 "l_1"
             ],
             "persons": [
@@ -104,31 +93,53 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "The Battle of the Kourzia salt marshes takes place where intense fighting occurs, leading to mixed results and significant casualties."
+            "eventSummary": "The attack on Himeimat is met with heavy resistance, resulting in the necessity to withdraw due to casualties."
         },
         {
             "event": "e_3",
-            "date": "April 22-23, 1943",
+            "date": "October 25, 1942",
             "locations": [
-                "l_1",
-                "l_8"
+                "l_3"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
+                "o_1",
                 "o_6",
                 "o_7"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "The 78 Division successfully captures Gebel Ahmera after intense fighting, marking a significant advance for the Allies."
+            "eventSummary": "The enemy initiates counter-attacks in the north, which are met by strong defenses from the allied armoured divisions."
+        },
+        {
+            "event": "e_4",
+            "date": "October 25-26, 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The midnight attack by 26 Australian Brigade is launched successfully, resulting in significant territorial gains against German defenders."
         }
     ]
 }

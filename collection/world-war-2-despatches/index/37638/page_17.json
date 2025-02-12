@@ -1,168 +1,136 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rashid Ali",
-            "p_2": "Air Vice-Marshal Smart",
-            "p_3": "Major-General J. G. W. Clark",
-            "p_4": "General Sir Claude Auchinleck",
-            "p_5": "General Quinan"
+            "p_1": "General Cick",
+            "p_2": "General Clark",
+            "p_3": "Rashid Ali",
+            "p_4": "Mayor of Baghdad",
+            "p_5": "Regent of Iraq",
+            "p_6": "General Dentz",
+            "p_7": "General de Gaulle",
+            "p_8": "General Legentilhomme",
+            "p_9": "General Catroux"
         },
         "locations": {
-            "l_1": "Iraq",
-            "l_2": "Basra",
-            "l_3": "Habbaniyah",
-            "l_4": "Baghdad",
+            "l_1": "Shaibah",
+            "l_2": "Baghdad",
+            "l_3": "Fallujah",
+            "l_4": "Ramadi",
             "l_5": "Euphrates",
-            "l_6": "Fallujah",
-            "l_7": "Rutbah",
-            "l_8": "Transjordan",
-            "l_9": "Palestine",
-            "l_10": "Syria"
+            "l_6": "Transjordan",
+            "l_7": "Mosul",
+            "l_8": "Crete",
+            "l_9": "Syria",
+            "l_10": "Palestine",
+            "l_11": "Egypt",
+            "l_12": "Qastima",
+            "l_13": "Jaffa",
+            "l_14": "Lebanon",
+            "l_15": "Damascus"
         },
         "events": {
-            "e_1": "Landing of Troops at Basra",
-            "e_2": "Attack on Royal Air Force Station at Habbaniyah",
-            "e_3": "Iraqi Forces Occupying High Ground",
-            "e_4": "Sortie by Garrison at Habbaniyah",
-            "e_5": "Major-General Clark's Advance to Baghdad",
-            "e_6": "Counter Attack on Fallujah"
+            "e_1": "Iraqi counter attack at Fallujah",
+            "e_2": "Rashid Ali's coup d'état",
+            "e_3": "formation of the Free French division in Egypt",
+            "e_4": "Free French request to send forces into Syria"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "British Army",
-            "o_3": "Arab Legion",
-            "o_4": "Iraqi Air Force",
-            "o_5": "War Cabinet"
+            "o_1": "Household Cavalry regiment",
+            "o_2": "Gurkha battalion",
+            "o_3": "German air forces",
+            "o_4": "Free French forces"
         }
     },
     "keywords": [
-        "Iraq",
-        "Basra",
-        "Troops",
-        "Habbaniyah",
-        "Air Force",
-        "Attack",
-        "Reinforcements"
+        "reinforcements",
+        "counter attack",
+        "capitulation",
+        "commitment",
+        "German infiltration",
+        "Free French"
     ],
     "themes": [
         "Military Operations",
         "Diplomacy",
-        "Strategic Decisions",
-        "Defense"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4",
-            "e_5",
-            "e_6"
+            "e_3"
         ],
         "Diplomacy": [
-            "e_2"
+            "e_2",
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_1",
-            "e_5"
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date Not Provided",
+            "date": "30th May",
             "locations": [
+                "l_3",
                 "l_2"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Troops land at Basra, with India assuming command for operations in Iraq."
-        },
-        {
-            "event": "e_2",
-            "date": "29th April",
-            "locations": [
-                "l_3"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
-            "organisations": [
-                "o_1"
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "General Cick's force repulses the Iraqi counter attack at Fallujah and moves towards Baghdad."
+        },
+        {
+            "event": "e_2",
+            "date": "1st June",
+            "locations": [
+                "l_2",
+                "l_6"
             ],
-            "connectedEvents": [
-                "e_3",
-                "e_4"
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
             ],
-            "eventSummary": "Rashid Ali and pro-Axis elements attack the RAF station at Habbaniyah as tensions escalate."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Rashid Ali's supporters flee Baghdad, leading to the Mayor sending out a white flag for capitulation."
         },
         {
             "event": "e_3",
-            "date": "30th April",
+            "date": "early 1941",
             "locations": [
-                "l_3"
+                "l_11"
             ],
-            "persons": [],
+            "persons": [
+                "p_7",
+                "p_8"
+            ],
             "organisations": [
                 "o_4"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "Iraqi forces occupy high ground near Habbaniyah, threatening the air station."
+            "connectedEvents": [],
+            "eventSummary": "General de Gaulle requests the concentration of Free French forces in Egypt to form a division under General Legentilhomme."
         },
         {
             "event": "e_4",
-            "date": "7th May",
+            "date": "mid-May",
             "locations": [
-                "l_3"
+                "l_9"
             ],
             "persons": [
-                "p_2"
+                "p_9"
             ],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "Garrison at Habbaniyah conducts a successful sortie against occupying Iraqi troops."
-        },
-        {
-            "event": "e_5",
-            "date": "Date Not Provided",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_6"
-            ],
-            "eventSummary": "Major-General Clark leads a force towards Baghdad after reinforcing the garrison at Habbaniyah."
-        },
-        {
-            "event": "e_6",
-            "date": "22nd May",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Iraqi forces launch a determined attack on Fallujah but are eventually repelled by a British counter-attack."
+            "eventSummary": "General Catroux urges immediate action to send help into Syria as a response to the German troops advancing."
         }
     ]
 }

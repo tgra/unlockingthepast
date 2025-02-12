@@ -1,132 +1,148 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General Sir Noel Beresford-Peirse",
-            "p_2": "Lieutenant-General A. R. Godwin-Austen"
+            "p_1": "Major-General Messervy",
+            "p_2": "General Godwin-Austen"
         },
         "locations": {
-            "l_1": "Matruh",
-            "l_2": "Alexandria",
-            "l_3": "Giarabub",
-            "l_4": "Siwa",
-            "l_5": "Western Desert",
-            "l_6": "Tobruk"
+            "l_1": "Marsa el Brega",
+            "l_2": "Agedabia",
+            "l_3": "Maaten Burruei",
+            "l_4": "Wadi Faregh",
+            "l_5": "Saunnu",
+            "l_6": "Antelat",
+            "l_7": "Giof el Matar",
+            "l_8": "Delta",
+            "l_9": "Msus",
+            "l_10": "Bengasi"
         },
         "events": {
-            "e_1": "Establishment of the pipeline between Alexandria and Matruh",
-            "e_2": "Occupation of Giarabub",
-            "e_3": "Command transfer to Eighth Army",
-            "e_4": "Advance towards Tobruk"
+            "e_1": "Enemy Attacks",
+            "e_2": "Operations of 21st January",
+            "e_3": "Movement of 2nd Armoured Brigade",
+            "e_4": "Engagement at Agedabia"
         },
         "organisations": {
-            "o_1": "7th Armoured Division",
-            "o_2": "Western Desert Forces",
-            "o_3": "Eighth Army",
-            "o_4": "13th Corps"
+            "o_1": "1st Armoured Division",
+            "o_2": "2nd Armoured Brigade",
+            "o_3": "Guards Brigade",
+            "o_4": "7th Armoured Division",
+            "o_5": "4th Indian Division",
+            "o_6": "3rd Corps"
         }
     },
     "keywords": [
-        "Water Supply",
-        "Transport Logistics",
-        "Military Reserves",
-        "Infantry Brigade",
-        "Petrol Containers",
-        "Western Desert Campaign"
+        "Armoured Division",
+        "Enemy Attacks",
+        "infantry",
+        "artillery",
+        "battlefield"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Water Resources",
-        "Supplies Management"
+        "Tactical Maneuvers",
+        "Supply Issues"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2",
-            "e_4"
-        ],
-        "Logistics": [
             "e_1",
-            "e_3"
-        ],
-        "Water Resources": [
-            "e_1"
-        ],
-        "Supplies Management": [
+            "e_2",
+            "e_3",
             "e_4"
+        ],
+        "Tactical Maneuvers": [
+            "e_1",
+            "e_4"
+        ],
+        "Supply Issues": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th September",
+            "date": "21st January",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_6",
+                "l_7",
+                "l_9",
+                "l_10"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [
+                "e_2",
+                "e_3",
                 "e_4"
             ],
-            "eventSummary": "On 6th September, orders are given for the establishment of a pipeline from Alexandria to Matruh to address water supply challenges."
+            "eventSummary": "The enemy launches coordinated attacks on the forward troops, beginning heavy shelling and realizing initial successes, leading to significant engagements at Agedabia and other locations."
         },
         {
             "event": "e_2",
-            "date": "8th August",
+            "date": "21st January",
             "locations": [
-                "l_3",
-                "l_4"
+                "l_2",
+                "l_6",
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "On 8th August, the 7th Indian Infantry Brigade occupies Giarabub as part of plans to secure a base for the main attacking force."
+            "eventSummary": "Troops under Major-General Messervy execute operations on the 21st January amid supply issues and preparations for potential enemy counter-attacks."
         },
         {
             "event": "e_3",
-            "date": "26th September",
+            "date": "Unknown",
             "locations": [
-                "l_5"
+                "l_2"
             ],
             "persons": [
-                "p_2"
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The 2nd Armoured Brigade is ordered to move forward in support of the left flank against advancing enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "On 26th September, command of the forces in the Western Desert, except those in Tobruk, passes to the Headquarters of the Eighth Army."
-        },
-        {
-            "event": "e_4",
-            "date": "4th October",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_3",
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On 4th October, preparations are finalized for an advance towards Tobruk, necessitating further reserves and strategies."
+            "eventSummary": "The Guards Brigade engages enemy forces near Agedabia, trying to block the main road and maintain a strategic position."
         }
     ]
 }

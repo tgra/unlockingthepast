@@ -1,8 +1,8 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant Colonel A. C. Newman",
-            "p_2": "Commander-in-Chief, Plymouth"
+            "p_1": "Commander-in-Chief, Plymouth",
+            "p_2": "A. C. Newman"
         },
         "locations": {
             "l_1": "St. Nazaire",
@@ -14,50 +14,45 @@
             "l_7": "Old Entrance"
         },
         "events": {
-            "e_1": "Action at St. Nazaire",
-            "e_2": "Transfer to M.G.B. 314",
-            "e_3": "Gunfire Encounter at Le Chatelier Shoal"
+            "e_1": "Transfer and Patrol Operation",
+            "e_2": "Engagement at the Old Entrance"
         },
         "organisations": {
-            "o_1": "Military Force"
+            "o_1": "Royal Navy"
         }
     },
     "keywords": [
-        "Torpedo boats",
-        "Air activity",
-        "Flak",
-        "Naval operation",
-        "Searchlights"
+        "torpedo boats",
+        "submarine",
+        "gun flashes",
+        "searchlights",
+        "flak",
+        "Military Force Commander"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Strategic Decisions"
+        "Engagements",
+        "Naval Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Naval Engagement": [
-            "e_1",
-            "e_3"
-        ],
-        "Strategic Decisions": [
             "e_2"
+        ],
+        "Engagements": [
+            "e_2"
+        ],
+        "Naval Tactics": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 28, 1943",
+            "date": "25th March",
             "locations": [
-                "l_1",
-                "l_3",
-                "l_4",
-                "l_6",
-                "l_7"
+                "l_2",
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -66,17 +61,16 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "A naval operation unfolds as torpedo boats are reported near St. Nazaire, leading to an encounter with defensive forces. The situation escalates with heavy flak and gunfire as military commanders execute their strategic plans."
+            "eventSummary": "On the evening of 25th March, the military operation involves the transfer of M.G.B. 314 and preparations for a patrol in the area around St. Nazaire and Nantes."
         },
         {
             "event": "e_2",
-            "date": "March 27, 1943",
+            "date": "28th March",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_6",
+                "l_7"
             ],
             "persons": [
                 "p_2"
@@ -87,25 +81,7 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Commander-in-Chief in Plymouth issues communications regarding the positioning of naval forces, influencing the tactical movements of the military operation."
-        },
-        {
-            "event": "e_3",
-            "date": "March 28, 1943",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "During the naval operation near Le Chatelier Shoal, multiple gun flashes are observed, indicating significant air activity and leading to a vigorous exchange of fire."
+            "eventSummary": "On 28th March, the engagement at the Old Entrance escalates as forces are fired upon and attempt to land troops amidst heavy flak and hostile fire."
         }
     ]
 }

@@ -1,93 +1,115 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain C. H. L. Woodhouse",
-            "p_2": "Captain W. H. G. Fallowfield",
-            "p_3": "Captain L. N. Hill",
-            "p_4": "Commanding Officer of H.M.S. ACHILLES"
+            "p_1": "W. E. Parry",
+            "p_2": "C. H. L. Woodhouse",
+            "p_3": "F. S. Bell"
         },
         "locations": {
-            "l_1": "Falkland Islands",
-            "l_2": "Plate"
+            "l_1": "Montevideo",
+            "l_2": "English Bank",
+            "l_3": "Rouen Bank",
+            "l_4": "San Antonio",
+            "l_5": "Whistle Buoy"
         },
         "events": {
-            "e_1": "Action against GRAF SPEE",
-            "e_2": "Refuelling of H.M. Ships"
+            "e_1": "Inspection of GRAF SPEE repairs",
+            "e_2": "GRAF SPEE scuttling",
+            "e_3": "GRAF SPEE explosion"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Admiralty"
+            "o_1": "Royal Navy"
         }
     },
     "keywords": [
-        "H.M.S. CUMBERLAND",
-        "H.M. Ships",
-        "New Zealand Division",
         "GRAF SPEE",
-        "11 in. gunfire",
-        "enemy tactics",
-        "torpedoes",
-        "armour-piercing"
+        "CUMBERLAND",
+        "ACHILLES",
+        "AJAX",
+        "TACOMA"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Personnel Recognition",
-        "Lessons Learned"
+        "Naval Tactics",
+        "Command Leadership"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Tactics": [
+            "e_1",
             "e_2"
         ],
-        "Naval Warfare": [
-            "e_1"
-        ],
-        "Personnel Recognition": [
+        "Command Leadership": [
+            "e_1",
             "e_2"
-        ],
-        "Lessons Learned": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of action unspecified",
+            "date": "16th December",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The action against GRAF SPEE involves naval engagements where H.M. Ships respond effectively to enemy tactics, showcasing training and performance under fire."
-        },
-        {
-            "event": "e_2",
-            "date": "Date of refuelling unspecified",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
                 "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "H.M. Ships engage in refuelling operations at the Falkland Islands, ensuring they are prepared and operational amidst ongoing military actions."
+            "eventSummary": "The examination of GRAF SPEE's repairs begins, indicating she is preparing to sail."
+        },
+        {
+            "event": "e_2",
+            "date": "17th December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "GRAF SPEE is reported to be transferring men to TACOMA and preparing to scuttle herself."
+        },
+        {
+            "event": "e_3",
+            "date": "17th December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "GRAF SPEE explodes after being sighted in shallow waters off Montevideo."
         }
     ]
 }

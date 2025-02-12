@@ -1,124 +1,145 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain Maund",
-            "p_2": "Commander Hubback",
+            "p_1": "Brigadier Gubbins",
+            "p_2": "Lt.-Col. Stockwell",
             "p_3": "General Bethouart",
-            "p_4": "Major-General Fleischer",
-            "p_5": "Colonel A. B. Dowler",
-            "p_6": "Colonel J. F. W. Allen",
-            "p_7": "Major-General P. J. Mackesy",
-            "p_8": "Lieutenant-General C. J. E. Auchinleck",
-            "p_9": "General Sir E. Ironside",
-            "p_10": "Admiral of the Fleet Lord Cork and Orrery",
-            "p_11": "General Sir John Dill"
+            "p_4": "Lord Cork",
+            "p_5": "Sir Cecil Dormer",
+            "p_6": "General Fleischer"
         },
         "locations": {
-            "l_1": "Northern Norway",
-            "l_2": "Narvik",
-            "l_3": "Sweden",
-            "l_4": "Alresford"
+            "l_1": "Bodo",
+            "l_2": "Fauske",
+            "l_3": "Lake Soloi",
+            "l_4": "Hopen",
+            "l_5": "Norway",
+            "l_6": "Ankenes",
+            "l_7": "Beisford",
+            "l_8": "Narvik",
+            "l_9": "Stromsnes",
+            "l_10": "Bjornefjell",
+            "l_11": "Swedish frontier",
+            "l_12": "Rombaks Fjord",
+            "l_13": "Tromso",
+            "l_14": "Hammerfest",
+            "l_15": "United Kingdom",
+            "l_16": "Borkenes",
+            "l_17": "Harstad"
         },
         "events": {
-            "e_1": "Reports on Operations in Northern Norway",
-            "e_2": "Establishment of a base in Northern Norway"
+            "e_1": "Evacuation from Bodo",
+            "e_2": "Withdrawal of troops",
+            "e_3": "French operations round Narvik",
+            "e_4": "Implementation of Mowinckel Plan"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "Allied Forces",
-            "o_3": "4th Corps Staff",
-            "o_4": "War Office",
-            "o_5": "His Majesty's Government"
+            "o_2": "Norwegian Government",
+            "o_3": "Foreign Legion"
         }
     },
     "keywords": [
+        "evacuation",
+        "withdrawal",
+        "military operations",
+        "German troops",
+        "Norwegian troops",
         "Royal Navy",
-        "Allied troops",
-        "Northern Norway",
-        "Operational planning",
-        "Military command",
-        "Iron ore supply"
+        "Bodo"
     ],
     "themes": [
         "Military Operations",
-        "Alliances",
-        "Logistics",
-        "Leadership and Command",
-        "Strategic Planning"
+        "Strategic Decisions",
+        "Evacuation Planning",
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Diplomacy": [
-            "e_1"
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_2"
-        ],
-        "Military Command": [
-            "e_1",
-            "e_2"
-        ],
-        "Logistics": [
-            "e_2"
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "13th May to 8th June, 1940",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7",
-                "p_8",
-                "p_9",
-                "p_10",
-                "p_11"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "A detailed report is presented on operations carried out in Northern Norway, highlighting the effective coordination between the Royal Navy and the Allied forces under various military leaders against significant logistical challenges."
-        },
-        {
-            "event": "e_2",
-            "date": "28th April to 10th June, 1940",
+            "date": "May 30-31, 1940",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_8",
-                "p_9",
-                "p_10"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_5"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "The establishment of a strategic base in Northern Norway is discussed, focusing on securing resources and logistical routes, crucial to the Allied war efforts against Germany."
+            "eventSummary": "Brigadier Gubbins organizes the evacuation of troops from Bodo with destroyers embarking men on the nights of May 30 and 31, 1940."
+        },
+        {
+            "event": "e_2",
+            "date": "May 26-31, 1940",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Troops, including the Irish Guards and Independent Companies, withdraw from positions north of Fauske amid enemy engagement, successfully making their way to Bodo for re-embarkation."
+        },
+        {
+            "event": "e_3",
+            "date": "1940",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Successful French military operations round Narvik lead to increased contacts between Polish and enemy forces."
+        },
+        {
+            "event": "e_4",
+            "date": "June 2, 1940",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Implementation of the Mowinckel Plan is requested by the Norwegian Government in an effort to establish neutrality for Narvik."
         }
     ]
 }

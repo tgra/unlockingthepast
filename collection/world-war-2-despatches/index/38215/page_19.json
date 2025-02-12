@@ -1,133 +1,136 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral Malaya",
-            "p_2": "Brigadier General Staff Headquarters Malaya Command",
-            "p_3": "Commander A.J.F."
+            "p_1": "Governor and High Commissioner",
+            "p_2": "Sultan of Johore"
         },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Java",
-            "l_3": "Alexandra",
-            "l_4": "Tyersall Tanglin",
-            "l_5": "Braddell Road",
-            "l_6": "Thomson Road",
-            "l_7": "Paya Lebar",
-            "l_8": "Kallang aerodrome",
-            "l_9": "Tekong Island",
-            "l_10": "Pulau Brani",
-            "l_11": "Pulau Bukum",
-            "l_12": "Blakang Mati",
-            "l_13": "Pengerang Area"
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Johore",
+            "l_4": "Kedah",
+            "l_5": "Kelantan",
+            "l_6": "Straits Settlements",
+            "l_7": "Selangor",
+            "l_8": "Negri Sembilan",
+            "l_9": "Batu Arang"
         },
         "events": {
-            "e_1": "Evacuation from Singapore",
-            "e_2": "Defense conference at Fort Canning",
-            "e_3": "Counter-attack discussion",
-            "e_4": "Shelling and mortaring of Malay Regiment"
+            "e_1": "World War II",
+            "e_2": "Outbreak of war with Japan",
+            "e_3": "Labour troubles in Selangor and Negri Sembilan",
+            "e_4": "Formation of Local Defence Corps"
         },
         "organisations": {
-            "o_1": "A.I.F.",
-            "o_2": "18 British Division",
-            "o_3": "11 Indian Division",
-            "o_4": "G.H.Q. South-West Pacific"
+            "o_1": "Imperial Defence",
+            "o_2": "Local Volunteer Forces",
+            "o_3": "Malay Regiment",
+            "o_4": "Johore Military Forces",
+            "o_5": "Defence Committee Malaya"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Defense",
-        "Counter-attack",
-        "Military Operations",
-        "Shelling"
+        "British occupation",
+        "civil population",
+        "loyalty",
+        "anti-British propaganda",
+        "Local Defence Corps",
+        "manpower"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Efforts",
-        "Strategic Decisions",
-        "Defense Planning"
+        "Population Loyalty",
+        "Imperial Contributions",
+        "Resource Mobilization"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_4"
         ],
-        "Evacuation Efforts": [
+        "Population Loyalty": [
             "e_1"
         ],
-        "Strategic Decisions": [
-            "e_2",
+        "Imperial Contributions": [
+            "e_2"
+        ],
+        "Resource Mobilization": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 13-14, 1942",
+            "date": "1939-1945",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "World War II occurs from 1939 to 1945, impacting Malaya's societal structure and military readiness."
+        },
+        {
+            "event": "e_2",
+            "date": "December 1941",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "Rear-Admiral Malaya decides to evacuate all remaining ships and personnel from Singapore to Java, marking the last organized opportunity for evacuation."
-        },
-        {
-            "event": "e_2",
-            "date": "February 13, 1942",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "At Fort Canning, a conference is held discussing military strategies to defend Singapore, highlighting the grave situation yet underscoring the necessity of continued action."
+            "eventSummary": "The outbreak of war with Japan in December 1941 significantly alters the strategic landscape of Malaya."
         },
         {
             "event": "e_3",
-            "date": "February 13, 1942",
+            "date": "April-May 1941",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Labour troubles arise in the Selangor and Negri Sembilan area due to the absence of European officials amidst military training."
+        },
+        {
+            "event": "e_4",
+            "date": "1941",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "During the defense conference, commanders agree that due to the exhaustion of troops, a counter-attack would be unsuccessful at this time."
-        },
-        {
-            "event": "e_4",
-            "date": "February 13, 1942",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Heavy shelling and mortaring are carried out against the Malay Regiment, resulting in significant casualties and the enemy capturing a key position."
+            "eventSummary": "Local Defence Corps are formed in Singapore and other cities to prepare for potential military engagement."
         }
     ]
 }

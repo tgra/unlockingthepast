@@ -1,109 +1,95 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "No. 113 Squadron",
-            "p_2": "No. 55 Squadron",
-            "p_3": "No. 33 Squadron",
-            "p_4": "No. 73 Squadron",
-            "p_5": "No. 274 Squadron",
-            "p_6": "No. 208 Squadron",
-            "p_7": "No. 3 R.A.A.F. Squadron",
-            "p_8": "Headquarters No. 202 Group",
-            "p_9": "Free French companies"
+            "p_1": "SIR ARTHUR LONGMORE"
         },
         "locations": {
-            "l_1": "Bardia",
-            "l_2": "Tobruk",
-            "l_3": "Derna",
+            "l_1": "Middle East",
+            "l_2": "Libya",
+            "l_3": "Benghazi",
             "l_4": "Cyrenaica",
-            "l_5": "El Adem",
-            "l_6": "Sollum",
-            "l_7": "Gambut",
-            "l_8": "Gazala",
-            "l_9": "Benghazi",
-            "l_10": "Sidi Mahmoud",
-            "l_11": "Mechili"
+            "l_5": "El Ageila",
+            "l_6": "Greece",
+            "l_7": "Roumania",
+            "l_8": "Bulgaria",
+            "l_9": "Tobruk",
+            "l_10": "Yugo-Slavia",
+            "l_11": "Crete",
+            "l_12": "Egypt",
+            "l_13": "Malta",
+            "l_14": "Sicily",
+            "l_15": "Kenya",
+            "l_16": "Sudan",
+            "l_17": "Berbera"
         },
         "events": {
-            "e_1": "Bombardment of Bardia",
-            "e_2": "Assault on Bardia",
-            "e_3": "Bombardment of Tobruk",
-            "e_4": "Assault on Tobruk",
-            "e_5": "Operations in Cyrenaica",
-            "e_6": "Capture of El Adem aerodrome",
-            "e_7": "Advance to Derna"
+            "e_1": "Complete defeat of the Italian Air Force in Libya",
+            "e_2": "Advance to Benghazi on 6th February 1941",
+            "e_3": "Decision to send British Land Forces to Greece on 22nd February 1941",
+            "e_4": "German-Italian offensive in North Africa",
+            "e_5": "German invasion of Yugo-Slavia and Greece on 5th April 1941",
+            "e_6": "Intensified attacks on Malta",
+            "e_7": "Successful offensives against Italian East Africa"
         },
         "organisations": {
-            "o_1": "Army",
-            "o_2": "Italian Air Force",
-            "o_3": "Fleet Air Arm"
+            "o_1": "Royal Air Force"
         }
     },
     "keywords": [
-        "bombers",
-        "reconnaissance",
-        "assault",
-        "aircraft",
-        "naval bombardment",
-        "air protection",
-        "enemy air force",
-        "troop concentrations"
+        "Air Operations",
+        "Middle East",
+        "Italian Air Force",
+        "Greece",
+        "German Forces",
+        "British Forces"
     ],
     "themes": [
         "Military Operations",
         "Air Warfare",
-        "Tactical Reconnaissance",
-        "Strategic Bombing"
+        "Geopolitical Strategy"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2",
+            "e_1",
             "e_4",
-            "e_6",
+            "e_5",
             "e_7"
         ],
         "Air Warfare": [
             "e_1",
-            "e_3"
+            "e_6"
         ],
-        "Strategic Bombing": [
-            "e_1",
-            "e_3",
-            "e_5"
+        "Geopolitical Strategy": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 1st-2nd",
+            "date": "February 6, 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Heavy naval and air bombardment occurs at Bardia, inflicting significant damage on enemy defenses."
+            "eventSummary": "The complete defeat of the Italian Air Force in Libya is recorded, marking a significant victory for British forces."
         },
         {
             "event": "e_2",
-            "date": "January 3rd",
+            "date": "February 6, 1941",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_6",
-                "p_7"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
@@ -111,78 +97,85 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Army assaults Bardia at dawn, utilizing armoured forces and Australian infantry, achieving significant gains."
+            "eventSummary": "British forces advance to Benghazi, illustrating their strategic progress in North Africa."
         },
         {
             "event": "e_3",
-            "date": "January 19th-21st",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_7"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Bombardment precedes the assault on Tobruk, inflicting heavy damage on enemy defenses."
-        },
-        {
-            "event": "e_4",
-            "date": "January 21st",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_3",
-                "p_5",
-                "p_6",
-                "p_8"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The Army launches an assault on Tobruk at dawn, supported by coordinated air attacks."
-        },
-        {
-            "event": "e_6",
-            "date": "January 6th",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_8"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Armoured forces capture El Adem aerodrome, taking control of abandoned Italian aircraft."
-        },
-        {
-            "event": "e_7",
-            "date": "February 1st",
+            "date": "February 22, 1941",
             "locations": [
                 "l_6"
             ],
             "persons": [
-                "p_8"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The main body of forces advances towards Derna as air activity from the enemy decreased."
+            "eventSummary": "A decision is made to send British Land Forces to Greece to counter the developing threat from German Forces."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The German-Italian offensive in North Africa leads to the withdrawal of British forces in Cyrenaica."
+        },
+        {
+            "event": "e_5",
+            "date": "April 5, 1941",
+            "locations": [
+                "l_10",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The German invasion of Yugo-Slavia and Greece results in the capitulation of both countries' armies."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Intensified attacks on Malta improve German control over naval communications in the region."
+        },
+        {
+            "event": "e_7",
+            "date": "",
+            "locations": [
+                "l_15",
+                "l_16",
+                "l_17"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Successful offensives against Italian East Africa are reported, including the re-occupation of Berbera."
         }
     ]
 }

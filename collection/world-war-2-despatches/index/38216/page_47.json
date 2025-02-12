@@ -1,130 +1,150 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Sir John Laverack",
-            "p_2": "Group Captain Noble",
-            "p_3": "Resident Palembang"
+            "p_1": "Abdair",
+            "p_2": "Group Captain Brown",
+            "p_3": "W/Cdr. R. H. Davies",
+            "p_4": "Group Captain Whistondale",
+            "p_5": "W/Cdr. Jeudwine",
+            "p_6": "S/Ldr. Wilkins",
+            "p_7": "S/Ldr. Brooker",
+            "p_8": "S/Ldr. Wright",
+            "p_9": "Air Commodore Hunter",
+            "p_10": "Air Commodore Vincent",
+            "p_11": "Wing Commander Bell"
         },
         "locations": {
-            "l_1": "Palembang",
-            "l_2": "Medan",
-            "l_3": "Pakenbaroe",
-            "l_4": "Sumatra",
-            "l_5": "Singapore",
-            "l_6": "Lahat",
-            "l_7": "N.E.I. (Netherlands East Indies)"
+            "l_1": "Sumatra",
+            "l_2": "Samplak",
+            "l_3": "Kahdyati",
+            "l_4": "Tyililitan",
+            "l_5": "Kalidjate",
+            "l_6": "Trikampek",
+            "l_7": "Java",
+            "l_8": "Bandoeng",
+            "l_9": "Batavia",
+            "l_10": "Djocjacarta",
+            "l_11": "Oesthaven",
+            "l_12": "Palembang",
+            "l_13": "Singapore"
         },
         "events": {
-            "e_1": "Inadequate Defences Meeting",
-            "e_2": "R.A.F. Units Arrival from Singapore",
-            "e_3": "Japanese Advance in Malaya",
-            "e_4": "A.H.Q. Planning for Transfer"
+            "e_1": "Evacuation of Sumatra",
+            "e_2": "Aircraft Operations from 18th to 24th February",
+            "e_3": "Re-formation of Bomber and Fighter Groups",
+            "e_4": "Reconnaissance of Oesthaven"
         },
         "organisations": {
-            "o_1": "Dutch Army",
-            "o_2": "R.A.F.",
-            "o_3": "A.H.Q.",
-            "o_4": "Abdacom",
-            "o_5": "Observer Corps"
+            "o_1": "No. 225 (B) Group",
+            "o_2": "No. 226 (F) Group",
+            "o_3": "No. 84 (B) Squadron",
+            "o_4": "No. 36 (TB) Squadron",
+            "o_5": "No. 232 (F) Squadron",
+            "o_6": "No. 605 (F) Squadron",
+            "o_7": "U.S.S. Langley"
         }
     },
     "keywords": [
-        "aerodromes",
-        "defences",
-        "Japanese advancement",
-        "military operations",
-        "reinforcements",
-        "equipment supply"
+        "Aircraft",
+        "Evacuation",
+        "Squadron",
+        "Reconnaissance",
+        "Operations"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Defense Strategy",
-        "International Relations"
+        "Aerial Reconnaissance",
+        "Squadron Reformation",
+        "Supply Issues"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
             "e_2",
-            "e_3"
-        ],
-        "Logistics": [
+            "e_1",
             "e_4"
         ],
-        "Defense Strategy": [
-            "e_1"
+        "Aerial Reconnaissance": [
+            "e_4"
         ],
-        "International Relations": [
-            "e_1"
+        "Squadron Reformation": [
+            "e_3"
+        ],
+        "Supply Issues": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 23",
+            "date": "16th February",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Representations are made regarding the inadequacy of the defenses in Palembang, signaling potential reinforcements but leading to concerns over defense capabilities."
+            "eventSummary": "The evacuation of Sumatra takes place due to military pressures, significantly impacting the fighter squadrons."
         },
         {
             "event": "e_2",
-            "date": "February 1",
+            "date": "18th to 24th February",
             "locations": [
-                "l_2",
-                "l_4"
+                "l_7",
+                "l_9"
             ],
             "persons": [
-                "p_2"
+                "p_1",
+                "p_9",
+                "p_10"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "R.A.F. units arrive from Singapore to bolster defenses, but are met with unexpected logistical challenges due to Japanese advances."
+            "eventSummary": "Aircraft operations are conducted under the re-formed groups to address urgent military needs in Java."
         },
         {
             "event": "e_3",
-            "date": "January 23 - February 1",
+            "date": "18th February",
             "locations": [
-                "l_5"
+                "l_8"
             ],
-            "persons": [],
+            "persons": [
+                "p_9",
+                "p_10",
+                "p_11"
+            ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The rapid Japanese advance in Malaya requires an immediate acceleration of troop transfers from Singapore, greatly impacting operational plans."
+            "eventSummary": "H.Q. Nos. 225 (B) and 226 (F) Groups are re-formed to support operational needs amidst challenges."
         },
         {
             "event": "e_4",
-            "date": "Prior to January 22",
+            "date": "18th February",
             "locations": [
-                "l_6"
+                "l_11",
+                "l_12"
             ],
-            "persons": [],
-            "organisations": [
-                "o_3"
+            "persons": [
+                "p_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "A.H.Q. in Singapore attempts to reorganize forces for deployment in Sumatra and Java, facing significant obstacles due to Japanese actions."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A Hudson reconnoitres the port of Oesthaven and the road to Palembang without observing Japanese activity."
         }
     ]
 }

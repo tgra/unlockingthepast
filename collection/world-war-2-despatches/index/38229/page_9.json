@@ -1,124 +1,143 @@
 {
     "namedEntities": {
         "persons": {
-            "p_001": "Group Captain Seton Broughall",
-            "p_002": "General Chennault",
-            "p_003": "General Alexander"
+            "p_1": "Lieutenant-General Hutton",
+            "p_2": "General Alexander"
         },
         "locations": {
-            "l_001": "Upper Burma",
-            "l_002": "Akyab",
-            "l_003": "Magwe",
-            "l_004": "Loiwing",
-            "l_005": "Lashio",
-            "l_006": "Sittang Valley",
-            "l_007": "Irrawaddy Valley",
-            "l_008": "Andaman Islands",
-            "l_009": "Chittagong",
-            "l_010": "Maymyo"
+            "l_1": "Singapore",
+            "l_2": "Java",
+            "l_3": "Bay of Bengal",
+            "l_4": "Burma",
+            "l_5": "Rangoon",
+            "l_6": "Tenasserim",
+            "l_7": "Gulf of Martaban",
+            "l_8": "Thailand",
+            "l_9": "Bangkok",
+            "l_10": "Lashio"
         },
         "events": {
-            "e_001": "Enemy Attacks at Magwe",
-            "e_002": "Intercept at Akyab",
-            "e_003": "Convoy Withdrawal from Magwe"
+            "e_1": "Fall of Singapore",
+            "e_2": "Fall of Java",
+            "e_3": "Fall of Rangoon",
+            "e_4": "Battle of Tenasserim",
+            "e_5": "Attack on Bangkok"
         },
         "organisations": {
-            "o_001": "R.D.F.",
-            "o_002": "A.V.G.",
-            "o_003": "R.A.F.",
-            "o_004": "Air Headquarters, India"
+            "o_1": "A.V.G.",
+            "o_2": "R.A.F.",
+            "o_3": "113 Squadron",
+            "o_4": "17th (Indian) Division"
         }
     },
     "keywords": [
-        "enemy attacks",
-        "Hurricanes",
-        "reconnaissance",
-        "Blenheims",
-        "aircraft",
-        "withdrawal",
-        "airfield"
+        "air operations",
+        "naval force",
+        "Japanese Army",
+        "land campaign",
+        "bombing operations",
+        "air superiority"
     ],
     "themes": [
         "Military Operations",
-        "Enemy Actions",
-        "Strategic Decisions",
-        "Aerial Combat"
+        "Air Support",
+        "Naval Strategy",
+        "Land Operations"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_001",
-            "e_002",
-            "e_003"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Enemy Actions": [
-            "e_001",
-            "e_002"
+        "Air Support": [
+            "e_4",
+            "e_5"
         ],
-        "Strategic Decisions": [
-            "e_003"
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
         ],
-        "Aerial Combat": [
-            "e_001",
-            "e_002"
+        "Land Operations": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
-            "event": "e_001",
-            "date": "22nd March",
+            "event": "e_1",
+            "date": "Not specified",
             "locations": [
-                "l_003"
+                "l_1",
+                "l_4"
             ],
-            "persons": [
-                "p_001",
-                "p_002"
-            ],
+            "persons": [],
             "organisations": [
-                "o_001",
-                "o_003"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_002",
-                "e_003"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "At Magwe, significant enemy raids occur resulting in considerable damage, prompting immediate action from the R.A.F."
+            "eventSummary": "The Fall of Singapore marks a significant defeat for Allied forces in WWII."
         },
         {
-            "event": "e_002",
-            "date": "23rd to 27th March",
+            "event": "e_2",
+            "date": "Not specified",
             "locations": [
-                "l_002"
+                "l_2",
+                "l_4"
             ],
-            "persons": [
-                "p_001"
-            ],
+            "persons": [],
             "organisations": [
-                "o_001",
-                "o_003"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_001"
+                "e_3"
             ],
-            "eventSummary": "Fighter intercepts at Akyab result in some enemy aircraft losses, but many Hurricanes are destroyed, challenging R.A.F. efforts."
+            "eventSummary": "The Fall of Java represents another critical loss for Allied naval forces."
         },
         {
-            "event": "e_003",
-            "date": "23rd March",
+            "event": "e_3",
+            "date": "Not specified",
             "locations": [
-                "l_003",
-                "l_004"
+                "l_5",
+                "l_4"
             ],
-            "persons": [
-                "p_001",
-                "p_003"
-            ],
-            "organisations": [
-                "o_001"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_001"
+                "e_4"
             ],
-            "eventSummary": "A convoy departs Magwe to relocate support to Loiwing due to increasing danger and lack of resources."
+            "eventSummary": "The Fall of Rangoon leads to further territorial loss for Allied forces in Burma."
+        },
+        {
+            "event": "e_4",
+            "date": "January 19th",
+            "locations": [
+                "l_6",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Battle of Tenasserim is characterized by difficult conditions for air support."
+        },
+        {
+            "event": "e_5",
+            "date": "January 1943",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Attack on Bangkok by 113 Squadron leads to significant bomb drops on enemy targets."
         }
     ]
 }

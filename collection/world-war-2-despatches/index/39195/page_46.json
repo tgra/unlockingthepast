@@ -1,55 +1,59 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Kimura",
-            "p_2": "Yamamoto"
+            "p_1": "Rear-Admiral Martin",
+            "p_2": "major Janding"
         },
         "locations": {
-            "l_1": "Meiktila",
+            "l_1": "Rangoon",
             "l_2": "Burma",
-            "l_3": "Mandalay",
-            "l_4": "Irrawaddy",
-            "l_5": "Nyaungu",
-            "l_6": "Singu",
-            "l_7": "Chauk",
-            "l_8": "Dohazari",
-            "l_9": "Madaya",
-            "l_10": "East African"
+            "l_3": "Elephant Point",
+            "l_4": "Kyauktan",
+            "l_5": "Syriam",
+            "l_6": "Ramree",
+            "l_7": "Calcutta",
+            "l_8": "Pegu River",
+            "l_9": "Hmawwun Chaung",
+            "l_10": "Bassein Creek",
+            "l_11": "Thakutpin"
         },
         "events": {
-            "e_1": "Capture of Meiktila",
-            "e_2": "Japanese counter-offensive plans",
-            "e_3": "Battle at Nyaungu Bridgehead",
-            "e_4": "Advance of 19 Indian Division",
-            "e_5": "Battle of Yenatha"
+            "e_1": "The Capture of Rangoon",
+            "e_2": "Airborne operation at Elephant Point",
+            "e_3": "Invasion fleet assembly"
         },
         "organisations": {
-            "o_1": "Japanese Army",
-            "o_2": "Indian Division",
-            "o_3": "Fourteenth Army"
+            "o_1": "Fourteenth Army",
+            "o_2": "15 Indian Corps",
+            "o_3": "26 Indian Division",
+            "o_4": "2 British Division",
+            "o_5": "Indian Airborne Division",
+            "o_6": "American Air Commandos",
+            "o_7": "G.H.Q. India"
         }
     },
     "keywords": [
-        "Meiktila",
-        "Japanese Army",
+        "Rangoon",
+        "invasion",
         "Indian Division",
-        "Burma",
-        "Battle",
-        "Counter-offensive"
+        "airborne operation",
+        "Japanese",
+        "defences"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Counter-offensives"
+        "Logistics",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4",
-            "e_5"
+            "e_2"
         ],
-        "Strategic Decisions": [
+        "Logistics": [
+            "e_3"
+        ],
+        "Strategic Planning": [
             "e_1",
             "e_2"
         ]
@@ -57,7 +61,7 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 5, 1902",
+            "date": "3rd May",
             "locations": [
                 "l_1",
                 "l_2"
@@ -67,72 +71,50 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Capture of Meiktila occurs unexpectedly, causing confusion among enemy forces."
+            "eventSummary": "On 3rd May, the planned assault on Rangoon is complicated by various operational challenges, yet 15 Indian Corps advances toward the city."
         },
         {
             "event": "e_2",
-            "date": "March 1902",
+            "date": "1st May",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Japanese counter-offensive plans are forced to be delayed due to unexpected developments at Meiktila."
+            "eventSummary": "On 1st May, an airborne operation successfully captures Elephant Point, allowing the advance toward Rangoon."
         },
         {
             "event": "e_3",
-            "date": "March 1902",
+            "date": "2nd May",
             "locations": [
-                "l_5",
-                "l_4"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A battle at Nyaungu bridgehead unfolds as enemy forces fail to successfully coordinate their attacks."
-        },
-        {
-            "event": "e_4",
-            "date": "February 20, 1902",
-            "locations": [
-                "l_4"
+                "l_1"
             ],
             "persons": [],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The 19 Indian Division begins its rapid advance down the east bank of the Irrawaddy, achieving significant gains."
-        },
-        {
-            "event": "e_5",
-            "date": "March 6, 1902",
-            "locations": [
-                "l_4"
+            "connectedEvents": [
+                "e_1"
             ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The battle of Yenatha concludes with the capture of the area by Indian forces, further pressing the enemy."
+            "eventSummary": "On 2nd May, the invasion fleet for Rangoon is successfully assembled despite challenging weather conditions."
         }
     ]
 }

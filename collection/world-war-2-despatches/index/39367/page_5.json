@@ -1,102 +1,87 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Vice-Marshal K. B. Lloyd",
-            "p_2": "Brigadier-General L. V. Beau",
-            "p_3": "Air Marshal Sir Charles E. H. Medhurst",
-            "p_4": "Air Vice-Marshal C. B. Cooke"
+            "p_1": "K. B. Lloyd",
+            "p_2": "L. V. Beau",
+            "p_3": "Charles E. H. Medhurst",
+            "p_4": "C. B. Cooke"
         },
         "locations": {
-            "l_1": "Malta",
-            "l_2": "Bari",
-            "l_3": "Jugoslavia",
-            "l_4": "North Africa",
-            "l_5": "Aden",
-            "l_6": "East Africa",
-            "l_7": "Algiers",
-            "l_8": "Italy",
-            "l_9": "Egypt",
-            "l_10": "Caserta"
+            "l_1": "Greece",
+            "l_2": "Italy",
+            "l_3": "Bari",
+            "l_4": "Malta",
+            "l_5": "North Africa",
+            "l_6": "Aden",
+            "l_7": "East Africa",
+            "l_8": "Algiers",
+            "l_9": "Caserta"
         },
         "events": {
-            "e_1": "Operation of Mediterranean Allied Transport Service",
-            "e_2": "Changes in Air Headquarters Malta",
-            "e_3": "Operational training and maintenance by R.A.F. Middle East"
+            "e_1": "Formation of M.A.A.F.",
+            "e_2": "Operational significance of Malta",
+            "e_3": "Dissolution of Mediterranean Allied Photographic Reconnaissance Wing",
+            "e_4": "Establishment of Headquarters R.A.F. Middle East",
+            "e_5": "Maintenance and Supply operations in MEDME"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)",
+            "o_1": "Royal Air Force",
             "o_2": "U.S.A.A.F.",
             "o_3": "Royal Hellenic Air Force",
             "o_4": "Jugoslav Air Force",
             "o_5": "Italian Air Force",
-            "o_6": "Mediterranean Air Transport Service",
-            "o_7": "Air Command South East Asia"
+            "o_6": "M.A.A.F.",
+            "o_7": "Air Command South East Asia",
+            "o_8": "Mediterranean Allied Transport Service",
+            "o_9": "Directorate of Maintenance and Supply"
         }
     },
     "keywords": [
         "Air Force",
-        "squadrons",
-        "Mediterranean",
-        "transport",
-        "operational control",
-        "reconnaissance",
-        "air sea rescue",
-        "maintenance"
+        "Combat",
+        "Operations"
     ],
     "themes": [
         "Military Operations",
         "Air Transport",
-        "Operational Control",
-        "Reconnaissance",
-        "Maintenance and Supply"
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
         "Air Transport": [
-            "e_1"
-        ],
-        "Operational Control": [
-            "e_2",
-            "e_3"
+            "e_4"
         ],
         "Reconnaissance": [
-            "e_1"
-        ],
-        "Maintenance and Supply": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1945",
+            "date": "February 1945",
             "locations": [
-                "l_7",
-                "l_8",
                 "l_4"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_6",
-                "o_1",
-                "o_2"
+                "o_6"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The Mediterranean Allied Transport Service coordinates and directs all air transport activities within the jurisdiction of the Air C.-in-C. MAAF."
+            "eventSummary": "The M.A.A.F. is formed as a command structure in February 1945, consolidating air forces in the region."
         },
         {
             "event": "e_2",
-            "date": "February 1945",
+            "date": "March 1945",
             "locations": [
-                "l_1"
+                "l_4"
             ],
             "persons": [
                 "p_1"
@@ -104,29 +89,50 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Air Headquarters Malta undergoes a change, transitioning its command under Headquarters M.A.A.F. and adjusting its operational commitments."
+            "connectedEvents": [],
+            "eventSummary": "In March 1945, Malta's operational significance decreases as front lines advance northwards."
         },
         {
             "event": "e_3",
-            "date": "March 1945",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_8"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Mediterranean Allied Photographic Reconnaissance Wing dissolves, transitioning to a self-contained operational structure."
+        },
+        {
+            "event": "e_4",
+            "date": "",
             "locations": [
-                "l_8"
+                "l_4"
             ],
             "persons": [
-                "p_3",
+                "p_3"
+            ],
+            "organisations": [
+                "o_8"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Headquarters R.A.F. Middle East establishes itself as a crucial operational and training facility during the war."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
                 "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_9"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "R.A.F. Middle East focuses on operational training and maintenance with limited commitments as the conflict evolves."
+            "connectedEvents": [],
+            "eventSummary": "The Directorate of Maintenance and Supply oversees all maintenance operations across MEDME command jurisdictions."
         }
     ]
 }

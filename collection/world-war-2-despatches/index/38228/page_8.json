@@ -1,96 +1,112 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Generalissimo",
-            "p_2": "Marshal Chiang-Kai-Shek",
-            "p_3": "General Sir Alan Hartley"
+            "p_1": "Colonel G. Chennault",
+            "p_2": "Air Vice-Marshal Stevenson",
+            "p_3": "Group-Captain Manning",
+            "p_4": "Brigadier J. H. Anstice",
+            "p_5": "Lieut.-General Hutton",
+            "p_6": "General Alexander",
+            "p_7": "Lieut.-General Sim",
+            "p_8": "Major-General Cowan",
+            "p_9": "Major-General Bruce Scott",
+            "p_10": "Major-General Goddard",
+            "p_11": "Brigadier Davies",
+            "p_12": "Major-General Wakely",
+            "p_13": "General J. Stilwell",
+            "p_14": "General Lo Cho-Ying",
+            "p_15": "Marshal Chiang Kai Shek",
+            "p_16": "H. E. Sir Reginald Dorman-Smith",
+            "p_17": "The Honourable Mr. John Wise"
         },
         "locations": {
             "l_1": "Burma",
-            "l_2": "Chungking",
-            "l_3": "Malaya",
-            "l_4": "India",
-            "l_5": "Java",
-            "l_6": "Rangoon",
-            "l_7": "Tavoy",
-            "l_8": "Mergui",
-            "l_9": "Northern Tenasserim",
-            "l_10": "East Africa"
+            "l_2": "Rangoon",
+            "l_3": "India",
+            "l_4": "Yenangyaung",
+            "l_5": "Syriam"
         },
         "events": {
-            "e_1": "Establishment of Allied Council at Chungking",
-            "e_2": "Japanese Air Raids on Rangoon",
-            "e_3": "Transfer of Burma to A.B.D.A. Command",
-            "e_4": "Japanese Attack on Burma"
+            "e_1": "Burma campaign",
+            "e_2": "Japanese advance",
+            "e_3": "Bombing of Rangoon",
+            "e_4": "Fall of Rangoon"
         },
         "organisations": {
-            "o_1": "A.B.D.A. Command",
-            "o_2": "South-West Pacific Command",
-            "o_3": "18 British Division",
-            "o_4": "17 Indian Division"
+            "o_1": "A.V.G.",
+            "o_2": "Burma Army",
+            "o_3": "Chinese troops",
+            "o_4": "United States Army"
         }
     },
     "keywords": [
         "Burma",
-        "Japanese attacks",
-        "A.B.D.A. Command",
-        "Allied Council",
-        "Air raids",
-        "military strategy"
+        "Rangoon",
+        "Japanese",
+        "Army",
+        "Campaign",
+        "Air Forces",
+        "Leadership",
+        "Operations"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions"
+        "Leadership",
+        "Strain on Troops",
+        "Civil Administration",
+        "International Relations"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
-            "e_4"
+            "e_3"
         ],
-        "Diplomacy": [
+        "Leadership": [
             "e_1"
         ],
-        "Strategic Decisions": [
+        "Civil Administration": [
             "e_3"
+        ],
+        "International Relations": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown",
+            "date": "",
             "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_5",
+                "p_6",
+                "p_8",
+                "p_9"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "An Allied Council is being established at Chungking to strategize against Japanese forces."
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Burma campaign represents a prolonged military conflict during which Allied forces, including the A.V.G., operate in challenging conditions against Japanese forces."
         },
         {
             "event": "e_2",
-            "date": "23rd and 25th December",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Two large-scale Japanese air raids on Rangoon occur, resulting in high civilian casualties and the beginning of mass evacuations."
-        },
-        {
-            "event": "e_3",
-            "date": "30th December, 1941",
+            "date": "",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_6",
+                "p_15"
             ],
             "organisations": [
                 "o_2"
@@ -98,19 +114,38 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Control of Burma is transferred to the South-West Pacific Command causing concerns over military oversight and effectiveness."
+            "eventSummary": "The Japanese advance refers to the aggressive military actions taken by Japan during World War II in Burma, leading to significant challenges for Allied forces."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_16",
+                "p_17"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The bombing of Rangoon involved air attacks that resulted in considerable damage and spurred a crisis for the civil administration."
         },
         {
             "event": "e_4",
-            "date": "19th January",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_7"
+                "l_2"
             ],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
             "connectedEvents": [],
-            "eventSummary": "The Japanese advance on Burma begins with engagements near Tavoy, marking the start of active military hostilities."
+            "eventSummary": "The Fall of Rangoon signifies a critical point in the Burma campaign, leading to severe consequences for Allied forces in the region."
         }
     ]
 }

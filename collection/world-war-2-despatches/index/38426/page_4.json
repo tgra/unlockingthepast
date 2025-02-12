@@ -1,10 +1,10 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain J. S. Crawford",
-            "p_2": "Lieutenant-Commander J. H. Swain",
-            "p_3": "Acting Captain E. H. B. Baker",
-            "p_4": "Commander R. H. Wright"
+            "p_1": "Captain J. S. Crawford, D.S.O., R.N.",
+            "p_2": "Lieutenant-Commander J. H. Swain, D.S.O., R.N.",
+            "p_3": "Acting Captain E. H. B. Baker, R.N.",
+            "p_4": "Commander R. H. Wright, D.S.C., R.N."
         },
         "locations": {
             "l_1": "Port Akti",
@@ -14,57 +14,65 @@
             "l_5": "Casteloriso",
             "l_6": "Alexandria",
             "l_7": "Piraeus",
-            "l_8": "Anaphi",
-            "l_9": "Lavrion"
+            "l_8": "Lavrion",
+            "l_9": "Anaphi",
+            "l_10": "Kos",
+            "l_11": "Kalymnos"
         },
         "events": {
             "e_1": "Bombardment of Port Kalymnos",
-            "e_2": "Supply Operation to Leros",
-            "e_3": "Major Assault Force Assembly",
-            "e_4": "Invasion of Leros"
+            "e_2": "Invasion of Leros",
+            "e_3": "Reinforcement of Leros",
+            "e_4": "Sinking of H.M. Ships ECLIPSE and HURWORTH"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "U.S. Army Air Forces",
-            "o_3": "Royal Air Force",
-            "o_4": "British Army"
+            "o_1": "U.S.A.A.F",
+            "o_2": "R.A.F",
+            "o_3": "British Naval Forces",
+            "o_4": "General Headquarters, Middle East"
         }
     },
     "keywords": [
-        "naval forces",
         "bombardment",
         "reinforcements",
-        "supply",
-        "military operation"
+        "supplies",
+        "invasion",
+        "naval forces",
+        "air attacks"
     ],
     "themes": [
         "Military Operations",
         "Logistics",
-        "Invasion Strategy",
-        "Reinforcements"
+        "Naval Warfare",
+        "Reinforcement",
+        "Supply Chain Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4"
+            "e_3"
         ],
         "Logistics": [
-            "e_2"
+            "e_3"
         ],
-        "Invasion Strategy": [
-            "e_3",
+        "Naval Warfare": [
+            "e_1",
             "e_4"
         ],
-        "Reinforcements": [
+        "Reinforcement": [
             "e_2"
+        ],
+        "Supply Chain Management": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "20th October",
+            "date": "Night of Unspecified Date",
             "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [
@@ -72,56 +80,55 @@
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "H.M. Ships JERVIS and PENN bombard Port Kalymnos, setting a merchant ship on fire."
+            "eventSummary": "On a night operation, H.M. Ships JERVIS and PENN bombard Port Kalymnos, setting a merchant ship on fire."
         },
         {
             "event": "e_2",
-            "date": "From 18th October",
+            "date": "3rd November to 16th November",
             "locations": [
                 "l_3",
                 "l_4"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "The supply of Leros becomes unsatisfactory, leading to a new organization for supply by various means to maintain garrison strength."
+            "connectedEvents": [],
+            "eventSummary": "Major naval operations conducted to invade Leros take place, with preparations indicating significant military movements."
         },
         {
             "event": "e_3",
-            "date": "End of October",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Intelligence reports suggest a major assault force is being assembled in Piraeus, indicating preparations for a possible invasion."
-        },
-        {
-            "event": "e_4",
-            "date": "3rd November to 16th November",
+            "date": "October",
             "locations": [
                 "l_3"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_4"
+            ],
             "connectedEvents": [],
-            "eventSummary": "The invasion of Leros begins, with landing craft and escort vessels reported conducting landing exercises."
+            "eventSummary": "Reinforcement and supply operations to the garrison at Leros struggle due to various logistical challenges."
+        },
+        {
+            "event": "e_4",
+            "date": "October",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "During the period of naval operations, H.M. Ships ECLIPSE and HURWORTH are sunk by mines while engaged in supply missions."
         }
     ]
 }

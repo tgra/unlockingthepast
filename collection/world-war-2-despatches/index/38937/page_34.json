@@ -1,37 +1,48 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Kesselring",
+            "p_2": "Gehricke",
+            "p_3": "Hitler"
+        },
         "locations": {
-            "l_1": "Salerno",
-            "l_2": "Sicily",
-            "l_3": "Naples",
-            "l_4": "Sardinia",
-            "l_5": "Foggia",
-            "l_6": "Lombardy",
-            "l_7": "Heel",
-            "l_8": "Trapani"
+            "l_1": "Anzio",
+            "l_2": "Alban Hills",
+            "l_3": "Cisterna",
+            "l_4": "Rome",
+            "l_5": "Perugia",
+            "l_6": "Garigliano",
+            "l_7": "Moletta river",
+            "l_8": "Sessano"
         },
         "events": {
-            "e_1": "Capture of Salerno Airfield",
-            "e_2": "Airborne Operations Initiation",
-            "e_3": "Bomber Operations against Enemy Airfields"
+            "e_1": "Landing at Anzio",
+            "e_2": "Actions on the Mussolini canal",
+            "e_3": "Construction of blocking force",
+            "e_4": "Reinforcements from G.H.Q."
         },
         "organisations": {
-            "o_1": "S.E.F. (Squadron)",
-            "o_2": "T.E.F. (Task Force)"
+            "o_1": "Hermann Goering Division",
+            "o_2": "3 Panzer Grenadier Division",
+            "o_3": "15 Panzer Grenadier Division",
+            "o_4": "4 Parachute Division",
+            "o_5": "26 Panzer Division",
+            "o_6": "Eighth Army"
         }
     },
     "keywords": [
-        "Airfield Accommodation",
-        "Fighter Resources",
-        "Bomber Operations",
-        "Airborne Forces",
-        "Salerno Assault"
+        "landing",
+        "blocking force",
+        "reinforcements",
+        "defensive perimeter",
+        "enemy withdrawals",
+        "German reactions"
     ],
     "themes": [
         "Military Operations",
-        "Air Strategy",
-        "Logistical Coordination"
+        "Strategic Decisions",
+        "Defensive Strategies",
+        "Reinforcements"
     ],
     "topicModel": {
         "Military Operations": [
@@ -39,25 +50,25 @@
             "e_2",
             "e_3"
         ],
-        "Air Strategy": [
+        "Strategic Decisions": [
             "e_1",
-            "e_3"
+            "e_4"
         ],
-        "Logistical Coordination": [
-            "e_1",
-            "e_2"
+        "Defensive Strategies": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "22nd January 1944",
             "locations": [
-                "l_1",
-                "l_6",
-                "l_5"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1"
             ],
@@ -65,17 +76,18 @@
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The event focuses on the need to capture the airfield at Salerno early to support the assault, emphasizing logistical considerations such as airfield accommodation and proximity to ports."
+            "eventSummary": "The Allied forces initiate a landing at Anzio, aiming to secure a foothold in Italy despite enemy resistance."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "22nd January 1944",
             "locations": [
                 "l_1",
-                "l_4",
-                "l_2"
+                "l_7"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1",
                 "o_2"
@@ -83,23 +95,46 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Airborne Operations are planned to secure airfields, with considerations made regarding fighter cover and long-range resource allocation."
+            "eventSummary": "Engagements occur along the Mussolini canal as enemy forces respond to the landing at Anzio."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
+            "date": "Post 22nd January 1944",
             "locations": [
-                "l_1",
-                "l_7"
+                "l_4"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_6"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Bomber Operations are outlined to target enemy airfields in key locations, ensuring that air coverage can be established for allied forces."
+            "eventSummary": "Kesselring decides to assemble a blocking force to contain the Anzio beachhead as enemy troops begin to deploy."
+        },
+        {
+            "event": "e_4",
+            "date": "Post 23rd January 1944",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Hitler intervenes, directing reinforcements to be sent to Kesselring to strengthen the effort against the Anzio bridgehead."
         }
     ]
 }

@@ -1,102 +1,138 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commandant Paris",
+            "p_1": "General Auchinleck",
             "p_2": "General Bethouart",
             "p_3": "Brigadier Gubbins",
-            "p_4": "Commander Hubback",
-            "p_5": "Colonel Dowler",
-            "p_6": "Lord Cork"
+            "p_4": "Sir Cecil Dormer",
+            "p_5": "Colonel Pollock",
+            "p_6": "Colonel Ljungberg"
         },
         "locations": {
-            "l_1": "Narvik",
-            "l_2": "Bodo",
-            "l_3": "Beisfjord",
-            "l_4": "Ankenes Peninsula",
-            "l_5": "Fagernes",
-            "l_6": "Forsneset",
-            "l_7": "Sildvik",
-            "l_8": "Hundalen",
-            "l_9": "Bardu Foss"
+            "l_1": "United Kingdom",
+            "l_2": "Norwegian Government",
+            "l_3": "Gratangen district",
+            "l_4": "Bodo area",
+            "l_5": "Ankenes peninsula",
+            "l_6": "Beisfjord",
+            "l_7": "Scapa",
+            "l_8": "Harstad"
         },
         "events": {
-            "e_1": "Landing Operation",
-            "e_2": "Evacuation of Bodo"
+            "e_1": "Evacuation of North Norway",
+            "e_2": "Pressure on the enemy",
+            "e_3": "Operation at Narvik",
+            "e_4": "Evacuation by destroyers"
         },
         "organisations": {
-            "o_1": "French Forces",
-            "o_2": "Royal Navy",
-            "o_3": "His Majesty's Government"
+            "o_1": "Admiralty",
+            "o_2": "H.M. Government",
+            "o_3": "French Government"
         }
     },
     "keywords": [
-        "landing operation",
-        "evacuation",
-        "French troops",
-        "air attacks",
-        "Bodo",
-        "Narvik"
+        "Evacuation",
+        "Defense",
+        "Pressure",
+        "Troops",
+        "Air Attack",
+        "Secrecy"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation",
-        "Leadership",
-        "Air Support"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4"
         ],
-        "Evacuation": [
-            "e_2"
-        ],
-        "Leadership": [
+        "Diplomacy": [
             "e_1"
         ],
-        "Air Support": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th May – 29th May",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_8"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The landing operation is initiated where forward troops fight to maintain positions while facing enemy attacks. General Bethouart's forces eventually secure the area after overcoming initial resistance."
-        },
-        {
-            "event": "e_2",
-            "date": "Post Instructions from His Majesty's Government",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
                 "p_3",
+                "p_4",
                 "p_5",
                 "p_6"
             ],
             "organisations": [
-                "o_3",
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The evacuation of Bodo is planned and executed promptly to save personnel amidst heavy air attacks. Colonel Dowler is dispatched to coordinate the withdrawal of troops."
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Allies decide to evacuate their forces from North Norway due to the inability to provide sufficient defense against German air attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Efforts are made to maintain pressure on the enemy during the evacuation process."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An operation originally planned for Narvik is discussed in relation to concealing evacuation intentions."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Evacuation by destroyers is executed successfully, ferrying troops to safety."
         }
     ]
 }

@@ -1,82 +1,89 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant D. M. W. Napier, R.N.V.R.",
-            "p_2": "Lieutenant P. R. A. Taylor, R.N.R.",
-            "p_3": "Lieutenant T. J. Bligh, R.N.V.R."
+            "p_1": "Lieutenant T. J. Bligh",
+            "p_2": "Lieutenant (E) W. R. Coverdale",
+            "p_3": "Lieutenant R. A. M. Hennessy",
+            "p_4": "M. C. Grzs"
         },
         "locations": {
-            "l_1": "Malta"
+            "l_1": "Malta",
+            "l_2": "Maritimo Island"
         },
         "events": {
-            "e_1": "Attack on enemy convoy",
-            "e_2": "Engagement of M.T.B.s 77, 82, and 61"
+            "e_1": "Convoy Attack",
+            "e_2": "Depth Charge Operation"
         },
         "organisations": {
-            "o_1": "Royal Navy Volunteer Reserve (R.N.V.R.)",
-            "o_2": "Royal Naval Reserve (R.N.R.)"
+            "o_1": "Royal Navy",
+            "o_2": "7th M.T.B. Flotilla",
+            "o_3": "Coastal Forces"
         }
     },
     "keywords": [
-        "M.T.B. 77",
+        "Motor Torpedo Boat",
         "torpedo",
         "convoy",
-        "merchant vessel",
-        "engagement",
-        "gunfire"
+        "attack",
+        "enemy fire"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Tactics"
+        "Tactics",
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Warfare": [
+        "Tactics": [
             "e_1"
         ],
-        "Tactics": [
-            "e_2"
+        "Naval Warfare": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "February 17, 1943",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "During an engagement against an enemy convoy, M.T.B. 77 successfully launches a torpedo, damaging a merchant vessel despite heavy fire from escorting ships."
-        },
-        {
-            "event": "e_2",
-            "date": "0220/16",
-            "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
                 "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The force of Motor Torpedo Boats conducts a spirited attack against enemy vessels in an operation off Maritimo Island, utilizing torpedoes under challenging conditions against a superior enemy force."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_1",
                 "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "M.T.B.s 77, 82, and 61 engage in naval operations against enemy vessels while sustaining some damage; they proceed to Malta for a rendezvous."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During depth charge operations, complications arise due to a malfunction leading to a chaotic engagement with enemy forces."
         }
     ]
 }

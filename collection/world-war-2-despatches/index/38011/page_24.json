@@ -1,126 +1,98 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Fleischer",
-            "p_2": "Lieutenant-Colonel TrappesLomax",
-            "p_3": "Brigadier Fraser"
+            "p_1": "Commandant Paris",
+            "p_2": "General Bethouart",
+            "p_3": "Commander Hubback",
+            "p_4": "Brigadier Gubbins",
+            "p_5": "Colonel Dowler"
         },
         "locations": {
-            "l_1": "BjerkvikOjijord",
-            "l_2": "Gratangen",
-            "l_3": "Hartvigvand",
-            "l_4": "Graesdalen valley",
-            "l_5": "Harstad",
-            "l_6": "Ballangen",
-            "l_7": "Ofot Fjord",
-            "l_8": "Salangen",
-            "l_9": "Mo",
-            "l_10": "Hemnes Peninsula",
-            "l_11": "Bodo",
-            "l_12": "Scapa"
+            "l_1": "Narvik",
+            "l_2": "Beisfjord",
+            "l_3": "Fagernes",
+            "l_4": "Forsneset",
+            "l_5": "Ankenes Peninsula",
+            "l_6": "Sildvik",
+            "l_7": "Hundalen",
+            "l_8": "Bodo",
+            "l_9": "Bardu Foss aerodrome"
         },
         "events": {
-            "e_1": "Bombing of M.V. Chrobry",
-            "e_2": "Enemy bombers attack Harstad",
-            "e_3": "Establishment of Base Area at Harstad",
-            "e_4": "Attempt to stabilize position in the Southern front"
+            "e_1": "Operation in Narvik",
+            "e_2": "Evacuation of Bodo"
         },
         "organisations": {
-            "o_1": "1st Battalion Scots Guards",
-            "o_2": "Scots Guards",
-            "o_3": "Independent Company",
-            "o_4": "203rd Field Battery",
-            "o_5": "55th Light Anti-Aircraft Regiment",
-            "o_6": "24th Guards Brigade",
-            "o_7": "230th Field R.E.",
-            "o_8": "137th Field"
+            "o_1": "South Wales Borderers",
+            "o_2": "Chasseurs Alpin"
         }
     },
     "keywords": [
-        "BjerkvikOjijord",
-        "Gratangen",
-        "Harstad",
-        "enemy",
-        "bombing",
-        "Base Area",
-        "Supplies",
-        "Port Facilities",
-        "Air Attacks"
+        "Counterattack",
+        "Evacuation",
+        "Landing",
+        "Operations"
     ],
     "themes": [
         "Military Operations",
-        "Supply Chain Issues",
-        "Air Attacks",
-        "Base Area Management"
+        "Logistics",
+        "Tactical Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Supply Chain Issues": [
-            "e_3"
-        ],
-        "Air Attacks": [
             "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Tactical Decisions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "27th May",
             "locations": [
-                "l_9"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
             ],
             "persons": [
+                "p_1",
+                "p_2",
                 "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "Brigadier Fraser receives news of the bombing of M.V. Chrobry while at Mo and immediately leaves to render assistance."
+            "eventSummary": "The operation in Narvik involves intense fighting where Commandant Paris is killed. French forces under General Bethouart successfully advance despite challenges."
         },
         {
             "event": "e_2",
-            "date": "May 20th",
+            "date": "Prior to evacuation instructions",
             "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Enemy bombers execute attacks on Harstad, causing considerable damage to shipping with little harm to the town itself."
-        },
-        {
-            "event": "e_3",
-            "date": "Not specified",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The establishment of a Base Area at Harstad is critiqued due to inadequate storage and accommodation facilities for personnel."
-        },
-        {
-            "event": "e_4",
-            "date": "Not specified",
-            "locations": [
-                "l_9",
-                "l_11"
+                "l_8",
+                "l_9"
             ],
             "persons": [
-                "p_1"
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "Efforts are made to stabilize the position on the Southern front in the regions of Mo and Bodo amidst ongoing military engagements."
+            "eventSummary": "The evacuation of Bodo is planned swiftly due to heavy air attacks, prioritizing personnel safety over equipment. Colonel Dowler is sent to assist in the evacuation."
         }
     ]
 }

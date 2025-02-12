@@ -1,156 +1,141 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Auchinleck",
-            "p_2": "General Bethouart",
-            "p_3": "Brigadier Gubbins",
-            "p_4": "Sir Cecil Dormer",
-            "p_5": "Colonel Ljungberg",
-            "p_6": "King of Norway"
+            "p_1": "Lord Cork",
+            "p_2": "Group Captain Moore",
+            "p_3": "Brigadier Rossiter",
+            "p_4": "General Bethouart",
+            "p_5": "Irish Guards",
+            "p_6": "South Wales Borderers"
         },
         "locations": {
-            "l_1": "Gratangen",
-            "l_2": "Bodo",
-            "l_3": "Ankenes peninsula",
-            "l_4": "Beisfjord",
-            "l_5": "Scapa",
-            "l_6": "Harstad",
-            "l_7": "Norway"
+            "l_1": "Narvik",
+            "l_2": "Northern Norway",
+            "l_3": "Lulea",
+            "l_4": "Harstad",
+            "l_5": "Bardu Foss",
+            "l_6": "Skaanland",
+            "l_7": "Bodo",
+            "l_8": "Tromso",
+            "l_9": "Lodingen",
+            "l_10": "Tjelsundet Fjord",
+            "l_11": "Lofoten Islands",
+            "l_12": "Elvenes",
+            "l_13": "Salangen",
+            "l_14": "Mosjoen",
+            "l_15": "Mo"
         },
         "events": {
-            "e_1": "Evacuation of North Norway",
-            "e_2": "Meeting of Generals Auchinleck and Bethouart",
-            "e_3": "Preparation for operation against Narvik",
-            "e_4": "Evacuation operation logistics",
-            "e_5": "Communication to Norwegian Government"
+            "e_1": "Evacuation of Northern Norway",
+            "e_2": "Attack on Chrobry",
+            "e_3": "Shipping of troops to Bodo",
+            "e_4": "Transfer of British Contingent"
         },
         "organisations": {
-            "o_1": "Norwegian Government",
-            "o_2": "H.M. Government",
-            "o_3": "Admiralty",
-            "o_4": "Allied Governments"
+            "o_1": "His Majesty's Government",
+            "o_2": "R.A.F."
         }
     },
     "keywords": [
-        "Evacuation",
-        "Military Operation",
-        "Air Attack",
-        "Secrecy",
-        "Norwegian Army"
+        "anti-aircraft guns",
+        "military strategy",
+        "evacuation",
+        "troop movements",
+        "rescue operations"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions"
+        "Strategic Decisions",
+        "Logistics",
+        "Evacuations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Diplomacy": [
-            "e_5"
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
-            "e_2"
+            "e_1",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_3"
+        ],
+        "Evacuations": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 20th, 30th and 31st",
+            "date": "May 1940",
             "locations": [
-                "l_7",
-                "l_6"
-            ],
-            "persons": [
-                "p_4",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Allies decide on the evacuation of their forces from North Norway, informed by the situation in Bodo due to pressures from enemy forces."
-        },
-        {
-            "event": "e_2",
-            "date": "May 26th",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Generals Auchinleck and Bethouart meet to discuss the evacuation plan and the importance of maintaining secrecy about their military operations."
-        },
-        {
-            "event": "e_3",
-            "date": "May 24th-25th",
-            "locations": [
-                "l_7"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "An operation against Narvik is planned and emphasized as critical to distract the enemy's attention from the evacuation efforts."
+            "eventSummary": "The evacuation of Northern Norway is ordered, focusing on critical locations such as Narvik."
         },
         {
-            "event": "e_4",
-            "date": "Not specified",
+            "event": "e_2",
+            "date": "May 14, 1940",
+            "locations": [
+                "l_4",
+                "l_7"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Chrobry, carrying the Ist Battalion of the Irish Guards, is attacked and set ablaze by German aircraft near Bodo."
+        },
+        {
+            "event": "e_3",
+            "date": "May 17, 1940",
             "locations": [
                 "l_7"
             ],
             "persons": [
-                "p_1",
-                "p_3"
+                "p_6"
             ],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4",
+                "e_2"
             ],
-            "eventSummary": "Logistical plans for the evacuation are established, including a strategy to minimize air attack risks during nighttime operations."
+            "eventSummary": "The South Wales Borderers are shipped to Bodo to reinforce defenses amidst rapid enemy advances."
         },
         {
-            "event": "e_5",
-            "date": "June 1st",
+            "event": "e_4",
+            "date": "May 14, 1940",
             "locations": [
-                "l_6"
+                "l_1"
             ],
             "persons": [
-                "p_4",
-                "p_5"
+                "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Sir Cecil Dormer is briefed about the evacuation plan and is tasked with communicating with the King of Norway and the Norwegian Minister of Defence."
+            "eventSummary": "General Bethouart is instructed to continue operations against the enemy forces in the Narvik area."
         }
     ]
 }

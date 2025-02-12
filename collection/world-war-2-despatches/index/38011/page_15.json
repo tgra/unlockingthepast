@@ -1,124 +1,125 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Cecil Dormer",
-            "p_2": "Colonel Pollock",
-            "p_3": "Lord Cork",
-            "p_4": "General Bethouart",
-            "p_5": "General Fleischer"
+            "p_1": "Captain Maund",
+            "p_2": "Commander Hubback",
+            "p_3": "General Bethouart",
+            "p_4": "Major-General Fleischer",
+            "p_5": "Colonel A. B. Dowler",
+            "p_6": "Colonel J. F. W. Allen",
+            "p_7": "P. J. Mackesy",
+            "p_8": "Lieutenant-General C. J. E. Auchinleck",
+            "p_9": "General Sir E. Ironside",
+            "p_10": "Admiral of the Fleet Lord Cork and Orrery",
+            "p_11": "General Sir John Dill"
         },
         "locations": {
-            "l_1": "Norway",
-            "l_2": "Tromso",
-            "l_3": "Narvik",
-            "l_4": "Rombaks Fjord",
-            "l_5": "Oijord",
-            "l_6": "Bjerkvik",
-            "l_7": "Sildvik",
-            "l_8": "Ankenes Peninsula",
-            "l_9": "Beisfjord",
-            "l_10": "Lilleberget",
-            "l_11": "Ofot Fjord",
-            "l_12": "Oijordneset"
+            "l_1": "Northern Norway",
+            "l_2": "Narvik",
+            "l_3": "Alresford",
+            "l_4": "Lulea",
+            "l_5": "Gallivare",
+            "l_6": "Swedish frontier"
         },
         "events": {
-            "e_1": "Postponement of Evacuation",
-            "e_2": "Landing Operation at Narvik",
-            "e_3": "Counterattack by Enemy Forces"
+            "e_1": "Operations in Northern Norway",
+            "e_2": "Establishment of a base in Northern Norway",
+            "e_3": "Interference with ore supplies to Germany"
         },
         "organisations": {
-            "o_1": "His Majesty's Government",
-            "o_2": "Royal Navy",
-            "o_3": "Norwegian Army",
-            "o_4": "French Army"
+            "o_1": "Royal Navy",
+            "o_2": "Allied forces",
+            "o_3": "General Staff",
+            "o_4": "War Office",
+            "o_5": "His Majesty's Government"
         }
     },
     "keywords": [
-        "Operation",
-        "Evacuation",
-        "Battalion",
-        "Helicopter",
-        "Counterattack"
+        "Royal Navy",
+        "Allied troops",
+        "General Staff",
+        "Northern Norway",
+        "Operations",
+        "Air component"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "International Relations"
+        "International Relations",
+        "Logistics",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
             "e_3"
         ],
-        "Diplomacy": [
+        "International Relations": [
+            "e_2"
+        ],
+        "Logistics": [
             "e_1"
         ],
-        "Strategic Decisions": [
-            "e_1",
-            "e_2"
+        "Strategic Planning": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2nd June",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "A telegram from Sir Cecil Dormer is received urging the postponement of the evacuation for twenty-four hours to allow the Norwegian Government to liaise with the Swedish Government."
-        },
-        {
-            "event": "e_2",
-            "date": "27th May",
-            "locations": [
-                "l_3",
-                "l_4",
-                "l_11"
-            ],
-            "persons": [
-                "p_1",
-                "p_3",
+                "p_2",
                 "p_4",
-                "p_5"
+                "p_6"
             ],
             "organisations": [
                 "o_2",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Reports on military operations in Northern Norway are submitted, detailing the logistical and operational challenges faced."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_8",
+                "p_10"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "The landing operation at Narvik begins with naval bombardment and the establishment of troops on the shore, despite challenges posed by enemy defenses and logistics."
+            "eventSummary": "The establishment of a base in Northern Norway aims to deny iron ore supplies to Germany."
         },
         {
             "event": "e_3",
-            "date": "27th May",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_2",
+                "l_4",
+                "l_6"
             ],
             "persons": [
-                "p_4"
+                "p_11"
             ],
             "organisations": [
-                "o_3"
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "While operations are in progress at Narvik, enemy forces launch a strong counterattack in an attempt to reclaim territory."
+            "connectedEvents": [],
+            "eventSummary": "Plans are laid out to interfere with ore supplies to Germany from locations in Norway and Sweden."
         }
     ]
 }

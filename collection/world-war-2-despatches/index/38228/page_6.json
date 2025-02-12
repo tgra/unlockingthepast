@@ -1,55 +1,50 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Dr. Seagrave",
-            "p_2": "Colonel Wingate",
-            "p_3": "Lieut.-Colonel Stevenson",
-            "p_4": "Lieut.-Colonel Haswell",
-            "p_5": "Mr. Vorley",
-            "p_6": "Mr. Hughes"
+            "p_1": "General Hutton",
+            "p_2": "Air Vice Marshal Stevenson",
+            "p_3": "Brigadier Cowan",
+            "p_4": "Marshal Chiang Kai-Shek",
+            "p_5": "General Alexander"
         },
         "locations": {
-            "l_1": "Shan States",
-            "l_2": "Burma",
-            "l_3": "Mawchi",
-            "l_4": "Irrawaddy",
-            "l_5": "Southern Shan States",
-            "l_6": "Northern Shan States",
-            "l_7": "Mandalay",
-            "l_8": "Rangoon",
-            "l_9": "Chin Hills",
-            "l_10": "India",
-            "l_11": "Thailand"
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Magwe",
+            "l_4": "Hlegu",
+            "l_5": "Pegu",
+            "l_6": "Lashio",
+            "l_7": "India",
+            "l_8": "Calcutta",
+            "l_9": "Akyab",
+            "l_10": "Mingaladon",
+            "l_11": "Yenangyaung",
+            "l_12": "Mandalay"
         },
         "events": {
-            "e_1": "Formation of Levies",
-            "e_2": "Indian Exodus from Burma",
-            "e_3": "Operations of Commandos",
-            "e_4": "Medical Assistance Provision",
-            "e_5": "Colonel Wingate's Arrival"
+            "e_1": "Evacuation of Rangoon",
+            "e_2": "Intervention at Rangoon",
+            "e_3": "Japanese air attacks on Magwe",
+            "e_4": "Japanese advance in Burma"
         },
         "organisations": {
-            "o_1": "204 Mission",
-            "o_2": "Burma Rifles",
-            "o_3": "Bush Warfare School"
+            "o_1": "17 Division",
+            "o_2": "7 Armoured Brigade",
+            "o_3": "G.H.Q.",
+            "o_4": "Royal Air Force (R.A.F.)",
+            "o_5": "Air Ministry"
         }
     },
     "keywords": [
-        "supply",
-        "administration",
-        "medical stores",
-        "commandos",
-        "Levies",
-        "refugees",
-        "exodus",
-        "operations"
+        "Rangoon",
+        "Burma",
+        "Japanese",
+        "Evacuation"
     ],
     "themes": [
         "Military Operations",
-        "Medical Support",
-        "Humanitarian Crisis",
-        "Administration Challenges",
-        "Guerrilla Warfare"
+        "Air Support",
+        "Reinforcements"
     ],
     "topicModel": {
         "Military Operations": [
@@ -57,100 +52,79 @@
             "e_3",
             "e_4"
         ],
-        "Medical Support": [
-            "e_4"
+        "Air Support": [
+            "e_3"
         ],
-        "Humanitarian Crisis": [
-            "e_2"
-        ],
-        "Administration Challenges": [
+        "Reinforcements": [
             "e_1",
             "e_2"
-        ],
-        "Guerrilla Warfare": [
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January (first proposal)",
-            "locations": [
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Levies are proposed to be formed in January to assist military operations in the Northern and Southern Shan States."
-        },
-        {
-            "event": "e_2",
-            "date": "During the fall of Rangoon",
+            "date": "March 1, 1942",
             "locations": [
                 "l_2",
-                "l_8",
-                "l_7"
-            ],
-            "persons": [
-                "p_5",
-                "p_6"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "An overwhelming exodus of the Indian population from Burma occurs as they seek safety from potential violence following the failure of British Raj security."
-        },
-        {
-            "event": "e_3",
-            "date": "When commandos were operating historically",
-            "locations": [
-                "l_1",
                 "l_4"
             ],
             "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of Rangoon is postponed for a week, enabling reinforcements of an Infantry Brigade and a field regiment to be landed amidst ongoing Japanese threats."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1-2, 1942",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_5",
                 "p_2"
             ],
             "organisations": [
-                "o_3"
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "General Hutton and his command assess the situation in Rangoon, ultimately delaying evacuation based on inaccurate intelligence received from division headquarters."
+        },
+        {
+            "event": "e_3",
+            "date": "March 21-22, 1942",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "Commandos consisting of British personnel perform operations in the Southern Shan States, aiming to disrupt enemy supply lines but facing operational challenges."
+            "eventSummary": "Japanese air attacks on Magwe result in significant losses for the air force, thereby crippling the air support available for operations in Burma."
         },
         {
             "event": "e_4",
-            "date": "Reported during campaign",
+            "date": "March-April 1942",
             "locations": [
-                "l_2"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Medical assistance is coordinated to treat Chinese sick and wounded in British hospitals amid ongoing military campaigns."
-        },
-        {
-            "event": "e_5",
-            "date": "Beginning of April",
-            "locations": [
-                "l_1",
-                "l_10"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Colonel Wingate arrives at Maymyo with plans to form deep penetration units for operations in Burma."
+            "eventSummary": "The Japanese advance in Burma intensifies as they increase their forces, pushing back British and Chinese troops while threatening key locations like Mandalay."
         }
     ]
 }

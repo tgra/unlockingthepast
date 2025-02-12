@@ -1,70 +1,74 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Ineunu",
-            "p_2": "President Ineunu"
+            "p_1": "General Catroux",
+            "p_2": "Admiral Godefroy"
         },
         "locations": {
-            "l_1": "Bulgaria",
-            "l_2": "Turkey",
-            "l_3": "Istanbul",
-            "l_4": "Izmir",
-            "l_5": "Zonguldak",
-            "l_6": "Cairo",
-            "l_7": "Northern Syria",
-            "l_8": "Ankara",
-            "l_9": "Aegean",
-            "l_10": "Persia",
-            "l_11": "Iraq"
+            "l_1": "Lebanon",
+            "l_2": "Syria",
+            "l_3": "Palestine",
+            "l_4": "Egypt",
+            "l_5": "Cyrenaica",
+            "l_6": "Tripolitania",
+            "l_7": "Malta",
+            "l_8": "Sudan",
+            "l_9": "Eritrea",
+            "l_10": "Belgian Congo",
+            "l_11": "Benghazi",
+            "l_12": "Tobruk"
         },
         "events": {
-            "e_1": "Plan 437",
-            "e_2": "Adana Agreement",
-            "e_3": "Aegean Operations"
+            "e_1": "Political Crisis",
+            "e_2": "Political Riots in November",
+            "e_3": "Decision of Admiral Godefroy",
+            "e_4": "Attack on Sicily",
+            "e_5": "Eritrean Operations"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Force 686",
-            "o_3": "Turkish General Staff",
-            "o_4": "Middle East Command"
+            "o_1": "Ninth Army",
+            "o_2": "His Majesty's Government",
+            "o_3": "French military authorities",
+            "o_4": "Sudan Defence Force"
         }
     },
     "keywords": [
-        "military construction",
-        "infiltration",
-        "air superiority",
-        "negotiations",
-        "military supplies"
+        "Political Crisis",
+        "Garrison",
+        "Military Operations",
+        "Independence",
+        "Security",
+        "Ninth Army",
+        "British Government"
     ],
     "themes": [
+        "Political Instability",
         "Military Operations",
-        "Diplomacy",
-        "Supply Chain Issues",
-        "Strategic Military Planning"
+        "International Relations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_4"
         ],
         "Diplomacy": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
             "e_1"
         ],
-        "Supply Chain Issues": [
+        "Political Instability": [
+            "e_1",
             "e_2"
+        ],
+        "International Relations": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "End of November",
+            "date": "",
             "locations": [
-                "l_2",
-                "l_4",
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -74,39 +78,69 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Plans for the establishment of eighteen Royal Air Force squadrons and five heavy and five light anti-aircraft regiments in Western Anatolia are considered as part of Plan 437."
+            "eventSummary": "A political crisis occurs involving the reinstatement of the President and the release of detainees, causing heightened feelings among the populace."
         },
         {
             "event": "e_2",
-            "date": "Throughout the year",
+            "date": "November",
             "locations": [
-                "l_2",
-                "l_10",
-                "l_11"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Under the Adana Agreement, significant quantities of military supplies are transported to Turkey by various means to support military operations."
+            "eventSummary": "Political riots break out in November, leading to heightened tensions between various factions."
         },
         {
             "event": "e_3",
-            "date": "November 1943",
+            "date": "21st May, 1943",
             "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Admiral Godefroy decides to bring the French fleet in Alexandria over to the Allies, relieving tensions."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Troops are prepared for an attack on Sicily, with Malta being used as a staging post."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_8",
                 "l_9"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_4"
+            ],
             "connectedEvents": [],
-            "eventSummary": "Air inferiority over the Aegean during operations raises issues concerning Turkish military readiness and the need for better air defense."
+            "eventSummary": "The Sudan Defence Force troops are employed for line of communication and garrison duties in Cyrenaica and Tripolitania."
         }
     ]
 }

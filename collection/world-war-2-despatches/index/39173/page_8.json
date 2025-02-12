@@ -1,148 +1,132 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "G. E. Stratemeyer",
-            "p_2": "Dame Trefusis J. Forbes"
+            "p_1": "General Stilwell",
+            "p_2": "Brigadier General Old"
         },
         "locations": {
-            "l_1": "South-East Asia",
-            "l_2": "Delhi",
-            "l_3": "Kandy",
-            "l_4": "Calcutta",
-            "l_5": "Ceylon",
-            "l_6": "Imphal",
-            "l_7": "Brabmaputra",
-            "l_8": "Kankesanturai",
-            "l_9": "Negombo"
+            "l_1": "Ledo",
+            "l_2": "Hukawng Valley",
+            "l_3": "Mogaung Valley",
+            "l_4": "China",
+            "l_5": "Sookerating",
+            "l_6": "Maingkwan",
+            "l_7": "North Burma",
+            "l_8": "Myitkyina",
+            "l_9": "Imphal"
         },
         "events": {
-            "e_1": "Formation of South-East Asia Command",
-            "e_2": "Move of Headquarters to Kandy",
-            "e_3": "Establishment of Eastern Air Command",
-            "e_4": "Development of Airfields"
+            "e_1": "Advance from Ledo",
+            "e_2": "Evacuation of Casualties",
+            "e_3": "Reconquest of Burma",
+            "e_4": "Arakan battle",
+            "e_5": "Struggle for Imphal"
         },
         "organisations": {
-            "o_1": "Air Command",
+            "o_1": "U.S.A.A.F.",
             "o_2": "R.A.F.",
-            "o_3": "IAF",
-            "o_4": "U.S.A.A.F.",
-            "o_5": "Fourteenth Army"
+            "o_3": "Troop Carrier Command",
+            "o_4": "Chinese-American forces",
+            "o_5": "Army",
+            "o_6": "Special Force"
         }
     },
     "keywords": [
-        "Headquarters",
-        "Air Command",
-        "Expansion",
-        "Re-equipment",
-        "Airfields",
-        "Manpower shortage"
+        "air supply",
+        "transport aircraft",
+        "casualties",
+        "military operations"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Personnel Management",
-        "Airfield Development"
+        "Logistics",
+        "Supply Chains",
+        "Casualty Evacuation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_3",
-            "e_4"
+            "e_4",
+            "e_5"
         ],
-        "Strategic Decisions": [
+        "Logistics": [
             "e_1",
             "e_2"
         ],
-        "Personnel Management": [
-            "e_4"
-        ],
-        "Airfield Development": [
-            "e_4"
+        "Casualty Evacuation": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1944",
+            "date": "May 1944",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Formation of South-East Asia Command results in extensive developments in organisation, with a new hierarchy of Headquarters called into being."
-        },
-        {
-            "event": "e_2",
-            "date": "March 1944",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Headquarters, Supreme Allied Commander, South-East Asia, moves from Delhi to Kandy to support the expanding command structure."
-        },
-        {
-            "event": "e_3",
-            "date": "April 15, 1944",
-            "locations": [
-                "l_2",
+                "l_3",
                 "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Advance from Ledo continues with the supply of Chinese-American forces under General Stilwell, making progress towards opening an overland route to China."
+        },
+        {
+            "event": "e_2",
+            "date": "Early 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Transport aircraft of Troop Carrier Command evacuate 23,000 sick and wounded, greatly increasing survival chances compared to alternative methods."
+        },
+        {
+            "event": "e_3",
+            "date": "End of May 1944",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Eastern Air Command is established to co-ordinate air operations on the Burmese frontier."
+            "eventSummary": "The reconquest of portions of northern Burma is achieved, with the garrison of Imphal still able to launch offensive operations."
         },
         {
             "event": "e_4",
-            "date": "1943-1944",
-            "locations": [
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "date": "February 1944",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
+            "connectedEvents": [],
+            "eventSummary": "Evacuation of casualties by air reaches significant proportions during the Arakan battle."
+        },
+        {
+            "event": "e_5",
+            "date": "April 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_5"
             ],
-            "eventSummary": "A large programme of airfield development continues, providing accommodation for approved squadrons and expanding existing airfields."
+            "connectedEvents": [],
+            "eventSummary": "Casualty evacuation by air peaks during the struggle for Imphal."
         }
     ]
 }

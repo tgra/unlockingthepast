@@ -1,12 +1,140 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {},
-        "events": {},
-        "organisations": {}
+        "persons": {
+            "p_1": "Lieut -Colonel H. W. M. Stewart, O.B E., MC.",
+            "p_2": "Major C. M Manners",
+            "p_3": "Mr. A L. Shields",
+            "p_4": "Captain C M Man"
+        },
+        "locations": {
+            "l_1": "Canal Road",
+            "l_2": "Causeway Bay",
+            "l_3": "Mount Parish",
+            "l_4": "Wanchai Market",
+            "l_5": "O Brien Street",
+            "l_6": "Repulse Bay Hotel",
+            "l_7": "Wong Nei Chong Gap",
+            "l_8": "North Point",
+            "l_9": "Stanley",
+            "l_10": "Aberdeen",
+            "l_11": "Mount Gough",
+            "l_12": "Kowloon Bay",
+            "l_13": "Wanchai Gap",
+            "l_14": "Magazine Gap",
+            "l_15": "Little Hong Kong"
+        },
+        "events": {
+            "e_1": "Counter-attack by Canadian troops",
+            "e_2": "Bombing of Stanley, Aberdeen and Mount Gough",
+            "e_3": "Withdrawal from the Canal Road area",
+            "e_4": "Surrender of Bennets Hill"
+        },
+        "organisations": {
+            "o_1": "Royal Navy",
+            "o_2": "1 Middlesex Regt.",
+            "o_3": "5/7 Rajput Regt.",
+            "o_4": "2/14 Punjab Regt.",
+            "o_5": "Fortress R.E.",
+            "o_6": "West Infantry Brigade"
+        }
     },
-    "keywords": [],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "keywords": [
+        "artillery",
+        "Japanese",
+        "surrender",
+        "defence",
+        "casualties"
+    ],
+    "themes": [
+        "Military Operations",
+        "Survival",
+        "Artillery Usage",
+        "Civilians in Conflict"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Survival": [
+            "e_4"
+        ],
+        "Artillery Usage": [
+            "e_2"
+        ],
+        "Civilians in Conflict": []
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December 25, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Canadian troops launch a counter-attack against Japanese positions, attempting to reclaim ground amidst escalating artillery fire."
+        },
+        {
+            "event": "e_2",
+            "date": "December 25, 1941",
+            "locations": [
+                "l_9",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Japanese planes conduct bombing raids over Stanley, Aberdeen, and Mount Gough, causing widespread destruction and impacting military communications."
+        },
+        {
+            "event": "e_3",
+            "date": "December 25, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "A tactical withdrawal is enforced from the Canal Road area as enemy forces apply pressure on the defenders."
+        },
+        {
+            "event": "e_4",
+            "date": "December 25, 1941",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Bennets Hill falls to Japanese forces after intense fighting, leading to the surrender of the remaining Canadian troops in the area."
+        }
+    ]
 }

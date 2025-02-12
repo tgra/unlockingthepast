@@ -1,75 +1,80 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Eisenhower"
+        },
         "locations": {
-            "l_1": "Utah Beach",
-            "l_2": "Omaha Beach",
-            "l_3": "Vierville-sur-Mer",
-            "l_4": "Colleville-sur-Mer",
-            "l_5": "Formigny",
-            "l_6": "Bayeux",
-            "l_7": "Saint-Léger",
-            "l_8": "Port-en-Bessin",
-            "l_9": "Lion-sur-Mer",
-            "l_10": "River Orne",
-            "l_11": "Ranville",
-            "l_12": "Douvres-la-Délivrande",
-            "l_13": "Colombi res",
-            "l_14": "Rubercy"
+            "l_1": "Germany",
+            "l_2": "Belgium",
+            "l_3": "North-West Europe",
+            "l_4": "Belsen",
+            "l_5": "Sandbostel"
         },
         "events": {
-            "e_1": "D-Day Assault on Utah Beach",
-            "e_2": "D-Day Assault on Omaha Beach",
-            "e_3": "D-Day Assault on Juno Beach",
-            "e_4": "D-Day Assault by 3 Canadian Division",
-            "e_5": "Linking up the Beachheads"
+            "e_1": "Normandy campaign",
+            "e_2": "campaign in North-West Europe"
         },
         "organisations": {
-            "o_1": "Ninth United States Air Force",
-            "o_2": "VII United States Corps",
-            "o_3": "V United States Corps",
-            "o_4": "Second British Army",
-            "o_5": "3 Canadian Division",
-            "o_6": "3 British Division",
-            "o_7": "6 Airborne Division"
+            "o_1": "21 Army Group",
+            "o_2": "United States"
         }
     },
     "keywords": [
-        "D-Day",
-        "assault",
-        "beachhead",
-        " naval bombardment",
-        "airborne division",
-        "landing",
-        "reinforcements"
+        "airborne troops",
+        "medical organisation",
+        "morale",
+        "evacuation of casualties",
+        "field surgical units",
+        "penicillin"
     ],
     "themes": [
         "Military Operations",
-        "Amphibious Assaults",
-        "Strategic Landings",
-        "Allied Collaboration"
+        "Medical Innovations",
+        "Morale",
+        "International Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Amphibious Assaults": [
-            "e_1",
-            "e_2",
-            "e_4"
+        "Medical Innovations": [
+            "e_2"
         ],
-        "Allied Collaboration": [
-            "e_5"
+        "Morale": [
+            "e_2"
+        ],
+        "International Cooperation": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
+            "date": "1944",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Normandy campaign is a significant military operation in 1944 marked by the Allied invasion of German-occupied France."
+        },
+        {
+            "event": "e_2",
+            "date": "1944-1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [],
             "organisations": [
@@ -77,66 +82,9 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_5"
+                "e_1"
             ],
-            "eventSummary": "On D-Day, the VII United States Corps assaults Utah Beach, aided by naval bombardment, securing a beachhead with support from amphibious tanks."
-        },
-        {
-            "event": "e_2",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "On D-Day, V United States Corps conducts an assault on Omaha Beach, aiming for Vierville-sur-Mer and Colleville-sur-Mer, successfully creating a beachhead."
-        },
-        {
-            "event": "e_3",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_4",
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Second British Army assaults the Gold sector during D-Day, with various divisions aiming to rupture the German defenses."
-        },
-        {
-            "event": "e_4",
-            "date": "June 6, 1944",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "3 Canadian Division assaults the beaches to secure positions and link with British forces during D-Day operations."
-        },
-        {
-            "event": "e_5",
-            "date": "June 7, 1944",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1",
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "By dawn on June 7th, Allied forces on Omaha Beach link up with troops from Utah Beach, establishing stronger footholds on the continent."
+            "eventSummary": "The campaign in North-West Europe encompasses critical military operations, highlighting the joint efforts of British and American forces, and emphasizing the importance of morale and medical support."
         }
     ]
 }

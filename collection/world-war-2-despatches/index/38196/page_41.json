@@ -1,107 +1,185 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Montgomery",
-            "p_2": "General Stumme",
-            "p_3": "General von Thoma"
+            "p_1": "General McCreery",
+            "p_2": "General von Arnim",
+            "p_3": "Messe",
+            "p_4": "General Montgomery"
         },
         "locations": {
-            "l_1": "Himeimat",
-            "l_2": "Rasel-Kenayis",
-            "l_3": "El Alamein",
-            "l_4": "Tell el Eisa ridge"
+            "l_1": "Enfidaville",
+            "l_2": "Takrouna",
+            "l_3": "Tunis",
+            "l_4": "Medjerda",
+            "l_5": "Hammamet",
+            "l_6": "Cape Bon",
+            "l_7": "Sebkret el Kourzia",
+            "l_8": "Gebel Garci",
+            "l_9": "Le Kef",
+            "l_10": "Haidra",
+            "l_11": "Tebessa",
+            "l_12": "Thala",
+            "l_13": "Longstop",
+            "l_14": "Sidi Nsir",
+            "l_15": "Sedjenane-Mateur",
+            "l_16": "Gebel Mengoub",
+            "l_17": "Delta"
         },
         "events": {
-            "e_1": "Operation LIGHTFOOT",
-            "e_2": "Battle of El Alamein"
+            "e_1": "Eighth Army's attack on Enfidaville",
+            "e_2": "Capture of Enfidaville",
+            "e_3": "Attack on Gebel Garci",
+            "e_4": "Struggle for Takrouna",
+            "e_5": "Final battles of the campaign",
+            "e_6": "Attack planned for 29th April",
+            "e_7": "Relief of 50 Division"
         },
         "organisations": {
-            "o_1": "13 Corps",
-            "o_2": "30 Corps",
-            "o_3": "1 Armoured Division",
-            "o_4": "10 Armoured Division",
-            "o_5": "21 Panzer Division",
-            "o_6": "Ariete",
-            "o_7": "German Africa Corps",
-            "o_8": "Fighting French Brigade"
+            "o_1": "Eighth Army",
+            "o_2": "XIX Corps",
+            "o_3": "5 Panzer Army",
+            "o_4": "German Africa Corps",
+            "o_5": "1 Fighting French Division",
+            "o_6": "Headquarters Trieste Division"
         }
     },
     "keywords": [
-        "armoured brigades",
-        "minefield",
-        "counter-attack",
-        "bridgehead",
-        "infantry positions",
-        "enemy tanks"
+        "attack",
+        "division",
+        "casualties",
+        "strategy",
+        "campaign"
     ],
     "themes": [
         "Military Operations",
-        "Casualties",
-        "Strategic Decisions",
-        "Counter-Attacks"
+        "Coalition Forces",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Casualties": [],
+        "Coalition Forces": [
+            "e_1",
+            "e_2",
+            "e_5"
+        ],
         "Strategic Decisions": [
-            "e_1"
-        ],
-        "Counter-Attacks": []
+            "e_4",
+            "e_7"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "25th October",
+            "date": "10th April",
             "locations": [
                 "l_1",
-                "l_3",
-                "l_4"
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6",
-                "o_7",
-                "o_8"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Operation LIGHTFOOT is initiated, involving armoured brigades attacking enemy positions to establish a bridgehead amidst heavy counter-fire."
+            "eventSummary": "Eighth Army's attack on the Enfidaville position begins at 2130 hours on 10th April."
         },
         {
             "event": "e_2",
-            "date": "26th October",
+            "date": "10th April",
             "locations": [
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_5",
-                "o_7"
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The 50 Division captures Enfidaville itself."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Battle of El Alamein continues with aggressive counter-attacks from the enemy; however, the Allied forces succeed in expanding their positions against fierce resistance."
+            "eventSummary": "The 4 Indian Division has a fierce struggle for control of Gebel Garci."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The New Zealanders engage in a bloody struggle for Takrouna."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Plans for the final battles of the campaign are discussed."
+        },
+        {
+            "event": "e_6",
+            "date": "29th April",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "An attack is planned for 29th April aimed at establishing positions in the Hammamet area."
+        },
+        {
+            "event": "e_7",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The plan involves the relief of the 50 Division to prepare for the invasion of Sicily."
         }
     ]
 }

@@ -1,98 +1,102 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "General Collins",
-            "p_2": "General Patton",
-            "p_3": "Hitler"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Ardennes",
-            "l_2": "Bastogne",
-            "l_3": "Meuse",
-            "l_4": "Ruhr",
-            "l_5": "Düsseldorf",
-            "l_6": "Julich",
-            "l_7": "Roermond",
-            "l_8": "Reichswald Forest"
+            "l_1": "Normandy",
+            "l_2": "Rhine",
+            "l_3": "Elbe",
+            "l_4": "Maas",
+            "l_5": "Baltic",
+            "l_6": "Channel"
         },
         "events": {
-            "e_1": "Battle of the Ardennes",
-            "e_2": "Battle of the Rhineland"
+            "e_1": "D Day",
+            "e_2": "Dieppe raid",
+            "e_3": "campaign"
         },
         "organisations": {
-            "o_1": "Sixth S.S. Panzer Army",
-            "o_2": "First Canadian Army",
-            "o_3": "Ninth U.S. Army",
-            "o_4": "Twelfth U.S. Army Group"
+            "o_1": "79 Armoured Division",
+            "o_2": "R.A.C.",
+            "o_3": "Royal Navy"
         }
     },
     "keywords": [
-        "American armies",
-        "German attack",
-        "Rhineland battle",
-        "mobile war",
-        "Air Forces",
-        "pincer movement"
+        "armoured equipment",
+        "beach defences",
+        "tank-carried bridges",
+        "mine clearing",
+        "amphibious tanks",
+        "assault teams",
+        "Churchill flame-thrower"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Allied Forces Coordination"
+        "Engineering Innovations",
+        "Logistics and Organization"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_2"
+        "Engineering Innovations": [
+            "e_3"
+        ],
+        "Logistics and Organization": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 8, 1945",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_3",
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Battle of the Ardennes is recognized for the resilience of American soldiers and effective air support, leading to a decisive victory."
+            "eventSummary": "D Day is the term used for the Allied invasion of Normandy, which involved the deployment of specialised armoured equipment to breach beach defences."
         },
         {
             "event": "e_2",
-            "date": "February 23, 1945",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Dieppe raid was an early World War II amphibious attack carried out by Allied forces, which provided lessons regarding specialised equipment for future operations."
+        },
+        {
+            "event": "e_3",
+            "date": "",
             "locations": [
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
+                "o_1",
                 "o_2",
-                "o_3",
-                "o_4"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "The Battle of the Rhineland aims to isolate the Ruhr and displace enemy forces, marked by coordinated Allied offensives and heavy air support."
+            "eventSummary": "The campaign refers to the series of military operations during World War II, highlighting the innovative use of armoured vehicles and engineering solutions to overcome resistance."
         }
     ]
 }

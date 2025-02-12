@@ -1,80 +1,69 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Commander-in-Chief",
-            "p_2": "N/A"
+            "p_1": "Sir Sholto Douglas"
         },
         "locations": {
-            "l_1": "S.W. Approaches",
-            "l_2": "Plymouth",
-            "l_3": "Chatham",
-            "l_4": "Liverpool",
-            "l_5": "North Sea",
-            "l_6": "English Channel",
-            "l_7": "The Nore",
-            "l_8": "Beachy Head",
-            "l_9": "France"
+            "l_1": "Bay of Biscay",
+            "l_2": "United Kingdom",
+            "l_3": "S.W. Approaches",
+            "l_4": "Bristol",
+            "l_5": "St. George's Channel",
+            "l_6": "English Channels",
+            "l_7": "Atlantic",
+            "l_8": "Northern Transit Area",
+            "l_9": "North Sea"
         },
         "events": {
-            "e_1": "Operation Overlord",
-            "e_2": "Exercise FABIUS"
+            "e_1": "Liberation of Europe",
+            "e_2": "Operation Overlord",
+            "e_3": "D-Day",
+            "e_4": "U-Boat War"
         },
         "organisations": {
-            "o_1": "Fleet Air Arm",
-            "o_2": "A.E.A.F."
+            "o_1": "Coastal Command",
+            "o_2": "Royal Air Force",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
-        "U-Boats",
-        "Fighter Cover",
-        "Convoy",
-        "Reconnaissance",
-        "Air Cover"
+        "Liberation",
+        "Operation Overlord",
+        "U-Boat",
+        "Coastal Command",
+        "Royal Air Force",
+        "Admiralty"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Air Defense"
+        "Naval Warfare",
+        "Air Operations",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Naval Strategy": [
-            "e_1"
-        ],
-        "Air Defense": [
+        "Strategic Planning": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "D-day",
+            "date": "1944",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Overlord is a major Allied operation focused on the invasion and liberation of Europe from Nazi control."
-        },
-        {
-            "event": "e_2",
-            "date": "Pre-D-day",
-            "locations": [
-                "l_1",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
                 "l_9"
             ],
             "persons": [
@@ -82,12 +71,42 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "Exercise FABIUS is a significant military exercise intended to mislead the enemy about the timing and location of the D-day assault."
+            "eventSummary": "The operation known as the Liberation of Europe, part of Operation Overlord, involves the planning and execution of military strategies to liberate occupied territories."
+        },
+        {
+            "event": "e_2",
+            "date": "1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Overlord is outlined as a key operation to be conducted shortly, detailing tasks for military groups and expected actions from the enemy."
         }
     ]
 }

@@ -1,61 +1,51 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Officer Commanding",
-            "p_2": "Lt. Grounds",
-            "p_3": "Lt. Tresidder",
-            "p_4": "Colonel H. B. Rose",
-            "p_5": "Brigadier Wallis",
-            "p_6": "General Yu Han Mou"
+            "p_1": "Brigadier Wallis",
+            "p_2": "Brigadier J. K. Lawson"
         },
         "locations": {
-            "l_1": "Jardines Lookout",
-            "l_2": "Wong Nei Chong Gap",
-            "l_3": "Mount Nicholson",
-            "l_4": "Repulse Bay Hotel",
-            "l_5": "Happy Valley",
-            "l_6": "Bennets Hill",
-            "l_7": "Aberdeen Island",
-            "l_8": "Lamma Island",
-            "l_9": "Stanley",
-            "l_10": "Kowloon",
-            "l_11": "Sham Chun",
-            "l_12": "Little Hong Kong",
-            "l_13": "Stone Hill",
-            "l_14": "Wanchai Gap",
-            "l_15": "HKVDC"
+            "l_1": "Wanchai Gap",
+            "l_2": "Lamma",
+            "l_3": "Mount Davis",
+            "l_4": "Belchers Fort",
+            "l_5": "West Point",
+            "l_6": "Kennedy Town",
+            "l_7": "Pak Sha Wan",
+            "l_8": "Green Island",
+            "l_9": "Kowloon Peninsula",
+            "l_10": "Electric Power Station, Kowloon",
+            "l_11": "Sheung Wan",
+            "l_12": "Kellett Island"
         },
         "events": {
-            "e_1": "Battle of Repulse Bay",
-            "e_2": "Japanese Advance",
-            "e_3": "Withdrawal of Troops"
+            "e_1": "Attack on Belchers Fort",
+            "e_2": "H.M.S. Thracian operation",
+            "e_3": "Enemy artillery fire increase",
+            "e_4": "Fires at Belchers and Kennedy Town",
+            "e_5": "Desertion of army transport drivers"
         },
         "organisations": {
-            "o_1": "2 Royal Scots",
-            "o_2": "2/14 Punjab Regt.",
-            "o_3": "5/7 Rajput Regt.",
-            "o_4": "1 Middlesex Regt.",
-            "o_5": "Winnipeg Grenadiers",
-            "o_6": "Royal Artillery",
-            "o_7": "Royal Navy",
-            "o_8": "Fortress R.E."
+            "o_1": "Royal Scots",
+            "o_2": "5/7 Rajput Regt.",
+            "o_3": "Winnipeg Grenadiers",
+            "o_4": "2/14 Punjab Regt.",
+            "o_5": "1 Middlesex Regt.",
+            "o_6": "Royal Corps of Signals",
+            "o_7": "Chungking Government"
         }
     },
     "keywords": [
-        "enemy",
-        "withdrawal",
-        "defence",
-        "reorganise",
-        "military operations",
-        "enemy occupation",
-        "reinforcements"
+        "artillery",
+        "fires",
+        "desertion",
+        "fifth columnists",
+        "military assistance"
     ],
     "themes": [
         "Military Operations",
-        "Enemy Engagement",
-        "Defensive Strategies",
-        "Casualties",
-        "Reinforcements"
+        "Civil Disorder",
+        "Defense Strategy"
     ],
     "topicModel": {
         "Military Operations": [
@@ -63,83 +53,86 @@
             "e_2",
             "e_3"
         ],
-        "Enemy Engagement": [
+        "Civil Disorder": [
+            "e_4",
+            "e_5"
+        ],
+        "Defense Strategy": [
             "e_1",
             "e_2"
-        ],
-        "Defensive Strategies": [
-            "e_1"
-        ],
-        "Casualties": [
-            "e_1"
-        ],
-        "Reinforcements": [
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "20th December",
+            "date": "14th December",
             "locations": [
                 "l_4",
-                "l_1",
-                "l_9"
-            ],
-            "persons": [
-                "p_2",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "During the Battle of Repulse Bay, Lt. Grounds commands the defence against the Japanese forces who have surrounded the Repulse Bay Hotel. He successfully organizes the defence until he is killed in action."
-        },
-        {
-            "event": "e_2",
-            "date": "20th December",
-            "locations": [
-                "l_2",
                 "l_6"
             ],
             "persons": [
-                "p_5",
-                "p_6"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The Japanese forces continue their advance, moving troops and material across the harbour, leading to engagements at various points including Wong Nei Chong Gap."
+            "eventSummary": "On 14th December, the attack on Belchers Fort results in heavy shelling and a significant fire outbreak."
+        },
+        {
+            "event": "e_2",
+            "date": "15/16th December",
+            "locations": [
+                "l_8",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. Thracian conducts a successful operation, sinking two enemy ferry boats in Kowloon Peninsula."
         },
         {
             "event": "e_3",
-            "date": "20th December",
+            "date": "14th December",
             "locations": [
-                "l_3",
-                "l_13"
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_5"
+                "o_6"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "On 14th December, enemy artillery fire increases in intensity, damaging positions at Mount Davis."
+        },
+        {
+            "event": "e_4",
+            "date": "14th December",
+            "locations": [
+                "l_4",
+                "l_6"
             ],
-            "eventSummary": "The Officer Commanding reports the withdrawal of troops from Mount Nicholson due to the need for reorganization and effective deployment against the enemy."
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 14th December, fires break out at Belchers Fort and Kennedy Town, causing great concern."
+        },
+        {
+            "event": "e_5",
+            "date": "14th December",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On 14th December, reports indicate desertions among army transport drivers amidst the chaotic conditions."
         }
     ]
 }

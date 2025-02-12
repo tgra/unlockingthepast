@@ -1,93 +1,172 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Mr. Bisseker"
+            "p_1": "C.-in-C. Far East",
+            "p_2": "A.O.C.",
+            "p_3": "Commander A.I.F.",
+            "p_4": "C.R.E."
         },
         "locations": {
-            "l_1": "Kedah",
-            "l_2": "Penang",
-            "l_3": "Singapore",
-            "l_4": "Singapore Island"
+            "l_1": "Singapore",
+            "l_2": "Ipoh",
+            "l_3": "East Malaya",
+            "l_4": "West Malaya",
+            "l_5": "Kuala Kubu",
+            "l_6": "North Johore",
+            "l_7": "Kuala Kangsar",
+            "l_8": "Perak",
+            "l_9": "Taiping",
+            "l_10": "Bagan Serai",
+            "l_11": "Lenggong",
+            "l_12": "Gemas",
+            "l_13": "Segamat",
+            "l_14": "Muar",
+            "l_15": "Chenderoh Lake",
+            "l_16": "Krian River",
+            "l_17": "Salak North",
+            "l_18": "Siputeh",
+            "l_19": "Grik Road"
         },
         "events": {
-            "e_1": "Defence of the Naval Base",
-            "e_2": "Introduction of Compulsion"
+            "e_1": "Order No. 28",
+            "e_2": "Withdrawal of the 28 Brigade Group",
+            "e_3": "Counter-attack at Kota Tampan",
+            "e_4": "Engagements on the Grik Road",
+            "e_5": "Destruction of the Iskander Bridge",
+            "e_6": "Evacuation of reserve stores"
         },
         "organisations": {
-            "o_1": "Singapore Harbour Board",
-            "o_2": "Colonial Office",
-            "o_3": "Director-General of Civil Defence",
-            "o_4": "Chinese Chamber of Commerce"
+            "o_1": "Malaya Command",
+            "o_2": "27 Australian Brigade Group",
+            "o_3": "28 Brigade Group",
+            "o_4": "12 Brigade Group",
+            "o_5": "11 Indian Division",
+            "o_6": "Independent Company"
         }
     },
     "keywords": [
-        "Labour problem",
-        "Military operations",
-        "Civil Defence",
-        "Air raids",
-        "Naval Base",
-        "Hurricane Fighters"
+        "counter-attack",
+        "evacuation",
+        "military operations",
+        "defence",
+        "engagement",
+        "bridges",
+        "situation",
+        "troops"
     ],
     "themes": [
         "Military Operations",
-        "Civil Labour Challenges",
-        "Strategic Defence",
-        "Leadership and Management"
+        "Defence Strategy",
+        "Withdrawal Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Civil Labour Challenges": [
-            "e_2"
+        "Defence Strategy": [
+            "e_1",
+            "e_5"
         ],
-        "Strategic Defence": [
-            "e_1"
-        ],
-        "Leadership and Management": [
-            "e_2"
+        "Withdrawal Decisions": [
+            "e_2",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "30th December 1941 - 2nd January 1942",
+            "date": "23rd December 1941",
             "locations": [
                 "l_1",
-                "l_2",
                 "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Defence of the Naval Base remains a priority as military operations experience significant labour shortages, especially from civil personnel."
+            "eventSummary": "Malaya Command Order No. 28 is issued, outlining the defence strategy for North Johore."
         },
         {
             "event": "e_2",
-            "date": "20th January 1942",
+            "date": "21st December 1941",
             "locations": [
-                "l_3"
+                "l_2",
+                "l_4",
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "On the 20th of January, a measure is passed to introduce compulsory labour but it arrives too late to have a significant impact on the ongoing labour challenges."
+            "eventSummary": "The withdrawal of the 28 Brigade Group commences at 2000 hrs. due to the critical situation along the Grik Road."
+        },
+        {
+            "event": "e_3",
+            "date": "20th December 1941",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Argylls engage in counter-attacks to fend off enemy forces at Kota Tampan."
+        },
+        {
+            "event": "e_4",
+            "date": "19th December 1941",
+            "locations": [
+                "l_19",
+                "l_12",
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Troops recapture Sumpitan on the Grik Road, following engagements against the enemy before withdrawing."
+        },
+        {
+            "event": "e_5",
+            "date": "December 1941",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Iskander Bridge over the River Perak is successfully blown to impede enemy advancement."
+        },
+        {
+            "event": "e_6",
+            "date": "December 1941",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Arrangements for the evacuation and destruction of reserve stores in the Ipoh area are made due to insufficient means."
         }
     ]
 }

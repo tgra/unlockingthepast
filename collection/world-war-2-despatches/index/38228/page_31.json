@@ -1,71 +1,60 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Divisional Commander"
+            "p_1": "",
+            "p_2": ""
         },
         "locations": {
-            "l_1": "Moulmein",
-            "l_2": "River Salween",
-            "l_3": "Chaungzon",
-            "l_4": "Paan",
-            "l_5": "Rangoon",
-            "l_6": "Bilin",
-            "l_7": "Martaban",
-            "l_8": "Kyaikto",
-            "l_9": "Kawkareik",
-            "l_10": "Thaton",
-            "l_11": "Malaya"
+            "l_1": "Pegu",
+            "l_2": "Hlegu",
+            "l_3": "Taukkyan",
+            "l_4": "Rangoon",
+            "l_5": "Thonze",
+            "l_6": "Tharrawaddy",
+            "l_7": "Letpadan",
+            "l_8": "Henzada",
+            "l_9": "Sanywe Ferry",
+            "l_10": "Prome"
         },
         "events": {
-            "e_1": "Evacuation of Moulmein",
-            "e_2": "Request for Naval Assistance",
-            "e_3": "Reinforcements to Bilin",
-            "e_4": "Enemy Action at Martaban",
-            "e_5": "Martaban Road Cut"
+            "e_1": "Attack of 63 Infantry Brigade",
+            "e_2": "Withdrawal from Taukkyan",
+            "e_3": "Fall of Rangoon",
+            "e_4": "Regrouping of Forces consequent on the Fall of Rangoon",
+            "e_5": "Situation on the Irrawaddy Front",
+            "e_6": "Situation on the Toungoo Front"
         },
         "organisations": {
-            "o_1": "G.H.Q. South West Pacific Command",
-            "o_2": "A.B.D.A. Command",
-            "o_3": "3/7 Gurkha Rifles",
-            "o_4": "1/7 Gurkha Rifles",
-            "o_5": "4 Burma Rifles",
-            "o_6": "5/17 Dogras",
-            "o_7": "7/10 Baluch",
-            "o_8": "2 K.O.Y.L.I.",
-            "o_9": "8 Burma Rifles",
-            "o_10": "1/9 R. Jats",
-            "o_11": "Rangoon Battalion B.A.F."
+            "o_1": "R.A.F.",
+            "o_2": "Imperial Forces",
+            "o_3": "Chinese Fifth Army",
+            "o_4": "17 Division",
+            "o_5": "63 Infantry Brigade",
+            "o_6": "16 Indian Infantry Brigade"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Casualties",
-        "Reinforcements",
-        "Enemy Action",
-        "Shelling",
-        "Counter-offensive",
-        "Naval Assistance",
-        "Withdrawal"
+        "Infantry Brigade",
+        "R.A.F.",
+        "Japanese",
+        "withdrawal",
+        "regrouping",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Casualty Reports",
-        "Reinforcement Strategies",
-        "Tactical Engagements"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
             "e_4",
-            "e_5"
+            "e_5",
+            "e_6"
         ],
-        "Casualty Reports": [
-            "e_1"
-        ],
-        "Reinforcement Strategies": [
-            "e_3"
-        ],
-        "Tactical Engagements": [
+        "Strategic Decisions": [
             "e_2",
             "e_4"
         ]
@@ -73,90 +62,86 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January",
+            "date": "8th March",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_5",
+                "o_6"
             ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Troops evacuate Moulmein after evaluating the untenable situation caused by enemy positioning."
+            "connectedEvents": [],
+            "eventSummary": "The 63 Infantry Brigade attacks the road block north of Taukkyan, but faces challenges in clearance."
         },
         {
             "event": "e_2",
-            "date": "During Evacuation",
+            "date": "9th March",
             "locations": [
-                "l_1"
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "A signal is sent to G.H.Q. requesting naval assistance to safeguard the coast as Moulmein is about to fall."
+            "eventSummary": "The withdrawal from Taukkyan is carried out successfully without enemy interference."
         },
         {
             "event": "e_3",
-            "date": "February 3rd",
+            "date": "",
             "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The fall of Rangoon leads to a critical situation for the Allied forces due to communication disadvantages."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Forces regroup in response to the fall of Rangoon to prepare for retention of Upper Burma."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_5",
                 "l_6"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "Reinforcements, the 48 Indian Infantry Brigade, are ordered forward to Bilin to support the 17 Indian Division."
+            "eventSummary": "The 17 Division reformulates strategies in the Irrawaddy Front area to prepare for future engagements."
         },
         {
-            "event": "e_4",
-            "date": "February",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "event": "e_6",
+            "date": "",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_4",
-                "o_5",
-                "o_6"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Martaban experiences shelling as enemy forces successfully navigate the River Salween, prompting a response from local troops."
-        },
-        {
-            "event": "e_5",
-            "date": "February 10th",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "A Japanese party cuts the road near Martaban, creating a stronghold that causes difficulties for advancing allied forces."
+            "connectedEvents": [],
+            "eventSummary": "Arrival of the Chinese Fifth Army on the Toungoo Front diverts enemy attention from the Irrawaddy front."
         }
     ]
 }

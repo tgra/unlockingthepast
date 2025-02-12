@@ -1,97 +1,154 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Commander-in-Chief",
+            "p_2": "Colonel Gubbins",
+            "p_3": "Brigadier Gubbins",
+            "p_4": "Wing-Commander Atcherley",
+            "p_5": "C.I.G.S.",
+            "p_6": "Irish Guardsman"
+        },
         "locations": {
-            "l_1": "Tjeldsundet",
-            "l_2": "Narvik",
-            "l_3": "Tromsø",
-            "l_4": "Vaags Fiord",
-            "l_5": "Lodingen",
-            "l_6": "Baroy",
-            "l_7": "Malangen Fiords",
-            "l_8": "Lokvik",
-            "l_9": "Boenoes",
-            "l_10": "Stegholm",
-            "l_11": "Ramsundet",
-            "l_12": "Rotvaer",
-            "l_13": "Sjurnes",
-            "l_14": "Kvalsundet",
-            "l_15": "Grot sundet",
-            "l_16": "Hella"
+            "l_1": "Skjelfiord",
+            "l_2": "Harstad",
+            "l_3": "Bogen",
+            "l_4": "Tjeldsundet South Channel",
+            "l_5": "Saltfiord",
+            "l_6": "U.K.",
+            "l_7": "Mo",
+            "l_8": "Mosjoen",
+            "l_9": "Bodo",
+            "l_10": "Narvik",
+            "l_11": "Hemnes"
         },
         "events": {
-            "e_1": "Patrol Establishment",
-            "e_2": "Defensive Preparations in Tjeldsundet",
-            "e_3": "Deployment of Artillery Batteries"
+            "e_1": "Evacuation of Mosjoen",
+            "e_2": "Landing at Hemnes",
+            "e_3": "Sinking of U.49",
+            "e_4": "Air Patrols",
+            "e_5": "Evacuation of forces at Mo"
         },
-        "organisations": {}
+        "organisations": {
+            "o_1": "Admiralty",
+            "o_2": "Independent Companies",
+            "o_3": "Home Fleet"
+        }
     },
     "keywords": [
-        "Patrol",
-        "A/S craft",
-        "Defence",
-        "Mines",
-        "Artillery",
-        "Reconnaissance"
+        "Skjelfiord",
+        "Harstad",
+        "Bogen",
+        "Tjeldsundet",
+        "Saltfiord",
+        "U.K.",
+        "Mo",
+        "Mosjoen",
+        "Bodo",
+        "Narvik",
+        "Hemnes",
+        "Admiralty"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Naval Warfare"
+        "Evacuations",
+        "Air Patrols",
+        "Enemy Engagements",
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Defensive Strategies": [
+        "Strategic Decisions": [
+            "e_5"
+        ],
+        "Evacuations": [
+            "e_1"
+        ],
+        "Enemy Engagements": [
             "e_2",
             "e_3"
-        ],
-        "Naval Warfare": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "May 12",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_8"
             ],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_5",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [
-                "e_2"
+                "e_5"
             ],
-            "eventSummary": "Patrols are established early and operate regularly to enhance naval security."
+            "eventSummary": "The Evacuation of Mosjoen occurs, with forces abandoning equipment."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "May 10",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_11"
             ],
-            "persons": [],
+            "persons": [
+                "p_6"
+            ],
             "organisations": [],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Defensive preparations are initiated in Tjeldsundet, including the establishment of mines and batteries."
+            "eventSummary": "The enemy successfully lands a force of 650 men at Hemnes near Mo."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
+            "date": "April 15",
+            "locations": [],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Several artillery batteries are configured in strategic locations to fortify the area."
+            "eventSummary": "The sinking of U.49 is reported."
+        },
+        {
+            "event": "e_4",
+            "date": "April 29",
+            "locations": [
+                "l_2",
+                "l_9"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air Patrols are conducted, though faced with enemy aerial superiority."
+        },
+        {
+            "event": "e_5",
+            "date": "May 4",
+            "locations": [
+                "l_7",
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Policy and responsibility regarding Bodo and Mo are defined by the Admiralty."
         }
     ]
 }

@@ -1,70 +1,95 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General Lord Rennell",
-            "p_2": "GOC Base Area",
-            "p_3": "CG Natousat"
+            "p_1": "General Montgomery",
+            "p_2": "General Hube",
+            "p_3": "Hitler",
+            "p_4": "General Patton"
         },
         "locations": {
-            "l_1": "Sicily",
-            "l_2": "Catania",
-            "l_3": "Comiso",
-            "l_4": "Ponte Olivo",
-            "l_5": "Gela",
-            "l_6": "Syracuse",
-            "l_7": "Augusta",
-            "l_8": "Palermo",
-            "l_9": "Messina",
-            "l_10": "Licata",
-            "l_11": "Empedocle",
-            "l_12": "Tripoli"
+            "l_1": "Palermo",
+            "l_2": "Termini Imerese",
+            "l_3": "Sicily",
+            "l_4": "Nissoria",
+            "l_5": "Agira",
+            "l_6": "Catenanuova",
+            "l_7": "Adrano",
+            "l_8": "Centuripe",
+            "l_9": "Catania",
+            "l_10": "Messina",
+            "l_11": "Troina",
+            "l_12": "Santa Agata",
+            "l_13": "San Fratello",
+            "l_14": "Cesaro",
+            "l_15": "Randazzo",
+            "l_16": "Capo d Orlando",
+            "l_17": "Licata"
         },
         "events": {
-            "e_1": "Capture of Messina",
-            "e_2": "Sicilian Campaign"
+            "e_1": "Capture of Palermo",
+            "e_2": "Capture of Nissoria",
+            "e_3": "Capture of Agira",
+            "e_4": "Attack on Catenanuova",
+            "e_5": "Capture of Centuripe",
+            "e_6": "Attack on Troina",
+            "e_7": "Capture of Santa Agata",
+            "e_8": "Capture of Cesaro",
+            "e_9": "Capture of Randazzo"
         },
         "organisations": {
-            "o_1": "Seventh Army",
+            "o_1": "II Corps",
             "o_2": "Eighth Army",
-            "o_3": "Fifteenth Army Group",
-            "o_4": "United States Island Base Section",
-            "o_5": "Allied Military Government of Occupied Territories"
+            "o_3": "Seventh Army",
+            "o_4": "78 Division",
+            "o_5": "15 Panzer Division",
+            "o_6": "29 Panzer Grenadier Division",
+            "o_7": "Hermann Goering Division",
+            "o_8": "Canadian Brigade",
+            "o_9": "3 Canadian Brigade",
+            "o_10": "5 Division",
+            "o_11": "50th Division",
+            "o_12": "51 Division",
+            "o_13": "9 Division",
+            "o_14": "3 Division"
         }
     },
     "keywords": [
-        "logistics",
-        "air transport",
-        "medical evacuation",
-        "administration",
-        "operations"
+        "Sicilian summer",
+        "amphibious operations",
+        "military engagement"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Medical Support",
-        "Administrative Organization"
+        "Combat Strategies",
+        "Prisoner Capture"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7",
+            "e_8",
+            "e_9"
         ],
-        "Logistics": [
-            "e_2"
+        "Combat Strategies": [
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Medical Support": [
-            "e_2"
-        ],
-        "Administrative Organization": [
-            "e_2"
+        "Prisoner Capture": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "17th August",
+            "date": "22nd July",
             "locations": [
-                "l_9"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -74,32 +99,139 @@
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_6"
             ],
-            "eventSummary": "The capture of Messina concludes operations, establishing administrative boundaries between armies."
+            "eventSummary": "II Corps captures Palermo on the evening of the 22nd."
         },
         {
             "event": "e_2",
-            "date": "Ongoing during the campaign period",
+            "date": "24th July",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_8",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Nissoria falls on the 24th during advances by 78 Division."
+        },
+        {
+            "event": "e_3",
+            "date": "28th July",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Agira is captured on the 28th by Eighth Army."
+        },
+        {
+            "event": "e_4",
+            "date": "1st August",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Eighth Army launches an attack on Catenanuova."
+        },
+        {
+            "event": "e_5",
+            "date": "3rd August",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "The capture of Centuripe is achieved, marking a key tactical position."
+        },
+        {
+            "event": "e_6",
+            "date": "6th August",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Troina is cleared after fierce fighting on the 6th."
+        },
+        {
+            "event": "e_7",
+            "date": "8th August",
+            "locations": [
                 "l_12"
             ],
             "persons": [
-                "p_3"
+                "p_4"
             ],
             "organisations": [
-                "o_2",
                 "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Santa Agata is captured following a successful amphibious operation."
+        },
+        {
+            "event": "e_8",
+            "date": "8th August",
+            "locations": [
+                "l_13"
             ],
-            "eventSummary": "The Sicilian Campaign involves multiple military operations, efficient logistics, and organization for administration and supply."
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Cesaro is captured as part of the advancing operations."
+        },
+        {
+            "event": "e_9",
+            "date": "13th August",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Randazzo falls on the 13th, diminishing German defenses."
         }
     ]
 }

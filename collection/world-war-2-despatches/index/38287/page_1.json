@@ -1,84 +1,112 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "P. J. Macx"
+            "p_1": "Admiral Sir Andrew B. Cunningham",
+            "p_2": "Captain P. J. Mack",
+            "p_3": "Commander J. W. Eaton",
+            "p_4": "Comdr. R. W. Ravenhill",
+            "p_5": "Comdr. J. A. W. Tothill"
         },
         "locations": {
-            "l_1": "Kerkenah",
-            "l_2": "Sfax"
+            "l_1": "Mediterranean",
+            "l_2": "Malta",
+            "l_3": "Kerkenah",
+            "l_4": "Tunis Coast",
+            "l_5": "Cap Bon"
         },
         "events": {
-            "e_1": "Skirmish Off Sfax",
-            "e_2": "Action of H.M. Ships JERVIS, NUBIAN and JANUS"
+            "e_1": "Action against Italian convoy",
+            "e_2": "Sinking of the Tripoli-bound convoy",
+            "e_3": "Skirmish off Sfax"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "Royal Navy",
+            "o_2": "Fourteenth Destroyer Flotilla"
         }
     },
     "keywords": [
-        "Skirmish",
-        "Navy actions",
-        "Enemy ships",
-        "Torpedo",
-        "Survivors",
-        "Buoys"
+        "convoy",
+        "destroyers",
+        "action",
+        "escort",
+        "sinking"
     ],
     "themes": [
-        "Military Operations",
-        "Naval Combat",
-        "Survivor Rescue",
-        "Tactical Maneuvers"
+        "Military Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Naval Combat": [
-            "e_1"
-        ],
-        "Survivor Rescue": [
-            "e_2"
-        ],
-        "Tactical Maneuvers": [
-            "e_1"
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2014-05-04",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "A naval skirmish occurs off the coast of Sfax involving the ships JERVIS, NUBIAN, and JANUS against a group of enemy vessels, resulting in multiple engagements and the sinking of several ships."
-        },
-        {
-            "event": "e_2",
-            "date": "2014-05-04",
+            "date": "15th/16th April, 1941",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "H.M. Ships JERVIS, NUBIAN, and JANUS engage in tactical maneuvers during a naval operation, leading to the sinking of the H.M.S. MOHAWK and rescuing its survivors amidst ongoing combat."
+            "eventSummary": "On the night of the 15th/16th April, 1941, Admiral Sir Andrew B. Cunningham submits a report on a successful action against an Italian convoy, involving destroyers under the command of Captain P. J. Mack."
+        },
+        {
+            "event": "e_2",
+            "date": "15th-16th April, 1941",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The night of 15th-16th April, 1941, sees the sinking of a Tripoli-bound convoy and escort by the Fourteenth Destroyer Flotilla after intercepting it from Malta."
+        },
+        {
+            "event": "e_3",
+            "date": "15th-16th April, 1941",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A skirmish off Sfax occurs on the night of the 15th-16th April, 1941, involving destroyers as they engage the convoy."
         }
     ]
 }

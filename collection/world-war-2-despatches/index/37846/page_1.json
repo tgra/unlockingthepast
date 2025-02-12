@@ -1,63 +1,57 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Prime Minister",
-            "p_2": "Commander-in-Chief",
-            "p_3": "Unnamed British officer"
+            "p_1": "Air Vice-Marshal J. H. D'Albiac",
+            "p_2": "General Metaxas"
         },
         "locations": {
             "l_1": "Greece",
-            "l_2": "Albania",
-            "l_3": "Salonika",
-            "l_4": "Athens",
-            "l_5": "Larissa"
+            "l_2": "Athens",
+            "l_3": "Albania"
         },
         "events": {
-            "e_1": "Greek Air Force Operations",
-            "e_2": "British RAF Contingent Deployment",
-            "e_3": "Italian Advance Stemming"
+            "e_1": "Declaration of War",
+            "e_2": "Italian invasion of Greece"
         },
         "organisations": {
             "o_1": "Royal Air Force",
-            "o_2": "Greek Air Force",
-            "o_3": "General Staff of Greece"
+            "o_2": "Italian Government",
+            "o_3": "Greek Government"
         }
     },
     "keywords": [
-        "air force",
-        "mobilisation",
-        "bomber squadrons",
-        "aerodromes",
-        "Italian forces"
+        "Air Operations",
+        "War",
+        "Greece",
+        "Italy",
+        "Royal Air Force"
     ],
     "themes": [
         "Military Operations",
-        "International Support",
-        "National Defense"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "International Support": [
             "e_2"
         ],
-        "National Defense": [
+        "Diplomacy": [
             "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 1940",
+            "date": "October 28, 1940",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_2"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
@@ -65,46 +59,28 @@
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The Greek Air Force is engaged in operations facing overwhelming Italian air superiority, suffering casualties but demonstrating bravery."
+            "eventSummary": "On October 28, 1940, Greece declares war on Italy after General Metaxas refuses an Italian ultimatum."
         },
         {
             "event": "e_2",
-            "date": "6th November 1940",
+            "date": "October 28, 1940",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_3"
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "In response to an urgent appeal, the British Government sends a contingent of the RAF to Greece to support the Greek Air Force and counter the Italian advances."
-        },
-        {
-            "event": "e_3",
-            "date": "End of November 1940",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The combined efforts of the RAF and Greek forces manage to stem the Italian advance, allowing Greek forces to take the offensive."
+            "eventSummary": "On the same day, Italian forces invade Greece, facing unexpected resistance from the Greek military."
         }
     ]
 }

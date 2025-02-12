@@ -1,133 +1,100 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General R. Evans",
-            "p_2": "General Billotte",
+            "p_1": "Major-General Osborne",
+            "p_2": "General Prioux",
             "p_3": "General de la Laurencie",
-            "p_4": "General Mason-MacFarlane"
+            "p_4": "Sir Ronald Adam"
         },
         "locations": {
-            "l_1": "Amiens",
-            "l_2": "Abbeville",
-            "l_3": "Havre",
-            "l_4": "Bolbec",
-            "l_5": "Seine",
-            "l_6": "Escaut",
-            "l_7": "Sens",
-            "l_8": "Bouchain",
-            "l_9": "Cambrai",
-            "l_10": "Arras",
-            "l_11": "Dunkirk",
-            "l_12": "Valenciennes",
-            "l_13": "Arleux",
-            "l_14": "Douai",
-            "l_15": "Carvin"
+            "l_1": "Dunkirk",
+            "l_2": "Nieuport",
+            "l_3": "Ypres",
+            "l_4": "Beveren",
+            "l_5": "Proven",
+            "l_6": "Wormhoudt",
+            "l_7": "Cassel",
+            "l_8": "Vieux Berquin",
+            "l_9": "La Panne",
+            "l_10": "Merville",
+            "l_11": "Sailly-sur-la-Lys",
+            "l_12": "Houtkerque",
+            "l_13": "Seclin",
+            "l_14": "Steenvorde",
+            "l_15": "Bergues"
         },
         "events": {
-            "e_1": "Disembarkation of Armoured Brigades",
-            "e_2": "Withdrawal of the French 1st Army",
-            "e_3": "Concentration of the French 3rd Corps",
-            "e_4": "Deployment of the 50th Division"
+            "e_1": "Belgian armistice",
+            "e_2": "Evacuation of Dunkirk",
+            "e_3": "Occupation of the Dunkirk perimeter",
+            "e_4": "Enemy tank attack",
+            "e_5": "Orders for 48th Division",
+            "e_6": "Arrival of French 1st Army"
         },
         "organisations": {
-            "o_1": "British Expeditionary Force (B.E.F.)",
-            "o_2": "French 5th Army",
-            "o_3": "French 1st Army",
-            "o_4": "Macforce"
+            "o_1": "French 1st Army",
+            "o_2": "3rd Corps",
+            "o_3": "4th Corps",
+            "o_4": "48th Division",
+            "o_5": "1st Corps",
+            "o_6": "2nd Corps",
+            "o_7": "Royal Artillery",
+            "o_8": "12th Lancers"
         }
     },
     "keywords": [
-        "Amiens",
-        "Armoured Division",
-        "French High Command",
-        "Counter-attacks",
-        "Withdrawal",
-        "Defense"
+        "withdrawal",
+        "occupation",
+        "evacuation",
+        "enemy attack",
+        "Belgian armistice"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Defense Planning"
+        "Evacuation",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_4"
+        ],
+        "Evacuation": [
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
             "e_1",
-            "e_2",
-            "e_4"
-        ],
-        "Defense Planning": [
-            "e_3",
-            "e_4"
+            "e_5",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th May",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Major-General R. Evans oversees the disembarkation of two Armoured Brigades at Havre, instructing swift movements to secure the crossings of the Somme."
-        },
-        {
-            "event": "e_2",
-            "date": "19th May",
+            "date": "28th May 1940",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_6"
+                "l_3"
             ],
             "persons": [
                 "p_2",
                 "p_3"
             ],
             "organisations": [
+                "o_1",
                 "o_2",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The French 1st Army completes its withdrawal and takes new positions along the Escaut, adapting to the evolving battle conditions."
+            "connectedEvents": [],
+            "eventSummary": "Belgian armistice is announced, affecting military operations in the region."
         },
         {
-            "event": "e_3",
-            "date": "Night of 19/20th May",
+            "event": "e_2",
+            "date": "29th May 1940",
             "locations": [
-                "l_9"
-            ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "General de la Laurencie coordinates with General Mason-MacFarlane as French and British forces assess their strategic positions against enemy advances."
-        },
-        {
-            "event": "e_4",
-            "date": "Date unspecified",
-            "locations": [
-                "l_10",
-                "l_11"
+                "l_1"
             ],
             "persons": [
                 "p_4"
@@ -136,9 +103,74 @@
                 "o_1"
             ],
             "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Evacuation of Dunkirk is in process, with thousands of troops waiting on the beaches."
+        },
+        {
+            "event": "e_3",
+            "date": "28th May 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The 50th Division is ordered to deploy an Infantry Brigade to secure defensive positions along critical canal lines amidst the shifting combat landscape."
+            "eventSummary": "Occupation of the Dunkirk perimeter is completed as military units consolidate their positions."
+        },
+        {
+            "event": "e_4",
+            "date": "27th May 1940",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "48th Division sustains a strong enemy tank attack while withdrawing."
+        },
+        {
+            "event": "e_5",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Orders are issued for 48th Division to withdraw under pressure from the enemy."
+        },
+        {
+            "event": "e_6",
+            "date": "28th May 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The arrival of the French 1st Army is reported to Major-General Osborne, indicating coordination efforts."
         }
     ]
 }

@@ -1,84 +1,106 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "T. J. Buicu"
+            "p_1": "R. B. Roover",
+            "p_2": "Sir JOHN C. TOVEY"
         },
         "locations": {
-            "l_1": "Mulat",
-            "l_2": "Trieste",
-            "l_3": "Split",
-            "l_4": "Pasman Channel",
-            "l_5": "Rivanj",
-            "l_6": "Tower Lane, Bristol",
-            "l_7": "Chichester Street, Belfast"
+            "l_1": "Dover",
+            "l_2": "Le Havre",
+            "l_3": "Dieppe",
+            "l_4": "The Nore",
+            "l_5": "Yarmouth",
+            "l_6": "Lowestoft",
+            "l_7": "Berck Buoy"
         },
         "events": {
-            "e_1": "Decisive Victory of D-boats over F-lighters",
-            "e_2": "Convoy attacks"
+            "e_1": "E-boat operations on the night of 24th/25th October, 1943",
+            "e_2": "Attack from seaward",
+            "e_3": "Destroyer and Coastal Force action with E-boats"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
+            "o_1": "841 Squadron",
             "o_2": "Admiralty"
         }
     },
     "keywords": [
-        "D-boats",
-        "F-lighters",
-        "convoy",
-        "victory",
-        "armament",
-        "reconnaissance"
+        "Force A",
+        "Force B",
+        "M.G.B.",
+        "M.T.B.",
+        "E-boats",
+        "patrol",
+        "convoy"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Naval Engagement",
+        "Strategic Maneuvering"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Naval Engagement": [
+            "e_3"
+        ],
+        "Strategic Maneuvering": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "24th/25th October, 1943",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
                 "l_4",
-                "l_5"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "E-boat operations occur involving several naval forces engaged in a nighttime operation."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Force B proceeds to attack from seaward during a naval operation."
+        },
+        {
+            "event": "e_3",
+            "date": "18th November, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
             ],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The D-boats achieve a decisive victory over F-lighters, demonstrating effective tactics despite facing heavier armament."
-        },
-        {
-            "event": "e_2",
-            "date": "Previous night preceding the report",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Reports indicate a convoy was attacked while en route from Trieste to Split, involving several enemy vessels."
+            "eventSummary": "Report on the E-boat operations is submitted to the Lords Commissioners of the Admiralty detailing the forces involved."
         }
     ]
 }

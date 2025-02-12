@@ -1,57 +1,65 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unnamed Commander"
+            "p_1": "General Dobbie",
+            "p_2": "General Ritchie"
         },
         "locations": {
-            "l_1": "Western Desert",
-            "l_2": "Persia",
-            "l_3": "Iraq",
-            "l_4": "Egypt",
-            "l_5": "Caucasus",
-            "l_6": "Persian Gulf",
-            "l_7": "Cairo",
-            "l_8": "Cardiff"
+            "l_1": "Malta",
+            "l_2": "Cyrenaica",
+            "l_3": "Egypt",
+            "l_4": "Tobruk",
+            "l_5": "Gazala",
+            "l_6": "El Adem",
+            "l_7": "Derna",
+            "l_8": "Martuba",
+            "l_9": "Bengasi",
+            "l_10": "Gebel Akhdar",
+            "l_11": "Tripoli"
         },
         "events": {
-            "e_1": "Defensive Operations in Persia",
-            "e_2": "Offensive Operations in the Western Desert",
-            "e_3": "Independent Command in Iraq Persia"
+            "e_1": "Offensive in Cyrenaica",
+            "e_2": "Convoy attempt to Malta",
+            "e_3": "Raid by the Eighth Army and the Long Range Desert Group"
         },
         "organisations": {
-            "o_1": "Committee on the implications of setting up an independent command"
+            "o_1": "Middle East Defence Committee",
+            "o_2": "War Office",
+            "o_3": "Royal Navy",
+            "o_4": "Royal Air Force",
+            "o_5": "Eighth Army",
+            "o_6": "G.H.Q., M.E.F."
         }
     },
     "keywords": [
-        "Western Desert",
-        "Persia",
-        "Iraq",
-        "Egypt",
-        "military command",
-        "offensive operations",
-        "defensive operations"
+        "offensive",
+        "convoy",
+        "air attack",
+        "armoured forces",
+        "military garrison"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Resource Management"
+        "Defensive Strategies",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Strategic Decisions": [
+            "e_2",
             "e_3"
         ],
-        "Resource Management": [
+        "Defensive Strategies": [
             "e_1"
+        ],
+        "Command Structure": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1948",
+            "date": "",
             "locations": [
                 "l_2",
                 "l_3"
@@ -66,44 +74,41 @@
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Commander expresses concern over the risks of conducting defensive operations in Persia while engaging in offensive actions in the Western Desert, emphasizing limitations in resources."
+            "eventSummary": "An offensive in Cyrenaica is proposed to regain control over the region, contingent on the threat to the Northern Front."
         },
         {
             "event": "e_2",
-            "date": "1948",
+            "date": "March 8, 1942",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
+                "o_2",
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The Commander discusses the challenges and impracticality of launching offensive campaigns in the Western Desert, identifying strategic weaknesses in the Middle East."
+            "eventSummary": "A convoy attempt to Malta is executed during a moonless period, with strategies to divert enemy attacks."
         },
         {
             "event": "e_3",
-            "date": "1948",
+            "date": "March 20-21, 1942",
             "locations": [
-                "l_3",
-                "l_2"
+                "l_7",
+                "l_9"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The Commander reviews proposals for establishing an independent command in Iraq and Persia, expressing skepticism about the practicality and risks involved."
+            "connectedEvents": [],
+            "eventSummary": "The Eighth Army and the Long Range Desert Group launch raids on the landing grounds around Derna and Bengasi."
         }
     ]
 }

@@ -2,83 +2,56 @@
     "namedEntities": {
         "persons": {
             "p_1": "Admiral",
-            "p_2": "HOUSTON",
-            "p_3": "JAVA",
-            "p_4": "DE RUYTER",
-            "p_5": "EXETER"
+            "p_2": "HOUSTON"
         },
         "locations": {
             "l_1": "Sourabaya",
-            "l_2": "Northeast",
-            "l_3": "Batavia"
+            "l_2": "Batavia",
+            "l_3": "Northeast"
         },
         "events": {
-            "e_1": "Battle of Java Sea",
-            "e_2": "Explosion of USS Houston",
-            "e_3": "Java's Afterpart Explosion"
+            "e_1": "Engagement at sea",
+            "e_2": "Explosion of American destroyer",
+            "e_3": "Bombardment of enemy cruisers"
         },
         "organisations": {
-            "o_1": "Allied forces"
+            "o_1": "Allied Forces"
         }
     },
     "keywords": [
         "cruisers",
         "destroyers",
-        "ammunition",
-        "explosion",
-        "fire",
-        "air reconnaissance",
-        "engagement"
+        "enemy",
+        "ammunition"
     ],
     "themes": [
-        "Military Engagement",
+        "Military Operations",
         "Naval Warfare",
-        "Strategic Maneuvering",
-        "Explosions"
+        "Engagement Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
         "Naval Warfare": [
-            "e_1"
+            "e_1",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Engagement Strategy": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified but during naval operations in the Java Sea",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Battle of Java Sea involves Allied cruisers engaging enemy forces, leading to various confrontations and tactical maneuvers aimed at interception."
-        },
-        {
-            "event": "e_2",
-            "date": "Date unspecified, around 2100",
-            "locations": [
-                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -88,27 +61,38 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The USS Houston suffers a critical situation while engaging with enemy cruisers, eventually leading to its detachment to Batavia for refueling."
+            "eventSummary": "An engagement at sea occurs where Allied cruisers exchange fire with enemy forces amidst smoke screens and changing tactical situations."
         },
         {
-            "event": "e_3",
-            "date": "Date unspecified during the naval battle",
+            "event": "e_2",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
-                "p_4",
-                "p_5"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "An American destroyer blows up with a tremendous explosion while in shallow water, causing significant damage to the Allied forces."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_1"
             ],
-            "eventSummary": "An explosion occurs on Java, which is considered to be from either wandering fire or a torpedo, contributing to the overall chaos of the naval engagement."
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Allied cruisers bombard enemy cruisers in a challenging exchange that highlights the organized air reconnaissance of the enemy."
         }
     ]
 }

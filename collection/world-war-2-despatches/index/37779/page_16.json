@@ -1,46 +1,49 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Giraud",
-            "p_2": "General Juin",
-            "p_3": "General Koeltz",
-            "p_4": "Brigadier C. G. G. Nicholson"
+            "p_1": "Hitler",
+            "p_2": "Rommel"
         },
         "locations": {
-            "l_1": "Djebel Mansour",
-            "l_2": "Robaa",
-            "l_3": "Sbeitla",
-            "l_4": "Pichon",
-            "l_5": "Kesra",
-            "l_6": "Sbiba",
-            "l_7": "Thala",
-            "l_8": "Tebessa"
+            "l_1": "Tunisia",
+            "l_2": "Germany",
+            "l_3": "Mareth",
+            "l_4": "Tripolitania",
+            "l_5": "Algeria"
         },
         "events": {
-            "e_1": "Attack on Faid",
-            "e_2": "Battle of Sidi Bou Zid",
-            "e_3": "Breakthrough at Kasserine Pass",
-            "e_4": "Retake of Pichon-Kairouan area"
+            "e_1": "Battle of Mareth",
+            "e_2": "Arrival of 999 Division",
+            "e_3": "Formation of Hermann Goering Armoured Division",
+            "e_4": "Arrival of volunteer battalions"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "United States Army",
-            "o_3": "French Army",
-            "o_4": "British Army"
+            "o_1": "German 334 Infantry Division",
+            "o_2": "Hermann Goering Flak Regiment",
+            "o_3": "Hermann Goering Armoured Division",
+            "o_4": "First Army",
+            "o_5": "Panzer Grenadier Regiment Afrika",
+            "o_6": "Ramcke Brigade",
+            "o_7": "Spezia Division",
+            "o_8": "Pistoia Division",
+            "o_9": "Young Fascists Division",
+            "o_10": "Centauro Division",
+            "o_11": "Trieste Division",
+            "o_12": "Phalange Frangaise",
+            "o_13": "999 Division"
         }
     },
     "keywords": [
-        "military operations",
+        "Axis troops",
+        "German tanks",
+        "Italian tanks",
         "reinforcements",
-        "French Corps",
-        "United States",
-        "enemy attacks"
+        "volunteer battalions"
     ],
     "themes": [
         "Military Operations",
         "Reinforcements",
-        "Tactics",
-        "Strategic Decisions"
+        "Formation of Units"
     ],
     "topicModel": {
         "Military Operations": [
@@ -50,88 +53,70 @@
             "e_4"
         ],
         "Reinforcements": [
-            "e_3"
+            "e_2",
+            "e_4"
         ],
-        "Strategic Decisions": [
-            "e_1",
-            "e_2"
+        "Formation of Units": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "30th/31st January",
+            "date": "February 1943",
             "locations": [
+                "l_1",
                 "l_3"
             ],
             "persons": [
-                "p_3",
-                "p_4"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_4",
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The enemy attacks Faid, leading to the destruction of the French garrison before reinforcements from the United States Army arrive."
+            "eventSummary": "The Battle of Mareth occurs, with Rommel's army becoming a significant opponent of the First Army."
         },
         {
             "event": "e_2",
-            "date": "14th February",
+            "date": "End of March 1943",
             "locations": [
-                "l_6"
+                "l_1"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_13"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The enemy attacks Sidi Bou Zid and captures Sbeitla after three days of heavy fighting, leading to a strategic shift for United States 2 Corps."
+            "connectedEvents": [],
+            "eventSummary": "999 Division begins to arrive in Tunisia at the end of March, consisting of infantry regiments with low morale."
         },
         {
             "event": "e_3",
-            "date": "20th February",
+            "date": "January - February 1943",
             "locations": [
-                "l_6"
+                "l_1"
             ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3",
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The enemy breaks through the Kasserine Pass, prompting U.S. 2 Corps to respond to the westward threat while a composite force is dispatched to Thala."
+            "connectedEvents": [],
+            "eventSummary": "The Hermann Goering Armoured Division is formed in Tunisia, absorbing various other units."
         },
         {
             "event": "e_4",
-            "date": "8th April",
+            "date": "April 1943",
             "locations": [
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The re-equipped 6 Armoured Division goes into action in the Pichon-Kairouan area with Sherman tanks after a training period."
+            "eventSummary": "Volunteer battalions are raised locally, but their fighting value is low due to a lack of committed personnel."
         }
     ]
 }

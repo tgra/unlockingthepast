@@ -1,51 +1,49 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Divisional Commander"
+            "p_1": "Brigadier Ekin",
+            "p_2": "Brigadier Jones"
         },
         "locations": {
-            "l_1": "Pegu",
-            "l_2": "Rangoon",
-            "l_3": "Bilin",
-            "l_4": "Sittang Bridge",
-            "l_5": "Thattkyon",
-            "l_6": "Mandaly"
+            "l_1": "Mokpalin",
+            "l_2": "Bridgehead",
+            "l_3": "Jungle",
+            "l_4": "River"
         },
         "events": {
-            "e_1": "Formation of the Pegu Force",
-            "e_2": "Arrival of the 7 Armoured Brigade",
-            "e_3": "Counterattack at Bilin",
-            "e_4": "Withdrawal Decisions",
-            "e_5": "Evacuation of Rangoon"
+            "e_1": "Counter Attack by 4/12 F.F.R.",
+            "e_2": "Blowing of the Bridge",
+            "e_3": "Attack on Bridgehead",
+            "e_4": "Evacuation of Wounded"
         },
         "organisations": {
-            "o_1": "Burma Military Police",
-            "o_2": "1 W. Yorks",
-            "o_3": "F.F.6",
-            "o_4": "17 Division",
-            "o_5": "48 Indian Infantry Brigade",
-            "o_6": "R.A.F.",
-            "o_7": "2 D.W.R.",
-            "o_8": "A.B.D.A. Command",
-            "o_9": "War Office"
+            "o_1": "7/10 Baluch",
+            "o_2": "3 Burma Rifles",
+            "o_3": "2 DW.R.",
+            "o_4": "1/3 G.R.",
+            "o_5": "2/5 R.G.R.",
+            "o_6": "1/4 G.R.",
+            "o_7": "46 Brigade",
+            "o_8": "48 Brigade",
+            "o_9": "16 Indian Infantry Brigade",
+            "o_10": "Divisional Artillery"
         }
     },
     "keywords": [
-        "Pegu Force",
-        "7 Armoured Brigade",
-        "Bilin position",
-        "counterattack",
-        "withdrawal",
-        "evacuation",
-        "reinforcements",
-        "Rangoon"
+        "Counter Attack",
+        "Heavy Fire",
+        "Bridge",
+        "Evacuation",
+        "Wounded",
+        "Garrison",
+        "Enemy Pressure",
+        "Reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Counterattack Strategies",
-        "Supply Lines",
-        "Withdrawal Tactics",
-        "Evacuation Procedures"
+        "Heroism",
+        "Casualties",
+        "Defense Strategies"
     ],
     "topicModel": {
         "Military Operations": [
@@ -53,107 +51,84 @@
             "e_2",
             "e_3"
         ],
-        "Withdrawal Tactics": [
+        "Heroism": [
             "e_4"
         ],
-        "Evacuation Procedures": [
-            "e_5"
+        "Casualties": [
+            "e_3"
+        ],
+        "Defense Strategies": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "18th February",
+            "date": "22nd",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The Pegu Force is formed with the role of protecting Pegu from enemy advances."
+            "eventSummary": "A counterattack by the 4/12 F.F.R. occurs as they aim to reclaim their position on the north and north-east of the perimeter."
         },
         {
             "event": "e_2",
-            "date": "21st February",
+            "date": "23rd",
+            "locations": [
+                "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_7",
+                "o_8"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the morning of the 23rd, after heavy fighting, the bridge is blown to prevent enemy advances."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd",
             "locations": [
                 "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_5",
-                "o_6"
+                "o_1",
+                "o_9"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_4"
             ],
-            "eventSummary": "The 7 Armoured Brigade arrives in Rangoon and prepares to defend the area while imposing delays on enemy forces."
-        },
-        {
-            "event": "e_3",
-            "date": "8th February",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A counterattack by the 48 Indian Infantry Brigade is launched at Bilin, attempting to hold back enemy advances."
+            "eventSummary": "Heavy attacks are launched on the bridgehead as British forces engage the enemy throughout the day."
         },
         {
             "event": "e_4",
-            "date": "19th February",
+            "date": "22nd-23rd",
             "locations": [
-                "l_3",
                 "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
-            "organisations": [
-                "o_7",
-                "o_8",
-                "o_9"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_5"
-            ],
-            "eventSummary": "Decisions are made regarding the withdrawal of troops due to increasing enemy pressure and the worsening situation."
-        },
-        {
-            "event": "e_5",
-            "date": "20th February",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_8",
-                "o_9"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Preparations for the evacuation of Rangoon commence after reviewing troop conditions and enemy threats."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "During the evacuation, troops undertake significant risks to save the wounded while facing enemy fire."
         }
     ]
 }

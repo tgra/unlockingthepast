@@ -1,104 +1,140 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Marshal Sholto Douglas",
-            "p_2": "Ler Marshal Cakmak"
+            "p_1": "Admiral Lord Louis Mountbatten"
         },
         "locations": {
-            "l_1": "Izmir",
-            "l_2": "Turkey",
-            "l_3": "Ankara",
-            "l_4": "Milas",
-            "l_5": "Mugla",
-            "l_6": "Afyon Karahinsar",
-            "l_7": "Ulukisla",
-            "l_8": "Mersin",
-            "l_9": "Iskenderun"
+            "l_1": "Cairo",
+            "l_2": "Crete",
+            "l_3": "Rhodes",
+            "l_4": "Italy",
+            "l_5": "Middle East",
+            "l_6": "South-east Asia",
+            "l_7": "Balkans",
+            "l_8": "Aegean",
+            "l_9": "Turkey"
         },
         "events": {
-            "e_1": "HARDIHOOD Plan",
-            "e_2": "Quebec Conference",
-            "e_3": "Invitation to Turkey to enter the war"
+            "e_1": "Meeting of the Middle East Defence Committee",
+            "e_2": "Decision of the Chiefs of Staff on 25th October",
+            "e_3": "Decision of the Chiefs of Staff on 17th November",
+            "e_4": "Decision of the Chiefs of Staff on 26th November, 1943"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "No. 3 Planning Staff",
-            "o_3": "Turkish General Staff"
+            "o_1": "Middle East Command",
+            "o_2": "Mediterranean Command",
+            "o_3": "2 Army Group",
+            "o_4": "Imperial General Staff",
+            "o_5": "Royal Navy",
+            "o_6": "Royal Air Force",
+            "o_7": "Merchant Navy",
+            "o_8": "Allied Forces, North Africa",
+            "o_9": "Chiefs of Staff"
         }
     },
     "keywords": [
-        "HARDIHOOD",
-        "British forces",
-        "airfields",
-        "logistics",
-        "military planning",
-        "railway improvements"
+        "internal security",
+        "military operations",
+        "Mediterranean theatre",
+        "administrative services"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "International Diplomacy"
+        "Command Structure",
+        "Security Considerations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
+        "Command Structure": [
             "e_1",
+            "e_2",
             "e_3"
+        ],
+        "Security Considerations": [
+            "e_2",
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1943",
+            "date": "4th October",
             "locations": [
-                "l_2",
-                "l_1"
+                "l_1",
+                "l_5"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_7",
+                "o_8"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The HARDIHOOD Plan is developed to phase the dispatch of British forces to Turkey, coordinating air and ground support logistics."
+            "eventSummary": "On 4th October, Admiral Lord Louis Mountbatten attends a meeting of the Middle East Defence Committee, addressing concerns regarding the cuts to the Middle East Base."
         },
         {
             "event": "e_2",
-            "date": "September 1943",
+            "date": "25th October",
             "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Decisions from the Quebec Conference modify military commitments, with limitations on the HARDIHOOD plan being specified."
-        },
-        {
-            "event": "e_3",
-            "date": "October 1943",
-            "locations": [
-                "l_2"
+                "l_5"
             ],
             "persons": [],
             "organisations": [
-                "o_3"
+                "o_9"
             ],
-            "connectedEvents": [],
-            "eventSummary": "An invitation is extended to Turkey by the Middle East Defence Committee to join the war, reflecting a shift in military strategy."
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "On 25th October, the Chiefs of Staff direct that forces in the Middle East should not be reduced below the minimum required for maintaining internal security."
+        },
+        {
+            "event": "e_3",
+            "date": "17th November",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "On 17th November, the Chiefs of Staff clarify that the primary function of the Middle East Base is to support operations in the Mediterranean."
+        },
+        {
+            "event": "e_4",
+            "date": "26th November, 1943",
+            "locations": [
+                "l_5",
+                "l_7",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On 26th November, 1943, the Chiefs of Staff decide on a unified command in the Mediterranean, affecting operations in the Balkans, Aegean, and Turkey."
         }
     ]
 }

@@ -1,125 +1,92 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Thai officers",
-            "p_2": "Indian formations",
-            "p_3": "Food Controller"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Singapore Island",
-            "l_3": "Penang",
-            "l_4": "Perak River",
-            "l_5": "Kelantan",
-            "l_6": "Kuantan",
-            "l_7": "Kuala Lumpur",
-            "l_8": "Ipoh",
-            "l_9": "Jerantut",
-            "l_10": "Netherlands East Indies",
-            "l_11": "Bali"
+            "l_1": "Singapore",
+            "l_2": "South Sumatra",
+            "l_3": "Java",
+            "l_4": "Tekong",
+            "l_5": "Pengerang",
+            "l_6": "Pulau Brani",
+            "l_7": "Blakang Mati",
+            "l_8": "Johore River",
+            "l_9": "Pulau Bukum",
+            "l_10": "Pulau Ubin",
+            "l_11": "Sembilan Islands"
         },
         "events": {
-            "e_1": "Outbreak of Hostilities",
-            "e_2": "Operation MATADOR",
-            "e_3": "World War II"
+            "e_1": "Japanese advance towards Singapore",
+            "e_2": "Defense of Singapore Island"
         },
         "organisations": {
-            "o_1": "Asiatic Petroleum Company",
-            "o_2": "British North Borneo Volunteers",
-            "o_3": "Sarawak Rangers",
-            "o_4": "Civil Government"
+            "o_1": "Indian State Forces",
+            "o_2": "Headquarters Malaya Command",
+            "o_3": "Brigadier Royal Artillery"
         }
     },
     "keywords": [
-        "War",
-        "Military Operations",
-        "Supplies",
-        "Food Rationing",
-        "Ammunition",
-        "Thailand",
-        " Singapore",
-        "Malaya"
+        "morale",
+        "attack",
+        "defence",
+        "coastal defence",
+        "garrison"
     ],
     "themes": [
         "Military Operations",
-        "Supply Chain Management",
-        "Diplomacy",
-        "Food Supply",
-        "War Strategy"
+        "Strategic Decisions",
+        "Defense Planning"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
+            "e_1"
+        ],
+        "Strategic Decisions": [
             "e_2"
         ],
-        "Supply Chain Management": [
-            "e_1"
-        ],
-        "Food Supply": [
-            "e_1"
-        ],
-        "Diplomacy": [
-            "e_1"
-        ],
-        "War Strategy": [
+        "Defense Planning": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1941",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The outbreak of hostilities marks the beginning of military operations in Malaya."
+            "eventSummary": "The Japanese advance towards Singapore presents a significant threat to the Allied positions."
         },
         {
             "event": "e_2",
-            "date": "Early 1941",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_8",
+                "l_9",
+                "l_10",
+                "l_11"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
                 "o_2",
                 "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation MATADOR is a planned military operation to fulfill strategic needs in Malaya."
-        },
-        {
-            "event": "e_3",
-            "date": "1939-1945",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "World War II impacts the logistical and military operations in Malaya."
+            "eventSummary": "The defense of Singapore Island is planned to counter potential enemy landings and to strengthen coastal defenses."
         }
     ]
 }

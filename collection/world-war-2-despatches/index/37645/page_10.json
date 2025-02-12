@@ -1,105 +1,128 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice-Admiral R. Leatham",
-            "p_2": "Air Commodore W. Sowrey",
-            "p_3": "Brigadier H. Daniel",
-            "p_4": "Brigadier General the Hon. Sir Godfrey Rhodes",
-            "p_5": "Lady Moore"
+            "p_1": "Second-Lieutenant Bhagat"
         },
         "locations": {
-            "l_1": "Chisimaio",
-            "l_2": "Merca",
-            "l_3": "Mogadiscio",
-            "l_4": "Berbera",
-            "l_5": "Kenya",
-            "l_6": "Uganda",
-            "l_7": "Tanganyika",
-            "l_8": "Nyasaland",
-            "l_9": "Northern Rhodesia"
+            "l_1": "Aicota",
+            "l_2": "Barentu",
+            "l_3": "Arresa",
+            "l_4": "Adi Raghebla",
+            "l_5": "Mai Terageit",
+            "l_6": "Gallabat",
+            "l_7": "Asmara",
+            "l_8": "Gedarefi",
+            "l_9": "Gondar",
+            "l_10": "Kassala",
+            "l_11": "Tessenei",
+            "l_12": "Unm Hagar",
+            "l_13": "Walkait",
+            "l_14": "Sabdarat",
+            "l_15": "Chelga",
+            "l_16": "Karawa",
+            "l_17": "Abyssinia",
+            "l_18": "Wahni",
+            "l_19": "Metemma",
+            "l_20": "Gandwa",
+            "l_21": "Keren",
+            "l_22": "Ponte Mussolini",
+            "l_23": "Eritrea"
         },
         "events": {
-            "e_1": "Bombardment of Chisimaio",
-            "e_2": "Operations in the Northern Frontier District"
+            "e_1": "Battle of Agordat",
+            "e_2": "Battle of Keren",
+            "e_3": "Raid of No. 2 M.M.G. Group S.D.F."
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "South African Air Force",
-            "o_3": "Kenya and Uganda Railways and Harbours Administration",
-            "o_4": "Kenya Women's Emergency Organisation"
+            "o_1": "2gth Indian Infantry Brigade",
+            "o_2": "9th Indian Infantry Brigade",
+            "o_3": "3/12 Frontier Force Regiment",
+            "o_4": "21 Field Company, Sappers and Miners",
+            "o_5": "11th Indian Infantry Brigade",
+            "o_6": "R.A.F.",
+            "o_7": "M.M.G. Group S.D.F."
         }
     },
     "keywords": [
-        "military operations",
-        "air superiority",
-        "Royal Navy",
-        "S.A.A.F.",
-        "Kenya Women's Emergency Organisation"
+        "Indian Infantry Brigade",
+        "mines",
+        "demolition",
+        "retreat",
+        "intelligence",
+        "enemy",
+        "pursuit",
+        "patrol"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Logistics",
-        "Community Support"
+        "Pursuit",
+        "Defense",
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Pursuit": [
             "e_2"
         ],
-        "Air Support": [
+        "Defense": [
             "e_1"
         ],
-        "Logistics": [
-            "e_2"
-        ],
-        "Community Support": [
-            "e_2"
+        "Reconnaissance": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "not specified",
+            "date": "1st February",
             "locations": [
-                "l_1"
+                "l_22"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Royal Navy provides efficient support through the bombardment of Chisimaio, enabling subsequent military operations."
+            "eventSummary": "Following the completion of the Battle of Agordat, Gazelle Force is directed to pursue the enemy towards Keren."
         },
         {
             "event": "e_2",
-            "date": "5th April",
+            "date": "2nd February",
             "locations": [
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9"
+                "l_21"
             ],
-            "persons": [
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
+            "persons": [],
             "organisations": [
+                "o_4",
                 "o_2",
-                "o_3",
-                "o_4"
+                "o_6"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "During military operations in the Northern Frontier District, troops encounter significant challenges but succeed with the aid of effective logistics and community support."
+            "eventSummary": "In the pursuit towards Keren, the forces face challenges including demolished bridges and minefields."
+        },
+        {
+            "event": "e_3",
+            "date": "1st February",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 1st February, No. 2 M.M.G. Group S.D.F. conducts a successful raid on an enemy position, inflicting casualties."
         }
     ]
 }

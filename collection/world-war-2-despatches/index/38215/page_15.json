@@ -1,177 +1,106 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Civil Health Authorities",
-            "p_2": "War Office",
-            "p_3": "Naval authorities"
+            "p_1": "Commander 3 Indian Corps",
+            "p_2": "Inspector General of Police",
+            "p_3": "Chairman of the Defence Security Committee"
         },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Johore",
-            "l_3": "Segamat",
-            "l_4": "Batu Anam",
-            "l_5": "Johore Bahru",
-            "l_6": "Malacca",
-            "l_7": "Dutch East Indies",
-            "l_8": "North and Central Malaya",
-            "l_9": "Singapore Island",
-            "l_10": "Kuala Lumpur"
+            "l_1": "Port Dickson",
+            "l_2": "Kedah",
+            "l_3": "Singapore",
+            "l_4": "Malaya",
+            "l_5": "Far East",
+            "l_6": "China",
+            "l_7": "Naval Base",
+            "l_8": "British Borneo",
+            "l_9": "Straits Settlements",
+            "l_10": "Thailand"
         },
         "events": {
-            "e_1": "Evacuation of Reserves",
-            "e_2": "Establishment of Dumps",
-            "e_3": "Food Situation Monitoring",
-            "e_4": "Water Economy Measures",
-            "e_5": "Medical Accommodation Challenges",
-            "e_6": "Evacuation of Sick and Wounded",
-            "e_7": "Railway Congestion Issues"
+            "e_1": "War with Japan",
+            "e_2": "Exercise with troops",
+            "e_3": "Senior Military Commanders Conference"
         },
         "organisations": {
-            "o_1": "Royal Engineers",
-            "o_2": "Australian Base Hospital",
-            "o_3": "Yangtze River Boat"
+            "o_1": "Far East Combined Bureau",
+            "o_2": "Malayan Security Service",
+            "o_3": "Malayan Civil organization",
+            "o_4": "Civil Police Intelligence Branch"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Congestion",
-        "Water Economy",
-        "Hospital Accommodation",
-        "Military Reserves"
+        "training",
+        "intelligence",
+        "defence",
+        "aerodromes",
+        "malaya"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Supplies",
-        "Public Health",
-        "Transportation Issues"
+        "Intelligence",
+        "Security"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_6"
+            "e_2"
         ],
-        "Logistics and Supplies": [
-            "e_2",
-            "e_3",
-            "e_4",
-            "e_5",
-            "e_7"
+        "Intelligence": [
+            "e_3"
         ],
-        "Public Health": [
-            "e_5",
-            "e_6"
-        ],
-        "Transportation Issues": [
-            "e_7"
+        "Security": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January",
+            "date": "1941",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "The evacuation of reserves is implemented, prompting the creation of new supply dumps in Johore to support military logistics."
+            "eventSummary": "War with Japan breaks out in 1941."
         },
         {
             "event": "e_2",
-            "date": "January",
+            "date": "December 1941",
             "locations": [
-                "l_2",
-                "l_5"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Dumps are established in Johore and near waterways to avoid congestion on Singapore Island and facilitate troop supply."
-        },
-        {
-            "event": "e_3",
-            "date": "January",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Ongoing monitoring of the food situation show it remains satisfactory despite increased population due to refugees."
-        },
-        {
-            "event": "e_4",
-            "date": "January",
-            "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [],
-            "eventSummary": "Strict measures for water economy are introduced in response to the dry season, including public awareness campaigns."
+            "eventSummary": "An exercise with troops to study withdrawal problems from Kedah is scheduled for early December but is cancelled due to imminent war."
         },
         {
-            "event": "e_5",
-            "date": "January",
+            "event": "e_3",
+            "date": "October 1941",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_4"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The need for increased hospital accommodation is highlighted as the healthcare system strains under the pressure of the increasing sick and wounded."
-        },
-        {
-            "event": "e_6",
-            "date": "January",
-            "locations": [
-                "l_1",
-                "l_6"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Sick and wounded personnel are earmarked for evacuation to the UK and India, utilizing the Wu Sueh repurposed as a hospital ship."
-        },
-        {
-            "event": "e_7",
-            "date": "January",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Railway congestion worsens due to rapid military withdrawals, leading to the abandonment of fully laden trains on the Malacca branch."
+            "eventSummary": "A Senior Military Commanders Conference is held to evaluate defence arrangements due to the Japanese threat."
         }
     ]
 }

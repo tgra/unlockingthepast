@@ -1,99 +1,121 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Hermann Goering"
+            "p_1": "Lieutenant-General McCreery",
+            "p_2": "General Dawley",
+            "p_3": "General Sir Richard McCreery",
+            "p_4": "Major-General Ernest J. Dawley",
+            "p_5": "Major-General John P. Lucas",
+            "p_6": "Lieutenant-General (later Sir Brian) Horrocks",
+            "p_7": "Rear-Admiral (now Admiral Sir Rhoderick) McGrigor"
         },
         "locations": {
-            "l_1": "Anzio",
-            "l_2": "Genoa",
-            "l_3": "Spezia",
-            "l_4": "Leghorn",
-            "l_5": "Ljubljana",
-            "l_6": "Bologna",
-            "l_7": "Rimini",
-            "l_8": "Fiume"
+            "l_1": "Salerno",
+            "l_2": "Sele River",
+            "l_3": "Montecorvino airfield",
+            "l_4": "Naples",
+            "l_5": "Capodichino",
+            "l_6": "Pomigliano",
+            "l_7": "Bizerta",
+            "l_8": "Oran",
+            "l_9": "Tripoli",
+            "l_10": "Sicily",
+            "l_11": "Spezia",
+            "l_12": "Genoa",
+            "l_13": "Malta",
+            "l_14": "Calabrian",
+            "l_15": "Milazzo area",
+            "l_16": "valley of the River Volturno",
+            "l_17": "Triflisco",
+            "l_18": "Capua",
+            "l_19": "Cancello"
         },
         "events": {
-            "e_1": "Build-up of enemy forces in the Anzio bridgehead",
-            "e_2": "Arrivals of various divisions"
+            "e_1": "Operation BAYTOWN",
+            "e_2": "D-day",
+            "e_3": "D plus 4",
+            "e_4": "assault phase"
         },
         "organisations": {
-            "o_1": "Tenth Army",
-            "o_2": "Fourteenth Army",
-            "o_3": "LXXVI Panzer Corps",
-            "o_4": "I Parachute Corps",
-            "o_5": "G.H.Q. High Mountain Battalion",
-            "o_6": "SS Division"
+            "o_1": "United States Army",
+            "o_2": "Eighth Army",
+            "o_3": "Seventh Army",
+            "o_4": "Desert Air Force",
+            "o_5": "Tactical Bomber Force",
+            "o_6": "Army Group Royal Artillery",
+            "o_7": "30 Corps",
+            "o_8": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "Panzer Division",
-        "Infantry Division",
-        "Army Reserve",
-        "Military Forces",
-        "Divisional Arrivals"
+        "invasion",
+        "assault",
+        "landing",
+        "convoys",
+        "artillery",
+        "air support"
     ],
     "themes": [
         "Military Operations",
-        "Troop Movements",
-        "Strategic Deployments",
-        "Formation and Reorganization"
+        "Naval Warfare",
+        "Air Support"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Troop Movements": [
-            "e_2"
-        ],
-        "Strategic Deployments": [
-            "e_2"
-        ],
-        "Formation and Reorganization": [
             "e_1",
             "e_2"
+        ],
+        "Naval Warfare": [
+            "e_1"
+        ],
+        "Air Support": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 2nd - February 16th, 1944",
+            "date": "16th August",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_14"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_6"
             ],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_6",
+                "o_8"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The enemy forces are building up in the Anzio bridgehead during early February 1944, indicating an escalation of military presence in the region."
+            "eventSummary": "Operation BAYTOWN is planned and executed with two infantry divisions, reinforced by an armoured and an infantry brigade, crossing the Calabrian coast on 16th August."
         },
         {
             "event": "e_2",
-            "date": "January 23rd - February 4th, 1944",
+            "date": "D-day",
             "locations": [
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_4"
             ],
-            "eventSummary": "Various infantry and panzer divisions arrive and position themselves strategically in locations such as Genoa, Leghorn, and Bologna throughout late January to early February 1944."
+            "eventSummary": "D-day marks the start of the assault at Salerno, where troops are set to establish a beachhead amidst significant logistical challenges."
         }
     ]
 }

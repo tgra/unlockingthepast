@@ -1,71 +1,104 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Adriatic Coast",
-            "l_2": "Florence",
-            "l_3": "Pisa",
-            "l_4": "Siena",
-            "l_5": "Apennines",
-            "l_6": "Adriatic coastal plain"
+        "persons": {
+            "p_1": "Hitler",
+            "p_2": "Kesselring"
         },
-        "events": {},
+        "locations": {
+            "l_1": "Mediterranean",
+            "l_2": "Italy",
+            "l_3": "Turkey",
+            "l_4": "Foggia",
+            "l_5": "Apennines",
+            "l_6": "Southern Front",
+            "l_7": "United Kingdom",
+            "l_8": "South France",
+            "l_9": "Balkans",
+            "l_10": "Middle East",
+            "l_11": "Rome",
+            "l_12": "Gaeta",
+            "l_13": "Ortona",
+            "l_14": "North Africa"
+        },
+        "events": {
+            "e_1": "Surrender of Italy",
+            "e_2": "Operation POINTBLANK",
+            "e_3": "German withdrawal plan",
+            "e_4": "USSR declaration of war"
+        },
         "organisations": {
-            "o_1": "278 Infantry Division",
-            "o_2": "188 Reserve Mountain Division",
-            "o_3": "Army Group C",
-            "o_4": "Firtu Army H.Q.",
-            "o_5": "Brazilian Hepedinonaty Force",
-            "o_6": "U.S. Corps"
+            "o_1": "Eighth Army"
         }
     },
     "keywords": [
-        "Infantry Division",
-        "Armoured Divisions",
-        "Motorised Divisions",
-        "Parachute Divisions",
-        "Allied Armies",
-        "Italian force"
+        "German divisions",
+        "airborne division",
+        "tactical air force",
+        "strategic air force",
+        "amphibious equipment"
     ],
     "themes": [
         "Military Operations",
-        "Order of Battle",
-        "Allied Strategy"
+        "Strategic Decisions",
+        "Logistical Challenges"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3"
         ],
-        "Order of Battle": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
         ],
-        "Allied Strategy": [
-            "e_1"
+        "Logistical Challenges": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "25th April 1944",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "On April 25, 1944, the Allied armies' order of battle details various divisions positioned across the Adriatic Coast, including U.S. and British forces, preparing for military operations in Italy."
+            "eventSummary": "The surrender of Italy establishes a new phase in the military situation within the Mediterranean."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Operation POINTBLANK is launched, aimed at bombing German infrastructure and military targets in Europe."
+        },
+        {
+            "event": "e_3",
+            "date": "October 1943",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Hitler decides to halt the German withdrawal in Italy, with Kesselring ordered to hold the line as far south as possible."
         }
     ]
 }

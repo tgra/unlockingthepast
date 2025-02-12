@@ -1,81 +1,79 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Blankney",
-            "p_2": "Commodore",
-            "p_3": "Masters"
+            "p_1": "J. F. Somerville",
+            "p_2": "D R MacFarlane",
+            "p_3": "C A G Hutchinson",
+            "p_4": "R Muller",
+            "p_5": "C. Harvey",
+            "p_6": "A T. B Curteis",
+            "p_7": "E N Syfret",
+            "p_8": "H M. Burrough"
         },
         "locations": {
-            "l_1": "Cairo",
-            "l_2": "Malta",
-            "l_3": "Convoy",
-            "l_4": "East"
+            "l_1": "Gibraltar",
+            "l_2": "Malta"
         },
         "events": {
-            "e_1": "Air attack on convoy",
-            "e_2": "Enemy surface action",
-            "e_3": "Convoy steering adjustments"
+            "e_1": "Operation Halberd",
+            "e_2": "Convoy M.G.1",
+            "e_3": "Convoy W.S.11X"
         },
         "organisations": {
-            "o_1": "JU",
-            "o_2": "Beaufighter",
-            "o_3": "Spitfires"
+            "o_1": "R.A.F.",
+            "o_2": "Force H",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
-        "Convoy",
-        "Air Attack",
-        "Enemy Surface Action",
-        "Cairo",
-        "Malta"
+        "submarines",
+        "merchant ships",
+        "convoy",
+        "tactical efficiency"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
-        "Air Support",
-        "Tactical Decisions"
+        "Naval Strategy",
+        "Air Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_1",
             "e_2"
         ],
-        "Naval Engagements": [
-            "e_1",
-            "e_3"
-        ],
-        "Air Support": [
+        "Air Cooperation": [
             "e_1"
-        ],
-        "Tactical Decisions": [
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "0710",
+            "date": "8th October, 1941",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_2"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "An air attack is carried out on the convoy, causing damage to vessels and prompting a tactical response to protect them."
+            "eventSummary": "Operation Halberd, a military operation to secure the passage of H.M.S. BRECONSHIRE and merchant ships to Malta, is reported on 8th October, 1941."
         },
         {
             "event": "e_2",
-            "date": "Various (ongoing)",
+            "date": "24th September, 1941",
             "locations": [
                 "l_1"
             ],
@@ -83,28 +81,28 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The enemy initiates surface actions against the convoy, necessitating the concentration of naval forces."
+            "connectedEvents": [],
+            "eventSummary": "Convoy M.G.1 departs with women and children on board, leading to subsequent considerations for escort duties."
         },
         {
             "event": "e_3",
-            "date": "0730-1030",
+            "date": "25th September, 1941",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_3",
+                "p_4",
+                "p_5"
             ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "organisations": [
+                "o_2"
             ],
-            "eventSummary": "The commander makes several critical steering adjustments to the convoy to evade threats from the enemy."
+            "connectedEvents": [],
+            "eventSummary": "Convoy W.S.11X is successfully coordinated by various naval assets, including the H.M. Ships and merchant vessels, navigating through the Straits of Gibraltar."
         }
     ]
 }

@@ -2,60 +2,50 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Paris",
-            "l_2": "Seine",
-            "l_3": "Caen",
-            "l_4": "Sword beach",
-            "l_5": "Portland Bill",
-            "l_6": "Mortain"
+            "l_1": "Continent",
+            "l_2": "France",
+            "l_3": "England",
+            "l_4": "Southern France",
+            "l_5": "Denmark",
+            "l_6": "Norway"
         },
         "events": {
             "e_1": "D-Day",
-            "e_2": "D + 1",
-            "e_3": "D + 2",
-            "e_4": "Counterattack in Mortain",
-            "e_5": "Air operations in August",
-            "e_6": "United States Ninth Air Force engagement"
+            "e_2": "Operation D-Day"
         },
         "organisations": {
-            "o_1": "Allied Forces",
-            "o_2": "German Air Force (G.A.F.)",
-            "o_3": "R.A.F. Bomber Command"
+            "o_1": "Royal Observer Corps",
+            "o_2": "G.A.F.",
+            "o_3": "Allied Air Forces",
+            "o_4": "R.C.A.F."
         }
     },
     "keywords": [
-        "bombing operations",
-        "Allied bombers",
-        "fighter units",
-        "enemy aircraft",
-        "Naval minesweepers",
-        "air support",
-        "reconnaissance",
-        "Operation D-Day"
+        "merchant vessels",
+        "fighter forces",
+        "supplies",
+        "aircraft recognition",
+        "squadrons"
     ],
     "themes": [
+        "Military Operations",
         "Air Operations",
-        "Enemy Engagement",
-        "Allied Strategy",
-        "Military Impact",
-        "Weather Conditions",
+        "Reinforcement",
         "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4",
-            "e_5"
-        ],
-        "Enemy Engagement": [
-            "e_1",
             "e_2"
         ],
         "Logistics": [
-            "e_4",
-            "e_5"
+            "e_1"
+        ],
+        "Air Operations": [
+            "e_1"
+        ],
+        "Reinforcement": [
+            "e_2"
         ]
     },
     "eventConnections": [
@@ -64,89 +54,38 @@
             "date": "D-Day",
             "locations": [
                 "l_1",
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "On D-Day, enemy Air Force begins reconnaissance of the Channel areas, culminating in air activity following the Allied assault."
-        },
-        {
-            "event": "e_2",
-            "date": "D + 1",
-            "locations": [
-                "l_1",
+                "l_2",
                 "l_3",
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "On D + 1, significant enemy air activity occurs, with 59 enemy aircraft reported and engagements resulting in the destruction of several enemy planes."
-        },
-        {
-            "event": "e_3",
-            "date": "D + 2",
-            "locations": [
                 "l_4",
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On D + 2, the enemy conducts attacks against shipping off Sword beach and a destroyer is sunk due to these efforts."
-        },
-        {
-            "event": "e_4",
-            "date": "Mid-August",
-            "locations": [
+                "l_5",
                 "l_6"
             ],
             "persons": [],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "During mid-August, the German Air Force launches a strong counterattack in the Mortain area, resulting in increased sorties."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On D-Day, various allied squadrons operate from the beach-head, significantly contributing to the air coverage during the invasion."
         },
         {
-            "event": "e_5",
-            "date": "August",
-            "locations": [],
+            "event": "e_2",
+            "date": "D-Day to 30th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
             "persons": [],
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "In August, as the Allied armies break out, G.A.F. forces increase their focus on ground support while struggling with logistics."
-        },
-        {
-            "event": "e_6",
-            "date": "25th August",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_1"
+            "connectedEvents": [
+                "e_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "On 25th August, United States Ninth Air Force fighters achieve significant success, destroying numerous enemy aircraft in combat."
+            "eventSummary": "From D-Day to the end of September, air opposition decreased dramatically, contrary to expectations of heavy attacks."
         }
     ]
 }

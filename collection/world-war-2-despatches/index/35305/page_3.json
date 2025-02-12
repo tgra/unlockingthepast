@@ -1,103 +1,123 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General the Viscount Gort"
+            "p_1": "Major-General H. C. Loyd",
+            "p_2": "Major-General Hon. H. R. L. G. Alexander",
+            "p_3": "Major-General B. L. Montgomery",
+            "p_4": "Major-General D. G. Johnson",
+            "p_5": "Colonel Bertschi",
+            "p_6": "General Georges"
         },
         "locations": {
-            "l_1": "France",
-            "l_2": "Belgium",
-            "l_3": "Cherbourg",
-            "l_4": "Nantes",
-            "l_5": "St. Nazaire",
-            "l_6": "Brest"
+            "l_1": "Amiens",
+            "l_2": "Maulde-Gruson",
+            "l_3": "Arras",
+            "l_4": "Bouvines",
+            "l_5": "Lannoy",
+            "l_6": "Lille",
+            "l_7": "Saar front"
         },
         "events": {
-            "e_1": "British Expeditionary Force deployment",
-            "e_2": "First Despatch report"
+            "e_1": "takeover of the Maulde-Gruson sector",
+            "e_2": "initial occupation of the line by the British Expeditionary Force",
+            "e_3": "4th December takeover by British infantry brigade",
+            "e_4": "work on pill-boxes by Royal Engineers"
         },
         "organisations": {
-            "o_1": "British Expeditionary Force",
-            "o_2": "Board of Trade",
-            "o_3": "Admiralty",
-            "o_4": "French Naval Authorities",
-            "o_5": "French Military Authorities",
-            "o_6": "French Civil Authorities"
+            "o_1": "3rd Corps",
+            "o_2": "French road control (Regulatrice Routiere)",
+            "o_3": "British Expeditionary Force",
+            "o_4": "Royal Engineers",
+            "o_5": "X Force",
+            "o_6": "Auxiliary Military Pioneer Corps"
         }
     },
     "keywords": [
-        "British Expeditionary Force",
-        "Despatches",
-        "War",
-        "Troops",
-        "Landing",
-        "Transportation"
+        "traffic regulation",
+        "road movement",
+        "sector",
+        "anti-tank",
+        "defensive system"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "International Cooperation"
+        "Defensive Strategies",
+        "Coordination with Allies",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Defensive Strategies": [
+            "e_4"
+        ],
+        "Coordination with Allies": [
+            "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_1"
-        ],
-        "International Cooperation": [
-            "e_1"
+        "Logistics": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd September 1939 to 31st January 1940",
+            "date": "3rd October",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The British Expeditionary Force is deployed to France, marking the start of military operations under the command of General the Viscount Gort, focusing on conditions of secrecy and international collaboration for the landing."
+            "connectedEvents": [],
+            "eventSummary": "3rd Corps takes over the Maulde-Gruson sector from the French."
         },
         {
             "event": "e_2",
-            "date": "25th April 1940",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6"
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_3"
             ],
+            "connectedEvents": [],
+            "eventSummary": "The initial occupation of the line by the British Expeditionary Force is completed."
+        },
+        {
+            "event": "e_3",
+            "date": "4th December",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A British infantry brigade takes over the sector on the Saar front without enemy interference."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
             "persons": [
-                "p_1"
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_4",
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The First Despatch report is submitted by General the Viscount Gort, outlining the details of the British Expeditionary Force's deployment and operation success after the initial phases of landing in France."
+            "connectedEvents": [],
+            "eventSummary": "Work on the construction of pill-boxes is conducted by the Royal Engineers."
         }
     ]
 }

@@ -1,0 +1,103 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Blanchard",
+            "p_2": "Admiral Abrial",
+            "p_3": "General Fagalde",
+            "p_4": "General Koeltz",
+            "p_5": "H.M. the King of the Belgians",
+            "p_6": "the C.G.S.",
+            "p_7": "General Prioux"
+        },
+        "locations": {
+            "l_1": "La Panne",
+            "l_2": "Bray Dunes",
+            "l_3": "Malo-les-Bains",
+            "l_4": "Dunkirk",
+            "l_5": "Coxyde",
+            "l_6": "Ypres",
+            "l_7": "Bergues",
+            "l_8": "Hazebrouck",
+            "l_9": "Premesques",
+            "l_10": "Houtkerque",
+            "l_11": "Poperinghe",
+            "l_12": "Bethune",
+            "l_13": "Lille",
+            "l_14": "Cassel",
+            "l_15": "Wormhoudt"
+        },
+        "events": {
+            "e_1": "Belgian Armistice",
+            "e_2": "Withdrawal to the Sea"
+        },
+        "organisations": {
+            "o_1": "G.H.Q.",
+            "o_2": "French 1st Army",
+            "o_3": "B.E.F."
+        }
+    },
+    "keywords": [
+        "embarkation",
+        "evacuation",
+        "capitulation",
+        "military operations",
+        "armistice"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "27th May",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 27th May, it is reported that H.M. the King of the Belgians has requested an armistice effective from midnight."
+        },
+        {
+            "event": "e_2",
+            "date": "28th May",
+            "locations": [
+                "l_4",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_4",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 28th May, General Blanchard arrives at Houtkerque to discuss the urgent withdrawal of troops after the Belgian Army has ceased to exist."
+        }
+    ]
+}

@@ -1,87 +1,131 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Assistant Director of Transportation"
+            "p_1": "Colonel Pollock",
+            "p_2": "Lord Cork",
+            "p_3": "General Bethouart",
+            "p_4": "Commander Hubback",
+            "p_5": "General Rug"
         },
         "locations": {
-            "l_1": "Norway",
-            "l_2": "Narvik",
-            "l_3": "Harstad"
+            "l_1": "Harstad",
+            "l_2": "Tromso",
+            "l_3": "Bodo",
+            "l_4": "Hinnoy Island",
+            "l_5": "Narvik",
+            "l_6": "Ofot",
+            "l_7": "Vest Fjords",
+            "l_8": "Scapa Flow",
+            "l_9": "Skaanland",
+            "l_10": "Sorreisa"
         },
         "events": {
-            "e_1": "Evacuation from Norway",
-            "e_2": "Military Campaign in Norway"
+            "e_1": "Evacuation of Personnel",
+            "e_2": "Final Evening of the Evacuation",
+            "e_3": "Embarkation of French Troops"
         },
         "organisations": {
-            "o_1": "Inland Water Transport organization"
+            "o_1": "Royal Engineers",
+            "o_2": "Military Police",
+            "o_3": "Fleet Air Arm",
+            "o_4": "Navy",
+            "o_5": "Admiralty",
+            "o_6": "Norwegian Army"
         }
     },
     "keywords": [
-        "Military Government",
-        "Civil Authorities",
-        "Air Support",
-        "Evacuation",
-        "Inland Water Transport",
-        "Naval Crews"
+        "evacuation",
+        "air attacks",
+        "enemy",
+        "Norwegian authorities",
+        "patrols",
+        "leave",
+        "anti-aircraft artillery",
+        "morale",
+        "embarkation",
+        "destroyers"
     ],
     "themes": [
         "Military Operations",
-        "Logistical Challenges",
-        "Evacuation Strategies",
-        "Coordination Among Forces"
+        "Evacuation Strategy",
+        "Engagement with Enemy"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2"
+            "e_1",
+            "e_2",
+            "e_3"
         ],
-        "Logistical Challenges": [
+        "Evacuation Strategy": [
             "e_1"
         ],
-        "Evacuation Strategies": [
-            "e_1"
-        ],
-        "Coordination Among Forces": [
+        "Engagement with Enemy": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 10, 1947",
+            "date": "June 3rd to 8th",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
+                "l_3",
+                "l_5",
+                "l_9",
+                "l_10"
             ],
             "persons": [
-                "p_1"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "A report details the complexities faced during the evacuation from Norway, emphasizing the need for military control and the challenges of maintaining operational efficiency under pressure."
+            "eventSummary": "The evacuation of personnel is carried out from June 3rd to 8th, with approximately 27,000 men being evacuated with minimal interference from enemy air attacks, reflecting the effective planning and execution of military operations."
         },
         {
             "event": "e_2",
-            "date": "July 10, 1947",
+            "date": "June 7th/8th",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On the final evening of the evacuation, German forces reach the vicinity of Ballangen as the evacuation is concluded successfully despite the challenges faced."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_6"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The military campaign in Norway experiences rapid changes in strategy due to inadequate support and increasing enemy pressure, necessitating a focus on maintaining control and eventual withdrawal."
+            "eventSummary": "The embarkation of French troops is executed carefully under the leadership of General Bethouart, ensuring their withdrawal into safety amidst ongoing enemy threats."
         }
     ]
 }

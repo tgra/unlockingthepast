@@ -1,8 +1,6 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Unnamed Military Officer"
-        },
+        "persons": {},
         "locations": {
             "l_1": "Dover",
             "l_2": "London",
@@ -10,73 +8,66 @@
         },
         "events": {
             "e_1": "Battle of Britain",
-            "e_2": "German Air Raids on London"
+            "e_2": "Heavy raid on London",
+            "e_3": "Day raids by the enemy"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)",
+            "o_1": "R.A.F.",
             "o_2": "Anti-Aircraft Command"
         }
     },
     "keywords": [
-        "air raids",
-        "German pilots",
-        "anti-aircraft defense",
-        "Dover",
-        "London",
-        "R.A.F.",
-        "heavy guns",
-        "Light anti-aircraft",
-        "night raids"
+        "German aircraft",
+        "coastal airfields",
+        "anti-aircraft defence",
+        "Lewis light machineguns",
+        "night operations"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategies",
-        "Air Warfare"
+        "Air Defense",
+        "Technology in Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Defence Strategies": [
+        "Air Defense": [
             "e_1",
             "e_2"
         ],
-        "Air Warfare": [
-            "e_1",
-            "e_2"
+        "Technology in Warfare": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "From 10th July 1940 to 30th September 1940",
+            "date": "From 10th July to 30th September 1940",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Battle of Britain is a series of engagements primarily between air forces, where the R.A.F. destroys 296 enemy aircraft and damages others."
+            "eventSummary": "The Battle of Britain is a significant military conflict from July 10th to September 30th, 1940, focused on air superiority over the UK."
         },
         {
             "event": "e_2",
-            "date": "Starting 7th September 1940",
+            "date": "7th September 1940",
             "locations": [
                 "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
@@ -84,7 +75,20 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The German Air Raids on London commence with severe attacks, but the R.A.F., using increased defenses, begins to break up formations and reduce enemy success."
+            "eventSummary": "On 7th September 1940, the fourth phase of the Battle of Britain began with a heavy raid on London, marking a significant escalation."
+        },
+        {
+            "event": "e_3",
+            "date": "During October 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In October 1940, the enemy conducted day raids primarily with fighter-bombers, though these attacks had limited military significance."
         }
     ]
 }

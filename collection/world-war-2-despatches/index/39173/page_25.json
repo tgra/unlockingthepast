@@ -2,21 +2,82 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "London",
-            "l_2": "Great Britain"
+            "l_1": "Bay of Bengal",
+            "l_2": "Chittagong",
+            "l_3": "Katabdia Island",
+            "l_4": "Maiakhal Island",
+            "l_5": "Calcutta",
+            "l_6": "Howrah Bridge",
+            "l_7": "Jamshedpur",
+            "l_8": "Colombo",
+            "l_9": "Trincomalee",
+            "l_10": "Janali Hat Bridge",
+            "l_11": "Kharagpur",
+            "l_12": "Bally Seaplane Base",
+            "l_13": "La Martiniere School"
         },
-        "events": {},
+        "events": {
+            "e_1": "Enemy attack on Calcutta in December",
+            "e_2": "Opening of R.A.F. Hospital in the Command"
+        },
         "organisations": {
-            "o_1": "His Majesty's Stationery Office"
+            "o_1": "R.A.F.",
+            "o_2": "U.S.A.A-F.",
+            "o_3": "No. 978 Squadron",
+            "o_4": "No. 134 Squadron",
+            "o_5": "R.A.F. Physiological Laboratory",
+            "o_6": "Eastern Air Command",
+            "o_7": "Photographic Reconnaissance Force"
         }
     },
     "keywords": [
-        "London",
-        "Great Britain",
-        "His Majesty's Stationery Office",
-        "1951"
+        "Balloon Squadrons",
+        "health",
+        "photography",
+        "reconnaissance",
+        "malaria"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Health and Welfare",
+        "Aerial Reconnaissance"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1"
+        ],
+        "Health and Welfare": [
+            "e_2"
+        ],
+        "Aerial Reconnaissance": []
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "December",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "During the enemy attack on Calcutta in December, many bombs are dropped in the area occupied by No. 978 Squadron, resulting in casualties and damage."
+        },
+        {
+            "event": "e_2",
+            "date": "April",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The opening of the R.A.F. Hospital in the Command is authorized in April, designed to improve medical care for airmen."
+        }
+    ]
 }

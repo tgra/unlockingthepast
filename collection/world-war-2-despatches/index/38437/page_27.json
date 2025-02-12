@@ -1,116 +1,131 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "General Pile"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "London",
-            "l_2": "Germany",
-            "l_3": "Holland",
-            "l_4": "Essex",
-            "l_5": "Barking",
-            "l_6": "Woolwich",
-            "l_7": "Felsted",
-            "l_8": "Clacton",
-            "l_9": "Great Yarmouth"
+            "l_1": "Bloemendaal",
+            "l_2": "Leiden",
+            "l_3": "Hotel Promenade",
+            "l_4": "The Hague",
+            "l_5": "London",
+            "l_6": "United Kingdom",
+            "l_7": "Deventer",
+            "l_8": "Zwolle",
+            "l_9": "Zutphen",
+            "l_10": "Belgium"
         },
         "events": {
-            "e_1": "Flying Bomb Attacks",
-            "e_2": "Battle of the Bomb",
-            "e_3": "Rocket Campaign"
+            "e_1": "The Attacks: Fourth Phase",
+            "e_2": "Campaign Start",
+            "e_3": "Increased German Attack",
+            "e_4": "Rocket Attacks on London",
+            "e_5": "Fighter-Bomber Operations"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Air Ministry",
-            "o_3": "Allied Armies"
+            "o_1": "Bomber Command",
+            "o_2": "No. 2 Group",
+            "o_3": "Second Tactical Air Force",
+            "o_4": "Combined Chiefs of Staff",
+            "o_5": "No. 12 Group"
         }
     },
     "keywords": [
-        "flying bombs",
-        "missiles",
-        "attacks",
-        "defences",
-        "aircraft",
-        "Diver defences"
+        "Bomber Command",
+        "rocket targets",
+        "German attack",
+        "fighter-bomber operations",
+        "air-launched flying bombs"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Aerial Warfare"
+        "Air Warfare",
+        "Rocket Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_5"
+        ],
+        "Air Warfare": [
             "e_2",
-            "e_3"
+            "e_4"
         ],
-        "Defensive Strategies": [
-            "e_2"
-        ],
-        "Aerial Warfare": [
-            "e_1"
+        "Rocket Warfare": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th September, 1944",
+            "date": "19th November to 31st December, 1944",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_5"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_5"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "On 16th September, 1944, flying bomb attacks resume with the first bomb falling in Essex, marking a serious escalation in aerial warfare."
+            "eventSummary": "The Attacks: Fourth Phase involves a series of rocket attacks on London and the authorization for fighter-bomber operations."
         },
         {
             "event": "e_2",
-            "date": "July to September 1944",
+            "date": "8th September",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_6"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The Battle of the Bomb extends from July to September 1944, as the Allies adapt to ongoing attacks from German flying units and prepare their defences."
+            "eventSummary": "The campaign starts with a series of rocket attacks arriving in the United Kingdom."
         },
         {
             "event": "e_3",
-            "date": "Starting 8th September, 1944",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "date": "October to November",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "The Rocket Campaign that begins on 8th September 1944 introduces new challenges for the defences established against previous bomb attacks."
+            "eventSummary": "An increase in the scale of German rocket attacks on the UK is observed."
+        },
+        {
+            "event": "e_4",
+            "date": "17th November 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On 17th November, four rockets fall in London, killing 14 and injuring 36, raising concerns about the attack's scale."
+        },
+        {
+            "event": "e_5",
+            "date": "21st November onwards",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_7",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Fighter-bomber operations are authorized, leading to multiple sorties against rocket targets."
         }
     ]
 }

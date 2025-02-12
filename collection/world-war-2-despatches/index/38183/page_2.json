@@ -1,126 +1,144 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Wing-Commander Yarde",
-            "p_2": "Colonel Scott",
-            "p_3": "Colonel Faweett",
-            "p_4": "Mr. Killery",
-            "p_5": "Colonel Warren",
-            "p_6": "Air Vice-Marshal Pulford",
-            "p_7": "Air Vice-Marshal Babington",
-            "p_8": "Lieutenant-General Percival",
-            "p_9": "Lieutenant-General Bond"
+            "p_1": "Major-General Dewing",
+            "p_2": "General Playfair"
         },
         "locations": {
-            "l_1": "Singapore",
+            "l_1": "Far East",
             "l_2": "Malaya",
             "l_3": "Burma",
-            "l_4": "Hong Kong",
-            "l_5": "Siam",
-            "l_6": "Gulf of Siam",
-            "l_7": "IndoChina",
-            "l_8": "Kota Bharu",
-            "l_9": "Kelantan",
-            "l_10": "Mersing",
-            "l_11": "Kuantan"
+            "l_4": "Siam",
+            "l_5": "Indo-China",
+            "l_6": "Philippines",
+            "l_7": "Dutch East Indies",
+            "l_8": "Australia",
+            "l_9": "New Zealand",
+            "l_10": "Singapore",
+            "l_11": "Hong Kong",
+            "l_12": "Manila"
         },
         "events": {
-            "e_1": "War with Japan",
-            "e_2": "Formation of General Headquarters Staff",
-            "e_3": "Defence of Malaya"
+            "e_1": "Battle of the Atlantic",
+            "e_2": "Directive of General Headquarters, Far East",
+            "e_3": "Visit to Australia",
+            "e_4": "Visit to Hong Kong",
+            "e_5": "Visit to Manila",
+            "e_6": "Formation of General Headquarters, Far East"
         },
         "organisations": {
-            "o_1": "Far Eastern Combined Bureau",
-            "o_2": "Ministry of Economic Warfare"
+            "o_1": "Royal Navy",
+            "o_2": "Army",
+            "o_3": "Air Force"
         }
     },
     "keywords": [
-        "sickness",
-        "overwork",
-        "intelligence",
-        "war",
-        "defence",
-        "economic warfare",
-        "communications"
+        "Japan",
+        "Home Defence",
+        "Chinese",
+        "Dutch",
+        "Americans"
     ],
     "themes": [
         "Military Operations",
-        "Intelligence",
-        "Healthcare in Military",
-        "Defence Strategy"
+        "Defence Strategy",
+        "International Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Intelligence": [
             "e_2"
         ],
         "Defence Strategy": [
-            "e_3"
+            "e_2",
+            "e_6"
+        ],
+        "International Cooperation": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Officially declared 1941",
+            "date": "August 1940",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Battle of the Atlantic is being prioritized by military leadership."
+        },
+        {
+            "event": "e_2",
+            "date": "Various Dates",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "War with Japan breaks out, prompting a reassessment of military and intelligence capabilities."
-        },
-        {
-            "event": "e_2",
-            "date": "May 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_4",
-                "p_5"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The formation of General Headquarters Staff takes place, aimed at bolstering military planning and coordination."
+            "eventSummary": "The Directive outlines strategies for strengthening defense in the Far East against potential Japanese actions, emphasizing cooperation among all military branches."
         },
         {
             "event": "e_3",
-            "date": "November 1940",
+            "date": "February and October 1941",
             "locations": [
-                "l_2"
+                "l_8"
             ],
-            "persons": [
-                "p_6",
-                "p_7",
-                "p_8",
-                "p_9"
-            ],
+            "persons": [],
             "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The individual visits Australia for purposes related to military strategy and cooperation."
+        },
+        {
+            "event": "e_4",
+            "date": "December 1940 and April 1941",
+            "locations": [
+                "l_11"
             ],
-            "eventSummary": "The Defence of Malaya addresses strategic concerns to protect Singapore, focusing on enemy aircraft and communications."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The individual visits Hong Kong, focusing on military operational matters."
+        },
+        {
+            "event": "e_5",
+            "date": "Various Dates",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Multiple visits to Manila are made, ensuring connections for military operations."
+        },
+        {
+            "event": "e_6",
+            "date": "Not specified",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The General Headquarters for the Far East is formed in Singapore, tasked with coordinating defense efforts."
         }
     ]
 }

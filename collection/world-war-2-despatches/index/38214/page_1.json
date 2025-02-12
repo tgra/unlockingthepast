@@ -1,68 +1,54 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Tom S. V. Phillips",
-            "p_2": "Captain J. C. Leach",
-            "p_3": "Captain W. G. Tennant",
-            "p_4": "Commander C. W. May",
-            "p_5": "Lieutenant Commander F. J. Cartwright",
-            "p_6": "Commander W. T. A. Moran",
-            "p_7": "Lieutenant R. Dyer",
-            "p_8": "Rear-Admiral A. F. E. Palliser"
+            "p_1": "Vice-Admial Sir Geoffrey Layton",
+            "p_2": "Captain W. G. Tennant",
+            "p_3": "Lieutenant-Commander A. G. Skipwith"
         },
         "locations": {
-            "l_1": "Singgora",
-            "l_2": "Pattani",
-            "l_3": "Durban",
-            "l_4": "Anamba Islands",
-            "l_5": "Kuantan",
-            "l_6": "Singapore",
-            "l_7": "Indo-China"
+            "l_1": "United Kingdom",
+            "l_2": "Kra Isthmus",
+            "l_3": "Kota Bharu",
+            "l_4": "Malaya",
+            "l_5": "Singgora",
+            "l_6": "Pattani",
+            "l_7": "Singapore"
         },
         "events": {
-            "e_1": "Sailing of Force Z",
-            "e_2": "Reconnaissance flights by PRINCE OF WALES and REPULSE",
-            "e_3": "Landing attempt by enemy forces at Kuantan",
-            "e_4": "Attack on Force Z by enemy aircraft"
+            "e_1": "Loss of H.M. Ships PRINCE OF WALES and REPULSE",
+            "e_2": "Operations of Force Z"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Eastern Fleet",
-            "o_3": "H.M Ships"
+            "o_1": "British Naval Commander-in-Chief, Eastern Fleet",
+            "o_2": "Admiralty"
         }
     },
     "keywords": [
-        "Force Z",
-        "fighter protection",
-        "reconnaissance",
-        "Japanese naval aircraft",
-        "enemy landing",
-        "Kuantan"
+        "Despatch",
+        "Operations",
+        "Japanese forces",
+        "H.M. Ships",
+        "Recognition",
+        "Air Force"
     ],
     "themes": [
-        "Military Strategy",
-        "Naval Operations",
-        "Air Reconnaissance",
-        "Enemy Engagements"
+        "Military Operations",
+        "Naval Engagement",
+        "Leadership Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Air Reconnaissance": [
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_1",
-            "e_3"
+        "Leadership Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8th December",
+            "date": "10th December, 1941",
             "locations": [
                 "l_1",
                 "l_4"
@@ -70,66 +56,37 @@
             "persons": [
                 "p_1",
                 "p_2",
-                "p_4"
+                "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "Force Z sets sail at 1735, navigating past the Anamba Islands, with expectations of locating enemy forces off Singgora and Pattani."
+            "eventSummary": "The loss of H.M. Ships PRINCE OF WALES and REPULSE occurs, marking a significant naval engagement against Japanese forces."
         },
         {
             "event": "e_2",
-            "date": "9th December",
+            "date": "8th December, 1941",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Reconnaissance flights are carried out by PRINCE OF WALES and REPULSE to ascertain enemy presence and activities."
-        },
-        {
-            "event": "e_3",
-            "date": "10th December",
-            "locations": [
+                "l_3",
                 "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_8"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Force Z turns towards Kuantan after reports of an enemy landing, considering the strategic importance of the location."
-        },
-        {
-            "event": "e_4",
-            "date": "10th December",
-            "locations": [
-                "l_5"
+                "l_6",
+                "l_7"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Force Z is attacked by enemy aircraft after investigating barges near Kuantan, confirming the persistent threat from Japanese forces."
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operations of Force Z are initiated to attack Japanese transports and warships landing troops, occurring amidst heavy attacks on British Air Force assets."
         }
     ]
 }

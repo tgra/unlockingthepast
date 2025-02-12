@@ -1,125 +1,141 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General Franklyn",
-            "p_2": "General Prioux",
-            "p_3": "General Martel",
-            "p_4": "General Blanchard",
-            "p_5": "General Altmeyer",
-            "p_6": "Major-General R. P. Pakenham-Walsh",
-            "p_7": "Général de Brigade Bertschi",
-            "p_8": "Général de Brigade Barthélémy"
+            "p_1": "Lt.-General Sir Ronald F. Adam, Bt.",
+            "p_2": "Major-General W. G. Holmes",
+            "p_3": "Major-General E. A. Osborne",
+            "p_4": "Major-General V. M. Fortune",
+            "p_5": "Major-General G. le Q. Martel"
         },
         "locations": {
-            "l_1": "Vimy area",
-            "l_2": "Arras",
-            "l_3": "Scarpe",
-            "l_4": "Bapaume",
-            "l_5": "Cambrai",
-            "l_6": "Douai",
-            "l_7": "Mont St. Eloi",
-            "l_8": "Seclin",
-            "l_9": "Lorette ridge",
-            "l_10": "Béthune",
-            "l_11": "Lens",
-            "l_12": "Carvin",
-            "l_13": "Canal line",
-            "l_14": "Escaut",
-            "l_15": "La Basse",
-            "l_16": "St. Omer"
+            "l_1": "Dunkirk",
+            "l_2": "London",
+            "l_3": "France",
+            "l_4": "Belgium",
+            "l_5": "River Dyle",
+            "l_6": "Arras",
+            "l_7": "Canal line",
+            "l_8": "Escaut",
+            "l_9": "Amiens",
+            "l_10": "Croix de Poperinghe",
+            "l_11": "Bailleul"
         },
         "events": {
-            "e_1": "Battle of Arras",
-            "e_2": "Withdrawal of Frankforce"
+            "e_1": "Operations at Dunkirk",
+            "e_2": "Expansion of the British Expeditionary Force",
+            "e_3": "Arrival of 3rd Corps in France",
+            "e_4": "Postponement of the relief of French troops",
+            "e_5": "Despatch of 3rd Corps to France"
         },
         "organisations": {
-            "o_1": "French Cavalry Corps",
-            "o_2": "1st Army Tank Brigade",
-            "o_3": "5th Division",
-            "o_4": "30th Division",
-            "o_5": "138th Infantry Brigade",
-            "o_6": "Macforce",
-            "o_7": "Petreforce"
+            "o_1": "British Expeditionary Force",
+            "o_2": "G.H.Q."
         }
     },
     "keywords": [
-        "French Army",
-        "Arras",
-        "Battle",
-        "Tank Brigade",
-        "Counter-attack",
-        "Withdrawal",
-        "Reconnaissance"
+        "British Expeditionary Force",
+        "Dunkirk",
+        "3rd Corps",
+        "France",
+        "Belgium"
     ],
     "themes": [
         "Military Operations",
-        "Defense",
-        "Withdrawal Strategy",
-        "Collaboration Among Forces"
+        "Force Expansion",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Force Expansion": [
             "e_2"
         ],
-        "Defense": [
-            "e_1"
-        ],
-        "Withdrawal Strategy": [
-            "e_2"
-        ],
-        "Collaboration Among Forces": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "20th May - 22nd May",
+            "date": "31st May - 2nd June, 1940",
             "locations": [
-                "l_1",
-                "l_2",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operations at Dunkirk take place as the British Expeditionary Force executes a withdrawal."
+        },
+        {
+            "event": "e_2",
+            "date": "February - May, 1940",
+            "locations": [
                 "l_3",
-                "l_4",
-                "l_5",
-                "l_9"
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The British Expeditionary Force's expansion continues with the despatch of additional corps."
+        },
+        {
+            "event": "e_3",
+            "date": "Early February 1940",
+            "locations": [
+                "l_3"
             ],
             "persons": [
                 "p_1",
                 "p_2",
                 "p_3",
                 "p_4",
-                "p_6"
+                "p_5"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_6"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "General Franklyn leads British forces to secure the line of the rivers Scarpe and Cojeul, engaging in the Battle of Arras. They achieve initial objectives but face strong enemy resistance."
+            "eventSummary": "The 3rd Corps, commanded by Lt.-General Sir Ronald F. Adam, is officially announced to arrive in France."
         },
         {
-            "event": "e_2",
-            "date": "23rd May",
+            "event": "e_4",
+            "date": "February 1940",
             "locations": [
-                "l_2",
-                "l_8"
+                "l_3",
+                "l_10"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_7"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The relief of French troops is postponed due to situations elsewhere in Europe."
+        },
+        {
+            "event": "e_5",
+            "date": "March 1940",
+            "locations": [
+                "l_3"
             ],
-            "eventSummary": "Under pressure from advancing enemy forces, General Franklyn orders the withdrawal of Frankforce from Arras to Seclin to regroup and prepare for future counter-attacks."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 3rd Corps is finally despatched to France, concluding the month-long postponement."
         }
     ]
 }

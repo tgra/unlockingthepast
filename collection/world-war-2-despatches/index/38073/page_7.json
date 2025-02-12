@@ -1,109 +1,88 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain A. D. Nicholl, D.S.O.",
-            "p_2": "Rear Admiral Commanding, Fifteenth Cruiser Squadron"
+            "p_1": "Rear Admiral Commanding",
+            "p_2": "Captain (D)"
         },
         "locations": {
-            "l_1": "Libya",
-            "l_2": "Crete",
-            "l_3": "Tobruk",
-            "l_4": "Malta",
-            "l_5": "Taranto",
-            "l_6": "Mediterranean Sea"
+            "l_1": "southward",
+            "l_2": "northeast",
+            "l_3": "west",
+            "l_4": "eastward"
         },
         "events": {
-            "e_1": "Convoy Engagement",
-            "e_2": "Enemy Aircraft Interception",
-            "e_3": "Enemy Cruiser Encounter"
+            "e_1": "Air Attack",
+            "e_2": "Smoke Laying Division Actions"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Admiralty"
+            "o_1": "Fifteenth Cruiser Squadron",
+            "o_2": "Fourteenth Destroyer Flotilla",
+            "o_3": "Twenty-Second Destroyer Flotilla",
+            "o_4": "3rd Division",
+            "o_5": "2nd Division"
         }
     },
     "keywords": [
         "Convoy",
-        "Enemy Aircraft",
-        "Cruisers",
-        "Engagement",
-        "Fleet"
+        "Striking Force",
+        "Air Attack",
+        "Cruiser",
+        "Enemy",
+        "Smoke",
+        "Engagement"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Strategic Decisions"
+        "Naval Combat",
+        "Tactical Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Naval Warfare": [
-            "e_1",
-            "e_3"
-        ],
-        "Strategic Decisions": [
+        "Tactical Maneuvers": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 21-23, 1941",
+            "date": "Date not provided",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_4"
+                "southward",
+                "northeast"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The convoy engages in naval operations to avoid enemy forces while en route to Malta, altering courses multiple times to evade interception."
+            "eventSummary": "A heavy air attack is executed against the convoy and the striking force, primarily affecting the convoy."
         },
         {
             "event": "e_2",
-            "date": "March 21, 1941",
+            "date": "Date not provided",
             "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Enemy aircraft sight the convoy, prompting evasive maneuvers as the forces aim to avoid engagement while continuing towards Malta."
-        },
-        {
-            "event": "e_3",
-            "date": "March 23, 1941",
-            "locations": [
-                "l_2",
-                "l_4"
+                "northeast",
+                "west",
+                "eastward"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Encounter with enemy cruisers occurs as the Royal Navy ships engage in firefights, successfully driving off the enemy forces."
+            "connectedEvents": [],
+            "eventSummary": "The smoke laying division carried out its operations effectively, assisting in concealing the convoy from enemy engagements."
         }
     ]
 }

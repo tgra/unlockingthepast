@@ -2,55 +2,84 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Normandy",
-            "l_2": "North Africa",
-            "l_3": "United Kingdom"
+            "l_1": "Morsalines",
+            "l_2": "Houlgate",
+            "l_3": "Ouistreham",
+            "l_4": "Point de Hoe",
+            "l_5": "St. Martin de Varreville"
         },
         "events": {
-            "e_1": "D-Day"
+            "e_1": "Attacks on Coastal Batteries",
+            "e_2": "Raid by R.A.F. Bomber Command"
         },
         "organisations": {
-            "o_1": "A.E.A.F.",
-            "o_2": "Supreme Headquarters Allied Expeditionary Force"
+            "o_1": "US Eighth Air Force",
+            "o_2": "R.A.F. Bomber Command",
+            "o_3": "United States Ninth Air Force",
+            "o_4": "A.E.A.F."
         }
     },
     "keywords": [
-        "operational aircraft",
-        "maintenance personnel",
-        "supply organisation",
-        "airfield construction",
-        "Tactical Air Forces"
+        "Coastal Batteries",
+        "Air Bombardment",
+        "Reconnaissance",
+        "Casemates",
+        "Military Operations"
     ],
     "themes": [
         "Military Operations",
-        "Supply Chain Management",
-        "Airfield Operations"
+        "Aerial Bombardment",
+        "Damage Assessment"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
         ],
-        "Supply Chain Management": [
-            "e_1"
+        "Aerial Bombardment": [
+            "e_2"
         ],
-        "Airfield Operations": [
-            "e_1"
-        ]
+        "Damage Assessment": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
+            "date": "April 12, 1944 - June 5, 1944",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Attacks on Coastal Batteries occur from April 12 to June 5, 1944, involving various air forces targeting military installations."
+        },
+        {
+            "event": "e_2",
+            "date": "May 28-29, 1944",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "On D-Day, over 6,600 operational aircraft of the A.E.A.F. are prepared for combat, supported by a robust maintenance and supply chain, emphasizing the critical role of effective planning and logistics in military operations."
+            "eventSummary": "On the night of May 28-29, 1944, a raid by 64 Lancasters of R.A.F. Bomber Command is conducted, aiming to damage enemy coastal defenses effectively."
         }
     ]
 }

@@ -1,127 +1,159 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General R. L. Petre",
-            "p_2": "Major-General W. N. Herbert",
-            "p_3": "Major-General H. O. Curtis",
-            "p_4": "Air Marshal A. S. Barratt",
-            "p_5": "General Georges"
+            "p_1": "Sir John Dill",
+            "p_2": "General Blanchard",
+            "p_3": "Major-General Eastwood",
+            "p_4": "Str Ronald Adam"
         },
         "locations": {
-            "l_1": "Boulogne",
-            "l_2": "Dieppe",
-            "l_3": "Brest",
-            "l_4": "St. Malo",
-            "l_5": "Caen",
-            "l_6": "Nantes",
-            "l_7": "Rennes",
-            "l_8": "Rouen",
-            "l_9": "Abancourt",
-            "l_10": "Holland",
-            "l_11": "Belgium"
+            "l_1": "Ypres",
+            "l_2": "Menin",
+            "l_3": "Ghelewe",
+            "l_4": "Ledeghem",
+            "l_5": "Dunkirk",
+            "l_6": "Bruges",
+            "l_7": "Carvin",
+            "l_8": "Bois d'Epinoy",
+            "l_9": "Attiches",
+            "l_10": "Lys position",
+            "l_11": "Ypres-Comines canal",
+            "l_12": "Fiench First Group of Armies",
+            "l_13": "North African Division"
         },
         "events": {
-            "e_1": "Dyle and Escaut Plans",
-            "e_2": "Deployment of British Army in France",
-            "e_3": "Construction of Aerodromes"
+            "e_1": "counter-attack",
+            "e_2": "withdrawal behind the Lys",
+            "e_3": "Dunkirk perimeter established",
+            "e_4": "occupation of perimeter",
+            "e_5": "joint plan for the withdrawal"
         },
         "organisations": {
-            "o_1": "British Army",
-            "o_2": "Royal Air Force",
-            "o_3": "Allied Central Air Bureau"
+            "o_1": "Belgian Army",
+            "o_2": "C.I.G.S.",
+            "o_3": "3rd Corps",
+            "o_4": "2nd Corps",
+            "o_5": "French 3rd and Cavalry Corps",
+            "o_6": "G.H.Q.",
+            "o_7": "Belgian G.Q.G.",
+            "o_8": "British troops",
+            "o_9": "French troops"
         }
     },
     "keywords": [
-        "B.E.F.",
-        "Armoured Division",
-        "anti-aircraft",
-        "medical base",
-        "ammunition depots",
-        "aerial reconnaissance",
-        "deployment",
-        "aerodromes"
+        "defence",
+        "infantry brigade",
+        "pioneer battalion",
+        "counter-attack",
+        "enemy attack",
+        "embarkation",
+        "withdrawal",
+        "perimeter",
+        "artillery",
+        "division"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Air Support",
-        "Strategy"
+        "Withdrawal",
+        "Counter-attack",
+        "Artillery Deployment"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_4",
+            "e_5"
         ],
-        "Logistics": [
+        "Withdrawal": [
             "e_2",
             "e_3"
         ],
-        "Air Support": [
-            "e_3"
-        ],
-        "Strategy": [
+        "Counter-attack": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
-            "locations": [
-                "l_10",
-                "l_11"
-            ],
-            "persons": [
-                "p_5"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Dyle and Escaut Plans are assessed for the role of the British Expeditionary Force in possible advances into Holland and Belgium, highlighting the interplay between military and political strategy."
-        },
-        {
-            "event": "e_2",
-            "date": "Various dates in May 1940",
+            "date": "26th May",
             "locations": [
                 "l_1",
+                "l_2",
                 "l_3",
-                "l_4",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9"
+                "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_5"
             ],
-            "eventSummary": "The deployment of British Army units to France includes three Divisions tasked with labor duties while continuing their training to efficiently handle logistical challenges."
+            "eventSummary": "The proposed counter-attack by the Belgians is discussed and deemed unlikely due to enemy pressure."
+        },
+        {
+            "event": "e_2",
+            "date": "26th May",
+            "locations": [
+                "l_1",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
+            ],
+            "eventSummary": "The decision is made to withdraw behind the Lys in light of the deteriorating situation."
         },
         {
             "event": "e_3",
-            "date": "By 15th May 1940",
+            "date": "26th May",
             "locations": [
-                "l_1"
+                "l_5"
             ],
             "persons": [
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_6"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Construction of aerodromes and supporting infrastructure for the British Air Force in France is advancing rapidly, with specifications being met to support operational readiness."
+            "eventSummary": "The Dunkirk perimeter is established as part of the withdrawal strategy."
+        },
+        {
+            "event": "e_5",
+            "date": "26th May",
+            "locations": [
+                "l_1",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A joint plan for the withdrawal of forces behind the line of the Lys is developed."
         }
     ]
 }

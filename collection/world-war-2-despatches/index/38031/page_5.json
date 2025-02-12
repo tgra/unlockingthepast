@@ -11,47 +11,51 @@
             "l_4": "Kithera Straits"
         },
         "events": {
-            "e_1": "First Air Attack",
-            "e_2": "Contact with the Vice-Admiral, Light Forces",
-            "e_3": "Surface Contact Lost"
+            "e_1": "First air attack",
+            "e_2": "Surface contact lost",
+            "e_3": "Second heavy Enemy Force reported",
+            "e_4": "Contact made with the Vice-Admiral, Light Forces"
         },
         "organisations": {
             "o_1": "Force X",
             "o_2": "Force Y",
             "o_3": "Force Z",
-            "o_4": "Light Forces"
+            "o_4": "Flying Boat Duty V",
+            "o_5": "Second Destroyer Flotilla"
         }
     },
     "keywords": [
         "battleships",
+        "cruisers",
         "air striking force",
         "enemy force",
-        "force sightings",
-        "military operations"
+        "destroyers"
     ],
     "themes": [
         "Military Operations",
-        "Enemy Engagement",
-        "Strategic Movement"
+        "Naval Tactics",
+        "Aerial Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Enemy Engagement": [
+        "Naval Tactics": [
             "e_1",
-            "e_2"
+            "e_4"
         ],
-        "Strategic Movement": [
+        "Aerial Warfare": [
+            "e_1",
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "31 JULY, 1947",
+            "date": "",
             "locations": [
                 "l_1"
             ],
@@ -65,36 +69,42 @@
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The first air attack is launched against an enemy squadron, signaling a continued engagement with naval forces."
+            "eventSummary": "The first air attack is initiated by the Commander-in-Chief in response to enemy forces reported nearby."
         },
         {
             "event": "e_2",
-            "date": "31 JULY, 1947",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Contact is made with the Vice-Admiral, Light Forces, indicating the alignment of naval forces during the engagement."
+            "eventSummary": "Surface contact is lost, leading to an uncertain situation regarding the enemy's movements."
         },
         {
             "event": "e_3",
-            "date": "31 JULY, 1947",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "A new enemy force is reported, indicating escalating conflict in the area."
+        },
+        {
+            "event": "e_4",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
             "persons": [
                 "p_1",
@@ -102,13 +112,15 @@
             ],
             "organisations": [
                 "o_1",
-                "o_4"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1",
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Surface contact with the enemy is lost, leading to a reevaluation of naval strategies and positions."
+            "eventSummary": "Contact is finally made with the Vice-Admiral, Light Forces, revealing the status of all involved forces."
         }
     ]
 }

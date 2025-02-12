@@ -1,12 +1,141 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {},
-        "events": {},
-        "organisations": {}
+        "persons": {
+            "p_1": "Strike Leader",
+            "p_2": "Fireflies",
+            "p_3": "Jap fighters",
+            "p_4": "No. 1 Wing",
+            "p_5": "No. 2 Wing",
+            "p_6": "Tojo",
+            "p_7": "Oscar"
+        },
+        "locations": {
+            "l_1": "Lake Ranau",
+            "l_2": "Sumatra",
+            "l_3": "Pladjoe"
+        },
+        "events": {
+            "e_1": "Strike operation",
+            "e_2": "Withdrawal to Rendezvous",
+            "e_3": "Rendezvous to Base",
+            "e_4": "Attack"
+        },
+        "organisations": {
+            "o_1": "Indomitable",
+            "o_2": "No. 1 Wing",
+            "o_3": "No. 2 Wing"
+        }
     },
-    "keywords": [],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "keywords": [
+        "Avenger",
+        "Escort",
+        "Bombing",
+        "Air Battle",
+        "Radio Discipline",
+        "Enemy Fighters"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Combat",
+        "Operational Challenges"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Air Combat": [
+            "e_2",
+            "e_4"
+        ],
+        "Operational Challenges": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The strike operation commences with issues in scheduling and formation at 0734, resulting in challenges due to weather and aircraft positioning."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_6",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The withdrawal to rendezvous occurs post-bombing, featuring combat with enemy fighters as the aircraft regroup."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Returning to base is completed without opposition, following a careful examination for survivors."
+        },
+        {
+            "event": "e_4",
+            "date": "Date unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The attack phase begins with bombing runs conducted by the squadron, achieving hits on various targets despite challenges."
+        }
+    ]
 }

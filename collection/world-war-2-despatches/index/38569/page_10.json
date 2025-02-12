@@ -1,43 +1,48 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander P. Stubbs, R.N.",
-            "p_2": "Rear-Admiral Commanding, 10th Cruiser Squadron",
-            "p_3": "Commander Thery",
-            "p_4": "Lieutenant R. H. H. Webber, R.N.",
-            "p_5": "Major Jordan"
+            "p_1": "General Ryder",
+            "p_2": "Darlan",
+            "p_3": "Captain O. R. Bennehoff",
+            "p_4": "Commander H. G. Scott",
+            "p_5": "Captain N. V. Dickinson"
         },
         "locations": {
-            "l_1": "Djidjelli",
-            "l_2": "Bougie",
-            "l_3": "Algiers",
-            "l_4": "Bougie Bay"
+            "l_1": "C Sector",
+            "l_2": "Algiers",
+            "l_3": "Bougie",
+            "l_4": "Djidjelli",
+            "l_5": "BULOLO",
+            "l_6": "Cap Carbon",
+            "l_7": "D Wuite Beach"
         },
         "events": {
-            "e_1": "Assault on Djidjelli",
-            "e_2": "Air Attack on shipping",
-            "e_3": "Withdrawal of Force O",
-            "e_4": "Sinking of S.S. AWATEA",
-            "e_5": "Incidents involving HMS ROBERTS and CATHAY"
+            "e_1": "Axis air attack on C Sector",
+            "e_2": "arrival of H.M.S. SPEY",
+            "e_3": "assault on Bougie",
+            "e_4": "assault on Djidjelli",
+            "e_5": "landing at D Wuite Beach"
         },
         "organisations": {
-            "o_1": "Royal Navy (R.N.)",
-            "o_2": "Royal Air Force (R.A.F.)"
+            "o_1": "H.M. Ships",
+            "o_2": "U.S.S. Navy",
+            "o_3": "R.A.F."
         }
     },
     "keywords": [
-        "Military Operation",
-        "Convoy",
-        "Air Attack",
-        "Torpedo Bombers",
-        "Supply Logistics",
-        "Sea Transport"
+        "casualties",
+        "tanks",
+        "unloading",
+        "air attack",
+        "shipping",
+        "assault",
+        "convoy"
     ],
     "themes": [
         "Military Operations",
-        "Air Attacks",
-        "Naval Operations",
-        "Logistics and Supply"
+        "Naval Engagement",
+        "Logistics",
+        "Aerial Assault"
     ],
     "topicModel": {
         "Military Operations": [
@@ -45,74 +50,57 @@
             "e_3",
             "e_4"
         ],
-        "Air Attacks": [
-            "e_2",
-            "e_4"
-        ],
-        "Logistics and Supply": [
+        "Naval Engagement": [
             "e_1",
-            "e_5"
+            "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Aerial Assault": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "Date unknown",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An Axis air attack develops at C Sector targeting ships with dive and torpedo bombers."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "The decision to abandon the assault on Djidjelli due to heavy swell significantly impacts the military operation."
-        },
-        {
-            "event": "e_2",
-            "date": "1315, Date unspecified",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Five S.M. 79 torpedo bombers attack the shipping in the bay, resulting in damage to enemy aircraft but no damage to the ships."
+            "eventSummary": "H.M.S. SPEY arrives with American soldiers from the damaged THOMAS C. STONE."
         },
         {
             "event": "e_3",
-            "date": "1140, Date unspecified",
+            "date": "10th November",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Force O is ordered to withdraw to the westward, ceasing the fighter protection of shipping."
-        },
-        {
-            "event": "e_4",
-            "date": "1640, Date unspecified",
-            "locations": [
-                "l_4"
+                "l_3"
             ],
             "persons": [
                 "p_4"
@@ -120,24 +108,40 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "S.S. AWATEA is hit and subsequently sinks after failing to extinguish the fire caused by several bombs."
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The slow assault convoy sails for Bougie."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "L.S.I.s launched for the assault on Djidjelli with Commandos and supplies."
         },
         {
             "event": "e_5",
-            "date": "Date unspecified",
+            "date": "Unknown",
             "locations": [
-                "l_1"
+                "l_7"
             ],
             "persons": [
                 "p_5"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "CATHAY experiences various explosions, with depth charges on board causing concern, leading to disastrous losses."
+            "eventSummary": "Troops are landed at D Wuite Beach amidst prior planning for a naval assault."
         }
     ]
 }

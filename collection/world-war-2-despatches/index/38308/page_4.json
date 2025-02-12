@@ -1,92 +1,76 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral Commanding Destroyers",
-            "p_2": "Admiral Vian",
-            "p_3": "Commander-in-Chief, Pacific"
+            "p_1": "Admiral Vian"
         },
         "locations": {
             "l_1": "Miyako Jima",
-            "l_2": "Tarima Shima",
-            "l_3": "Sakishima Gunto"
+            "l_2": "Ashigaki",
+            "l_3": "Tarima Shima",
+            "l_4": "Sakishima Gunto"
         },
         "events": {
-            "e_1": "Fueling Operation",
-            "e_2": "Fighter Sweeps",
-            "e_3": "Bomber Strikes",
-            "e_4": "Rescue Operation"
+            "e_1": "Operation around Miyako Jima",
+            "e_2": "Fighter sweeps",
+            "e_3": "Rescue operation by H.M.S. UNDINE",
+            "e_4": "Task Force 57 operations",
+            "e_5": "Bomber strikes"
         },
         "organisations": {
-            "o_1": "Task Force 57"
+            "o_1": "Task Force 57",
+            "o_2": "American Rescue Submarine U.S.S. KINGFISH"
         }
     },
     "keywords": [
-        "Destroyers",
-        "Fleet",
-        "Fuelling",
-        "Airfields",
-        "Aircraft"
+        "destroyers",
+        "fuelling",
+        "CAPS",
+        "aircraft carriers",
+        "fighter sweeps",
+        "rescue",
+        "bombardment"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Aircraft Operations"
+        "Aerial Warfare",
+        "Rescue Missions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
             "e_4"
         ],
-        "Naval Strategy": [
-            "e_1",
-            "e_4"
-        ],
-        "Aircraft Operations": [
+        "Aerial Warfare": [
             "e_2",
+            "e_5"
+        ],
+        "Rescue Missions": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26th March 2023",
+            "date": "26th March",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3"
+                "e_5"
             ],
-            "eventSummary": "The fueling operation for the Fleet is conducted but faces delays due to strong winds and equipment issues, leading to operation stoppage."
+            "eventSummary": "The fleet carries out operations around Miyako Jima, launching fighter sweeps and bomber strikes against airfields."
         },
         {
             "event": "e_2",
-            "date": "27th March 2023",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Strong fighter sweeps are launched from the Fleet to attack airfields at Ashigaki and Miyako, reporting minimal enemy activity."
-        },
-        {
-            "event": "e_3",
-            "date": "27th March 2023",
+            "date": "26th March",
             "locations": [
                 "l_1"
             ],
@@ -97,24 +81,51 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1",
+                "e_5"
             ],
-            "eventSummary": "Multiple bomber strikes target barracks and airfields as the Fleet continues its operational plans despite needing to withdraw at dusk."
+            "eventSummary": "Fighter sweeps are flown off to attack airfields at Ashigaki and Miyako, reporting little enemy activity."
+        },
+        {
+            "event": "e_3",
+            "date": "27th March",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. UNDINE is dispatched to rescue a downed aircraft crew 56 miles from the flying-off position."
         },
         {
             "event": "e_4",
-            "date": "27th March 2023",
+            "date": "",
             "locations": [
-                "l_2"
+                "l_4"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "A rescue operation is conducted for an aircraft crew who ditched in the sea, successfully recovering the crew members despite coordination challenges with the U.S. submarine."
+            "eventSummary": "Task Force 57 operates with a program initially planned to bombard Ishigaki but altered due to weather threats."
+        },
+        {
+            "event": "e_5",
+            "date": "26th March",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Following the fighter sweeps, the fleet executes a series of bomber strikes on various targets."
         }
     ]
 }

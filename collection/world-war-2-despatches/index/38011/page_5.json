@@ -1,9 +1,9 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant Colonel H. R. Lambert, D.S.C.",
-            "p_2": "Group Captain Moore, R.A.F.",
-            "p_3": "Commander R. S. D. Armour, R.N.",
+            "p_1": "H. R. Lambert",
+            "p_2": "Group Captain Moore",
+            "p_3": "R. S. D. Armour",
             "p_4": "Rear-Admiral Lyster"
         },
         "locations": {
@@ -13,151 +13,141 @@
             "l_4": "Harstad",
             "l_5": "Bodo",
             "l_6": "Tjeldsundet",
-            "l_7": "Holsflva",
-            "l_8": "Lavangsfiord",
-            "l_9": "Bogen",
-            "l_10": "Ballangen",
-            "l_11": "Kvitnes",
-            "l_12": "Steinvaer",
-            "l_13": "Baroy Island",
-            "l_14": "Rotvaer Island",
-            "l_15": "Vaagsfiord"
+            "l_7": "Baroy Island",
+            "l_8": "Rotvaer Island",
+            "l_9": "Steinvaer",
+            "l_10": "Vaagsfiord",
+            "l_11": "Vestfiord",
+            "l_12": "Holsflva",
+            "l_13": "Lavangsfiord",
+            "l_14": "Bogen",
+            "l_15": "Ballangen"
         },
         "events": {
-            "e_1": "Preparations at Bardufoss aerodrome",
-            "e_2": "Arrival of GLORIOUS and FURIOUS",
-            "e_3": "Transfer of Gladiator Squadron",
-            "e_4": "Return of GLORIOUS and flying off of Hurricane Squadron",
-            "e_5": "Development of Base Defences"
+            "e_1": "Arrival of GLORIOUS and FURIOUS",
+            "e_2": "Gladiator Squadron flown ashore at Bardufoss",
+            "e_3": "First flight of Hurricane Squadron",
+            "e_4": "Development of Base Defences",
+            "e_5": "Assumption of command by Rear-Admiral Lyster"
         },
         "organisations": {
             "o_1": "M.N.B.D.O.",
-            "o_2": "R.A.F.",
-            "o_3": "Admiralty"
+            "o_2": "Royal Marine fortress unit",
+            "o_3": "R.A.F."
         }
     },
     "keywords": [
         "Fighter aircraft",
-        "Aerodrome",
-        "Ground artillery",
-        "Mobile Naval Base Defence Organisation",
-        "Minefield",
-        "Defence development"
+        "Naval Base Defence",
+        "Heavy and Light Guns"
     ],
     "themes": [
         "Military Operations",
-        "Air Force Engagement",
-        "Base Defence Development",
-        "Naval Coordination"
+        "Defence Development",
+        "Aerial Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Base Defence Development": [
+        "Defence Development": [
+            "e_4",
             "e_5"
         ],
-        "Air Force Engagement": [
+        "Aerial Strategy": [
             "e_1",
-            "e_3",
-            "e_4"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 12",
-            "locations": [
-                "l_1",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Preparations for the readiness of Bardufoss aerodrome are ongoing to support air operations in the region."
-        },
-        {
-            "event": "e_2",
-            "date": "May 18",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "GLORIOUS and FURIOUS arrive off the coast, enabling the air force to commence operations."
-        },
-        {
-            "event": "e_3",
-            "date": "May 21",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "263 Gladiator Squadron is successfully flown ashore at Bardufoss from FURIOUS amidst loss of some aircraft."
-        },
-        {
-            "event": "e_4",
-            "date": "May 26",
+            "date": "May 18th",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "GLORIOUS and FURIOUS arrive off the coast, with Walrus aircraft completing successful reconnaissance and communications operations."
+        },
+        {
+            "event": "e_2",
+            "date": "May 21st",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "GLORIOUS returns and facilitates the flying off of Hurricane Squadron, aiming to enhance air support for ground forces."
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "263 Gladiator Squadron is flown ashore at Bardufoss with losses during landing."
         },
         {
-            "event": "e_5",
-            "date": "April 22 - April 29",
+            "event": "e_3",
+            "date": "May 26th",
             "locations": [
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10",
-                "l_11",
-                "l_12",
-                "l_13",
-                "l_14"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_4"
             ],
             "organisations": [
-                "o_2"
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Hurricane Squadron is flown off GLORIOUS, operating from Bardufoss and Skaanland with significant enemy engagement."
+        },
+        {
+            "event": "e_4",
+            "date": "April 22nd and April 28th",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Plans and implementations for the development of base defences are underway to fortify naval operations."
+            "eventSummary": "Plans for the development of Base Defences are communicated, focusing on armament and minefields."
+        },
+        {
+            "event": "e_5",
+            "date": "May 5th",
+            "locations": [],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Rear-Admiral Lyster assumes command of the Defences and their development."
         }
     ]
 }

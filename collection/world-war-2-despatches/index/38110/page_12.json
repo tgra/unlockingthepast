@@ -1,19 +1,99 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Cardiff",
-            "l_2": "Manchester"
+        "persons": {
+            "p_1": "Captain Barber",
+            "p_2": "His Majesty The King"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Cowes",
+            "l_2": "Havre",
+            "l_3": "Far Shore",
+            "l_4": "Arromanches",
+            "l_5": "St. Laurent"
+        },
+        "events": {
+            "e_1": "Heavy Air Attack on Havre",
+            "e_2": "Visit of H.M. The King",
+            "e_3": "The Northerly Gale"
+        },
+        "organisations": {
+            "o_1": "Bomber Command",
+            "o_2": "Task Force",
+            "o_3": "Assault Force",
+            "o_4": "Home Fleet",
+            "o_5": "Home Commands"
+        }
     },
     "keywords": [
-        "Assault Forces",
-        "Routes",
-        "Admiralty Chart"
+        "co-operation",
+        "channel",
+        "attack",
+        "British assault",
+        "weather",
+        "operation",
+        "unloading",
+        "damage"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Leadership",
+        "Weather Impact"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3"
+        ],
+        "Leadership": [
+            "e_2"
+        ],
+        "Weather Impact": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "4th June",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 4th June, a heavy air attack is carried out on Havre by Bomber Command to immobilize enemy E-Boats, resulting in the sinking of 10 E-Boats and three torpedo boats."
+        },
+        {
+            "event": "e_2",
+            "date": "16th June",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On 16th June, His Majesty The King visits the British assault area on H.M.S. ARETHUSA, providing satisfaction and encouragement to the naval personnel."
+        },
+        {
+            "event": "e_3",
+            "date": "19th June to 24th June",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "From 19th June to 24th June, a severe gale impacts operations, causing significant damage to landing crafts and delaying unloading, leading to the decision to keep Task Force and Assault Force Commanders in the area until conditions normalize."
+        }
+    ]
 }

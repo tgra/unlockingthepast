@@ -1,36 +1,40 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "John Catling",
-            "p_2": "Thomas Bartlett"
+            "p_1": "Rear Admiral",
+            "p_2": "Vice Admiral",
+            "p_3": "Commander-in-Chief, Nore"
         },
         "locations": {
-            "l_1": "Dundalk",
-            "l_2": "Brighton",
-            "l_3": "Medway",
-            "l_4": "Sandown",
-            "l_5": "Grimsby Town"
+            "l_1": "Dunkirk",
+            "l_2": "Dover",
+            "l_3": "La Panne",
+            "l_4": "Bray",
+            "l_5": "United Kingdom",
+            "l_6": "Downs",
+            "l_7": "Ramsgate"
         },
         "events": {
-            "e_1": "Minesweeping Operations",
-            "e_2": "Sinking of Vessels"
+            "e_1": "Evacuation from Dunkirk",
+            "e_2": "Bombing Attacks",
+            "e_3": "Suspension of Evacuation"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "British Navy",
+            "o_2": "Admiralty"
         }
     },
     "keywords": [
-        "Minesweepers",
-        "Sunk",
-        "Damaged",
-        "Trawlers",
-        "Special Service Vessels",
-        "Drifters"
+        "Evacuation",
+        "Bombing",
+        "Naval Operations",
+        "Troops",
+        "Casualties"
     ],
     "themes": [
+        "Military Operations",
         "Naval Warfare",
-        "Ship Losses",
-        "Military Operations"
+        "Casualty Management"
     ],
     "topicModel": {
         "Military Operations": [
@@ -38,39 +42,41 @@
             "e_2"
         ],
         "Naval Warfare": [
+            "e_1",
             "e_2"
         ],
-        "Ship Losses": [
-            "e_2"
+        "Casualty Management": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 31, 1943",
+            "date": "1st June",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "A series of minesweeping operations are conducted, resulting in 36 vessels being affected, of which 5 were sunk and 4 damaged."
+            "eventSummary": "Evacuation from Dunkirk commences with heavy air attacks impacting naval operations."
         },
         {
             "event": "e_2",
-            "date": "June 1, 1943",
+            "date": "1st June",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -80,9 +86,30 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "Numerous vessels, including trawlers and special service vessels, are reported sunk or damaged in engagements during this period."
+            "eventSummary": "Bombing attacks by enemy aircraft create significant casualties among ships supporting the evacuation."
+        },
+        {
+            "event": "e_3",
+            "date": "2nd June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Suspension of evacuation efforts from Dunkirk occurs due to heavy casualties and ongoing enemy aggression."
         }
     ]
 }

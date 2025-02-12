@@ -7,44 +7,47 @@
         "locations": {
             "l_1": "Myitkyina",
             "l_2": "Mogaung",
-            "l_3": "Lungling",
-            "l_4": "Arakan",
-            "l_5": "Imphal",
-            "l_6": "Kohima",
+            "l_3": "North Burma",
+            "l_4": "Lungling",
+            "l_5": "Arakan",
+            "l_6": "Imphal",
             "l_7": "Ukhrul",
-            "l_8": "Karong",
-            "l_9": "Bishenpur",
-            "l_10": "Palel",
-            "l_11": "Manipur",
-            "l_12": "Chindwin River",
-            "l_13": "Kabaw Valley"
+            "l_8": "Kohima",
+            "l_9": "Kharasom",
+            "l_10": "Bishenpur",
+            "l_11": "Palel",
+            "l_12": "Chin Hills",
+            "l_13": "Chindwin River",
+            "l_14": "Humine",
+            "l_15": "Myothit",
+            "l_16": "Kabaw Valley",
+            "l_17": "Tiddim",
+            "l_18": "Tamu"
         },
         "events": {
-            "e_1": "Opening of the Kohima - Imphal road",
-            "e_2": "Capture of Ukhrul",
-            "e_3": "Operations against Ukhrul",
-            "e_4": "Transfer of 20 Indian Division from 4 Corps to 33 Corps",
-            "e_5": "Operation Instruction by General Slim"
+            "e_1": "Engagement of Myitkyina against Chinese and American troops",
+            "e_2": "Operations against Ukhrul",
+            "e_3": "Capture of Ukhrul",
+            "e_4": "Withdrawal of Japanese forces from Bishenpur, Palel, and Ukhrul"
         },
         "organisations": {
             "o_1": "Special Force",
-            "o_2": "Chinese Expeditionary Force",
-            "o_3": "Indian Divisions",
-            "o_4": "Japanese forces"
+            "o_2": "Indian Division",
+            "o_3": "Long-Range Penetration Brigades",
+            "o_4": "Chinese Expeditionary Force",
+            "o_5": "4 Corps",
+            "o_6": "33 Corps"
         }
     },
     "keywords": [
-        "Military Operations",
-        "Troops Engagement",
-        "Battle",
-        "Leadership",
-        "Strategic Command"
+        "engagement",
+        "operations",
+        "withdrawal",
+        "capture"
     ],
     "themes": [
         "Military Operations",
-        "Leadership Changes",
-        "Logistical Challenges",
-        "Tactical Advances"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -53,38 +56,53 @@
             "e_3",
             "e_4"
         ],
-        "Leadership Changes": [
+        "Strategic Decisions": [
             "e_1",
-            "e_5"
-        ],
-        "Logistical Challenges": [
-            "e_1",
-            "e_3"
-        ],
-        "Tactical Advances": [
-            "e_2"
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "22nd June",
+            "date": null,
             "locations": [
-                "l_5"
+                "l_1"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The opening of the Kohima - Imphal road completes the first task set by the Supreme Allied Commander according to instructions given on the 8th June."
+            "eventSummary": "Myitkyina holds out against Chinese and American troops."
         },
         {
             "event": "e_2",
+            "date": null,
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operations against Ukhrul conducted by Indian Divisions."
+        },
+        {
+            "event": "e_3",
             "date": "3rd July",
             "locations": [
                 "l_7"
@@ -94,64 +112,28 @@
                 "p_2"
             ],
             "organisations": [
-                "o_4"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_3",
-                "e_5"
-            ],
-            "eventSummary": "A brigade of 7 Indian Division captures Ukhrul, removing threats to Imphal from the north and northeast."
+            "connectedEvents": [],
+            "eventSummary": "Ukhrul is captured by a brigade of 7 Indian Division."
         },
         {
-            "event": "e_3",
-            "date": "June",
+            "event": "e_4",
+            "date": "by 10th July",
             "locations": [
+                "l_10",
+                "l_11",
                 "l_7"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_4"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operations against Ukhrul consist of cross-country advances by Indian Divisions, aiming to secure the area against Japanese forces."
-        },
-        {
-            "event": "e_4",
-            "date": "30th June",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The institutional establishment of a new boundary between Corps marks a new phase of operations in the area."
-        },
-        {
-            "event": "e_5",
-            "date": "5th July",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "General Slim issues an Operation Instruction aimed at destroying Japanese forces west of the Chindwin River."
+            "connectedEvents": [],
+            "eventSummary": "Japanese forces begin a general withdrawal from Bishenpur, Palel, and Ukhrul."
         }
     ]
 }

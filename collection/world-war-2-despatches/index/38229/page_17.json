@@ -1,141 +1,152 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Alexander",
-            "p_2": "Group Captain Singer",
-            "p_3": "Group Captain Seton Broughall",
-            "p_4": "Air Marshal Sir Richard Peirse"
+            "p_1": "Seton Broughall"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Zigon",
-            "l_3": "Prome",
-            "l_4": "Mingaladon",
-            "l_5": "Tharrawady",
-            "l_6": "Magwe",
-            "l_7": "Park Lane",
-            "l_8": "Toungoo",
-            "l_9": "Allanmyo",
-            "l_10": "Moulmein",
-            "l_11": "Gulf of Martaban",
-            "l_12": "Bay of Bengal",
-            "l_13": "Calcutta",
-            "l_14": "Asansol",
-            "l_15": "Tatanagar",
-            "l_16": "Digboi"
+            "l_1": "Bay of Bengal",
+            "l_2": "Magwe",
+            "l_3": "Akyab",
+            "l_4": "Calcutta",
+            "l_5": "Burma",
+            "l_6": "Mandalay",
+            "l_7": "Rangoon",
+            "l_8": "Mingaladon",
+            "l_9": "Tharrawaddy",
+            "l_10": "Toungoo",
+            "l_11": "Prome",
+            "l_12": "Pyinmana-Kyaukpadaung"
         },
         "events": {
-            "e_1": "Evacuation of Rangoon",
-            "e_2": "Operations covering withdrawal up the Prome Road",
-            "e_3": "Formation of Burwing",
-            "e_4": "Air Directive issued on 8th March"
+            "e_1": "Formation of Akwing",
+            "e_2": "Reverse Inflicted on Mixed Wing at Magwe",
+            "e_3": "The Bomber Attack at Mingaladon",
+            "e_4": "Low Flying Fighter Attack on Mingaladon",
+            "e_5": "Enemy Attack on Magwe Begins",
+            "e_6": "The Enemy Air Action"
         },
         "organisations": {
-            "o_1": "X Wing",
-            "o_2": "Burwing",
-            "o_3": "Air Headquarters, India"
+            "o_1": "R.A.F."
         }
     },
     "keywords": [
-        "Evacuation",
-        "Military Operations",
-        "Air Support",
-        "Strategic Movements",
-        "Demolitions"
+        "reconnaissance",
+        "enemy attack",
+        "aerodrome",
+        "air force",
+        "bomber",
+        "Hurricane",
+        "Blenheim"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Strategic Decisions",
-        "Evacuation Operations"
+        "Aerial Combat",
+        "Intelligence and Surveillance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Aerial Combat": [
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Intelligence and Surveillance": [
             "e_3"
-        ],
-        "Air Support": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
-            "e_4"
-        ],
-        "Evacuation Operations": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th March",
+            "date": "12th March",
             "locations": [
-                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On the 12th March, the formation of Akwing commences at Akyab as reconnaissance operations aim to secure sea communications."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd March",
+            "locations": [
                 "l_2"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_3"
+                "e_3",
+                "e_4",
+                "e_6"
             ],
-            "eventSummary": "The evacuation of Rangoon involves the decision to leave the city and carry out demolitions before the Army's withdrawal commences."
-        },
-        {
-            "event": "e_2",
-            "date": "7th March to 21st March",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Military operations to support the Army's withdrawal along the Prome Road commence, with fighter patrols and bomber sorties conducted to secure the area."
+            "eventSummary": "On the 22nd March, a reverse is inflicted on the mixed wing at Magwe due to heavy enemy attacks and significant aircraft losses."
         },
         {
             "event": "e_3",
-            "date": "18th March",
+            "date": "20th March",
             "locations": [
-                "l_6"
+                "l_8"
             ],
             "persons": [
-                "p_3"
+                "p_1"
             ],
-            "organisations": [
-                "o_2"
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Burwing is formed as a fully mobile mixed Army support force, placed under the operational control of General Alexander."
+            "eventSummary": "On the 20th March, a bomber attack is launched at Mingaladon to counter enemy air force concentrations, resulting in aerial combat and damage to the enemy fleet."
         },
         {
             "event": "e_4",
-            "date": "8th March",
+            "date": "21st March",
             "locations": [
-                "l_6",
-                "l_7"
+                "l_8"
             ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_2"
+                "e_5",
+                "e_6"
             ],
-            "eventSummary": "Air Directive is issued requiring the maintenance of mixed Wings to support the Army in Burma and organize air defense in India."
+            "eventSummary": "On the 21st March, a low flying attack over Mingaladon results in the destruction of enemy fighters while sustaining damages on friendly aircraft."
+        },
+        {
+            "event": "e_5",
+            "date": "21st March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Starting at 13.23 on the 21st March, Magwe experiences a substantial enemy attack involving bombers and fighters resulting in considerable damage."
+        },
+        {
+            "event": "e_6",
+            "date": "21st March",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "By 13.00 hours on the 21st March, an unidentified aircraft leads to an enemy formation attack on Magwe, creating communications disruption and aircraft losses."
         }
     ]
 }

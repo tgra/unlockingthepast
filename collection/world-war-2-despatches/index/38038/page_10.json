@@ -1,17 +1,75 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "London"
+        "persons": {
+            "p_1": "Savage",
+            "p_2": "Saumarez"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Scharnhorst",
+            "l_2": "Duke of York"
+        },
+        "events": {
+            "e_1": "Sinking of the Scharnhorst",
+            "e_2": "Battle of 1500-1900"
+        },
+        "organisations": {
+            "o_1": "36 Division"
+        }
     },
     "keywords": [
-        "LONDON",
-        "Code No. 65-38038"
+        "sinking",
+        "Scharnhorst",
+        "battleship",
+        "cruiser",
+        "attack",
+        "division",
+        "fire"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "26 December 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Scharnhorst is sunk during a naval operation on 26 December 1943."
+        },
+        {
+            "event": "e_2",
+            "date": "26 December 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A naval battle occurs from 1500 to 1900 involving various naval units on 26 December 1943."
+        }
+    ]
 }

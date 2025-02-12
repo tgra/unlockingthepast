@@ -1,0 +1,126 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Ventnor",
+            "l_2": "Dover",
+            "l_3": "northern France",
+            "l_4": "Kent",
+            "l_5": "Peenemiinde",
+            "l_6": "Poland",
+            "l_7": "Watten",
+            "l_8": "Wizernes",
+            "l_9": "Mimoyecques",
+            "l_10": "Siracourt",
+            "l_11": "Lottinghem",
+            "l_12": "Pas de Calais",
+            "l_13": "Martinvast",
+            "l_14": "Sottevast",
+            "l_15": "Cherbourg",
+            "l_16": "London",
+            "l_17": "Germany",
+            "l_18": "Blizna"
+        },
+        "events": {
+            "e_1": "attack on the experimental station at Peenemiinde",
+            "e_2": "attacks on large sites at Watten",
+            "e_3": "bombing of production centers in Germany",
+            "e_4": "discovery of ski sites in northern France"
+        },
+        "organisations": {
+            "o_1": "Air Ministry",
+            "o_2": "Royal Artillery",
+            "o_3": "Bomber Command",
+            "o_4": "American Eighth Bomber Command"
+        }
+    },
+    "keywords": [
+        "rocket",
+        "countermeasures",
+        "radar",
+        "artillery",
+        "intelligence",
+        "defensive",
+        "offensive",
+        "flying-bomb"
+    ],
+    "themes": [
+        "Military Operations",
+        "Intelligence Gathering",
+        "Countermeasures"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Intelligence Gathering": [
+            "e_2",
+            "e_4"
+        ],
+        "Countermeasures": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unspecified",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "An attack is made by Bomber Command on the experimental station at Peenemiinde."
+        },
+        {
+            "event": "e_2",
+            "date": "Unspecified",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Attacks are made on large sites at Watten as part of regular operations."
+        },
+        {
+            "event": "e_3",
+            "date": "Unspecified",
+            "locations": [
+                "l_18"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Bomber Command attacks several production centers in Germany suspected of manufacturing rocket components."
+        },
+        {
+            "event": "e_4",
+            "date": "Unspecified",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The discovery of ski sites in northern France indicates a more imminent threat than previously anticipated."
+        }
+    ]
+}

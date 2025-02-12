@@ -1,119 +1,116 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain (D)",
-            "p_2": "Rear-Admiral Commanding",
-            "p_3": "Commander-in-Chief"
+            "p_1": "Charles M. Blackman",
+            "p_2": "Reginald M. Servaes",
+            "p_3": "Graham H. Stokes",
+            "p_4": "Harry R. Graham",
+            "p_5": "Harold T. Armstrong",
+            "p_6": "E. Plawski",
+            "p_7": "Norman V. J. T. Thew",
+            "p_8": "Benjamin C. S. Martin"
         },
         "locations": {
-            "l_1": "Sheffield",
-            "l_2": "Bismarck",
-            "l_3": "Londonderry",
-            "l_4": "Edinburgh",
-            "l_5": "King George V",
-            "l_6": "Rodney",
-            "l_7": "Maori",
-            "l_8": "Cossack",
-            "l_9": "Renown",
-            "l_10": "Dorchester",
-            "l_11": "Home Fleet",
-            "l_12": "Admiralty"
+            "l_1": "Bay of Biscay",
+            "l_2": "Gibraltar",
+            "l_3": "North Sea",
+            "l_4": "Newfoundland",
+            "l_5": "French port",
+            "l_6": "Iceland-Faeroes gap",
+            "l_7": "Denmark Strait"
         },
         "events": {
-            "e_1": "Contact by Zulu",
-            "e_2": "Reports of attacks by destroyers",
-            "e_3": "Position reports from Rear-Admiral Commanding"
+            "e_1": "Search for BISMARCK",
+            "e_2": "Attack on BISMARCK",
+            "e_3": "Intercept BISMARCK operation"
         },
         "organisations": {
-            "o_1": "Home Fleet",
-            "o_2": "4th Destroyer Flotilla",
-            "o_3": "1st Cruiser Squadron",
-            "o_4": "18th Cruiser Squadron"
+            "o_1": "Admiralty",
+            "o_2": "Coastal Command"
         }
     },
     "keywords": [
-        "enemy report",
-        "salvos",
-        "casualties",
-        "torpedoed",
-        "attacks",
-        "visibility",
-        "position reports"
+        "BISMARCK",
+        "KING GEORGE V",
+        "RODNEY",
+        "VICTORIOUS",
+        "air search",
+        "surface search",
+        "convoy",
+        "D/F bearings"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Casualties",
-        "Communication Difficulty"
+        "Naval Warfare",
+        "Search and Rescue"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": [
+        "Naval Warfare": [
+            "e_1",
             "e_3"
+        ],
+        "Search and Rescue": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date not specified",
+            "date": "25th May 1941",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "At 2251, Zulu makes contact and reports enemy steering 110, leading to further strategic movements."
+            "eventSummary": "The search for the BISMARCK is organized by various naval forces after it is spotted, with efforts to intercept and shadow its course."
         },
         {
             "event": "e_2",
-            "date": "Date not specified",
+            "date": "",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "During the night, destroyers attack the enemy and report positions and movements, prompting strategic responses."
+            "eventSummary": "An attack was carried out on the BISMARCK, following its tracked movements across the Atlantic."
         },
         {
             "event": "e_3",
-            "date": "Early hours of 27th May",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1",
                 "e_2"
             ],
-            "eventSummary": "Rear-Admiral Commanding reports his position and actions taken, contributing to the overall military strategy of the Home Fleet."
+            "eventSummary": "Naval forces are instructed to intercept the BISMARCK as it navigates south toward a French port."
         }
     ]
 }

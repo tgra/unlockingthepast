@@ -1,75 +1,146 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Eisenhower",
-            "p_2": "Lieut.-General Anderson",
-            "p_3": "Admiral Darlan"
+            "p_1": "General Leclerc",
+            "p_2": "Sir George Holmes",
+            "p_3": "Admiral Harwood",
+            "p_4": "Air Chief Marshal Tedder",
+            "p_5": "Air Vice Marshal Coningham",
+            "p_6": "General Eisenhower"
         },
         "locations": {
-            "l_1": "Tunisia",
-            "l_2": "Cairo",
-            "l_3": "Algeria",
-            "l_4": "Morocco",
-            "l_5": "Casablanca",
-            "l_6": "Oran",
-            "l_7": "Algiers",
-            "l_8": "Tuns",
-            "l_9": "Bizerta",
-            "l_10": "Medjez el Bab"
+            "l_1": "Tripolitania",
+            "l_2": "Chad Territory",
+            "l_3": "Fezzan",
+            "l_4": "Fort Lamy",
+            "l_5": "Tripoli",
+            "l_6": "Umm el Araneb",
+            "l_7": "Gatrun",
+            "l_8": "Murzuk",
+            "l_9": "Sciuref",
+            "l_10": "Ghadames",
+            "l_11": "Mizda",
+            "l_12": "Garian",
+            "l_13": "Syria",
+            "l_14": "Palestine",
+            "l_15": "Trans-Jordan",
+            "l_16": "Egypt",
+            "l_17": "Suez Canal",
+            "l_18": "Cyprus",
+            "l_19": "Eritrea",
+            "l_20": "Sudan",
+            "l_21": "Eastern Mediterranean",
+            "l_22": "Alexandria",
+            "l_23": "Libya",
+            "l_24": "Tunisia",
+            "l_25": "Anfa",
+            "l_26": "Casablanca"
         },
         "events": {
-            "e_1": "Conquest of Tunisia",
-            "e_2": "Landings at Algiers",
-            "e_3": "Armistice with French forces",
-            "e_4": "Advance of First Army towards Tunisia"
+            "e_1": "Capture of Tripoli",
+            "e_2": "Conference of the Combined Chiefs of Staff",
+            "e_3": "Fall of Ghadames",
+            "e_4": "Completion of the conquest of Fezzan"
         },
         "organisations": {
-            "o_1": "Allied Expeditionary Force",
-            "o_2": "First Army",
-            "o_3": "Eighteenth Army Group"
+            "o_1": "Eighth Army",
+            "o_2": "Sahara Command",
+            "o_3": "Royal Navy",
+            "o_4": "Royal Air Force",
+            "o_5": "Allied Expeditionary Force"
         }
     },
     "keywords": [
-        "Tactical Headquarters",
-        "Axis forces",
-        "French resistance",
-        "American command",
-        "British Brigade Group",
-        "Advance Army",
-        "Armistice",
-        "Communications"
+        "Tripolitania",
+        "Fezzan",
+        "Eighth Army",
+        "General",
+        "Air Force",
+        "Naval Forces",
+        "Tunisia",
+        "Conference"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
         "Strategic Decisions",
-        "Allied Forces",
-        "French Resistance"
+        "International Cooperation",
+        "Conquests"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3",
             "e_4"
-        ],
-        "Diplomacy": [
-            "e_3"
         ],
         "Strategic Decisions": [
-            "e_1",
-            "e_4"
+            "e_2"
         ],
-        "Allied Forces": [
-            "e_2",
+        "International Cooperation": [
+            "e_2"
+        ],
+        "Conquests": [
+            "e_1",
             "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 1943",
+            "date": "January 29, 1943",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The capture of Tripoli represents a significant milestone, marking the end of a long offensive phase in the African campaign."
+        },
+        {
+            "event": "e_2",
+            "date": "January 14, 1943",
+            "locations": [
+                "l_25",
+                "l_26"
+            ],
+            "persons": [
+                "p_6",
+                "p_4"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A conference of the Combined Chiefs of Staff convenes to make crucial decisions about the reorganization of command in Africa."
+        },
+        {
+            "event": "e_3",
+            "date": "January 29, 1943",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The fall of Ghadames marks another crucial point in the campaign as the forces secure additional territory."
+        },
+        {
+            "event": "e_4",
+            "date": "January 29, 1943",
+            "locations": [
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -78,65 +149,9 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "General Eisenhower commands the conquest of Tunisia, focusing on the swift destruction of Axis forces."
-        },
-        {
-            "event": "e_2",
-            "date": "November 8, 1942",
-            "locations": [
-                "l_7",
-                "l_8"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
                 "e_3"
             ],
-            "eventSummary": "The Allied forces execute landings at Algiers, aiming to establish a foothold in North Africa amid French opposition."
-        },
-        {
-            "event": "e_3",
-            "date": "November 10, 1942",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Admiral Darlan orders an armistice, enabling French troops in North Africa to cease resistance against the Allies."
-        },
-        {
-            "event": "e_4",
-            "date": "November - December 1942",
-            "locations": [
-                "l_1",
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The First Army advances towards Tunisia following the cessation of French resistance, aiming to secure strategic locations."
+            "eventSummary": "The completion of the conquest of Fezzan consolidates the gains made by the Eighth Army and Fighting French units."
         }
     ]
 }

@@ -1,44 +1,40 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A. J. Cubison",
-            "p_2": "L. H. K. Hamilton"
+            "p_1": "Commanding Officer of the ASHANTI"
         },
         "locations": {
-            "l_1": "Archangel",
-            "l_2": "Murmansk",
-            "l_3": "Bear Island",
-            "l_4": "Norwegian coast",
-            "l_5": "Scapa Flow",
-            "l_6": "Hvalfiord",
-            "l_7": "Denmark Strait",
-            "l_8": "Jan Mayen"
+            "l_1": "North Russia",
+            "l_2": "Barents Sea",
+            "l_3": "Iceland",
+            "l_4": "Kola Inlet",
+            "l_5": "Narvik",
+            "l_6": "Bear Island",
+            "l_7": "Spitzbergen",
+            "l_8": "Norway"
         },
         "events": {
-            "e_1": "Operation HS",
-            "e_2": "Convoy Q.P.13",
-            "e_3": "Convoy P.Q.17"
+            "e_1": "Convoy P.Q.16",
+            "e_2": "Convoy Q.P.12",
+            "e_3": "Operation for the supply of Malta"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "1st Minelaying Squadron"
+            "o_1": "Home Fleet",
+            "o_2": "R.A.F.",
+            "o_3": "Coastal Command"
         }
     },
     "keywords": [
-        "submarine attack",
-        "dummy convoy",
-        "air reconnaissance",
-        "heavy ships",
-        "German",
-        "Admiralty instructions",
+        "reconnaissance",
+        "fighter protection",
+        "air attack",
         "convoy",
-        "escort",
-        "minefield"
+        "U-boats"
     ],
     "themes": [
         "Military Operations",
-        "Naval Tactics",
-        "Strategic Decisions"
+        "Naval Warfare",
+        "Air Support"
     ],
     "topicModel": {
         "Military Operations": [
@@ -46,37 +42,42 @@
             "e_2",
             "e_3"
         ],
-        "Naval Tactics": [
+        "Naval Warfare": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
+        "Air Support": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "20th May 1942",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_1",
+                "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The dummy convoy, formed to distract the German forces, sails west about Shetlands and eastward aiming to attract German air reconnaissance."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Convoy P.Q.16 sails containing 35 ships and is subjected to various air attacks over multiple days, resulting in significant losses."
         },
         {
             "event": "e_2",
-            "date": "26th June",
+            "date": "31st May 1942",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_3",
+                "l_4"
             ],
             "persons": [
                 "p_1"
@@ -85,24 +86,20 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Convoy Q.P.13 sails from Archangel and is escorted, avoiding attacks despite being sighted by enemy aircraft."
+            "eventSummary": "Convoy Q.P.12 sails from Kola Inlet and successfully reaches Iceland without being attacked."
         },
         {
             "event": "e_3",
-            "date": "27th June",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_2"
-            ],
+            "date": "early June 1942",
+            "locations": [],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Convoy P.Q.17 departs Hvalfiord with a large escort, navigating through challenging weather conditions and evading enemy attacks."
+            "eventSummary": "Operation for the supply of Malta leads to insufficient destroyers available for simultaneous Russian convoy runs."
         }
     ]
 }

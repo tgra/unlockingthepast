@@ -1,113 +1,126 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Malcolm",
+            "p_2": "Ivanhoe",
+            "p_3": "Vice Admiral",
+            "p_4": "Rear-Admiral Wake-Walker",
+            "p_5": "Captain Howson"
+        },
         "locations": {
-            "l_1": "Dover",
-            "l_2": "French coast",
-            "l_3": "U.K. Ports",
-            "l_4": "Isle of Guernsey",
-            "l_5": "St. Julian",
-            "l_6": "Isle of Thanet",
-            "l_7": "Worthing",
-            "l_8": "St. David",
-            "l_9": "Dinard",
-            "l_10": "St. Andrew",
-            "l_11": "Nore Command"
+            "l_1": "Dunkirk",
+            "l_2": "U.K.",
+            "l_3": "Ramsgate",
+            "l_4": "Bray",
+            "l_5": "Dover",
+            "l_6": "N.W. Goodwins",
+            "l_7": "Harwich"
         },
         "events": {
-            "e_1": "Disembarkation in U.K. Ports",
-            "e_2": "Operation involving local skoots, launches, motor boats",
-            "e_3": "Sinking and damaging of ships"
+            "e_1": "Evacuation of Dunkirk",
+            "e_2": "Operation of personnel ships",
+            "e_3": "Attack on Dunkirk Harbour",
+            "e_4": "Embarkation at Dunkirk"
         },
         "organisations": {
-            "o_1": "H.M. Trawlers",
-            "o_2": "Royal Navy"
+            "o_1": "H.M. Government",
+            "o_2": "B.E.F."
         }
     },
     "keywords": [
-        "Disembarkation",
         "Evacuation",
-        "Naval ships",
-        "Damaged ships",
-        "Sunk ships"
+        "Dunkirk",
+        "Naval Operations",
+        "Enemy Attacks"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation",
-        "Naval Operations"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Evacuation": [
+        "Strategic Decisions": [
             "e_1",
-            "e_3"
-        ],
-        "Naval Operations": [
-            "e_2",
-            "e_3"
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "31/5-1/6",
             "locations": [
                 "l_1",
+                "l_2",
                 "l_3"
             ],
-            "persons": [],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The disembarkation operations are ongoing in U.K. Ports, involving the movement of various vessels."
+            "eventSummary": "The evacuation of Dunkirk is proceeding with ongoing naval operations and attempts to optimize the process amidst enemy fire and challenging conditions."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "30th/31st May",
             "locations": [
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_8",
-                "l_9",
-                "l_10"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Local skoots, launches, and motor boats assist in evacuating boats to the French coast amidst challenging conditions."
+            "eventSummary": "Operations of personnel ships are disrupted by heavy shelling as attempts are made to evacuate troops from Dunkirk."
         },
         {
             "event": "e_3",
-            "date": "Throughout late May to early June",
+            "date": "Unknown",
             "locations": [
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_2"
+                "l_1"
             ],
             "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Attack on Dunkirk Harbour occurs amid the challenges of evacuating troops, escalating the urgency of the situation."
+        },
+        {
+            "event": "e_4",
+            "date": "31st May",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_5"
+            ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Several ships are reported sunk or damaged during the naval operations, highlighting the perilous conditions at sea."
+            "eventSummary": "Embarkation at Dunkirk begins successfully but faces significant difficulties due to adverse weather conditions affecting naval operations."
         }
     ]
 }

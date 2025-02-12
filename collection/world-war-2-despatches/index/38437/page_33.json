@@ -1,134 +1,102 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Prime Minister",
-            "p_2": "Minister of Defence",
-            "p_3": "General Pile"
+            "p_1": "Hitler",
+            "p_2": "Koller"
         },
         "locations": {
-            "l_1": "Greater London",
-            "l_2": "Kent",
-            "l_3": "Sussex",
-            "l_4": "Channel"
+            "l_1": "England",
+            "l_2": "Germany"
         },
         "events": {
-            "e_1": "OverlordDiver Plan Execution",
-            "e_2": "Staff Conference",
-            "e_3": "Deployment of the Diver Defences",
-            "e_4": "German Flying Bomb Attacks"
+            "e_1": "Battle of Britain",
+            "e_2": "flying bomb campaign",
+            "e_3": "A-4 rocket campaign"
         },
         "organisations": {
-            "o_1": "Anti-Aircraft Command",
-            "o_2": "Balloon Command",
-            "o_3": "Royal Air Force Regiment",
-            "o_4": "Royal Armoured Corps"
+            "o_1": "Luftwaffe"
         }
     },
     "keywords": [
-        "flying bombs",
-        "Diver defences",
+        "air superiority",
+        "flying bomb",
+        "A-4 rocket",
         "military strategy",
-        "air defence",
-        "Staff Conference"
+        "German policy"
     ],
     "themes": [
         "Military Operations",
-        "Countermeasures",
-        "Strategic Planning"
+        "Strategic Decisions",
+        "Air Defense"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_4"
+            "e_2",
+            "e_3"
         ],
-        "Countermeasures": [
-            "e_3",
-            "e_4"
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
         ],
-        "Strategic Planning": [
+        "Air Defense": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 16, 1944",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Chiefs of Staff agree to execute the OverlordDiver Plan in response to German flying bomb attacks."
-        },
-        {
-            "event": "e_2",
-            "date": "June 15, 1944",
+            "date": "1940",
             "locations": [
                 "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "During a Staff Conference, key military decisions regarding the intercepted flying bombs are discussed."
-        },
-        {
-            "event": "e_3",
-            "date": "June 17, 1944",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The deployment of the Diver defences begins, with the first A.A. regiment moving into position."
-        },
-        {
-            "event": "e_4",
-            "date": "June 15-28, 1944",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Britain occurs, marking a crucial turning point in the air war over England."
+        },
+        {
+            "event": "e_2",
+            "date": "1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The flying bomb campaign is initiated by Germany as a novel form of air attack, despite the lack of air superiority."
+        },
+        {
+            "event": "e_3",
+            "date": "1944",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
                 "e_1",
                 "e_2"
             ],
-            "eventSummary": "Germany launches a series of flying bomb attacks on Greater London, prompting a rapid military response."
+            "eventSummary": "The A-4 rocket campaign represents a significant technological effort by Germany to regain control in the air war against the Allies."
         }
     ]
 }

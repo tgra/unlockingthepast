@@ -7,73 +7,80 @@
             "p_4": "Captain W. E. Parry"
         },
         "locations": {
-            "l_1": "Falkland Islands",
-            "l_2": "River Plate",
-            "l_3": "Uruguayan coast",
-            "l_4": "Punta Negra"
+            "l_1": "River Plate",
+            "l_2": "Falkland Islands",
+            "l_3": "Buenos Aires",
+            "l_4": "Lobos Island",
+            "l_5": "Uruguayan coast",
+            "l_6": "Punta Negra"
         },
         "events": {
-            "e_1": "Engagement with GRAF SPEE",
-            "e_2": "Recovery of aircraft by AJAX",
-            "e_3": "Signal sent to British Naval Attache in Buenos Aires",
-            "e_4": "Shadowing of GRAF SPEE"
+            "e_1": "Engagement of GRAF SPEE",
+            "e_2": "Recovery of AJAX's aircraft",
+            "e_3": "Signal from GRAF SPEE to AJAX",
+            "e_4": "Identification of S.S. DELANE",
+            "e_5": "Shadowing and salvos exchanged between GRAF SPEE and ACHILLES"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "British Naval Attache"
+            "o_2": "British Navy"
         }
     },
     "keywords": [
-        "GRAF SPEE",
-        "AJAX",
-        "ACHILLES",
-        "engagement",
+        "Torpedoes",
+        "enemy",
+        "gunfire",
+        "ammunition",
+        "salvos",
         "shadowing",
-        "military signals"
+        "merchant ship",
+        "signals"
     ],
     "themes": [
-        "Military Operations",
-        "Naval Battles",
-        "Strategic Decisions"
+        "Naval Engagements",
+        "Aircraft Operations",
+        "Communication",
+        "Identification of Ships"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_5"
+        ],
+        "Aircraft Operations": [
+            "e_2"
+        ],
+        "Communication": [
+            "e_3",
             "e_4"
         ],
-        "Diplomacy": [
-            "e_3"
-        ],
-        "Strategic Decisions": [
-            "e_1",
+        "Naval Identification": [
             "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_4"
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_5"
             ],
-            "eventSummary": "During the engagement with GRAF SPEE, AJAX and ACHILLES display tactical maneuvers to counter the enemy's gunfire."
+            "eventSummary": "The engagement between GRAF SPEE and the British Navy occurs, with multiple salvos exchanged."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "",
             "locations": [
                 "l_1"
             ],
@@ -84,16 +91,14 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "AJAX successfully performs the recovery of its aircraft under challenging conditions."
+            "connectedEvents": [],
+            "eventSummary": "AJAX successfully recovers her aircraft, showcasing efficient operations under challenging conditions."
         },
         {
             "event": "e_3",
-            "date": "N/A",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_1"
             ],
             "persons": [
                 "p_3"
@@ -102,26 +107,35 @@
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "A signal is sent to the British Naval Attache in Buenos Aires regarding GRAF SPEE's movements."
+            "eventSummary": "GRAF SPEE sends a signal requesting assistance from AJAX regarding lifeboats."
         },
         {
             "event": "e_4",
-            "date": "N/A",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "S.S. DELANE is identified mistakenly as an enemy cruiser due to similarities in appearance."
+        },
+        {
+            "event": "e_5",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_4"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_2"
             ],
-            "eventSummary": "Shadowing of GRAF SPEE by ACHILLES and AJAX is conducted to monitor the enemy's movements and ensure tactical advantage."
+            "eventSummary": "GRAF SPEE and ACHILLES exchange salvos as shadowing continues, with strategic maneuvers employed."
         }
     ]
 }

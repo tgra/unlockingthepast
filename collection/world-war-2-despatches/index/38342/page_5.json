@@ -1,16 +1,14 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "PRINCE CHARLES",
+            "p_1": "PRINCE CHAREES",
             "p_2": "PRINCE LEOPOLD",
             "p_3": "CHIDDINGFOLD",
-            "p_4": "Rugsundo Battery",
-            "p_5": "Lieutenant J. N. Kempton",
+            "p_4": "KENYA",
+            "p_5": "J. N. Kempton",
             "p_6": "OFFA",
             "p_7": "DONNER",
-            "p_8": "s.s. ANHALT",
-            "p_9": "s.s. NORMAR",
-            "p_10": "REGMAR EDZARD FRITZEN"
+            "p_8": "REGMAR EDZARD FRITZEN"
         },
         "locations": {
             "l_1": "Slaaken Bay",
@@ -18,153 +16,127 @@
             "l_3": "Maaloy Island",
             "l_4": "Maaloysund",
             "l_5": "Vaagsfiord",
-            "l_6": "Brandhaunnes' Point"
+            "l_6": "s.s. ANHALT",
+            "l_7": "Brandhaunnes' Point"
         },
         "events": {
-            "e_1": "Bombardment of Maaloy Island",
-            "e_2": "Engagement with Enemy Aircraft",
-            "e_3": "Pursuit of Enemy Bombers",
-            "e_4": "Engagement with Armed Trawler",
-            "e_5": "Sinking of Enemy Boats",
-            "e_6": "Air Raids"
+            "e_1": "First Sortie of Blenheims",
+            "e_2": "Bombardment of Maaloy Island",
+            "e_3": "Engagement with Enemy Bombers",
+            "e_4": "Capturing of merchant ship ANHALT",
+            "e_5": "Engagement with Armed Trawler DONNER"
         },
         "organisations": {
-            "o_1": "Royal Air Force"
+            "o_1": "R.A.F."
         }
     },
     "keywords": [
         "Naval Operations",
         "Air Operations",
-        "Enemy Engagement",
-        "Artillery Fire",
         "Bombardment",
-        "Merchant Shipping"
+        "Engagement",
+        "Communication"
     ],
     "themes": [
         "Military Operations",
-        "Enemy Engagement",
         "Naval Warfare",
-        "Air Support"
+        "Aerial Engagements",
+        "Communication Challenges"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
+            "e_3"
+        ],
+        "Naval Warfare": [
             "e_4",
             "e_5"
         ],
-        "Naval Warfare": [
+        "Communication Challenges": [
             "e_1",
-            "e_4"
-        ],
-        "Air Support": [
-            "e_2",
-            "e_3",
-            "e_6"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of Bombardment",
+            "date": "Date not specified",
             "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "The bombardment of Maaloy Island is conducted successfully by the naval force to secure the area."
-        },
-        {
-            "event": "e_2",
-            "date": "Date of Engagement with Enemy Aircraft",
-            "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [
                 "p_1",
+                "p_2",
                 "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The First Sortie of Blenheims arrives while ORIBI and ONSLOW engage in the naval operation to enter Ulvesund."
+        },
+        {
+            "event": "e_2",
+            "date": "Date not specified",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_5"
+                "e_1"
             ],
-            "eventSummary": "Enemy aircraft engage our Blenheims, leading to a chaotic air battle with losses reported."
+            "eventSummary": "The bombardment of Maaloy Island has been completed, leading to various operations in the vicinity."
         },
         {
             "event": "e_3",
-            "date": "Date of Pursuit of Enemy Bombers",
+            "date": "Date not specified",
             "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Following the enemy attack, our forces pursue retreating enemy bombers but are unable to establish effective communication."
-        },
-        {
-            "event": "e_4",
-            "date": "Date of Engagement with Armed Trawler",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_6",
-                "p_9"
+                "p_4"
             ],
             "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Engagement occurs with the armed trawler DONNER, with several hits reported before the vessel is abandoned."
+            "eventSummary": "Engagement with enemy bombers occurs while R.A.F. assesses communication efficiency."
         },
         {
-            "event": "e_5",
-            "date": "Date of Sinking of Enemy Boats",
+            "event": "e_4",
+            "date": "Date not specified",
             "locations": [
-                "l_5"
+                "l_6"
             ],
             "persons": [
                 "p_3",
-                "p_8"
+                "p_6"
             ],
             "organisations": [],
             "connectedEvents": [
-                "e_4"
+                "e_5"
             ],
-            "eventSummary": "The crew of s.s. ANHALT is ordered to surrender; upon non-compliance, the commanding ship CHIDDINGFOLD sinks one boat."
+            "eventSummary": "The merchant ship ANHALT is captured while CHIDDINGFOLD supports OFFA in the operation."
         },
         {
-            "event": "e_6",
-            "date": "Date of Air Raids",
-            "locations": [
-                "l_2"
-            ],
+            "event": "e_5",
+            "date": "Date not specified",
+            "locations": [],
             "persons": [
-                "p_1"
+                "p_6",
+                "p_7"
             ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "A series of air raids occur, causing damage and prompting defensive fire from our ships."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "OFFA engages Armed Trawler DONNER but the vessel continues to evade capture."
         }
     ]
 }

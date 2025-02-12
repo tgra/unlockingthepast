@@ -1,112 +1,140 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Garrison Commander",
-            "p_2": "Troops from the Greek mainland",
-            "p_3": "Parachute troops"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Cos",
-            "l_2": "Antimachia",
-            "l_3": "Rhodes",
-            "l_4": "Crete",
-            "l_5": "Leros",
-            "l_6": "Samos",
-            "l_7": "Greek mainland",
-            "l_8": "Naxos",
-            "l_9": "Kalino",
-            "l_10": "Gairos",
-            "l_11": "Kythnos",
-            "l_12": "Stampalia"
+            "l_1": "Cairo",
+            "l_2": "Sicily",
+            "l_3": "Catania",
+            "l_4": "Tunisia",
+            "l_5": "Modica",
+            "l_6": "Gela",
+            "l_7": "United Kingdom",
+            "l_8": "North Africa",
+            "l_9": "Suez Canal",
+            "l_10": "Tripoli",
+            "l_11": "Sousse",
+            "l_12": "Sfax"
         },
         "events": {
-            "e_1": "Assault on Cos",
-            "e_2": "Destruction of enemy convoy off Stampalia",
-            "e_3": "Enemy assault on Leros"
+            "e_1": "Assault Landing on Southeast Corner of Sicily",
+            "e_2": "Assault Landing at Catania",
+            "e_3": "Assault on South Coast of Sicily",
+            "e_4": "Medical Evacuation Plan from Beaches"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Royal Navy",
-            "o_3": "U.S.A.A.F",
-            "o_4": "German Air Force",
-            "o_5": "Durham Light Infantry"
+            "o_1": "Allied Force Headquarters",
+            "o_2": "Eighth Army",
+            "o_3": "Middle East",
+            "o_4": "Thirteenth Corps",
+            "o_5": "30th Corps",
+            "o_6": "First Canadian Army Tank Brigade",
+            "o_7": "Royal Navy",
+            "o_8": "War Office",
+            "o_9": "Twelfth Army Headquarters",
+            "o_10": "Ministry of War Transport"
         }
     },
     "keywords": [
-        "garrison",
-        "airfield",
-        "anti-aircraft defences",
-        "German Air Force",
-        "naval patrols",
-        "convoy"
+        "photographic units",
+        "co-ordination",
+        "operational plan",
+        "assault landing",
+        "divisions",
+        "training",
+        "difficulties",
+        "anti-aircraft defence",
+        "signals planning",
+        "hospital beds"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Air Superiority",
-        "Naval Engagements"
+        "Logistics",
+        "Planning and Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3"
         ],
-        "Defensive Strategies": [
-            "e_1"
+        "Logistics": [
+            "e_4"
         ],
-        "Naval Engagements": [
-            "e_2"
+        "Planning and Coordination": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd October",
+            "date": "",
             "locations": [
-                "l_1",
                 "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_4",
-                "o_5"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The enemy assault on Cos begins, leading to the overwhelming of the British garrison."
+            "eventSummary": "The assault landing on the Southeast corner of Sicily is planned by the Allied Force Headquarters and executed by Eighth Army under Middle East control."
         },
         {
             "event": "e_2",
-            "date": "7th October",
+            "date": "",
             "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The assault landing at Catania was part of the greater operational plan but was later abandoned amidst logistical challenges."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The assault on the South coast of Sicily involved multiple divisions and shifts in planning as operations unfolded."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_10",
+                "l_11",
                 "l_12"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3",
+                "o_7"
             ],
             "connectedEvents": [],
-            "eventSummary": "The Royal Navy intercepts a large enemy convoy off Stampalia, destroying multiple enemy vessels."
-        },
-        {
-            "event": "e_3",
-            "date": "October (after Cos fall)",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Following the fall of Cos, the enemy's anticipated assault on Leros is delayed, allowing British forces to strengthen their garrison."
+            "eventSummary": "The medical evacuation plan from beaches directly to Tripoli, Sousse, and Sfax was arranged for casualty management following assaults."
         }
     ]
 }

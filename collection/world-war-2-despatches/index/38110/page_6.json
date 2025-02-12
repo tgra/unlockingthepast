@@ -1,116 +1,130 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Senior Officers",
-            "p_2": "Svenner"
+            "p_1": "Rear-Admiral Kirk"
         },
         "locations": {
-            "l_1": "Cape Barfleur",
-            "l_2": "Havre",
-            "l_3": "Omaha Beach",
-            "l_4": "Eastern Flank"
+            "l_1": "Devonshire",
+            "l_2": "Portland",
+            "l_3": "Weymouth Bay",
+            "l_4": "St. Catherine's Point",
+            "l_5": "French coast",
+            "l_6": "Pas de Calais",
+            "l_7": "Cap d'Antifer",
+            "l_8": "Cherbourg"
         },
         "events": {
-            "e_1": "Minesweeping Operation",
-            "e_2": "Naval Bombardment",
-            "e_3": "Assault on Beaches"
+            "e_1": "D Day",
+            "e_2": "Operation Neptune",
+            "e_3": "Husky"
         },
         "organisations": {
-            "o_1": "Western Task Force",
-            "o_2": "Eastern Task Force",
-            "o_3": "British Forces",
-            "o_4": "U.S. Forces"
+            "o_1": "Force U",
+            "o_2": "Force U2A",
+            "o_3": "Force O",
+            "o_4": "Force J",
+            "o_5": "Air Forces"
         }
     },
     "keywords": [
-        "Minesweeping",
-        "Naval Bombardment",
-        "Assault",
-        "Tidal Streams",
-        "Enemy Coast"
+        "weather",
+        "postponement",
+        "assault",
+        "forces",
+        "D Day",
+        "surprise",
+        "navigation",
+        "minefields"
     ],
     "themes": [
         "Military Operations",
         "Naval Strategy",
-        "Tactical Challenges",
-        "Enemy Engagement"
+        "Weather Impact"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Naval Strategy": [
-            "e_1",
             "e_2"
         ],
-        "Tactical Challenges": [
-            "e_3"
+        "Naval Strategy": [
+            "e_1"
         ],
-        "Enemy Engagement": [
-            "e_2",
-            "e_3"
+        "Weather Impact": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "5th June",
+            "date": "6th June",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The minesweeping operation is successfully conducted ahead of the assault, demonstrating high skill despite challenging conditions."
+            "eventSummary": "On D Day, the assault forces encounter challenging weather but press forward with the operation, aiming for strategic surprise against the enemy."
         },
         {
             "event": "e_2",
-            "date": "5th June",
+            "date": "Not available",
             "locations": [
                 "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Naval bombardment successfully neutralizes enemy resistance with coordinated fire despite initial challenges and surprises."
-        },
-        {
-            "event": "e_3",
-            "date": "6th June",
-            "locations": [
+                "l_2",
                 "l_3",
-                "l_4"
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Neptune represents a significant military operation with efforts to secure naval superiority and surprise during the Allied invasion."
+        },
+        {
+            "event": "e_3",
+            "date": "Not available",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1",
                 "e_2"
             ],
-            "eventSummary": "Assault forces engage the beaches, facing varying enemy resistance, with significant air and naval support contributing to their success."
+            "eventSummary": "Husky refers to the Allied invasion of Sicily, drawing parallels in strategy and execution to the operations planned for D Day."
         }
     ]
 }

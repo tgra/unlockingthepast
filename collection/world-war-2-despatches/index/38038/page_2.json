@@ -1,69 +1,77 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C.S.10",
-            "p_2": "D.17",
-            "p_3": "Admiral Doenitz",
-            "p_4": "C.S.1o"
+            "p_1": "Rear Admiral",
+            "p_2": "J. A. McCoy",
+            "p_3": "W. OH. Selby",
+            "p_4": "H. G. de Wolf",
+            "p_5": "J.C. Hibberd",
+            "p_6": "J. A. Hodges",
+            "p_7": "H. S. Rayner",
+            "p_8": "G. L. M. Balfour",
+            "p_9": "P. Bekenn",
+            "p_10": "F. S. Hewitt",
+            "p_11": "R. L. Fisher",
+            "p_12": "J. Jee-Barber",
+            "p_13": "A. R. White",
+            "p_14": "W. D. Shaw",
+            "p_15": "I. M, R. Campbell",
+            "p_16": "D. J. P. Jewitt",
+            "p_17": "J. R. Barnes",
+            "p_18": "J. H. Stubbs",
+            "p_19": "R. W. Ellis",
+            "p_20": "F. R. Parham",
+            "p_21": "R. L. Burnett",
+            "p_22": "D. K. Bain",
+            "p_23": "C. T. Addis",
+            "p_24": "G. H. E. Russell",
+            "p_25": "J. Hiighes-Hallett",
+            "p_26": "M. D. G. Meyrick",
+            "p_27": "W. S. Clouston",
+            "p_28": "E. W. Walmsley",
+            "p_29": "S. Storeheill"
         },
         "locations": {
-            "l_1": "Belfast",
-            "l_2": "J.W.55B",
-            "l_3": "North Sea",
-            "l_4": "Convoy"
+            "l_1": "Bear Island",
+            "l_2": "Duke of York",
+            "l_3": "Western Approaches Command",
+            "l_4": "J.W. convoys",
+            "l_5": "R.A. convoys"
         },
         "events": {
-            "e_1": "First Engagement with the Enemy",
-            "e_2": "Second Engagement with the Enemy"
+            "e_1": "Battle of the J.W. convoy",
+            "e_2": "Action of the R.A. convoy"
         },
         "organisations": {
-            "o_1": "Force 1",
-            "o_2": "36th Division"
+            "o_1": "Home Fleet",
+            "o_2": "Western Approaches Command",
+            "o_3": "Tenth Cruiser Squadron"
         }
     },
     "keywords": [
-        "destroyers",
         "convoy",
-        "enemy",
-        "engagement",
-        "radar"
+        "U-boats",
+        "destroyers",
+        "escorts"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Tactical Maneuvers"
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": []
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Force 1 engages the enemy, detecting radar echoes and maneuvering to intercept them while attempting to protect the convoy."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
+            "date": "25/26 December",
             "locations": [
                 "l_1",
                 "l_2"
@@ -71,16 +79,47 @@
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3"
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8",
+                "p_9",
+                "p_10"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The J.W. convoy is shadowed by U-boats while the R.A. convoy passes Bear Island undetected. Efforts to divert the convoys are made to enhance their safety."
+        },
+        {
+            "event": "e_2",
+            "date": "24 December",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_11",
+                "p_12",
+                "p_13",
+                "p_14",
+                "p_15"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Force 1 closes in on the convoy and engages the enemy again, managing radar contacts and tactical formations against the enemy."
+            "eventSummary": "Action is taken to divert the R.A. convoy to improve safety and reduce the chance of enemy contact."
         }
     ]
 }

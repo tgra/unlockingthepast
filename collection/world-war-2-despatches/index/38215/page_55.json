@@ -1,148 +1,156 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander A.I.F.",
-            "p_2": "C.-in-C. Far East",
-            "p_3": "A.O.C.",
-            "p_4": "Argylls",
-            "p_5": "5/2 Punjab Regt.",
-            "p_6": "4/19 Hyderabad Regt."
+            "p_1": "Commander Westforce",
+            "p_2": "Commander 11 Indian Division",
+            "p_3": "Commander 3 Indian Corps",
+            "p_4": "Commander 53 British Brigade",
+            "p_5": "Brigade Commander"
         },
         "locations": {
-            "l_1": "Ipoh",
-            "l_2": "Singapore",
-            "l_3": "Jerantut",
-            "l_4": "Kuala Lipis",
-            "l_5": "Kuala Kubu",
-            "l_6": "Kuantan",
-            "l_7": "North Johore",
-            "l_8": "Malacca",
-            "l_9": "Gemas",
-            "l_10": "Segamat",
-            "l_11": "Muar",
-            "l_12": "Kluang-Ayer-Hitam",
-            "l_13": "Lenggong",
-            "l_14": "Kota Tampan",
-            "l_15": "Chenderoh Lake",
-            "l_16": "Lawin",
-            "l_17": "Taiping",
-            "l_18": "Ulu Sapetang",
-            "l_19": "Bagan Serai",
-            "l_20": "Blanja",
-            "l_21": "Perak River"
+            "l_1": "Batu Pahat",
+            "l_2": "Ayer Hitam",
+            "l_3": "Muar",
+            "l_4": "Bakri",
+            "l_5": "Yong Peng",
+            "l_6": "Segamat",
+            "l_7": "Jemaluang",
+            "l_8": "Bukit Payong",
+            "l_9": "Parit Sulong"
         },
         "events": {
-            "e_1": "Malaya Command Order No. 28",
-            "e_2": "Counter-attack at Sumpitan",
-            "e_3": "Engagement of the Argylls",
-            "e_4": "Withdrawal of the 28 Brigade Group",
-            "e_5": "Demolition of Krian River Bridges"
+            "e_1": "Battle of Muar",
+            "e_2": "Withdrawal from Segamat",
+            "e_3": "Capture of Parit Sulong",
+            "e_4": "Engagement at Bakri",
+            "e_5": "Enemy landing north of Batu Pahat"
         },
         "organisations": {
-            "o_1": "Malaya Command",
-            "o_2": "Australian Brigade Group",
-            "o_3": "Indian Division"
+            "o_1": "45 Brigade",
+            "o_2": "53 Brigade",
+            "o_3": "11 Indian Division",
+            "o_4": "3 Indian Corps",
+            "o_5": "2/29 Australian Battalion",
+            "o_6": "5 R. Norfolk",
+            "o_7": "2 Cambridgeshire"
         }
     },
     "keywords": [
-        "counter-attack",
-        "defences",
-        "evacuation",
-        "rumours",
-        "withdrawal"
+        "Japanese troops",
+        "artillery fire",
+        "tanks",
+        "intelligence service",
+        "morale",
+        "withdrawal",
+        "communications"
     ],
     "themes": [
-        "Military Strategy",
-        "Tactical Operations",
-        "Defensive Measures",
-        "Withdrawal Planning"
+        "Military Operations",
+        "Defense Strategies",
+        "Counter-attacks"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
             "e_4",
             "e_5"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": []
+        "Defense Strategies": [
+            "e_2",
+            "e_3"
+        ],
+        "Counter-attacks": [
+            "e_4"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd December 1941",
+            "date": "16th January 1942",
             "locations": [
-                "l_1",
+                "l_3",
                 "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_5"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "Malaya Command Order No. 28 is issued as part of military strategy to handle the ongoing conflict in Malaya."
+            "eventSummary": "On the 16th of January, Japanese troops cross the River Muar and engage in sharp fighting, leading to a significant threat to the communication lines of Westforce."
         },
         {
             "event": "e_2",
-            "date": "19th December 1941",
+            "date": "17th January 1942",
             "locations": [
-                "l_12"
+                "l_6"
             ],
             "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The forces recapture Sumpitan, engaging in an encounter battle, but are forced to withdraw due to a strong counter-attack."
-        },
-        {
-            "event": "e_3",
-            "date": "20th December 1941",
-            "locations": [
-                "l_14"
-            ],
-            "persons": [
-                "p_4",
-                "p_5"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The Argylls are heavily engaged, driving off an enemy force attempting to flank them."
-        },
-        {
-            "event": "e_4",
-            "date": "21st December 1941",
-            "locations": [
-                "l_19"
-            ],
-            "persons": [
-                "p_6"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [
-                "e_5"
+                "e_1"
             ],
-            "eventSummary": "The 28 Brigade Group begins an immediate withdrawal behind the River Perak to avoid encirclement."
+            "eventSummary": "On the 17th of January, the 2/29 Australian Battalion is dispatched to Bakri as the threat from Muar escalates, prompting strategic withdrawals in Segamat."
+        },
+        {
+            "event": "e_3",
+            "date": "20th January 1942",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On the afternoon of the 20th of January, enemy forces capture the bridge at Parit Sulong, intensifying the challenges faced by the Allied forces during their withdrawal."
+        },
+        {
+            "event": "e_4",
+            "date": "18th January 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On the 18th of January, the 45 Indian Infantry Brigade, aided by the 2/29 Australian Battalion, repels a strong enemy attack near Bakri, with losses incurred on both sides."
         },
         {
             "event": "e_5",
-            "date": "21st December 1941",
+            "date": "18th January 1942",
             "locations": [
-                "l_18"
+                "l_1"
             ],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
             "connectedEvents": [],
-            "eventSummary": "The Krian River bridges are demolished to prevent enemy passage."
+            "eventSummary": "On the afternoon of the 18th of January, enemy forces successfully land a significant force north of Batu Pahat, escalating the conflict in the region."
         }
     ]
 }

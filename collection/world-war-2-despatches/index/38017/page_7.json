@@ -2,99 +2,121 @@
     "namedEntities": {
         "persons": {
             "p_1": "Vice Admiral",
-            "p_2": "S.N.O. Dunkirk",
-            "p_3": "Commander-in-Chief, Nore",
-            "p_4": "Naval Officer-in-Charge, Ramsgate"
+            "p_2": "Senior Officers",
+            "p_3": "Liaison Officer",
+            "p_4": "G.O.C.",
+            "p_5": "S.N.O.",
+            "p_6": "Admiralty",
+            "p_7": "Commander-in-Chief",
+            "p_8": "Commander-in-Chief"
         },
         "locations": {
-            "l_1": "Dunkirk",
-            "l_2": "United Kingdom",
-            "l_3": "Dover",
-            "l_4": "La Panne",
-            "l_5": "Les Hemmes",
-            "l_6": "Gravelines",
-            "l_7": "Zuydecoote Pass",
-            "l_8": "North Goodwin",
-            "l_9": "Ruytingen Pass",
-            "l_10": "Malo Beach",
-            "l_11": "South Downs"
+            "l_1": "Dover",
+            "l_2": "Dunkirk",
+            "l_3": "Hawkinge",
+            "l_4": "Belgian-French coast",
+            "l_5": "Calais",
+            "l_6": "La Panne",
+            "l_7": "Portsmouth",
+            "l_8": "Bray"
         },
         "events": {
-            "e_1": "Bombardment of Transports",
-            "e_2": "Dunkirk Evacuation Efforts"
+            "e_1": "Evacuation from Dunkirk",
+            "e_2": "Operation to secure water supply on beaches",
+            "e_3": "Deployment of M.T.B.s and A/S Trawlers",
+            "e_4": "Communication of evacuation plan"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "Dover Command",
-            "o_3": "B.E.F.",
-            "o_4": "Western Approaches"
+            "o_1": "Merchant Navy",
+            "o_2": "Fishing Fleets"
         }
     },
     "keywords": [
-        "Dunkirk",
-        "Evacuation",
-        "Military Operations",
-        "Bombardment",
-        "Naval Operations",
-        "Strategic Decisions"
+        "evacuation",
+        "operations",
+        "military",
+        "troops",
+        "French Coast",
+        "air threat"
     ],
     "themes": [
         "Military Operations",
-        "Naval Coordination",
-        "Evacuation Challenges"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Evacuation Challenges": [
-            "e_2"
-        ],
-        "Naval Coordination": [
-            "e_1",
-            "e_2"
+        "Strategic Decisions": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th May 1940",
+            "date": "28th May",
             "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Transports delivering personnel to Dunkirk are bombarded, resulting in several ships returning to the UK without completing their trips."
-        },
-        {
-            "event": "e_2",
-            "date": "27th-28th May 1940",
-            "locations": [
+                "l_2",
                 "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
+                "p_5"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Evacuation efforts intensify as personnel vessels and military officers direct resources to the beaches to manage troop extraction amidst enemy bombardment."
+            "eventSummary": "Evacuation from Dunkirk involves significant coordination among naval and military units as they face enemy threats and logistical challenges."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_7"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Joint measures are initiated to supply water to the troops on the beaches amidst evacuation efforts."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Commander-in-Chief organizes patrols of M.T.B.s and A/S Trawlers to secure the evacuation area against enemy attack."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The evacuation plan is communicated and outlines the distribution of military assets for the operation."
         }
     ]
 }

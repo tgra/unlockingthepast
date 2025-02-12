@@ -1,77 +1,77 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Debden",
-            "l_2": "Castle Camp",
-            "l_3": "Martlesham",
-            "l_4": "Northolt",
-            "l_5": "North Weald",
-            "l_6": "Stapleford",
-            "l_7": "Hornchurch",
-            "l_8": "Rochford",
-            "l_9": "Gravesend",
-            "l_10": "Biggin Hill",
-            "l_11": "West Malling",
-            "l_12": "Croydon",
-            "l_13": "Kenley",
-            "l_14": "Redhill",
-            "l_15": "Tangmere",
-            "l_16": "Leconfield",
-            "l_17": "Kirton-in-Lindsey",
-            "l_18": "Digby",
-            "l_19": "Wittering",
-            "l_20": "Coltishall",
-            "l_21": "Duxford",
-            "l_22": "Turnhouse",
-            "l_23": "Drem",
-            "l_24": "Prestwick",
-            "l_25": "Acklington",
-            "l_26": "Catterick",
-            "l_27": "Aldergrove",
-            "l_28": "Castletown",
-            "l_29": "Dyce",
-            "l_30": "Montrose"
+        "persons": {
+            "p_1": "Winston Churchill"
         },
-        "events": {},
+        "locations": {
+            "l_1": "England",
+            "l_2": "Crete"
+        },
+        "events": {
+            "e_1": "Battle of Britain",
+            "e_2": "Battle of Crete"
+        },
         "organisations": {
-            "o_1": "No. 11 Group",
-            "o_2": "No. 12 Group",
-            "o_3": "No. 13 Group",
-            "o_4": "No. 14 Group"
+            "o_1": "Royal Air Force",
+            "o_2": "Fighter Command"
         }
     },
     "keywords": [
-        "Aircraft",
-        "Hurricane",
-        "Spitfire",
-        "Night-Flying",
-        "Reconnaissance",
-        "Military Groups"
+        "Fighter Command",
+        "Operational Training Units",
+        "German Fighters",
+        "Flying Training Schools"
     ],
     "themes": [
         "Military Operations",
-        "Air Force Strategy",
-        "Aircraft Types"
+        "Training and Preparation",
+        "Casualty Management"
     ],
     "topicModel": {
         "Military Operations": [
-            "o_1",
-            "o_2",
-            "o_3",
-            "o_4"
+            "e_1",
+            "e_2"
         ],
-        "Air Force Strategy": [
-            "o_1",
-            "o_2",
-            "o_3",
-            "o_4"
+        "Training and Preparation": [
+            "e_1"
         ],
-        "Aircraft Types": [
-            "Hurricane",
-            "Spitfire",
-            "Blenheim"
+        "Casualty Management": [
+            "e_1"
         ]
     },
-    "eventConnections": []
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Autumn 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of Britain occurs during the Autumn of 1940, where failure in the fighter defense could lead to an invasion of England."
+        },
+        {
+            "event": "e_2",
+            "date": "Spring 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Battle of Crete takes place in Spring 1941, where the withdrawal of Fighters severely impacts the resistance."
+        }
+    ]
 }

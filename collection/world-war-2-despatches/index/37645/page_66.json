@@ -1,135 +1,118 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Le Gentilhomme",
-            "p_2": "Brigadier Buchanan",
-            "p_3": "Colonel Brossett",
-            "p_4": "Major Appert",
-            "p_5": "Captain Majendie"
+            "p_1": "General Wavell",
+            "p_2": "Brigadier W. A. Dimoline"
         },
         "locations": {
-            "l_1": "Addis Abeba",
-            "l_2": "Diredaua",
-            "l_3": "Nairobi",
-            "l_4": "British Somaliland",
-            "l_5": "Jibuti",
-            "l_6": "French Somaliland",
-            "l_7": "Zeilah",
-            "l_8": "Daouenle",
-            "l_9": "Aden",
-            "l_10": "Madagascar"
+            "l_1": "Syria",
+            "l_2": "Jibuti",
+            "l_3": "French Somaliland",
+            "l_4": "Abyssinia",
+            "l_5": "Diredaua",
+            "l_6": "Berbera",
+            "l_7": "Assab",
+            "l_8": "Zeilah"
         },
         "events": {
-            "e_1": "Evacuation of Fascists from Addis Abeba",
-            "e_2": "Arrival of Free French Detachments to Somaliland",
-            "e_3": "Drop of leaflets inviting French troops",
-            "e_4": "Negotiations regarding Jibuti blockade"
+            "e_1": "Evacuation of Italian civilians from Abyssinia",
+            "e_2": "Operation against Assab",
+            "e_3": "Maintenance of the blockade",
+            "e_4": "Response to General Wavell's letter"
         },
         "organisations": {
-            "o_1": "O.E.T.A.",
-            "o_2": "C.P.O. Middle East"
+            "o_1": "Political Evacuation Committee",
+            "o_2": "Italian Armistice Commission",
+            "o_3": "E.A. Force",
+            "o_4": "2/2 K.A.R.",
+            "o_5": "26th E.A. Brigade"
         }
     },
     "keywords": [
-        "evacuation",
-        "Free French",
-        "military resources",
         "blockade",
-        "Vichy French",
-        "negotiations"
+        "evacuation",
+        "military operations",
+        "French Somaliland",
+        "Italian Government",
+        "Vichy"
     ],
     "themes": [
         "Military Operations",
         "Diplomacy",
-        "Political Maneuvering"
+        "Humanitarian Efforts"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
             "e_2",
             "e_3"
         ],
         "Diplomacy": [
             "e_4"
         ],
-        "Political Maneuvering": [
-            "e_1",
-            "e_4"
+        "Humanitarian Efforts": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "28th April",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Eighty prominent Fascists and their families are evacuated from Addis Abeba to Diredaua."
-        },
-        {
-            "event": "e_2",
-            "date": "5th April",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Detachments of Free French under General Le Gentilhomme are proceeding to British Somaliland."
-        },
-        {
-            "event": "e_3",
-            "date": "15th April",
-            "locations": [
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_4"
             ],
-            "eventSummary": "Leaflets are dropped from a Free French aircraft inviting French troops to join the British."
+            "eventSummary": "The evacuation of Italian civilians from Abyssinia is considered with urgency due to transport limitations."
         },
         {
-            "event": "e_4",
-            "date": "1st May",
+            "event": "e_2",
+            "date": "11th June",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_7"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation against Assab occurs with success, resulting in the enemy being surprised and encountering little resistance."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_1"
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
             ],
+            "eventSummary": "The maintenance of the blockade is confirmed as necessary until French Somaliland becomes Free French."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Negotiations regarding the use of the port of Jibuti and the blockade are opened."
+            "eventSummary": "General Wavell's letter is sent to inform the Governor that the blockade will be maintained until political conditions change."
         }
     ]
 }

@@ -1,28 +1,31 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral",
+            "p_1": "Rear-Admiral Commanding",
             "p_2": "Commander-in-Chief"
         },
         "locations": {
-            "l_1": "PRINCE OF WALES",
-            "l_2": "BISMARCK",
-            "l_3": "PRINZ EUGEN"
+            "l_1": "BISMARCK",
+            "l_2": "PRINCE OF WALES",
+            "l_3": "PRINZ EUGEN",
+            "l_4": "VICTORIOUS"
         },
         "events": {
-            "e_1": "Engagement with BISMARCK",
-            "e_2": "Interception by the Commander-in-Chief"
+            "e_1": "Engagement with German ships",
+            "e_2": "Decision to not re-engage"
         },
         "organisations": {
             "o_1": "Admiralty"
         }
     },
     "keywords": [
-        "engagement",
+        "gunnery",
+        "German ships",
+        "action",
+        "speed",
         "efficiency",
-        "interception",
         "destruction",
-        "cruisers"
+        "interception"
     ],
     "themes": [
         "Military Operations",
@@ -30,7 +33,8 @@
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
         ],
         "Strategic Decisions": [
             "e_2"
@@ -39,11 +43,10 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 24, 1941",
+            "date": "Unknown",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -54,13 +57,17 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "A decision is made to break off engagement with the BISMARCK due to concerns about the PRINCE OF WALES's efficiency and the enemy's capability."
+            "eventSummary": "The engagement with German ships occurs amid tactical considerations, leading to the decision against re-engagement."
         },
         {
             "event": "e_2",
-            "date": "May 25, 1941",
-            "locations": [],
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
@@ -69,7 +76,7 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The expectation is set for the Commander-in-Chief to contact the enemy, attempting interception and continuing to monitor the situation."
+            "eventSummary": "The decision to not re-engage is made due to concerns over the efficiency of the PRINCE OF WALES and the advantages of awaiting Commander-in-Chief for interception."
         }
     ]
 }

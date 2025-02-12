@@ -1,91 +1,146 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major General A. R. Godwin Austen",
-            "p_2": "Brigadier General J. Mitchell Baker"
+            "p_1": "General Wavell"
         },
         "locations": {
-            "l_1": "British Somaliland",
-            "l_2": "Tana",
-            "l_3": "Giuba",
-            "l_4": "El Wak",
-            "l_5": "Wajir",
-            "l_6": "Dukana",
-            "l_7": "Lokitaung",
-            "l_8": "Chisimaio"
+            "l_1": "Mogadiscio",
+            "l_2": "Iscia",
+            "l_3": "Baidoa",
+            "l_4": "Lugh Ferrandi",
+            "l_5": "El Yibo",
+            "l_6": "Gorai",
+            "l_7": "Hobok",
+            "l_8": "Kalam",
+            "l_9": "Galla Sidamo",
+            "l_10": "Moyale",
+            "l_11": "Mega",
+            "l_12": "Marsabit",
+            "l_13": "Lake Rudolf",
+            "l_14": "Lokitaung",
+            "l_15": "Southern Abyssinia",
+            "l_16": "Tana",
+            "l_17": "Kenya",
+            "l_18": "Nairobi",
+            "l_19": "Mombasa",
+            "l_20": "Chalbi desert",
+            "l_21": "North Horr",
+            "l_22": "Dukana"
         },
         "events": {
-            "e_1": "Raid on El Wak",
-            "e_2": "Military operations in East Africa"
+            "e_1": "Cairo Conference",
+            "e_2": "Operations of 1st S.A. Division",
+            "e_3": "air operations",
+            "e_4": "struggle for air supremacy"
         },
         "organisations": {
-            "o_1": "E.A. Force",
-            "o_2": "Union Defence Forces"
+            "o_1": "1st S.A. Division",
+            "o_2": "5th S.A. Brigade",
+            "o_3": "25th E.A. Brigade",
+            "o_4": "South African troops",
+            "o_5": "S.R.A.F.",
+            "o_6": "S.A.A.F."
         }
     },
     "keywords": [
-        "Armoured Brigade",
-        "Morale",
-        "Supply Lines",
-        "Military Operations",
-        "Transport"
+        "water supply",
+        "operation",
+        "enemy resistance",
+        "patriot country",
+        "air supremacy",
+        "Hurricanes",
+        "bombers",
+        "fighters",
+        "Intelligence officers",
+        "Shifta rebellion"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Supply",
-        "Morale and Psychological Warfare"
+        "Air Operations",
+        "Rebellion",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Logistics and Supply": [
+        "Air Operations": [
+            "e_3",
+            "e_4"
+        ],
+        "Rebellion": [
             "e_2"
         ],
-        "Morale and Psychological Warfare": [
+        "Strategic Decisions": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th to 18th December 1940",
+            "date": "Date not available",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Raid on El Wak is successfully carried out by the 12th (A) Division, resulting in significant enemy losses and the capture of equipment and prisoners, contributing to the rise in morale of E.A. Force."
+            "eventSummary": "The Cairo Conference discusses the use of South African troops for military operations."
         },
         {
             "event": "e_2",
-            "date": "1st February 1941",
+            "date": "January to April 1941",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_5",
+                "l_9"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Following the successes in the Western Desert, the military operations in East Africa shift as an operation against Chisimaio is planned, capitalizing on the reduced morale of the Italian forces."
+            "eventSummary": "From January to April 1941, the 1st S.A. Division conducts operations aimed at provoking rebellion in Galla Sidamo and overcoming enemy positions."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not available",
+            "locations": [
+                "l_17",
+                "l_19"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The air operations evolve with the establishment of air superiority by February."
+        },
+        {
+            "event": "e_4",
+            "date": "Date not available",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The struggle for air supremacy is described as being in its early stages, with significant enemy capabilities noted."
         }
     ]
 }

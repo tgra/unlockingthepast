@@ -1,74 +1,77 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "P. J. Grice",
-            "p_2": "General the Honourable Sir H. R. L. G. Alexander"
+            "p_1": "General Montgomery",
+            "p_2": "Lieut.-General Stone",
+            "p_3": "Mussolini",
+            "p_4": "Marshal Bastico",
+            "p_5": "Field-Marshal Rommel"
         },
         "locations": {
-            "l_1": "Yugoslavia",
-            "l_2": "Roumama",
-            "l_3": "Bulgaria",
-            "l_4": "Greece",
-            "l_5": "Crete",
-            "l_6": "Aegean",
-            "l_7": "Arabia",
-            "l_8": "Persia",
-            "l_9": "Iraq",
-            "l_10": "Aden",
-            "l_11": "Egypt",
-            "l_12": "Turkey",
-            "l_13": "Sudan",
-            "l_14": "Palestine",
-            "l_15": "Trans-Jordan",
-            "l_16": "Cyprus",
-            "l_17": "Malta"
+            "l_1": "Cairo",
+            "l_2": "Alexandria",
+            "l_3": "Khatatba",
+            "l_4": "Lake Maryut",
+            "l_5": "Bahariya Oasis",
+            "l_6": "Qattara Depression",
+            "l_7": "Wadi Natrun",
+            "l_8": "Delta",
+            "l_9": "Palestine"
         },
         "events": {
-            "e_1": "Operations in Tunisia",
-            "e_2": "63rd meeting of the Combined Chiefs of Staff"
+            "e_1": "Battle of Gazala",
+            "e_2": "Defence of the Delta",
+            "e_3": "Alamein position"
         },
         "organisations": {
-            "o_1": "Allied Forces",
-            "o_2": "War Office",
-            "o_3": "Air Ministry",
-            "o_4": "Chiefs of Staff"
+            "o_1": "Eighth Army",
+            "o_2": "British Troops in Egypt",
+            "o_3": "Superlibia",
+            "o_4": "German-Italian Armoured Army of Africa",
+            "o_5": "Commando Supremo",
+            "o_6": "German Africa Corps",
+            "o_7": "Italian X Corps",
+            "o_8": "Italian XX Corps",
+            "o_9": "Italian XXI Corps"
         }
     },
     "keywords": [
-        "Military Command",
-        "Allied Forces",
-        "Operations",
-        "Coordination",
-        "Air Forces",
-        "Political Authority"
+        "retreat",
+        "morale",
+        "defence",
+        "formations",
+        "infantry",
+        "armoured",
+        "Axis forces"
     ],
     "themes": [
-        "Military Operations",
-        "Coordination of Forces",
-        "Diplomatic Relations",
-        "Command Authority"
+        "Military Strategy",
+        "Troop Morale",
+        "Defensive Operations"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Coordination of Forces": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Troop Morale": [
             "e_2"
         ],
-        "Diplomatic Relations": [],
-        "Command Authority": []
+        "Defensive Operations": [
+            "e_2"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 1943",
+            "date": "May 1942",
             "locations": [
-                "l_10",
-                "l_8"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
@@ -76,20 +79,45 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Allied Forces in French North Africa are given directives for operations in Tunisia to reinforce their strategic position."
+            "eventSummary": "Battle of Gazala opens at the end of May 1942, involving several formations engaged in a critical battle."
         },
         {
             "event": "e_2",
-            "date": "20th January 1943",
-            "locations": [],
-            "persons": [],
+            "date": "August 20, 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_2",
+                "p_5"
+            ],
             "organisations": [
-                "o_4"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "During the 63rd meeting of the Combined Chiefs of Staff, critical decisions are made regarding the appointment of commanders for future military operations."
+            "eventSummary": "On August 20, 1942, strategic adjustments are made in the Defence of the Delta to counter enemy operations."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Alamein position is established as a significant defensive strategy against Axis forces."
         }
     ]
 }

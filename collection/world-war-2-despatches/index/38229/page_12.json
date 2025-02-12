@@ -1,113 +1,109 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Alexander"
+            "p_1": "General Hutton",
+            "p_2": "General Wavell"
         },
         "locations": {
-            "l_1": "India",
-            "l_2": "Calcutta",
-            "l_3": "Brahmaputra Valley",
+            "l_1": "Andamans",
+            "l_2": "Rangoon",
+            "l_3": "Malaya",
             "l_4": "Burma",
-            "l_5": "Upper Burma",
-            "l_6": "Akyab",
-            "l_7": "Rangoon",
-            "l_8": "Lashio",
-            "l_9": "China"
+            "l_5": "Mergui",
+            "l_6": "Tavoy",
+            "l_7": "Moulmein",
+            "l_8": "Sittang",
+            "l_9": "China",
+            "l_10": "Calcutta",
+            "l_11": "North Eastern India",
+            "l_12": "Singapore",
+            "l_13": "Maymyo"
         },
         "events": {
-            "e_1": "Burma Campaign",
-            "e_2": "Evacuation of R.A.F. personnel",
-            "e_3": "Air Operations against Japanese in Burma"
+            "e_1": "Evacuation of Rangoon",
+            "e_2": "Fall of Singapore",
+            "e_3": "Air Operations covering the evacuation of Rangoon"
         },
         "organisations": {
-            "o_1": "Norgroup",
-            "o_2": "A.V.G.",
-            "o_3": "R.A.F."
+            "o_1": "ABDA Command",
+            "o_2": "R.A.F."
         }
     },
     "keywords": [
-        "Burma",
-        "A.V.G.",
-        "R.A.F.",
-        "Norgroup",
-        "air combat",
-        "evacuation",
-        "military operations"
+        "Evacuation",
+        "Air Operations",
+        "Reconnaissance",
+        "Japanese Army",
+        "Military Strategy"
     ],
     "themes": [
         "Military Operations",
-        "Air Combat",
-        "Evacuation",
-        "Damage Assessment"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3"
         ],
-        "Evacuation": [
-            "e_2"
-        ],
-        "Damage Assessment": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 1st",
+            "date": "February 1942",
             "locations": [
-                "l_4",
-                "l_1"
+                "l_2",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3"
             ],
-            "eventSummary": "In the Burma Campaign, the A.V.G. and R.A.F. successfully engage in air combat against enemy forces, claiming significant enemy aircraft downed while suffering losses of their own."
+            "eventSummary": "The evacuation of Rangoon is planned due to the imminent threat from Japanese forces, indicating a strategic withdrawal in February 1942."
         },
         {
             "event": "e_2",
-            "date": "Completed (Date unspecified but assumed to be later than May 20th)",
+            "date": "15th February 1942",
             "locations": [
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The evacuation of R.A.F. personnel from Burma by air and sea is completed without loss, demonstrating effective logistics and planning."
-        },
-        {
-            "event": "e_3",
-            "date": "Post May 20th",
-            "locations": [
-                "l_1",
-                "l_4"
+                "l_12"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Singapore falls to Japanese forces on the 15th of February 1942, marking a significant loss for Allied forces in the region."
+        },
+        {
+            "event": "e_3",
+            "date": "February 1942",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Air operations against the Japanese continue from Eastern India, following the withdrawal of troops to India."
+            "connectedEvents": [],
+            "eventSummary": "Air operations in support of the evacuating forces in Rangoon are discussed throughout February 1942 as conditions worsen against Japanese advances."
         }
     ]
 }

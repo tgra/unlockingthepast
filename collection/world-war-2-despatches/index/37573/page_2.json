@@ -1,75 +1,100 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General J. H. Marshall-Coriwall",
-            "p_2": "Prime Minister"
+            "p_1": "General Altmayer",
+            "p_2": "General Georges",
+            "p_3": "General Weygand",
+            "p_4": "Major-General Sir Richard Howard-Vyse",
+            "p_5": "Lieutenant-General J. H. Marshall-Cornwall"
         },
         "locations": {
-            "l_1": "Cherbourg",
-            "l_2": "Brest",
-            "l_3": "St. Malo",
+            "l_1": "Brittany",
+            "l_2": "Rennes",
+            "l_3": "Briare",
             "l_4": "Le Mans",
-            "l_5": "Rouen",
-            "l_6": "Conches",
-            "l_7": "Alençon",
-            "l_8": "Tours",
-            "l_9": "Vitre",
-            "l_10": "Laval",
-            "l_11": "Chartres",
-            "l_12": "St. Sauveur"
+            "l_5": "Brest",
+            "l_6": "St. Malo",
+            "l_7": "Cherbourg",
+            "l_8": "St. Nazaire",
+            "l_9": "Nantes",
+            "l_10": "La Pallice",
+            "l_11": "Army of Paris"
         },
         "events": {
-            "e_1": "Withdrawal of British Expeditionary Force (B.E.F.)",
-            "e_2": "Evacuation of 52nd Division"
+            "e_1": "Brittany defense project",
+            "e_2": "Evacuation of the B.E.F."
         },
         "organisations": {
-            "o_1": "Tenth French Army",
-            "o_2": "Norman Force",
-            "o_3": "B.E.F.",
-            "o_4": "C.I.G.S."
+            "o_1": "B.E.F.",
+            "o_2": "C.I.G.S.",
+            "o_3": "H.M. Government"
         }
     },
     "keywords": [
+        "General",
+        "Army",
+        "defence",
         "evacuation",
-        "withdrawal",
-        "military operations",
-        "enemy reconnaissance",
-        "troop movements"
+        "B.E.F.",
+        "Allied Governments"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Strategies",
-        "Command Coordination",
-        "Enemy Movements"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Evacuation Strategies": [
-            "e_1",
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
             "e_2"
-        ],
-        "Command Coordination": [
-            "e_1"
-        ],
-        "Enemy Movements": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th June",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_4"
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Allied Governments decide to defend Brittany by holding a line across the peninsula in the vicinity of Rennes."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
                 "o_1",
@@ -77,30 +102,9 @@
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The withdrawal of the British Expeditionary Force starts as British troops are placed under the command of Lieutenant-General J. H. Marshall-Coriwall to cooperate with the Tenth French Army for an organized retreat to Cherbourg."
-        },
-        {
-            "event": "e_2",
-            "date": "16th June",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_4"
-            ],
-            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The evacuation of the 52nd Division is confirmed to begin, allowing for safe embarkation at Cherbourg while ensuring coordination with the Tenth French Army."
+            "eventSummary": "The evacuation of the B.E.F. is approved due to the impracticality of the Brittany project and the state of disintegration within the French Army."
         }
     ]
 }

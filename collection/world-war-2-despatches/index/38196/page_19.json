@@ -1,133 +1,98 @@
 {
     "namedEntities": {
         "persons": {
-            "p_001": "General Montgomery"
+            "p_1": "General Montgomery",
+            "p_2": "Rommel",
+            "p_3": "General von Thoma"
         },
         "locations": {
-            "l_001": "Tripoli",
-            "l_002": "Buerat",
-            "l_003": "Wadi Kfef",
-            "l_004": "Wadi Zem Zem",
-            "l_005": "El Faskia",
-            "l_006": "Misurata",
-            "l_007": "Zliten",
-            "l_008": "Bem Ulid",
-            "l_009": "Homs",
-            "l_010": "Tarhuna",
-            "l_011": "Castelverde",
-            "l_012": "Tarhuna defile",
-            "l_013": "Garian",
-            "l_014": "Azizia",
-            "l_015": "Castel Benito",
-            "l_016": "Hill Country",
-            "l_017": "Bir Dufan"
+            "l_1": "Egyptian soil",
+            "l_2": "Tell el Aqqaqir",
+            "l_3": "El Daba",
+            "l_4": "Ghazal",
+            "l_5": "Fuka",
+            "l_6": "Rahman track"
         },
         "events": {
-            "e_001": "Battle of the Buerat line",
-            "e_002": "Entry into Tripoli",
-            "e_003": "Surrender of Italian authorities"
+            "e_1": "battle of 2nd November",
+            "e_2": "attack on 4th November"
         },
         "organisations": {
-            "o_001": "Eighth Army",
-            "o_002": "British Military Administration",
-            "o_003": "51 Division",
-            "o_004": "7 Armoured Division",
-            "o_005": "New Zealanders",
-            "o_006": "22 Armoured Brigade",
-            "o_007": "4 Light Armoured Brigade",
-            "o_008": "90 Light Division",
-            "o_009": "Ramcke Parachute Brigade"
+            "o_1": "Royal Dragoons",
+            "o_2": "4/6 South African Armoured Car Regiment",
+            "o_3": "5 Indian Brigade",
+            "o_4": "10 Corps",
+            "o_5": "New Zealand Division",
+            "o_6": "X Corps",
+            "o_7": "XX Corps",
+            "o_8": "Ariete Division",
+            "o_9": "21 Panzer Division",
+            "o_10": "Africa Corps"
         }
     },
     "keywords": [
-        "Military Engagement",
-        "Operation",
-        "Retreat",
-        "Surrender",
-        "Civil Administration",
-        "Conflict"
+        "armoured division",
+        "infantry assault",
+        "enemy withdrawal",
+        "anti-tank fire",
+        "military tactics"
     ],
     "themes": [
         "Military Operations",
-        "Surrender",
-        "Territorial Control",
-        "Civil Administration",
-        "Enemy Withdrawal"
+        "Tactics",
+        "Retreat"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_001",
-            "e_002"
+            "e_1",
+            "e_2"
         ],
-        "Surrender": [
-            "e_003"
+        "Retreat": [
+            "e_1"
         ],
-        "Territorial Control": [
-            "e_001",
-            "e_002"
-        ],
-        "Civil Administration": [
-            "e_003"
+        "Tactics": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
-            "event": "e_001",
-            "date": "14th January 1943",
+            "event": "e_1",
+            "date": "2nd November",
             "locations": [
-                "l_001",
-                "l_004"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_001"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_001",
-                "o_003",
-                "o_004",
-                "o_005"
+                "o_1",
+                "o_2",
+                "o_8"
             ],
             "connectedEvents": [
-                "e_002"
+                "e_2"
             ],
-            "eventSummary": "The battle of the Buerat line concludes as troops engage in fierce fighting, leading to the enemy's withdrawal."
+            "eventSummary": "The battle of 2nd November is a decisive action establishing the enemy's retreat."
         },
         {
-            "event": "e_002",
-            "date": "23rd January 1943",
+            "event": "e_2",
+            "date": "4th November",
             "locations": [
-                "l_001"
+                "l_2",
+                "l_6"
             ],
             "persons": [
-                "p_001"
+                "p_1"
             ],
             "organisations": [
-                "o_001",
-                "o_002"
+                "o_3",
+                "o_4",
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_001",
-                "e_003"
-            ],
-            "eventSummary": "The Eighth Army enters Tripoli, marking a significant territorial gain following the successful military operations."
-        },
-        {
-            "event": "e_003",
-            "date": "23rd January 1943",
-            "locations": [
-                "l_001"
-            ],
-            "persons": [
-                "p_001"
-            ],
-            "organisations": [
-                "o_001",
-                "o_002"
-            ],
-            "connectedEvents": [
-                "e_002"
-            ],
-            "eventSummary": "General Montgomery receives the formal surrender of the Italian authorities outside Tripoli, leading to the integration of the British Military Administration."
+            "connectedEvents": [],
+            "eventSummary": "On 4th November, an infantry assault succeeds in breaking through the enemy's gun screen."
         }
     ]
 }

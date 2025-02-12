@@ -1,90 +1,118 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "DUKE OF YORK",
-            "p_2": "SCHARNHORST",
-            "p_3": "SAVAGE",
-            "p_4": "SAUMAREZ",
-            "p_5": "SCORPION",
-            "p_6": "STORD"
+            "p_1": "SAVAGE",
+            "p_2": "Captain",
+            "p_3": "Admiral"
         },
         "locations": {
-            "l_1": "Norwegian coast"
+            "l_1": "eastern waters",
+            "l_2": "northward",
+            "l_3": "southward",
+            "l_4": "northerly course",
+            "l_5": "westward"
         },
         "events": {
-            "e_1": "First Destroyer Torpedo Attack by Screen of Force 2",
-            "e_2": "Second Engagement by Force 2"
+            "e_1": "Battle of the North Cape",
+            "e_2": "Torpedo Attacks by BELFAST and JAMAICA",
+            "e_3": "Final Attack on SCHARNHORST"
         },
         "organisations": {
-            "o_1": "Force 2"
+            "o_1": "36th Division",
+            "o_2": "Force 2",
+            "o_3": "71st Sub-Division",
+            "o_4": "72nd Sub-Division"
         }
     },
     "keywords": [
-        "Gun duel",
-        "Destroyers",
-        "Torpedo attack",
-        "Enemy fire",
-        "Speed reduction"
+        "SCHARNHORST",
+        "BELFAST",
+        "JAMAICA",
+        "torpedoes",
+        "destroyers",
+        "cruisers"
     ],
     "themes": [
         "Military Operations",
         "Naval Engagements",
-        "Tactical Maneuvering"
+        "Torpedo Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Naval Engagements": [
             "e_1",
             "e_2"
         ],
-        "Tactical Maneuvering": [
-            "e_1",
-            "e_2"
+        "Torpedo Warfare": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The first destroyer torpedo attack is executed by four destroyers of Force 2 against the enemy vessel, SCHARNHORST, amidst intense firing and tactical maneuvering designed to exploit the enemy's reduced speed."
+            "eventSummary": "The Battle of the North Cape features the engagement of British forces against the German battleship SCHARNHORST, resulting in significant combat actions."
         },
         {
             "event": "e_2",
-            "date": "1901",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "During the second engagement, DUKE OF YORK and JAMAICA re-engage SCHARNHORST at 1901 after the destroyers pull back from their torpedo attacks, continuing the naval conflict."
+            "eventSummary": "Torpedo Attacks by BELFAST and JAMAICA occur amidst increasing tension as both ships aim to deliver decisive strikes against the immobilized enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Final Attack on SCHARNHORST takes place as destroyers and cruisers converge for the last decisive strikes, leading to the sinking of the enemy ship."
         }
     ]
 }

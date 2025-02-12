@@ -1,62 +1,56 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Master of S.S. OHIO",
-            "p_2": "H.M.S. KENYA",
-            "p_3": "H.M.S. ASHANTI"
+            "p_1": "Vice-Admiral",
+            "p_2": "Rear-Admiral"
         },
         "locations": {
-            "l_1": "Grand Harbour",
-            "l_2": "Cape Bon",
-            "l_3": "Fratelli Rock",
-            "l_4": "Galita Island",
-            "l_5": "Force Z"
+            "l_1": "Malta",
+            "l_2": "Filfla",
+            "l_3": "Crete",
+            "l_4": "Elaphonisos Channel",
+            "l_5": "Position 35  20  N., 15  26  E.",
+            "l_6": "Position 34  54  N., 18  24  E.",
+            "l_7": "Position 34  40  N., 23  10  E."
         },
         "events": {
-            "e_1": "Entry of S.S. OHIO",
-            "e_2": "Withdrawal of Force X",
-            "e_3": "Attacks on Force X",
-            "e_4": "Joining of Force Z"
+            "e_1": "Attack on ILLUSTRIOUS",
+            "e_2": "Convoy M.E.54 Parting from Convoy Excess",
+            "e_3": "Abandonment of SOUTHAMPTON"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "C.S.3"
         }
     },
     "keywords": [
-        "S.S. OHIO",
-        "Force X",
-        "E-Boats",
-        "U-Boat",
-        "air attacks",
-        "JU.88s",
-        "Force Z"
+        "dive bombing",
+        "battlefleet",
+        "aircraft",
+        "bomb",
+        "convoy"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Aerial Attacks"
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
         "Naval Warfare": [
             "e_1",
-            "e_2"
-        ],
-        "Aerial Attacks": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 15",
+            "date": "11th January, 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -65,56 +59,20 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "S.S. OHIO enters Grand Harbour at 0755 after a struggle by her Master and escorts."
+            "eventSummary": "A heavy dive bombing attack targets the aircraft carrier ILLUSTRIOUS, which sustains significant damage but continues to operate."
         },
         {
             "event": "e_2",
-            "date": "August 15",
+            "date": "12th January, 1941",
             "locations": [
-                "l_2",
-                "l_3",
+                "l_1",
                 "l_4"
             ],
             "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Force X's withdrawal goes uneventfully until they are attacked by E-Boats near Cape Bon at 0130."
-        },
-        {
-            "event": "e_3",
-            "date": "August 15",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "Force X endures multiple air attacks starting at 0942, including confrontations with submarines and dive bombers."
-        },
-        {
-            "event": "e_4",
-            "date": "August 15",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
@@ -122,7 +80,26 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "At 1800, Force X successfully joins Force Z in their operation."
+            "eventSummary": "Convoy M.E.54 separates from Convoy Excess to navigate south of Crete."
+        },
+        {
+            "event": "e_3",
+            "date": "12th January, 1941",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "SOUTHAMPTON is attacked and ultimately abandoned due to severe damage, with survivors transferred to GLOUCESTER and DIAMOND."
         }
     ]
 }

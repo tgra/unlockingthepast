@@ -1,154 +1,126 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Abdair"
+            "p_1": "Director General of Civil Defence",
+            "p_2": "S. L. Landells",
+            "p_3": "$/L. R. E. P. Brooker, D.F.C."
         },
         "locations": {
-            "l_1": "Muar",
-            "l_2": "Kuala Lumpur",
-            "l_3": "Batu Pahat",
-            "l_4": "Gemas",
-            "l_5": "Kuantan",
-            "l_6": "Labis",
-            "l_7": "Segamat",
-            "l_8": "Sungei Patani",
-            "l_9": "Kahang",
-            "l_10": "Johore",
-            "l_11": "Endau",
-            "l_12": "Singapore Island"
+            "l_1": "Singapore",
+            "l_2": "Island",
+            "l_3": "Kallang",
+            "l_4": "Tengah",
+            "l_5": "Middle East"
         },
         "events": {
-            "e_1": "Offensive sweep of Muar",
-            "e_2": "Bombing of Kuala Lumpur by Vildebeestes",
-            "e_3": "Reconnaissance against shipping off the coast",
-            "e_4": "Attack on Japanese troops infiltrating from Muar",
-            "e_5": "Air action against Japanese Navy at Endau",
-            "e_6": "Sustained Japanese air attacks on Singapore"
+            "e_1": "operations by Fighters in the defence of Singapore",
+            "e_2": "air raids",
+            "e_3": "17th January attack",
+            "e_4": "20th January attack"
         },
         "organisations": {
-            "o_1": "No. 488(F) Squadron",
-            "o_2": "III Corps",
-            "o_3": "Nos. 1 and 8 (GR) Squadrons, R.A.A.F.",
-            "o_4": "No. 36 Squadron",
-            "o_5": "No. 100 (TB) Squadron",
-            "o_6": "No. 62 (B) Squadron"
+            "o_1": "R.A.A.F.",
+            "o_2": "No. 2r (F) Squadron R.A.A.F.",
+            "o_3": "453 (F) Squadron",
+            "o_4": "Nos. 243 and 488 (F) Squadron"
         }
     },
     "keywords": [
-        "Muar",
-        "Kuala Lumpur",
-        "Batu Pahat",
-        "Vildebeestes",
-        "Bombing",
-        "Japanese Navy",
-        "Reconnaissance",
-        "Offensive Sweep"
+        "aerodromes",
+        "bombing",
+        "air raids",
+        "Hurricane",
+        "Japanese bombers",
+        "dog-fighting"
     ],
     "themes": [
         "Military Operations",
-        "Air Attacks",
-        "Reconnaissance Missions",
-        "Support Requests"
+        "Aerial Warfare",
+        "Defensive Strategies",
+        "Resource Allocation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
             "e_4"
         ],
-        "Air Attacks": [
-            "e_5",
-            "e_6"
+        "Defensive Strategies": [
+            "e_1",
+            "e_2"
         ],
-        "Reconnaissance Missions": [
-            "e_3"
+        "Resource Allocation": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 9 - January 20",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Operations by fighters are conducted in defense of Singapore amidst repeated air raids."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Repeated air raids target military objectives in Singapore, impacting operations and serviceability."
+        },
+        {
+            "event": "e_3",
+            "date": "7th January",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Twelve Buffaloes carry out an offensive sweep of Muar amidst a serious situation where they encounter and engage various enemy units."
-        },
-        {
-            "event": "e_2",
-            "date": "January 19 - January 24",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "Vildebeestes bomb Kuala Lumpur, achieving notable success by destroying over 20 enemy fighters during multiple attacks."
-        },
-        {
-            "event": "e_3",
-            "date": "January 20",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Blenheims conduct an offensive reconnaissance against shipping off the coast, gathering intelligence on naval movements."
+            "eventSummary": "On January 7th, a Director of Labour is appointed to organize and control labor amidst labor shortages."
         },
         {
             "event": "e_4",
-            "date": "January 21 - January 23",
+            "date": "20th January",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
-                "o_4"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Japanese forces infiltrate from Muar to Batu Pahat, prompting air and ground attacks to disrupt their advance."
-        },
-        {
-            "event": "e_5",
-            "date": "January 26",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A coordinated air attack is launched against Japanese naval forces near Endau, resulting in the sinking of enemy vessels."
-        },
-        {
-            "event": "e_6",
-            "date": "Second half of January",
-            "locations": [
-                "l_12"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The Japanese conduct sustained air attacks on targets across Singapore Island, increasing the intensity of their military operations."
+            "eventSummary": "On January 20th, during a successful operation, Hurricanes shoot down 8 bombers that came unescorted."
         }
     ]
 }

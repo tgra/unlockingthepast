@@ -1,102 +1,134 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General Sir Alan Brooke",
-            "p_2": "Brigadier G. Thorpe",
-            "p_3": "Lieutenant-General Sir Henry Karslake",
-            "p_4": "Major-General P. de Fonblanque",
-            "p_5": "Brigadier J. G. des R. Swayne",
-            "p_6": "General Weygand",
-            "p_7": "Major-General Sir Richard Howard-Vyse"
+            "p_1": "Lieutenant-General J. H. Marshall-Cornwall",
+            "p_2": "Prime Minister",
+            "p_3": "C.I.G.S.",
+            "p_4": "G.O.C. L. of C."
         },
         "locations": {
-            "l_1": "Southampton",
-            "l_2": "Cherbourg",
-            "l_3": "Le Mans",
-            "l_4": "Paris",
-            "l_5": "Rouen",
-            "l_6": "Neubourg",
-            "l_7": "Damville",
-            "l_8": "Bonnecourt"
+            "l_1": "Cherbourg",
+            "l_2": "United Kingdom",
+            "l_3": "Brest",
+            "l_4": "St. Malo",
+            "l_5": "Le Mans",
+            "l_6": "Conches",
+            "l_7": "Evreux",
+            "l_8": "Chartres",
+            "l_9": "Laval",
+            "l_10": "Rennes",
+            "l_11": "Rouen",
+            "l_12": "Alençon",
+            "l_13": "Tours",
+            "l_14": "St. Sauveur",
+            "l_15": "Norman Force"
         },
         "events": {
-            "e_1": "Operations of the British Expeditionary Force, France",
-            "e_2": "Meeting with General Weygand"
+            "e_1": "Withdrawal of B.E.F.",
+            "e_2": "Evacuation of 52nd Division",
+            "e_3": "Embarkation of 52nd Division",
+            "e_4": "Attack by Fourth German Army"
         },
         "organisations": {
-            "o_1": "British Expeditionary Force",
-            "o_2": "French Army"
+            "o_1": "Tenth French Army",
+            "o_2": "Canadian Division",
+            "o_3": "157th Infantry Brigade",
+            "o_4": "52nd Division",
+            "o_5": "L. of C."
         }
     },
     "keywords": [
-        "British Expeditionary Force",
-        "French Army",
-        "Military Operations",
-        "Command Structure",
-        "War Office"
+        "Evacuation",
+        "Withdrawal",
+        "Enemy Movements",
+        "Reconnaissance",
+        "Embarkation"
     ],
     "themes": [
         "Military Operations",
-        "High Command Decisions",
-        "International Relations"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Diplomacy": [
-            "e_2"
+            "e_2",
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_1"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12-19 June 1940",
+            "date": "15th June",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
+                "l_4",
+                "l_5"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The British Expeditionary Force operational report covers the deployment from Southampton to Cherbourg, engaging with local French military on the evolving situation in June 1940."
+            "eventSummary": "The withdrawal of B.E.F. starts in the early hours, with Canadian Division flights and corps troops sent back for embarkation."
         },
         {
             "event": "e_2",
-            "date": "14 June 1940",
+            "date": "16th June",
             "locations": [
-                "l_3",
-                "l_4"
+                "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_6",
-                "p_7"
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "C.I.G.S. confirms arrangements for the evacuation of 52nd Division, with embarkation beginning later."
+        },
+        {
+            "event": "e_3",
+            "date": "16th June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Orders for the embarkation of 52nd Division are issued, allowing French troops wishing to embark at Cherbourg."
+        },
+        {
+            "event": "e_4",
+            "date": "16th June",
+            "locations": [
+                "l_8",
+                "l_1"
             ],
-            "eventSummary": "Lieutenant-General Sir Alan Brooke meets General Weygand to discuss the deteriorating situation of the French Army, which is no longer capable of organized resistance."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Reports indicate that the Fourth German Army attacks along the front aimed at gaining Cherbourg and Brest."
         }
     ]
 }

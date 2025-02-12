@@ -1,91 +1,94 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Lin Wei",
-            "p_2": "General Stilwell",
-            "p_3": "General Lo",
-            "p_4": "Lieut.-General Slim",
-            "p_5": "General Tu"
+            "p_1": "R. Jats",
+            "p_2": "Commander 17 Indian Division"
         },
         "locations": {
-            "l_1": "Shwebo",
-            "l_2": "Lashio",
-            "l_3": "Mandalay",
-            "l_4": "Yenangyaung",
-            "l_5": "Maymyo",
-            "l_6": "Kyaukpadaung",
-            "l_7": "Meiktila",
-            "l_8": "Mount Popa",
-            "l_9": "Kalaw",
-            "l_10": "Taungdwingyi",
-            "l_11": "Natmauk",
-            "l_12": "Ava Bridge"
+            "l_1": "Pegu",
+            "l_2": "Rangoon",
+            "l_3": "River Sittang",
+            "l_4": "Prome",
+            "l_5": "Waw",
+            "l_6": "Thaton-Bilin-Kyaikto road"
         },
         "events": {
-            "e_1": "Operation Instruction No. 46",
-            "e_2": "Decision to withdraw North of Mandalay"
+            "e_1": "Battle of the River Sittang",
+            "e_2": "Loss of Rangoon"
         },
         "organisations": {
-            "o_1": "1 Burcorps",
-            "o_2": "Chinese Fifth Army"
+            "o_1": "17 Indian Division",
+            "o_2": "46 Indian Infantry Brigade",
+            "o_3": "7 Armoured Brigade",
+            "o_4": "Cameronians"
         }
     },
     "keywords": [
-        "withdrawal",
-        "operations",
-        "offensive",
-        "strategic plans",
-        "Chinese forces",
-        "Mandalay"
+        "morale",
+        "casualties",
+        "equipment",
+        "transport",
+        "deficiencies",
+        "evacuation"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Casualty Assessment",
+        "Unit Reorganization",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_1",
+        "Casualty Assessment": [
+            "e_1"
+        ],
+        "Unit Reorganization": [
+            "e_2"
+        ],
+        "Logistics": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd April",
+            "date": "February 24th",
             "locations": [
-                "l_5"
+                "l_3",
+                "l_2"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "An outline of the new plan, Operation Instruction No. 46, is sent by liaison officer to the Headquarters 1 Burcorps."
+            "eventSummary": "The Battle of the River Sittang results in heavy casualties and equipment loss for the 17 Indian Division."
         },
         {
             "event": "e_2",
-            "date": "21st April",
+            "date": "February 23rd",
             "locations": [
-                "l_4",
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_2",
-                "p_4"
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "The decision to withdraw North of Mandalay is made due to the serious situation in the Shan States."
+            "eventSummary": "The loss of Rangoon is confirmed as troops reorganize after significant defeats."
         }
     ]
 }

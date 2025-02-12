@@ -1,18 +1,90 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Great Britain"
+        "persons": {
+            "p_1": "General Sir Claude Auchinleck",
+            "p_2": "Major-General I. S. O. Playfair",
+            "p_3": "Major-General E. N. Goddard",
+            "p_4": "Lieut.-General Sir William Slim"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "India",
+            "l_2": "Burma",
+            "l_3": "Chindwin"
+        },
+        "events": {
+            "e_1": "Formation of the Fourteenth Army",
+            "e_2": "Defeat of the Japanese forces in Burma"
+        },
+        "organisations": {
+            "o_1": "11 Army Group",
+            "o_2": "Fourteenth Army"
+        }
     },
     "keywords": [
-        "Price",
-        "Code No.",
-        "PRINTED"
+        "Despatch",
+        "Morale",
+        "Training",
+        "Operations",
+        "Japanese Forces"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Leadership",
+        "Unity and Cooperation",
+        "Morale and Well-being"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Leadership": [
+            "e_2"
+        ],
+        "Unity and Cooperation": [
+            "e_2"
+        ],
+        "Morale and Well-being": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Fourteenth Army is formed in October 1943, marking a significant development in military efforts against the Japanese."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The defeat of the Japanese forces in Burma is attributed to the skill and determination of military leaders and the troops."
+        }
+    ]
 }

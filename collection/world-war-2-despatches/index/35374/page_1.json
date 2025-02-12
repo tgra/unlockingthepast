@@ -1,26 +1,34 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General John Doe",
-            "p_2": "Secretary of Defense Jane Smith"
+            "p_1": "WINSTON CHURCHILL",
+            "p_2": "Shinichi Kamimura"
         },
         "locations": {
-            "l_1": "Washington D.C.",
-            "l_2": "Middle East"
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Hong Kong",
+            "l_4": "Tokyo",
+            "l_5": "United Kingdom"
         },
         "events": {
-            "e_1": "Operation Desert Storm",
-            "e_2": "Peace Talks in the Middle East"
+            "e_1": "State of War with Japan",
+            "e_2": "Attempted Landing on the Coast of Malaya",
+            "e_3": "Bombing of Singapore",
+            "e_4": "Bombing of Hong Kong"
         },
         "organisations": {
-            "o_1": "U.S. Department of Defense",
-            "o_2": "United Nations"
+            "o_1": "His Majesty's Government in the United Kingdom",
+            "o_2": "Imperial Japanese Government"
         }
     },
     "keywords": [
-        "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions"
+        "State of War",
+        "Japan",
+        "Malaya",
+        "Singapore",
+        "Hong Kong",
+        "International Law"
     ],
     "themes": [
         "Military Operations",
@@ -28,45 +36,74 @@
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Diplomacy": [
-            "e_2"
-        ],
-        "Strategic Decisions": []
+            "e_1"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2023-10-01",
+            "date": "8 December 1941",
             "locations": [
-                "l_2"
+                "l_5",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Desert Storm is currently in progress, focusing on military action in the Middle East."
-        },
-        {
-            "event": "e_2",
-            "date": "2023-09-15",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "His Majesty's Government in the United Kingdom declares a state of war with Japan on 8 December 1941 after learning of aggressive acts by Japanese forces."
+        },
+        {
+            "event": "e_2",
+            "date": "7 December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Peace Talks in the Middle East are ongoing, aimed at facilitating strategic discussions between opposing factions."
+            "eventSummary": "Japanese forces attempt a landing on the coast of Malaya on 7 December 1941."
+        },
+        {
+            "event": "e_3",
+            "date": "7 December 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Japanese forces bomb Singapore on 7 December 1941."
+        },
+        {
+            "event": "e_4",
+            "date": "7 December 1941",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Japanese forces bomb Hong Kong on 7 December 1941."
         }
     ]
 }

@@ -2,46 +2,50 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Tobruk",
-            "l_2": "Bengasi",
-            "l_3": "Cyrenaica",
-            "l_4": "Sollum",
-            "l_5": "Giarabub",
-            "l_6": "Tengeder",
-            "l_7": "Mechili",
-            "l_8": "Derna",
-            "l_9": "Greece",
-            "l_10": "Crete"
+            "l_1": "Cyrenaica",
+            "l_2": "Tripolitania",
+            "l_3": "Iraq",
+            "l_4": "Tobruk",
+            "l_5": "Basra",
+            "l_6": "Agedabia",
+            "l_7": "El Agheila",
+            "l_8": "Bengasi"
         },
         "events": {
-            "e_1": "Relief of Tobruk",
-            "e_2": "Capture of Bengasi",
-            "e_3": "Enemy Armoured Forces Operations"
+            "e_1": "Cyrenaican campaign",
+            "e_2": "siege of Tobruk",
+            "e_3": "offensive resumption on 1st March or 1st April",
+            "e_4": "offensive by 1st May"
         },
-        "organisations": {}
+        "organisations": {
+            "o_1": "Indian Armoured Division",
+            "o_2": "Tenth Army"
+        }
     },
     "keywords": [
-        "enemy",
-        "armoured forces",
-        "Tobruk",
-        "Bengasi",
-        "Cyrenaica",
-        "operations",
-        "air threat",
-        "supply situation"
+        "enemy forces",
+        "German forces",
+        "tanks",
+        "numerical superiority",
+        "armoured forces"
     ],
     "themes": [
         "Military Operations",
-        "Supremacy in Armoured Forces",
-        "Enemy Strategy"
+        "Logistics",
+        "Resource Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_1",
             "e_3"
         ],
-        "Strategic Decisions": [
+        "Resource Management": [
             "e_1",
             "e_2"
         ]
@@ -49,46 +53,62 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st November",
+            "date": "Not specified",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_2"
             ],
             "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
+            "organisations": [
+                "o_1",
+                "o_2"
             ],
-            "eventSummary": "The relief of Tobruk involves strategies to defeat enemy armoured forces while considering logistical challenges and potential enemy responses."
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Cyrenaican campaign demonstrates the need for numerical superiority in tanks against enemy forces."
         },
         {
             "event": "e_2",
-            "date": "Future Unspecified",
+            "date": "Not specified",
             "locations": [
-                "l_2"
+                "l_4"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The capture of Bengasi is deemed risky and may distract from the primary goal of destroying enemy forces."
+            "eventSummary": "The siege of Tobruk illustrates the critical reliance on tank reserves to maintain offensive operations."
         },
         {
             "event": "e_3",
-            "date": "Ongoing",
+            "date": "1st March or 1st April",
             "locations": [
-                "l_5",
-                "l_3",
                 "l_1"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [
                 "e_1",
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "Enemy armoured forces are strategizing to avoid confrontation with superior numbers while maintaining supply lines in their operational areas."
+            "eventSummary": "Plans are made to resume the offensive possibly on 1st March or 1st April, depending on tank resources."
+        },
+        {
+            "event": "e_4",
+            "date": "by 1st May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The objective is to resume the offensive by 1st May if tank reserves can be managed effectively."
         }
     ]
 }

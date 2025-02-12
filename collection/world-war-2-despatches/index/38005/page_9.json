@@ -1,85 +1,127 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "J. P. Wright",
-            "p_2": "P. H. Hadow"
+            "p_1": "Vice Admiral",
+            "p_2": "Admiral"
         },
         "locations": {
             "l_1": "Narvik",
-            "l_2": "Rombaks Fiord",
-            "l_3": "Herjangs Fiord",
-            "l_4": "Skjel Fiord",
-            "l_5": "Ofot Fiord",
-            "l_6": "Hamnesholm Light"
+            "l_2": "Vaagsfiord",
+            "l_3": "Tjel Sundet",
+            "l_4": "Ofot Fiord",
+            "l_5": "Skjel Fiord"
         },
         "events": {
-            "e_1": "Attack on German Destroyers",
-            "e_2": "Sinking of German Submarine"
+            "e_1": "Attack on Narvik",
+            "e_2": "Transfer of Wounded from Destroyers",
+            "e_3": "Occupation of Narvik",
+            "e_4": "Action at Narvik Area"
         },
         "organisations": {
-            "o_1": "British Royal Navy",
-            "o_2": "German Navy"
+            "o_1": "Commander-in-Chief, Home Fleet",
+            "o_2": "Admiralty"
         }
     },
     "keywords": [
-        "torpedo",
-        "destroyer",
-        "submarine",
-        "bombardment",
-        "fire",
-        "landing",
-        "German forces",
-        "Naval engagement"
+        "destroyers",
+        "aircraft",
+        "wounded",
+        "enemy",
+        "troops",
+        "attack",
+        "merchant ships",
+        " submarine"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
-        "Counterattack",
-        "Strategic Decisions"
+        "Naval Engagement",
+        "Casualty Transfer"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": []
+        "Naval Engagement": [
+            "e_1",
+            "e_4"
+        ],
+        "Casualty Transfer": [
+            "e_2"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown Date",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The British destroyers launch an attack against the German destroyers, successfully dealing with all enemy forces."
+            "eventSummary": "An attack occurs at Narvik where enemy forces are reported to be thoroughly frightened as a result of the actions taken by the British naval forces."
         },
         {
             "event": "e_2",
-            "date": "Unknown Date",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "WARSPITE's aircraft successfully sinks a German submarine anchored off Bjerkvik in Herjangs Fiord."
+            "eventSummary": "The transfer of wounded takes place from the destroyers to the flagship WARSPITE to ensure that casualties are safely transported."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The occupation of Narvik is recommended following the naval actions taken, aiming to secure the area without serious opposition."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Actions are performed in the Narvik area including patrols and assessments of enemy forces, leading to a strategic adjustment to troop deployments."
         }
     ]
 }

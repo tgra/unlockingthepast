@@ -1,130 +1,141 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Truscott",
-            "p_2": "Kesselring",
-            "p_3": "General Leese"
+            "p_1": "Mussolini",
+            "p_2": "Marshal Badoglio",
+            "p_3": "General Eisenhower",
+            "p_4": "Admiral Cunningham",
+            "p_5": "Air Marshal Tedder",
+            "p_6": "General Clark"
         },
         "locations": {
-            "l_1": "Aquino",
-            "l_2": "Pontecorvo",
-            "l_3": "Fondi",
-            "l_4": "Terracina",
-            "l_5": "Monte Leucic",
-            "l_6": "Piedimonte",
-            "l_7": "Castro dei Volsci",
-            "l_8": "Ceprano",
-            "l_9": "Rome",
-            "l_10": "Liri Valley"
+            "l_1": "Naples",
+            "l_2": "Taranto",
+            "l_3": "Calabria",
+            "l_4": "Apulia",
+            "l_5": "Cotrone",
+            "l_6": "Scalea",
+            "l_7": "Balkans",
+            "l_8": "Catania",
+            "l_9": "Carthage",
+            "l_10": "Sicily",
+            "l_11": "Gulf of Salerno",
+            "l_12": "Bay of Naples",
+            "l_13": "Campania",
+            "l_14": "United Kingdom",
+            "l_15": "Switzerland"
         },
         "events": {
-            "e_1": "Battle for the Hitler Line",
-            "e_2": "Capture of Pico",
-            "e_3": "Assault on Aquino"
+            "e_1": "Fall of Mussolini",
+            "e_2": "Operation AVALANCHE",
+            "e_3": "assault landing in Naples",
+            "e_4": "capture of Naples"
         },
         "organisations": {
-            "o_1": "Canadian Corps",
-            "o_2": "Eighth Army",
-            "o_3": "II Corps",
-            "o_4": "Tenth Army"
+            "o_1": "Fascist party",
+            "o_2": "Allied forces",
+            "o_3": "VI United States Corps",
+            "o_4": "10 British Corps",
+            "o_5": "Italian services"
         }
     },
     "keywords": [
-        "Hitler Line",
-        "attack",
-        "defence",
-        "assault",
-        "operations",
-        "Pico",
-        "German forces"
+        "assault landing",
+        "operation",
+        "capture",
+        "directive",
+        "military",
+        "landing craft",
+        "situation",
+        "strategic",
+        "conference"
     ],
     "themes": [
         "Military Operations",
-        "Battle Tactics",
-        "Defensive Strategies",
-        "Allied Advances"
+        "Political Change",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Battle Tactics": [
-            "e_1",
-            "e_3"
-        ],
-        "Defensive Strategies": [
+        "Political Change": [
             "e_1"
         ],
-        "Allied Advances": [
+        "Strategic Decisions": [
             "e_2",
-            "e_3"
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 18-23, 1944",
+            "date": "25th July 1943",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_6",
-                "l_8"
+                "l_5"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 25th July 1943, Radio Roma announces the fall of Mussolini, leading to a significant political shift in Italy."
+        },
+        {
+            "event": "e_2",
+            "date": "27th July 1943",
+            "locations": [
+                "l_1",
+                "l_10"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
                 "o_3",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Battle for the Hitler Line is currently underway, with Allied forces including the Eighth Army and Canadian Corps launching assaults against the fortified German positions."
-        },
-        {
-            "event": "e_2",
-            "date": "May 21, 1944",
-            "locations": [
-                "l_6",
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The capture of Pico by French forces occurs after intense fighting, marking a significant gain in the offensive against German defenses."
+            "eventSummary": "On 27th July 1943, General Clark prepares plans for Operation AVALANCHE, aiming to secure Naples."
         },
         {
             "event": "e_3",
-            "date": "May 18, 1944",
+            "date": "7th September 1943",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
             ],
+            "eventSummary": "On 7th September 1943, the assault landing in Naples is planned as part of Operation AVALANCHE."
+        },
+        {
+            "event": "e_4",
+            "date": "1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "An assault is being made on Aquino, with Canadian and Allied troops pushing against strong German defenses in an effort to breach the lines."
+            "eventSummary": "The capture of Naples is prioritized as it would enable control for further military operations in Italy."
         }
     ]
 }

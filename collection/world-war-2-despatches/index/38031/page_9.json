@@ -1,55 +1,76 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "STUART"
+            "p_1": "H. D. PrmHam-WIpPELL",
+            "p_2": "Captain (D)"
         },
         "locations": {
-            "l_1": "TARANTO",
-            "l_2": "MATAPAN",
-            "l_3": "GLOUCESTER"
+            "l_1": "Messina"
         },
         "events": {
-            "e_1": "The Battle of Matapan"
+            "e_1": "Dusk Torpedo Attack",
+            "e_2": "Engagement with Enemy Battleship"
         },
         "organisations": {
-            "o_1": "HMS Greyhound",
-            "o_2": "HMS Griffin"
+            "o_1": "14th Destroyer Flotilla",
+            "o_2": "2nd Destroyer Flotilla"
         }
     },
     "keywords": [
-        "Battle",
-        "Destroyers",
-        "Naval Warfare"
+        "battleship",
+        "destroyer",
+        "cruiser",
+        "engagement",
+        "torpedoes"
     ],
     "themes": [
-        "Military Operations",
-        "Naval Strategy"
+        "Naval Engagements",
+        "Tactical Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
         ],
-        "Naval Strategy": [
-            "e_1"
+        "Tactical Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 28-29, 1941",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
+            "date": "",
+            "locations": [],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Battle of Matapan occurs as naval forces engage under the cover of darkness, marked by positions reported around midnight."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Dusk Torpedo Attack occurs when our aircraft engage enemy ships, resulting in retaliation from the enemy."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An engagement with the enemy battleship takes place, during which several tactical decisions are made to intercept and attack."
         }
     ]
 }

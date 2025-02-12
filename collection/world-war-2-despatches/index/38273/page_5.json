@@ -1,0 +1,105 @@
+{
+    "namedEntities": {
+        "persons": {},
+        "locations": {
+            "l_1": "Southward",
+            "l_2": "Eastward",
+            "l_3": "Northward"
+        },
+        "events": {
+            "e_1": "Action involving WARSPITE and enemy cruisers",
+            "e_2": "Opening fire by WARSPITE on enemy battleships",
+            "e_3": "Attack by EAGLE's striking force on a cruiser",
+            "e_4": "Counter attack ordered against enemy destroyers"
+        },
+        "organisations": {
+            "o_1": "7th Cruiser Squadron",
+            "o_2": "14th Flotilla",
+            "o_3": "2nd Flotilla",
+            "o_4": "roth Flotilla"
+        }
+    },
+    "keywords": [
+        "salvos",
+        "enemy",
+        "battleships",
+        "cruisers",
+        "torpedoes",
+        "smoke"
+    ],
+    "themes": [
+        "Naval Engagement",
+        "Tactical Maneuvering",
+        "Enemy Engagement"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "WARSPITE engages enemy cruisers using salvos while maneuvering to support allied forces."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "WARSPITE opens fire on enemy battleships in an engagement marking a tactical response to enemy movements."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "EAGLE's striking force attacks a cruiser, with at least one hit reported."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Orders are given for a counterattack against enemy destroyers spotted near allied forces."
+        }
+    ]
+}

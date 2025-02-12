@@ -1,117 +1,128 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Brigadier-General W. D. Old",
-            "p_2": "General Stilwell"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Comilla",
-            "l_2": "Chin Hills",
-            "l_3": "Kaladan",
-            "l_4": "Fort Hertz",
-            "l_5": "Imphal",
-            "l_6": "Arakan",
-            "l_7": "North Burma",
-            "l_8": "Jorhat",
-            "l_9": "North-Eastern Assam"
+            "l_1": "Dimapur",
+            "l_2": "Imphal",
+            "l_3": "Tamu",
+            "l_4": "Tiddim",
+            "l_5": "Chittagong",
+            "l_6": "Assam",
+            "l_7": "Arakan",
+            "l_8": "East Bengal",
+            "l_9": "Surma Valley",
+            "l_10": "Kaladan Valley"
         },
         "events": {
-            "e_1": "Air Transport Operations",
-            "e_2": "Evacuation of 16 Brigade Air Force",
-            "e_3": "Maintenance of 7 Indian Division",
-            "e_4": "Air Supply of 4 Corps"
+            "e_1": "Japanese advance in March",
+            "e_2": "Severed communications of 7 Indian Division",
+            "e_3": "Re-opening of the Kohima Imphal road",
+            "e_4": "Air supply operation from 8th to 21st February",
+            "e_5": "Organized labour employed by Fourteenth Army on 1st May"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "U.S.A.A.F.",
-            "o_3": "Eastern Air Command",
-            "o_4": "Fourteenth Army",
-            "o_5": "3 Tactical Air Force"
+            "o_1": "Fourteenth Army",
+            "o_2": "London General Omnibus Company"
         }
     },
     "keywords": [
-        "Air Support",
-        "Japanese forces",
-        "Evacuation",
-        "Supply-Drop",
-        "Morale"
+        "railhead",
+        "communications",
+        "supplies",
+        "air supply",
+        "labour",
+        "petrol",
+        "fresh foodstuffs"
     ],
     "themes": [
         "Military Operations",
-        "Air Supply",
-        "Casualty Evacuation"
+        "Supply Chain Challenges",
+        "Labour and Resources",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
+            "e_2",
             "e_4"
         ],
-        "Air Supply": [
+        "Supply Chain Challenges": [
+            "e_2",
+            "e_5"
+        ],
+        "Labour and Resources": [
+            "e_5"
+        ],
+        "Logistics": [
             "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Casualty Evacuation": [
-            "e_2"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 1943",
+            "date": "March",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_2",
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_3",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "Air Transport Operations are executed to support ground forces, crucial in maintaining supply lines and troop movements in challenging terrains."
+            "eventSummary": "The Japanese advance begins in March affecting multiple military operations."
         },
         {
             "event": "e_2",
-            "date": "Date unspecified",
+            "date": "8th to 21st February",
             "locations": [
-                "l_5"
+                "l_2"
             ],
             "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The evacuation of 16 Brigade Air Force is successfully conducted from the Hopin area, boosting troop morale."
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "During this period, the communications of the 7 Indian Division are severed affecting supply operations."
         },
         {
             "event": "e_3",
-            "date": "Date unspecified",
+            "date": "22nd June",
             "locations": [
-                "l_6"
+                "l_2"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "7 Indian Division is maintained by air supply when cut off in Arakan, a first in this theatre of war, allowing them to hold positions."
+            "eventSummary": "The Kohima Imphal road reopens, facilitating improved supply lines."
         },
         {
             "event": "e_4",
-            "date": "Date unspecified",
+            "date": "8th to 21st February",
             "locations": [
-                "l_5"
+                "l_2"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [],
-            "eventSummary": "Air supply operations for 4 Corps are critical in holding the strategic position of Imphal against Japanese forces."
+            "eventSummary": "Air supply operations conducted from the 8th to 21st February provide crucial support to surrounded military units."
+        },
+        {
+            "event": "e_5",
+            "date": "1st May",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "By 1st May, the Fourteenth Army employs over 178,000 organized labourers to support military projects."
         }
     ]
 }

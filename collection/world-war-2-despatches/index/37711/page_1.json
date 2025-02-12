@@ -1,129 +1,146 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Bradley",
-            "p_2": "Field-Marshal von Rundstedt",
-            "p_3": "Field-Marshal Rommel",
-            "p_4": "Blaskowitz",
-            "p_5": "General Schweppenburg"
+            "p_1": "Field Marshal The Viscount Montgomery of Alamein",
+            "p_2": "Admiral Sir Bertram Ramsay",
+            "p_3": "Air Chief Marshal Sir Trafford Leigh-Mallory",
+            "p_4": "General Eisenhower",
+            "p_5": "General Omar N. Bradley",
+            "p_6": "Lieutenant-General Crerar",
+            "p_7": "Lieutenant-General Dempsey",
+            "p_8": "Lieutenant-General Browning"
         },
         "locations": {
-            "l_1": "Caen",
-            "l_2": "Loire",
-            "l_3": "Seine",
-            "l_4": "Paris",
-            "l_5": "United Kingdom",
-            "l_6": "Arromanches",
-            "l_7": "France",
-            "l_8": "Low Countries",
-            "l_9": "Normandy",
-            "l_10": "Pas de Calais",
-            "l_11": "Flanders",
-            "l_12": "Riviera",
-            "l_13": "Carentan estuary",
-            "l_14": "Cherbourg"
+            "l_1": "North-West Europe",
+            "l_2": "England",
+            "l_3": "Continent",
+            "l_4": "London",
+            "l_5": "Normandy coast",
+            "l_6": "Carentan estuary",
+            "l_7": "R. Ome",
+            "l_8": "Cherbourg",
+            "l_9": "Caen"
         },
         "events": {
-            "e_1": "D Day",
-            "e_2": "invasion operations",
-            "e_3": "air superiority operations",
-            "e_4": "construction of artificial ports",
-            "e_5": "German coastal defense operations"
+            "e_1": "Operation OVERLORD",
+            "e_2": "assault of the Continent",
+            "e_3": "formation of Headquarters Twelfth United States Army Group",
+            "e_4": "initial stages of Operation OVERLORD"
         },
         "organisations": {
-            "o_1": "American Army",
-            "o_2": "German Army",
-            "o_3": "Army Group B",
-            "o_4": "Army Group G",
-            "o_5": "Panzer Group West",
-            "o_6": "S.S. Corps"
+            "o_1": "Eighth Army",
+            "o_2": "Allied Naval Expeditionary Force",
+            "o_3": "Allied Expeditionary Air Force",
+            "o_4": "Supreme Commander",
+            "o_5": "First United States Army",
+            "o_6": "First Canadian Army",
+            "o_7": "Second British Army",
+            "o_8": "British Airborne Troops",
+            "o_9": "American 82 Airborne Division",
+            "o_10": "Ninth United States Air Force",
+            "o_11": "Second Tactical Air Force"
         }
     },
     "keywords": [
-        "D Day",
+        "Operation OVERLORD",
+        "assault",
+        "lodgement area",
         "Normandy",
-        "air superiority",
-        "invasion",
-        "German defenses"
+        "Allied forces"
     ],
     "themes": [
         "Military Operations",
-        "Coastal Defense",
-        "Air Operations",
-        "Invasion Planning"
+        "Strategic Decisions",
+        "Coordination of Forces"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
-        ],
-        "Coastal Defense": [
-            "e_5"
-        ],
-        "Invasion Planning": [
-            "e_1",
-            "e_2",
             "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 7, 1944",
+            "date": "6th June, 1944",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Operation OVERLORD is planned as a major military operation to secure a lodgement on the Continent, involving multiple Allied forces."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_5",
+                "o_10"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The D Day invasion operation is orchestrated, aiming to achieve air superiority and launch the Allied forces into Normandy."
+            "eventSummary": "The assault of the Continent is executed under a coordinated plan of action to establish a foothold for further operations."
         },
         {
-            "event": "e_2",
-            "date": "June - August 1944",
+            "event": "e_3",
+            "date": "Formed in 1944",
             "locations": [
-                "l_9"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "The invasion operations unfold as planned, with significant developments throughout June, July, and August 1944."
-        },
-        {
-            "event": "e_4",
-            "date": "1944",
-            "locations": [
-                "l_5"
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_11"
             ],
+            "connectedEvents": [],
+            "eventSummary": "Headquarters Twelfth United States Army Group is established in London, prepared to command First and Third United States Armies."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Construction of artificial ports in the United Kingdom is completed to facilitate the shipping needs for the planned invasion."
+            "eventSummary": "The initial stages of Operation OVERLORD focus on mounting an operation to secure a lodgement area for future offensives."
         }
     ]
 }

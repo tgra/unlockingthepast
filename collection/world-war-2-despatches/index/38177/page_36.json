@@ -1,151 +1,93 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Godwin-Austen",
-            "p_2": "General Ritchie",
-            "p_3": "Brigadier H. R. Briggs",
-            "p_4": "General Tuker"
+            "p_1": "General Ritchie",
+            "p_2": "General Godwin-Austen"
         },
         "locations": {
-            "l_1": "Beda Fomm",
-            "l_2": "Antelat",
-            "l_3": "Saunnu",
-            "l_4": "Msus",
-            "l_5": "Mechili",
-            "l_6": "Gebel Akhdar",
-            "l_7": "Derna",
-            "l_8": "Bengasi",
-            "l_9": "Sceleidima",
-            "l_10": "El Abiar",
-            "l_11": "Solluch",
-            "l_12": "Lamluda",
-            "l_13": "Bir Tengeder",
-            "l_14": "Barce",
-            "l_15": "Charruba"
+            "l_1": "Tobruk",
+            "l_2": "Gazala",
+            "l_3": "Tmimi",
+            "l_4": "Bir Halegh el Eleba",
+            "l_5": "Alem Hamza",
+            "l_6": "Trigh el Abd",
+            "l_7": "Knightsbridge",
+            "l_8": "Mechili"
         },
         "events": {
-            "e_1": "Enemy Advance on 25th January",
-            "e_2": "Evacuation of Bengasi on 28th January",
-            "e_3": "Counter-attack Planning",
-            "e_4": "Retreat through the Gebel Akhdar"
+            "e_1": "Advance of the 13th Corps",
+            "e_2": "Combined Attack on Gazala"
         },
         "organisations": {
-            "o_1": "4th Indian Division",
-            "o_2": "Eighth Army",
-            "o_3": "2nd Armoured Brigade",
-            "o_4": "Polish Brigade Group",
-            "o_5": "Free French Brigade Group",
-            "o_6": "1st Armoured Brigade",
-            "o_7": "Guards Brigade",
-            "o_8": "7th Indian Infantry Brigade"
+            "o_1": "Eighth Army",
+            "o_2": "13th Corps",
+            "o_3": "5th New Zealand Infantry Brigade",
+            "o_4": "4th Indian Division",
+            "o_5": "7th Armoured Division",
+            "o_6": "32nd Army Tank Brigade",
+            "o_7": "Polish Brigade Group"
         }
     },
     "keywords": [
-        "enemy advance",
-        "evacuation",
-        "counter-attack",
-        "retreat",
-        "military operations"
+        "Tobruk",
+        "Gazala",
+        "Eighth Army",
+        "13th Corps",
+        "New Zealand",
+        "Indian Division",
+        "Armoured Division"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Evacuations"
+        "Tactical Maneuvering"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_2"
         ],
-        "Strategic Decisions": [
-            "e_2",
-            "e_4"
-        ],
-        "Evacuations": [
+        "Tactical Maneuvering": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "25th January",
+            "date": "13th December",
             "locations": [
-                "Msus",
-                "Antelat"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "On 25th January, the enemy aggressively advances with converging columns, prompting a reconsideration of military positions and strategies."
+            "connectedEvents": [],
+            "eventSummary": "The 13th Corps begins its advance on the enemy positions primarily around Gazala, after engagements on the 11th and 12th of December."
         },
         {
             "event": "e_2",
-            "date": "28th January",
+            "date": "Date not specified",
             "locations": [
-                "Bengasi",
-                "Solluch"
+                "l_2",
+                "l_6"
             ],
             "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_7"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "On 28th January, as enemy forces close in, permission is obtained for the evacuation of Bengasi amidst chaos and confusion."
-        },
-        {
-            "event": "e_3",
-            "date": "23rd January",
-            "locations": [
-                "Cairo",
-                "Tmimi"
-            ],
-            "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_7"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "On 23rd January, plans for a counter-attack are discussed after the enemy's unexpected success, with strategies devised to halt their advance."
-        },
-        {
-            "event": "e_4",
-            "date": "30th January",
-            "locations": [
-                "Gebel Akhdar",
-                "Mechili"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Following the fall of Bengasi, the 4th Indian Division's retreat through the Gebel Akhdar begins as they prepare to establish a defensive line."
+            "eventSummary": "The combined attack on Gazala by the 4th Armoured Brigade and Polish Brigade Group is initiated, with aims to capture strong enemy positions."
         }
     ]
 }

@@ -1,61 +1,67 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Geoffrey Layton",
-            "p_2": "Admiral Palliser",
-            "p_3": "Sir Tom Phillips",
-            "p_4": "General Percival"
+            "p_1": "Mr. Duff Cooper"
         },
         "locations": {
-            "l_1": "Pulo Obi",
-            "l_2": "Indo-China",
-            "l_3": "Koh Tron",
-            "l_4": "Siam",
-            "l_5": "Kota Bharu",
-            "l_6": "Singora",
-            "l_7": "Patani",
-            "l_8": "Singapore",
-            "l_9": "Gulf of Siam",
-            "l_10": "Kra Isthmus"
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "Rhio Archipelago",
+            "l_4": "Miri",
+            "l_5": "Kuching",
+            "l_6": "Kuala Lumpur",
+            "l_7": "Kuala Kangsar",
+            "l_8": "Perak",
+            "l_9": "Kuala Krai",
+            "l_10": "Kuantan",
+            "l_11": "Central Malaya",
+            "l_12": "Kuala Lipis-Raub area",
+            "l_13": "Dabong",
+            "l_14": "Port Swettenham",
+            "l_15": "Kuala Trengganu",
+            "l_16": "Dungun",
+            "l_17": "Hong Kong",
+            "l_18": "Kowloon",
+            "l_19": "Taipo Road",
+            "l_20": "Gin Drinkers line",
+            "l_21": "Stonecutter's Island"
         },
         "events": {
-            "e_1": "Japanese landing at Kota Bharu",
-            "e_2": "Singapore attack by Japanese bombers"
+            "e_1": "Japanese air attack on Kowloon",
+            "e_2": "Evacuation of British women and children from Malaya",
+            "e_3": "Fall of Hong Kong",
+            "e_4": "Withdrawal from the mainland"
         },
         "organisations": {
-            "o_1": "Royal Australian Air Force",
-            "o_2": "A.R.P. organisation"
+            "o_1": "8th Indian Infantry Brigade",
+            "o_2": "28th Indian Infantry Brigade",
+            "o_3": "Royal Scots",
+            "o_4": "Winnipeg Grenadiers"
         }
     },
     "keywords": [
-        "Japanese convoys",
-        "air reconnaissance",
-        "warships",
-        "convoy",
-        "war footing",
-        "bombing",
-        "casualties",
-        "military operations"
+        "air attack",
+        "evacuation",
+        "military withdrawal",
+        "heavy losses",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Intelligence Reporting",
-        "War Preparations",
-        "Diplomacy"
+        "Evacuations",
+        "Enemy Attacks",
+        "Strategic Withdrawals"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3"
+        ],
+        "Evacuations": [
             "e_2"
         ],
-        "Diplomacy": [
-            "e_1"
-        ],
-        "Intelligence Reporting": [
-            "e_1"
-        ],
-        "War Preparations": [
-            "e_2"
+        "Strategic Withdrawals": [
+            "e_4"
         ]
     },
     "eventConnections": [
@@ -63,36 +69,57 @@
             "event": "e_1",
             "date": "8th December",
             "locations": [
-                "l_1",
-                "l_10"
+                "l_17",
+                "l_18"
             ],
-            "persons": [
-                "p_4"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The Japanese land forces from about ten ships at Kota Bharu, prompting immediate military preparations."
+            "eventSummary": "On the 8th of December, hostilities begin with a Japanese air attack on Kowloon, leading to the eventual fall of Hong Kong."
         },
         {
             "event": "e_2",
-            "date": "8th December",
+            "date": "31st January, 1942",
             "locations": [
-                "l_8"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_4"
+                "p_1"
             ],
-            "organisations": [
-                "o_2"
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "By 31st January 1942, a total of 10,729 British women and children have been evacuated from Malaya amid the war with Japan."
+        },
+        {
+            "event": "e_3",
+            "date": "December 1941",
+            "locations": [
+                "l_17"
             ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_4"
             ],
-            "eventSummary": "Singapore is attacked by Japanese bombers around 0300 hours, causing significant casualties primarily among the Chinese population."
+            "eventSummary": "The Fall of Hong Kong occurs after intense fighting and occupation by Japanese forces in December 1941."
+        },
+        {
+            "event": "e_4",
+            "date": "December 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The withdrawal from the mainland is executed on December 11th, 1941, as military forces retreat to defend strategic positions."
         }
     ]
 }

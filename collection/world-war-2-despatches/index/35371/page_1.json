@@ -1,50 +1,89 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "His Majesty",
-            "p_2": "Roumanian Government"
+            "p_1": "His Majesty's Government",
+            "p_2": "United States Minister"
         },
         "locations": {
-            "l_1": "United Kingdom",
-            "l_2": "Roumania"
+            "l_1": "Finland",
+            "l_2": "Helsingfors",
+            "l_3": "Great Britain",
+            "l_4": "Union of Soviet Socialist Republics",
+            "l_5": "Hungary",
+            "l_6": "Budapest",
+            "l_7": "Roumania",
+            "l_8": "Bucharest"
         },
         "events": {
-            "e_1": "State of War Declaration",
-            "e_2": "Roumanian Military Operations"
+            "e_1": "State of war with Finland",
+            "e_2": "State of war with Hungary",
+            "e_3": "State of war with Roumania"
         },
         "organisations": {
-            "o_1": "His Majesty's Government"
+            "o_1": "Hungarian Government",
+            "o_2": "Finnish Government",
+            "o_3": "Roumanian Government"
         }
     },
     "keywords": [
-        "State of War",
-        "Military Operations",
-        "Communication",
-        "Hostilities"
+        "state of war",
+        "military operations",
+        "aggressive actions",
+        "territory",
+        "communications",
+        "collaboration"
     ],
     "themes": [
-        "Diplomatic Tensions",
-        "Military Action",
-        "War Declaration"
+        "Military Operations",
+        "Diplomacy",
+        "Conflict"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2"
+            "e_1",
+            "e_2",
+            "e_3"
         ],
         "Diplomacy": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Conflict": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "7th December 1941",
+            "date": "7 December 1941",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A state of war exists between His Majesty's Government in the United Kingdom and Finland as of 12.01 a.m. on the 7th of December due to Finland's continued military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "7 December 1941",
+            "locations": [
+                "l_5",
+                "l_3",
+                "l_4"
             ],
             "persons": [
                 "p_1",
@@ -54,26 +93,31 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "His Majesty's Government informs the Roumanian Government that a state of war will exist between the two countries due to continued military operations."
+            "eventSummary": "A state of war exists between His Majesty's Government in the United Kingdom and Hungary as of 12.01 a.m. on the 7th of December due to Hungary's aggressive military operations."
         },
         {
-            "event": "e_2",
-            "date": "5th December 1941",
+            "event": "e_3",
+            "date": "7 December 1941",
             "locations": [
-                "l_2"
+                "l_7",
+                "l_3",
+                "l_4"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "The Roumanian Government continues military operations, prompting a warning from His Majesty's Government regarding potential declaration of war."
+            "eventSummary": "A state of war exists between His Majesty's Government in the United Kingdom and Roumania as of 12.01 a.m. on the 7th of December due to Roumania's aggressive military activities."
         }
     ]
 }

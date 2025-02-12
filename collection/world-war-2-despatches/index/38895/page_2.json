@@ -1,121 +1,104 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Officer Commanding-in-Chief",
-            "p_2": "Commander-in-Chief"
+            "p_1": "Vice-Admiral H. K. Hewitt",
+            "p_2": "Rear-Admiral R. R. McGrigor",
+            "p_3": "Rear-Admiral T. H. Troubridge"
         },
         "locations": {
-            "l_1": "Malta",
-            "l_2": "Algiers",
-            "l_3": "Marsa",
-            "l_4": "Egypt",
-            "l_5": "Clyde",
-            "l_6": "Oran",
-            "l_7": "Tunisian war channel"
+            "l_1": "Sfax",
+            "l_2": "Sousse",
+            "l_3": "Bizerta",
+            "l_4": "Tunis",
+            "l_5": "Pantellaria"
         },
         "events": {
-            "e_1": "Beach Intelligence Collection",
-            "e_2": "Assault Operation",
-            "e_3": "Convoy Attacks"
+            "e_1": "Husky",
+            "e_2": "D day",
+            "e_3": "H hour"
         },
         "organisations": {
-            "o_1": "8th and 10th Flotillas",
-            "o_2": "North-West African Coastal Air Force",
-            "o_3": "No. 201 (Naval Co-operation) Group",
-            "o_4": "Air Headquarters Air Defence, Eastern Mediterranean",
-            "o_5": "North-West African Tactical Air Force"
+            "o_1": "Western Task Force",
+            "o_2": "Eastern Task Force",
+            "o_3": "United States Navy Department",
+            "o_4": "U.S. warships"
         }
     },
     "keywords": [
-        "beach reconnaissance",
-        "assault operation",
-        "convoy attack",
-        "air operations",
+        "airborne troops",
         "naval forces",
-        "army",
-        "combined headquarters"
+        "beach defences",
+        "casualty rate",
+        "training",
+        "mounting"
     ],
     "themes": [
         "Military Operations",
-        "Coordination Challenges",
-        "Logistical Planning",
-        "Casualties",
-        "Air Support"
+        "Tactical Planning",
+        "Training and Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Coordination Challenges": [
-            "e_2"
-        ],
-        "Logistical Planning": [
-            "e_1",
-            "e_2"
-        ],
-        "Casualties": [
+        "Tactical Planning": [
             "e_1"
         ],
-        "Air Support": [
-            "e_2"
+        "Training and Coordination": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of operation unspecified",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Beach reconnaissance parties successfully gather vital information about beach gradients and sand bars despite heavy casualties."
-        },
-        {
-            "event": "e_2",
-            "date": "Dates of operation unspecified",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
+                "l_3",
+                "l_4",
+                "l_5"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
+                "o_1",
                 "o_2",
+                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_1",
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The assault operation proceeds with careful coordination among naval and air forces, facing logistical challenges due to communication issues and troop dispersion."
+            "eventSummary": "The operation 'Husky' initiated with the planning of airborne and naval forces but faced various challenges including weather constraints and tactical considerations."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "D day is the planned landing time for the next wave of assault troops, intricately tied to the success of operation 'Husky'."
         },
         {
             "event": "e_3",
-            "date": "4th July to 6th July",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
+            "date": "",
+            "locations": [],
             "persons": [],
-            "organisations": [
-                "o_2"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Convoys experience submarine attacks resulting in the loss of ships, yet the air cover effectively protects the majority from enemy sighting."
+            "eventSummary": "H hour marks the exact moment when landing crafts are scheduled to touch down on the beach for the assault."
         }
     ]
 }

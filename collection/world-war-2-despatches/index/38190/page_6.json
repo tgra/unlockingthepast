@@ -1,99 +1,177 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "H. O. Hughes",
-            "p_2": "Kendall",
-            "p_3": "H. R. Newton"
+            "p_1": "Major Gray",
+            "p_2": "His Excellency the Governor",
+            "p_3": "Major G. E. Gray",
+            "p_4": "Major Nishiyama"
         },
         "locations": {
-            "l_1": "Hong Kong",
-            "l_2": "Shingmun Valley",
-            "l_3": "Castle Peak Road",
-            "l_4": "Au Tau",
-            "l_5": "Hong Kong Island",
-            "l_6": "Aberdeen Reservoir",
-            "l_7": "Tsun Wan Wai",
-            "l_8": "Kai Tak aerodrome",
-            "l_9": "Laichikok Peninsula",
-            "l_10": "Pineapple Road",
-            "l_11": "Texaco Peninsula"
+            "l_1": "Formosa",
+            "l_2": "Canton",
+            "l_3": "Tokyo",
+            "l_4": "Fanling",
+            "l_5": "Kai Tak",
+            "l_6": "Kowloon",
+            "l_7": "Laffans Plain",
+            "l_8": "Taipo",
+            "l_9": "Taipo Mei",
+            "l_10": "Fo Tan Valley",
+            "l_11": "Monastery Ridge",
+            "l_12": "Gindrinkers Line"
         },
         "events": {
-            "e_1": "Japanese raid on Stanley",
-            "e_2": "Capture of Shingmun Redoubt",
-            "e_3": "Evacuation of Kai Tak aerodrome"
+            "e_1": "Encounter of Japanese fifth column activities",
+            "e_2": "Japanese forces concentration north of the frontier",
+            "e_3": "Desertion of Japanese soldier",
+            "e_4": "Reports of Japanese forces on 7th December",
+            "e_5": "Japanese dive attack on Kai Tak aerodrome",
+            "e_6": "Japanese bridging at Lo Wu",
+            "e_7": "Attack on Hong Kong",
+            "e_8": "Demolitions at Taipo"
         },
         "organisations": {
-            "o_1": "Royal Artillery",
-            "o_2": "Z Force",
-            "o_3": "7th Chinese Army",
-            "o_4": "5/7 Rajput Regiment",
-            "o_5": "2 Royal Scots",
-            "o_6": "Mainland Brigade",
-            "o_7": "Winnipeg Grenadiers"
+            "o_1": "2/14 Punjab Regt",
+            "o_2": "British Empire",
+            "o_3": "R.A.F."
         }
     },
     "keywords": [
-        "Japanese troops",
-        "artillery",
-        "Hong Kong",
-        "evacuation",
-        "counter attack",
-        "demolition",
-        "patrols"
+        "Japanese",
+        "Troops",
+        "Deserter",
+        "Attack",
+        "Demolitions",
+        "Kai Tak",
+        "Fanling"
     ],
     "themes": [
         "Military Operations",
-        "Counteroffensive Actions",
-        "Intelligence Gathering"
+        "Intelligence Gathering",
+        "Conflict Escalation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_5",
+            "e_6",
+            "e_7",
+            "e_8"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": [
-            "e_2",
-            "e_3"
+        "Intelligence Gathering": [
+            "e_3",
+            "e_4"
+        ],
+        "Conflict Escalation": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8th December",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [],
             "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A large formation of Japanese planes carries out a raid on Stanley, dropping a few bombs with little material damage."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Japanese fifth column activities are encountered, though no proof of such organisations exists."
         },
         {
             "event": "e_2",
-            "date": "9th December",
+            "date": "7th December",
             "locations": [
-                "l_2",
-                "l_1"
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_8"
+            ],
+            "eventSummary": "Japanese forces concentrate north of the frontier on the evening of 7th December as reported."
+        },
+        {
+            "event": "e_3",
+            "date": "1st November",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A Japanese deserter gives himself up at a civil police post and provides information about Japanese troop movements."
+        },
+        {
+            "event": "e_4",
+            "date": "7th December",
+            "locations": [],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Reports of Japanese forces are received, indicating preparation for conflict."
+        },
+        {
+            "event": "e_5",
+            "date": "8th December",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Japanese aircraft dive attack Kai Tak aerodrome, resulting in the destruction of several R.A.F. planes."
+        },
+        {
+            "event": "e_6",
+            "date": "8th December",
+            "locations": [
+                "l_7"
             ],
             "persons": [
                 "p_3"
             ],
             "organisations": [
-                "o_4",
-                "o_5",
-                "o_6"
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The capture of Shingmun Redoubt occurs by surprise, affecting military and civil defense arrangements significantly."
+            "eventSummary": "Japanese begin bridging at Lo Wu, initiating troop movements across into Laffans Plain."
         },
         {
-            "event": "e_3",
-            "date": "10th December",
+            "event": "e_7",
+            "date": "8th December",
             "locations": [
                 "l_8"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Forward troops defend against an attack during the night as Japanese forces press harder."
+        },
+        {
+            "event": "e_8",
+            "date": "8th December",
+            "locations": [
+                "l_8",
+                "l_9"
             ],
             "persons": [
                 "p_1"
@@ -102,7 +180,7 @@
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The R.A.F. is ordered to evacuate Kai Tak aerodrome and destroy machines and equipment."
+            "eventSummary": "Demolitions are successfully blown as part of defensive operations during the Japanese attack."
         }
     ]
 }

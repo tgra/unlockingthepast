@@ -1,118 +1,62 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "T. W. Corbett",
-            "p_2": "C.-in-C.",
-            "p_3": "B. T. E.",
-            "p_4": "Deltaforce"
+            "p_1": "General Ritchie"
         },
         "locations": {
-            "l_1": "Wadi Natrun",
-            "l_2": "Cairo",
-            "l_3": "Alexandria",
-            "l_4": "Palestine",
-            "l_5": "Delta",
-            "l_6": "Nile L. of C. Area",
-            "l_7": "Wasta",
-            "l_8": "El Alamein",
-            "l_9": "Giza",
-            "l_10": "Gebel Qatrani",
-            "l_11": "Abu Rauwash",
-            "l_12": "Hawamdiya",
-            "l_13": "Fayoum",
-            "l_14": "Tanta",
-            "l_15": "Damanhur",
-            "l_16": "Western Desert"
+            "l_1": "Bagush",
+            "l_2": "Egypt",
+            "l_3": "Matruh",
+            "l_4": "Alexandria",
+            "l_5": "Cairo",
+            "l_6": "El Alamein",
+            "l_7": "Wadi Natrun",
+            "l_8": "Qattara Depression"
         },
         "events": {
-            "e_1": "Phase II Operations",
-            "e_2": "Phase III Preparations",
-            "e_3": "Defence of Egypt",
-            "e_4": "Withdrawal from El Alamein"
+            "e_1": "Battle for Egypt",
+            "e_2": "attack on El Alamein",
+            "e_3": "withdrawal on El Alamein",
+            "e_4": "attack on the 1st South African Division",
+            "e_5": "13th Corps attack"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "Tactical G. H. Q.",
-            "o_3": "M. E. F."
+            "o_2": "R.A.F.",
+            "o_3": "13th Corps"
         }
     },
     "keywords": [
-        "Eighth Army",
-        "Deltaforce",
-        "G. H. Q.",
-        "Tactical H.Q.",
-        "Nile L. of C. Area",
-        "El Alamein",
-        "Western Desert"
+        "strategy",
+        "command",
+        "morale",
+        "defensive",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Command",
-        "Defensive Strategy",
-        "Withdrawal Procedures"
+        "Command Decisions",
+        "Strategic Withdrawals"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_4",
+            "e_5"
+        ],
+        "Command Decisions": [
+            "e_3",
+            "e_1"
+        ],
+        "Strategic Withdrawals": [
             "e_3"
-        ],
-        "Strategic Command": [
-            "e_1",
-            "e_2"
-        ],
-        "Withdrawal Procedures": [
-            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 1942",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "During Phase II, Eighth Army positions are established north and northeast of Wadi Natrun to counter the enemy's advance towards Cairo or Alexandria."
-        },
-        {
-            "event": "e_2",
-            "date": "August 1942",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "In preparation for Phase III, Eighth Army withdraws to a position near Giza, forming a defensive line while consolidating command structures."
-        },
-        {
-            "event": "e_3",
-            "date": "July 1942",
+            "date": null,
             "locations": [
                 "l_2"
             ],
@@ -123,24 +67,48 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The defence of Egypt aims to defeat enemy forces in the Western Desert, with a focus on maintaining a united front against potential Axis operations."
+            "eventSummary": "The Eighth Army faces significant challenges during the Battle for Egypt as they confront enemy advances and strategize for future engagements."
         },
         {
-            "event": "e_4",
-            "date": "July 1942",
+            "event": "e_2",
+            "date": "1st July",
             "locations": [
-                "l_8"
+                "l_6"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
             ],
+            "connectedEvents": [],
+            "eventSummary": "An attack against the 1st South African Division takes place at El Alamein, which successfully defends against enemy advances."
+        },
+        {
+            "event": "e_3",
+            "date": "27th June",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Following the operations at El Alamein, a strategy is developed for the withdrawal of forces while ensuring maintenance and logistical support."
+            "eventSummary": "The Eighth Army is ordered to withdraw from Matruh towards El Alamein to regroup and maintain an effective defensive position."
+        },
+        {
+            "event": "e_4",
+            "date": null,
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 13th Corps launches an attack to regain initiative from the enemy during ongoing conflicts."
         }
     ]
 }

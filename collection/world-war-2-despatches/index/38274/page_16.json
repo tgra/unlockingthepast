@@ -1,24 +1,129 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Akyab Area",
-            "l_2": "Foul Point"
+        "persons": {
+            "p_1": "Maj.-Gen. Wingate"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Nowgong",
+            "l_2": "Gwalior",
+            "l_3": "North Central Burma",
+            "l_4": "Assam",
+            "l_5": "Bengal",
+            "l_6": "Bihar",
+            "l_7": "Orissa",
+            "l_8": "Cape Comorin",
+            "l_9": "India"
+        },
+        "events": {
+            "e_1": "Special Force operations",
+            "e_2": "Airfield Defences",
+            "e_3": "Chemical Warfare and Special Weapons",
+            "e_4": "Flame Weapons and Coloured Smokes",
+            "e_5": "Training of Officers"
+        },
+        "organisations": {
+            "o_1": "7oth British Division",
+            "o_2": "Royal Armoured Corps",
+            "o_3": "South East Asia Command",
+            "o_4": "Women's Auxiliary Corps (India)"
+        }
     },
     "keywords": [
-        "Geography",
-        "Military Operations"
+        "Special Force",
+        "Airfield Defences",
+        "Chemical Warfare",
+        "Flame Weapons",
+        "Training"
     ],
     "themes": [
-        "Geopolitical Strategy"
+        "Military Operations",
+        "Training",
+        "Defence Strategies"
     ],
     "topicModel": {
-        "Military Operations": [],
-        "Diplomacy": [],
-        "Strategic Decisions": []
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Training": [
+            "e_5"
+        ],
+        "Defence Strategies": [
+            "e_2",
+            "e_4"
+        ]
     },
-    "eventConnections": []
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "October 25, 1942",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Special Force operations are directed against the enemy communications in North Central Burma under the Supreme Allied Command."
+        },
+        {
+            "event": "e_2",
+            "date": "November, 1942",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Extensive development in airfield defences is undertaken to enhance the security of airforce installations in vulnerable areas."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The military discusses the use and implications of chemical warfare in the ongoing Burma front."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Decisions about the development and usage of flame weapons and coloured smokes are reviewed and planned for implementation."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The training of officers is centralized and restructured to improve efficiency and suitability for roles."
+        }
+    ]
 }

@@ -1,72 +1,125 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral C. B. Barry, D.S.O.",
-            "p_2": "Captain W. E. Banks, D.S.C.",
-            "p_3": "Acting Captain P. Q. Roberts, R.N.",
-            "p_4": "Commander D. C. Ingram, D.S.C."
+            "p_1": "Commander Davies",
+            "p_2": "Admuralty",
+            "p_3": "Admiral Commanding Orkney and Shetlands",
+            "p_4": "Lieut R. L. Alexander",
+            "p_5": "Lieut D Cameron",
+            "p_6": "Lieut A Wilson",
+            "p_7": "Lieut M H. Jupp",
+            "p_8": "Lieut T L Martin",
+            "p_9": "Lieut A R. Hezlet",
+            "p_10": "Lieut H Henty-Creer",
+            "p_11": "Lieut J P H. Oakley",
+            "p_12": "Lieut B M McFarlane",
+            "p_13": "Lieut A. A. Duff",
+            "p_14": "Lieut B. C. G. Place",
+            "p_15": "Lieut I. S McIntosh",
+            "p_16": "Lieut K. R. Hudspeth",
+            "p_17": "Sub-Lieut E Kearon",
+            "p_18": "Sub-Lieut P. H. Phihp",
+            "p_19": "Sub-Lieut E. V. Page"
         },
         "locations": {
-            "l_1": "Norwegian coast",
-            "l_2": "Port HHZ (Loch Cairnbawn)",
-            "l_3": "Loch Ewe"
+            "l_1": "Port HHZ",
+            "l_2": "Alten",
+            "l_3": "Ice Fiord",
+            "l_4": "Spitzbergen",
+            "l_5": "Alten Fiord",
+            "l_6": "Kaafiord",
+            "l_7": "Langfiord"
         },
         "events": {
-            "e_1": "Attack on the Tirpitz",
+            "e_1": "Operation Funnel",
             "e_2": "Operation Source",
-            "e_3": "Formation of 12th Submarine Flotilla"
+            "e_3": "Day D",
+            "e_4": "Spitfire sorties",
+            "e_5": "Target Plan No. 4"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "H.M.S. BONAVENTURE",
-            "o_3": "Vickers Armstrong, Limited"
+            "o_1": "Royal Navy",
+            "o_2": "Admuralty"
         }
     },
     "keywords": [
-        "midget submarines",
-        "X-craft",
-        "German main units",
-        "naval operation",
-        "Admiralty report"
+        "submarines",
+        "operation",
+        "security",
+        "reconnaissance"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Strategic Planning"
+        "Security",
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Security": [
             "e_2"
         ],
-        "Naval Warfare": [
-            "e_1"
-        ],
-        "Strategic Planning": [
-            "e_3"
+        "Naval Strategy": [
+            "e_1",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "22nd September, 1943",
+            "date": "20th September",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8",
+                "p_9",
+                "p_10",
+                "p_11",
+                "p_12"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Tirpitz is attacked by midget submarines in a coordinated naval operation."
+            "eventSummary": "Operation Funnel is planned to commence on the 20th September at Port HHZ, as preparations are underway with submarine deployments."
         },
         {
             "event": "e_2",
-            "date": "1943",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Security measures are increased at Port HHZ, affecting the preparation for upcoming military operations."
+        },
+        {
+            "event": "e_3",
+            "date": "20th September",
             "locations": [
                 "l_1"
             ],
@@ -74,30 +127,42 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation Source is launched for the purpose of attacking the German main units using X-craft."
+            "eventSummary": "Day D is set for the 20th September for Operation Funnel, emphasizing the strategic timing and planning needed."
         },
         {
-            "event": "e_3",
-            "date": "17th April, 1943",
+            "event": "e_4",
+            "date": "3rd September",
             "locations": [
                 "l_2"
             ],
             "persons": [
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
-            "organisations": [
-                "o_2"
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The 12th Submarine Flotilla is formed to coordinate the training and deployment of special naval weapons."
+            "eventSummary": "Soviet reconnaissance on the 3rd September indicates the presence of key naval vessels in the Alten area."
+        },
+        {
+            "event": "e_5",
+            "date": "15th September",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Target Plan No. 4 is developed to task submarines with specific attacks against identified vessels on the 15th September."
         }
     ]
 }

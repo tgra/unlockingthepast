@@ -1,124 +1,116 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier Bourke"
+            "p_1": "Brigadier Ekin",
+            "p_2": "Major Ward"
         },
         "locations": {
-            "l_1": "Northern Thailand",
-            "l_2": "Salween",
-            "l_3": "Moulmein",
-            "l_4": "Kawkareik",
-            "l_5": "Mergui",
-            "l_6": "Tavoy",
-            "l_7": "Myawaddy",
-            "l_8": "Dawna Range",
-            "l_9": "Three Pagodas Pass",
-            "l_10": "Gyaing River",
-            "l_11": "Ye-Tavoy"
+            "l_1": "Moulmein",
+            "l_2": "Bilin",
+            "l_3": "Kyaikto",
+            "l_4": "River Sittang",
+            "l_5": "Martaban",
+            "l_6": "Salween",
+            "l_7": "Paan"
         },
         "events": {
-            "e_1": "Formation of H.Q. 17 Indian Division",
-            "e_2": "Troop Movements",
-            "e_3": "Operations at Tavoy",
-            "e_4": "Enemy Activities"
+            "e_1": "withdrawal",
+            "e_2": "attack on Moulmein",
+            "e_3": "embarkation"
         },
         "organisations": {
-            "o_1": "17 Indian Division",
-            "o_2": "16 Indian Brigade"
+            "o_1": "2 Burma Brigade",
+            "o_2": "Kokine Battalion",
+            "o_3": "Burma Frontier Force",
+            "o_4": "1/7 G.R.",
+            "o_5": "4 Burma Rifles",
+            "o_6": "3 Burma Rifles",
+            "o_7": "7 Burma Rifles",
+            "o_8": "8 Burma Rifles",
+            "o_9": "12 Mountain Battery R.A.",
+            "o_10": "4/12 F.F.R.",
+            "o_11": "17 Indian Division",
+            "o_12": "16 Indian Infantry Brigade"
         }
     },
     "keywords": [
-        "Japanese troops",
-        "Thai troops",
-        "Moulmein",
-        "Kawkareik",
-        "Intelligence",
-        "Troop Movements"
+        "withdrawal",
+        "attack",
+        "embarkation",
+        "casualties",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Troop Movements",
-        "Intelligence Gathering",
-        "Defensive Strategies"
+        "Combat",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_3",
-            "e_4"
-        ],
-        "Troop Movements": [
+            "e_1",
             "e_2"
         ],
-        "Intelligence Gathering": [
-            "e_4"
-        ],
-        "Strategic Decisions": [
-            "e_1"
+        "Logistics": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 5, 1942",
+            "date": "January 2, 1942",
             "locations": [
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_4",
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "On January 5, the senior staff officers of the 17 Indian Division establish an advanced headquarters at Moulmein under the command of Brigadier Bourke."
+            "eventSummary": "Withdrawal commences on January 2, 1942, amidst confusion and complications in strategic movement."
         },
         {
             "event": "e_2",
-            "date": "January 14, 1942",
+            "date": "January 30, 1942",
             "locations": [
-                "l_3",
-                "l_4"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_8"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "On January 14, the entire 16 Indian Infantry Brigade is moved to the Moulmein area to strengthen defenses, particularly around Kawkareik."
+            "eventSummary": "Japanese forces initiate an attack on Moulmein on January 30, 1942, challenging the defensive capabilities of the 2 Burma Brigade."
         },
         {
             "event": "e_3",
-            "date": "January 16, 1942",
+            "date": "January 31, 1942",
             "locations": [
-                "l_6",
-                "l_1"
+                "l_5"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4"
+            "persons": [
+                "p_2"
             ],
-            "eventSummary": "On January 16, two companies of the 6 Burma Rifles engage a Japanese force estimated at about 100 near Myitta, indicating escalating enemy activities."
-        },
-        {
-            "event": "e_4",
-            "date": "January 11, 1942",
-            "locations": [
-                "l_1",
-                "l_7"
+            "organisations": [
+                "o_4",
+                "o_6"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On January 11, reports indicate that Japanese forces are concentrating significant troops near Myawaddy, suggesting an imminent attack."
+            "connectedEvents": [],
+            "eventSummary": "Embarkation begins at 0730 on January 31, 1942, as troops withdraw amidst enemy pressure and ongoing fighting."
         }
     ]
 }

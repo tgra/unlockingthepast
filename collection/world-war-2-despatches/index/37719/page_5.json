@@ -1,9 +1,9 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Ai: Commodore A. D. Warrington Mortis",
-            "p_2": "Air Vice-Marshal A. D. Cunningham",
-            "p_3": "Wing Commander R. G. Hart"
+            "p_1": "A. D. Warrington Mortis",
+            "p_2": "A. D. Cunningham",
+            "p_3": "R. G. Hart"
         },
         "locations": {
             "l_1": "Norwich",
@@ -11,55 +11,54 @@
             "l_3": "Liverpool",
             "l_4": "Glasgow",
             "l_5": "Orkneys",
-            "l_6": "Shetlands",
-            "l_7": "British Isles"
+            "l_6": "Shetlands"
         },
         "events": {
-            "e_1": "Operation of the Observer Corps",
-            "e_2": "Development of the Air Raid Warning System"
+            "e_1": "Air Raid Warning System",
+            "e_2": "Battle"
         },
         "organisations": {
-            "o_1": "Fighter Command",
-            "o_2": "Home Office",
-            "o_3": "Observer Corps"
+            "o_1": "Observer Corps",
+            "o_2": "Fighter Command",
+            "o_3": "Home Office",
+            "o_4": "Coastal Commands",
+            "o_5": "Bomber Commands"
         }
     },
     "keywords": [
         "Observer Corps",
         "Air Raid Warning",
         "Fighter Command",
-        "Filter Room",
-        "Enemy Raids"
+        "Tactical control"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategy",
-        "Communication Systems"
+        "Communication Systems",
+        "Defense Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Defensive Strategy": [
+        "Communication Systems": [
             "e_1"
         ],
-        "Communication Systems": [
+        "Defense Strategy": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3",
                 "l_4",
                 "l_5",
-                "l_6",
-                "l_7"
+                "l_6"
             ],
             "persons": [
                 "p_1",
@@ -69,29 +68,30 @@
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Observer Corps operates efficiently to track enemy raids throughout the war, ensuring the effectiveness of air defense systems."
+            "eventSummary": "The Air Raid Warning System is operated centrally, coordinating messages to warn districts about incoming enemy raids."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "",
             "locations": [],
             "persons": [
                 "p_2",
                 "p_3"
             ],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Air Raid Warning System is developed to facilitate communication and coordination during enemy air raids, significantly enhancing defensive operations."
+            "eventSummary": "The Battle involves the organization and execution of military operations within the national defense framework."
         }
     ]
 }

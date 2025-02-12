@@ -1,41 +1,123 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Commodore Elliott",
+            "p_2": "Mr. Rounds",
+            "p_3": "Captain T. O. Bulteel",
+            "p_4": "Senior Naval Officer Landing"
+        },
         "locations": {
-            "l_1": "North Africa",
-            "l_2": "Bougie"
+            "l_1": "Arzeu Bay",
+            "l_2": "Oran",
+            "l_3": "Cape Carbon",
+            "l_4": "La Senia",
+            "l_5": "Mers el Kebir",
+            "l_6": "Y Beach"
         },
         "events": {
-            "e_1": "Operation Torch"
+            "e_1": "Landing at Arzeu",
+            "e_2": "Attack on Tafaraoui",
+            "e_3": "French reception of H.M. Ships WALNEY and HARTLAND",
+            "e_4": "Engagement with Du Santon battery"
         },
-        "organisations": {}
+        "organisations": {
+            "o_1": "U.S. Consulate",
+            "o_2": "H.M. Ships",
+            "o_3": "Royal Navy"
+        }
     },
     "keywords": [
-        "Operation Torch",
-        "North Africa",
-        "Bougie",
-        "Landing Beaches"
+        "convoy",
+        "resistance",
+        "naval aero-drome",
+        "bombers",
+        "landing craft",
+        "minesweepers"
     ],
     "themes": [
-        "Military Operations"
+        "Military Operations",
+        "Naval Engagements",
+        "Resistance",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Engagements": [
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 1942",
+            "date": "Date not provided",
             "locations": [
                 "l_1",
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "At 0100, seven M.T. ships from the convoy arrive at Arzeu Bay and unload for the landing operation."
+        },
+        {
+            "event": "e_2",
+            "date": "Date not provided",
+            "locations": [
+                "l_4",
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Orders are sent to attack the enemy aerodromes, focusing on Tafaraoui at dawn."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not provided",
+            "locations": [
                 "l_2"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_2"
+            ],
             "connectedEvents": [],
-            "eventSummary": "Operation Torch is ongoing, focusing on landing operations in North Africa, specifically at Bougie."
+            "eventSummary": "At 0300, searchlights and gun flashes are seen as the French reception of H.M. Ships WALNEY and HARTLAND is noted."
+        },
+        {
+            "event": "e_4",
+            "date": "Date not provided",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "At 0900, the Du Santon battery opens fire on ships off Y Beach, scoring hits on MONARCH OF BERMUDA and LLANGIBBY CASTLE."
         }
     ]
 }

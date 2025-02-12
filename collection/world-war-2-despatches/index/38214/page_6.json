@@ -1,95 +1,80 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A. G. Sxipwitu",
-            "p_2": "C. PuLForp",
-            "p_3": "T. A. Vicors",
-            "p_4": "Fit./Lt. Vigors"
+            "p_1": "Gill",
+            "p_2": "Wittiam TENNANT",
+            "p_3": "A. G. SKIPWITH"
         },
         "locations": {
             "l_1": "Singapore",
-            "l_2": "Kota Bharu",
-            "l_3": "Pattani",
-            "l_4": "Singgora",
-            "l_5": "Sembawang"
+            "l_2": "H.M.S. PRINCE OF WALES"
         },
         "events": {
-            "e_1": "Torpedo Bomber Attack on H.M.S. PRINCE OF WALES",
-            "e_2": "Sinking of H.M.S. PRINCE OF WALES",
-            "e_3": "Disembarkation Orders from H.M.S. EXPRESS",
-            "e_4": "Landing Operations by the Eastern Fleet"
+            "e_1": "Loss of H.M.S. PRINCE OF WALES",
+            "e_2": "First air attack on H.M.S. PRINCE OF WALES",
+            "e_3": "Second air attack on H.M.S. PRINCE OF WALES"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Royal Air Force, Far East",
-            "o_3": "Eastern Fleet",
-            "o_4": "453 Squadron",
-            "o_5": "R.A.A.F Station"
+            "o_1": "Eastern Fleet"
         }
     },
     "keywords": [
-        "Torpedo",
-        "Sinking",
-        "Attack",
-        "Disembarkation",
-        "Landing Operations",
-        "Naval Forces"
+        "torpedo",
+        "attack",
+        "ship",
+        "survivors",
+        "bombers",
+        "rescue",
+        "naval"
     ],
     "themes": [
         "Military Operations",
-        "Bravery",
-        "Naval Warfare",
-        "Air Support"
+        "Heroism",
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4"
-        ],
-        "Bravery": [
-            "e_2",
             "e_3"
         ],
-        "Naval Warfare": [
+        "Heroism": [
             "e_1",
             "e_2"
         ],
-        "Air Support": [
-            "e_2",
-            "e_4"
+        "Naval Warfare": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 12, 1941",
+            "date": "14th December, 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "A torpedo bomber attack occurs on H.M.S. PRINCE OF WALES, resulting in significant damage."
+            "eventSummary": "The event describes the loss of H.M.S. PRINCE OF WALES during enemy attacks, highlighting the actions taken by the crew and the subsequent rescue of survivors."
         },
         {
             "event": "e_2",
-            "date": "December 12, 1941",
+            "date": "10th December, 1941",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
             "organisations": [
                 "o_1"
@@ -97,39 +82,24 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "H.M.S. PRINCE OF WALES sinks after being hit by torpedoes during the attack."
+            "eventSummary": "The first air attack on H.M.S. PRINCE OF WALES occurs as the squadron returns to Singapore, resulting in opening fire on enemy bombers."
         },
         {
             "event": "e_3",
-            "date": "December 12, 1941",
+            "date": "10th December, 1941",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Orders are given by the Captain of H.M.S. EXPRESS to disembark wounded personnel following the attack."
-        },
-        {
-            "event": "e_4",
-            "date": "December 12, 1941",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_4"
+            "connectedEvents": [
+                "e_1"
             ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Operating signals are sent out for landing operations by the Eastern Fleet amidst the turmoil."
+            "eventSummary": "The second air attack on H.M.S. PRINCE OF WALES involves enemy torpedo bombers attacking from the port side, leading to significant damage to the ship."
         }
     ]
 }

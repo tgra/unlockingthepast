@@ -1,81 +1,77 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Andrew B. Cunningham"
+            "p_1": "Commander-in-Chief, Mediterranean",
+            "p_2": "Vice Admiral",
+            "p_3": "Naval Officer-in-Charge, Suda"
         },
         "locations": {
             "l_1": "Crete",
-            "l_2": "Mediterranean",
-            "l_3": "Alexandria",
-            "l_4": "Greece",
-            "l_5": "Cyrenaica",
-            "l_6": "Malta"
+            "l_2": "Suda",
+            "l_3": "Suda Bay",
+            "l_4": "Alexandria",
+            "l_5": "Heraklion",
+            "l_6": "Canea",
+            "l_7": "Retimo",
+            "l_8": "Kissamo Bay",
+            "l_9": "Sitia",
+            "l_10": "Tymbaki",
+            "l_11": "Greece",
+            "l_12": "Lemnos",
+            "l_13": "Cephalonia",
+            "l_14": "Levkas",
+            "l_15": "Corinth Canal"
         },
         "events": {
-            "e_1": "The Battle of Crete",
-            "e_2": "Operation Tiger"
+            "e_1": "Battle of Crete",
+            "e_2": "Operation Demon",
+            "e_3": "airborne attack on Crete",
+            "e_4": "night sweeps",
+            "e_5": "operations Tiger",
+            "e_6": "Tripoli bombardment"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "R.A.F.",
-            "o_3": "G.A.F."
+            "o_1": "M.N.B.D.O",
+            "o_2": "Royal Marines"
         }
     },
     "keywords": [
         "Battle",
         "Crete",
-        "Operations",
-        "Air Attack",
-        "Evacuation",
-        "Convoy"
+        "Operation Demon",
+        "evacuation",
+        "naval forces",
+        "airborne attack",
+        "supply ships"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
         "Naval Strategy",
         "Evacuation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Air Support": [
-            "e_1"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
         "Naval Strategy": [
-            "e_2"
+            "e_2",
+            "e_4"
         ],
         "Evacuation": [
-            "e_1"
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "24 May 1948",
+            "date": "20th May 1941",
             "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Battle of Crete involves naval operations aimed at preventing enemy seaborne landings on the island, highlighting the challenges of conducting air support in an overwhelming enemy environment."
-        },
-        {
-            "event": "e_2",
-            "date": "4-6 May 1941",
-            "locations": [
-                "l_2",
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -84,9 +80,65 @@
                 "o_1"
             ],
             "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Crete begins as Allied forces prepare to defend against expected enemy landings."
+        },
+        {
+            "event": "e_2",
+            "date": "29th April 1941",
+            "locations": [
+                "l_4",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Demon is completed, evacuating over 50,000 troops from Greece."
+        },
+        {
+            "event": "e_3",
+            "date": "20th May 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation Tiger is conducted to pass naval reinforcements and military stores through the Mediterranean, aimed at augmenting strategic capabilities for the Battle of Crete."
+            "eventSummary": "The first airborne attack on Crete occurs."
+        },
+        {
+            "event": "e_4",
+            "date": "15th May 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Allied naval forces conduct night sweeps to prepare for potential enemy landings."
+        },
+        {
+            "event": "e_5",
+            "date": "Date not specified",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Operations Tiger and Tripoli bombardment reduce the aircraft available for naval protection."
         }
     ]
 }

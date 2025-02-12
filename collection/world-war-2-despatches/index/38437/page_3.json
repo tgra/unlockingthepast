@@ -1,92 +1,95 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Sir Roperic Hitt",
-            "p_2": "Air Chief Marshal Sir Trafford Leigh-Mallory"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Great Britain",
-            "l_2": "Northern Ireland",
-            "l_3": "northwest Europe",
-            "l_4": "United Kingdom",
-            "l_5": "France"
+            "l_1": "United Kingdom",
+            "l_2": "France",
+            "l_3": "London",
+            "l_4": "northern France"
         },
         "events": {
-            "e_1": "Air Operations by Air Defence of Great Britain",
-            "e_2": "German Flying Bomb and Rocket Offensives"
+            "e_1": "D Day",
+            "e_2": "baby Blitz",
+            "e_3": "Blitz of 1940-41"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Air Defence of Great Britain",
-            "o_3": "Fighter Command",
-            "o_4": "Allied Expeditionary Air Force"
+            "o_1": "Second Tactical Air Force",
+            "o_2": "American Ninth Bomber Command",
+            "o_3": "Bomber Command",
+            "o_4": "American Eighth Bomber Command",
+            "o_5": "Air Ministry",
+            "o_6": "Chiefs of Staff"
         }
     },
     "keywords": [
-        "Air Operations",
-        "Fighter Command",
-        "Allied Forces",
-        "Air Defence",
-        "Military History"
+        "D Day",
+        "baby Blitz",
+        "ski sites",
+        "bombing attacks"
     ],
     "themes": [
         "Military Operations",
-        "Command and Control",
-        "Strategic Air Defense"
+        "Air Defense",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Command and Control": [
-            "e_1"
+        "Air Defense": [
+            "e_2"
         ],
-        "Strategic Air Defense": [
-            "e_1"
+        "Strategic Planning": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1944-1945",
+            "date": "June 6, 1944",
             "locations": [
                 "l_1",
-                "l_2",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "D Day marks the commencement of Allied operations for the liberation of France."
+        },
+        {
+            "event": "e_2",
+            "date": "Early 1944",
+            "locations": [
                 "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3",
-                "o_4"
+                "o_4",
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Air operations conducted by the Air Defence of Great Britain and Fighter Command in response to German flying bomb and rocket offensives during World War II."
+            "connectedEvents": [],
+            "eventSummary": "The baby Blitz comprises a series of night attacks by the German bomber force on London and other towns."
         },
         {
-            "event": "e_2",
-            "date": "1944-1945",
+            "event": "e_3",
+            "date": "1940-1941",
             "locations": [
-                "l_1",
-                "l_5"
+                "l_1"
             ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The German flying bomb and rocket offensives take place, prompting coordinated defensive aerial operations by the British Air Forces."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Blitz of 1940-41 represents the sustained aerial bombing campaign by Germany against the United Kingdom."
         }
     ]
 }

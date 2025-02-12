@@ -1,117 +1,136 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiralty"
+            "p_1": "A. T. B. Curteis"
         },
         "locations": {
-            "l_1": "North Russia",
-            "l_2": "United Kingdom",
-            "l_3": "Norway",
-            "l_4": "Barents Sea",
-            "l_5": "Archangel"
+            "l_1": "Hvalfiord",
+            "l_2": "Kola Inlet",
+            "l_3": "Iceland",
+            "l_4": "North Norway",
+            "l_5": "Trondheim",
+            "l_6": "Lofoten Islands",
+            "l_7": "Bear Island",
+            "l_8": "Murmansk",
+            "l_9": "Kirkenes"
         },
         "events": {
-            "e_1": "Convoy P.Q.17 Disaster",
-            "e_2": "Convoy P.Q.18 Attack",
-            "e_3": "Allied Invasion of North Africa"
+            "e_1": "Attack by TIRPITZ",
+            "e_2": "Convoy P.Q.12",
+            "e_3": "Convoy Q.P.8",
+            "e_4": "Convoy P.Q.13",
+            "e_5": "Convoy Q.P.9",
+            "e_6": "Convoy P.Q.14",
+            "e_7": "Convoy Q.P.10"
         },
         "organisations": {
-            "o_1": "British Home Fleet",
-            "o_2": "Royal Navy"
+            "o_1": "Home Fleet",
+            "o_2": "Russian naval authorities"
         }
     },
     "keywords": [
-        "Russian convoys",
-        "Nazis",
-        "war supplies",
-        "heavy attacks",
-        "Arctic weather",
-        "Allied forces",
-        "merchant ships",
-        "losses"
+        "Convoy",
+        "TIRPITZ",
+        "U-boat",
+        "air attack",
+        "Russian fighters"
     ],
     "themes": [
         "Military Operations",
-        "Nautical Logistics",
-        "Wartime Strategy",
-        "Naval Warfare"
+        "Naval Warfare",
+        "Convoy Protection"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Wartime Strategy": [
-            "e_1",
-            "e_2"
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
         ],
         "Naval Warfare": [
             "e_1",
-            "e_2"
+            "e_4",
+            "e_5"
+        ],
+        "Convoy Protection": [
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_6",
+            "e_7"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July, 1942",
+            "date": "7th March",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "In July 1942, Convoy P.Q.17 suffers severe losses, losing twenty-one of its thirty-four ships to enemy attacks over a week."
-        },
-        {
-            "event": "e_2",
-            "date": "September, 1942",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "In September 1942, Convoy P.Q.18 is heavily attacked by enemy forces, losing thirteen of its forty ships."
+            "eventSummary": "The TIRPITZ attempts to attack convoy P.Q.12 after being tempted out, but succeeds in sinking a straggler from convoy Q.P.8."
         },
         {
-            "event": "e_3",
-            "date": "November, 1942",
+            "event": "e_4",
+            "date": "20th March",
             "locations": [
-                "l_2",
-                "l_3"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_5"
             ],
-            "eventSummary": "In November 1942, all available escorts participate in the Allied invasion of North Africa, temporarily halting Russian convoys."
+            "eventSummary": "Convoy P.Q.13 is attacked by enemy aircraft near Bear Island, resulting in the sinking of three ships."
+        },
+        {
+            "event": "e_5",
+            "date": "24th March",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Convoy Q.P.9 successfully arrives in Iceland after evading enemy detection."
+        },
+        {
+            "event": "e_6",
+            "date": "8th April",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Convoy P.Q.14 with 23 ships sails."
+        },
+        {
+            "event": "e_7",
+            "date": "10th April",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Convoy Q.P.10 with 16 ships sails."
         }
     ]
 }

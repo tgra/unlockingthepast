@@ -1,64 +1,65 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain O. L. GORDON",
-            "p_2": "Rear Admiral Doorman",
-            "p_3": "Commander May",
-            "p_4": "Commander Binford"
+            "p_1": "Admiral",
+            "p_2": "Gunnery Officer"
         },
         "locations": {
-            "l_1": "Sourabaya",
-            "l_2": "Batavia",
-            "l_3": "Madura Island",
-            "l_4": "Celebes",
-            "l_5": "Eastward (085 degrees)"
+            "l_1": "Bawean Island",
+            "l_2": "Northward",
+            "l_3": "N.N.E.",
+            "l_4": "South",
+            "l_5": "Western channel"
         },
         "events": {
-            "e_1": "Sinking of H.M.S. EXETER",
-            "e_2": "Cruise of Allied forces from Sourabaya"
+            "e_1": "Engagement of enemy cruisers and destroyers",
+            "e_2": "Counter-attack by ELECTRA"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "U.S. Navy",
-            "o_3": "Dutch Navy",
-            "o_4": "Commodore Commanding China Force",
-            "o_5": "British Liaison Officer"
+            "o_1": "Allied force"
         }
     },
     "keywords": [
-        "H.M.S. EXETER",
-        "Allied forces",
-        "enemy aircraft",
-        "mines",
-        "British Cruiser",
-        "destroyers",
-        "cruising order"
+        "Allied force",
+        "enemy force",
+        "cruisers",
+        "destroyers"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Historical Events",
-        "Allied Coordination"
+        "Naval Engagement"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
-        ],
-        "Naval Strategy": [
-            "e_2"
-        ],
-        "Historical Events": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st March, 1942",
+            "date": "27th February",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Allied force engages an enemy group consisting of two cruisers and six destroyers in the vicinity of Bawean Island, demonstrating significant naval conflict at about 27 knots."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -67,30 +68,9 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "H.M.S. EXETER, commanded by Captain O. L. GORDON, is lost during operations in the vicinity of Sourabaya against enemy forces."
-        },
-        {
-            "event": "e_2",
-            "date": "25th February, 1942",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Allied forces, including British and Dutch ships, commence their cruise from Sourabaya, facing challenges from enemy reconnaissance and plotting engagements."
+            "eventSummary": "In a display of bravery, the destroyer ELECTRA conducts a lone counter-attack against enemy destroyers, while other ships in the Allied squadron support EXETER's evasive maneuvers."
         }
     ]
 }

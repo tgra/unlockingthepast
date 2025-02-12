@@ -2,80 +2,140 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Germany",
-            "l_2": "United Kingdom",
-            "l_3": "Channel areas",
-            "l_4": "France"
+            "l_1": "France",
+            "l_2": "Crisbecq",
+            "l_3": "St. Martin de Varreville",
+            "l_4": "Quistreham",
+            "l_5": "Maisy",
+            "l_6": "Mont Fleury",
+            "l_7": "La Parnelle",
+            "l_8": "St. Pierre du Mont",
+            "l_9": "Merville/Franceville",
+            "l_10": "Houlgate",
+            "l_11": "Longues"
         },
         "events": {
-            "e_1": "Preparatory Phase for the Assault",
-            "e_2": "Crossbow Operations"
+            "e_1": "D-Day",
+            "e_2": "D + 1",
+            "e_3": "Assault and postassault phase",
+            "e_4": "Bombardment of coastal batteries",
+            "e_5": "Neutralisation of Coastal and Beach Defences"
         },
         "organisations": {
-            "o_1": "United States Eighth Air Force",
-            "o_2": "G.A.F.",
-            "o_3": "A.E.A.F.",
+            "o_1": "R.A.F. Coastal Command",
+            "o_2": "A.E.A.F.",
+            "o_3": "United States Eighth Air Force",
             "o_4": "R.A.F. Bomber Command",
-            "o_5": "R.A.F. Coastal Command"
+            "o_5": "No. 3 Naval Fighter Wing",
+            "o_6": "A.D.G.B.",
+            "o_7": "R.A.F. Second Tactical Air Force",
+            "o_8": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "attrition",
-        "air attacks",
-        "fighter forces",
-        "airfields",
-        "air combat"
+        "Bombardment",
+        "Sorties",
+        "Artillery",
+        "Naval Gunfire",
+        "Coastal Defences"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Air Attacks",
-        "Air Force Strategy"
+        "Bombardment Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Air Force Strategy": [
-            "e_1"
-        ],
-        "Strategic Attacks": [
-            "e_2"
+        "Bombardment Strategy": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st April 1944",
+            "date": "6th June 1944",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On D-Day, 353 sorties are flown for anti-shipping and anti-U-boat patrols, contributing to the protection of Allied shipping."
+        },
+        {
+            "event": "e_2",
+            "date": "7th June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On D + 1, efforts in anti-shipping patrols and protection are maintained with 2,015 sorties flown by fighter squadrons."
+        },
+        {
+            "event": "e_3",
+            "date": "Post-D-Day 1944",
+            "locations": [
+                "l_1"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_3"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "The Preparatory Phase for the Assault begins on April 1, 1944, aiming to disrupt enemy operations through targeted air attacks."
+            "eventSummary": "During the assault and postassault phase, extensive operations are executed to neutralise enemy coastal defense positions."
         },
         {
-            "event": "e_2",
-            "date": "",
-            "locations": [],
+            "event": "e_4",
+            "date": "6th June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "R.A.F. Bomber Command begins bombardment on D-Day targeting ten selected heavy coastal batteries."
+        },
+        {
+            "event": "e_5",
+            "date": "6th June 1944",
+            "locations": [
+                "l_1"
+            ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "Crossbow Operations involve coordinated air operations that target enemy communication lines and defenses."
+            "eventSummary": "The task of neutralising the coastal and beach defences is shared by naval and air bombardment during the assault on D-Day."
         }
     ]
 }

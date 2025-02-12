@@ -1,101 +1,120 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Group Captain E. B. Rice"
+            "p_1": "Group Captain A. G. Bishop",
+            "p_2": "Group Captain G. E. Nicholetts",
+            "p_3": "Sir Archibald Wavell"
         },
         "locations": {
-            "l_1": "Kuala Lumpur",
-            "l_2": "Singapore",
-            "l_3": "Central Malaya",
-            "l_4": "Johore",
-            "l_5": "Mersing",
-            "l_6": "Tanah Merah Besar",
-            "l_7": "Bukit Chunang",
-            "l_8": "Tanjong Kupang",
-            "l_9": "Kota Tingi",
-            "l_10": "Kota Bahru",
-            "l_11": "Alor Star",
-            "l_12": "Tengah",
-            "l_13": "Sembawang"
+            "l_1": "Java",
+            "l_2": "Oesthaven",
+            "l_3": "Sumatra",
+            "l_4": "Palembang",
+            "l_5": "Batavia",
+            "l_6": "Bandoeng",
+            "l_7": "N.E.I."
         },
         "events": {
-            "e_1": "Transfer of Observer Corps Control",
-            "e_2": "Establishment of Radar Stations"
+            "e_1": "Evacuation of R.A.F. units back to Java",
+            "e_2": "Formation of H.Q. S.W. Pacific Command (Abdacom)",
+            "e_3": "Air attacks on the convoy off Palembang",
+            "e_4": "Destruction of military property at Oesthaven"
         },
         "organisations": {
-            "o_1": "Observer Corps",
-            "o_2": "A.H.Q.",
-            "o_3": "R.A.A.F."
+            "o_1": "R.A.F.",
+            "o_2": "General Manager, Sumatra Railways",
+            "o_3": "No. 84 Squadron",
+            "o_4": "No. 211(B) Squadron",
+            "o_5": "No. 266(F) Wing",
+            "o_6": "No. 605(F) Squadron",
+            "o_7": "H.M.S. Ballarat"
         }
     },
     "keywords": [
-        "Observer Corps",
-        "Radar Stations",
-        "Air Defence",
-        "Fighter Squadrons",
-        "Bomber Squadrons",
-        "Military Operations"
+        "evacuation",
+        "operation",
+        "aircraft",
+        "military",
+        "Japanese attack"
     ],
     "themes": [
         "Military Operations",
-        "Air Defence Systems",
-        "Unit Training",
-        "Resource Management"
+        "Evacuation",
+        "Allied Cooperation",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4"
         ],
-        "Air Defence Systems": [
+        "Evacuation": [
             "e_1"
         ],
-        "Unit Training": [
-            "e_2"
-        ],
-        "Resource Management": [
+        "Strategic Decisions": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 1941",
+            "date": "15th February 1942",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "In July 1941, control of the Observer Corps was transferred from the Army to A.H.Q. to enhance air raid warnings but faced development challenges."
+            "eventSummary": "The evacuation of all R.A.F. units back to Java is successfully executed via road and rail on the evening of the 15th February. Flyable aircraft are flown to Java while others are destroyed."
         },
         {
             "event": "e_2",
-            "date": "December 1941",
+            "date": "15th January 1942",
             "locations": [
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10"
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 15th January, 1942, Sir Archibald Wavell arrives in Java to command all Allied Forces in the SW. Pacific and forms H.Q. Abdacom near Bandoeng."
+        },
+        {
+            "event": "e_3",
+            "date": "14th and 15th February 1942",
+            "locations": [
+                "l_3"
             ],
             "persons": [],
             "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Air attacks conducted on a convoy off Palembang during the 14th and 15th February result in significant casualties and disorganization for the Japanese."
+        },
+        {
+            "event": "e_4",
+            "date": "16th February 1942",
+            "locations": [
+                "l_2"
             ],
-            "eventSummary": "By December 1941, multiple radar stations were operational across Singapore and Malaya, significantly improving air coverage against threats."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On the 16th February, it is found at Oesthaven that the Dutch have destroyed military property, prompting further evacuation actions."
         }
     ]
 }

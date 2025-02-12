@@ -1,67 +1,141 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Gen W. J. Slim",
-            "p_2": "Lt.-Gen. G. A. P. Scoones"
+            "p_1": "Chiefs of Staff",
+            "p_2": "I"
         },
         "locations": {
-            "l_1": "Arakan",
-            "l_2": "Cox's Bazar",
-            "l_3": "Maungdaw",
-            "l_4": "Buthidaung",
-            "l_5": "Chittagong",
-            "l_6": "New Guinea",
-            "l_7": "Imphal",
-            "l_8": "Chindwin",
-            "l_9": "Kabaw Valley",
-            "l_10": "Chin Hills",
-            "l_11": "India"
+            "l_1": "Andaman Islands",
+            "l_2": "Sumatra",
+            "l_3": "Malaya",
+            "l_4": "Burma",
+            "l_5": "Akyab",
+            "l_6": "Penang",
+            "l_7": "Singapore",
+            "l_8": "Moulmein",
+            "l_9": "Kra",
+            "l_10": "Bangkok",
+            "l_11": "Japan",
+            "l_12": "Changsha",
+            "l_13": "Calcutta",
+            "l_14": "Kunming",
+            "l_15": "New Delhi",
+            "l_16": "Hooghly",
+            "l_17": "Upper Burma",
+            "l_18": "Rangoon"
         },
         "events": {
-            "e_1": "Patrol activity in Arakan",
-            "e_2": "Raid on Maungdaw",
-            "e_3": "Establishing road blocks on the Maungdaw Buthidaung road"
+            "e_1": "Plans for the Recapture of the Andaman Islands",
+            "e_2": "Operations against Sumatra and Malaya",
+            "e_3": "Washington Conference",
+            "e_4": "Quebec Conference",
+            "e_5": "4 Bomber Offensive on Japan from China",
+            "e_6": "Future Operations Southwards from North Burma"
         },
         "organisations": {
             "o_1": "South East Asia Command",
-            "o_2": "26th Indian Division",
-            "o_3": "1st Battalion The Lincolnshire Regiment",
-            "o_4": "1st Battalion The North Staffordshire Regiment",
-            "o_5": "India Command"
+            "o_2": "American Air Planning Staff",
+            "o_3": "American H.Q."
         }
     },
     "keywords": [
-        "Arakan",
-        "Patrols",
-        "Raids",
-        "Japanese forces",
-        "Monsoon",
-        "Operational responsibility"
+        "Andaman Islands",
+        "intelligence",
+        "reconnaissance",
+        "submarines",
+        "malaya",
+        "bombing",
+        "air operations",
+        "Quebec Conference"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Psychological Warfare"
+        "Intelligence",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_5",
+            "e_6"
+        ],
+        "Diplomacy": [
+            "e_3",
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_1"
-        ],
-        "Psychological Warfare": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 1943",
+            "date": "11th October, 1943",
             "locations": [
                 "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Plans for the Recapture of the Andaman Islands are discussed, emphasizing their strategic value for operations towards Sumatra and Malaya."
+        },
+        {
+            "event": "e_2",
+            "date": "May, 1943",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Plans for operations against Sumatra and Malaya are developed following the Washington Conference."
+        },
+        {
+            "event": "e_3",
+            "date": "May, 1943",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Washington Conference takes place, discussing future military strategies."
+        },
+        {
+            "event": "e_4",
+            "date": "26th August, 1943",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Quebec Conference leads to new military operational plans."
+        },
+        {
+            "event": "e_5",
+            "date": "September, 1943",
+            "locations": [
+                "l_11",
+                "l_13",
+                "l_14"
             ],
             "persons": [
                 "p_1"
@@ -70,48 +144,24 @@
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "In June 1943, patrols remain active in the Arakan region to gather intelligence and bolster troop confidence, following experiences from previous campaigns."
+            "connectedEvents": [],
+            "eventSummary": "A bomber offensive on Japan is conceived, requiring significant logistical planning."
         },
         {
-            "event": "e_2",
-            "date": "July 5 to July 7, 1943",
+            "event": "e_6",
+            "date": "26th August, 1943",
             "locations": [
-                "l_3"
+                "l_17",
+                "l_18"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "A raid conducted by two companies of the 1st Battalion The Lincolnshire Regiment successfully occupies Maungdaw, resulting in enemy casualties and securing identifications."
-        },
-        {
-            "event": "e_3",
-            "date": "July 17, 1943",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Ten days after the raid on Maungdaw, another British battalion establishes roadblocks on the Maungdaw Buthidaung road, resulting in additional enemy losses."
+            "connectedEvents": [],
+            "eventSummary": "Instructions are received to study future operations for the reconquest of Burma."
         }
     ]
 }

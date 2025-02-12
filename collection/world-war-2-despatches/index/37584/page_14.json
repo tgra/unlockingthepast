@@ -4,152 +4,100 @@
             "p_1": "Brigadier C. G. Phillips",
             "p_2": "Brigadier Morgan",
             "p_3": "Brigadier Kent Lemon",
-            "p_4": "Major General B. C. T. Paget, D.S.O., M.C.",
+            "p_4": "Major General B. C. T. Paget",
             "p_5": "Major-General Carton de Wiart",
             "p_6": "Brigadier Hogg",
-            "p_7": "Lieutenant General H.R. S. Massy, D.S.O., M.C.",
-            "p_8": "Major General Mackesy",
-            "p_9": "Lord Cork and Orrery"
+            "p_7": "Lieutenant General H.R. S. Massy"
         },
         "locations": {
             "l_1": "Steinkjer",
             "l_2": "Southern Norway",
-            "l_3": "Hamar",
-            "l_4": "Elverum",
-            "l_5": "Bergen",
-            "l_6": "Stavanger",
-            "l_7": "Trondheim",
-            "l_8": "Vaernes",
-            "l_9": "Levanger",
-            "l_10": "Verdalen",
-            "l_11": "Namsos",
-            "l_12": "Geiranger",
-            "l_13": "Dombås",
-            "l_14": "Central Norway",
-            "l_15": "Narvik",
-            "l_16": "Trondheim Fjord"
+            "l_3": "Norway",
+            "l_4": "Bergen",
+            "l_5": "Stavanger",
+            "l_6": "Trondheim",
+            "l_7": "Vaernes",
+            "l_8": "Namsos",
+            "l_9": "Dombas",
+            "l_10": "Geiranger",
+            "l_11": "Sundalen",
+            "l_12": "Narvik",
+            "l_13": "Trondheim Fjord",
+            "l_14": "Agdenes"
         },
         "events": {
-            "e_1": "German Army Operation in Southern Norway",
-            "e_2": "Arrival of Allied Forces in Namsos",
-            "e_3": "British and French Command in Central Scandinavia",
-            "e_4": "Evacuation Plan for Central Norway"
+            "e_1": "Evacuation of Central Norway",
+            "e_2": "German Army operation against the Norwegian Army"
         },
         "organisations": {
-            "o_1": "5th Corps",
-            "o_2": "British Expeditionary Force"
+            "o_1": "His Majesty's Government",
+            "o_2": "German Army",
+            "o_3": "Norwegian Army",
+            "o_4": "5th Corps"
         }
     },
     "keywords": [
-        "German Army",
-        "Norwegian Army",
-        "Allied Forces",
-        "Evacuation",
-        "Military Command"
+        "British",
+        "French",
+        "German",
+        "Norwegian"
     ],
     "themes": [
         "Military Operations",
-        "Leadership",
-        "Defense Strategy",
-        "International Cooperation"
+        "Evacuation",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
             "e_2"
         ],
-        "Leadership": [
-            "e_1",
-            "e_3"
+        "Evacuation": [
+            "e_1"
         ],
-        "Defense Strategy": [
+        "Command Structure": [
             "e_1",
-            "e_4"
-        ],
-        "International Cooperation": [
-            "e_2",
-            "e_4"
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 1940",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of troops from Central Norway is planned by His Majesty's Government."
+        },
+        {
+            "event": "e_2",
+            "date": "",
             "locations": [
                 "l_2",
-                "l_8",
-                "l_7",
-                "l_16"
+                "l_3"
             ],
             "persons": [
                 "p_4",
                 "p_5",
-                "p_6",
-                "p_7"
+                "p_6"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "The German army conducts operations in Southern Norway, prompting a response from the Norwegian Army which engages in delaying actions."
-        },
-        {
-            "event": "e_2",
-            "date": "2nd April 1940",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [
-                "p_5"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "Allied forces, including a demi-brigade under Major-General Carton de Wiart, arrive at Namsos to counter German advances."
-        },
-        {
-            "event": "e_3",
-            "date": "April 1940",
-            "locations": [
-                "l_14"
-            ],
-            "persons": [
-                "p_7",
-                "p_8",
-                "p_9"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Lieutenant General H.R. S. Massy assumes command of all British and French troops operating in Central Scandinavia."
-        },
-        {
-            "event": "e_4",
-            "date": "April 1940",
-            "locations": [
-                "l_14"
-            ],
-            "persons": [
-                "p_7"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The policy is established for the evacuation of troops from Central Norway, emphasizing military security and operational coordination."
+            "eventSummary": "A German Army is operating against the Norwegian Army, which is in a delaying action."
         }
     ]
 }

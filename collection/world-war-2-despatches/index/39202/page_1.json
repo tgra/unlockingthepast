@@ -1,30 +1,146 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Shansi",
-            "l_2": "Chungking",
-            "l_3": "Changsha",
-            "l_4": "Shanghai",
-            "l_5": "Kumning",
-            "l_6": "Manila",
-            "l_7": "Andaman",
-            "l_8": "Maldives",
-            "l_9": "Abou Atoll",
-            "l_10": "Chagos Archipelago",
-            "l_11": "Diego Garcia",
-            "l_12": "Cocos"
+        "persons": {
+            "p_1": "Sir Keith Park",
+            "p_2": "The Lord Louis Mountbatten",
+            "p_3": "Admiral The Lord Louis Mountbatten"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Rangoon",
+            "l_2": "Singapore",
+            "l_3": "Burma",
+            "l_4": "Pegu Yomas",
+            "l_5": "Sittang River",
+            "l_6": "Moulmein",
+            "l_7": "Malaya",
+            "l_8": "South East Asia",
+            "l_9": "Far East"
+        },
+        "events": {
+            "e_1": "Japan's unconditional surrender",
+            "e_2": "Allied Forces victorious entry into Rangoon",
+            "e_3": "Surrender of the Japanese Southern Army",
+            "e_4": "Invasion of Malaya",
+            "e_5": "Recapture of Rangoon",
+            "e_6": "Defeat of Japan"
+        },
+        "organisations": {
+            "o_1": "Royal Air Force",
+            "o_2": "Royal Navy"
+        }
     },
     "keywords": [
-        "Sima Derren",
-        "Oriental",
-        "Secunderal",
-        "Paracel"
+        "Air Operations",
+        "Burma Campaign",
+        "Japanese land forces",
+        "Allied Forces",
+        "prison camps",
+        "Axis Powers"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions",
+        "Humanitarian Efforts"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_6"
+        ],
+        "Humanitarian Efforts": [
+            "e_4"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "12th September, 1945",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On 12th September 1945, the Japanese Southern Army officially surrenders at Singapore."
+        },
+        {
+            "event": "e_2",
+            "date": "3rd May, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Allied Forces enter Rangoon victoriously on 3rd May, 1945."
+        },
+        {
+            "event": "e_3",
+            "date": "12th September, 1945",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Japanese Southern Army surrenders to Admiral The Lord Louis Mountbatten at Singapore on 12th September, 1945."
+        },
+        {
+            "event": "e_4",
+            "date": "August 1945",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "In August 1945, there was a planned invasion of Malaya involving over 500 RAF aircraft."
+        },
+        {
+            "event": "e_5",
+            "date": "8th May, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Germany's unconditional surrender occurs on 8th May, 1945, after which Japan is decisively beaten."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Japan faces a complete and unconditional surrender after being decisively defeated in the South East Asia."
+        }
+    ]
 }

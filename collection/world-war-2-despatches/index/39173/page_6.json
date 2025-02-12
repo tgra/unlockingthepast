@@ -1,104 +1,138 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Stilwell"
+            "p_1": "Colonel Cochran",
+            "p_2": "General Wingate",
+            "p_3": "Lt.-Col. Allison",
+            "p_4": "General J. W. Stilwell"
         },
         "locations": {
-            "l_1": "Imphal",
-            "l_2": "Chindwin",
-            "l_3": "Kohima",
-            "l_4": "Tiddim",
-            "l_5": "Arakan",
-            "l_6": "Assam",
-            "l_7": "Calcutta",
-            "l_8": "Poona"
+            "l_1": "Chindwin",
+            "l_2": "Katha",
+            "l_3": "India",
+            "l_4": "Myitkyina",
+            "l_5": "Piccadilly",
+            "l_6": "Broadway"
         },
         "events": {
-            "e_1": "Siege of Imphal",
-            "e_2": "Air supply operation"
+            "e_1": "long range penetration brigade airborne supplies delivery",
+            "e_2": "initial fly-in operation",
+            "e_3": "support of Special Force",
+            "e_4": "attacks on installations and communications"
         },
         "organisations": {
-            "o_1": "U.S.A.A.F.",
-            "o_2": "R.A.F.",
-            "o_3": "M.A.A.F.",
-            "o_4": "14th Army"
+            "o_1": "First Air Commando Unit",
+            "o_2": "U.S.A.A.F.",
+            "o_3": "Chinese-American forces",
+            "o_4": "British and American Transport squadrons"
         }
     },
     "keywords": [
-        "aircraft",
-        "transport",
-        "operations",
-        "reinforcements",
-        "casualties",
-        "air supply"
+        "airborne supplies",
+        "air superiority",
+        "combat troops",
+        "transport aircraft",
+        "communication aircraft"
     ],
     "themes": [
         "Military Operations",
         "Air Support",
         "Logistics",
-        "Supply Chain Management"
+        "Combat Engagements"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Air Support": [
-            "e_1",
-            "e_2"
+            "e_2",
+            "e_4"
         ],
         "Logistics": [
-            "e_2"
+            "e_1"
         ],
-        "Supply Chain Management": [
-            "e_2"
+        "Combat Engagements": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1944",
+            "date": "10th February",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "In March 1944, the Siege of Imphal unfolds, with significant supply and reinforcement demands on air operations due to enemy encirclement."
+            "eventSummary": "On 10th February, the long range penetration brigade receives its first airborne supplies, establishing a continuous commitment for maintenance."
         },
         {
             "event": "e_2",
-            "date": "April 1944",
+            "date": "3rd February",
             "locations": [
-                "l_1",
-                "l_4",
                 "l_5",
-                "l_6",
-                "l_7",
-                "l_8"
+                "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_4"
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Beginning on 3rd February, operational support is provided through attacks and direct operations in support of the troops on the ground."
+        },
+        {
+            "event": "e_3",
+            "date": "unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "In April 1944, air supply operations are crucial for sustaining forces in Imphal, amid ongoing threats from the advancing enemy."
+            "eventSummary": "The First Air Commando Unit is tasked with assisting the fly-in of Special Forces and providing continuous logistical support."
+        },
+        {
+            "event": "e_4",
+            "date": "unknown",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "In subsequent operations, the First Air Commando engages in attacks to hinder enemy mobilization efforts during military engagements."
         }
     ]
 }

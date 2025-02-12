@@ -1,76 +1,67 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier Gubbins",
-            "p_2": "Lt.-Col. Stockwell",
-            "p_3": "General Bethouart",
-            "p_4": "Lord Cork",
-            "p_5": "Sir Cecil Dormer"
+            "p_1": "General Auchinleck",
+            "p_2": "General Bethouart"
         },
         "locations": {
-            "l_1": "Bodo",
-            "l_2": "Fauske",
-            "l_3": "Hopen",
-            "l_4": "Lake Soloi",
-            "l_5": "United Kingdom",
-            "l_6": "Borkenes",
-            "l_7": "Harstad",
-            "l_8": "Narvik",
-            "l_9": "Ankenes-Beisford",
-            "l_10": "Sildvik",
-            "l_11": "Rombaks Fjord",
-            "l_12": "Stromsnes",
-            "l_13": "Bjornefjell"
+            "l_1": "MASHOBRA",
+            "l_2": "Orneset",
+            "l_3": "Narvik",
+            "l_4": "Ankenes Peninsula",
+            "l_5": "Beisford",
+            "l_6": "Bjervik",
+            "l_7": "Taraldvik",
+            "l_8": "Bardufoss Aerodrome",
+            "l_9": "Fagernes",
+            "l_10": "Forneset",
+            "l_11": "Northern Norway",
+            "l_12": "United Kingdom"
         },
         "events": {
-            "e_1": "Evacuation of Bodo",
-            "e_2": "Bombing attacks on Bodo",
-            "e_3": "Operational movements around Narvik",
-            "e_4": "Postponement of evacuation for Mowinckel Plan"
+            "e_1": "Operation to land French troops",
+            "e_2": "Attack upon Narvik",
+            "e_3": "Evacuation of Northern Norway"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Norwegian Government"
+            "o_1": "French troops",
+            "o_2": "Polish forces",
+            "o_3": "Kings of Staff",
+            "o_4": "Admiralty"
         }
     },
     "keywords": [
+        "French troops",
+        "Polish advance",
+        "counterattack",
         "evacuation",
-        "destroyers",
-        "military",
-        "operations",
-        "bombing attacks",
-        "strategic withdrawal",
-        "Confidential Operations"
+        "bombing attack"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Withdrawal",
-        "Evacuation Strategy",
-        "Air Defense"
+        "Evacuation",
+        "Counterattack"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Evacuation Strategy": [
-            "e_1",
-            "e_4"
-        ],
-        "Air Defense": [
             "e_2"
         ],
-        "Strategic Withdrawal": [
-            "e_1"
+        "Evacuation": [
+            "e_3"
+        ],
+        "Counterattack": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "30th - 31st May 1940",
+            "date": "May 27th",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1",
@@ -80,53 +71,41 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The evacuation of troops from Bodo is executed effectively, facilitated by the Royal Navy destroyers, ensuring the safe transfer of personnel despite some nearby enemy activities."
+            "eventSummary": "Operation to land French troops begins at the appointed time with precise execution and coordination."
         },
         {
             "event": "e_2",
-            "date": "During the evacuation",
+            "date": "",
             "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Enemy bombing attacks occur around Bodo while the evacuation is underway, yet no significant interference is noted during the key embarkation times."
-        },
-        {
-            "event": "e_3",
-            "date": "During the operations around Narvik",
-            "locations": [
-                "l_8",
-                "l_9"
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_3"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Military operations around Narvik are characterized by ongoing engagements with enemy forces, involving multiple allied battalions."
-        },
-        {
-            "event": "e_4",
-            "date": "May 31, 1940",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_4",
-                "p_5"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The evacuation program is temporarily postponed to enable the Norwegian Government to negotiate the Mowinckel Plan through Sweden for neutralizing Narvik."
+            "eventSummary": "The attack upon Narvik is effectively supported by a Polish advance, culminating in successful operations against the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "May 24/25th",
+            "locations": [
+                "l_11",
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Orders for the evacuation of Northern Norway are received, driven by urgent military needs for the defense of the United Kingdom."
         }
     ]
 }

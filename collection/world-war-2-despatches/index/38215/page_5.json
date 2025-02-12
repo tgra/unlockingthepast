@@ -1,61 +1,105 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Malaya",
-            "l_2": "Singapore",
-            "l_3": "Isle of Wight",
-            "l_4": "Tweed",
-            "l_5": "Kelantan",
-            "l_6": "Penang",
-            "l_7": "Perak",
-            "l_8": "Malaysia",
-            "l_9": "Johore",
-            "l_10": "Trengganu",
-            "l_11": "Kedah",
-            "l_12": "Perlis",
-            "l_13": "Negri Sembilan",
-            "l_14": "Pahang",
-            "l_15": "Kuala Lumpur",
-            "l_16": "Devon-Cornwall Peninsula",
-            "l_17": "Haad-yai",
-            "l_18": "Thailand",
-            "l_19": "Province Wellesley",
-            "l_20": "Straits Settlements"
+        "persons": {
+            "p_1": "General Officers Commanding",
+            "p_2": "Committee of Imperial Defence"
         },
-        "events": {},
+        "locations": {
+            "l_1": "Singapore",
+            "l_2": "Mersing",
+            "l_3": "Johore",
+            "l_4": "Kelantan",
+            "l_5": "Kuantan",
+            "l_6": "Penang"
+        },
+        "events": {
+            "e_1": "Outbreak of World War II",
+            "e_2": "Construction of Naval Base at Singapore",
+            "e_3": "Japan's withdrawal from the League of Nations",
+            "e_4": "War with Japan"
+        },
         "organisations": {
-            "o_1": "British Empire",
-            "o_2": "Federal Government",
-            "o_3": "Government of the Straits Settlements"
+            "o_1": "British Fleet",
+            "o_2": "Royal Air Force"
         }
     },
     "keywords": [
-        "Malaya",
-        "Singapore",
-        "Federated Malay States",
-        "Unfederated Malay States",
-        "climate",
-        "rubber plantations",
-        "tin-mining",
-        "humidity"
+        "defence",
+        "Naval Base",
+        "aircraft",
+        "air power",
+        "Japanese",
+        "defence policy",
+        "garrison"
     ],
     "themes": [
-        "Geography",
-        "Natural Resources",
-        "Climate",
-        "Government Structure",
-        "Colonial Administration"
+        "Military Operations",
+        "Defence Strategy",
+        "International Relations"
     ],
     "topicModel": {
-        "Geography": [
-            "l_1",
-            "l_2"
+        "Military Operations": [
+            "e_4"
         ],
-        "Natural Resources": [],
-        "Climate": [],
-        "Government Structure": [],
-        "Colonial Administration": []
+        "Diplomacy": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
+        ]
     },
-    "eventConnections": []
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1939-09-01",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The outbreak of World War II initiates widespread military engagements and strategic recalibrations."
+        },
+        {
+            "event": "e_2",
+            "date": "1938",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The construction of the Naval Base at Singapore is prioritized as a critical defense measure against potential aggressors."
+        },
+        {
+            "event": "e_3",
+            "date": "1933",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Japan's withdrawal from the League of Nations drives British Cabinet to enhance Singapore's defenses."
+        },
+        {
+            "event": "e_4",
+            "date": "1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "War with Japan begins, resulting in significant military action in the region surrounding Singapore."
+        }
+    ]
 }

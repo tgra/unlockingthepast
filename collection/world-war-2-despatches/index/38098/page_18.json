@@ -1,0 +1,148 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "Captain (D)",
+            "p_2": "Rear-Admiral Commanding",
+            "p_3": "Commander-in-Chief",
+            "p_4": "Commander-in-Chief, Home Fleet"
+        },
+        "locations": {
+            "l_1": "SHEFFIELD",
+            "l_2": "BISMARCK",
+            "l_3": "COSSACK",
+            "l_4": "EDINBURGH",
+            "l_5": "Londonderry",
+            "l_6": "RORO",
+            "l_7": "RENOWN",
+            "l_8": "ARK ROYAL",
+            "l_9": "DORSETSHIRE",
+            "l_10": "KING GEORGE V",
+            "l_11": "Admiralty"
+        },
+        "events": {
+            "e_1": "Last enemy report by SHEFFIELD",
+            "e_2": "Contact made by ZULU",
+            "e_3": "Signal received from Commander-in-Chief",
+            "e_4": "Attack by destroyers",
+            "e_5": "Visibility conditions at dawn"
+        },
+        "organisations": {
+            "o_1": "4th Destroyer Flotilla",
+            "o_2": "18th Cruiser Squadron",
+            "o_3": "Home Fleet"
+        }
+    },
+    "keywords": [
+        "enemy report",
+        "torpedo",
+        "gun flashes",
+        "destroyers",
+        "visibility"
+    ],
+    "themes": [
+        "Military Operations",
+        "Ship Engagements",
+        "Command Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Command Decisions": [
+            "e_3",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "SHEFFIELD makes its last enemy report while encountering BISMARCK at 2140 hours."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "ZULU makes contact with the enemy and reports the enemy's bearing."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unknown",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A signal is received from the Commander-in-Chief, Home Fleet regarding his position."
+        },
+        {
+            "event": "e_4",
+            "date": "Date unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_2",
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The destroyers, including MAORI and COSSACK, carry out attacks on the BISMARCK."
+        },
+        {
+            "event": "e_5",
+            "date": "Date unknown",
+            "locations": [],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Visibility conditions at dawn lead to the postponement of the planned air attack on the enemy."
+        }
+    ]
+}

@@ -1,45 +1,65 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Kings African Rifles",
-            "p_2": "Enemy Leaders"
+            "p_1": "Mr. Anthony Eden",
+            "p_2": "General Weygand"
         },
         "locations": {
-            "l_1": "Sudan",
-            "l_2": "Kenya",
-            "l_3": "Palestine",
-            "l_4": "Aden",
-            "l_5": "Cyprus",
-            "l_6": "Mersa Matruh",
-            "l_7": "Sidi Barrani",
-            "l_8": "Sollum",
-            "l_9": "Italian East Africa"
+            "l_1": "Egypt",
+            "l_2": "Syria",
+            "l_3": "North Africa",
+            "l_4": "French Somaliland",
+            "l_5": "Turkey",
+            "l_6": "Aden",
+            "l_7": "Iraq",
+            "l_8": "the Sudan",
+            "l_9": "British Somaliland",
+            "l_10": "Ankara",
+            "l_11": "Cairo",
+            "l_12": "Aleppo",
+            "l_13": "Beirut",
+            "l_14": "Haifa",
+            "l_15": "England",
+            "l_16": "Paris",
+            "l_17": "Basra",
+            "l_18": "Thrace",
+            "l_19": "Kenya",
+            "l_20": "Southern Rhodesia",
+            "l_21": "Malta",
+            "l_22": "Alexandria",
+            "l_23": "Cyprus"
         },
         "events": {
-            "e_1": "Attack on Italian Frontier Posts",
-            "e_2": "Delaying Actions at Kassala",
-            "e_3": "Engagement at Moyale"
+            "e_1": "Signing of the Treaty of Alliance",
+            "e_2": "Inter-allied conference on Middle East problems",
+            "e_3": "Entry of Italy into the war",
+            "e_4": "German attack on France"
         },
         "organisations": {
-            "o_1": "Sudan Defence Force",
-            "o_2": "British Army",
-            "o_3": "R.A.F.",
-            "o_4": "S.A.A.F.",
-            "o_5": "The Italian Army"
+            "o_1": "Middle East Command",
+            "o_2": "War Office",
+            "o_3": "C.I.G.S.",
+            "o_4": "British Mandated Territory of Palestine",
+            "o_5": "R.A.S.C.",
+            "o_6": "R.A.O.C."
         }
     },
     "keywords": [
-        "Military Operations",
-        "Delaying Actions",
-        "Frontier Defense",
-        "Battle Engagements",
-        "Propaganda"
+        "Egyptian Army",
+        "Middle East",
+        "operations",
+        "French Commanders",
+        "Turkey",
+        "Alliance",
+        "conferences",
+        "reinforcements",
+        "Italian troops",
+        "military effort"
     ],
     "themes": [
         "Military Operations",
-        "Frontier Defense",
-        "Engagement Tactics",
-        "Propaganda Effects"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -47,61 +67,67 @@
             "e_2",
             "e_3"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": []
+        "Diplomacy": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_3"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "October 1939",
             "locations": [
-                "l_6",
-                "l_9"
+                "l_5"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Small covering force is ordered to attack the Italian frontier posts after the outbreak of war."
+            "connectedEvents": [],
+            "eventSummary": "The Treaty of Alliance with Turkey is signed, setting the stage for military cooperation."
         },
         {
             "event": "e_2",
-            "date": "4th July and 6th July",
+            "date": "February 1940",
             "locations": [
-                "l_1"
+                "l_16"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_5"
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The small mobile forces of the Sudan Defence Force engage in delaying actions, inflicting heavy losses on the enemy despite being outnumbered."
+            "eventSummary": "An inter-allied conference on Middle East problems occurs in Paris."
         },
         {
             "event": "e_3",
-            "date": "15th July",
+            "date": "June 10, 1940",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_20"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
             ],
-            "organisations": [
-                "o_1",
-                "o_2"
+            "eventSummary": "Italy declares war, escalating tensions in the Middle East amid the ongoing conflict."
+        },
+        {
+            "event": "e_4",
+            "date": "May 1940",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "At Moyale, a company of the King's African Rifles successfully holds the fort against an Italian brigade until outnumbered, leading to a strategic withdrawal."
+            "eventSummary": "The German attack on France signals a shift in the dynamics of World War II, affecting Italy's position."
         }
     ]
 }

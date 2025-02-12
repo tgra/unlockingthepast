@@ -1,67 +1,68 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sub-Lieutenant, R.N.V.R."
+            "p_1": "Vice Admiral",
+            "p_2": "Captain Tennant",
+            "p_3": "Admiral Nord",
+            "p_4": "Rear Admiral 'Wake-Walker",
+            "p_5": "Captain Bush"
         },
         "locations": {
-            "l_1": "Ramsgate",
+            "l_1": "Dunkirk",
             "l_2": "Dover",
-            "l_3": "Dunkirk",
-            "l_4": "Calais",
-            "l_5": "Gravelines",
-            "l_6": "Southend",
-            "l_7": "Newhaven",
-            "l_8": "Sheerness",
-            "l_9": "Portsmouth"
+            "l_3": "La Panne",
+            "l_4": "France",
+            "l_5": "Sheerness"
         },
         "events": {
-            "e_1": "Dunkirk Evacuation",
+            "e_1": "Evacuation of British troops",
             "e_2": "Operation Dynamo"
         },
         "organisations": {
-            "o_1": "Naval Control Service",
-            "o_2": "Admiralty Small Vessels Pool"
+            "o_1": "War Office",
+            "o_2": "Admiralty"
         }
     },
     "keywords": [
-        "Small craft",
-        "Evacuation",
-        "Dunkirk",
-        "Naval discipline",
-        "German soldiers"
+        "evacuation",
+        "bombardment",
+        "military",
+        "destroyers",
+        "casualties",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Supply and Logistics",
-        "Volunteer Efforts",
-        "Naval Discipline"
+        "Casualties",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Supply and Logistics": [
+        "Casualties": [
             "e_1"
         ],
-        "Volunteer Efforts": [
-            "e_1"
-        ],
-        "Naval Discipline": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26th May to 4th June",
+            "date": "30th May",
             "locations": [
-                "l_3",
+                "l_1",
                 "l_2",
-                "l_1"
+                "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
                 "o_1",
@@ -70,7 +71,26 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Dunkirk Evacuation involves a massive effort to rescue British and Allied troops stranded on the beaches of Dunkirk using a variety of small craft operated by volunteers and naval personnel under challenging conditions."
+            "eventSummary": "The evacuation of British troops continues at maximum speed, amid heavy air bombardment and strategic decisions regarding destroyer availability."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Dynamo is initiated to evacuate troops from Dunkirk amidst ongoing enemy attacks and logistical challenges."
         }
     ]
 }

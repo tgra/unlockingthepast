@@ -1,128 +1,109 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice-Admiral Sir Harold M. Burrough",
-            "p_2": "Lieutenant-Commander H. M. C. Willmott",
-            "p_3": "LieutenantCommander A. F. C. Layard",
-            "p_4": "Captain F. T. Peters"
+            "p_1": "Admiral of the Fleet Sir ANDREW B. CUNNINGHAM",
+            "p_2": "Vice-Admiral H. K. Hewitt",
+            "p_3": "Captain O. R. Bennehoff",
+            "p_4": "Commander H. G. Scott",
+            "p_5": "LieutenantCommander Willmott"
         },
         "locations": {
-            "l_1": "Algiers",
-            "l_2": "Oran",
-            "l_3": "Sierra",
-            "l_4": "Scapa"
+            "l_1": "North Africa",
+            "l_2": "Algiers",
+            "l_3": "Gibraltar",
+            "l_4": "United Kingdom"
         },
         "events": {
-            "e_1": "Operation Terminal",
-            "e_2": "Operation Reservist",
-            "e_3": "Assault at Oran beaches",
-            "e_4": "Assault at Algiers B and C Beaches"
+            "e_1": "Operation Torch",
+            "e_2": "Landings in North Africa",
+            "e_3": "torpedoing of United States Ship THOMAS STONE"
         },
         "organisations": {
-            "o_1": "His Majesty's Navy",
-            "o_2": "Royal Navy",
-            "o_3": "United States Army"
+            "o_1": "Allied Forces",
+            "o_2": "United States Atlantic Fleet",
+            "o_3": "Royal Navy",
+            "o_4": "United States Navy Department"
         }
     },
     "keywords": [
-        "assault",
-        "landing craft",
-        "naval operations",
-        "military coordination",
-        "training",
-        "gallantry"
+        "Operation Torch",
+        "Landings",
+        "North Africa",
+        "assault convoy",
+        "naval operations"
     ],
     "themes": [
         "Military Operations",
-        "Naval Tactics",
-        "Training Challenges",
-        "Gallantry"
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Naval Tactics": [
-            "e_1",
             "e_2"
         ],
-        "Training Challenges": [
-            "e_3",
-            "e_4"
-        ],
-        "Gallantry": [
-            "e_1",
-            "e_2"
+        "Naval Warfare": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown date",
+            "date": "30th March, 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The report on Operation Torch is submitted detailing British naval assaults and the movement of assault convoys prior to the landings in North Africa."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd October to 17th November, 1942",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_3"
+                "p_2",
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Operation Terminal involves assaults on Algiers where His Majesty's Ship BROKE disembarks troops but faces machine-gun fire, resulting in a difficult position."
+            "eventSummary": "The Landings in North Africa involve complex naval operations with significant movements of naval forces during the assault."
         },
         {
-            "event": "e_2",
-            "date": "Unknown date",
+            "event": "e_3",
+            "date": "7th November, 1942",
             "locations": [
                 "l_1"
             ],
             "persons": [
+                "p_3",
                 "p_4"
             ],
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Operation Reservist is launched with ships having a chance of favorable reception due to their American appearance but ultimately faces serious opposition leading to failure."
-        },
-        {
-            "event": "e_3",
-            "date": "Unknown date",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Assaults at Oran beaches proceed successfully without complications, reinforcing naval coordination efforts."
-        },
-        {
-            "event": "e_4",
-            "date": "Unknown date",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Assaults at Algiers B and C Beaches experience delays and confusion which could jeopardize the operation's success."
+            "connectedEvents": [],
+            "eventSummary": "The United States Ship THOMAS STONE is torpedoed, prompting courageous actions from Captain O. R. Bennehoff and Commander H. G. Scott."
         }
     ]
 }

@@ -1,140 +1,123 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rommel",
-            "p_2": "von Rundstedt",
-            "p_3": "Kesselring"
+            "p_1": "General Bradley",
+            "p_2": "Field-Marshal von Rundstedt",
+            "p_3": "Field-Marshal Rommel",
+            "p_4": "Blaskowitz",
+            "p_5": "General Schweppenburg",
+            "p_6": "Hitler"
         },
         "locations": {
-            "l_1": "Cherbourg",
-            "l_2": "Le Havre",
-            "l_3": "Normandy",
-            "l_4": "Varreville",
-            "l_5": "Caen",
-            "l_6": "France",
-            "l_7": "Crimea"
+            "l_1": "Caen",
+            "l_2": "Loire",
+            "l_3": "Seine",
+            "l_4": "Paris",
+            "l_5": "Normandy",
+            "l_6": "Brittany",
+            "l_7": "Pas de Calais",
+            "l_8": "Flanders",
+            "l_9": "Holland",
+            "l_10": "Biscay coast",
+            "l_11": "Riviera",
+            "l_12": "United Kingdom",
+            "l_13": "Channel",
+            "l_14": "Baie de la Seine",
+            "l_15": "Cherbourg",
+            "l_16": "Carentan estuary"
         },
         "events": {
-            "e_1": "OVERLORD",
-            "e_2": "D Day",
-            "e_3": "D+4 Counter Attack",
-            "e_4": "D+8 Bridgehead Expansion"
+            "e_1": "D Day",
+            "e_2": "Allied invasion operations",
+            "e_3": "action of the Air Forces"
         },
         "organisations": {
-            "o_1": "French Resistance",
-            "o_2": "Allies",
-            "o_3": "German Forces"
+            "o_1": "Army Group B",
+            "o_2": "Army Group G",
+            "o_3": "Panzer Group West",
+            "o_4": "S.S. Corps"
         }
     },
     "keywords": [
-        "batteries",
+        "American armies",
+        "invasion",
+        "air superiority",
         "coastal defence",
-        "artillery",
-        "Rommel",
-        "von Rundstedt",
-        "OVERLORD",
-        "D Day",
-        "counter-attack",
-        "bridgehead",
-        "French Resistance"
+        "Normandy beaches",
+        "Atlantic Wall",
+        "artificial ports"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Intelligence Gatherings",
-        "Allied Operations"
+        "Enemy Strategy",
+        "Allied Strategy",
+        "Coastal Defence"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Defensive Strategies": [
-            "e_3",
-            "e_4"
-        ],
-        "Intelligence Gatherings": [
-            "e_1",
-            "e_2"
-        ],
-        "Allied Operations": [
-            "e_1",
-            "e_2"
-        ]
+        "Enemy Strategy": [],
+        "Allied Strategy": [],
+        "Coastal Defence": []
     },
     "eventConnections": [
         {
             "event": "e_1",
             "date": "June 6, 1944",
             "locations": [
-                "l_3"
+                "l_5"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3",
+                "p_6"
             ],
             "organisations": [
+                "o_1",
                 "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "OVERLORD, the Allied invasion plan, is executed, leading to significant military engagement on the beaches of Normandy."
-        },
-        {
-            "event": "e_2",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "On D Day, Allied forces land on the Normandy beaches, facing immediate German counterattacks."
-        },
-        {
-            "event": "e_3",
-            "date": "June 10, 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [
                 "o_3"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "By D+4, German forces launch counterattacks against the Allied beachhead, striving to reclaim control."
+            "eventSummary": "D Day marks the beginning of the Allied invasion of Normandy, aiming for a successful beach landing against German forces."
         },
         {
-            "event": "e_4",
-            "date": "June 14, 1944",
+            "event": "e_2",
+            "date": "June, July and August 1944",
             "locations": [
-                "l_3"
+                "l_5"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
+                "o_1",
+                "o_2",
                 "o_3"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "On D+8, the German military attempts to cordon off Allied forces to limit their beachhead expansion."
+            "eventSummary": "Allied invasion operations develop as planned in the months following D Day, leading to the liberation of occupied territories."
+        },
+        {
+            "event": "e_3",
+            "date": "April, 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The action of the Air Forces during April 1944 prepares for the impending invasion by gaining air superiority."
         }
     ]
 }

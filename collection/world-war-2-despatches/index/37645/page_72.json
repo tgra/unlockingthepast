@@ -1,120 +1,115 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "General Gazzera",
-            "p_2": "Raugei",
-            "p_3": "Lieut. A. G. S. Campbell"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Galla Sidamo",
-            "l_2": "Addis Abeba",
-            "l_3": "Lechemti",
-            "l_4": "Gimma",
-            "l_5": "Dembidollo-Gambela road",
-            "l_6": "French Somaliland",
-            "l_7": "Assab",
-            "l_8": "Debre Sina",
-            "l_9": "Combolcia",
-            "l_10": "Mussolini tunnel"
+            "l_1": "Addis Abeba",
+            "l_2": "British Somaliland",
+            "l_3": "Aden",
+            "l_4": "Berbera",
+            "l_5": "Awash River"
         },
         "events": {
-            "e_1": "Negotiation for surrender in Galla Sidamo",
-            "e_2": "Surrender of General Gazzera",
-            "e_3": "Operations of 1st S.A. Brigade"
+            "e_1": "Protection of Women and Children in Addis Abeba",
+            "e_2": "Military Operations in East Africa",
+            "e_3": "Transfer of Gladiator Squadron to East Africa Air Force",
+            "e_4": "Occupation of Addis Abeba"
         },
         "organisations": {
-            "o_1": "East Africa Force",
-            "o_2": "1st D.E.O.R.",
-            "o_3": "1st R.N.C.",
-            "o_4": "1st Transvaal Scottish"
+            "o_1": "British Forces",
+            "o_2": "Italian Military Command",
+            "o_3": "East Africa Force"
         }
     },
     "keywords": [
-        "surrender",
-        "military operations",
-        "Galla Sidamo",
-        "Italian troops",
-        "Addis Abeba",
-        "enemy artillery"
+        "Military Operations",
+        "Protection",
+        "Italian Troops",
+        "British Troops",
+        "Supply Maintenance"
     ],
     "themes": [
         "Military Operations",
-        "Surrender Negotiations",
-        "Italian Forces",
-        "Enemy Tactics"
+        "Civilian Protection",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_4"
         ],
-        "Surrender Negotiations": [
-            "e_1",
-            "e_2"
+        "Civilian Protection": [
+            "e_1"
         ],
-        "Enemy Tactics": [
-            "e_3"
+        "Logistics": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd July",
+            "date": "April 1941",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_5"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "On 3rd July, General Gazzera sends a message to Addis Abeba indicating a negotiation for the surrender of troops in Galla Sidamo is underway."
+            "eventSummary": "British forces accept the responsibility for the protection of women and children in Addis Abeba until their troops arrive."
         },
         {
             "event": "e_2",
-            "date": "8th July",
+            "date": "April 1941",
             "locations": [
                 "l_1",
-                "l_7"
+                "l_2",
+                "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
             ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Military operations continue in East Africa with plans for the engagement of Italian troops in the region."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Gladiator Squadron is transferred to East Africa Air Force for local reconnaissance."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "On 8th July, the surrender of General Gazzera and all Italian troops in Galla Sidamo signifies the conclusion of the campaign initiated by the East Africa Force."
-        },
-        {
-            "event": "e_3",
-            "date": "13th April - 26th April 1941",
-            "locations": [
-                "l_2",
-                "l_8",
-                "l_9"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "From 13th April to 26th April 1941, the 1st S.A. Brigade conducts operations resulting in significant confrontations and the capture of enemy positions in demanding mountainous terrain."
+            "eventSummary": "British forces prepare for the occupation of Addis Abeba amidst ongoing military operations."
         }
     ]
 }

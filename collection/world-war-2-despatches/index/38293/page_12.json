@@ -1,32 +1,43 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {},
+        "persons": {
+            "p_1": "F.O.A.M.",
+            "p_2": "Senior Officer of convoy G.A.15"
+        },
+        "locations": {
+            "l_1": "Monemvasia",
+            "l_2": "Nauplia",
+            "l_3": "Suda",
+            "l_4": "Milo",
+            "l_5": "Tolon",
+            "l_6": "Smyrna",
+            "l_7": "Zea Island",
+            "l_8": "Port Nikolo"
+        },
         "events": {
-            "e_1": "Report dated 5th May, 1941",
-            "e_2": "Nightly total count of embarked personnel"
+            "e_1": "Evacuation from Nauplia",
+            "e_2": "Bombing of S.S. SLAMAT"
         },
         "organisations": {
-            "o_1": "Licur Forces"
+            "o_1": "Royal Fleet Auxiliary"
         }
     },
     "keywords": [
-        "embarked",
-        "personnel",
-        "report",
-        "total",
-        "losses"
+        "evacuation",
+        "bombing",
+        "military operations",
+        "naval assistance"
     ],
     "themes": [
         "Military Operations",
-        "Logistics"
+        "Naval Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Logistics": [
+        "Naval Engagements": [
             "e_1",
             "e_2"
         ]
@@ -34,29 +45,36 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "5th May, 1941",
-            "locations": [],
-            "persons": [],
+            "date": "April 26th/27th, 1941",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "A report details the embarked personnel and total counts during military operations."
+            "eventSummary": "The evacuation from Nauplia is organized; several ships are deployed to assist in the embarkation of troops."
         },
         {
             "event": "e_2",
-            "date": "During the nights of 24th to 30th May, 1941",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_1"
+            "date": "April 27th, 1941",
+            "locations": [
+                "l_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "persons": [
+                "p_1"
             ],
-            "eventSummary": "A summary of nightly total counts of embarked personnel from the Licur Forces operations."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "S.S. SLAMAT is bombed while trying to evacuate troops and set on fire, prompting rescue efforts."
         }
     ]
 }

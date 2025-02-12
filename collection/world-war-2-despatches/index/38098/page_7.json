@@ -1,56 +1,74 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain Leach",
-            "p_2": "Rear-Admiral Wake-Walker"
+            "p_1": "Rear-Admiral",
+            "p_2": "Frederick H. G. Dairymple-Harilton",
+            "p_3": "Arthur D. Read"
         },
         "locations": {
-            "l_1": "Baltic",
-            "l_2": "Denmark Strait",
-            "l_3": "Greenland",
-            "l_4": "south-west",
-            "l_5": "approximately 60 20 N. 13 W."
+            "l_1": "Bismarck",
+            "l_2": "Gibraltar",
+            "l_3": "Malta",
+            "l_4": "Newfoundland",
+            "l_5": "Reykjavik",
+            "l_6": "Norfolk",
+            "l_7": "Hood",
+            "l_8": "French coast"
         },
         "events": {
-            "e_1": "Shadowing during Daylight",
-            "e_2": "Sinking of the HOOD"
+            "e_1": "Attack by Aircraft of VICTORIOUS",
+            "e_2": "Action with the HOOD",
+            "e_3": "Hit at 2105/26th May by the aircraft of the ARK ROYAL"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "Royal Navy"
+            "o_1": "Second Cruiser Squadron",
+            "o_2": "825 Squadron",
+            "o_3": "ARK ROYAL"
         }
     },
     "keywords": [
         "BISMARCK",
+        "KING GEORGE V",
+        "REPULSE",
+        "VICTORIOUS",
         "PRINCE OF WALES",
-        "HMS HOOD",
-        "naval engagement",
-        "Royal Navy"
+        "NORFOLK",
+        "RAMILLIES",
+        "Fulmars",
+        "Swordfish",
+        "A.S.V.",
+        "torpedo attack"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Engagement Decisions"
+        "Aerial Attack",
+        "Naval Engagement",
+        "Tactical Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Naval Strategy": [
+        "Aerial Attack": [
             "e_1"
         ],
-        "Engagement Decisions": [
+        "Naval Engagement": [
             "e_2"
+        ],
+        "Tactical Maneuvers": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 24",
+            "date": "May 25, 1941",
             "locations": [
+                "l_1",
                 "l_2",
-                "l_4"
+                "l_3"
             ],
             "persons": [
                 "p_1",
@@ -61,28 +79,42 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "During the day on May 24, the ships continue to shadow the enemy as they make course alterations to evade detection."
+            "eventSummary": "The aircraft of the VICTORIOUS successfully conducts an attack on the Bismarck, demonstrating remarkable effectiveness despite challenging conditions."
         },
         {
             "event": "e_2",
-            "date": "Date unspecified",
+            "date": "May 24, 1941",
             "locations": [
-                "l_2"
+                "l_7",
+                "l_8"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "An action involving the Hood occurs, which later influences the Bismarck's decision-making regarding its course and actions."
+        },
+        {
+            "event": "e_3",
+            "date": "May 26, 1941",
+            "locations": [
+                "l_1",
+                "l_8"
             ],
-            "eventSummary": "The HOOD is sunk, greatly impacting the engagement strategy against the enemy forces."
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A second significant hit is delivered to the Bismarck by aircraft, leading to severe operational issues for the vessel."
         }
     ]
 }

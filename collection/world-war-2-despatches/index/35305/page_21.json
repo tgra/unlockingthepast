@@ -1,130 +1,174 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Général de Division Voruz"
+            "p_1": "Major-General P. de Fonblanque",
+            "p_2": "Lieutenant-General Sir Henry Karslake",
+            "p_3": "Brigadier W. Cave-Browne",
+            "p_4": "Brigadier W. A. F. L. Fox-Pitt",
+            "p_5": "Lieutenant-General W. G. Lindsell"
         },
         "locations": {
-            "l_1": "France",
-            "l_2": "Holland",
-            "l_3": "Maastricht",
-            "l_4": "Sedan",
-            "l_5": "Boulogne"
+            "l_1": "Chateau de pene",
+            "l_2": "Armenti res",
+            "l_3": "Boulogne",
+            "l_4": "Wimereux",
+            "l_5": "Abbeville",
+            "l_6": "Etaples",
+            "l_7": "Canche",
+            "l_8": "Calais",
+            "l_9": "Lille",
+            "l_10": "Dunkirk",
+            "l_11": "Hazebrouck",
+            "l_12": "Abancourt",
+            "l_13": "Amiens",
+            "l_14": "Arras",
+            "l_15": "Eu",
+            "l_16": "Douai",
+            "l_17": "Ostend"
         },
         "events": {
-            "e_1": "Spanish War",
-            "e_2": "Polish Campaign",
-            "e_3": "B.E.F. Operations"
+            "e_1": "enemy penetration into the rearward areas",
+            "e_2": "enemy column approaching Boulogne",
+            "e_3": "evacuation under the orders of the War Office",
+            "e_4": "discontinuation of railway use",
+            "e_5": "cut of railway at Abbeville",
+            "e_6": "decision to maintain the force through the northern ports"
         },
         "organisations": {
-            "o_1": "G.H.Q.",
-            "o_2": "French G.Q.G.",
-            "o_3": "Royal Air Force",
-            "o_4": "Royal Corps of Signals"
+            "o_1": "War Office",
+            "o_2": "Adjutant-General's Branch",
+            "o_3": "British and French Naval authorities"
         }
     },
     "keywords": [
-        "liaison",
-        "flanking",
-        "defence in depth",
-        "anti-tank defence",
-        "air forces",
-        "bombers",
-        "demolitions",
-        "signal communications",
-        "traffic control"
+        "enemy",
+        "evacuation",
+        "orders",
+        "forces",
+        "supply"
     ],
     "themes": [
         "Military Operations",
-        "International Cooperation",
-        "Defence Strategies",
-        "Communication Systems",
-        "Air Warfare",
-        "Engineering Operations"
+        "Logistics",
+        "Defence Strategies"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
+            "e_2",
             "e_3"
         ],
-        "International Cooperation": [
-            "e_1",
-            "e_2"
+        "Logistics": [
+            "e_4",
+            "e_5",
+            "e_6"
         ],
         "Defence Strategies": [
-            "e_3"
-        ],
-        "Communication Systems": [
-            "e_3"
-        ],
-        "Air Warfare": [
-            "e_1",
-            "e_2"
-        ],
-        "Engineering Operations": [
+            "e_2",
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "21st May",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Spanish War showcases early modern military strategies, highlighting the importance of air support and coordination among forces."
+            "eventSummary": "On 21st May, the enemy penetration into the rearward areas increased, resulting in severed communication across the Somme."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "21st May",
             "locations": [
-                "l_2"
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2",
                 "o_1"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "The Polish Campaign illustrates tactical shifts in warfare, particularly in aerial tactics and ground troop movements."
+            "eventSummary": "On the evening of 21st May, information is received that an enemy column of all arms is approaching Boulogne."
         },
         {
             "event": "e_3",
-            "date": "N/A",
+            "date": "23/24th May",
             "locations": [
-                "l_1",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation under the orders of the War Office is carried out, completing the operation on the night of 23/24th May."
+        },
+        {
+            "event": "e_4",
+            "date": "17th May",
+            "locations": [
+                "l_12",
+                "l_13"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 17th May, the Quarter-Master-General decides to discontinue the use of the railway from the regulating station at Abancourt via Amiens and Arras due to enemy actions."
+        },
+        {
+            "event": "e_5",
+            "date": "21st May",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 21st May, the railway at Abbeville is cut, complicating supply and logistical operations."
+        },
+        {
+            "event": "e_6",
+            "date": "21st May",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_5"
             ],
             "organisations": [
                 "o_1",
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The B.E.F. Operations emphasize the significance of communication and organization in military strategies during operations."
+            "connectedEvents": [],
+            "eventSummary": "On 21st May, the decision is made to maintain the force through the northern ports, establishing a Base Sub-Area at Dunkirk."
         }
     ]
 }

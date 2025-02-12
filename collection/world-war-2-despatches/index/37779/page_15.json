@@ -1,167 +1,141 @@
 {
     "namedEntities": {
         "persons": {
-            "p_001": "General Eisenhower",
-            "p_002": "General Juin",
-            "p_003": "General Kuter",
-            "p_004": "General Giraud",
-            "p_005": "General Koeltz"
+            "p_1": "Rommel",
+            "p_2": "Witzig",
+            "p_3": "Manteuffel",
+            "p_4": "Broich"
         },
         "locations": {
-            "l_001": "Bone",
-            "l_002": "Constantine",
-            "l_003": "Sfax",
-            "l_004": "Djebel Azzag",
-            "l_005": "Djebel Ajred",
-            "l_006": "Goubellat plain",
-            "l_007": "Bou Arada",
-            "l_008": "Bou Arada Valley",
-            "l_009": "Robaa",
-            "l_010": "Ousseltia",
-            "l_011": "Thelergma airfield",
-            "l_012": "Western Dorsale",
-            "l_013": "Tripolitania"
+            "l_1": "Algeria",
+            "l_2": "Tripolitania",
+            "l_3": "Tunis",
+            "l_4": "Bizerta",
+            "l_5": "Tunisia",
+            "l_6": "French North Africa",
+            "l_7": "Zaghouan",
+            "l_8": "Witstock",
+            "l_9": "Posen",
+            "l_10": "Djebel Abiod"
         },
         "events": {
-            "e_001": "Assumption of control by Allied Force Headquarters",
-            "e_002": "Cancellation of United States 2 Corps operation against Sfax",
-            "e_003": "Attack by 36 Infantry Brigade",
-            "e_004": "Strong German attack against 6 Armoured Division",
-            "e_005": "Co-ordination of the front appointed by General Eisenhower",
-            "e_006": "Enemy attack on Robaa renewed"
+            "e_1": "Formation of Axis Forces in Tunisia",
+            "e_2": "Landing of Allied forces in Algeria",
+            "e_3": "Contact with Allied forces",
+            "e_4": "Action against French 19 Corps"
         },
         "organisations": {
-            "o_001": "Allied Forces",
-            "o_002": "2 United States Corps",
-            "o_003": "19 Corps",
-            "o_004": "American troops",
-            "o_005": "Royal Artillery"
+            "o_1": "German Army",
+            "o_2": "Italian Army",
+            "o_3": "United States Army",
+            "o_4": "Allied Forces",
+            "o_5": "Army Group Royal Artillery"
         }
     },
     "keywords": [
-        "military operations",
-        "artillery support",
-        "offensive strategy",
-        "enemy attack",
-        "cooperation",
-        "morale",
-        "anti-tank weapons"
+        "Axis Forces",
+        "Allied Forces",
+        "Tunis",
+        "Algeria",
+        "German",
+        "Italian",
+        "Armoured Division",
+        "Infantry Division"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Coordination",
-        "Morale"
+        "Allied Invasion",
+        "Axis Response",
+        "Military Reinforcements"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_001",
-            "e_002",
-            "e_003",
-            "e_004",
-            "e_006"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Strategic Decisions": [
-            "e_001",
-            "e_005"
+        "Allied Invasion": [
+            "e_2"
         ],
-        "Coordination": [
-            "e_005"
+        "Axis Response": [
+            "e_1",
+            "e_4"
         ],
-        "Morale": [
-            "e_006"
+        "Military Reinforcements": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
-            "event": "e_001",
-            "date": "1st January 1943",
+            "event": "e_1",
+            "date": "November, 1942",
             "locations": [
-                "l_001",
-                "l_002"
+                "l_5"
             ],
             "persons": [
-                "p_001"
+                "p_1",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_001"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_002"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "On 1st January 1943, Allied Force Headquarters assumes control of lines of communication up to Bone, relieving administrative staff."
+            "eventSummary": "The Axis forces are formed in Tunisia as a response to the landing of Allied forces, demonstrating a strategic buildup and organization of military units."
         },
         {
-            "event": "e_002",
-            "date": "Middle of January 1943",
+            "event": "e_2",
+            "date": "Not specified",
             "locations": [
-                "l_003"
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Allied forces land in Algeria, marking a significant event during World War II and leading to a subsequent military response from Axis forces."
+        },
+        {
+            "event": "e_3",
+            "date": "26th November, 1942",
+            "locations": [
+                "l_5",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Allied forces make contact with Axis forces along the general line of Djebel Abiod, indicating active combat engagement."
+        },
+        {
+            "event": "e_4",
+            "date": "18th January, 1943",
+            "locations": [
+                "l_5"
             ],
             "persons": [
-                "p_001"
+                "p_1"
             ],
             "organisations": [
-                "o_001",
-                "o_002"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The attack against Sfax by United States 2 Corps is eventually cancelled by the Commander-in-Chief around the middle of January."
-        },
-        {
-            "event": "e_003",
-            "date": "3rd January 1943",
-            "locations": [
-                "l_004",
-                "l_005"
+            "connectedEvents": [
+                "e_1"
             ],
-            "persons": [],
-            "organisations": [
-                "o_001"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "An attack by 36 Infantry Brigade to capture dominating enemy positions on Djebel Azzag and Djebel Ajred on 3rd January is not very successful."
-        },
-        {
-            "event": "e_004",
-            "date": "18th January 1943",
-            "locations": [
-                "l_007",
-                "l_008"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_001"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "On 18th January, a strong German infantry and tank attack is launched against 6 Armoured Division in the Bou Arada Valley."
-        },
-        {
-            "event": "e_005",
-            "date": "21st January 1943",
-            "locations": [
-                "l_002"
-            ],
-            "persons": [
-                "p_001"
-            ],
-            "organisations": [
-                "o_001"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "General Eisenhower appoints the narrator to co-ordinate the entire front, establishing an executive air commander for improved oversight on 21st January."
-        },
-        {
-            "event": "e_006",
-            "date": "End of January 1943",
-            "locations": [
-                "l_009"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_001"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The enemy renews their attack on Robaa at the end of January, this time using Tigers against the 36 Infantry Brigade."
+            "eventSummary": "The 501 Heavy Tank Battalion engages in action against the French 19 Corps, marking a significant combat event in the Tunisian campaign."
         }
     ]
 }

@@ -1,104 +1,163 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Cunningham"
+            "p_1": "Vice-Admiral B. H. Ramsay",
+            "p_2": "Vice-Admiral H. K. Hewitt",
+            "p_3": "Lieutenant-General George S. Patton Junior",
+            "p_4": "General Sir Bernard Montgomery",
+            "p_5": "Air Marshal Sir Arthur Coningham",
+            "p_6": "Colonel Lawrence P. Hickey",
+            "p_7": "Air Vice Marshal H. Broadhurst"
         },
         "locations": {
-            "l_1": "Licata",
-            "l_2": "Cape Murro di Porco",
-            "l_3": "Suez",
-            "l_4": "Tunisia",
-            "l_5": "Malta",
-            "l_6": "Sousse Sfax",
-            "l_7": "Algiers",
-            "l_8": "Bizerta",
-            "l_9": "Oran",
-            "l_10": "Kairouan",
-            "l_11": "Carthage",
-            "l_12": "Chesapeake Bay",
-            "l_13": "Mers-el-Kebir",
-            "l_14": "Alexandria",
-            "l_15": "Tobruk",
-            "l_16": "Benghazi",
-            "l_17": "Gulf of Agaba",
-            "l_18": "Messina"
+            "l_1": "Syracuse",
+            "l_2": "Pozzallo",
+            "l_3": "Pachino",
+            "l_4": "Augusta",
+            "l_5": "Catania",
+            "l_6": "Cape Scaramia",
+            "l_7": "Licata",
+            "l_8": "Ponte Olivo",
+            "l_9": "Biscar",
+            "l_10": "Comiso",
+            "l_11": "Ragusa",
+            "l_12": "Caltanissetta",
+            "l_13": "Enna",
+            "l_14": "Nicosia",
+            "l_15": "San Stefano",
+            "l_16": "Cape Murro di Porco",
+            "l_17": "Noto",
+            "l_18": "Palazzolo",
+            "l_19": "Gela"
         },
         "events": {
-            "e_1": "Invasion of Sicily",
-            "e_2": "Battle for Tunisia"
+            "e_1": "Assault between Syracuse and Pozzallo",
+            "e_2": "Operation Instruction No 2",
+            "e_3": "Simultaneous assault by Eighth Army",
+            "e_4": "Landing of 13 Corps",
+            "e_5": "Assault by Seventh Army",
+            "e_6": "Capture of airfields at Ponte Olivo, Comiso, and Biscari"
         },
         "organisations": {
-            "o_1": "I Division",
-            "o_2": "3 Infantry Division",
-            "o_3": "2 Armoured Division",
-            "o_4": "82 Airborne Division",
-            "o_5": "United States Army",
-            "o_6": "Eighth Army",
-            "o_7": "Mediterranean Air Command"
+            "o_1": "Eighth Army",
+            "o_2": "Seventh Army",
+            "o_3": "Eastern Task Force",
+            "o_4": "Western Task Force"
         }
     },
     "keywords": [
-        "Invasion",
-        "Assault",
-        "Training",
-        "Air Support",
-        "Naval Forces"
+        "assault",
+        "operations",
+        "airfields",
+        "capture",
+        "naval",
+        "ground",
+        "air commanders"
     ],
     "themes": [
         "Military Operations",
-        "Planning Challenges",
-        "Coordination of Forces"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3",
+            "e_5",
+            "e_6"
+        ],
+        "Strategic Decisions": [
             "e_2"
-        ],
-        "Planning Challenges": [
-            "e_1"
-        ],
-        "Coordination of Forces": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "9th July",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Invasion of Sicily involves comprehensive planning and coordination of various divisions landing at multiple beaches, supported by combined naval and air operations. A significant military initiative facing complex logistical challenges."
-        },
-        {
-            "event": "e_2",
-            "date": "Date unspecified",
-            "locations": [
-                "l_4",
-                "l_18"
+                "l_2"
             ],
             "persons": [],
             "organisations": [
-                "o_5",
-                "o_7"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The Battle for Tunisia concludes with the successful defeat of enemy forces, setting the scene for subsequent assaults, including the Invasion of Sicily."
+            "eventSummary": "The assault takes place between Syracuse and Pozzallo, supported by available parachute troops."
+        },
+        {
+            "event": "e_2",
+            "date": "21st May",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Instruction No 2 is issued, providing details of forces and operations for the first two phases."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_17"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Eighth Army plans a simultaneous assault involving multiple Corps."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_17"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "13 Corps lands from Cape Murro di Porco to secure Syracuse and Augusta."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_6",
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Seventh Army's assaults are executed with II Corps landing in the Gulf of Gela."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The tasks include capturing airfields at Ponte Olivo, Comiso, and Biscari."
         }
     ]
 }

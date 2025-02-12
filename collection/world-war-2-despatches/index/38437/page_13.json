@@ -1,133 +1,126 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Pile",
-            "p_2": "Air Commander-in-Chief"
+            "p_1": "Sir Robert Watson-Watt",
+            "p_2": "Air Commodore Ambler",
+            "p_3": "General Pile",
+            "p_4": "Air Vice-Marshal Saunders"
         },
         "locations": {
-            "l_1": "London",
-            "l_2": "Manchester",
-            "l_3": "Skegness",
-            "l_4": "Bridlington",
-            "l_5": "Flamborough Head",
-            "l_6": "Tees-Tyne",
-            "l_7": "Forth-Clyde",
-            "l_8": "Holland",
-            "l_9": "Ypenburg",
-            "l_10": "The Hague",
-            "l_11": "Vlaardingen",
-            "l_12": "Rotterdam",
-            "l_13": "Delftsche Canal",
-            "l_14": "Isle of Sheppey",
-            "l_15": "Orfordness"
+            "l_1": "Greater London",
+            "l_2": "St. Margaret's Bay",
+            "l_3": "Beachy Head",
+            "l_4": "Kent",
+            "l_5": "Surrey",
+            "l_6": "Thames",
+            "l_7": "Redhill"
         },
         "events": {
-            "e_1": "Flying Bomb Attack on Manchester",
-            "e_2": "Air Commander's Responsibility for Defences",
-            "e_3": "Deployment of Gun Defences",
-            "e_4": "Attacks from Ramps in Holland"
+            "e_1": "Deployment of Guns to the Coast",
+            "e_2": "Air Conference on Gun Deployment",
+            "e_3": "Movement of Heavy Guns to New Positions"
         },
         "organisations": {
-            "o_1": "Bomber Command",
-            "o_2": "American Eighth Bomber Command"
+            "o_1": "Air Ministry",
+            "o_2": "A.A. Command",
+            "o_3": "Anti-Aircraft Command",
+            "o_4": "No. 11 Group"
         }
     },
     "keywords": [
-        "Flying Bomb",
-        "Air Command",
-        "Defences",
-        "Bombing Attacks",
-        "Gun Deployment"
+        "Guns",
+        "Deployment",
+        "Air Conference",
+        "Radar Equipment",
+        "Flying Bombs"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Air Raids",
-        "Countermeasures"
+        "Strategic Decisions",
+        "Defense Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_4"
-        ],
-        "Defensive Strategies": [
-            "e_2",
             "e_3"
         ],
-        "Air Raids": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Defense Planning": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Christmas Eve, 1944",
+            "date": "",
             "locations": [
-                "l_2",
                 "l_1",
+                "l_2",
                 "l_3",
-                "l_4"
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "On Christmas Eve, 1944, German forces launch a significant bombing attack on Manchester using flying bombs, resulting in 37 deaths and 67 injuries."
+            "eventSummary": "The deployment of guns to the coast is proposed to enhance military defense capabilities."
         },
         {
             "event": "e_2",
-            "date": "Autumn 1944",
-            "locations": [],
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "During the autumn of 1944, responsibility for directing and coordinating defensive counter-measures against air-launched flying bombs transfers to the Air Commander-in-Chief, amidst growing threats."
+            "eventSummary": "An air conference is convened to discuss the proposal for gun deployment along the coast."
         },
         {
             "event": "e_3",
-            "date": "February to March, 1945",
+            "date": "17th July",
             "locations": [
-                "l_14",
-                "l_15"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_3"
+            ],
             "connectedEvents": [
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "In early 1945, steps are taken to fortify gun defences along the East Coast in preparation for potential extensions of the flying bomb campaign from Holland."
-        },
-        {
-            "event": "e_4",
-            "date": "3rd to 29th March, 1945",
-            "locations": [
-                "l_8",
-                "l_9",
-                "l_10",
-                "l_11",
-                "l_12",
-                "l_13"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "From March 3rd to 29th, 1945, German forces initiate attacks using flying bombs launched from ramps in Holland, indicating efforts to extend their reach against the UK."
+            "eventSummary": "Heavy guns are successfully moved to new positions by dawn on the 17th of July."
         }
     ]
 }

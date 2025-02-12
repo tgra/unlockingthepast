@@ -1,164 +1,108 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Senior Political Officer",
-            "p_2": "Residente",
-            "p_3": "native chief of Maji district"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "British Somaliland",
-            "l_2": "Garoe",
-            "l_3": "Gardo",
-            "l_4": "Karamam Plain",
-            "l_5": "Bender Cassim",
-            "l_6": "Dante",
-            "l_7": "Sousciuban",
-            "l_8": "Cape Guardafui",
-            "l_9": "Tohen Wadi",
-            "l_10": "Alula",
-            "l_11": "Maji",
-            "l_12": "Kalam",
-            "l_13": "Washa-Waha",
-            "l_14": "Masci",
-            "l_15": "Baciuma",
-            "l_16": "Giamo"
+            "l_1": "East Africa",
+            "l_2": "Zanzibar",
+            "l_3": "Gold Coast",
+            "l_4": "Uganda",
+            "l_5": "Rhodesia",
+            "l_6": "South Africa"
         },
         "events": {
-            "e_1": "Engagement at Karamam Plain",
-            "e_2": "Negotiation at Bender Cassim",
-            "e_3": "Occupation of Dante",
-            "e_4": "Landing at Cape Guardafui",
-            "e_5": "Evacuation from Alula",
-            "e_6": "Occupation of Maji"
+            "e_1": "Redistribution of Army Co-Operation Squadrons",
+            "e_2": "Allocation of Squadrons",
+            "e_3": "Divisional Troops Movement"
         },
         "organisations": {
-            "o_1": "Somaliland Camel Corps",
-            "o_2": "Royal Air Force",
-            "o_3": "25th E.A. Infantry Brigade",
-            "o_4": "Sedan Equatorial Corps"
+            "o_1": "East African Infantry Brigade Group",
+            "o_2": "South African Armoured Car Regiment",
+            "o_3": "King's African Rifles",
+            "o_4": "Gold Coast Regiment",
+            "o_5": "Divisional Ordnance Field Park"
         }
     },
     "keywords": [
-        "military operations",
-        "Italian forces",
-        "sandhills",
-        "negotiations",
-        "occupation",
-        "evacuation",
-        "raiding"
+        "Battery",
+        "Field Company",
+        "Ambulance",
+        "Brigade",
+        "Rifles",
+        "Regiment",
+        "Anti-tank",
+        "Anti-aircraft",
+        "Divisional"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions",
-        "Occupation",
-        "Evacuations"
+        "Logistics",
+        "Division Assignments"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4",
-            "e_6"
+            "e_2",
+            "e_3"
         ],
-        "Diplomacy": [
+        "Logistics": [
+            "e_2",
+            "e_3"
+        ],
+        "Division Assignments": [
             "e_2"
-        ],
-        "Occupations": [
-            "e_3",
-            "e_6"
-        ],
-        "Evacuations": [
-            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "7th May",
+            "date": "February 11 to April 5, 1941",
             "locations": [
-                "British Somaliland",
-                "Karamam Plain"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "A detachment of the Somaliland Camel Corps engages raiders at Karamam Plain, leading to their withdrawal from British Somaliland."
+            "eventSummary": "The redistribution of Army Co-Operation Squadrons takes place, affecting various divisions and their assets."
         },
         {
             "event": "e_2",
-            "date": "6th May",
+            "date": "February 11 to April 5, 1941",
             "locations": [
-                "Bender Cassim"
+                "l_1"
             ],
-            "persons": [
-                "p_2"
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
             ],
-            "organisations": [],
             "connectedEvents": [
+                "e_1",
                 "e_3"
             ],
-            "eventSummary": "The column negotiates with the Residente for the surrender of the post at Bender Cassim, successfully collecting 67 Italians."
+            "eventSummary": "Various squadrons are allocated to different divisions during the logistical operations."
         },
         {
             "event": "e_3",
-            "date": "16th May",
+            "date": "",
             "locations": [
-                "Dante"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Dante is occupied by British forces, following negotiations to prevent the destruction of supplies by the Italian garrison."
-        },
-        {
-            "event": "e_4",
-            "date": "18th May",
-            "locations": [
-                "Cape Guardafui"
+                "l_1"
             ],
             "persons": [],
             "organisations": [
-                "o_2"
+                "o_5"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Troops are landed at Cape Guardafui under cover of naval fire, but progress is slowed due to difficult terrain."
-        },
-        {
-            "event": "e_5",
-            "date": "21st May",
-            "locations": [
-                "Alula"
+            "connectedEvents": [
+                "e_1",
+                "e_2"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A platoon successfully evacuates Italian officers from Alula to Aden without incident."
-        },
-        {
-            "event": "e_6",
-            "date": "20th April",
-            "locations": [
-                "Maji"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "British troops occupy Maji with no opposition after reports of Italian evacuations and building burnings."
+            "eventSummary": "Divisional Troops Movement involves shifts in military units to enhance operational readiness."
         }
     ]
 }

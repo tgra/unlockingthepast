@@ -1,52 +1,78 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Sir Archibald P. Wavell"
+            "p_1": "King's African Rifles"
         },
         "locations": {
-            "l_1": "Middle East",
-            "l_2": "Egypt",
-            "l_3": "Palestine",
-            "l_4": "Sudan",
-            "l_5": "Cyprus",
-            "l_6": "British Somaliland"
+            "l_1": "Sudan",
+            "l_2": "Kenya",
+            "l_3": "British Somaliland",
+            "l_4": "Palestine",
+            "l_5": "Aden",
+            "l_6": "Cyprus",
+            "l_7": "Marsa Matruh",
+            "l_8": "Alexandria",
+            "l_9": "Libya",
+            "l_10": "Sidi Barrani",
+            "l_11": "Sollum",
+            "l_12": "Kassala",
+            "l_13": "Gallabat",
+            "l_14": "Moyale",
+            "l_15": "Mediterranean",
+            "l_16": "Red Sea",
+            "l_17": "Basra",
+            "l_18": "Baghdad",
+            "l_19": "Haifa",
+            "l_20": "Mombasa",
+            "l_21": "Nile Valley"
         },
         "events": {
-            "e_1": "Formation of the Middle East Command",
-            "e_2": "Outbreak of war with Germany"
+            "e_1": "Attack on Italian frontier posts",
+            "e_2": "Raids on Italian frontier posts",
+            "e_3": "Engagement at Moyale",
+            "e_4": "Delaying action at Kassala",
+            "e_5": "Delaying action at Gallabat"
         },
         "organisations": {
-            "o_1": "Middle East Command",
-            "o_2": "Egyptian Army",
-            "o_3": "War Office"
+            "o_1": "Sudan Defence Force",
+            "o_2": "New Zealand Division",
+            "o_3": "Australian Division",
+            "o_4": "Royal Air Force",
+            "o_5": "South African Air Force"
         }
     },
     "keywords": [
-        "Middle East Command",
-        "World War II",
-        "Military Operations",
-        "Egypt",
-        "Palestine",
-        "Sudan",
-        "Cyprus"
+        "British Infantry",
+        "Cavalry",
+        "Light Batteries",
+        "Italian forces"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Defensive Strategy",
+        "Combat Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Defensive Strategy": [
+            "e_1",
+            "e_3"
+        ],
+        "Combat Engagements": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August, 1939",
+            "date": "July 1940",
             "locations": [
                 "l_1"
             ],
@@ -59,23 +85,61 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Middle East Command is formed as a planning staff to manage military operations in the Middle East at the beginning of World War II."
+            "eventSummary": "A small mobile force is ordered to attack Italian frontier posts."
         },
         {
             "event": "e_2",
-            "date": "3rd September, 1939",
+            "date": "July 1940",
             "locations": [
-                "l_1",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Succinct raids by the Sudan Defence Force against Italian frontier posts are conducted."
+        },
+        {
+            "event": "e_3",
+            "date": "15th July 1940",
+            "locations": [
                 "l_2"
             ],
             "persons": [
                 "p_1"
             ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Company of the King's African Rifles successfully withdraws from an engagement at Moyale."
+        },
+        {
+            "event": "e_4",
+            "date": "4th July 1940",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The outbreak of war with Germany occurs, leading the Middle East Command to assume operational control over troops in Egypt, Palestine, Sudan, and Cyprus."
+            "eventSummary": "The mobile forces engaged in a delaying action at Kassala against Italian superior forces."
+        },
+        {
+            "event": "e_5",
+            "date": "6th July 1940",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Successes continue as mobile forces undertake a delaying action at Gallabat against the Italians."
         }
     ]
 }

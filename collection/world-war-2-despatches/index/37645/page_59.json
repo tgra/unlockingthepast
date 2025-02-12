@@ -1,61 +1,92 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Officer Commanding East Africa Forces",
-            "p_2": "Representative of the Government of Addis Abeba"
+            "p_1": "His Royal Highness di Savoia",
+            "p_2": "General Pralormo",
+            "p_3": "General Bisson Milio",
+            "p_4": "General Gazzera",
+            "p_5": "Brigadier Fowkes",
+            "p_6": "Gerasu Duke",
+            "p_7": "Emperor",
+            "p_8": "General Scala",
+            "p_9": "General Tissi",
+            "p_10": "General Maynardi",
+            "p_11": "General Bertello",
+            "p_12": "General Nam",
+            "p_13": "Fitaurari Misfin"
         },
         "locations": {
-            "l_1": "Addis Abeba",
-            "l_2": "Awash River",
-            "l_3": "Berbera Base"
+            "l_1": "Gimma",
+            "l_2": "Kindo",
+            "l_3": "Bottego",
+            "l_4": "Soddu",
+            "l_5": "Little Ghibbie",
+            "l_6": "Mendi",
+            "l_7": "Dalle",
+            "l_8": "Bedelle",
+            "l_9": "Dembidollo",
+            "l_10": "Ghimbi",
+            "l_11": "Gore",
+            "l_12": "Bonga",
+            "l_13": "Didessa",
+            "l_14": "Iubdo",
+            "l_15": "British Somaliland"
         },
         "events": {
-            "e_1": "Protection of Women and Children in Addis Abeba",
-            "e_2": "Italian Military Command Response",
-            "e_3": "Troops Left in British Somaliland"
+            "e_1": "Surrender of General Pralormo",
+            "e_2": "Occupation of Gimma",
+            "e_3": "Occupation of Bedelle",
+            "e_4": "Attack on Dembi",
+            "e_5": "Surrender of General Bertello"
         },
         "organisations": {
-            "o_1": "Italian Military Command",
-            "o_2": "British Forces",
-            "o_3": "East Africa Force",
-            "o_4": "Africa Division"
+            "o_1": "British troops",
+            "o_2": "Italian armed forces",
+            "o_3": "patriot forces",
+            "o_4": "2nd E.A. Brigade",
+            "o_5": "Nigerian Brigade",
+            "o_6": "Gold Coast Brigade"
         }
     },
     "keywords": [
-        "Protection",
-        "Women and Children",
-        "Italian Troops",
-        "British Forces",
-        "Military Operations"
+        "Gimma",
+        "patriots",
+        "British troops",
+        "Italian armed forces",
+        "occupation",
+        "surrender",
+        "military commanders"
     ],
     "themes": [
         "Military Operations",
-        "International Relations",
-        "Civilian Protection"
+        "Tactical Decisions",
+        "Surrender",
+        "Occupation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "International Relations": [
+        "Strategic Decisions": [
             "e_1",
             "e_2"
-        ],
-        "Civilian Protection": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 1941",
+            "date": "17th June",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_3",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
@@ -64,37 +95,66 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The General Officer Commanding East Africa Forces establishes that Italians are responsible for protecting women and children in Addis Abeba until British forces take over."
+            "eventSummary": "General Pralormo, commander of the 24th Division, refuses to surrender despite being outnumbered and cut off, leading to significant losses for his forces."
         },
         {
             "event": "e_2",
-            "date": "4th April 1941",
+            "date": "21st June",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_2"
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Gimma is occupied by the 2nd E.A. Brigade as part of a broader military advance to secure the area and restrict Italian movement."
+        },
+        {
+            "event": "e_3",
+            "date": "20th June",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_13"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The occupation of Bedelle by the patriots under Fitaurari Misfin results in the capture of a significant number of enemy troops and machinery."
+        },
+        {
+            "event": "e_4",
+            "date": "27th June",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_12"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "In response to the British, the Italian Military Command affirms their ongoing measures for the security and maintenance of the population in Addis Abeba will persist post British occupation."
+            "connectedEvents": [],
+            "eventSummary": "The K.A.R. launches an attack on Dembi, resulting in the capture of General Nam and 700 of his troops."
         },
         {
-            "event": "e_3",
-            "date": "April 1941",
+            "event": "e_5",
+            "date": "28th June",
             "locations": [
-                "l_3"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_11"
+            ],
             "organisations": [
-                "o_2"
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "Troops are allocated in British Somaliland for protective duties and local reconnaissance in support of the East Africa Force."
+            "eventSummary": "General Bertello surrenders to the 2nd E.A. Brigade, marking a significant moment in the campaign as he ends his retreat from British Somaliland."
         }
     ]
 }

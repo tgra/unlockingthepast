@@ -1,112 +1,77 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain (D), Twenty-Second Destroyer Flotilla",
-            "p_2": "Rear Admiral Commanding, Fifteenth Cruiser Squadron"
+            "p_1": "Captain (D)",
+            "p_2": "Captain (D)"
         },
         "locations": {
-            "l_1": "Malta",
-            "l_2": "Leeward",
-            "l_3": "south",
-            "l_4": "west"
+            "l_1": "JERVIS",
+            "l_2": "Malta",
+            "l_3": "Alexandria"
         },
         "events": {
-            "e_1": "Engagement between 4th Division and enemy ships",
-            "e_2": "Air attacks on convoy",
-            "e_3": "Operation B - Dispersal of convoy",
-            "e_4": "Engagement of SIKH with enemy battleship"
+            "e_1": "Operation B",
+            "e_2": "Air Attack"
         },
         "organisations": {
-            "o_1": "Twenty-Second Destroyer Flotilla",
-            "o_2": "Fifteenth Cruiser Squadron"
+            "o_1": "Fourteenth Destroyer Flotilla",
+            "o_2": "Twenty-Second Destroyer Flotilla",
+            "o_3": "1st Division",
+            "o_4": "5th Division",
+            "o_5": "4th Division",
+            "o_6": "3rd Division"
         }
     },
     "keywords": [
-        "engagement",
+        "torpedo",
+        "battleship",
+        "cruisers",
         "convoy",
-        "air attack",
-        "torpedoes",
-        "enemy battleship",
-        "smoke"
+        "enemy",
+        "Operation"
     ],
     "themes": [
         "Military Operations",
         "Naval Engagement",
-        "Convoy Protection",
-        "Air Defense"
+        "Tactical Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_4"
-        ],
-        "Air Defense": [
             "e_2"
         ],
-        "Convoy Protection": [
-            "e_3"
+        "Naval Engagement": [
+            "e_1"
+        ],
+        "Tactical Decisions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1710",
+            "date": "1940",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The 4th Division engages enemy ships at long range but achieves no visible results."
+            "connectedEvents": [],
+            "eventSummary": "The convoy is dispersed following the decision to turn Force B for Alexandria as visibility decreases at 1940."
         },
         {
             "event": "e_2",
-            "date": "Throughout phases 2 and 3",
-            "locations": [
-                "l_1"
-            ],
+            "date": "",
+            "locations": [],
             "persons": [],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Heavy air attacks on the convoy occur, with no damage sustained by the convoy or its escort."
-        },
-        {
-            "event": "e_3",
-            "date": "After 1800",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Operation B is ordered to disperse the convoy for independent travel to Malta during night hours."
-        },
-        {
-            "event": "e_4",
-            "date": "Between 1740 and 1820",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "During the action, SIKH engages an enemy battleship and attempts to fire torpedoes but reports no results."
+            "eventSummary": "During this phase, several torpedo-bomber attacks are made on the striking force, all ineffective, highlighting the defensive nature of the operation."
         }
     ]
 }

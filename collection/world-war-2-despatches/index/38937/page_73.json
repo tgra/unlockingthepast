@@ -1,91 +1,121 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Kesselring",
-            "p_2": "ColonelGeneral von Vietinghoff",
-            "p_3": "FieldMarshal Rommel",
-            "p_4": "Marshal Badoglio"
+            "p_1": "General Clark",
+            "p_2": "Field-Marshal Kesselring",
+            "p_3": "General von Vietinghoff"
         },
         "locations": {
-            "l_1": "Rome",
-            "l_2": "Ostia",
-            "l_3": "Viterbo",
-            "l_4": "Northern Italy",
-            "l_5": "Lake Garda",
-            "l_6": "Sardinia",
-            "l_7": "Corsica",
-            "l_8": "Liguria",
-            "l_9": "Tuscany",
-            "l_10": "Gulf of Gaeta",
-            "l_11": "Calabria",
-            "l_12": "Genoa",
-            "l_13": "Salerno",
-            "l_14": "Neapolitan area",
-            "l_15": "Agropoli"
+            "l_1": "Fiumicino",
+            "l_2": "Mandrioli Pass",
+            "l_3": "Bologna",
+            "l_4": "Monte La Battaglia",
+            "l_5": "Route 7z",
+            "l_6": "Route 65",
+            "l_7": "Route 71",
+            "l_8": "Savio",
+            "l_9": "Imola",
+            "l_10": "Santerno valley",
+            "l_11": "Monghidoro",
+            "l_12": "Loiano",
+            "l_13": "Idice",
+            "l_14": "Prato-Castiglione",
+            "l_15": "Monte delle Formiche"
         },
         "events": {
-            "e_1": "Deployment of German Forces in Italy",
-            "e_2": "Expected Allied Invasion of Italy"
+            "e_1": "The capture of Monte La Battaglia",
+            "e_2": "II Corps new drive",
+            "e_3": "Counter-attack on Monte La Battaglia",
+            "e_4": "Advance on Bologna",
+            "e_5": "Personal order from Hitler",
+            "e_6": "Field-Marshal Kesselring's car accident"
         },
         "organisations": {
-            "o_1": "Tenth Army"
+            "o_1": "Fifth Army",
+            "o_2": "Eighth Army",
+            "o_3": "II Corps",
+            "o_4": "13 Corps",
+            "o_5": "85 Division",
+            "o_6": "88 Division",
+            "o_7": "91 Division",
+            "o_8": "34 Division",
+            "o_9": "6 South African Armoured Division",
+            "o_10": "24 Guards Brigade",
+            "o_11": "U.S. Armoured Division",
+            "o_12": "Tenth Army"
         }
     },
     "keywords": [
-        "German control",
-        "Allied invasion",
-        "parachute divisions",
-        "armoured divisions",
-        "strategic surprise"
+        "Military Operations",
+        "Counter-Attacks",
+        "Advance",
+        "Weather Conditions",
+        "Allied Forces"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Logistics and Resource Management"
+        "Command Decisions",
+        "Weather Impact"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Defensive Strategies": [
-            "e_1"
+        "Diplomacy": [
+            "e_5"
         ],
-        "Logistics and Resource Management": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 1943",
+            "date": "27th September 1944",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_2"
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "German forces are deployed in Italy under the command of Kesselring, ensuring control over Northern Italy and bolstering defenses in anticipation of possible Allied invasion."
+            "eventSummary": "The capture of Monte La Battaglia occurs, marking a crucial point in the advance of the Fifth Army."
         },
         {
             "event": "e_2",
-            "date": "August-September 1943",
+            "date": "1st October 1944",
             "locations": [
-                "l_4",
-                "l_10"
+                "l_1",
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_3"
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "II Corps begins a new drive with 85 Division advancing east of Route 65, aiming to push towards Bologna."
+        },
+        {
+            "event": "e_3",
+            "date": "10/1 October 1944",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_1"
@@ -93,7 +123,49 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The German command anticipates an Allied invasion along the Italian coast, particularly focusing on Naples and Salerno, and prepares appropriate defensive measures."
+            "eventSummary": "A further unsuccessful counter-attack on Monte La Battaglia takes place, reflecting the ongoing struggle."
+        },
+        {
+            "event": "e_4",
+            "date": "October 1944",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Slowly, the advance on Bologna continues amidst poor weather and enemy resistance, as troops aim to gain ground."
+        },
+        {
+            "event": "e_5",
+            "date": "6th October 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A personal order from Hitler is read out to troops, emphasizing the need to hold the Apennine position."
+        },
+        {
+            "event": "e_6",
+            "date": "October 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_12"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Field-Marshal Kesselring is seriously injured in a car accident and does not return to duty until December."
         }
     ]
 }

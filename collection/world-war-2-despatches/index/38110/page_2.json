@@ -1,88 +1,112 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commodore J. Hughes-Hallett",
-            "p_2": "Rear-Admiral W. G. Tennant"
+            "p_1": "General Sir Frederick Morgan"
         },
         "locations": {
-            "l_1": "Portsmouth",
-            "l_2": "French coast",
-            "l_3": "Channel Island",
-            "l_4": "Pas de Calais",
-            "l_5": "United Kingdom"
+            "l_1": "Isle of Wight",
+            "l_2": "United Kingdom",
+            "l_3": "French coast",
+            "l_4": "Dover",
+            "l_5": "Selsey",
+            "l_6": "Dungeness",
+            "l_7": "Thames",
+            "l_8": "Scottish ports",
+            "l_9": "Straits of Dover",
+            "l_10": "Cap d'Antifer",
+            "l_11": "Cap Barfleur"
         },
         "events": {
-            "e_1": "MULBERRY Project",
-            "e_2": "Operation Neptune"
+            "e_1": "Quebec Conference",
+            "e_2": "D-Day Assault",
+            "e_3": "Operation Neptune"
         },
         "organisations": {
-            "o_1": "War Office",
-            "o_2": "Combined Operations Headquarters",
-            "o_3": "Admiralty"
+            "o_1": "C.O.S.S.A.C",
+            "o_2": "Combined Chiefs of Staff"
         }
     },
     "keywords": [
-        "MULBERRY Project",
-        "Operation Neptune",
-        "artificial harbours",
-        "reconnaissance",
-        "Admiralty"
+        "naval plans",
+        "coordination",
+        "military operation",
+        "D-Day",
+        "assault plans",
+        "surprise",
+        "logistic requirements"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Logistical Challenges"
+        "Administrative Planning",
+        "Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Administrative Planning": [
             "e_2"
         ],
-        "Naval Strategy": [
-            "e_1"
-        ],
-        "Logistical Challenges": [
+        "Coordination": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1944",
+            "date": "July 1943",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The MULBERRY Project involves the construction of artificial harbours for military operations, spearheaded by Commodore J. Hughes-Hallett's innovative idea and naval support under Rear-Admiral W. G. Tennant."
+            "eventSummary": "An outline plan for the operation is prepared by C.O.S.S.A.C and approved by the Combined Chiefs of Staff at the Quebec Conference."
         },
         {
             "event": "e_2",
-            "date": "D-Day, June 6, 1944",
+            "date": "June 1944",
             "locations": [
                 "l_2",
-                "l_5"
+                "l_4",
+                "l_6"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
-            "organisations": [
-                "o_2"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "Operation Neptune is the code name for the naval operation supporting the D-Day landings, facing logistical challenges regarding craft and personnel amid the preparation for land assaults on the French coast."
+            "eventSummary": "The D-Day Assault involves a coordinated landing of forces on the beaches, requiring extensive planning and execution."
+        },
+        {
+            "event": "e_3",
+            "date": "June 1944",
+            "locations": [
+                "l_2",
+                "l_5",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Neptune is the naval component of the D-Day assault, involving a complex logistic operation."
         }
     ]
 }

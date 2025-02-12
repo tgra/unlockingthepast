@@ -1,81 +1,100 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Dover",
-            "p_2": "Naval officers"
+            "p_1": "Vice-Admiral",
+            "p_2": "Lord Gort",
+            "p_3": "Captain R. Pim",
+            "p_4": "General Lloyd",
+            "p_5": "General Alexander"
         },
         "locations": {
-            "l_1": "Dover",
-            "l_2": "beaches"
+            "l_1": "Dunkirk",
+            "l_2": "La Panne",
+            "l_3": "Margate",
+            "l_4": "Sheerness",
+            "l_5": "Bray",
+            "l_6": "Malo beach",
+            "l_7": "Ramsgate",
+            "l_8": "Newhaven"
         },
         "events": {
-            "e_1": "Evacuation Operations",
-            "e_2": "Naval Engagements"
+            "e_1": "Evacuation of the B.E.F.",
+            "e_2": "Final phase of the evacuation"
         },
         "organisations": {
-            "o_1": "British Army",
-            "o_2": "French Army",
-            "o_3": "Royal Navy"
+            "o_1": "R.A.F.",
+            "o_2": "B.E.F."
         }
     },
     "keywords": [
-        "air attacks",
-        "embarkation",
-        "disorganisation",
-        "Naval officers",
-        "troops"
+        "evacuation",
+        "artillery",
+        "bombardment",
+        "troops",
+        "minesweepers"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
-        "Disorganisation and Order Restoration"
+        "Artillery Bombardment",
+        "Troop Evacuation",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Naval Engagements": [
+            "e_1",
             "e_2"
         ],
-        "Disorganisation and Order Restoration": [
+        "Artillery Bombardment": [
             "e_1"
+        ],
+        "Troop Evacuation": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "18.6.40",
+            "date": "1st/2nd June",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Naval and military operations are taking place at the beaches near Dover, with troops experiencing disorganisation during embarkation. Naval officers step in to restore order amidst air attacks."
+            "eventSummary": "The evacuation of the British Expeditionary Force (B.E.F.) is expected to commence on the night of 1st/2nd June, following significant enemy artillery activity at Dunkirk and La Panne."
         },
         {
             "event": "e_2",
-            "date": "Between 27th May and 1st June",
+            "date": "not specified",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
             "organisations": [
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Naval engagements occur as ships participate in various military operations, suffering losses due to attacks, contributing significantly to the overall evacuation efforts."
+            "eventSummary": "General Lloyd informs about the new military plan for the final phase of the evacuation, stating that General Alexander will lead this effort, focusing on the uncertainty regarding the French troops and their transport."
         }
     ]
 }

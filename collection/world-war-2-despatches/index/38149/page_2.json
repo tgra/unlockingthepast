@@ -1,69 +1,89 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Professor A. V. Hill"
+            "p_1": "I"
         },
         "locations": {
-            "l_1": "London",
-            "l_2": "Petersham",
-            "l_3": "Solent",
-            "l_4": "Humber",
-            "l_5": "Tyne-Tees",
-            "l_6": "Forth",
-            "l_7": "Clyde"
+            "l_1": "United Kingdom",
+            "l_2": "South",
+            "l_3": "Midlands",
+            "l_4": "North"
         },
         "events": {
-            "e_1": "Battle against the Luftwaffe"
+            "e_1": "outbreak of war",
+            "e_2": "Anti-Aircraft Command establishment"
         },
         "organisations": {
-            "o_1": "Anti-Aircraft Command",
-            "o_2": "Army Operational Research Group"
+            "o_1": "Royal Navy",
+            "o_2": "Territorial Army",
+            "o_3": "Anti-Aircraft Command",
+            "o_4": "B.B.C."
         }
     },
     "keywords": [
         "Anti-Aircraft",
-        "Militia",
-        "Luftwaffe",
+        "defences",
+        "manpower",
         "training",
-        "defense",
-        "radar",
-        "searchlights"
+        "equipment",
+        "conscription"
     ],
     "themes": [
         "Military Operations",
-        "Training and Resources",
-        "Technological Advancements",
-        "Defensive Strategies"
+        "Manpower Issues",
+        "Training",
+        "Equipment Shortage"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
         ],
-        "Training and Resources": [],
-        "Technological Advancements": [],
-        "Defensive Strategies": []
+        "Manpower Issues": [
+            "e_2"
+        ],
+        "Training": [
+            "e_2"
+        ],
+        "Equipment Shortage": [
+            "e_1",
+            "e_2"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1941",
+            "date": "28th April, 1939",
             "locations": [
-                "l_1",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The battle against the Luftwaffe involves elaborate plans for defending key cities like London with anti-aircraft measures, including searchlights and heavy guns, to thwart enemy aircraft targeting aircraft factories and urban centers."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The outbreak of war leads to the mobilization and establishment of Anti-Aircraft Command in preparation for air defense."
+        },
+        {
+            "event": "e_2",
+            "date": "28th July, 1939",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Anti-Aircraft Command establishment faces immediate challenges due to a severe shortage of manpower and equipment."
         }
     ]
 }

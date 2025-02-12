@@ -1,166 +1,162 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral",
-            "p_2": "H.M.S. WARSPITE",
-            "p_3": "H.M.S. FURIOUS",
-            "p_4": "H.M.S. COSSACK",
-            "p_5": "H.M.S. HERO",
-            "p_6": "H.M.S. FOXHOUND",
-            "p_7": "H.M.S. FORESTER",
-            "p_8": "H.M.S. BEDOUIN",
-            "p_9": "H.M.S. PUNJABI",
-            "p_10": "H.M.S. KIMBERLEY",
-            "p_11": "H.M.S. ICARUS",
-            "p_12": "H.M.S. ESKIMO"
+            "p_1": "WARSPITE",
+            "p_2": "FURIOUS",
+            "p_3": "COSSACK",
+            "p_4": "FOXHOUND",
+            "p_5": "BEDOUIN",
+            "p_6": "ESKIMO",
+            "p_7": "HERO",
+            "p_8": "FORESTER",
+            "p_9": "KIMBERLEY"
         },
         "locations": {
-            "l_1": "Vest Fiord",
-            "l_2": "Baroy Island",
-            "l_3": "Ranchet",
-            "l_4": "Narvik",
-            "l_5": "Tranoy Light",
-            "l_6": "Skjel Fiord",
-            "l_7": "Hamnesholm",
-            "l_8": "Ofot Fiord",
-            "l_9": "Framsk"
+            "l_1": "Djupvik",
+            "l_2": "Ofot Fiord",
+            "l_3": "Narvik",
+            "l_4": "Narvik Harbour",
+            "l_5": "Rombaks Fiord",
+            "l_6": "Sildvika",
+            "l_7": "Herjangen"
         },
         "events": {
-            "e_1": "Operation D.W.",
-            "e_2": "Attack on Baroy Island Defences",
-            "e_3": "Reconnaissance Operation",
-            "e_4": "Engagement with Enemy Destroyers"
+            "e_1": "Engagement at Narvik",
+            "e_2": "Attack on enemy destroyers",
+            "e_3": "Destruction of enemy ships",
+            "e_4": "Torpedo attack",
+            "e_5": "Support of destroyer action"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "H.M. Ships"
+            "o_1": "Admiralty"
         }
     },
     "keywords": [
-        "military operation",
-        "reconnaissance",
-        "naval engagement",
-        "defensive structures",
-        "submarine activity"
+        "torpedo",
+        "destroyers",
+        "engagement",
+        "enemy",
+        "Narvik",
+        "warfare"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Reconnaissance Missions",
-        "Engagements with Enemy Forces"
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
         "Naval Warfare": [
+            "e_1",
+            "e_3",
             "e_4"
-        ],
-        "Reconnaissance Missions": [
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 13, 1940",
+            "date": "Unknown",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_2",
+                "l_3",
+                "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_2",
                 "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7",
-                "p_8",
-                "p_9",
-                "p_10",
-                "p_11",
-                "p_12"
+                "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "Admiral signals the fleet to commence Operation D.W., aimed at attacking the German defenses at Narvik, while coordinating movements of various Royal Navy ships."
+            "eventSummary": "The engagement at Narvik involves fierce naval clashes between destroyers as they seek to assert control over strategic waters."
         },
         {
             "event": "e_2",
-            "date": "April 13, 1940",
+            "date": "Unknown",
             "locations": [
-                "l_2",
                 "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
                 "p_5",
+                "p_6",
+                "p_9"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "During the attack on enemy destroyers, various naval forces including those stationed in Narvik coordinate their efforts against the opposing fleet."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
                 "p_6",
                 "p_7",
                 "p_8"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "The fleet launches an assault on the defenses of Baroy Island, targeting any identified German warships or merchant vessels."
-        },
-        {
-            "event": "e_3",
-            "date": "April 13, 1940",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Aircraft from H.M.S. WARSPITE conduct reconnaissance over of the vicinity for German vessels and coastal defenses while confirming no enemy presence on Baroy Island."
+            "eventSummary": "The destruction of enemy ships highlights an aggressive naval strategy in Rombaks Fiord amidst ongoing combat."
         },
         {
             "event": "e_4",
-            "date": "April 13, 1940",
+            "date": "Unknown",
             "locations": [
-                "l_4",
-                "l_8"
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_8"
+                "p_5",
+                "p_6"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "During the naval operation, H.M.S. WARSPITE engages enemy destroyers sighted in Ofot Fiord at long range due to poor visibility."
+            "eventSummary": "Torpedo attacks against enemy vessels showcase the significant efforts made to weaken the opposition fleet near Narvik."
+        },
+        {
+            "event": "e_5",
+            "date": "Unknown",
+            "locations": [
+                "l_2",
+                "l_5"
+            ],
+            "persons": [
+                "p_9"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Support of destroyer action emerges crucial for sustaining offensive operations against the encroaching enemy vessels."
         }
     ]
 }

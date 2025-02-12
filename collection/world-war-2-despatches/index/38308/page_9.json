@@ -1,135 +1,124 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander Third Fleet",
-            "p_2": "A.C.1",
-            "p_3": "Captain D."
+            "p_1": "A.C.1",
+            "p_2": "Commander 5th Fleet",
+            "p_3": "CTF 57"
         },
         "locations": {
-            "l_1": "Ishigaki",
-            "l_2": "Miyara",
-            "l_3": "Leyte",
-            "l_4": "Manus",
-            "l_5": "Sydney",
-            "l_6": "Cootie",
-            "l_7": "Sakishima"
+            "l_1": "Guam",
+            "l_2": "Yonakumi Shima",
+            "l_3": "Matsuyama",
+            "l_4": "North Formosa",
+            "l_5": "Shinchiku",
+            "l_6": "Kiirun harbour",
+            "l_7": "Tanui",
+            "l_8": "Ishigaki",
+            "l_9": "Okinawa"
         },
         "events": {
-            "e_1": "Ishigaki strikes",
-            "e_2": "Dusk CAP landing",
-            "e_3": "Operational plans for British Pacific Fleet",
-            "e_4": "Aircraft exchanges and repairs"
+            "e_1": "Operation Iceberg Oolong",
+            "e_2": "Air attacks on 12th April",
+            "e_3": "Air encounter at 0704",
+            "e_4": "Engagement on the evening sortie"
         },
         "organisations": {
-            "o_1": "British Pacific Fleet",
-            "o_2": "CTF 57",
-            "o_3": "American Task Unit 52.1.3",
-            "o_4": "CTF 112"
+            "o_1": "American air-sea rescue"
         }
     },
     "keywords": [
-        "Ishigaki",
-        "airfield",
-        "strikes",
-        "bombing",
+        "air-sea rescue",
         "Fleet",
-        "H.M.S.",
-        "CGT",
-        "tactical command",
-        "aircraft"
+        "enemy air attacks",
+        "operations",
+        "air encounters",
+        "Japanese forces"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Command",
-        "Air Strikes",
-        "Fleet Coordination",
-        "Repairs"
+        "Air Combat",
+        "Tactical Command"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Air Combat": [
+            "e_2",
+            "e_3",
             "e_4"
         ],
         "Tactical Command": [
-            "e_2",
-            "e_3"
-        ],
-        "Repairs": [
-            "e_4"
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd May",
+            "date": "1st April",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Iceberg Oolong takes place with the Fleet steering for the flying-off position, where tactical command is handed over to A.C.1."
+        },
+        {
+            "event": "e_2",
+            "date": "12th April",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Heavy enemy air attacks are reported, prompting preparations by Task Group Commanders."
+        },
+        {
+            "event": "e_3",
+            "date": "",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The Ishigaki strikes occur, damaging the airfield and resulting in significant enemy aircraft losses."
+            "eventSummary": "At 0704, Seafires engage in an inconclusive encounter with four eastbound Zekes, leading to one being shot down."
         },
         {
-            "event": "e_2",
-            "date": "23rd May",
+            "event": "e_4",
+            "date": "",
             "locations": [
-                "l_6"
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The dusk CAP were landed while radar pickets were recalled, leading to the withdrawal of the Fleet."
-        },
-        {
-            "event": "e_3",
-            "date": "23rd May",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Communication detailing future operations is received, influencing decisions about the repair and utilization of H.M.S. FORMIDABLE."
-        },
-        {
-            "event": "e_4",
-            "date": "24th May",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Efforts on repairs and resupplies are conducted throughout the day following the operational plans established."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "During the evening, the enemy makes a sortie from Ishigaki, which is intercepted by fighters, leading to multiple enemy aircraft being shot down."
         }
     ]
 }

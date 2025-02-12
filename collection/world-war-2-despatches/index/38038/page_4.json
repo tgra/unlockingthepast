@@ -2,93 +2,143 @@
     "namedEntities": {
         "persons": {
             "p_1": "C.S.10",
-            "p_2": "D.17",
-            "p_3": "MUSKETEER",
-            "p_4": "NORFOLK",
-            "p_5": "SHEFFIELD"
+            "p_2": "D.17"
         },
         "locations": {
             "l_1": "Kola Inlet",
-            "l_2": "Murmansk"
+            "l_2": "Murmanks",
+            "l_3": "Altenfjord",
+            "l_4": "74 miles",
+            "l_5": "Force 1",
+            "l_6": "Force 2"
         },
         "events": {
-            "e_1": "Battle of the Convoy",
-            "e_2": "Shadowing of SCHARNHORST"
+            "e_1": "Radar contact by NORFOLK",
+            "e_2": "Engagement of SCHARNHORST",
+            "e_3": "Shadowing of the enemy by Force 1",
+            "e_4": "Attack by 36th Division",
+            "e_5": "Contact of Force 1 with Force 2"
         },
         "organisations": {
-            "o_1": "Force 1",
-            "o_2": "36th Division"
+            "o_1": "36th Division",
+            "o_2": "Force 1",
+            "o_3": "Force 2"
         }
     },
     "keywords": [
         "destroyers",
-        "radar contact",
-        "enemy",
         "convoy",
-        "torpedoes",
-        "SCHARNHORST",
+        "enemy",
+        "radar contact",
+        "shadowing",
+        "attack",
         "fire"
     ],
     "themes": [
         "Military Operations",
         "Naval Engagements",
-        "Command Decisions"
+        "Tactical Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2"
+            "e_2",
+            "e_4"
         ],
         "Naval Engagements": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_5"
         ],
-        "Command Decisions": [
-            "e_2"
+        "Tactical Maneuvers": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not provided",
+            "date": "Unknown",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "NORFOLK makes radar contact with the enemy at 27,000 yards."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Engagement of SCHARNHORST by Force 1 occurs, where the enemy is effectively driven off."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "A determined naval engagement takes place as Force 1 seeks to protect the convoy from the enemy, specifically focusing on intercepting SCHARNHORST through strategic maneuvers and fire."
+            "eventSummary": "Force 1 shadows the enemy while waiting for further engagement opportunities."
         },
         {
-            "event": "e_2",
-            "date": "Not provided",
+            "event": "e_4",
+            "date": "Unknown",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_4",
-                "p_5"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "Force 1 shadows the SCHARNHORST as it moves south-east, allowing Force 2 to be alerted and prepared for an interception while maintaining strategic distance."
+            "eventSummary": "The 36th Division is ordered to attack with torpedoes but faces adverse conditions."
+        },
+        {
+            "event": "e_5",
+            "date": "Unknown",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Force 1 makes radar contact with Force 2 at significant distance."
         }
     ]
 }

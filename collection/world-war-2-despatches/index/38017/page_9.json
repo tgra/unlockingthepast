@@ -1,69 +1,112 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Captain of WAKEFUL",
+            "p_2": "Captain J. Howson",
+            "p_3": "Captain E. Bush"
+        },
         "locations": {
-            "l_1": "U.K.",
-            "l_2": "French ports"
+            "l_1": "Dover",
+            "l_2": "Dunkirk",
+            "l_3": "Bray",
+            "l_4": "La Panne",
+            "l_5": "Zuydecoote Pass",
+            "l_6": "Nieuport"
         },
         "events": {
-            "e_1": "Operation Dynamo",
-            "e_2": "Disembarkation of French Troops in U.K."
+            "e_1": "Evacuation at Dunkirk",
+            "e_2": "Torpedoing of GRAFTON",
+            "e_3": "Air attack on East Mole Pier",
+            "e_4": "Bombing of ships at Bray"
         },
         "organisations": {
-            "o_1": "French Military"
+            "o_1": "Dover Command",
+            "o_2": "Vice Admiral"
         }
     },
     "keywords": [
-        "troops",
-        "disembarkation",
-        "Dynamo",
-        "French vessels",
-        "British vessels"
+        "torpedoed",
+        "bombing",
+        "evacuation",
+        "survivors"
     ],
     "themes": [
         "Military Operations",
-        "Logistics"
+        "Naval Engagements",
+        "Aerial Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Logistics": [
+        "Naval Engagements": [
+            "e_1",
             "e_2"
+        ],
+        "Aerial Warfare": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th May - 5th June 1940",
+            "date": "May 1940",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
             ],
-            "persons": [],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "During Operation Dynamo, French troops disembark in the U.K. from French and British vessels between 27th May and 5th June 1940, totaling 123,095 troops."
+            "eventSummary": "During the evacuation at Dunkirk, several military ships engage in operations to rescue troops. The process is halted due to heavy air attacks, leading to significant losses."
         },
         {
             "event": "e_2",
-            "date": "27th May - 5th June 1940",
+            "date": "Exact date not provided",
             "locations": [
-                "l_1"
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The GRAFTON is torpedoed while on a mission, leading to casualties among her crew and initiating a chaotic sequence of events among nearby vessels."
+        },
+        {
+            "event": "e_3",
+            "date": "Exact date not provided",
+            "locations": [
+                "l_2"
             ],
             "persons": [],
-            "organisations": [
-                "o_1"
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A heavy air attack commences on East Mole Pier at Dunkirk, lasting for over two hours and causing damage to ships and halting troop embarks."
+        },
+        {
+            "event": "e_4",
+            "date": "Exact date not provided",
+            "locations": [
+                "l_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The disembarkation of French troops in the U.K. occurs, with significant numbers transported across various dates from different vessels."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "During an air attack, ships lying off Bray come under renewed bombings, compounding the difficulties faced during the evacuation."
         }
     ]
 }

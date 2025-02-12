@@ -1,64 +1,72 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "R.A.F.",
-            "p_2": "Air Ministry"
+            "p_1": "G.H.Q.",
+            "p_2": "G.O.C.",
+            "p_3": "C.-in-C. -China Fleet",
+            "p_4": "Edough"
         },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Singapore Island",
-            "l_3": "Kelantan State",
-            "l_4": "Alor Star",
-            "l_5": "Kota Bharu"
+            "l_1": "Siamese coast",
+            "l_2": "Malaya",
+            "l_3": "Singora",
+            "l_4": "Patani",
+            "l_5": "Kuala Lumpur",
+            "l_6": "Butterworth",
+            "l_7": "Singapore Island",
+            "l_8": "Sime Road",
+            "l_9": "Indo-China",
+            "l_10": "Borneo",
+            "l_11": "Kota Bahru"
         },
         "events": {
-            "e_1": "Aerodrome Construction",
-            "e_2": "Labour Negotiations",
-            "e_3": "Joint Priorities Committee Establishment",
-            "e_4": "State of Construction Report"
+            "e_1": "Operation Execution Conference",
+            "e_2": "Formation of Norgroup Headquarters",
+            "e_3": "Outbreak of War",
+            "e_4": "Japanese Reconnaissance Flights"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Civil Government"
+            "o_1": "R.A.F.",
+            "o_2": "Army",
+            "o_3": "A.H.Q.",
+            "o_4": "IIIrd (Indian) Corps",
+            "o_5": "R.A.F. Far East Command",
+            "o_6": "F.E.C.B."
         }
     },
     "keywords": [
-        "Malaya",
-        "aerodromes",
-        "construction",
-        "Labour Committee",
-        "air bases",
-        "war",
-        "tropical rainfall"
+        "demolition",
+        "railroad",
+        "air strength",
+        "Japanese invasion",
+        "military operation",
+        "conference"
     ],
     "themes": [
         "Military Operations",
-        "Construction Challenges",
-        "Labour Management",
-        "Supply Chain Issues"
+        "Strategic Decisions",
+        "Diplomacy",
+        "Intelligence"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_4"
-        ],
-        "Construction Challenges": [
-            "e_1",
-            "e_4"
-        ],
-        "Labour Management": [
             "e_2"
         ],
-        "Supply Chain Issues": [
-            "e_3"
+        "Diplomacy": [
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1941",
+            "date": "November 22, 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -69,57 +77,57 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3",
                 "e_4"
             ],
-            "eventSummary": "Aerodrome construction efforts face major challenges including site location, poor mechanical plant condition, and insufficient labor due to the growing demands of defense expansion."
+            "eventSummary": "At a conference, the chances of executing military operations in the Singora-Patani area are discussed, emphasizing the need for precise timing to prevent Japanese aggression."
         },
         {
             "event": "e_2",
-            "date": "May 1941",
+            "date": "July, 1941",
             "locations": [
-                "l_1"
+                "l_5",
+                "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_2"
+                "o_3",
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Negotiations with the Civil Government begin to address labor shortages for defense expansion, leading to the formation of locally enlisted works units."
+            "connectedEvents": [],
+            "eventSummary": "Norgroup Headquarters is formed as part of operation control in support of the Army in Northern Malaya, tasked with command and advice on air operations."
         },
         {
             "event": "e_3",
-            "date": "Spring 1941",
+            "date": "November 22, 1941",
             "locations": [
-                "l_1"
+                "l_7"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "persons": [
+                "p_3"
             ],
-            "eventSummary": "A Joint Priorities Committee is established to allocate supplies for construction projects amidst growing demands and material shortages."
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Just before the war breaks out, an operations room is completed in Singapore Island to aid in military planning."
         },
         {
             "event": "e_4",
-            "date": "December 1, 1941",
+            "date": "October 1941",
             "locations": [
-                "l_1",
+                "l_10",
                 "l_2"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_6"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "A report on the state of construction reveals that existing R.A.F stations are at risk due to lack of dispersal and camouflage, underscoring major deficiencies in military preparedness."
+            "connectedEvents": [],
+            "eventSummary": "Japanese reconnaissance flights over Borneo and Malaya increase, indicating a buildup of forces in preparation for potential operations."
         }
     ]
 }

@@ -1,61 +1,103 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major General C. R. C. Lane"
+            "p_1": "GENERAL SIR H. MAITLAND WILSON",
+            "p_2": "Prime Minister",
+            "p_3": "Chief of the Imperial General Staff"
         },
         "locations": {
-            "l_1": "Iraq",
-            "l_2": "Persia",
-            "l_3": "Basra",
-            "l_4": "Khaniqin",
-            "l_5": "Teheran",
-            "l_6": "Hamadan",
-            "l_7": "Chalus",
-            "l_8": "Manjil",
-            "l_9": "Mianeh",
-            "l_10": "Tabriz"
+            "l_1": "Persia",
+            "l_2": "Iraq",
+            "l_3": "Baghdad",
+            "l_4": "South Russia",
+            "l_5": "Caucasia",
+            "l_6": "Egypt",
+            "l_7": "Persian Gulf"
         },
         "events": {
-            "e_1": "Reorganization of the Command",
-            "e_2": "Troop Deployment in Persia and Iraq"
+            "e_1": "Formation of Persia and Iraq Command",
+            "e_2": "Appointment of Commander-in-Chief",
+            "e_3": "Opening of General Headquarters in Baghdad"
         },
         "organisations": {
-            "o_1": "General Headquarters Middle East",
-            "o_2": "War Office"
+            "o_1": "War Office",
+            "o_2": "General Headquarters Middle -East",
+            "o_3": "Tenth Army",
+            "o_4": "Eighth Army"
         }
     },
     "keywords": [
-        "Military",
-        "Reorganization",
         "Command",
-        "Administration",
-        "Troops",
-        "Persia",
-        "Iraq"
+        "Germans",
+        "Caucasia",
+        "oil fields",
+        "Supplies",
+        "War Office"
     ],
     "themes": [
         "Military Operations",
-        "Troop Deployments",
-        "Administrative Changes"
+        "Strategic Decisions",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2"
-        ],
-        "Administrative Changes": [
-            "e_1"
         ],
         "Strategic Decisions": [
-            "e_2"
+            "e_1"
+        ],
+        "Logistics": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th August 1942",
+            "date": "August, 1942",
             "locations": [
                 "l_1",
                 "l_2",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The formation of a separate Command in Persia and Iraq is established by the War Office as a response to German advances."
+        },
+        {
+            "event": "e_2",
+            "date": "21st August, 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "GENERAL SIR H. MAITLAND WILSON takes up his appointment as Commander-in-Chief for the newly formed Persia and Iraq Command."
+        },
+        {
+            "event": "e_3",
+            "date": "15th September, 1942",
+            "locations": [
                 "l_3"
             ],
             "persons": [
@@ -64,30 +106,8 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The reorganization of the command is implemented to streamline operations, allowing the Commander of the Tenth Army to focus on military tasks while administrative duties are delegated."
-        },
-        {
-            "event": "e_2",
-            "date": "September 1942",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "To counter a possible German invasion, the deployment of troops in Persia and Iraq is underway, involving multiple divisions and necessitating significant organizational and logistical preparation."
+            "connectedEvents": [],
+            "eventSummary": "General Headquarters opens in Baghdad, marking a crucial step in organizing the strategic response in the region."
         }
     ]
 }

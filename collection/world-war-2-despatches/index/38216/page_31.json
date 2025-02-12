@@ -1,112 +1,122 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Admiral Sir Tom Phillips",
-            "p_2": "C.-in-C., Far East"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Kota Bahru",
-            "l_2": "Seletar",
-            "l_3": "Cambodia",
-            "l_4": "Gulf of Siam",
-            "l_5": "Siam",
-            "l_6": "Bangkok",
-            "l_7": "Ko Kong",
-            "l_8": "Patani",
-            "l_9": "Sungei Patani"
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Kahang",
+            "l_4": "India",
+            "l_5": "Australia",
+            "l_6": "Seletar",
+            "l_7": "Kallang",
+            "l_8": "Sumatra",
+            "l_9": "Johore",
+            "l_10": "Muar",
+            "l_11": "Batu Pahat",
+            "l_12": "Mersing",
+            "l_13": "Endau",
+            "l_14": "north Johore"
         },
         "events": {
-            "e_1": "Operation Matador",
-            "e_2": "Reconnaissance of Ko Kong",
-            "e_3": "Sightings of Japanese vessels"
+            "e_1": "Arrival of Further Convoys",
+            "e_2": "Japanese landings on the Johore coast",
+            "e_3": "Landing in the Mersing Endau area",
+            "e_4": "General withdrawal of forces to Singapore Island"
         },
         "organisations": {
             "o_1": "No. 205 (FB) Squadron",
-            "o_2": "No. 8 (GR) Squadron, R.A.A.F.",
-            "o_3": "G.H.Q.",
-            "o_4": "B.O.A.C."
+            "o_2": "No. 151 M.U.",
+            "o_3": "No. 17 Squadron",
+            "o_4": "No. 135 Squadron",
+            "o_5": "No. 136 (F) Squadron",
+            "o_6": "No. 232 (F) Squadron",
+            "o_7": "62 (B) Squadron",
+            "o_8": "No. 8 (GR) R.A.A.F. Squadrons",
+            "o_9": "Nos. 84 (B) and 211 (B) Squadrons"
         }
     },
     "keywords": [
-        "Reconnaissance",
-        "Japanese convoys",
-        "Gulf of Siam",
-        "Operation Matador",
-        "Military Patrol"
+        "Air Forces",
+        "Singapore",
+        "Convoys",
+        "Japanese",
+        "Hurricanes",
+        "Withdrawals"
     ],
     "themes": [
         "Military Operations",
-        "Reconnaissance Efforts",
-        "Naval Engagements"
+        "Reinforcements",
+        "Air Superiority",
+        "Japanese Advance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Reconnaissance Efforts": [
+        "Reinforcements": [
+            "e_1"
+        ],
+        "Japanese Advance": [
             "e_2",
             "e_3"
         ],
-        "Naval Engagements": [
-            "e_3"
+        "Withdrawal": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "7th December 1941",
+            "date": "January 22nd, 24th, and 28th",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": {},
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Matador is decided against due to the lack of reestablished contact with the main Japanese convoys and the poor reconnaissance conditions."
+            "connectedEvents": [],
+            "eventSummary": "Further convoys arrive at Singapore, bringing troops and reinforcements."
         },
         {
             "event": "e_2",
-            "date": "7th December 1941",
+            "date": "January 16th to 18th",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_9",
+                "l_10",
+                "l_11"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The reconnaissance of Ko Kong is initiated to locate Japanese convoy activities as per G.H.Q.'s orders."
+            "persons": {},
+            "organisations": {},
+            "connectedEvents": [],
+            "eventSummary": "Japanese forces successfully land on the Johore coast, forcing Allied troops to withdraw."
         },
         {
             "event": "e_3",
-            "date": "7th December 1941",
+            "date": "January 26th",
             "locations": [
-                "l_4",
-                "l_8"
+                "l_12"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
+            "persons": {},
+            "organisations": {},
+            "connectedEvents": [],
+            "eventSummary": "A Japanese landing takes place in the Mersing Endau area."
+        },
+        {
+            "event": "e_4",
+            "date": "January 27th",
+            "locations": [
+                "l_2"
             ],
-            "eventSummary": "Multiple sightings of Japanese vessels occur, prompting military responses and adjustments in reconnaissance activities."
+            "persons": {},
+            "organisations": {},
+            "connectedEvents": [],
+            "eventSummary": "Allied forces execute a general withdrawal to Singapore Island."
         }
     ]
 }

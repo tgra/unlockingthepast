@@ -1,60 +1,53 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral A. G. Kirk",
-            "p_2": "Rear-Admiral J. Wilkes"
+            "p_1": "Rear-Admiral A. G. Kirk, U.S.N.",
+            "p_2": "Rear-Admiral J. Wilkes, U.S.N."
         },
         "locations": {
-            "l_1": "Bay of the Seine",
-            "l_2": "Ile de Bas",
-            "l_3": "Cherbourg",
-            "l_4": "Havre",
-            "l_5": "Western Channel",
-            "l_6": "south coast of England"
+            "l_1": "Mediterranean",
+            "l_2": "Channel",
+            "l_3": "Ile de Bas",
+            "l_4": "Cherbourg",
+            "l_5": "Havre",
+            "l_6": "Western Channel",
+            "l_7": "Bay of the Seine",
+            "l_8": "Portsmouth",
+            "l_9": "South Coast of England"
         },
         "events": {
-            "e_1": "D Day",
-            "e_2": "H Hour",
-            "e_3": "Engagement off Ile de Bas",
-            "e_4": "Operation Neptune"
+            "e_1": "Operation Neptune",
+            "e_2": "D Day"
         },
         "organisations": {
             "o_1": "British Admiralty",
-            "o_2": "U.S. Navy",
-            "o_3": "Allied Expeditionary Force",
-            "o_4": "Coastal Command",
-            "o_5": "Commander Landing Craft and Bases, 11th Amphibious Force"
+            "o_2": "Allied Expeditionary Force",
+            "o_3": "U.S. Naval Command",
+            "o_4": "Commander Landing Craft and Bases, 11th Amphibious Force",
+            "o_5": "Coastal Command"
         }
     },
     "keywords": [
+        "repair facilities",
         "naval activity",
         "minelaying",
         "assault ships",
-        "enemy U-Boat",
-        "tidal conditions",
         "air superiority"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategies",
-        "Enemy Engagements",
-        "Planning and Logistics"
+        "Naval Strategy",
+        "Air Superiority"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
+            "e_2"
         ],
-        "Naval Strategies": [
-            "e_2",
-            "e_3"
+        "Naval Strategy": [
+            "e_1"
         ],
-        "Enemy Engagements": [
-            "e_3"
-        ],
-        "Planning and Logistics": [
-            "e_1",
+        "Air Superiority": [
             "e_2"
         ]
     },
@@ -63,61 +56,9 @@
             "event": "e_1",
             "date": "5th June",
             "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "D Day is selected as the date for the large-scale invasion, ensuring readiness for the assault on enemy territory."
-        },
-        {
-            "event": "e_2",
-            "date": "17th May",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "H Hour is determined based on tidal conditions and obstacles, impacting the planned assault on D Day."
-        },
-        {
-            "event": "e_3",
-            "date": "29th April",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "An engagement occurs off Ile de Bas as enemy naval activity increases, resulting in the sinking of both allied and enemy ships."
-        },
-        {
-            "event": "e_4",
-            "date": "N/A",
-            "locations": [
-                "l_3",
-                "l_4"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1",
@@ -125,13 +66,34 @@
             ],
             "organisations": [
                 "o_1",
+                "o_2",
                 "o_3",
-                "o_4"
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "Operation Neptune is carried out with significant naval cooperation, leading to preparations for D Day."
+            "eventSummary": "Operation Neptune is prepared with considerable planning concerning tidal conditions, leading to the selection of D Day on 5th June."
+        },
+        {
+            "event": "e_2",
+            "date": "5th June",
+            "locations": [
+                "l_2",
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "D Day, the day of the Normandy landings, is determined after extensive planning involving the positioning of obstacles on the beaches."
         }
     ]
 }

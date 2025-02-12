@@ -1,72 +1,80 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Gott",
-            "p_2": "Brigadier Sir Brian Robertson",
-            "p_3": "General Holmes"
+            "p_1": "Brigadier Gatehouse",
+            "p_2": "General Ritchie",
+            "p_3": "Rommel"
         },
         "locations": {
-            "l_1": "Sidi Hamza",
-            "l_2": "Matruh",
-            "l_3": "Bagush",
-            "l_4": "El Alamein",
-            "l_5": "El Daba",
-            "l_6": "Sidi Abd el Rahman",
-            "l_7": "Qattara Depression",
-            "l_8": "Alexandria",
-            "l_9": "Deir el Shein",
-            "l_10": "Bab el Qattara"
+            "l_1": "Alem Hamza",
+            "l_2": "Sidi Breghisc",
+            "l_3": "Bir Temrad",
+            "l_4": "Carmusa",
+            "l_5": "Derma",
+            "l_6": "Agedabia",
+            "l_7": "Mechili",
+            "l_8": "Msus",
+            "l_9": "Gebel Akhdar",
+            "l_10": "Martuba",
+            "l_11": "Cirene",
+            "l_12": "El Faidia",
+            "l_13": "Barce",
+            "l_14": "Bengasi",
+            "l_15": "Tobruk",
+            "l_16": "Appollonia"
         },
         "events": {
-            "e_1": "Withdrawal of the 13th Corps",
-            "e_2": "Break-out of the 9th Corps",
-            "e_3": "Enemy Occupation of El Alamein",
-            "e_4": "July 1st Attack on the 1st South African Division",
-            "e_5": "Counter-attack by the 13th Corps"
+            "e_1": "Battle of Alem Hamza",
+            "e_2": "Action of the 4th Armoured Brigade",
+            "e_3": "Pursuit to Agedabia",
+            "e_4": "Occupation of Derna",
+            "e_5": "Capture of Barce",
+            "e_6": "Consolidation of the 4th Indian Division"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "New Zealand Division",
-            "o_3": "5th Indian Division",
-            "o_4": "7th Motor Brigade",
-            "o_5": "18th Indian Infantry Brigade Group"
+            "o_1": "4th Indian Division",
+            "o_2": "5th Brigade",
+            "o_3": "7th Brigade",
+            "o_4": "4th Armoured Brigade",
+            "o_5": "7th Armoured Division",
+            "o_6": "Support Group",
+            "o_7": "13th Corps"
         }
     },
     "keywords": [
-        "artillery",
-        "enemy",
-        "withdrawal",
-        "occupation",
-        "counter-attack",
-        "fortifications"
+        "attack",
+        "prisoners",
+        "retreat",
+        "resistance",
+        "occupation"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Tactical Engagements",
-        "Defensive Positions"
+        "Pursuit",
+        "Resistance",
+        "Occupation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
+            "e_3"
+        ],
+        "Pursuit": [
+            "e_3"
+        ],
+        "Resistance": [
+            "e_1"
+        ],
+        "Occupation": [
             "e_4",
             "e_5"
-        ],
-        "Strategic Decisions": [
-            "e_1",
-            "e_5"
-        ],
-        "Defensive Positions": [
-            "e_3",
-            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 27",
+            "date": "16th December",
             "locations": [
                 "l_1"
             ],
@@ -74,16 +82,19 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The 13th Corps engages with the enemy around Sidi Hamza and is ordered to withdraw."
+            "eventSummary": "On the 16th December, the New Zealanders and Poles capture half the position at Alem Hamza and take many prisoners, while the 4th Indian Division faces challenges."
         },
         {
             "event": "e_2",
-            "date": "June 28-29",
+            "date": "16th December",
             "locations": [
                 "l_2",
                 "l_3"
@@ -92,71 +103,68 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The 9th Corps successfully fights their way out during the night despite losses."
-        },
-        {
-            "event": "e_3",
-            "date": "June 29-30",
-            "locations": [
-                "l_4",
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "The enemy occupies El Alamein, pressing forward despite opposition from the 13th Corps."
-        },
-        {
-            "event": "e_4",
-            "date": "July 1",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
                 "o_4"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The enemy launches an attack on the 1st South African Division, which is holding the fortifications."
+            "eventSummary": "The 4th Armoured Brigade is ordered into action on the 16th December, facing rough conditions but causing significant enemy confusion."
         },
         {
-            "event": "e_5",
-            "date": "July 2-3",
+            "event": "e_3",
+            "date": "17th December",
             "locations": [
-                "l_5",
                 "l_4"
             ],
             "persons": [
-                "p_1",
+                "p_2",
                 "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_5",
+                "o_7"
             ],
-            "connectedEvents": [
-                "e_3",
-                "e_4"
+            "connectedEvents": [],
+            "eventSummary": "On the 17th December, the pursuit to Agedabia begins with the enemy retreating in separate directions."
+        },
+        {
+            "event": "e_4",
+            "date": "19th December",
+            "locations": [
+                "l_5"
             ],
-            "eventSummary": "The 13th Corps counter-attacks to regain tactical initiative, attacking the enemy in flank and rear."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The occupation of Derna occurs on the 19th December as part of the advances made by the 4th Indian Division."
+        },
+        {
+            "event": "e_5",
+            "date": "23rd December",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Barce is captured on the 23rd December after the 4th Indian Division's efforts to restore law and order."
+        },
+        {
+            "event": "e_6",
+            "date": "by December 26th",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "By December 26th, all organised resistance in the Gebel Akhdar ceases and the 4th Indian Division takes charge of the region."
         }
     ]
 }

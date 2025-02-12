@@ -1,50 +1,47 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Freyberg",
-            "p_2": "General Weston",
-            "p_3": "Lieut.-Colonel J. Campbell"
+            "p_1": "Lieut.-General Sir Noel Beresford-Peirse",
+            "p_2": "General Creagh",
+            "p_3": "General Messervy"
         },
         "locations": {
-            "l_1": "Crete",
-            "l_2": "Suda Bay",
-            "l_3": "Heraklion",
-            "l_4": "Retimo",
-            "l_5": "Canea",
-            "l_6": "Tymbaki",
-            "l_7": "Sphakia",
-            "l_8": "Alexandria",
-            "l_9": "Egypt"
+            "l_1": "Matruh",
+            "l_2": "Egyptian frontier",
+            "l_3": "Sollum",
+            "l_4": "Halfaya Pass",
+            "l_5": "Musaid",
+            "l_6": "Bir Waer",
+            "l_7": "Capuzzo",
+            "l_8": "Bardia",
+            "l_9": "Tobruk"
         },
         "events": {
-            "e_1": "Evacuation of Crete",
-            "e_2": "Battle of Crete",
-            "e_3": "Landing of enemy troops in Canea"
+            "e_1": "Battle of Capuzzo",
+            "e_2": "Attack on Halfaya",
+            "e_3": "Engagement at Sidi Omar"
         },
         "organisations": {
-            "o_1": "Royal Marines",
-            "o_2": "16th Infantry Brigade",
-            "o_3": "5th New Zealand Brigade",
-            "o_4": "19th Australian Brigade",
-            "o_5": "Layforce",
-            "o_6": "1st Battalion Leicester Regiment",
-            "o_7": "2nd Battalion Argyll and Sutherland Highlanders"
+            "o_1": "7th Armoured Division",
+            "o_2": "11th Hussars",
+            "o_3": "4th Armoured Brigade",
+            "o_4": "22nd Guards Brigade",
+            "o_5": "11th Indian Infantry Brigade",
+            "o_6": "Central India Horse"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Reinforcements",
-        "Enemy Troops",
-        "Canea",
-        "Suda Bay",
-        "Heraklion",
-        "Withdrawal"
+        "armoured forces",
+        "battle",
+        "offensive",
+        "infantry",
+        "enemy",
+        "tanks"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Evacuation",
-        "Resistance Against Enemy Forces"
+        "Tactical Maneuvering",
+        "Engagements"
     ],
     "topicModel": {
         "Military Operations": [
@@ -52,76 +49,67 @@
             "e_2",
             "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
-        ],
-        "Evacuation": [
-            "e_1"
-        ],
-        "Resistance Against Enemy Forces": [
-            "e_2"
+        "Tactical Maneuvering": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "30th-31st May",
+            "date": "16th June",
             "locations": [
-                "l_1",
-                "l_9"
+                "l_7",
+                "l_6"
             ],
             "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The evacuation of Crete occurs amid increasing enemy forces on the island, culminating in the withdrawal of remaining garrisons after significant fighting."
-        },
-        {
-            "event": "e_2",
-            "date": "26th-31st May",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
                 "p_2",
                 "p_3"
             ],
             "organisations": [
-                "o_5",
-                "o_6",
-                "o_7"
+                "o_1",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1",
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Battle of Crete sees intensive fighting and air bombing, leading to the decision for evacuation as enemy forces mount on the island."
+            "eventSummary": "The 22nd Guards Brigade occupies Capuzzo and Bir Waer, taking prisoners and inflicting casualties on enemy tanks during the battle."
+        },
+        {
+            "event": "e_2",
+            "date": "16th June",
+            "locations": [
+                "l_8",
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The attack on Halfaya encounters stiff resistance, with enemy forces holding their positions despite the efforts of the 7th Armoured Division."
         },
         {
             "event": "e_3",
-            "date": "May",
+            "date": "17th June",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_4"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_2"
+            "persons": [
+                "p_2",
+                "p_3"
             ],
-            "eventSummary": "Enemy troops establish a strong presence in Canea, forcing adjustments in strategy and leading to intensified efforts in the battle."
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An engagement occurs at Sidi Omar as enemy tanks advance from the south, prompting a tactical withdrawal by the 7th Armoured Brigade."
         }
     ]
 }

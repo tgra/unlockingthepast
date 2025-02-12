@@ -1,89 +1,142 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander Hubback",
-            "p_2": "British officers"
+            "p_1": "General Bethouart",
+            "p_2": "Lord Cork",
+            "p_3": "Colonel Gubbins",
+            "p_4": "Major May"
         },
         "locations": {
-            "l_1": "Narvik",
-            "l_2": "Bodo",
-            "l_3": "Hemnes Peninsula",
-            "l_4": "Beisfjord",
-            "l_5": "Denmark"
+            "l_1": "Bjerkvik",
+            "l_2": "Gratangen",
+            "l_3": "Herjangen Fjord",
+            "l_4": "Ankenes peninsula",
+            "l_5": "Bodo",
+            "l_6": "Mosjoen",
+            "l_7": "Mo",
+            "l_8": "Narvik",
+            "l_9": "Hundalen area",
+            "l_10": "Oijord peninsula",
+            "l_11": "Ofot Fjord",
+            "l_12": "Skaanland",
+            "l_13": "Ballangen"
         },
         "events": {
-            "e_1": "Evacuation of Bodo",
-            "e_2": "Action on the Hemnes Peninsula"
+            "e_1": "Landing at Bjerkvik",
+            "e_2": "Operation in Mosjoen area",
+            "e_3": "Naval bombardment preceding landing",
+            "e_4": "Reinforcement at Mo"
         },
         "organisations": {
-            "o_1": "French Army",
-            "o_2": "German Army",
-            "o_3": "Naval and Air Force"
+            "o_1": "Irish Guards",
+            "o_2": "Demi-Brigade of Chasseurs Alpins",
+            "o_3": "South Wales Borderers",
+            "o_4": "Polish Brigade",
+            "o_5": "Foreign Legion",
+            "o_6": "Scissors Force",
+            "o_7": "1st Bn. the Scots Guards",
+            "o_8": "24th (Guards) Brigade"
         }
     },
     "keywords": [
-        "air power",
-        "low-flying attacks",
-        "surprise landings",
-        "supply by air",
-        "Casualties",
-        "losses",
-        "Naval operations"
+        "surrender",
+        "bombardment",
+        "operations",
+        "troops",
+        "reinforcement",
+        "weather",
+        "enemy",
+        "air attacks",
+        "casualties"
     ],
     "themes": [
         "Military Operations",
-        "Air Superiority",
-        "Troop Movements",
-        "Logistics"
+        "Strategic Decisions",
+        "Allied Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Air Superiority": [
-            "e_1",
-            "e_2"
-        ],
-        "Logistics": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "13th May - 8th June",
+            "date": "8th May",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_10"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_3",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The evacuation of Bodo is undertaken with 2,500 French troops transported into destroyers under Commander Hubback's supervision amidst heavy air operations."
+            "eventSummary": "The landing at Bjerkvik on 8th May is successful, facilitated by a naval bombardment, with minimal losses."
         },
         {
             "event": "e_2",
-            "date": "Date unspecified",
+            "date": "20th April",
             "locations": [
-                "l_3"
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2",
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 20th April, troops were sent to Bodo in response to developments at and south of Mosjoen, indicating a tactical reassessment."
+        },
+        {
+            "event": "e_3",
+            "date": "8th May",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_5"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "On the Hemnes Peninsula, German forces conduct surprise landings backed by low-flying air attacks, disrupting the defensive positions of Allied troops."
+            "eventSummary": "A naval bombardment precedes the successful landing at Bjerkvik, enabling the Allied forces to engage the enemy."
+        },
+        {
+            "event": "e_4",
+            "date": "After 20th April",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_6",
+                "o_8"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "After assessing the situation in Mosjoen, reinforcements are sent to Mo, highlighting the strategic importance of this location."
         }
     ]
 }

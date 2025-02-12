@@ -1,123 +1,180 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General H. C. Loyd",
-            "p_2": "Major-General Hon. H. R. L. G. Alexander",
-            "p_3": "Major-General B. L. Montgomery",
-            "p_4": "Major-General D. G. Johnson",
-            "p_5": "Colonel Bertschi",
-            "p_6": "General Georges"
+            "p_1": "LieutenantGeneral Sir John Dill",
+            "p_2": "LieutenantGeneral W. G. Lindsell",
+            "p_3": "General Georges",
+            "p_4": "General Gamelin",
+            "p_5": "Lieutenant-General H. R. Pownall",
+            "p_6": "Général de Brigade Gillard"
         },
         "locations": {
-            "l_1": "Amiens",
-            "l_2": "Habarcq",
-            "l_3": "Arras",
-            "l_4": "Bouvines",
-            "l_5": "Lannoy",
-            "l_6": "Maulde-Gruson",
-            "l_7": "Saar front",
-            "l_8": "Lille"
+            "l_1": "Le Mans",
+            "l_2": "Laval",
+            "l_3": "Camberley",
+            "l_4": "Cherbourg",
+            "l_5": "Chateau de la Blanchardi re",
+            "l_6": "Amiens",
+            "l_7": "Mantes-sur-Seine",
+            "l_8": "Maulde",
+            "l_9": "Menin",
+            "l_10": "Autryche-sur-Esacaut",
+            "l_11": "Grand Quartier General",
+            "l_12": "Roubaix",
+            "l_13": "Tourcoing",
+            "l_14": "North of France",
+            "l_15": "river Lys/Armentières",
+            "l_16": "Seine",
+            "l_17": "Somme"
         },
         "events": {
-            "e_1": "Move Forward",
-            "e_2": "Saar Detachment",
-            "e_3": "Occupation of the Line"
+            "e_1": "Landing of troops",
+            "e_2": "Move to the Belgian Frontier",
+            "e_3": "Concentration of General Headquarters",
+            "e_4": "Agreement on Frontage for British Expeditionary Force",
+            "e_5": "Reconnaissance of sector for British Expeditionary Force",
+            "e_6": "1st Corps move into sector"
         },
         "organisations": {
-            "o_1": "British Expeditionary Force",
-            "o_2": "French Zone des Armees",
-            "o_3": "Royal Engineers",
-            "o_4": "Auxiliary Military Pioneer Corps",
-            "o_5": "X Force"
+            "o_1": "Royal Army Service Corps",
+            "o_2": "British Expeditionary Force"
         }
     },
     "keywords": [
-        "British Army",
-        "traffic regulation",
-        "road movement",
-        "anti-tank obstacles",
-        "defensive systems"
+        "troops",
+        "vehicles",
+        "communication",
+        "assembly area",
+        "hospitality",
+        "operation",
+        "headquarters",
+        "concentration"
     ],
     "themes": [
         "Military Operations",
-        "Traffic Management",
-        "Defensive Strategies",
-        "International Cooperation"
+        "Logistics",
+        "Communication",
+        "Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Traffic Management": [
-            "e_1"
-        ],
-        "Defensive Strategies": [
-            "e_2",
-            "e_3"
-        ],
-        "International Cooperation": [
+        "Logistics": [
             "e_1",
-            "e_2"
+            "e_3"
+        ],
+        "Communication": [
+            "e_2",
+            "e_4"
+        ],
+        "Coordination": [
+            "e_5",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd October",
+            "date": "",
             "locations": [
-                "l_6"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "The 3rd Corps takes over the Maulde-Gruson sector from the French, marking a key transition in the military operation."
+            "eventSummary": "Troops land at various ports and are moved to assembly areas over a span of days."
         },
         {
             "event": "e_2",
-            "date": "4th December",
+            "date": "22nd September",
             "locations": [
-                "l_7"
+                "l_1",
+                "l_6"
             ],
             "persons": [
-                "p_6"
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "A British infantry brigade occupies the Saar front under French command, successfully integrating into the military line."
+            "connectedEvents": [
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "A telegram is received from General Georges regarding the British Expeditionary Force's sector before the move to the Belgian frontier."
         },
         {
             "event": "e_3",
-            "date": "By early November",
+            "date": "21st September",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Concentration of General Headquarters Staff and essential units is completed."
+        },
+        {
+            "event": "e_4",
+            "date": "26th September",
+            "locations": [
+                "l_8",
+                "l_12",
+                "l_13"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "General Georges agrees to frontline adjustments for the British Expeditionary Force."
+        },
+        {
+            "event": "e_5",
+            "date": "24th and 25th September",
+            "locations": [
+                "l_8"
             ],
             "persons": [
                 "p_3",
-                "p_4"
+                "p_5"
             ],
             "organisations": [
-                "o_1",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Reconnaissance of the sector proposed for the British Expeditionary Force occurs."
+        },
+        {
+            "event": "e_6",
+            "date": "26th September",
+            "locations": [
+                "l_1"
             ],
-            "eventSummary": "The initial occupation of the line by British forces is completed, establishing a defensive position amidst the geographical challenges."
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 1st Corps begins its move into the specified sector."
         }
     ]
 }

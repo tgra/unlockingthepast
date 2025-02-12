@@ -1,118 +1,118 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Headquarters, India",
-            "p_2": "United States Transportation Corps",
-            "p_3": "Supreme Allied Commander, South-East Asia Command",
-            "p_4": "11 Army Group"
+            "p_1": "Subhas Chandra Bose"
         },
         "locations": {
-            "l_1": "Lumding",
-            "l_2": "Badarpur",
-            "l_3": "Chittagong",
-            "l_4": "Calcutta",
-            "l_5": "Dimapur",
-            "l_6": "Siliguri",
-            "l_7": "Bongaigaon",
-            "l_8": "Akhaura",
-            "l_9": "Shillong",
-            "l_10": "Sylhet",
-            "l_11": "Comilla",
-            "l_12": "Vizagapatam",
-            "l_13": "Brahmaputra",
-            "l_14": "Ganges"
+            "l_1": "Burma",
+            "l_2": "Central China",
+            "l_3": "Singapore",
+            "l_4": "Maymyo",
+            "l_5": "Mogaung",
+            "l_6": "Java",
+            "l_7": "Guadalcanal",
+            "l_8": "Indo-Burman border",
+            "l_9": "Hokkawng Valley",
+            "l_10": "Salween River",
+            "l_11": "Kale",
+            "l_12": "Kabaw Valleys",
+            "l_13": "Arakan",
+            "l_14": "Chindwin front"
         },
         "events": {
-            "e_1": "Investigation by 11 Army Group",
-            "e_2": "Control Assumption by Fourteenth Army",
-            "e_3": "Increase in Port Capacity"
+            "e_1": "Arakan operations",
+            "e_2": "Japanese war",
+            "e_3": "formation of the I.N.A.",
+            "e_4": "disbandment of the I.N.A."
         },
         "organisations": {
-            "o_1": "US Forces",
-            "o_2": "Fourteenth Army"
+            "o_1": "Indian National Army",
+            "o_2": "Hikari Kikan",
+            "o_3": "Indian Independence League",
+            "o_4": "Japanese Army"
         }
     },
     "keywords": [
-        "Communication Lines",
-        "Capacity Increase",
-        "Railway",
-        "Transport",
-        "Military Transportation",
-        "Port Operations",
-        "Flooding"
+        "Japanese army",
+        "Indian Fifth Column",
+        "disaffected Burmans",
+        "J.I.Fs.",
+        "intelligence offensive",
+        "Indian prisoners of war"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Infrastructure Development",
-        "Diplomacy"
+        "Espionage",
+        "Resistance Movements",
+        "Propaganda"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
+            "e_1"
+        ],
+        "Espionage": [
             "e_2"
         ],
-        "Logistics": [
-            "e_1",
+        "Resistance Movements": [
             "e_3"
         ],
-        "Infrastructure Development": [
-            "e_3"
-        ],
-        "Diplomacy": []
+        "Propaganda": [
+            "e_2"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 1943",
+            "date": "February 1944",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_12"
             ],
             "persons": [
-                "p_4",
-                "p_1",
-                "p_3",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "In June, an investigation is carried out by representatives from various military groups to address communication difficulties."
+            "eventSummary": "In February 1944, elements of the I.N.A. first appeared in a fighting role during the Arakan operations, but their main body was occupied with foraging and fatigue duties."
         },
         {
-            "event": "e_2",
-            "date": "1st February 1944",
+            "event": "e_3",
+            "date": "1942",
             "locations": [
+                "l_1",
                 "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Fourteenth Army assumes control over Chittagong Port, leading to improvements in operational efficiency."
-        },
-        {
-            "event": "e_3",
-            "date": "November 1943",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "Since November 1943, the stores imported at Chittagong Port have significantly increased due to enhancements in port operations."
+            "eventSummary": "The I.N.A. is re-formed by Subhas Chandra Bose in 1943 after its initial disbandment in 1942 during the Japanese war."
+        },
+        {
+            "event": "e_4",
+            "date": "1942",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Indian National Army was initially disbanded by the Japanese at the end of 1942."
         }
     ]
 }

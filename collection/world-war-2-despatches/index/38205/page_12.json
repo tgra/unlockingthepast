@@ -1,100 +1,92 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Montgomery",
-            "p_2": "General Patton"
+            "p_1": "General Patton",
+            "p_2": "General Montgomery"
         },
         "locations": {
-            "l_1": "Sicily",
-            "l_2": "Etna",
-            "l_3": "Messina",
-            "l_4": "Catania",
-            "l_5": "Agrigento",
-            "l_6": "Porto Empedocle",
-            "l_7": "Leonforte",
-            "l_8": "Adrano",
-            "l_9": "Troina",
-            "l_10": "Randazzo",
-            "l_11": "Caltanissetta",
-            "l_12": "Dittaino River",
-            "l_13": "Enna",
-            "l_14": "Canadians",
-            "l_15": "Palermo"
+            "l_1": "Messina",
+            "l_2": "Catania",
+            "l_3": "Etna",
+            "l_4": "Leonforte",
+            "l_5": "Adrano",
+            "l_6": "Nicosia",
+            "l_7": "Troina",
+            "l_8": "Randazzo",
+            "l_9": "Enna",
+            "l_10": "Petralia",
+            "l_11": "Agrigento",
+            "l_12": "Porto Empedocle",
+            "l_13": "Caltanissetta",
+            "l_14": "Sciacca",
+            "l_15": "Palermo",
+            "l_16": "Calabria",
+            "l_17": "Campofelice",
+            "l_18": "Dittaino River",
+            "l_19": "Gerbini airfields",
+            "l_20": "Catania plain"
         },
         "events": {
-            "e_1": "Attack on Catania",
-            "e_2": "Directive of 16th July",
-            "e_3": "Capture of Agrigento",
-            "e_4": "Capture of Porto Empedocle",
+            "e_1": "Directive of 16th July",
+            "e_2": "Attack on Catania",
+            "e_3": "Capture of Porto Empedocle",
+            "e_4": "Capture of Agrigento",
             "e_5": "Attack towards Misterbianco",
-            "e_6": "Provisional Corps capturing Sciacca"
+            "e_6": "Crossing of Dittaino River on 20th",
+            "e_7": "Entering of Enna",
+            "e_8": "Capture of Sciacca"
         },
         "organisations": {
             "o_1": "Seventh Army",
             "o_2": "Eighth Army",
             "o_3": "XIV Panzer Corps",
-            "o_4": "Air Force"
+            "o_4": "50 Division",
+            "o_5": "30 Corps",
+            "o_6": "Provisional Corps",
+            "o_7": "1 Parachute Division",
+            "o_8": "Hermann Goering Division",
+            "o_9": "Canadian Division",
+            "o_10": "78th Division",
+            "o_11": "2 Armoured Division"
         }
     },
     "keywords": [
-        "Panzer Division",
-        "Catania",
-        "Montgomery",
-        "Patton",
-        "Agrigento",
-        "Sicily",
-        "Military Operations"
+        "directive",
+        "attack",
+        "capture",
+        "advance",
+        "resistance",
+        "manoeuvres"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Defensive Strategies",
-        "Troop Movements"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
             "e_2",
             "e_3",
             "e_4",
             "e_5",
-            "e_6"
+            "e_6",
+            "e_7",
+            "e_8"
         ],
         "Strategic Decisions": [
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "17th-18th July",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_5"
-            ],
-            "eventSummary": "General Montgomery attacks northwards from his Simeto bridgehead against heavy resistance toward Catania."
-        },
-        {
-            "event": "e_2",
             "date": "16th July",
             "locations": [
+                "l_1",
                 "l_2",
-                "l_4",
-                "l_8"
+                "l_3"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
@@ -102,80 +94,128 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3",
-                "e_4"
+                "e_2",
+                "e_5",
+                "e_6",
+                "e_7"
             ],
-            "eventSummary": "A directive is issued to both Eighth and Seventh Army, outlining axes of advance to sever German communications."
+            "eventSummary": "On 16th July, military directives are issued defining strategic axes for Eighth Army's advance in Sicily."
+        },
+        {
+            "event": "e_2",
+            "date": "17th/18th July",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_5",
+                "e_6"
+            ],
+            "eventSummary": "General Montgomery attacks northwards from Simeto bridgehead on the night of 17th/18th July."
         },
         {
             "event": "e_3",
-            "date": "18th July",
+            "date": "July 18th",
             "locations": [
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Seventh Army captures Agrigento, reinforcing their position on the island."
-        },
-        {
-            "event": "e_4",
-            "date": "19th July",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The Provisional Corps captures Porto Empedocle, following the directive issued earlier."
-        },
-        {
-            "event": "e_5",
-            "date": "19th July",
-            "locations": [
-                "l_4"
+                "l_12"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_6"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Montgomery decides to attack towards Misterbianco but encounters heavy resistance."
+            "connectedEvents": [],
+            "eventSummary": "On 18th July, the Provisional Corps captures Porto Empedocle."
         },
         {
-            "event": "e_6",
-            "date": "20th July",
+            "event": "e_4",
+            "date": "July 19th",
             "locations": [
-                "l_15"
+                "l_11"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 19th July, General Patton's forces capture Agrigento."
+        },
+        {
+            "event": "e_5",
+            "date": "July 19th",
+            "locations": [
+                "l_2"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_6"
             ],
-            "eventSummary": "The Provisional Corps, under Patton, captures Sciacca with rapid progress being made."
+            "eventSummary": "On 19th July, General Montgomery decides to attack towards Misterbianco but faces heavy resistance."
+        },
+        {
+            "event": "e_6",
+            "date": "July 20th",
+            "locations": [
+                "l_18"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 20th July, General Montgomery's 5 Division crosses the Dittaino River at Sferro."
+        },
+        {
+            "event": "e_7",
+            "date": "July 20th",
+            "locations": [
+                "l_19"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 20th July, the Provisional Corps enters Enna alongside Canadian forces."
+        },
+        {
+            "event": "e_8",
+            "date": "July 20th",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 20th July, Provisional Corps captures Sciacca."
         }
     ]
 }

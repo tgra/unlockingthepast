@@ -3,8 +3,9 @@
         "persons": {
             "p_1": "Lieutenant-Commander C. W. Malins, R.N.",
             "p_2": "Commander R. C. Egan, R.N.",
-            "p_3": "Captain M. S. Thomas, D.S.O., R.N.",
-            "p_4": "Lieutenant S. R. le H. Lombard-Hobson, R.N."
+            "p_3": "Captain (D), 8th Destroyer Flotilla",
+            "p_4": "Captain M. S. Thomas, D.S.O., R.N.",
+            "p_5": "Lieutenant S. R. le H. Lombard-Hobson, R.N."
         },
         "locations": {
             "l_1": "Lavrion",
@@ -16,38 +17,33 @@
             "l_7": "Amorgos",
             "l_8": "Levitha",
             "l_9": "Stampalia",
-            "l_10": "Turkish waters",
+            "l_10": "Samos",
             "l_11": "Port Kalymnos",
-            "l_12": "Gulf of Kos",
-            "l_13": "Losta Bay",
-            "l_14": "Samos"
+            "l_12": "Kos harbour",
+            "l_13": "Gulf of Doris"
         },
         "events": {
-            "e_1": "Enemy Invasion Flotilla Arrival at Kos/Kalymnos",
+            "e_1": "Enemy invasion flotilla reached Kos/Kalymnos",
             "e_2": "Bombardment of Port Kalymnos",
-            "e_3": "Bombardment of Kos Harbour",
-            "e_4": "Naval Engagement Involving H.M.S. PENN and H.M.S. PATHFINDER",
-            "e_5": "Air Reconnaissance of Landing Craft Movement"
+            "e_3": "Bombardment of Kos harbour"
         },
         "organisations": {
             "o_1": "20x (Naval Co-operation) Group",
             "o_2": "H.M. Ships",
-            "o_3": "Senior British Naval Officer, Aegean",
-            "o_4": "8th Destroyer Flotilla"
+            "o_3": "8th Destroyer Flotilla"
         }
     },
     "keywords": [
         "landing craft",
         "escort vessels",
-        "air superiority",
-        "naval bombardment",
+        "fighter protection",
+        "naval operations",
         "invasion flotilla"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Air Reconnaissance",
-        "Invasion Planning"
+        "Naval Warfare",
+        "Aerial Assault"
     ],
     "topicModel": {
         "Military Operations": [
@@ -55,11 +51,13 @@
             "e_2",
             "e_3"
         ],
-        "Naval Engagement": [
-            "e_4"
+        "Naval Warfare": [
+            "e_1",
+            "e_2",
+            "e_3"
         ],
-        "Air Reconnaissance": [
-            "e_5"
+        "Aerial Assault": [
+            "e_1"
         ]
     },
     "eventConnections": [
@@ -73,82 +71,59 @@
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_4"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_4",
-                "e_5"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "On 10th November, the enemy invasion flotilla reaches Kos/Kalymnos, successfully delivering troops and equipment despite previous efforts to intercept them."
+            "eventSummary": "On 10th November, the enemy invasion flotilla reaches Kos/Kalymnos with substantial forces."
         },
         {
             "event": "e_2",
-            "date": "13th November",
+            "date": "night 10th/11th November",
             "locations": [
                 "l_11"
             ],
             "persons": [
                 "p_2",
-                "p_3",
-                "p_4"
+                "p_3"
             ],
             "organisations": [
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_3"
             ],
-            "eventSummary": "Destroyer forces conduct a bombardment of Port Kalymnos, firing 1,500 rounds in efforts to disrupt enemy operations in the area."
+            "eventSummary": "The bombardment of Port Kalymnos occurs on the night of 10th/11th November by destroyer forces."
         },
         {
             "event": "e_3",
-            "date": "13th November",
+            "date": "night 10th/11th November",
             "locations": [
                 "l_12"
             ],
             "persons": [
                 "p_2",
-                "p_3",
-                "p_4"
+                "p_3"
             ],
             "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "On the same night, a bombardment of Kos Harbour occurs, aiming to damage enemy landing preparations."
-        },
-        {
-            "event": "e_4",
-            "date": "6th/7th November",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "H.M. Ships PENN and PATHFINDER sink a caique in an engagement off the coast of Paros."
-        },
-        {
-            "event": "e_5",
-            "date": "11th November",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [
+                "o_2",
                 "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Air reconnaissance reveals significant movement of landing craft between various locations, indicating enemy preparations for invasion."
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "A bombardment of Kos harbour takes place during the night of 10th/11th November."
         }
     ]
 }

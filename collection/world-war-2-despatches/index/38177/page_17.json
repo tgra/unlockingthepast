@@ -2,63 +2,60 @@
     "namedEntities": {
         "persons": {
             "p_1": "General Ritchie",
-            "p_2": "General Messervy"
+            "p_2": "General Koenig"
         },
         "locations": {
-            "l_1": "Sghifet es Sidra",
-            "l_2": "Aslagh ridge",
-            "l_3": "Sidi Muftah",
-            "l_4": "Dahar el Aslagh",
-            "l_5": "Bir Hacheim",
-            "l_6": "Knightsbridge",
-            "l_7": "Tobruk",
-            "l_8": "Metifel"
+            "l_1": "Sidi Muftah",
+            "l_2": "Temrad",
+            "l_3": "Knightsbridge",
+            "l_4": "Bir Hacheim",
+            "l_5": "El Adem",
+            "l_6": "Tobruk",
+            "l_7": "Gazala",
+            "l_8": "Alem Hamza",
+            "l_9": "Gebel Akhdar"
         },
         "events": {
-            "e_1": "13th Corps attack",
-            "e_2": "Failure of the 69th Brigade",
-            "e_3": "30th Corps operation",
-            "e_4": "Counterattack on Dahar el Aslagh",
-            "e_5": "Battle of Bir Hacheim",
-            "e_6": "Armoured battle around Knightsbridge"
+            "e_1": "Counter-stroke by Eighth Army",
+            "e_2": "Loss of Bir Hacheim",
+            "e_3": "Engagement at El Adem and Knightsbridge",
+            "e_4": "Withdrawal from Gazala"
         },
         "organisations": {
-            "o_1": "8th Army",
-            "o_2": "1st South African Division",
-            "o_3": "Free French"
+            "o_1": "Eighth Army",
+            "o_2": "150th Infantry Brigade",
+            "o_3": "1st Free French Brigade",
+            "o_4": "13th Corps",
+            "o_5": "rst South African Division",
+            "o_6": "50th Division"
         }
     },
     "keywords": [
-        "military operation",
         "counterattack",
-        "infantry",
-        "armoured brigade",
-        "enemy tanks",
-        "communication failure"
+        "minefield",
+        "armoured forces",
+        "defended locality",
+        "salient",
+        "diving-bombing",
+        "withdrawal"
     ],
     "themes": [
         "Military Operations",
-        "Counteroffensive Actions",
-        "Failures in Communication",
-        "Tactical Decisions"
+        "Tactical Decisions",
+        "Defensive Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3",
-            "e_4",
-            "e_5",
-            "e_6"
-        ],
-        "Counteroffensive Actions": [
-            "e_5",
-            "e_6"
-        ],
-        "Failures in Communication": [
             "e_4"
         ],
         "Tactical Decisions": [
+            "e_2",
+            "e_4"
+        ],
+        "Defensive Strategies": [
             "e_2",
             "e_3"
         ]
@@ -66,9 +63,10 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 1",
+            "date": "4th June",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_4"
             ],
             "persons": [
                 "p_1"
@@ -79,86 +77,33 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The 13th Corps launches an attack aimed at capturing Sghifet es Sidra, but it is delayed, allowing the enemy to fortify their position."
+            "eventSummary": "The Eighth Army's counter-attack recovers some territory, but ultimately fails due to enemy counter-attacks."
         },
         {
             "event": "e_2",
-            "date": "June 4",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The failure of the 69th Brigade to capture Sghifet es Sidra results in their inability to support the 30th Corps, leading to subsequent operational difficulties."
-        },
-        {
-            "event": "e_3",
-            "date": "June 4",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "The 30th Corps successfully captures Aslagh ridge but faces challenges as plans begin to unravel due to enemy resistance."
-        },
-        {
-            "event": "e_4",
-            "date": "June 5",
+            "date": "10th June",
             "locations": [
                 "l_4"
             ],
             "persons": [
+                "p_1",
                 "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_5"
-            ],
-            "eventSummary": "A counterattack is launched to regain control of Dahar el Aslagh, but communication breakdowns hinder efforts significantly."
-        },
-        {
-            "event": "e_5",
-            "date": "June 5",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_3"
             ],
             "connectedEvents": [
-                "e_4",
-                "e_6"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The Eighth Army's counterattack on Bir Hacheim is a turning point in the battle, prompting the need for reorganization without immediate evacuation."
+            "eventSummary": "The loss of Bir Hacheim creates a significant disadvantage for the Eighth Army, requiring General Ritchie to reassess his strategy."
         },
         {
-            "event": "e_6",
-            "date": "June 6",
+            "event": "e_3",
+            "date": "12th-13th June",
             "locations": [
+                "l_5",
                 "l_6"
             ],
             "persons": [
@@ -168,9 +113,27 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_5"
+                "e_2"
             ],
-            "eventSummary": "An armoured battle around Knightsbridge begins, with both sides heavily engaged, although neither gains a strategic advantage."
+            "eventSummary": "Intense fighting occurs at El Adem and Knightsbridge, resulting in significant losses for the Eighth Army."
+        },
+        {
+            "event": "e_4",
+            "date": "14th June",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Under pressure, General Ritchie orders the withdrawal from Gazala, significantly changing the strategic landscape."
         }
     ]
 }

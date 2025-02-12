@@ -1,116 +1,122 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieut-Colonel H. W. M. Stewart, O.B.E., MC",
-            "p_2": "Major C. M. Manners",
-            "p_3": "Mr. A L. Shields"
+            "p_1": "Brigadier",
+            "p_2": "Lt.-Colonel F. D. Field",
+            "p_3": "Wing Commander H. G. Sullivan"
         },
         "locations": {
-            "l_1": "Canal Road",
-            "l_2": "Causeway Bay",
-            "l_3": "Repulse Bay Hotel",
-            "l_4": "North Point",
-            "l_5": "Bennets Hill",
-            "l_6": "Wanchai",
-            "l_7": "Stanley",
-            "l_8": "Aberdeen",
-            "l_9": "Mount Gough",
-            "l_10": "Kowloon Bay",
-            "l_11": "Stubbs Road",
-            "l_12": "O Brien Street",
-            "l_13": "Fortress HQ",
-            "l_14": "Murray Barracks"
+            "l_1": "Hong Kong",
+            "l_2": "Devils Peak Peninsula",
+            "l_3": "Kowloon City",
+            "l_4": "Ma Lau Tong",
+            "l_5": "Star Ferry pier",
+            "l_6": "George Island",
+            "l_7": "Aberdeen",
+            "l_8": "Green Island",
+            "l_9": "North East sector",
+            "l_10": "North West sector",
+            "l_11": "mainland"
         },
         "events": {
-            "e_1": "Battle of Wanchai",
-            "e_2": "Infiltration of Japanese troops"
+            "e_1": "Withdrawal of troops from the mainland",
+            "e_2": "Enemy attack on Ma Lau Tong line",
+            "e_3": "Cutting of communications by Hong Kong Telephone Company",
+            "e_4": "Air raids and shelling of the island"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "1 Middlesex Regt.",
-            "o_3": "Fortress R.E.",
-            "o_4": "5/7 Rajput Regt.",
-            "o_5": "2 Royal Scots",
-            "o_6": "2/14 Punjab Regt.",
-            "o_7": "Canadian troops",
-            "o_8": "West Infantry Brigade"
+            "o_1": "R.A.O.C. Depot",
+            "o_2": "2/14 Punjab Regt.",
+            "o_3": "5/7 Rajput Regt.",
+            "o_4": "Royal Signals",
+            "o_5": "1 Middlesex Regt.",
+            "o_6": "HHKVDC"
         }
     },
     "keywords": [
-        "Japanese artillery",
-        "Civilian casualties",
-        "House to house fighting",
-        "Military reinforcements",
-        "Truce",
-        "Heavy bombing",
-        "Troop movements"
+        "evacuation",
+        "air raids",
+        "casualties",
+        "communications",
+        "military action"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Strategy",
-        "Humanitarian Concerns",
-        "Counter-attack"
+        "Urban Combat",
+        "Communications Disruption"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_4"
         ],
-        "Diplomacy": [
-            "e_1"
-        ],
-        "Tactical Strategy": [
-            "e_2"
+        "Communications Disruption": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "25th December",
+            "date": "12th December",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_4",
-                "l_5"
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
                 "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The Royal Navy contributes reinforcements to 1 Middlesex Regt as they engage in heavy fighting against superior Japanese artillery, resulting in significant casualties and tactical withdrawals."
+            "eventSummary": "Troops are withdrawn from the mainland successfully despite a complicated operational environment."
         },
         {
             "event": "e_2",
-            "date": "25th December",
+            "date": "12th December",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_5"
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Enemy troops attack the left company of the 5/7 Rajput Regt. on the Ma Lau Tong line but the attack is beaten off."
+        },
+        {
+            "event": "e_3",
+            "date": "11th/12th December",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
                 "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Hong Kong Telephone Company cuts all communications between the island and the mainland at midnight."
+        },
+        {
+            "event": "e_4",
+            "date": "12th December",
+            "locations": [
+                "l_1"
             ],
-            "eventSummary": "The Japanese forces conduct house-to-house infiltrations, leading to increased hostilities and the eventual surrender of Canadian troops, highlighting the dire military situation."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air raids and shelling of the island cause significant damage, including to the North shore Dockyard and R.A.O.C. Depot."
         }
     ]
 }

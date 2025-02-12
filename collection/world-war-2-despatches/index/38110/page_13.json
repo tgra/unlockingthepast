@@ -1,60 +1,115 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "G. E. Creasy",
-            "p_2": "B. H. Ramsay",
-            "p_3": "Dwight D. Eisenhower"
+            "p_1": "General Bradley",
+            "p_2": "Rear-Admiral M. L. Deyo"
         },
         "locations": {
-            "l_1": "France"
+            "l_1": "Portsmouth",
+            "l_2": "Cherbourg",
+            "l_3": "Portland",
+            "l_4": "South Coast of France",
+            "l_5": "Far East"
         },
         "events": {
-            "e_1": "Operation Overlord"
+            "e_1": "Operation Anvil",
+            "e_2": "Capture of Cherbourg",
+            "e_3": "Naval Bombardment of Cherbourg"
         },
         "organisations": {
-            "o_1": "Allied Expeditionary Force"
+            "o_1": "COREP",
+            "o_2": "Admiralty",
+            "o_3": "C.T.F. 129"
         }
     },
     "keywords": [
-        "Operation Overlord",
-        "Allied Forces",
-        "naval forces",
-        "liberation",
-        "Supreme Commander"
+        "repair",
+        "craft",
+        "landing craft",
+        "naval authorities",
+        "bombardment",
+        "warships",
+        "mines",
+        "aircraft",
+        "reconnaissance",
+        "salvage operations"
     ],
     "themes": [
         "Military Operations",
-        "Leadership",
-        "Collaboration"
+        "Naval Strategy",
+        "Casualties Management",
+        "Air Attacks"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_3"
+        ],
+        "Casualties Management": [
             "e_1"
         ],
-        "Leadership": [
-            "e_1"
-        ],
-        "Collaboration": [
-            "e_1"
+        "Air Attacks": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6th, 1944",
+            "date": "June 20",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Overlord is executed, with exceptional leadership displayed by Rear-Admiral G. E. Creasy and Admiral B. H. Ramsay under Supreme Commander Dwight D. Eisenhower, facilitating the liberation efforts in France."
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operation Anvil is planned to secure the South Coast of France, requiring the release of warships from previous operations."
+        },
+        {
+            "event": "e_2",
+            "date": "June 27",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The capture of Cherbourg is completed, enabling immediate reconnaissance of the port for salvage operations."
+        },
+        {
+            "event": "e_3",
+            "date": "June 27",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Naval bombardment of Cherbourg is conducted to support the final assault by land forces led by General Bradley."
         }
     ]
 }

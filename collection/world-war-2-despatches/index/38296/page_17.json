@@ -1,156 +1,96 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain D.5.",
-            "p_2": "Captain (D) Roth",
-            "p_3": "Admiralty",
-            "p_4": "Commander-in-Chief, Mediterranean",
-            "p_5": "Commander-in-Chief, Middle East",
-            "p_6": "C.S. 15",
-            "p_7": "C.S. 7",
-            "p_8": "KIPLING",
-            "p_9": "PROTECTOR",
-            "p_10": "JAGUAR",
-            "p_11": "DEFENDER",
-            "p_12": "GLENROY",
-            "p_13": "HERO",
-            "p_14": "AJAX",
-            "p_15": "ABDIEL"
+            "p_1": "Major General Weston"
         },
         "locations": {
-            "l_1": "Crete",
-            "l_2": "Alexandria",
-            "l_3": "Suda Bay",
-            "l_4": "Agriarumeli",
-            "l_5": "Kaso Strait",
-            "l_6": "Maleme",
-            "l_7": "Canea",
-            "l_8": "Gavdo Island",
-            "l_9": "Heraklion",
-            "l_10": "Saltinos"
+            "l_1": "Sphakia",
+            "l_2": "Egypt",
+            "l_3": "Crete",
+            "l_4": "Alexandria",
+            "l_5": "Western Desert",
+            "l_6": "Suda"
         },
         "events": {
-            "e_1": "Air Attacks on Crete",
-            "e_2": "Naval Engagements",
-            "e_3": "Disembarkation of Troops",
-            "e_4": "Evacuation Plans",
-            "e_5": "Attack on KIPLING"
+            "e_1": "Battle of Crete",
+            "e_2": "Evacuation of British and Imperial troops from Crete"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "British Commanders",
-            "o_3": "Greek Commanders"
+            "o_1": "Royal Marines",
+            "o_2": "Mediterranean Fleet",
+            "o_3": "Royal Air Force",
+            "o_4": "C.S. 15"
         }
     },
     "keywords": [
-        "Crete",
-        "Alexandria",
-        "Air Attacks",
-        "Naval Operations",
-        "Evacuation",
-        "Military Forces"
+        "evacuation",
+        "aircraft",
+        "cruisers",
+        "bombs",
+        "troops",
+        "rearguard",
+        "protection"
     ],
     "themes": [
         "Military Operations",
-        "Air Defense",
-        "Naval Strategy",
-        "Evacuations",
-        "Supply Chains"
+        "Evacuation",
+        "Air Raids",
+        "Casualties"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_1"
         ],
-        "Air Defense": [
-            "e_1",
-            "e_5"
-        ],
-        "Naval Strategy": [
+        "Evacuation": [
             "e_2"
         ],
-        "Evacuations": [
-            "e_4"
+        "Air Raids": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 23-24, 1941",
+            "date": "May 1941",
             "locations": [
+                "l_3",
                 "l_1"
             ],
             "persons": [
-                "p_4",
-                "p_5"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "Air attacks are continuously bombarding positions on Crete, significantly affecting military operations."
+            "eventSummary": "The Battle of Crete is ended with significant losses for the British and Imperial troops, culminating in an evacuation operation."
         },
         {
             "event": "e_2",
-            "date": "May 24, 1941",
+            "date": "June 1, 1941",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_4",
-                "p_8"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Naval forces conduct operations in response to air attacks, with several ships engaged in defense and evacuation maneuvers."
-        },
-        {
-            "event": "e_3",
-            "date": "May 23-24, 1941",
-            "locations": [
-                "l_1",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_10"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Troops are disembarked at Suda Bay amid heavy assault conditions, complicating military logistics."
-        },
-        {
-            "event": "e_4",
-            "date": "May 23-24, 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_9",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Plans for evacuation are seriously considered due to the ongoing air attacks and naval engagements, with contingencies being organized."
+            "eventSummary": "On June 1, the evacuation from Crete is completed, with many troops safely returning to Egypt, although many are left behind after the rearguard action."
         }
     ]
 }

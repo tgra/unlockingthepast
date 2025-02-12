@@ -1,56 +1,55 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Second-Lieutenant Bhagat"
+            "p_1": "Duce",
+            "p_2": "Commander 12th (A) Division",
+            "p_3": "Commander rath (A) Division"
         },
         "locations": {
-            "l_1": "Aicota",
-            "l_2": "Barentu",
-            "l_3": "Gallabat",
-            "l_4": "Asmara",
-            "l_5": "Gedaref",
-            "l_6": "Gondar",
-            "l_7": "Tessenei",
-            "l_8": "Rashid",
-            "l_9": "Unm Hagar",
-            "l_10": "Walkait",
-            "l_11": "Kassala Sabdarat",
-            "l_12": "Chelga",
-            "l_13": "Keren",
-            "l_14": "Karawa",
-            "l_15": "Wahni"
+            "l_1": "British Somaliland",
+            "l_2": "Wajir",
+            "l_3": "Gelib",
+            "l_4": "Mogadiscio",
+            "l_5": "Bardera",
+            "l_6": "Iscia Baidoa",
+            "l_7": "Dinsor",
+            "l_8": "Mandera",
+            "l_9": "Neghelli",
+            "l_10": "Bulo Erillo",
+            "l_11": "Chisimaio",
+            "l_12": "Bur Acaba-Afgoi-Modun",
+            "l_13": "Giumbo",
+            "l_14": "Addis Abeba"
         },
         "events": {
-            "e_1": "Battle of Keren",
-            "e_2": "Raid on the road from Barentu",
-            "e_3": "Withdrawal from Gallabat",
-            "e_4": "Pursuit to Keren"
+            "e_1": "Evacuation of Italian Somaliland",
+            "e_2": "Operations of 12th (A) Division",
+            "e_3": "Patrol to Bardera",
+            "e_4": "Occupation of Neghelli"
         },
         "organisations": {
-            "o_1": "9th Indian Infantry Brigade",
-            "o_2": "2gth Indian Infantry Brigade",
-            "o_3": "M.M.G. Group S.D.F.",
-            "o_4": "R.A.F.",
-            "o_5": "21 Field Company, Sappers and Miners",
-            "o_6": "3/12 Frontier Force Regiment",
-            "o_7": "11th Indian Infantry Brigade",
-            "o_8": "144 Field Regiment"
+            "o_1": "12th (A) Division",
+            "o_2": "21st E.A. Brigade",
+            "o_3": "24th G.C. Brigade",
+            "o_4": "1st S.A. Brigade",
+            "o_5": "3rd G.C. Regiment",
+            "o_6": "51st G.C. Light Battery",
+            "o_7": "E.A.A.C. Regiment",
+            "o_8": "1/and K.A.R."
         }
     },
     "keywords": [
-        "Indian Infantry Brigade",
-        "Battle",
-        "Pursuit",
-        "Withdrawal",
-        "Raid",
-        "Minefield"
+        "Evacuation",
+        "Occupation",
+        "Patrol",
+        "Reconnaissance",
+        "Military Operations"
     ],
     "themes": [
         "Military Operations",
-        "Pursuit Operations",
-        "Enemy Withdrawal",
-        "Artillery Support",
-        "Intelligence"
+        "Supply Situation",
+        "Troop Movements",
+        "Conflict"
     ],
     "topicModel": {
         "Military Operations": [
@@ -59,82 +58,88 @@
             "e_3",
             "e_4"
         ],
-        "Pursuit Operations": [
-            "e_4"
-        ],
-        "Enemy Withdrawal": [
-            "e_3"
-        ],
-        "Artillery Support": [
+        "Troop Movements": [
+            "e_1",
             "e_2"
         ],
-        "Intelligence": [
-            "e_3"
+        "Conflict": [
+            "e_1",
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st February",
+            "date": "February 1941",
             "locations": [
-                "l_1",
-                "l_14"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_4",
-                "o_7"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The Battle of Keren takes place, where Gazelle Force is positioned to pursue the enemy, facing obstacles such as demolished infrastructure and minefields."
-        },
-        {
-            "event": "e_2",
-            "date": "1st February",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A successful raid is conducted by No. 2 M.M.G. Group S.D.F. on the road running east from Barentu, inflicting casualties on an enemy Colonial Battalion."
-        },
-        {
-            "event": "e_3",
-            "date": "30th January",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Italian Somaliland occurs as troops withdraw from the region, impacting military operations of various brigades."
+        },
+        {
+            "event": "e_2",
+            "date": "26th February to 5th April 1941",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_8"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3",
                 "e_4"
             ],
-            "eventSummary": "The enemy begins withdrawing from Gallabat; this intelligence prompts the 9th Indian Infantry Brigade to prepare for a pursuit."
+            "eventSummary": "The 12th (A) Division conducts ongoing military operations, coordinating various brigades to secure key locations."
+        },
+        {
+            "event": "e_3",
+            "date": "February 1941",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A patrol is sent to Bardera with intentions of securing the area, leading to engagements and troop movements."
         },
         {
             "event": "e_4",
-            "date": "1st February",
+            "date": "21st March 1941",
             "locations": [
-                "l_4"
+                "l_9"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
-                "o_7"
+                "o_5",
+                "o_6"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Pursuit operations commence towards Keren as the enemy retreats, with troops instructed to follow closely in mechanized columns."
+            "connectedEvents": [],
+            "eventSummary": "The occupation of Neghelli occurs after a delayed response to enemy movements, illustrating logistical challenges faced by troops."
         }
     ]
 }

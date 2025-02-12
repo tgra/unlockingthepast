@@ -1,101 +1,113 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral C.B. Barry",
-            "p_2": "Lieutenant H. HentyCreer",
-            "p_3": "Lieutenant D. Cameron",
-            "p_4": "Lieutenant B. C. G. Place",
-            "p_5": "Sub-Lieutenant J. T. Lorimer",
-            "p_6": "Sub-Lieutenant R. H. Kendall",
-            "p_7": "E.R.A.4 E. Goddard"
+            "p_1": "Commanding Officer",
+            "p_2": "Senior British Naval Officer"
         },
         "locations": {
-            "l_1": "Kaafiord",
-            "l_2": "TIRPITZ",
-            "l_3": "German main units"
+            "l_1": "Alten Fiord",
+            "l_2": "Polyarnoe",
+            "l_3": "Kola Inlet",
+            "l_4": "Soroy",
+            "l_5": "Bondoy Island",
+            "l_6": "Store Kamoy",
+            "l_7": "Finn Fiord",
+            "l_8": "Staalet Point"
         },
         "events": {
-            "e_1": "Operation Xcraft against TIRPITZ",
-            "e_2": "Attack on TIRPITZ on 22nd September 1943"
+            "e_1": "Recovery of X-craft",
+            "e_2": "Enemy air raid on Polyarnoe",
+            "e_3": "Patrol operations by submarines"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Lords Commissioners of the Admiralty"
+            "o_1": "H.M.S. STUBBORN",
+            "o_2": "H.M.S. TRUCULENT",
+            "o_3": "H.M.S. SYRTIS",
+            "o_4": "H.M.S. THRASHER"
         }
     },
     "keywords": [
-        "X-craft",
-        "TIRPITZ",
-        "attack",
-        "operations",
-        "submarines"
+        "submarine",
+        "patrol",
+        "air raid",
+        "X-craft"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Heroism",
-        "Strategic Decisions"
+        "Naval Tactics",
+        "Search and Recovery"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Navel Warfare": [
-            "e_1",
-            "e_2"
-        ],
-        "Heroism": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
+        "Search and Recovery": [
             "e_1"
+        ],
+        "Naval Tactics": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 1944",
+            "date": "29th September",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation Xcraft involves attacks by midget submarines against the battleship TIRPITZ as part of the Royal Navy's strategic efforts during World War II."
+            "eventSummary": "The recovery of X-craft is successful, with H.M.S. STUBBORN towing X.10 back after navigating through challenging conditions."
         },
         {
             "event": "e_2",
-            "date": "22nd September 1943",
+            "date": "24th September",
             "locations": [
-                "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_3",
-                "p_4"
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An enemy air raid occurs on Polyarnoe, targeting the submarine base."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd September - 29th September",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "On September 22, 1943, midget submarines, including X.6 and X.7, launch a daring attack on TIRPITZ, successfully dropping charges and creating significant damage while facing grave risks."
+            "connectedEvents": [],
+            "eventSummary": "Submarines patrol various sectors in search of X-craft, enduring harsh weather conditions while executing recovery orders."
         }
     ]
 }

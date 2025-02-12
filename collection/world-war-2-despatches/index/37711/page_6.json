@@ -1,140 +1,122 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unnamed Military Officers",
-            "p_2": "Civil Affairs Personnel",
-            "p_3": "Members of 6 Airborne Division",
-            "p_4": "Members of 3 Parachute Brigades",
-            "p_5": "Members of 5 Parachute Brigades",
-            "p_6": "Members of United States Airborne Division",
-            "p_7": "Members of Bomber Command",
-            "p_8": "Members of Eighth United States Air Force"
+            "p_1": "my",
+            "p_2": "I"
         },
         "locations": {
-            "l_1": "Caen",
-            "l_2": "Cherbourg",
-            "l_3": "Brittany",
-            "l_4": "Baie de la Seine",
-            "l_5": "Ste. Mère Église",
-            "l_6": "Pouppeville",
-            "l_7": "St. Martin-de-Varreville",
-            "l_8": "Carentan",
-            "l_9": "France"
+            "l_1": "Uxbridge",
+            "l_2": "Portsmouth",
+            "l_3": "Normandy",
+            "l_4": "Continent",
+            "l_5": "Caen",
+            "l_6": "Seine",
+            "l_7": "Loire"
         },
         "events": {
-            "e_1": "Battle of Normandy",
-            "e_2": "Airborne Operations on June 6",
-            "e_3": "Landing Operations at Utah Beaches",
-            "e_4": "Bombing of Coastal Defenses"
+            "e_1": "D Day",
+            "e_2": "D + 6",
+            "e_3": "D + 20",
+            "e_4": "OVERLORD"
         },
         "organisations": {
-            "o_1": "British Forces",
-            "o_2": "United States Army",
-            "o_3": "Bomber Command",
-            "o_4": "Eighth United States Air Force",
-            "o_5": "6 Airborne Division",
-            "o_6": "3 Parachute Brigades",
-            "o_7": "5 Parachute Brigades",
-            "o_8": "United States Airborne Division"
+            "o_1": "Allied Tactical Air Forces",
+            "o_2": "Build-up Control (BUCO)",
+            "o_3": "AngloAmerican army staff"
         }
     },
     "keywords": [
-        "operations",
-        "airborne",
-        "territory",
-        "advance",
-        "logistics",
-        "communication",
-        "beaches",
-        "civil affairs",
-        "battle"
+        "Direct Air Support",
+        "amphibious operations",
+        "assault",
+        "buildup",
+        "military operations"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Administration",
-        "Civil Affairs",
-        "Airborne Operations"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Logistics and Administration": [
-            "e_1"
-        ],
-        "Civil Affairs": [
-            "e_1"
-        ],
-        "Airborne Operations": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
+            "date": "D Day",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_9"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The Battle of Normandy unfolds on June 6, involving complex military operations aimed at securing territory in France."
-        },
-        {
-            "event": "e_2",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_5",
-                "l_6",
+                "l_4",
                 "l_7"
             ],
             "persons": [
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
+                "p_1"
             ],
             "organisations": [
-                "o_5",
-                "o_6",
-                "o_7",
-                "o_8"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The airborne operations commence at 0200 hours, successfully capturing critical bridges and establishing a bridgehead."
+            "eventSummary": "On D Day, it is planned that Allied forces will establish significant military presence on the Continent."
+        },
+        {
+            "event": "e_2",
+            "date": "D + 6",
+            "locations": [
+                "l_4",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "By D + 6, total forces ashore rise to thirteen divisions exclusive of airborne formations."
         },
         {
             "event": "e_3",
-            "date": "June 6, 1944",
+            "date": "D + 20",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_4",
+                "l_7"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "By D + 20, it is anticipated that between twenty-three and twenty-four basic divisions are due in Normandy."
+        },
+        {
+            "event": "e_4",
+            "date": "not specified",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_1",
@@ -143,26 +125,7 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Landing operations commence at Utah Beaches, supporting the broader aims of the Battle of Normandy."
-        },
-        {
-            "event": "e_4",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_9"
-            ],
-            "persons": [
-                "p_7",
-                "p_8"
-            ],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Bomber Command executes a successful bombing campaign against coastal defenses to support the Normandy invasion."
+            "eventSummary": "The planning of OVERLORD involves strategic decisions to engage enemy reserves and capture key airfield areas."
         }
     ]
 }

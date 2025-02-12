@@ -1,133 +1,100 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General-Admiral von Friedeburg",
-            "p_2": "General Kinzel",
-            "p_3": "Vice-Admiral Wagner"
+            "p_1": "Doenitz",
+            "p_2": "von Friedeburg"
         },
         "locations": {
-            "l_1": "Rheinberg",
-            "l_2": "Rees",
-            "l_3": "Wesel",
-            "l_4": "Northern Germany",
-            "l_5": "Magdeburg",
-            "l_6": "Wittenberge",
-            "l_7": "Hamburg",
-            "l_8": "Arnhem",
-            "l_9": "Zuider Zee",
-            "l_10": "Ems-Dortmund Canal",
-            "l_11": "Minden",
-            "l_12": "Weser",
-            "l_13": "Ruhr",
-            "l_14": "Luneburg",
-            "l_15": "Hamburg",
-            "l_16": "Lubeck",
-            "l_17": "Darchau",
-            "l_18": "Schwerin",
-            "l_19": "Wismar",
-            "l_20": "Cuxhaven",
-            "l_21": "Emden"
+            "l_1": "Birmingham",
+            "l_2": "Normandy",
+            "l_3": "Bayeux",
+            "l_4": "Antwerp",
+            "l_5": "Brussels",
+            "l_6": "Dieppe",
+            "l_7": "Seine",
+            "l_8": "Rhine"
         },
         "events": {
-            "e_1": "Crossing of the Rhine",
-            "e_2": "Advance to the Elbe",
-            "e_3": "Negotiations for Surrender"
+            "e_1": "unconditional surrender of German forces",
+            "e_2": "Cease Fire on 21 Army Group front",
+            "e_3": "break out from Normandy"
         },
         "organisations": {
-            "o_1": "Allied Tactical Air Forces",
-            "o_2": "Royal Navy",
-            "o_3": "American Forces",
-            "o_4": "Canadian Corps",
-            "o_5": "German Navy"
+            "o_1": "21 Army Group",
+            "o_2": "Bomber Command",
+            "o_3": "American Air Force"
         }
     },
     "keywords": [
-        "operation",
-        "crossing",
-        "advance",
         "surrender",
-        "bombers"
+        "Cease Fire",
+        "military operations",
+        "administration",
+        "campign",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Negotiation",
-        "Air Support",
-        "Advances",
-        "Engineering Feats"
+        "Administration",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Diplomacy": [
+            "e_2",
             "e_3"
         ],
-        "Air Support": [
-            "e_1"
+        "Administration": [
+            "e_3"
         ],
-        "Engineering Feats": [
-            "e_1"
+        "Logistics": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd March",
+            "date": "5th May, 1945",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The operation to cross the Rhine begins amidst strong air support from Allied bombers and tactical air forces."
-        },
-        {
-            "event": "e_2",
-            "date": "28th March",
-            "locations": [
-                "l_4"
+                "l_1"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The advance to the Elbe commences following the successful establishment of a bridgehead over the Rhine."
+            "eventSummary": "On 5th May 1945, von Friedeburg returns to Headquarters and signs the instrument of unconditional surrender of all German forces."
+        },
+        {
+            "event": "e_2",
+            "date": "5th May, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Cease Fire is ordered on the 21 Army Group front from 0800 hours on 5th May 1945."
         },
         {
             "event": "e_3",
-            "date": "2nd May",
+            "date": "",
             "locations": [
-                "l_15"
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_5"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Negotiations for the surrender of German troops commence in Hamburg, signaling a potential end to hostilities in the area."
+            "eventSummary": "The break out from Normandy occurs, presenting challenges in logistics and communication due to the stretched Lines of Communication."
         }
     ]
 }

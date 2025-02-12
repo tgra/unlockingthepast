@@ -1,58 +1,58 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Norrie",
-            "p_2": "Gott",
-            "p_3": "Commander-in-Chief",
-            "p_4": "Commander, Eighth Army"
+            "p_1": "General",
+            "p_2": "Lieutenant-General Corbett",
+            "p_3": "Lieutenant-General Holmes",
+            "p_4": "Lieutenant-General Stone"
         },
         "locations": {
-            "l_1": "Trigh Capuzzo",
-            "l_2": "Tobruk",
-            "l_3": "El Gubi",
-            "l_4": "Sollum",
-            "l_5": "Acroma",
-            "l_6": "Cyprus",
-            "l_7": "Iraq",
-            "l_8": "Syria"
+            "l_1": "Cairo",
+            "l_2": "Northern Egypt",
+            "l_3": "Palestine",
+            "l_4": "Syria",
+            "l_5": "Red Sea",
+            "l_6": "Nile Valley",
+            "l_7": "El Alamein",
+            "l_8": "Caucasus",
+            "l_9": "Persia"
         },
         "events": {
-            "e_1": "Battle of Gazala",
-            "e_2": "Operation to defend Tobruk"
+            "e_1": "Battle of El Alamein",
+            "e_2": "Operation Instruction No. 134",
+            "e_3": "Capture of the Tel el Eisa salient",
+            "e_4": "Attack along the Ruweisat Ridge"
         },
         "organisations": {
-            "o_1": "8th Army",
-            "o_2": "5th Indian Division",
-            "o_3": "3rd Indian Motor Brigade",
-            "o_4": "11th Brigade of 4th Indian Division",
-            "o_5": "Guides Cavalry"
+            "o_1": "Eighth Army",
+            "o_2": "Middle East Defence Committee",
+            "o_3": "Defence Committee in London",
+            "o_4": "Chiefs of Staff"
         }
     },
     "keywords": [
-        "armoured reserve",
-        "strategic positioning",
-        "infantry tanks",
-        "minefields",
-        "mobile reserve"
+        "General Headquarters",
+        "campaign",
+        "Eighth Army",
+        "Delta Force",
+        "artillery",
+        "counter-attacks",
+        "German troops",
+        "Russian front",
+        "oil-fields",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategy",
-        "Reinforcements",
-        "Logistics"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_4"
         ],
-        "Defensive Strategy": [
-            "e_1"
-        ],
-        "Reinforcements": [
-            "e_2"
-        ],
-        "Logistics": [
+        "Strategic Decisions": [
             "e_1",
             "e_2"
         ]
@@ -60,14 +60,11 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 3, 1942",
+            "date": "July 1942",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_7"
             ],
             "persons": [
-                "p_1",
                 "p_2",
                 "p_3",
                 "p_4"
@@ -76,38 +73,51 @@
                 "o_1",
                 "o_2",
                 "o_3",
-                "o_4",
-                "o_5"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The commanders discuss strategies to fortify their position against potential enemy attacks, focusing on the positioning of armoured divisions and provision of reinforcements."
+            "eventSummary": "The Battle of El Alamein begins as the Eighth Army launches an attack against enemy positions on July 10th, aiming to secure the Tel el Eisa mounds."
         },
         {
-            "event": "e_2",
-            "date": "June 3, 1942",
+            "event": "e_3",
+            "date": "July 10, 1942",
             "locations": [
-                "l_2",
-                "l_3"
+                "l_7"
             ],
             "persons": [
-                "p_1",
                 "p_2",
                 "p_3",
                 "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The capture of the Tel el Eisa salient occurs on July 10th, posing a permanent threat to enemy positions."
+        },
+        {
+            "event": "e_4",
+            "date": "July 21, 1942",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Plans are laid to send reserves and reinforcements to Tobruk, with specific instructions on fortifying El Gubi and the need for strategic positioning of units."
+            "eventSummary": "An attack along the Ruweisat Ridge is ordered, starting well but losing momentum due to logistical challenges and enemy counterattacks."
         }
     ]
 }

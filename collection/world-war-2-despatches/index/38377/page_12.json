@@ -1,134 +1,88 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral Commanding",
-            "p_2": "RODNEY"
+            "p_1": "Vice-Admiral",
+            "p_2": "FARNDALE"
         },
         "locations": {
-            "l_1": "INDOMITABLE",
-            "l_2": "Gibraltar",
-            "l_3": "Cape Bon",
-            "l_4": "Cani Rocks",
-            "l_5": "Kelibia Light"
+            "l_1": "MANCHESTER",
+            "l_2": "Galita",
+            "l_3": "Malta",
+            "l_4": "Gibraltar",
+            "l_5": "Sardinia",
+            "l_6": "Pantellaria",
+            "l_7": "Cape Bon",
+            "l_8": "Zembra Island"
         },
         "events": {
-            "e_1": "Air Attack on INDOMITABLE",
-            "e_2": "Torpedo Incident involving H.M.S. NIGERIA",
-            "e_3": "Bombing of H.M.S. CAIRO",
-            "e_4": "General Air Attack on Convoy",
-            "e_5": "Engagements with E-Boats"
+            "e_1": "Departure of Force X from Malta",
+            "e_2": "Attack on M.G. convoy"
         },
         "organisations": {
-            "o_1": "Force Z",
-            "o_2": "Force X"
+            "o_1": "Force H",
+            "o_2": "Force X",
+            "o_3": "Admiralty",
+            "o_4": "Royal Navy"
         }
     },
     "keywords": [
+        "convoy",
+        "operation",
         "air attack",
-        "torpedo",
-        "H.M.S.",
-        "submarine",
-        "bombing",
-        "convoy"
+        "reconnaissance"
     ],
     "themes": [
         "Military Operations",
-        "Engagements",
-        "Damage Control"
+        "Naval Engagements",
+        "Air Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4",
-            "e_5"
+            "e_2"
         ],
-        "Engagements": [
-            "e_2",
-            "e_5"
+        "Naval Engagements": [
+            "e_2"
         ],
-        "Damage Control": [
-            "e_2",
-            "e_3"
+        "Air Support": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date Unknown",
+            "date": "24th July",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "Air attack on INDOMITABLE involves 40 torpedo bombers and Stuka aircraft, causing damage and fires onboard."
+            "eventSummary": "The cruisers of Force X depart Grand Harbour at 1800, followed by destroyers at 1845, with a fine send-off from Malteses."
         },
         {
             "event": "e_2",
-            "date": "12th August",
+            "date": "",
             "locations": [
-                "l_2"
+                "l_3"
             ],
             "persons": [
-                "p_1"
+                ""
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_4"
+                ""
             ],
-            "eventSummary": "H.M.S. NIGERIA hit by a torpedo, leading to damage control measures and transfer of command to H.M.S. ASHANTI."
-        },
-        {
-            "event": "e_3",
-            "date": "Date Unknown",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "H.M.S. CAIRO is sunk after severe damage sustained from enemy attacks."
-        },
-        {
-            "event": "e_4",
-            "date": "Date Unknown",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "A series of air attacks targets the convoy leading to multiple vessels being hit."
-        },
-        {
-            "event": "e_5",
-            "date": "14th August",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Engagement with E-Boats detected by radar leading to several surface engagements."
+            "eventSummary": "During the day, calls for help were intercepted from the M.G. convoy, reporting various air attacks and the need for assistance."
         }
     ]
 }

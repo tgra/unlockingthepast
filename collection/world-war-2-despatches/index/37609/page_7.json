@@ -1,129 +1,152 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General M. O Moore Creagh",
-            "p_2": "Major-General W. Platt",
-            "p_3": "Major-General L. M. Heath"
+            "p_1": "Mr. Anthony Eden",
+            "p_2": "General Smuts",
+            "p_3": "Colonel W. J. Cawthorn",
+            "p_4": "Admiral Sir Andrew B. Cunningham",
+            "p_5": "Vice-Admiral R. Leatham"
         },
         "locations": {
-            "l_1": "Western Frontier of Egypt",
-            "l_2": "Sidi Barrani",
-            "l_3": "Sudan",
-            "l_4": "Gallabat",
-            "l_5": "Metemma",
-            "l_6": "Italian East Africa",
-            "l_7": "Kassala"
+            "l_1": "Gallabat",
+            "l_2": "Kassala",
+            "l_3": "Crete",
+            "l_4": "Suda Bay",
+            "l_5": "Middle East",
+            "l_6": "Western Desert",
+            "l_7": "Palestine",
+            "l_8": "Trans-Jordan",
+            "l_9": "Sudan",
+            "l_10": "Egypt",
+            "l_11": "British Somaliland",
+            "l_12": "East Africa",
+            "l_13": "Indian Ocean",
+            "l_14": "Red Sea"
         },
         "events": {
-            "e_1": "Operations in the Sudan, October-November 1940",
-            "e_2": "Capture of Gallabat",
-            "e_3": "Attack on Metemma"
+            "e_1": "Attack on Gallabat",
+            "e_2": "Occupation of Crete",
+            "e_3": "Visit of Secretary of State",
+            "e_4": "Entry of Italy into the war",
+            "e_5": "Defence operations in the Middle East"
         },
         "organisations": {
-            "o_1": "7th Armoured Division",
-            "o_2": "5th Indian Division",
-            "o_3": "6th Royal Tank Regiment",
-            "o_4": "3rd Garhwal Rifles",
-            "o_5": "1st Essex Regiment",
-            "o_6": "R.H.A.",
-            "o_7": "ist Cavalry Division",
-            "o_8": "rzth Hussars",
-            "o_9": "8th Hussars"
+            "o_1": "6th Royal Tank Regiment",
+            "o_2": "British forces in the Middle East",
+            "o_3": "Middle East Command",
+            "o_4": "Middle East Intelligence Centre",
+            "o_5": "Royal Navy",
+            "o_6": "Mediterranean Fleet"
         }
     },
     "keywords": [
         "Gallabat",
-        "Metemma",
-        "Italian forces",
-        "British troops",
-        "military operations",
-        "air superiority",
-        "territorial gains"
+        "Kassala",
+        "Crete",
+        "Suda Bay",
+        "Middle East Command",
+        "British forces",
+        "air attack"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Decisions",
-        "Logistics and Supply"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_4",
+            "e_5"
+        ],
+        "Diplomacy": [
             "e_3"
         ],
-        "Tactical Decisions": [
+        "Strategic Decisions": [
             "e_2",
-            "e_3"
-        ],
-        "Logistics and Supply": [
-            "e_1"
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October-November 1940",
+            "date": "November, 1940",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_1"
             ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "British troops execute operations in the Sudan aiming to capture Gallabat and target Metemma amidst logistical challenges and enemy resistance."
+            "connectedEvents": [],
+            "eventSummary": "The attack on Gallabat is made with great dash, and the personnel of B Squadron of the 6th Royal Tank Regiment show admirable determination during heavy bombing."
         },
         {
             "event": "e_2",
-            "date": "6th November",
+            "date": "November, 1940",
             "locations": [
+                "l_3",
                 "l_4"
             ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "The 3rd Garhwal Rifles along with the Royal Tank Regiment successfully capture Gallabat with minimal casualties."
+            "eventSummary": "The occupation of Crete follows the unprovoked attack by Italy on Greece, leading to the establishment of a naval base at Suda Bay."
         },
         {
             "event": "e_3",
-            "date": "6th November",
+            "date": "End of October, 1940",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Mr. Anthony Eden, Secretary of State for War, visits the Middle East, discussing future plans with troops and gaining encouragement."
+        },
+        {
+            "event": "e_4",
+            "date": "28th October, 1940",
             "locations": [
                 "l_5"
             ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_4",
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "The planned attack on Metemma is called off as enemy air superiority and logistics hinder British operations."
+            "eventSummary": "Italy's unprovoked attack on Greece marks a significant escalation in World War II."
+        },
+        {
+            "event": "e_5",
+            "date": "Over several months starting September, 1940",
+            "locations": [
+                "l_5",
+                "l_10",
+                "l_11",
+                "l_12",
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The defence operations in the Middle East pivot around the responses to threats from Italy and maintaining communication with the United Kingdom."
         }
     ]
 }

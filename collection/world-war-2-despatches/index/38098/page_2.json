@@ -1,103 +1,180 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice-Admiral Commanding",
-            "p_2": "Lieutenant-Commander Ralph W. F. Northcott",
-            "p_3": "Rear-Admiral Commanding, First Cruiser Squadron",
-            "p_4": "Admiral Commanding Western Approaches"
+            "p_1": "Alex C. Chapman",
+            "p_2": "Wilfrid R. Patterson",
+            "p_3": "Edward W. B. Sim",
+            "p_4": "Alban T. B. Curteis",
+            "p_5": "William G. Agnew",
+            "p_6": "Michael M. Denny",
+            "p_7": "Rory C. O Conor",
+            "p_8": "Michael W. Tomkinson",
+            "p_9": "Stuart A. Buss",
+            "p_10": "Conrad B. Alers-Hankey",
+            "p_11": "Percy Todd",
+            "p_12": "Roderick C. Gordon",
+            "p_13": "Geoffrey N. Oliver",
+            "p_14": "Henry C. Bovell",
+            "p_15": "William G. Tennant",
+            "p_16": "P. M. Sommeville",
+            "p_17": "John B. de B. Kershaw",
+            "p_18": "Henry L. St.J. Fancourt",
+            "p_19": "Geoffrey A. Rotherham",
+            "p_20": "Noel E. Goddard"
         },
         "locations": {
-            "l_1": "Iceland",
-            "l_2": "Faeroes",
-            "l_3": "Scapa",
+            "l_1": "Denmark Strait",
+            "l_2": "Reykjavik",
+            "l_3": "Iceland",
             "l_4": "Hvalfiord",
-            "l_5": "Denmark Strait",
-            "l_6": "Greenland",
-            "l_7": "Orkneys",
-            "l_8": "Bergen",
-            "l_9": "Iceland-Faeroes passage"
+            "l_5": "Scapa",
+            "l_6": "South West Norway",
+            "l_7": "Trondheim",
+            "l_8": "Kristiansand South",
+            "l_9": "Bergen",
+            "l_10": "Clyde",
+            "l_11": "Sumburgh",
+            "l_12": "Kirkenes",
+            "l_13": "Norwegian coast",
+            "l_14": "Stadtlandet",
+            "l_15": "Inner Sea"
         },
         "events": {
-            "e_1": "Operation against the BISMARCK",
-            "e_2": "First Sighting of the BISMARCK"
+            "e_1": "Convoy W.S. 8B Cancellation",
+            "e_2": "Bombing Attack by Royal Air Force",
+            "e_3": "Patrols Off South West Norway",
+            "e_4": "Reconnaissance Flight on 22nd May",
+            "e_5": "Departure Report of Enemy Warships and Convoy"
         },
         "organisations": {
-            "o_1": "Battle Cruiser Squadron",
-            "o_2": "Western Approaches Command"
+            "o_1": "Royal Air Force",
+            "o_2": "Admiralty",
+            "o_3": "Home Fleet",
+            "o_4": "First Cruiser Squadron",
+            "o_5": "Second Cruiser Squadron",
+            "o_6": "Third Destroyer Flotilla",
+            "o_7": "Coastal Command"
         }
     },
     "keywords": [
-        "BISMARCK",
-        "reconnaissance",
-        "patrol",
-        "cruisers",
-        "destroyers"
+        "Submarine",
+        "Patrol",
+        "Reconnaissance",
+        "Convoy",
+        "Air Attack",
+        "Admiralty"
     ],
     "themes": [
         "Military Operations",
-        "Air Reconnaissance",
-        "Naval Engagement",
-        "Strategic Deployment"
+        "Naval Strategy",
+        "Air Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_5"
         ],
         "Air Reconnaissance": [
-            "e_1"
+            "e_2",
+            "e_4"
         ],
-        "Naval Engagement": [
-            "e_2"
-        ],
-        "Strategic Deployment": [
-            "e_1"
+        "Naval Strategy": [
+            "e_1",
+            "e_3",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd May",
+            "date": "",
             "locations": [
-                "l_2",
-                "l_3",
-                "l_5",
-                "l_9"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_14",
+                "p_15"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The sailing of VICTORIOUS and REPULSE in Convoy W.S. 8B is cancelled by the Admiralty."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd May",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_19",
+                "p_20"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The operation against the BISMARCK is underway, with various naval forces deployed strategically in the Iceland-Faeroes passage, focusing on maintaining fuel levels and preparing for potential confrontation."
+            "connectedEvents": [],
+            "eventSummary": "A bombing attack by the Royal Air Force aircraft is arranged for the dark hours."
         },
         {
-            "event": "e_2",
-            "date": "23rd May",
+            "event": "e_3",
+            "date": "",
             "locations": [
-                "l_2",
-                "l_5",
-                "l_7"
+                "l_6",
+                "l_1"
             ],
             "persons": [
-                "p_3",
-                "p_4"
+                "p_16",
+                "p_17"
             ],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_5"
             ],
-            "eventSummary": "The first sighting of the BISMARCK occurs by SUFFOLK, which reports the enemy's position and maintains contact despite challenging weather conditions."
+            "eventSummary": "The submarine MINERVE on patrol off South West Norway is moved to the vicinity of a specific position."
+        },
+        {
+            "event": "e_4",
+            "date": "22nd May",
+            "locations": [
+                "l_7",
+                "l_6"
+            ],
+            "persons": [
+                "p_18",
+                "p_19"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A reconnaissance flight is initiated by the Commanding Officer of R.N. Air Station, Hatston."
+        },
+        {
+            "event": "e_5",
+            "date": "22nd May",
+            "locations": [
+                "l_9",
+                "l_1"
+            ],
+            "persons": [
+                "p_18"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The report of departure of the warships and convoy is received."
         }
     ]
 }

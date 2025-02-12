@@ -1,102 +1,97 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief, India",
+            "p_1": "General Wavell",
             "p_2": "Lieutenant General Sir Alan Cunningham",
             "p_3": "Lieutenant General Sir William Platt",
-            "p_4": "Major-General Sir Philip Mitchell"
+            "p_4": "Major General Sir Philip Mitchell"
         },
         "locations": {
-            "l_1": "Cairo",
-            "l_2": "Turkey",
-            "l_3": "Iran",
-            "l_4": "Anatolia",
-            "l_5": "East Africa",
-            "l_6": "Gondar",
-            "l_7": "Persia",
-            "l_8": "Iraq",
-            "l_9": "Palestine",
-            "l_10": "Syria",
+            "l_1": "Turkey",
+            "l_2": "Anatolia",
+            "l_3": "Cairo",
+            "l_4": "India",
+            "l_5": "Persia",
+            "l_6": "Iraq",
+            "l_7": "Palestine",
+            "l_8": "Syria",
+            "l_9": "East Africa",
+            "l_10": "Gondar",
             "l_11": "Ethiopia",
-            "l_12": "French Somaliland",
-            "l_13": "Jibuti",
-            "l_14": "Addis Ababa"
+            "l_12": "Somaliland",
+            "l_13": "French Somaliland",
+            "l_14": "Red Sea",
+            "l_15": "Indian Ocean",
+            "l_16": "Jibuti",
+            "l_17": "Addis Ababa"
         },
         "events": {
             "e_1": "Conference at Baghdad",
-            "e_2": "Evacuation negotiations of Italian civilians",
-            "e_3": "Operations in East Africa"
+            "e_2": "Operations in East Africa",
+            "e_3": "Proclamation delegating authority to Sir Philip Mitchell"
         },
         "organisations": {
-            "o_1": "British Forces"
+            "o_1": "British Forces",
+            "o_2": "Turkish military authorities",
+            "o_3": "Joint Planning Staff",
+            "o_4": "War Office"
         }
     },
     "keywords": [
         "German attack",
-        "Turkish military",
-        "East Africa operations",
-        "cooperative planning",
-        "Italian civilians"
+        "supplies",
+        "military cooperation",
+        "liasion",
+        "operations",
+        "proclamation"
     ],
     "themes": [
         "Military Operations",
         "Diplomacy",
-        "Strategic Decisions",
-        "Cooperative Planning"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Diplomacy": [
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Diplomacy": [
+            "e_1",
+            "e_3"
         ],
-        "Cooperative Planning": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 26",
+            "date": "26th September",
             "locations": [
                 "l_1",
-                "l_9",
-                "l_10"
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_1",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "At a conference in Baghdad, attended by the Commander-in-Chief India, it is agreed that the Joint Planning Staff will address the defense of the Middle East against possible German offensives."
+            "eventSummary": "At a conference in Baghdad on the 26th September, attendees including the Commander-in-Chief India and General Wavell discuss military cooperation to address potential German threats through Anatolia or the Caucasus."
         },
         {
             "event": "e_2",
-            "date": "not specified",
+            "date": "",
             "locations": [
-                "l_12",
-                "l_14"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Negotiations with the Italian Government regarding the evacuation of Italian civilians in the Addis Ababa area are deemed essential due to security concerns."
-        },
-        {
-            "event": "e_3",
-            "date": "July - September",
-            "locations": [
-                "l_5",
-                "l_6"
+                "l_9",
+                "l_10"
             ],
             "persons": [
                 "p_2",
@@ -106,7 +101,22 @@
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Operations in East Africa reach a standstill, following successful campaigns by Lieutenant Generals Cunningham and Platt, with focus on managing remaining resistance in the Gondar area."
+            "eventSummary": "Operations in East Africa see significant activity after previous successful campaigns but have recently stalled due to heavy rains, with limited operations carried out by Air Forces."
+        },
+        {
+            "event": "e_3",
+            "date": "1st August",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the 1st August, a proclamation is made delegating legislative and administrative authority to Major General Sir Philip Mitchell in Ethiopia."
         }
     ]
 }

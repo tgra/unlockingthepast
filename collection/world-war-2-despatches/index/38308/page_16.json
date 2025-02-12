@@ -1,113 +1,118 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Squadron Leader of 1844 Squadron",
-            "p_2": "Commander 5th Fleet"
+            "p_1": "C.-in-C.",
+            "p_2": "Rear Admiral Commanding Fleet Train",
+            "p_3": "Rear Admiral Commanding Destroyers",
+            "p_4": "Capt. D. 25",
+            "p_5": "Capt. D. 4",
+            "p_6": "Capt. D. 7"
         },
         "locations": {
-            "l_1": "Ishigaki",
-            "l_2": "Miyako",
-            "l_3": "Keramo Retto",
-            "l_4": "Cootie",
-            "l_5": "Hirara",
-            "l_6": "H.M.S. FORMIDABLE",
-            "l_7": "H.M.S. INDOMITABLE"
+            "l_1": "Leyte",
+            "l_2": "Borneo",
+            "l_3": "Sakishima Gunto",
+            "l_4": "Lae, New Guinea",
+            "l_5": "SYDNEY"
         },
         "events": {
-            "e_1": "Air strikes on Ishigaki and Miyako",
-            "e_2": "Submarine Hunt",
-            "e_3": "Rescue Operations",
-            "e_4": "Tanker Group Rendezvous"
+            "e_1": "Operation Iceberg",
+            "e_2": "Task Force 57 Operation",
+            "e_3": "Bombardment of Miyako airfields",
+            "e_4": "Engagement at Sakishima Gunto"
         },
         "organisations": {
-            "o_1": "CTF 57",
-            "o_2": "5th Fleet",
-            "o_3": "Royal Navy"
+            "o_1": "Task Force 57",
+            "o_2": "7th Destroyer Flotilla"
         }
     },
     "keywords": [
-        "A.A. fire",
-        "bomber strikes",
-        "enemy aircraft",
-        "runways",
-        "submarine contact"
+        "Operation",
+        "Fleet",
+        "Task Force",
+        "Bombardment",
+        "Airfields"
     ],
     "themes": [
         "Military Operations",
-        "Air Operations",
-        "Rescue Missions"
+        "Naval Command",
+        "Aerial Bombardment"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Command": [
             "e_2"
         ],
-        "Rescue Missions": [
+        "Aerial Bombardment": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "unknown",
+            "date": "May 1",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The air strikes on Ishigaki and Miyako involve multiple bomber strikes that target enemy positions and infrastructure, with some successes and losses reported."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Iceberg is planned to continue in the vicinity of Sakishima Gunto."
         },
         {
             "event": "e_2",
-            "date": "unknown",
+            "date": "May 1",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_2"
+                "p_2",
+                "p_3"
             ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A possible submarine contact is investigated but later deemed a false alarm as no submarine contact is confirmed."
-        },
-        {
-            "event": "e_3",
-            "date": "unknown",
-            "locations": [
-                "l_6",
-                "l_7"
-            ],
-            "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Rescue operations take place for downed pilots with successful recoveries facilitated by supporting aircraft."
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Task Force 57 sails from Leyte for operations against Sakishima Gunto."
+        },
+        {
+            "event": "e_3",
+            "date": "May 4",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Bombardment of Miyako airfields is executed as part of Operation Iceberg."
         },
         {
             "event": "e_4",
-            "date": "unknown",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_3"
             ],
             "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "A rendezvous occurs with tanker groups at Cootie for fueling operations and supplies transfer."
+            "eventSummary": "Engagement at Sakishima Gunto is initiated during the overall operation."
         }
     ]
 }

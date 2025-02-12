@@ -1,124 +1,72 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral Commanding, Home Fleet Destroyers",
-            "p_2": "Commander A. H. Wynne-Edwards, R.N.",
-            "p_3": "Lieutenant Commander C. D. Maud, D.S.C., R.N."
+            "p_1": "Rear Admiral R. L. Urmett"
         },
         "locations": {
-            "l_1": "White Sea",
-            "l_2": "Archangel",
-            "l_3": "Cape Kanin",
-            "l_4": "Nova Zemlya",
-            "l_5": "Spitzbergen",
-            "l_6": "Lowe Sound",
-            "l_7": "Iceland",
-            "l_8": "Loch Ewe"
+            "l_1": "North Russia",
+            "l_2": "Nova Zemlya",
+            "l_3": "Archangel",
+            "l_4": "Jan Mayen Island",
+            "l_5": "Iceland",
+            "l_6": "Far North",
+            "l_7": "Kola",
+            "l_8": "Bear Island",
+            "l_9": "Murman"
         },
         "events": {
-            "e_1": "Air Attacks on Convoy",
-            "e_2": "U-Boat Attacks on Convoy",
-            "e_3": "Transfer of Convoy Q.P.14",
-            "e_4": "Sinking of the SOMALI",
-            "e_5": "Sinking of the ATHEL TEMPLAR",
-            "e_6": "Sinking of Merchant Ships by U-boats"
+            "e_1": "P.Q.18",
+            "e_2": "Operation Pedestal",
+            "e_3": "Sinking of ULM",
+            "e_4": "Passage of Q.P.14"
         },
         "organisations": {
-            "o_1": "Home Fleet Destroyers",
-            "o_2": "Royal Navy"
+            "o_1": "Bomber Command",
+            "o_2": "Soviet Government",
+            "o_3": "Coastal Command"
         }
     },
     "keywords": [
-        "U-boats",
-        "Air Attacks",
-        "Convoy",
-        "Naval Operations",
-        "Escort",
-        "Torpedo",
-        "Merchant Ships"
+        "U-boat",
+        "air forces",
+        "convoy",
+        "destroyers",
+        "ammunition",
+        "medical unit"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Air Assaults"
+        "Air Cooperation",
+        "Logistics",
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
+        ],
+        "Air Cooperation": [
+            "e_1"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "14th September",
+            "date": "September 1942",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_4"
             ],
             "persons": [
                 "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4",
-                "e_5"
-            ],
-            "eventSummary": "Air attacks on the convoy commenced with bombers and torpedo aircraft, resulting in the sinking of eight ships."
-        },
-        {
-            "event": "e_2",
-            "date": "20th September",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4",
-                "e_6"
-            ],
-            "eventSummary": "U-boat attacks lead to the sinking of several merchant ships, including the minesweeper LEDA and heavily damaging SOMALI."
-        },
-        {
-            "event": "e_3",
-            "date": "16th/17th September",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The convoy was successfully transferred from P.Q.18 to Q.P.14 with effective cover."
-        },
-        {
-            "event": "e_4",
-            "date": "22nd September",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
             ],
             "organisations": [
                 "o_1",
@@ -127,36 +75,44 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The SOMALI sinks after being tow under dangerous conditions during an ongoing U-boat threat."
+            "eventSummary": "P.Q.18 is postponed until early September due to the withdrawal of cruisers and destroyers for Operation Pedestal, creating concerns about adequate protection against enemy submarines."
         },
         {
-            "event": "e_5",
-            "date": "",
+            "event": "e_2",
+            "date": "August 1942",
             "locations": [
-                ""
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Pedestal involves the sailing of a large convoy for Malta in August 1942, highlighting logistical challenges faced by naval operations."
+        },
+        {
+            "event": "e_3",
+            "date": "August 24, 1942",
+            "locations": [
+                "l_8"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The ATHEL TEMPLAR is sunk by a U-boat during a series of attacks."
+            "eventSummary": "The German minelayer ULM is sunk by British destroyers south-east of Bear Island during a sweep operation, demonstrating the ongoing naval conflict in the region."
         },
         {
-            "event": "e_6",
-            "date": "22nd September",
+            "event": "e_4",
+            "date": "",
             "locations": [
-                "l_7"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "Multiple merchant ships are lost to U-boats in a continuation of assaults on the convoy."
+            "connectedEvents": [],
+            "eventSummary": "The passage of Q.P.14 occurs as part of the ongoing logistical movements and naval operations in the North Russia area."
         }
     ]
 }

@@ -1,161 +1,103 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major General Curtis",
-            "p_2": "Brigadier C. M. Usher",
-            "p_3": "General Weygand",
+            "p_1": "M. Reynaud",
+            "p_2": "General Weygand",
+            "p_3": "Sir John Dill",
             "p_4": "General Billotte",
-            "p_5": "General Van Overstraeten",
-            "p_6": "General Champon",
-            "p_7": "General Pownall",
-            "p_8": "H.M. the King of the Belgians"
+            "p_5": "Major-General Eastwood",
+            "p_6": "Prime Minister"
         },
         "locations": {
-            "l_1": "Carvin",
-            "l_2": "Millonfosse",
-            "l_3": "St. Amand",
-            "l_4": "Aire",
-            "l_5": "Gravelines",
-            "l_6": "St. Omer",
-            "l_7": "La Bassée",
+            "l_1": "Dunkirk",
+            "l_2": "Douai",
+            "l_3": "Cambrai",
+            "l_4": "Paris",
+            "l_5": "Amiens",
+            "l_6": "Pronne",
+            "l_7": "Belgium",
             "l_8": "Somme",
-            "l_9": "Escaut",
-            "l_10": "Maulde",
-            "l_11": "Audenarde",
-            "l_12": "Ghent",
-            "l_13": "Terneuzen",
-            "l_14": "Halluin",
-            "l_15": "Courtrai"
+            "l_9": "Neufchatel",
+            "l_10": "Northern Armies"
         },
         "events": {
-            "e_1": "Transfer of Command of Canal Sector",
-            "e_2": "Commitment of Allied Reserves",
-            "e_3": "Abandonment of the Escaut Line",
-            "e_4": "Meeting with King of the Belgians"
+            "e_1": "Evacuation from Dunkirk",
+            "e_2": "Weygand Plan Conference"
         },
         "organisations": {
-            "o_1": "139th Infantry Brigade",
-            "o_2": "42nd Division",
-            "o_3": "46th Division",
-            "o_4": "50th Division",
-            "o_5": "G.H.Q. troops",
-            "o_6": "French 1st Army",
-            "o_7": "Allied armies"
+            "o_1": "B.E.F.",
+            "o_2": "French 1st Army",
+            "o_3": "Belgian Cavalry Corps",
+            "o_4": "French VII Army",
+            "o_5": "French First Group of Armies"
         }
     },
     "keywords": [
-        "Infantry Brigade",
-        "Canal Line",
-        "Defensive Positions",
-        "Reconnaissance",
-        "French Troops"
+        "Evacuation",
+        "Military Strategy",
+        "Battle",
+        "Supplies"
     ],
     "themes": [
         "Military Operations",
-        "Allied Strategy",
-        "Command Structure",
-        "Defensive Planning"
+        "Strategic Decisions",
+        "Allied Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Diplomacy": [
-            "e_4"
+            "e_2"
         ],
         "Strategic Decisions": [
-            "e_2",
-            "e_3"
+            "e_2"
+        ],
+        "Allied Cooperation": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "21st May",
+            "date": "May 23-31, 1940",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_5"
+                "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_6"
             ],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3",
-                "o_4"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "On 21st May, Major General Curtis takes command of the Canal sector, as the 139th Infantry Brigade integrates into the Allied forces."
+            "eventSummary": "The evacuation from Dunkirk occurs under dire conditions as supplies dwindle and air raids escalate."
         },
         {
             "event": "e_2",
-            "date": "21st May",
+            "date": "May 23-24, 1940",
             "locations": [
-                "l_5",
-                "l_10"
+                "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_6",
-                "o_7"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "A provisional decision is reached on 21st May to commit nearly the entire reserve to strengthen the defensive position against the attacks."
-        },
-        {
-            "event": "e_3",
-            "date": "23rd May",
-            "locations": [
-                "l_6",
-                "l_10"
-            ],
-            "persons": [
-                "p_4",
-                "p_8"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_2",
-                "o_7"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "On the night of 22nd/23rd May, the Escaut Line is abandoned due to the pressing need to reorganize Allied defenses."
-        },
-        {
-            "event": "e_4",
-            "date": "21st May",
-            "locations": [
-                "l_10"
-            ],
-            "persons": [
-                "p_8",
-                "p_4"
-            ],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On 21st May, a meeting occurs in Ypres where H.M. the King of the Belgians discusses the defense with General Billotte."
+            "eventSummary": "A conference held in Paris addresses the Weygand Plan, which aims for a counter-offensive to restore the situation in the north."
         }
     ]
 }

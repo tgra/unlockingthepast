@@ -1,99 +1,164 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "K. S. Torrance"
+            "p_1": "Commander Massy Force",
+            "p_2": "Governor",
+            "p_3": "Commander Western Area",
+            "p_4": "Commander Northern Area",
+            "p_5": "Commander 18 British Division",
+            "p_6": "Commander Southern Area"
         },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Kota Tinggi",
-            "l_3": "Settlement of Malacca",
-            "l_4": "Johore",
-            "l_5": "Negri Sembilan",
-            "l_6": "Labis",
-            "l_7": "Johore Bahru",
-            "l_8": "Batu Pahat",
-            "l_9": "Yong Peng",
-            "l_10": "Ayer Hitam",
-            "l_11": "Jemaluang",
-            "l_12": "Pontian Kechil"
+            "l_1": "Bukit Timah road",
+            "l_2": "Chinese High School",
+            "l_3": "Singapore Town",
+            "l_4": "Changi",
+            "l_5": "Kallang aerodrome",
+            "l_6": "Nee Soon Village",
+            "l_7": "Pandan area",
+            "l_8": "Holland Village",
+            "l_9": "Tanglin Halt",
+            "l_10": "Pasir Panjang Village",
+            "l_11": "Woodleigh Pumping Station",
+            "l_12": "Buona Vista Village",
+            "l_13": "Pearl's Hill water reservoir",
+            "l_14": "Fort Canning Reservoir",
+            "l_15": "Pulau Bukum",
+            "l_16": "Mersing"
         },
         "events": {
-            "e_1": "Operation to secure Singapore Naval Base",
-            "e_2": "Withdrawal of 3 Indian Corps"
+            "e_1": "Battle on the Bukit Timah road",
+            "e_2": "Counter-offensive at Singapore Town",
+            "e_3": "Japanese attack in Nee Soon Village",
+            "e_4": "Withdrawal from Changi area",
+            "e_5": "Japanese offensive along the Pasir Panjang Ridge"
         },
         "organisations": {
-            "o_1": "A.I.F.",
-            "o_2": "Malaya Command",
-            "o_3": "3 Indian Corps",
-            "o_4": "R.N.",
-            "o_5": "R.A.F."
+            "o_1": "11 Indian Division",
+            "o_2": "18 British Division",
+            "o_3": "22 Australian Brigade Group",
+            "o_4": "8 Brigade",
+            "o_5": "28 Brigade",
+            "o_6": "53 Brigade"
         }
     },
     "keywords": [
-        "military withdrawal",
-        "enemy attacks",
-        "operational control",
+        "heavy fighting",
+        "enemy attack",
         "defensive strategy",
-        "logistics",
-        "coordinates",
-        "reinforcements"
+        "withdrawal",
+        "Japanese offensives",
+        "water supply",
+        "military reserve"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Administration",
-        "Defensive Strategies"
+        "Defensive Strategies",
+        "Supply and Logistics",
+        "Tactical Withdrawals"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Logistics and Administration": [
-            "e_2"
+            "e_3",
+            "e_5"
         ],
         "Defensive Strategies": [
-            "e_1"
+            "e_2",
+            "e_4"
+        ],
+        "Supply and Logistics": [],
+        "Tactical Withdrawals": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 10, 1942",
+            "date": "12th February 1942",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation to secure Singapore Naval Base is currently in progress, involving the coordination of A.I.F. and naval forces to fortify defenses against ongoing enemy assaults."
+            "eventSummary": "The 12th February 1942 features heavy fighting on the Bukit Timah road where the enemy launches strong attacks, attempting to break through towards Singapore Town."
         },
         {
             "event": "e_2",
-            "date": "January 23-24, 1942",
+            "date": "12th February 1942",
             "locations": [
-                "l_4",
-                "l_10",
-                "l_11"
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "A close perimeter defence round Singapore Town is organized after an assessment of the enemy's advance, leading to a decision for a tactical withdrawal from the beach defenses."
+        },
+        {
+            "event": "e_3",
+            "date": "12th February 1942",
+            "locations": [
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_4",
+                "o_5"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The Japanese Imperial Guards launch a determined attack in the Nee Soon Village area, but they are held back by units of the 8 and 28 Brigades."
+        },
+        {
+            "event": "e_4",
+            "date": "12th - 13th February 1942",
+            "locations": [
+                "l_4"
             ],
-            "eventSummary": "3 Indian Corps withdraws from its position under command, aiming to regroup at Kluang and Ayer Hitam while maintaining defensive tactics against the advancing enemy."
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Orders for the withdrawal of troops from the Changi area are given due to a developing dangerous situation, focusing on securing the vital water supply."
+        },
+        {
+            "event": "e_5",
+            "date": "13th February 1942",
+            "locations": [
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the 13th February 1942, the main Japanese offensive develops along the Pasir Panjang Ridge as the enemy mobilizes the 18 Division."
         }
     ]
 }

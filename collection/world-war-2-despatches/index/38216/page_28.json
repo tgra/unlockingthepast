@@ -2,135 +2,113 @@
     "namedEntities": {
         "persons": {
             "p_1": "A.O.C.",
-            "p_2": "G.H.Q.",
-            "p_3": "Norgroup"
+            "p_2": "H.Q.M.C.",
+            "p_3": "IIIrd Corps",
+            "p_4": "Japanese",
+            "p_5": "Dutch Fighter Squadron"
         },
         "locations": {
             "l_1": "Singapore",
-            "l_2": "Ipoh",
-            "l_3": "Butterworth",
-            "l_4": "Penang",
-            "l_5": "Kuala Lumpur",
-            "l_6": "Sungei Patani",
-            "l_7": "Taiping",
-            "l_8": "Kedah",
-            "l_9": "Krian river",
-            "l_10": "Krohcol",
-            "l_11": "Kampar",
-            "l_12": "Kelantan",
-            "l_13": "Kuantan",
-            "l_14": "Johore"
+            "l_2": "Malaya",
+            "l_3": "S. China Sea",
+            "l_4": "Banka Straits",
+            "l_5": "E. Sumatra",
+            "l_6": "Palembang",
+            "l_7": "Kallang",
+            "l_8": "Johore",
+            "l_9": "Kota Bahru",
+            "l_10": "Central Malaya",
+            "l_11": "Kuantan",
+            "l_12": "Telok Anson",
+            "l_13": "Slim River",
+            "l_14": "Kuala Lumpur",
+            "l_15": "Port Swettenham",
+            "l_16": "Mersing"
         },
         "events": {
-            "e_1": "Operation of No. 453 (F) Squadron",
-            "e_2": "Demolition of Aerodromes",
-            "e_3": "Air Forces Withdrawal from North-West Malaya",
-            "e_4": "Japanese Forces Attack on the 11th (Indian) Division"
+            "e_1": "Arrival of Reinforcement Convoys",
+            "e_2": "Withdrawal of the Army to Johore",
+            "e_3": "Major Japanese Landing Expected"
         },
         "organisations": {
-            "o_1": "No. 453 (F) Squadron",
-            "o_2": "No. 21 (F) Squadron, R.A.A.F.",
-            "o_3": "Observer Corps",
-            "o_4": "IIIrd Corps",
-            "o_5": "Norgroup"
+            "o_1": "G.H.Q.",
+            "o_2": "R.A.F."
         }
     },
     "keywords": [
-        "AOC",
-        "No. 453 (F) Squadron",
-        "Ipoh",
-        "Japanese bombers",
-        "demolition",
-        "operations",
-        "morale",
-        "reconnaissance"
+        "Convoys",
+        "Reinforcements",
+        "Japanese Army",
+        "Air Protection",
+        "Withdrawal"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Japanese Offensive",
-        "Logistics",
-        "Strategic Retreat"
+        "Defensive Strategies",
+        "Air Defense"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Japanese Offensive": [
-            "e_1",
-            "e_4"
-        ],
-        "Logistics": [
             "e_2"
         ],
-        "Strategic Retreat": [
+        "Defensive Strategies": [
+            "e_2",
             "e_3"
+        ],
+        "Air Defense": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 13 - 15, 1941",
+            "date": "3rd January",
             "locations": [
-                "l_2",
-                "l_3",
                 "l_1"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "No. 453 (F) Squadron undertakes operations from Ipoh, attacking Japanese convoys and engaging enemy aircraft, significantly affecting troop morale."
-        },
-        {
-            "event": "e_2",
-            "date": "December 15, 1941",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Demolition efforts at aerodromes in north-west Malaya show minimal effectiveness against the swift Japanese occupation."
-        },
-        {
-            "event": "e_3",
-            "date": "December 23, 1941",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
+                "p_1",
+                "p_2",
                 "p_3"
             ],
             "organisations": [
-                "o_5"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "In light of overwhelming Japanese forces, air units are withdrawn from the north-west to reinforce Singapore."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The first convoy arrives in Singapore on 3rd January, providing vital reinforcements crucial for ongoing military operations."
         },
         {
-            "event": "e_4",
-            "date": "December 15, 1941",
+            "event": "e_2",
+            "date": "10th January",
             "locations": [
-                "l_8"
+                "l_8",
+                "l_14",
+                "l_15"
             ],
-            "persons": [],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
             "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "By the middle of January, the bulk of forces withdraw to Johore as the position worsens due to enemy advances."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_10"
             ],
-            "eventSummary": "The Japanese forces pressure the 11th (Indian) Division, leading to strategic retreats in Kedah."
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A major Japanese landing is anticipated near Mersing, heightening the urgency of defense measures."
         }
     ]
 }

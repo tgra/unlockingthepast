@@ -1,36 +1,150 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Secunderabad",
-            "l_2": "Chhindwara",
-            "l_3": "Ceylon",
-            "l_4": "Maldives",
-            "l_5": "Chagos Archipelago",
-            "l_6": "Diego Garcia",
-            "l_7": "Cocos Islands",
-            "l_8": "Sanaranpur",
-            "l_9": "Ambala",
-            "l_10": "Srincomalee",
-            "l_11": "DehreOun"
+        "persons": {
+            "p_1": "T. H. Galletly",
+            "p_2": "F. Vincent",
+            "p_3": "General Slim"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Maukkadaw",
+            "l_2": "Budalin",
+            "l_3": "Monywa",
+            "l_4": "Chindwin",
+            "l_5": "Gangaw",
+            "l_6": "Natchaung",
+            "l_7": "Kalemyo",
+            "l_8": "Tamu",
+            "l_9": "Pakokku",
+            "l_10": "Tilin",
+            "l_11": "Pyinchaung",
+            "l_12": "Imphal",
+            "l_13": "Gangaw Valley",
+            "l_14": "Thabeikkyin",
+            "l_15": "Kyaukmyaung",
+            "l_16": "Myingyan",
+            "l_17": "Sagaing Hills",
+            "l_18": "Kabaw Valley"
+        },
+        "events": {
+            "e_1": "Capture of Budalin",
+            "e_2": "Capture of Gangaw",
+            "e_3": "Occupation of Tilin",
+            "e_4": "Opening of the joint Fourteenth Army/221 Group R.A.F. Headquarters at Monywa",
+            "e_5": "Advance of 19 Indian Division"
+        },
+        "organisations": {
+            "o_1": "Fourteenth Army",
+            "o_2": "221 Group R.A.F.",
+            "o_3": "4 Corps",
+            "o_4": "19 Indian Division",
+            "o_5": "7 Indian Division",
+            "o_6": "28 (East African) Brigade",
+            "o_7": "255 Indian Tank Brigade",
+            "o_8": "17 Indian Division",
+            "o_9": "5 Indian Division"
+        }
     },
     "keywords": [
-        "Military",
-        "Geopolitics",
-        "Locations",
-        "Naval Bases"
+        "military operation",
+        "resistance",
+        "air support",
+        "advance",
+        "engineer problems",
+        "headquarters",
+        "transport aircraft"
     ],
     "themes": [
-        "Geopolitical Locations",
-        "Military Presence"
+        "Military Operations",
+        "Supply and Logistics",
+        "Leadership and Strategy"
     ],
     "topicModel": {
-        "Military Operations": [],
-        "Diplomacy": [],
-        "Geopolitics": []
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Supply and Logistics": [
+            "e_4"
+        ],
+        "Leadership and Strategy": [
+            "e_5"
+        ]
     },
-    "eventConnections": []
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "10th January",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 20 Indian Division captures Budalin after four days of intense combat."
+        },
+        {
+            "event": "e_2",
+            "date": "12th January",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Lushai Brigade captures Gangaw after prolonged fighting."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd January",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "28 (East African) Brigade occupies Tilin after defeating enemy positions."
+        },
+        {
+            "event": "e_4",
+            "date": "8th February",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The joint Fourteenth Army/221 Group R.A.F. Headquarters is established at Monywa."
+        },
+        {
+            "event": "e_5",
+            "date": "31st January",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 19 Indian Division advances towards its next objective with strategic intent."
+        }
+    ]
 }

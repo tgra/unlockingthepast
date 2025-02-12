@@ -1,40 +1,48 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C in C H E",
-            "p_2": "Sheffield",
-            "p_3": "Savage",
-            "p_4": "Saumarez",
-            "p_5": "Duke of York"
+            "p_1": "BRUCE FRASER",
+            "p_2": "Captain",
+            "p_3": "Commander"
         },
         "locations": {
-            "l_1": "Not specified",
-            "l_2": "ZON-1"
+            "l_1": "Kola Inlet",
+            "l_2": "Scapa"
         },
         "events": {
-            "e_1": "Sinking of the Scharnhorst",
-            "e_2": "Battle of 26 Dec 1943"
+            "e_1": "SINKING OF THE SCHARNHORST",
+            "e_2": "Night Battle"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "36 Division"
+            "o_1": "36th Division",
+            "o_2": "Force 1",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
-        "Scharnhorst",
-        "Cruiser Shadowing",
-        "Battleship Action",
-        "Naval Warfare",
-        "Radar Contacts"
+        "torpedoes",
+        "hits",
+        "cruisers",
+        "destroyers",
+        "underwater explosion",
+        "survivors",
+        "attack",
+        "enemy",
+        "battle"
     ],
     "themes": [
-        "Naval Operations",
-        "Military Strategy"
+        "Military Operations",
+        "Naval Warfare",
+        "Survivor Rescue",
+        "Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
+        ],
+        "Survivor Rescue": [
+            "e_1"
         ],
         "Naval Warfare": [
             "e_2"
@@ -43,22 +51,42 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26 Dec 1943",
+            "date": "December 27, 1943",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_5"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Scharnhorst is engaged and ultimately sunk during naval operations on 26 Dec 1943, involving multiple ships from the Royal Navy."
+            "eventSummary": "The SCHARNHORST sinks after a series of torpedo hits and an underwater explosion of which no ship directly witnesses."
+        },
+        {
+            "event": "e_2",
+            "date": "December 27, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In a night battle, the DUKE OF YORK and supporting forces engage the enemy, successfully concluding the operation."
         }
     ]
 }

@@ -1,156 +1,109 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Mr. Eden",
-            "p_2": "General Sir John Dill",
-            "p_3": "General Sir Archibald Wavell",
-            "p_4": "Captain Dick"
+            "p_1": "Admiral Sir Andrew Cunningham",
+            "p_2": "General Sir Archibald Wavell",
+            "p_3": "Sir Miles Lampson",
+            "p_4": "ARTHUR M. LONGMORE"
         },
         "locations": {
-            "l_1": "Salonika",
+            "l_1": "Cyrenaica",
             "l_2": "Greece",
-            "l_3": "Macedonia",
-            "l_4": "Tripoli",
-            "l_5": "Bulgaria",
-            "l_6": "Yugo-Slavia",
-            "l_7": "Athens",
-            "l_8": "Tsaritsani",
-            "l_9": "Yannina",
-            "l_10": "Koritza",
-            "l_11": "Florina",
-            "l_12": "Prilep",
-            "l_13": "Sofia",
-            "l_14": "Vardar River",
-            "l_15": "Axiopolis",
-            "l_16": "Polykastron"
+            "l_3": "Libya",
+            "l_4": "Eritrea",
+            "l_5": "Italian Somaliland",
+            "l_6": "Middle East",
+            "l_7": "U.K.",
+            "l_8": "Egypt"
         },
         "events": {
-            "e_1": "Landing of British Troops in the Athens area",
-            "e_2": "German invasion of Greece",
-            "e_3": "First encounter with the German air force",
-            "e_4": "Attack on enemy M.T. columns on the Prilep-Bitolj road",
-            "e_5": "Formation of the front along the Aliakmon River"
+            "e_1": "Withdrawal from Cyrenaica",
+            "e_2": "Campaigns in Greece",
+            "e_3": "Co-operation with Egyptian Government"
         },
         "organisations": {
-            "o_1": "British Forces",
-            "o_2": "German Forces",
-            "o_3": "G.H.Q. British Forces",
-            "o_4": "B.A.F., Greece"
+            "o_1": "Royal Air Force",
+            "o_2": "Egyptian Government"
         }
     },
     "keywords": [
-        "British Troops",
-        "German invasion",
-        "Macedonia",
-        "Salonika",
-        "Greek commitment",
-        "air support"
+        "withdrawal",
+        "co-operation",
+        "Air commitments",
+        "long lines of communication"
     ],
     "themes": [
         "Military Operations",
-        "Air Operations",
-        "Resistance",
-        "Invasion"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_4"
-        ],
-        "Air Operations": [
-            "e_3"
-        ],
-        "Resistance": [
             "e_2"
         ],
+        "Diplomacy": [
+            "e_3"
+        ],
         "Strategic Decisions": [
-            "e_1",
-            "e_5"
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March",
+            "date": "April 1941",
             "locations": [
-                "l_7"
+                "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_2",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The withdrawal from Cyrenaica occurs in April 1941, reflecting challenges during military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The campaigns in Greece are discussed, highlighting military difficulties faced by the forces."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
                 "p_3",
                 "p_4"
             ],
             "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The British Troops land in the Athens area with minimal air interference as preparations against a German invasion unfold."
-        },
-        {
-            "event": "e_2",
-            "date": "5th April 1941",
-            "locations": [
-                "l_6",
-                "l_3",
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
                 "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Germany declares war on Greece and Yugoslavia and launches an invasion, advancing through Macedonia."
-        },
-        {
-            "event": "e_3",
-            "date": "6th April 1941",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The German air force's first encounter occurs as British forces engage and shoot down enemy aircraft."
-        },
-        {
-            "event": "e_4",
-            "date": "10th April 1941",
-            "locations": [
-                "l_12",
-                "l_10"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "British air forces attack enemy motor transport columns on the Prilep-Bitolj road, inflicting considerable damage."
-        },
-        {
-            "event": "e_5",
-            "date": "12th April 1941",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "As the enemy pressure increases, the British front line is established along the Aliakmon River."
+            "eventSummary": "The report concludes with thanks to Sir Miles Lampson for his support in dealings with the Egyptian Government."
         }
     ]
 }

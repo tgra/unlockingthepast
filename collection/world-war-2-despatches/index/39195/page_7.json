@@ -1,18 +1,153 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Great Britain"
+        "persons": {
+            "p_1": "Major-General F. W. Messervy",
+            "p_2": "Major-General F. W. Festing"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Imphal",
+            "l_2": "Tamu",
+            "l_3": "Sittaung",
+            "l_4": "Pinlebu",
+            "l_5": "Kohima",
+            "l_6": "Shwebo",
+            "l_7": "Pinwe",
+            "l_8": "Naba",
+            "l_9": "Myothit",
+            "l_10": "Bhamo",
+            "l_11": "Bhamo-Namhkam",
+            "l_12": "Bhamo-Mongmit",
+            "l_13": "Bassein",
+            "l_14": "Akyab",
+            "l_15": "Ramree Islands",
+            "l_16": "Kalewa",
+            "l_17": "Myingyan",
+            "l_18": "Irrawaddy"
+        },
+        "events": {
+            "e_1": "Crossing of the Chindwin",
+            "e_2": "Capture of Pinwe",
+            "e_3": "Operations of Fourteenth Army",
+            "e_4": "Race for Rangoon",
+            "e_5": "Air Supply Operations"
+        },
+        "organisations": {
+            "o_1": "4 Corps",
+            "o_2": "19 Indian Division",
+            "o_3": "33 Corps",
+            "o_4": "268 Indian Brigade",
+            "o_5": "7 Indian Division",
+            "o_6": "Northern Combat Area Command",
+            "o_7": "British Division",
+            "o_8": "Chinese Division",
+            "o_9": "Fourteenth Army"
+        }
     },
     "keywords": [
-        "Price",
-        "PRINTED",
-        "GREAT BRITAIN"
+        "military operations",
+        "supply",
+        "transportation",
+        "air power",
+        "strategic advance",
+        "battle",
+        "enemy"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Supply and Logistics",
+        "Strategic Planning"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Supply and Logistics": [
+            "e_5",
+            "e_4"
+        ],
+        "Strategic Planning": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "November",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The leading brigades of 19 Indian Division begin to cross the Chindwin at Sittaung and Thaungdut."
+        },
+        {
+            "event": "e_2",
+            "date": "30th November",
+            "locations": [
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "36 British Division captures Pinwe after fierce defense by the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "N/A",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Fourteenth Army plans and executes military operations while managing logistics."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1945",
+            "locations": [
+                "l_14",
+                "l_15"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "During the peak month of April, Fourteenth Army races for Rangoon as part of their offensive."
+        },
+        {
+            "event": "e_5",
+            "date": "N/A",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The air supply operations play a vital role in supporting the campaign and logistics."
+        }
+    ]
 }

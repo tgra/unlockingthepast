@@ -1,153 +1,159 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-Colonel McFeat",
-            "p_2": "General Mow",
-            "p_3": "Chinese Military Mission",
-            "p_4": "Siamese Prime Minister"
+            "p_1": "General Officers Commanding",
+            "p_2": "Commander-in-Chief, Far East",
+            "p_3": "Governor",
+            "p_4": "His Majesty's representatives",
+            "p_5": "H.M. Consuls-General"
         },
         "locations": {
-            "l_1": "Burma",
-            "l_2": "Singapore",
-            "l_3": "Hong Kong",
-            "l_4": "Chungking",
-            "l_5": "Chi Base",
-            "l_6": "Tulip",
-            "l_7": "Rangoon",
-            "l_8": "Maymyo",
-            "l_9": "Lashio",
-            "l_10": "Bhamo",
-            "l_11": "Siam",
-            "l_12": "Indo-China",
-            "l_13": "Tongking",
-            "l_14": "Kwangsi",
-            "l_15": "Battambang",
-            "l_16": "Bangkok",
-            "l_17": "Saigon",
-            "l_18": "Camranh Harbour"
+            "l_1": "Singapore",
+            "l_2": "Burma",
+            "l_3": "Japan",
+            "l_4": "China",
+            "l_5": "Thailand",
+            "l_6": "Netherlands East Indies",
+            "l_7": "Indo-China",
+            "l_8": "Hong Kong",
+            "l_9": "Malaya"
         },
         "events": {
-            "e_1": "Chinese Military Assistance",
-            "e_2": "Formation of Chinese Guerilla Companies",
-            "e_3": "Aid to Siam",
-            "e_4": "Economic Agreement with Vichy French Authorities",
-            "e_5": "Japanese Expansion in Indo-China"
+            "e_1": "Headquarters Opening",
+            "e_2": "Military Operations in the Far East",
+            "e_3": "Training Report Submission",
+            "e_4": "Administrative Conditions Reporting",
+            "e_5": "Ships List as of December 7, 1941",
+            "e_6": "Army Strength Summary in Malaya, November 1940"
         },
         "organisations": {
-            "o_1": "American Volunteer Group",
-            "o_2": "Royal Air Force"
+            "o_1": "War Office",
+            "o_2": "Air Ministry",
+            "o_3": "Colonial Office"
         }
     },
     "keywords": [
-        "Military Assistance",
-        "Guerilla Warfare",
-        "Training",
-        "Supplies",
-        "Diplomatic Relations",
-        "Japanese Expansion"
+        "Chiefs of Staff",
+        "Commander-in-Chief",
+        "communicate",
+        "troops",
+        "training",
+        "report"
     ],
     "themes": [
         "Military Operations",
-        "International Relations",
-        "Support and Aid",
-        "Strategic Alliances"
+        "Military Organization",
+        "Military Training"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_5",
+            "e_6"
         ],
-        "Diplomacy": [
-            "e_4",
-            "e_5"
-        ],
-        "Strategic Decisions": [
+        "Military Organization": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_4"
+        ],
+        "Military Training": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 13, 1941",
+            "date": "November 18, 1941",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "Chinese Military Assistance is established, with promises of troop support to defend Burma, marking a significant strategic collaboration."
+            "eventSummary": "Headquarters of Commander-in-Chief, Far East, opens at Singapore at 000 hours on the 18th of November."
         },
         {
             "event": "e_2",
-            "date": "March 1941",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Fifteen special Chinese guerilla companies are formed with British and Indian personnel, who undergo thorough training in guerilla tactics."
-        },
-        {
-            "event": "e_3",
-            "date": "October 1940",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [
-                "p_4"
+                "p_2",
+                "p_4",
+                "p_5"
             ],
             "organisations": [],
             "connectedEvents": [
                 "e_1",
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "The Siamese resist Japanese demands but are limited by a lack of military support, culminating in a weak response to Japanese incursions."
+            "eventSummary": "Joint plans are prepared by the staff of the Commander-in-Chief, Far East, in conjunction with the staff of the Commander-in-Chief, China."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Short report of the current state of training of units under command and future training plans is to be submitted."
         },
         {
             "event": "e_4",
-            "date": "July 24, 1941",
-            "locations": [
-                "l_12"
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_2"
             ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_5"
+                "e_2"
             ],
-            "eventSummary": "An economic agreement is concluded with the Vichy French, which does not prevent Japanese expansion into Indo-China."
+            "eventSummary": "Reports on general administrative conditions and essential commodities are to be made to ensure operational effectiveness."
         },
         {
             "event": "e_5",
-            "date": "July 26, 1941",
+            "date": "December 7, 1941",
             "locations": [
-                "l_17",
-                "l_18"
+                "l_1",
+                "l_8"
             ],
             "persons": [],
             "organisations": [],
-            "connectedEvents": [
-                "e_4"
+            "connectedEvents": [],
+            "eventSummary": "A list of ships based at Singapore and Hong Kong includes various classes of vessels."
+        },
+        {
+            "event": "e_6",
+            "date": "November 1940",
+            "locations": [
+                "l_9"
             ],
-            "eventSummary": "Japanese forces establish control in Indo-China, enhancing their strategic position in the region."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A summary of army strength in Malaya details the composition and number of military units present."
         }
     ]
 }

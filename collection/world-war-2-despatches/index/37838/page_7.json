@@ -1,122 +1,92 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Marshal of the Royal Air Force Sir Charles Portal"
+        },
         "locations": {
-            "l_1": "Caen",
-            "l_2": "Le Mans",
-            "l_3": "Bazenville",
-            "l_4": "St. Croix sur Mer",
-            "l_5": "Beny sur Mer",
-            "l_6": "Camilly",
-            "l_7": "Coulombs",
-            "l_8": "Martragny",
-            "l_9": "Sommervieu",
-            "l_10": "Lantheuil",
-            "l_11": "Plumetot",
-            "l_12": "Longues",
-            "l_13": "St. Pierre du Mont",
-            "l_14": "Criqueville",
-            "l_15": "Cordonville",
-            "l_16": "Deux Jamaux",
-            "l_17": "Benzeville",
-            "l_18": "Axeville",
-            "l_19": "Carentan",
-            "l_20": "Chippelle",
-            "l_21": "Picauville",
-            "l_22": "Le Moly",
-            "l_23": "Creteville"
+            "l_1": "North-Western Europe",
+            "l_2": "Southern France",
+            "l_3": "Germany",
+            "l_4": "D-Day",
+            "l_5": "battle front"
         },
         "events": {
-            "e_1": "Construction of Airfields",
-            "e_2": "Airfield Preparation and Use During Operations"
+            "e_1": "D-Day",
+            "e_2": "attack on enemy lines of communication",
+            "e_3": "allocation of targets"
         },
         "organisations": {
-            "o_1": "American Aviation Engineering Battalions",
-            "o_2": "British Airfield Construction Groups"
+            "o_1": "A.E.A.F.",
+            "o_2": "Royal Air Force",
+            "o_3": "U.S. Eighth Air Force",
+            "o_4": "United States Fifteenth Air Force",
+            "o_5": "R.A.F. Bomber Command"
         }
     },
     "keywords": [
-        "airfield engineering",
-        "construction",
-        "military operations",
-        "Allied advance"
+        "air superiority",
+        "dislocation",
+        "railway system",
+        "strategic targets"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Engineering Support",
-        "Airfield Construction"
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Logistics": [
-            "e_2"
-        ],
-        "Engineering Support": [
-            "e_1"
-        ],
-        "Airfield Construction": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 1944",
+            "date": "6th June 1944",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10",
-                "l_11",
-                "l_12",
-                "l_13",
-                "l_14",
-                "l_15",
-                "l_16",
-                "l_17",
-                "l_18",
-                "l_19",
-                "l_20",
-                "l_21",
-                "l_22",
-                "l_23"
+                "l_4"
             ],
             "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The construction of airfields is progressing to support military operations with specific priorities established for various types of airstrips."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "D-Day marks the Allied invasion of Normandy, a critical turning point in World War II."
         },
         {
             "event": "e_2",
-            "date": "June 1944",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_5"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The attack on enemy lines of communication is aimed to disrupt the enemy's logistics before D-Day."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_1"
             ],
-            "eventSummary": "Airfields are being prepared and used during operations as the Allied advance accelerates, facilitating rapid construction and logistical support."
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The allocation of targets for railway attacks involves multiple air forces coordinating their efforts."
         }
     ]
 }

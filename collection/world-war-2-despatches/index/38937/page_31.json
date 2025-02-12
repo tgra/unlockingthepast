@@ -1,120 +1,193 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Kesselring",
-            "p_2": "Hermann Goering"
+            "p_1": "General Clark",
+            "p_2": "General Eisenhower",
+            "p_3": "General Wilson",
+            "p_4": "General Lucas"
         },
         "locations": {
-            "l_1": "Rome",
-            "l_2": "Italy",
-            "l_3": "Leghorn",
-            "l_4": "Slovenia",
-            "l_5": "Tuscan coast",
-            "l_6": "Liri valley",
-            "l_7": "Piedimonte Pontecorvo",
-            "l_8": "Anzio",
-            "l_9": "Alban Hills",
-            "l_10": "Prenestini mountains",
-            "l_11": "Avezzano",
-            "l_12": "Celano",
-            "l_13": "Pescara"
+            "l_1": "Capistrello",
+            "l_2": "Ferentino",
+            "l_3": "Priverno",
+            "l_4": "Anzio",
+            "l_5": "Alban Hills",
+            "l_6": "Tunis",
+            "l_7": "Cairo",
+            "l_8": "London",
+            "l_9": "Italy",
+            "l_10": "Cassino",
+            "l_11": "Frosinone",
+            "l_12": "Monte Porchia",
+            "l_13": "Monte Trocchio",
+            "l_14": "Garigliano",
+            "l_15": "Minturno",
+            "l_16": "San Giorgio a Liri",
+            "l_17": "Sant Angelo",
+            "l_18": "Indian Ocean"
         },
         "events": {
-            "e_1": "Battle for Rome",
-            "e_2": "Allied offensives from January to March",
-            "e_3": "Attack up the Liri valley"
+            "e_1": "Operation SHINGLE",
+            "e_2": "Cairo conference",
+            "e_3": "Commanders-in-Chief conference",
+            "e_4": "Assault landing at Anzio",
+            "e_5": "French Expeditionary Corps attack",
+            "e_6": "II Corps attack",
+            "e_7": "10 Corps attack",
+            "e_8": "VI Corps landing"
         },
         "organisations": {
-            "o_1": "Tenth Army",
-            "o_2": "Fourteenth Army",
-            "o_3": "Fifth Army",
-            "o_4": "Eighth Army"
+            "o_1": "Fifth Army",
+            "o_2": "VI United States Corps Headquarters",
+            "o_3": "Eighth Army",
+            "o_4": "British Infantry Division"
         }
     },
     "keywords": [
-        "German divisions",
-        "Allies",
-        "defence lines",
-        "military strategy",
-        "infantry divisions"
+        "Operation",
+        "Assault",
+        "Army",
+        "Division"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Strategic Planning",
+        "Leadership Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7",
+            "e_8"
+        ],
+        "Strategic Planning": [
+            "e_1",
             "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Leadership Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "28th February",
+            "date": "20th January",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_4",
+                "e_6"
             ],
-            "eventSummary": "The Battle for Rome is planned with Fifth Army responsible for the sea flank and Eighth Army to attack up the Liri valley."
+            "eventSummary": "Operation SHINGLE is planned to carry out an assault with two divisions on or about January 20."
         },
         {
             "event": "e_2",
-            "date": "January to March",
+            "date": null,
             "locations": [
-                "l_1",
-                "l_2"
+                "l_7"
             ],
             "persons": [
-                "p_1"
+                "p_2",
+                "p_3"
             ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Allies conduct offensives that challenge the German positions from January to March."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "At the Cairo conference, it was decided that General Eisenhower should take over command of the invasion of North-west Europe."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
+            "date": "25th December",
             "locations": [
                 "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A Commanders-in-Chief conference is held where new plans for Operation SHINGLE are proposed."
+        },
+        {
+            "event": "e_4",
+            "date": null,
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "VI Corps is scheduled to land at Anzio as part of Operation SHINGLE."
+        },
+        {
+            "event": "e_5",
+            "date": "12th January",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
                 "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The French Expeditionary Corps attacks against the high ground north of Cassino."
+        },
+        {
+            "event": "e_6",
+            "date": "15th January",
+            "locations": [
+                "l_10"
             ],
-            "eventSummary": "The Allies are expected to make an attack up the Liri valley, testing the German defensive lines."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "II Corps is ordered to attack and capture Monte Porchia and Monte Trocchio."
+        },
+        {
+            "event": "e_7",
+            "date": "17th January",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "10 Corps is assigned to cross the lower Garigliano in the Minturno area and attack northwards."
+        },
+        {
+            "event": "e_8",
+            "date": "20th January",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "VI Corps lands at Anzio and begins to threaten enemy positions."
         }
     ]
 }

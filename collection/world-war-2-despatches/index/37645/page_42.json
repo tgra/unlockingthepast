@@ -1,184 +1,142 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Skinner",
-            "p_2": "Fletcher",
-            "p_3": "Ras Seyoum",
-            "p_4": "G.O.C, East Africa",
-            "p_5": "Commander 5th Indian Division",
-            "p_6": "Commander 1st South African Brigade"
+            "p_1": "Major-General H. E. de R. Wetherall",
+            "p_2": "Brigadier G. R. Smallwood"
         },
         "locations": {
-            "l_1": "Commando Hill",
-            "l_2": "Falaga Pass",
-            "l_3": "Enda Medani Alem",
-            "l_4": "Bald Hill",
-            "l_5": "Pinacle",
-            "l_6": "Elephant Hill",
-            "l_7": "Middle Hill",
-            "l_8": "Little Alagi",
-            "l_9": "Amba Alagi",
-            "l_10": "Socota",
-            "l_11": "Quoram",
-            "l_12": "Alomata",
-            "l_13": "Mai Ceu",
-            "l_14": "Dessie",
-            "l_15": "Castle Ridge"
+            "l_1": "Marda Pass",
+            "l_2": "Berbera",
+            "l_3": "Hargeisa",
+            "l_4": "Mogadiscio",
+            "l_5": "Chisimaio",
+            "l_6": "Harrar",
+            "l_7": "Babile Pass",
+            "l_8": "Bisidimo River",
+            "l_9": "Kenya",
+            "l_10": "Addis Abeba",
+            "l_11": "Dire Daua",
+            "l_12": "Tripoli",
+            "l_13": "Abyssinia"
         },
         "events": {
-            "e_1": "Attack by Skinner's Horse and 51 Commando",
-            "e_2": "Feint by 3/18 Garhwal Rifles",
-            "e_3": "Attack of 29th Indian Infantry Brigade",
-            "e_4": "Operations by Patriots and South African Forces",
-            "e_5": "Re-adjustment of Forces",
-            "e_6": "Attack on 8/9th May"
+            "e_1": "Action at the Marda Pass",
+            "e_2": "Capture of Harrar",
+            "e_3": "Advance from Mogadiscio to Harrar",
+            "e_4": "Advance on Addis Abeba"
         },
         "organisations": {
-            "o_1": "3/18 Garhwal Rifles",
-            "o_2": "29th Indian Infantry Brigade",
-            "o_3": "1st South African Brigade",
-            "o_4": "5th Indian Division"
+            "o_1": "11th (A) Division",
+            "o_2": "Nigerian Brigade",
+            "o_3": "Royal Natal Carbineers",
+            "o_4": "7th S.A. Field Brigade",
+            "o_5": "1st S.A. Division",
+            "o_6": "5th S.A. Brigade"
         }
     },
     "keywords": [
-        "prisoners",
-        "observation",
-        "attack",
-        "withdraw",
-        "resistance",
-        "patrolling",
-        "deception",
-        "artillery",
-        "advance",
-        "siege",
-        "counter-attack",
-        "demonstration"
+        "Marda Pass",
+        "Harrar",
+        "Nigerian Brigade",
+        "11th (A) Division",
+        "Addis Abeba",
+        "Italian armed forces"
     ],
     "themes": [
         "Military Operations",
-        "Deception Tactics",
-        "Engagements",
-        "Reinforcement Strategies"
+        "Combat Tactics",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3",
-            "e_4",
-            "e_6"
+            "e_4"
         ],
-        "Deception Tactics": [
+        "Combat Tactics": [
+            "e_1",
             "e_2"
         ],
-        "Reinforcement Strategies": [
-            "e_5"
+        "Strategic Decisions": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Night of 3/4th May",
+            "date": "March 24, 1941",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The action at the Marda Pass allows the transfer of the line of communication for the 11th (A) Division."
+        },
+        {
+            "event": "e_2",
+            "date": "March 25, 1941",
+            "locations": [
+                "l_6"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "Skinner's Horse and 51 Commando attack Commando Hill but face stiff resistance and must withdraw around midnight, misleading the enemy about the direction of the main assault."
+            "eventSummary": "The Nigerian Brigade captures Harrar amidst opposition, leading to the surrender of Italian troops."
         },
         {
-            "event": "e_2",
-            "date": "Afternoon of 3rd May",
+            "event": "e_3",
+            "date": "February 23 - March 25, 1941",
             "locations": [
-                "l_3",
-                "l_4"
+                "l_4",
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Over a month, the Nigerian Brigade advances from Mogadiscio to Harrar, covering significant distances despite difficult terrain."
+        },
+        {
+            "event": "e_4",
+            "date": "March 27, 1941",
+            "locations": [
+                "l_6",
+                "l_11"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [],
-            "eventSummary": "3/18 Garhwal Rifles conduct a feint operation in Enda Medani Alem valley, successfully deceiving the enemy about their movements."
-        },
-        {
-            "event": "e_3",
-            "date": "4th May",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_6"
-            ],
-            "eventSummary": "The 29th Indian Infantry Brigade launches a robust attack capturing key features like Pinacle and Elephant Hill, followed by another assault to take Middle Hill."
-        },
-        {
-            "event": "e_4",
-            "date": "2nd May",
-            "locations": [
-                "l_9",
-                "l_10",
-                "l_11"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Patriot forces led by Ras Seyoum capture the Italian garrison in Socota and intensify operations against the main road leading to Mai Ceu."
-        },
-        {
-            "event": "e_5",
-            "date": "After 4th May",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_4",
-                "p_6"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A re-adjustment is made in the forces to bolster Fletcher Force with additional infantry to address their needs after earlier engagements."
-        },
-        {
-            "event": "e_6",
-            "date": "8/9th May",
-            "locations": [
-                "l_12",
-                "l_13",
-                "l_15"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "An out-flanking movement conducted by the 20th Indian Infantry Brigade is launched against Castle Ridge, achieving quick captures but facing severe counter-attacks from the Italians."
+            "eventSummary": "The 1st S.A. Brigade leads an advance from Harrar towards Dire Daua, strategizing the next move towards Addis Abeba."
         }
     ]
 }

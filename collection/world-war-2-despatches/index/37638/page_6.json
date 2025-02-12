@@ -2,92 +2,64 @@
     "namedEntities": {
         "persons": {
             "p_1": "General Neame",
-            "p_2": "Lieut.-General Sir Richard O'Connor",
-            "p_3": "Lieut.-Colonel Combe"
+            "p_2": "Brigadier Wootten"
         },
         "locations": {
-            "l_1": "Sceleidima",
-            "l_2": "Msus",
-            "l_3": "Regima",
+            "l_1": "Middle East",
+            "l_2": "Cyrenaica",
+            "l_3": "Agheila",
             "l_4": "Benghazi",
-            "l_5": "Wadi Derna",
-            "l_6": "Mechili",
-            "l_7": "Tobruk",
-            "l_8": "Cyrenaica",
-            "l_9": "Derna",
-            "l_10": "Sollum"
+            "l_5": "Tobruk",
+            "l_6": "Jarabub Oasis",
+            "l_7": "Sidi Barrani",
+            "l_8": "Agedabia",
+            "l_9": "Mechili"
         },
         "events": {
-            "e_1": "Withdrawal of the 2nd Armoured Division",
-            "e_2": "Destruction of petrol supplies at Msus",
-            "e_3": "Capture of 3rd Armoured Brigade",
-            "e_4": "Evacuation of Benghazi",
-            "e_5": "Engagement of enemy at Mechili",
-            "e_6": "Attempted breakout from Mechili"
+            "e_1": "Evacuation of Greece",
+            "e_2": "Battle of Sidi Barrani",
+            "e_3": "Counter Offensive against our troops in Cyrenaica",
+            "e_4": "Capture of Jarabub Oasis"
         },
         "organisations": {
             "o_1": "2nd Armoured Division",
             "o_2": "3rd Armoured Brigade",
-            "o_3": "3rd Indian Motor Brigade",
-            "o_4": "7th Australian Division",
-            "o_5": "1st Royal Horse Artillery",
-            "o_6": "King's Dragoon Guards"
+            "o_3": "6th Australian Division",
+            "o_4": "5th German Light Armoured Division",
+            "o_5": "R.A.F."
         }
     },
     "keywords": [
-        "Armoured Division",
-        "Tobruk",
-        "Mechili",
-        "Petrol Supplies",
-        "Enemy Attack",
-        "Withdrawal"
+        "transport shortage",
+        "military operations",
+        "armoured troops",
+        "enemy counter attack"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Combat Engagements",
-        "Strategic Withdrawal"
+        "Supply Chain Issues",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_5",
-            "e_6"
-        ],
-        "Logistics": [
             "e_2",
+            "e_3",
             "e_4"
         ],
-        "Strategic Withdrawal": [
-            "e_1",
+        "Supply Chain Issues": [
+            "e_1"
+        ],
+        "Strategic Decisions": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "7th April",
+            "date": "N/A",
             "locations": [
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "On 7th April, the 2nd Armoured Division struggles with communication issues and logistics as they withdraw to Mechili."
-        },
-        {
-            "event": "e_2",
-            "date": "3rd April",
-            "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [
@@ -96,72 +68,54 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The evacuation of Greece resulted in the loss of 8,000 vehicles, impacting other operations in the region."
+        },
+        {
+            "event": "e_2",
+            "date": "N/A",
+            "locations": [
+                "l_8",
+                "l_2"
             ],
-            "eventSummary": "On 3rd April, it is reported that the enemy approaches Msus, leading to the destruction of petrol supplies essential for the armoured division."
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The battle of Sidi Barrani involved the last Italian detachment in Cyrenaica."
         },
         {
             "event": "e_3",
-            "date": "6th April",
+            "date": "31st March",
             "locations": [
-                "l_7",
-                "l_9"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_6"
-            ],
-            "eventSummary": "The 3rd Armoured Brigade is cut off and captured at Derna due to fuel shortages and enemy forces."
+            "connectedEvents": [],
+            "eventSummary": "The enemy counter offensive against our troops in Cyrenaica begins, led by the German and Italian forces."
         },
         {
             "event": "e_4",
-            "date": "3rd April",
+            "date": "21st March",
             "locations": [
-                "l_4"
+                "l_6",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Benghazi is evacuated after significant demolitions on 3rd April."
-        },
-        {
-            "event": "e_5",
-            "date": "7th April",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "The enemy launches a series of small attacks on Mechili, which are repelled by defending troops."
-        },
-        {
-            "event": "e_6",
-            "date": "8th April",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "An attempt to break out of Mechili at dawn on 8th April fails due to heavy enemy fire."
+            "eventSummary": "The capture of Jarabub Oasis occurs as a result of a coordinated attack by the 2nd/9th Australian Infantry battalion."
         }
     ]
 }

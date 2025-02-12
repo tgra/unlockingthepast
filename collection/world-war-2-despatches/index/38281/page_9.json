@@ -1,53 +1,55 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice Admiral Commanding, 18th Cruiser Squadron"
+            "p_1": "Vice Admiral Commanding",
+            "p_2": "Squadron Leader"
         },
         "locations": {
-            "l_1": "Cagliari",
-            "l_2": "BERWICK",
-            "l_3": "MANCHESTER",
-            "l_4": "SOUTHAMPTON",
-            "l_5": "SHEFFIELD",
-            "l_6": "NEWCASTLE"
+            "l_1": "Sardinia",
+            "l_2": "Cagliari",
+            "l_3": "Cape Carbonira"
         },
         "events": {
-            "e_1": "Engagement of Enemy Battleships",
-            "e_2": "Decision to Break Off the Chase"
+            "e_1": "Air Attack on Convoy",
+            "e_2": "Attack on Damaged Cruiser",
+            "e_3": "Surveillance of Enemy Forces"
         },
         "organisations": {
-            "o_1": "18th Cruiser Squadron"
+            "o_1": "ARK ROYAL",
+            "o_2": "18th Cruiser Squadron"
         }
     },
     "keywords": [
-        "battleships",
-        "cruisers",
-        "chase",
-        "enemy",
-        "Cagliari",
-        "convoy",
-        "strategic decision"
+        "Air Attack",
+        "Convoy",
+        "Cruisers",
+        "Enemy Forces",
+        "Destroyers"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Naval Warfare",
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Strategic Decisions": [
+            "e_1",
             "e_2"
+        ],
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Reconnaissance": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Time unspecified, action described around 1300 and following",
+            "date": "",
             "locations": [
-                "Cagliari",
-                "BERWICK",
-                "MANCHESTER"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -56,26 +58,47 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "RENOWN engages enemy battleships, firing salvos but the enemy manages to avoid damage and retreats. The situation changes as RENOWN and the 18th Cruiser Squadron decide to turn back due to enemy speed and positioning dangers."
+            "eventSummary": "Enemy aircraft conduct an air attack on the convoy, resulting in various bombing attempts near ARK ROYAL."
         },
         {
             "event": "e_2",
-            "date": "Around 1335",
+            "date": "",
             "locations": [
-                "Cagliari"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "After considering the risks and circumstances of the chase, the commander of the 18th Cruiser Squadron decides to break off the pursuit of enemy ships and return to protect the convoy."
+            "eventSummary": "ARK ROYAL orders an attack on a damaged cruiser, involving a T/B Striking Force and leading to an engagement with enemy vessels."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Surveillance of enemy forces reveals their movements post-attack, contributing to the strategic understanding of the battlefield."
         }
     ]
 }

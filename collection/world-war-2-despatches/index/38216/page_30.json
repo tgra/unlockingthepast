@@ -6,83 +6,109 @@
             "p_3": "Air Chief Marshal Sir Richard Peirse"
         },
         "locations": {
-            "l_1": "Singapore",
+            "l_1": "Singapura",
             "l_2": "Tengah",
-            "l_3": "Palembang",
-            "l_4": "Bandoeng",
-            "l_5": "Java",
-            "l_6": "Malaya",
-            "l_7": "Netherlands East Indies",
-            "l_8": "Sembawang",
-            "l_9": "Seletar",
-            "l_10": "Singora"
+            "l_3": "Seletar",
+            "l_4": "Sembawang",
+            "l_5": "Palembang",
+            "l_6": "Bandoeng",
+            "l_7": "Java",
+            "l_8": "Malaya",
+            "l_9": "Netherlands East Indies"
         },
         "events": {
-            "e_1": "Attack on Tengah",
-            "e_2": "Formation of Supreme Allied Command",
-            "e_3": "Directive to Air Forces in Malaya"
+            "e_1": "Allied forces unified command",
+            "e_2": "First serious attack against Tengah",
+            "e_3": "Repeating attacks on aerodromes",
+            "e_4": "Directive to Air Forces in Malaya"
         },
         "organisations": {
             "o_1": "Supreme Allied Headquarters",
             "o_2": "Abdacom",
-            "o_3": "R.A.F. Far East Command",
-            "o_4": "U.S. Army Air Corps"
+            "o_3": "Abdair",
+            "o_4": "R.A.F. Far East Command",
+            "o_5": "U.S. Army Air Corps"
         }
     },
     "keywords": [
-        "air attacks",
-        "bombers",
-        "fighters",
-        "Supreme Allied Command",
+        "attacks",
+        "aerodromes",
         "directive",
-        "Japanese forces"
+        "command",
+        "air forces"
     ],
     "themes": [
         "Military Operations",
-        "Command Structure",
-        "Air Defense",
-        "Strategic Decisions"
+        "Air Warfare",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Command Structure": [
-            "e_2"
-        ],
-        "Air Defense": [
             "e_1"
         ],
-        "Strategic Decisions": [
+        "Air Warfare": [
+            "e_2",
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 1, 1942",
+            "date": "January 7, 1942",
             "locations": [
-                "l_2",
                 "l_8",
-                "l_9"
+                "l_7"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "Multiple attacks occur on Tengah and other aerodromes, resulting in personnel shortages and damage to aircraft."
+            "eventSummary": "The Allied authorities decide to unify command of all forces in the South West Pacific under General Sir Archibald Wavell as the Supreme Allied Commander."
         },
         {
             "event": "e_2",
-            "date": "January 7, 1942",
+            "date": "January 1, 1942",
             "locations": [
-                "l_1",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The first serious attack against Tengah occurs, resulting in the disappearance of native labor."
+        },
+        {
+            "event": "e_3",
+            "date": "Multiple dates in January 1942",
+            "locations": [
+                "l_2",
+                "l_3",
                 "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Repeating attacks on aerodromes occur throughout January, with significant damages to aircraft."
+        },
+        {
+            "event": "e_4",
+            "date": "January 18, 1942",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -90,26 +116,8 @@
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "General Sir Archibald Wavell assumes command of the Supreme Allied Headquarters, overseeing operations in the South West Pacific."
-        },
-        {
-            "event": "e_3",
-            "date": "January 18, 1942",
-            "locations": [
-                "l_10",
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Abdacom issues a directive emphasizing the significance of protecting convoys and attacking Japanese forces in Malaya."
+            "connectedEvents": [],
+            "eventSummary": "On January 18, Abdacom issues a directive emphasizing the importance of protecting convoys and attacking Japanese forces."
         }
     ]
 }

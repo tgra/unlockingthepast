@@ -7,49 +7,48 @@
         "locations": {
             "l_1": "Algiers",
             "l_2": "Bone",
-            "l_3": "Tabarka",
-            "l_4": "Djebel Abiod",
-            "l_5": "Souk el Arba",
+            "l_3": "S tif",
+            "l_4": "Tabarka",
+            "l_5": "Djebel Abiod",
             "l_6": "B ja",
-            "l_7": "Gafsa",
-            "l_8": "Tunis",
-            "l_9": "Bizerta",
-            "l_10": "Mateur",
-            "l_11": "Tebessa",
-            "l_12": "Oued Zarga",
+            "l_7": "Youks-les-Bains",
+            "l_8": "Gafsa airfield",
+            "l_9": "Tunis",
+            "l_10": "Bizerta",
+            "l_11": "Mateur",
+            "l_12": "Sidi Nsir",
             "l_13": "Medjez",
-            "l_14": "Youks-les-Bains"
+            "l_14": "Tebessa",
+            "l_15": "Oued Zarga"
         },
         "events": {
-            "e_1": "Occupation of Tabarka",
-            "e_2": "Repulsion of enemy attack at Djebel Abiod",
-            "e_3": "Drop of 1 Parachute Battalion at Souk el Arba",
-            "e_4": "Drop of 503 United States Parachute Battalion at Youks-les-Bains",
-            "e_5": "Withdrawal of French troops from Medjez",
-            "e_6": "Engagement of 36 Brigade with enemy positions at Djebel Abiod"
+            "e_1": "Advance of 36 Brigade",
+            "e_2": "Occupation of Tabarka",
+            "e_3": "Attack at Djebel Abiod",
+            "e_4": "Drop of 1 Parachute Battalion at Souk el Arba",
+            "e_5": "Occupation of Gafsa airfield",
+            "e_6": "Enemy attacks at Medjez",
+            "e_7": "Withdrawal of the enemy from Medjez"
         },
         "organisations": {
             "o_1": "36 Brigade",
             "o_2": "78 Division",
-            "o_3": "Blade Force",
-            "o_4": "1 Parachute Battalion",
-            "o_5": "503 United States Parachute Battalion",
-            "o_6": "French Command"
+            "o_3": "11 Brigade Group",
+            "o_4": "Blade Force",
+            "o_5": "First Army"
         }
     },
     "keywords": [
         "Brigade transport",
+        "airfields",
         "enemy attack",
-        "airfield",
-        "German troops",
-        "French forces"
+        "French troops",
+        "withdrawal"
     ],
     "themes": [
         "Military Operations",
-        "Joint Operations",
-        "Enemy Engagement",
-        "Logistical Movements",
-        "French Support"
+        "Tactical Engagements",
+        "Coordination with Allies"
     ],
     "topicModel": {
         "Military Operations": [
@@ -57,23 +56,26 @@
             "e_2",
             "e_3",
             "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
+        ],
+        "Tactical Engagements": [
+            "e_3",
             "e_6"
         ],
-        "Joint Operations": [
+        "Coordination with Allies": [
             "e_4",
-            "e_5"
-        ],
-        "Logistical Movements": [
-            "e_3",
-            "e_4"
+            "e_7"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th November",
+            "date": "15th November 1942",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [],
             "organisations": [
@@ -81,13 +83,13 @@
             ],
             "connectedEvents": [
                 "e_2",
-                "e_6"
+                "e_3"
             ],
-            "eventSummary": "The advance guard of 36 Brigade occupies Tabarka on 15th November."
+            "eventSummary": "Advance of 36 Brigade commences, moving forward rapidly to engage enemy forces."
         },
         {
             "event": "e_2",
-            "date": "18th November",
+            "date": "15th November 1942",
             "locations": [
                 "l_4"
             ],
@@ -96,13 +98,26 @@
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "On 18th November, the leading battalion of 36 Brigade successfully repulses an enemy attack at Djebel Abiod."
+            "eventSummary": "Occupies Tabarka with advance guard operations on the same day."
         },
         {
             "event": "e_3",
-            "date": "15th November",
+            "date": "18th November 1942",
             "locations": [
                 "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Leading battalion repulses enemy attack at Djebel Abiod, destroying 11 enemy tanks."
+        },
+        {
+            "event": "e_4",
+            "date": "15th November 1942",
+            "locations": [
+                "l_7"
             ],
             "persons": [
                 "p_1"
@@ -111,26 +126,24 @@
                 "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "1 Parachute Battalion attempts to drop at Souk el Arba landing ground on 15th November but is delayed by weather."
-        },
-        {
-            "event": "e_4",
-            "date": "15th November",
-            "locations": [
-                "l_14"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "On 15th November, 503 United States Parachute Battalion drops at Youks-les-Bains without opposition."
+            "eventSummary": "1 Parachute Battalion attempts to drop at Souk el Arba landing ground but is delayed."
         },
         {
             "event": "e_5",
-            "date": "19th November",
+            "date": "17th November 1942",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Detachment occupies Gafsa airfield as part of broader tactics to secure air operations."
+        },
+        {
+            "event": "e_6",
+            "date": "19th November 1942",
             "locations": [
                 "l_13"
             ],
@@ -138,23 +151,23 @@
                 "p_2"
             ],
             "organisations": [
-                "o_6"
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "French troops, commanded by General Barre, reject a German ultimatum at Medjez on 19th November."
+            "eventSummary": "French troops under General Barre successfully reject enemy ultimatum at Medjez."
         },
         {
-            "event": "e_6",
-            "date": "17th November",
+            "event": "e_7",
+            "date": "21st November 1942",
             "locations": [
-                "l_4"
+                "l_13"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "36 Brigade engages with enemy positions at Djebel Abiod on 17th November."
+            "eventSummary": "Enemy forces withdraw to the east bank of the river at Medjez amidst French resistance."
         }
     ]
 }

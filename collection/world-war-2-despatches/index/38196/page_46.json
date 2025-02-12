@@ -1,44 +1,46 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unspecified Military Leader"
+            "p_1": "General Eisenhower",
+            "p_2": "Admiral Cunningham",
+            "p_3": "Air Chief Marshal Tedder",
+            "p_4": "Air Marshal Coningham",
+            "p_5": "Mr. Churchill"
         },
         "locations": {
-            "l_1": "Tell el Eisa",
-            "l_2": "Miteiriya Ridge",
-            "l_3": "Ruweisat Ridge",
-            "l_4": "Qaret el Himeimat",
-            "l_5": "El Daba",
-            "l_6": "El Imayid Station"
+            "l_1": "Tunis",
+            "l_2": "North Africa",
+            "l_3": "Libya",
+            "l_4": "Egypt",
+            "l_5": "Malta",
+            "l_6": "Palestine",
+            "l_7": "Trans-Jordan",
+            "l_8": "Cyprus",
+            "l_9": "Syria",
+            "l_10": "Iraq",
+            "l_11": "Sudan",
+            "l_12": "Eritrea"
         },
         "events": {
-            "e_1": "Battle Codename LIGHTFOOT",
-            "e_2": "30 Corps Operations",
-            "e_3": "13 Corps Operations"
+            "e_1": "Battle of Tunis",
+            "e_2": "Tunisian Campaign",
+            "e_3": "Final Victory in Africa"
         },
         "organisations": {
-            "o_1": "30 Corps",
-            "o_2": "13 Corps",
-            "o_3": "1 Fighting French Brigade",
-            "o_4": "4 Indian Division",
-            "o_5": "10 Corps",
-            "o_6": "7 Armoured Division",
-            "o_7": "44 Division",
-            "o_8": "50 Division",
-            "o_9": "4 Light Armoured Brigade"
+            "o_1": "Allies",
+            "o_2": "Imperial Land Forces"
         }
     },
     "keywords": [
-        "Battle",
-        "Deception",
-        "Military Operations",
-        "Concealment",
-        "Armoured Divisions"
+        "surrender",
+        "victory",
+        "campaign",
+        "collaboration"
     ],
     "themes": [
         "Military Operations",
-        "Deception Tactics",
-        "Operational Planning"
+        "Cooperation",
+        "Victory in Warfare"
     ],
     "topicModel": {
         "Military Operations": [
@@ -46,79 +48,73 @@
             "e_2",
             "e_3"
         ],
-        "Deception Tactics": [
-            "e_2",
-            "e_3"
+        "Cooperation": [
+            "e_1",
+            "e_2"
         ],
-        "Operational Planning": [
-            "e_1"
+        "Victory in Warfare": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 23, 1942",
+            "date": "unknown",
             "locations": [
-                "l_1",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Tunis is significant as it marks the first wholly successful campaign against the Axis and demonstrates Allied collaboration."
+        },
+        {
+            "event": "e_2",
+            "date": "unknown",
+            "locations": [
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Battle Codename LIGHTFOOT is launched by 30 Corps, aiming to create two corridors through the enemy defenses for subsequent advances."
-        },
-        {
-            "event": "e_2",
-            "date": "October 1942",
-            "locations": [
-                "l_3",
-                "l_4",
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4",
-                "o_6"
-            ],
-            "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "30 Corps engages in operations to breach enemy lines while coordinating diversionary tactics led by various divisions."
+            "eventSummary": "The Tunisian Campaign concludes with a complete Allied victory, showcasing the successful cooperation among the different national forces."
         },
         {
             "event": "e_3",
-            "date": "October 1942",
+            "date": "13th May",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2",
-                "o_3",
-                "o_7",
-                "o_8",
-                "o_9"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "13 Corps initiates offensive movements to distract the enemy and support the main thrust of 30 Corps."
+            "eventSummary": "The final victory in Africa is reported, with all enemy resistance ceasing and a significant number of enemy forces surrendering."
         }
     ]
 }

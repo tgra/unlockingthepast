@@ -1,19 +1,16 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "L. E. Holland",
-            "p_2": "Commander-in-Chief, Mediterranean",
-            "p_3": "Commanding Officer of BERWICK"
+            "p_1": "Vice-Admiral Sir James F. Somerville"
         },
         "locations": {
-            "l_1": "Sardinia",
-            "l_2": "Western Mediterranean",
-            "l_3": "Eastern Mediterranean",
-            "l_4": "Gibraltar",
-            "l_5": "Alexandria"
+            "l_1": "CAPE SPARTIVENTO",
+            "l_2": "Sardinia",
+            "l_3": "Mediterranean"
         },
         "events": {
-            "e_1": "Operation Collar"
+            "e_1": "Action between British and Italian Forces",
+            "e_2": "Operation Collar"
         },
         "organisations": {
             "o_1": "Royal Air Force",
@@ -21,49 +18,66 @@
         }
     },
     "keywords": [
-        "Force",
-        "Corvettes",
-        "Destroyers",
-        "Operation",
-        "Ships",
-        "Fleet",
-        "Personnel"
+        "British Forces",
+        "Italian Naval Force",
+        "Operation Collar",
+        "Royal Air Force",
+        "Mediterranean"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Resource Management"
+        "Naval Engagement",
+        "Strategic Objectives"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
         ],
-        "Naval Strategy": [
-            "e_1"
-        ],
-        "Resource Management": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th November",
+            "date": "27th November, 1940",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Collar is conducted to escort and cover the passage of mechanical transport ships through the Western Mediterranean, commencing with a meeting of forces off the South of Sardinia."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An engagement takes place between British and Italian forces off Cape Spartivento."
+        },
+        {
+            "event": "e_2",
+            "date": "27th November, 1940",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Collar aims to secure the safe passage through the Mediterranean of military personnel and ships."
         }
     ]
 }

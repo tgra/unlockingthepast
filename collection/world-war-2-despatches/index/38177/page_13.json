@@ -1,91 +1,78 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commanders-in-Chief",
-            "p_2": "Turkish forces",
-            "p_3": "G.H.Q."
+            "p_1": "General Wavell",
+            "p_2": "Air-Marshal Peirse",
+            "p_3": "Sir Stafford Cripps",
+            "p_4": "General Nye",
+            "p_5": "Prime Minister",
+            "p_6": "Sir Walter Monckton"
         },
         "locations": {
-            "l_1": "Anatolia",
-            "l_2": "Persia",
-            "l_3": "Egypt",
-            "l_4": "Iraq",
-            "l_5": "Southwestern Persia",
-            "l_6": "Persian Gulf",
-            "l_7": "Cyprus",
-            "l_8": "Northern Iraq",
-            "l_9": "Syria",
-            "l_10": "Little Zab River",
-            "l_11": "Ana Amman",
-            "l_12": "Jericho",
-            "l_13": "Nablus",
-            "l_14": "Haifa",
-            "l_15": "El Azig",
-            "l_16": "Malatya",
-            "l_17": "Taurus Mountains",
-            "l_18": "Diyarbekir",
-            "l_19": "Siverek",
-            "l_20": "Gaziantep",
-            "l_21": "Bulanik",
-            "l_22": "Payas",
-            "l_23": "Karacali Dagh",
-            "l_24": "Hasseche",
-            "l_25": "Garat Motteb",
-            "l_26": "Saudi Arabia"
+            "l_1": "Cairo",
+            "l_2": "Baghdad",
+            "l_3": "Middle East",
+            "l_4": "Malta",
+            "l_5": "Tripoli",
+            "l_6": "Bengasi",
+            "l_7": "Libya",
+            "l_8": "India",
+            "l_9": "Ceylon",
+            "l_10": "Eastern India",
+            "l_11": "Gibraltar"
         },
         "events": {
-            "e_1": "Enemy Attack through Anatolia",
-            "e_2": "Operations in Northern Anatolia",
-            "e_3": "Demolitions and Delays on Enemy's Advance",
-            "e_4": "Possible Turkish Resistance to German Aggression"
+            "e_1": "Visit of Sir Stafford Cripps",
+            "e_2": "Military offensive in Libya",
+            "e_3": "Discussion on air and tank strength"
         },
         "organisations": {
-            "o_1": "Ninth Army",
-            "o_2": "Tenth Army",
-            "o_3": "R.A.F.",
-            "o_4": "G.H.Q."
+            "o_1": "War Cabinet",
+            "o_2": "Imperial General Staff",
+            "o_3": "Middle East Defence Committee",
+            "o_4": "Chiefs of Staff"
         }
     },
     "keywords": [
-        "enemy attack",
-        "military operations",
-        "delaying tactics",
-        "Turkish forces",
-        "reinforcements",
-        "demolitions"
+        "Cairo",
+        "Baghdad",
+        "Military Operations",
+        "Air Strength",
+        "Tank Strength",
+        "Middle East",
+        "Malta",
+        "Tripoli",
+        "Bengasi",
+        "Libya"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Defense",
-        "Alliances"
+        "Strategic Decisions",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_2"
         ],
-        "Strategic Defense": [
-            "e_1",
+        "Strategic Decisions": [
+            "e_2"
+        ],
+        "Logistics": [
             "e_3"
-        ],
-        "Alliances": [
-            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
                 "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
@@ -95,60 +82,47 @@
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The enemy initiates an attack through Anatolia, prompting immediate military strategies to secure bases and prevent advances."
+            "eventSummary": "Sir Stafford Cripps visits Cairo to discuss military concerns during World War II."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_7"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Military operations are planned in Northern Anatolia, contingent on Turkish cooperation against German forces."
-        },
-        {
-            "event": "e_3",
-            "date": "N/A",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Tactics are laid out to inflict maximum loss on the enemy while ensuring the integrity of defense lines."
+            "eventSummary": "A military offensive in Libya is proposed based on the assessment of tank and air strength."
         },
         {
-            "event": "e_4",
-            "date": "N/A",
+            "event": "e_3",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_7"
             ],
             "persons": [
-                "p_2"
+                "p_4",
+                "p_5"
             ],
             "organisations": [
+                "o_2",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "Speculations arise regarding Turkey's potential resistance to German aggression, influencing military strategies."
+            "eventSummary": "Discussion focuses on air and tank strength to determine readiness for operations."
         }
     ]
 }

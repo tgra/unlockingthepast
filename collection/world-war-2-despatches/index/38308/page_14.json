@@ -1,123 +1,97 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain D.25",
-            "p_2": "Captain D.4",
-            "p_3": "Rear Admiral Destroyers",
-            "p_4": "A.C.1",
-            "p_5": "CINCPAC",
-            "p_6": "A.C.r",
-            "p_7": "CIF 57"
+            "p_1": "Admiral Sir Bruce A. Fraser",
+            "p_2": "Rear Admiral ILLUSTRI-",
+            "p_3": "Vice-Admiral Sir Philip Vian",
+            "p_4": "Captain M. M. Denny, C.B., CBE, RN",
+            "p_5": "Captain Q. D. Graham, C.B.E, D.S.O., RN",
+            "p_6": "Captain C. E. Lambe, C.B., G.V.O., RN",
+            "p_7": "Captain J. A. S. Eccles, R.N.",
+            "p_8": "Captain P. Ruck-Keene, C.B.E., RN"
         },
         "locations": {
-            "l_1": "Leyte",
-            "l_2": "Guam",
-            "l_3": "Miyako",
-            "l_4": "Ishigaki",
-            "l_5": "Sakishima",
-            "l_6": "Ohama town",
-            "l_7": "Kerama Retto",
-            "l_8": "operations area"
+            "l_1": "Okinawa",
+            "l_2": "Formosa",
+            "l_3": "Sakishima Gunto group"
         },
         "events": {
-            "e_1": "Fleet Storing Operations",
-            "e_2": "Air Strikes on Miyako and Ishigaki",
-            "e_3": "Rescue Operations by U.S. Navy"
+            "e_1": "Operation ICEBERG",
+            "e_2": "the attack on 9th May, 1945"
         },
         "organisations": {
-            "o_1": "5th Fleet",
-            "o_2": "TF 57",
-            "o_3": "U.S. Navy"
+            "o_1": "British Pacific Fleet",
+            "o_2": "Task Force 57",
+            "o_3": "First Aircraft Carrier Squadron"
         }
     },
     "keywords": [
-        "hospital ship",
-        "fueling",
-        "Fleet Train",
-        "battle damage",
-        "tactical command",
-        "air strikes",
-        "rescue missions",
-        "infantile paralysis"
+        "aircraft",
+        "bombs",
+        "casualties",
+        "operational sorties",
+        "enemy action"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Rescue Missions",
-        "Air Warfare",
-        "Health Issues in Operations"
+        "Command Responsibility",
+        "Aerial Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Strategy": [
+        "Command Responsibility": [
             "e_1"
         ],
-        "Rescue Missions": [
-            "e_3"
-        ],
-        "Air Warfare": [
-            "e_2"
-        ],
-        "Health Issues in Operations": [
+        "Aerial Warfare": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th May",
+            "date": "23rd April to 25th May, 1945",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Admiral Sir Bruce A. Fraser submits a report on Operation ICEBERG covering the period from 23rd April to 25th May, 1945, detailing operational activities and challenges faced by the British Pacific Fleet."
+        },
+        {
+            "event": "e_2",
+            "date": "9th May, 1945",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_4",
-                "p_6"
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The Fleet finalizes plans for storing operations and requests confirmations for necessary supplies before departing for the next phase of operations."
-        },
-        {
-            "event": "e_2",
-            "date": "16th May",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_6",
-                "p_7"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Fleet launches coordinated air strikes against enemy positions on Miyako and Ishigaki, causing significant damage to enemy aircraft and landing facilities."
-        },
-        {
-            "event": "e_3",
-            "date": "16th May",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_5"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Following air strikes, U.S. rescue operations are successfully conducted to recover downed pilots from the water near enemy territory."
+            "eventSummary": "On 9th May, 1945, the Fleet decides to change the striking position further eastward to Ishigaki to evade enemy radar during the attack."
         }
     ]
 }

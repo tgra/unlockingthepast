@@ -1,59 +1,67 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "BEDOUIN",
-            "p_2": "MARNE",
-            "p_3": "MATCHLESS",
-            "p_4": "ITHURIEL",
-            "p_5": "PARTRIDGE",
-            "p_6": "CAIRO"
+            "p_1": "A.D.P.",
+            "p_2": "LANCE",
+            "p_3": "ISAAC SWEERS",
+            "p_4": "LAFOREY",
+            "p_5": "FORESTER",
+            "p_6": "DUNCAN"
         },
         "locations": {
-            "l_1": "Cairo",
-            "l_2": "Malta",
-            "l_3": "Zembra Island",
-            "l_4": "Cape Bon",
-            "l_5": "Ras-el-Mirh",
-            "l_6": "Kelibia Road Light"
+            "l_1": "Fleet",
+            "l_2": "LIVELY",
+            "l_3": "NELSON",
+            "l_4": "RODNEY",
+            "l_5": "PRINCE OF WALES",
+            "l_6": "SHEFFIELD"
         },
         "events": {
-            "e_1": "Operation Harpoon",
-            "e_2": "Passage of Force X and Convoy to Malta"
+            "e_1": "First Attack",
+            "e_2": "Second Attack",
+            "e_3": "Third Attack"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "R.D.F.",
+            "o_2": "Fulmars",
+            "o_3": "T/Bs",
+            "o_4": "Destroyers",
+            "o_5": "Barrage Fire"
         }
     },
     "keywords": [
-        "Operation Harpoon",
-        "Force X",
-        "Convoy",
-        "air strike",
-        "dive bombing attack",
-        "cruisers",
-        "destroyers"
+        "Attack",
+        "Torpedo",
+        "Fleet",
+        "Aircraft",
+        "Enemy"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Strategic Movements"
+        "Aerial Combat",
+        "Naval Engagement"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
+        ],
+        "Aerial Combat": [
+            "e_1",
+            "e_2",
+            "e_3"
         ],
         "Naval Engagement": [
-            "e_1"
-        ],
-        "Strategic Movements": [
-            "e_2"
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "14th June to 15th June 1942",
+            "date": "7th September",
             "locations": [
                 "l_1",
                 "l_2",
@@ -64,19 +72,64 @@
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The First Attack occurs with enemy T/B aircraft approaching the fleet. Fighter aircraft engage, resulting in several enemy losses and an accidental shoot-down of a Fulmar."
+        },
+        {
+            "event": "e_2",
+            "date": "7th September",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The Second Attack involves enemy T/Bs targeting NELSON, resulting in a torpedo hit that reduces its speed, while the defending forces shoot down several of the attacking aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "7th September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "Operation Harpoon involves the passage of Force X and convoy to Malta from 14th to 15th June 1942. The convoy faces air attacks and enemy naval presence while executing its mission."
+            "eventSummary": "The Third Attack begins shortly after the preceding engagement, with enemy aircraft reported closing from the southeast, further complicating the defense for the convoy."
         }
     ]
 }

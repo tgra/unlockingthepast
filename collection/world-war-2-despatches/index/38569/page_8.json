@@ -1,12 +1,157 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {},
-        "events": {},
-        "organisations": {}
+        "persons": {
+            "p_1": "Cap Matifou",
+            "p_2": "S.N.O.L. (C)",
+            "p_3": "S.N.O.L. (B)",
+            "p_4": "S.N.O.L. (A)",
+            "p_5": "C.E.N.T.F.",
+            "p_6": "Admiralty"
+        },
+        "locations": {
+            "l_1": "AWATEA",
+            "l_2": "Bains Romans",
+            "l_3": "Tot de la Marine",
+            "l_4": "C Brug",
+            "l_5": "C Rep Beach",
+            "l_6": "Bordelaise Rock",
+            "l_7": "C GREEN",
+            "l_8": "C BLUE",
+            "l_9": "C Green Beach",
+            "l_10": "Sidi Ferruch Fort",
+            "l_11": "B Sector",
+            "l_12": "A Sector",
+            "l_13": "B Wuire Beach",
+            "l_14": "A GREEN"
+        },
+        "events": {
+            "e_1": "Scramble Landings",
+            "e_2": "Operation Terminal",
+            "e_3": "Landing B WuirTe",
+            "e_4": "Sidi Ferruch captured",
+            "e_5": "Operation successful at B GREEN"
+        },
+        "organisations": {
+            "o_1": "H.M.S. BULOLO",
+            "o_2": "H.M.S. ZETLAND",
+            "o_3": "H.M. Ships BROKE",
+            "o_4": "H.M. Ships MALCOLM",
+            "o_5": "KEREN"
+        }
     },
-    "keywords": [],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "keywords": [
+        "Flotilla Officers",
+        "assault",
+        "landings",
+        "convoy",
+        "searchlights"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Assault Tactics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Naval Engagements": [
+            "e_1",
+            "e_2"
+        ],
+        "Assault Tactics": [
+            "e_3",
+            "e_4",
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Scramble Landings involve various crafts landing troops at multiple beaches affected by delays."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Terminal is ordered to be executed with ships BROKE and MALCOLM."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The landing at B WuirTe is reported successful during the operations."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Sidi Ferruch Fort is captured without opposition following the landings."
+        },
+        {
+            "event": "e_5",
+            "date": "Not specified",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation at B GREEN is successful with forces landing effectively."
+        }
+    ]
 }

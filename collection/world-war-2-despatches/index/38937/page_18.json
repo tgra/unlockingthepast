@@ -1,66 +1,80 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Kesselring",
-            "p_2": "General Hauck",
-            "p_3": "General von Vietinghoff"
+            "p_1": "General Montgomery",
+            "p_2": "General Clark",
+            "p_3": "Admiral Cunningham",
+            "p_4": "Major-General A. A. Richardson"
         },
         "locations": {
-            "l_1": "Alfadena",
-            "l_2": "Civitavecchia",
-            "l_3": "Anzio",
-            "l_4": "Cassino",
-            "l_5": "Liri Valley",
-            "l_6": "Terracina",
-            "l_7": "Naples",
-            "l_8": "Salerno",
-            "l_9": "Monastery Hill",
-            "l_10": "Gustav line"
+            "l_1": "Altavilla",
+            "l_2": "Albanella",
+            "l_3": "Agropoli",
+            "l_4": "Salerno",
+            "l_5": "Montecorvino airfield",
+            "l_6": "Battipaglia",
+            "l_7": "Eboli",
+            "l_8": "Avellino",
+            "l_9": "Calabria",
+            "l_10": "Rome",
+            "l_11": "Naples",
+            "l_12": "Gulf",
+            "l_13": "Apulia"
         },
         "events": {
-            "e_1": "Troop Movements and Deception Operations",
-            "e_2": "Attack on the Garigliano",
-            "e_3": "D-Day Planning"
+            "e_1": "Battle of Salerno",
+            "e_2": "Operation Avalanche",
+            "e_3": "German Counter-attacks",
+            "e_4": "Drop of 82 Airborne Division"
         },
         "organisations": {
-            "o_1": "Tenth Army",
-            "o_2": "305 Division",
-            "o_3": "LI Mountain Corps",
-            "o_4": "XIV Panzer Corps",
-            "o_5": "14th Army",
-            "o_6": "Canadian Corps",
-            "o_7": "15 Panzer Grenadier Division",
-            "o_8": "3 Carpathian Division"
+            "o_1": "VI Corps",
+            "o_2": "10 Corps",
+            "o_3": "Fifth Army",
+            "o_4": "Eighth Army",
+            "o_5": "Hermann Goering Division",
+            "o_6": "15 Panzer Grenadier Division",
+            "o_7": "3 Panzer Grenadier Division",
+            "o_8": "LXXVI Panzer Corps",
+            "o_9": "29 Panzer Grenadier Division",
+            "o_10": "26 Panzer Division",
+            "o_11": "1 Parachute Division",
+            "o_12": "Strategic Air-Force"
         }
     },
     "keywords": [
-        "Deception",
-        "Troop Movements",
-        "Amphibious Operations",
-        "Concealment",
-        "Attack"
+        "heavy fighting",
+        "beaches",
+        "resistance",
+        "consolidation",
+        "reinforcements",
+        "counter-attacks",
+        "administrative troops",
+        "bombing attacks"
     ],
     "themes": [
-        "Military Strategy",
-        "Deception Operations",
-        "Amphibious Assault Planning",
-        "Troop Dispositions"
+        "Military Operations",
+        "Counter-attacks",
+        "Reinforcements",
+        "Logistical difficulties"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3",
+            "e_4"
+        ],
+        "Diplomacy": [
             "e_2"
         ],
-        "Diplomacy": [],
         "Strategic Decisions": [
-            "e_1",
-            "e_3"
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 18, 1944",
+            "date": "September 11, 1943",
             "locations": [
                 "l_1",
                 "l_2",
@@ -71,58 +85,79 @@
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_4"
             ],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_4",
-                "o_5",
-                "o_6",
-                "o_7"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "Kesselring adapts enemy troop dispositions to match Allied movements, focusing on deception to mislead about the actual plans for an attack."
+            "eventSummary": "The Battle of Salerno involves heavy fighting, with VI Corps capturing key positions along the coast and inland by nightfall."
         },
         {
             "event": "e_2",
-            "date": "May 12, 1944",
+            "date": "September 11, 1943",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_9",
+                "l_10",
+                "l_11"
             ],
             "persons": [
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The attack on the Garigliano takes place with significant strategic advantages resulting from deception and misperceptions of troop strengths."
-        },
-        {
-            "event": "e_3",
-            "date": "May 24, 1944",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
+                "o_4",
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "D-Day is planned, with significant mistakes made by the enemy regarding the timing and scale of the Allied forces."
+            "eventSummary": "Operation Avalanche sees critical maneuvers as pressures on German forces affect the ability to reinforce positions."
+        },
+        {
+            "event": "e_3",
+            "date": "September 12-24, 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Large-scale German counter-attacks begin on September 12, threatening to cut off vital bridgeheads as resistance mounts."
+        },
+        {
+            "event": "e_4",
+            "date": "September 13-15, 1943",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_4",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The drop of the 82 Airborne Division occurs on the night of September 13-14, providing critical support behind enemy lines."
         }
     ]
 }

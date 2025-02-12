@@ -1,105 +1,107 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A.C.1"
+            "p_1": "Captain D.25",
+            "p_2": "Captain D.4",
+            "p_3": "A.C.1",
+            "p_4": "H.M.S. VICTORIOUS",
+            "p_5": "A.C.x",
+            "p_6": "Rear Admiral Destroyers"
         },
         "locations": {
-            "l_1": "Ishigaki",
-            "l_2": "Miyako",
-            "l_3": "Nobara airfield",
-            "l_4": "Sukama air strip",
-            "l_5": "Hirara airfield",
-            "l_6": "Southward"
+            "l_1": "Sakishima",
+            "l_2": "Leyte",
+            "l_3": "Guam",
+            "l_4": "Miyako",
+            "l_5": "Ishigaki",
+            "l_6": "Ohama town",
+            "l_7": "Kerama Retto"
         },
         "events": {
-            "e_1": "Ishigaki strike",
-            "e_2": "Bombardment of A.A. defence areas",
-            "e_3": "Kamikaze attack on H.M.S. Formidable"
+            "e_1": "Operation on 25th May",
+            "e_2": "Bomber strikes on Miyako and Ishigaki on 16th May"
         },
         "organisations": {
-            "o_1": "H.M. Ships"
+            "o_1": "COM 5th Fleet",
+            "o_2": "CTF 57",
+            "o_3": "5th Fleet"
         }
     },
     "keywords": [
-        "Bombardment",
-        "A.A. defence",
-        "Kamikaze",
-        "Naval Operation",
-        "Air Attack"
+        "hospital ship",
+        "Fleet",
+        "operations area",
+        "tankers",
+        "fuelling",
+        "battle damage",
+        "senior officer",
+        "infantile paralysis",
+        "quarantine",
+        "bomber strikes"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Aircraft Engagement"
+        "Tactical Commands",
+        "Fleet Movements",
+        "Casualty Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Naval Warfare": [
-            "e_2",
-            "e_3"
+        "Tactical Commands": [
+            "e_1"
         ],
-        "Aircraft Engagement": [
-            "e_3"
+        "Fleet Movements": [
+            "e_1"
+        ],
+        "Casualty Management": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown",
+            "date": "25th May",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "During the Ishigaki strike, an Avenger crashes into the sea, but the crew is rescued unharmed while enemy aircraft approaches the force."
+            "eventSummary": "On 25th May, the Fleet concludes operations and prepares for major storing, ensuring readiness for future operations in July."
         },
         {
             "event": "e_2",
-            "date": "Unknown",
+            "date": "16th May",
             "locations": [
                 "l_3",
                 "l_4",
-                "l_5"
+                "l_5",
+                "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The naval force conducts a bombardment of A.A. defense areas at Nobara and Hirara airfields, successfully hitting targets without encountering opposition from shore."
-        },
-        {
-            "event": "e_3",
-            "date": "Unknown",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "A Kamikaze attack occurs on H.M.S. Formidable, causing significant damage and casualties as the enemy aircraft crashes into the flight deck."
+            "eventSummary": "On 16th May, the Fleet conducts bomber strikes against Miyako and Ishigaki, damaging enemy infrastructure and causing troop casualties."
         }
     ]
 }

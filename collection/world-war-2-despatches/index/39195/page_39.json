@@ -1,66 +1,108 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General Sir Philip Christison",
-            "p_2": "Rear-Admiral Martin",
-            "p_3": "Air Commodore the Earl of Bandon"
+            "p_1": "General Slim"
         },
         "locations": {
-            "l_1": "Kohima",
-            "l_2": "Mandalay",
-            "l_3": "Arakan",
-            "l_4": "Akyab",
-            "l_5": "Myebon",
-            "l_6": "Minbya",
-            "l_7": "Rangoon"
+            "l_1": "Ramree",
+            "l_2": "Dalet",
+            "l_3": "Tanlwe Chaung",
+            "l_4": "Taungup",
+            "l_5": "Arakan",
+            "l_6": "Central Burma",
+            "l_7": "Mandalay Plain",
+            "l_8": "Rangoon",
+            "l_9": "Meiktila",
+            "l_10": "Yenangyaung",
+            "l_11": "Magwe",
+            "l_12": "Prome",
+            "l_13": "Myingyan",
+            "l_14": "Maymyo",
+            "l_15": "Chauk"
         },
         "events": {
-            "e_1": "Relief of Kohima",
-            "e_2": "Arakan Campaign",
-            "e_3": "Capture of Rangoon"
+            "e_1": "Capture of Dalet",
+            "e_2": "Occupation of Taungup",
+            "e_3": "Advance to Rangoon",
+            "e_4": "Destruction of Japanese Forces in Central Burma"
         },
         "organisations": {
-            "o_1": "33 Corps",
-            "o_2": "15 Indian Corps",
-            "o_3": "224 Group, R.A.F."
+            "o_1": "Fourteenth Army",
+            "o_2": "33 Corps",
+            "o_3": "15 Indian Corps",
+            "o_4": "82 (West African) Division",
+            "o_5": "22 (East African) Brigade",
+            "o_6": "26 Indian Division",
+            "o_7": "15 Japanese Army",
+            "o_8": "54 Japanese Division",
+            "o_9": "55 Japanese Division"
         }
     },
     "keywords": [
-        "Japanese forces",
-        "operations",
-        "monsoon",
-        "air supply bases",
-        "amphibious operations"
+        "Military Operations",
+        "Japanese Forces",
+        "Rangoon",
+        "Advance",
+        "Mandalay",
+        "Administrative Challenges"
     ],
     "themes": [
         "Military Operations",
-        "Geographical Challenges",
-        "Planning and Strategy",
-        "Weather Impact"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
             "e_3"
-        ],
-        "Geographical Challenges": [
-            "e_2"
-        ],
-        "Weather Impact": [
-            "e_2"
-        ],
-        "Planning and Strategy": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 3, 1944",
+            "date": "April 19",
             "locations": [
-                "l_1",
                 "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On April 19, the 22 (East African) Brigade captures the village of Dalet on the Tanlwe Chaung."
+        },
+        {
+            "event": "e_2",
+            "date": "April 28",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On April 28, the 4 (West African) Brigade occupies Taungup, marking a significant operational success."
+        },
+        {
+            "event": "e_3",
+            "date": "End of April",
+            "locations": [
+                "l_8"
             ],
             "persons": [
                 "p_1"
@@ -69,47 +111,24 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "On April 3, 1944, the 33 Corps initiates operations leading to the successful relief of Kohima."
+            "eventSummary": "At the end of April, General Slim directs the advance to capture Rangoon before the onset of the monsoon."
         },
         {
-            "event": "e_2",
-            "date": "November 1944",
+            "event": "e_4",
+            "date": "February 27",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5",
                 "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The Arakan Campaign involves complex operations to secure strategic positions ahead of the monsoon, overcoming challenges posed by the terrain and weather."
-        },
-        {
-            "event": "e_3",
-            "date": "Future operations post-November 1944",
-            "locations": [
-                "l_7"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_7"
             ],
             "connectedEvents": [],
-            "eventSummary": "Post-November 1944 operations are planned for an amphibious and airborne assault on Rangoon."
+            "eventSummary": "On February 27, General Slim is directed to destroy Japanese forces in Central Burma."
         }
     ]
 }

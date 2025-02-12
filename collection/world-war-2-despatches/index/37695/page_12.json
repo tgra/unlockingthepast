@@ -2,72 +2,124 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Egypt",
-            "l_2": "British"
+            "l_1": "East Africa",
+            "l_2": "Greece",
+            "l_3": "Syria",
+            "l_4": "Western Desert",
+            "l_5": "United Kingdom"
         },
         "events": {
-            "e_1": "State of Equipment Increase",
-            "e_2": "Anti-Aircraft Equipment State"
+            "e_1": "Transport Replacement for the 1st South African Division",
+            "e_2": "Conversion of Artillery Regiments",
+            "e_3": "Arrival of American Equipment",
+            "e_4": "Medical Service Equipment Shortages"
         },
         "organisations": {
-            "o_1": "British Army",
-            "o_2": "Free French Forces"
+            "o_1": "1st South African Division",
+            "o_2": "4th Indian Division",
+            "o_3": "New Zealand Division",
+            "o_4": "7th Armoured Division",
+            "o_5": "1st Army Tank Brigade",
+            "o_6": "22nd Armoured Brigade",
+            "o_7": "Royal Artillery Field Branch",
+            "o_8": "Royal Artillery Anti-Aircraft Artillery Branch",
+            "o_9": "Royal Engineers",
+            "o_10": "Royal Corps of Signals",
+            "o_11": "Royal Army Service Corps",
+            "o_12": "Royal Army Medical Corps",
+            "o_13": "Australian Corps"
         }
     },
     "keywords": [
-        "Artillery",
-        "Equipment",
-        "Increase",
-        "Anti-Aircraft",
-        "British",
-        "Free French",
-        "Military"
+        "transport",
+        "artillery",
+        "equipment",
+        "ambulance",
+        "defence"
     ],
     "themes": [
         "Military Operations",
-        "Equipment Status",
-        "Allied Forces Coordination"
+        "Logistics",
+        "Equipment Supply",
+        "Air Defence"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Equipment Status": [
+        "Logistics": [
             "e_1",
-            "e_2"
+            "e_3"
         ],
-        "Allied Forces Coordination": []
+        "Equipment Supply": [
+            "e_3",
+            "e_4"
+        ],
+        "Air Defence": [
+            "e_2"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st July 1941 & 4th November 1941",
+            "date": "",
             "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The state of equipment increase for artillery is assessed with specific percentages recorded against anti-tank and medium artillery on two significant dates."
-        },
-        {
-            "event": "e_2",
-            "date": "4th July 1941 & 31st October 1941",
-            "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Transport replacement for the 1st South African Division and the 4th Indian Division is organized efficiently, allowing rapid deployment for desert warfare."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_7",
+                "o_8"
             ],
             "connectedEvents": [],
-            "eventSummary": "The state of anti-aircraft equipment is reviewed, with a noted lack of figures for free French or Egyptian units included."
+            "eventSummary": "Conversion of some artillery regiments into anti-tank regiments occurs due to insufficient anti-tank capabilities."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "American equipment, including mobile compressors and bridging equipment, begins to arrive to assist British forces."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_12"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Medical Service encounters shortages in units and transport, highlighting the challenges of mobile warfare conditions."
         }
     ]
 }

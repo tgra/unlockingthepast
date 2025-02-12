@@ -1,96 +1,114 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain Barber",
-            "p_2": "His Majesty The King"
+            "p_1": "Commander-in-Chief, Portsmouth"
         },
         "locations": {
-            "l_1": "Trinity House",
-            "l_2": "Cowes",
-            "l_3": "Havre",
-            "l_4": "Far Shore",
-            "l_5": "Arromanches",
-            "l_6": "St. Laurent"
+            "l_1": "Isle of Wight",
+            "l_2": "Southampton",
+            "l_3": "England",
+            "l_4": "France"
         },
         "events": {
-            "e_1": "Heavy Air Attack on Havre",
-            "e_2": "Visit of H.M. The King",
-            "e_3": "The Northerly Gale"
+            "e_1": "D+9 Landings",
+            "e_2": "D+28 Milestone Landings",
+            "e_3": "Minesweeping Operations"
         },
         "organisations": {
-            "o_1": "Bomber Command"
+            "o_1": "S.H.A.E.F.",
+            "o_2": "Royal Observer Corps",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
-        "Co-operation",
+        "ammunition",
+        "shipping",
+        "naval operations",
+        "casualties",
+        "convoys",
         "E-Boats",
-        "Unloading",
-        "Casualties",
-        "Assault Area",
-        "Weather Conditions"
+        "aircraft",
+        "minesweeping",
+        "radar"
     ],
     "themes": [
         "Military Operations",
-        "Weather Impact",
-        "Royal Visit",
-        "Naval Coordination"
+        "Supply Chain Management",
+        "Casualty Management",
+        "Naval Strategy",
+        "Air Defense"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3"
         ],
-        "Diplomacy": [
+        "Supply Chain Management": [
+            "e_1",
             "e_2"
         ],
-        "Weather Impact": [
-            "e_3"
+        "Casualty Management": [
+            "e_1"
         ],
-        "Naval Coordination": [
+        "Naval Strategy": [
             "e_1",
             "e_3"
+        ],
+        "Air Defense": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "4th June",
+            "date": "D+9",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "On June 4th, a heavy air attack is launched by Bomber Command on enemy E-Boats concentrated in Havre, resulting in the sinking of 10 E-Boats and three torpedo boats."
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "By D+9 half a million men have been landed in France, supported by naval operations."
         },
         {
             "event": "e_2",
-            "date": "16th June",
+            "date": "D+28",
             "locations": [
                 "l_4"
             ],
-            "persons": [
-                "p_2"
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
             ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "On June 16th, His Majesty The King visits the British assault area on H.M.S. ARETHUSA, providing encouragement to the naval personnel."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The millionth man lands on D+28, marking an important milestone in the operation."
         },
         {
             "event": "e_3",
-            "date": "From 14th June to 22nd June",
+            "date": "D+41",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_3",
+                "l_4"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [],
-            "eventSummary": "From June 14th to 22nd, an unexpected northerly gale disrupts operations, damaging numerous landing crafts and stopping unloading activities, leading to significant losses."
+            "eventSummary": "Continuous minesweeping operations are carried out to establish channels from England to France."
         }
     ]
 }

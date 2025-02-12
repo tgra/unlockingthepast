@@ -1,59 +1,72 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Slim"
+            "p_1": "General Stilwell"
         },
         "locations": {
-            "l_1": "Chittagong",
-            "l_2": "Mayu Range",
-            "l_3": "Taung Bazaar",
-            "l_4": "Bawli Bazaar",
-            "l_5": "Ngakyedauk Pass",
-            "l_6": "Awlanbyin",
-            "l_7": "Sinzweya",
-            "l_8": "Buthidaung"
+            "l_1": "Mayu Range",
+            "l_2": "Ngakyedauk Pass",
+            "l_3": "Arakan",
+            "l_4": "Shillong",
+            "l_5": "Assam",
+            "l_6": "Taung Bazaar",
+            "l_7": "Buthidaung",
+            "l_8": "Godusara Tunnels Area",
+            "l_9": "Cox's Bazaar",
+            "l_10": "Chiringa",
+            "l_11": "Sangu River"
         },
         "events": {
-            "e_1": "Japanese Counter-Attack",
-            "e_2": "Defensive Operations by 7 Indian Division"
+            "e_1": "Japanese Offensive",
+            "e_2": "Capture of Razabil",
+            "e_3": "Mopping Up Operations",
+            "e_4": "Transfer of 25 Indian Division",
+            "e_5": "Withdrawal from Buthidaung",
+            "e_6": "Monsoon Dispositions"
         },
         "organisations": {
-            "o_1": "14th Army",
-            "o_2": "5 Indian Division",
-            "o_3": "7 Indian Division",
-            "o_4": "26 Indian Division",
-            "o_5": "15 Indian Corps",
-            "o_6": "Tokyo Radio"
+            "o_1": "36 British Division",
+            "o_2": "26 Indian Division",
+            "o_3": "5 Indian Division",
+            "o_4": "15 Indian Corps",
+            "o_5": "7 Indian Division",
+            "o_6": "4 Corps"
         }
     },
     "keywords": [
-        "Counter-Attack",
-        "Defensive Strategy",
-        "Air Supply",
-        "Fighter Bombers",
-        "Infiltration Tactics"
+        "Japanese forces",
+        "food shortage",
+        "ammunition",
+        "tactical success",
+        "jungle fighting",
+        "victory",
+        "withdrawal"
     ],
     "themes": [
         "Military Operations",
-        "Japanese Strategy",
-        "Defensive Tactics"
+        "Supply Shortages",
+        "Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Defensive Tactics": [
-            "e_2"
+        "Supply Shortages": [
+            "e_1"
         ],
-        "Japanese Strategy": [
+        "Tactics": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 1, 1945",
+            "date": "February 1944",
             "locations": [
                 "l_1",
                 "l_2"
@@ -63,34 +76,77 @@
             ],
             "organisations": [
                 "o_1",
-                "o_6"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The Japanese launch a counter-attack against 7 Indian Division, attempting to outflank their position and cut off supply lines."
+            "eventSummary": "The Japanese forces initiate an offensive on the 16th February, leading to significant tactical failures due to supply shortages and casualties."
         },
         {
             "event": "e_2",
-            "date": "February 9, 1945",
+            "date": "12th March 1944",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_7"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_2"
             ],
+            "connectedEvents": [],
+            "eventSummary": "Razabil is captured by 5 Indian Division on the 12th March."
+        },
+        {
+            "event": "e_3",
+            "date": "5th March 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Mopping up operations in the thick mountainous jungle continue until the 5th March."
+        },
+        {
+            "event": "e_4",
+            "date": "End of March 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4",
                 "o_5"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "25 Indian Division begins to take over from 5 Indian Division at the end of March."
+        },
+        {
+            "event": "e_5",
+            "date": "May 1944",
+            "locations": [
+                "l_7"
             ],
-            "eventSummary": "7 Indian Division undertakes defensive operations to withstand Japanese assaults, establishing strong positions against frontal and flank attacks while maintaining supply lines."
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "We withdraw from Buthidaung in May to positions more suitable for the monsoon."
+        },
+        {
+            "event": "e_6",
+            "date": "May 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Our forces establish monsoon dispositions by the end of May, selecting strong positions."
         }
     ]
 }

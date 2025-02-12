@@ -1,78 +1,122 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Stumme",
-            "p_2": "Rommel",
-            "p_3": "General Montgomery"
+            "p_1": "General Montgomery",
+            "p_2": "Messe"
         },
         "locations": {
-            "l_1": "El Ghazal",
-            "l_2": "Sidi Abd el Rahman",
-            "l_3": "Daba",
-            "l_4": "Alamein",
-            "l_5": "the Miteiriya ridge",
-            "l_6": "Tell el Eisa ridge"
+            "l_1": "Wadi Akarit",
+            "l_2": "El Guettar",
+            "l_3": "Maknassy",
+            "l_4": "Enfidaville",
+            "l_5": "Pichon",
+            "l_6": "Kessera",
+            "l_7": "Maktar",
+            "l_8": "Fondouk",
+            "l_9": "Kairouan",
+            "l_10": "Sfax"
         },
         "events": {
-            "e_1": "Battle of Alamein",
-            "e_2": "Desert Victory"
+            "e_1": "battle of the Wadi Akarit",
+            "e_2": "attack on the Wadi Akarit line",
+            "e_3": "successful action against enemy tanks south of Kairouan"
         },
         "organisations": {
-            "o_1": "German Africa Corps",
-            "o_2": "Italian XX Corps",
-            "o_3": "Eighth Army"
+            "o_1": "Eighth Army",
+            "o_2": "30 Corps",
+            "o_3": "4 Indian Division",
+            "o_4": "5 Division",
+            "o_5": "50 Division",
+            "o_6": "g Corps",
+            "o_7": "II Corps",
+            "o_8": "Royal Sussex",
+            "o_9": "Gurkhas",
+            "o_10": "Long Range Desert Group",
+            "o_11": "Raiding Forces",
+            "o_12": "First Army"
         }
     },
     "keywords": [
-        "armoured divisions",
-        "defensive battle",
-        "infantry battle",
-        "reconnaissance",
-        "attack plan"
+        "battle",
+        "attack",
+        "division",
+        "corps",
+        "retreat",
+        "operations"
     ],
     "themes": [
         "Military Operations",
         "Battle Strategy",
-        "Defensive Tactics",
-        "Reconnaissance"
+        "Counter-Attack"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3"
         ],
         "Battle Strategy": [
-            "e_1"
+            "e_1",
+            "e_2"
         ],
-        "Defensive Tactics": [
-            "e_1"
-        ],
-        "Reconnaissance": [
-            "e_1"
+        "Counter-Attack": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of battle (specific date not provided)",
+            "date": "6th April",
             "locations": [
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Battle of Alamein is a critical confrontation where allied forces implement a strategic infantry assault against strong enemy defenses, focusing on breaking through at specific key locations."
+            "eventSummary": "The battle of the Wadi Akarit occurs, characterized by heavy fighting and significant casualties on both sides."
+        },
+        {
+            "event": "e_2",
+            "date": "6th April",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An attack is launched on the Wadi Akarit line involving three divisions of the 30 Corps."
+        },
+        {
+            "event": "e_3",
+            "date": "7th April",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "6 Armoured Division manages a successful action against enemy tanks south of Kairouan."
         }
     ]
 }

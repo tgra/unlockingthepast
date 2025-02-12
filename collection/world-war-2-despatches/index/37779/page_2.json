@@ -1,97 +1,177 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Eisenhower",
-            "p_2": "General Barre",
-            "p_3": "General Giraud",
-            "p_4": "General Anderson",
-            "p_5": "General Alexander"
+            "p_1": "Major-General Ryder",
+            "p_2": "Major-General Evelegh",
+            "p_3": "Captain N. V. Dickinson",
+            "p_4": "General Anderson"
         },
         "locations": {
-            "l_1": "Djebel Abiod",
-            "l_2": "Oran",
-            "l_3": "Casablanca",
-            "l_4": "Le Kef",
-            "l_5": "Teboursouk",
-            "l_6": "Gafsa",
-            "l_7": "Tebessa",
-            "l_8": "Tunisia"
+            "l_1": "Algiers",
+            "l_2": "Eastern Algeria",
+            "l_3": "Tunisia",
+            "l_4": "Gibraltar",
+            "l_5": "Maison Blanche airfield",
+            "l_6": "Bougie",
+            "l_7": "Djidjelli",
+            "l_8": "Blida",
+            "l_9": "Tunis",
+            "l_10": "Bizerta",
+            "l_11": "El Aouana airport",
+            "l_12": "Philippeville",
+            "l_13": "Bone",
+            "l_14": "La Calle"
         },
         "events": {
-            "e_1": "Counter-attack at Djebel Abiod",
-            "e_2": "Final destruction of Axis forces in Africa"
+            "e_1": "Landing at Algiers",
+            "e_2": "Opening of Algiers harbour",
+            "e_3": "Landing at Bougie",
+            "e_4": "Capture of Djidjelli airfield",
+            "e_5": "First German landings at El Aouana airport",
+            "e_6": "Race for Tunis and Bizerta"
         },
         "organisations": {
-            "o_1": "First Army",
-            "o_2": "United States Forces",
-            "o_3": "78 Division",
-            "o_4": "5 Corps",
-            "o_5": "French Command",
-            "o_6": "18 Army Group"
+            "o_1": "United States 34 Infantry Division",
+            "o_2": "British 78 Division",
+            "o_3": "First Army"
         }
     },
     "keywords": [
-        "Allied forces",
-        "command",
-        "political considerations",
-        "French Army",
-        "Goums",
-        "counter-attack"
+        "Operation",
+        "Landing",
+        "Fighting",
+        "Harbour",
+        "Command",
+        "Resistance",
+        "Airfields",
+        "Artillery"
     ],
     "themes": [
         "Military Operations",
-        "Command and Control",
-        "International Relations",
-        "Political Considerations"
+        "Logistics",
+        "Resistance",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Command and Control": [
+        "Logistics": [
+            "e_1",
+            "e_2",
+            "e_6"
+        ],
+        "Resistance": [
+            "e_5",
             "e_1"
         ],
-        "Political Considerations": [
-            "e_1"
+        "Strategic Planning": [
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "28th March 1943",
+            "date": "9th November",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The counter-attack at Djebel Abiod commences, marking the start of an offensive period for Allied forces."
+            "eventSummary": "The landing at Algiers occurs, largely unopposed, where envoys are received to discuss terms."
         },
         {
             "event": "e_2",
-            "date": "13th May 1943",
+            "date": "9th November",
             "locations": [
-                "l_8"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The final destruction of Axis forces in Africa is achieved, culminating the campaign against Axis powers in the region."
+            "eventSummary": "Algiers harbour opens and unloading of ships begins."
+        },
+        {
+            "event": "e_3",
+            "date": "11th November",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "36 Brigade lands unopposed at Bougie and takes over the port."
+        },
+        {
+            "event": "e_4",
+            "date": "13th November",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_2",
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The capture of Djidjelli airfield is delayed but eventually takes place after 36 Brigade arrives."
+        },
+        {
+            "event": "e_5",
+            "date": "9th November",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "First German landings at El Aouana airport occur unopposed."
+        },
+        {
+            "event": "e_6",
+            "date": "Late 1942",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A race for Tunis and Bizerta begins, characterized by undersized forces facing difficult conditions."
         }
     ]
 }

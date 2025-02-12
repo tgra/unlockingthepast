@@ -1,120 +1,151 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Eighth Army",
-            "p_2": "First Army",
-            "p_3": "Fighting French",
-            "p_4": "56th Division"
-        },
+        "persons": {},
         "locations": {
             "l_1": "Tripoli",
-            "l_2": "Delta",
-            "l_3": "Sfax",
-            "l_4": "Algiers",
-            "l_5": "Tobruk",
-            "l_6": "Mareth Line",
-            "l_7": "Wadi Akarit",
-            "l_8": "Enfidaville",
-            "l_9": "Tunisia",
-            "l_10": "North Africa",
-            "l_11": "Benghazi"
+            "l_2": "Sfax",
+            "l_3": "Algiers",
+            "l_4": "Tobruk",
+            "l_5": "Benghazi",
+            "l_6": "Delta",
+            "l_7": "Mareth Line",
+            "l_8": "Tunisia",
+            "l_9": "North Africa",
+            "l_10": "Alamain",
+            "l_11": "Tripolitania",
+            "l_12": "Sicily",
+            "l_13": "Gabes",
+            "l_14": "Zarzis",
+            "l_15": "Enfidaville"
         },
         "events": {
             "e_1": "Battle of E Alamein",
-            "e_2": "Tunisian Campaign",
-            "e_3": "Establishment of a Transit Camp"
+            "e_2": "Invasion of Sicily",
+            "e_3": "Tunisian campaign",
+            "e_4": "Arrival of reinforcements",
+            "e_5": "Establishment of transit camp",
+            "e_6": "Occupation of Sfax"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "First Army",
-            "o_3": "Middle East Base"
+            "o_2": "1st Fighting French Division",
+            "o_3": "56th Division"
         }
     },
     "keywords": [
         "reinforcements",
-        "logistics",
+        "Eighth Army",
+        "supply",
         "transport",
-        "supply chain",
-        "military operations",
-        "casualties",
-        "mail services"
+        "Battle of E Alamein",
+        "Tunisian campaign",
+        "North Africa",
+        "Sfax",
+        "Tripoli",
+        "logistics"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Supply",
-        "Casualty Management",
-        "Transport and Communication"
+        "Logistics",
+        "Supply Chain Management",
+        "Casualty Evacuation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Logistics and Supply": [
+            "e_2",
             "e_3"
         ],
-        "Casualty Management": [
-            "e_3"
+        "Logistics": [
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Transport and Communication": [
+        "Supply Chain Management": [
+            "e_3",
+            "e_4"
+        ],
+        "Casualty Evacuation": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Battle of E Alamein",
+            "date": "October 1942",
             "locations": [
-                "l_1",
-                "l_6"
+                "l_10"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The Battle of E Alamein is a critical battle where Eighth Army is reinforced to strengthen their chances of success."
+            "eventSummary": "The Battle of E Alamein takes place, marking a significant victory for Eighth Army in the North African campaign."
         },
         {
             "event": "e_2",
-            "date": "Tunisian Campaign",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The Tunisian Campaign involves significant logistics, with reinforcements and supplies managed through various means, culminating in operational success."
+            "eventSummary": "Preparations for the Invasion of Sicily are discussed as a key strategic move following successes in North Africa."
         },
         {
             "event": "e_3",
-            "date": "Establishment of a Transit Camp",
+            "date": "May 1943",
             "locations": [
-                "l_2",
-                "l_1"
+                "l_8"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "A transit camp is established in Tripoli to facilitate the distribution of reinforcements and supplies to Eighth Army."
+            "eventSummary": "The Tunisian campaign concludes, resulting in significant troop movements and reinforcements."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_6",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Reinforcements are dispatched to Eighth Army to boost the strength in preparation for ongoing military operations."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A transit camp is established at Tripoli for the efficient distribution of reinforcements and supplies."
+        },
+        {
+            "event": "e_6",
+            "date": "April 10, 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Sfax is occupied, proving valuable for logistics despite ongoing challenges with shipping channels."
         }
     ]
 }

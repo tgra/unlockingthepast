@@ -1,132 +1,152 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General Robertson",
-            "p_2": "General Eisenhower"
+            "p_1": "General Eisenhower",
+            "p_2": "President",
+            "p_3": "Prime Minister",
+            "p_4": "General Smith",
+            "p_5": "General Castellano",
+            "p_6": "Marshal Badoglio",
+            "p_7": "Kesselring",
+            "p_8": "Jodl"
         },
         "locations": {
-            "l_1": "Naples",
-            "l_2": "Italy",
-            "l_3": "Bari",
-            "l_4": "Anzio",
-            "l_5": "Garigliano",
-            "l_6": "Arno"
+            "l_1": "Leghorn",
+            "l_2": "Rome",
+            "l_3": "Cassibile",
+            "l_4": "Salerno",
+            "l_5": "Tunisia",
+            "l_6": "South Russia",
+            "l_7": "Alps",
+            "l_8": "Balkans",
+            "l_9": "Peloponese",
+            "l_10": "Cape Bon",
+            "l_11": "Eastern Front"
         },
         "events": {
-            "e_1": "Establishment of Advanced Administrative Echelon",
-            "e_2": "German air raid on Bari",
-            "e_3": "Reorganisation after General Eisenhower's departure",
-            "e_4": "Ammunition shortage in Italy",
-            "e_5": "Gothic Line battles"
+            "e_1": "Operation AVALANCHE",
+            "e_2": "Military Terms of Surrender",
+            "e_3": "First invasion of the continent of Europe",
+            "e_4": "Battle of Stalingrad",
+            "e_5": "Battle of Tunisia"
         },
         "organisations": {
-            "o_1": "A.F.H.Q.",
-            "o_2": "Fifteenth Army Group",
-            "o_3": "Headquarters Allied Armies in Italy"
+            "o_1": "82 United States Airborne Division",
+            "o_2": "Eighth Army",
+            "o_3": "Fifth Army",
+            "o_4": "Indian Division"
         }
     },
     "keywords": [
-        "administration",
-        "supply lines",
-        "reorganisation",
-        "ammunition shortage",
-        "logistics"
+        "military",
+        "airborne division",
+        "armistice",
+        "invasion",
+        "German forces",
+        "Italian campaign",
+        "strategic attacks"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Supply",
-        "Reorganisation",
-        "Ammunition Crisis"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
             "e_3",
             "e_4",
             "e_5"
         ],
-        "Logistics and Supply": [
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
             "e_1",
-            "e_4"
-        ],
-        "Reorganisation": [
-            "e_3"
-        ],
-        "Ammunition Crisis": [
-            "e_4"
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "24th October",
+            "date": "1st September 1943",
             "locations": [
-                "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "An Advanced Administrative Echelon of A.F.H.Q. is established at Naples, assuming former administrative functions and coordinating logistics for military operations in Italy."
+            "eventSummary": "On 1st September 1943, General Eisenhower is informed of an approval from the President and Prime Minister to proceed with Operation AVALANCHE, involving the landing of an airborne division near Rome."
         },
         {
             "event": "e_2",
-            "date": "1st December",
+            "date": "3rd September 1943",
             "locations": [
+                "l_2",
                 "l_3"
             ],
-            "persons": [],
+            "persons": [
+                "p_4",
+                "p_1",
+                "p_5",
+                "p_6"
+            ],
             "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A German air raid destroys 17 ships and 40,000 tons of cargo at Bari, impacting the supply lines."
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On 3rd September 1943, General Smith and General Castellano sign the Military Terms of Surrender in a tent near Cassibile."
         },
         {
             "event": "e_3",
-            "date": "24th February 1944",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "All responsibility for Italy is transferred to the Fifteenth Army Group, reorganising the A.F.H.Q. Administrative Echelon into Headquarters Allied Armies in Italy."
-        },
-        {
-            "event": "e_4",
-            "date": "early February 1944",
+            "date": "3rd September 1943",
             "locations": [
                 "l_2"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On 3rd September 1943, the Eighth Army begins the first invasion of the continent of Europe."
+        },
+        {
+            "event": "e_4",
+            "date": "Early 1943",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "An ammunition shortage occurs in the Mediterranean theatre, necessitating rationing and urgent requests for additional supplies."
+            "eventSummary": "In early 1943, the Battle of Stalingrad becomes a turning point, resulting in significant Soviet victories against Germany."
         },
         {
             "event": "e_5",
-            "date": "autumn 1944",
+            "date": "1943",
             "locations": [
-                "l_2"
+                "l_5"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "During the Gothic line battles, a world-wide ammunition shortage affects operations, prompting strict rationing measures."
+            "eventSummary": "In 1943, the Battle of Tunisia concludes with substantial losses for Axis forces."
         }
     ]
 }

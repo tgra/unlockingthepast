@@ -1,101 +1,130 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Slim"
+            "p_1": "General Slim",
+            "p_2": "General Sultan"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Mandalay",
-            "l_3": "Shwebo",
-            "l_4": "Kalewa",
-            "l_5": "Meiktila",
-            "l_6": "Siam",
-            "l_7": "Kengtung",
-            "l_8": "Takaw",
-            "l_9": "Loilem",
-            "l_10": "Yenangyaung",
-            "l_11": "Prome",
-            "l_12": "Magwe",
-            "l_13": "Fourteenth Army area"
+            "l_1": "Mandalay",
+            "l_2": "Indaw",
+            "l_3": "Kyaukmyaung",
+            "l_4": "Myinmu",
+            "l_5": "Budalin",
+            "l_6": "Monywa",
+            "l_7": "Nyaungu",
+            "l_8": "Pakokku",
+            "l_9": "Singu",
+            "l_10": "Thabeikkyin"
         },
         "events": {
-            "e_1": "Operation Dracula",
-            "e_2": "Capture of Rangoon"
+            "e_1": "Crossing of the Irrawaddy by 19 Indian Division",
+            "e_2": "Crossing of the Irrawaddy by 20 Indian Division",
+            "e_3": "Crossing of the Irrawaddy by 2 British Division",
+            "e_4": "Crossing of the Irrawaddy by 4 Corps"
         },
         "organisations": {
-            "o_1": "Supreme Allied Command",
-            "o_2": "Indian Airborne Division"
+            "o_1": "33 Corps",
+            "o_2": "4 Corps",
+            "o_3": "19 Indian Division",
+            "o_4": "20 Indian Division",
+            "o_5": "2 British Division",
+            "o_6": "Northern Combat Area Command",
+            "o_7": "Fourteenth Army",
+            "o_8": "15 Japanese Army"
         }
     },
     "keywords": [
-        "Rangoon",
-        "Japanese Forces",
-        "Fourteenth Army",
-        "Monsoon",
-        "Operation Dracula",
-        "Air Supply",
-        "Defensive Strategies",
-        "Intelligence"
+        "crossing",
+        "Irrawaddy",
+        "Mandalay",
+        "Indian Division"
     ],
     "themes": [
         "Military Operations",
-        "Logistical Challenges",
-        "Defensive Tactics",
-        "Air Supply",
-        "Strategic Command"
+        "Strategic Decisions",
+        "Troop Movements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Logistical Challenges": [
-            "e_2"
-        ],
-        "Defensive Tactics": [
-            "e_1"
-        ],
-        "Strategic Command": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 5, 1945",
+            "date": "9th January",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_10",
+                "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "Operation Dracula is planned as a combined operation for the capture of Rangoon, initiated by the Supreme Allied Commander, with a specific directive to secure critical locations and destroy enemy forces."
+            "eventSummary": "19 Indian Division crosses north of Mandalay at Thabeikkyin."
         },
         {
             "event": "e_2",
-            "date": "Before June 1945",
+            "date": "12th February",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "The capture of Rangoon is critical before the monsoon rains, posing significant logistical challenges and requiring strategic military operations to succeed against Japanese forces."
+            "eventSummary": "20 Indian Division crosses at Myinmu area with the aim of advancing towards Mandalay."
+        },
+        {
+            "event": "e_3",
+            "date": "24th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "2 British Division crosses at Ngazun, between Mandalay and the bridgehead."
+        },
+        {
+            "event": "e_4",
+            "date": "between 13th and 19th February",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "4 Corps, comprising 7 and 17 Indian Divisions, crosses the Irrawaddy at Nyaungu."
         }
     ]
 }

@@ -1,135 +1,76 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Naval Officer-in-Charge",
-            "p_2": "Commander-in-Chief",
-            "p_3": "Captain of WAKEFUL",
-            "p_4": "Vice Admiral",
-            "p_5": "Captain of GRAFTON"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Calcutta",
-            "l_2": "La Panne",
-            "l_3": "Bray",
-            "l_4": "Dunkirk",
-            "l_5": "Dover",
-            "l_6": "Margate",
-            "l_7": "Ramsgate",
-            "l_8": "Zuydecoote",
-            "l_9": "North Channel",
-            "l_10": "Kwinte Whistle Buoy"
+            "l_1": "Calais",
+            "l_2": "Dunkirk",
+            "l_3": "Boulogne",
+            "l_4": "Cherbourg"
         },
         "events": {
-            "e_1": "Evacuation of troops at Dunkirk",
-            "e_2": "Loss of H.M. Destroyers WAKEFUL and GRAFTON",
-            "e_3": "Report of German bombing activity",
-            "e_4": "Embarkation of B.E.F. at La Panne"
+            "e_1": "Operation Dynamo",
+            "e_2": "Evacuation from Dunkirk"
         },
         "organisations": {
-            "o_1": "B.E.F.",
-            "o_2": "R.A.F.",
-            "o_3": "Admiralty"
+            "o_1": "Coastal Command",
+            "o_2": "French Navy"
         }
     },
     "keywords": [
+        "aircraft",
+        "squadrons",
         "evacuation",
-        "Dunkirk",
-        "naval operations",
-        "German bombing",
-        "B.E.F.",
-        "R.A.F. air cover",
-        "destroyers",
-        "suri",
-        "personnel ships"
+        "tanks",
+        "French warships"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Efforts",
         "Naval Warfare",
-        "Air Support",
-        "Strategic Logistics"
+        "Collaboration"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Evacuation Efforts": [
-            "e_1",
-            "e_4"
-        ],
         "Naval Warfare": [
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Air Support": [
-            "e_3"
+        "Collaboration": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "29th May",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_2"
             ],
-            "persons": [
-                "p_2",
-                "p_4"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The evacuation of troops at Dunkirk is intensifying as personnel ships are dispatched to safely bring soldiers back amidst enemy bombings."
+            "eventSummary": "Operation Dynamo is underway to evacuate troops from Dunkirk, utilizing both British and French naval forces."
         },
         {
             "event": "e_2",
-            "date": "29th May",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_3",
-                "p_5"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "H.M. Destroyers WAKEFUL and GRAFTON encounter fatal attacks, resulting in significant loss of life as WAKEFUL is struck by a torpedo and sinks rapidly."
-        },
-        {
-            "event": "e_3",
-            "date": "29th May",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "German forces conduct bombings of Dunkirk, although the scale is reduced due to increasing R.A.F. air cover."
-        },
-        {
-            "event": "e_4",
-            "date": "29th May",
+            "date": "",
             "locations": [
                 "l_2"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The B.E.F. begins embarking at La Panne as naval forces coordinate efforts to ensure a successful evacuation."
+            "eventSummary": "The evacuation from Dunkirk proceeds, with various French warships assisting in the operation."
         }
     ]
 }

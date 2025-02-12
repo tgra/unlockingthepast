@@ -2,153 +2,175 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Alps",
-            "l_2": "Austria",
-            "l_3": "Bologna",
-            "l_4": "Po Valley",
-            "l_5": "Santerno River",
-            "l_6": "Sillaro River",
-            "l_7": "Idice River",
-            "l_8": "Comacchio lagoon",
-            "l_9": "Massa",
-            "l_10": "Monte Grande",
-            "l_11": "Ferrara",
-            "l_12": "Bondeno",
-            "l_13": "Lake Comacchio",
-            "l_14": "Verona",
-            "l_15": "Adige River",
-            "l_16": "Ravenna",
-            "l_17": "Porto Corsini Canal",
-            "l_18": "Porto Garibaldi",
-            "l_19": "Viareggio",
-            "l_20": "Spezia",
-            "l_21": "Genoa",
-            "l_22": "Trieste",
-            "l_23": "Savona",
-            "l_24": "Venice"
+            "l_1": "Innsbruck",
+            "l_2": "Trento",
+            "l_3": "Verona",
+            "l_4": "Tarvisio",
+            "l_5": "Udine",
+            "l_6": "Treviso",
+            "l_7": "Jugoslavia",
+            "l_8": "Po Valley",
+            "l_9": "Vicenza",
+            "l_10": "Bologna",
+            "l_11": "Adige Valley",
+            "l_12": "Lake Garda",
+            "l_13": "Ora",
+            "l_14": "San Michele",
+            "l_15": "Ala",
+            "l_16": "San Ambrogio",
+            "l_17": "San Margherita",
+            "l_18": "Campo di Trens",
+            "l_19": "Verona marshalling yards",
+            "l_20": "Bolzano",
+            "l_21": "Casarsa",
+            "l_22": "Treviso marshalling yards",
+            "l_23": "Padua marshalling yards"
         },
         "events": {
-            "e_1": "Airborne Assault Planning",
-            "e_2": "Battle Planning of 15th Army Group",
-            "e_3": "Operational Phases of the Battle",
-            "e_4": "Amphibious Operation Planning",
-            "e_5": "Naval Support Planning"
+            "e_1": "Interdiction Programme",
+            "e_2": "Air Operations against Frontier Railway Zones",
+            "e_3": "Bombing of Brenner Route",
+            "e_4": "Air Effort in January and February",
+            "e_5": "Air Effort in March"
         },
         "organisations": {
-            "o_1": "15th Army Group",
-            "o_2": "Fifth Army",
-            "o_3": "Eighth Army",
-            "o_4": "Royal Marines"
+            "o_1": "M.A.T.A.F.",
+            "o_2": "57th Wing",
+            "o_3": "XXIInd Tactical Air Command",
+            "o_4": "Desert Air Force",
+            "o_5": "Strategic Air Force",
+            "o_6": "M.A.S.A.F."
         }
     },
     "keywords": [
-        "Airborne Assault",
-        "Battle",
-        "Fifth Army",
-        "Eighth Army",
-        "Amphibious Operation"
+        "interdiction",
+        "bombing",
+        "railways",
+        "air operations",
+        "communication routes"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Naval Support"
+        "Logistics",
+        "Targeted Attacks"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
             "e_3",
-            "e_4"
+            "e_4",
+            "e_5"
         ],
-        "Strategic Decisions": [
+        "Logistics": [
             "e_1",
             "e_2"
         ],
-        "Naval Support": [
+        "Targeted Attacks": [
+            "e_3",
             "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown",
+            "date": "January 1945",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
             ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Plans for an airborne assault at brigade strength are made, but ultimately not executed."
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The interdiction programme begins in earnest on 10th January 1945, focusing on railway routes in Northern Italy."
         },
         {
             "event": "e_2",
-            "date": "Unknown",
+            "date": "January 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air operations against frontier railway zones prioritize attacks on key routes affecting German movements."
+        },
+        {
+            "event": "e_3",
+            "date": "January - March 1945",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_18"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "Intensive bombing of the Brenner route occurs, significantly disrupting enemy supply lines."
+        },
+        {
+            "event": "e_4",
+            "date": "January - February 1945",
             "locations": [
                 "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The air effort dedicated to the interdiction program comprises attacks on major communication routes."
+        },
+        {
+            "event": "e_5",
+            "date": "March 1945",
+            "locations": [
+                "l_1",
                 "l_3"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
                 "o_2",
-                "o_3"
+                "o_4"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "The 15th Army Group's strategic plan aims to destroy enemy divisions before they retreat to fortified positions in the Alps."
-        },
-        {
-            "event": "e_3",
-            "date": "Unknown",
-            "locations": [
-                "l_4",
-                "l_3",
-                "l_9"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operational phases are planned, including multiple assaults and advances towards significant locations like Bologna and the Po River."
-        },
-        {
-            "event": "e_4",
-            "date": "Unknown",
-            "locations": [
-                "l_5",
-                "l_9",
-                "l_13"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "An amphibious operation is planned to capture the isthmus between Lake Comacchio and the Adriatic."
-        },
-        {
-            "event": "e_5",
-            "date": "Unknown",
-            "locations": [
-                "l_1",
-                "l_3",
-                "l_16"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Naval plans are drawn up to support the Army in their offensive movements near the coastal areas."
+            "eventSummary": "March sees an intensified air effort against the Brenner route, resulting in multiple blocks hindering enemy movements."
         }
     ]
 }

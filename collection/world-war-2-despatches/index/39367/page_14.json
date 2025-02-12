@@ -1,134 +1,111 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Marshal Tito"
+        },
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Austria",
-            "l_3": "Jugoslavia",
-            "l_4": "Po Valley",
-            "l_5": "Venetian Plain",
-            "l_6": "Verona",
-            "l_7": "Milan",
-            "l_8": "Bressana Bottarone",
-            "l_9": "Padua",
-            "l_10": "Ghedi",
-            "l_11": "Thiene",
-            "l_12": "Bergamo"
+            "l_1": "Germany",
+            "l_2": "Danubian Plains",
+            "l_3": "South Germany",
+            "l_4": "Austria",
+            "l_5": "Italy",
+            "l_6": "Jugoslavia",
+            "l_7": "Po Valley",
+            "l_8": "Rubland",
+            "l_9": "Vienna",
+            "l_10": "Hungarian oil region"
         },
         "events": {
-            "e_1": "Battle of Italy",
-            "e_2": "M.A.S.A.F. attacks on railway communications",
-            "e_3": "Tactical Air Force reconnaissance flights",
-            "e_4": "M.A.C.A.F. operations in Italian campaign"
+            "e_1": "Italian Offensive",
+            "e_2": "March 1945 Bombing Campaign"
         },
         "organisations": {
-            "o_1": "M.A.S.A.F.",
-            "o_2": "M.A.C.A.F.",
-            "o_3": "M.A.T.A.F."
+            "o_1": "Mediterranean Allied Tactical Air Force",
+            "o_2": "Balkan Air Force",
+            "o_3": "Mediterranean Allied Coastal Air Force",
+            "o_4": "M.A.A.F.",
+            "o_5": "M.A.S.A.F.",
+            "o_6": "M.A.T.A.F.",
+            "o_7": "M.A.C.A.F.",
+            "o_8": "VIIIth Air Force",
+            "o_9": "Bomber Command"
         }
     },
     "keywords": [
-        "Strategic bombers",
-        "railway communications",
-        "interdiction",
-        "aircraft",
-        "supply targets",
-        "reconnaissance",
-        "Allied Air Force"
+        "Air Force",
+        "Attacks",
+        "Communications",
+        "Jugoslav Army",
+        "Bombing",
+        "Oil Resources"
     ],
     "themes": [
         "Military Operations",
-        "Air Warfare",
-        "Supply Chain Disruption",
-        "Intelligence and Reconnaissance"
+        "Air Support",
+        "Bombing Campaign"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_4"
-        ],
-        "Air Warfare": [
-            "e_1",
-            "e_3"
-        ],
-        "Supply Chain Disruption": [
             "e_2"
         ],
-        "Intelligence and Reconnaissance": [
-            "e_3"
+        "Air Support": [
+            "e_2"
+        ],
+        "Bombing Campaign": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 1945",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Italian Offensive is supported by air operations aimed at disrupting enemy communications and supply chains."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_8",
+                "l_9",
+                "l_10"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8",
+                "o_9"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The battle in Italy escalates with various attacks on railway communications and infrastructure."
-        },
-        {
-            "event": "e_2",
-            "date": "April 24, 1945",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "M.A.S.A.F. conducts extensive bombing runs on railway lines in North-East Italy and impacts logistics."
-        },
-        {
-            "event": "e_3",
-            "date": "April 8-25, 1945",
-            "locations": [
-                "l_10",
-                "l_11",
-                "l_12"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Tactical Air Force night-fighters perform reconnaissance over critical airfields, identifying enemy positions."
-        },
-        {
-            "event": "e_4",
-            "date": "April 1945",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "M.A.C.A.F. executes operations leading to significant damage to enemy vehicles and logistical capabilities."
+            "connectedEvents": [],
+            "eventSummary": "In March 1945, the bombing campaign focuses on crippling enemy oil production and supporting ground operations throughout Europe."
         }
     ]
 }

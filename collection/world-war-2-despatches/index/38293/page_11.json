@@ -1,109 +1,155 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "F.O.A.M.",
-            "p_2": "G.A.15"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Monemvasia",
-            "l_2": "Nauplia",
-            "l_3": "Suda",
-            "l_4": "Milo",
-            "l_5": "Tolon",
-            "l_6": "Raphina",
-            "l_7": "Zea Island",
-            "l_8": "Kalamata"
+            "l_1": "Nauplia",
+            "l_2": "Raphtis",
+            "l_3": "Megara",
+            "l_4": "Alexandria",
+            "l_5": "Greece",
+            "l_6": "Suda",
+            "l_7": "Githion",
+            "l_8": "Monemvasia",
+            "l_9": "Kalamata",
+            "l_10": "Zea Island"
         },
         "events": {
-            "e_1": "Evacuation from Monemvasia",
-            "e_2": "Bombing of the Scottish Prince",
-            "e_3": "Sinking of S.S. Slamat"
+            "e_1": "Bombing of H.M.S. GLENEARN",
+            "e_2": "Grounding of H.M.S. ULSTER PRINCE",
+            "e_3": "Embarkation at Nauplia",
+            "e_4": "Embarkation at Raphtis",
+            "e_5": "Convoy to Alexandria Diversion",
+            "e_6": "Embarkation at Megara",
+            "e_7": "Damage to H.M.S. GLENEARN"
         },
         "organisations": {
-            "o_1": "H.M.S. Grimsby",
-            "o_2": "Naval Officer-in-Charge",
-            "o_3": "CALCUTTA",
-            "o_4": "H.M.S. Havock"
+            "o_1": "H.M.S."
         }
     },
     "keywords": [
-        "Evacuation",
-        "Bombing",
-        "Navy Operations"
+        "embarkation",
+        "bombing",
+        "grounding",
+        "naval operations",
+        "Greece"
     ],
     "themes": [
         "Military Operations",
-        "Naval Assistance",
-        "Emergency Evacuation"
+        "Naval Engagement",
+        "Evacuation Plans"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Naval Assistance": [
             "e_2",
-            "e_1"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
         ],
-        "Emergency Evacuation": [
+        "Naval Engagement": [
             "e_1",
-            "e_3"
+            "e_2"
+        ],
+        "Evacuation Plans": [
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26-27 April 1941",
+            "date": "24th April",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "During the night of 26th/27th April, a significant evacuation operation is conducted from Monemvasia due to the bombing of allied ships, leading to a complex situation where not all troops could be evacuated."
+            "connectedEvents": [],
+            "eventSummary": "At 1745 on 24th April, whilst on passage to Nauplia, H.M.S. GLENEARN is attacked by two Heinkel bombers and is hit on the forecastle."
         },
         {
             "event": "e_2",
-            "date": "25 April 1941",
+            "date": "25th April",
             "locations": [
-                "l_3",
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_3"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Scottish Prince is bombed while en route from Smyrna to Suda, but manages to reach Suda with assistance from H.M.S. Grimsby, highlighting the dangers faced by naval operations in the area."
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. ULSTER PRINCE runs ashore while attempting to go alongside the quay and is heavily bombed the following day."
         },
         {
             "event": "e_3",
-            "date": "27 April 1941",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Estimated troops embarked at Nauplia during various operations."
+        },
+        {
+            "event": "e_4",
+            "date": "",
             "locations": [
                 "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "About 5,000 troops are embarked at Raphtis."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_4"
             ],
-            "eventSummary": "The S.S. Slamat is bombed and sinks off Nauplia after failing to depart on time, illustrating the chaotic conditions during the evacuation efforts."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. GRIMSBY and VOYAGER leave harbor for Alexandria as part of a naval operation."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Embarkation at Megara involves various naval ships and army personnel."
+        },
+        {
+            "event": "e_7",
+            "date": "26th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. GLENEARN is bombed and hit in the engine-room."
         }
     ]
 }

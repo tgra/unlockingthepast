@@ -1,128 +1,119 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Blanchard",
+            "p_1": "Sir Ronald Adam",
             "p_2": "Admiral Abrial",
-            "p_3": "General Fagalde",
-            "p_4": "General Koeltz",
-            "p_5": "H.M. the King of the Belgians",
-            "p_6": "General Prioux"
+            "p_3": "General de la Laurencie",
+            "p_4": "General Weygand",
+            "p_5": "Major-General Hon. H. R. L. G. Alexander",
+            "p_6": "Generals Blanchard"
         },
         "locations": {
-            "l_1": "La Panne",
-            "l_2": "Bray Dunes",
-            "l_3": "Malo-les-Bains",
-            "l_4": "Dunkirk",
-            "l_5": "Coxyde",
-            "l_6": "Ypres",
-            "l_7": "Bergues",
-            "l_8": "Hazebrouck",
-            "l_9": "Premesques",
-            "l_10": "Houtkerque",
-            "l_11": "Poperinghe",
-            "l_12": "Lille",
-            "l_13": "Cassel",
-            "l_14": "Wormhoudt",
-            "l_15": "Bethune"
+            "l_1": "Dunkirk",
+            "l_2": "England",
+            "l_3": "Belgian frontier",
+            "l_4": "La Panne",
+            "l_5": "Furnes",
+            "l_6": "Bergues"
         },
         "events": {
-            "e_1": "Bombing of Dunkirk",
-            "e_2": "Belgian Armistice",
-            "e_3": "Evacuation Planning"
+            "e_1": "Evacuation of the British Expeditionary Force",
+            "e_2": "Defence of the perimeter",
+            "e_3": "Withdrawal of the 2nd Corps"
         },
         "organisations": {
-            "o_1": "G.H.Q.",
-            "o_2": "French High Command"
+            "o_1": "British Expeditionary Force",
+            "o_2": "3rd Corps",
+            "o_3": "G.H.Q."
         }
     },
     "keywords": [
-        "evacuation",
-        "Belgian Army",
-        "military beach parties",
-        "air defence",
-        "bombing",
-        "armistice",
-        "withdrawal",
-        "troop movements"
+        "Evacuation",
+        "Defence",
+        "Perimeter",
+        "Troops",
+        "Embarkation",
+        "Military Orders"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
         "Strategic Decisions",
-        "Evacuation"
+        "Evacuation Planning",
+        "Cross-National Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3"
-        ],
-        "Diplomacy": [
-            "e_2"
         ],
         "Strategic Decisions": [
+            "e_2",
             "e_3"
+        ],
+        "Cross-National Cooperation": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th May",
+            "date": "May 31, 1940",
             "locations": [
-                "l_4"
+                "l_1"
             ],
             "persons": [
                 "p_1",
                 "p_2",
                 "p_3",
-                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The evacuation of the British Expeditionary Force is proceeding, with 211,532 fit men and 13,053 casualties embarked at Dunkirk and the beaches."
+        },
+        {
+            "event": "e_2",
+            "date": "May 30, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Defence of the perimeter is maintained while plans are being formulated for the final withdrawal of the Force."
+        },
+        {
+            "event": "e_3",
+            "date": "Night of May 31/June 1, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
                 "p_5"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Dunkirk experiences a severe bombing attack which escalates the urgency of evacuating troops due to heavy damage and fire in the town."
-        },
-        {
-            "event": "e_2",
-            "date": "27th May",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_5"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "H.M. the King of the Belgians requests an armistice as the Belgian Army capitulates, indicating a significant shift in military dynamics."
-        },
-        {
-            "event": "e_3",
-            "date": "28th May",
-            "locations": [
-                "l_4",
-                "l_10"
-            ],
-            "persons": [
-                "p_1",
-                "p_6"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Discussion between Allied commanders on evacuation strategies becomes critical after the Belgian Army ceases to exist, necessitating urgent decision-making."
+            "eventSummary": "Withdrawal of the 2nd Corps is executed under increasing enemy pressure, ensuring the smooth embarkation of troops."
         }
     ]
 }

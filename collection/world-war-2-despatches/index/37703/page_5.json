@@ -1,8 +1,7 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "J.",
-            "p_2": "Commander-in-Chief, Middle East"
+            "p_1": "J."
         },
         "locations": {
             "l_1": "Iraq",
@@ -10,96 +9,127 @@
             "l_3": "Khorramshahr",
             "l_4": "Bandar Shahpur",
             "l_5": "Shatt-el-Arab",
-            "l_6": "Teheran",
-            "l_7": "Sultanabad",
-            "l_8": "Andimishk",
-            "l_9": "Basra"
+            "l_6": "Basra",
+            "l_7": "Tanuma",
+            "l_8": "Teheran",
+            "l_9": "Sultanabad",
+            "l_10": "Andimishk"
         },
         "events": {
-            "e_1": "Construction of Base Depots",
-            "e_2": "Administrative Preparations for Operations in North Persia"
+            "e_1": "Operation in North Persia",
+            "e_2": "Construction of lighter quay at Tanuma",
+            "e_3": "Construction of wooden pile bridge across the Shatt-el-Arab",
+            "e_4": "Administrative preparations for Tenth Army"
         },
         "organisations": {
             "o_1": "Royal Air Force",
             "o_2": "British Army",
-            "o_3": "Indian Army"
+            "o_3": "Indian Army",
+            "o_4": "Tenth Army"
         }
     },
     "keywords": [
         "rail communications",
         "aerodromes",
-        "ports",
         "administrative preparations",
-        "Tenth Army",
-        "Persian railway",
+        "construction",
         "logistics"
     ],
     "themes": [
         "Military Operations",
         "Logistics",
-        "Construction",
-        "Supply Chain Management",
-        "International Relations"
+        "Infrastructure Development"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_4"
         ],
         "Logistics": [
             "e_1",
-            "e_2"
+            "e_4",
+            "e_2",
+            "e_3"
         ],
-        "Construction": [
-            "e_1"
-        ],
-        "Supply Chain Management": [
-            "e_2"
-        ],
-        "International Relations": [
-            "e_2"
+        "Infrastructure Development": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "31st March, 1943",
+            "date": "March 31, 1943",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "The construction of base depots on the Persian line of communications progresses, presenting logistical challenges as supplies for Russia start to fall short."
+            "eventSummary": "Operations in North Persia are being prepared by March 31, 1943, necessitating significant administrative effort due to conditions in Persia."
         },
         {
             "event": "e_2",
-            "date": "31st March, 1943",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_7",
+                "l_6"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_2",
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Construction of a lighter quay at Tanuma, which supports the logistical efforts for the operations in North Persia."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Authorization was given for the construction of a wooden pile bridge across the Shatt-el-Arab to improve supply lines for military operations."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4",
                 "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Administrative preparations are intensified to maintain operational capability in North Persia, amid growing concerns about resource limitations and potential German advances."
+            "eventSummary": "Essential administrative preparations underway to maintain Tenth Army operations in North Persia."
         }
     ]
 }

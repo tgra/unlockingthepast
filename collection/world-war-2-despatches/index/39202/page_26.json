@@ -1,69 +1,91 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General Kitagawa"
+            "p_1": "Group Captain C. E. St. J. Beamish",
+            "p_2": "Air Commodore W. A. D. Brook",
+            "p_3": "Major-General Penney",
+            "p_4": "Vice-Admiral C. Moody",
+            "p_5": "Colonel Mitford-Slade",
+            "p_6": "Colonel Bull"
         },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Sumatra",
-            "l_3": "Java",
-            "l_4": "Rangoon",
-            "l_5": "Andamans",
-            "l_6": "Nicobars",
-            "l_7": "Mergui",
-            "l_8": "Puket",
-            "l_9": "Siam",
-            "l_10": "French Indo-China",
-            "l_11": "Netherland East Indies",
-            "l_12": "Port Swettenham"
+            "l_1": "Rangoon",
+            "l_2": "Alipore",
+            "l_3": "Bally",
+            "l_4": "Mingaladon",
+            "l_5": "Southern Burma",
+            "l_6": "Siam",
+            "l_7": "Mawchi Road",
+            "l_8": "Sittang Bend",
+            "l_9": "Pegu",
+            "l_10": "Moulmein",
+            "l_11": "Cocos Islands",
+            "l_12": "Palembang",
+            "l_13": "Kanchana Buri",
+            "l_14": "Tokio",
+            "l_15": "Hiroshima",
+            "l_16": "Nagasaki",
+            "l_17": "Manila",
+            "l_18": "Philippines",
+            "l_19": "Kandy",
+            "l_20": "Calcutta"
         },
         "events": {
-            "e_1": "D-Day",
-            "e_2": "Allied victory in Burma",
-            "e_3": "Capture of Rangoon",
-            "e_4": "Operation Zipper"
+            "e_1": "Formation of No. 347 P.R. Wing",
+            "e_2": "Japan's Surrender",
+            "e_3": "Atomic Bombing of Hiroshima",
+            "e_4": "Atomic Bombing of Nagasaki",
+            "e_5": "Declaration of War by Russia",
+            "e_6": "Mission to Manila",
+            "e_7": "Operational mission in Kanchana Buri"
         },
         "organisations": {
-            "o_1": "Japanese Southern Area Army",
-            "o_2": "R.A.F."
+            "o_1": "No. 347 P.R. Wing",
+            "o_2": "South East Asia Command",
+            "o_3": "Royal Air Force",
+            "o_4": "Allied Forces",
+            "o_5": "Air Staff"
         }
     },
     "keywords": [
-        "suicide attacks",
-        "aircraft",
-        "defence",
-        "Allied invasion",
-        "Japanese strategy",
-        "Operations"
+        "Rangoon",
+        "Photographic Reconnaissance",
+        "Spitfires",
+        "Mosquitos",
+        "Monsoon",
+        "Zipper",
+        "Japan's surrender",
+        "atomic bombs",
+        "Hiroshima",
+        "Nagasaki",
+        "Manila",
+        "Kandy"
     ],
     "themes": [
         "Military Operations",
-        "Suicide Tactics",
-        "Air Strategy",
-        "Defensive Planning"
+        "Strategic Decisions",
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_6",
+            "e_7"
         ],
-        "Suicide Tactics": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_2",
+            "e_5"
         ],
-        "Air Strategy": [
-            "e_1"
-        ],
-        "Defensive Planning": [
-            "e_3",
-            "e_2"
+        "Diplomacy": [
+            "e_2",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "May, 1945",
             "locations": [
                 "l_1",
                 "l_2",
@@ -73,50 +95,97 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "On D-Day, the enemy plans to conduct suicide attacks concentrated on shipping, using a fighter escort amidst their limited resources."
+            "connectedEvents": [],
+            "eventSummary": "The No. 347 P.R. Wing is formed and becomes effective as a formation."
         },
         {
             "event": "e_2",
-            "date": "May 1945",
+            "date": "10th August, 1945",
             "locations": [
-                "l_4"
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Japan broadcasts its surrender to the Allies, accepting terms after the looming threat of invasion."
+        },
+        {
+            "event": "e_3",
+            "date": "5th August, 1945",
+            "locations": [
+                "l_15"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The first atomic bomb is dropped on Hiroshima, causing massive destruction."
+        },
+        {
+            "event": "e_4",
+            "date": "9th August, 1945",
+            "locations": [
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The second atomic bomb is dropped on Nagasaki, leading to Japan's eventual surrender."
+        },
+        {
+            "event": "e_5",
+            "date": "8th August, 1945",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Russia declares war on Japan, escalating pressures on Japan during World War II."
+        },
+        {
+            "event": "e_6",
+            "date": "16th August, 1945",
+            "locations": [
+                "l_17",
+                "l_18",
+                "l_20"
+            ],
+            "persons": [
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A mission is dispatched to Manila to discuss Japan's surrender terms with General MacArthur."
+        },
+        {
+            "event": "e_7",
+            "date": "10 days after 10th August, 1945",
+            "locations": [
+                "l_13"
             ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Following the Allied victory in Burma, the capture of Rangoon takes place, leading to expectations of further Allied attacks."
-        },
-        {
-            "event": "e_3",
-            "date": "May 1945",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The Allies capture Rangoon, which shifts the strategic situation in Southeast Asia."
-        },
-        {
-            "event": "e_4",
-            "date": "September 1945",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Operation Zipper was planned for September but ceased due to the end of hostilities."
+            "eventSummary": "681 Squadron conducts a reconnaissance mission over prisoner-of-war camps in Kanchana Buri."
         }
     ]
 }

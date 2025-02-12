@@ -1,92 +1,86 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "President Truman"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Burma",
-            "l_2": "India",
+            "l_1": "Singapore",
+            "l_2": "Sumatra",
             "l_3": "Ceylon",
-            "l_4": "Rangoon",
-            "l_5": "Malaya",
-            "l_6": "Singapore",
-            "l_7": "Seletar",
-            "l_8": "South East Asia"
+            "l_4": "Calcutta",
+            "l_5": "Rangoon",
+            "l_6": "Colombo",
+            "l_7": "Cocos",
+            "l_8": "Palembang",
+            "l_9": "Malaya",
+            "l_10": "Java"
         },
         "events": {
-            "e_1": "Surrender of Japan",
-            "e_2": "Termination of Lend/Lease"
+            "e_1": "Operation Mastiff",
+            "e_2": "Operation Zipper"
         },
         "organisations": {
-            "o_1": "U.S.A.A.F.",
-            "o_2": "Headquarters, Base Air Forces",
-            "o_3": "Repair and Salvage Units"
+            "o_1": "31 Squadron",
+            "o_2": "RAPWI",
+            "o_3": "Supreme Allied Commander"
         }
     },
     "keywords": [
-        "Re-organisation",
-        "Air Forces",
-        "Maintenance",
-        "Aircraft repairs",
-        "Lend/Lease",
-        "Supply shortages"
+        "prisoners-of-war",
+        "internees",
+        "evacuation",
+        "air superiority",
+        "military operations"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Air Operations",
-        "Diplomacy",
-        "Supply Chain Management"
+        "Evacuation Efforts"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Logistics": [
+            "e_1",
             "e_2"
         ],
-        "Supply Chain Management": [
-            "e_2"
-        ],
-        "Diplomacy": [
+        "Evacuation Efforts": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 1945",
+            "date": "August 29th",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "President Truman announces the Surrender of Japan, leading to the end of Lend/Lease for Allied Governments except for ongoing assistance against remaining Japanese forces."
-        },
-        {
-            "event": "e_2",
-            "date": "September 1945",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Mastiff focuses on the evacuation of prisoners of war and internees from Sumatra and surrounding areas utilizing air operations commencing on August 29th."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The termination of Lend/Lease creates serious supply shortages for Air Command in South East Asia, as aircraft and spares become increasingly unserviceable."
+            "eventSummary": "Operation Zipper is planned for the landing in Malaya."
         }
     ]
 }

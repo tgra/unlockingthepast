@@ -1,56 +1,65 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Commodore Ambler",
-            "p_2": "Air Officer Commanding, No. 1 Group",
-            "p_3": "Sector Commander"
+            "p_1": "General Pile",
+            "p_2": "Albert Speer"
         },
         "locations": {
-            "l_1": "Greater London",
-            "l_2": "Biggin Hill"
+            "l_1": "Holland",
+            "l_2": "French coast",
+            "l_3": "Antwerp",
+            "l_4": "London"
         },
         "events": {
-            "e_1": "The Attacks: Second Phase",
-            "e_2": "Re-deployment of guns"
+            "e_1": "flying bomb campaign",
+            "e_2": "battle of the bomb",
+            "e_3": "German rocket attacks of 1944 and 1945",
+            "e_4": "rocket offensive"
         },
         "organisations": {
-            "o_1": "Air Ministry",
-            "o_2": "Air Staff",
-            "o_3": "Air Council"
+            "o_1": "Royal Observer Corps",
+            "o_2": "Balloon Command",
+            "o_3": "Anti-Aircraft Command",
+            "o_4": "Fighter Command",
+            "o_5": "Royal Navy",
+            "o_6": "Admiralty"
         }
     },
     "keywords": [
-        "deployment",
-        "fighters",
-        "bombs",
-        "defences",
-        "operational freedom",
-        "tactical re-orientation",
-        "flying bombs"
+        "flying bomb",
+        "rocket",
+        "German surrender",
+        "military object",
+        "Countermeasure"
     ],
     "themes": [
         "Military Operations",
-        "Operational Challenges",
-        "Resource Management"
+        "Technical Advancements",
+        "Defensive Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Operational Challenges": [
-            "e_1"
+        "Technical Advancements": [
+            "e_3",
+            "e_4"
         ],
-        "Resource Management": [
-            "e_2"
+        "Defensive Strategies": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "17th July to 1st September",
+            "date": "1944",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -58,28 +67,69 @@
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The second phase of attacks begins, which involves the dropping of 204 bombs on Greater London, leading to operational adjustments and challenges."
+            "eventSummary": "The flying bomb campaign takes place, marked by significant cooperative efforts from military units to counter the threat."
         },
         {
             "event": "e_2",
-            "date": "Prior to 17th July",
-            "locations": [],
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "A major re-deployment of guns is ordered independently by the Air Officer, resulting in operational changes and increased accountability for outcomes."
+            "eventSummary": "The battle of the bomb is claimed to have been won through teamwork and effective responses to the flying bomb threat."
+        },
+        {
+            "event": "e_3",
+            "date": "1944 and 1945",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The German rocket attacks are initiated under duress, seeking to regain control despite their earlier failures with the flying bomb."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The rocket offensive represents a desperate measure from the Germans aimed at challenging Allies after previous failures."
         }
     ]
 }

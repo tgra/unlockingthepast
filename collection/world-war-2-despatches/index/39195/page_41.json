@@ -1,79 +1,103 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigade Commander",
-            "p_2": "Commander of 51 Brigade",
-            "p_3": "Commander of 74 Brigade",
-            "p_4": "Commander of 82 (West African) Division",
-            "p_5": "Commander of 3 Commando Brigade"
+            "p_1": "Supreme Allied Commander",
+            "p_2": "Commander, 15 Indian Corps"
         },
         "locations": {
-            "l_1": "Kangaw Village",
-            "l_2": "Myohaung",
-            "l_3": "Minbya",
-            "l_4": "Kaladan Valley",
-            "l_5": "Myebon",
-            "l_6": "Apaukwa"
+            "l_1": "Rangoon",
+            "l_2": "Pegu",
+            "l_3": "Bassein",
+            "l_4": "Moulmein",
+            "l_5": "Kandy",
+            "l_6": "Arakan",
+            "l_7": "Myingyan",
+            "l_8": "Natogyi",
+            "l_9": "Mount Popa",
+            "l_10": "India",
+            "l_11": "Kyaukpadaung",
+            "l_12": "Chauk",
+            "l_13": "Yenangyaung",
+            "l_14": "Singu",
+            "l_15": "Myittha Wundwin",
+            "l_16": "Taungdwingyi",
+            "l_17": "Magwe"
         },
         "events": {
-            "e_1": "Battle of Kangaw",
-            "e_2": "Japanese Counterattack",
-            "e_3": "Air Offensive",
-            "e_4": "Capture of Kangaw",
-            "e_5": "Withdrawal of 51 Brigade"
+            "e_1": "Capture of Rangoon",
+            "e_2": "Amphibious/Airborne Operation",
+            "e_3": "Capture of Pegu",
+            "e_4": "Operation Dracula",
+            "e_5": "Fighting at Mount Popa",
+            "e_6": "Capture of Kyaukpadaung",
+            "e_7": "Clearance of Yenangyaung",
+            "e_8": "Fly-out of 2 British Division"
         },
         "organisations": {
-            "o_1": "51 Brigade",
-            "o_2": "25 Indian Division",
-            "o_3": "3 Commando Brigade",
-            "o_4": "82 (West African) Division",
-            "o_5": "15 Indian Corps"
+            "o_1": "Fourteenth Army",
+            "o_2": "2 British Division",
+            "o_3": "5 Brigade",
+            "o_4": "268 Indian Brigade",
+            "o_5": "7 Indian Division",
+            "o_6": "20 Indian Division",
+            "o_7": "33 Brigade",
+            "o_8": "89 Brigade",
+            "o_9": "114 Brigade",
+            "o_10": "28 Japanese Army"
         }
     },
     "keywords": [
-        "Kangaw",
-        "Battle",
-        "Japanese Forces",
-        "Air Offensive",
-        "Casualties",
-        "Counterattack",
-        "Withdrawal"
+        "Rangoon",
+        "Pegu",
+        "Bassein",
+        "Moulmein",
+        "Phuket",
+        "Kandy",
+        "Arakan",
+        "Mt. Popa",
+        "Kyaukpadaung",
+        "Yenangyaung",
+        "Operation Dracula"
     ],
     "themes": [
         "Military Operations",
-        "Battle Strategies",
-        "Casualty Management",
-        "Resistance and Attacks"
+        "Amphibious Warfare",
+        "Strategic Planning",
+        "Military Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
             "e_3",
-            "e_4",
-            "e_5"
+            "e_5",
+            "e_6",
+            "e_7"
         ],
-        "Battle Strategies": [
+        "Amphibious Warfare": [
             "e_1",
             "e_2"
         ],
-        "Casualty Management": [
-            "e_2",
-            "e_5"
-        ],
-        "Resistance and Attacks": [
+        "Strategic Planning": [
             "e_1",
-            "e_3"
+            "e_4",
+            "e_8"
+        ],
+        "Military Engagements": [
+            "e_5",
+            "e_6",
+            "e_7"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 28th",
+            "date": "2nd May",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
@@ -81,14 +105,14 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_3",
+                "e_2",
                 "e_4"
             ],
-            "eventSummary": "The Battle of Kangaw engages 51 Brigade as they make significant progress despite heavy enemy resistance and artillery shelling."
+            "eventSummary": "The capture of Rangoon is planned for 2nd May as part of an amphibious operation."
         },
         {
             "event": "e_2",
-            "date": "January 29th",
+            "date": "2nd May",
             "locations": [
                 "l_1"
             ],
@@ -96,67 +120,65 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Japanese Counterattack occurs aiming to regain control of the Kangaw area but is repulsed by British forces."
-        },
-        {
-            "event": "e_3",
-            "date": "January 25th",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "A three-day air offensive is launched to weaken enemy positions ahead of a ground assault."
-        },
-        {
-            "event": "e_4",
-            "date": "February 1st",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Capture of Kangaw marks a turning point in the battle, establishing British control and cutting off enemy escape routes."
+            "eventSummary": "An amphibious/airborne operation is to commence for the capture of Rangoon."
         },
         {
             "event": "e_5",
-            "date": "February 2nd",
+            "date": "20th April",
             "locations": [
-                "l_5"
+                "l_9"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
+                "o_3",
                 "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Fighting at Mount Popa involves approximately 600 Japanese troops enduring until 20th April."
+        },
+        {
+            "event": "e_6",
+            "date": "12th April",
+            "locations": [
+                "l_11"
             ],
-            "eventSummary": "51 Brigade is withdrawn from operations as part of a strategic shift in the area ahead of the monsoon."
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Kyaukpadaung is captured by 33 Brigade on 12th April."
+        },
+        {
+            "event": "e_7",
+            "date": "23rd April",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Yenangyaung oilfield area is captured on 23rd April after fierce fighting."
+        },
+        {
+            "event": "e_8",
+            "date": "1lith April to 25th April",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The fly-out of 2 British Division from Myingyan is completed between 11th April and 25th April."
         }
     ]
 }

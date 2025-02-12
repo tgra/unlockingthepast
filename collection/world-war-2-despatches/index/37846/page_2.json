@@ -1,93 +1,78 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Metaxas",
-            "p_2": "His Majesty the King"
+            "p_1": "Prime Minister",
+            "p_2": "Commander-in-Chief"
         },
         "locations": {
             "l_1": "Greece",
             "l_2": "Albania",
-            "l_3": "Valona",
-            "l_4": "Durazzo",
-            "l_5": "Egypt",
-            "l_6": "Athens"
+            "l_3": "Athens",
+            "l_4": "Salonika",
+            "l_5": "Larissa"
         },
         "events": {
-            "e_1": "Construction of Runways",
-            "e_2": "Operations Against Italian Forces"
+            "e_1": "Decision to send an R.A.F. Contingent",
+            "e_2": "Greek mobilisation"
         },
         "organisations": {
-            "o_1": "Greek General Staff",
-            "o_2": "British Forces",
-            "o_3": "Army"
+            "o_1": "Greek Air Force",
+            "o_2": "Royal Air Force",
+            "o_3": "General Staff"
         }
     },
     "keywords": [
-        "runways",
-        "Greece",
+        "mobilisation",
         "Italian forces",
-        "Albania",
-        "bombing offensive",
-        "weather conditions"
+        "air superiority",
+        "bomber squadrons",
+        "operational challenges"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Cooperation",
-        "Operational Challenges"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2"
-        ],
-        "Logistics": [
-            "e_1"
-        ],
-        "Cooperation": [
             "e_1",
             "e_2"
         ],
-        "Operational Challenges": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "End of January 1941",
+            "date": "6th November, 1940",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Runways construction is approved for facilitating military operations in Greece, with completion aimed for January 1941."
-        },
-        {
-            "event": "e_2",
-            "date": "November-December 1940",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "Operations against Italian forces are underway, with successful Greek offensives despite weather and supply challenges."
+            "eventSummary": "On 6th November, 1940, the British Government decides to send a contingent of the Royal Air Force to Greece in response to an urgent appeal for help."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The mobilization of Greek forces is estimated to take at least three weeks to complete amid challenges with communications and Italian air force interference."
         }
     ]
 }

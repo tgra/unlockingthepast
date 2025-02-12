@@ -2,89 +2,169 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Nanyuki",
-            "l_2": "Mombasa",
-            "l_3": "Dar-es-Salaam",
-            "l_4": "Marsabit",
-            "l_5": "Lokitaung",
-            "l_6": "Garissa",
-            "l_7": "Bura",
-            "l_8": "Ndege's Nest",
-            "l_9": "Addis Abeba",
-            "l_10": "Dire Daua",
-            "l_11": "Wajir",
-            "l_12": "Zanzibar",
-            "l_13": "Nigeria",
-            "l_14": "Tanganyika",
-            "l_15": "Gold Coast"
+            "l_1": "British Somaliland",
+            "l_2": "Garoe",
+            "l_3": "Gardo",
+            "l_4": "Burao",
+            "l_5": "Erigavo",
+            "l_6": "Buran",
+            "l_7": "Adad",
+            "l_8": "Karamam Plain",
+            "l_9": "Laso Dawao",
+            "l_10": "Aden",
+            "l_11": "Bender Cassim",
+            "l_12": "Carin",
+            "l_13": "Dante",
+            "l_14": "Sousciuban",
+            "l_15": "Hordic",
+            "l_16": "Cape Guardafui",
+            "l_17": "Tohen wadi",
+            "l_18": "Alula",
+            "l_19": "Kalam",
+            "l_20": "Maji",
+            "l_21": "Washa-Waha",
+            "l_22": "Masci",
+            "l_23": "Baciuma",
+            "l_24": "Giamo",
+            "l_25": "LokitaungKalam",
+            "l_26": "Sudan"
         },
         "events": {
-            "e_1": "Order of Battle Commencement",
-            "e_2": "Aircraft Status Report"
+            "e_1": "Occupation of Bender Cassim",
+            "e_2": "Occupation of Dante",
+            "e_3": "Battle of Tohen Wadi",
+            "e_4": "Evacuation of Italian troops to Aden",
+            "e_5": "Operations for the Occupation of Maji",
+            "e_6": "Encounter at Giamo"
         },
         "organisations": {
-            "o_1": "12 Squadron S.A.A.F.",
-            "o_2": "11th African Division",
-            "o_3": "12th African Division",
-            "o_4": "King's African Rifles",
-            "o_5": "East African Brigade",
-            "o_6": "West African Brigade"
+            "o_1": "Somaliland Camel Corps",
+            "o_2": "Royal Air Force",
+            "o_3": "25th E.A. Infantry Brigade",
+            "o_4": "2/3 K.A.R.",
+            "o_5": "2/4 K.A.R.",
+            "o_6": "South African engineers",
+            "o_7": "Equatorial Corps"
         }
     },
     "keywords": [
-        "Aircraft",
-        "Order of Battle",
-        "Divisions",
-        "East African Infantry",
-        "Military Units"
+        "British Somaliland",
+        "Italian",
+        "operation",
+        "evacuation",
+        "occupation",
+        "colonial",
+        "military"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Deployment",
-        "Logistics"
+        "Evacuation",
+        "Engagements",
+        "Occupation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_5",
+            "e_6"
         ],
-        "Strategic Deployments": [
-            "e_1"
+        "Evacuation": [
+            "e_4"
+        ],
+        "Engagements": [
+            "e_3",
+            "e_6"
+        ],
+        "Occupation": [
+            "e_1",
+            "e_2",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st February, 1941",
+            "date": "5th May",
             "locations": [
-                "l_11",
-                "l_12"
+                "l_11"
             ],
-            "persons": [],
+            "persons": {},
             "organisations": [
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Order of Battle of the 11th and 12th African Divisions is established, detailing the divisions' compositions and roles in the upcoming military operations."
+            "eventSummary": "Bender Cassim is occupied on 5th May during military operations to disarm Italian forces and establish control."
         },
         {
             "event": "e_2",
-            "date": "1st January, 1941",
+            "date": "16th May",
             "locations": [
-                "l_9",
-                "l_10"
+                "l_13"
             ],
-            "persons": [],
+            "persons": {},
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Dante is occupied on 16th May following negotiations with Italian forces to avoid destruction of strategic resources."
+        },
+        {
+            "event": "e_3",
+            "date": "10th May",
+            "locations": [
+                "l_17"
+            ],
+            "persons": {},
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "A report indicates the estimated number of enemy aircraft within range of allied bases as of January 1, 1941, emphasizing the strategic environment prior to military engagements."
+            "eventSummary": "On 10th May, the enemy in Tohen Wadi surrenders to British forces without opposition."
+        },
+        {
+            "event": "e_4",
+            "date": "21st May",
+            "locations": [
+                "l_18"
+            ],
+            "persons": {},
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Evacuation of Italian troops to Aden occurs on 21st May without incident after control is established."
+        },
+        {
+            "event": "e_5",
+            "date": "8th April",
+            "locations": [
+                "l_20"
+            ],
+            "persons": {},
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Operations for the Occupation of Maji begin on 8th April with the advance of British forces towards the town."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_24"
+            ],
+            "persons": {},
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A small enemy patrol is encountered at Giamo, which is occupied without further incident after a successful attack."
         }
     ]
 }

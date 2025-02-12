@@ -1,26 +1,159 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Firranpur",
-            "l_2": "Burma",
-            "l_3": "Tamanthi"
+        "persons": {
+            "p_1": "A. G. O. M. Mayne",
+            "p_2": "General Sir George Giffard",
+            "p_3": "A/Maj.-Gen. T. Ww. Winterton",
+            "p_4": "Lord Wavell",
+            "p_5": "Brigadier O. C. Wingate",
+            "p_6": "MajorGeneral Wingate"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "India",
+            "l_2": "Addu Atoll",
+            "l_3": "Diego Garcia",
+            "l_4": "Cocos",
+            "l_5": "River Meghna",
+            "l_6": "Lakhai",
+            "l_7": "North Burma",
+            "l_8": "Imphal",
+            "l_9": "New Delhi",
+            "l_10": "England",
+            "l_11": "Bangalore",
+            "l_12": "Nowgong",
+            "l_13": "Jhansi",
+            "l_14": "Deogarh",
+            "l_15": "Lalitpur"
+        },
+        "events": {
+            "e_1": "Changes in Order of Battle of the Forces in India",
+            "e_2": "Formation of Long Range Penetration Groups",
+            "e_3": "Redesignation of Indian Expeditionary Force to 33rd Indian Corps",
+            "e_4": "Operation by the 77th Indian Infantry Brigade",
+            "e_5": "Formation of the Special Force",
+            "e_6": "Arrival of American L.R.P. Brigade"
+        },
+        "organisations": {
+            "o_1": "Supreme Allied Commander South East Asia Command",
+            "o_2": "Fourteenth Army",
+            "o_3": "Ceylon Command",
+            "o_4": "Indian Expeditionary Force Headquarters",
+            "o_5": "77th Indian Infantry Brigade",
+            "o_6": "Special Force",
+            "o_7": "111th Indian Infantry Brigade",
+            "o_8": "3rd West African Infantry Brigade",
+            "o_9": "5307 Provisional Regiment"
+        }
     },
     "keywords": [
-        "Geographical Section",
-        "State Boundaries",
-        "International Boundaries"
+        "Order of Battle",
+        "Japanese Operations",
+        "Long Range Penetration",
+        "Infantry Brigade",
+        "Special Force"
     ],
     "themes": [
-        "Geography",
-        "Boundary Issues"
+        "Military Operations",
+        "Reorganization of Forces",
+        "Strategic Military Planning"
     ],
     "topicModel": {
-        "Geography": [],
-        "Boundary Issues": []
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Reorganization of Forces": [
+            "e_3",
+            "e_5"
+        ],
+        "Strategic Military Planning": [
+            "e_6"
+        ]
     },
-    "eventConnections": []
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "15/16 November 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Supreme Allied Commander South East Asia Command begins to function, taking command of the Fourteenth Army and the Ceylon Command."
+        },
+        {
+            "event": "e_2",
+            "date": "Spring 1943",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The 77th Indian Infantry Brigade conducts a long-range penetration operation in North Burma, significantly impacting military tactics."
+        },
+        {
+            "event": "e_3",
+            "date": "February 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_6"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Indian Expeditionary Force Headquarters is formed to manage overseas operations against the Japanese."
+        },
+        {
+            "event": "e_5",
+            "date": "October 1943",
+            "locations": [
+                "l_1",
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A decision is made to form a Special Force consisting of long-range penetration brigades for operations in Burma."
+        },
+        {
+            "event": "e_6",
+            "date": "Early November 1943",
+            "locations": [
+                "l_1",
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An American L.R.P. Brigade arrives in India for training and preparation for operations."
+        }
+    ]
 }

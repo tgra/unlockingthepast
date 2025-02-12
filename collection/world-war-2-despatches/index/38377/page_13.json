@@ -1,78 +1,79 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice-Admiral",
-            "p_2": "Rear-Admiral",
-            "p_3": "Crew of PIORUN"
+            "p_1": "Sain",
+            "p_2": "NELSON",
+            "p_3": "WISHART",
+            "p_4": "BROWN RANGER",
+            "p_5": "NESTOR",
+            "p_6": "SYDNEY STAR"
         },
         "locations": {
-            "l_1": "Skerki Channel",
-            "l_2": "Skerki Bank",
-            "l_3": "Marittimo",
-            "l_4": "Malta"
+            "l_1": "Galita Island",
+            "l_2": "Gibraltar",
+            "l_3": "North Atlantic Station",
+            "l_4": "enemy's base"
         },
         "events": {
-            "e_1": "Operation with ARK ROYAL",
-            "e_2": "Encounter with enemy fleet"
+            "e_1": "Movements of Force H and Force X, July 25",
+            "e_2": "High Level Bombing Attack on the Fleet, July 25",
+            "e_3": "Arrival at Gibraltar, July 27",
+            "e_4": "Convoy M.G.x arrivals"
         },
         "organisations": {
-            "o_1": "Home Fleet",
-            "o_2": "R.A.F."
+            "o_1": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "ARK ROYAL",
-        "shadowers",
-        "striking force",
-        "enemy fleet",
-        "Vice-Admiral"
+        "cruisers",
+        "destroyers",
+        "aircraft",
+        "Fulmars",
+        "enemy",
+        "torpedo bombers"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Strategic Maneuvers"
+        "Aerial Combat",
+        "Naval Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Aerial Combat": [
             "e_2"
         ],
-        "Naval Engagement": [
-            "e_2"
-        ],
-        "Strategic Maneuvers": [
-            "e_1"
+        "Naval Coordination": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "July 25",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_1"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The operation with ARK ROYAL involves flying off shadowers and a striking force to engage enemy vessels."
+            "eventSummary": "On July 25, 194X, movements of Force H and Force X are documented as they coordinated their actions in response to enemy threats."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "July 25",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -80,10 +81,34 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "A high-level bombing attack by enemy aircraft occurs on July 25, resulting in several bombers being shot down by Fulmars."
+        },
+        {
+            "event": "e_3",
+            "date": "July 27",
+            "locations": [
+                "l_2"
             ],
-            "eventSummary": "The encounter with the enemy fleet reveals their potential evasive maneuvers and leads to strategic decisions by the Vice-Admiral."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "On July 27, 194X, various units arrive safely at Gibraltar, marking a significant logistical achievement."
+        },
+        {
+            "event": "e_4",
+            "date": "July 25-28",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Convoy M.G.x successfully arrives at Gibraltar between July 25 and July 28, concluding a vital operation."
         }
     ]
 }

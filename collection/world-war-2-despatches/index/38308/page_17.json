@@ -1,124 +1,112 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A.C.r",
-            "p_2": "CINC PAC",
-            "p_3": "CINCPOA",
-            "p_4": "President of the United States"
+            "p_1": "A.C.1"
         },
         "locations": {
-            "l_1": "Formosa",
-            "l_2": "Okinawa",
-            "l_3": "Sakishima Gunto",
-            "l_4": "Ishigaki",
-            "l_5": "Matsuyama",
-            "l_6": "Shinchiku",
-            "l_7": "Yonakuni Shima",
-            "l_8": "Leyte",
-            "l_9": "Cootie One"
+            "l_1": "Ishigaki",
+            "l_2": "Miyako",
+            "l_3": "Nobara airfield",
+            "l_4": "Hirara airfield",
+            "l_5": "Sukama air strip",
+            "l_6": "H.M.S. FORMIDABLE",
+            "l_7": "H.M.S. INDOMITABLE"
         },
         "events": {
-            "e_1": "Sakishima Operations",
-            "e_2": "Death of the President",
-            "e_3": "Tanker Group Operations"
+            "e_1": "Ishigaki strike",
+            "e_2": "Bombardment of Nobara and Hirara airfields",
+            "e_3": "Kamikaze attack on H.M.S. FORMIDABLE",
+            "e_4": "Kamikaze attack on H.M.S. INDOMITABLE"
         },
         "organisations": {
-            "o_1": "Task Force 51",
-            "o_2": "Task Force 57",
-            "o_3": "Task Force 112",
-            "o_4": "United States Fleet"
+            "o_1": "25th Destroyer Flotilla"
         }
     },
     "keywords": [
-        "Formosa",
-        "Sakishima Gunto",
-        "Tanker Group",
-        "Hellcats",
-        "Corsairs",
-        "air operations",
-        "losses",
-        "President",
-        "Fleet"
+        "Avenger",
+        "enemy aircraft",
+        "bombardment",
+        "safety destroyer",
+        "Fighters",
+        "Kamikaze",
+        "Fleet",
+        "defence area"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Command",
-        "Support Missions",
-        "Tragic Loss"
+        "Air Defense",
+        "Naval Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Diplomacy": [
             "e_2"
         ],
-        "Tactical Command": [
-            "e_1",
-            "e_3"
-        ],
-        "Tragic Loss": [
-            "e_2"
+        "Air Defense": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "13-16 April 1945",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "Sakishima Operations are ongoing, involving air strikes on enemy airfields and engagements with enemy aircraft while monitoring enemy activities in the region."
+            "eventSummary": "Aircraft undertake the Ishigaki strike mission, encountering an enemy aircraft before the attack."
         },
         {
             "event": "e_2",
-            "date": "April 1945",
-            "locations": [],
+            "date": "",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
             "persons": [
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The death of the President of the United States is recognized by Task Force 57, leading to a signal of sympathy being sent to CINCPOA."
+            "connectedEvents": [],
+            "eventSummary": "The bombarding force executes strikes on Nobara and Hirara airfields, sustaining effective bombardment and achieving good results."
         },
         {
             "event": "e_3",
-            "date": "14-15 April 1945",
+            "date": "",
             "locations": [
-                "l_9"
+                "l_6"
             ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
+            "persons": [
+                "p_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. FORMIDABLE is attacked by a Kamikaze plane, resulting in significant damage and casualties."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_7"
             ],
-            "eventSummary": "Tanker Group Operations involve the replenishment of Task Force 57, enabling subsequent military actions in the Sakishima area."
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. INDOMITABLE sustains an attack by another Kamikaze aircraft but detects and engages it successfully."
         }
     ]
 }

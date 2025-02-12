@@ -1,92 +1,120 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Pile",
-            "p_2": "Albert Speer"
+            "p_1": "Battery Commander",
+            "p_2": "Station Commander"
         },
         "locations": {
-            "l_1": "Holland",
-            "l_2": "French coast",
-            "l_3": "Antwerp",
-            "l_4": "London"
+            "l_1": "London",
+            "l_2": "Romney Marsh",
+            "l_3": "Holland"
         },
         "events": {
-            "e_1": "flying bomb campaign",
-            "e_2": "rocket offensive"
+            "e_1": "Flying Bomb Attack",
+            "e_2": "Diver Barrage",
+            "e_3": "Main Attack",
+            "e_4": "Introduction of the Meteor Fighter"
         },
         "organisations": {
-            "o_1": "Balloon Command",
-            "o_2": "Anti-Aircraft Command",
-            "o_3": "Fighter Command",
-            "o_4": "Royal Observer Corps",
-            "o_5": "Royal Navy",
-            "o_6": "Admiralty"
+            "o_1": "A.A. Batteries",
+            "o_2": "German High Command"
         }
     },
     "keywords": [
-        "flying bomb",
-        "A-4 rocket",
-        "Battle of the Bomb",
-        "German surrender",
-        "military operations"
+        "Flying Bomb",
+        "Bombing",
+        "Anti-Aircraft",
+        "Fighter Operations",
+        "Meteor Fighter"
     ],
     "themes": [
         "Military Operations",
-        "Defense Strategy",
-        "Technology in Warfare"
+        "Strategic Decisions",
+        "Air Defense",
+        "Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3"
         ],
-        "Defense Strategy": [
+        "Air Defense": [
             "e_1",
             "e_2"
         ],
-        "Technology in Warfare": [
+        "Strategic Decisions": [
+            "e_4"
+        ],
+        "Cooperation": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1944",
+            "date": "Various dates including 28th August and September 1944",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The flying bomb campaign is a concerted effort involving multiple military units to counter the threat posed by flying bombs, focusing on teamwork and coordination."
-        },
-        {
-            "event": "e_2",
-            "date": "1944-1945",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_5",
-                "o_6"
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Flying bombs approach London with varying success; Air defenses improve significantly."
+        },
+        {
+            "event": "e_2",
+            "date": "28th August",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The rocket offensive is characterized by improvised attacks from Holland, aiming to compensate for the failing flying bomb campaign but ultimately proves ineffective due to inaccuracy and limited scale."
+            "eventSummary": "Diver Barrage operates effectively, showcasing cooperation between fighters and anti-aircraft units."
+        },
+        {
+            "event": "e_3",
+            "date": "Beginning of September",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The main attack concludes with the capture of launching areas by Allied forces."
+        },
+        {
+            "event": "e_4",
+            "date": "During the attack phase",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The introduction of the Meteor fighter intended to strengthen the defense against flying bombs."
         }
     ]
 }

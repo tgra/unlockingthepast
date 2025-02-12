@@ -1,83 +1,65 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral Commanding",
-            "p_2": "Captain"
+            "p_1": "FORESIGHT",
+            "p_2": "FARNDALE",
+            "p_3": "ERIDGE",
+            "p_4": "Rear-Admiral Commanding, 18th, Cruiser Squadron",
+            "p_5": "Hurricane"
         },
         "locations": {
-            "l_1": "Gulf of Hammamet",
-            "l_2": "Susa",
+            "l_1": "Cagliari",
+            "l_2": "Skerki Channel",
             "l_3": "Malta",
-            "l_4": "Kelibia"
+            "l_4": "Gibraltar",
+            "l_5": "Galita Channel"
         },
         "events": {
-            "e_1": "E-Boat attacks",
-            "e_2": "Sinking of H.M.S. MANCHESTER",
-            "e_3": "Air attacks on Force X",
-            "e_4": "Bombing of S.S. CLAN FERGUSON",
-            "e_5": "Recovery of Survivors from S.S. ALMERIA LYKES and WAIRANGI",
-            "e_6": "Attack on S.S. OHIO",
-            "e_7": "Sinking of S.S. DORSET"
+            "e_1": "Torpedo Bomber Attack on MANCHESTER and AVON VALE",
+            "e_2": "Abortive Torpedo Bomber Attack on Fleet",
+            "e_3": "Detachment of Force X",
+            "e_4": "Passage of Force X through the Narrows on the Night of 23rd/24th July",
+            "e_5": "High Level Bombing Attack on Force X",
+            "e_6": "Damage to, and Withdrawal of, FIREDRAKE"
         },
         "organisations": {
-            "o_1": "H.M.S. ASHANTI",
-            "o_2": "H.M.S. PATHFINDER",
-            "o_3": "H.M.S. MANCHESTER",
-            "o_4": "H.M. Ships ESKIMO",
-            "o_5": "H.M. Ships SOMALI",
-            "o_6": "H.M. Ships KENYA",
-            "o_7": "H.M. Ships CHARYBDIS",
-            "o_8": "S.S. WAIRANGI",
-            "o_9": "S.S. DORSET",
-            "o_10": "Malta Escort Force",
-            "o_11": "Malta Beaufighters",
-            "o_12": "Spitfires"
+            "o_1": "Force X",
+            "o_2": "Fleet",
+            "o_3": "Convoy M.G.z1"
         }
     },
     "keywords": [
-        "E-Boat attacks",
-        "H.M.S.",
-        "air attacks",
-        "survivors",
-        "bombing",
-        "naval operations",
-        "malta"
+        "Torpedo",
+        "Barrage",
+        "Attack",
+        "Aircraft",
+        "Survivors"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Survivor Recovery",
-        "Air Attacks",
-        "Ship Sinking"
+        "Air Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4",
-            "e_5",
-            "e_6",
-            "e_7"
+            "e_4"
         ],
         "Naval Warfare": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Survivor Recovery": [
-            "e_5"
-        ],
-        "Air Attacks": [
-            "e_3",
             "e_4",
             "e_6"
+        ],
+        "Air Support": [
+            "e_2",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "23rd July",
             "locations": [
                 "l_1"
             ],
@@ -91,104 +73,77 @@
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "E-Boat attacks occur, causing casualties and prompting naval response."
+            "eventSummary": "On the evening of 23rd July, MANCHESTER and AVON VALE are attacked by three torpedo bombers, prompting evasive maneuvers and heavy defensive fire without sustained damage."
         },
         {
             "event": "e_2",
-            "date": "N/A",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
+            "date": "23rd July",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_3"
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "H.M.S. MANCHESTER's commanding officer decides to abandon and sink the ship."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "An abortive attack occurs on the fleet at 1643 on 23rd July, resulting in the engagement of enemy aircraft, with two S.79s being shot down."
         },
         {
             "event": "e_3",
-            "date": "N/A",
+            "date": "23rd July",
             "locations": [
-                "l_3"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_10",
-                "o_11",
-                "o_12"
-            ],
-            "connectedEvents": [
-                "e_4",
-                "e_6"
-            ],
-            "eventSummary": "A series of air attacks are conducted against Force X, targeting their ships."
-        },
-        {
-            "event": "e_4",
-            "date": "N/A",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_11",
-                "o_12"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "S.S. CLAN FERGUSON suffers a direct hit from a dive bomber and explodes."
-        },
-        {
-            "event": "e_5",
-            "date": "N/A",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Survivors from S.S. ALMERIA LYKES and WAIRANGI are recovered by H.M. Ships ESKIMO and SOMALI."
-        },
-        {
-            "event": "e_6",
-            "date": "N/A",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "S.S. OHIO is targeted in an air attack, resulting in damage but no sinking."
+            "eventSummary": "At 1713 on 23rd July, HERMIONE is ordered to replace MANCHESTER in Force X as the convoy continues towards Malta."
         },
         {
-            "event": "e_7",
-            "date": "N/A",
+            "event": "e_4",
+            "date": "Night of 23rd/24th July",
             "locations": [
-                "l_3"
+                "l_2"
             ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "During the night of 23rd/24th July, Force X and the convoy navigate the Skerki Channel while facing attacks from enemy torpedo bombers."
+        },
+        {
+            "event": "e_5",
+            "date": "23rd July",
+            "locations": [],
             "persons": [
-                "p_1"
+                "p_4"
             ],
             "organisations": [
-                "o_10"
+                "o_1"
             ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "A high-level bombing attack on Force X takes place at 1945 on 23rd July, resulting in near misses and maintaining the threat from enemy aircraft."
+        },
+        {
+            "event": "e_6",
+            "date": "25th July",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "S.S. DORSET is eventually sunk following a series of air attacks after standing by S.S. OHIO."
+            "eventSummary": "On 25th July, FIREDRAKE slips from tow after significant damage, having been escorted back for repairs and requiring aid in navigation due to steering issues."
         }
     ]
 }

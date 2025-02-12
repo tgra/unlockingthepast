@@ -1,68 +1,78 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief",
-            "p_2": "Chiefs of Staff"
+            "p_1": "Admiral Sir Tom Phillips",
+            "p_2": "Admiral Sir Geoffrey Layton",
+            "p_3": "Lieutenant-General Paget",
+            "p_4": "General Pownall",
+            "p_5": "General McLeod",
+            "p_6": "General Hutton",
+            "p_7": "Mr. Duff Cooper",
+            "p_8": "Sir George Sansom"
         },
         "locations": {
-            "l_1": "Luzon",
-            "l_2": "Hong Kong",
-            "l_3": "China",
-            "l_4": "Philippines",
-            "l_5": "Singapore",
-            "l_6": "Malaya",
-            "l_7": "United States"
+            "l_1": "Burma",
+            "l_2": "Malaya",
+            "l_3": "Eastern Fleet",
+            "l_4": "Singapore",
+            "l_5": "Tokio",
+            "l_6": "Philippines",
+            "l_7": "Netherlands East Indies",
+            "l_8": "Pearl Harbour",
+            "l_9": "Kra Isthmus"
         },
         "events": {
-            "e_1": "A.D.B. report",
-            "e_2": "A.D.B. 2 agreement",
-            "e_3": "Outbreak of war with Japan",
-            "e_4": "Staff Exercises"
+            "e_1": "War with Japan",
+            "e_2": "Formation of the War Council",
+            "e_3": "Establishment of the Civil Defence Committee",
+            "e_4": "Japanese attacks on Malaya and the Philippines"
         },
         "organisations": {
-            "o_1": "United States Pacific Fleet",
-            "o_2": "Royal Air Force",
-            "o_3": "General Headquarters"
+            "o_1": "War Council",
+            "o_2": "General Headquarters"
         }
     },
     "keywords": [
-        "defensive strategy",
-        "military operations",
-        "collective action",
-        "guerilla operations",
-        "subversive activity"
+        "Operations",
+        "Commands",
+        "Military",
+        "Intelligence"
     ],
     "themes": [
         "Military Operations",
         "Strategic Decisions",
-        "Defensive Strategies"
+        "Intelligence"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_4"
         ],
         "Strategic Decisions": [
             "e_2",
-            "e_4"
-        ],
-        "Defensive Strategies": [
-            "e_1",
             "e_3"
+        ],
+        "Intelligence": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1941",
+            "date": "December 7, 1941",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_6",
+                "l_7",
+                "l_8"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
             ],
             "organisations": [
                 "o_1",
@@ -72,52 +82,61 @@
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The A.D.B. report is produced emphasizing the importance of preparing for military operations against Japanese territories while advocating for a defensive posture in the Far East."
+            "eventSummary": "The War with Japan begins, leading to significant military actions in the Pacific and Southeast Asia."
         },
         {
             "event": "e_2",
-            "date": "August 1941",
+            "date": "December 7, 1941",
             "locations": [
                 "l_1",
                 "l_2"
             ],
-            "persons": [],
-            "organisations": [],
+            "persons": [
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "An amended version of the A.D.B. report is created to address political concerns raised by the United States, while keeping major strategies intact."
+            "eventSummary": "The War Council is formed on December 7, 1941, to address military strategies in the Far East."
         },
         {
             "event": "e_3",
-            "date": "December 1941",
+            "date": "December 16, 1941",
             "locations": [
-                "l_1",
-                "l_5"
+                "l_2",
+                "l_4"
             ],
-            "persons": [],
+            "persons": [
+                "p_7"
+            ],
             "organisations": [],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The outbreak of war with Japan marks a significant escalation in military engagement, directly linked to the strategies discussed in the A.D.B. reports."
+            "connectedEvents": [],
+            "eventSummary": "A Civil Defence Committee is established to coordinate defense efforts in Singapore on December 16, 1941."
         },
         {
             "event": "e_4",
-            "date": "February-March 1941",
+            "date": "Early December 1941",
             "locations": [
-                "l_2",
-                "l_6"
+                "l_1",
+                "l_6",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_5",
+                "p_6"
             ],
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Staff exercises are conducted to prepare military forces for a transition from peaceful conditions to wartime readiness."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Japanese begin simultaneous attacks on Malaya and the Philippines, surpassing previous expectations."
         }
     ]
 }

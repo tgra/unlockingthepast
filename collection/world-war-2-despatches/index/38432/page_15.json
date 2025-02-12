@@ -1,91 +1,76 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Senior Officer",
-            "p_2": "pom-pom gunner"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Vir light",
-            "l_2": "Zara",
-            "l_3": "Vir Point",
-            "l_4": "south",
-            "l_5": "north"
+            "l_1": "Ist",
+            "l_2": "Vir",
+            "l_3": "Mulat",
+            "l_4": "Nin",
+            "l_5": "Zara",
+            "l_6": "Vir Island"
         },
         "events": {
-            "e_1": "Engagement with enemy F-lighters",
-            "e_2": "Sinkage of E-boat"
+            "e_1": "enemy demonstration at Mulat breakwater",
+            "e_2": "engagement with enemy vessels"
         },
         "organisations": {
-            "o_1": "H.M.M.T.B.637",
-            "o_2": "H.M.M.T.B.638",
-            "o_3": "H.M.M.G.B.662"
+            "o_1": "H.M.M.T.B.634",
+            "o_2": "H.M.M.G.B.662",
+            "o_3": "H.M.M.T.B.638",
+            "o_4": "H.M.M.G.B.662"
         }
     },
     "keywords": [
-        "engagement",
-        "F-lighter",
-        "E-boat",
-        "torpedoes",
-        "starshell",
-        "fire"
+        "patrol",
+        "enemy",
+        "convoy",
+        "gunfire",
+        "torpedo attack"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Tactical Decisions"
+        "Naval Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Engagement": [
-            "e_1"
-        ],
-        "Tactical Decisions": [
-            "e_1",
+        "Naval Engagements": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "",
             "locations": [
-                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "An enemy demonstration occurs at the Mulat breakwater involving torpedoes fired by E-boats, intending to eliminate military vessels."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
                 "l_2",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_6"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Engagement with enemy F-lighters occurs with significant gunfire and torpedo attacks. Multiple vessels are set ablaze, showcasing effective naval combat tactics."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "An E-boat is observed and successfully targeted, resulting in its sinking amidst the engagement with enemy forces."
+            "connectedEvents": [],
+            "eventSummary": "The unit engages multiple enemy vessels including F-lighters and E-boats, resulting in significant exchanges of fire."
         }
     ]
 }

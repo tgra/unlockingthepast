@@ -1,58 +1,66 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "T. Troubridge",
-            "p_2": "Rear-Admiral Sir Harold Burrough"
+            "p_1": "Commander P. Stubbs, R.N.",
+            "p_2": "Rear-Admiral Commanding, 10th Cruiser Squadron",
+            "p_3": "Commander Thery",
+            "p_4": "Lieutenant R. H. H. Webber, R.N.",
+            "p_5": "Major Jordan"
         },
         "locations": {
-            "l_1": "Gibraltar",
-            "l_2": "Oran",
-            "l_3": "Cape Trafalgar",
-            "l_4": "Mostaganem",
-            "l_5": "Arzeu"
+            "l_1": "Djidjelli",
+            "l_2": "Bougie",
+            "l_3": "Algiers",
+            "l_4": "Bougie Bay",
+            "l_5": "Cap Aokas"
         },
         "events": {
-            "e_1": "Operation Torch",
-            "e_2": "Rendezvous with AURORA",
-            "e_3": "Assault at Z Beach"
+            "e_1": "Assault on Djidjelli",
+            "e_2": "Air Attack on Shipping",
+            "e_3": "Fire on H.M.S. CATHAY",
+            "e_4": "Explosion on H.M.S. TYNWALD",
+            "e_5": "KARANJA Air Attack"
         },
         "organisations": {
-            "o_1": "NavaL COMMANDER CENTRE TASK Force",
-            "o_2": "U.S. Rangers"
+            "o_1": "R.A.F."
         }
     },
     "keywords": [
-        "Operation Torch",
-        "Gibraltar",
-        "Oran",
         "assault",
-        "convoy"
+        "air attack",
+        "explosion",
+        "fire",
+        "naval operation"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Troop Deployment"
+        "Naval Engagements",
+        "Aerial Attacks"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Naval Strategy": [
+        "Naval Engagements": [
             "e_1",
             "e_2"
         ],
-        "Troop Deployment": [
-            "e_3"
+        "Aerial Attacks": [
+            "e_2",
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26th October",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
                 "p_1",
@@ -61,45 +69,56 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Operation Torch involves the sailing of the combined fast convoy from the Clyde to Gibraltar, leading to subsequent operations."
+            "connectedEvents": [],
+            "eventSummary": "The assault on Djidjelli is decided against due to heavy swell affecting beach landings."
         },
         {
             "event": "e_2",
-            "date": "5th November",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Rendezvous with AURORA occurs on 5th November as the convoy maneuvers towards Gibraltar."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "At 1345, shipping in the bay is attacked by five S.M. 79 torpedo bombers with minor aircraft casualties."
         },
         {
             "event": "e_3",
-            "date": "8th November",
+            "date": "",
             "locations": [
-                "l_5"
+                "l_2"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A significant fire starts on H.M.S. CATHAY at 2315 when abandoned by troops on board."
+        },
+        {
+            "event": "e_4",
+            "date": "12th November",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "At 0445, H.M.S. TYNWALD experiences violent explosions and is abandoned."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Assault at Z Beach is successfully executed with U.S. Rangers landing undetected as part of the Operation Torch."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "KARANJA is attacked by bombs, resulting in a rapid fire outbreak."
         }
     ]
 }

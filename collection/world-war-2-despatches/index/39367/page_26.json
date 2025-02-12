@@ -1,105 +1,123 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Guy GarRop",
-            "p_2": "Field Marshal Alexander"
+            "p_1": "General von Senger",
+            "p_2": "General von Vietinghoff",
+            "p_3": "Field Marshal Alexander",
+            "p_4": "Marshal Tito"
         },
         "locations": {
-            "l_1": "Northern Italy",
-            "l_2": "Foggia plain",
-            "l_3": "Ferrara",
-            "l_4": "Lake Comacchio",
-            "l_5": "Egypt"
+            "l_1": "River Po",
+            "l_2": "Reno River",
+            "l_3": "Po Valley",
+            "l_4": "Milan",
+            "l_5": "Trieste",
+            "l_6": "Caserta",
+            "l_7": "Adige River",
+            "l_8": "Brenta River",
+            "l_9": "Verona",
+            "l_10": "Adriatic coast",
+            "l_11": "Bassano",
+            "l_12": "Padua",
+            "l_13": "Chioggia",
+            "l_14": "Friola",
+            "l_15": "Cavarzere",
+            "l_16": "Badia Polesine",
+            "l_17": "Legnago",
+            "l_18": "Bonavigo",
+            "l_19": "Alboredo",
+            "l_20": "Zevio"
         },
         "events": {
-            "e_1": "Battle of the Po Crossings",
-            "e_2": "Air Operations in Northern Italy"
+            "e_1": "Surrender of German Army",
+            "e_2": "Operation Corncob",
+            "e_3": "Final Stages of the Battle"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "M.A.A.F. (Mediterranean Allied Air Forces)",
-            "o_3": "Allied Forces"
+            "o_1": "Allied Air Forces",
+            "o_2": "M.A.S.A.F.",
+            "o_3": "M.A.T.A.F.",
+            "o_4": "Desert Air Force"
         }
     },
     "keywords": [
-        "Air Superiority",
-        "German Troops",
-        "Allied Bombardment",
-        "Air Operations",
-        "Morale",
-        "Ground Forces",
-        "Fighter-bombers",
-        "Communication Disruption"
+        "surrender",
+        "battle",
+        "German Army",
+        "Allied forces",
+        "air operations"
     ],
     "themes": [
         "Military Operations",
-        "Air Power",
-        "Leadership",
-        "Teamwork",
-        "Retreat and Rout"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Air Power": [
-            "e_2"
-        ],
-        "Leadership": [
-            "e_2"
-        ],
-        "Teamwork": [
-            "e_2"
-        ],
-        "Retreat and Rout": [
+        "Diplomacy": [
             "e_1"
+        ],
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 1946",
+            "date": "2nd May",
             "locations": [
-                "l_1",
-                "l_3",
-                "l_4"
+                "l_6"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_3"
             ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Battle of the Po Crossings highlights the decisive impact of air power on the German troops, leading to disorganized retreats and an overwhelming victory for the Allied Forces."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The surrender instrument is signed at Field Marshal Alexander's Headquarters at Caserta, marking the formal end of hostilities for the German forces."
         },
         {
             "event": "e_2",
-            "date": "August 1946",
+            "date": "25th April",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_5"
+                "l_4",
+                "l_7",
+                "l_8"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3"
             ],
             "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operation Corncob is undertaken to block the German retreat by destroying essential road bridges in northeastern Italy from 25th to 26th April."
+        },
+        {
+            "event": "e_3",
+            "date": "25th April to 2nd May",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Air Operations in Northern Italy showcase the crucial teamwork among Allied Forces, enhancing air superiority and directly contributing to the success of ground assaults."
+            "eventSummary": "The final stages of the battle occur as Allied forces push across the Po River, leading to the encirclement of German troops and ultimately their surrender."
         }
     ]
 }

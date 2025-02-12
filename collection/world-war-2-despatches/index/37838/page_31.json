@@ -1,122 +1,124 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Commander, Advanced A.E.A.F.",
-            "p_2": "Air Staff Officer"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "England",
-            "l_2": "Continent",
-            "l_3": "Uxbridge",
-            "l_4": "Portsmouth",
-            "l_5": "American beaches",
-            "l_6": "British beaches"
+            "l_1": "Northern France",
+            "l_2": "Belgium",
+            "l_3": "Seine",
+            "l_4": "Rheims",
+            "l_5": "Rouen",
+            "l_6": "Le Havre",
+            "l_7": "Brest",
+            "l_8": "Boulogne",
+            "l_9": "Calais",
+            "l_10": "Rhine",
+            "l_11": "Moselle"
         },
         "events": {
-            "e_1": "D-Day Assault",
-            "e_2": "Operation of Fighter Cover",
-            "e_3": "First Three Days of Patrol"
+            "e_1": "Retreat across Northern France and Belgium",
+            "e_2": "Air attacks on German forces",
+            "e_3": "Bombing of coastal garrisons",
+            "e_4": "Attack on Le Havre"
         },
         "organisations": {
-            "o_1": "British Fighter Squadrons",
-            "o_2": "American Fighter Squadrons",
-            "o_3": "Fighter Direction Tenders",
-            "o_4": "Combined Control Centre"
+            "o_1": "A.E.A.F.",
+            "o_2": "United States Ninth Air Force",
+            "o_3": "United States Eighth Air Force",
+            "o_4": "R.A.F. Second Tactical Air Force",
+            "o_5": "R.A.F. Bomber Command",
+            "o_6": "German Seventh Army"
         }
     },
     "keywords": [
-        "Fighter Cover",
-        "D-Day",
-        "Patrol",
-        "Squadrons",
-        "Naval Assault Force"
+        "Retreat",
+        "Air attacks",
+        "Bombing",
+        "Military operations"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Warfare",
-        "Coordination of Forces",
-        "Air Support"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Coordination of Forces": [
+        "Strategic Decisions": [
+            "e_1",
             "e_2"
-        ],
-        "Aerial Warfare": [
-            "e_3"
-        ],
-        "Air Support": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_1",
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "On D-Day, coordinated fighter cover is maintained over the assault area, ensuring air superiority during the initial landings."
-        },
-        {
-            "event": "e_2",
-            "date": "June 6, 1944",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_6"
+                "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The operation of fighter cover continues throughout the daylight hours during the assault period, providing critical support to ground forces."
-        },
-        {
-            "event": "e_3",
-            "date": "June 6-8, 1944",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "During the first three days, continuous patrols are conducted by fighter squadrons over the assault forces and shipping lanes to maintain air dominance."
+            "eventSummary": "The enemy begins to retreat across Northern France and Belgium, facing significant air attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Air forces conduct attacks on moving German forces, inflicting considerable damage and casualties."
+        },
+        {
+            "event": "e_3",
+            "date": "August 24 - September 6",
+            "locations": [
+                "l_7",
+                "l_8",
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "During late August and September, strong bombing forces target enemy garrisons at coastal ports."
+        },
+        {
+            "event": "e_4",
+            "date": "September 1 - September 12",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The R.A.F. Bomber Command conducts extensive bombing operations against Le Havre."
         }
     ]
 }

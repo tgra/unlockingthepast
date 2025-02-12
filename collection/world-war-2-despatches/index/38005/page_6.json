@@ -1,103 +1,137 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief",
-            "p_2": "COSSACK",
+            "p_1": "LEBERECHT MAAS",
+            "p_2": "HARDY",
             "p_3": "WARSPITE",
-            "p_4": "ESKIMO",
-            "p_5": "BEDOUIN",
-            "p_6": "FORESTER",
-            "p_7": "HERO",
-            "p_8": "PUNJABI",
-            "p_9": "FOXHOUND",
-            "p_10": "KIMBERLEY"
+            "p_4": "COSSACK",
+            "p_5": "HERO",
+            "p_6": "FOXHOUND",
+            "p_7": "FORESTER",
+            "p_8": "BEDOUIN",
+            "p_9": "PUNJABI",
+            "p_10": "KIMBERLEY",
+            "p_11": "ICARUS",
+            "p_12": "ESKIMO",
+            "p_13": "FURIOUS",
+            "p_14": "RAUENFELS"
         },
         "locations": {
-            "l_1": "Djupvik",
-            "l_2": "Ofot Fiord",
+            "l_1": "Baroy Island",
+            "l_2": "Vest Fiord",
             "l_3": "Narvik",
-            "l_4": "Rombaks Fiord",
-            "l_5": "Herjangen",
-            "l_6": "Skjomen Fiord",
-            "l_7": "Narvik Harbour",
-            "l_8": "Sildvika"
+            "l_4": "Tranoy Light",
+            "l_5": "Ofot Fiord",
+            "l_6": "Skjel Fiord",
+            "l_7": "Hamnesholm",
+            "l_8": "Framsk",
+            "l_9": "Ranchet"
         },
         "events": {
-            "e_1": "Engagements in Ofot Fiord",
-            "e_2": "Attack on Narvik Harbour"
+            "e_1": "Air attack on Baroy Island",
+            "e_2": "Engagement with German destroyers",
+            "e_3": "Operation D.W.",
+            "e_4": "Action in Ofot Fiord"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "2nd Destroyer Flotilla",
+            "o_2": "H.M. Ships"
         }
     },
     "keywords": [
-        "destroyers",
-        "torpedoes",
-        "gunfire",
-        "engagement",
-        "enemy",
-        "flames",
-        "Narvik"
+        "attack",
+        "reconnaissance",
+        "destroyer",
+        "operations",
+        "aircraft",
+        "mines"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Engagement Strategy"
+        "Naval Engagements",
+        "Conducting Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_4"
         ],
-        "Naval Warfare": [
-            "e_1",
-            "e_2"
+        "Naval Engagements": [
+            "e_2",
+            "e_4"
         ],
-        "Engagement Strategy": [
+        "Conducting Reconnaissance": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "April 13, 1940",
             "locations": [
-                "l_2",
-                "l_3"
+                "l_1",
+                "l_4"
             ],
             "persons": [
                 "p_3",
                 "p_5",
-                "p_4"
+                "p_6",
+                "p_7"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "In the strategic naval engagements at Ofot Fiord, destroyers including WARSPITE and ESKIMO maneuver and engage the enemy with torpedoes and gunfire, inflicting significant damage."
+            "eventSummary": "At 200 hours on April 13, 1940, forces proceed to attack the defences of Baroy Island."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "April 13, 1940",
             "locations": [
-                "l_3",
-                "l_7"
+                "l_4",
+                "l_5"
             ],
             "persons": [
-                "p_3",
-                "p_6",
-                "p_9",
-                "p_10"
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The engagement with German destroyers becomes critical as forces encounter enemy vessels in Ofot Fiord."
+        },
+        {
+            "event": "e_3",
+            "date": null,
+            "locations": [],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "In the attack on Narvik Harbour, a coordinated effort by several destroyers engages the enemy's remaining forces, leading to the destruction of enemy vessels and clearing out the area."
+            "eventSummary": "Operation D.W. detailed orders for engagement and destroying enemy positions."
+        },
+        {
+            "event": "e_4",
+            "date": "April 13, 1940",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The action becomes more general as enemy destroyers are engaged at long range in Ofot Fiord."
         }
     ]
 }

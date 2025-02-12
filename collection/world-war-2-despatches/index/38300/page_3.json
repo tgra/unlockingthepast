@@ -1,84 +1,99 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "John C. Tovey",
-            "p_2": "Rear Admiral Commanding, First Cruiser Squadron"
+            "p_1": "Captain (D)",
+            "p_2": "R.D.F."
         },
         "locations": {
-            "l_1": "Kirkenes",
-            "l_2": "Petsamo",
-            "l_3": "Northern and Northwestern Norway"
+            "l_1": "Seidisfiord",
+            "l_2": "Position X",
+            "l_3": "Position C"
         },
         "events": {
-            "e_1": "Carrier Borne Aircraft Attack on Kirkenes and Petsamo",
-            "e_2": "Operation by the First Cruiser Squadron"
+            "e_1": "Departure of ADVENTURE",
+            "e_2": "Sailing of Force P",
+            "e_3": "Arrival of ACHATES"
         },
         "organisations": {
-            "o_1": "Home Fleet",
-            "o_2": "Admiralty"
+            "o_1": "Admiralty",
+            "o_2": "3rd Destroyer Flotilla"
         }
     },
     "keywords": [
-        "Carrier Borne Aircraft",
-        "Attack",
-        "Morale",
-        "Surprise",
-        "Reconnaissance"
+        "ADVENTURE",
+        "SUFFOLK",
+        "DEVONSHIRE",
+        "destroyer",
+        "patrol",
+        "Force P",
+        "Force Q",
+        "R.D.F.",
+        "A/S patrol"
     ],
     "themes": [
         "Military Operations",
-        "Air Operations",
-        "Tactical Decisions"
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Air Operations": [
-            "e_1"
-        ],
-        "Tactical Decisions": [
+        "Naval Strategy": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "25th May, 1948",
+            "date": "26th July",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Carrier Borne Aircraft Attack on Kirkenes and Petsamo occurs, leading to significant losses but highlighting the political necessity of the operation despite its minimal material results."
-        },
-        {
-            "event": "e_2",
-            "date": "25th May, 1948",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "ADVENTURE sails at 1745 accompanied by ANTHONY, amidst concerns of enemy submarines."
+        },
+        {
+            "event": "e_2",
+            "date": "26th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The operation by the First Cruiser Squadron emphasizes the need for improved air reconnaissance and preparation to avoid errors in execution, recognizing the gallantry of the aircraft crews amid difficult conditions."
+            "eventSummary": "Force P sails from Seidisfiord at 2300, tasked with reconnaissance and patrol duties."
+        },
+        {
+            "event": "e_3",
+            "date": "26th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "ACHATES arrives in the harbor in tow of ANTHONY, receiving assistance for accommodations."
         }
     ]
 }

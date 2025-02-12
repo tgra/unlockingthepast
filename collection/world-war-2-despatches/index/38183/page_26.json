@@ -1,76 +1,79 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Kurusu",
-            "p_2": "General MacArthur"
+            "p_1": "Commander-in-Chief, India",
+            "p_2": "General Headquarters, Far East"
         },
         "locations": {
-            "l_1": "Japan",
-            "l_2": "Southern Indo-China",
+            "l_1": "Brisbane",
+            "l_2": "Sourabaya",
             "l_3": "Malaya",
-            "l_4": "Koepang",
-            "l_5": "Dilli",
-            "l_6": "Timor",
-            "l_7": "Philippines",
-            "l_8": "Netherlands East Indies",
-            "l_9": "China Sea",
-            "l_10": "Ambon"
+            "l_4": "India",
+            "l_5": "Middle East",
+            "l_6": "London",
+            "l_7": "Ipoh",
+            "l_8": "Kuala Kangsar",
+            "l_9": "Krian",
+            "l_10": "Manik",
+            "l_11": "Kuantan",
+            "l_12": "Johore",
+            "l_13": "Singapore Fortress",
+            "l_14": "Kuala Lumpur",
+            "l_15": "Selangor",
+            "l_16": "Sungei Patani"
         },
         "events": {
-            "e_1": "Japanese preparations for overseas expedition",
-            "e_2": "Mobilisation of Volunteers",
-            "e_3": "Occupation of Dilli by Australian and Dutch forces",
-            "e_4": "A.D.A and A.D.B agreements"
+            "e_1": "Request for Reinforcements",
+            "e_2": "Arrival of Aircraft",
+            "e_3": "Scorched Earth Policy",
+            "e_4": "Heavy Enemy Air Attack"
         },
         "organisations": {
-            "o_1": "F.E.C.B.",
-            "o_2": "Royal Australian Air Force",
-            "o_3": "United States Army"
+            "o_1": "Inter-Allied Conference",
+            "o_2": "General Headquarters, Far East",
+            "o_3": "A.I.F."
         }
     },
     "keywords": [
-        "Japanese shipping",
-        "embargo",
-        "hostilities",
-        "reconnaissance",
-        "photographic reconnaissance",
-        "air communications",
-        "A.D.A.",
-        "A.D.B."
+        "reinforcements",
+        "aircraft",
+        "Japanese",
+        "divisions",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Intelligence Gathering",
-        "Diplomacy",
-        "Strategic Decisions"
+        "Reinforcements",
+        "Air Strategy",
+        "Defensive Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Intelligence Gathering": [
+        "Reinforcements": [
             "e_1",
             "e_2"
         ],
-        "Diplomacy": [
-            "e_1",
+        "Air Strategy": [
+            "e_2",
             "e_4"
         ],
-        "Strategic Decisions": [
-            "e_1",
-            "e_4"
+        "Defensive Strategy": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 1941",
+            "date": "8th December 1941 onwards",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1"
@@ -79,45 +82,48 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "Japanese preparations for overseas expedition are being closely monitored due to unusual shipping patterns indicating potential military activity."
+            "eventSummary": "Many requests for reinforcements are being made from General Headquarters, Far East, which are essential to stabilize the situation in Malaya."
         },
         {
             "event": "e_2",
-            "date": "December 1, 1941",
+            "date": "23rd December 1941",
             "locations": [
+                "l_3",
                 "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "Orders are issued on December 1 for the mobilization of Volunteers in response to Japanese military preparations."
+            "eventSummary": "Five Blenheims from the Middle East and four Hudsons from Australia arrive in Singapore, reinforcing the air capabilities."
         },
         {
             "event": "e_3",
-            "date": "Mid December 1941",
+            "date": "December 1941",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_3"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "In mid December, a combined Australian and Dutch force occupies Dilli as part of efforts to secure Timor against Japanese occupation."
+            "eventSummary": "A scorched earth policy is ordered in accordance with instructions from London during this period."
         },
         {
             "event": "e_4",
-            "date": "November 1941",
-            "locations": [],
+            "date": "December 1941",
+            "locations": [
+                "l_7",
+                "l_14"
+            ],
             "persons": [],
             "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The A.D.A. and A.D.B. agreements are emphasized, indicating preparedness for joint operations in Asia amid the growing threat from Japan."
+            "connectedEvents": [],
+            "eventSummary": "Heavy enemy air attacks are falling on Ipoh aerodrome, pushing our fighters further South to Kuala Lumpur."
         }
     ]
 }

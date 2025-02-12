@@ -2,104 +2,140 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Tonga"
+            "l_1": "Marne",
+            "l_2": "Strasbourg",
+            "l_3": "Saarbrucken",
+            "l_4": "Metz",
+            "l_5": "Poland",
+            "l_6": "Germany",
+            "l_7": "Western Front",
+            "l_8": "Nancy",
+            "l_9": "Mulhouse",
+            "l_10": "Paris",
+            "l_11": "Pas de Calais",
+            "l_12": "Low Countries",
+            "l_13": "Northern France",
+            "l_14": "Seine",
+            "l_15": "Loire",
+            "l_16": "North-Western France",
+            "l_17": "Belgium",
+            "l_18": "Elbeuf",
+            "l_19": "Rouen"
         },
         "events": {
-            "e_1": "Operation Neptune Air Lift",
+            "e_1": "Attacks on Rail Centres",
             "e_2": "D-Day",
-            "e_3": "Attacks on Enemy Communications",
-            "e_4": "Close Support Operations",
-            "e_5": "Attacks on Coastal Garrisons",
-            "e_6": "Fighter Cover to the Assault and the Shipping Lanes",
-            "e_7": "Enemy Air Reaction and the Allied Attacks on the G.A.F. and its bases",
-            "e_8": "Defence against Flying Bombs and Attacks on Crossbow targets",
-            "e_9": "Operations of First Allied Airborne Army",
-            "e_10": "Attacks on Naval Targets",
-            "e_11": "Strategical Bombing Pointblank"
+            "e_3": "Destruction of Bridges",
+            "e_4": "Air Attacks on Communications"
         },
         "organisations": {
-            "o_1": "U.S. IXth Troop Carrier Command",
-            "o_2": "Royal Air Force"
+            "o_1": "A.E.A.F.",
+            "o_2": "R.A.F. Bomber Command",
+            "o_3": "U.S. Eighth Air Force",
+            "o_4": "U.S. Eighth Fighter Command"
         }
     },
     "keywords": [
-        "Operation Neptune",
-        "Air Lift",
-        "Troops",
-        "Ammunition",
-        "Artillery Weapons",
-        "D-Day",
-        "Tonga",
-        "Allied Airborne Army",
-        "Strategical Bombing"
+        "fuel",
+        "ammunition",
+        "air attacks",
+        "reinforcements",
+        "battle zone",
+        "disorganisation",
+        "supply columns",
+        "fighter bombers"
     ],
     "themes": [
         "Military Operations",
+        "Air Attacks",
         "Logistics",
-        "Strategic Air Support",
-        "Tactical Coordination"
+        "Infrastructure Destruction"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_3",
-            "e_4",
-            "e_5",
-            "e_6",
-            "e_7",
-            "e_8",
-            "e_9",
-            "e_10",
-            "e_11"
+            "e_4"
+        ],
+        "Air Attacks": [
+            "e_1",
+            "e_4"
         ],
         "Logistics": [
-            "e_1"
+            "e_2",
+            "e_4"
         ],
-        "Strategic Air Support": [
-            "e_6",
-            "e_9"
-        ],
-        "Tactical Coordination": [
-            "e_4",
-            "e_5"
+        "Infrastructure Destruction": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1944",
+            "date": "June 6, 1944 to July 31, 1944",
             "locations": [
-                "l_1"
+                "l_7",
+                "l_10",
+                "l_14",
+                "l_15"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4",
-                "e_5",
-                "e_6",
-                "e_7",
-                "e_8",
-                "e_9",
-                "e_10",
-                "e_11"
+                "e_4"
             ],
-            "eventSummary": "Operation Neptune Air Lift currently facilitates the successful transport of troops and equipment to support allied operations after D-Day."
+            "eventSummary": "From June 6 to July 31, 1944, significant air attacks are conducted on rail centres, tunnels, and embankments as part of the broader Allied military strategy."
         },
         {
             "event": "e_2",
-            "date": "6th June 1944",
-            "locations": [],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "date": "June 6, 1944",
+            "locations": [
+                "l_10"
             ],
-            "eventSummary": "D-Day marks the pivotal Allied invasion of Normandy, initiating extensive military operations in Europe."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On D-Day, the Allied forces initiate a large-scale invasion into occupied territories, emphasizing the need to destroy infrastructure critical to enemy movements."
+        },
+        {
+            "event": "e_3",
+            "date": "June and July 1944",
+            "locations": [
+                "l_14",
+                "l_15",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "During June and July 1944, attacks targeting bridges facilitate the disruption of enemy supply lines, aiding the Allied advance."
+        },
+        {
+            "event": "e_4",
+            "date": "June and July 1944",
+            "locations": [
+                "l_10",
+                "l_18",
+                "l_19"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "In June and July 1944, air attacks significantly disrupt enemy communications and logistics, forcing enemy units to operate under challenging conditions."
         }
     ]
 }

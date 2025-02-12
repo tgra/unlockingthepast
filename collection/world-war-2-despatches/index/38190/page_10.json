@@ -1,185 +1,131 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "R. E. Moody"
+            "p_1": "Commander MainJand",
+            "p_2": "Major A. J. Dewar",
+            "p_3": "Captain C. G. Turner",
+            "p_4": "Brigadier Wallis",
+            "p_5": "H.E. The Governor",
+            "p_6": "Lt.-General Sakai"
         },
         "locations": {
-            "l_1": "Mount Cameron",
-            "l_2": "Mount Parish",
-            "l_3": "Kowloon Peninsula",
-            "l_4": "Leighton Hill",
-            "l_5": "Morrison Hill",
-            "l_6": "Victoria",
-            "l_7": "Stanley",
-            "l_8": "Aberdeen",
-            "l_9": "Bennets Hill",
-            "l_10": "Wanchai",
-            "l_11": "Pemmnsular Hotel",
-            "l_12": "Little Hong Kong",
-            "l_13": "Tai Hang",
-            "l_14": "China Fleet Club",
-            "l_15": "Fortress H.Q.",
-            "l_16": "Government House"
+            "l_1": "Lyemun Strait",
+            "l_2": "Devils Peak Peninsula",
+            "l_3": "Hai Wan",
+            "l_4": "Aberdeen",
+            "l_5": "Junk Bay",
+            "l_6": "Hang Hau area",
+            "l_7": "Tytam Gap",
+            "l_8": "Green Island",
+            "l_9": "Kowloon",
+            "l_10": "Victoria Pier",
+            "l_11": "Bailey's Shipyard",
+            "l_12": "North East sector",
+            "l_13": "North West sector",
+            "l_14": "Victoria Peninsula",
+            "l_15": "Kennedy Town"
         },
         "events": {
-            "e_1": "Attack on Mount Cameron",
-            "e_2": "Attack on Leighton Hill",
-            "e_3": "Retreat through Canal Road",
-            "e_4": "Bombing of Morrison Hill",
-            "e_5": "General Move of Enemy Northwards",
-            "e_6": "Mortar Bombardment in Victoria",
-            "e_7": "Attack on Stanley",
-            "e_8": "Retaliation near Wanchai"
+            "e_1": "Evacuation of 5/7 Rajput Regt.",
+            "e_2": "Demand for surrender by Japanese Forces",
+            "e_3": "Accidental explosion of launch"
         },
         "organisations": {
-            "o_1": "Royal Scots",
-            "o_2": "Royal Marines",
-            "o_3": "5/7 Rajput Regt.",
+            "o_1": "Royal Artillery",
+            "o_2": "Royal Navy",
+            "o_3": "Harbour Master",
             "o_4": "2 Royal Scots",
-            "o_5": "1 Middlesex Regt.",
-            "o_6": "HK.V.D.C."
+            "o_5": "2/14 Punjab Regt."
         }
     },
     "keywords": [
-        "enemy",
-        "artillery",
-        "bombing",
-        "reinforcements",
+        "Japanese attack",
+        "evacuation",
         "casualties",
-        "defensive position"
+        "artillery fire",
+        "surrender demand",
+        "explosion"
     ],
     "themes": [
         "Military Operations",
-        "Enemy Attacks",
-        "Defensive Strategies"
+        "Evacuations",
+        "Combat Engagements",
+        "Diplomacy",
+        "Logistical Challenges"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_4",
-            "e_6",
-            "e_7",
-            "e_8"
+            "e_2"
         ],
-        "Defensive Strategies": [
-            "e_3",
-            "e_5"
+        "Evacuations": [
+            "e_1"
+        ],
+        "Combat Engagements": [
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_2"
+        ],
+        "Logistical Challenges": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 24, 1941",
+            "date": "12/13 December 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_8"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_4",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3"
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The enemy reinforces their positions on Mount Cameron, leading to escalating tension and strategic positioning by the Royal Scots and Royal Marines."
+            "eventSummary": "The evacuation of 5/7 Rajput Regt. is executed under heavy enemy bombardment, with significant logistical challenges faced due to water transport difficulties."
         },
         {
             "event": "e_2",
-            "date": "December 24, 1941, 1500 hours",
+            "date": "13 December 1941",
             "locations": [
-                "l_4"
+                "l_9",
+                "l_10"
             ],
-            "persons": [],
-            "organisations": [
-                "o_2",
-                "o_4"
+            "persons": [
+                "p_6",
+                "p_5"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "An enemy attack develops on Leighton Hill following a severe bombardment, causing significant resistance from the defenders."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A launch bearing a flag of truce arrives at Victoria Pier with a demand for unconditional surrender from Lt.-General Sakai, which is categorically rejected."
         },
         {
             "event": "e_3",
-            "date": "December 24, 1941, 1645 hours",
+            "date": "13 December 1941",
             "locations": [
-                "l_12",
-                "l_10"
+                "l_8"
             ],
             "persons": [],
             "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Defensive garrison authorized to escape through Canal Road after being encircled by enemy forces, resulting in casualties."
-        },
-        {
-            "event": "e_4",
-            "date": "December 24, 1941, 1730 hours",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_5"
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Morrison Hill endures heavy shelling, but the defenders manage to escape to safety after enduring attacks."
-        },
-        {
-            "event": "e_5",
-            "date": "December 24, 1941, 2200 hours",
-            "locations": [
-                "l_7",
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Reports indicate a general movement of enemy forces from Mount Nicholson towards the Race Course."
-        },
-        {
-            "event": "e_6",
-            "date": "December 24/25, 1941",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The Central District of Victoria is subjected to a mortar bombardment with no communication disruptions reported."
-        },
-        {
-            "event": "e_7",
-            "date": "December 25, 1941, 0000 hours",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_6"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "An attack is reported at Stanley, with enemy forces penetrating behind local defenses."
-        },
-        {
-            "event": "e_8",
-            "date": "December 25, 1941, before dawn",
-            "locations": [
-                "l_10"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A successful retaliation against enemy forces is carried out to silence their light infantry guns."
+            "eventSummary": "A launch accidentally explodes as it approaches the Vehicular Ferry, resulting in the loss of all lives on board."
         }
     ]
 }

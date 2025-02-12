@@ -1,97 +1,128 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C. B. Barry",
-            "p_2": "D. C. Ingram",
-            "p_3": "A. A. Duff",
-            "p_4": "H. Henty-Creer",
-            "p_5": "D. Cameron",
-            "p_6": "B. C. G. Place"
+            "p_1": "Lieutenant Hudspeth"
         },
         "locations": {
-            "l_1": "Andoy",
-            "l_2": "Lerwick",
-            "l_3": "Tirpitz"
+            "l_1": "Smalfiord",
+            "l_2": "Sandoy Fiord",
+            "l_3": "Soroy Island",
+            "l_4": "Ytre Reppafiord",
+            "l_5": "O Fiord",
+            "l_6": "Kaafiord",
+            "l_7": "Tommerholm Island",
+            "l_8": "Alten Fiord",
+            "l_9": "Andoy",
+            "l_10": "Narvik",
+            "l_11": "North Russia"
         },
         "events": {
-            "e_1": "Operation of X-craft",
-            "e_2": "Sinking of X.10"
+            "e_1": "Recovery position F.B.",
+            "e_2": "Search for STUBBORN",
+            "e_3": "Movements of Submarines after Slipping X-craft",
+            "e_4": "Patrol off Andoy"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "Royal Navy"
+            "o_1": "Royal Navy"
         }
     },
     "keywords": [
-        "STUBBORN",
-        "X.10",
-        "gale force",
-        "training",
-        "towing submarines",
-        "seamanship",
-        "operation success"
+        "X-craft",
+        "submarine",
+        "patrol",
+        "attack",
+        "search",
+        "operational report"
     ],
     "themes": [
         "Military Operations",
-        "Courage and Valor",
-        "Leadership and Training",
-        "Naval Challenges"
+        "Naval Strategy",
+        "Search and Rescue",
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_3",
+            "e_4"
+        ],
+        "Search and Rescue": [
             "e_2"
         ],
-        "Courage and Valor": [
-            "e_2"
-        ],
-        "Leadership and Training": [
-            "e_1"
-        ],
-        "Naval Challenges": [
-            "e_1"
+        "Reconnaissance": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 1943",
+            "date": "23rd September",
             "locations": [
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The operation involving X-craft culminates in the successful execution of advanced naval tactics with careful planning and officer training contributing to high operational efficiency."
-        },
-        {
-            "event": "e_2",
-            "date": "3rd October",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "X.10 is scuttled after the crew is evacuated due to the risk of an approaching gale, demonstrating key command decisions for crew safety amid challenging conditions."
+            "eventSummary": "Recovery position F.B. is reached about 2300Z on 23rd September, and a search is carried out."
+        },
+        {
+            "event": "e_2",
+            "date": "28th September",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "At 0100 on 28th September, contact is made with STUBBORN, and X.z0 is in tow by 0150."
+        },
+        {
+            "event": "e_3",
+            "date": "20th September",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Movements of Submarines after slipping X-craft occur on 20th September."
+        },
+        {
+            "event": "e_4",
+            "date": "22nd September",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The patrol off Andoy is ordered to intercept any main units on 22nd September."
         }
     ]
 }

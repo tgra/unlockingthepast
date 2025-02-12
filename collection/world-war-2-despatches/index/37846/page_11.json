@@ -1,131 +1,85 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "wing commander",
-            "p_2": "force commander",
-            "p_3": "B.G.S.",
-            "p_4": "squadron commander"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Elason",
-            "l_2": "Larissa",
-            "l_3": "Niamata",
-            "l_4": "Almyros",
+            "l_1": "Athens",
+            "l_2": "Argos",
+            "l_3": "Crete",
+            "l_4": "Egypt",
             "l_5": "Greece",
-            "l_6": "Struma valley",
-            "l_7": "Mt. Beles",
-            "l_8": "Rupel Pass",
-            "l_9": "Sofia",
-            "l_10": "Gorna Djumaya",
-            "l_11": "Simitli",
-            "l_12": "Petrich",
-            "l_13": "Athens"
+            "l_6": "Albania",
+            "l_7": "Yugo-Slavia"
         },
         "events": {
-            "e_1": "Balkan campaign",
-            "e_2": "German Advance",
-            "e_3": "air raids on Sofia, Gorna Djumaya, Simitli and Petrich"
+            "e_1": "Final Evacuation of Air Forces",
+            "e_2": "Greek Campaign"
         },
         "organisations": {
-            "o_1": "Air Defence Centre",
-            "o_2": "Greek Observer System",
-            "o_3": "RAF"
+            "o_1": "R.A.F.",
+            "o_2": "B.O.A.C."
         }
     },
     "keywords": [
-        "communication",
-        "air defence",
-        "fighter operations",
-        "reconnaissance",
-        "German Advance",
-        "Balkan campaign",
-        "air raids"
+        "Hurricanes",
+        "evacuation",
+        "air forces",
+        "German air attack",
+        "flying boats",
+        "Sunderland"
     ],
     "themes": [
         "Military Operations",
-        "Air Defence Coordination",
-        "Reconnaissance",
-        "Combat Engagements"
+        "Evacuations",
+        "Gallantry of Air Forces",
+        "Geopolitical Considerations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Air Defence Coordination": [
+        "Evacuations": [
             "e_1"
         ],
-        "Combat Engagements": [
-            "e_3"
+        "Gallantry of Air Forces": [
+            "e_2"
+        ],
+        "Geopolitical Considerations": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th April",
+            "date": "April 23, 1941",
             "locations": [
-                "l_1",
                 "l_2",
-                "l_3",
-                "l_4"
+                "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Balkan campaign sees the establishment of air defence measures and operational coordination among air and ground forces."
-        },
-        {
-            "event": "e_2",
-            "date": "6th April",
-            "locations": [
-                "l_1",
-                "l_7",
-                "l_8"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "German forces begin their advance, prompting fighter patrols and reconnaissance missions in response to enemy movements."
-        },
-        {
-            "event": "e_3",
-            "date": "6th April",
-            "locations": [
-                "l_9",
-                "l_10",
-                "l_11",
-                "l_12"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "Successful air raids are conducted against key enemy locations, resulting in significant strategic gains."
+            "eventSummary": "On April 23, 1941, the evacuation of air forces commenced with Hurricanes being dispatched to Argos and eventually to Crete due to concentrated German attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "1941",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "In 1941, the Greek Campaign witnessed significant military operations where British forces faced considerable challenges but managed to maintain a considerable offensive effort."
         }
     ]
 }

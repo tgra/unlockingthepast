@@ -1,81 +1,101 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Vice Admiral",
+            "p_2": "R.A. Dover",
+            "p_3": "Commander-in-Chief",
+            "p_4": "Rear Admiral",
+            "p_5": "Military officers"
+        },
         "locations": {
             "l_1": "Dunkirk",
-            "l_2": "Calais",
-            "l_3": "Boulogne",
-            "l_4": "Cherbourg"
+            "l_2": "Dover",
+            "l_3": "Bray",
+            "l_4": "Eastern Aqn",
+            "l_5": "coast"
         },
         "events": {
-            "e_1": "Operation Dynamo",
-            "e_2": "Evacuation of French Troops"
+            "e_1": "Evacuation of the B.E.F.",
+            "e_2": "Operation at Dunkirk",
+            "e_3": "Conference with the Vice Admiral"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Coastal Command",
-            "o_3": "French Navy"
+            "o_1": "B.E.F.",
+            "o_2": "War Office"
         }
     },
     "keywords": [
-        "Aircraft",
-        "Squadrons",
-        "Evacuation",
-        "Naval Operations",
-        "Troops",
         "Dunkirk",
-        "French Navy"
+        "evacuation",
+        "destroyers",
+        "B.E.F.",
+        "traffic organization"
     ],
     "themes": [
         "Military Operations",
-        "Cooperation",
-        "Evacuation"
+        "Evacuation",
+        "Force Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Cooperation": [
-            "e_2"
-        ],
         "Evacuation": [
-            "e_1",
-            "e_2"
+            "e_1"
+        ],
+        "Force Coordination": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th May - 1st June",
+            "date": "1st June 1940",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_5"
+            ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "Operation Dynamo is an evacuation operation occurring from Dunkirk, involving British squadrons attacking enemy positions and providing air support while French naval assets assist in evacuating troops."
+            "eventSummary": "The evacuation of the B.E.F. is planned with a goal to reduce the army to a rear guard of 4,000 by 1st June."
         },
         {
             "event": "e_2",
-            "date": "Last three nights of May 1940",
+            "date": "31st May 1940",
             "locations": [
                 "l_1"
             ],
-            "persons": [],
-            "organisations": [
-                "o_3"
+            "persons": [
+                "p_1",
+                "p_4"
             ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Operation at Dunkirk continues with ongoing efforts to lift personnel from the beaches amidst an urgent military situation."
+        },
+        {
+            "event": "e_3",
+            "date": "31st May 1940",
+            "locations": [],
+            "persons": [
+                "p_1",
+                "p_5"
+            ],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "French Navy vessels are involved in the evacuation of French troops from Dunkirk harbour and surrounding beaches, collaborating closely with British forces during Operation Dynamo."
+            "eventSummary": "Military officers attend a conference with the Vice Admiral to finalize plans for the evacuation."
         }
     ]
 }

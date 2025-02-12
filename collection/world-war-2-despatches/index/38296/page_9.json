@@ -1,105 +1,87 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice Admiral",
-            "p_2": "Commander-in-Chief"
+            "p_1": "Vice Admiral 1st Battle Squadron"
         },
         "locations": {
             "l_1": "Crete",
-            "l_2": "Melos Harbour",
-            "l_3": "Alexandria",
-            "l_4": "Kaso Strait",
-            "l_5": "Suda Bay"
+            "l_2": "Canea",
+            "l_3": "Suda",
+            "l_4": "Heraklion",
+            "l_5": "Aegean",
+            "l_6": "Eastern Mediterranean",
+            "l_7": "Alexandria",
+            "l_8": "Scarpanto",
+            "l_9": "Tymbaki"
         },
         "events": {
-            "e_1": "Raid on Melos Harbour",
-            "e_2": "Convoy A.N.31",
-            "e_3": "Landing at Suda Bay"
+            "e_1": "M.A.Q.3",
+            "e_2": "Naval operation on 25th May"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "1st Battle Squadron"
+            "o_1": "Royal Air Force",
+            "o_2": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "aircraft",
-        "dive bombing",
-        "naval operation",
-        "intelligence",
-        "evacuation"
+        "bombing attack",
+        "naval headquarters",
+        "air attacks",
+        "Chiefs of Staff",
+        "naval action"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Naval Engagements"
+        "Naval Warfare",
+        "Aerial Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Strategic Decisions": [
+        "Naval Warfare": [
+            "e_1",
+            "e_2"
+        ],
+        "Aerial Warfare": [
             "e_1"
-        ],
-        "Naval Engagements": [
-            "e_2",
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 26th-27th",
+            "date": "25th May 1941",
             "locations": [
-                "l_2",
-                "l_1"
+                "l_1",
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Vice Admiral orders a raid on Melos Harbour in response to enemy activity detected via intelligence regarding an impending invasion of Crete."
+            "eventSummary": "Vice Admiral 1st Battle Squadron coordinates the operation known as M.A.Q.3, which involves a series of naval bombings at Scarpanto aerodrome, utilizing Fleet Air Arm aircraft from FORMIDABLE."
         },
         {
             "event": "e_2",
-            "date": "May 26th",
+            "date": "25th May 1941",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_3",
+                "l_9"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "Convoy A.N.31, consisting of two ships, departs from Alexandria to maintain supplies to Crete under escort."
-        },
-        {
-            "event": "e_3",
-            "date": "May 27th",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Ships ABDIEL, HERO, and NIZAM land 750 Special Service Troops and Army stores at Suda Bay, providing the last reinforcement for Crete."
+            "eventSummary": "The naval situation assessed on the morning of 25th May indicates ongoing operations and troop movements towards Crete, highlighting the challenges faced due to enemy actions."
         }
     ]
 }

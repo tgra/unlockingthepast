@@ -1,112 +1,141 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Wing Commander Powell",
-            "p_2": "Group Captain McCauley",
-            "p_3": "Wing Commander Duncan"
+            "p_1": "Air Chief Marshal Sir Robert Brooke-Popham"
         },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Palembang",
-            "l_3": "Batavia",
-            "l_4": "Oesthaven",
-            "l_5": "Java",
-            "l_6": "Sunda Straits",
-            "l_7": "Banka Straits",
-            "l_8": "Kuantan",
-            "l_9": "Tengah",
-            "l_10": "Pakenbaroe"
+            "l_1": "Malaya",
+            "l_2": "Singapore Island",
+            "l_3": "Philippines",
+            "l_4": "Hanoi",
+            "l_5": "Kunming",
+            "l_6": "Butterworth",
+            "l_7": "Malacca"
         },
         "events": {
-            "e_1": "Japanese attack on the Palembang area",
-            "e_2": "Endau landing",
-            "e_3": "Arrival of H.M.S. Indomitable"
+            "e_1": "Outbreak of war",
+            "e_2": "Japanese aggression",
+            "e_3": "Formation of Bomb Disposal Unit",
+            "e_4": "Organisation of Ait/Sea Rescue Service",
+            "e_5": "Evacuation of R.A.F. sick and wounded"
         },
         "organisations": {
-            "o_1": "No. 84 Squadron",
-            "o_2": "No. 211 Squadron",
-            "o_3": "No. 62 (B) Squadron",
-            "o_4": "No. 8 (GR) Squadron R.A.A.F.",
-            "o_5": "Dutch Buffalo Squadron",
-            "o_6": "H.M.S. Indomitable"
+            "o_1": "G.H.Q.",
+            "o_2": "A.H.Q.",
+            "o_3": "R.A.F.",
+            "o_4": "Malayan Volunteer Air-Force"
         }
     },
     "keywords": [
-        "air attack",
-        "reconnaissance",
-        "military operations",
-        "aircraft arrival",
-        "Japanese forces"
+        "Command",
+        "equipment",
+        "personnel",
+        "G.H.Q.",
+        "Japanese Naval Air Arm",
+        "Japanese Army Air Forces"
     ],
     "themes": [
         "Military Operations",
-        "Air Defense",
-        "Logistical Challenges"
+        "Personnel Problems",
+        "Administrative Challenges",
+        "Intelligence"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Air Defense": [
-            "e_1"
+        "Personnel Problems": [
+            "e_1",
+            "e_5"
         ],
-        "Logistical Challenges": [
-            "e_2",
-            "e_3"
+        "Administrative Challenges": [
+            "e_1",
+            "e_2"
+        ],
+        "Intelligence": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23 January",
+            "date": "1941",
             "locations": [
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_5"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "On January 23, Japanese forces initiate an attack on the Palembang area, prompting logistical adjustments by Allied squadrons."
+            "eventSummary": "The outbreak of war in Malaya affects the Command."
         },
         {
             "event": "e_2",
-            "date": "26 January",
+            "date": "1941",
             "locations": [
-                "l_2"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "On January 26, the Endau landing takes place as No. 225 (B) Group dispatches their available aircraft to support the operation amidst the ongoing threat from Japanese forces."
+            "eventSummary": "Japanese aggression becomes clearer towards the end of November 1941."
         },
         {
             "event": "e_3",
-            "date": "28 January",
+            "date": "June 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A Bomb Disposal Unit is formed to serve all Services."
+        },
+        {
+            "event": "e_4",
+            "date": "Mid-December 1941",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An Ait/Sea Rescue Service begins operations saving lives of aircrew."
+        },
+        {
+            "event": "e_5",
+            "date": "1941",
             "locations": [
-                "l_5"
+                "l_1"
             ],
             "persons": [],
             "organisations": [
-                "o_6"
+                "o_1",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "H.M.S. Indomitable arrives on January 28, carrying 48 Hurricanes to strengthen the allied presence in Java amid escalating military operations."
+            "connectedEvents": [],
+            "eventSummary": "Arrangements for the evacuation of R.A.F. sick and wounded are established."
         }
     ]
 }

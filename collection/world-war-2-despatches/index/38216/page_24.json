@@ -1,47 +1,65 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Wing Commander Maguire"
+            "p_1": "Mr. Duff Cooper",
+            "p_2": "Sir George Sansom",
+            "p_3": "Mr. Bowden",
+            "p_4": "Lieut.-General A. E. Percival",
+            "p_5": "Air Vice Marshal Pulford"
         },
         "locations": {
-            "l_1": "Palembang",
-            "l_2": "Banka Straits",
-            "l_3": "Singapore",
-            "l_4": "Batavia",
-            "l_5": "Tengah"
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Kuantan",
+            "l_4": "South Siamese coast",
+            "l_5": "Penang Town",
+            "l_6": "Trengganu",
+            "l_7": "Sinkawang",
+            "l_8": "Singora aerodrome",
+            "l_9": "Kedah province",
+            "l_10": "Ipoh"
         },
         "events": {
-            "e_1": "Operations by No. 226 (F) Group",
-            "e_2": "Combined attack on Kiuang aerodrome",
-            "e_3": "Japanese air attack on P.I. aerodrome"
+            "e_1": "Formation of War Council",
+            "e_2": "Attacks on Penang Town",
+            "e_3": "Attack on Singora aerodrome",
+            "e_4": "Evacuation of Jitra position"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "No. 226 (F) Group"
+            "o_1": "War Council",
+            "o_2": "A.H.Q.",
+            "o_3": "R.A.A.F.",
+            "o_4": "R.A.F."
         }
     },
     "keywords": [
-        "Hurricanes",
-        "Japanese Air Force",
-        "Defence",
-        "Operations",
-        "Reconnaissance"
+        "War Council",
+        "Japanese aircraft",
+        "Malaya",
+        "A.H.Q.",
+        "Kedah province",
+        "Air support"
     ],
     "themes": [
         "Military Operations",
-        "Air Defence",
-        "Strategic Deployments"
+        "Defence Strategies",
+        "Aerial Warfare",
+        "Military Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Defence Strategies": [
+            "e_4"
+        ],
+        "Aerial Warfare": [
             "e_3"
         ],
-        "Air Defence": [
-            "e_3"
-        ],
-        "Strategic Deployments": [
+        "Military Strategy": [
             "e_1",
             "e_2"
         ]
@@ -49,61 +67,65 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 2-5, 1942",
+            "date": "roth December 1941",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "No. 226 (F) Group conducts multiple sorties to escort shipping through the Banka Straits while facing Japanese reconnaissance and air attacks."
+            "connectedEvents": [],
+            "eventSummary": "On 7th December 1941, Mr. Duff Cooper forms the War Council in Malaya to oversee military operations."
         },
         {
             "event": "e_2",
-            "date": "February 3, 1942",
+            "date": "11th December 1941",
             "locations": [
-                "l_3",
-                "l_4"
+                "l_5"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Nine aircraft from No. 258 Squadron leave for Singapore to engage in a failed combined attack on Kiuang aerodrome."
+            "connectedEvents": [],
+            "eventSummary": "On 11th December 1941, eighty Japanese aircraft attack Penang Town without any available protection."
         },
         {
             "event": "e_3",
-            "date": "February 6-8, 1942",
+            "date": "12th December 1941",
             "locations": [
-                "l_1"
+                "l_8"
             ],
             "persons": [
-                "p_1"
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 12th December 1941, an unsuccessful raid is conducted on Singora aerodrome as part of the bombing strategy against the Japanese."
+        },
+        {
+            "event": "e_4",
+            "date": "11th/12th December 1941",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Japanese forces maintain daily reconnaissance over Palembang, leading to significant air attacks on the P.I. aerodrome with several aircraft losses."
+            "connectedEvents": [],
+            "eventSummary": "On 11th and 12th December 1941, the 11th (Indian) Division is attacked, leading to the evacuation of the Jitra position."
         }
     ]
 }

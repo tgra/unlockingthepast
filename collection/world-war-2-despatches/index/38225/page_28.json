@@ -1,125 +1,170 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "F.0.0. 2",
-            "p_2": "Senior Officer, Minesweepers",
-            "p_3": "Senior Naval Officer (L)",
-            "p_4": "Captain (D), 12th Destroyer Flotilla",
-            "p_5": "Flag Officer Commanding, Force F",
-            "p_6": "Captain (D)"
+            "p_1": "Rear-Admiral E. N. Syfret",
+            "p_2": "Major-General R. G. Sturges",
+            "p_3": "Brigadier F. W. Festing",
+            "p_4": "Brigadier M. S. Lush",
+            "p_5": "Captain J. M. Howson",
+            "p_6": "Colonel Melville",
+            "p_7": "Colonel Claerebout",
+            "p_8": "Capitaine de Vaisseau Maerten",
+            "p_9": "Colonel Rouves",
+            "p_10": "M. Bourgine"
         },
         "locations": {
-            "l_1": "Antsirane",
-            "l_2": "KEREN",
-            "l_3": "Ambararata Bay",
-            "l_4": "Oranjia Peninsula",
-            "l_5": "Nosi Hara",
-            "l_6": "Cape Amber",
-            "l_7": "English Bay"
+            "l_1": "Diego Suarez",
+            "l_2": "Madagascar",
+            "l_3": "South",
+            "l_4": "Antsirane",
+            "l_5": "Orangea Peninsula",
+            "l_6": "Red beaches",
+            "l_7": "Blue beaches",
+            "l_8": "Durban",
+            "l_9": "Scotland",
+            "l_10": "London"
         },
         "events": {
-            "e_1": "Bombardment of the Oranjia Peninsula",
-            "e_2": "AURICULA strikes a mine",
-            "e_3": "Air raid warning Red due to hostile aircraft",
-            "e_4": "Ordering of DEVONSHIRE by Flag Officer Commanding",
-            "e_5": "Potential submarine attack on anchorage"
+            "e_1": "Meeting on board flagship",
+            "e_2": "Surrender arrangements conference",
+            "e_3": "Operational orders issuance",
+            "e_4": "Amphibious assault",
+            "e_5": "Assault brigade advance"
         },
         "organisations": {
-            "o_1": "12th Destroyer Flotilla",
-            "o_2": "Force F"
+            "o_1": "United Nations",
+            "o_2": "South African Government",
+            "o_3": "Royal Navy"
         }
     },
     "keywords": [
-        "Bombardment",
-        "Communications",
-        "Mine",
-        "Aircraft",
-        "Naval Operations"
+        "surrender",
+        "consolidation",
+        "assault brigade",
+        "operations",
+        "casualties"
     ],
     "themes": [
         "Military Operations",
-        "Communication Breakdowns",
-        "Naval Warfare",
-        "Mine Operations",
-        "Air Raids"
+        "Consolidation",
+        "Surrender Negotiations",
+        "Casualties Assessment"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
-        ],
-        "Communication Breakdowns": [
+            "e_3",
+            "e_4",
             "e_5"
         ],
-        "Naval Warfare": [
-            "e_4"
-        ]
+        "Consolidation": [
+            "e_3"
+        ],
+        "Surrender Negotiations": [
+            "e_2"
+        ],
+        "Casualties Assessment": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "8th May",
             "locations": [
+                "l_1",
                 "l_4"
             ],
             "persons": [
-                "p_5"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8",
+                "p_9",
+                "p_10"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 8th May, Rear-Admiral E. N. Syfret and Major-General R. G. Sturges attend a meeting on board the flagship regarding the conditions of surrender."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "A subsequent meeting takes place to finalize the terms of surrender at the Residency, with various military leaders in attendance."
+        },
+        {
+            "event": "e_3",
+            "date": "8th May",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Flag Officer Commanding, Force F instructs DEVONSHIRE to prepare for the bombardment of the Oranjia Peninsula by noon, indicating the urgency and strategic importance of the operation."
-        },
-        {
-            "event": "e_2",
-            "date": "Not explicitly stated",
-            "locations": [],
-            "persons": [
-                "p_2",
-                "p_3"
+            "connectedEvents": [
+                "e_2",
+                "e_4"
             ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "AURICULA strikes a mine, prompting the Senior Officer, Minesweepers to request assistance for the wounded, indicating the dangers faced during naval operations."
-        },
-        {
-            "event": "e_3",
-            "date": "Not specified",
-            "locations": [],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "In response to sighting hostile aircraft, an air raid warning Red is initiated, highlighting the threat posed to naval and allied operations."
+            "eventSummary": "On the same day, orders for immediate consolidation are issued, detailing the positions for various infantry brigades."
         },
         {
             "event": "e_4",
-            "date": "Not specified",
-            "locations": [],
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
             "persons": [
-                "p_4"
+                "p_2"
             ],
-            "organisations": [
-                "o_1"
+            "organisations": [],
+            "connectedEvents": [
+                "e_3",
+                "e_5"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Captain (D) of the 12th Destroyer Flotilla is directed to ensure fuel transfer to DEVONSHIRE, signaling logistical efforts in support of ongoing military operations."
+            "eventSummary": "A detailed account of the amphibious assault is discussed, noting the challenges faced and the troop composition."
         },
         {
             "event": "e_5",
-            "date": "Not specified",
-            "locations": [],
-            "persons": [
-                "p_3"
+            "date": "",
+            "locations": [
+                "l_1"
             ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A warning regarding potential submarine attacks on the anchorage is received, emphasizing the ongoing threats in maritime operations."
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The assault brigade advances inland without delay, securing the beaches and seizing the initiative from the French forces."
         }
     ]
 }

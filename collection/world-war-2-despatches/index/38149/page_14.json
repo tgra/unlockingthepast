@@ -1,56 +1,77 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Ministry of Labour",
-            "p_2": "Home Guard"
+            "p_1": "Mr. G. A. Maunsell"
         },
         "locations": {
-            "l_1": "UK",
-            "l_2": "Germany"
+            "l_1": "Birmingham",
+            "l_2": "Southampton",
+            "l_3": "Hull",
+            "l_4": "East Coast",
+            "l_5": "Thames Estuary",
+            "l_6": "St. George's Channel",
+            "l_7": "Mersey",
+            "l_8": "Exeter",
+            "l_9": "Penzance",
+            "l_10": "York",
+            "l_11": "North Africa",
+            "l_12": "Far East",
+            "l_13": "North Europe",
+            "l_14": "South Coast"
         },
         "events": {
-            "e_1": "Introduction of Home Guard Rocket Batteries",
-            "e_2": "Manpower cuts in Anti-Aircraft Command"
+            "e_1": "Battle of the Atlantic",
+            "e_2": "Baedeker raids",
+            "e_3": "Day battle on 27th March 1942",
+            "e_4": "Raids in June 1942"
         },
         "organisations": {
-            "o_1": "Home Guard",
-            "o_2": "Anti-Aircraft Command"
+            "o_1": "Anti-Aircraft Command",
+            "o_2": "Bomber Command"
         }
     },
     "keywords": [
-        "Rocket Batteries",
-        "Home Guard",
-        "Manpower",
-        "Anti-Aircraft Command"
+        "German air forces",
+        "raids",
+        "convoys",
+        "bombing",
+        "defences",
+        "guns",
+        "invasion"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategies",
-        "Civilian Involvement"
+        "Defence Strategy",
+        "Strategic Decisions",
+        "Raids"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Defence Strategies": [
+        "Defence Strategy": [
             "e_1",
-            "e_2"
+            "e_4"
         ],
-        "Civilian Involvement": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "May 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_5",
+                "l_6",
+                "l_7"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
@@ -58,24 +79,49 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Home Guard Rocket Batteries are proposed and approved, providing a new response mechanism for air defence with a simplified training requirement."
+            "eventSummary": "The Battle of the Atlantic is ongoing with significant German air efforts and attacks on shipping and ports."
         },
         {
             "event": "e_2",
-            "date": "1942 - 1944",
+            "date": "April 1942",
             "locations": [
-                "l_1"
+                "l_8",
+                "l_9",
+                "l_10"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "Manpower cuts in Anti-Aircraft Command lead to a reduction in male heavy batteries and increased reliance on women and Home Guard for defence roles due to the evolving threat landscape."
+            "eventSummary": "The Baedeker raids start, targeting open towns and resulting in a defensive response from British forces."
+        },
+        {
+            "event": "e_3",
+            "date": "27th March 1942",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A day battle begins in response to British fighter sweeps, involving low-level attacks by fast fighter-bombers."
+        },
+        {
+            "event": "e_4",
+            "date": "June 1942",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Raids continue along the South Coast, with significant bombings affecting multiple coastal towns."
         }
     ]
 }

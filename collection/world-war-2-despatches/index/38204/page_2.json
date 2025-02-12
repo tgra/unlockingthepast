@@ -1,97 +1,63 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander Davies",
-            "p_2": "Admuralty",
-            "p_3": "Lieut R. L. Alexander",
-            "p_4": "Lieut D Cameron",
-            "p_5": "Lieut A Wilson",
-            "p_6": "Lieut M H. Jupp",
-            "p_7": "Lieut T L Martin",
-            "p_8": "Lieut A R. Hezlet",
-            "p_9": "Lieut H Henty-Creer",
-            "p_10": "Licut J P H. Oakley",
-            "p_11": "Licut B M McFarlane",
-            "p_12": "Lieut A. A. Duff",
-            "p_13": "Lieut B. C. G. Place",
-            "p_14": "Lieut I. S McIntosh",
-            "p_15": "2b Lieut K. R. Hudspeth"
+            "p_1": "Commander G. P. S. Davies, R.N.",
+            "p_2": "Admiral Fisher"
         },
         "locations": {
             "l_1": "Port HHZ",
-            "l_2": "Alten",
-            "l_3": "Ice Fiord",
-            "l_4": "Spitzbergen",
-            "l_5": "Alten Fiord",
-            "l_6": "Kaafiord",
-            "l_7": "Langfiord"
+            "l_2": "Norwegian coast",
+            "l_3": "Alten Fiord",
+            "l_4": "Narvik area",
+            "l_5": "Trondheim",
+            "l_6": "North Russia",
+            "l_7": "Murmansk",
+            "l_8": "Kola Inlet",
+            "l_9": "Loch Cairnbawn",
+            "l_10": "Vaenga"
         },
         "events": {
-            "e_1": "Operation Funnel",
-            "e_2": "Operation Source"
+            "e_1": "Operation Source",
+            "e_2": "X-craft attack"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Admuralty"
+            "o_1": "Boom Defence organisation",
+            "o_2": "R.A.F."
         }
     },
     "keywords": [
-        "security measures",
-        "Operation Funnel",
-        "reconnaissance",
+        "X-craft",
         "submarines",
-        "X-craft"
+        "reconnaissance",
+        "photographic",
+        "attacks"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Intelligence Gathering",
-        "Security Measures"
+        "Reconnaissance",
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Strategy": [
-            "e_1"
-        ],
-        "Intelligence Gathering": [
-            "e_1"
-        ],
-        "Security Measures": [
-            "e_1"
+        "Reconnaissance": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 20th",
+            "date": "September 20th, 1943",
             "locations": [
                 "l_1",
-                "l_2",
                 "l_3",
                 "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_5"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7",
-                "p_8",
-                "p_9",
-                "p_10",
-                "p_11",
-                "p_12",
-                "p_13",
-                "p_14",
-                "p_15"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
@@ -100,25 +66,26 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Funnel involves sailing submarines from Port HHZ to carry out strategic maneuvers against enemy ships while implementing security measures in the area."
+            "eventSummary": "The operation named Operation Source is planned to start on September 20th, 1943, aiming for a strategic attack using X-craft."
         },
         {
             "event": "e_2",
-            "date": "September 20th",
+            "date": "September 7th, 1943",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_10"
             ],
             "persons": [
                 "p_1",
-                "p_3",
-                "p_4",
-                "p_5"
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Source is coordinated alongside Operation Funnel, impacting submarine deployment strategies."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The X-craft begin their attack following successful reconnaissance, which involves the arrival of the Spitfires and the preparations leading to the major operation."
         }
     ]
 }

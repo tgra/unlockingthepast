@@ -1,117 +1,126 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Commanding Officers",
-            "p_2": "Army Officers",
-            "p_3": "Naval Officers"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Dunkirk",
-            "l_2": "Northern Route Y",
-            "l_3": "Gravelines",
-            "l_4": "United Kingdom"
+            "l_1": "Dover",
+            "l_2": "French coast",
+            "l_3": "Dunkirk",
+            "l_4": "United Kingdom",
+            "l_5": "Folkestone",
+            "l_6": "Dover Harbour",
+            "l_7": "Calais",
+            "l_8": "Nieuport",
+            "l_9": "Gravelines",
+            "l_10": "Zuydecoote Pass",
+            "l_11": "Dunkirk Roads"
         },
         "events": {
-            "e_1": "Operation Dynamo",
-            "e_2": "Dunkirk Evacuation",
-            "e_3": "Air Reconnaissance"
+            "e_1": "Evacuation from Dunkirk",
+            "e_2": "Air attacks on Dunkirk Harbour",
+            "e_3": "Mine laying operations",
+            "e_4": "Suspension of daylight evacuation"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "Royal Air Force",
-            "o_3": "Air Ministry"
+            "o_1": "Admiralty",
+            "o_2": "War Office",
+            "o_3": "R.A.F."
         }
     },
     "keywords": [
-        "Air Cooperation",
-        "Air Protection",
-        "Enemy Air Effort",
-        "Naval Operations",
-        "Dunkirk Evacuation"
+        "evacuation",
+        "air attack",
+        "mine laying",
+        "Dunkirk",
+        "war",
+        "troops"
     ],
     "themes": [
         "Military Operations",
-        "Air Power",
-        "Naval Strategy",
-        "Troop Coordination"
+        "Enemy Efforts",
+        "Logistics",
+        "Casualties"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Air Power": [
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Troop Coordination": [
+        "Enemy Efforts": [
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_1"
+        ],
+        "Casualties": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May-June 1940",
+            "date": "May 28th - June 4th, 1940",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_3",
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation Dynamo is a military evacuation operation taking place at Dunkirk where Allied troops are evacuated under heavy enemy fire."
+            "eventSummary": "The evacuation from Dunkirk occurs, successfully moving 248,000 troops to the UK despite numerous challenges."
         },
         {
             "event": "e_2",
-            "date": "May-June 1940",
+            "date": "June 1st, 1940",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_3",
+                "l_11"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The Dunkirk Evacuation involves the careful retraining of naval and air forces to extract British and Allied troops from Dunkirk amidst enemy assaults."
+            "eventSummary": "Intensive air attack on Dunkirk Harbour occurs, aiming to disrupt the evacuation efforts and blocking key routes."
         },
         {
             "event": "e_3",
-            "date": "31st May 1940",
+            "date": "May 28th - June 2nd, 1940",
             "locations": [
-                "l_1"
+                "l_2",
+                "l_11"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1",
+                "e_1"
+            ],
+            "eventSummary": "Mine laying operations conducted by the enemy hinder the evacuation process, targeting critical routes and strategic areas."
+        },
+        {
+            "event": "e_4",
+            "date": "June 2nd, 1940",
+            "locations": [
+                "l_11",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Air reconnaissance is conducted to locate enemy batteries, contributing to the success of the Dunkirk Evacuation by reducing fire from enemy forces."
+            "eventSummary": "The suspension of daylight evacuation is declared due to increased enemy fire and air attacks affecting evacuation routes."
         }
     ]
 }

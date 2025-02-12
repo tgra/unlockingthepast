@@ -1,90 +1,64 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unknown Military Officer"
+            "p_1": "Brigadier G. C. Wickins"
         },
         "locations": {
-            "l_1": "United Kingdom",
-            "l_2": "London",
-            "l_3": "Dover",
-            "l_4": "Solent",
-            "l_5": "Great Yarmouth",
-            "l_6": "South Wales"
+            "l_1": "London",
+            "l_2": "Solent",
+            "l_3": "Bristol",
+            "l_4": "Redhill",
+            "l_5": "Maidstone",
+            "l_6": "Isle of Wight",
+            "l_7": "Shaftesbury",
+            "l_8": "Shepton Mallet",
+            "l_9": "north-west Germany"
         },
         "events": {
-            "e_1": "German Night Raids",
-            "e_2": "Operation Harlequin",
-            "e_3": "American Anti-Aircraft Units Operational Deployment"
+            "e_1": "Exchanges of Light Anti-Aircraft units",
+            "e_2": "Attacks by German aircraft",
+            "e_3": "Deployment of Heavy guns in London",
+            "e_4": "Flying bomb attacks",
+            "e_5": "First missiles arrival (codenamed DIVER)",
+            "e_6": "Sustained attacks (15th/16th June 1944)"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)",
-            "o_2": "U.S. Army"
+            "o_1": "U.S. Army",
+            "o_2": "U.S. Air Force",
+            "o_3": "Anti-Aircraft Command",
+            "o_4": "Royal Navy",
+            "o_5": "Royal Marines",
+            "o_6": "R.A.F. Regiment",
+            "o_7": "Bomber Command"
         }
     },
     "keywords": [
-        "Night Attacks",
-        "German Air Forces",
-        "Searchlights",
-        "Radar",
         "Anti-Aircraft",
-        "Defence",
-        "Coastal Towns"
+        "deployments",
+        "invasion",
+        "bombs",
+        "defences"
     ],
     "themes": [
         "Military Operations",
-        "Air Defense",
-        "International Cooperation",
-        "Technological Developments"
+        "Defence Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_4",
+            "e_6"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": [
-            "e_3"
-        ],
-        "Technological Developments": []
+        "Defence Strategies": [
+            "e_3",
+            "e_5"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 1943 - February 1944",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The German air forces resume night raids targeting the United Kingdom, with significant attacks increasing in size aiming at London, using advanced techniques including dropping strips of metallised paper to confuse radar."
-        },
-        {
-            "event": "e_2",
-            "date": "July and August 1943",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Harlequin involves a large-scale exercise in the southern coastal areas of the United Kingdom, enhancing coastal defenses from Dover to the Solent."
-        },
-        {
-            "event": "e_3",
-            "date": "December 1943",
+            "date": "Summer of 1944",
             "locations": [
                 "l_1"
             ],
@@ -92,10 +66,82 @@
                 "p_1"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "American anti-aircraft units become operational in the United Kingdom, with some batteries deployed for the defense of London, showcasing international military cooperation."
+            "eventSummary": "During the summer of 1944, English and American Light Anti-Aircraft units exchange parties to foster goodwill and share operational insights."
+        },
+        {
+            "event": "e_2",
+            "date": "March and April 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Desultory intruder activity by piloted German aircraft happens in March and April 1945, leading to concerns about possible attacks on London."
+        },
+        {
+            "event": "e_3",
+            "date": "Post-6th June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Plans are made to protect London with 1,000 Heavy guns to defend against anticipated flying bomb attacks."
+        },
+        {
+            "event": "e_4",
+            "date": "After June 12th, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The first missiles known by the code name DIVER arrive on June 12th/13th, 1944 as the threat of flying bomb attacks emerges."
+        },
+        {
+            "event": "e_5",
+            "date": "7th December 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On December 7th, 1943, the first official intimation of potential attacks by pilotless aircraft on London is received."
+        },
+        {
+            "event": "e_6",
+            "date": "15th/16th June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Sustained attacks commence with flying bombs on June 15th/16th, 1944, requiring the activation of defence strategies for London."
         }
     ]
 }

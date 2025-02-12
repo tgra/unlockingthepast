@@ -1,111 +1,171 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Fieldmarshal The Viscount Alexander of Tunis",
-            "p_2": "Major-General A A Richardson"
+            "p_1": "General Gairdner"
         },
         "locations": {
-            "l_1": "Sicily",
+            "l_1": "Gatanid",
             "l_2": "North Africa",
             "l_3": "Tunisia",
-            "l_4": "Casablanca",
-            "l_5": "Malta",
-            "l_6": "Benghazi",
-            "l_7": "Cape Peloro",
-            "l_8": "Cape Passero",
-            "l_9": "Cape Bon",
-            "l_10": "Pantelleria"
+            "l_4": "Malta",
+            "l_5": "Messina",
+            "l_6": "Catania",
+            "l_7": "Palermo",
+            "l_8": "Avola",
+            "l_9": "Pachino",
+            "l_10": "Pozzallo",
+            "l_11": "Gela",
+            "l_12": "Syracuse",
+            "l_13": "Augusta",
+            "l_14": "Ponte Olivo",
+            "l_15": "Sciacca",
+            "l_16": "Marinella",
+            "l_17": "Castelvetrano",
+            "l_18": "Gulf of Castellammare",
+            "l_19": "Cape Zaffarano",
+            "l_20": "Gerbini"
         },
         "events": {
-            "e_1": "Casablanca Conference",
-            "e_2": "Invasion of Sicily",
-            "e_3": "Tunisian Campaign"
+            "e_1": "Operation TORCH",
+            "e_2": "assault on Catania",
+            "e_3": "Eastern Task Force landing",
+            "e_4": "American force landing",
+            "e_5": "main American landings in the Palermo area",
+            "e_6": "Eastern Task Force additional landing"
         },
         "organisations": {
-            "o_1": "Fifteenth Army Group",
-            "o_2": "Combined Chiefs of Staff",
-            "o_3": "British Staff System",
-            "o_4": "Allied Force Headquarters"
+            "o_1": "Eastern Task Force",
+            "o_2": "Western Task Force",
+            "o_3": "Eighteenth Army Group Headquarters"
         }
     },
     "keywords": [
-        "Sicily",
-        "Tunisian Campaign",
-        "Operation Planning",
-        "Casablanca Conference"
+        "amphibious warfare",
+        "port facilities",
+        "air cover",
+        "infantry divisions",
+        "tank battalions"
     ],
     "themes": [
-        "Military Strategy",
-        "Operation Planning",
-        "Geopolitical Dynamics",
+        "Military Operations",
+        "Strategic Planning",
         "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
-            "e_3"
-        ],
-        "Diplomacy": [
-            "e_1"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
         "Strategic Decisions": [
-            "e_2"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1943-01-14",
+            "date": "8 November 1942",
             "locations": [
-                "l_4"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "At the Casablanca Conference, key military leaders discuss strategic plans for upcoming operations, notably the invasion of Sicily."
-        },
-        {
-            "event": "e_2",
-            "date": "1943-07-10",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The Invasion of Sicily commences, marking a significant operation in the Allied campaign during World War II."
-        },
-        {
-            "event": "e_3",
-            "date": "1943-04-19",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Tunisian Campaign is launched, prioritized to clear North African coasts before proceeding with the invasion of Sicily."
+            "eventSummary": "Operation TORCH, the North African landing, takes place, aiming to establish a foothold in North Africa."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The assault on Catania is planned as a critical target for securing air cover."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_8",
+                "l_9",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The Eastern Task Force lands at multiple points in Sicily, initiating the operation."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_15",
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "An American force of one infantry division and a tank battalion lands to secure airfields."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_7",
+                "l_19"
+            ],
+            "persons": [
+                "General Gairdner"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Main American landings in the Palermo area are executed with two infantry divisions."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Eastern Task Force makes an additional landing to secure more territory."
         }
     ]
 }

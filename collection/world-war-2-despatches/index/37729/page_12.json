@@ -2,127 +2,177 @@
     "namedEntities": {
         "persons": {
             "p_1": "Lord Forbes",
-            "p_2": "Air Commodore L. H. Slatter",
-            "p_3": "General Platt",
-            "p_4": "Haile Selassie",
-            "p_5": "Pilot Officer R. A. Collis"
+            "p_2": "L. H. Slatter",
+            "p_3": "Haile Selassie",
+            "p_4": "R. A. Collis",
+            "p_5": "General Platt"
         },
         "locations": {
-            "l_1": "Italian East Africa",
-            "l_2": "Sudan",
-            "l_3": "Eritrea",
-            "l_4": "Kassala",
-            "l_5": "Keren",
+            "l_1": "Sudan",
+            "l_2": "Aden",
+            "l_3": "Kenya",
+            "l_4": "Italy",
+            "l_5": "Gondar",
             "l_6": "Asmara",
             "l_7": "Massawa",
-            "l_8": "Lake Tana",
-            "l_9": "Burye",
-            "l_10": "Debra Marcos",
-            "l_11": "Red Sea",
-            "l_12": "Jedda",
-            "l_13": "Hedjaz Coast"
+            "l_8": "Eritrea",
+            "l_9": "Keren",
+            "l_10": "Burye",
+            "l_11": "Debra Marcos",
+            "l_12": "Lake Tana",
+            "l_13": "Tripoli",
+            "l_14": "Libya",
+            "l_15": "Greece",
+            "l_16": "Hedjaz Coast",
+            "l_17": "Jedda"
         },
         "events": {
-            "e_1": "Occupation of Asmara",
-            "e_2": "Italian East African Campaign",
-            "e_3": "Attack on Italian destroyers near Massawa"
+            "e_1": "Italian East African Campaign",
+            "e_2": "occupation of Asmara",
+            "e_3": "attack on Keren",
+            "e_4": "bombing attacks in support of the Patriots",
+            "e_5": "attack on Massawa",
+            "e_6": "sinking of Italian destroyers"
         },
         "organisations": {
-            "o_1": "R.A.F.",
+            "o_1": "R.A.F",
             "o_2": "South African Air Force",
             "o_3": "Free French Flight",
-            "o_4": "H.M.S. Eagle"
+            "o_4": "F.A.A.",
+            "o_5": "H.M.S. Eagle"
         }
     },
     "keywords": [
-        "Intelligence Officer",
-        "Land Operations",
+        "Campaign",
+        "Operations",
         "Air Support",
-        "Air Forces",
-        "Patriot Activities",
-        "Bombing Campaign",
-        "Italian Resistance"
+        "Italian Forces",
+        "Patriot Activities"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Resistance Movements"
+        "Support Missions",
+        "Air Warfare",
+        "Occupations"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
-            "e_1",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Air Support": [
-            "e_1",
-            "e_2"
+        "Air Warfare": [
+            "e_3",
+            "e_5"
         ],
-        "Resistance Movements": [
-            "e_2"
+        "Support Missions": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 1, 1941",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The occupation of Asmara marks a significant advance in the campaign against Italian forces in East Africa, solidifying control over the region."
-        },
-        {
-            "event": "e_2",
-            "date": "January - April 1941",
+            "date": "1941",
             "locations": [
                 "l_1",
+                "l_2",
+                "l_3",
                 "l_4",
                 "l_5"
             ],
             "persons": [
-                "p_3",
-                "p_4"
+                "p_1",
+                "p_5"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The Italian East African Campaign involves successful land operations against Italian forces leading to their collapse."
+        },
+        {
+            "event": "e_2",
+            "date": "April 1, 1941",
+            "locations": [
+                "l_6"
             ],
-            "eventSummary": "The Italian East African Campaign involves a series of successful military operations leading to the collapse of Italian resistance, showcasing effective air support."
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The occupation of Asmara represents a significant advance in the campaign against Italian forces."
         },
         {
             "event": "e_3",
-            "date": "April 3, 1941",
+            "date": "March 27, 1941",
             "locations": [
-                "l_7",
-                "l_12",
-                "l_13"
+                "l_9"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The attack on Keren sees heavy bombardment and air support, leading to the Italian withdrawal."
+        },
+        {
+            "event": "e_4",
+            "date": "1941",
+            "locations": [
+                "l_10",
+                "l_11"
+            ],
+            "persons": [
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Bombing attacks made in support of the Patriots aim to maintain morale and disrupt Italian positions."
+        },
+        {
+            "event": "e_5",
+            "date": "April 3, 1941",
+            "locations": [
+                "l_6"
             ],
-            "eventSummary": "A coordinated attack leads to the sinking of an Italian destroyer near Massawa, demonstrating effective naval and air collaboration during the campaign."
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The attack on Massawa involves naval and air forces targeting Italian destroyers, resulting in significant enemy losses."
+        },
+        {
+            "event": "e_6",
+            "date": "1941",
+            "locations": [
+                "l_16"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The sinking of Italian destroyers occurs as air forces coordinate with naval units, impacting Italian naval capabilities."
         }
     ]
 }

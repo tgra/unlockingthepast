@@ -1,107 +1,127 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier Festing",
-            "p_2": "Lieutenant-Colonel M. M. Alston-Roberts-West"
+            "p_1": "Captain (D)",
+            "p_2": "Senior Officer, Minesweepers",
+            "p_3": "Senior Naval Officer (L)",
+            "p_4": "Flag Officer Commanding, Force F",
+            "p_5": "Senior Naval Officer (L)"
         },
         "locations": {
             "l_1": "Antsirane",
-            "l_2": "Ambararata",
-            "l_3": "French Bay",
-            "l_4": "Ankorika",
-            "l_5": "Bellevue fort",
-            "l_6": "Caimans fort",
-            "l_7": "Anobozaka Barracks"
+            "l_2": "KEREN",
+            "l_3": "AURICULA",
+            "l_4": "Ambararata Bay",
+            "l_5": "Nosi Hara",
+            "l_6": "Cape Amber",
+            "l_7": "Oranjia Peninsula",
+            "l_8": "English Bay"
         },
         "events": {
-            "e_1": "Attack on the Enemy Position",
-            "e_2": "Frontal Assault by Royal Scots Fusiliers and East Lancashire Regiment"
+            "e_1": "Bombing runs",
+            "e_2": "Oiling of DEVONSHIRE",
+            "e_3": "Air raid warning Red",
+            "e_4": "Bombardment of the Oranjia Peninsula"
         },
         "organisations": {
-            "o_1": "29 Independent Brigade",
-            "o_2": "2 South Lancashire Regiment",
-            "o_3": "Royal Scots Fusiliers",
-            "o_4": "2 East Lancashire Regiment",
-            "o_5": "455 Light Battery",
-            "o_6": "Fleet Air Arm"
+            "o_1": "12th Destroyer Flotilla",
+            "o_2": "Force F"
         }
     },
     "keywords": [
-        "attack",
-        "defence line",
-        "forts",
-        "artillery",
-        "casualties",
-        "operations"
+        "bombing",
+        "communication",
+        "mine",
+        "weather",
+        "air raid",
+        "fuel"
     ],
     "themes": [
         "Military Operations",
-        "Command Decisions",
-        "Tactical Engagements"
+        "Naval Communication",
+        "Naval Assistance",
+        "Air Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_4"
+        ],
+        "Naval Communication": [
             "e_2"
         ],
-        "Command Decisions": [
-            "e_1"
+        "Naval Assistance": [
+            "e_3"
         ],
-        "Tactical Engagements": [
-            "e_1",
-            "e_2"
+        "Air Operations": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th May D2",
+            "date": "Date not available",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The attack on the main enemy position begins in the early morning of May 6, involving multiple battalions aiming to breach the enemy defense line."
-        },
-        {
-            "event": "e_2",
-            "date": "6th May D2",
-            "locations": [
-                "l_1",
-                "l_5",
-                "l_6"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_3",
-                "o_4"
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Bombing runs are conducted by naval forces, engaging in operations against enemy positions."
+        },
+        {
+            "event": "e_2",
+            "date": "Date not available",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The frontal assault by 1 Royal Scots Fusiliers and 2 East Lancashire Regiment encounters heavy resistance and suffers casualties while trying to advance towards enemy trenches."
+            "eventSummary": "DEVONSHIRE completes oiling operations, critical for maintaining naval engagement capabilities."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not available",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air raid warning is issued as hostile aircraft are sighted over the target area, leading to increased readiness."
+        },
+        {
+            "event": "e_4",
+            "date": "Date not available",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "DEVONSHIRE is ordered to prepare for bombardment of the Oranjia Peninsula, highlighting strategic military objectives."
         }
     ]
 }

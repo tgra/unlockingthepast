@@ -1,51 +1,54 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier A. McD. Ritchie",
-            "p_2": "General Wavell",
-            "p_3": "General Wetherall"
+            "p_1": "Italian commander",
+            "p_2": "Commander 10th Indian Infantry"
         },
         "locations": {
-            "l_1": "Abyssinia",
-            "l_2": "Addis Abeba",
-            "l_3": "Neghelli",
-            "l_4": "Uaddara",
-            "l_5": "Budagamo",
-            "l_6": "Giabassire",
-            "l_7": "Dessie",
-            "l_8": "Gimma",
-            "l_9": "Kenya",
-            "l_10": "Moggio",
-            "l_11": "Adama"
+            "l_1": "Keren",
+            "l_2": "Massawa",
+            "l_3": "Asmera",
+            "l_4": "Chelamet",
+            "l_5": "Ad Teclesan",
+            "l_6": "Gondar",
+            "l_7": "Amba Alagi",
+            "l_8": "Mersa Cuba",
+            "l_9": "River Tacazze",
+            "l_10": "Nefasit",
+            "l_11": "Barentu",
+            "l_12": "Agordat",
+            "l_13": "Adi Ugri"
         },
         "events": {
-            "e_1": "Attack on Uaddara Position",
-            "e_2": "Advance of 12th (A) Division",
-            "e_3": "Formation of Close Support Group",
-            "e_4": "Capture of Alghe"
+            "e_1": "Action at Ad Teclesan",
+            "e_2": "Fall of Asmara",
+            "e_3": "Dealings with Italian Civil Authorities",
+            "e_4": "Pursuit by 5th Indian Division"
         },
         "organisations": {
-            "o_1": "Gold Coast Brigade",
-            "o_2": "12th (A) Division",
-            "o_3": "S.A. Brigade",
-            "o_4": "Air Force",
-            "o_5": "Middle East Command"
+            "o_1": "7th Indian Infantry Brigade Group",
+            "o_2": "5th Indian Division",
+            "o_3": "Free French",
+            "o_4": "2nd Indian Infantry Brigade",
+            "o_5": "10th Indian Infantry",
+            "o_6": "144 Field Regiment",
+            "o_7": "68 Medium Regiment",
+            "o_8": "Skinner's Horse",
+            "o_9": "S.D.F."
         }
     },
     "keywords": [
-        "Abyssinian War",
-        "attack",
-        "advance",
-        "close support",
-        "air support",
-        "operations",
-        "enemy"
+        "road-block",
+        "traffic control",
+        "enemy",
+        "troops",
+        "resistance",
+        "capture"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Logistics",
-        "Air Support"
+        "Civil-Military Relations",
+        "Resistance and Control"
     ],
     "topicModel": {
         "Military Operations": [
@@ -53,18 +56,39 @@
             "e_2",
             "e_4"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": [
+        "Civil-Military Relations": [
             "e_3"
+        ],
+        "Resistance and Control": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd to 10th May",
+            "date": "1st April",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The enemy establishes road-blocks on the road below Ad Teclesan; maneuvering is needed to succeed against them."
+        },
+        {
+            "event": "e_2",
+            "date": "1st April",
+            "locations": [
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -74,58 +98,39 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The 24th Gold Coast Brigade initiates an attack on the Uaddara position, facing numerous challenges including difficult terrain and enemy fortifications, ultimately succeeding on 10th May."
-        },
-        {
-            "event": "e_2",
-            "date": "April to May 1946",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
                 "e_1",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "The 12th (A) Division advances through challenging conditions during heavy rains, continuing operations against persistent enemy positions."
+            "eventSummary": "Leading troops of the 5th Indian Division enter Asmara, where emissaries declare the area an open town."
         },
         {
             "event": "e_3",
-            "date": "20th May",
+            "date": "2nd April",
             "locations": [
-                "l_2"
+                "l_3"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
-                "o_4"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "A Close Support Group is formed to provide additional air support to the advancing divisions, demonstrating effective cooperation between ground and air forces."
+            "eventSummary": "Communication with civil authorities in Asmara clarifies the cooperation needed for the welfare of the population."
         },
         {
             "event": "e_4",
-            "date": "May 1946",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_3"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The 12th (A) Division successfully captures Alghe, securing strategic positions in southern Abyssinia."
+            "connectedEvents": [],
+            "eventSummary": "Pursuit operations are organized along routes leading south from Asmara to capture the enemy."
         }
     ]
 }

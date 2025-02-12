@@ -1,107 +1,111 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Christison"
+            "p_1": "General Kimura"
         },
         "locations": {
-            "l_1": "Ramree Island",
-            "l_2": "Northern Arakan",
-            "l_3": "Central Arakan",
-            "l_4": "Taungup",
-            "l_5": "Prome",
-            "l_6": "Akyab",
-            "l_7": "Kyaukpyu",
-            "l_8": "An Pass",
-            "l_9": "Dalets Chaung An",
-            "l_10": "Sandoway",
-            "l_11": "Bassein delta",
-            "l_12": "Prome Henzada"
+            "l_1": "Toungoo",
+            "l_2": "Nyaunglebin",
+            "l_3": "Rangoon",
+            "l_4": "Pegu",
+            "l_5": "Moyingyi Reservoir",
+            "l_6": "Waw",
+            "l_7": "Moulmein"
         },
         "events": {
-            "e_1": "Operation to clear Japanese forces from Arakan",
-            "e_2": "Establishment of airbases in Akyab and Kyaukpyu"
+            "e_1": "Attack on Pegu",
+            "e_2": "Rescue of prisoners of war",
+            "e_3": "Military operations of 17 Indian Division"
         },
         "organisations": {
-            "o_1": "15 Indian Corps",
-            "o_2": "Fourteenth Army",
-            "o_3": "R.A.F.",
-            "o_4": "82 Division",
-            "o_5": "25 Indian Division",
-            "o_6": "26 Indian Division",
-            "o_7": "3 Commando Brigade",
-            "o_8": "50 Tank Brigade",
-            "o_9": "81 Division"
+            "o_1": "19 Indian Division",
+            "o_2": "15 Japanese Division",
+            "o_3": "5 Indian Division",
+            "o_4": "17 Indian Division",
+            "o_5": "63 Brigade",
+            "o_6": "255 Indian Tank Brigade",
+            "o_7": "4 Corps",
+            "o_8": "Japanese A.A. artillery"
         }
     },
     "keywords": [
-        "Japanese forces",
-        "Arakan",
-        "air supply",
-        "transport squadrons",
-        "military operations",
-        "strategic planning"
+        "Japanese",
+        "armoured column",
+        "casualties",
+        "military",
+        "defence",
+        "bridges",
+        "reinforcements",
+        "prisoners of war"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Strategic Decisions"
+        "Battles and Sieges",
+        "Resistance and Counter-resistance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3"
         ],
-        "Logistics": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
+        "Battles and Sieges": [
             "e_1"
+        ],
+        "Resistance and Counter-resistance": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 1916",
+            "date": "April 30, 1945",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
                 "o_4",
-                "o_5",
-                "o_6",
-                "o_7"
+                "o_6"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The 15 Indian Corps is engaged in military operations to clear Japanese forces from Northern and Central Arakan, coordinating efforts to control enemy movements and establish supply routes."
+            "eventSummary": "The attack on Pegu progresses throughout April 30, 1945, with 99 Brigade attacking from the north and 255 Indian Tank Brigade providing support, capturing twelve guns by nightfall."
         },
         {
             "event": "e_2",
-            "date": "By May 1916",
+            "date": "April 30, 1945",
             "locations": [
-                "l_6",
+                "l_4",
                 "l_7"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Airbases at Akyab and Kyaukpyu are developed to support military operations in Arakan, aiming for operational readiness before the monsoon season."
+            "eventSummary": "On April 30, 1945, the rescue of 350 British, American, and Indian prisoners of war is executed by the 17 Indian Division after their escort abandons them."
+        },
+        {
+            "event": "e_3",
+            "date": "April 30, 1945",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The military operations conducted by the 17 Indian Division involve heavy fighting and determined advances toward Pegu."
         }
     ]
 }

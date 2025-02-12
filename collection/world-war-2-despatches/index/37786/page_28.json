@@ -1,93 +1,94 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Air Marshal Sholto Douglas",
+            "p_2": "Ler Marshal Cakmak"
+        },
         "locations": {
-            "l_1": "Sicily",
-            "l_2": "Beirut",
-            "l_3": "Haifa",
-            "l_4": "Alexandria",
-            "l_5": "Suez",
-            "l_6": "Benghazi",
-            "l_7": "Tripoli",
-            "l_8": "Malta",
-            "l_9": "Ismailia",
-            "l_10": "Port Said",
-            "l_11": "Port Sudan",
-            "l_12": "Egypt"
+            "l_1": "Izmir",
+            "l_2": "Turkey",
+            "l_3": "Ankara",
+            "l_4": "Adana",
+            "l_5": "Milas",
+            "l_6": "Mugla",
+            "l_7": "Ulukisla",
+            "l_8": "Afyon Karahinsar",
+            "l_9": "Mersin",
+            "l_10": "Iskenderun"
         },
         "events": {
-            "e_1": "Assault on Sicily",
-            "e_2": "Embarkation of personnel and vehicles for Sicily"
+            "e_1": "HARDIHOOD",
+            "e_2": "Quebec Conference"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Middle East Command"
+            "o_1": "Royal Air Force",
+            "o_2": "No. 3 Planning Staff",
+            "o_3": "Turkish General Staff",
+            "o_4": "Middle East Defence Committee",
+            "o_5": "Chiefs of Staff"
         }
     },
     "keywords": [
-        "military operations",
-        "embarkation",
-        "personnel",
-        "vehicles",
-        "training",
-        "logistics"
+        "HARDIHOOD",
+        "British forces",
+        "Turkish General Staff",
+        "Royal Air Force",
+        "administrative planning"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Training",
-        "Transportation"
+        "Strategic Planning",
+        "Logistics Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1"
         ],
-        "Logistics": [
+        "Strategic Planning": [
+            "e_1",
             "e_2"
         ],
-        "Training": [],
-        "Transportation": [
-            "e_2"
+        "Logistics Management": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 10, 1943",
+            "date": "March 1943",
             "locations": [
+                "l_2",
                 "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The assault on Sicily commences, arising from intensive preparations, including training and logistical movements."
+            "eventSummary": "The HARDIHOOD plan is formulated to phase the dispatch of British forces to Turkey, focusing on logistical and administrative preparations for military operations."
         },
         {
             "event": "e_2",
-            "date": "July 5, 1943",
+            "date": "September 1943",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8"
+                "l_2"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Embarkation of personnel and vehicles for the assault on Sicily completes on July 5, showcasing significant logistical planning and execution."
+            "eventSummary": "As a result of decisions from the Quebec Conference, directives regarding the operational and administrative commitments are issued, impacting the plans for HARDIHOOD."
         }
     ]
 }

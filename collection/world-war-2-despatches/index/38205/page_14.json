@@ -1,85 +1,106 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Montgomery",
+            "p_2": "General Hube",
+            "p_3": "Brigadier E, P, Nares",
+            "p_4": "Brigadier-General Archelaus L. Hamblen",
+            "p_5": "Major-General C. H. Miller",
+            "p_6": "General Alexander"
+        },
         "locations": {
-            "l_1": "eastern Sicily",
-            "l_2": "Palermo",
-            "l_3": "mainland of Italy"
+            "l_1": "Etna",
+            "l_2": "Messina",
+            "l_3": "Sicily",
+            "l_4": "Bouzarea",
+            "l_5": "Algiers",
+            "l_6": "Palermo",
+            "l_7": "Syracuse",
+            "l_8": "Comiso",
+            "l_9": "Ponte Ohve",
+            "l_10": "La Marsa"
         },
         "events": {
-            "e_1": "capture of an island",
-            "e_2": "administration of ports and beaches"
+            "e_1": "Sicilian Campaign",
+            "e_2": "Operation TORCH",
+            "e_3": "Landing at Messina",
+            "e_4": "Assault on Sicily",
+            "e_5": "Capture of Syracuse"
         },
         "organisations": {
-            "o_1": "FoRTBASE",
-            "o_2": "Fifteenth Army Group",
+            "o_1": "Fifteenth Army Group",
+            "o_2": "Seventh Army",
             "o_3": "Eighth Army",
-            "o_4": "United States Island Base Section",
-            "o_5": "Army Administrative Staff"
+            "o_4": "R.A.F.",
+            "o_5": "Allied Commander-in-Chief"
         }
     },
     "keywords": [
-        "administration",
-        "ports",
-        "beaches",
-        "Fifteenth Army Group",
-        "Eighth Army",
+        "Sicilian Campaign",
+        "Operation TORCH",
+        "landing",
+        "assault",
         "capture",
-        "supply axes"
+        "defense",
+        "tactics"
     ],
     "themes": [
         "Military Operations",
-        "Administration",
-        "Logistics"
+        "Strategic Decisions",
+        "Planning and Coordination"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Administration": [
-            "e_2"
-        ],
-        "Logistics": [
+        "Strategic Decisions": [
             "e_1",
             "e_2"
+        ],
+        "Planning and Coordination": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "July 17th - August 17th, 1943",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_3",
+                "l_4",
+                "l_6",
+                "l_7"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_5"
             ],
-            "eventSummary": "The capture of an island occurs with two armies operating initially on separate supply axes."
+            "eventSummary": "The Sicilian Campaign commences, with Allied forces planning and executing a complex operation to capture strategic locations in Sicily, ultimately resulting in significant advancements for Allied troops."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_1"
-            ],
+            "date": "November 8th, 1942",
+            "locations": [],
             "persons": [],
-            "organisations": [
-                "o_1",
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "FoRTBASE assumes responsibility for the general administration of all ports and beaches in eastern Sicily, managed through various Base Areas and Sub-Areas."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Operation TORCH takes place as the Anglo-American forces launch an assault on French North Africa, setting the stage for future operations in the Mediterranean."
         }
     ]
 }

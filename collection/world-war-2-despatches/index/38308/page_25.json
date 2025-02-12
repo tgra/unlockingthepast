@@ -1,140 +1,175 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "CINC PAC",
-            "p_2": "CIF 57",
-            "p_3": "COM 5th Fleet",
-            "p_4": "A.C.1",
-            "p_5": "CINC POA",
-            "p_6": "C.-in-C., B.P.F.",
-            "p_7": "CTF 57"
+            "p_1": "Commander Third Fleet",
+            "p_2": "Captain D. 25"
         },
         "locations": {
-            "l_1": "Sakishima",
-            "l_2": "Leyte",
-            "l_3": "Formosa",
-            "l_4": "Southern Formosa",
-            "l_5": "Matsuyama",
-            "l_6": "Shinchiku",
-            "l_7": "Yonakuni Jima",
-            "l_8": "Cootie area",
-            "l_9": "Nansei Shoto"
+            "l_1": "Ishigaki",
+            "l_2": "Miyara",
+            "l_3": "Cootie",
+            "l_4": "Leyte",
+            "l_5": "Manus",
+            "l_6": "Sydney",
+            "l_7": "Sakishima",
+            "l_8": "Miyako",
+            "l_9": "Hirara",
+            "l_10": "Nishibara"
         },
         "events": {
-            "e_1": "Sakishima Operations",
-            "e_2": "Formosa Airfield Strikes",
-            "e_3": "Fueling Operations",
-            "e_4": "Change of Task Force 57 Plans"
+            "e_1": "Ishigaki strikes",
+            "e_2": "Fleet withdraws to Cootie",
+            "e_3": "Arrival at Leyte",
+            "e_4": "H.M.S. FORMIDABLE detached",
+            "e_5": "Strikes on Miyako",
+            "e_6": "Ishigaki strike",
+            "e_7": "Low enemy air activity"
         },
         "organisations": {
-            "o_1": "American Task Group",
-            "o_2": "5th Fleet",
-            "o_3": "Task Force 57"
+            "o_1": "British Pacific Fleet",
+            "o_2": "American Task Unit 52.1.3",
+            "o_3": "CTF 57",
+            "o_4": "CTF 112"
         }
     },
     "keywords": [
-        "Military Operations",
-        "Refueling",
-        "Airstrikes",
-        "Naval Maneuvers",
-        "Operational Plans"
+        "strike",
+        "Fleet",
+        "bombing",
+        "operation",
+        "weather",
+        "aircraft",
+        "damage"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Air Support Operations"
+        "Tactical Command",
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_5",
+            "e_6"
         ],
-        "Strategic Decisions": [
+        "Tactical Command": [
+            "e_2",
             "e_4"
         ],
-        "Air Support Operations": [
-            "e_2"
+        "Naval Warfare": [
+            "e_3",
+            "e_1",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 8-11",
+            "date": "Date not specified",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_5",
+                "e_6"
             ],
-            "eventSummary": "The American Task Group conducts operations in Sakishima, including planned airstrikes in response to modified operational priorities."
+            "eventSummary": "The Ishigaki strikes take off targeting military installations."
         },
         {
             "event": "e_2",
-            "date": "April 11-12",
+            "date": "Date not specified",
             "locations": [
-                "l_3",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Fleet withdraws to the Cootie area after completing operations."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not specified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The damaged H.M.S. QUILLIAM proceeds to Leyte after repairs."
+        },
+        {
+            "event": "e_4",
+            "date": "Date not specified",
+            "locations": [
                 "l_5",
                 "l_6"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_6"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Task Force 57 organizes airstrikes against Matsuyama and Shinchiku airfields, aiming to maximize air support over enemy territory while managing operational capabilities."
-        },
-        {
-            "event": "e_3",
-            "date": "April 8",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Refueling operations are successfully completed for the fleet while maintaining optimal weather conditions."
+            "eventSummary": "H.M.S. FORMIDABLE is detached for repairs to expedite readiness."
         },
         {
-            "event": "e_4",
-            "date": "April 8-11",
+            "event": "e_5",
+            "date": "Date not specified",
+            "locations": [
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Strikes on Miyako take place with significant bombing activity."
+        },
+        {
+            "event": "e_6",
+            "date": "Date not specified",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_5"
+                "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "A change in plans for Task Force 57 is initiated, shifting focus from Sakishima operations to potential strikes at Formosa near the operational timeframe."
+            "connectedEvents": [],
+            "eventSummary": "An Ishigaki strike targets enemy airfields."
+        },
+        {
+            "event": "e_7",
+            "date": "Date not specified",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Low enemy air activity observed after strikes."
         }
     ]
 }

@@ -1,80 +1,82 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral A. G. Robinson, U.S.N.",
-            "p_2": "Commodore H. T. England, D.S.O.",
-            "p_3": "Rear-Admiral H. T. Baillie-Grohman, C.B., D.S.O., O.B.E.",
-            "p_4": "Rear-Admiral G. C. Muirhead-Gould, D.S.C.",
-            "p_5": "Admiral R. V. Holt, C.B., D.S.O., M.V.O.",
-            "p_6": "Commodore Askin, Royal Norwegian Navy",
-            "p_7": "Rear-Admiral J. S. M. Ritchie",
-            "p_8": "H.R.H. Crown Prince of Norway"
+            "p_1": "A. G. Robinson",
+            "p_2": "H. T. England",
+            "p_3": "H. T. Baillie-Grohman",
+            "p_4": "G. C. Muirhead-Gould",
+            "p_5": "R. V. Holt",
+            "p_6": "Askin",
+            "p_7": "J. S. M. Ritchie",
+            "p_8": "General Jodl",
+            "p_9": "Grand Admiral Friedeberg"
         },
         "locations": {
             "l_1": "Antwerp",
             "l_2": "Bremen",
             "l_3": "Hamburg",
-            "l_4": "Heligoland",
-            "l_5": "Frisian Islands",
-            "l_6": "Copenhagen",
-            "l_7": "Oslo",
-            "l_8": "Kiel",
-            "l_9": "Wilhelmshaven",
-            "l_10": "Buxtehude",
-            "l_11": "Rosyth"
+            "l_4": "Germany",
+            "l_5": "Holland",
+            "l_6": "Denmark",
+            "l_7": "Heligoland",
+            "l_8": "Frisian Islands",
+            "l_9": "Kiel",
+            "l_10": "Oslo",
+            "l_11": "Copenhagen",
+            "l_12": "Sengwarden",
+            "l_13": "Buxtehude",
+            "l_14": "Eckernforde",
+            "l_15": "Oslo Fiord",
+            "l_16": "Rosyth"
         },
         "events": {
             "e_1": "Surrender of Bremen",
             "e_2": "Surrender of Hamburg",
-            "e_3": "Surrender of German Forces",
-            "e_4": "Acceptance of Surrender at Heligoland",
-            "e_5": "Arrival of S.H.A.E.F. Mission in Copenhagen",
-            "e_6": "Operation Crosskeys",
-            "e_7": "Surrender of the German Navy"
+            "e_3": "Surrender of all German Forces",
+            "e_4": "VE Day",
+            "e_5": "Surrender of Heligoland",
+            "e_6": "S.H.A.E.F. Mission to Denmark",
+            "e_7": "Operation Crosskeys",
+            "e_8": "Surrender of the German Navy"
         },
         "organisations": {
             "o_1": "U.S. Naval Task Force 126",
-            "o_2": "8th Corps Headquarters",
-            "o_3": "British Naval Forces",
-            "o_4": "S.H.-A.E.F. Mission"
+            "o_2": "Royal Norwegian Navy",
+            "o_3": "Allied Naval Commander-in-Chief"
         }
     },
     "keywords": [
         "surrender",
-        "naval operations",
-        "Intelligence",
+        "naval officer",
+        "intelligence",
+        "garrison",
         "occupation",
-        "disarmament"
+        "disarmament",
+        "minesweeping"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Occupation",
-        "Surrender"
+        "Surrender",
+        "Strategic Negotiations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3",
-            "e_4",
-            "e_5",
-            "e_6"
-        ],
-        "Naval Strategy": [
-            "e_1",
-            "e_4",
-            "e_6"
-        ],
-        "Occupation": [
-            "e_2",
-            "e_3"
+            "e_6",
+            "e_7"
         ],
         "Surrender": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_5",
+            "e_8"
+        ],
+        "Strategic Negotiations": [
             "e_4",
-            "e_7"
+            "e_6"
         ]
     },
     "eventConnections": [
@@ -90,10 +92,8 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "On 26th April, a U.S. Naval Officer accepts the surrender of Bremen from the acting Bergermeister."
+            "connectedEvents": [],
+            "eventSummary": "On 26th April, a Naval Officer from the 30 Advance Unit reaches Bremen City Hall and accepts the city's surrender."
         },
         {
             "event": "e_2",
@@ -104,74 +104,83 @@
             "persons": [
                 "p_2"
             ],
-            "organisations": [
-                "o_3"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "On 3rd May, the Hamburg garrison surrenders unconditionally to the occupying forces."
+            "eventSummary": "The Hamburg garrison surrenders unconditionally on the 3rd May; Commodore H. T. England enters the port as Commodore-in-Charge."
         },
         {
             "event": "e_3",
             "date": "5th May",
             "locations": [
                 "l_4",
-                "l_5"
+                "l_5",
+                "l_6"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "On 5th May, all German Forces in Germany, Holland and Denmark, including Heligoland, surrender."
+            "eventSummary": "On the 5th May, all German Forces in Germany, Holland, and Denmark surrender."
         },
         {
             "event": "e_4",
-            "date": "7th May",
-            "locations": [
-                "l_4"
-            ],
+            "date": "8th May",
+            "locations": [],
             "persons": [
-                "p_6"
+                "p_3",
+                "p_4"
             ],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "On 7th May, Admiral Muirhead-Gould lands on Heligoland and accepts its surrender."
+            "eventSummary": "Admiral Baillie-Grohman reports on VE Day, facing challenges while the war is officially over."
         },
         {
             "event": "e_5",
+            "date": "10th May",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On 10th May, Admiral Muirhead-Gould lands at Heligoland and accepts its surrender."
+        },
+        {
+            "event": "e_6",
             "date": "5th May",
             "locations": [
-                "l_6"
+                "l_11"
             ],
             "persons": [
                 "p_5"
             ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "On 5th May, the S.H.-A.E.F. Mission arrives in Copenhagen, showcasing naval strength."
-        },
-        {
-            "event": "e_6",
-            "date": "22nd May",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Operation Crosskeys is conducted to establish coastal forces in Danish waters, with significant naval movement."
+            "eventSummary": "The S.H.-A.E.F. Mission to Denmark arrives in Copenhagen on the 5th May."
         },
         {
             "event": "e_7",
-            "date": "7th May",
+            "date": "22nd May",
             "locations": [
-                "l_8",
-                "l_9"
+                "l_11"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "On 7th May, the unconditional surrender of the German Navy is signed at Rheims."
+            "eventSummary": "On 22nd May, the Crosskeys convoy arrives in Copenhagen as part of the operation for coastal forces."
+        },
+        {
+            "event": "e_8",
+            "date": "7th May",
+            "locations": [],
+            "persons": [
+                "p_8",
+                "p_9"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On 7th May, the German High Command signs the unconditional surrender of all German Land, Sea, and Air forces."
         }
     ]
 }

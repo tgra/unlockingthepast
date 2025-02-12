@@ -1,135 +1,136 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain M. L. Power, C.B.E., D.S.O."
+            "p_1": "Lieutenant General Takazo Numata",
+            "p_2": "Field Marshal Count Terauchi",
+            "p_3": "Admiral Mountbatten",
+            "p_4": "General MacArthur",
+            "p_5": "Major General Ichida",
+            "p_6": "General Itagaki"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Straits of Malacca",
-            "l_3": "Batavia",
-            "l_4": "Singapore",
-            "l_5": "Northern Sumatra",
-            "l_6": "Northern Malaya",
-            "l_7": "Sonchkla",
-            "l_8": "Chumborn",
-            "l_9": "Port Swettenham"
+            "l_1": "Japan",
+            "l_2": "Manila",
+            "l_3": "Burma",
+            "l_4": "Australia",
+            "l_5": "Rangoon",
+            "l_6": "Singapore",
+            "l_7": "South East Asia",
+            "l_8": "South West Pacific Area",
+            "l_9": "Andamans",
+            "l_10": "Nicobars",
+            "l_11": "Thailand",
+            "l_12": "Malaya",
+            "l_13": "Borneo",
+            "l_14": "Timor",
+            "l_15": "Celebes",
+            "l_16": "Halmahora Islands",
+            "l_17": "Dutch New Guinea",
+            "l_18": "Arafura Sea"
         },
         "events": {
-            "e_1": "Destruction of Japanese heavy cruiser HAGURO",
-            "e_2": "Mine-laying operations",
-            "e_3": "Operation Zipper",
-            "e_4": "Operations Birdcage",
-            "e_5": "Operations Mastiff"
+            "e_1": "Japanese surrender",
+            "e_2": "Ceremony of surrender at Singapore",
+            "e_3": "Meetings in Rangoon",
+            "e_4": "Siege of Imphal"
         },
         "organisations": {
-            "o_1": "No. 203 Squadron",
-            "o_2": "No. 354 Squadron",
-            "o_3": "160 Squadron",
-            "o_4": "No. 222 Group",
-            "o_5": "G.R. Air Forces"
+            "o_1": "South East Asia Command",
+            "o_2": "Allied Forces",
+            "o_3": "Supreme Allied Command"
         }
     },
     "keywords": [
-        "Aerial Operations",
-        "Reconnaissance",
-        "Mine-laying",
-        "Anti-shipping",
-        "Naval Forces",
-        "General Reconnaissance"
+        "surrender",
+        "Japanese envoys",
+        "Allied Forces",
+        "meetings",
+        "supply lines",
+        "air superiority",
+        "prisoners-of-war"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Air Strategy",
-        "Campaign Planning"
+        "Diplomacy",
+        "Surrender Conditions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_4"
         ],
-        "Naval Warfare": [
-            "e_1"
-        ],
-        "Air Strategy": [
-            "e_2"
-        ],
-        "Campaign Planning": [
+        "Diplomacy": [
+            "e_1",
             "e_3",
-            "e_4",
-            "e_5"
+            "e_2"
+        ],
+        "Surrender Conditions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 16, 1945",
+            "date": "August 26th, 1945",
             "locations": [
-                "l_2"
+                "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On May 16, 1945, the Japanese heavy cruiser HAGURO is destroyed by HM Naval forces during a series of reconnaissance patrols."
-        },
-        {
-            "event": "e_2",
-            "date": "January 21, 1945 - May 24, 1945",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9"
-            ],
-            "persons": [],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "From January 21 to May 24, 1945, mine-laying operations are conducted as a part of an anti-shipping campaign in the waters of Northern Sumatra and Malaya."
+            "eventSummary": "Japanese envoys arrive at Rangoon to accept terms of surrender."
+        },
+        {
+            "event": "e_2",
+            "date": "September 12th, 1945",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_6",
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "General Itagaki signs the terms for Unconditional Surrender in Singapore."
         },
         {
             "event": "e_3",
-            "date": "Expected in 1945",
+            "date": "September 11th, 1945",
             "locations": [
-                "l_4"
+                "l_5"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Meetings with Japanese plenipotentiaries take place, leading to the acceptance of surrender."
+        },
+        {
+            "event": "e_4",
+            "date": "June 1944",
+            "locations": [
+                "l_3"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Operation Zipper is planned as Allied landings on the west coast of Malaya."
-        },
-        {
-            "event": "e_4",
-            "date": "1945",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Operations Birdcage are part of a series of tactical operations involving No. 222 Group."
-        },
-        {
-            "event": "e_5",
-            "date": "1945",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Operations Mastiff are conducted alongside Operations Birdcage, sharing similar objectives."
+            "eventSummary": "The siege of Imphal is raised, allowing Allied forces to take the offensive."
         }
     ]
 }

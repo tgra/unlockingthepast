@@ -1,87 +1,99 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "A.E.A.F.",
-            "p_2": "Unknown Military Leadership"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "United Kingdom",
-            "l_2": "North African Theatre",
-            "l_3": "D-Day Beach-head",
-            "l_4": "Julouville"
+            "l_1": "Liege",
+            "l_2": "Hasselt",
+            "l_3": "Herenthals",
+            "l_4": "Namur",
+            "l_5": "Conflans (Pointe Eifel)",
+            "l_6": "Valenciennes",
+            "l_7": "Hirson",
+            "l_8": "Konz-Karthaus",
+            "l_9": "Tours",
+            "l_10": "Saumur",
+            "l_11": "Cherbourg",
+            "l_12": "Ostend",
+            "l_13": "River Seine"
         },
         "events": {
-            "e_1": "D-Day Assault",
-            "e_2": "Establishment of G.C.I. Stations"
+            "e_1": "D-Day",
+            "e_2": "Attacks on Road and Rail Bridges"
         },
         "organisations": {
-            "o_1": "British Second Tactical Air Force",
-            "o_2": "United States Ninth Air Force",
-            "o_3": "Combined Control Centre",
-            "o_4": "Executive Control Centre",
-            "o_5": "Operational Research Section"
+            "o_1": "United States Ninth Air Force",
+            "o_2": "Royal Air Force Second Tactical Air Force",
+            "o_3": "United States Eighth Air Force",
+            "o_4": "A.E.A.F."
         }
     },
     "keywords": [
-        "signals communications",
-        "Radar cover",
-        "G.C.I. stations",
-        "W/T communications",
-        "air operations"
+        "fighter bombers",
+        "medium bombers",
+        "anti-aircraft fire",
+        "coastal batteries",
+        "D-Day",
+        "transport difficulties"
     ],
     "themes": [
         "Military Operations",
-        "Communications Planning",
-        "Logistics and Coordination"
+        "Air Operations",
+        "Infrastructure Attacks"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Communications Planning": [
+        "Air Operations": [
             "e_1"
         ],
-        "Logistics and Coordination": [
+        "Infrastructure Attacks": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "D-Day",
+            "date": "June 6, 1944",
             "locations": [
-                "l_3"
+                "l_13"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "On D-Day, the assault forces land on the beach-head and begin operations, requiring robust signals communications to maintain control and coordination."
+            "eventSummary": "On D-Day, a coordinated assault is launched to disrupt enemy infrastructure, leading to the incapacitation of multiple bridges over the River Seine."
         },
         {
             "event": "e_2",
-            "date": "D-Day",
+            "date": "April 21, 1944 - June 6, 1944",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4",
-                "o_5"
+                "o_1",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The establishment of G.C.I. stations is initiated on D-Day to provide radar cover, despite challenges faced with equipment losses."
+            "eventSummary": "Attacks on road and rail bridges are executed over a course of several weeks, aimed at crippling enemy transportation and supply routes prior to D-Day."
         }
     ]
 }

@@ -1,64 +1,51 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral",
-            "p_2": "Commander-in-Chief"
+            "p_1": "Rear Admiral",
+            "p_2": "Vice-Admiral (D)"
         },
         "locations": {
-            "l_1": "Alexandria",
-            "l_2": "Cape Town",
-            "l_3": "Egyptian coast",
-            "l_4": "position 33 50 N, 23 00 E",
-            "l_5": "London",
-            "l_6": "Edinburgh",
-            "l_7": "Cardiff",
-            "l_8": "Belfast"
+            "l_1": "Calabria",
+            "l_2": "Messina",
+            "l_3": "Straits of Messina",
+            "l_4": "Port Augusta",
+            "l_5": "Cape Spartivento",
+            "l_6": "Malta",
+            "l_7": "Augusta",
+            "l_8": "Alexandria"
         },
         "events": {
-            "e_1": "Bombing attacks on the 1st Battle Squadron and EAGLE",
-            "e_2": "Arrival of the Commander-in-Chief in WARSPITE at Alexandria",
-            "e_3": "Force C entering harbour at Alexandria"
+            "e_1": "Bombing attacks on fleet",
+            "e_2": "Convoy M.S. One",
+            "e_3": "Air raid on Malta"
         },
         "organisations": {
-            "o_1": "No. 252 Wing",
-            "o_2": "3rd Cruiser Squadron",
-            "o_3": "7th Cruiser Squadron"
+            "o_1": "7th Cruiser Squadron",
+            "o_2": "Royal Navy"
         }
     },
     "keywords": [
-        "attack",
         "bombing",
-        "cv convoy",
-        "aircraft",
-        "fighters",
-        "military operations"
+        "convoy",
+        "air raid"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagements",
-        "Fighter Protection"
+        "Naval Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3"
-        ],
-        "Naval Engagements": [
-            "e_1",
-            "e_2"
-        ],
-        "Fighter Protection": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Between 1110 and 1804",
+            "date": "July 10",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -67,43 +54,38 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Several bombing attacks are directed at the 1st Battle Squadron and EAGLE, but no hits are recorded despite multiple near misses."
+            "eventSummary": "A series of heavy bombing attacks are made on the fleet by enemy aircraft operating from shore bases, resulting in no damage but several near misses."
         },
         {
             "event": "e_2",
-            "date": "Saturday, 13th July",
+            "date": "July 10",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Commander-in-Chief arrives in WARSPITE at Alexandria with the 7th Cruiser Squadron and escorting destroyers."
-        },
-        {
-            "event": "e_3",
-            "date": "14th July 0815",
-            "locations": [
-                "l_1"
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Force C successfully enters the harbour at Alexandria, following a series of combat engagements."
+            "eventSummary": "Convoy M.S. One is sailed from Malta, escorted by various destroyers from the fleet."
+        },
+        {
+            "event": "e_3",
+            "date": "July 10",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An air raid takes place on Malta, resulting in no hits on destroyers but several enemy aircraft are shot down."
         }
     ]
 }

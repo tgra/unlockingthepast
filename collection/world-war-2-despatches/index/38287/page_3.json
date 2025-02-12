@@ -1,96 +1,92 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Andrew B. Cunningham",
-            "p_2": "Captain P. J. Mack",
-            "p_3": "Commander J. W. Eaton",
-            "p_4": "Commander R. W. Ravenhill",
-            "p_5": "Commander J. A. W. Tothill"
+            "p_1": "R. W. RAVENHILL"
         },
         "locations": {
-            "l_1": "Mediterranean",
-            "l_2": "Malta",
-            "l_3": "Tripoli",
-            "l_4": "Sfax",
-            "l_5": "Cap Bon"
+            "l_1": "SFAX",
+            "l_2": "eastward",
+            "l_3": "westward"
         },
         "events": {
-            "e_1": "Action against Italian Convoy",
-            "e_2": "Sinking of Tripoli-bound convoy"
+            "e_1": "SKIRMISH OFF SFAX",
+            "e_2": "Engagement with LUCA TARIGO"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Fourteenth Destroyer Flotilla",
-            "o_3": "Admiralty"
+            "o_1": "H.M.S. JANUS",
+            "o_2": "Captain (D) 14",
+            "o_3": "MOHAWK",
+            "o_4": "NUBIAN",
+            "o_5": "JERVIS"
         }
     },
     "keywords": [
-        "Italian convoy",
-        "destroyers",
-        "H.M.S. Mohawk",
-        "military action",
-        "naval operations",
-        "Malta"
+        "convoy",
+        "merchant vessel",
+        "destroyer",
+        "torpedo",
+        "fire",
+        "explosion",
+        "survivors"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Command and Strategy"
+        "Naval Engagements",
+        "Survivor Pickup"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Engagement": [
-            "e_1"
-        ],
-        "Command and Strategy": [
+        "Naval Engagements": [
+            "e_1",
             "e_2"
+        ],
+        "Survivor Pickup": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th-16th April, 1941",
+            "date": "Unknown",
             "locations": [
                 "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Admiral Sir Andrew B. Cunningham reports on the successful action against an Italian convoy executed by the Fourteenth Destroyer Flotilla, highlighting the convoy's annihilation and the determination of the forces involved."
-        },
-        {
-            "event": "e_2",
-            "date": "15th April, 1942",
-            "locations": [
                 "l_2",
                 "l_3"
             ],
             "persons": [
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "A report detailing the sinking of a Tripoli-bound convoy by H.M.S. JERVIS and its accompanying destroyers, outlining their strategic maneuvers and the engagement's outcomes."
+            "eventSummary": "A skirmish occurs off SFAX involving H.M.S. JANUS, where multiple enemy vessels are engaged resulting in fires aboard. Efforts to assist survivors are also reported."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "During the engagement with LUCA TARIGO, a series of attacks result in hits on the target, which subsequently catches fire and begins to sink."
         }
     ]
 }

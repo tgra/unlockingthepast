@@ -1,116 +1,61 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Nicholas Embiricos",
-            "p_2": "Admiral Sir Andrew B. Cunningham",
-            "p_3": "Rear Admiral H Grohman",
-            "p_4": "Vice Admiral H. D. Endkan-Wippell"
+            "p_1": "Admiral Sir Andrew B. Cunningham"
         },
         "locations": {
             "l_1": "Greece",
-            "l_2": "Piraeus",
-            "l_3": "Suda Bay",
-            "l_4": "Mediterranean"
+            "l_2": "Egyptian ports",
+            "l_3": "Piraeus",
+            "l_4": "Dodecanese",
+            "l_5": "Crete",
+            "l_6": "Malta",
+            "l_7": "Alexandria",
+            "l_8": "Suda Bay"
         },
         "events": {
-            "e_1": "Evacuation of British Army from Greece",
-            "e_2": "Operation Demon",
-            "e_3": "Attack on Convoy A.S.23",
-            "e_4": "Attack on Convoy A.N.F.24",
-            "e_5": "Attack on Convoy A.N.27",
-            "e_6": "Attack on Convoy A.S.21"
+            "e_1": "Operation Lustre",
+            "e_2": "Operation M.C.9"
         },
         "organisations": {
-            "o_1": "British Navy",
-            "o_2": "Admiralty"
+            "o_1": "Admiralty"
         }
     },
     "keywords": [
+        "Transportation",
         "Evacuation",
-        "Convoy",
-        "Attack",
-        "Mediterranean Fleet",
-        "Admiralty",
-        "Greece"
+        "Military Operation",
+        "Casualties",
+        "Convoy"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategies",
-        "Evacuation Planning",
-        "Air Attacks",
-        "Disruptions in Supply Chains"
+        "Logistics",
+        "Evacuation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4",
-            "e_5",
-            "e_6"
-        ],
-        "Naval Strategies": [
-            "e_1",
             "e_2"
         ],
-        "Evacuation Planning": [
+        "Logistics": [
             "e_1"
         ],
-        "Air Attacks": [
-            "e_3",
-            "e_4",
-            "e_6"
-        ],
-        "Disruptions in Supply Chains": [
+        "Evacuation": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "24th to 29th April, 1941",
+            "date": "4th March - 24th April 1941",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_4"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4",
-                "e_5"
-            ],
-            "eventSummary": "The evacuation of British Army forces from Greece occurs under heavy enemy attack, requiring meticulous naval and air strategies to successfully withdraw the troops."
-        },
-        {
-            "event": "e_2",
-            "date": "7th July, 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Operation Demon involves the evacuation of British forces conducted with assistance from naval forces amidst challenging conditions and air assaults."
-        },
-        {
-            "event": "e_3",
-            "date": "1st April, 1941",
-            "locations": [
-                "l_2"
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_7"
             ],
             "persons": [
                 "p_1"
@@ -118,47 +63,23 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Convoy A.S.23 is attacked by enemy dive bombers, leading to significant damage and abandonment of the vessel."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Lustre is the transportation of approximately 58,000 troops to Greece, commencing on March 4th and ending on April 24th, 1941. The operation faced challenges such as enemy threats and logistical difficulties, but was completed successfully."
         },
         {
-            "event": "e_4",
-            "date": "3rd April, 1941",
+            "event": "e_2",
+            "date": "Between March 19 and 24, 1941",
             "locations": [
-                "l_1"
+                "l_6"
             ],
             "persons": [],
-            "organisations": [
-                "o_1"
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Convoy A.N.F.24 is struck and catches fire after being hit, resulting in casualties among crew members."
-        },
-        {
-            "event": "e_5",
-            "date": "4th April, 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Northern Prince convoy suffers an explosion and sinks after being targeted during transportation efforts."
-        },
-        {
-            "event": "e_6",
-            "date": "Before 24th April, 1941",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Convoy A.S.21 is attacked by enemy aircraft, resulting in damage to multiple vessels during the operation."
+            "eventSummary": "Operation M.C.9 is a Malta convoy operation that occurred while Operation Lustre was ongoing, providing essential supply lines during the military transport to Greece."
         }
     ]
 }

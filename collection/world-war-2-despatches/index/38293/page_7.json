@@ -1,188 +1,136 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Papagos",
-            "p_2": "General Wilson",
-            "p_3": "Brigadier Hewer",
-            "p_4": "Brigadier Galloway",
-            "p_5": "General Sir Thomas Blamey"
+            "p_1": "Lieut. Commander Carr",
+            "p_2": "H.M. King George",
+            "p_3": "Colonel Renton",
+            "p_4": "Captain Clark-Hall",
+            "p_5": "General Wilson",
+            "p_6": "Brigadier Galloway",
+            "p_7": "Group Captain Pelly",
+            "p_8": "General Sir H. Maitland Wilson",
+            "p_9": "Major-General T. G. G. Heywood",
+            "p_10": "Rear Admiral C. E. Turtle",
+            "p_11": "Brigadier A. G. Mission Jones",
+            "p_12": "Prince Peter of Greece",
+            "p_13": "Admiral Sakellarion"
         },
         "locations": {
-            "l_1": "Greece",
-            "l_2": "Yannina",
-            "l_3": "Epirus",
-            "l_4": "Athens",
-            "l_5": "Patras",
-            "l_6": "Suda Bay",
-            "l_7": "Thebes",
-            "l_8": "Corinth Canal",
-            "l_9": "Megara",
-            "l_10": "Nauplion",
-            "l_11": "Lavrion",
-            "l_12": "Crete"
+            "l_1": "Athens",
+            "l_2": "Nauplia",
+            "l_3": "Crete",
+            "l_4": "Piraeus",
+            "l_5": "Myli",
+            "l_6": "Megara",
+            "l_7": "Corinth Canal"
         },
         "events": {
-            "e_1": "Evacuation decision",
-            "e_2": "German advance and Greek Army capitulation",
-            "e_3": "Meeting at G.H.Q.",
-            "e_4": "Establishment of Naval Signal Office",
-            "e_5": "Air attacks on shipping",
-            "e_6": "Evacuation operations",
-            "e_7": "Evacuation of British colony"
+            "e_1": "D.x Day",
+            "e_2": "D.2 Day",
+            "e_3": "D.3 Day"
         },
         "organisations": {
-            "o_1": "British Army",
-            "o_2": "R.A.F.",
-            "o_3": "G.H.Q."
+            "o_1": "British Military Mission",
+            "o_2": "Greek Government",
+            "o_3": "Royal Australian Air Force (R.A.F.)"
         }
     },
     "keywords": [
-        "Evacuation",
-        "German advance",
-        "Naval Signal Office",
-        "air attacks",
-        "shipping"
+        "Embarkation",
+        "Dive bombing",
+        "Communications",
+        "Troops",
+        "Naval Operations"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Strategies",
-        "German Invasion",
-        "Communication and Planning"
+        "Logistics",
+        "Evacuations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_6"
+            "e_3"
         ],
-        "Evacuation Strategies": [
+        "Logistics": [
             "e_1",
-            "e_6",
-            "e_7"
+            "e_2"
         ],
-        "Communication and Planning": [
-            "e_3",
-            "e_4"
+        "Evacuations": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 24-25, 1941",
+            "date": "24th April 1941",
             "locations": [
-                "l_6",
-                "l_9",
-                "l_10",
-                "l_11"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_6"
-            ],
-            "eventSummary": "A decision is made to commence evacuation operations for troops stationed in Greece due to the advancing German forces, with plans to avoid preliminary evacuations to maintain secrecy."
-        },
-        {
-            "event": "e_2",
-            "date": "April 21, 1941",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The German advance is reported as the Adolf Hitler Division reaches Yannina, leading to the unexpected capitulation of the Greek Army without warning the British forces in Athens."
-        },
-        {
-            "event": "e_3",
-            "date": "April 21, 1941",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
                 "p_3"
             ],
             "organisations": [
-                "o_3"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "A meeting is held at G.H.Q. to discuss ways to implement the military and naval plans for the ongoing operations as evacuation becomes increasingly critical."
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On D.x Day, 10,200 personnel are embarked from the area east of Athens and Nauplia as operations proceed."
         },
         {
-            "event": "e_4",
-            "date": "April 22, 1941",
+            "event": "e_2",
+            "date": "25th April 1941",
             "locations": [
+                "l_1",
                 "l_6"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A Naval Signal Office is established at Combined H.Q. to ensure communication lines are maintained directly to key stations, enabling better coordination amidst the developing crisis."
-        },
-        {
-            "event": "e_5",
-            "date": "April 21-23, 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Massed air attacks are reported on shipping, resulting in the sinking of several vessels, complicating the evacuation process and necessitating strategic adjustments."
-        },
-        {
-            "event": "e_6",
-            "date": "April 23-25, 1941",
-            "locations": [
-                "l_9",
-                "l_10",
-                "l_11"
-            ],
-            "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "Evacuation operations begin, with several L.C.T. (Landing Craft Tank) arriving at designated beaches, though many encounter severe challenges and losses during this critical phase."
+            "eventSummary": "On D.2 Day, the Joint Planning Staff departs Athens towards Myli with General Wilson, continuing military logistics."
         },
         {
-            "event": "e_7",
-            "date": "April 21-25, 1941",
+            "event": "e_3",
+            "date": "26th April 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_5"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The evacuation of the British colony in Greece continues, albeit irregularly, as local steamers assist in conducting troops and individuals from the increasingly threatened area."
+            "persons": [
+                "p_8",
+                "p_9",
+                "p_10",
+                "p_11",
+                "p_12",
+                "p_13"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On D.3 Day, the newly established H.Q. near Myli implements strategies to counter enemy air superiority."
         }
     ]
 }

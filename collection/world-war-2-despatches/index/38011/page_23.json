@@ -1,70 +1,111 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lord Cork",
-            "p_2": "Major-General Mackesy",
-            "p_3": "Colonel Dowler",
+            "p_1": "Sir Cecil Dormer",
+            "p_2": "Colonel Pollock",
+            "p_3": "Lord Cork",
             "p_4": "General Bethouart",
-            "p_5": "Brigadier Gammell",
-            "p_6": "Brigadier Fraser"
+            "p_5": "General Fleischer"
         },
         "locations": {
-            "l_1": "Harstad",
-            "l_2": "Bodo",
+            "l_1": "Norway",
+            "l_2": "Tromso",
             "l_3": "Narvik",
-            "l_4": "Lulea",
-            "l_5": "Tromso",
-            "l_6": "Skaanland",
-            "l_7": "Gratangen",
-            "l_8": "Herjangs Fjord",
-            "l_9": "Oijord",
-            "l_10": "Rombaks Fjord",
-            "l_11": "Ankenes Peninsula"
+            "l_4": "Bjerkvik",
+            "l_5": "Oijord Peninsula",
+            "l_6": "Rombaks Fjord",
+            "l_7": "Lilleberget",
+            "l_8": "North of Rombaksjord",
+            "l_9": "Sildvik",
+            "l_10": "Ankenes Peninsula",
+            "l_11": "Beisfjord",
+            "l_12": "H.M.S. Caivo",
+            "l_13": "H.M.S. Southampton"
         },
         "events": {
-            "e_1": "Landing Operation at Bjerkvik",
-            "e_2": "Assumption of Command in Norway"
+            "e_1": "Evacuation of Northern Norway",
+            "e_2": "Capture of Narvik",
+            "e_3": "Landing operation on 27/28th May"
         },
         "organisations": {
-            "o_1": "French Foreign Legion",
-            "o_2": "War Office",
-            "o_3": "24th Guards Brigade",
-            "o_4": "Ist Battalion Scots Guards",
-            "o_5": "Ist Battalion Irish Guards"
+            "o_1": "His Majesty's Government",
+            "o_2": "Royal Navy",
+            "o_3": "Norwegian Army",
+            "o_4": "Polish troops"
         }
     },
     "keywords": [
-        "Landing Operation",
-        "Command",
-        "Anti-aircraft artillery",
-        "Military Reinforcements"
+        "evacuation",
+        "landing",
+        "counterattack",
+        "military operations",
+        "Norwegian Government"
     ],
     "themes": [
         "Military Operations",
-        "Leadership",
         "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Leadership": [
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "13th May 1940",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Northern Norway is discussed to manage the withdrawal of troops."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_3",
+                "l_4",
                 "l_5",
+                "l_6",
                 "l_8"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The capture of Narvik is planned involving strategic land and naval operations."
+        },
+        {
+            "event": "e_3",
+            "date": "27/28th May",
+            "locations": [
+                "l_3",
+                "l_6",
+                "l_11"
             ],
             "persons": [
                 "p_1",
@@ -79,33 +120,7 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The landing operation at Bjerkvik occurs under heavy bombardment from the Fleet in the early hours of the 13th May, successfully ejecting enemy forces from the area."
-        },
-        {
-            "event": "e_2",
-            "date": "13th May 1940",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Assuming command, the military leader discusses and confirms strategy regarding troop reinforcements at Harstad with Brigadier Fraser and Colonel Dowler."
+            "eventSummary": "The landing operation commences with bombardment and troop movements to secure Narvik."
         }
     ]
 }

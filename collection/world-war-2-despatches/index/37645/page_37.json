@@ -5,56 +5,68 @@
             "p_2": "Capt. J. H. H. Edelsten"
         },
         "locations": {
-            "l_1": "Mombasa",
-            "l_2": "Berbera",
-            "l_3": "Lake Rudolf",
-            "l_4": "Gorai",
-            "l_5": "Mega",
-            "l_6": "Moyale",
-            "l_7": "El Wak",
-            "l_8": "Lower Giuba",
-            "l_9": "Chisimaio",
-            "l_10": "Afmadu",
-            "l_11": "Garissa",
-            "l_12": "Wajir",
-            "l_13": "Bura",
-            "l_14": "Gobuen",
-            "l_15": "Giumbo",
-            "l_16": "Allessandra",
-            "l_17": "Gelib",
-            "l_18": "Brava",
-            "l_19": "Afmadu",
-            "l_20": "Dif"
+            "l_1": "Berbera",
+            "l_2": "Mombasa",
+            "l_3": "Iavello",
+            "l_4": "Soroppa",
+            "l_5": "Lake Rudolf",
+            "l_6": "Gorai",
+            "l_7": "Mega",
+            "l_8": "Moyale",
+            "l_9": "El Wak",
+            "l_10": "Giuba",
+            "l_11": "Afmadu",
+            "l_12": "Lower Giuba",
+            "l_13": "Chisimaio",
+            "l_14": "Gelib",
+            "l_15": "Upper Giuba",
+            "l_16": "River Tana",
+            "l_17": "Garissa",
+            "l_18": "Wajir",
+            "l_19": "Matsabit",
+            "l_20": "Bura",
+            "l_21": "Gobuen",
+            "l_22": "Giumbo",
+            "l_23": "Allessandra",
+            "l_24": "Bulo Erillo",
+            "l_25": "Margherita",
+            "l_26": "Chisimaio"
         },
         "events": {
-            "e_1": "Operation at Berbera",
+            "e_1": "Operations from 16th March to 23rd March",
             "e_2": "Occupation of Iavello",
-            "e_3": "Operation at Soroppa",
-            "e_4": "Operations of 11th and 12th (A) Divisions",
+            "e_3": "Operation on 31st March",
+            "e_4": "Assumption of command on 6th April",
             "e_5": "Raid at El Wak",
-            "e_6": "Attack on Chisimaio",
-            "e_7": "Bombardment of Afmadu and Gelib",
-            "e_8": "Successful Fighter Attack by S.A.A.F."
+            "e_6": "Operations of 11th and 12th (A) Divisions",
+            "e_7": "Bombardment of Chisimaio",
+            "e_8": "Successful fighter attack on Afmadu"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "S.A.A.F."
+            "o_2": "S.A.A.F.",
+            "o_3": "11th (A) Division",
+            "o_4": "12th (A) Division",
+            "o_5": "1st S.A. Division",
+            "o_6": "2nd E.A. Brigade",
+            "o_7": "5th S.A. Brigade",
+            "o_8": "23rd Nigerian Brigade",
+            "o_9": "24th Gold Coast Brigade"
         }
     },
     "keywords": [
         "Brigade",
         "Infantry",
         "Operation",
-        "Supply",
         "Attack",
-        "Commander",
-        "Colonial Forces"
+        "Bombardment",
+        "Occupation"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Supply Chain Management",
-        "Leadership"
+        "Command Structure",
+        "Supply Challenges",
+        "Tactical Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -63,14 +75,21 @@
             "e_3",
             "e_4",
             "e_5",
-            "e_6"
+            "e_6",
+            "e_7",
+            "e_8"
         ],
-        "Strategic Decisions": [
-            "e_3",
-            "e_4"
+        "Command Structure": [
+            "e_4",
+            "e_1"
         ],
-        "Leadership": [
-            "p_1"
+        "Supply Challenges": [
+            "e_1",
+            "e_3"
+        ],
+        "Tactical Decisions": [
+            "e_6",
+            "e_7"
         ]
     },
     "eventConnections": [
@@ -85,81 +104,85 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The Brigade embarks from Mombasa and arrives at Berbera, preparing for subsequent military operations."
+            "eventSummary": "The brigade embarks at Mombasa on 16th March and arrives at Berbera on 23rd March."
         },
         {
             "event": "e_2",
-            "date": "Unknown",
+            "date": "",
             "locations": [
-                "l_18"
+                "l_3"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_6"
+            ],
             "connectedEvents": [],
-            "eventSummary": "The 21st E.A. Brigade occupies Iavello after determining that it has been evacuated by the enemy."
+            "eventSummary": "21st E.A. Brigade occupies Iavello, which was evacuated by the enemy."
         },
         {
             "event": "e_3",
             "date": "31st March",
             "locations": [
-                "l_20"
+                "l_4"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_7",
+                "o_2"
             ],
-            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "21st E.A. Infantry Brigade successfully drives the enemy out of Soroppa and captures important enemy personnel and equipment."
+            "eventSummary": "21st E.A. Infantry Brigade drives the enemy out of Soroppa."
         },
         {
             "event": "e_4",
-            "date": "February to 25th February, 1941",
-            "locations": [
-                "l_18",
-                "l_9"
+            "date": "6th April",
+            "locations": [],
+            "persons": [
+                "p_1"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_5",
-                "e_6"
+            "organisations": [
+                "o_5"
             ],
-            "eventSummary": "The operations of 11th and 12th (A) Divisions commence, involving strategic planning and troop deployment to counter enemy positions."
+            "connectedEvents": [],
+            "eventSummary": "rath (A) Division assumes command of the ast and 25th E.A. Infantry Brigades."
         },
         {
             "event": "e_5",
-            "date": "February 15th",
+            "date": "",
             "locations": [
-                "l_20"
+                "l_9"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "A raid at El Wak prompts enemy withdrawal, setting the stage for further military actions."
+            "eventSummary": "After the raid at El Wak, the enemy decides to withdraw his Colonial Forces."
         },
         {
             "event": "e_6",
-            "date": "Unknown",
+            "date": "February 1941",
             "locations": [
                 "l_9"
             ],
             "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4"
+            "organisations": [
+                "o_3",
+                "o_4"
             ],
-            "eventSummary": "An attack on Chisimaio is planned and coordinated with naval bombardments to support troop movements."
+            "connectedEvents": [],
+            "eventSummary": "Operations of 11th and 12th (A) Divisions take place from th February to 25th February."
         },
         {
             "event": "e_7",
-            "date": "Unknown",
+            "date": "",
             "locations": [
-                "l_20"
+                "l_14"
             ],
             "persons": [
                 "p_2"
@@ -168,18 +191,20 @@
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The Royal Navy supports the ground operations by bombarding key locations to facilitate troop movements."
+            "eventSummary": "Royal Navy under Capt. J. H. H. Edelsten bombards Chisimaio in support of an attack."
         },
         {
             "event": "e_8",
-            "date": "Unknown",
-            "locations": [],
+            "date": "",
+            "locations": [
+                "l_11"
+            ],
             "persons": [],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The S.A.A.F. carries out successful airstrikes on enemy positions, weakening their operational capabilities."
+            "eventSummary": "S.A.A.F. conducts a successful fighter attack on Afmadu."
         }
     ]
 }

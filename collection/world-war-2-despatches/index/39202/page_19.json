@@ -1,94 +1,98 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Field Marshal Count Terauchi",
-            "p_2": "Air Vice Marshal Bandon"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Bangkok",
-            "l_3": "Saigon",
-            "l_4": "Rangoon",
-            "l_5": "Hong Kong",
-            "l_6": "Cocos Islands",
-            "l_7": "Kuala Lumpur",
-            "l_8": "Tenasserim Coast",
-            "l_9": "Malacca",
-            "l_10": "Ports Swettenham",
-            "l_11": "Ramree Island"
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Malaya",
+            "l_4": "Arakan",
+            "l_5": "Imphal",
+            "l_6": "Comilla"
         },
         "events": {
-            "e_1": "Operation Tiderace",
-            "e_2": "Operation Zipper",
-            "e_3": "Operation Sibber",
-            "e_4": "Operation Masterdom"
+            "e_1": "Campaign in Burma",
+            "e_2": "Siege of Imphal",
+            "e_3": "Air evacuation of casualties",
+            "e_4": "Fall of Rangoon"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "R.A.F."
+            "o_1": "R.A.F.",
+            "o_2": "Allied Forces",
+            "o_3": "R.A.F. Casualty Air Evacuation Units"
         }
     },
     "keywords": [
-        "Operation Tiderace",
-        "Operation Zipper",
-        "reoccupation",
-        "Japanese surrender",
-        "air superiority",
-        "military strategy",
-        "Allied forces"
+        "air evacuation",
+        "morale",
+        "casualty",
+        "supply",
+        "Japanese",
+        "medical",
+        "Allied",
+        "British",
+        "American"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Allied Command"
+        "Medical Care",
+        "Morale Building"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_2"
+        "Medical Care": [
+            "e_3"
         ],
-        "Allied Command": [
-            "e_1",
-            "e_2"
+        "Morale Building": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 1945",
+            "date": "May to August, 1945",
             "locations": [
                 "l_1",
+                "l_2",
                 "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Operation Tiderace is conducted to secure Singapore after the Japanese surrender, involving extensive aerial troop transport."
+            "eventSummary": "During the period of May to August 1945, the Allied Forces undertake operations leading to the evacuation of casualties, showcasing the effectiveness of air casualty evacuation."
         },
         {
             "event": "e_2",
-            "date": "September 9, 1945",
+            "date": "opening months of 1944",
             "locations": [
-                "l_10",
-                "l_11"
+                "l_1",
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
+            "persons": [],
+            "organisations": [
+                "o_2"
             ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Siege of Imphal begins, leading to the encirclement of Allied ground forces."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
@@ -96,37 +100,21 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation Zipper is planned for landing in Southern Malay Peninsula but is affected by the early surrender of Japan, altering the operational timeline."
-        },
-        {
-            "event": "e_3",
-            "date": "Post-Japanese surrender",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Sibber is focused on occupying the Bangkok area following the reoccupation plans established by allied forces."
+            "eventSummary": "Air evacuation of casualties becomes a recognized method for transporting seriously injured personnel during the campaign."
         },
         {
             "event": "e_4",
-            "date": "Post-Japanese surrender",
+            "date": "three days before April 1945",
             "locations": [
-                "l_3"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "Operation Masterdom involves the re-entry into French Indo-China to take control over Japanese forces, enhancing Allied territorial claims."
+            "eventSummary": "Just before the fall of Rangoon, a significant number of casualties have been evacuated by British and American aircraft."
         }
     ]
 }

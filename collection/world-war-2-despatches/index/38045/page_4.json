@@ -1,150 +1,146 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieut. E. L. Graham",
-            "p_2": "Lieut.-Commander J. H. Dathan",
+            "p_1": "Lieut. E. L. Graham, R.N.V.R.",
+            "p_2": "Lieut.-Commander J. H. Dathan, R.N.",
             "p_3": "Major-General Roberts",
-            "p_4": "Commander R. E. D. Ryder",
+            "p_4": "Commander R. E. D. Ryder, V.C., R.N.",
             "p_5": "Commander Wyburd",
-            "p_6": "Lieutenant-Commander H. W. Goulding",
-            "p_7": "Lieutenant-Commander C. W. McMullen",
+            "p_6": "Lieutenant-Commander H. W. Goulding, D.S.O., R.N.R.",
+            "p_7": "Lieutenant-Commander C. W. McMullen, R.N.",
             "p_8": "Commander McClintock"
         },
         "locations": {
             "l_1": "Red Beach",
             "l_2": "White Beach",
-            "l_3": "Yellow Beach",
-            "l_4": "Blue Beach",
+            "l_3": "Dieppe",
+            "l_4": "Boulogne",
             "l_5": "Green Beach",
-            "l_6": "Dieppe Sea Front",
-            "l_7": "Boulogne"
+            "l_6": "Blue Beach"
         },
         "events": {
-            "e_1": "Main Landings on Red and White Beaches",
-            "e_2": "Landing at Blue Beach",
-            "e_3": "Landing at Green Beach",
-            "e_4": "Enemy E-Boat Approach",
-            "e_5": "Landing at White Beach",
-            "e_6": "Transfer of Royal Marine Commando"
+            "e_1": "Landing on Red Beach",
+            "e_2": "Landing on White Beach",
+            "e_3": "Landing at Blue Beach",
+            "e_4": "Enemy E-boats approaching"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Royal Marine Commando",
-            "o_3": "Chasseurs"
+            "o_1": "Royal Marine Commando",
+            "o_2": "H.M.S. CALPE",
+            "o_3": "H.M.S. LOCUST",
+            "o_4": "O.R.P. SLAZAK",
+            "o_5": "H.M. Ships BROCKLESBY",
+            "o_6": "H.M. Ships BLEASDALE",
+            "o_7": "Chasseurs"
         }
     },
     "keywords": [
-        "Naval Operations",
-        "Landing Crafts",
-        "Air Support",
-        "Heavy Fire",
-        "Casualties"
+        "landings",
+        "air support",
+        "naval operations",
+        "casualties",
+        "opposition"
     ],
     "themes": [
         "Military Operations",
-        "Challenges in Operations",
-        "Coordination among Forces"
+        "Naval Support",
+        "Casualties",
+        "Troop Deployment"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3",
-            "e_5",
-            "e_6"
+            "e_4"
         ],
-        "Challenges in Operations": [
+        "Naval Support": [
             "e_1",
             "e_2",
-            "e_6"
+            "e_3"
         ],
-        "Coordination among Forces": [
-            "e_4"
+        "Casualties": [
+            "e_1",
+            "e_2"
+        ],
+        "Troop Deployment": [
+            "e_1",
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "0700",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1",
                 "p_2",
                 "p_3",
                 "p_4"
             ],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_5"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Main landings on Red and White Beaches are successfully executed despite challenges, with no losses of landing craft initially."
+            "eventSummary": "The landing on Red Beach is successfully effected by 0700 despite heavy fire."
         },
         {
-            "event": "e_5",
-            "date": "Date unspecified",
+            "event": "e_2",
+            "date": "0840",
             "locations": [
                 "l_2"
             ],
             "persons": [
-                "p_2",
-                "p_4"
+                "p_4",
+                "p_3",
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Royal Marine Commando's landing at White Beach is ordered and executed with heavy opposition faced."
+            "eventSummary": "The landing on White Beach occurs in face of heavy opposition at 0840."
         },
         {
-            "event": "e_2",
-            "date": "Date unspecified",
+            "event": "e_3",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_6"
             ],
             "persons": [
                 "p_6",
                 "p_7"
             ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "The report regarding the landing at Blue Beach reveals that heavy opposition prevented any effective action."
+            "eventSummary": "Lieutenant-Commander Goulding is instructed to proceed to Blue Beach to withdraw any troops present."
         },
         {
             "event": "e_4",
-            "date": "At about 0750",
+            "date": "0750",
             "locations": [
-                "l_7"
+                "l_4"
             ],
-            "persons": [],
+            "persons": [
+                "p_8"
+            ],
             "organisations": [
-                "o_1"
+                "o_4",
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [],
-            "eventSummary": "Enemy E-boats are reported approaching from Boulogne, with naval forces ordered to patrol."
-        },
-        {
-            "event": "e_3",
-            "date": "Date unspecified",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The landing at Green Beach is unable to proceed due to heavy fire from the enemy."
+            "eventSummary": "At 0750, 10 E-boats are reported approaching from Boulogne."
         }
     ]
 }

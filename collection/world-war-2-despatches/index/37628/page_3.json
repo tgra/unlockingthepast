@@ -1,99 +1,126 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Sir Archibald P. Wavell",
-            "p_2": "General Wilson",
-            "p_3": "General O'Connor"
+            "p_1": "General Maletti",
+            "p_2": "Brigadier Savory",
+            "p_3": "Brigadier Lloyd",
+            "p_4": "Brigadier Lomax"
         },
         "locations": {
-            "l_1": "Western Desert",
-            "l_2": "Egypt",
-            "l_3": "Cyrenaica",
-            "l_4": "Sidi Barrani",
-            "l_5": "Mersa Matruh",
-            "l_6": "Benghazi",
-            "l_7": "Sofafi"
+            "l_1": "Sofafi",
+            "l_2": "Nibeiwa",
+            "l_3": "Tummar",
+            "l_4": "Maktila",
+            "l_5": "Sidi Barrani",
+            "l_6": "Buq Buq"
         },
         "events": {
             "e_1": "Battle of Sidi Barrani",
-            "e_2": "Counter-offensive against the Italian army"
+            "e_2": "attack on Nibeiwa",
+            "e_3": "attack on Tummar"
         },
         "organisations": {
-            "o_1": "British Troops in Egypt",
-            "o_2": "Western Desert Force",
-            "o_3": "7th Armoured Division",
-            "o_4": "4th Indian Division"
+            "o_1": "7th Armoured Division",
+            "o_2": "4th Indian Division",
+            "o_3": "7th Battalion R.T.R.",
+            "o_4": "11th Indian Infantry Brigade",
+            "o_5": "5th Indian Infantry Brigade",
+            "o_6": "16th British Infantry Brigade"
         }
     },
     "keywords": [
-        "Western Desert",
-        "Egypt",
-        "counter-offensive",
-        "Italian army",
-        "Benghazi",
-        "Sidi Barrani",
-        "Mersa Matruh"
+        "attack",
+        "operation",
+        "infantry",
+        "artillery",
+        "enemy",
+        "morale",
+        "terrain",
+        "tanks"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Defensive Operations"
+        "Combat Engagement",
+        "Strategic Maneuvers"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
+        "Combat Engagement": [
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Maneuvers": [
             "e_1"
-        ],
-        "Defensive Operations": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 7 to 13, 1940",
+            "date": "9th December",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_5",
+                "l_2"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3"
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3",
-                "o_4"
+                "o_4",
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Battle of Sidi Barrani takes place, marked by decisive British action against Italian forces in the Western Desert."
+            "eventSummary": "The Battle of Sidi Barrani is initiated on the 9th December with multiple brigades of the 4th Indian Division and the 7th R.T.R. executing attacks on enemy positions at Nibeiwa and Tummar, following a successful delay in enemy action."
         },
         {
             "event": "e_2",
-            "date": "From December 7, 1940, to February 7, 1941",
+            "date": "9th December",
             "locations": [
-                "l_3",
-                "l_2",
-                "l_6"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_4",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "A counter-offensive against the Italian army is initiated, culminating in the surrender of Benghazi by February 7, 1941."
+            "eventSummary": "The attack on Nibeiwa begins at 0700 hours on 9th December by the 11th Indian Infantry Brigade, leading to the capture of the camp by 0830 hours after facing heavy enemy fire."
+        },
+        {
+            "event": "e_3",
+            "date": "9th December",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The attack on Tummar starts on 9th December, with the 5th Indian Infantry Brigade preparing for an assault on the enemy camp, following successful engagements at Nibeiwa."
         }
     ]
 }

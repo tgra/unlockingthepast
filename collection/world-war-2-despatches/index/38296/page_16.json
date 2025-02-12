@@ -1,73 +1,77 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C.S.7",
-            "p_2": "Captain G. R. B. Back"
+            "p_1": "Peter Fraser",
+            "p_2": "General Wavell",
+            "p_3": "Major General Freyberg",
+            "p_4": "General Evetts",
+            "p_5": "Major General E. C. Weston",
+            "p_6": "Captain J. A. V. Morse"
         },
         "locations": {
-            "l_1": "Kaso Strait",
-            "l_2": "Alexandria",
-            "l_3": "Crete",
-            "l_4": "Sphakia",
-            "l_5": "Suda"
+            "l_1": "Alexandria",
+            "l_2": "Crete",
+            "l_3": "Sphakia",
+            "l_4": "Suda Bay",
+            "l_5": "Plaka"
         },
         "events": {
-            "e_1": "Operation to sink IMPERIAL",
-            "e_2": "Air attacks on naval forces",
-            "e_3": "Embarkation at Sphakia"
+            "e_1": "Evacuation of Crete",
+            "e_2": "Air attack on Force C",
+            "e_3": "Consultation on evacuation strategy"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Royal Air Force"
+            "o_1": "Royal Air Force",
+            "o_2": "CREFORCE"
         }
     },
     "keywords": [
-        "naval operations",
-        "air attacks",
-        "embarkation",
-        "C.S.7",
-        "JU.87",
-        "casualties"
+        "evacuation",
+        "air attack",
+        "military consultation",
+        "naval operations"
     ],
     "themes": [
         "Military Operations",
-        "Air Attacks",
-        "Evacuations",
-        "Naval Coordination"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Evacuations": [
+        "Strategic Decisions": [
             "e_3"
-        ],
-        "Air Attacks": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 29",
+            "date": "30th May / 1st June 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "C.S.7 orders the sinking of the damaged ship IMPERIAL to reduce the risk to his force."
+            "eventSummary": "The evacuation from Crete involves significant decision-making and casualities, culminating in a large-scale military operation."
         },
         {
             "event": "e_2",
-            "date": "May 29",
+            "date": "31st May 1941",
             "locations": [
                 "l_1",
                 "l_2"
@@ -77,28 +81,33 @@
                 "p_2"
             ],
             "organisations": [
-                "o_1",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Force C faces an air attack from approximately 12 JU.88s, leading to damage and reduced operational capacity."
+        },
+        {
+            "event": "e_3",
+            "date": "31st May 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Air attacks by JU.87s cause significant damage to the naval force, with casualties reported among the crew."
-        },
-        {
-            "event": "e_3",
-            "date": "May 29",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Force C successfully embarks troops and supplies at Sphakia during the evacuation efforts."
+            "eventSummary": "A critical consultation among senior military leaders occurs to assess and finalize the evacuation strategy from Crete."
         }
     ]
 }

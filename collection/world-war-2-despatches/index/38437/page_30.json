@@ -1,111 +1,116 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Marshal Coningham",
-            "p_2": "General Pile",
-            "p_3": "Chief Intelligence Officer"
+            "p_1": "Keitel",
+            "p_2": "Hitler"
         },
         "locations": {
-            "l_1": "Hague",
-            "l_2": "Wassenaar",
-            "l_3": "Hook of Holland",
-            "l_4": "Amersfoort",
-            "l_5": "Haagsche Bosch",
-            "l_6": "Duindigt"
+            "l_1": "London",
+            "l_2": "Kent",
+            "l_3": "Norwich",
+            "l_4": "New Cross Road",
+            "l_5": "Deptford",
+            "l_6": "Smithfield Market",
+            "l_7": "Hughes Mansions",
+            "l_8": "Stepney",
+            "l_9": "Duindigt",
+            "l_10": "Haagsche Bosch",
+            "l_11": "Orpington"
         },
         "events": {
-            "e_1": "Rocket Attacks",
-            "e_2": "Bombing of the Haagsche Bosch",
-            "e_3": "Operational Trial Request by General Pile"
+            "e_1": "German Offensive",
+            "e_2": "Countermeasures to the Flying Bomb and A-4 Rocket",
+            "e_3": "Attacks on Crossbow Targets"
         },
         "organisations": {
-            "o_1": "Second Tactical Air Force",
-            "o_2": "No. 2 Group",
+            "o_1": "OKW",
+            "o_2": "Bataafsche Petroleum Company",
             "o_3": "Bomber Command",
-            "o_4": "Defence Committee"
+            "o_4": "Fighter Command"
         }
     },
     "keywords": [
-        "rocket attacks",
-        "bombing",
-        "operational trial",
-        "fighter-bomber",
-        "air defense"
+        "rocket",
+        "A-4 rocket",
+        "flying bomb",
+        "defence",
+        "campaign",
+        "attacks",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Countermeasures",
-        "Bombing Campaigns",
+        "Defence Strategy",
         "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Countermeasures": [
+            "e_2",
             "e_3"
         ],
-        "Bombing Campaigns": [
+        "Defence Strategy": [
             "e_2"
         ],
         "Strategic Decisions": [
-            "e_1",
-            "e_3"
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 1945",
+            "date": "27th March",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
+                "l_3",
+                "l_8",
+                "l_9"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Rocket attacks are intensified in response to rising scale of attacks, leading to strategic military decisions."
+            "eventSummary": "The German offensive comes to an end when the final rockets fall, marking the conclusion of a seven-month campaign of aerial bombardment."
         },
         {
             "event": "e_2",
-            "date": "22nd February 1945",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The bombing of the Haagsche Bosch occurs, leading to significant destruction of German storage facilities and a temporary cessation of rocket fire."
-        },
-        {
-            "event": "e_3",
-            "date": "26th March 1945",
+            "date": "",
             "locations": [],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_4"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "General Pile requests an operational trial for a new air defense scheme against approaching rockets, emphasizing the urgency for testing."
+            "eventSummary": "Countermeasures to the flying bomb and A-4 rocket are described, pointing to a wider scope of operations across Europe."
+        },
+        {
+            "event": "e_3",
+            "date": "August, 1943",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Attacks on Crossbow targets begin, influencing the total weight of bombs dropped in the Western theatre."
         }
     ]
 }

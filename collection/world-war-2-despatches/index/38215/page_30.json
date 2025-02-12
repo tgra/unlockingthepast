@@ -1,176 +1,125 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander Westforce",
-            "p_2": "Brigade Commander",
-            "p_3": "Commander 11 Indian Division",
-            "p_4": "Commander 3 Indian Corps"
+            "p_1": "Lt.-Col. McKellar"
         },
         "locations": {
-            "l_1": "Batu Pahat",
-            "l_2": "Ayer Hitam",
-            "l_3": "River Muar",
-            "l_4": "Muar",
-            "l_5": "Bakri",
-            "l_6": "Yong Peng",
-            "l_7": "Segamat",
-            "l_8": "Parit Sulong",
-            "l_9": "Bukit Payong"
+            "l_1": "Malaya",
+            "l_2": "Netherlands East Indies",
+            "l_3": "Seletar",
+            "l_4": "Sembawang",
+            "l_5": "Tengah",
+            "l_6": "Kallang",
+            "l_7": "Taiping",
+            "l_8": "Kelantan",
+            "l_9": "Kuala Krai"
         },
         "events": {
-            "e_1": "Crossing of the River Muar",
-            "e_2": "Counter-attack to recapture Muar",
-            "e_3": "Japanese attack on 18th January",
-            "e_4": "Withdrawal from Segamat",
-            "e_5": "Conference at Yong Peng",
-            "e_6": "Capture of the defile east of Bukit Payong"
+            "e_1": "Arrival of Dutch Air Reinforcements",
+            "e_2": "Withdrawal from Kelantan",
+            "e_3": "Enemy Attack",
+            "e_4": "Evacuation of Surplus Stores"
         },
         "organisations": {
-            "o_1": "45 Brigade",
-            "o_2": "53 Brigade",
-            "o_3": "11 Indian Division",
-            "o_4": "3 Indian Corps",
-            "o_5": "2/29 Battalion AIF",
-            "o_6": "2/19 Australian Battalion"
+            "o_1": "3 Indian Corps",
+            "o_2": "Kelantan Force",
+            "o_3": "Pahang Volunteers",
+            "o_4": "Malay Regiment"
         }
     },
     "keywords": [
-        "Japanese troops",
-        "counter-attack",
-        "artillery fire",
+        "air reinforcements",
+        "air support",
         "withdrawal",
-        "enemy tanks",
-        "intelligence report"
+        "evacuation",
+        "enemy attack"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Communication",
-        "Enemy Engagements"
+        "Logistics",
+        "Tactics",
+        "Defensive Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4",
-            "e_6"
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_4",
-            "e_5"
+        "Logistics": [
+            "e_2",
+            "e_4"
         ],
-        "Enemy Engagements": [
-            "e_3",
-            "e_6"
+        "Tactics": [
+            "e_2"
+        ],
+        "Defensive Strategies": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th January",
+            "date": "December 9, 1941",
             "locations": [
-                "l_3",
-                "l_4"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Japanese troops cross the River Muar and establish a block east of Muar. Sharp fighting occurs, affecting the tactical situation."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On December 9, 1941, Dutch air reinforcements, including three squadrons of Glenn Martin Bombers and one squadron of Buffalo fighters, arrive in Malaya from the Netherlands East Indies."
         },
         {
             "event": "e_2",
-            "date": "17th January",
+            "date": "December 12, 1941",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_8",
+                "l_9"
             ],
             "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Plans for a counter-attack to recapture Muar are underway as enemy strength becomes evident."
-        },
-        {
-            "event": "e_3",
-            "date": "18th January",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The 45 Indian Infantry Brigade is attacked by the enemy, resulting in the destruction of tanks and temporary disruption of communications."
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "On December 12, 1941, the Commander of 3 Indian Corps visits Command Headquarters to discuss the withdrawal of the Kelantan Force in light of changing military needs due to enemy actions."
+        },
+        {
+            "event": "e_3",
+            "date": "December 13, 1941",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On December 13, 1941, the 2/10 Baluch Regt. inflicts casualties on the enemy during their attempted advance in Kelantan."
         },
         {
             "event": "e_4",
-            "date": "18th January",
+            "date": "December 16, 1941",
             "locations": [
-                "l_6",
-                "l_7"
+                "l_9"
             ],
             "persons": [
-                "p_1",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Withdrawal from Segamat is approved due to increasing threats from the enemy."
-        },
-        {
-            "event": "e_5",
-            "date": "19th January",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
                 "o_3",
-                "o_5"
+                "o_4"
             ],
-            "connectedEvents": [],
-            "eventSummary": "A conference is held at Yong Peng to strategize about troop movements and defense against enemy advances."
-        },
-        {
-            "event": "e_6",
-            "date": "20th January",
-            "locations": [
-                "l_7",
-                "l_8"
+            "connectedEvents": [
+                "e_2"
             ],
-            "persons": [
-                "p_1",
-                "p_4"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "On the morning of the 20th, the enemy attacks and captures the defile east of Bukit Payong, impacting the planned defenses."
+            "eventSummary": "On December 16, 1941, the evacuation of surplus stores is completed as troops begin their withdrawal from Kuala Krai."
         }
     ]
 }

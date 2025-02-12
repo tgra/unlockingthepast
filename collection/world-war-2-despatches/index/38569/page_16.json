@@ -1,56 +1,50 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commodore Elliott",
-            "p_2": "Mr. Rounds",
-            "p_3": "Captain T. O. Bulteel",
-            "p_4": "Senior Naval Officer Landing"
+            "p_1": "Rear Admiral Bennett",
+            "p_2": "U.S. Browning"
         },
         "locations": {
-            "l_1": "Arzeu Bay",
-            "l_2": "Oran",
-            "l_3": "Cape Carbon",
-            "l_4": "La Senia",
-            "l_5": "Mers el Kebir",
-            "l_6": "Y Beach"
+            "l_1": "Oran",
+            "l_2": "Arzeu",
+            "l_3": "Gibraltar",
+            "l_4": "X Beaches",
+            "l_5": "Y Beaches"
         },
         "events": {
-            "e_1": "Arrival of M.T. Ships at Arzeu Bay",
-            "e_2": "Siege of French Resistance",
-            "e_3": "Attack on French Aerodromes",
-            "e_4": "Gunfire from Du Santon Battery"
+            "e_1": "Convoy to Gibraltar",
+            "e_2": "Sinking of U.S. Browning",
+            "e_3": "Arrival at Gibraltar",
+            "e_4": "Ceasing of Centre Naval Task Force"
         },
         "organisations": {
-            "o_1": "H.M.S. FURIOUS",
-            "o_2": "H.M. Ships WALNEY and HARTLAND",
-            "o_3": "British Royal Navy",
-            "o_4": "French Navy"
+            "o_1": "U.S. Navy",
+            "o_2": "Centre Naval Task Force"
         }
     },
     "keywords": [
-        "M.T. ships",
-        "French resistance",
-        "naval operations",
-        "gunfire",
-        "landing crafts"
+        "Oran",
+        "Gibraltar",
+        "Convoy",
+        "Sinking",
+        "U.S. Navy"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Resistance and Defense"
+        "Logistics",
+        "Naval Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
-        ],
-        "Naval Warfare": [
-            "e_1",
-            "e_2",
             "e_4"
         ],
-        "Resistance and Defense": [
+        "Logistics": [
+            "e_1",
+            "e_3"
+        ],
+        "Naval Operations": [
             "e_2",
             "e_3"
         ]
@@ -58,9 +52,11 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1522",
+            "date": "13th November",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -69,61 +65,46 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "At 0100, M.T. ships led by Commodore Elliott arrive at Arzeu Bay to unload."
+            "eventSummary": "Further ships of the follow-up convoy go round to Oran and Jamaica sails for Gibraltar."
         },
         {
             "event": "e_2",
-            "date": "1522",
+            "date": "13th November",
             "locations": [
-                "l_2",
-                "l_4"
+                "l_1"
             ],
             "persons": [
                 "p_2"
             ],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "French forces begin resisting after the successful landing, causing escalating conflict."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "U.S. Browning is sunk on her way to Oran, presumably by torpedo."
         },
         {
             "event": "e_3",
-            "date": "1522",
+            "date": "14th November",
             "locations": [
-                "l_4"
+                "l_3"
             ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Orders are sent to attack the enemy aerodromes, specifically concentrating on La Senia."
+            "eventSummary": "Ships arrive safely at Gibraltar after being escorted from Oran."
         },
         {
             "event": "e_4",
-            "date": "1522",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_4"
-            ],
+            "date": "15th November",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The Du Santon battery opens fire on ships off Y Beach, resulting in damage to several vessels."
+            "eventSummary": "The Centre Naval Task Force ceases to exist as an operational unit."
         }
     ]
 }

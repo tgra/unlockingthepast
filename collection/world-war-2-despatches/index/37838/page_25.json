@@ -1,12 +1,6 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "R.A.F. Bomber Command",
-            "p_2": "United States Ninth Air Force",
-            "p_3": "No. 2 Group of the R.A.F. Second Tactical Air Force",
-            "p_4": "United States VIIIth Fighter Command",
-            "p_5": "United States Eighth Air Force"
-        },
+        "persons": {},
         "locations": {
             "l_1": "Northern France",
             "l_2": "Belgium",
@@ -26,115 +20,143 @@
             "l_16": "Dreux",
             "l_17": "Evreux",
             "l_18": "Acheres",
-            "l_19": "Vernon",
-            "l_20": "Chartres",
-            "l_21": "Le Mans",
-            "l_22": "Laval",
-            "l_23": "St. Nazaire",
-            "l_24": "Loire",
-            "l_25": "Pas de Calais",
-            "l_26": "Poitiers",
-            "l_27": "Arras",
-            "l_28": "Cambrai",
-            "l_29": "Amiens",
-            "l_30": "Douai",
-            "l_31": "St. Pol"
+            "l_19": "St. Nazaire",
+            "l_20": "Loire",
+            "l_21": "Pas de Calais",
+            "l_22": "Poitiers",
+            "l_23": "Arras",
+            "l_24": "Cambrai",
+            "l_25": "Douai",
+            "l_26": "St. Pol"
         },
         "events": {
             "e_1": "Attacks on Enemy Communications",
-            "e_2": "Attacks on Rail and Road Systems",
-            "e_3": "D-Day Operations"
+            "e_2": "D-Day",
+            "e_3": "June and July Operations",
+            "e_4": "Tactical Area Boundary Re-draw",
+            "e_5": "Heavy Attacks by R.A.F. Bomber Command"
         },
         "organisations": {
-            "o_1": "R.A.F. Bomber Command",
-            "o_2": "United States Ninth Air Force",
-            "o_3": "United States VIIIth Fighter Command",
-            "o_4": "United States Eighth Air Force",
-            "o_5": "No. 2 Group of the R.A.F. Second Tactical Air Force"
+            "o_1": "United States Ninth Air Force",
+            "o_2": "R.A.F. Bomber Command",
+            "o_3": "A.E.A.F. fighter bombers",
+            "o_4": "United States VIIIth Fighter Command",
+            "o_5": "R.A.F. Second Tactical Air Force",
+            "o_6": "United States Eighth Air Force"
         }
     },
     "keywords": [
         "Attacks",
-        "Communications",
-        "Rail Systems",
-        "Road Systems",
-        "Allied Armies",
-        "Enemy Movements"
+        "Enemy Communications",
+        "Air Forces",
+        "Rail System",
+        "Reconnaissance",
+        "Fighter Bombers"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Warfare",
+        "Air Warfare",
         "Logistics",
-        "Battle Strategy"
+        "Counterattacks"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_3"
+        ],
+        "Air Warfare": [
+            "e_1",
+            "e_5"
         ],
         "Logistics": [
-            "e_1"
-        ],
-        "Aerial Warfare": [
+            "e_1",
             "e_2"
         ],
-        "Battle Strategy": [
+        "Counterattacks": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June and July",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3",
                 "o_4",
-                "o_5"
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The air forces conduct a series of attacks on enemy communications to disrupt the flow of troops and supplies, significantly impacting the enemy's operational capabilities during critical battle phases."
+            "eventSummary": "Air forces undertake attacks on enemy communications to disrupt rail and road networks in preparation for and during the battle."
         },
         {
             "event": "e_2",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "D-Day marks the beginning of the Allied invasion of occupied France, leading to intensified military operations."
+        },
+        {
+            "event": "e_3",
             "date": "June and July",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_19",
-                "l_20"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_4"
-            ],
+            "locations": [],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Operations in June and July see the air forces targeting enemy logistics and cutting their supply routes to hamper reinforcements."
+        },
+        {
+            "event": "e_4",
+            "date": "12th June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The boundary of the tactical area is re-drawn to enhance control over enemy movements and maximize attacks on their rail and road networks."
+        },
+        {
+            "event": "e_5",
+            "date": "12-13th June",
+            "locations": [
+                "l_22",
+                "l_23",
+                "l_24",
+                "l_25",
+                "l_26"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Attacks targeting key rail and road systems are launched, aimed at inflicting casualties and hindering enemy reinforcements within the tactical battle area, showcasing the effectiveness of air tactics in modern warfare."
+            "eventSummary": "Heavy attacks by R.A.F. Bomber Command target key railway centers to disrupt enemy reinforcements."
         }
     ]
 }

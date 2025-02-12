@@ -1,70 +1,66 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Headquarters",
-            "p_2": "General"
+            "p_1": "Supreme Allied Commander",
+            "p_2": "General Headquarters, India",
+            "p_3": "Commander-in-Chief, India"
         },
         "locations": {
-            "l_1": "Chittagong",
-            "l_2": "Mymensingh",
-            "l_3": "Manipur Road",
-            "l_4": "Dimapur",
-            "l_5": "Assam",
-            "l_6": "Burma",
-            "l_7": "India"
+            "l_1": "South-East Asia Command",
+            "l_2": "India",
+            "l_3": "Ceylon",
+            "l_4": "Addu Atoll",
+            "l_5": "Diego Garcia",
+            "l_6": "Cocos",
+            "l_7": "Burma",
+            "l_8": "Assam"
         },
         "events": {
-            "e_1": "Burma Campaign",
-            "e_2": "Construction of Airfields"
+            "e_1": "Formation of an airborne division",
+            "e_2": "Assumption of Full Control by 11 Army Group",
+            "e_3": "Operations in Assam and Burma"
         },
         "organisations": {
-            "o_1": "Fourteenth Army",
-            "o_2": "Sino-American forces",
-            "o_3": "British Base Reinforcement Camp",
-            "o_4": "52 Training Brigade"
+            "o_1": "War Office",
+            "o_2": "General Headquarters, India",
+            "o_3": "11 Army Group",
+            "o_4": "R.A.F.",
+            "o_5": "Headquarters, Air Command, S.E.A.C."
         }
     },
     "keywords": [
-        "Arakan front",
-        "Lines of Communication",
-        "Air supply",
+        "Divisions",
+        "Airborne",
+        "Operations",
         "Transport",
-        "Reinforcements",
-        "Burma campaign",
-        "High sick rate"
+        "Co-operation",
+        "History"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Administrative Services",
-        "Reinforcement Strategy"
+        "Administration",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Logistics": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Administration": [
             "e_2"
         ],
-        "Administrative Services": [
-            "e_2"
-        ],
-        "Reinforcement Strategy": [
+        "Strategic Decisions": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1942",
+            "date": "Not specified",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -74,29 +70,38 @@
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Burma Campaign is active, with forces preparing advanced bases and maintaining logistics under challenging conditions."
+            "connectedEvents": [],
+            "eventSummary": "The Supreme Allied Commander approves the formation of an airborne division to enhance operational capabilities."
         },
         {
             "event": "e_2",
-            "date": "1942",
+            "date": "1st May, 1944",
             "locations": [
-                "l_4"
+                "l_2",
+                "l_7"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_3",
-                "o_4"
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "11 Army Group assumes full control over military operations, consolidating command and improving administrative oversight."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd June, 1944 to 12th November, 1944",
+            "locations": [
+                "l_6",
+                "l_7"
             ],
-            "eventSummary": "Construction of airfields begins amid logistical challenges to support military operations in the ongoing Burma Campaign."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Military operations take place in Assam and Burma during the specified period, contributing to broader strategic objectives."
         }
     ]
 }

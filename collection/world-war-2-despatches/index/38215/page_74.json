@@ -1,76 +1,98 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "G.O.C. Malaya"
+            "p_1": "Commander 27 Australian Brigade",
+            "p_2": "Commander Western area",
+            "p_3": "A.O.C."
         },
         "locations": {
             "l_1": "Singapore Island",
-            "l_2": "Malaya"
+            "l_2": "Changi",
+            "l_3": "Singapore Town",
+            "l_4": "Kallang aerodrome",
+            "l_5": "MacRitchie Reservoir",
+            "l_6": "Peirce Reservoir",
+            "l_7": "Bukit Timah",
+            "l_8": "Causeway",
+            "l_9": "River Kranji",
+            "l_10": "Keat Hong Village",
+            "l_11": "Bulim Village",
+            "l_12": "Jurong",
+            "l_13": "River Jurong",
+            "l_14": "Jurong Village",
+            "l_15": "Racecourse",
+            "l_16": "Johore Straits",
+            "l_17": "Bukit Mandai",
+            "l_18": "Bukit Timah Village"
         },
         "events": {
-            "e_1": "Order of Battle 8 December 1941",
-            "e_2": "Public Announcement by G.O.C. Malaya February 1942",
-            "e_3": "Implementation of Scorched Earth Policy on Singapore Island"
+            "e_1": "Evacuation from beaches",
+            "e_2": "Landing by enemy forces",
+            "e_3": "Retreat to Jurong road",
+            "e_4": "Enemy concentration on 27 Australian Brigade",
+            "e_5": "Naval operation in Johore Straits",
+            "e_6": "Meeting of the Far East War Council"
         },
         "organisations": {
-            "o_1": "Malaya Command",
-            "o_2": "Westforce"
+            "o_1": "27 Australian Brigade",
+            "o_2": "12 Brigade",
+            "o_3": "22 Australian Brigade",
+            "o_4": "6/15 Brigade",
+            "o_5": "11 Indian Division",
+            "o_6": "Malaya Infantry Brigade"
         }
     },
     "keywords": [
-        "Defence Plan",
-        "Japanese Strategy",
-        "British Strategy",
-        "Tactics",
-        "Morale",
-        "Intelligence Service",
-        "Local Forces",
-        "Air Defence",
-        "Civil Defence",
-        "Higher Command"
+        "evacuation",
+        "enemy forces",
+        "defences",
+        "retreat"
     ],
     "themes": [
         "Military Operations",
-        "Strategy",
-        "Intelligence",
-        "Tactics",
-        "Defence Policy"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_3"
-        ],
-        "Intelligence": [],
-        "Tactics": []
+            "e_5",
+            "e_6"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8 December 1941",
+            "date": "February 10, 1942",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Order of Battle is documented outlining the military positions and readiness of forces in Malaya in early December 1941."
+            "eventSummary": "The Commander of the 27 Australian Brigade issues orders to retreat after being forced back from the beaches shortly after midnight."
         },
         {
             "event": "e_2",
-            "date": "February 1942",
+            "date": "February 9, 1942",
             "locations": [
-                "l_2"
+                "l_8",
+                "l_9"
             ],
             "persons": [
                 "p_1"
@@ -79,26 +101,45 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "In February 1942, a public announcement is made by G.O.C. Malaya concerning the situation and operations in the region."
+            "eventSummary": "Enemy forces successfully effect a landing near the Causeway as they concentrate on the positions held by the 27 Australian Brigade."
         },
         {
-            "event": "e_3",
-            "date": "1 February 1942",
+            "event": "e_4",
+            "date": "February 9, 1942",
             "locations": [
-                "l_1"
+                "l_10",
+                "l_12"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The 12 Brigade is ordered by the Commander Western area to modify its dispositions to guard against threats to its left rear."
+        },
+        {
+            "event": "e_5",
+            "date": "February 10, 1942",
+            "locations": [
+                "l_16"
             ],
             "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The implementation of the Scorched Earth Policy on Singapore Island is executed to prevent enemy forces from gaining resources."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A naval force enters the Johore Straits at night to disrupt enemy communications and attempts to sink landing craft."
+        },
+        {
+            "event": "e_6",
+            "date": "February 10, 1942",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Far East War Council meets to discuss strategic matters regarding the ongoing military operations."
         }
     ]
 }

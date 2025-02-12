@@ -1,100 +1,125 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Montgomery",
-            "p_2": "General Patton",
-            "p_3": "Admiral Sir Andrew Cunningham",
-            "p_4": "Air Chief Marshal Tedder"
+            "p_1": "HIS EXCELLENCY FIELDMARSHAL THE VISCOUNT ALEXANDER OF TUNIS",
+            "p_2": "Major-General A A Richardson"
         },
         "locations": {
             "l_1": "Sicily",
-            "l_2": "Catania",
-            "l_3": "Messina",
-            "l_4": "Palermo",
-            "l_5": "Syracuse",
-            "l_6": "Naples",
-            "l_7": "Brindisi",
-            "l_8": "Bouzarea",
-            "l_9": "Tunisia"
+            "l_2": "North African coastline",
+            "l_3": "Tunis",
+            "l_4": "Cape Peloro",
+            "l_5": "Calabria",
+            "l_6": "Straits of Messina",
+            "l_7": "Cape Passero",
+            "l_8": "Malta",
+            "l_9": "Benghazi",
+            "l_10": "Cape Boeo",
+            "l_11": "Cape Bon",
+            "l_12": "Pantelleria"
         },
         "events": {
-            "e_1": "Casablanca Conference",
-            "e_2": "Operation Torch",
-            "e_3": "Attack on Sicily"
+            "e_1": "The Conquest of Sicily",
+            "e_2": "Casablanca Conference",
+            "e_3": "Tunisian Campaign",
+            "e_4": "British naval victory in 1718"
         },
         "organisations": {
-            "o_1": "German Air Force",
-            "o_2": "Force 141"
+            "o_1": "Combined Chiefs of Staff",
+            "o_2": "Fifteenth Army Group",
+            "o_3": "Anglo-American Headquarters",
+            "o_4": "Alhed Force Headquarters"
         }
     },
     "keywords": [
-        "fortress",
-        "military operations",
-        "Garrison strength",
-        "airfields",
-        "coastal defences"
+        "Conquest",
+        "Sicily",
+        "War Office",
+        "Operation",
+        "Casablanca Conference",
+        "Tunisian Campaign"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Cooperation in Warfare",
-        "Reinforcement Strategies"
+        "Planning",
+        "Logistics",
+        "Geography"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_3",
+            "e_1",
+            "e_3"
+        ],
+        "Planning": [
+            "e_1",
             "e_2"
         ],
-        "Strategic Planning": [
-            "e_1"
+        "Logistics": [
+            "e_1",
+            "e_2"
         ],
-        "Cooperation in Warfare": [
+        "Geography": [
             "e_1"
-        ],
-        "Reinforcement Strategies": [
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 22, 1943",
+            "date": "17th August, 1943",
             "locations": [
-                "l_8"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_3",
                 "e_2"
             ],
-            "eventSummary": "The Casablanca Conference takes place, establishing the basis for joint military planning between Anglo-American forces to plan operations."
+            "eventSummary": "The Conquest of Sicily occurs from July 1943 to 17th August 1943 as part of planning based on the Casablanca Conference."
         },
         {
-            "event": "e_3",
-            "date": "Summer 1943",
-            "locations": [
-                "l_1",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "event": "e_2",
+            "date": "Mid-1943",
+            "locations": [],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The attack on Sicily is launched as part of a larger operation called Operation Torch, focusing on neutralizing German and Italian forces in the region."
+            "eventSummary": "At the Casablanca Conference in mid-1943, decisions are made affecting the planning of the operation in Sicily."
+        },
+        {
+            "event": "e_3",
+            "date": "1st May, 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The Tunisian Campaign takes priority and is calculated to be completed by 1st May 1943, affecting timelines for the invasion of Sicily."
+        },
+        {
+            "event": "e_4",
+            "date": "1718",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A British naval victory is recorded in 1718 at Cape Passero."
         }
     ]
 }

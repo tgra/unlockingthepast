@@ -1,88 +1,143 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Andrew B. Cunningham",
-            "p_2": "Vice-Admiral J. C. Tovey"
+            "p_1": "Rear-Admiral",
+            "p_2": "Vice-Admiral",
+            "p_3": "Captam F. R. Garside"
         },
         "locations": {
-            "l_1": "Calabria",
-            "l_2": "Libya",
-            "l_3": "Crete",
-            "l_4": "Malta",
-            "l_5": "Alexandria"
+            "l_1": "Malta",
+            "l_2": "Zante",
+            "l_3": "Alexandria",
+            "l_4": "Benghazi",
+            "l_5": "Taranto",
+            "l_6": "Dodecanese",
+            "l_7": "Central Mediterranean",
+            "l_8": "Royal Sovereign"
         },
         "events": {
-            "e_1": "Engagement with the Italian Fleet off Calabria",
-            "e_2": "Operation M.A.5"
+            "e_1": "Depth charge attack on Italian U-boat",
+            "e_2": "Flying boat reconnaissance of enemy fleet",
+            "e_3": "Bombing attacks on naval forces",
+            "e_4": "Eagle's patrol and enemy fleet sightings",
+            "e_5": "Force B operations"
         },
         "organisations": {
-            "o_1": "H.M.S. WARSPITE",
-            "o_2": "Italian Air Force",
-            "o_3": "Mediterranean Fleet"
+            "o_1": "1st Battle Squadron",
+            "o_2": "Force B",
+            "o_3": "EAGLE",
+            "o_4": "Force C",
+            "o_5": "Force A",
+            "o_6": "7th Cruiser Squadron"
         }
     },
     "keywords": [
-        "Naval Operations",
-        "Italian Fleet",
-        "Calabrian Coast",
-        "engagement",
-        "submarine concentration"
+        "U-boat",
+        "Depth charge",
+        "Battleship",
+        "Cruiser",
+        "Destroyer",
+        "Convoy",
+        "Bombing",
+        "Fleet reconnaissance"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Strategic Engagement"
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
         "Naval Warfare": [
-            "e_1"
+            "e_1",
+            "e_3"
         ],
-        "Strategic Engagement": [
-            "e_2"
+        "Reconnaissance": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "9th July, 1940",
+            "date": "8th July, 1940",
             "locations": [
                 "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Mediterranean Fleet engages in action against the Italian Fleet off the Calabrian Coast, marking a significant naval clash amid strategic operations in the area."
-        },
-        {
-            "event": "e_2",
-            "date": "7th to 13th July, 1940",
-            "locations": [
-                "l_4",
-                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "At 2339/7th July, HASTY conducts a depth charge attack on an Italian U-boat, likely sinking it."
+        },
+        {
+            "event": "e_2",
+            "date": "8th July, 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
                 "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A flying boat reports two enemy battleships and four destroyers, prompting reconnaissance operations."
+        },
+        {
+            "event": "e_3",
+            "date": "8th July, 1940",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Numerous bombing attacks are launched against naval forces without causing hits."
+        },
+        {
+            "event": "e_4",
+            "date": "8th July, 1940",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Reports indicate enemy forces, including battleships and cruisers, are sighted and their activities are monitored."
+        },
+        {
+            "event": "e_5",
+            "date": "8th July, 1940",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation M.A.5 is conducted by the Mediterranean Fleet to provide cover for convoys transitioning from Malta to Alexandria, involving strategic naval maneuvers amidst potential enemy engagements."
+            "eventSummary": "Force B sets a mean line of advance while responding to suspected enemy activity."
         }
     ]
 }

@@ -1,95 +1,72 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General von Mackensen",
-            "p_2": "General Lemelsen",
-            "p_3": "Kesselring"
+            "p_1": "General Eisenhower",
+            "p_2": "Kesselring"
         },
         "locations": {
             "l_1": "Rome",
-            "l_2": "Genoa",
-            "l_3": "Holland",
-            "l_4": "Leghorn",
-            "l_5": "Carsoli",
-            "l_6": "Orvinio",
-            "l_7": "Aniene River",
-            "l_8": "Tivoli",
-            "l_9": "Tiber",
-            "l_10": "Civita Castellana",
-            "l_11": "Monterotondo",
-            "l_12": "Palombara",
-            "l_13": "Florence",
-            "l_14": "Bibbiena",
-            "l_15": "Arezzo",
-            "l_16": "Pisa",
-            "l_17": "Lucca",
-            "l_18": "Pistoia",
-            "l_19": "Ancona",
-            "l_20": "Toledo",
-            "l_21": "Viterbo",
-            "l_22": "Naples",
-            "l_23": "Adriatic",
-            "l_24": "Pescara",
-            "l_25": "Chieti",
-            "l_26": "Bagnoregio",
-            "l_27": "Orvieto",
-            "l_28": "Orbetello",
-            "l_29": "Grosseto"
+            "l_2": "Carthage",
+            "l_3": "Frosinone",
+            "l_4": "Bizerta",
+            "l_5": "TermoliVinchiaturo line",
+            "l_6": "San Salvo",
+            "l_7": "Tufillo",
+            "l_8": "Isernia",
+            "l_9": "Naples",
+            "l_10": "Mondoardone"
         },
         "events": {
-            "e_1": "Fall of Rome",
-            "e_2": "Pursuit of the enemy",
-            "e_3": "Operation ANVIL",
-            "e_4": "Regrouping of Eighth Army"
+            "e_1": "advance to Winter Line",
+            "e_2": "attack on San Salvo",
+            "e_3": "entry into Isernia"
         },
         "organisations": {
-            "o_1": "Tenth Army",
-            "o_2": "Eighth Army",
-            "o_3": "Fifth Army",
-            "o_4": "13 Corps",
-            "o_5": "II Corps",
-            "o_6": "VI Corps",
-            "o_7": "IV Corps",
-            "o_8": "Polish Corps",
-            "o_9": "Seventh Army",
-            "o_10": "French Forces"
+            "o_1": "Combined Chiefs of Staff",
+            "o_2": "Fifth Army",
+            "o_3": "Eighth Army",
+            "o_4": "XV United States Air Force",
+            "o_5": "Strategic Air Force",
+            "o_6": "Italian Air Force"
         }
     },
     "keywords": [
-        "Infantry Division",
-        "Cossack cavalry",
-        "Counter-attack",
-        "Reinforcements",
-        "Pursuit"
+        "landing craft",
+        "amphibious assault",
+        "military operations",
+        "Fifth Army",
+        "Eighth Army",
+        "airfield construction"
     ],
     "themes": [
         "Military Operations",
-        "Pursuit Strategy",
-        "Operational Planning",
-        "Regrouping"
+        "Logistics",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Diplomacy": [],
+        "Logistics": [
+            "e_1"
+        ],
         "Strategic Decisions": [
-            "e_3",
-            "e_4"
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th June 1944",
+            "date": "December 15, 1943",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_5"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
@@ -97,61 +74,41 @@
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "General von Mackensen is relieved from command after the fall of Rome, with General Lemelsen taking over."
+            "eventSummary": "The advance to the Winter Line is planned and necessitates coordination and retention of landing craft for successful completion of military objectives."
         },
         {
             "event": "e_2",
-            "date": "7th June 1944",
+            "date": "November 3, 1943",
             "locations": [
-                "l_1",
-                "l_13",
-                "l_14",
-                "l_15"
+                "l_6",
+                "l_7"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_2",
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Pursuit operations are intensified, targeting vital areas for a swift advance against weakened enemy forces."
+            "connectedEvents": [],
+            "eventSummary": "The attack on San Salvo takes place involving heavy fighting, culminating in securing the village."
         },
         {
             "event": "e_3",
-            "date": "13th June 1944",
+            "date": "November 4, 1943",
             "locations": [
-                "l_22"
+                "l_8"
             ],
-            "persons": [],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
-                "o_7"
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Eighth Army conducts Operation ANVIL with new tactical directives to capitalize on the enemy's disorganization."
-        },
-        {
-            "event": "e_4",
-            "date": "14th June 1944",
-            "locations": [
-                "l_13"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "There is a strategic regrouping of Eighth Army, consolidating power along the Tiber."
+            "connectedEvents": [],
+            "eventSummary": "Entry into Isernia occurs unopposed following the withdrawal of enemy forces."
         }
     ]
 }

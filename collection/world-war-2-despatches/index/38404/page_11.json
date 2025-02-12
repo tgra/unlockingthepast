@@ -1,58 +1,64 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Pile"
+            "p_1": "Air Officer Commanding No. 11 Group",
+            "p_2": "my staff"
         },
         "locations": {
-            "l_1": "Stanmore",
-            "l_2": "Western sea approaches"
+            "l_1": "Dartmouth, Nova Scotia",
+            "l_2": "England",
+            "l_3": "Scotland",
+            "l_4": "South Coast",
+            "l_5": "Hastings",
+            "l_6": "Northern France"
         },
         "events": {
-            "e_1": "Expansion of the Raid Reporting Radar Organisation",
-            "e_2": "Deployment of searchlights in 1940"
+            "e_1": "Battle of Britain",
+            "e_2": "Rhubarb patrols",
+            "e_3": "Circus operations"
         },
         "organisations": {
-            "o_1": "No. 60 Group",
-            "o_2": "A.A. Command",
-            "o_3": "Royal Air Force"
+            "o_1": "No. 10 Group",
+            "o_2": "No. 11 Group",
+            "o_3": "Bomber Command"
         }
     },
     "keywords": [
-        "searchlights",
-        "radar",
-        "A.A. guns",
-        "home defence",
-        "air raid"
+        "aircraft",
+        "offensive",
+        "fighter",
+        "German",
+        "reconnaissance",
+        "patrols",
+        "operations",
+        "Atlantic"
     ],
     "themes": [
         "Military Operations",
-        "Technological Advancements",
-        "Home Defence",
-        "Resource Management"
+        "Aerial Combat",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Technological Advancements": [
+        "Aerial Combat": [
             "e_1"
         ],
-        "Home Defence": [
-            "e_1",
-            "e_2"
-        ],
-        "Resource Management": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1941",
+            "date": "1940",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -62,24 +68,38 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The expansion of the Raid Reporting Radar Organisation allows for improved early warning radar coverage to the Western sea approaches, addressing the challenges of detecting low-flying enemy raiders."
+            "eventSummary": "The Battle of Britain occurs, where the initiative in daylight operations lies with the Germans, but there is an anticipation that British fighter squadrons will soon engage German fighters over the Channel."
         },
         {
             "event": "e_2",
-            "date": "1940",
+            "date": "20th December, 1940",
             "locations": [
-                "l_2"
+                "l_6"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "Rhubarb patrols begin, providing valuable experience for pilots and operational commanders despite some patrols not meeting German aircraft."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unspecified",
+            "locations": [],
+            "persons": [
+                "p_1"
             ],
-            "eventSummary": "Searchlights are deployed to combat enemy aircraft, but initial results are disappointing due to equipment limitations and environmental conditions, leading to new strategies for their use."
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Circus operations, which are air operations designed to be combined with bombers, are planned to engage enemy aircraft while fulfilling specific conditions."
         }
     ]
 }

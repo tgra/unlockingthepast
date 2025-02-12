@@ -1,94 +1,129 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "unidentified military personnel"
+            "p_1": "Kimura",
+            "p_2": "Yamamoto"
         },
         "locations": {
-            "l_1": "Fourteenth Army's area",
-            "l_2": "Imphal",
-            "l_3": "Manipur Road",
-            "l_4": "Kalewa",
-            "l_5": "Mandalay",
-            "l_6": "Myingyan",
-            "l_7": "Meiktila",
-            "l_8": "Rangoon",
-            "l_9": "Prome",
-            "l_10": "Alon"
+            "l_1": "Meiktila",
+            "l_2": "Mandalay",
+            "l_3": "Irrawaddy",
+            "l_4": "Pakokku",
+            "l_5": "Pegu",
+            "l_6": "Jorhat",
+            "l_7": "Nyaungu",
+            "l_8": "Singu",
+            "l_9": "Chauk",
+            "l_10": "Dohazari",
+            "l_11": "Madaya"
         },
         "events": {
-            "e_1": "Building of the Inland Water Transport base",
-            "e_2": "Operation Capital"
+            "e_1": "Battle of Meiktila",
+            "e_2": "Battle of the Irrawaddy",
+            "e_3": "Advance of 19 Indian Division",
+            "e_4": "Assault at Yenatha"
         },
         "organisations": {
-            "o_1": "India Command",
-            "o_2": "Royal Navy"
+            "o_1": "Burma Area Army",
+            "o_2": "Fourteenth Army",
+            "o_3": "Indian Division",
+            "o_4": "Japanese Division"
         }
     },
     "keywords": [
-        "Inland Water Transport",
-        "Fourteenth Army",
-        "Central Burma",
-        "supply chain",
-        "Kalewa",
-        "Mandalay",
-        "transport logistics"
+        "battle",
+        "advance",
+        "intelligence",
+        "concentration",
+        "formation",
+        "communication",
+        "casualties"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Infrastructure Development",
-        "Inter-Service Cooperation"
+        "Counter-Offensive Plans",
+        "Battles",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2"
-        ],
-        "Logistics": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Counter-Offensive Plans": [
+            "e_1"
+        ],
+        "Battles": [
             "e_2"
         ],
-        "Infrastructure Development": [
-            "e_1"
-        ],
-        "Inter-Service Cooperation": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 1944",
+            "date": "March 1945",
             "locations": [
-                "l_4",
-                "l_6"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "In December 1944, the building of the Inland Water Transport base at Kalewa near the Chindwin begins, aiming to support military logistics."
+            "eventSummary": "The campaign for Meiktila is launched with the Japanese attempting to recapture the city, leading to significant engagements."
         },
         {
             "event": "e_2",
-            "date": "January 1945",
+            "date": "February - March 1945",
             "locations": [
-                "l_5"
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "Operation Capital commences in January 1945, marking the Fourteenth Army's offensive into Central Burma and leading to extensive logistical planning."
+            "eventSummary": "The Battle of the Irrawaddy sees significant movement of forces and strategies concerning control of the river."
+        },
+        {
+            "event": "e_3",
+            "date": "5th March 1945",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "19 Indian Division commences an aggressive advance towards the key strategic locations in the region."
+        },
+        {
+            "event": "e_4",
+            "date": "6th March 1945",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The forces engage in significant fighting at Yenatha, resulting in successful capture."
         }
     ]
 }

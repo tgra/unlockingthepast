@@ -1,110 +1,117 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief, Plymouth",
-            "p_2": "Captain"
+            "p_1": "C. M. Forses",
+            "p_2": "R. E. D. Ryper",
+            "p_3": "Commander Ryder"
         },
         "locations": {
-            "l_1": "Falmouth",
-            "l_2": "Old Entrance",
-            "l_3": "Old Mole",
-            "l_4": "Northern waters",
-            "l_5": "latitude 47",
-            "l_6": "position 46 34 North 05 41 West"
+            "l_1": "Loire",
+            "l_2": "St. Nazaire",
+            "l_3": "Bay of Biscay"
         },
         "events": {
             "e_1": "Operation Chariot",
-            "e_2": "Landing at Old Mole",
-            "e_3": "Engagement with U-Boat"
+            "e_2": "Zeebrugge raid",
+            "e_3": "sinking of a U-boat",
+            "e_4": "the attack on St. Nazaire"
         },
         "organisations": {
-            "o_1": "Royal Navy",
+            "o_1": "H.M.S. TYNEDALE",
             "o_2": "H.M.S. CAMPBELTOWN",
-            "o_3": "H.M.S. TYNEDALE",
-            "o_4": "H.M.S. ATHERSTONE"
+            "o_3": "R.A.F.",
+            "o_4": "No. 2 Commando"
         }
     },
     "keywords": [
-        "Operation Chariot",
+        "surprise",
+        "weather conditions",
         "naval forces",
-        "submarine engagement",
-        "trawler sinking",
-        "Falmouth"
+        "cooperation",
+        "military plan",
+        "demolitions"
     ],
     "themes": [
         "Military Operations",
-        "Naval Tactics",
-        "Engagements with Enemy Forces"
+        "Naval Warfare",
+        "Surprise Tactics",
+        "Air Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
+            "e_4"
+        ],
+        "Naval Warfare": [
+            "e_1",
             "e_3"
         ],
-        "Naval Tactics": [
-            "e_3"
+        "Surprise Tactics": [
+            "e_1"
+        ],
+        "Air Operations": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 26, 1942",
+            "date": "1st April, 1942",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_4"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1",
                 "o_2",
-                "o_3"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Operation Chariot consists of a daring naval operation to attack enemy targets. The forces sail from Falmouth, aiming to achieve surprise."
-        },
-        {
-            "event": "e_2",
-            "date": "March 27, 1942",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The landing at Old Mole is carried out, facing challenges as the assault is repulsed, resulting in heavy losses."
+            "eventSummary": "Operation Chariot is a planned frontal attack on the heavily defended port of St. Nazaire, utilizing the element of surprise by employing a force led by H.M.S. CAMPBELTOWN to ram the outer lock gate."
         },
         {
             "event": "e_3",
-            "date": "March 27, 1942",
+            "date": "27th March 1942",
             "locations": [
-                "l_6"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The H.M.S. TYNEDALE is involved in the sinking of a U-boat at 0815, contributing to the success of the surprise attack."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [],
+            "persons": [],
+            "organisations": [
                 "o_3"
             ],
+            "connectedEvents": [],
+            "eventSummary": "The Zeebrugge raid is mentioned as a comparison to Operation Chariot in terms of surprise tactics used."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "An engagement with a U-boat occurs, where TYNEDALE successfully interacts with the enemy submarine, culminating in depth charges being dropped."
+            "eventSummary": "The attack on St. Nazaire involves the tactics and planning discussions necessary for executing Operation Chariot against the port's defenses."
         }
     ]
 }

@@ -1,0 +1,117 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "General Sitwell",
+            "p_2": "Brigadier Blackburn",
+            "p_3": "A.H.K.",
+            "p_4": "A.O.C.",
+            "p_5": "G.O.C.",
+            "p_6": "Dutch C.-in-C.",
+            "p_7": "Japanese C.-in-C."
+        },
+        "locations": {
+            "l_1": "Resident's House",
+            "l_2": "Blackforce",
+            "l_3": "Kalidjati",
+            "l_4": "Bandoeng",
+            "l_5": "Tjikadjang",
+            "l_6": "Singapore",
+            "l_7": "Java"
+        },
+        "events": {
+            "e_1": "Negotiations with Japanese C.-in-C.",
+            "e_2": "Order to surrender",
+            "e_3": "Broadcast by Dutch C.-in-C."
+        },
+        "organisations": {
+            "o_1": "British forces",
+            "o_2": "R.A.F.",
+            "o_3": "Australian Field Hospital"
+        }
+    },
+    "keywords": [
+        "British",
+        "Japanese",
+        "Dutch",
+        "resistance",
+        "surrender",
+        "morale",
+        "negotiations"
+    ],
+    "themes": [
+        "Military Operations",
+        "Surrender Orders",
+        "International Law",
+        "Morale"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Diplomacy": [
+            "e_1"
+        ],
+        "Surrender Orders": [
+            "e_2"
+        ],
+        "International Law": [
+            "e_3"
+        ],
+        "Morale": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Negotiations with the Japanese C.-in-C. take place in Kalidjati, pressing for actions regarding Blackforce."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The A.O.C. and G.O.C. comply with the order to surrender received from A.H.K."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A broadcast by the Dutch C.-in-C. declares that all organized resistance has ceased, impacting the legal status of continued fighting."
+        }
+    ]
+}

@@ -1,43 +1,47 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rommel"
+            "p_1": "Lieut.-General Wilfred Lindsell",
+            "p_2": "Mr. Casey",
+            "p_3": "Sir Miles Lampson",
+            "p_4": "The Right Honourable Lord Killearn",
+            "p_5": "General Montgomery",
+            "p_6": "General Eisenhower",
+            "p_7": "Prime Minister"
         },
         "locations": {
-            "l_1": "Malta",
-            "l_2": "Africa",
-            "l_3": "Libya",
-            "l_4": "Mersa Matruh",
-            "l_5": "Bardia",
-            "l_6": "Siwa oasis"
+            "l_1": "Middle East",
+            "l_2": "Cairo",
+            "l_3": "Egypt",
+            "l_4": "North Africa",
+            "l_5": "Algeria",
+            "l_6": "Morocco",
+            "l_7": "Tunisia"
         },
         "events": {
-            "e_1": "Operation on Malta",
-            "e_2": "Syrian Campaign",
-            "e_3": "Desert Warfare Operations"
+            "e_1": "battle of Alam el Halfa",
+            "e_2": "D-day",
+            "e_3": "invasion of North Africa"
         },
         "organisations": {
-            "o_1": "Italian XXI Corps",
-            "o_2": "Panzer Armee",
-            "o_3": "Ramcke Parachute Brigade",
-            "o_4": "XX Corps",
-            "o_5": "X Corps",
-            "o_6": "17 Pavia Division",
-            "o_7": "16 Pistoia Division",
-            "o_8": "Young Fascists Division"
+            "o_1": "Eighth Army",
+            "o_2": "British First Army",
+            "o_3": "Combined Chiefs of Staff",
+            "o_4": "Royal Navy"
         }
     },
     "keywords": [
-        "Infantry Divisions",
-        "Armoured Divisions",
-        "Anti-tank Guns",
-        "Task Forces",
-        "Desert Warfare"
+        "military",
+        "transport",
+        "offensive",
+        "resources",
+        "planning",
+        "operation"
     ],
     "themes": [
         "Military Operations",
         "Strategic Decisions",
-        "Reorganization of Forces"
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
@@ -46,66 +50,72 @@
             "e_3"
         ],
         "Strategic Decisions": [
+            "e_2",
             "e_3"
         ],
-        "Reorganization of Forces": [
+        "Logistics": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Summer, 1942",
+            "date": "Date not specified",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The planned operation on Malta is initially organized but later canceled due to strategic shifts favoring Rommel's advances in the desert."
-        },
-        {
-            "event": "e_2",
-            "date": "April, 1942",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Syrian Campaign occurs, with changes in troop organization influencing later military strategies in North Africa."
-        },
-        {
-            "event": "e_3",
-            "date": "1942",
-            "locations": [
-                "l_2",
+                "l_1",
                 "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The battle of Alam el Halfa influences planning and timing of further military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd October",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_5",
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "D-day is planned for 23rd October with significant considerations for moon phases and enemy defenses."
+        },
+        {
+            "event": "e_3",
+            "date": "Date not specified",
+            "locations": [
+                "l_4",
+                "l_7"
+            ],
+            "persons": [
+                "p_6"
             ],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "Desert Warfare Operations showcase the need for mobility and armored defense, leading to strategic decisions on troop deployment and equipment."
+            "eventSummary": "The invasion of North Africa is part of the Allies' grand strategy for the war."
         }
     ]
 }

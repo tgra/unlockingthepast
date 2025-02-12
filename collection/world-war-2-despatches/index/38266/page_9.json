@@ -1,88 +1,99 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Sir Claude Auchinleck",
+            "p_2": "Major-General Wingate"
+        },
         "locations": {
-            "l_1": "Assam",
-            "l_2": "Imphal Area",
-            "l_3": "Ranchi Area",
-            "l_4": "Madras Area",
-            "l_5": "Kolar Gold Field",
-            "l_6": "Bombay",
-            "l_7": "Ahmednagar",
-            "l_8": "Chindwara",
-            "l_9": "Campbellpore",
-            "l_10": "Kandy",
-            "l_11": "Trincomalee Fortress"
+            "l_1": "Rangoon",
+            "l_2": "Burma",
+            "l_3": "Australia",
+            "l_4": "London",
+            "l_5": "United Kingdom",
+            "l_6": "Washington",
+            "l_7": "Calcutta",
+            "l_8": "Upper Burma",
+            "l_9": "Yunnan",
+            "l_10": "India",
+            "l_11": "Andaman Islands",
+            "l_12": "Ramree Islands"
         },
         "events": {
-            "e_1": "Field Army Units in India Outside the War Zones",
-            "e_2": "Concentration of Corps Units"
+            "e_1": "reconquest of Burma",
+            "e_2": "operations against Sumatra and Java",
+            "e_3": "campaigning season of 1943-44",
+            "e_4": "conference in Washington",
+            "e_5": "capture of the Andaman Islands",
+            "e_6": "invasion of Northern Sumatra"
         },
         "organisations": {
-            "o_1": "4 Corps",
-            "o_2": "1 W. Yorks Div.",
-            "o_3": "33rd Ind. Corps"
+            "o_1": "Combined Chiefs of Staff",
+            "o_2": "War Cabinet",
+            "o_3": "South-East Asia Command"
         }
     },
     "keywords": [
-        "Field Army",
-        "Corps Units",
-        "Training",
-        "War Preparation",
-        "Under Strength"
+        "military operations",
+        "Rangoon",
+        "Burma",
+        "Andaman Islands",
+        "javascript",
+        "Washington",
+        "War Cabinet",
+        "Combined Chiefs of Staff"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Supply",
-        "Training and Preparedness"
+        "Strategic Decisions",
+        "Leadership",
+        "War Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_5",
+            "e_6"
         ],
-        "Logistics and Supply": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_4"
         ],
-        "Training and Preparedness": [
-            "e_2"
+        "Leadership": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January, 1943",
+            "date": "1943-44",
             "locations": [
-                "l_1",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10",
-                "l_11"
+                "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "Field army units in India are reported to be outside the war zones, with many understrength and in need of better equipment."
+            "eventSummary": "The plan for the reconquest of Burma focuses on strategic military operations against Japanese forces in 1943-44."
         },
         {
             "event": "e_2",
-            "date": "January, 1943",
+            "date": "February 1943",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_2",
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
                 "o_1",
                 "o_2"
@@ -90,7 +101,40 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Corps units are concentrating and undergoing jungle training, although many remain unready for war due to equipment shortages."
+            "eventSummary": "Plans for operations against Sumatra and Java are being prepared as alternatives to the strategic reconquest of Burma."
+        },
+        {
+            "event": "e_4",
+            "date": "April 1943",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A conference in Washington is held to discuss operations from India against Japan, attended by key military leaders."
+        },
+        {
+            "event": "e_3",
+            "date": "1943-44",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The campaign season of 1943-44 in Burma reflects the challenges and strategic decisions made in previous years."
         }
     ]
 }

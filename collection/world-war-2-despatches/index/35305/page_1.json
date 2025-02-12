@@ -1,82 +1,83 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Sir John Dill",
-            "p_2": "Lieutenant-General W. G. Lindsell",
-            "p_3": "General Georges",
-            "p_4": "General Gamelin",
-            "p_5": "Lieutenant-General H. R. Pownall",
-            "p_6": "General de Brigade Gillard"
+            "p_1": "General the Viscount Gort",
+            "p_2": "Sir"
         },
         "locations": {
-            "l_1": "Le Mans",
-            "l_2": "Laval",
+            "l_1": "France",
+            "l_2": "Belgium",
             "l_3": "Cherbourg",
-            "l_4": "Amiens",
-            "l_5": "Mantes-sur-Seine",
-            "l_6": "Roubaix",
-            "l_7": "Tourcoing",
-            "l_8": "Halluin",
-            "l_9": "Maulde",
-            "l_10": "Belgian Frontier",
-            "l_11": "River Lys/Armenti"
+            "l_4": "Nantes",
+            "l_5": "St. Nazaire",
+            "l_6": "Brest"
         },
         "events": {
-            "e_1": "Movement of General Headquarters",
-            "e_2": "Concentration of General Headquarters Staff",
-            "e_3": "Move of 1st Corps",
-            "e_4": "Agreement on British Expeditionary Force sector",
-            "e_5": "Reconnaissance for B.E.F. sector"
+            "e_1": "Despatch of the British Expeditionary Force",
+            "e_2": "Landing of British Troops"
         },
         "organisations": {
             "o_1": "British Expeditionary Force",
-            "o_2": "Royal Army Service Corps"
+            "o_2": "Board of Trade",
+            "o_3": "Admiralty",
+            "o_4": "French Naval, Military, and Civil authorities"
         }
     },
     "keywords": [
-        "Troop Landing",
-        "Prestigious Hospitality",
-        "Operational Challenges",
-        "Military Coordination",
-        "Logistics",
-        "French Government Support"
+        "War Office",
+        "Despatch",
+        "British Troops",
+        "France",
+        "Belgium",
+        "General Headquarters"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "International Relations",
-        "Troop Movements",
-        "Defense Coordination"
+        "Transportation",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Logistics": [
-            "e_1",
             "e_2"
         ],
-        "International Relations": [
-            "e_4"
+        "Transportation": [
+            "e_1"
         ],
-        "Troop Movements": [
-            "e_3",
-            "e_5"
-        ],
-        "Defense Coordination": [
-            "e_4",
-            "e_5"
+        "Command Structure": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "13th September",
+            "date": "3rd September, 1939 to 31st January, 1940",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The British Expeditionary Force is deployed in France from 3rd September, 1939, ensuring a successful operation amidst complex plans and cooperation from various authorities."
+        },
+        {
+            "event": "e_2",
+            "date": "25th April, 1940",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1"
@@ -85,86 +86,9 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "The General Headquarters is moved from the War Office to Camberley, forming crucial military coordination."
-        },
-        {
-            "event": "e_2",
-            "date": "21st September",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The concentration of General Headquarters Staff is completed, enhancing military logistics."
-        },
-        {
-            "event": "e_3",
-            "date": "26th September",
-            "locations": [
-                "l_1",
-                "l_9"
-            ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The 1st Corps begins a significant move from the assembly area, strategically advancing toward the frontline."
-        },
-        {
-            "event": "e_4",
-            "date": "26th September",
-            "locations": [
-                "l_9",
-                "l_8"
-            ],
-            "persons": [
-                "p_3",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_5"
-            ],
-            "eventSummary": "An agreement is reached regarding the sector allocation for the British Expeditionary Force, signifying crucial international military cooperation."
-        },
-        {
-            "event": "e_5",
-            "date": "24th September",
-            "locations": [
-                "l_8",
-                "l_9"
-            ],
-            "persons": [
-                "p_1",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "A reconnaissance is conducted to evaluate the sector assigned to the British Expeditionary Force, impacting future military operations."
+            "eventSummary": "British Troops successfully land at Cherbourg and prepare for operations with supplies dispatched to other French ports."
         }
     ]
 }

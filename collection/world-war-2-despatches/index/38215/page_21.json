@@ -1,88 +1,140 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Japanese troops",
-            "p_2": "Local inhabitants"
+            "p_1": "Spicer",
+            "p_2": "Sir Tom Phillips",
+            "p_3": "Sir Geoffrey Layton"
         },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Singapore Island",
-            "l_3": "North Perak",
-            "l_4": "North Johore"
+            "l_1": "Singapore",
+            "l_2": "Far East",
+            "l_3": "Malaya",
+            "l_4": "Indo-China",
+            "l_5": "Thailand",
+            "l_6": "Patani aerodrome",
+            "l_7": "Shanghai",
+            "l_8": "Manila",
+            "l_9": "Keppel Harbour"
         },
         "events": {
-            "e_1": "Jitra",
-            "e_2": "Malayan Campaign"
+            "e_1": "Japanese occupation of Southern Indo-China",
+            "e_2": "Outbreak of hostilities with Japan",
+            "e_3": "State of Emergency declared",
+            "e_4": "Arrival of Prince of Wales and Repulse",
+            "e_5": "Mobilization of Volunteer Forces"
         },
         "organisations": {
-            "o_1": "British Forces"
+            "o_1": "Ministry of Information Far East",
+            "o_2": "Malayan Information Bureau",
+            "o_3": "China Fleet",
+            "o_4": "Eastern Fleet"
         }
     },
     "keywords": [
-        "Defence",
-        "Mobile Warfare",
-        "Japanese Tactics",
-        "Ambush Tactics",
-        "Endurance",
-        "Recognition and Deception"
+        "Press",
+        "Censorship",
+        "Information",
+        "Military",
+        "Japan",
+        "Emergency",
+        "Naval"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Tactics",
-        "Warfare Strategy",
-        "Locational Advantage"
+        "Diplomacy",
+        "Strategic Decisions",
+        "Information Management"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_2",
             "e_1",
-            "e_2"
+            "e_4"
         ],
-        "Defensive Tactics": [
+        "Diplomacy": [
             "e_1"
         ],
-        "Warfare Strategy": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_3",
+            "e_5"
         ],
-        "Locational Advantage": [
-            "e_2"
+        "Information Management": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of operation not specified",
+            "date": "End of July 1941",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_4",
+                "l_5"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "At Jitra, British forces experience an initial reverse against Japanese troops, prompting a shift to a defensive strategy."
+            "connectedEvents": [],
+            "eventSummary": "Japanese occupation of Southern Indo-China occurs, indicating increased military readiness."
         },
         {
             "event": "e_2",
-            "date": "Date of campaign not specified",
+            "date": "8th December 1941",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_3",
+                "o_4"
             ],
+            "connectedEvents": [],
+            "eventSummary": "Outbreak of hostilities with Japan marks the beginning of active conflict in the region."
+        },
+        {
+            "event": "e_3",
+            "date": "1st December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_5"
             ],
-            "eventSummary": "The Malayan Campaign involves coordinated attacks by the Japanese army, leveraging local support to gather intelligence and disrupt British operations."
+            "eventSummary": "A State of Emergency is declared in response to increasing tensions with Japan."
+        },
+        {
+            "event": "e_4",
+            "date": "2nd December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Prince of Wales and Repulse arrive at Singapore as part of fleet operations."
+        },
+        {
+            "event": "e_5",
+            "date": "1st December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Mobilization of Volunteer Forces begins as part of the emergency preparations."
         }
     ]
 }

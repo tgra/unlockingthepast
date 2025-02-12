@@ -2,104 +2,113 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "River Seine",
-            "l_2": "Liege",
-            "l_3": "Hasselt",
-            "l_4": "Herenthals",
-            "l_5": "Namur",
-            "l_6": "Conflans (Pointe Eifel)",
-            "l_7": "Valenciennes",
-            "l_8": "Hirson",
-            "l_9": "Konz-Karthaus",
-            "l_10": "Tours",
-            "l_11": "Saumur",
-            "l_12": "Ostend",
-            "l_13": "Cherbourg"
+            "l_1": "Le Havre",
+            "l_2": "Boulogne",
+            "l_3": "Germany",
+            "l_4": "France",
+            "l_5": "Belgium",
+            "l_6": "Luxembourg",
+            "l_7": "Holland",
+            "l_8": "Reich"
         },
         "events": {
-            "e_1": "D-Day",
-            "e_2": "Attacks on Coastal Batteries"
+            "e_1": "Attack on Le Havre",
+            "e_2": "Attack on Boulogne",
+            "e_3": "D-Day",
+            "e_4": "Strategic Bombing Pointblank"
         },
         "organisations": {
-            "o_1": "United States Ninth Air Force",
-            "o_2": "Royal Air Force Second Tactical Air Force",
-            "o_3": "United States Eighth Air Force",
-            "o_4": "A.E.A.F."
+            "o_1": "R.A.F. Bomber Command",
+            "o_2": "United States Eighth Air Force",
+            "o_3": "A.E.A.F."
         }
     },
     "keywords": [
-        "D-Day",
-        "Fighter Bombers",
-        "Medium Bombers",
-        "Coastal Defences",
-        "Bridges",
-        "Air Operations"
+        "assault",
+        "bombing",
+        "air operations",
+        "oil supplies",
+        "weather"
     ],
     "themes": [
-        "Military Strategies",
+        "Military Operations",
+        "Strategic Bombing",
         "Air Operations",
-        "Impact of Bombing",
-        "Allied Offensive"
+        "Casualties"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Air Operations": [
-            "e_1",
-            "e_2"
+        "Strategic Bombing": [
+            "e_4"
         ],
-        "Strategic Decisions": [
-            "e_1"
-        ]
+        "Casualties": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
+            "date": "14th June 1944",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "On the evening of 14th June, a force of 335 Lancasters and 18 Mosquitoes attacked the port area of Le Havre, dropping 1,026 tons of bombs."
+        },
+        {
+            "event": "e_2",
+            "date": "15th June 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "On the next evening, 285 heavy bombers and 12 Mosquitoes attacked Boulogne, dropping 1,463 tons of bombs."
+        },
+        {
+            "event": "e_3",
+            "date": "6th June 1944",
+            "locations": [
                 "l_4",
                 "l_5",
                 "l_6",
                 "l_7",
-                "l_8",
-                "l_9",
-                "l_10",
-                "l_11",
-                "l_12"
+                "l_8"
             ],
             "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
+            "organisations": [],
             "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "On D-Day, extensive air attacks render twelve railway and road bridges over the River Seine impassable, significantly disrupting enemy logistics."
+            "eventSummary": "D-Day marks the beginning of the Allied invasion of German-occupied Western Europe."
         },
         {
-            "event": "e_2",
-            "date": "Before June 6, 1944",
-            "locations": [
-                "l_12",
-                "l_13"
-            ],
+            "event": "e_4",
+            "date": "",
+            "locations": [],
             "persons": [],
             "organisations": [
-                "o_1",
                 "o_2",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Prior to D-Day, air operations target coastal batteries to neutralize enemy defences and secure the landing area."
+            "connectedEvents": [],
+            "eventSummary": "Strategic bombing operations maintained considerable pressure against targets in Germany following D-Day."
         }
     ]
 }

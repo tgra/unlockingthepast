@@ -1,12 +1,83 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {},
-        "events": {},
-        "organisations": {}
+        "persons": {
+            "p_1": "Senior Officer"
+        },
+        "locations": {
+            "l_1": "Zara",
+            "l_2": "Vir Point",
+            "l_3": "Vir light"
+        },
+        "events": {
+            "e_1": "Engagement with enemy F-lighters",
+            "e_2": "Third attack of the night"
+        },
+        "organisations": {
+            "o_1": "H.M.M.T.B. 637",
+            "o_2": "H.M.M.T.B. 638",
+            "o_3": "H.M.M.G.B. 662",
+            "o_4": "H.M.M.T.B. 634"
+        }
     },
-    "keywords": [],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "keywords": [
+        "Engagement",
+        "F-lighters",
+        "Torpedoes",
+        "Starshell"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Warfare"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Naval Warfare": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "2305-2353",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the engagement with enemy F-lighters, H.M.M.T.B. 637, 638, and other units engage multiple targets, culminating in the sinking of enemy vessels between 2305 and 2353."
+        },
+        {
+            "event": "e_2",
+            "date": "0221",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "At 0221, the planned third attack on the enemy takes place, following a setup with illumination from H.M.M.G.B. 662."
+        }
+    ]
 }

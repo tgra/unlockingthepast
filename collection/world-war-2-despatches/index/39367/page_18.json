@@ -1,131 +1,126 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Commanding General M.A.T.A.F.",
-            "p_2": "H.Q. Tactical Air Force",
-            "p_3": "Eighth Army",
-            "p_4": "XXII Tactical Air Command",
-            "p_5": "V Corps",
-            "p_6": "II Polish Corps"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Adriatic",
-            "l_2": "Lake Comacchio",
-            "l_3": "River Po",
-            "l_4": "Reno River",
-            "l_5": "Santerno River",
-            "l_6": "Senio",
-            "l_7": "Massa",
-            "l_8": "La Spezia",
-            "l_9": "Italy"
+            "l_1": "Po Valley",
+            "l_2": "North-West Italy",
+            "l_3": "Milan",
+            "l_4": "Turin",
+            "l_5": "Genoa",
+            "l_6": "Brenner Pass",
+            "l_7": "Piedicolle",
+            "l_8": "Venetian plain",
+            "l_9": "Trieste",
+            "l_10": "Istrian ports"
         },
         "events": {
-            "e_1": "Eighth Army Offensive",
-            "e_2": "Preliminary Phase of the Battle",
-            "e_3": "Assault on Senio Positions"
+            "e_1": "Interdiction of communications between Italy and the Reich",
+            "e_2": "Allied offensive on the 9th April",
+            "e_3": "M.A.T.A.F. effort against enemy's railway communications",
+            "e_4": "Enemy repair efforts"
         },
         "organisations": {
             "o_1": "M.A.T.A.F.",
-            "o_2": "M.A.S.A.F.",
-            "o_3": "Desert Air Force",
-            "o_4": "5th Army",
-            "o_5": "No. 205 Group"
+            "o_2": "Desert Air Force",
+            "o_3": "M.A.S.A.F.",
+            "o_4": "Tactical Air Force",
+            "o_5": "German Army"
         }
     },
     "keywords": [
-        "Air Force Plan",
-        "close support operations",
-        "Eighth Army",
+        "air effort",
+        "operations",
+        "interdiction",
+        "communications",
+        "enemy repair",
+        "railway communications",
         "offensive",
-        "bombardment",
-        "battle"
+        "bombing"
     ],
     "themes": [
         "Military Operations",
-        "Air Operations",
-        "Support Operations",
-        "Battle Strategy"
+        "Air Strategy",
+        "Enemy Resistance",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Air Operations": [
-            "e_1",
             "e_2"
         ],
-        "Support Operations": [
+        "Air Strategy": [
+            "e_1",
             "e_3"
         ],
-        "Battle Strategy": [
-            "e_1",
+        "Enemy Resistance": [
+            "e_4"
+        ],
+        "Logistics": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 2, 1945",
+            "date": "April 2023",
             "locations": [
-                "l_2",
-                "l_5"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_3",
-                "p_5",
-                "p_6"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_4",
-                "o_5"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Eighth Army Offensive begins with a series of coordinated air operations to support ground forces in breaching enemy defenses."
+            "eventSummary": "M.A.T.A.F. maintains the interdiction of communications between Italy and the Reich, attacking key targets to disrupt enemy supply lines."
         },
         {
             "event": "e_2",
-            "date": "April 2, 1945",
+            "date": "9th April",
             "locations": [
+                "l_1",
                 "l_2"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The preliminary phase involves commandos attacking enemy positions at Lake Comacchio to secure a strategic advantage for the Eighth Army."
+            "eventSummary": "The Allied offensive is launched on the 9th April, marking a significant military action in the region."
         },
         {
             "event": "e_3",
-            "date": "April 6-8, 1945",
+            "date": "April 2023",
             "locations": [
-                "l_6",
-                "l_5"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_5",
-                "p_6"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_4"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
+            "connectedEvents": [],
+            "eventSummary": "M.A.S.A.F. increases efforts against the enemy's railway communications, conducting extensive bombing operations to disrupt logistics."
+        },
+        {
+            "event": "e_4",
+            "date": "n/a",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_5"
             ],
-            "eventSummary": "The assault on the Senio positions is initiated with air and ground coordination, leading to preliminary successes in securing bridgeheads."
+            "connectedEvents": [],
+            "eventSummary": "The enemy's repair organisation shows extraordinary resourcefulness in combating interdiction measures despite significant air attacks."
         }
     ]
 }

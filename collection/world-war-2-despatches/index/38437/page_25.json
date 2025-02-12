@@ -1,97 +1,107 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Robert Watson-Watt",
-            "p_2": "Air Commodore Ambler",
-            "p_3": "General Pile",
-            "p_4": "Air Vice-Marshal Saunders"
+            "p_1": "Air Marshal Coningham"
         },
         "locations": {
-            "l_1": "Greater London",
-            "l_2": "Kent",
-            "l_3": "Surrey",
-            "l_4": "St. Margaret's Bay",
-            "l_5": "Beachy Head",
-            "l_6": "the Downs",
-            "l_7": "the Thames"
+            "l_1": "Brussels",
+            "l_2": "Norwich",
+            "l_3": "London",
+            "l_4": "Hague",
+            "l_5": "Leytonstone",
+            "l_6": "Bloemendaal",
+            "l_7": "Leiden",
+            "l_8": "Antwerp",
+            "l_9": "Zuyder Zee",
+            "l_10": "Vlieland",
+            "l_11": "Terschelling",
+            "l_12": "Rijs",
+            "l_13": "Norfolk"
         },
         "events": {
-            "e_1": "Conference on Gun Deployment",
-            "e_2": "Moving Guns to the Coast"
+            "e_1": "Attacks on Norwich",
+            "e_2": "Resumption of attacks on London",
+            "e_3": "Rocket attacks from the Hague"
         },
         "organisations": {
-            "o_1": "Air Ministry",
-            "o_2": "Anti-Aircraft Command",
-            "o_3": "No. 11 Group"
+            "o_1": "Second Tactical Air Force"
         }
     },
     "keywords": [
-        "gun deployment",
-        "radar",
-        "conference",
-        "flying bombs",
-        "military strategy"
+        "rockets",
+        "armed reconnaissance",
+        "intelligence",
+        "airfields"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Technological Advancements"
+        "Intelligence Gathering",
+        "Air Defense"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
+        "Intelligence Gathering": [
             "e_1",
             "e_2"
         ],
-        "Technological Advancements": [
-            "e_1"
+        "Air Defense": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of conference not specified",
+            "date": "October 12, 1944",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_5"
+                "l_2"
             ],
             "persons": [
-                "p_3",
-                "p_1",
-                "p_2",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The conference discusses the proposal to move all guns to the coast, with General Pile and Sir Robert Watson-Watt supporting the plan."
+            "eventSummary": "From the 25th September onwards, rockets aimed at Norwich continued to fall, culminating in the last round impacting on a farm in Norfolk on the morning of the 12th October."
         },
         {
             "event": "e_2",
-            "date": "7th July",
+            "date": "October 3, 1944",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "Following the decision made at the conference, guns are successfully relocated to the coast, with significant logistical efforts involving thousands of personnel."
+            "eventSummary": "On the 3rd October, the resumption of rocket attacks on London is reported, marking the first in Greater London for a fortnight."
+        },
+        {
+            "event": "e_3",
+            "date": "October 1944",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Throughout October 1944, intelligence indicates that firing troops are targeting London from positions in and around the Hague."
         }
     ]
 }

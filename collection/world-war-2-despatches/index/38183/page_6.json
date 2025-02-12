@@ -1,96 +1,108 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Reginald Dorman Smith"
+            "p_1": "Commander K. S. Lyle",
+            "p_2": "General Chiang Kai-shek",
+            "p_3": "General MacArthur"
         },
         "locations": {
-            "l_1": "Moulmein",
-            "l_2": "Chieng Rai",
-            "l_3": "Kentung",
-            "l_4": "Taunggyi",
-            "l_5": "Burma",
-            "l_6": "Northern Indo-China",
-            "l_7": "China",
-            "l_8": "Puerhfu",
-            "l_9": "Lashio",
-            "l_10": "Kunming",
-            "l_11": "Bhamo",
-            "l_12": "India",
-            "l_13": "Tenasserim Peninsula",
-            "l_14": "Tavoy",
-            "l_15": "Mergui",
-            "l_16": "Victoria Point",
-            "l_17": "Bay of Bengal",
-            "l_18": "Salween River",
-            "l_19": "Singapore"
+            "l_1": "Burma",
+            "l_2": "Tenasserim Peninsula",
+            "l_3": "Rangoon",
+            "l_4": "Malaya",
+            "l_5": "Kunming",
+            "l_6": "Mingaladon",
+            "l_7": "Toungoo",
+            "l_8": "Chungking"
         },
         "events": {
-            "e_1": "Conference of October 1940",
-            "e_2": "War with Japan's outbreak in 1941"
+            "e_1": "Singapore Conference",
+            "e_2": "Formation of the American Volunteer Group",
+            "e_3": "War with Japan outbreak"
         },
         "organisations": {
-            "o_1": "British Army",
-            "o_2": "Burma Frontier Force",
-            "o_3": "Royal Air Force"
+            "o_1": "Burma Royal Naval Volunteer Reserve",
+            "o_2": "Royal Air Force",
+            "o_3": "American Volunteer Group",
+            "o_4": "International Air Force"
         }
     },
     "keywords": [
         "Burma",
-        "Japan",
-        "military forces",
-        "road communication",
-        "aerodrome construction"
+        "American Volunteer Group",
+        "Royal Air Force",
+        "Rangoon",
+        "War with Japan"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Defense",
-        "Logistics and Transport"
+        "International Cooperation",
+        "Air Defense",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Defense": [
+        "International Cooperation": [
+            "e_2",
             "e_1"
         ],
-        "Logistics and Transport": [
-            "e_2"
+        "Air Defense": [
+            "e_1",
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 1940",
+            "date": "November 1940",
             "locations": [
-                "l_19"
+                "l_1",
+                "l_8"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Conference of October 1940 recommends military force requirements for the defense of Burma against potential threats."
+            "connectedEvents": [],
+            "eventSummary": "The Singapore Conference recommends the formation of additional air units to strengthen military presence in Burma."
         },
         {
             "event": "e_2",
-            "date": "1941",
+            "date": "August 1941",
             "locations": [
-                "l_5"
+                "l_1",
+                "l_6",
+                "l_7"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_3",
+                "o_4"
             ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The American Volunteer Group, consisting of fighter squadrons, is formed and begins training in Burma."
+        },
+        {
+            "event": "e_3",
+            "date": "December 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "War with Japan breaks out, highlighting the inadequate road communication and military preparedness in Burma, leading to strategic challenges."
+            "eventSummary": "War with Japan breaks out, escalating military tensions in Burma."
         }
     ]
 }

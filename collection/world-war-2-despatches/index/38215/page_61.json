@@ -1,125 +1,115 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "John Norgroup"
+            "p_1": "Brigadier Ballantine",
+            "p_2": "Major-General M. Beckwith-Smith"
         },
         "locations": {
-            "l_1": "Perak",
-            "l_2": "Singapore",
-            "l_3": "Penang",
-            "l_4": "Sabang",
-            "l_5": "Johore",
-            "l_6": "Kelantan",
-            "l_7": "Indo-China",
-            "l_8": "River Krian",
-            "l_9": "River Bernam",
-            "l_10": "Negri Sembilan",
-            "l_11": "Selangor",
-            "l_12": "East Coast Malaya"
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "Sumatra",
+            "l_4": "Java",
+            "l_5": "Ceylon",
+            "l_6": "South Pacific",
+            "l_7": "Netherlands East Indies"
         },
         "events": {
-            "e_1": "Formation of Perak Flotilla",
-            "e_2": "Loss of the Prince of Wales and Repulse",
-            "e_3": "Defense preparations for reinforcements"
+            "e_1": "Malayan Campaign",
+            "e_2": "Withdrawal of Air Force",
+            "e_3": "Reinforcements arrival in Singapore"
         },
         "organisations": {
-            "o_1": "Royal Dutch Navy",
-            "o_2": "Australian Army",
-            "o_3": "Japanese Navy",
-            "o_4": "Allied Forces"
+            "o_1": "Malayan Volunteer Air Force",
+            "o_2": "Royal Navy",
+            "o_3": "American Fleet",
+            "o_4": "Dutch Fleet",
+            "o_5": "3 Indian Corps"
         }
     },
     "keywords": [
-        "Japanese advance",
-        "Perak",
-        "Naval forces",
-        "Air Force",
-        "reconnaissance",
-        "reinforcements",
-        "communication",
-        "tin-mining industry"
+        "Hurricane Fighters",
+        "Japanese Navy Zero Fighters",
+        "Air Raid Warnings",
+        "Air Striking Force",
+        "Royal Marine",
+        "44 Indian Infantry Brigade",
+        "Australian Machine-Gun Battalion"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Air Superiority",
-        "Reinforcement Logistics",
-        "Geopolitical Strategy"
+        "Air Defense",
+        "Reinforcements",
+        "Strategic Withdrawals"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
             "e_3"
         ],
-        "Naval Strategy": [
-            "e_1",
-            "e_2"
+        "Air Defense": [
+            "e_1"
         ],
-        "Air Superiority": [
+        "Reinforcements": [
             "e_3"
         ],
-        "Reinforcement Logistics": [
-            "e_3"
-        ],
-        "Geopolitical Strategy": [
-            "e_1",
+        "Strategic Withdrawals": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 17, 1941",
+            "date": "January 1942",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "On December 17, 1941, the Perak Flotilla is formed to deny enemy access to the West Coast, showcasing a strategic response to the vulnerabilities posed by Japanese advancements."
+            "connectedEvents": [],
+            "eventSummary": "The Malayan Campaign represents a series of military operations during January 1942 where Allied forces faced significant challenges against Japanese forces."
         },
         {
             "event": "e_2",
-            "date": "December 1941",
+            "date": "30th January 1942",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_3"
             ],
             "persons": [],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "In December 1941, the loss of the Prince of Wales and Repulse significantly reduces the naval capabilities of forces based in Singapore, impacting the overall military strategy."
+            "eventSummary": "On the 30th January 1942, the decision is made to withdraw the majority of the Air Force to bases in the Netherlands East Indies, leaving only one fighter squadron in Singapore."
         },
         {
             "event": "e_3",
             "date": "January 1942",
             "locations": [
-                "l_2"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
-                "o_2",
-                "o_4"
+                "o_5"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "In January 1942, preparations are undertaken to ensure the safe arrival of reinforcements to Malaya, emphasizing the urgency of maintaining air superiority against Japanese forces."
+            "eventSummary": "During January 1942, multiple reinforcements arrive in Singapore, including the 44 Indian Infantry Brigade and the Australian Machine-Gun Battalion."
         }
     ]
 }

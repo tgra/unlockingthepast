@@ -1,12 +1,155 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {},
-        "events": {},
-        "organisations": {}
+        "persons": {
+            "p_1": "Lt. General Quinan",
+            "p_2": "Major General Slim",
+            "p_3": "Brigadier Aizlewood",
+            "p_4": "Colonel Popov",
+            "p_5": "Major-General J. N. Thomson"
+        },
+        "locations": {
+            "l_1": "Kermanshah",
+            "l_2": "Hamadan",
+            "l_3": "Kazvin",
+            "l_4": "Teheran",
+            "l_5": "Iran",
+            "l_6": "Iraq",
+            "l_7": "Basra",
+            "l_8": "Sultanabad",
+            "l_9": "Shahabad",
+            "l_10": "Khaniqin",
+            "l_11": "Ahwaz",
+            "l_12": "Kuristan",
+            "l_13": "Senna",
+            "l_14": "Pahlevi"
+        },
+        "events": {
+            "e_1": "Occupation of Kermanshah",
+            "e_2": "Advance of Russian forces",
+            "e_3": "Friendly contact with Russian troops",
+            "e_4": "Joint Anglo-Russian advance to Teheran",
+            "e_5": "Withdrawal of British and Russian troops from Teheran"
+        },
+        "organisations": {
+            "o_1": "British Army",
+            "o_2": "Russian Mission"
+        }
     },
-    "keywords": [],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "keywords": [
+        "Iran",
+        "truce",
+        "refinery",
+        "Kermanshah",
+        "Russian forces",
+        "friendly contact",
+        "patrol",
+        "Joint Advance",
+        "Withdrawal"
+    ],
+    "themes": [
+        "Military Operations",
+        "Diplomacy",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Diplomacy": [
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "30th August",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The occupation of Kermanshah is completed by a detachment on 30th August."
+        },
+        {
+            "event": "e_2",
+            "date": "29th August",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Russian forces are reported advancing towards Kermanshah from the direction of Senna and Hamadan."
+        },
+        {
+            "event": "e_3",
+            "date": "7th September",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A small detachment with Colonel Popov is sent to make contact with Russian troops at Saujbulagh."
+        },
+        {
+            "event": "e_4",
+            "date": "17th September",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Joint Anglo-Russian advance to Teheran is successfully executed."
+        },
+        {
+            "event": "e_5",
+            "date": "18th October",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The withdrawal of British and Russian troops from Teheran is completed."
+        }
+    ]
 }

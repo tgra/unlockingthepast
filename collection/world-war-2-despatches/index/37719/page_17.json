@@ -1,136 +1,119 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Pile",
+            "p_2": "Major A, B. Russell, O.B.E., T.A.R.O.",
+            "p_3": "Squadron Leader J, H. Little"
+        },
         "locations": {
-            "l_1": "Debden",
-            "l_2": "North Weald",
-            "l_3": "Hornchurch",
-            "l_4": "Biggin Hill",
-            "l_5": "Kenley",
-            "l_6": "Lowestoft",
-            "l_7": "Worthing",
-            "l_8": "Harwich",
-            "l_9": "Thames and Medway North",
-            "l_10": "Thames and Medway South",
-            "l_11": "Chatham",
-            "l_12": "Rochester",
-            "l_13": "Dover",
-            "l_14": "Folkestone",
-            "l_15": "Felixstowe",
-            "l_16": "Vange",
-            "l_17": "Uxbridge",
-            "l_18": "Manston",
-            "l_19": "Hawkinge",
-            "l_20": "Lympne"
+            "l_1": "Kenley Sector",
+            "l_2": "London",
+            "l_3": "Beachy Head",
+            "l_4": "Redhill"
         },
         "events": {
-            "e_1": "Deployment of H.A.A. Guns",
-            "e_2": "Enemy Bombing Attacks",
-            "e_3": "Low Level and Dive Bombing Attacks"
+            "e_1": "first night attack",
+            "e_2": "development of Radio Location apparatus",
+            "e_3": "installation of G.L. sets",
+            "e_4": "A.I. pickup"
         },
         "organisations": {
-            "o_1": "6th A.A. Division",
-            "o_2": "R.A.F.",
-            "o_3": "Anti-Aircraft Command"
+            "o_1": "Observer Corps",
+            "o_2": "No. 219 Squadron"
         }
     },
     "keywords": [
-        "H.A.A.",
-        "L.A.A.",
-        "A.A. Guns",
-        "Bombing Attacks",
-        "Defence",
         "Searchlights",
-        "Fighter Aerodromes"
+        "Bombers",
+        "Night Fighters",
+        "Radio Location",
+        "G.L. Set",
+        "A.I. apparatus"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Tactics",
-        "Enemy Tactics"
+        "Technical Development",
+        "Air Defense Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_4"
+        ],
+        "Technical Development": [
             "e_2",
             "e_3"
         ],
-        "Defensive Tactics": [
-            "e_1"
-        ],
-        "Enemy Tactics": [
-            "e_2",
-            "e_3"
+        "Air Defense Strategies": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July-October 1940",
+            "date": "June 1940",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10",
-                "l_11",
-                "l_12",
-                "l_13",
-                "l_14",
-                "l_15",
-                "l_16"
+                "l_2"
             ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
+            "persons": [
+                "p_1"
             ],
+            "organisations": [],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The 6th A.A. Division deploys Heavy Anti-Aircraft and Light Anti-Aircraft guns across various locations to defend against enemy air attacks."
+            "eventSummary": "The first night attack worthy of the name is made early in June 1940, resulting in the shooting down of 6 bombers."
         },
         {
             "event": "e_2",
-            "date": "July-October 1940",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_8"
+                "l_2"
             ],
-            "persons": [],
-            "organisations": [
-                "o_3"
+            "persons": [
+                "p_1",
+                "p_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Enemy bombing attacks occur at high levels, with bombers engaging R.A.F. sectors and facing defensive fire from A.A. guns."
-        },
-        {
-            "event": "e_3",
-            "date": "Late Summer-October 1940",
-            "locations": [
-                "l_18",
-                "l_19",
-                "l_20"
-            ],
-            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The enemy employs low-level and dive bombing attacks on fighter aerodromes, prompting responses from A.A. guns."
+            "eventSummary": "Development of Radio Location apparatus becomes urgent to improve night interceptions."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "G.L. sets are installed in the Kenley Sector to enhance tracking capabilities for night fighters."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Promising results are obtained from the A.I. apparatus in aircraft for detecting enemy bombers."
         }
     ]
 }

@@ -1,99 +1,153 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief",
-            "p_2": "Commander Tenth Army"
+            "p_1": "Lieutenant-General Godwin-Austen",
+            "p_2": "General Ritchie",
+            "p_3": "Major-General Gott",
+            "p_4": "Admiral Cunningham",
+            "p_5": "Air Chief Marshal Tedder"
         },
         "locations": {
-            "l_1": "El Alamein",
-            "l_2": "Alam Nayal",
-            "l_3": "Matruh",
-            "l_4": "Cairo",
-            "l_5": "Iraq",
-            "l_6": "Persia",
-            "l_7": "Delta",
-            "l_8": "Siwa"
+            "l_1": "Mechili",
+            "l_2": "Tengeder",
+            "l_3": "Derna",
+            "l_4": "Gazala",
+            "l_5": "Msus",
+            "l_6": "Martuba",
+            "l_7": "Cairo",
+            "l_8": "Tobruk",
+            "l_9": "Giarabub",
+            "l_10": "Agedabia",
+            "l_11": "Cyrenaica",
+            "l_12": "Bengasi",
+            "l_13": "Gebel Akhdar",
+            "l_14": "Sollum",
+            "l_15": "Maddalena",
+            "l_16": "Tmimi",
+            "l_17": "Sidi Muftah",
+            "l_18": "Bir Hacheim"
         },
         "events": {
-            "e_1": "Defensive Battle Preparation",
-            "e_2": "Reorganization of the Middle East Command"
+            "e_1": "Evacuation of Derna",
+            "e_2": "Withdrawal from Agedabia",
+            "e_3": "Engagement attempt by Rommel",
+            "e_4": "Consolidation of the Gazala position"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "13 Corps",
-            "o_3": "30 Corps",
-            "o_4": "5 Indian Division"
+            "o_2": "Middle East Defence Committee",
+            "o_3": "13th Corps",
+            "o_4": "7th Armoured Division",
+            "o_5": "1st Armoured Division",
+            "o_6": "4th Indian Division"
         }
     },
     "keywords": [
-        "El Alamein",
-        "F.D.Ls.",
-        "7 Armoured Division",
-        "Eighth Army",
-        "Defensive Battle",
-        "Reorganisation",
-        "Middle East Command"
+        "Evacuation",
+        "Withdrawal",
+        "Armoured Division",
+        "Tobruk",
+        "Defensive positions",
+        "Engagement"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Command Structure",
-        "Tactical Techniques"
+        "Strategic Decisions",
+        "Defensive Strategies"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_2",
+            "e_4"
         ],
         "Defensive Strategies": [
-            "e_1"
-        ],
-        "Command Structure": [
-            "e_2"
-        ],
-        "Tactical Techniques": [
-            "e_1"
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 1942",
+            "date": "1st February 1942",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_3",
+                "l_4",
+                "l_10"
             ],
             "persons": [
+                "p_2",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "On the 1st February 1942, the evacuation of Derna is ordered due to an assessment of enemy supply strengths and advancing forces."
+        },
+        {
+            "event": "e_2",
+            "date": "1st February 1942",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_2",
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
                 "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "During the withdrawal from Agedabia, the 1st Armoured Division suffers substantial losses while enemy efforts to engage are noted but rebuffed."
+        },
+        {
+            "event": "e_3",
+            "date": "16th February 1942",
+            "locations": [
+                "l_4",
+                "l_18"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Preparations for a defensive battle are underway as Eighth Army organizes its forces and positions in the El Alamein area to maximize their defensive capabilities."
+            "eventSummary": "On the 16th February, Rommel attempts to engage the Eighth Army but is unsuccessful as General Ritchie avoids confrontation."
         },
         {
-            "event": "e_2",
-            "date": "14th August 1942",
+            "event": "e_4",
+            "date": "26th February 1942",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_4"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "A proposal is placed to separate Iraq and Persia from the Middle East Command to establish an independent command structure, reflecting the need for focused leadership in the region."
+            "eventSummary": "By the 26th February, the Eighth Army completes the consolidation of the Gazala position with strong defenses prepared against potential attacks."
         }
     ]
 }

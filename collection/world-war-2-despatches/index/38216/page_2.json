@@ -1,70 +1,74 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "A.V.M. P.C. Maltby",
-            "p_2": "Wing Commander Councell",
-            "p_3": "Squadron Leader Wilkins",
-            "p_4": "G/Capt. Ridgway",
-            "p_5": "Squadron Leader S. G. Aylwin",
-            "p_6": "Air Commodore Silly"
+            "p_1": "P. C. Martsy",
+            "p_2": "Air Vice-Marshal Pulford",
+            "p_3": "Air Chief Marshal Sir Robert Brooke-Popham"
         },
         "locations": {
-            "l_1": "Singapore Island",
-            "l_2": "South Sumatra",
-            "l_3": "Java",
-            "l_4": "Bandoeng",
-            "l_5": "Batavia",
-            "l_6": "Oesthaven",
-            "l_7": "Djocjacarta",
-            "l_8": "Poerbolinggo",
-            "l_9": "Buitenzorg"
+            "l_1": "Singapore",
+            "l_2": "Hong Kong",
+            "l_3": "Borneo",
+            "l_4": "Malaya",
+            "l_5": "Burma",
+            "l_6": "Ceylon",
+            "l_7": "Durban",
+            "l_8": "Mombasa",
+            "l_9": "Java",
+            "l_10": "Netherlands East Indies"
         },
         "events": {
-            "e_1": "Capture of Singapore",
-            "e_2": "Evacuation from Sumatra",
-            "e_3": "R.A.F. Re-organisation in Java",
-            "e_4": "Battle of Java"
+            "e_1": "Formation of Supreme Allied Headquarters, S.W. Pacific",
+            "e_2": "Appointment of Air Chief Marshal Sir Robert Brooke-Popham as Commander-in-Chief, Far East",
+            "e_3": "Operational control of British land and air forces in Malaya, Burma, and Hong Kong"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)",
-            "o_2": "Abdacom",
-            "o_3": "Abdair"
+            "o_1": "Royal Air Force",
+            "o_2": "Cabinet War Library",
+            "o_3": "Air Ministry",
+            "o_4": "War Office",
+            "o_5": "Colonial Office",
+            "o_6": "General Headquarters of the Commander-in-Chief, Far East",
+            "o_7": "Headquarters of the General Officer Commanding, Malaya Command",
+            "o_8": "Air Headquarters of the Air Officer Commanding, R.A.F, Far East Command",
+            "o_9": "Anti-Aircraft Co-operation Unit",
+            "o_10": "Far East Combined Bureau"
         }
     },
     "keywords": [
-        "Japanese Capture",
-        "Singapore",
-        "Evacuation",
-        "Java",
-        "R.A.F.",
-        "reinforcements",
-        "confusion",
-        "Battle"
+        "report",
+        "evidence",
+        "operations",
+        "campaign",
+        "intelligence",
+        "air aspect"
     ],
     "themes": [
         "Military Operations",
-        "Evacuations",
-        "Strategic Organisation",
-        "Defense Strategies"
+        "Intelligence",
+        "Leadership",
+        "Geopolitical Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4"
-        ],
-        "Evacuations": [
-            "e_2",
             "e_3"
         ],
-        "Strategic Organisation": [
+        "Intelligence": [
+            "e_1"
+        ],
+        "Leadership": [
+            "e_2"
+        ],
+        "Geopolitical Strategy": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 8, 1942",
+            "date": "January 15, 1942",
             "locations": [
                 "l_1"
             ],
@@ -72,55 +76,46 @@
                 "p_1"
             ],
             "organisations": [
+                "o_6",
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Japanese secure a foothold on Singapore Island, leading to the capitulation of British forces."
+            "connectedEvents": [],
+            "eventSummary": "The Supreme Allied Headquarters, S.W. Pacific is formed on January 15, 1942, consolidating command for operations in the region."
         },
         {
             "event": "e_2",
-            "date": "February 14, 1942",
+            "date": "November 1940",
             "locations": [
-                "l_2",
-                "l_3"
+                "l_4",
+                "l_5",
+                "l_1"
             ],
             "persons": [
-                "p_4",
-                "p_6"
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "British forces and R.A.F. personnel evacuate from South Sumatra under heavy attack, arriving in Java facing chaos."
+            "connectedEvents": [],
+            "eventSummary": "Air Chief Marshal Sir Robert Brooke-Popham is appointed Commander-in-Chief, Far East in November 1940."
         },
         {
             "event": "e_3",
-            "date": "February 16, 1942",
+            "date": "",
             "locations": [
-                "l_3",
-                "l_5"
+                "l_4",
+                "l_5",
+                "l_6"
             ],
             "persons": [
-                "p_1",
-                "p_4",
-                "p_5"
+                "p_3"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_7"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "R.A.F. re-organisation in Java occurs amidst the chaos from the Sumatra evacuation, as troops regroup."
+            "connectedEvents": [],
+            "eventSummary": "The operational control of British land and air forces in Malaya, Burma, and Hong Kong is outlined as part of military strategy."
         }
     ]
 }

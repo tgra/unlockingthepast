@@ -5,60 +5,53 @@
             "p_2": "Brigadier H. V. S. Charrington",
             "p_3": "Major-General Freyberg",
             "p_4": "Major-General Sir Ivan Mackay",
-            "p_5": "Sir John Dill",
-            "p_6": "General Jankovitch"
+            "p_5": "General Wilson",
+            "p_6": "General Jankovitch",
+            "p_7": "Sir John Dill",
+            "p_8": "Mr. Hope"
         },
         "locations": {
             "l_1": "Greece",
             "l_2": "Albania",
-            "l_3": "Bulgarian Front",
-            "l_4": "Piraeus",
-            "l_5": "Katerini",
-            "l_6": "Yugoslavia",
-            "l_7": "Cyrenaica",
-            "l_8": "Benghazi",
-            "l_9": "Tobruk",
-            "l_10": "Florina"
+            "l_3": "Bulgaria",
+            "l_4": "Katerini",
+            "l_5": "Yugoslavia",
+            "l_6": "Cyrenaica",
+            "l_7": "Benghazi",
+            "l_8": "Tobruk",
+            "l_9": "Florina"
         },
         "events": {
-            "e_1": "German invasion of Greece",
-            "e_2": "Yugoslav coup d'état",
-            "e_3": "Meeting at Florina",
-            "e_4": "German air attacks on Benghazi"
+            "e_1": "Coup d'etat in Yugoslavia",
+            "e_2": "German invasion of Greece and Yugoslavia",
+            "e_3": "German Counter Attack in Cyrenaica"
         },
         "organisations": {
-            "o_1": "British Forces",
-            "o_2": "Greek Army",
-            "o_3": "Yugoslav Government"
+            "o_1": "Greek army",
+            "o_2": "Yugoslav Government",
+            "o_3": "Royal Engineers"
         }
     },
     "keywords": [
-        "Greek Army",
+        "Greek army",
+        "Albanian front",
         "Yugoslavs",
-        "German Forces",
-        "British Forces",
-        "Air Attacks",
-        "Coup d'état",
-        "Armoured Division"
+        "British forces",
+        "German forces",
+        "mechanical transport"
     ],
     "themes": [
         "Military Operations",
-        "International Relations",
-        "Logistics",
-        "Strategic Decisions",
-        "Coup d'état"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_4"
-        ],
-        "Diplomacy": [
             "e_2",
             "e_3"
         ],
-        "Logistics": [
-            "e_4"
+        "Diplomacy": [
+            "e_1"
         ],
         "Strategic Decisions": [
             "e_1",
@@ -68,72 +61,53 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th April",
+            "date": "27th March",
             "locations": [
-                "l_1",
-                "l_6"
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "German forces invade Greece following a period of uncertainty regarding Yugoslav intentions and military readiness."
+            "eventSummary": "The coup d'état in Yugoslavia occurs, leading to the overthrow of the existing government and the establishment of a new one pledged to defend against German attacks."
         },
         {
             "event": "e_2",
-            "date": "27th March",
+            "date": "6th April",
             "locations": [
-                "l_6"
+                "l_5",
+                "l_1"
             ],
             "persons": [
-                "p_6"
+                "p_6",
+                "p_7"
             ],
             "organisations": [
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "A coup d'état leads to the overthrow of the Yugoslav government, which pledges to defend against German aggression."
+            "eventSummary": "German forces invade both Greece and Yugoslavia, prompting immediate military responses from the allies."
         },
         {
             "event": "e_3",
-            "date": "1st April",
+            "date": "",
             "locations": [
-                "l_10"
-            ],
-            "persons": [
-                "p_1",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "General Papagos and General Wilson meet with General Jankovitch to discuss potential military actions against the Germans."
-        },
-        {
-            "event": "e_4",
-            "date": "Third week of February",
-            "locations": [
-                "l_8"
+                "l_6",
+                "l_7"
             ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "German air attacks on Benghazi become increasingly severe, affecting supply lines for British forces."
+            "eventSummary": "Increasing anxiety over potential German attacks in Cyrenaica develops, influenced by heavy air assaults affecting supplies and logistics."
         }
     ]
 }

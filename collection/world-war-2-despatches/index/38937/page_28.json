@@ -1,73 +1,95 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Henri H. Giraud",
-            "p_2": "Mark W. Clark"
+            "p_1": "Kesselring"
         },
         "locations": {
-            "l_1": "Sicily",
-            "l_2": "North Africa",
-            "l_3": "Reggio",
-            "l_4": "Cotrone",
-            "l_5": "Calabria",
-            "l_6": "Corsica",
-            "l_7": "Naples",
-            "l_8": "Sardinia",
-            "l_9": "Taranto",
-            "l_10": "Italy"
+            "l_1": "Apennines",
+            "l_2": "Adriatic",
+            "l_3": "Mignano Gap",
+            "l_4": "Monte Camino",
+            "l_5": "Monte La Difensa",
+            "l_6": "Monte Maggiore",
+            "l_7": "Monte Sammucro",
+            "l_8": "Liri valley",
+            "l_9": "Naples",
+            "l_10": "Sicily",
+            "l_11": "Slovenia",
+            "l_12": "Monte Lungo",
+            "l_13": "San Pietro in Fine",
+            "l_14": "San Vittore",
+            "l_15": "Garigliano",
+            "l_16": "Minturno",
+            "l_17": "Gaeta",
+            "l_18": "Filignano",
+            "l_19": "Atina",
+            "l_20": "Sant Elia"
         },
         "events": {
-            "e_1": "Operation BUTTRESS",
-            "e_2": "Operation GOBLET",
-            "e_3": "Operation BRIMSTONE",
-            "e_4": "Operation FIREBRAND"
+            "e_1": "Eighth Army's attack on the Adriatic sector",
+            "e_2": "Operation to capture the Mignano Gap",
+            "e_3": "Battle of Monte Camino",
+            "e_4": "Capture of La Difensa",
+            "e_5": "Battle of San Pietro",
+            "e_6": "Second battle for San Pietro"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "United States Fifth Army",
-            "o_3": "Allied Force Headquarters"
+            "o_2": "Fifth Army",
+            "o_3": "II Corps",
+            "o_4": "VI Corps",
+            "o_5": "Moroccan Division",
+            "o_6": "i Special Service Force",
+            "o_7": "74 Armoured Brigade"
         }
     },
     "keywords": [
-        "Operation",
-        "landing",
-        "Allied forces",
-        "Italian forces",
-        "amphibious operations",
-        "capture",
-        "Sicily"
+        "winter campaign",
+        "attack",
+        "division",
+        "operation",
+        "artillery",
+        "counter-attack"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Allied Strategies",
-        "Italian Resistance"
+        "Strategic Decisions",
+        "Combat Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3",
-            "e_4"
+            "e_4",
+            "e_5",
+            "e_6"
         ],
-        "Strategic Planning": [
-            "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Allied Strategies": [
-            "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Italian Resistance": [
+        "Strategic Decisions": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Eighth Army conducts an attack in the Adriatic sector."
+        },
+        {
+            "event": "e_2",
+            "date": "",
             "locations": [
                 "l_3"
             ],
@@ -75,64 +97,72 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_3",
+                "e_4",
+                "e_5",
+                "e_6"
             ],
-            "eventSummary": "Operation BUTTRESS is planned to initiate an assault on Reggio as part of a larger strategy in the region."
-        },
-        {
-            "event": "e_2",
-            "date": "1st October",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Operation GOBLET is scheduled to land at Cotrone, aimed at securing critical airfields."
+            "eventSummary": "A complex operation to capture the Mignano Gap is initiated."
         },
         {
             "event": "e_3",
-            "date": "if necessary following operation",
+            "date": "6th December",
             "locations": [
-                "l_8"
+                "l_4"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Operation BRIMSTONE will only be undertaken if initial mainland efforts prove unsuccessful, tasking the United States Fifth Army."
+            "connectedEvents": [],
+            "eventSummary": "10 Corps captures the summit of Monte Camino."
         },
         {
             "event": "e_4",
-            "date": "15th June",
+            "date": "3rd December",
             "locations": [
-                "l_6"
+                "l_5"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3"
             ],
+            "connectedEvents": [],
+            "eventSummary": "II Corps successfully captures La Difensa."
+        },
+        {
+            "event": "e_5",
+            "date": "7th December",
+            "locations": [
+                "l_12",
+                "l_13"
+            ],
+            "persons": [],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Operation FIREBRAND is being planned for the capture of Corsica, with Giraud tasked to assemble a command plan."
+            "eventSummary": "The bitter battle for San Pietro begins."
+        },
+        {
+            "event": "e_6",
+            "date": "17th December",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The second battle for San Pietro concludes with success at a high cost."
         }
     ]
 }

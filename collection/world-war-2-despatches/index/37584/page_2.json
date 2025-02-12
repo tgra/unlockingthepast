@@ -1,133 +1,110 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Paget",
-            "p_2": "General Carton de Wiart",
-            "p_3": "General Audet"
+            "p_1": "H. de R. Morgan",
+            "p_2": "Major-General Carton de Wiart",
+            "p_3": "Brigadier C. G. Phillips",
+            "p_4": "General Audet",
+            "p_5": "Major-General B. C. T. Paget",
+            "p_6": "Brigadier D. McA. Hogg",
+            "p_7": "Brigadier D. J. R. Richards"
         },
         "locations": {
-            "l_1": "Namsos",
-            "l_2": "Andalsnes",
-            "l_3": "Trondheim",
-            "l_4": "Gudbrandsdal valley",
-            "l_5": "Mosjoen",
-            "l_6": "Dombås"
+            "l_1": "Trondheim",
+            "l_2": "Oslo",
+            "l_3": "Lilehammer",
+            "l_4": "Dombås",
+            "l_5": "Namsos",
+            "l_6": "Verdalen",
+            "l_7": "Steinkjer",
+            "l_8": "Andalsnes",
+            "l_9": "Bangusund",
+            "l_10": "Lake Lesjaskog"
         },
         "events": {
-            "e_1": "Evacuation from Namsos",
-            "e_2": "Evacuation from Andalsnes",
-            "e_3": "German Advance in Southern Norway",
-            "e_4": "Attack plans in Gudbrandsdal"
+            "e_1": "Operations in Southern Norway",
+            "e_2": "Attack on 146th Infantry Brigade"
         },
         "organisations": {
-            "o_1": "Air Ministry",
-            "o_2": "Military Co-ordinating Committee",
-            "o_3": "Admiralty"
+            "o_1": "War Office",
+            "o_2": "Military Operations Directorate",
+            "o_3": "Royal Air Force",
+            "o_4": "Royal Navy",
+            "o_5": "R.A.F."
         }
     },
     "keywords": [
-        "evacuation",
+        "German advance",
+        "combined operation",
+        "infantry brigade",
         "bombing",
-        "military operations",
-        "artillery",
-        "mortar fire",
-        "air support"
+        "air support",
+        "evacuate",
+        "command"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Strategies",
-        "Air Support",
-        "Strategic Decisions"
+        "Logistics",
+        "Air Defense",
+        "Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Evacuation Strategies": [
-            "e_1",
             "e_2"
         ],
-        "Air Support": [
-            "e_3"
+        "Logistics": [
+            "e_1"
         ],
-        "Strategic Decisions": [
-            "e_1",
+        "Air Defense": [
             "e_2"
+        ],
+        "Coordination": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th April",
+            "date": "22nd April 1940",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_4",
+                "l_5",
+                "l_8"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_5",
+                "p_6",
+                "p_7"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The evacuation from Namsos is deemed necessary by General Paget due to the inability to withstand the German advance, leading to strategic discussions regarding rapid troop withdrawals."
+            "eventSummary": "On April 22, 1940, command of military operations in Southern Norway is assumed, strategizing the defensive measures against the German advance towards Trondheim."
         },
         {
             "event": "e_2",
-            "date": "28th April",
+            "date": "21st April 1940",
             "locations": [
-                "l_2"
+                "l_5"
             ],
             "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Evacuation plans from Andalsnes are finalized, coordinating with the Admiralty for effective troop withdrawal amidst continuous bombing."
-        },
-        {
-            "event": "e_3",
-            "date": "26th April",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
+                "p_2",
+                "p_3"
             ],
             "organisations": [],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Allied troops face relentless bombing and artillery fire, marking a significant German advance that prompts urgent discussions of evacuation."
-        },
-        {
-            "event": "e_4",
-            "date": "28th April",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Plans are made for strategic air attacks on German communications, although faced with logistical difficulties in implementation."
+            "connectedEvents": [],
+            "eventSummary": "On April 21, 1940, the 146th Infantry Brigade is attacked near Namsos by enemy forces landed from a cruiser and destroyers."
         }
     ]
 }

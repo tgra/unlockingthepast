@@ -1,49 +1,48 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General Wingate",
-            "p_2": "Majoraa W. D. A. Lentaigne",
-            "p_3": "General Stilwell"
+            "p_1": "Chief Civil Affairs Officer",
+            "p_2": "Inspector General of Police, Burma",
+            "p_3": "Senior Civil Affairs Officer",
+            "p_4": "Commanding General of the Sino-American forces"
         },
         "locations": {
-            "l_1": "Assam",
-            "l_2": "Ledo",
-            "l_3": "Imphal Front",
-            "l_4": "Kamaing Mogaung Myitkyina",
-            "l_5": "Arakan",
-            "l_6": "St. Martin's Island",
-            "l_7": "Maungdaw Buthidaung",
-            "l_8": "Calcutta",
-            "l_9": "North-East Assam"
+            "l_1": "Burma",
+            "l_2": "Myitkyina District",
+            "l_3": "Hukawng Valley",
+            "l_4": "Fort Hertz",
+            "l_5": "Sumprabum",
+            "l_6": "Chin Hills",
+            "l_7": "Naga Hills",
+            "l_8": "Upper Chindwin",
+            "l_9": "Arakan",
+            "l_10": "India"
         },
         "events": {
-            "e_1": "Japanese offensive against Assam",
-            "e_2": "Amphibious operation in Alethangyaw",
-            "e_3": "Operations of Eastern Air Command"
+            "e_1": "Formation of Civil Affairs Service (Burma)",
+            "e_2": "Re-occupation of Sumprabum",
+            "e_3": "Japanese offensive in March",
+            "e_4": "Replacement of Government of Burma Directorate of Supply",
+            "e_5": "Recruitment of field staff for C.A.S.B. Welfare Organization"
         },
         "organisations": {
-            "o_1": "Eastern Air Command",
-            "o_2": "Fourteenth Army",
-            "o_3": "Special Force",
-            "o_4": "Kachin Levies",
-            "o_5": "3 Commando Brigade",
-            "o_6": "No. 5 Commando",
-            "o_7": "No. 44 Royal Marine Commando"
+            "o_1": "Civil Affairs Service (Burma)",
+            "o_2": "C.A.S.B.",
+            "o_3": "Intelligence Bureau"
         }
     },
     "keywords": [
-        "Japanese offensive",
-        "Assam",
-        "air superiority",
-        "infantry division",
-        "naval operations",
-        "amphibious operation"
+        "airborne troops",
+        "engineers",
+        "military administration",
+        "civil population",
+        "police",
+        "medical services"
     ],
     "themes": [
         "Military Operations",
-        "Leadership",
-        "Logistics",
-        "Air Cooperation"
+        "Civil Administration",
+        "Humanitarian Efforts"
     ],
     "topicModel": {
         "Military Operations": [
@@ -51,66 +50,83 @@
             "e_2",
             "e_3"
         ],
-        "Leadership": [
-            "p_1",
-            "p_2",
-            "p_3"
+        "Civil Administration": [
+            "e_1",
+            "e_4"
         ],
-        "Logistics": [
-            "e_3"
-        ],
-        "Air Cooperation": [
-            "e_3"
+        "Humanitarian Efforts": [
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "February 1943",
             "locations": [
                 "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Civil Affairs Service (Burma) is established to manage military administration in occupied territories."
+        },
+        {
+            "event": "e_2",
+            "date": "19th March",
+            "locations": [
+                "l_5"
             ],
             "persons": [
                 "p_3"
             ],
             "organisations": [
-                "o_3"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Japanese offensive against Assam continues without significant impact from the prior operations."
+            "connectedEvents": [],
+            "eventSummary": "Sumprabum is re-occupied, expanding the military administration under the Chief Civil Affairs Officer."
         },
         {
-            "event": "e_2",
+            "event": "e_3",
             "date": "March 1944",
             "locations": [
                 "l_6"
             ],
             "persons": [],
-            "organisations": [
-                "o_5",
-                "o_6",
-                "o_7"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "In March, 3 Commando Brigade successfully executes a small amphibious operation to contain enemy movements."
+            "eventSummary": "A Japanese offensive affects the local tribes, altering the population's military administration status."
         },
         {
-            "event": "e_3",
-            "date": "First six months of 1944",
+            "event": "e_4",
+            "date": "November 1943",
             "locations": [
-                "l_8",
-                "l_9"
+                "l_1"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Eastern Air Command conducts strategic air offensives during the first half of the year enabling support and defense efforts."
+            "eventSummary": "The Government of Burma's Directorate of Supply is replaced by C.A.S.B. Lines of Communication organization."
+        },
+        {
+            "event": "e_5",
+            "date": "January 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Recruitment of field staff begins for the C.A.S.B. Welfare Organization to assist in various regions."
         }
     ]
 }

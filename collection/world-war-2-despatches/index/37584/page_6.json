@@ -1,143 +1,142 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major General Paget",
-            "p_2": "Lieutenant-General Massy",
-            "p_3": "General Ruge",
-            "p_4": "Brigadier Kent Lemon",
-            "p_5": "Brigadier Morgan"
+            "p_1": "Brigadier H. de R. Morgan",
+            "p_2": "Lieutenant-Colonel King Salter"
         },
         "locations": {
             "l_1": "Andalsnes",
-            "l_2": "Otta",
-            "l_3": "Kvam",
-            "l_4": "Trondheim",
-            "l_5": "Dombas",
-            "l_6": "Alvdal",
-            "l_7": "Osterdalen valley",
-            "l_8": "Foldal",
-            "l_9": "Hjerkinn",
-            "l_10": "Gudbrandsdal valley",
-            "l_11": "Sjoa",
-            "l_12": "Opdal"
+            "l_2": "Lake Mj sa",
+            "l_3": "Lesjaskog",
+            "l_4": "Dombis",
+            "l_5": "Otta",
+            "l_6": "Ringebu",
+            "l_7": "Oyer",
+            "l_8": "Lillehammer",
+            "l_9": "Trondheim",
+            "l_10": "Lillehammer area",
+            "l_11": "Falberg",
+            "l_12": "Tretten",
+            "l_13": "Favang"
         },
         "events": {
-            "e_1": "Arrival of 1 K.O.Y.L.I. at Otta",
-            "e_2": "General Paget's meeting with General Ruge",
-            "e_3": "Withdrawal of 1 K.O.Y.L.I.",
-            "e_4": "Defence preparations in Otta"
+            "e_1": "Landing of the 148th Infantry Brigade",
+            "e_2": "Request for Norwegian assistance",
+            "e_3": "Withdrawal at 0100 hours, 22nd April",
+            "e_4": "Attack on the position at Oyer",
+            "e_5": "Retreat through defensive position at Favang"
         },
         "organisations": {
-            "o_1": "British Army",
-            "o_2": "Norwegian Army"
+            "o_1": "148th Infantry Brigade",
+            "o_2": "Norwegian Army",
+            "o_3": "War Office"
         }
     },
     "keywords": [
-        "Military Operations",
-        "14th Brigade",
-        "casualties",
-        "German advance",
-        "reconnaissance",
-        "defence"
+        "operations",
+        "air attack",
+        "bombing",
+        "communicational difficulties",
+        "German forces"
     ],
     "themes": [
         "Military Operations",
-        "Collaboration",
-        "Challenges in Warfare",
-        "Defensive Strategy"
+        "Requests for Assistance",
+        "Strategic Withdrawals"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Collaboration": [
-            "e_2"
-        ],
-        "Defensive Strategy": [
             "e_4"
         ],
-        "Challenges in Warfare": [
-            "e_1",
-            "e_3"
+        "Requests for Assistance": [
+            "e_2"
+        ],
+        "Strategic Withdrawals": [
+            "e_3",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "24th April",
+            "date": "18th April",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The 148th Infantry Brigade lands in the Andalsnes area, commanded by Brigadier H. de R. Morgan."
+        },
+        {
+            "event": "e_2",
+            "date": "10th April",
+            "locations": [],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "1 K.O.Y.L.I. arrives at Otta with orders to occupy a position and faces significant challenges."
-        },
-        {
-            "event": "e_2",
-            "date": "22nd April",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "General Paget meets General Ruge to discuss strategies against the German advance."
+            "eventSummary": "Lieutenant-Colonel King Salter requests Norwegian assistance, indicating urgent need for support."
         },
         {
             "event": "e_3",
-            "date": "26th/27th April",
+            "date": "22nd April",
             "locations": [
-                "l_2",
-                "l_3"
+                "l_11",
+                "l_8"
             ],
             "persons": [
-                "p_1",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "General Paget orders the withdrawal of 1 K.O.Y.L.I. due to overwhelming enemy forces."
+            "eventSummary": "Withdrawal of troops at 0100 hours due to German attacks on their position."
         },
         {
             "event": "e_4",
-            "date": "Post 26th April",
+            "date": "22nd April",
             "locations": [
-                "l_2"
+                "l_7"
             ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "Defensive preparations are conducted in Otta to strengthen the position against enemy advances."
+            "eventSummary": "The Oyer position is heavily attacked by German forces, necessitating a critical withdrawal."
+        },
+        {
+            "event": "e_5",
+            "date": "23rd/24th April",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The remainder of the British force retreats through the defensive position at Favang amid continued enemy pressure."
         }
     ]
 }

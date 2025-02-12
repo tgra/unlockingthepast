@@ -1,66 +1,70 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General",
-            "p_2": "Major-General Hughes",
-            "p_3": "Major-General A. C. Amnold"
+            "p_1": "General Eisenhower",
+            "p_2": "General Vechiarelli",
+            "p_3": "General Kleeman"
         },
         "locations": {
-            "l_1": "Crete",
-            "l_2": "Greece",
-            "l_3": "Ankara",
-            "l_4": "Balkans",
-            "l_5": "Turkey",
-            "l_6": "Cairo",
-            "l_7": "Dodecanese",
-            "l_8": "Yugoslavia",
-            "l_9": "Albania",
-            "l_10": "Romania",
-            "l_11": "Bulgaria",
-            "l_12": "Middle East",
-            "l_13": "Izmir",
-            "l_14": "Aegean Islands"
+            "l_1": "North Africa",
+            "l_2": "Middle East",
+            "l_3": "Tunis",
+            "l_4": "Sicily",
+            "l_5": "Cyprus",
+            "l_6": "Cyrenaica",
+            "l_7": "Cairo",
+            "l_8": "Rhodes",
+            "l_9": "Scarpanto",
+            "l_10": "Crete",
+            "l_11": "Dodecanese",
+            "l_12": "Greece",
+            "l_13": "Suez",
+            "l_14": "Italy",
+            "l_15": "Aegean",
+            "l_16": "Ionian"
         },
         "events": {
-            "e_1": "British Military Liaison Headquarters (Greece) Establishment",
-            "e_2": "Adana Conference",
-            "e_3": "Balkan Planning Section Formation",
-            "e_4": "Military Assistance Program for Turkey",
-            "e_5": "Negotiations with Turkey"
+            "e_1": "Invasion of Sicily",
+            "e_2": "Italian Armistice",
+            "e_3": "Operation against Rhodes",
+            "e_4": "Washington Anglo-American Conference",
+            "e_5": "Arakan Operation"
         },
         "organisations": {
-            "o_1": "Allied Territories (Balkans) Committee",
-            "o_2": "War Office",
-            "o_3": "Political Warfare Executive",
-            "o_4": "British Command"
+            "o_1": "No. 2 Planning Staff",
+            "o_2": "3rd Corps Headquarters",
+            "o_3": "Force 292"
         }
     },
     "keywords": [
-        "guerilla activities",
-        "British liaison officers",
-        "civil administration",
-        "military planning",
-        "political warfare"
+        "British troops",
+        "Tunisian campaign",
+        "Combined Chiefs of Staff",
+        "air cover",
+        "armoured brigade",
+        "infantry divisions",
+        "battle plans",
+        "German troops",
+        "Italian garrison",
+        "allied operations"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Assistance",
-        "Civil Administration"
+        "Strategic Decisions",
+        "Planning and Logistics",
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_3",
+            "e_5"
         ],
         "Diplomacy": [
             "e_2",
-            "e_5"
-        ],
-        "Strategic Assistance": [
             "e_4"
         ],
-        "Civil Administration": [
+        "Strategic Decisions": [
             "e_1",
             "e_3"
         ]
@@ -68,9 +72,27 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 12, 1943",
+            "date": "Not available",
             "locations": [
-                "l_2"
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Invasion of Sicily is planned to secure a strategic advantage in the Mediterranean front."
+        },
+        {
+            "event": "e_2",
+            "date": "8th September 1943",
+            "locations": [
+                "l_14"
             ],
             "persons": [
                 "p_2"
@@ -79,73 +101,55 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "The British Military Liaison Headquarters in Greece is established to maintain communication with Greek authorities and coordinate relief efforts following German evacuation."
-        },
-        {
-            "event": "e_2",
-            "date": "January 30-31, 1943",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The Adana Conference concludes with the agreement on a dual program: supplying Turkey with military equipment and positioning British forces to support the Turkish Army if necessary."
+            "eventSummary": "The Italian Armistice is announced, creating opportunities and strategic challenges for the Allies in the region."
         },
         {
             "event": "e_3",
-            "date": "February, 1943",
+            "date": "Not available",
             "locations": [
-                "l_4",
-                "l_2"
+                "l_8"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Balkan Planning Section is formed to prepare for civil administration and relief efforts in the newly liberated territories of the Balkans."
-        },
-        {
-            "event": "e_4",
-            "date": "February, 1943",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_4"
-            ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Negotiations continue with Turkey to establish a military assistance program aimed at preparing Turkish forces for potential engagement in World War II."
+            "eventSummary": "Operation against Rhodes is planned to capture the island amidst the changing dynamics following the Italian Armistice."
+        },
+        {
+            "event": "e_4",
+            "date": "May 1943",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The Washington Anglo-American Conference occurs to strategize resource allocations for operations in the Pacific and Mediterranean."
         },
         {
             "event": "e_5",
-            "date": "February 26, 1943",
+            "date": "Not available",
             "locations": [
-                "l_5"
+                "l_1"
             ],
             "persons": [
-                "p_3"
+                "p_1"
             ],
-            "organisations": [
-                "o_4"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Discussions resume in Ankara to address logistical challenges faced by the Turkish railway system, which impacts military supply capabilities."
+            "eventSummary": "The Arakan Operation is considered but later canceled due to shifting priorities back to the Mediterranean theater."
         }
     ]
 }

@@ -2,104 +2,166 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "Germany",
-            "l_2": "Eindhoven",
-            "l_3": "Nijmegen",
-            "l_4": "Arnhem",
-            "l_5": "Holland",
-            "l_6": "Reich"
+            "l_1": "Barfleur",
+            "l_2": "Qmaha",
+            "l_3": "St. Laurent",
+            "l_4": "Sword beach",
+            "l_5": "United Kingdom",
+            "l_6": "Continent"
         },
         "events": {
-            "e_1": "Landing of Airborne Troops",
-            "e_2": "G.A.F. Operations in September",
-            "e_3": "Enemy Use of Jet-Propelled Aircraft"
+            "e_1": "D-Day",
+            "e_2": "D + 6",
+            "e_3": "D + 8",
+            "e_4": "D + 17",
+            "e_5": "6th-13th June",
+            "e_6": "15th-27th June",
+            "e_7": "initial stages of the operation"
         },
         "organisations": {
-            "o_1": "G.A.F.",
-            "o_2": "United States Eighth Air Force",
-            "o_3": "Allied Forces",
-            "o_4": "R.A.F."
+            "o_1": "Fighter Direction Tender",
+            "o_2": "No. 483 Group Control Centre",
+            "o_3": "Allied Naval Commander",
+            "o_4": "Naval Task Force Commanders"
         }
     },
     "keywords": [
-        "G.A.F.",
-        "airborne troops",
-        "jet-propelled aircraft",
-        "Allied Forces",
-        "air attacks",
-        "Nijmegen area"
+        "Fighter Direction Tender",
+        "A.A. Gunfire",
+        "enemy aircraft",
+        "night fighters",
+        "anti-aircraft guns"
     ],
     "themes": [
         "Military Operations",
-        "Air Battles",
-        "Technological Advancements",
-        "Intelligence Gathering"
+        "Weather Conditions",
+        "Combat Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Air Battles": [
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Technological Advancements": [
-            "e_3"
+        "Weather Conditions": [
+            "e_5",
+            "e_6"
         ],
-        "Intelligence Gathering": [
-            "e_2"
+        "Combat Coordination": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_7"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Mid-September 1944",
+            "date": "June 6, 1944",
             "locations": [
+                "l_1",
                 "l_2",
                 "l_3",
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Airborne troops land in the Eindhoven-Nijmegen-Arnhem area producing a strong reaction from G.A.F., achieving tactical surprise initially with no opposition."
-        },
-        {
-            "event": "e_2",
-            "date": "September 1944",
-            "locations": [
+                "l_4",
                 "l_5"
             ],
             "persons": [],
             "organisations": [
                 "o_1",
                 "o_2",
+                "o_3",
                 "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4",
+                "e_7"
+            ],
+            "eventSummary": "On D-Day, the first G.C.I. station on the far shore begins controlling night fighters."
+        },
+        {
+            "event": "e_2",
+            "date": "D + 6",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "G.A.F. faces stiffened resistance in the air during September, primarily in the Nijmegen area, at a high cost, scrambling its experienced pilots."
+            "eventSummary": "On D + 6, the control of night fighters is handed over to the G.C.C."
         },
         {
             "event": "e_3",
-            "date": "Second half of September 1944",
-            "locations": [],
+            "date": "D + 8",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On D + 8, control of fighters passes to No. 483 Group Control Centre."
+        },
+        {
+            "event": "e_4",
+            "date": "D + 17",
+            "locations": [
+                "l_1"
+            ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "The appearance of jet-propelled aircraft marks a significant development in G.A.F. operations, primarily used as fighter bombers for ground support and reconnaissance."
+            "eventSummary": "On D + 17, Fighter Direction Tender continues operations in support."
+        },
+        {
+            "event": "e_5",
+            "date": "June 6-13, 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "During this period, several enemy aircraft are destroyed by the Fighter Direction Tenders."
+        },
+        {
+            "event": "e_6",
+            "date": "June 15-27, 1944",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "In this timeframe, additional operations by Fighter Direction Tender result in aircraft destruction."
+        },
+        {
+            "event": "e_7",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Initial stages of the operation experienced issues with friendly aircraft engagements."
         }
     ]
 }

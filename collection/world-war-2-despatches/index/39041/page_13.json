@@ -1,94 +1,110 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain (D)",
-            "p_2": "R. St. Sherbrooke",
-            "p_3": "Lieutenant Commander T. J. G. Marchant",
-            "p_4": "Rear Admiral (D)"
+            "p_1": "Rear Admiral L, H. K. Hamilton"
         },
         "locations": {
-            "l_1": "North-westward",
-            "l_2": "Convoy",
-            "l_3": "East",
-            "l_4": "Southward",
-            "l_5": "North-eastward",
-            "l_6": "South",
-            "l_7": "Westward"
+            "l_1": "Jan Mayen Island",
+            "l_2": "Archangel",
+            "l_3": "South Cape",
+            "l_4": "Spitzbergen",
+            "l_5": "Iceland",
+            "l_6": "Akureyri",
+            "l_7": "Barents Sea",
+            "l_8": "White Sea",
+            "l_9": "Bear Island",
+            "l_10": "Icelandic waters",
+            "l_11": "Kola Inlet",
+            "l_12": "Loch Ewe"
         },
         "events": {
-            "e_1": "Action involving ONSLOW and destroyers",
-            "e_2": "Engagement between SHEFFIELD and enemy ships"
+            "e_1": "Occupation of French North Africa",
+            "e_2": "QP.15 Convoy Passage",
+            "e_3": "Sailing of a convoy of thirty-one ships"
         },
         "organisations": {
-            "o_1": "17th Destroyer Flotilla",
+            "o_1": "Home Fleet",
             "o_2": "Admiralty"
         }
     },
     "keywords": [
-        "destroyers",
-        "action",
-        "ENGAGEMENT",
-        "convoy",
-        "torpedo",
-        "enemy"
+        "U-boat",
+        "rescue trawlers",
+        "air reconnaissance",
+        "convoys",
+        "weather conditions"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare"
+        "Naval Strategy",
+        "Convoy Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Naval Warfare": [
-            "e_1",
-            "e_2"
+        "Naval Strategy": [
+            "e_2",
+            "e_3"
+        ],
+        "Convoy Logistics": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "Not available",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
                 "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The ONSLOW engages enemy destroyers and suffers considerable damage; Captain (D) continues to lead despite severe injuries."
+            "connectedEvents": [],
+            "eventSummary": "The operations for the occupation of French North Africa left too few ships in the Home Fleet to provide escorts."
         },
         {
             "event": "e_2",
-            "date": "Date unspecified",
+            "date": "17th November",
             "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_2",
+                "l_8",
+                "l_9"
             ],
             "persons": [
-                "p_1",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "SHEFFIELD opens fire on enemy ships, taking them by surprise and successfully scoring hits."
+            "eventSummary": "The QP.15 convoy sailed on 17th November, facing gales and difficulties keeping together due to poor visibility."
+        },
+        {
+            "event": "e_3",
+            "date": "22nd December",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A convoy of thirty-one ships is proposed to sail on 22nd December, but concerns are raised regarding its size and escort capabilities."
         }
     ]
 }

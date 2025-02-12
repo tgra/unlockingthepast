@@ -1,121 +1,139 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Clark"
+            "p_1": "Field-Marshal Kesselring",
+            "p_2": "General von Vietinghoff"
         },
         "locations": {
-            "l_1": "Bologna",
-            "l_2": "Florence",
-            "l_3": "Pisa",
-            "l_4": "Assisi",
-            "l_5": "Siena",
-            "l_6": "Adriatic Coast",
-            "l_7": "Pontedera",
-            "l_8": "Empoli",
-            "l_9": "Lucca",
-            "l_10": "Pistoia",
-            "l_11": "Dicomano",
-            "l_12": "Imola",
-            "l_13": "Modena",
-            "l_14": "Ferrara",
-            "l_15": "Ostiglia"
+            "l_1": "Italy",
+            "l_2": "Tyrol",
+            "l_3": "Salzburg",
+            "l_4": "Western Carinthia",
+            "l_5": "Venetia",
+            "l_6": "North Germany",
+            "l_7": "Capo Passero",
+            "l_8": "Brenner",
+            "l_9": "Modena",
+            "l_10": "Ostiglia",
+            "l_11": "Verona",
+            "l_12": "Ferrara",
+            "l_13": "Rovigo",
+            "l_14": "Padua",
+            "l_15": "Argenta",
+            "l_16": "Po",
+            "l_17": "Adige",
+            "l_18": "Tagliamento",
+            "l_19": "Isonzo",
+            "l_20": "Alps"
         },
         "events": {
-            "e_1": "Attack on the Gothic Line",
-            "e_2": "Creation of Task Force 45",
-            "e_3": "Operational Plans for Fifth Army and Eighth Army"
+            "e_1": "over-running of Italy",
+            "e_2": "final capitulation",
+            "e_3": "Italian campaign",
+            "e_4": "German Order of Battle on 9th April, 1945",
+            "e_5": "transfer of XCVII Corps on 10th April, 1945"
         },
         "organisations": {
-            "o_1": "Fifth Army",
-            "o_2": "Eighth Army"
+            "o_1": "Combined Chiefs of Staff",
+            "o_2": "Fifth Army",
+            "o_3": "Eighth Army",
+            "o_4": "German Army Group C"
         }
     },
     "keywords": [
-        "Gothic Line",
-        "Task Force 45",
-        "Fifth Army",
-        "Eighth Army",
-        "operational plans"
+        "defences",
+        "capitulation",
+        "military operations",
+        "psychological warfare",
+        "German troops"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Force Organization"
+        "Defensive Strategies",
+        "Psychological Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Strategic Decisions": [
-            "e_2",
-            "e_3"
+        "Defensive Strategies": [
+            "e_1",
+            "e_2"
         ],
-        "Force Organization": [
+        "Psychological Warfare": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Between 5th and 10th August",
+            "date": "March-April 1945",
             "locations": [
                 "l_1",
+                "l_2",
                 "l_3",
                 "l_4",
-                "l_9",
-                "l_10",
-                "l_13",
-                "l_14"
+                "l_5",
+                "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2",
+                "e_3",
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "The attack on the Gothic Line is planned to penetrate the center between Dicomano and Pistoia, aiming to secure key locations and destroy enemy forces south of the Po."
+            "eventSummary": "The over-running of Italy occurs as part of the military campaign to disrupt enemy defences and leads to significant confrontations."
         },
         {
             "event": "e_2",
-            "date": "24th July",
+            "date": "April 1945",
             "locations": [
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_3"
+                "e_5"
             ],
-            "eventSummary": "Creation of Task Force 45, a collective strength from American and British units, is established to bolster Fifth Army's defensive capabilities."
+            "eventSummary": "The final capitulation marks the end of organized resistance in Italy, following intense military operations."
         },
         {
-            "event": "e_3",
-            "date": "Various Dates (not specified)",
+            "event": "e_4",
+            "date": "9th April 1945",
             "locations": [
-                "l_4",
-                "l_5"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
+            "connectedEvents": [],
+            "eventSummary": "The German Order of Battle reveals the state of German troop deployments in Italy."
+        },
+        {
+            "event": "e_5",
+            "date": "10th April 1945",
+            "locations": [
+                "l_1"
             ],
-            "eventSummary": "Operational plans are formed for both Fifth and Eighth Armies, with strategic considerations for their advances and attacks against the enemy."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The transfer of XCVII Corps indicates movements within German military command structures in Italy."
         }
     ]
 }

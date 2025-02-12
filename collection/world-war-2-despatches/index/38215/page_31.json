@@ -1,56 +1,67 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Far East War Council"
+            "p_1": "Brigadier B. W. Key",
+            "p_2": "Brigadier Carpendale",
+            "p_3": "Brigadier Garrett"
         },
         "locations": {
-            "l_1": "Malaya"
+            "l_1": "Kuala Lipis",
+            "l_2": "Jerantut",
+            "l_3": "Kuantan",
+            "l_4": "Kelantan",
+            "l_5": "Gurun",
+            "l_6": "Krian River",
+            "l_7": "Singapore",
+            "l_8": "Jitra",
+            "l_9": "Bata River",
+            "l_10": "North Kedah",
+            "l_11": "Alor Star",
+            "l_12": "Simpang Empat",
+            "l_13": "River Padang Terap",
+            "l_14": "Kepala Batas"
         },
         "events": {
-            "e_1": "Scorched Earth Policy",
-            "e_2": "Evacuation of Women and Children from Malaya"
+            "e_1": "Withdrawal on 22nd December",
+            "e_2": "Battle of Jitra",
+            "e_3": "Japanese attack on 11/12th December"
         },
         "organisations": {
-            "o_1": "British Empire",
-            "o_2": "Passive Air Defence Organization"
+            "o_1": "11 Indian Division",
+            "o_2": "15 Indian Infantry Brigade",
+            "o_3": "28 Indian Infantry Brigade",
+            "o_4": "3 Indian Corps",
+            "o_5": "Malaya Command"
         }
     },
     "keywords": [
-        "Scorched Earth Policy",
         "withdrawal",
-        "explosions",
-        "morale",
-        "evacuation",
-        "war work",
-        "Asiatic population",
-        "British prestige"
+        "battle",
+        "Japanese attack",
+        "infantry brigade",
+        "casualties"
     ],
     "themes": [
         "Military Operations",
-        "Civilians and War",
-        "Evacuation Decisions",
-        "Propaganda"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_2",
+            "e_3"
         ],
-        "Civilians and War": [
-            "e_2"
-        ],
-        "Evacuation Decisions": [
-            "e_2"
-        ],
-        "Propaganda": [
+        "Strategic Decisions": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unspecified",
+            "date": "22nd December",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -61,25 +72,37 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "A Scorched Earth Policy is enforced as troops withdraw from Malaya, with considerations for its impact on the local Asiatic population and British promises."
+            "eventSummary": "On the 22nd December, the 8 Indian Infantry Brigade completes its withdrawal to the Kuala Lipis/Jerantut area, with the exception of the 2/12 Frontier Force Regt. which rejoins at Kuantan."
         },
         {
             "event": "e_2",
-            "date": "December 1941",
+            "date": "12-17th December 1941",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "From 12th to 17th December 1941, the Battle of Jitra occurs, with Brigadier Carpendale temporarily commanding both the 15 Indian Infantry Brigade and his own 28 Brigade, facing a Japanese attack."
+        },
+        {
+            "event": "e_3",
+            "date": "11/12th December 1941",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The War Council deliberates on the evacuation of women and children from Malaya, weighing the effects on morale, war work, and local populations."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "On 11/12th December 1941, the Japanese attack the left forward company of the 2/9 Jats east of the Singora road, extending their attack to involve multiple companies."
         }
     ]
 }

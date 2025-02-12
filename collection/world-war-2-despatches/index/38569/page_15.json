@@ -5,44 +5,45 @@
             "p_2": "Captain J. S. Bethell"
         },
         "locations": {
-            "l_1": "Tafaraoui",
-            "l_2": "Gibraltar",
-            "l_3": "Oran",
-            "l_4": "Mers el Kebir",
-            "l_5": "Arzeu Bay",
-            "l_6": "Algiers",
-            "l_7": "La Senia",
-            "l_8": "X Beach",
-            "l_9": "Y Beach",
-            "l_10": "Z Beach",
-            "l_11": "Mostaganem"
+            "l_1": "Y Beach",
+            "l_2": "Tafaraoui",
+            "l_3": "Gibraltar",
+            "l_4": "X Beach",
+            "l_5": "Oran",
+            "l_6": "Mers el Kebir",
+            "l_7": "Arzeu Bay",
+            "l_8": "Algiers",
+            "l_9": "La Senia"
         },
         "events": {
-            "e_1": "Assault on Oran",
-            "e_2": "Surrender of Oran",
-            "e_3": "Naval aircraft attack on La Senia",
-            "e_4": "Air reconnaissance of the harbour"
+            "e_1": "Surrender of Oran",
+            "e_2": "General Assault on Oran",
+            "e_3": "Naval aircraft attack on La Senia"
         },
         "organisations": {
             "o_1": "U.S. Army",
-            "o_2": "French Navy",
-            "o_3": "British Naval Forces"
+            "o_2": "French Zouave battalion",
+            "o_3": "U.S. Navy"
         }
     },
     "keywords": [
-        "Tafaraoui",
-        "Gibraltar",
-        "Oran",
-        "U.S. Spitfires",
+        "French chasseur",
+        "U.S. armoured force",
         "naval aircraft",
-        "assault",
-        "surrender",
+        "spitfires",
+        "aerodromes",
+        "patrol",
+        "collisions",
+        "bombardment",
+        "blocking operations",
         "reconnaissance"
     ],
     "themes": [
         "Military Operations",
         "Naval Engagements",
-        "Aerial Reconnaissance"
+        "Air Support",
+        "Ground Assault",
+        "Supply Logistics"
     ],
     "topicModel": {
         "Military Operations": [
@@ -52,37 +53,37 @@
         "Naval Engagements": [
             "e_3"
         ],
-        "Aerial Reconnaissance": [
-            "e_4"
+        "Air Support": [
+            "e_3"
+        ],
+        "Ground Assault": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 10",
+            "date": "10th November",
             "locations": [
-                "l_3"
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "The assault on Oran proceeds as planned, with American forces successfully taking control of the city."
+            "eventSummary": "General Fredendall takes the surrender of Oran by noon, indicating a successful military operation."
         },
         {
             "event": "e_2",
-            "date": "November 10",
+            "date": "10th November",
             "locations": [
-                "l_3"
+                "l_5"
             ],
             "persons": [
                 "p_1"
@@ -93,32 +94,20 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "General Fredendall takes the surrender of Oran shortly after the planned assault."
+            "eventSummary": "A general assault on Oran goes as planned, leading to the surrender of the city."
         },
         {
             "event": "e_3",
-            "date": "November 10",
+            "date": "11th November",
             "locations": [
-                "l_7"
+                "l_9"
             ],
             "persons": [],
             "organisations": [
-                "o_2",
                 "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Naval aircraft conduct an attack on La Senia, resulting in substantial damage to the airfield."
-        },
-        {
-            "event": "e_4",
-            "date": "November 10",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Early morning reconnaissance reveals that blocking operations by the French had already been implemented at the harbour."
+            "eventSummary": "Naval aircraft conduct an effective attack on La Senia, resulting in significant destruction of enemy aircraft."
         }
     ]
 }

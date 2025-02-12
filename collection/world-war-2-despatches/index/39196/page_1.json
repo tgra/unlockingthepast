@@ -1,96 +1,83 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Stilwell"
+            "p_1": "AIR CHIEF MARSHAL SIR KEITH PARK",
+            "p_2": "Air Chief Marshal Sir Richard Peirse",
+            "p_3": "Air Marshal Sir Guy Garrod"
         },
         "locations": {
-            "l_1": "Hukawng Valley",
-            "l_2": "Myitkyina",
-            "l_3": "Imphal",
-            "l_4": "Kohima",
-            "l_5": "Arakan",
-            "l_6": "Mayu peninsula",
-            "l_7": "Akyab",
-            "l_8": "India",
-            "l_9": "Mogaung",
-            "l_10": "Katha",
-            "l_11": "Bhamo",
-            "l_12": "Chindwin",
-            "l_13": "Rangoon",
-            "l_14": "Kalewa",
-            "l_15": "Lashio",
-            "l_16": "Mandalay",
-            "l_17": "Monywa"
+            "l_1": "South East Asia",
+            "l_2": "Burma",
+            "l_3": "India",
+            "l_4": "Imphal",
+            "l_5": "Rangoon",
+            "l_6": "Manipur"
         },
         "events": {
-            "e_1": "Operation Capital",
-            "e_2": "Operation Dracula"
+            "e_1": "Burma Campaign",
+            "e_2": "Occupation of Rangoon",
+            "e_3": "Japanese offensive against Imphal"
         },
         "organisations": {
-            "o_1": "S.E.A.C.",
-            "o_2": "N.C.A.C.",
-            "o_3": "Allied Commanders"
+            "o_1": "Allied Air Forces"
         }
     },
     "keywords": [
-        "dry-weather campaign",
-        "airborne operations",
-        "overland advance",
-        "air supply",
-        "operations",
-        "Japanese forces",
-        "Operational Directive"
+        "Air Operations",
+        "Burma Campaign",
+        "Japanese Army",
+        "Air Power",
+        "Air Supply"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Air Supply",
-        "Tactical Air Support"
+        "Air Power",
+        "Tactics",
+        "Allied Forces"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Planning": [
-            "e_1",
-            "e_2"
-        ],
-        "Air Supply": [
+        "Air Power": [
             "e_1"
         ],
-        "Tactical Air Support": [
-            "e_2"
+        "Tactics": [
+            "e_3"
+        ],
+        "Allied Forces": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1944-5",
+            "date": "1943-1945",
             "locations": [
-                "l_7",
-                "l_9",
-                "l_11",
-                "l_3",
-                "l_12"
+                "l_2",
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation Capital aims to execute an overland advance to capture strategic points in Burma while maintaining air supply routes to China."
+            "eventSummary": "The Burma Campaign is a significant military operation involving Allied forces to reclaim territory from the Japanese Army."
         },
         {
             "event": "e_2",
-            "date": "1945-46",
+            "date": "3rd May, 1945",
             "locations": [
-                "l_13",
-                "l_15"
+                "l_5"
             ],
             "persons": [
                 "p_1"
@@ -101,7 +88,24 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation Dracula is planned as a major airborne operation, aiming for a large-scale airlift to enhance mobility against Japanese forces in Burma, though it faces delays due to resource constraints."
+            "eventSummary": "The Occupation of Rangoon marks a critical victory for Allied forces, signifying their control over the region."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Japanese offensive against Imphal represents a critical turning point in the campaign that was ultimately blunted by Allied air operations."
         }
     ]
 }

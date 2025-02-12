@@ -1,81 +1,91 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Vice-Admiral Sir James F. Somerville"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "CAPE SPARTIVENTO",
-            "l_2": "Sardinia",
-            "l_3": "Mediterranean"
+            "l_1": "Mediterranean",
+            "l_2": "Western Mediterranean",
+            "l_3": "Gibraltar",
+            "l_4": "Malta"
         },
         "events": {
-            "e_1": "Action between British and Italian Forces",
-            "e_2": "Operation Collar"
+            "e_1": "Operation Hats",
+            "e_2": "Operation Collar",
+            "e_3": "Air Striking Force Torpedo Attacks"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "British Navy"
+            "o_1": "Royal Sovereign",
+            "o_2": "ARK Royal",
+            "o_3": "8th Destroyer Flotilla"
         }
     },
     "keywords": [
-        "Operation Collar",
-        "Military Engagement",
-        "British Forces",
-        "Italian Forces"
+        "Mediterranean",
+        "operations",
+        "reconnaissance",
+        "enemy intelligence"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Strategic Decisions"
+        "Reconnaissance",
+        "Military Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_2"
+        "Reconnaissance": [
+            "e_1",
+            "e_3"
+        ],
+        "Military Strategy": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th November, 1940",
+            "date": "30th August - 5th September",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On 27th November, 1940, British and Italian naval forces engage near Cape Spartivento during Operation Collar, aimed at ensuring safe passage for military personnel."
+            "connectedEvents": [],
+            "eventSummary": "Operation Hats occurs in the Western Mediterranean, becoming a reference point for subsequent military considerations."
         },
         {
             "event": "e_2",
-            "date": "27th November, 1940",
+            "date": "25th November",
             "locations": [
                 "l_2",
                 "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "Operation Collar is executed to facilitate the passage of numerous Allied military personnel through the Mediterranean amidst ongoing naval engagements."
+            "eventSummary": "Operation Collar is executed with military forces sailing from Gibraltar on the morning of 25th November."
+        },
+        {
+            "event": "e_3",
+            "date": "27th November",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Air Striking Force performs torpedo attacks on 27th November, leading to observations about the effectiveness of such operations during the war."
         }
     ]
 }

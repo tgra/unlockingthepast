@@ -1,141 +1,127 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Mountbatten",
-            "p_2": "Itagaki"
+            "p_1": "A.O.C. 224 Group"
         },
         "locations": {
-            "l_1": "South East Asia",
+            "l_1": "Burma",
             "l_2": "Malaya",
-            "l_3": "Singapore",
-            "l_4": "Burma",
-            "l_5": "Port Swettenham",
-            "l_6": "Port Dickson",
-            "l_7": "Kandy, Ceylon",
-            "l_8": "Siam",
-            "l_9": "French Indo-China",
-            "l_10": "Tenasserim Coast of Southern Burma",
-            "l_11": "Sumatra",
-            "l_12": "Java",
-            "l_13": "Borneo",
-            "l_14": "Hong Kong"
+            "l_3": "Arakan",
+            "l_4": "India",
+            "l_5": "Cocos Islands",
+            "l_6": "Singapore",
+            "l_7": "Ceylon",
+            "l_8": "Kandy",
+            "l_9": "Eastern Mediterranean"
         },
         "events": {
-            "e_1": "Surrender of Japanese Forces",
-            "e_2": "Operation Tiderace",
-            "e_3": "Operation Zipper",
-            "e_4": "Capitulation of Japan"
+            "e_1": "Operation Zipper",
+            "e_2": "Mopping up operations in Burma",
+            "e_3": "Re-organisation of Air Command in 1945-46",
+            "e_4": "Fall of Singapore"
         },
         "organisations": {
-            "o_1": "Supreme Allied Commander",
-            "o_2": "R.A.F."
+            "o_1": "Headquarters 230 Group",
+            "o_2": "Headquarters R.A.F. Burma",
+            "o_3": "Base Air Forces",
+            "o_4": "Headquarters Allied Land Forces",
+            "o_5": "Headquarters Supreme Allied Command",
+            "o_6": "10th U.S.A.A.F.",
+            "o_7": "Eastern Air Command"
         }
     },
     "keywords": [
-        "surrender",
-        "occupation",
-        "military defeat",
-        "Japanese forces",
-        "Allied forces",
-        "strategic planning",
-        "air power",
-        "prisoners-of-war"
+        "Burma",
+        "Operation Zipper",
+        "Re-organisation",
+        "Air Command",
+        "Singapore",
+        "Military operations"
     ],
     "themes": [
         "Military Operations",
-        "Surrender",
-        "Occupation",
-        "Strategic Planning",
-        "Humanitarian Efforts"
+        "Strategic Decision Making",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2",
-            "e_3"
-        ],
-        "Surrender": [
             "e_1",
-            "e_4"
-        ],
-        "Occupation": [
             "e_2"
         ],
-        "Humanitarian Efforts": [
-            "e_3"
+        "Strategic Decisions": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 1945",
+            "date": "June 1, 1945",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "The Japanese forces surrender unconditionally to the Supreme Allied Commander following total military defeat, signifying the end of the conflict in South East Asia."
-        },
-        {
-            "event": "e_2",
-            "date": "September 9, 1945",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Operation Tiderace is initiated to occupy Japanese-held territories in Malaya, but it is modified significantly due to the unexpected surrender of Japanese forces."
-        },
-        {
-            "event": "e_3",
-            "date": "September 9, 1945",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_1"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "Operation Zipper is executed under modified conditions as Allied forces demonstrate their presence in Malaya following the Japanese surrender."
+            "eventSummary": "Operation Zipper involves the planned withdrawal of No. 224 Group for operations related to the main assault on Malaya."
         },
         {
-            "event": "e_4",
-            "date": "August 14, 1945",
+            "event": "e_2",
+            "date": null,
             "locations": [
                 "l_1"
             ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The sudden capitulation of Japan occurs, leading to the rapid occupation plans for territories held by Japanese forces in South East Asia."
+            "eventSummary": "Mopping up operations continue in Burma as the campaign advances."
+        },
+        {
+            "event": "e_3",
+            "date": "1945-46",
+            "locations": [
+                "l_1",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The re-organisation of Air Command is necessitated by the evolving military responsibilities, allowing for more efficient operational control."
+        },
+        {
+            "event": "e_4",
+            "date": null,
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Following the fall of Singapore, significant operational movements and re-assignments are scheduled for various headquarters."
         }
     ]
 }

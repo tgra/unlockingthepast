@@ -1,122 +1,151 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lt.-Col. Cummings",
-            "p_2": "Lt.-Col. Morrison",
-            "p_3": "Capt. Graham"
+            "p_1": "Commander-in-Chief China",
+            "p_2": "Commander-in-Chief Far East",
+            "p_3": "Rear-Admiral Malaya",
+            "p_4": "senior General Staff Officer",
+            "p_5": "Brigadier",
+            "p_6": "Deputy Adjutant General",
+            "p_7": "G.O.C. Malaya"
         },
         "locations": {
-            "l_1": "Kuantan",
-            "l_2": "Jerantut",
-            "l_3": "Raub",
-            "l_4": "Tras-Tranum",
-            "l_5": "Kampar",
-            "l_6": "Kuala Dipang",
-            "l_7": "Sahum",
-            "l_8": "Chenderiang",
-            "l_9": "Tapah",
-            "l_10": "Bidor",
-            "l_11": "Telok Anson"
+            "l_1": "Sime Road",
+            "l_2": "Singapore",
+            "l_3": "Naval Base",
+            "l_4": "Fort Canning",
+            "l_5": "Hong Kong",
+            "l_6": "Malaya",
+            "l_7": "Singapore City"
         },
         "events": {
-            "e_1": "Withdrawal of Kuantan Force",
-            "e_2": "Battle of Kampar",
-            "e_3": "Japanese Attack on Kampar"
+            "e_1": "Outbreak of War with Japan",
+            "e_2": "Establishment of Headquarters Malaya Command",
+            "e_3": "Delay in Raising Labour Companies",
+            "e_4": "Hostilities with Japan",
+            "e_5": "Active Theatre of Malaya"
         },
         "organisations": {
-            "o_1": "Kuantan Force",
-            "o_2": "2/12 Frontier Force Regt.",
-            "o_3": "6/15 Indian Brigade Group",
-            "o_4": "28 Indian Brigade Group",
-            "o_5": "1/8 Punjab Regt.",
-            "o_6": "3 Indian Corps"
+            "o_1": "Royal Air Force",
+            "o_2": "Headquarters Malaya Command",
+            "o_3": "War Office",
+            "o_4": "Far East Combined Bureau"
         }
     },
     "keywords": [
-        "rearguard",
-        "withdrawal",
-        "aerodrome",
-        "heavy fighting",
-        "casualties",
-        "military operations"
+        "headquarters",
+        "war",
+        "intelligence",
+        "military",
+        "establishment",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Combat Engagement",
-        "Withdrawal Strategies",
-        "Heroism"
+        "Headquarters Management",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_4",
+            "e_5"
+        ],
+        "Headquarters Management": [
             "e_2",
             "e_3"
         ],
-        "Combat Engagement": [
-            "e_2",
+        "Logistics": [
             "e_3"
-        ],
-        "Withdrawal Strategies": [
-            "e_1"
-        ],
-        "Heroism": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 7, 1942",
+            "date": "1941",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_7"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "The Kuantan Force withdraws from the area as a result of increased enemy pressure, while ensuring that the aerodrome is denied to the enemy for a prolonged period."
+            "eventSummary": "The outbreak of war with Japan occurs, impacting military operations in the region."
         },
         {
             "event": "e_2",
-            "date": "January 1-2, 1942",
+            "date": "",
             "locations": [
-                "l_5"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_2",
-                "p_3"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The Battle of Kampar sees fierce fighting as British troops hold their positions against determined Japanese attacks, showcasing their combat abilities."
+            "connectedEvents": [],
+            "eventSummary": "The establishment of Headquarters Malaya Command takes place as military preparations intensify."
         },
         {
             "event": "e_3",
-            "date": "January 1, 1942",
+            "date": "autumn 1941",
             "locations": [
-                "l_5"
+                "l_5",
+                "l_6"
             ],
-            "persons": [],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
             "organisations": [
-                "o_4",
-                "o_6"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "The Japanese initiate a strong offensive against the Kampar position, leading to heavy fighting and ultimately unsuccessful attempts to break through."
+            "eventSummary": "Delays occur in raising two additional Labour Companies due to the outbreak of hostilities with Japan."
+        },
+        {
+            "event": "e_4",
+            "date": "1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Hostilities with Japan start, resulting in significant operational changes for military command."
+        },
+        {
+            "event": "e_5",
+            "date": "December 11, 1941",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Malaya becomes recognized as an active theatre of war, intensifying military focus in the area."
         }
     ]
 }

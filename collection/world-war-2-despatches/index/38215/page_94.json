@@ -1,95 +1,103 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander Singapore Fortress",
-            "p_2": "Supreme Commander South-West Pacific"
+            "p_1": "A. E. Percivat"
         },
         "locations": {
-            "l_1": "Johore",
-            "l_2": "Singapore Naval Base",
-            "l_3": "Kuala Lumpur",
-            "l_4": "Port Swettenham",
-            "l_5": "Slim River Village",
-            "l_6": "Tanjong Malim"
+            "l_1": "Malaya",
+            "l_2": "British Borneo",
+            "l_3": "Hong Kong",
+            "l_4": "Far East",
+            "l_5": "England",
+            "l_6": "Wales"
         },
         "events": {
-            "e_1": "Withdrawal to Johore",
-            "e_2": "Slim River Battle"
+            "e_1": "Retreat from Mons",
+            "e_2": "Retreat to Dunkirk",
+            "e_3": "Malaya campaign"
         },
         "organisations": {
-            "o_1": "3 Indian Corps",
-            "o_2": "A.I.F.",
-            "o_3": "155 Field Regiment",
-            "o_4": "12 Brigade Group",
-            "o_5": "28 Brigade Group"
+            "o_1": "Imperial Defence College"
         }
     },
     "keywords": [
-        "withdrawal",
+        "Malaya",
+        "British Empire",
+        "war",
+        "commander",
         "defence",
-        "enemy attack",
-        "battle",
-        "tanks",
-        "artillery",
-        "reinforcements"
+        "Japan",
+        "Navy",
+        "retreat"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Defensive Tactics"
+        "Leadership",
+        "Preparedness",
+        "Defence Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Leadership": [
+            "e_3"
         ],
-        "Defensive Tactics": [
-            "e_2"
+        "Preparedness": [
+            "e_3"
+        ],
+        "Defence Strategy": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 7, 1942",
+            "date": "Date of event not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Retreat from Mons is hailed as an epic where the Army turned the tables on the enemy with the help of a powerful ally."
+        },
+        {
+            "event": "e_2",
+            "date": "Date of event not specified",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The Retreat to Dunkirk, where the Army was evacuated by the Navy but lost all heavy equipment, is regarded similarly."
+        },
+        {
+            "event": "e_3",
+            "date": "Date of event not specified",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The orders are issued to withdraw to Johore and defend the Singapore Naval Base, ensuring no withdrawal occurs without permission."
-        },
-        {
-            "event": "e_2",
-            "date": "January 4-8, 1942",
-            "locations": [
-                "l_5",
-                "l_4",
-                "l_3"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Slim River Battle begins when enemy tanks attack forward troops. Despite heavy losses, the battle reveals the weariness of the allied forces, leading to strategic withdrawal orders."
+            "connectedEvents": [],
+            "eventSummary": "The Malaya campaign lasted ten weeks under trying conditions, noted for lacking strong ally support and facing primarily Japanese forces."
         }
     ]
 }

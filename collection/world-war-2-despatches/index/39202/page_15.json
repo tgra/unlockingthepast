@@ -1,97 +1,65 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "R.A.F. personnel",
-            "p_2": "Allied medical staffs"
+            "p_1": "Supreme Allied Commander",
+            "p_2": "H.Q. Allied Land Forces"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Burma",
-            "l_3": "Arakan",
-            "l_4": "Imphal",
-            "l_5": "Malaya",
-            "l_6": "Comilla"
+            "l_1": "Kanchanaburi",
+            "l_2": "Bangkok",
+            "l_3": "Burma",
+            "l_4": "Rangoon",
+            "l_5": "Meklong River",
+            "l_6": "Pegu Yomas"
         },
         "events": {
-            "e_1": "Air casualty evacuation",
-            "e_2": "Siege of Imphal",
-            "e_3": "Fall of Rangoon"
+            "e_1": "Strategic bombing",
+            "e_2": "Capture of Rangoon",
+            "e_3": "Disintegration of the British and American Air Forces",
+            "e_4": "Operation of Combat Cargo Task Force"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "Allied Forces"
+            "o_1": "ACS.E.A. Command",
+            "o_2": "R.A.F. squadrons of No. 232 Group",
+            "o_3": "Eastern Air Command",
+            "o_4": "Combat Cargo Task Force"
         }
     },
     "keywords": [
-        "air casualty evacuation",
-        "morale",
-        "casualties",
         "Supplies",
-        "air supply operations",
-        "medical attention",
-        "weather"
+        "Air supply",
+        "Burma",
+        "Rangoon"
     ],
     "themes": [
-        "Air Operations",
-        "Medical Evacuation",
-        "Military Morale",
-        "Casualties Management"
+        "Military Operations",
+        "Air Supply",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Air Supply": [
+            "e_2",
+            "e_4"
+        ],
+        "Logistics": [
+            "e_1",
             "e_3"
-        ],
-        "Medical Evacuation": [
-            "e_1"
-        ],
-        "Military Morale": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May to August, 1945",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Air casualty evacuation during the period from May to August 1945 showcases the effectiveness of R.A.F. personnel and medical staffs in safely transporting wounded soldiers, improving both morale and survival rates."
-        },
-        {
-            "event": "e_2",
-            "date": "1944",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Siege of Imphal marks a critical phase for Allied ground forces in Burma, leading to the inception of air evacuation as a method for dealing with casualties."
-        },
-        {
-            "event": "e_3",
-            "date": "April 1945",
-            "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -100,9 +68,53 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "The Fall of Rangoon serves as a notable point in the air evacuation efforts, significantly impacting casualty numbers and showcasing the advancements achieved in medical evacuation techniques by the R.A.F."
+            "eventSummary": "Strategic bombing drastically cuts down the use of enemy's railroads and affects supply logistics."
+        },
+        {
+            "event": "e_2",
+            "date": "May to August, 1945",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The capture of Rangoon marks a significant point in the air supply operations during the campaign in Burma."
+        },
+        {
+            "event": "e_3",
+            "date": "June, 1945",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The disintegration of British and American Air Forces leads to decreased air supply operations."
+        },
+        {
+            "event": "e_4",
+            "date": "October, 1944 to end of May, 1945",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Combat Cargo Task Force operates efficiently, coordinating air supply efforts during the Burma campaign."
         }
     ]
 }

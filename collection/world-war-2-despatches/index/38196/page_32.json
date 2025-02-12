@@ -1,113 +1,135 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Eisenhower"
+            "p_1": "Rommel",
+            "p_2": "General Montgomery",
+            "p_3": "General Leclerc",
+            "p_4": "General Eisenhower"
         },
         "locations": {
-            "l_1": "Ghazal",
-            "l_2": "El Alamein",
-            "l_3": "Tripolitania",
-            "l_4": "Tobruk",
-            "l_5": "Benghazi",
-            "l_6": "El Agheila",
-            "l_7": "Mersa Matruh",
-            "l_8": "Fuka",
-            "l_9": "30 Corps",
-            "l_10": "10 Corps",
-            "l_11": "51 Division",
-            "l_12": "9 Australian Divisions"
+            "l_1": "Kasserine Pass",
+            "l_2": "Thala",
+            "l_3": "Sbiba",
+            "l_4": "United States Armoured Division",
+            "l_5": "Gebel Hamra",
+            "l_6": "Eastern Dorsale",
+            "l_7": "Gafsa",
+            "l_8": "Medenine",
+            "l_9": "Ben Gardane",
+            "l_10": "Tnpoli",
+            "l_11": "Ksar Rhilane",
+            "l_12": "Matmata Mountains",
+            "l_13": "Tunisia",
+            "l_14": "Casablanca"
         },
         "events": {
-            "e_1": "Battle of El Alamein",
-            "e_2": "Pursuit to Agheila"
+            "e_1": "Battle of Kasserine",
+            "e_2": "Mareth Line operation",
+            "e_3": "Capture of Tunis"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "Axis Forces",
-            "o_3": "New Zealand Division",
-            "o_4": "10 Armoured Division",
-            "o_5": "1 Armoured Division",
-            "o_6": "7 Armoured Division",
-            "o_7": "164 Division",
-            "o_8": "15 Panzer Division",
-            "o_9": "21 Panzer Division",
-            "o_10": "Pistoia Division",
-            "o_11": "80 Spezia Division",
-            "o_12": "ro Corps"
+            "o_1": "25 Tank Brigade",
+            "o_2": "II Corps",
+            "o_3": "Eighth Army",
+            "o_4": "First Army",
+            "o_5": "Centauro Division",
+            "o_6": "Anglo-American battle school"
         }
     },
     "keywords": [
-        "Battle",
-        "Pursuit",
-        "Military Operations",
-        "Casualties",
-        "Supply Lines",
-        "Armoured Divisions",
-        "Armoured Brigade"
+        "battle",
+        "operations",
+        "strategies",
+        "tactics",
+        "divisions",
+        "armoured",
+        "garrison",
+        "withdrawal"
     ],
     "themes": [
         "Military Operations",
         "Strategic Decisions",
-        "Logistics",
-        "Battle Tactics"
+        "Command Structure",
+        "Training"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
             "e_1",
-            "e_2"
+            "e_3"
         ],
-        "Logistics": [
-            "e_2"
-        ],
-        "Battle Tactics": [
+        "Training": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "04 November 1942",
-            "locations": [
-                "l_2",
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Battle of El Alamein ends with a significant victory for the Allies, marking a turning point in World War II as Axis forces suffer heavy casualties and are forced to withdraw."
-        },
-        {
-            "event": "e_2",
-            "date": "05 November 1942",
+            "date": "21st-25th February 1943",
             "locations": [
                 "l_1",
-                "l_8",
-                "l_10"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
+                "o_2",
                 "o_3",
                 "o_4",
                 "o_5"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The pursuit to Agheila begins as the Eighth Army mobilizes its divisions to cut off the fleeing enemy, aiming to capitalize on the victory at El Alamein."
+            "eventSummary": "The Battle of Kasserine unfolds as Rommel's forces engage with the United States II Corps facing challenges against experienced troops, ultimately leading to a strategic reorganization of Allied forces."
+        },
+        {
+            "event": "e_2",
+            "date": "February 1943",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operations at the Mareth Line see General Montgomery's forces in contact with enemy outposts, establishing the groundwork for future advancements."
+        },
+        {
+            "event": "e_3",
+            "date": "Date Unknown",
+            "locations": [
+                "l_13"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Plans are laid out for the capture of Tunis, marking a pivotal goal in the campaign to establish control in Tunisia during World War II."
         }
     ]
 }

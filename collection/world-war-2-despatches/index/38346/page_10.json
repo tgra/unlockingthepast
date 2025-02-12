@@ -1,12 +1,105 @@
 {
     "namedEntities": {
         "persons": {},
-        "locations": {},
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Southwest",
+            "l_2": "Eastward",
+            "l_3": "North and West",
+            "l_4": "enemy cruisers",
+            "l_5": "about 1135",
+            "l_6": "about 1120",
+            "l_7": "04 degrees 38 minutes South, 112 degrees 28 minutes East"
+        },
+        "events": {
+            "e_1": "Action involving EXETER and enemy cruisers",
+            "e_2": "Abandonment of EXETER",
+            "e_3": "Sinking of EXETER"
+        },
+        "organisations": {
+            "o_1": "Allied air forces",
+            "o_2": "EXETER",
+            "o_3": "ENCOUNTER",
+            "o_4": "POPE"
+        }
     },
-    "keywords": [],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "keywords": [
+        "cruisers",
+        "destroyers",
+        "boiler room",
+        "enemy fire",
+        "evacuation",
+        "sinking",
+        "explosion"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Ship Evacuations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagements": [
+            "e_1"
+        ],
+        "Ship Evacuations": [
+            "e_2",
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Not specified",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "A naval action is taking place with the EXETER actively engaging enemy ships while maintaining smoke screens."
+        },
+        {
+            "event": "e_2",
+            "date": "around 1135",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The abandonment of EXETER is ordered as the ship sustains critical damage and the situation becomes untenable."
+        },
+        {
+            "event": "e_3",
+            "date": "around 1250",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "EXETER sinks after sustaining damage and losing power, leading to a heavy explosion believed to be caused by a torpedo."
+        }
+    ]
 }

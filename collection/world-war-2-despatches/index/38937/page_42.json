@@ -1,117 +1,126 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Hitler",
-            "p_2": "Unknown Author"
+            "p_1": "General Eisenhower",
+            "p_2": "General Wilson"
         },
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Bologna",
-            "l_3": "Po",
-            "l_4": "San Benedetto",
-            "l_5": "Ferrara",
-            "l_6": "Venetian coast",
-            "l_7": "Lombardy",
-            "l_8": "Cape Passero",
-            "l_9": "Brenner",
-            "l_10": "Apennines"
+            "l_1": "Apulia",
+            "l_2": "Naples",
+            "l_3": "Tyrrhenian Sea",
+            "l_4": "Liri",
+            "l_5": "Gari",
+            "l_6": "Cassino",
+            "l_7": "Gran Sasso",
+            "l_8": "Maiella",
+            "l_9": "Valmontone",
+            "l_10": "Esperia",
+            "l_11": "Anzio",
+            "l_12": "Corsica"
         },
         "events": {
-            "e_1": "Spring Offensive",
-            "e_2": "Capitulation of German troops",
-            "e_3": "Battle for Bologna"
+            "e_1": "spring offensive",
+            "e_2": "Operation OVERLORD",
+            "e_3": "Operation BRASSARD"
         },
         "organisations": {
-            "o_1": "Allied Forces",
+            "o_1": "Fifth Army",
             "o_2": "Eighth Army",
-            "o_3": "Fifth Army",
-            "o_4": "Fourteenth Army",
-            "o_5": "2nd May capitulators"
+            "o_3": "2 New Zealand Division",
+            "o_4": "Canadian Corps",
+            "o_5": "Polish Corps",
+            "o_6": "French Colonial Infantry Division",
+            "o_7": "Allied Force Headquarters"
         }
     },
     "keywords": [
-        "Spring Offensive",
-        "Bologna",
-        "Capitulation",
-        "Military Operations",
-        "German Forces",
-        "Allied Forces"
+        "Fifth Army",
+        "Eighth Army",
+        "Cassino",
+        "Operation OVERLORD",
+        "Anzio"
     ],
     "themes": [
         "Military Operations",
-        "Allied Strategy",
-        "German Defense",
-        "Capitulation"
+        "Logistics",
+        "Offensive Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": [
+        "Logistics": [
+            "e_1"
+        ],
+        "Offensive Planning": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "9th April 1945",
+            "date": "5th March",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3",
-                "l_4"
+                "l_4",
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Spring Offensive begins with the Eighth Army attacking on 9th April, leading to a breach of enemy defenses and the ongoing struggle for control in Italy."
+            "eventSummary": "The spring offensive involves detailed planning and restructuring of Army boundaries, with preparations starting on 5th March."
         },
         {
             "event": "e_2",
-            "date": "2nd May 1945",
+            "date": "8th May",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_4",
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_5"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The capitulation of German troops on 2nd May finalizes the defeat of an army that has been fighting for almost two years in Italy."
+            "eventSummary": "Operation OVERLORD is set to commence, aligned with troop movements based on lunar phases for strategic advantages."
         },
         {
             "event": "e_3",
-            "date": "21st April 1945",
+            "date": "7th April",
             "locations": [
-                "l_2"
+                "l_12"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_3"
+                "o_6",
+                "o_7"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Battle for Bologna culminates on 21st April, with Eighth and Fifth Armies making significant progress despite tough resistance."
+            "eventSummary": "Operation BRASSARD is discussed as a strategy to disrupt enemy seaborne traffic while ensuring primary operations remain supported."
         }
     ]
 }

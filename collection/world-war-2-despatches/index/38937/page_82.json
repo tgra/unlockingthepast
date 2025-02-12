@@ -1,112 +1,114 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Field-Marshal The Viscount Montgomery of Alamein",
-            "p_2": "General Montgomery"
+            "p_1": "Field-Marshal Kesselring",
+            "p_2": "Colonel-General Vietinghoff",
+            "p_3": "General Hube",
+            "p_4": "Hermann Goering",
+            "p_5": "General Herr",
+            "p_6": "General Student",
+            "p_7": "Field-Marshal Rommel",
+            "p_8": "General Lemelsen"
         },
         "locations": {
-            "l_1": "Salerno",
-            "l_2": "Calabria",
-            "l_3": "Naples",
-            "l_4": "Sicily",
-            "l_5": "Apulia",
-            "l_6": "Monti Picentini",
-            "l_7": "Sorrento peninsula",
-            "l_8": "Carthage"
+            "l_1": "Italy",
+            "l_2": "Western front",
+            "l_3": "Balkans",
+            "l_4": "Southern France",
+            "l_5": "Normandy",
+            "l_6": "Sardinia",
+            "l_7": "Corsica"
         },
         "events": {
-            "e_1": "Landing at Salerno",
-            "e_2": "Final Decisions on Invasion Plans",
-            "e_3": "Evacuation of German troops from Sicily"
+            "e_1": "Italian campaign",
+            "e_2": "Final attack",
+            "e_3": "Battle of Normandy"
         },
         "organisations": {
-            "o_1": "Fifth Army",
-            "o_2": "Allied Force Headquarters",
-            "o_3": "Canadian Division"
+            "o_1": "Allied Armies",
+            "o_2": "German Forces"
         }
     },
     "keywords": [
-        "Landing",
-        "Invasion Plans",
-        "Air Support",
-        "Coastal Defence",
-        "German Resistance"
+        "Allies",
+        "Germans",
+        "divisions",
+        "campaign",
+        "April 1945",
+        "military reasons",
+        "political reasons",
+        "nationalities",
+        "order of battle"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Invasion Planning"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
-            "e_1",
-            "e_2"
-        ],
-        "Evacuation Operations": [
-            "e_3"
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "5th September",
+            "date": "1943-1945",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_3"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Allied forces plan and prepare for an assault on the beaches of Salerno, deemed the best location for a landing on the west coast of Italy."
+            "eventSummary": "The Italian campaign drains German strength more than Allied strength, highlighting the effectiveness of Allied forces."
         },
         {
             "event": "e_2",
-            "date": "1st August",
+            "date": "April 1945",
             "locations": [
-                "l_2",
-                "l_3",
-                "l_8"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Final decisions on the invasion of Italy are made during a commanders-in-chief conference, establishing the strategy for the landing at Salerno and ensuring necessary resources."
+            "connectedEvents": [],
+            "eventSummary": "The final attack begins with seventeen Allied divisions against twenty-three German divisions."
         },
         {
             "event": "e_3",
-            "date": "17th August",
+            "date": "June 1944",
             "locations": [
-                "l_4"
+                "l_5"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "German troops successfully evacuate Sicily, putting them in a better position to reinforce their defenses in Italy amidst Allied invasion preparations."
+            "connectedEvents": [],
+            "eventSummary": "The battle of Normandy is launched by the forces of Great Britain and the United States."
         }
     ]
 }

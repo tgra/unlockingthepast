@@ -1,119 +1,96 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "G.O.C.",
-            "p_2": "General",
-            "p_3": "Lieutenant-Commander Hodges",
-            "p_4": "Captain Price"
+            "p_1": "General",
+            "p_2": "Lieutenant-Commander Hodges",
+            "p_3": "Captain Price"
         },
         "locations": {
             "l_1": "Courrier Bay",
-            "l_2": "Diego Suarez",
-            "l_3": "Antsirane",
-            "l_4": "Nosi Fati",
+            "l_2": "Antsirane",
+            "l_3": "Nosi Fati",
+            "l_4": "Diego Suarez",
             "l_5": "Ambararata anchorage",
             "l_6": "Port Nievre"
         },
         "events": {
-            "e_1": "Assault Landing",
-            "e_2": "Night Attack on Antsirane",
-            "e_3": "Entry into Diego Suarez"
+            "e_1": "Operation at Antsirane",
+            "e_2": "Night Attack by the 17th Brigade"
         },
         "organisations": {
             "o_1": "17th Brigade",
             "o_2": "29 Independent Brigade",
-            "o_3": "Royal Marines",
-            "o_4": "No. 5 Commando"
+            "o_3": "H.M.S. ANTHONY",
+            "o_4": "H.M.S. RAMILLIES",
+            "o_5": "No. 5 Commando"
         }
     },
     "keywords": [
-        "assault",
-        "landing",
-        "mines",
-        "air support",
-        "naval operations",
-        "casualties"
+        "submarine",
+        "air attacks",
+        "disembarkation",
+        "military commander",
+        "assault troops",
+        "casualties",
+        "night attack"
     ],
     "themes": [
         "Military Operations",
-        "Assault Strategies",
-        "Naval Operations",
-        "Resistance"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Assault Strategies": [
-            "e_2"
-        ],
-        "Naval Operations": [
-            "e_3"
-        ],
-        "Resistance": [
+        "Strategic Decisions": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of event not specified",
+            "date": "D.2",
             "locations": [
-                "l_1",
                 "l_2",
-                "l_3"
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The assault landing is progressing satisfactorily despite the opposition. Reports indicate advancing troops and successful air attacks."
+            "eventSummary": "The attack on the Antsirane position experiences stiff resistance, requiring air support and a fresh assault at daylight."
         },
         {
             "event": "e_2",
-            "date": "Date of event not specified",
+            "date": "Night of D.2",
             "locations": [
-                "l_3"
+                "l_2",
+                "l_4"
             ],
             "persons": [
-                "p_2",
-                "p_4"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
+                "o_2",
                 "o_3",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "A night attack is planned against a fortified enemy position at Antsirane, with high risk assessed for the attacking troops."
-        },
-        {
-            "event": "e_3",
-            "date": "Date of event not specified",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Preparations for entry into Diego Suarez are underway, with logistical adjustments being made due to operational uncertainties."
+            "eventSummary": "A night attack is planned by the 17th Brigade against strong enemy positions at Antsirane, aiming for a surprise assault before moonrise."
         }
     ]
 }

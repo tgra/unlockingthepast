@@ -2,124 +2,142 @@
     "namedEntities": {
         "persons": {
             "p_1": "Admiral Mountbatten",
-            "p_2": "British Foreign Secretary"
+            "p_2": "Itagaki",
+            "p_3": "General Itagaki"
         },
         "locations": {
-            "l_1": "Hong Kong",
-            "l_2": "South East Asia",
-            "l_3": "Ceylon",
-            "l_4": "Cocos Islands",
-            "l_5": "Bengal",
-            "l_6": "Burma",
-            "l_7": "Malaya",
-            "l_8": "Sumatra",
-            "l_9": "Java",
-            "l_10": "Singapore",
-            "l_11": "Changi Gaol"
+            "l_1": "Singapore",
+            "l_2": "Malaya",
+            "l_3": "Burma",
+            "l_4": "Port Swettenham",
+            "l_5": "Port Dickson",
+            "l_6": "Kandy",
+            "l_7": "Ceylon",
+            "l_8": "Penang",
+            "l_9": "Bangkok",
+            "l_10": "Saigon",
+            "l_11": "Hong Kong",
+            "l_12": "Siam",
+            "l_13": "French Indo-China",
+            "l_14": "Tenasserim Coast of Southern Burma",
+            "l_15": "Sumatra",
+            "l_16": "Java",
+            "l_17": "Cocos Islands"
         },
         "events": {
-            "e_1": "Operation Birdcage",
-            "e_2": "Operation Mastiff",
-            "e_3": "Liberation of Allied prisoners of war"
+            "e_1": "Instrument of Surrender",
+            "e_2": "Operation Tiderace",
+            "e_3": "Operation Zipper",
+            "e_4": "Capitulation of Japan"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "Air Command",
-            "o_3": "International Red Cross"
+            "o_1": "Supreme Allied Commander",
+            "o_2": "South East Asia Command",
+            "o_3": "R.A.F."
         }
     },
     "keywords": [
-        "prisoners of war",
-        "Japanese surrender",
-        "air power",
-        "liberation",
-        "supply drops",
-        "medical aid"
+        "surrender",
+        "military defeat",
+        "occupation",
+        "air forces",
+        "Japanese Army"
     ],
     "themes": [
         "Military Operations",
-        "Humanitarian Assistance",
-        "Strategic Air Power",
-        "Post-War Recovery"
+        "Surrender",
+        "Occupation",
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2"
-        ],
-        "Humanitarian Assistance": [
+            "e_2",
             "e_3"
         ],
-        "Strategic Air Power": [
+        "Surrender": [
             "e_1",
+            "e_4"
+        ],
+        "Occupation": [
             "e_2"
         ],
-        "Post-War Recovery": [
-            "e_3"
+        "Diplomacy": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 28th, 1945",
+            "date": "September 10, 1945",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Instrument of Surrender is drawn up, marking the definitive end of hostilities in South East Asia, as Japanese forces capitulate."
+        },
+        {
+            "event": "e_2",
+            "date": "September 9, 1945",
+            "locations": [
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operation Tiderace is planned for the occupation of Malaya, being modified due to the recent Japanese surrender."
+        },
+        {
+            "event": "e_3",
+            "date": "September 9, 1945",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Birdcage is launched to inform Allied prisoners of their impending liberation through leaflet drops over multiple regions."
+            "eventSummary": "Operation Zipper goes forward on a limited scale as Japanese forces surrender."
         },
         {
-            "event": "e_2",
-            "date": "August 31st, 1945",
+            "event": "e_4",
+            "date": "August 14, 1945",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Operation Mastiff is executed to ensure medical aid and supplies reach liberated prisoners of war."
-        },
-        {
-            "event": "e_3",
-            "date": "Post-August 1945",
-            "locations": [
-                "l_2",
-                "l_10",
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "The liberation of nearly 100,000 Allied prisoners of war happens, marking an important humanitarian achievement aided by air power."
+            "eventSummary": "Japan's capitulation occurs, prompting the need for planning rapid occupation of key territories."
         }
     ]
 }

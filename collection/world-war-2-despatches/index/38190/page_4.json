@@ -2,21 +2,24 @@
     "namedEntities": {
         "persons": {
             "p_1": "H.E. The Governor",
-            "p_2": "H Sn"
+            "p_2": " officers and men",
+            "p_3": " commanding officers"
         },
         "locations": {
             "l_1": "Hong Kong",
             "l_2": "Wong Nei Chong Gap",
-            "l_3": "Stanley",
+            "l_3": "Stanley area",
             "l_4": "Shamshuipo",
-            "l_5": "Taipo Road",
-            "l_6": "Golden Hill",
-            "l_7": "Laichikok Peninsula"
+            "l_5": "Gindrinkers Line",
+            "l_6": "Customs Pass",
+            "l_7": "Golden Hill",
+            "l_8": "Laichikok Peninsula",
+            "l_9": "Taipo Road"
         },
         "events": {
-            "e_1": "Defense of Hong Kong",
-            "e_2": "Outbreak of War with Japan",
-            "e_3": "Joining of Canadian Battalions"
+            "e_1": "Battle of Hong Kong",
+            "e_2": "Outbreak of war with Japan",
+            "e_3": "Reinforcement by Canadian battalions"
         },
         "organisations": {
             "o_1": "Hong Kong Volunteer Defence Corps",
@@ -28,21 +31,22 @@
             "o_7": "2/14 Punjab Regt.",
             "o_8": "5/7 Rajput Regt.",
             "o_9": "2 Royal Scots",
-            "o_10": "Middlesex Regt."
+            "o_10": "Canadian troops",
+            "o_11": "Middlesex Regt."
         }
     },
     "keywords": [
-        "defense",
-        "casualties",
         "garrison",
+        "defence",
+        "casualties",
         "mobilization",
-        "gallantry",
-        "reconnaissance"
+        "infantry"
     ],
     "themes": [
         "Military Operations",
-        "Historical Analysis",
-        "Defense Strategies"
+        "Gallantry",
+        "Casualties",
+        "Defense Strategy"
     ],
     "topicModel": {
         "Military Operations": [
@@ -50,12 +54,14 @@
             "e_2",
             "e_3"
         ],
-        "Historical Analysis": [
+        "Gallantry": [
             "e_1"
         ],
-        "Defense Strategies": [
-            "e_2",
-            "e_3"
+        "Casualties": [
+            "e_1"
+        ],
+        "Defense Strategy": [
+            "e_2"
         ]
     },
     "eventConnections": [
@@ -63,9 +69,25 @@
             "event": "e_1",
             "date": "1941",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Hong Kong occurs as Japanese forces launch an attack, leading to defensive efforts by the garrison."
+        },
+        {
+            "event": "e_2",
+            "date": "1941",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -76,56 +98,30 @@
                 "o_3",
                 "o_4",
                 "o_5",
-                "o_6",
-                "o_7",
-                "o_8",
-                "o_9"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Defense of Hong Kong involves various military units enduring harsh conditions, with casualties on both sides as they prepare for a Japanese offensive."
-        },
-        {
-            "event": "e_2",
-            "date": "1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_7",
-                "o_8",
-                "o_9"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The outbreak of war with Japan leads to an urgent re-structuring of defense plans to counter the imminent threat."
-        },
-        {
-            "event": "e_3",
-            "date": "16th November 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_7",
-                "o_8",
-                "o_9"
+                "o_6"
             ],
             "connectedEvents": [
                 "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The outbreak of war with Japan marks a significant escalation in conflict, prompting immediate military responses."
+        },
+        {
+            "event": "e_3",
+            "date": "16th November, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_10"
+            ],
+            "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The joining of two Canadian battalions enhances the defense strategies in Hong Kong, although the time for familiarization with their roles is limited."
+            "eventSummary": "Reinforcement by Canadian battalions arrives, altering the defensive strategies for the Hong Kong garrison."
         }
     ]
 }

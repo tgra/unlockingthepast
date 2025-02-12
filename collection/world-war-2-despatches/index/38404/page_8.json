@@ -1,90 +1,108 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Air Commodore G. M. Lawson"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Stornoway",
-            "l_2": "Tiree",
-            "l_3": "Northern Ireland",
-            "l_4": "Belfast",
-            "l_5": "South England",
-            "l_6": "South-East England"
+            "l_1": "United Kingdom",
+            "l_2": "Thames Estuary",
+            "l_3": "Dover Strait",
+            "l_4": "Northern France",
+            "l_5": "Eastern Front",
+            "l_6": "Eastern Germany",
+            "l_7": "Poland"
         },
         "events": {
-            "e_1": "Formation of No. 82 Group",
-            "e_2": "Battle of Britain"
+            "e_1": "Battle of Britain",
+            "e_2": "Russian campaign",
+            "e_3": "Mass attacks by Germans in Summer 1940",
+            "e_4": "Tactical measures issued on 4th November"
         },
         "organisations": {
-            "o_1": "Fighter Command",
-            "o_2": "Air Ministry",
-            "o_3": "A.A. Command"
+            "o_1": "Air Ministry",
+            "o_2": "Command",
+            "o_3": "Chiefs of Staff"
         }
     },
     "keywords": [
-        "Fighter Command",
-        "defence",
-        "Fighter Group",
-        "Sectors",
-        "Battle of Britain",
-        "Wings",
-        "A.A. Command"
+        "fighter force",
+        "squadrons",
+        "mass attacks",
+        "shipping",
+        "defensive duties"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategy",
-        "Tactical Decisions",
-        "Organisational Changes"
+        "Air Defence",
+        "Operational Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Defence Strategy": [
+        "Air Defence": [
             "e_1",
-            "e_2"
+            "e_4"
         ],
-        "Tactical Decisions": [
-            "e_2"
-        ],
-        "Organisational Changes": [
-            "e_1"
+        "Operational Planning": [
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "25th September 1941",
+            "date": "October 31, 1940",
             "locations": [
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "On September 25, 1941, No. 82 Group, commanded by Air Commodore G. M. Lawson, assumes operational control over three Sectors in Northern Ireland to enhance defence."
+            "eventSummary": "The Battle of Britain is recognized to have ended on October 31st, 1940, marking a significant phase in air warfare."
         },
         {
             "event": "e_2",
-            "date": "During the Battle of Britain (1940-1941)",
+            "date": "",
             "locations": [
                 "l_5",
-                "l_6"
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Russian campaign involves substantial military operations, with significant withdrawals affecting combat readiness."
+        },
+        {
+            "event": "e_3",
+            "date": "Summer 1940",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Mass attacks by the Germans in the Summer of 1940 were unprecedented and significantly impacted the air defense posture."
+        },
+        {
+            "event": "e_4",
+            "date": "November 4, 1940",
+            "locations": [
+                "l_1"
             ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "During the Battle of Britain, tactical evaluations lead to the conclusion that formations consisting of two or four aircraft provide better mutual protection than larger groups."
+            "connectedEvents": [],
+            "eventSummary": "On November 4th, tactical measures were issued to counter the new German attacks, marking a shift in operational tactics."
         }
     ]
 }

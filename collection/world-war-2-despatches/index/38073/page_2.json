@@ -1,77 +1,74 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain A. D. Nicholl",
-            "p_2": "Mr. Murphy",
-            "p_3": "Captain C. A. G. Hutchison"
+            "p_1": "R. S. Site",
+            "p_2": "C. T. Jellicoe",
+            "p_3": "P. L. Vian",
+            "p_4": "St. J. A. Micklethwait",
+            "p_5": "A. L. Poland"
         },
         "locations": {
-            "l_1": "Alexandria",
-            "l_2": "Malta",
-            "l_3": "Grand Harbour",
-            "l_4": "Marsa Xlokk",
-            "l_5": "Gibraltar",
-            "l_6": "Kelibia",
-            "l_7": "Tunis"
+            "l_1": "Malta",
+            "l_2": "Alexandria",
+            "l_3": "Tobruk",
+            "l_4": "Taranto",
+            "l_5": "Cyrenaica",
+            "l_6": "Crete"
         },
         "events": {
-            "e_1": "Arrival of the Convoy at Malta",
-            "e_2": "Dispersal of H.M. Ships from Malta",
-            "e_3": "Air Attacks on the Convoy"
+            "e_1": "Mission to escort convoy M.W.10",
+            "e_2": "Air attacks on convoy M.W.10",
+            "e_3": "Attempted Interception by Enemy Surface Forces",
+            "e_4": "Return of Force B to Alexandria"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "Fifth Destroyer Flotilla",
+            "o_2": "Fifteenth Cruiser Squadron",
+            "o_3": "Fourteenth Destroyer Flotilla",
+            "o_4": "201 (Naval Co-operation) Group"
         }
     },
     "keywords": [
-        "Convoy",
-        "Air Attack",
-        "Malta",
-        "Naval Operations",
-        "H.M.S. Ships",
-        "Evacuation"
+        "escort",
+        "convoy",
+        "torpedo",
+        "attack",
+        "engagement",
+        "interception",
+        "naval operations"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Strategic Decisions"
+        "Naval Engagements",
+        "Air Attacks",
+        "Convoy Protection"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Engagements": [
+            "e_1",
             "e_3"
         ],
-        "Strategic Decisions": [
+        "Air Attacks": [
             "e_2"
+        ],
+        "Convoy Protection": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "22nd March",
+            "date": "19th March",
             "locations": [
+                "l_1",
                 "l_2",
                 "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The convoy arrives at Malta, facing immediate risks but achieving a crucial delivery after a lengthy journey."
-        },
-        {
-            "event": "e_2",
-            "date": "25th March",
-            "locations": [
-                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -79,29 +76,65 @@
                 "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Fifth Destroyer Flotilla leaves Alexandria at 1130 on 19th March to escort convoy M.W.10, while various naval units are involved in protecting the convoy."
+        },
+        {
+            "event": "e_2",
+            "date": "22nd March",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "In response to increasing air attacks, ships begin to disperse from Malta, indicating urgent measures to minimize losses."
+            "eventSummary": "Air attacks on convoy M.W.10 begin at 0930 on 22nd March, escalating throughout the day and leading to a complex naval engagement."
         },
         {
             "event": "e_3",
             "date": "22nd March",
             "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Rear-Admiral Commanding, Fifteenth Cruiser Squadron, executes a battle plan to protect the convoy from enemy surface forces on 22nd March."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd March",
+            "locations": [
                 "l_2"
             ],
-            "persons": [],
+            "persons": [
+                "p_5"
+            ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Heavy air attacks target the convoy after its arrival, leading to significant naval engagements and losses."
+            "connectedEvents": [],
+            "eventSummary": "Force B, having faced difficult conditions and an attack on 23rd March, returns to Alexandria safely."
         }
     ]
 }

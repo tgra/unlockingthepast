@@ -1,64 +1,69 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "T. H. Troubridge",
-            "p_2": "C. D. Edgar"
+            "p_1": "C. D. Edgar",
+            "p_2": "SAMUEL CHASE"
         },
         "locations": {
-            "l_1": "Gibraltar",
-            "l_2": "Oran",
-            "l_3": "Cape Spartel",
-            "l_4": "Ponta Delgada",
-            "l_5": "Casa Blanca",
-            "l_6": "Spanish coast"
+            "l_1": "Algiers",
+            "l_2": "Gibraltar",
+            "l_3": "Sector A",
+            "l_4": "Sector B",
+            "l_5": "Sidi Ferruch",
+            "l_6": "Cap Caxine"
         },
         "events": {
-            "e_1": "Convoy Operations",
-            "e_2": "Rendezvous with Destroyers"
+            "e_1": "The Assault on Algiers",
+            "e_2": "The Landings",
+            "e_3": "Landing at A Sector",
+            "e_4": "Landing at B Sector"
         },
         "organisations": {
-            "o_1": "H.M. Ships",
-            "o_2": "K.M.S."
+            "o_1": "H.M.S. SPEY",
+            "o_2": "V.A.C.N.A.",
+            "o_3": "Force H",
+            "o_4": "Force R",
+            "o_5": "K.M.F.A.",
+            "o_6": "U.S.N."
         }
     },
     "keywords": [
         "convoy",
-        "destroyers",
-        "air attacks",
-        "escorts",
-        "naval unit",
-        "rendezvous",
-        "A.A. weapons",
-        "reconnaissance"
+        "submarine",
+        "depth charges",
+        "assault",
+        "landings",
+        "A/S patrol"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Logistics"
+        "Naval Engagement",
+        "Assault Landings",
+        "Coordination and Command"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Warfare": [
+        "Naval Engagement": [
             "e_1"
         ],
-        "Logistics": [
+        "Assault Landings": [
+            "e_3",
+            "e_4"
+        ],
+        "Coordination and Command": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 5-6, 1514",
+            "date": "7th November",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_2"
             ],
             "persons": [
                 "p_1",
@@ -66,30 +71,89 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The convoy operations involve multiple naval units executing rendezvous and counteracting air attacks while ensuring safe passage through strategic locations."
+            "eventSummary": "The assault on Algiers occurs with the ships of the fast assault convoy positioned for an operation, setting the stage for landing efforts."
         },
         {
             "event": "e_2",
-            "date": "October 31, 1514",
+            "date": "7th November",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The convoy was scheduled to rendezvous with destroyers at specific coordinates but failed due to miscommunication, leading to a search operation."
+            "eventSummary": "The landing at Sector A is conducted successfully while the landing at Sector B experiences mistakes and confusion due to prior preparation issues."
+        },
+        {
+            "event": "e_3",
+            "date": "7th November",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The landing at Sector A is successfully executed, with coordination between submarines and support craft ensuring a timely assault."
+        },
+        {
+            "event": "e_4",
+            "date": "7th November",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The landing at Sector B is complicated by errors in command and instructions, leading to misdirected missions."
         }
     ]
 }

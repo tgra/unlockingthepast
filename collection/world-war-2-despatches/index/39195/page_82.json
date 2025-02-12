@@ -1,60 +1,78 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier J. A. Dawson",
-            "p_2": "Brigadier-General F. W. Evans",
-            "p_3": "General G. Stratemeyer"
+            "p_1": "General Slim",
+            "p_2": "General Sir William Slim",
+            "p_3": "Lieut.-General Sir Philip Christison"
         },
         "locations": {
-            "l_1": "Agartala",
-            "l_2": "Chittagong",
-            "l_3": "Central Burma",
-            "l_4": "Shan States",
-            "l_5": "Arakan"
+            "l_1": "Rangoon",
+            "l_2": "Arakan",
+            "l_3": "Irrawaddy Valley",
+            "l_4": "Lower Sittang",
+            "l_5": "Malaya",
+            "l_6": "Akyab",
+            "l_7": "Kyaukpyu",
+            "l_8": "Chittagong",
+            "l_9": "Assam",
+            "l_10": "Burma"
         },
         "events": {
-            "e_1": "Switch of air supply base from Agartala to Chittagong",
-            "e_2": "Expansion of the Army Air Transport Organization",
-            "e_3": "Operational successes achieved by Fourteenth Army"
+            "e_1": "Operations in May",
+            "e_2": "The Final Battles",
+            "e_3": "Operation Roger",
+            "e_4": "Operation Zipper",
+            "e_5": "Operation Mailfist",
+            "e_6": "The Capture of Rangoon",
+            "e_7": "Airfield Construction"
         },
         "organisations": {
-            "o_1": "Forward Airfield Maintenance Organization (F.A.M.O.)",
-            "o_2": "Combined Army Air Transport Organization (C.A.A.T.O.)",
-            "o_3": "Royal Air Force (RAF)",
-            "o_4": "Royal Canadian Air Force (R.CA.F.)",
-            "o_5": "United States Army Air Forces (U.S.A.A.F.)"
+            "o_1": "Allied Land Forces",
+            "o_2": "Twelfth Army",
+            "o_3": "Fourteenth Army",
+            "o_4": "15 Indian Corps",
+            "o_5": "Northern Combat Area Command",
+            "o_6": "Army Air Transport Organization",
+            "o_7": "Civil Affairs Staff (Burma)"
         }
     },
     "keywords": [
-        "air supply",
-        "transport aircraft",
-        "logistics",
-        "military operations",
-        "supply chain"
+        "Operations",
+        "Air Supply",
+        "Internal Security",
+        "Guerilla Organizations",
+        "Battles"
     ],
     "themes": [
         "Military Operations",
-        "Logistical Support",
-        "Coordination of Forces"
+        "Administration",
+        "Logistics",
+        "Reorganization"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Logistical Support": [
-            "e_1",
-            "e_2"
-        ],
-        "Coordination of Forces": [
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
+        ],
+        "Administration": [
+            "e_7"
+        ],
+        "Logistics": [
+            "e_7"
+        ],
+        "Reorganization": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th January, 1945",
+            "date": "May 1945",
             "locations": [
                 "l_1",
                 "l_2"
@@ -68,31 +86,53 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "On January 27, 1945, an air supply base is switched from Agartala to Chittagong to support the advance of the Fourteenth Army, marking a critical logistical move."
+            "eventSummary": "New orders are issued concerning operations in May, affecting the ongoing military strategy."
         },
         {
             "event": "e_2",
-            "date": "February 1945",
-            "locations": [],
+            "date": "1945",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
             "persons": [
-                "p_1"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "In February 1945, the Army Air Transport Organization expands to improve air supply logistics, vital for future operations of the Fourteenth Army."
+            "connectedEvents": [],
+            "eventSummary": "The Final Battles occur with significant reorganization of the Allied Land Forces as they engage in key battles."
         },
         {
-            "event": "e_3",
+            "event": "e_6",
             "date": "1945",
-            "locations": [],
+            "locations": [
+                "l_1"
+            ],
             "persons": [],
-            "organisations": [],
+            "organisations": [
+                "o_1"
+            ],
             "connectedEvents": [],
-            "eventSummary": "During 1945, operational successes are achieved by the Fourteenth Army, attributed to coordinated efforts involving air transport and logistics."
+            "eventSummary": "The capture of Rangoon is a critical turning point in theater operations."
+        },
+        {
+            "event": "e_7",
+            "date": "April 1945",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Airfield construction progresses to support military operations in the region."
         }
     ]
 }

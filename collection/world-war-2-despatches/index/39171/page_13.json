@@ -1,62 +1,79 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "G.O.C.-in-C., East African Command",
-            "p_2": "G.O.C.-in-C., West Africa"
+            "p_1": "General Stilwell",
+            "p_2": "Major-General Wingate"
         },
         "locations": {
-            "l_1": "India",
-            "l_2": "Ceylon",
-            "l_3": "Assam",
-            "l_4": "Kohima",
-            "l_5": "Jorhat"
+            "l_1": "Fort Hertz",
+            "l_2": "Burma",
+            "l_3": "Myitkyina",
+            "l_4": "Mali Hka Valley",
+            "l_5": "Ledo",
+            "l_6": "Mogaung",
+            "l_7": "Kamaing",
+            "l_8": "Indaw",
+            "l_9": "Sumprabum",
+            "l_10": "Assam",
+            "l_11": "China"
         },
         "events": {
-            "e_1": "Offensive in the Arakan",
-            "e_2": "Japanese offensive across the Chindwin",
-            "e_3": "Driving the enemy from the Kohima area"
+            "e_1": "Capture of Fort Hertz",
+            "e_2": "Galahad Force operations",
+            "e_3": "Notable advance on Myitkyina",
+            "e_4": "Capture of Kamaing",
+            "e_5": "Investment of Mogaung"
         },
         "organisations": {
-            "o_1": "14th Army",
-            "o_2": "11 Army Group",
-            "o_3": "81 Division",
-            "o_4": "82 Division",
-            "o_5": "11 (East African) Division",
-            "o_6": "Special Force"
+            "o_1": "4 Corps",
+            "o_2": "33 Corps",
+            "o_3": "Special Force",
+            "o_4": "Chinese Army in India",
+            "o_5": "U.S. 5307 Provisional Regiment"
         }
     },
     "keywords": [
-        "Infantry Brigade",
-        "Armoured Division",
-        "Artillery",
-        "War Establishment"
+        "Japanese casualties",
+        "Air Transport Command",
+        "Kachin Levies",
+        "Long-Range Penetration",
+        "battle",
+        "Chinese troops"
     ],
     "themes": [
         "Military Operations",
-        "Reorganization of Forces",
-        "Strategic Military Planning"
+        "Tactics",
+        "Casualties",
+        "Supply Chain",
+        "Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Tactics": [
+            "e_2",
             "e_3"
         ],
-        "Reorganization of Forces": [
-            "e_1",
-            "e_2"
+        "Supply Chain": [
+            "e_1"
         ],
-        "Strategic Military Planning": [
+        "Coordination": [
+            "e_2",
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st January 1944",
+            "date": "September 1942",
             "locations": [
-                "l_4",
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -66,48 +83,81 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The offensive in the Arakan commences as 15 Indian Corps positions are established, leading to significant military engagements."
+            "eventSummary": "Fort Hertz is occupied by a small detachment to protect the landing ground."
         },
         {
             "event": "e_2",
-            "date": "8th March 1944",
+            "date": "February 1944",
             "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The Japanese launch an offensive across the Chindwin, prompting a strategic reassessment by Allied commanders."
-        },
-        {
-            "event": "e_3",
-            "date": "31st May 1944",
-            "locations": [
-                "l_4"
+                "l_2",
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Galahad Force operations contribute to the advance on Myitkyina."
+        },
+        {
+            "event": "e_3",
+            "date": "17th May 1944",
+            "locations": [
+                "l_4",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
                 "o_4"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_2",
+                "e_5"
             ],
-            "eventSummary": "Allied forces engage in driving the enemy from the Kohima area, marking a critical point in the military campaign."
+            "eventSummary": "C.A.I. reaches Myitkyina's outskirts and captures the airfield."
+        },
+        {
+            "event": "e_4",
+            "date": "16th June 1944",
+            "locations": [
+                "l_6",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Kamaing is captured as part of the advances made by the troops."
+        },
+        {
+            "event": "e_5",
+            "date": "22nd June 1944",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Mogaung is invested while Japanese forces are forced into retreat."
         }
     ]
 }

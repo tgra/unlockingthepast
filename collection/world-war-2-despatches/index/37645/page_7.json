@@ -1,121 +1,114 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander 12th (A) Division",
-            "p_2": "Duce",
-            "p_3": "Commander rath (A) Division"
+            "p_1": "el Miralai Orr Bey",
+            "p_2": "late Italian Civil Governor"
         },
         "locations": {
-            "l_1": "British Somaliland",
-            "l_2": "Aden",
-            "l_3": "Wajir",
-            "l_4": "Gelib",
-            "l_5": "Mogadiscio",
-            "l_6": "Bardera",
-            "l_7": "Iscia Baidoa",
-            "l_8": "Dinsor",
-            "l_9": "Mandera",
-            "l_10": "Neghelli",
-            "l_11": "Bulo Erillo",
-            "l_12": "Chisimaio",
-            "l_13": "Bur Acaba",
-            "l_14": "Afgoi",
-            "l_15": "Modun",
-            "l_16": "Giumbo"
+            "l_1": "Asosa",
+            "l_2": "Kurmuk",
+            "l_3": "Kassala",
+            "l_4": "Sabdarat",
+            "l_5": "Tessenei",
+            "l_6": "Aicota",
+            "l_7": "Keru",
+            "l_8": "Gondar",
+            "l_9": "Barentu",
+            "l_10": "Umm Hagar",
+            "l_11": "Gedaref",
+            "l_12": "Showak",
+            "l_13": "Wachai",
+            "l_14": "Keren",
+            "l_15": "Aroma",
+            "l_16": "Butana Bridge"
         },
         "events": {
-            "e_1": "Evacuation of Italian Somaliland",
-            "e_2": "Operations of 12th (A) Division",
-            "e_3": "Capture of Bardera",
-            "e_4": "Patrol actions in Iscia Baidoa",
-            "e_5": "Occupation of Neghelli"
+            "e_1": "Evacuation of Kassala",
+            "e_2": "Attack on Kassala",
+            "e_3": "Action at Keru",
+            "e_4": "Pursuit to Sabdarat",
+            "e_5": "First serious air attack"
         },
         "organisations": {
-            "o_1": "12th (A) Division",
-            "o_2": "24th G.C. Brigade",
-            "o_3": "2nd E.A. Infantry Brigade",
-            "o_4": "1st S.A. Brigade",
-            "o_5": "3rd G.C. Regiment"
+            "o_1": "4th Indian Division",
+            "o_2": "5th Indian Division",
+            "o_3": "Indian Infantry Brigade Group",
+            "o_4": "203 Group, R.A.F.",
+            "o_5": "Gazelle Force",
+            "o_6": "Central India Horse"
         }
     },
     "keywords": [
         "evacuation",
-        "military operations",
-        "patrol",
-        "occupation",
-        "supply situation"
+        "attack",
+        "pursuit",
+        "headquarters",
+        "division",
+        "brigade",
+        "intelligence"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Evacuations",
-        "Conflict Management"
+        "Pursuit Operations",
+        "Strategic Planning",
+        "Defense Preparations"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
             "e_3",
             "e_4",
             "e_5"
         ],
-        "Logistics": [
-            "e_2"
+        "Pursuit Operations": [
+            "e_4"
         ],
-        "Evacuations": [
+        "Strategic Planning": [
             "e_1"
         ],
-        "Conflict Management": [
-            "e_4"
+        "Defense Preparations": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 26, 1941",
+            "date": "19th January",
             "locations": [
-                "l_1"
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The enemy intends to evacuate Kassala, prompting plans for an attack."
+        },
+        {
+            "event": "e_2",
+            "date": "25th January",
+            "locations": [
+                "l_3"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The evacuation of Italian Somaliland is ordered by the Duce due to military strategic considerations."
-        },
-        {
-            "event": "e_2",
-            "date": "February 26 to April 5, 1941",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3",
-                "e_4",
-                "e_5"
-            ],
-            "eventSummary": "12th (A) Division undertakes a series of military operations in response to the evolving conflict, including reconnaissance and occupation of key locations."
+            "connectedEvents": [],
+            "eventSummary": "The attack on Kassala is successful, with minimal damage reported in the town."
         },
         {
             "event": "e_3",
-            "date": "February 27, 1941",
+            "date": "21st January",
             "locations": [
-                "l_6"
+                "l_7"
             ],
             "persons": [
                 "p_1"
@@ -123,46 +116,35 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Patrols report the capture of Bardera, highlighting the division's progress and strategic movements."
+            "connectedEvents": [],
+            "eventSummary": "4th Indian Division encounters its first serious resistance at Keru, facing significant enemy defenses."
         },
         {
             "event": "e_4",
-            "date": "March 1-5, 1941",
+            "date": "20th January",
             "locations": [
-                "l_7",
-                "l_8"
+                "l_4"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operations include successful patrol actions in Iscia Baidoa, contributing to the broader military efforts."
+            "connectedEvents": [],
+            "eventSummary": "Orders are issued for the pursuit of enemy forces toward Sabdarat."
         },
         {
             "event": "e_5",
-            "date": "March 21, 1941",
+            "date": "19th January",
             "locations": [
-                "l_10"
+                "l_4"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_5"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The occupation of Neghelli is executed by the 3rd G.C. Regiment, showcasing tactical achievements in the ongoing conflict."
+            "connectedEvents": [],
+            "eventSummary": "Gazelle Force encounters its first air attack during the operation toward Sabdarat."
         }
     ]
 }

@@ -2,18 +2,143 @@
     "namedEntities": {
         "persons": {},
         "locations": {
-            "l_1": "London",
-            "l_2": "Great Britain"
+            "l_1": "Sarajevo",
+            "l_2": "Jugoslavia",
+            "l_3": "Bihac",
+            "l_4": "Gospic",
+            "l_5": "Senj",
+            "l_6": "Ogulin",
+            "l_7": "North Jugoslavia",
+            "l_8": "Fiume",
+            "l_9": "Karlobag",
+            "l_10": "Pag",
+            "l_11": "Rab",
+            "l_12": "Krk",
+            "l_13": "Lussin",
+            "l_14": "Cherso",
+            "l_15": "Kraljevica",
+            "l_16": "Istria",
+            "l_17": "River Izonzo",
+            "l_18": "Monfalcone",
+            "l_19": "Novo Mesto",
+            "l_20": "Gorizia",
+            "l_21": "Adriatic"
         },
-        "events": {},
-        "organisations": {}
+        "events": {
+            "e_1": "Offensive 110",
+            "e_2": "Fourth Army offensive",
+            "e_3": "capture of Bihac",
+            "e_4": "clearing of Islands and advance to Fiume",
+            "e_5": "break-through in North Istria",
+            "e_6": "final assault on Fiume"
+        },
+        "organisations": {
+            "o_1": "Jugoslav Fourth Army",
+            "o_2": "Balkan Air Force (B.A.F.)",
+            "o_3": "Royal Navy",
+            "o_4": "Long Range Desert Group",
+            "o_5": "D.A.F.",
+            "o_6": "M.A.S.A.F.",
+            "o_7": "M.A.T.A.F."
+        }
     },
     "keywords": [
-        "Price",
-        "Code No.",
-        "Printed"
+        "air operations",
+        "fourth army",
+        "Jugoslav",
+        "offensive",
+        "capture",
+        "Bihac",
+        "clearing",
+        "coast",
+        "operations"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Air Operations",
+        "Ground Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Air Operations": [
+            "e_1",
+            "e_4"
+        ],
+        "Ground Operations": [
+            "e_3",
+            "e_6"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "March 19, 1945",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Active air operations in support of the Fourth Army commence on the 19th March 1945."
+        },
+        {
+            "event": "e_2",
+            "date": "March 28, 1945",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Fourth Army successfully completes the first phase of its offensive with the capture of Bihac on the 28th March 1945."
+        },
+        {
+            "event": "e_3",
+            "date": "April 30, 1945",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The final assault on Fiume is made on April 30th, facing comparatively little opposition."
+        },
+        {
+            "event": "e_4",
+            "date": "April 30, 1945",
+            "locations": [
+                "l_10",
+                "l_12",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Marking the climax of the B.A.F.'s effort, a co-ordinated attack is successful against multiple objectives in the Adriatic region."
+        }
+    ]
 }

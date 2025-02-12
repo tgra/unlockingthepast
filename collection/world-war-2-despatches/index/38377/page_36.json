@@ -1,128 +1,138 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice-Admiral Commanding",
-            "p_2": "Admiralty"
+            "p_1": "Captain D. W. Mason",
+            "p_2": "Lieutenant-Commander J. H. Swain, R.N.",
+            "p_3": "Lieutenant-Commander R. P. Hill, R.N.",
+            "p_4": "Lieutenant E. F. Baines, R.N.",
+            "p_5": "Rear-Admiral Commanding, 10th Cruiser Squadron",
+            "p_6": "Vice-Admiral Commanding, North Atlantic"
         },
         "locations": {
-            "l_1": "MANCHESTER",
-            "l_2": "Galita",
-            "l_3": "Malta",
-            "l_4": "Gibraltar",
-            "l_5": "Sardinia"
+            "l_1": "Malta",
+            "l_2": "Gibraltar",
+            "l_3": "Alboran",
+            "l_4": "Galita",
+            "l_5": "Algiers",
+            "l_6": "Scapa Flow",
+            "l_7": "Freetown"
         },
         "events": {
-            "e_1": "Operation of Swordfish for Search",
-            "e_2": "AIR ATTACK on Fleet",
-            "e_3": "Departure of Force X from Malta",
-            "e_4": "Reconnaissance of 3 Swordfish"
+            "e_1": "Operation Bellows",
+            "e_2": "Attack on H.M.S. NIGERIA",
+            "e_3": "Sinking of H.M.S. FORESIGHT",
+            "e_4": "Force Y's Encounter with Vichy minesweeper",
+            "e_5": "Establishment of visual link with Force X"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "Beaufighters"
+            "o_2": "Malta Local Forces",
+            "o_3": "Royal Air Force"
         }
     },
     "keywords": [
-        "Swordfish",
-        "Force H",
-        "Convoy M.G.",
-        "ASDIC",
-        "depth charges",
-        "U-Boat"
+        "U-Boat",
+        "torpedo bomber",
+        "cruiser",
+        "destroyers",
+        "air attacks"
     ],
     "themes": [
         "Military Operations",
-        "Air Attacks",
-        "Reconnaissance",
-        "Naval Engagements"
+        "Naval Warfare",
+        "Enemy Engagement",
+        "Military Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Reconnaissance": [
-            "e_4"
-        ],
-        "Air Attacks": [
-            "e_2"
-        ],
-        "Naval Engagements": [
+        "Naval Warfare": [
             "e_1",
+            "e_2",
             "e_3"
+        ],
+        "Military Planning": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 25, 1943",
+            "date": "Not specified",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_4"
-            ],
-            "eventSummary": "Swordfish aircraft conduct a search operation without sighting any enemy surface forces."
-        },
-        {
-            "event": "e_2",
-            "date": "July 23, 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_5"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_3",
                 "e_4"
             ],
-            "eventSummary": "An enemy air attack targets the fleet, resulting in significant danger and bringing forth calls for help."
+            "eventSummary": "Operation Bellows involves the return passage of H.M.S. FURIOUS with successful engagements against enemy forces."
         },
         {
-            "event": "e_3",
-            "date": "July 24, 1943",
+            "event": "e_2",
+            "date": "Not specified",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Force X departs from Malta with a strong send-off, facing a few alarms but no significant threats."
+            "eventSummary": "H.M.S. NIGERIA is attacked by enemy torpedo bombers but manages to evade further incidents."
         },
         {
-            "event": "e_4",
-            "date": "July 25, 1943",
+            "event": "e_3",
+            "date": "Not specified",
             "locations": [
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_4"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. TARTAR is reported to have sunk H.M.S. FORESIGHT during naval operations."
+        },
+        {
+            "event": "e_4",
+            "date": "Not specified",
+            "locations": [
+                "l_4"
             ],
-            "eventSummary": "A reconnaissance mission with three Swordfish is conducted to ascertain the absence of enemy forces."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Force Y encounters a darkened Vichy minesweeper, leading to a brief exchange of fire."
+        },
+        {
+            "event": "e_5",
+            "date": "Not specified",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An Albacore aircraft is dispatched to establish a visual link with Force X after they received signals."
         }
     ]
 }

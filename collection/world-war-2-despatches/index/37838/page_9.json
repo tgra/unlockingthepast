@@ -1,0 +1,172 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "I"
+        },
+        "locations": {
+            "l_1": "Northern France",
+            "l_2": "Belgium",
+            "l_3": "France",
+            "l_4": "Germany",
+            "l_5": "Eastern Germany",
+            "l_6": "Poland",
+            "l_7": "Seine",
+            "l_8": "Oise",
+            "l_9": "Meuse",
+            "l_10": "Albert Canal",
+            "l_11": "Paris",
+            "l_12": "Orleans",
+            "l_13": "Loire",
+            "l_14": "Region Nord"
+        },
+        "events": {
+            "e_1": "Pre-D-Day attacks",
+            "e_2": "D-Day",
+            "e_3": "Attack on repair depots and facilities",
+            "e_4": "Attack on locomotives",
+            "e_5": "Air attacks on roads",
+            "e_6": "Destruction of Bridges"
+        },
+        "organisations": {
+            "o_1": "A.E.A.F.",
+            "o_2": "United States Eighth Air Force"
+        }
+    },
+    "keywords": [
+        "D-Day",
+        "air attack",
+        "locomotives",
+        "bridges",
+        "fighter bombers",
+        "Nazi transport system"
+    ],
+    "themes": [
+        "Military Operations",
+        "Air Superiority",
+        "Logistics Disruption"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_3",
+            "e_4",
+            "e_6"
+        ],
+        "Air Superiority": [
+            "e_4"
+        ],
+        "Logistics Disruption": [
+            "e_5"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "Pre-D-Day attacks are carried out, causing disruption to the Nazi-controlled transport system."
+        },
+        {
+            "event": "e_2",
+            "date": "June 6, 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "D-Day marks the beginning of large-scale assaults on enemy positions and logistics."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Attacks on repair depots and facilities are executed to reduce enemy traction power."
+        },
+        {
+            "event": "e_4",
+            "date": "May 21, 1944",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_1"
+            ],
+            "eventSummary": "A significant air operation targets locomotives, resulting in destruction of enemy equipment."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air attacks on road movements disrupt enemy logistics and supply routes."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10",
+                "l_11",
+                "l_12",
+                "l_13"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Destruction of bridges is planned to further hinder enemy movements and logistics."
+        }
+    ]
+}

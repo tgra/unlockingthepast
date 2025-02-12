@@ -1,53 +1,57 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Sir Archibald Wavell",
-            "p_2": "Field-Marshal Lord Wavell"
+            "p_1": "General Legentilhomme",
+            "p_2": "Colonel Chater",
+            "p_3": "Air Vice Marshal Reid"
         },
         "locations": {
-            "l_1": "Somaliland Protectorate",
-            "l_2": "Egypt",
-            "l_3": "Palestine",
-            "l_4": "Transjordan",
-            "l_5": "Sudan",
-            "l_6": "Cyprus",
-            "l_7": "Iraq",
-            "l_8": "British Somaliland",
-            "l_9": "French Somaliland",
-            "l_10": "Berbera",
-            "l_11": "Jibuti",
-            "l_12": "Zeilah"
+            "l_1": "Jibuti",
+            "l_2": "Somaliland",
+            "l_3": "Abyssinia",
+            "l_4": "Berbera",
+            "l_5": "Dobo",
+            "l_6": "Jirre",
+            "l_7": "Zeilah",
+            "l_8": "Hargeisa",
+            "l_9": "Burao",
+            "l_10": "Harar-Diredawa-Jijiga",
+            "l_11": "Kenya",
+            "l_12": "Northern Rhodesia",
+            "l_13": "Cairo"
         },
         "events": {
-            "e_1": "Evacuation of British Forces from Somaliland Protectorate",
-            "e_2": "Italian troops crossed the frontier",
-            "e_3": "Operations in the Somaliland Protectorate"
+            "e_1": "Outbreak of War with Italy",
+            "e_2": "French Armistice",
+            "e_3": "Approval of Garrison Reinforcement"
         },
         "organisations": {
-            "o_1": "British War Office",
+            "o_1": "King's African Rifles",
             "o_2": "Colonial Office",
-            "o_3": "Anglo-French forces"
+            "o_3": "French Forces",
+            "o_4": "War Office",
+            "o_5": "Middle East"
         }
     },
     "keywords": [
         "Somaliland",
-        "military operations",
-        "British forces",
-        "Italian invasion",
-        "evacuation"
+        "Jibuti",
+        "Italy",
+        "Garrison",
+        "French Armistice",
+        "Tug Argan",
+        "Camel Corps"
     ],
     "themes": [
         "Military Operations",
-        "Historical Retrospective",
-        "Strategic Decisions"
+        "Strategic Decisions",
+        "Defence Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_2"
         ],
-        "Diplomacy": [],
         "Strategic Decisions": [
             "e_3"
         ]
@@ -55,28 +59,10 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 1940",
+            "date": "12th June, 1940",
             "locations": [
                 "l_1",
-                "l_10"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The British Forces evacuate from Somaliland Protectorate under pressure from Italian troops."
-        },
-        {
-            "event": "e_2",
-            "date": "5 August 1940",
-            "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -85,28 +71,40 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Italian troops crossed the frontier and engaged the small British Force in Somaliland."
+            "eventSummary": "The outbreak of war with Italy occurs on 12th June, 1940, with the Northern Rhodesia Regiment, K.A.R. positioned at Tug Argan."
         },
         {
-            "event": "e_3",
-            "date": "1939-1940",
+            "event": "e_2",
+            "date": "18th June, 1940",
             "locations": [
                 "l_1"
             ],
             "persons": [
+                "p_3",
                 "p_1"
             ],
             "organisations": [
-                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 18th June, 1940, Air Vice Marshal Reid visits Jibuti where he is assured by General Legentilhomme that the French Forces will continue to fight."
+        },
+        {
+            "event": "e_3",
+            "date": "January, 1940",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The operations in the Somaliland Protectorate during World War II lead to strategic and defensive maneuvers amid Italian aggression."
+            "connectedEvents": [],
+            "eventSummary": "In January 1940, the reinforcement of the garrison of Somaliland is approved in principle, leading to further military preparations."
         }
     ]
 }

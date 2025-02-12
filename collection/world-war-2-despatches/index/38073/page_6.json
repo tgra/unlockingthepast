@@ -1,59 +1,39 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral Commanding",
-            "p_2": "Captain (D)"
+            "p_1": "Captain A. D. Nicholl"
         },
         "locations": {
-            "l_1": "northeast",
-            "l_2": "south",
-            "l_3": "west",
-            "l_4": "eastward",
-            "l_5": "northward",
-            "l_6": "Sea",
-            "l_7": "ZULU",
-            "l_8": "EURYALUS",
-            "l_9": "HASTY",
-            "l_10": "CLEOPATRA"
+            "l_1": "Libya",
+            "l_2": "Crete",
+            "l_3": "Tobruk",
+            "l_4": "Taranto",
+            "l_5": "Malta"
         },
         "events": {
-            "e_1": "Air Attack",
-            "e_2": "Engagement between Convoy and Enemy"
+            "e_1": "Convoy engagement",
+            "e_2": "Enemy aircraft attack"
         },
         "organisations": {
-            "o_1": "Fifteenth Cruiser Squadron",
+            "o_1": "First Division",
             "o_2": "Fourteenth Destroyer Flotilla",
-            "o_3": "Twenty-Second Destroyer Flotilla"
+            "o_3": "Mediterranean Fleet",
+            "o_4": "Fifteenth Cruiser Squadron"
         }
     },
     "keywords": [
         "convoy",
-        "air attack",
+        "enemy aircraft",
         "engagement",
-        "smoke-laying",
-        "naval action",
-        "ammunition",
-        "casualties"
+        "taranto",
+        "malta"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Casualties",
-        "Tactical Movements"
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2"
-        ],
-        "Naval Warfare": [
-            "e_1",
-            "e_2"
-        ],
-        "Casualties": [
-            "e_2"
-        ],
-        "Tactical Movements": [
             "e_1",
             "e_2"
         ]
@@ -61,42 +41,41 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "N/A",
+            "date": "21st March to 23rd March",
             "locations": [
                 "l_1",
                 "l_2",
-                "l_3"
+                "l_3",
+                "l_4",
+                "l_5"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Throughout the period, a heavy air attack targets the convoy and the striking force, leading to a tactical adjustment to counter the threats."
+            "eventSummary": "The convoy engages in operations between 21st and 23rd March, navigating from Tobruk to Malta and making contact with enemy forces and aircraft."
         },
         {
             "event": "e_2",
-            "date": "N/A",
+            "date": "21st March to 23rd March",
             "locations": [
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "During the engagement, the Convoy actively maneuvers against enemy fire and suffers casualties, leading to defensive tactics such as smoke laying and strategic repositioning."
+            "eventSummary": "Enemy aircraft begin attacks on the convoy during operations, performing multiple reconnaissance and bombing missions."
         }
     ]
 }

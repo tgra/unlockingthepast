@@ -1,123 +1,115 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier General Staff",
-            "p_2": "Brigadier i/e Administration",
-            "p_3": "Deputy Adjutant General Headquarters Malaya Command",
-            "p_4": "Director General of Civil Defence",
-            "p_5": "Inspector General of Police Straits Settlements",
-            "p_6": "Lt. Gen. Yamashita",
-            "p_7": "Governor"
+            "p_1": "A. Duff Cooper",
+            "p_2": "Maj.- Gen. Keith Simmons",
+            "p_3": "Mr. A. H. Dickinson",
+            "p_4": "Mr. Denham",
+            "p_5": "Col. Johnson",
+            "p_6": "Brigadier I. Simson",
+            "p_7": "Mr. F. D. Bisseker"
         },
         "locations": {
             "l_1": "Singapore",
-            "l_2": "Bukit Timah Village",
-            "l_3": "Ford Factory"
+            "l_2": "Johore",
+            "l_3": "Malacca",
+            "l_4": "Federated Malay States"
         },
         "events": {
-            "e_1": "Cessation of Hostilities Discussion",
-            "e_2": "Meeting with Japanese Commander",
-            "e_3": "Orders for Surrender"
+            "e_1": "Declaration of Martial Law",
+            "e_2": "Formation of the Directorate of Civil Defence",
+            "e_3": "Establishment of the Civil Defence Committee"
         },
         "organisations": {
-            "o_1": "British Armed Forces",
-            "o_2": "Japanese Army",
-            "o_3": "Civil Defence"
+            "o_1": "Far East War Council",
+            "o_2": "Civil Defence Committee",
+            "o_3": "Directorate of Civil Defence",
+            "o_4": "Cabinet"
         }
     },
     "keywords": [
-        "Cessation of Hostilities",
-        "Surrender",
-        "Military Strategy",
-        "Water Crisis",
-        "Ammunition Supply",
-        "Civil Supplies"
+        "Martial Law",
+        "Civil Defence",
+        "Evacuation",
+        "Japanese Occupation",
+        "War Effort"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions",
-        "Supply Chain Issues"
+        "Civil Defence",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
+            "e_1"
+        ],
+        "Civil Defence": [
             "e_2",
             "e_3"
         ],
-        "Diplomacy": [
+        "Strategic Decisions": [
             "e_1",
             "e_2"
-        ],
-        "Strategic Decisions": [
-            "e_3"
-        ],
-        "Supply Chain Issues": [
-            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th February",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_4",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The military and civil leadership discusses the critical water situation and agrees unanimously to propose a cessation of hostilities with the Japanese."
-        },
-        {
-            "event": "e_2",
-            "date": "15th February",
+            "date": "December 1941",
             "locations": [
                 "l_1",
+                "l_2",
                 "l_3"
             ],
             "persons": [
                 "p_1",
-                "p_6"
+                "p_2"
             ],
             "organisations": [
                 "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Martial Law is declared in Singapore at the end of December 1941 due to the developing hostilities, with the Commander Singapore Fortress appointed as Administrator."
+        },
+        {
+            "event": "e_2",
+            "date": "December 31, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
+            "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_3"
             ],
-            "eventSummary": "The British military leaders, led by the Governor, meet with Lt. Gen. Yamashita to discuss the terms of surrender following the decision to cease hostilities."
+            "eventSummary": "The Directorate of Civil Defence is formed under Brigadier I. Simson on December 31, 1941, to address civil defense arrangements in Singapore."
         },
         {
             "event": "e_3",
-            "date": "15th February",
+            "date": "December 16, 1941",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1",
-                "p_6"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Orders for the unconditional surrender of all military forces in the Singapore area are issued, confirming the cessation of hostilities."
+            "connectedEvents": [],
+            "eventSummary": "The Civil Defence Committee is established on December 16, 1941, to review and manage measures regarding the defense of Singapore."
         }
     ]
 }

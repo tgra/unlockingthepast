@@ -1,62 +1,79 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief",
-            "p_2": "Air Officer Commanding"
+            "p_1": "Lieutenant-Colonel McFeat",
+            "p_2": "General Mow"
         },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Burma",
-            "l_3": "Southern Indo-China",
-            "l_4": "Singapore"
+            "l_1": "Burma",
+            "l_2": "Rangoon",
+            "l_3": "Maymyo",
+            "l_4": "Lashio",
+            "l_5": "Bhamo",
+            "l_6": "Hong Kong",
+            "l_7": "Chieng Rai",
+            "l_8": "Canton",
+            "l_9": "Singapore",
+            "l_10": "Siam",
+            "l_11": "Indo-China",
+            "l_12": "Tongking",
+            "l_13": "Bangkok",
+            "l_14": "Kwangsi",
+            "l_15": "Saigon",
+            "l_16": "Camranh Harbour"
         },
         "events": {
-            "e_1": "Singapore Defence Conference",
-            "e_2": "First Appointment of Commander-in-Chief, Far East"
+            "e_1": "Defence of Burma",
+            "e_2": "Visit of Chinese Military Mission",
+            "e_3": "Japanese Convoy arrives at Saigon",
+            "e_4": "Economic agreement with Vichy French authorities",
+            "e_5": "Hostilities between Siam and France",
+            "e_6": "Japanese expansion in Indo-China"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Dutch Fighter Squadron"
+            "o_1": "American Volunteer Group",
+            "o_2": "Royal Air Force",
+            "o_3": "Vichy French authorities"
         }
     },
     "keywords": [
-        "Buffalo",
-        "Zero fighter",
-        "Aircraft",
-        "Squadrons",
-        "Pilot training",
-        "Blenheim IV"
+        "guerillas",
+        "training",
+        "supply",
+        "assistance",
+        "Japanese",
+        "hostilities",
+        "economic agreement",
+        "air strength"
     ],
     "themes": [
         "Military Operations",
-        "Air Superiority",
-        "Pilot Training",
-        "Resource Allocation",
-        "Strategic Planning"
+        "Alliances",
+        "Resistance",
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_5",
+            "e_6"
+        ],
+        "Diplomacy": [
+            "e_4",
             "e_2"
         ],
-        "Pilot Training": [
-            "e_1"
-        ],
-        "Air Superiority": [
-            "e_2"
-        ],
-        "Resource Allocation": [
+        "Alliances": [
             "e_1",
             "e_2"
         ],
-        "Strategic Planning": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October, 1941",
+            "date": "November 13, 1941",
             "locations": [
                 "l_1"
             ],
@@ -69,27 +86,73 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "During the Singapore Defence Conference in October 1941, the commanders discuss the strategic needs and requirements for defending Malaya against potential threats."
+            "eventSummary": "The Chinese promise to assist in the defence of Burma is fulfilled through the establishment of guerilla companies."
         },
         {
             "event": "e_2",
-            "date": "Prior to December 7, 1941",
+            "date": "April and May, 1941",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_9"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The first appointment of the Commander-in-Chief, Far East, highlights the pressing need for long-range bombers and improved pilot training for adequate defense capabilities in the region."
+            "eventSummary": "A Chinese Military Mission visits Burma and Singapore to solidify support in the region."
+        },
+        {
+            "event": "e_3",
+            "date": "July 26, 1941",
+            "locations": [
+                "l_15"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A Japanese convoy arrives at Saigon, marking an escalation of Japanese presence in Indo-China."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An economic agreement is concluded with the Vichy French authorities in Indo-China to develop friendly relations."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Mild hostilities break out between Siam and French authorities over territorial demands."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Japanese begin to expand their control in Indo-China despite previous agreements."
         }
     ]
 }

@@ -1,100 +1,126 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Chennault"
+        },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Rangoon",
-            "l_3": "Burma",
-            "l_4": "Thailand",
-            "l_5": "Bangkok",
-            "l_6": "Lampang",
-            "l_7": "Chiengmai",
-            "l_8": "Nagorn Sawan",
-            "l_9": "Moulmein",
-            "l_10": "Akyab",
-            "l_11": "Tharrawaddy",
-            "l_12": "Toungoo",
-            "l_13": "Magwe",
-            "l_14": "Bhisanuloke",
-            "l_15": "Mesoht"
+            "l_1": "Rangoon",
+            "l_2": "Northern Burma",
+            "l_3": "Bangkok",
+            "l_4": "Singora",
+            "l_5": "Moulmein",
+            "l_6": "Tavoy",
+            "l_7": "Mergui",
+            "l_8": "Chiengmai",
+            "l_9": "Mehohngsohn",
+            "l_10": "Chiengrai",
+            "l_11": "Prachuab Ginkhan",
+            "l_12": "Jumbhorn",
+            "l_13": "Kanchanburi",
+            "l_14": "Highland Queen"
         },
         "events": {
-            "e_1": "Fall of Singapore",
-            "e_2": "Fall of Rangoon",
-            "e_3": "Magwe action commences"
+            "e_1": "Air Battle over Rangoon",
+            "e_2": "Initial Japanese air force attack",
+            "e_3": "Second Japanese air force attack",
+            "e_4": "Air superiority battle in Burma"
         },
         "organisations": {
-            "o_1": "Japanese Army Air Force"
+            "o_1": "A.V.G.",
+            "o_2": "67 Squadron"
         }
     },
     "keywords": [
-        "air force",
-        "reinforcement",
-        "Japanese bombers",
-        "fighter equipment",
-        "military operations"
+        "Hurricane",
+        "Blenheim",
+        "fighter escort",
+        "bombing raids",
+        "Japanese air force",
+        "P.40's",
+        "Buffaloes",
+        "air superiority"
     ],
     "themes": [
         "Military Operations",
-        "Air Superiority",
-        "Intelligence Gathering"
+        "Air Battle",
+        "Tactical Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_4"
         ],
-        "Air Superiority": [
-            "e_2"
+        "Air Battle": [
+            "e_1"
         ],
-        "Intelligence Gathering": [
-            "e_1",
-            "e_2"
+        "Tactical Decisions": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th February",
+            "date": "23rd December, 1941 to 25th February, 1942",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The air battle over Rangoon lasts from 23rd December, 1941 to 25th February, 1942, characterized by numerous enemy attacks aimed at destroying the growing fighter force."
+        },
+        {
+            "event": "e_2",
+            "date": "23rd December, 1941",
             "locations": [
                 "l_1"
             ],
             "persons": [],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Singapore falls to enemy forces, marking a significant loss in the region."
-        },
-        {
-            "event": "e_2",
-            "date": "7th March",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Rangoon falls to enemy forces, compounding the losses sustained by the Allied forces."
+            "eventSummary": "A severe initial attack is carried out by the Japanese air force on Rangoon, starting a period of intense air conflict."
         },
         {
             "event": "e_3",
-            "date": "21st March",
+            "date": "25th December, 1941",
             "locations": [
-                "l_13"
+                "l_1"
             ],
             "persons": [],
             "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The Magwe action commences, indicating continued conflict in the region."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "A second attack follows the initial Japanese air force assault on Rangoon, intensifying the ongoing conflict."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The campaign contributes significantly to the air superiority battle in Burma, focusing on defending strategic locations."
         }
     ]
 }

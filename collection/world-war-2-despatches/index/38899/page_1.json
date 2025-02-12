@@ -1,132 +1,111 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander-in-Chief, Mediterranean",
-            "p_2": "Naval Commander Western Task Force"
+            "p_1": "Vice-Admiral H. K. Hewitt",
+            "p_2": "Commodore G. N. Oliver",
+            "p_3": "Rear-Admiral John L. Hall, Jr.",
+            "p_4": "Vice-Admiral Sir Algernon Willis",
+            "p_5": "Rear-Admiral Sir Philip Vian",
+            "p_6": "Admiral of the Fleet Sir ANDREW B. CUNNINGHAM"
         },
         "locations": {
-            "l_1": "Sicily",
-            "l_2": "Gulf of Salerno",
-            "l_3": "Gulf of Gaeta",
-            "l_4": "Naples",
-            "l_5": "Tripoli",
-            "l_6": "Milazzo"
+            "l_1": "Gulf of Salerno",
+            "l_2": "Salerno",
+            "l_3": "Italy",
+            "l_4": "Port of Naples",
+            "l_5": "Gulf of Gaeta"
         },
         "events": {
-            "e_1": "Operation Husky",
-            "e_2": "Operation Avalanche",
-            "e_3": "Operation Baytown",
-            "e_4": "Italian Armistice"
+            "e_1": "Operation Avalanche",
+            "e_2": "Landings in the Gulf of Salerno",
+            "e_3": "Report of the Naval Commander Western Task Force"
         },
         "organisations": {
-            "o_1": "B.B.C.",
-            "o_2": "Eighth Army"
+            "o_1": "U.S. Navy Department",
+            "o_2": "Allied Force Headquarters"
         }
     },
     "keywords": [
-        "Landing Craft",
-        "Assault",
-        "Armistice",
-        "Intelligence",
-        "Naval Planning",
-        "Airborne Troops"
+        "Naval forces",
+        "Task Force",
+        "Military operations",
+        "Landing",
+        "Report"
     ],
     "themes": [
         "Military Operations",
         "Naval Strategy",
-        "Armistice Impact",
-        "Field Intelligence"
+        "Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
+            "e_2"
+        ],
+        "Strategic Decisions": [
             "e_3"
-        ],
-        "Naval Strategy": [
-            "e_1",
-            "e_2"
-        ],
-        "Armistice Impact": [
-            "e_4"
-        ],
-        "Field Intelligence": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 27, 1943",
+            "date": "September 9, 1943",
             "locations": [
                 "l_1",
-                "l_2",
                 "l_3"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Husky is a pivotal military campaign that begins with the landing in Sicily and sets the stage for subsequent operations."
+            "eventSummary": "Operation Avalanche involves the Naval Task Force orchestrating landings at the Gulf of Salerno, aiming for the initial blockade and capture of Naples."
         },
         {
             "event": "e_2",
-            "date": "September 3, 1943",
-            "locations": [
-                "l_4",
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Operation Avalanche is initiated with landings in Salerno despite challenging conditions and concerns about potential enemy counterattacks."
-        },
-        {
-            "event": "e_3",
-            "date": "September 3, 1943",
+            "date": "September 9, 1943",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Baytown facilitates the assault across the Straits of Messina, complementing the overarching strategy in Sicily."
-        },
-        {
-            "event": "e_4",
-            "date": "September 8, 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The Italian Armistice is announced, signaling a critical shift in the theater of operations but also causing potential complacency among Allied forces."
+            "eventSummary": "The landings in the Gulf of Salerno mark a critical military operation for the Allied forces, facilitating further military engagement on the Italian mainland."
+        },
+        {
+            "event": "e_3",
+            "date": "March 8, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The report of the Naval Commander Western Task Force is submitted to the Admiralty, detailing the operations related to the landings at Salerno."
         }
     ]
 }

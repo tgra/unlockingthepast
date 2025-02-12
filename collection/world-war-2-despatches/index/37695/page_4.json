@@ -9,50 +9,60 @@
         "locations": {
             "l_1": "Cyprus",
             "l_2": "Turkey",
-            "l_3": "Iran",
-            "l_4": "Iraq",
+            "l_3": "Egypt",
+            "l_4": "Palestine",
             "l_5": "Syria",
-            "l_6": "Russia",
-            "l_7": "Saudi Arabia"
+            "l_6": "Iran",
+            "l_7": "Iraq",
+            "l_8": "Caucasus",
+            "l_9": "Ahwaz-Abadan",
+            "l_10": "Tabriz",
+            "l_11": "Teheran"
         },
         "events": {
-            "e_1": "Troop Reinforcement to Cyprus",
-            "e_2": "Expulsion of Germans from Iran",
-            "e_3": "Russian Troops Enter Iran",
-            "e_4": "Turkish Approach to Staff Talks"
+            "e_1": "Send 50th Division to Cyprus",
+            "e_2": "Relief of 50th Division by 5th Indian Division",
+            "e_3": "Expulsion of Germans from Iran",
+            "e_4": "Russian troops enter Iran",
+            "e_5": "British troops enter Iran",
+            "e_6": "Cease resistance in Iran"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "British Army",
-            "o_3": "Russian Army",
-            "o_4": "War Office"
+            "o_2": "Chiefs of Staff",
+            "o_3": "Commander-in-Chief, India"
         }
     },
     "keywords": [
-        "garrison",
         "defence",
-        "troops",
-        "expulsion",
-        "influence",
-        "military action"
+        "garrison",
+        "supply",
+        "consolidation",
+        "reinforcement",
+        "military action",
+        "resistance",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategies",
+        "Strategic Decisions",
         "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
         ],
         "Diplomacy": [
-            "e_2",
-            "e_4"
+            "e_3"
         ],
-        "Defence Strategies": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
@@ -64,62 +74,86 @@
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "On 12th July, troop reinforcement to Cyprus is decided by General Wavell, who plans to increase the garrison in response to potential threats from Turkey, with approval from the Minister for Defence."
+            "eventSummary": "On the 12th of July, it is decided to send the 50th Division to Cyprus to reinforce its garrison."
         },
         {
             "event": "e_2",
-            "date": "24th July",
+            "date": "between 2nd and 8th November",
             "locations": [
-                "l_3"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "On 24th July, a plan for the expulsion of Germans from Iran gains agreement from the Chiefs of Staff due to rising nationalist sentiments and concerns over German influence."
+            "connectedEvents": [],
+            "eventSummary": "The 5th Indian Division relieves the 50th Division between the 2nd and 8th of November."
         },
         {
             "event": "e_3",
-            "date": "25th August",
+            "date": "24th July",
             "locations": [
-                "l_3"
+                "l_6"
             ],
             "persons": [],
             "organisations": [
-                "o_3",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4",
+                "e_5"
             ],
-            "eventSummary": "On 25th August, Russian troops enter Iran from the north and quickly advance with minimal resistance following joint diplomatic and military efforts from Britain and Russia."
+            "eventSummary": "On the 24th of July, a cable from Chiefs of Staff confirms the necessity to expel Germans from Iran."
         },
         {
             "event": "e_4",
-            "date": "End of July",
+            "date": "25th August",
             "locations": [
-                "l_2"
+                "l_6",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "On the 25th of August, Russian troops enter Iran from the north, occupying Tabriz."
+        },
+        {
+            "event": "e_5",
+            "date": "25th August",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4",
+                "e_6"
+            ],
+            "eventSummary": "On the 25th of August, British troops enter Iran from Iraq."
+        },
+        {
+            "event": "e_6",
+            "date": "28th August",
+            "locations": [
+                "l_6"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "At the end of July, Turkey tentatively approaches for renewed staff talks to discuss military cooperation against German threats amid growing tensions in the region."
+            "eventSummary": "On the 28th of August, the Shah of Iran orders all resistance to cease."
         }
     ]
 }

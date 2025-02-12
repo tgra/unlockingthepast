@@ -1,63 +1,73 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rommel",
-            "p_2": "General Anderson",
-            "p_3": "Bizerta",
-            "p_4": "Tunis"
+            "p_1": "General Montgomery"
         },
         "locations": {
-            "l_1": "Africa",
-            "l_2": "Tunisia",
-            "l_3": "Medjez el Bab",
-            "l_4": "Mareth",
-            "l_5": "Mateur",
-            "l_6": "Jefna",
-            "l_7": "Bou Arada",
-            "l_8": "El Aroussa",
-            "l_9": "Gebel Mansour",
-            "l_10": "Sedjenane",
-            "l_11": "Gebel Tamera",
-            "l_12": "Gebel Abiod"
+            "l_1": "Buerat",
+            "l_2": "Wadi Kfef",
+            "l_3": "Wadi Zem Zem",
+            "l_4": "El Faskia",
+            "l_5": "Tripoli",
+            "l_6": "Misurata",
+            "l_7": "Zliten",
+            "l_8": "Bem Ulid",
+            "l_9": "Homs",
+            "l_10": "Tarhuna",
+            "l_11": "Bir Dufan",
+            "l_12": "Castelverde",
+            "l_13": "Tnpoh",
+            "l_14": "Garian",
+            "l_15": "Castel Benito",
+            "l_16": "Azizia"
         },
         "events": {
-            "e_1": "Fifth Army Offensive",
-            "e_2": "Battle of Medenine"
+            "e_1": "Battle of the Buerat Line",
+            "e_2": "Entry of Eighth Army into Tripoli",
+            "e_3": "Formal surrender of Italian authorities"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "Corps Franc d'Afrique",
-            "o_3": "British 5 Corps"
+            "o_2": "51 Division",
+            "o_3": "New Zealand Division",
+            "o_4": "7 Armoured Division",
+            "o_5": "4 Light Armoured Brigade",
+            "o_6": "22 Armoured Brigade",
+            "o_7": "Ramcke Parachute Brigade",
+            "o_8": "British Military Administration"
         }
     },
     "keywords": [
-        "Operation",
-        "Invasion",
-        "Offensive",
-        "Military Strategy"
+        "January",
+        "engagement",
+        "enemy",
+        "armoured",
+        "defence",
+        "surrender",
+        "occupation"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategy",
-        "Terrain Warfare"
+        "Tactical Maneuvers",
+        "Surrender and Occupation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Defensive Strategy": [
-            "e_2"
+        "Tactical Maneuvers": [
+            "e_1"
         ],
-        "Terrain Warfare": [
-            "e_1",
-            "e_2"
+        "Surrender and Occupation": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 26, 1943",
+            "date": "14th January - 22nd January 1943",
             "locations": [
                 "l_1",
                 "l_2",
@@ -66,40 +76,55 @@
                 "l_5",
                 "l_6",
                 "l_7",
-                "l_8"
+                "l_10"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Fifth Army Offensive involves attacks along various fronts against Rommel's forces, primarily affecting positions in Northern Tunisia."
+            "eventSummary": "The Battle of the Buerat Line occurs, where 51 Division and the New Zealanders encounter opposition while advancing towards Tripoli, leading to significant maneuvers against enemy forces."
         },
         {
             "event": "e_2",
-            "date": "March 2-21, 1943",
+            "date": "23rd January 1943",
             "locations": [
-                "l_2",
-                "l_4",
                 "l_5"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_8"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The Battle of Medenine is marked by Eighth Army's defensive preparations against persistent enemy attacks aiming to breach the Mareth line."
+            "eventSummary": "The Eighth Army enters Tripoli, accepted peacefully by the local officials amidst limited destruction."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd January 1943",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_8"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "General Montgomery receives the formal surrender of the Italian authorities outside of Tripoli, marking a significant point in the campaign."
         }
     ]
 }

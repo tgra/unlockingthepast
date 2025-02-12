@@ -9,90 +9,66 @@
             "l_1": "Norwegian coast",
             "l_2": "position 68 51 N. 8 34 E.",
             "l_3": "position 69 35 N. 10 16 E.",
-            "l_4": "position 71 04 N. 15 56 E.",
-            "l_5": "position 70 49 N. 11 40 E."
+            "l_4": "position 70 49 N. 11 40 E.",
+            "l_5": "position 71 04 N. 15 56 E."
         },
         "events": {
-            "e_1": "Search for SEANYMPH",
-            "e_2": "Loss of X.8",
-            "e_3": "Contact between STUBBORN and SEANYMPH",
-            "e_4": "Explosion of jettisoned charge from X.8"
+            "e_1": "Loss of X.8",
+            "e_2": "Search for SEANYMPH",
+            "e_3": "Jettison of starboard charge from X.8",
+            "e_4": "Explosion of charge after jettison"
         },
         "organisations": {
-            "o_1": "Admiralty"
+            "o_1": "Royal Navy"
         }
     },
     "keywords": [
-        "U-boat",
-        "signal",
-        "tow",
-        "dive",
-        "operation",
-        "search",
-        "loss",
-        "explosion"
+        "Submarine",
+        "Towing",
+        "Search",
+        "Jettison",
+        "Explosion"
     ],
     "themes": [
         "Military Operations",
-        "Loss at Sea",
-        "Naval Coordination"
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
             "e_4"
         ],
-        "Naval Coordination": [
+        "Naval Warfare": [
             "e_1",
-            "e_3"
-        ],
-        "Loss at Sea": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th September",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "On 15th September, SEANYMPH initiates a search operation after losing contact with X.8."
-        },
-        {
-            "event": "e_2",
             "date": "17th September",
             "locations": [
                 "l_1"
             ],
             "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "On 17th September, the loss of X.8 is realized, marking a regrettable event in the operation."
+            "eventSummary": "The regrettable loss of X.8 is discovered by Admiral (Submarines) days later due to enforced W/T silence."
         },
         {
-            "event": "e_3",
-            "date": "17th September",
+            "event": "e_2",
+            "date": "15th September",
             "locations": [
-                "l_4"
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -100,16 +76,14 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "On 17th September, STUBBORN and SEANYMPH make contact, exchanging vital information regarding the search."
+            "connectedEvents": [],
+            "eventSummary": "SEANYMPH searches the area unsuccessfully and informs Admiral (Submarines) of the loss of X.8."
         },
         {
-            "event": "e_4",
+            "event": "e_3",
             "date": "17th September",
             "locations": [
-                "l_1"
+                "l_5"
             ],
             "persons": [
                 "p_3"
@@ -118,9 +92,24 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "On 17th September, an explosion occurs after the command to jettison a charge from X.8, which causes no damage."
+            "eventSummary": "Lieutenant B. M. McFarlane of X.8 decides to jettison the starboard charge due to difficulties in maintaining trim."
+        },
+        {
+            "event": "e_4",
+            "date": "17th September",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "After the jettison of the starboard charge from X.8, an explosion occurs about 1,000 yards astern."
         }
     ]
 }

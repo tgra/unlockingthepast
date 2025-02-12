@@ -1,96 +1,118 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Lieutenant L. E. P. Jones"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Kola Inlet",
-            "l_2": "Bear Island",
-            "l_3": "United Kingdom"
+            "l_1": "Cape Wrath",
+            "l_2": "Akureyri",
+            "l_3": "Bear Island",
+            "l_4": "Lofotens",
+            "l_5": "Narvik",
+            "l_6": "Alltenfiord",
+            "l_7": "Kola Inlet",
+            "l_8": "Scapa",
+            "l_9": "Russia",
+            "l_10": "Barentsburg",
+            "l_11": "Reykjavik"
         },
         "events": {
-            "e_1": "Engagement of ACHATES with Enemy Ship",
-            "e_2": "Convoy Arrival at Kola Inlet",
-            "e_3": "Convoy Avoidance of U-boats"
+            "e_1": "P.Q.18",
+            "e_2": "Q.P.14",
+            "e_3": "Return of Hampden Crews",
+            "e_4": "P.Q.17"
         },
         "organisations": {
-            "o_1": "British Royal Navy"
+            "o_1": "Home Fleet",
+            "o_2": "German Air Force",
+            "o_3": "Soviet Government",
+            "o_4": "Admiralty"
         }
     },
     "keywords": [
-        "ACHATES",
-        "Convoy",
-        "Enemy Ships",
-        "Survivors",
-        "British Royal Navy"
+        "convoys",
+        "U-boat",
+        "air attack",
+        "merchant ships",
+        "submarine",
+        "Hampden crews"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Survivor Rescue"
+        "Logistics",
+        "Naval Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Logistics": [
             "e_3"
         ],
-        "Naval Engagement": [
-            "e_1"
-        ],
-        "Survivor Rescue": [
+        "Naval Engagements": [
+            "e_1",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "During the engagement, the ACHATES faces heavy enemy fire, sustaining significant damage and resulting in the loss of its commanding officer while screening the convoy until it sinks."
-        },
-        {
-            "event": "e_2",
-            "date": "Unknown",
+            "date": "September 26, 1942",
             "locations": [
                 "l_1"
             ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The P.Q.18 convoy, consisting of merchant ships, is reported as having arrived with losses over air and U-boat attacks."
+        },
+        {
+            "event": "e_2",
+            "date": "September 1942",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Despite previous attacks, the convoy arrives safely at Kola Inlet, reflecting effective defensive actions by escorting forces."
+            "eventSummary": "The Q.P.14 convoy encountered similar threats as the previous one, with U-boat and air attacks resulting in losses."
         },
         {
             "event": "e_3",
-            "date": "Unknown",
+            "date": "October 13, 1942",
             "locations": [
-                "l_3"
+                "l_6",
+                "l_9"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4"
             ],
+            "connectedEvents": [],
+            "eventSummary": "Following the passages of P.Q.18 and Q.P.14, ships return to bring back Hampden aircraft crews stationed in Russia."
+        },
+        {
+            "event": "e_4",
+            "date": "October 1942",
+            "locations": [],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "In a strategic maneuver, the convoy avoids U-boat patrols thanks to radar assistance and navigational efforts from commanding officers."
+            "connectedEvents": [],
+            "eventSummary": "The P.Q.17 convoy faced attacks from U-boats and bombers, resulting in significant losses."
         }
     ]
 }

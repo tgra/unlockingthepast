@@ -1,184 +1,128 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Commander 27 Australian Infantry Brigade",
-            "p_2": "Commander Western Area",
-            "p_3": "A.O.C.",
-            "p_4": "Commander 12 Brigade",
-            "p_5": "Commander 44 Brigade Group",
-            "p_6": "Commander 6/15 Brigade",
-            "p_7": "Brigade Commander"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Singapore Island",
-            "l_2": "Changi",
-            "l_3": "Singapore Town",
-            "l_4": "Pasir Laba",
-            "l_5": "Kallang aerodrome",
-            "l_6": "MacRitchie Reservoir",
-            "l_7": "Peirce Reservoir",
-            "l_8": "Bukit Timah",
-            "l_9": "Causeway",
-            "l_10": "Kranji",
-            "l_11": "River Kranji",
-            "l_12": "Keat Hong Village",
-            "l_13": "Bulim Village",
-            "l_14": "Jurong",
-            "l_15": "River Jurong",
-            "l_16": "Bukit Mandai",
-            "l_17": "Netherlands East Indies",
-            "l_18": "Racecourse area"
+            "l_1": "Southern Siam",
+            "l_2": "Malaya",
+            "l_3": "Johore",
+            "l_4": "Penang-Province Wellesley Area",
+            "l_5": "Singapore",
+            "l_6": "Singapore Town",
+            "l_7": "Changi",
+            "l_8": "Siglap",
+            "l_9": "Ayer Gomureh"
         },
         "events": {
             "e_1": "Attack on Singapore",
-            "e_2": "Enemy landing at Causeway",
-            "e_3": "Withdrawal of 27 Australian Infantry Brigade",
-            "e_4": "Moving positions of 6/15 Brigade",
-            "e_5": "Naval force operation in the Johore Straits",
-            "e_6": "Kranji-Jurong Line establishment"
+            "e_2": "Landing Attacks",
+            "e_3": "Sabotage Attempts",
+            "e_4": "Combined Operations"
         },
         "organisations": {
-            "o_1": "27 Australian Brigade",
-            "o_2": "12 Brigade",
-            "o_3": "6/15 Brigade",
-            "o_4": "44 Brigade Group",
-            "o_5": "Far East War Council"
+            "o_1": "Federated Malay States Volunteer Force",
+            "o_2": "Straits Settlements",
+            "o_3": "Unfederated Malay States",
+            "o_4": "Johore Military Forces",
+            "o_5": "Johore Volunteer Engineers"
         }
     },
     "keywords": [
-        "Singapore Town",
-        "Changi area",
-        "Japanese Air Force",
-        "artillery",
-        "naval operations",
-        "Defences",
-        "Kranji-Jurong Line"
+        "Japanese",
+        "defence",
+        "Air Forces",
+        "food supplies",
+        "Naval Forces",
+        "Volunteer units",
+        "sabotage",
+        "civil disturbance"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Withdrawals",
-        "Artillery Engagements",
-        "Naval Warfare"
+        "Defence Strategy",
+        "Sabotage Threat",
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
             "e_4"
         ],
-        "Naval Warfare": [
-            "e_5"
+        "Defence Strategy": [
+            "e_1",
+            "e_2"
         ],
-        "Strategic Withdrawals": [
+        "Sabotage Threat": [
             "e_3"
         ],
-        "Establishing Defenses": [
-            "e_6"
-        ]
+        "Diplomacy": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 9-10, 1942",
+            "date": "1937",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3",
                 "e_4"
             ],
-            "eventSummary": "Fighting in Singapore continues as the enemy concentrates their artillery and attacks the defenses."
+            "eventSummary": "The Attack on Singapore illustrates the strategic military planning by Japanese forces, which threatens the security of the region."
         },
         {
             "event": "e_2",
-            "date": "February 9, 1942",
+            "date": "",
             "locations": [
-                "l_9",
-                "l_10"
+                "l_2",
+                "l_5"
             ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The enemy successfully lands west of the Causeway, leading to confused fighting."
+            "eventSummary": "Landing Attacks represent a significant shift in the scale of military operations in Malaya, indicating an increased risk from enemy forces."
         },
         {
             "event": "e_3",
-            "date": "February 10, 1942",
+            "date": "",
             "locations": [
-                "l_16"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "27 Australian Infantry Brigade withdraws to new positions after sustaining pressure from the enemy."
+            "eventSummary": "Sabotage Attempts highlight the ongoing threat from enemy nationals residing in Malaya, which complicates military defence efforts."
         },
         {
             "event": "e_4",
-            "date": "February 10, 1942",
+            "date": "",
             "locations": [
-                "l_16",
-                "l_8"
+                "l_2"
             ],
-            "persons": [
-                "p_6"
-            ],
-            "organisations": [
-                "o_3"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "6/15 Brigade occupies key positions near the headwaters of River Jurong."
-        },
-        {
-            "event": "e_5",
-            "date": "February 10, 1942",
-            "locations": [
-                "l_17"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A naval force conducts operations in the Johore Straits attempting to disrupt enemy communications."
-        },
-        {
-            "event": "e_6",
-            "date": "February 10, 1942",
-            "locations": [
-                "l_10",
-                "l_11"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Kranji-Jurong Line is established to defend against western attacks."
+            "eventSummary": "Combined Operations reflect the new military strategies employed by Japanese forces, significantly impacting the preparation for defending against attacks."
         }
     ]
 }

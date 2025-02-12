@@ -1,84 +1,116 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir John C. Tovey",
-            "p_2": "Rear-Admiral H. M. Burrough",
-            "p_3": "Brigadier J. C. Haydon"
+            "p_1": "PRINCE LEOPOLD",
+            "p_2": "Lieutenant-Colonel J. F. Durnford-Slater",
+            "p_3": "Major J. M. T. F. Churchill",
+            "p_4": "PRINCE CHARLES"
         },
         "locations": {
-            "l_1": "Vaagso Island",
-            "l_2": "S.W. Norway",
-            "l_3": "London"
+            "l_1": "South Vaagso",
+            "l_2": "Vaagsfiord",
+            "l_3": "KENYA",
+            "l_4": "Halnoesvik",
+            "l_5": "Maaloy",
+            "l_6": "Ulvesund",
+            "l_7": "North Vaagso",
+            "l_8": "South Vaagso"
         },
         "events": {
-            "e_1": "Operation Archery",
-            "e_2": "Operation Anklet"
+            "e_1": "Landing at South Vaagso",
+            "e_2": "Attack on Rugsundo battery",
+            "e_3": "Naval Bombardment of Maaloy"
         },
         "organisations": {
-            "o_1": "Home Fleet",
-            "o_2": "Coastal Command",
-            "o_3": "Bomber Command"
+            "o_1": "Hampden bomber",
+            "o_2": "Group 1",
+            "o_3": "Group 2",
+            "o_4": "Group 3",
+            "o_5": "Group 4",
+            "o_6": "Group 5"
         }
     },
     "keywords": [
-        "military raid",
-        "economic objectives",
-        "cooperation",
-        "naval operations"
+        "bombs",
+        "casualties",
+        "aircraft",
+        "Naval bombardment",
+        "military operation",
+        "enemy defences"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Cooperation"
+        "Combat Engagements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Planning": [
-            "e_1"
-        ],
-        "Cooperation": [
-            "e_1"
+        "Combat Engagements": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27 December 1941",
+            "date": "Unknown",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_8",
+                "l_4"
             ],
             "persons": [
                 "p_1",
+                "p_4",
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The troops land at South Vaagso amid opposition, with bombing support contributing to their success."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A coordinated attack on the Rugsundo battery was executed with mixed success."
+        },
+        {
+            "event": "e_3",
+            "date": "Unknown",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
                 "p_2",
                 "p_3"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Archery is a well-conceived and executed military raid on military and economic objectives in the vicinity of Vaagso Island, intended to harass enemy coastal defenses and divert attention from larger operations."
-        },
-        {
-            "event": "e_2",
-            "date": "Date unspecified",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Operation Anklet is mentioned as a longer-term operation taking place in the Lofoten Islands."
+            "connectedEvents": [],
+            "eventSummary": "Naval bombardment of Maaloy was executed effectively, leading to the incapacitation of enemy troops."
         }
     ]
 }

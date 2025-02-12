@@ -1,77 +1,81 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander Western Area",
-            "p_2": "Commander 22 Australian Infantry Brigade",
-            "p_3": "Commander 3 Indian Corps"
+            "p_1": "A.J.F.",
+            "p_2": "Rear-Admiral Malaya",
+            "p_3": "Brigadier General Staff",
+            "p_4": "Brigadier i/c Administration Headquarters Malaya Command"
         },
         "locations": {
-            "l_1": "Ama Keng Village",
-            "l_2": "River Murai",
-            "l_3": "Namazie Estate",
-            "l_4": "Singapore Town",
-            "l_5": "Tengah",
-            "l_6": "Bukit Panjang Keat Hong Village",
-            "l_7": "Kranji Jurong Line",
-            "l_8": "Bukit Timah Village",
-            "l_9": "Racecourse"
+            "l_1": "The Gap",
+            "l_2": "Buona Vista Road",
+            "l_3": "Alexandra area",
+            "l_4": "Tyersall Tanglin area",
+            "l_5": "Braddell road",
+            "l_6": "Thomson road",
+            "l_7": "Paya Lebar",
+            "l_8": "Southern Area",
+            "l_9": "Kallang aerodrome",
+            "l_10": "Singapore Town",
+            "l_11": "Pulau Brani",
+            "l_12": "Pulau Bukum",
+            "l_13": "Blakang Mati",
+            "l_14": "Tekong",
+            "l_15": "Pengerang Area",
+            "l_16": "Fort Canning",
+            "l_17": "Javan waters"
         },
         "events": {
-            "e_1": "Attack on Ama Keng Village",
-            "e_2": "Withdrawal of Troops to Perimeters",
-            "e_3": "Counter-Attack Preparations at Tengah",
-            "e_4": "Air Attack on Pasir Laba Battery",
-            "e_5": "Formation of New Command Reserve",
-            "e_6": "Discussion of Defensive Positions"
+            "e_1": "Conference at Fort Canning",
+            "e_2": "Counter-attack discussion",
+            "e_3": "Evacuation planning",
+            "e_4": "Decision to sail to Java"
         },
         "organisations": {
-            "o_1": "2/20 Battalion A.I.F.",
-            "o_2": "2/18 Battalion A.I.F.",
-            "o_3": "2/19 Battalion A.I.F.",
-            "o_4": "22 Australian Infantry Brigade",
-            "o_5": "12 Indian Infantry Brigade",
-            "o_6": "6/15 Indian Infantry Brigade"
+            "o_1": "A.I.F.",
+            "o_2": "11 Indian Division",
+            "o_3": "18 British Division",
+            "o_4": "Military Nursing Service",
+            "o_5": "G.H.Q. South-West Pacific"
         }
     },
     "keywords": [
-        "enemy attack",
-        "battalion withdrawal",
-        "counter-attack",
-        "coast defence",
-        "defensive positions"
+        "Singapore",
+        "defence",
+        "evacuation",
+        "operations",
+        "casualties"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Decisions",
-        "Defensive Strategy"
+        "Evacuation Plans",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
+            "e_2"
+        ],
+        "Evacuation Plans": [
             "e_3",
             "e_4"
         ],
-        "Defensive Strategy": [
+        "Strategic Decisions": [
             "e_2",
-            "e_5",
-            "e_6"
-        ],
-        "Tactical Decisions": [
-            "e_3",
-            "e_6"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "13th February",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_16"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
@@ -79,16 +83,16 @@
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The enemy launches a strong attack on Ama Keng Village, targeting the positions of the 2/18 and 2/19 Battalions."
+            "eventSummary": "A conference is held at Fort Canning to discuss future operations and the pressing situation regarding troop exhaustion."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "13th February",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_16"
             ],
             "persons": [
                 "p_1"
@@ -102,71 +106,43 @@
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "Amidst confusion, battalion commanders order forward troops to withdraw to their perimeters, leading to significant disorganization."
+            "eventSummary": "Discussion of a counter-attack is organized among commanders, though agreement arises that due to troop exhaustion, success is unlikely."
         },
         {
             "event": "e_3",
-            "date": "Not specified",
+            "date": "13th February",
             "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Preparations for a counter-attack at Tengah are initiated after receiving orders for the 2/29 Battalion to reinforce."
-        },
-        {
-            "event": "e_4",
-            "date": "0700 hrs.",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Pasir Laba Battery is attacked by enemy dive-bombers, resulting in the destruction of both guns and casualties among the crew."
-        },
-        {
-            "event": "e_5",
-            "date": "Not specified",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_6"
-            ],
-            "eventSummary": "The Commander of the 3 Indian Corps is directed to prepare a new reserve, ensuring troops are on standby for deployment."
-        },
-        {
-            "event": "e_6",
-            "date": "Not specified",
-            "locations": [
-                "l_8"
+                "l_17"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1",
+                "e_4"
             ],
-            "eventSummary": "A strategic discussion is held regarding the defensive positions of the 44 Brigade Group, assessing their viability against enemy advances."
+            "eventSummary": "Plans for evacuation are discussed, prioritizing the Military Nursing Service and trained personnel due to their value in ongoing operations."
+        },
+        {
+            "event": "e_4",
+            "date": "13th February",
+            "locations": [
+                "l_17"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Rear-Admiral decides to sail remaining ships to Java as the last organized evacuation opportunity from Singapore."
         }
     ]
 }

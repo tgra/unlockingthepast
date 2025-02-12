@@ -1,61 +1,53 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Air Marshal Sir Roderic Hill"
+        },
         "locations": {
-            "l_1": "Crisbecq",
-            "l_2": "St. Martin de Varreville",
-            "l_3": "Quistreham",
-            "l_4": "Maisy",
-            "l_5": "Mont Fleury",
-            "l_6": "La Parnelle",
-            "l_7": "St. Pierre du Mont",
-            "l_8": "Merville/Franceville",
-            "l_9": "Houlgate",
-            "l_10": "Longues",
-            "l_11": "Cherbourg",
-            "l_12": "St. Malo",
-            "l_13": "Brest"
+            "l_1": "Holland",
+            "l_2": "Belgium",
+            "l_3": "France",
+            "l_4": "Low Countries",
+            "l_5": "United Kingdom",
+            "l_6": "London",
+            "l_7": "Kent",
+            "l_8": "Greater London"
         },
         "events": {
             "e_1": "D-Day",
-            "e_2": "D + 1"
+            "e_2": "Overlord",
+            "e_3": "flying bomb activity"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)",
+            "o_1": "R.A.F. Bomber Command",
             "o_2": "United States Eighth Air Force",
-            "o_3": "Fleet Air Arm",
-            "o_4": "A.E.A.F.",
-            "o_5": "R.A.F. Bomber Command",
-            "o_6": "R.A.F. Second Tactical Air Force"
+            "o_3": "A.E.A.F.",
+            "o_4": "A.D.G.B."
         }
     },
     "keywords": [
-        "Coastal Command",
-        "sorties",
-        "naval forces",
-        "air bombardment",
-        "D-Day",
-        "naval gunfire"
+        "airfields",
+        "bombing",
+        "enemy",
+        "flying bombs",
+        "defence",
+        "sorties"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Naval Operations",
-        "Coastal Defense"
+        "Defence",
+        "Air Power"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Air Support": [
-            "e_1",
-            "e_2"
+        "Defence": [
+            "e_3"
         ],
-        "Naval Operations": [
-            "e_1"
-        ],
-        "Coastal Defense": [
+        "Air Power": [
             "e_1",
             "e_2"
         ]
@@ -63,54 +55,70 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th June",
+            "date": "6th June 1944 to 30th September 1944",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10"
+                "l_4"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "On D-Day, the Allied air forces conduct extensive sorties to provide air cover and bombard coastal defenses prior to the assault landing."
+            "eventSummary": "D-Day marks the beginning of significant military operations in World War II, leading to extensive bombing attacks on enemy airfields and operations."
         },
         {
             "event": "e_2",
-            "date": "7th June",
+            "date": "6th June 1944",
             "locations": [
-                "l_11",
-                "l_12",
-                "l_13"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "On D + 1, the United States Eighth Air Force continues bombardment efforts and supports naval operations following the initial landings."
+            "eventSummary": "Operation Overlord is the code name for the Allied invasion of Nazi-occupied France, involving crucial air and ground operations."
+        },
+        {
+            "event": "e_3",
+            "date": "12th June to 30th September 1944",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Flying bomb activity begins with the enemy launching attacks against London, prompting defensive measures from the Allies."
         }
     ]
 }

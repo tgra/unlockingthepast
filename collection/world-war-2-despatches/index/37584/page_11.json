@@ -1,90 +1,108 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unnamed Military Officer"
+            "p_1": "Brigadier Morgan",
+            "p_2": "Norwegian Commander-in-Chief",
+            "p_3": "Major-General Paget",
+            "p_4": "Brigadier Kent Lemon",
+            "p_5": "Lieut.- Colonel Robinson"
         },
         "locations": {
-            "l_1": "Andalsnes",
-            "l_2": "Gudbrandsdal valley",
-            "l_3": "Norway",
-            "l_4": "Margate",
-            "l_5": "Namsos"
+            "l_1": "Norway",
+            "l_2": "Namsos",
+            "l_3": "Andalsnes"
         },
         "events": {
-            "e_1": "Operation in Central Norway",
-            "e_2": "Aerial Bombing Campaign"
+            "e_1": "Evacuation of Central Norway",
+            "e_2": "German advance",
+            "e_3": "rearguard actions"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Fleet Air Arm"
+            "o_1": "Royal Engineers",
+            "o_2": "Royal Navy",
+            "o_3": "Fleet Air Arm",
+            "o_4": "15th Infantry Brigade",
+            "o_5": "1 Green Howards"
         }
     },
     "keywords": [
-        "Norwegian torpedo boat",
-        "British troops",
-        "aerodrome",
-        "bombing",
-        "evacuation",
-        "Air Ministry"
+        "military strategy",
+        "German advance",
+        "Norwegian Army",
+        "rearguard actions",
+        "air support"
     ],
     "themes": [
         "Military Operations",
-        "Air Strategy",
-        "Logistics",
-        "Command Structure"
+        "Leadership",
+        "Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Air Strategy": [
-            "e_2"
-        ],
-        "Logistics": [
+        "Leadership": [
             "e_1"
         ],
-        "Command Structure": [
-            "e_1"
+        "Cooperation": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date not specified",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_4",
-                "l_5"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "Operation in Central Norway is hindered by enemy bombings, impacting logistics and requiring a more organized air defense strategy."
+            "eventSummary": "The evacuation of Central Norway underscores the effective support from the Royal Navy and the skillful tactics employed despite facing the rapid German advance."
         },
         {
             "event": "e_2",
-            "date": "Date not specified",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The German advance poses a critical threat to the Norwegian Army, necessitating swift military decisions and adjustments."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
             ],
-            "eventSummary": "Aerial Bombing Campaign involves dropping heavy and incendiary bombs on enemy positions, rendering the port unusable and sinking several vessels."
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Multiple rearguard actions are conducted effectively to facilitate withdrawal and organize defenses against the advancing enemy."
         }
     ]
 }

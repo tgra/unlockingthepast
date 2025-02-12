@@ -1,107 +1,104 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Survey",
-            "p_2": "Chief Administrative Officers",
-            "p_3": "Representatives from the War Office",
-            "p_4": "Representatives of the Ministry of War Transport",
-            "p_5": "Royal Navy"
+            "p_1": "W. G. Holmes",
+            "p_2": "M. C. Dempsey",
+            "p_3": "I. T. P. Hughes",
+            "p_4": "D. F. McConnell"
         },
         "locations": {
-            "l_1": "Cairo",
-            "l_2": "Sicily",
-            "l_3": "Catania",
-            "l_4": "Tunisia",
-            "l_5": "North Africa",
-            "l_6": "Modica",
-            "l_7": "Gela",
-            "l_8": "Tripoli",
-            "l_9": "Sousse",
-            "l_10": "Sfax"
+            "l_1": "Cyrenaica",
+            "l_2": "Transjordan",
+            "l_3": "Palestine",
+            "l_4": "Nabha",
+            "l_5": "Bhopal",
+            "l_6": "Jaipur",
+            "l_7": "Jodhpur"
         },
         "events": {
-            "e_1": "Eastern Task Force Assault on Sicily",
-            "e_2": "Evacuation of casualties from beaches"
+            "e_1": "Operations in Cyrenaica",
+            "e_2": "Ninth Army operations",
+            "e_3": "Fighting French operations"
         },
         "organisations": {
-            "o_1": "Allied Force Headquarters",
-            "o_2": "Eighth Army",
-            "o_3": "Twelfth Army Headquarters",
-            "o_4": "Inter-services Committee"
+            "o_1": "Ninth Army",
+            "o_2": "Fighting French",
+            "o_3": "British Armoured Division",
+            "o_4": "Royal Horse Artillery",
+            "o_5": "Arab Legion"
         }
     },
     "keywords": [
-        "Allied Force Headquarters",
-        "Eastern Task Force",
-        "Catania",
-        "Sicily",
-        "Assault landing",
-        "Planning",
-        "Medical evacuation",
-        "Anti-aircraft defense"
+        "Armoured Brigade",
+        "Infantry Brigade",
+        "Royal Tank Regt",
+        "Anti-tank Regiment",
+        "Regimental Units"
     ],
     "themes": [
         "Military Operations",
-        "Planning and Coordination",
-        "Medical Evacuation",
-        "Defensive Preparations"
+        "Army Structure",
+        "Allied Forces"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Army Structure": [
+            "e_1",
             "e_2"
         ],
-        "Planning and Coordination": [
-            "e_1"
-        ],
-        "Medical Evacuation": [
-            "e_2"
-        ],
-        "Defensive Preparations": []
+        "Allied Forces": [
+            "e_3"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of planning not specified",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2",
                 "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The planning for the Eastern Task Force's assault on Sicily involves a complex coordination of forces divided across different locations, with significant adjustments made to the original outline due to changes in deployment."
+            "eventSummary": "Operations in Cyrenaica involve the Ninth Army and British armored forces."
         },
         {
             "event": "e_2",
-            "date": "Date of evacuation not specified",
-            "locations": [
-                "l_8",
-                "l_9",
-                "l_10"
-            ],
+            "date": "",
+            "locations": [],
             "persons": [
-                "p_5"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The evacuation of casualties from the beaches is orchestrated with arrangements made for transporting wounded directly to Tripoli, emphasizing the need for extensive medical preparations."
+            "eventSummary": "Ninth Army operations are conducted under the command of Lt.Gen. W. G. Holmes."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Fighting French operations involve various infantry and mechanized regiments."
         }
     ]
 }

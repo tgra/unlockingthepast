@@ -1,72 +1,104 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General",
-            "p_2": "Air Force's chief"
+            "p_1": "Brigade Commander"
         },
         "locations": {
-            "l_1": "Northern Italy",
-            "l_2": "Austria",
-            "l_3": "Vienna",
-            "l_4": "Linz",
-            "l_5": "Jugoslavia",
-            "l_6": "Freilassing",
-            "l_7": "Dravograd",
-            "l_8": "Maribor",
-            "l_9": "Graz",
-            "l_10": "St. Polten",
-            "l_11": "Nove Zamky",
-            "l_12": "Germany",
-            "l_13": "Switzerland"
+            "l_1": "Porto Maggiore",
+            "l_2": "Argenta Gap",
+            "l_3": "Po River",
+            "l_4": "Consandola",
+            "l_5": "Massa Lombarda",
+            "l_6": "Medicina",
+            "l_7": "Conselice",
+            "l_8": "Imola",
+            "l_9": "Castel San Pietro",
+            "l_10": "Bologna",
+            "l_11": "Po Valley",
+            "l_12": "Mt. Pero",
+            "l_13": "Vergato",
+            "l_14": "Montese",
+            "l_15": "Reno River",
+            "l_16": "Praduro",
+            "l_17": "Casalecchio"
         },
         "events": {
-            "e_1": "Battle for Vienna",
-            "e_2": "Air attacks by M.A.S.A.F.",
-            "e_3": "Interdiction of Italian communications"
+            "e_1": "Attack on Argenta Gap",
+            "e_2": "Fifth Army Offensive",
+            "e_3": "Raid on Casalecchio"
         },
         "organisations": {
-            "o_1": "M.A.S.A.F.",
-            "o_2": "Red Army",
-            "o_3": "Air C.-in-C"
+            "o_1": "Eighth Army",
+            "o_2": "Fifth Army",
+            "o_3": "No. 205 Group",
+            "o_4": "Desert Air Force",
+            "o_5": "15th Air Force",
+            "o_6": "Tactical Air Force",
+            "o_7": "XXII T.A.C."
         }
     },
     "keywords": [
-        "M.A.S.A.F.",
-        "Vienna",
-        "railway communications",
-        "air attacks",
-        "strategic fighters",
-        "Interdiction",
-        "January 1945"
+        "sorties",
+        "amphibious landing",
+        "Tiger tank",
+        "fighter-bombers",
+        "bombing attack",
+        "heavy bombers",
+        "attack",
+        "bridgehead",
+        "military operations",
+        "air support"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Air Warfare",
-        "Railway Interdiction",
-        "Allied Support"
+        "Air Support",
+        "Tactical Assault",
+        "Artillery Strikes"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Strategic Decisions": [
+            "e_2",
             "e_3"
         ],
-        "Air Warfare": [
+        "Air Support": [
+            "e_1",
             "e_2"
         ],
-        "Railway Interdiction": [
-            "e_3"
+        "Tactical Assault": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 7-13, 1945",
+            "date": "April 13, 1945",
             "locations": [
-                "l_3",
+                "l_1",
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On April 13, 1945, the Eighth Army launched an attack on the Argenta Gap, supported by air operations targeting enemy positions."
+        },
+        {
+            "event": "e_2",
+            "date": "April 14, 1945",
+            "locations": [
                 "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
                 "l_10"
             ],
             "persons": [
@@ -74,50 +106,33 @@
             ],
             "organisations": [
                 "o_2",
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Bitter street fighting occurs in Vienna, culminating in its complete occupation by the Red Army."
-        },
-        {
-            "event": "e_2",
-            "date": "Throughout April 1945",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_10",
-                "l_11"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
+                "o_1",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "M.A.S.A.F. executes a series of air attacks targeting railway communication lines to support the Red Army's advance."
+            "eventSummary": "On April 14, 1945, the Fifth Army Offensive commenced with significant coordination among various air and ground units, aimed at securing critical positions."
         },
         {
             "event": "e_3",
-            "date": "Beginning of 1945",
+            "date": "April 16, 1945",
             "locations": [
-                "l_1"
+                "l_17"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Air Force focuses on disrupting enemy supply routes into Italy, preventing the mobility of German forces."
+            "eventSummary": "On the night of April 16, 1945, a successful raid by No. 205 Group targeted communications in Casalecchio, disrupting German troop movements."
         }
     ]
 }

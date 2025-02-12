@@ -1,91 +1,141 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "No. 205 Group",
-            "p_2": "Army Commander",
-            "p_3": "R.A.F."
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Mediterranean",
-            "l_3": "South of the Po"
+            "l_1": "North-East Italy",
+            "l_2": "Austria",
+            "l_3": "Jugoslavia",
+            "l_4": "Southern Germany",
+            "l_5": "Verona",
+            "l_6": "Parma",
+            "l_7": "Brenner",
+            "l_8": "Venetian Plain",
+            "l_9": "Brenta",
+            "l_10": "Padua",
+            "l_11": "Piave River",
+            "l_12": "Nervesa",
+            "l_13": "Ponte di Piave",
+            "l_14": "Livenza River",
+            "l_15": "Tagliamento River",
+            "l_16": "Latisana",
+            "l_17": "Casarsa",
+            "l_18": "Po valley",
+            "l_19": "Bressana Bottarone",
+            "l_20": "Milan",
+            "l_21": "Villafranca",
+            "l_22": "Ghedi",
+            "l_23": "Thiene",
+            "l_24": "Bergamo"
         },
         "events": {
-            "e_1": "Battle in Italy",
-            "e_2": "Campaign in the Mediterranean"
+            "e_1": "Italian battle",
+            "e_2": "M.A.S.A.F. attacks on railway system",
+            "e_3": "M.A.C.A.F. operations during Italian campaign",
+            "e_4": "Tactical Air Force night-fighters' reconnaissance flights"
         },
         "organisations": {
-            "o_1": "Allied Air Forces",
-            "o_2": "Desert Air Force"
+            "o_1": "M.A.S.A.F.",
+            "o_2": "M.A.C.A.F.",
+            "o_3": "M.A.T.A.F."
         }
     },
     "keywords": [
-        "Allied armies",
-        "Italian Partisans",
-        "tactical bombing",
-        "strategic air power",
-        "ground forces",
-        "German forces",
-        "morale"
+        "bombers",
+        "railway communications",
+        "aircraft",
+        "Allied Air Force",
+        "reconnaissance",
+        "Partisan Forces"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Warfare",
-        "Collaboration",
-        "Supply Chain Issues"
+        "Air Operations",
+        "Logistics",
+        "Destruction of Infrastructure"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Aerial Warfare": [
             "e_1",
             "e_2"
         ],
-        "Collaboration": [
-            "e_1"
+        "Air Operations": [
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Supply Chain Issues": [
+        "Logistics": [
+            "e_3"
+        ],
+        "Destruction of Infrastructure": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 9-13",
+            "date": "April 1945",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_2",
+                "l_3",
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "During the battle in Italy, Allied Air Forces provide crucial air support that significantly helps ground troops to advance and harass enemy forces, showcasing effective use of tactical and strategic bombing."
+            "eventSummary": "The Italian battle sees significant military activity by both Allied and Axis forces during the month of April."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "April 24, 1945",
             "locations": [
+                "l_1",
                 "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The campaign in the Mediterranean highlights the importance of air power in depleting enemy resources and sustaining Allied operations."
+            "eventSummary": "M.A.S.A.F. day and night bombers attack railway communications, damaging critical infrastructure in North-East Italy and Austria."
+        },
+        {
+            "event": "e_3",
+            "date": "April 1945",
+            "locations": [
+                "l_1",
+                "l_18"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "M.A.C.A.F. conducts operations that significantly impact enemy logistics by destroying vehicles and damaging rail networks."
+        },
+        {
+            "event": "e_4",
+            "date": "April 8-25, 1945",
+            "locations": [
+                "l_21",
+                "l_22",
+                "l_24"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Tactical Air Force night-fighters conduct reconnaissance flights over enemy airfields, resulting in the destruction of enemy aircraft."
         }
     ]
 }

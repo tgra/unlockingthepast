@@ -1,94 +1,98 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "POPE",
-            "p_2": "EXETER",
-            "p_3": "ENCOUNTER",
-            "p_4": "Japanese invaders"
+            "p_1": "Admiral",
+            "p_2": "Navigating Officer"
         },
         "locations": {
-            "l_1": "Southwest",
-            "l_2": "Eastward",
-            "l_3": "port",
-            "l_4": "starboard",
-            "l_5": "04 degrees 38 minutes South, 112 degrees 28 minutes East"
+            "l_1": "Sourabaya",
+            "l_2": "Macassar",
+            "l_3": "Colombo",
+            "l_4": "Bawean Island",
+            "l_5": "Sunda Strait"
         },
         "events": {
-            "e_1": "Action involving EXETER",
-            "e_2": "Sinking of EXETER"
+            "e_1": "Enemy air raids",
+            "e_2": "Engagement of EXETER",
+            "e_3": "Funeral of those killed in action"
         },
         "organisations": {
-            "o_1": "Allied air forces",
-            "o_2": "enemy cruisers",
-            "o_3": "enemy destroyers"
+            "o_1": "Dutch Navy",
+            "o_2": "C.C.C.F."
         }
     },
     "keywords": [
-        "cruisers",
-        "destroyers",
-        "smoke screens",
-        "ammunition",
-        "torpedo",
-        "evacuation",
-        "sinking",
-        "explosion"
+        "enemy destroyer",
+        "Allied squadron",
+        "torpedo attack",
+        "Japanese cruiser",
+        "Sourabaya minefields"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Battle Tactics"
+        "Naval Engagements",
+        "Inter-Allied Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Engagement": [
-            "e_1"
+        "Diplomacy": [
+            "e_3"
         ],
-        "Battle Tactics": [
-            "e_1",
+        "Naval Engagements": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 27",
+            "date": "28th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Enemy air raids are continuously observed throughout the daylight of 28th February."
+        },
+        {
+            "event": "e_2",
+            "date": "28th February, 1942",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "During the encounter, cruisers and destroyers engage in a tactical battle at sea, with EXETER facing losses as enemy forces target them effectively."
-        },
-        {
-            "event": "e_2",
-            "date": "February 27",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "EXETER engages in naval action, where various enemy vessels are encountered and a torpedo attack is initiated."
+        },
+        {
+            "event": "e_3",
+            "date": "1700, 28th February",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "EXETER, after taking severe damage and losing power, is ordered to be sunk to prevent enemy capture, finally rolling over and sinking around latitude 04 degrees 38 minutes South and longitude 112 degrees 28 minutes East."
+            "eventSummary": "A funeral for those killed in action takes place at 1700, with full naval honors and support from the Dutch Navy."
         }
     ]
 }

@@ -1,120 +1,162 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Col. van der Post",
-            "p_2": "Air Commodore Staton",
-            "p_3": "Lieut General Maruyama",
-            "p_4": "Brigadier Blackburn",
-            "p_5": "Col. Searle",
-            "p_6": "Brigadier S. R. Pearson",
-            "p_7": "Pilot Officer R. L. Cicurel",
-            "p_8": "General H. D. W. Sitwell",
-            "p_9": "Air Commodore W. E. Staton",
-            "p_10": "Group Captain A. G. Bishop",
-            "p_11": "Col. E. E. Dunlop",
-            "p_12": "Major Saitu"
+            "p_1": "pilot"
         },
         "locations": {
-            "l_1": "Java",
-            "l_2": "Batavia",
-            "l_3": "Bandoeng",
-            "l_4": "Garoet",
-            "l_5": "Tyikadjang",
-            "l_6": "Tasik Malaja"
+            "l_1": "Singapore",
+            "l_2": "Seletar",
+            "l_3": "Tengah",
+            "l_4": "Kota Bahru",
+            "l_5": "Gong Kedah",
+            "l_6": "Machang",
+            "l_7": "Sungei Patani",
+            "l_8": "Penang",
+            "l_9": "Butterworth",
+            "l_10": "Alor Star",
+            "l_11": "Kedah province",
+            "l_12": "Jitra",
+            "l_13": "Singora",
+            "l_14": "Patani",
+            "l_15": "Ban Sadao",
+            "l_16": "South Golok River",
+            "l_17": "Kuantan"
         },
         "events": {
-            "e_1": "Planned Escape from Java",
-            "e_2": "Surrender Negotiations on 12th March",
-            "e_3": "Interrogation on 20th March"
+            "e_1": "air raid on 8th December",
+            "e_2": "Japanese attacks on Northern Airfields",
+            "e_3": "attack against Alor Star",
+            "e_4": "enemy landings in Singora and Patani area",
+            "e_5": "squadrons driven out of aerodromes in N.E. Malaya"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Japanese Army",
-            "o_3": "International Red Cross"
+            "o_1": "Civil A.R.P. organisation",
+            "o_2": "No. 34 (B) Squadron",
+            "o_3": "No. 62 (B) Squadron",
+            "o_4": "Nos. 21 (F) R.A.A.F.",
+            "o_5": "27 (NF) Squadrons",
+            "o_6": "IJIrd Corps"
         }
     },
     "keywords": [
-        "escape plan",
-        "surrender",
-        "interrogation",
-        "Geneva Convention",
-        "Japanese occupation"
+        "air raid",
+        "Japanese attacks",
+        "Kota Bahru",
+        "Alor Star",
+        "Singora",
+        "military squadrons",
+        "aerodromes"
     ],
     "themes": [
         "Military Operations",
-        "Surrender",
-        "Intelligence Gathering",
-        "Prisoners of War"
+        "Aerial Warfare",
+        "Strategic Defense"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Surrender": [
+        "Aerial Warfare": [
+            "e_1",
             "e_2"
         ],
-        "Intelligence Gathering": [
-            "e_3"
+        "Strategic Defense": [
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1942",
+            "date": "8th December",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Col. van der Post organizes an escape plan for Royal Air Force personnel from Java in anticipation of Japanese occupation."
-        },
-        {
-            "event": "e_2",
-            "date": "12th March 1942",
-            "locations": [
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Senior officers sign surrender terms with Lieut General Maruyama, affirming treatment under Geneva Convention standards."
-        },
-        {
-            "event": "e_3",
-            "date": "20th March 1942",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_6",
-                "p_7",
-                "p_8",
-                "p_9"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "A group of senior officers, including Brigadier S. R. Pearson, faces interrogation by the Japanese Intelligence staff while being held in Bandoeng."
+            "eventSummary": "An air raid occurs shortly after 0400 hours, with radar detection providing over 30 minutes warning."
+        },
+        {
+            "event": "e_2",
+            "date": "8th December",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "Japanese forces attack Northern airfields including Kota Bahru and others throughout the day."
+        },
+        {
+            "event": "e_3",
+            "date": "8th December",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A serious attack is launched against Alor Star, damaging No. 62 Squadron's aircraft."
+        },
+        {
+            "event": "e_4",
+            "date": "8th December",
+            "locations": [
+                "l_13",
+                "l_14"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Troops are reported as landing in the Singora-Patani area following reconnaissance."
+        },
+        {
+            "event": "e_5",
+            "date": "8th December",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Squadrons are driven out from their aerodromes in Northern Malaya under heavy enemy pressure."
         }
     ]
 }

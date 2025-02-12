@@ -1,129 +1,123 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant-General B. L. Montgomery",
-            "p_2": "General Alexander",
-            "p_3": "Admiral Sir Andrew Cunningham",
-            "p_4": "Admiral Sir Henry Pridham Whippell",
-            "p_5": "Admiral Sir Henry Harwood",
-            "p_6": "Air Chief Marshal Sir Arthur Tedder",
-            "p_7": "Captain Oliver Lyttelton",
-            "p_8": "Sir Walter Monckton",
-            "p_9": "Mr. Richard Casey",
-            "p_10": "Sir Harold MacMichael",
-            "p_11": "Sir Kinahan Cornwallis",
-            "p_12": "Sir Reader Bullard",
-            "p_13": "Field Marshal Smuts",
-            "p_14": "Nahas Pasha",
-            "p_15": "Hussain Sirry Pasha",
-            "p_16": "Lieutenant-General Sir Alan Cunningham"
+            "p_1": "General Ritchie"
         },
         "locations": {
-            "l_1": "Palestine",
-            "l_2": "Trans-Jordan",
-            "l_3": "Baghdad",
-            "l_4": "Teheran",
-            "l_5": "North Africa",
-            "l_6": "Cyrenaica",
-            "l_7": "Tripolitania",
-            "l_8": "Tobruk",
-            "l_9": "Giarabub",
-            "l_10": "Gialo",
-            "l_11": "Alexandria"
+            "l_1": "Sidi Muftah",
+            "l_2": "Segnali",
+            "l_3": "Gazala",
+            "l_4": "Bir Hacheim",
+            "l_5": "Bir Harmat",
+            "l_6": "Alem Hamza",
+            "l_7": "Tobruk",
+            "l_8": "Got el Scerab"
         },
         "events": {
-            "e_1": "Relieving of Command",
-            "e_2": "Capture of Cyrenaica",
-            "e_3": "Planning of Offensive in North Africa"
+            "e_1": "Battle of Gazala",
+            "e_2": "Counter-offensive operation",
+            "e_3": "Heavy attacks on the 150th Infantry Brigade"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "Middle East Forces",
-            "o_3": "Royal Navy",
-            "o_4": "Egyptian Government"
+            "o_1": "150th Brigade",
+            "o_2": "1st Armoured Division",
+            "o_3": "1st Army Tank Brigade",
+            "o_4": "69th Infantry Brigade",
+            "o_5": "3rd Army Tank Brigade",
+            "o_6": "5th Indian Division",
+            "o_7": "Eighth Army",
+            "o_8": "Free French"
         }
     },
     "keywords": [
-        "Command",
-        "General Staff",
-        "Eighth Army",
-        "Middle East Forces",
-        "Military Strategy",
-        "North Africa",
-        "Cyrenaica",
-        "Offensive"
+        "battle",
+        "counter-offensive",
+        "tank casualties",
+        "enemy tanks",
+        "infantry",
+        "artillery",
+        "sapper teams"
     ],
     "themes": [
         "Military Operations",
-        "Leadership Transition",
-        "International Relations",
-        "Strategic Planning"
+        "Defensive Strategies",
+        "Counter-Offensive Planning"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
             "e_3"
         ],
-        "Leadership Transition": [
-            "e_1"
-        ],
-        "International Relations": [],
-        "Strategic Planning": [
+        "Defensive Strategies": [
             "e_3"
+        ],
+        "Counter-Offensive Planning": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th August 1942",
+            "date": "1st June 1942",
+            "locations": [
+                "l_1",
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Gazala begins, involving various brigades with significant tank casualties and strategic planning for counter-offensive actions."
+        },
+        {
+            "event": "e_2",
+            "date": "3rd June 1942",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "General Ritchie plans a counter-offensive operation against enemy positions as the situation deteriorates."
+        },
+        {
+            "event": "e_3",
+            "date": "31st May 1942",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "General Alexander takes command from the author on 15th August 1942, following strategic discussions."
-        },
-        {
-            "event": "e_2",
-            "date": "2nd September 1941",
-            "locations": [
-                "l_6",
-                "l_5"
-            ],
-            "persons": [
-                "p_16",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "On 2nd September 1941, Lieutenant-General Sir Alan Cunningham is informed of plans to capture Cyrenaica as part of an offensive in North Africa."
-        },
-        {
-            "event": "e_3",
-            "date": "1st October",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_16"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "By 1st October, General Cunningham is instructed to prepare detailed plans for the offensive in North Africa."
+            "eventSummary": "Heavy attacks on the 150th Infantry Brigade are reported, leading to significant losses before the general operations commence."
         }
     ]
 }

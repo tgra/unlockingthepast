@@ -1,89 +1,118 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Chief Engineer",
+            "p_2": "Assistant Deputy Engineer",
+            "p_3": "Air Officer Commanding British Second Tactical Air Force",
+            "p_4": "Director of Military Survey",
+            "p_5": "Director of Survey"
+        },
         "locations": {
-            "l_1": "Europe",
-            "l_2": "Holland",
-            "l_3": "Belgium",
-            "l_4": "France",
-            "l_5": "Granville",
-            "l_6": "Flushing",
-            "l_7": "Spanish frontier"
+            "l_1": "Bayeux",
+            "l_2": "Carentan",
+            "l_3": "Rennes",
+            "l_4": "United Kingdom",
+            "l_5": "France",
+            "l_6": "Belgium",
+            "l_7": "River Seine",
+            "l_8": "River Scheldt",
+            "l_9": "Holland",
+            "l_10": "Germany",
+            "l_11": "Paris",
+            "l_12": "Brussels"
         },
         "events": {
-            "e_1": "D-Day",
-            "e_2": "Invasion of Europe"
+            "e_1": "D+g0",
+            "e_2": "Map Supply Crisis"
         },
         "organisations": {
-            "o_1": "Eighth Air Force",
-            "o_2": "Ninth Air Force",
-            "o_3": "R.A.F. Bomber Command",
-            "o_4": "Allied air forces"
+            "o_1": "Ninth U.S.A.A.F.",
+            "o_2": "British Second Tactical Air Force",
+            "o_3": "660th Engineer Topo (Avn) Battalion, United States Army",
+            "o_4": "942nd Engineer Topo (Avn) Battalion",
+            "o_5": "Eighth United States Army Air Force",
+            "o_6": "War Office",
+            "o_7": "G-3 Division",
+            "o_8": "Survey Staff",
+            "o_9": "No. 13 Map Reproduction Section"
         }
     },
     "keywords": [
-        "airfields",
-        "attacks",
-        "photographic reconnaissance",
-        "invasion preparation",
-        "military operations",
-        "intelligence gathering",
-        "camouflage"
+        "maps",
+        "supply",
+        "depots",
+        "air forces",
+        "operations",
+        "advance",
+        "crisis"
     ],
     "themes": [
         "Military Operations",
-        "Intelligence and Reconnaissance",
-        "Strategic Air Attacks"
+        "Supply Logistics",
+        "Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Intelligence and Reconnaissance": [
+        "Supply Logistics": [
             "e_2"
         ],
-        "Strategic Air Attacks": [
-            "e_1"
+        "Cooperation": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
+            "date": "D+g0",
+            "locations": [
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "By D+g0, the Allied Armies have advanced beyond the River Seine and are virtually along the line of the River Scheldt."
+        },
+        {
+            "event": "e_2",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_4",
                 "l_5",
                 "l_6",
-                "l_7"
+                "l_11",
+                "l_12"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_4",
+                "p_5"
+            ],
             "organisations": [
-                "o_1",
-                "o_2",
                 "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "D-Day marks the Allied invasion of Europe, utilizing extensive airfield attacks and reconnaissance to ensure the effective landing of allied forces."
-        },
-        {
-            "event": "e_2",
-            "date": "Preparation Phase prior to D-Day",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_4"
+                "o_4",
+                "o_6",
+                "o_7",
+                "o_8"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The invasion of Europe from the west involves comprehensive photographic reconnaissance and air attack strategies to undermine enemy defenses."
+            "eventSummary": "The supply of maps becomes critical as the Allied armies advance through France and Belgium, leading to a need for increased logistics and cooperation among forces."
         }
     ]
 }

@@ -1,105 +1,138 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Hitler",
-            "p_2": "Kesselring"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Mediterranean",
-            "l_3": "United Kingdom",
-            "l_4": "Foggia",
-            "l_5": "Middle East",
-            "l_6": "North Africa",
-            "l_7": "Southern Front",
-            "l_8": "South France",
-            "l_9": "Balkans",
-            "l_10": "Dodecanese"
+            "l_1": "Monte Lignano",
+            "l_2": "Monte Gavino",
+            "l_3": "Arezzo",
+            "l_4": "Florence",
+            "l_5": "Terni",
+            "l_6": "Narni",
+            "l_7": "Orte",
+            "l_8": "Civita Castellana",
+            "l_9": "Ancona",
+            "l_10": "Leghorn",
+            "l_11": "Osimo",
+            "l_12": "Poggibonsi",
+            "l_13": "San Gimignano",
+            "l_14": "Loretto",
+            "l_15": "Filottrano",
+            "l_16": "Pontedera",
+            "l_17": "Pisa",
+            "l_18": "Empoli",
+            "l_19": "Bibbiena",
+            "l_20": "Gubbio",
+            "l_21": "Fabriano",
+            "l_22": "Citta di Castello",
+            "l_23": "Alpe di Catenaia",
+            "l_24": "Pratomagno"
         },
         "events": {
-            "e_1": "Withdrawal of German forces",
-            "e_2": "Buildup of Allied forces in Italy",
-            "e_3": "Strategic bombing programme POINTBLANK"
+            "e_1": "Battle for Arezzo",
+            "e_2": "Capture of Ancona",
+            "e_3": "Battle of Monte Lignano",
+            "e_4": "Capture of Citta di Castello"
         },
         "organisations": {
-            "o_1": "Canadian Army",
-            "o_2": "Allied Forces"
+            "o_1": "Eighth Army",
+            "o_2": "IV Corps",
+            "o_3": "Fifth Army",
+            "o_4": "6 Armoured Division",
+            "o_5": "1 Guards Brigade",
+            "o_6": "2 Lothians",
+            "o_7": "(none)",
+            "o_8": "British Indian Army"
         }
     },
     "keywords": [
-        "Allied forces",
-        "German divisions",
-        "airborne division",
-        "Strategic Air Force",
-        "buildup",
-        "bombing programme"
+        "battle",
+        "attack",
+        "capture",
+        "defence",
+        "division",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Strategic Decisions"
+        "Administrative Challenges",
+        "Tactical Advances"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Logistics": [
-            "e_2"
+        "Administrative Challenges": [
+            "e_1"
         ],
-        "Strategic Decisions": [
-            "e_3"
+        "Tactical Advances": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "October 1943",
+            "date": "16th July 1944",
             "locations": [
-                "l_1"
+                "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_5"
             ],
+            "connectedEvents": [
+                "e_3",
+                "e_2"
+            ],
+            "eventSummary": "The Battle for Arezzo concludes, leading to the capture of the city as Eighth Army gains ground against German defenses."
+        },
+        {
+            "event": "e_2",
+            "date": "18th July 1944",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Hitler decides that the German withdrawal in Italy should stop and Kesselring is to hold a line as far south as possible."
-        },
-        {
-            "event": "e_2",
-            "date": "September 1943 to January 1944",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
                 "e_1",
-                "e_3"
+                "e_4"
             ],
-            "eventSummary": "Allied forces are building up in Italy, with an increase of divisions expected by early 1944 despite logistical challenges."
+            "eventSummary": "The Capture of Ancona occurs as IV Corps attacks and overcomes German defenses, marking strategic gains in the battle."
         },
         {
             "event": "e_3",
-            "date": "1943",
-            "locations": [],
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
             "persons": [],
             "organisations": [
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_2"
+            "connectedEvents": [],
+            "eventSummary": "The Battle of Monte Lignano is fought as forces attempt to secure high ground against the enemy."
+        },
+        {
+            "event": "e_4",
+            "date": "22nd July 1944",
+            "locations": [
+                "l_22"
             ],
-            "eventSummary": "The strategic bombing programme POINTBLANK is fully underway, impacting resource allocation for the Italian campaign."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Citta di Castello falls to Allied forces, completing a significant advance in the region."
         }
     ]
 }

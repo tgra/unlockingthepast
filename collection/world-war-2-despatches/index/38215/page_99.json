@@ -1,88 +1,156 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Supreme Commander, South, West Pacific",
-            "p_2": "Director General of Civil Defence"
+            "p_1": "Lieut.-General PERCIVAL",
+            "p_2": "Lieut.- General Sir Lewis HEATH",
+            "p_3": "Major-General Gordon BENNETT",
+            "p_4": "Major-General Key",
+            "p_5": "K. S. Torrance",
+            "p_6": "A. E. Percival"
         },
         "locations": {
-            "l_1": "Singapore Island",
-            "l_2": "Java",
-            "l_3": "Malaya",
-            "l_4": "Netherlands East Indies",
-            "l_5": "Johore"
+            "l_1": "Batu Pahat",
+            "l_2": "Senggarang",
+            "l_3": "Kluang",
+            "l_4": "S. Sayong Halt",
+            "l_5": "S. Benut",
+            "l_6": "Pontian Kechil",
+            "l_7": "Singapore",
+            "l_8": "Malaya",
+            "l_9": "Hong Kah Village",
+            "l_10": "Tengah aerodrome",
+            "l_11": "Bulim Village",
+            "l_12": "Jurong"
         },
         "events": {
-            "e_1": "Implementation of the Scorched Earth Policy",
-            "e_2": "Evacuation Policy for Women and Children"
+            "e_1": "Conference at Headquarters, Westforce",
+            "e_2": "Battle of Malaya",
+            "e_3": "Battle of Singapore",
+            "e_4": "Implementation of Scorched Earth Policy on Singapore Island",
+            "e_5": "Enemy attack on Western Area"
         },
         "organisations": {
-            "o_1": "Malaya Command",
-            "o_2": "War Office"
+            "o_1": "3 Indian Corps",
+            "o_2": "12 Indian Division",
+            "o_3": "Westforce",
+            "o_4": "A.I.F. Malaya",
+            "o_5": "Malaya Command"
         }
     },
     "keywords": [
-        "Scorched Earth Policy",
-        "Evacuation",
-        "Civil Defence",
-        "Military Value",
-        "Military Operations"
+        "conference",
+        "battle",
+        "withdrawal",
+        "scorched earth",
+        "enemy attack",
+        "military strategy"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation",
-        "Destruction of Infrastructure",
-        "Civil Defense"
+        "Strategic Decisions",
+        "Defense Strategies",
+        "Personnel Orders"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_5"
         ],
-        "Evacuation": [
-            "e_2"
-        ],
-        "Destruction of Infrastructure": [
+        "Strategic Decisions": [
+            "e_4",
             "e_1"
         ],
-        "Civil Defense": [
-            "e_2"
+        "Defense Strategies": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "End of January 1948",
+            "date": "25th January 1942",
             "locations": [
                 "l_1",
+                "l_3",
                 "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Implementation of the Scorched Earth Policy involves measures to ensure military value is destroyed to prevent enemy access, with the thoroughness of this approach varying by area."
+            "connectedEvents": [],
+            "eventSummary": "A conference is held at Headquarters, Westforce, where military leaders discuss the current situation and strategic decisions regarding troop movements."
         },
         {
             "event": "e_2",
-            "date": "End of January 1948",
+            "date": "February 1942",
             "locations": [
-                "l_1"
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1",
+                "p_6"
+            ],
+            "organisations": [
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The battle of Malaya has concluded, leading into the battle of Singapore, as troops are beleaguered in the island fortress awaiting support."
+        },
+        {
+            "event": "e_3",
+            "date": "February 1942",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The battle of Singapore begins, with troops preparing to defend against the advancing enemy on the island."
+        },
+        {
+            "event": "e_4",
+            "date": "February 1942",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A letter is issued regarding the implementation of the Scorched Earth Policy on Singapore Island, emphasizing the need to prevent material from falling into enemy hands."
+        },
+        {
+            "event": "e_5",
+            "date": "9th February 1942",
+            "locations": [
+                "l_8",
+                "l_9"
             ],
             "persons": [],
             "organisations": [
-                "o_2"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Evacuation Policy for Women and Children concludes with most European women and children leaving Singapore, amidst challenges in finding safe passage for Asiatics."
+            "connectedEvents": [],
+            "eventSummary": "The enemy attacks in strength on the Western Area, penetrating to the East of Tengah aerodrome, prompting military responses."
         }
     ]
 }

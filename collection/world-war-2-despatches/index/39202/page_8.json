@@ -1,107 +1,140 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General",
-            "p_2": "R.A.F. personnel"
+            "p_1": "L/Cpl.",
+            "p_2": "Superior Private"
         },
         "locations": {
             "l_1": "Burma",
-            "l_2": "Cocos Islands",
-            "l_3": "Malaya",
-            "l_4": "Rangoon",
-            "l_5": "Pegu Yomas",
-            "l_6": "Southern Malaya",
-            "l_7": "Netherlands East Indies"
+            "l_2": "Rangoon",
+            "l_3": "Moulmein",
+            "l_4": "Central Corridor",
+            "l_5": "Southern Burma",
+            "l_6": "Irrawaddy",
+            "l_7": "Mandalay",
+            "l_8": "Sittang",
+            "l_9": "Salween",
+            "l_10": "Eastern Burma",
+            "l_11": "Western Burma",
+            "l_12": "Malaya",
+            "l_13": "Indian"
         },
         "events": {
-            "e_1": "Battle of the Break Through",
-            "e_2": "Capture of Rangoon",
-            "e_3": "Build-up in Burma"
+            "e_1": "Fall of Rangoon",
+            "e_2": "Re-conquest of Burma",
+            "e_3": "Withdrawal of Japanese forces",
+            "e_4": "Assault on Malaya",
+            "e_5": "Jungle Warfare in Burma"
         },
         "organisations": {
             "o_1": "R.A.F.",
-            "o_2": "Headquarters, Air Command, South East Asia",
-            "o_3": "Headquarters S.E.A.C."
+            "o_2": "No. 221 Group",
+            "o_3": "No. 224 Group",
+            "o_4": "Allied Forces"
         }
     },
     "keywords": [
         "Air Forces",
-        "Cocos Islands",
-        "Japanese Empire",
-        "Ground Forces",
-        "Military Operations"
+        "Japanese troops",
+        "Allied advance",
+        "supply",
+        "morale",
+        "air superiority"
     ],
     "themes": [
-        "Military Strategy",
-        "Air Operations",
-        "Logistics",
-        "Resource Management",
-        "Weather Impact"
+        "Military Operations",
+        "Air-ground cooperation",
+        "Japanese retreat",
+        "Supply and logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_5"
         ],
-        "Logistics": [
-            "e_3"
-        ],
-        "Weather Impact": [
-            "e_2"
+        "Diplomacy": [],
+        "Strategic Decisions": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of event not specified",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
-                "o_3"
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Battle of the Break Through sees the Air Forces achieving significant success against Japanese forces trapped in Southern Burma."
+            "eventSummary": "The fall of Rangoon demonstrates the effectiveness of air-ground cooperation in the Allied campaign against Japanese forces."
         },
         {
             "event": "e_2",
-            "date": "Date of event not specified",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Capture of Rangoon marks a pivotal moment in the military campaign, resulting in a decrease in air operations due to the arrival of the monsoon."
-        },
-        {
-            "event": "e_3",
-            "date": "Date of event not specified",
+            "date": "",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The re-conquest of Burma signifies a pivotal moment in the Allied efforts during World War II."
+        },
+        {
+            "event": "e_3",
+            "date": "April",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The withdrawal of Japanese forces from various locations in Burma shows the declining capability of the enemy."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The build-up in Burma for future operations is planned, addressing the need for airfield construction and resources amidst ongoing military efforts."
+            "eventSummary": "The planned assault on Malaya was ultimately forestalled by the Japanese surrender."
+        },
+        {
+            "event": "e_5",
+            "date": "May and June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The return to jungle warfare in Burma faced numerous challenges as British Air Forces engaged in intense operations against isolated Japanese troops."
         }
     ]
 }

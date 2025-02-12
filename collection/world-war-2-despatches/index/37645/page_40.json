@@ -1,76 +1,73 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Wavell"
+            "p_1": "J. A. S. Hopkins"
         },
         "locations": {
-            "l_1": "Chisimaio",
-            "l_2": "Giumbo",
-            "l_3": "Mogadiscio",
-            "l_4": "Iscia",
-            "l_5": "Baidoa",
-            "l_6": "Lugh Ferrandi",
-            "l_7": "El Yibo",
-            "l_8": "Gorai",
-            "l_9": "Hobok",
-            "l_10": "Kalam",
-            "l_11": "Galla Sidamo",
-            "l_12": "Mombasa",
-            "l_13": "Nairobi",
-            "l_14": "Nanyuki",
-            "l_15": "Lake Rudolf",
-            "l_16": "Marsabit",
-            "l_17": "Lokitaung",
-            "l_18": "Moyale",
-            "l_19": "Dukana",
-            "l_20": "Chalbi Desert",
-            "l_21": "Southern Abyssinia",
-            "l_22": "Tertale"
+            "l_1": "Mogadiscio",
+            "l_2": "Chisimaio",
+            "l_3": "Mombasa",
+            "l_4": "Afgoi",
+            "l_5": "Addis Abeba",
+            "l_6": "Harrar",
+            "l_7": "Berbera",
+            "l_8": "Giggiga",
+            "l_9": "Merca",
+            "l_10": "Kenya",
+            "l_11": "Villagio d Abruzzi",
+            "l_12": "Dagabur",
+            "l_13": "British Somaliland"
         },
         "events": {
-            "e_1": "Air Supremacy Struggle",
-            "e_2": "Operations of 1st S.A. Division"
+            "e_1": "Fall of Mogadiscio",
+            "e_2": "Advance on Giggiga",
+            "e_3": "Attack on Dagabur"
         },
         "organisations": {
-            "o_1": "S.R.A.F.",
-            "o_2": "S.A.A.F."
+            "o_1": "11th (A) Division",
+            "o_2": "C.-in-C. Middle East",
+            "o_3": "A.O.C. Aden",
+            "o_4": "S.A. Harbour Construction Company",
+            "o_5": "24th Workshop Park Company",
+            "o_6": "38th S.A. Railway Construction Company",
+            "o_7": "Nigerian Brigade"
         }
     },
     "keywords": [
-        "Air Supremacy",
-        "Military Operations",
-        "Rebellion",
-        "South African Division",
-        "Enemy Positions"
+        "surrendered",
+        "advance",
+        "supplies",
+        "operations",
+        "war material",
+        "captured",
+        "petrol",
+        "harbour"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Air Force Strategy",
-        "Rebellion Support"
+        "Logistics",
+        "Supply Chain Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Logistics": [
+            "e_1",
             "e_2"
         ],
-        "Diplomacy": [
-            "e_1"
-        ],
-        "Air Force Strategy": [
-            "e_1"
-        ],
-        "Rebellion Support": [
+        "Supply Chain Management": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 1941",
+            "date": "26th February to 5th April, 1941",
             "locations": [
-                "l_12",
-                "l_13"
+                "l_1"
             ],
             "persons": [
                 "p_1"
@@ -82,26 +79,40 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "By the beginning of February, the Air Forces achieve air superiority after dispersing Hurricanes over the front."
+            "eventSummary": "The fall of Mogadiscio marks a significant military victory and captures, allowing for further advances."
         },
         {
             "event": "e_2",
-            "date": "January 1941 - April 1941",
+            "date": "1st March, 1941",
             "locations": [
-                "l_11",
-                "l_16"
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_7"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The 1st S.A. Division conducts operations to penetrate the Galla Sidamo country and encourage rebellion against the enemy."
+            "eventSummary": "The 11th (A) Division resumes its advance on Giggiga, utilizing supplies captured from the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "10th March, 1941",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An attack on Dagabur is conducted by a mobile column from the Nigerian Brigade led by Lieutenant Colonel J. A. S. Hopkins."
         }
     ]
 }

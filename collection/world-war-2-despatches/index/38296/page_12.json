@@ -1,25 +1,22 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice Admiral E. L. S. King, CB, MVO",
+            "p_1": "Vice Admiral E. L. S. King",
             "p_2": "Captain S. H. T. Arliss",
             "p_3": "W. P. Carne",
-            "p_4": "Rear Admiral H. B. Rawlings, OBE",
-            "p_5": "Major General J. F. Evetts, C.B., C.B.E.",
+            "p_4": "Rear Admiral H. B. Rawlings",
+            "p_5": "Major General J. F. Evetts",
             "p_6": "Group Captain C. B. R. Pelly"
         },
         "locations": {
-            "l_1": "Scarpanto",
-            "l_2": "Crete",
-            "l_3": "Sphakia",
-            "l_4": "Alexandria",
-            "l_5": "Mediterranean"
+            "l_1": "Crete",
+            "l_2": "Sphakia",
+            "l_3": "Alexandria",
+            "l_4": "Mediterranean"
         },
         "events": {
-            "e_1": "Evacuation of Force B",
-            "e_2": "Battle of Crete",
-            "e_3": "Loss of H.M.S. HEREWARD",
-            "e_4": "Evacuation attempts on nights of 29th/30th May and 31st May/1st June"
+            "e_1": "Battle of Crete",
+            "e_2": "Evacuation of Force B"
         },
         "organisations": {
             "o_1": "Royal Navy",
@@ -27,51 +24,58 @@
         }
     },
     "keywords": [
-        "H.M.S. IMPERIAL",
-        "H.M.S. HOTSPUR",
-        "air attack",
+        "H.M.S.",
         "evacuation",
-        "Royal Air Force",
         "troops",
-        "Mediterranean Fleet"
+        "air attack",
+        "disaster",
+        "loss",
+        "damage"
     ],
     "themes": [
         "Military Operations",
-        "Casualties",
         "Evacuation",
-        "Leadership",
-        "Naval Warfare"
+        "Casualties",
+        "Leadership"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Casualties": [
-            "e_1"
+            "e_2"
         ],
         "Evacuation": [
-            "e_1",
-            "e_4"
+            "e_2"
+        ],
+        "Casualties": [
+            "e_2"
         ],
         "Leadership": [
-            "p_1",
-            "p_2",
-            "p_4",
-            "p_5",
-            "p_6"
-        ],
-        "Naval Warfare": [
-            "e_2",
-            "e_3"
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "29th May to 1st June",
+            "date": "May 29",
+            "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle of Crete unfolds, facing heavy strain and air attacks that lead to significant casualties among troops and naval forces."
+        },
+        {
+            "event": "e_2",
+            "date": "May 29 - June 1",
             "locations": [
                 "l_1",
                 "l_2",
@@ -80,70 +84,18 @@
             "persons": [
                 "p_1",
                 "p_2",
-                "p_4",
-                "p_5"
+                "p_3",
+                "p_5",
+                "p_6"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The evacuation of Force B occurs, facing significant air attacks leading to heavy losses and decision-making challenges."
-        },
-        {
-            "event": "e_2",
-            "date": "May 1941",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Battle of Crete unfolds, impacting military strategies and evacuations in the region."
-        },
-        {
-            "event": "e_3",
-            "date": "May 29, 1941",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "H.M.S. HEREWARD is lost during the evacuation, highlighting the harsh realities of military operations."
-        },
-        {
-            "event": "e_4",
-            "date": "Night of May 29-30 and June 1-2, 1941",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Multiple evacuations are attempted successfully but with significant challenges, ensuring safety of many troops."
+            "eventSummary": "The evacuation of Force B is executed under dire circumstances, where many troops are saved despite significant enemy air attacks and losses."
         }
     ]
 }

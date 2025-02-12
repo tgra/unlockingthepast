@@ -1,58 +1,61 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral H. M. Burrough",
-            "p_2": "E. N. SyFRET",
-            "p_3": "Captain D. (roth Destroyer Flotilla)",
-            "p_4": "Rear-Admiral (roth Cruiser Squadron)"
+            "p_1": "BLANKNEY",
+            "p_2": "Commodore",
+            "p_3": "Masters"
         },
         "locations": {
-            "l_1": "Gibraltar",
-            "l_2": "Malabata",
-            "l_3": "Tarifa",
-            "l_4": "Malta"
+            "l_1": "CAIRO",
+            "l_2": "Malta",
+            "l_3": "eastward",
+            "l_4": "westward",
+            "l_5": "northward",
+            "l_6": "south",
+            "l_7": "tonvoy"
         },
         "events": {
-            "e_1": "Operation Berserk",
-            "e_2": "Operation Bellows",
-            "e_3": "Convoy W.S.21S"
+            "e_1": "Air attack on convoy",
+            "e_2": "Dive bombing attack by JU.88",
+            "e_3": "Heavy high level and dive bombing attack by JU.88s and JU.87s"
         },
         "organisations": {
-            "o_1": "U.K. Navy",
-            "o_2": "North Atlantic Command"
+            "o_1": "JU.87s",
+            "o_2": "JU.88s",
+            "o_3": "Spitfires",
+            "o_4": "Beaufighter"
         }
     },
     "keywords": [
-        "Convoy",
-        "Escort",
-        "Operation",
-        "Force",
-        "Destroyers",
-        "Cruisers",
-        "Aircraft Carriers",
-        "Nomenclature"
+        "convoy",
+        "destroyers",
+        "air attack",
+        "bombing",
+        "salvos"
     ],
     "themes": [
         "Military Operations",
-        "Naval Coordination",
-        "Logistics",
-        "Combat Preparedness"
+        "Aerial Warfare",
+        "Naval Maneuvering"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Naval Coordination": [
+            "e_2",
             "e_3"
         ],
-        "Logistics": [],
-        "Combat Preparedness": []
+        "Aerial Warfare": [
+            "e_2",
+            "e_3"
+        ],
+        "Naval Maneuvering": [
+            "e_1"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date of Operation Berserk",
+            "date": "0710",
             "locations": [
                 "l_1"
             ],
@@ -62,40 +65,40 @@
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Berserk is currently in progress, involving naval forces executing a detailed operational plan."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "At 0710, an enemy air attack on the convoy is reported, resulting in direct hits on CHANT and KENTUCKY."
         },
         {
             "event": "e_2",
-            "date": "Date of Operation Bellows",
+            "date": "1040",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Operation Bellows is initiated, focusing on leveraging air power from aircraft carriers for strategic naval operations."
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "At 1040, a dive bombing attack by 3 JU.88s takes place, but enemy planes are driven off before they can drop their bombs."
         },
         {
             "event": "e_3",
-            "date": "August 30",
+            "date": "1120",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Convoy W.S.21S, consisting of multiple merchant and escort ships, is traveling from the U.K. to the Straits of Gibraltar under naval escort."
+            "eventSummary": "At 1120, a heavy high-level and dive bombing attack by JU.88s and JU.87s occurs, with some ships in convoy reported disabled."
         }
     ]
 }

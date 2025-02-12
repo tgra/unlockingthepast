@@ -1,92 +1,71 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Supreme Commander",
-            "p_2": "Commander of 21 Army Group",
-            "p_3": "Garrison Commander"
+            "p_1": "General Collins",
+            "p_2": "General Patton"
         },
         "locations": {
-            "l_1": "Pas de Calais",
-            "l_2": "Antwerp",
-            "l_3": "Rhine",
-            "l_4": "Brussels",
-            "l_5": "Maastricht",
-            "l_6": "Liège",
-            "l_7": "Namur",
-            "l_8": "Charleroi",
-            "l_9": "North-East France",
-            "l_10": "Normandy",
-            "l_11": "Nancy",
-            "l_12": "Verdun",
-            "l_13": "Belfort",
-            "l_14": "Duchy of Luxembourg",
-            "l_15": "Mons",
-            "l_16": "Boulogne",
-            "l_17": "Calais",
-            "l_18": "Havre",
-            "l_19": "St. Valery",
-            "l_20": "Amiens",
-            "l_21": "Meuse",
-            "l_22": "Scheldt estuary",
-            "l_23": "Neder Rijn",
-            "l_24": "Eindhoven",
-            "l_25": "Uden",
-            "l_26": "Nijmegen",
-            "l_27": "Arnhem"
+            "l_1": "Ardennes",
+            "l_2": "Bastogne",
+            "l_3": "Meuse",
+            "l_4": "Rhine",
+            "l_5": "Ruhr",
+            "l_6": "Diisseldorf",
+            "l_7": "Julich",
+            "l_8": "Roermond",
+            "l_9": "Nijmegen bridgehead",
+            "l_10": "Reichswald Forest",
+            "l_11": "Colmar pocket",
+            "l_12": "Saar"
         },
         "events": {
-            "e_1": "Crossing of the Seine",
-            "e_2": "Battle of Arnhem",
-            "e_3": "Advance to the Rhine",
-            "e_4": "Liberation of Brussels",
-            "e_5": "Liberation of Antwerp"
+            "e_1": "Battle of the Ardennes",
+            "e_2": "Battle of the Rhineland",
+            "e_3": "American thrust",
+            "e_4": "Operation in Colmar area"
         },
         "organisations": {
-            "o_1": "Twelfth Army Group",
-            "o_2": "First United States Army",
-            "o_3": "Third United States Army",
-            "o_4": "Second British Army",
-            "o_5": "First Canadian Army",
-            "o_6": "2 Canadian Division",
-            "o_7": "30 Corps",
-            "o_8": "82nd United States Airborne Division",
-            "o_9": "1st British Airborne Division",
-            "o_10": "Polish Parachute Brigade"
+            "o_1": "Sixth S.S. Panzer Army",
+            "o_2": "Fifth Panzer Army",
+            "o_3": "First U.S. Army",
+            "o_4": "Ninth U.S. Army",
+            "o_5": "Third U.S. Army",
+            "o_6": "First Canadian Army",
+            "o_7": "Twelfth U.S. Army Group"
         }
     },
     "keywords": [
-        "Advance",
-        "Liberation",
-        "Crossing",
-        "Battle",
-        "Army Group",
-        "Strategic"
+        "American soldier",
+        "German attack",
+        "Rhineland battle",
+        "mobile war",
+        "flood waters",
+        "paratroops"
     ],
     "themes": [
         "Military Operations",
         "Strategic Decisions",
-        "Allied Coordination"
+        "Tactical Defeats"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
         "Strategic Decisions": [
-            "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Allied Coordination": [
-            "e_3",
-            "e_4",
-            "e_5"
+        "Tactical Defeats": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st September",
+            "date": "1944",
             "locations": [
                 "l_1",
                 "l_2"
@@ -97,86 +76,69 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "On 1st September, the First United States Army crosses the Seine as part of the strategic advance towards the Rhine."
+            "eventSummary": "The Battle of the Ardennes is won due to the American soldier's fighting qualities and air action as weather improves."
         },
         {
             "event": "e_2",
-            "date": "17th September",
+            "date": "February 1945",
             "locations": [
-                "l_22",
-                "l_23"
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
             ],
             "persons": [
                 "p_1",
-                "p_3"
+                "p_2"
             ],
             "organisations": [
-                "o_8",
-                "o_9",
-                "o_10"
+                "o_4",
+                "o_6"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The Battle of Arnhem begins on 17th September, aimed at crossing the Meuse and the Rhine to position Second Army for further operations."
+            "eventSummary": "The Battle of the Rhineland involves two converging offensives aimed at destroying enemy forces around the Ruhr."
         },
         {
             "event": "e_3",
-            "date": "6th September",
+            "date": "February 1945",
             "locations": [
-                "l_18",
-                "l_19"
+                "l_7",
+                "l_8"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4",
-                "e_5"
+                "e_2"
             ],
-            "eventSummary": "On 6th September, plans are executed to advance toward the Rhine with the establishment of bridgeheads set for the imminent operations."
+            "eventSummary": "The American thrust is planned with the involvement of multiple divisions as part of the strategic effort."
         },
         {
             "event": "e_4",
-            "date": "3rd September",
+            "date": "February 1945",
             "locations": [
-                "l_2"
+                "l_9",
+                "l_10",
+                "l_11"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "Brussels is liberated on 3rd September as Allied forces continue their push through Belgium."
-        },
-        {
-            "event": "e_5",
-            "date": "4th September",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
+                "o_7"
             ],
             "connectedEvents": [],
-            "eventSummary": "The city of Antwerp is liberated on 4th September, marking a significant milestone in the Allied advance."
+            "eventSummary": "Operations in the Colmar area are successfully concluded, pushing German forces back across the Rhine."
         }
     ]
 }

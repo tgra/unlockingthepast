@@ -5,41 +5,52 @@
             "p_2": "Admiralty"
         },
         "locations": {
-            "l_1": "Devonshire",
-            "l_2": "Channel",
-            "l_3": "Isle of Wight",
-            "l_4": "Lyme Bay",
-            "l_5": "Dartmouth",
-            "l_6": "Solent",
-            "l_7": "Brixham",
-            "l_8": "Plymouth",
-            "l_9": "Falmouth",
-            "l_10": "Helford River"
+            "l_1": "Lyme Bay",
+            "l_2": "Isle of Wight",
+            "l_3": "Devonshire",
+            "l_4": "Southampton",
+            "l_5": "Solent",
+            "l_6": "Spithead",
+            "l_7": "Helford River",
+            "l_8": "Bristol Channel",
+            "l_9": "Torbay",
+            "l_10": "Brixham",
+            "l_11": "Dartmouth",
+            "l_12": "Salcombe",
+            "l_13": "Weymouth",
+            "l_14": "Portland",
+            "l_15": "Poole",
+            "l_16": "Portsmouth",
+            "l_17": "Newhaven",
+            "l_18": "Harwich",
+            "l_19": "GOLD beach",
+            "l_20": "JUNO beach",
+            "l_21": "SWORD beach"
         },
         "events": {
             "e_1": "Exercise Tiger",
             "e_2": "Operation Neptune",
-            "e_3": "Exercise Fabius"
+            "e_3": "Exercise Fabius",
+            "e_4": "Sea mining"
         },
         "organisations": {
-            "o_1": "Bomber Command",
-            "o_2": "Admiralty",
-            "o_3": "U.S. Navy"
+            "o_1": "Admiralty",
+            "o_2": "Bomber Command",
+            "o_3": "U.S. Navy",
+            "o_4": "A.N.C.X.F"
         }
     },
     "keywords": [
-        "Operation Neptune",
-        "Exercise Tiger",
-        "Exercise Fabius",
+        "military exercises",
+        "naval operations",
         "air superiority",
-        "naval assault",
-        "sea mining"
+        "landing craft",
+        "weather forecasting"
     ],
     "themes": [
         "Military Operations",
         "Strategic Decisions",
-        "Naval Strategy",
-        "Meteorology"
+        "Naval Preparations"
     ],
     "topicModel": {
         "Military Operations": [
@@ -48,14 +59,8 @@
             "e_3"
         ],
         "Strategic Decisions": [
-            "e_2"
-        ],
-        "Naval Strategy": [
-            "e_1",
-            "e_2"
-        ],
-        "Meteorology": [
-            "e_2"
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
@@ -63,58 +68,58 @@
             "event": "e_1",
             "date": "27th/28th April",
             "locations": [
-                "l_4"
+                "l_1"
             ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Exercise Tiger serves as the final rehearsal for Force U, where enemy E-Boats successfully attack a convoy."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "During Exercise Tiger, three groups of E-Boats penetrate patrols and successfully attack the final convoy, leading to significant losses and underscoring the need for naval defense."
-        },
-        {
-            "event": "e_2",
-            "date": "Unknown",
-            "locations": [
-                "l_1",
-                "l_3",
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
                 "o_2",
                 "o_3"
             ],
             "connectedEvents": [
                 "e_1",
-                "e_3"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Operation Neptune is planned as a massive assault requiring extensive naval and meteorological preparations, emphasizing air superiority and logistics for success."
+            "eventSummary": "Operation Neptune is extensively planned as a crucial military operation, emphasizing the need for naval and weather preparations."
         },
         {
             "event": "e_3",
             "date": "4th May",
             "locations": [
-                "l_3"
+                "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Exercise Fabius involves the simultaneous sailing and preparation of naval forces, with minimal enemy reaction noted, indicating readiness for the upcoming assaults."
+            "eventSummary": "Exercise Fabius is conducted to test the synchronized sailing of forces, resulting in negligible enemy reaction."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Sea mining is continuously conducted by the Admiralty and Bomber Command to aid military operations."
         }
     ]
 }

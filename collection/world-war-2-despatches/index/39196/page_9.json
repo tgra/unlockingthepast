@@ -1,111 +1,187 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Various Maintenance Personnel",
-            "p_2": "Members of R.A.F. Regiment"
+            "p_1": "Air Marshal Garrod",
+            "p_2": "Air Command",
+            "p_3": "Allied Air Commander-in-Chief",
+            "p_4": "Officer in charge"
         },
         "locations": {
-            "l_1": "India",
-            "l_2": "Rangoon",
-            "l_3": "Delhi",
-            "l_4": "Karachi",
-            "l_5": "Calcutta",
-            "l_6": "Kunming",
-            "l_7": "Ceylon",
-            "l_8": "Burmese Campaign"
+            "l_1": "Dinjan",
+            "l_2": "Hat i",
+            "l_3": "Akyab",
+            "l_4": "Ramree",
+            "l_5": "Chittagong",
+            "l_6": "Comilla",
+            "l_7": "Tulihal",
+            "l_8": "Rangoon",
+            "l_9": "Mandalay",
+            "l_10": "Meiktila",
+            "l_11": "Calcutta",
+            "l_12": "Irrawaddy",
+            "l_13": "Lewe",
+            "l_14": "Toungoo",
+            "l_15": "Pyuntaza",
+            "l_16": "Pegu"
         },
         "events": {
-            "e_1": "Formation of No. 52 Squadron",
-            "e_2": "Re-organisation of R.A.F. Regiment",
-            "e_3": "Burmese Campaign 1944-45"
+            "e_1": "Meiktila operation",
+            "e_2": "Air lift operation",
+            "e_3": "Conference in Calcutta",
+            "e_4": "Overland advance to Rangoon",
+            "e_5": "Capture of Rangoon",
+            "e_6": "Capture of Lewe",
+            "e_7": "Occupation of Toungoo",
+            "e_8": "Landing of Dakotas and Commandos"
         },
         "organisations": {
-            "o_1": "R.A.F. Regiment",
-            "o_2": "229 Group Headquarters",
-            "o_3": "South-East Asia Command",
-            "o_4": "Transport Command"
+            "o_1": "Fourteenth Army",
+            "o_2": "C.A.A.T.O.",
+            "o_3": "C.C.T.F.",
+            "o_4": "17 Division"
         }
     },
     "keywords": [
-        "Air Transport",
-        "Maintenance Personnel",
-        "Operational Flying Units",
-        "R.A.F.",
-        "Burmese Campaign"
+        "Air Supply",
+        "Logistics",
+        "Military Operation",
+        "Personnel",
+        "Transport"
     ],
     "themes": [
         "Military Operations",
-        "Logistical Support",
-        "Air Combat Strategy",
-        "Re-organisation"
+        "Logistics",
+        "Supply Chain Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_4",
+            "e_6",
+            "e_7",
+            "e_8"
+        ],
+        "Logistics": [
             "e_2",
             "e_3"
         ],
-        "Logistical Support": [
-            "e_1",
-            "e_3"
-        ],
-        "Re-organisation": [
-            "e_2"
+        "Supply Chain Management": [
+            "e_2",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 1944",
+            "date": "February 1945",
             "locations": [
-                "l_1"
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "The Meiktila operation is a success, assessed as the turning point in the battle for Burma."
+        },
+        {
+            "event": "e_2",
+            "date": "February 1945",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "C.C.T.F. hauled 51,210 short tons of supplies into the operational area."
+        },
+        {
+            "event": "e_3",
+            "date": "February 23, 1945",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A major conference in Calcutta approves the supply plan."
+        },
+        {
+            "event": "e_4",
+            "date": "February 1945",
+            "locations": [
+                "l_9",
+                "l_10"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "In July 1944, No. 52 Squadron is formed and achieves a reputation for operational excellence, flying 19,000 hours without an accident."
+            "connectedEvents": [],
+            "eventSummary": "An overland advance to Rangoon is proposed which is to be supported entirely by air."
         },
         {
-            "event": "e_2",
-            "date": "Late 1944",
+            "event": "e_5",
+            "date": "March 1945",
             "locations": [
-                "l_1"
+                "l_9"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The R.A.F. Regiment is re-organised to enhance its ground defence capabilities, which is proven effective during the Burmese Campaign of 1944-45."
+            "connectedEvents": [],
+            "eventSummary": "The plan aims at the total destruction of the enemy and the capture of Rangoon."
         },
         {
-            "event": "e_3",
-            "date": "1944-45",
+            "event": "e_6",
+            "date": "April 20, 1945",
             "locations": [
-                "l_8"
+                "l_13"
             ],
-            "persons": [
-                "p_2"
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The main airfield at Lewe is captured and prepared for light aircraft."
+        },
+        {
+            "event": "e_7",
+            "date": "April 22, 1945",
+            "locations": [
+                "l_14"
             ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The 1944-45 Burmese Campaign witnesses a strategic advance of mechanised units supported by air bombardment, showcasing the importance of rapid logistical support."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Toungoo is occupied despite bad weather."
+        },
+        {
+            "event": "e_8",
+            "date": "April 24, 1945",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Over 100 Dakotas and Commandos successfully land amidst challenging conditions."
         }
     ]
 }

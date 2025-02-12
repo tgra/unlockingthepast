@@ -1,93 +1,69 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Officer",
-            "p_2": "Rating"
+            "p_1": "Rear-Admiral",
+            "p_2": "Captain",
+            "p_3": "Commanding Officer"
         },
         "locations": {
-            "l_1": "Gibraltar",
-            "l_2": "Port Chalmers",
-            "l_3": "Torx"
+            "l_1": "H.M.S. ASHANTI",
+            "l_2": "H.M.S. PATHFINDER",
+            "l_3": "H.M.S. MANCHESTER",
+            "l_4": "H.M.S. ESKIMO",
+            "l_5": "H.M.S. SOMALI",
+            "l_6": "H.M.S. KENYA",
+            "l_7": "H.M.S. CHARYBDIS",
+            "l_8": "Malta",
+            "l_9": "Susa",
+            "l_10": "Gulf of Hammamet"
         },
         "events": {
-            "e_1": "Attack on Fleet",
-            "e_2": "Loss of FEARLESS",
-            "e_3": "High Level Bombing Attack"
+            "e_1": "E-Boat attacks",
+            "e_2": "Dive bombing attack",
+            "e_3": "Sinking of H.M.S. MANCHESTER",
+            "e_4": "Recovery of survivors from S.S. ALMERIA LYKES and WAIRANGI",
+            "e_5": "Air attacks on Force X",
+            "e_6": "Attack by Italian torpedo bombers",
+            "e_7": "Entry of S.S. PORT CHALMERS into the harbour"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "H.M.S. (Her Majesty's Ship)"
         }
     },
     "keywords": [
-        "Torpedo Bombing",
-        "High Level Bombing",
-        "Attack",
-        "Convoy",
-        "Destroyer"
+        "E-Boat",
+        "Dive bombing",
+        "Sinking",
+        "Survivors",
+        "Air attacks"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Torpedo Attacks",
-        "Survivor Rescue",
-        "Damage Control"
+        "Rescue Operations",
+        "Aerial Assaults"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_4"
         ],
         "Naval Warfare": [
-            "e_1",
-            "e_2"
+            "e_3",
+            "e_5"
         ],
-        "Damage Control": [
-            "e_2"
+        "Rescue Operations": [
+            "e_4"
+        ],
+        "Aerial Assaults": [
+            "e_2",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd July",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "A fleet is attacked by enemy aircraft using torpedo bombing and high-level bombing tactics."
-        },
-        {
-            "event": "e_2",
-            "date": "23rd July",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The destroyer FEARLESS is hit by a torpedo during an attack, resulting in significant damage and loss of life."
-        },
-        {
-            "event": "e_3",
-            "date": "23rd July",
+            "date": "",
             "locations": [
                 "l_1"
             ],
@@ -98,9 +74,87 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_5"
             ],
-            "eventSummary": "A high-level bombing attack occurs simultaneously with a torpedo attack, resulting in inaccurate bombing and no significant damage."
+            "eventSummary": "E-Boat attacks occur, resulting in the destruction of at least one E-Boat."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "H.M.S. MANCHESTER is decided to be sunk by its Commanding Officer."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Survivors from S.S. ALMERIA LYKES and WAIRANGI are recovered."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "Air attacks on Force X occur, predominantly targeting merchant ships."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Italian torpedo bombers attack, dropping parachute mines."
+        },
+        {
+            "event": "e_7",
+            "date": "",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "S.S. PORT CHALMERS arrives into the harbour of Malta safely."
         }
     ]
 }

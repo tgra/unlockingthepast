@@ -1,102 +1,165 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Montgomery"
+            "p_1": "General von Mackensen",
+            "p_2": "General Lemelsen",
+            "p_3": "Kesselring"
         },
         "locations": {
-            "l_1": "Termoli",
-            "l_2": "Valley of the Volturno",
-            "l_3": "Foggia",
-            "l_4": "Vinchiaturo",
-            "l_5": "Isernia",
-            "l_6": "Benevento",
-            "l_7": "Casacalenda",
-            "l_8": "Campobasso",
-            "l_9": "Adriatic Sea",
-            "l_10": "Monte Massico"
+            "l_1": "Rome",
+            "l_2": "Genoa",
+            "l_3": "Holland",
+            "l_4": "Leghorn",
+            "l_5": "Carsoli",
+            "l_6": "Orvinio",
+            "l_7": "Aniene river",
+            "l_8": "Tivoli",
+            "l_9": "Tiber",
+            "l_10": "Civita Castellana",
+            "l_11": "Monterotondo",
+            "l_12": "Palombara",
+            "l_13": "Florence",
+            "l_14": "Bibbiena",
+            "l_15": "Arezzo",
+            "l_16": "Pisa",
+            "l_17": "Lucca",
+            "l_18": "Pistoia",
+            "l_19": "Ancona",
+            "l_20": "Narni",
+            "l_21": "Orvieto",
+            "l_22": "Viterbo",
+            "l_23": "Tarquinia",
+            "l_24": "Naples",
+            "l_25": "Adriatic",
+            "l_26": "Piedimonte",
+            "l_27": "Pescara",
+            "l_28": "Chieti",
+            "l_29": "Orbetello",
+            "l_30": "Grosseto",
+            "l_31": "Ombrone river"
         },
         "events": {
-            "e_1": "Battle of Termoli",
-            "e_2": "Crossing of the Volturno River"
+            "e_1": "Fall of Rome",
+            "e_2": "Advance of Eighth Army",
+            "e_3": "Capture of Piedimonte",
+            "e_4": "Regrouping of Eighth Army",
+            "e_5": "Pursuit operations in the Adriatic sector"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "Royal Navy",
-            "o_3": "1 Canadian Division",
-            "o_4": "13 Corps",
-            "o_5": "5 Corps",
-            "o_6": "XIV Panzer Corps",
-            "o_7": "LKXVI Panzer Corps",
-            "o_8": "16 Panzer Division",
-            "o_9": "Hermann Goering Panzer Division",
-            "o_10": "15 Panzer Grenadier Division"
+            "o_1": "Fourteenth Army",
+            "o_2": "Tenth Army",
+            "o_3": "XIV Corps",
+            "o_4": "5 Corps",
+            "o_5": "13 Corps",
+            "o_6": "5 Corps",
+            "o_7": "French",
+            "o_8": "Seventh Army",
+            "o_9": "Polish Corps",
+            "o_10": "Eighth Army"
         }
     },
     "keywords": [
-        "winter",
-        "military operations",
-        "crossing",
-        "defense",
-        "operations",
-        "strategic plan"
+        "General",
+        "Army",
+        "Division",
+        "Corps",
+        "Pursuit",
+        "Advance",
+        "Resistance"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Battle Strategy"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Logistics": [
-            "e_1",
-            "e_2"
-        ],
-        "Battle Strategy": [
-            "e_1",
+        "Strategic Decisions": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd October",
+            "date": "6th June",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The Battle of Termoli occurs as the Royal Navy lands Special Service Brigade at Termoli, successfully capturing the town and port while making contact with the 78 Division."
+            "eventSummary": "The Fall of Rome occurs as General von Mackensen is relieved of his command."
         },
         {
             "event": "e_2",
-            "date": "12th October",
+            "date": "7th June",
             "locations": [
-                "l_2"
+                "l_13",
+                "l_14",
+                "l_15"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_6"
+                "o_10"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "Eighth Army initiates the crossing of the Volturno River. Despite heavy rains and fortifications by the enemy, they conduct diversionary attacks that result in a successful crossing."
+            "eventSummary": "Advance of Eighth Army is ordered towards vital areas of Florence, Bibbiena, and Arezzo."
+        },
+        {
+            "event": "e_3",
+            "date": "26th May",
+            "locations": [
+                "l_26"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Capture of Piedimonte by Polish Corps happens and they assume command in the Adriatic sector."
+        },
+        {
+            "event": "e_4",
+            "date": "8th June",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_10"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Eighth Army carries out a regrouping with a focus on strengthening their position."
+        },
+        {
+            "event": "e_5",
+            "date": "8th June",
+            "locations": [
+                "l_25"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Pursuit operations in the Adriatic sector continue against growing German resistance."
         }
     ]
 }

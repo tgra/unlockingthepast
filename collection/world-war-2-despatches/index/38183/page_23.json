@@ -1,64 +1,141 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Admiral Sir Tom Phillips",
+            "p_2": "Sir Geoffrey Layton",
+            "p_3": "Admiral Hart",
+            "p_4": "Rear-Admiral Palliser"
+        },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Malaya",
-            "l_3": "Brunei",
-            "l_4": "Sarawak",
-            "l_5": "Penang"
+            "l_1": "Malaya-Siam frontier",
+            "l_2": "Kota Bharu",
+            "l_3": "Patani",
+            "l_4": "Singora",
+            "l_5": "Southern Indo-China",
+            "l_6": "Siam",
+            "l_7": "Kelantan",
+            "l_8": "Kuala Krai",
+            "l_9": "Machang",
+            "l_10": "Kedah",
+            "l_11": "Chaglun",
+            "l_12": "Kodang",
+            "l_13": "Northern Kedah",
+            "l_14": "Singapore",
+            "l_15": "Port Darwin",
+            "l_16": "Kuantan"
         },
         "events": {
-            "e_1": "Order of Battle December 7, 1941"
+            "e_1": "Japanese landings",
+            "e_2": "Arrival of H.M.S. Prince of Wales and Repulse",
+            "e_3": "Departure of H.M.S. Repulse to Port Darwin",
+            "e_4": "Communication from Repulse indicating being bombed",
+            "e_5": "Estimate of Japanese air strength against ships"
         },
         "organisations": {
-            "o_1": "Australian Imperial Force (A.I.F.)",
-            "o_2": "3 Indian Corps",
-            "o_3": "8th Australian Division"
+            "o_1": "Eastern Fleet"
         }
     },
     "keywords": [
-        "Order of Battle",
-        "A.I.F.",
-        "Japanese Invasion",
-        "Malaya Command",
-        "Australian Units"
+        "Japanese landings",
+        "air superiority",
+        "military operations",
+        "naval forces",
+        "reconnaissance",
+        "fighter protection"
     ],
     "themes": [
         "Military Operations",
-        "Military Structure",
-        "Defense Planning"
+        "Naval Warfare",
+        "Aerial Combat"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Military Structure": [
-            "e_1"
+        "Naval Warfare": [
+            "e_2",
+            "e_3"
         ],
-        "Defense Planning": [
-            "e_1"
+        "Aerial Combat": [
+            "e_1",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 7, 1941",
+            "date": "December 1941",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_2"
             ],
             "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The Order of Battle on December 7, 1941, details the deployment and composition of Australian and Indian units stationed in Malaya and surrounding regions."
+            "eventSummary": "The Japanese conduct landings in various locations including North of the Malaya-Siam frontier and Kota Bharu."
+        },
+        {
+            "event": "e_2",
+            "date": "December 2, 1941",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "H.M.S. Prince of Wales and Repulse arrive at Singapore, commanded by Admiral Sir Tom Phillips."
+        },
+        {
+            "event": "e_3",
+            "date": "December 5, 1941",
+            "locations": [
+                "l_14",
+                "l_15"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "H.M.S. Repulse leaves Singapore to visit Port Darwin."
+        },
+        {
+            "event": "e_4",
+            "date": "December 10, 1941",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A communication is received from Repulse indicating that they are being bombed east of Kuantan."
+        },
+        {
+            "event": "e_5",
+            "date": "December 1941",
+            "locations": [],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An estimate is given of the Japanese air strength potentially facing the ships, suggesting between 50 and 60 bombers."
         }
     ]
 }

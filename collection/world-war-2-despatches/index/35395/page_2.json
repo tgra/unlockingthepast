@@ -1,54 +1,77 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General Eisenhower",
+            "p_2": "Winston Churchill",
+            "p_3": "Admiral Nimitz"
+        },
         "locations": {
-            "l_1": "Bulgaria",
-            "l_2": "United Kingdom",
-            "l_3": "Great Britain"
+            "l_1": "Normandy",
+            "l_2": "London",
+            "l_3": "Washington D.C."
         },
         "events": {
-            "e_1": "State of War Declaration by Bulgaria"
+            "e_1": "D-Day",
+            "e_2": "Operation Overlord"
         },
         "organisations": {
-            "o_1": "His Majesty's Government in the United Kingdom",
-            "o_2": "Bulgarian Government",
-            "o_3": "Government of the United States"
+            "o_1": "Allied Forces",
+            "o_2": "British Army"
         }
     },
     "keywords": [
-        "declaration of war",
-        "Bulgarian Parliament",
-        "state of war",
-        "British interests"
+        "military",
+        "operation",
+        "strategy"
     ],
     "themes": [
         "Military Operations",
-        "International Relations"
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
         ],
-        "International Relations": [
-            "e_1"
-        ]
+        "Diplomacy": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "13 December 1941",
+            "date": "June 6, 1944",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "D-Day marks the Allied invasion of Normandy, a pivotal moment in World War II, occurring on June 6, 1944."
+        },
+        {
+            "event": "e_2",
+            "date": "June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "A state of war is declared between Bulgaria and Great Britain as of 13 December 1941."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Operation Overlord is the code name for the Allied invasion of Western Europe, which began with the D-Day landings in June 1944."
         }
     ]
 }

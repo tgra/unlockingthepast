@@ -1,53 +1,47 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Vice Marshal Pulford"
+            "p_1": "LIEUT.-GENERAL A. E. PERCIVAL",
+            "p_2": "Lt.-Col. F N. Cobley"
         },
         "locations": {
             "l_1": "Malaya",
-            "l_2": "South Burma",
-            "l_3": "Victoria Point",
-            "l_4": "Sumatra"
+            "l_2": "Singapore",
+            "l_3": "Malaya-Thailand frontier",
+            "l_4": "Straits of Johore"
         },
         "events": {
-            "e_1": "Malayan Campaign"
+            "e_1": "Operations in Malaya",
+            "e_2": "Outbreak of hostilities with Japan"
         },
         "organisations": {
-            "o_1": "Japanese Air Force",
-            "o_2": "Dutch Forces"
+            "o_1": "Malaya Command",
+            "o_2": "War Office"
         }
     },
     "keywords": [
-        "Local Forces",
         "Malayan campaign",
-        "air superiority",
-        "Japanese Air Force",
-        "aerodromes"
+        "jungle warfare",
+        "hostilities",
+        "defence"
     ],
     "themes": [
         "Military Operations",
-        "Air Strategy",
-        "Local Defense",
-        "International Cooperation"
+        "Historical Analysis"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2"
         ],
-        "Air Strategy": [
-            "e_1"
-        ],
-        "Local Defense": [
-            "e_1"
-        ],
-        "International Cooperation": [
+        "Historical Analysis": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1941",
+            "date": "8th December, 1941 to 15th February, 1942",
             "locations": [
                 "l_1",
                 "l_2",
@@ -55,14 +49,32 @@
                 "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Malayan campaign is marked by significant challenges due to the Japanese Air Force's superiority and the lack of adequate air support for British troops."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Malayan campaign unfolds between December 8, 1941, and February 15, 1942, marking a significant military engagement in British-protected territory."
+        },
+        {
+            "event": "e_2",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The outbreak of hostilities with Japan signifies the beginning of a critical phase in the Pacific theater, impacting the Malayan campaign."
         }
     ]
 }

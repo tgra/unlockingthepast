@@ -1,114 +1,106 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander 3 Indian Corps",
-            "p_2": "Commander 11 Indian Division",
-            "p_3": "Commander 12 Indian Infantry Brigade"
+            "p_1": "Civil Health Authorities",
+            "p_2": "Wu Sueh"
         },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Jitra",
-            "l_3": "Kroh",
-            "l_4": "Bukit Mertajam",
-            "l_5": "Province Wellesley",
-            "l_6": "Gurun",
-            "l_7": "Alor Star"
+            "l_1": "South Johore",
+            "l_2": "Singapore Island",
+            "l_3": "Segamat",
+            "l_4": "Batu Anam",
+            "l_5": "Johore Bahru",
+            "l_6": "Malacca",
+            "l_7": "Kuala Lumpur",
+            "l_8": "Dutch East Indies"
         },
         "events": {
-            "e_1": "Battle of Jitra",
-            "e_2": "Battle of Gurun"
+            "e_1": "Start of hostilities",
+            "e_2": "Evacuation of sick and wounded to the United Kingdom and India",
+            "e_3": "Withdrawal through Central Johore"
         },
         "organisations": {
-            "o_1": "3 Indian Corps",
-            "o_2": "11 Indian Division",
-            "o_3": "12 Indian Infantry Brigade",
-            "o_4": "5/14 Punjab Regiment",
-            "o_5": "3/16 Punjab Regiment",
-            "o_6": "28 Indian Infantry Brigade",
-            "o_7": "6 Indian Infantry Brigade",
-            "o_8": "15 Indian Infantry Brigade",
-            "o_9": "2 Argyll & Sutherland Highlanders"
+            "o_1": "Royal Engineers",
+            "o_2": "War Office",
+            "o_3": "Malayan Survey"
         }
     },
     "keywords": [
-        "casualties",
-        "vehicles lost",
-        "infantry tactics",
-        "moral value",
-        "strategic defensive",
-        "withdrawal"
+        "evacuation",
+        "congestion",
+        "water economy",
+        "hospital accommodation",
+        "military reserves",
+        "civil labour",
+        "civil supplies"
     ],
     "themes": [
-        "Military Operations",
-        "Tactics",
-        "Defensive Strategy",
-        "Logistics",
-        "Leadership"
+        "Military Logistics",
+        "Public Health",
+        "Evacuation",
+        "Civil Defense",
+        "Supply Chain"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3"
+        ],
+        "Public Health": [
             "e_2"
         ],
-        "Tactics": [
-            "e_1"
-        ],
-        "Defensive Strategy": [
+        "Evacuation": [
             "e_2"
         ],
         "Logistics": [
             "e_1",
-            "e_2"
-        ],
-        "Leadership": [
-            "e_1",
-            "e_2"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12th December",
+            "date": "Date unknown",
             "locations": [
-                "l_2",
-                "l_1"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "The Battle of Jitra occurs as Japanese forces attack, capitalizing on bold infantry tactics while the Indian Divisions face significant challenges defending their positions."
+            "eventSummary": "Start of hostilities occurs, impacting the supply and logistics situation on Singapore Island and South Johore."
         },
         {
             "event": "e_2",
-            "date": "13th - 14th December",
+            "date": "Date unknown",
             "locations": [
-                "l_6",
-                "l_1"
+                "l_2",
+                "l_8"
             ],
             "persons": [
-                "p_1",
-                "p_3"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_4",
-                "o_5",
-                "o_6",
-                "o_7",
-                "o_8"
+                "o_2"
             ],
+            "connectedEvents": [],
+            "eventSummary": "Sick and wounded personnel are evacuated to the United Kingdom and India, while efforts to provide hospital ship accommodation are complicated by needs in other war theaters."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unknown",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "During the Battle of Gurun, troops withdraw to defensive positions as the Japanese launch attacks with tanks and infantry, leading to fierce fighting and heavy casualties."
+            "eventSummary": "The withdrawal through Central Johore occurs due to rapid military movements, resulting in significant logistics challenges."
         }
     ]
 }

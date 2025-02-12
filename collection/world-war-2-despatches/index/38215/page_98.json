@@ -1,133 +1,107 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieut.-General Yamashita",
-            "p_2": "Brigadier Massy Beresford"
+            "p_1": "K. S. Torrance"
         },
         "locations": {
-            "l_1": "Bukit Timah Rifle Range",
-            "l_2": "Ulu Pandan",
-            "l_3": "Pasir Panjang Village",
-            "l_4": "MacRitchie Reservoir",
-            "l_5": "Racecourse",
-            "l_6": "Sime Road",
-            "l_7": "Fort Canning",
-            "l_8": "Buona Vista",
-            "l_9": "Nee Soon Village",
-            "l_10": "Sembawang aerodrome",
-            "l_11": "Tyresall"
+            "l_1": "Singapore Naval Base",
+            "l_2": "Kota Tinggi",
+            "l_3": "Settlement of Malacca",
+            "l_4": "Johore",
+            "l_5": "Negri Sembilan",
+            "l_6": "Labis",
+            "l_7": "Johore Bahru",
+            "l_8": "Ayer Hitam",
+            "l_9": "Batu Pahat",
+            "l_10": "Yong Peng",
+            "l_11": "Jemaluang",
+            "l_12": "Pontian Kechil"
         },
         "events": {
-            "e_1": "Surrender request by Japanese forces",
-            "e_2": "Formation of Massy Force",
-            "e_3": "Enemy attack on the 22 Australian Infantry Brigade",
-            "e_4": "Destruction of the Main Reserve Petrol Depot",
-            "e_5": "Fire at Indian Base Hospital"
+            "e_1": "Operation Instruction No. 33",
+            "e_2": "Operation Instruction No. 35"
         },
         "organisations": {
             "o_1": "Malaya Command",
-            "o_2": "South-West Pacific Command"
+            "o_2": "3 Indian Corps",
+            "o_3": "9 Indian Division",
+            "o_4": "A.I.F. Malaya",
+            "o_5": "Westforce",
+            "o_6": "R.A.F."
         }
     },
     "keywords": [
-        "Military Operations",
-        "Surrender",
-        "Enemy Attack",
-        "Troop Movements",
-        "Fire"
+        "Enemy",
+        "Troops",
+        "Withdrawal",
+        "Administration"
     ],
     "themes": [
-        "Military Strategy",
-        "Defense Operations",
-        "Aerial Bombing",
-        "Casualty Reports",
-        "Logistical Challenges"
+        "Military Operations",
+        "Command Structure",
+        "Troop Movements"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_1",
+            "e_2"
         ],
-        "Diplomacy": [
-            "e_1"
+        "Command Structure": [
+            "e_1",
+            "e_2"
         ],
-        "Logistical Challenges": [
-            "e_4",
-            "e_5"
-        ],
-        "Defense Strategy": [
-            "e_2",
-            "e_3"
+        "Troop Movements": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "11th February",
+            "date": "January 10, 1942",
             "locations": [
-                "l_7"
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Commander-in-Chief of the Japanese Army drops a letter demanding the surrender of the fortress, which receives no response."
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Comd A.I.F. Malaya organizes a series of troop movements and operational control changes in Malaya, focusing on the defense of strategic locations against enemy attacks."
         },
         {
             "event": "e_2",
-            "date": "February",
+            "date": "January 23-24, 1942",
             "locations": [
-                "l_1",
-                "l_6"
+                "l_8",
+                "l_9",
+                "l_10",
+                "l_11",
+                "l_12"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The Commander Northern Area organizes a composite troop known as Massy Force to fill the gap between the MacRitchie Reservoir and the front lines."
-        },
-        {
-            "event": "e_3",
-            "date": "February",
-            "locations": [
-                "l_5",
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A strong enemy attack targets the 22 Australian Infantry Brigade, which holds its position despite suffering heavy losses."
-        },
-        {
-            "event": "e_4",
-            "date": "February",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The Main Reserve Petrol Depot located east of the Racecourse is set ablaze by enemy actions, leading to its destruction."
-        },
-        {
-            "event": "e_5",
-            "date": "February",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The Indian Base Hospital at Tyersall is destroyed by enemy aircraft, resulting in numerous casualties among patients."
+            "eventSummary": "During the execution of Operation Instruction No. 35, the 3 Indian Corps conducts a withdrawal of troops while maintaining defense over strategic road junctions and positions."
         }
     ]
 }

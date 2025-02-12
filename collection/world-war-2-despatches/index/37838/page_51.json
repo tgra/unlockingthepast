@@ -1,133 +1,106 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "German High Command",
-            "p_2": "R.A.F. Bomber Command",
-            "p_3": "United States Eighth Air Force",
-            "p_4": "Royal Air Force Bomber Command",
-            "p_5": "Second British Army"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Cotentin Peninsula",
-            "l_2": "Caen",
-            "l_3": "Normandy",
-            "l_4": "Escoville",
-            "l_5": "Herouvillette"
+            "l_1": "Versailles",
+            "l_2": "France",
+            "l_3": "Belgium",
+            "l_4": "Pas de Calais",
+            "l_5": "Denmark",
+            "l_6": "Brest"
         },
         "events": {
-            "e_1": "D-Day",
-            "e_2": "Close Support Operations",
-            "e_3": "Operation Goodwood",
-            "e_4": "Large Scale Attacks on Caen"
+            "e_1": "Operation Neptune",
+            "e_2": "D-Day",
+            "e_3": "Operation Overlord"
         },
         "organisations": {
-            "o_1": "A.E.A.F.",
-            "o_2": "Allied Expeditionary Air Force"
+            "o_1": "Air Forces",
+            "o_2": "German High Command"
         }
     },
     "keywords": [
-        "Allied fighters",
-        "German High Command",
-        "reconnaissance",
-        "Close Support Operations",
-        "heavy bombers",
-        "air warfare"
+        "signals facilities",
+        "static headquarters",
+        "air operations",
+        "strategic bombing policy",
+        "weather conditions",
+        "ground forces",
+        "diversionary operations",
+        "inter-Service Fire Plan"
     ],
     "themes": [
         "Military Operations",
-        "Ground Assault",
-        "Air Support"
+        "Coordination & Communication",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3"
         ],
-        "Air Support": [
-            "e_2",
-            "e_4"
+        "Coordination & Communication": [
+            "e_3"
         ],
-        "Ground Assault": [
-            "e_4"
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
+            "date": "",
             "locations": [
+                "l_1",
+                "l_2",
                 "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "The Allied forces launched an extensive amphibious invasion on the beaches of Normandy, marking the beginning of a significant military operation against Nazi-occupied France."
+            "eventSummary": "Operation Neptune is planned as a preparatory air operation to support the assault phase of the military campaign."
         },
         {
             "event": "e_2",
-            "date": "June 1944 - September 1944",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_2",
+                "l_3"
             ],
-            "persons": [
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "Allied air forces carry out extensive Close Support Operations to assist ground forces through reconnaissance and direct strikes against enemy positions."
+            "eventSummary": "D-Day marks the execution of a pivotal assault operation with significant air efforts leading up to it."
         },
         {
             "event": "e_3",
-            "date": "July 18, 1944",
+            "date": "",
             "locations": [
                 "l_2"
             ],
-            "persons": [
-                "p_4",
-                "p_5"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "Operation Goodwood commences, featuring the largest air assault supporting ground troops ever attempted, aimed at breaking through enemy defenses around Caen."
-        },
-        {
-            "event": "e_4",
-            "date": "July 8, 1944 - July 18, 1944",
-            "locations": [
-                "l_2",
-                "l_1"
-            ],
-            "persons": [
-                "p_2",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "A series of large scale attacks occur involving heavy bombers in support of the Allied forces' attempts to capture strategic positions in and around Caen."
+            "eventSummary": "Operation Overlord is conducted based on lessons learned from previous air operations and the strategic bombing policy."
         }
     ]
 }

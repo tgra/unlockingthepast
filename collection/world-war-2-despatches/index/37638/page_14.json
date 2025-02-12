@@ -1,136 +1,117 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Officer",
-            "p_2": "Commander"
+            "p_1": "General Freyberg",
+            "p_2": "General Weston",
+            "p_3": "Lieut.-Colonel J. Campbell"
         },
         "locations": {
-            "l_1": "Palestine",
-            "l_2": "Egypt",
-            "l_3": "Crete",
-            "l_4": "Tobruk",
-            "l_5": "Cyrenaica",
-            "l_6": "Iraq",
-            "l_7": "Libya",
-            "l_8": "Western Desert"
+            "l_1": "Maleme",
+            "l_2": "Suda Bay",
+            "l_3": "Canea",
+            "l_4": "Crete",
+            "l_5": "Heraklion",
+            "l_6": "Tymbaki",
+            "l_7": "Alexandria",
+            "l_8": "Sphakia",
+            "l_9": "Retimo",
+            "l_10": "Egypt"
         },
         "events": {
-            "e_1": "Defence of Tobruk",
-            "e_2": "Operation against the Italian Dodecanese",
-            "e_3": "German Counter-offensive against Cyrenaica",
-            "e_4": "Convoy Arrival to Egypt"
+            "e_1": "Battle of Crete",
+            "e_2": "Evacuation from Sphakia"
         },
         "organisations": {
-            "o_1": "Australian Division",
-            "o_2": "New Zealand Division",
-            "o_3": "South African Division",
-            "o_4": "Polish Brigade",
-            "o_5": "Egyptian Army"
+            "o_1": "16th Infantry Brigade",
+            "o_2": "1st Battalion Leicester Regiment",
+            "o_3": "2nd Battalion the Queen's",
+            "o_4": "2nd Battalion Argyll and Sutherland Highlanders",
+            "o_5": "Layforce",
+            "o_6": "5th New Zealand Brigade",
+            "o_7": "19th Australian Brigade",
+            "o_8": "4th New Zealand Brigade",
+            "o_9": "3rd Hussars",
+            "o_10": "Royal Marines",
+            "o_11": "roth Australian Brigade"
         }
     },
     "keywords": [
-        "Italian forces",
-        "Tobruk garrison",
-        "airborne troops",
-        "German advance",
-        "operation",
-        "defence",
-        "convoy",
-        "tank reinforcement"
+        "reinforcements",
+        "evacuation",
+        "bombing",
+        "garrisons",
+        "combat"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Logistics",
-        "Unit Mobilization"
+        "Evacuation",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1"
+        ],
+        "Evacuation": [
+            "e_2"
+        ],
+        "Strategic Decisions": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Defensive Strategies": [
-            "e_1",
-            "e_3"
-        ],
-        "Logistics": [
-            "e_4"
-        ],
-        "Unit Mobilization": [
-            "e_2",
-            "e_4"
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st May",
+            "date": "May 26, 1941",
             "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The defence of Tobruk is actively engaged as German forces attempt to advance, leading to a determined attack which fails with significant enemy losses."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The 6th Division prepares for an operation against the Italian Dodecanese, delayed due to Navy commitments in Greece."
-        },
-        {
-            "event": "e_3",
-            "date": "Not specified",
-            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
                 "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_7",
+                "o_8",
+                "o_9",
+                "o_10",
+                "o_11"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "German counter-offensives develop against Cyrenaica, necessitating a reallocation of troops to bolster local defences."
+            "eventSummary": "The Battle of Crete is ongoing, with General Freyberg ordering discussions on evacuation due to enemy advances."
         },
         {
-            "event": "e_4",
-            "date": "12th May",
+            "event": "e_2",
+            "date": "May 28-31, 1941",
             "locations": [
-                "l_2"
+                "l_8",
+                "l_10"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_5"
             ],
-            "connectedEvents": [],
-            "eventSummary": "A convoy arrives in Egypt carrying tanks to support the 7th Armoured Division, but losses are incurred during transit, raising concerns about readiness for action."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The evacuation from Sphakia takes place under heavy enemy contact, as troops are extracted amidst challenging conditions."
         }
     ]
 }

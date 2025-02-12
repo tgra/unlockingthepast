@@ -1,55 +1,61 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Mr. Killery"
+        },
         "locations": {
-            "l_1": "Burma",
-            "l_2": "Hong Kong",
-            "l_3": "Malaya"
+            "l_1": "Northern Malaya",
+            "l_2": "Singapore Island",
+            "l_3": "Dutch aerodromes in Sumatra",
+            "l_4": "Far East",
+            "l_5": "Hong Kong"
         },
         "events": {
-            "e_1": "Outbreak of War",
-            "e_2": "Mobilization of Forces"
+            "e_1": "attack on our aerodromes",
+            "e_2": "war broke out",
+            "e_3": "bombing of runways"
         },
         "organisations": {
-            "o_1": "Burma Rifles",
-            "o_2": "Hong Kong Volunteer Defence Corps",
-            "o_3": "R.A.A.F.",
-            "o_4": "Indian Mountain Sacral"
+            "o_1": "Royal Air Force",
+            "o_2": "Royal Australian Air Force",
+            "o_3": "O.M. Section of the Ministry of Economic Warfare"
         }
     },
     "keywords": [
-        "Infantry",
-        "Artillery",
-        "Strength of Army",
-        "Garrison Company",
-        "Volunteer Defence Corps"
+        "aerodromes",
+        "air force",
+        "evacuation",
+        "fighter squadrons",
+        "defence",
+        "Japanese",
+        "Military Governor",
+        "sabotage"
     ],
     "themes": [
         "Military Operations",
-        "Mobilization",
-        "Strategic Strength",
-        "Defence"
+        "Defence Strategy",
+        "Air Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Mobilization": [
-            "e_2"
+        "Defence Strategy": [
+            "e_1",
+            "e_3"
         ],
-        "Strategic Strength": [
-            "e_2"
-        ],
-        "Defence": [
+        "Air Warfare": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 8, 1941",
+            "date": "",
             "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [],
@@ -58,27 +64,36 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "At the outbreak of hostilities, the military forces in Hong Kong are mobilizing in response to the war declaration."
+            "eventSummary": "The Japanese appear to prioritize command of the air through the attack on aerodromes."
         },
         {
             "event": "e_2",
-            "date": "December 8, 1941",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "War breaks out having significant implications on military strategy and operations."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
             ],
-            "eventSummary": "The mobilization of various military units including the Burma Rifles and auxiliary forces is taking place amidst heightened tensions."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The aerodromes were occasionally rendered unserviceable for about twenty-four hours by Japanese bombing of runways."
         }
     ]
 }

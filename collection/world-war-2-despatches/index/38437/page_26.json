@@ -1,75 +1,140 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Pile",
-            "p_2": "Air Commodore G. H. Ambler"
+            "p_1": "Supreme Commander",
+            "p_2": "Air Commander-in-Chief",
+            "p_3": "Air Chief Marshal Leigh-Mallory",
+            "p_4": "Air Marshal Coningham",
+            "p_5": "Deputy Supreme Commander"
         },
         "locations": {
-            "l_1": "North Downs",
-            "l_2": "coast"
+            "l_1": "Antwerp",
+            "l_2": "Brussels",
+            "l_3": "London",
+            "l_4": "Norwich",
+            "l_5": "Holland",
+            "l_6": "Hague",
+            "l_7": "Leiden",
+            "l_8": "Bloemendaal",
+            "l_9": "Raaphorst"
         },
         "events": {
-            "e_1": "Re-deployment of the Guns",
-            "e_2": "Conference on gun and fighter deployment"
+            "e_1": "Disbanding of Allied Expeditionary Air Force",
+            "e_2": "Coordination of countermeasures against flying bombs and rockets",
+            "e_3": "Air operations over the Hague",
+            "e_4": "Target selection for bombing"
         },
-        "organisations": {}
+        "organisations": {
+            "o_1": "Supreme Headquarters",
+            "o_2": "Allied Expeditionary Air Force",
+            "o_3": "Fighter Command",
+            "o_4": "Second Tactical Air Force",
+            "o_5": "Air Defence Division",
+            "o_6": "No. 12 Group",
+            "o_7": "No. 105 Mobile Air Reporting Unit",
+            "o_8": "No. 2 Group",
+            "o_9": "Bomber Command",
+            "o_10": "Royal Artillery"
+        }
     },
     "keywords": [
-        "guns",
-        "fighters",
-        "gun-belt",
-        "operational effectiveness",
-        "D-Day",
-        "jamming",
-        "proximity fuses",
-        "defensive system"
+        "flying bombs",
+        "rockets",
+        "reconnaissance",
+        "air defence",
+        "military operations"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Command Structure",
+        "Intelligence Gathering"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Command Structure": [
+            "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_1"
+        "Intelligence Gathering": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 13, 1944",
+            "date": "15th October",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_2"
+            ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Re-deployment of the Guns is discussed, aiming to move them from the North Downs to the coast for increased effectiveness against threats, while maintaining clear operating spheres for guns and fighters."
+            "eventSummary": "On 15th October, the Allied Expeditionary Air Force is formally disbanded as the Allied Armies establish themselves on the Continent."
         },
         {
             "event": "e_2",
-            "date": "July 13, 1944",
+            "date": "rrth October",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_5"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "organisations": [
+                "o_1",
+                "o_5"
             ],
-            "eventSummary": "A conference is held to discuss the new rules for gun and fighter operations, focusing on establishing separate operational areas to reduce misunderstandings and enhance coordination."
+            "connectedEvents": [
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "On rrth October, the Supreme Commander directs the coordination of countermeasures against flying bombs and rockets in the north-west European theatre."
+        },
+        {
+            "event": "e_3",
+            "date": "third week in October",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "During the third week in October, No. 12 Group resumes operations over the Hague that had been assigned in September."
+        },
+        {
+            "event": "e_4",
+            "date": "19th October",
+            "locations": [
+                "l_8",
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_9"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 19th October, the suggestion to withdraw the bombing target at Raaphorst is executed based on the latest intelligence."
         }
     ]
 }

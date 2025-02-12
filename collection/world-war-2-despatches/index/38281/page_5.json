@@ -5,79 +5,61 @@
             "p_2": "Captain (D)"
         },
         "locations": {
-            "l_1": "Renown",
-            "l_2": "Malta",
+            "l_1": "MALTA",
+            "l_2": "RENOWN",
             "l_3": "ARK ROYAL",
-            "l_4": "Manchester",
-            "l_5": "Sheffield",
-            "l_6": "Southampton",
-            "l_7": "Force D"
+            "l_4": "Force D",
+            "l_5": "SOUTHAMPTON",
+            "l_6": "SHEFFIELD",
+            "l_7": "MANCHESTER",
+            "l_8": "BERWICK",
+            "l_9": "NEWCASTLE",
+            "l_10": "FAULKNOR"
         },
         "events": {
-            "e_1": "Engagement with Enemy Fleet",
-            "e_2": "Sunderland Report of Enemy Position"
+            "e_1": "Position reporting of enemy battleships",
+            "e_2": "Sighted Force D",
+            "e_3": "First T/B Striking Force launched",
+            "e_4": "Flying-boat report of enemy cruisers and destroyers"
         },
         "organisations": {
-            "o_1": "18th Cruiser Squadron",
-            "o_2": "8th Destroyer Flotilla"
+            "o_1": "8th Destroyer Flotilla",
+            "o_2": "18th Cruiser Squadron"
         }
     },
     "keywords": [
-        "enemy fleet",
-        "position report",
         "battleships",
         "cruisers",
         "destroyers",
-        "reconnaissance"
+        "reconnaissance",
+        "enemy force"
     ],
     "themes": [
         "Military Operations",
-        "Reconnaissance",
-        "Engagement Strategy"
+        "Naval Engagement",
+        "Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
+        ],
+        "Naval Engagement": [
+            "e_4"
         ],
         "Reconnaissance": [
-            "e_2"
-        ],
-        "Engagement Strategy": [
-            "e_1"
+            "e_1",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Not specified",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_4",
-                "l_5",
-                "l_6"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The forces under Vice Admiral Commanding have effectively concentrated and are ready to engage the enemy fleet, which is reported to consist of multiple battleships and cruisers."
-        },
-        {
-            "event": "e_2",
-            "date": "Not specified",
-            "locations": [
-                "l_1",
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -86,9 +68,55 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4"
             ],
-            "eventSummary": "A Sunderland flying-boat reports the position of enemy battleships and cruisers, contributing to the tactical assessment of enemy strength and movements."
+            "eventSummary": "Reports the position of two enemy battleships at 1032."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_4",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Sighted Force D bearing 073 at 1128."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "ARK ROYAL flies off the first T/B Striking Force shortly after sighting Force D."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The Sunderland flying-boat reports 6 cruisers and 8 destroyers at 30 miles from RENOWN."
         }
     ]
 }

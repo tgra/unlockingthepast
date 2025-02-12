@@ -1,113 +1,89 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander J. Jefferies",
-            "p_2": "Lieutenant-Commander L. F. Ramseyer",
-            "p_3": "Lieutenant Stowell"
+            "p_1": "Captain (D)",
+            "p_2": "Lieutenant j. G. G. Muir, R.N.V.R.",
+            "p_3": "Lieutenant-Commander F. P. Monckton, R.N.R.",
+            "p_4": "Lieutenant-Commander D. Fifas, R.H.N.",
+            "p_5": "Lieutenant L. E. Newell, D.S.C., R.N.Z.N.V.R.",
+            "p_6": "Sub-Lieutenant J. N. Broad, R.N.Z.N.V.R.",
+            "p_7": "Lieutenant A. G. Fry, R.A.N.V.R.",
+            "p_8": "Lieutenant-Commander R. H. C. Wyld, R.N.",
+            "p_9": "Lieutenant E. G. Warren, R.N."
         },
         "locations": {
-            "l_1": "Leros",
-            "l_2": "Samos",
-            "l_3": "Kos",
-            "l_4": "Alexandria",
-            "l_5": "Haifa",
-            "l_6": "Alinda Bay",
-            "l_7": "Portolago",
-            "l_8": "Kalymnos",
-            "l_9": "Casteloriso"
+            "l_1": "Kos",
+            "l_2": "Kalymnos",
+            "l_3": "Leros",
+            "l_4": "Casteloriso",
+            "l_5": "Alinda Bay",
+            "l_6": "Pharmaco",
+            "l_7": "Blefuti Bay",
+            "l_8": "Palma",
+            "l_9": "Pasti Di Sotto",
+            "l_10": "Grifo",
+            "l_11": "N. Appetici",
+            "l_12": "Aegean",
+            "l_13": "Samos",
+            "l_14": "Portolago"
         },
         "events": {
-            "e_1": "Fall of Leros",
-            "e_2": "Evacuation from Samos",
-            "e_3": "Bombardment of Alinda Bay",
-            "e_4": "Withdrawal from Aegean"
+            "e_1": "Assault on Leros",
+            "e_2": "Action of Motor Torpedo Boat 307",
+            "e_3": "Action of Motor Launch 456",
+            "e_4": "Landing operations at Alinda Bay",
+            "e_5": "Bombardment of Mount Clido battery",
+            "e_6": "Bombardment of enemy positions on Leros",
+            "e_7": "Destruction of naval signal publications at Leros",
+            "e_8": "Counterattacks on enemy positions",
+            "e_9": "Attack on enemy force approaching Alinda Bay"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "Greek Sacred Squadron",
-            "o_3": "Royal Air Force",
-            "o_4": "Special Boat Squadron"
+            "o_2": "Royal Naval Volunteer Reserve",
+            "o_3": "Royal Australian Navy Volunteer Reserve",
+            "o_4": "Royal New Zealand Navy Volunteer Reserve",
+            "o_5": "Italian Army"
         }
     },
     "keywords": [
-        "Leros",
-        "Samos",
-        "Evacuation",
-        "Royal Navy",
-        "Air Reconnaissance",
-        "Bombing",
-        "Naval Operations",
-        "Military Withdrawal"
+        "assault",
+        "landing craft",
+        "enemy forces",
+        "patrol",
+        "bombardment",
+        "naval operations"
     ],
     "themes": [
         "Military Operations",
-        "Evacuations",
-        "Naval Warfare",
-        "Reconnaissance",
-        "Tactical Decisions"
+        "Naval Engagements",
+        "Aerial Bombardments"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_4",
+            "e_8"
+        ],
+        "Naval Engagements": [
+            "e_2",
             "e_3",
-            "e_4"
+            "e_5",
+            "e_9"
         ],
-        "Evacuations": [
-            "e_2"
-        ],
-        "Naval Warfare": [
-            "e_3",
-            "e_4"
-        ],
-        "Reconnaissance": [
-            "e_1"
+        "Aerial Bombardments": [
+            "e_5",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th November",
+            "date": "November 12-14, 1943",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_2"
-            ],
-            "eventSummary": "The fall of Leros occurs as enemy reinforcements overrun British defenses, leading to a critical loss of territory."
-        },
-        {
-            "event": "e_2",
-            "date": "19th-20th November",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "Evacuation from Samos is successfully conducted, removing British and Greek forces in response to increasing threats."
-        },
-        {
-            "event": "e_3",
-            "date": "15th November",
-            "locations": [
-                "l_6"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -116,15 +92,32 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_4",
+                "e_6"
             ],
-            "eventSummary": "Bombardment of Alinda Bay is executed by H.M.S. Penn and Aldenham, aimed at disrupting enemy landings."
+            "eventSummary": "The assault on Leros involves a series of enemy landings and engagements with British naval forces."
         },
         {
-            "event": "e_4",
-            "date": "By 2nd December",
+            "event": "e_2",
+            "date": "November 12, 1943",
             "locations": [
-                "l_9"
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Motor Torpedo Boat 307, under Lieutenant Muir, engages two unknown destroyers off Kalymnos."
+        },
+        {
+            "event": "e_3",
+            "date": "November 12, 1943",
+            "locations": [
+                "l_3"
             ],
             "persons": [
                 "p_3"
@@ -133,7 +126,85 @@
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The withdrawal from the Aegean occurs, with remaining forces being extracted to ensure minimal losses."
+            "eventSummary": "Motor Launch 456, commanded by Lieutenant-Commander Monckton, engages enemy forces near Alinda Bay."
+        },
+        {
+            "event": "e_4",
+            "date": "November 12, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_6",
+                "e_7"
+            ],
+            "eventSummary": "Enemy forces successfully land at Alinda Bay, making strategic gains despite counteractions by British forces."
+        },
+        {
+            "event": "e_5",
+            "date": "November 12, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Mount Clido battery in Leros is bombarded to provide support to British forces on the ground."
+        },
+        {
+            "event": "e_6",
+            "date": "November 14, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_8",
+                "p_9"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "H.M. Ships ECHO and BELVOIR carry out bombardments of enemy positions on Leros."
+        },
+        {
+            "event": "e_7",
+            "date": "November 14, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "British naval signal publications are destroyed due to an impending enemy attack at Leros."
+        },
+        {
+            "event": "e_8",
+            "date": "November 14, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "British forces conduct counterattacks in Leros amid ongoing enemy assaults."
+        },
+        {
+            "event": "e_9",
+            "date": "November 14, 1943",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_9"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "H.M.S. PENN attacks an enemy force that approaches Alinda Bay during a pre-dawn operation."
         }
     ]
 }

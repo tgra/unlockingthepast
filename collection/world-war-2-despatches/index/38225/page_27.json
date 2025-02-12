@@ -1,148 +1,131 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Senior Naval Officer (L)",
-            "p_2": "Admiral"
+            "p_1": "Rear Admiral Syfret",
+            "p_2": "Capitaine Clavel",
+            "p_3": "Brigadier Festing",
+            "p_4": "Brigadier Tarleton",
+            "p_5": "Lieutenant-Colonel H. C. Stockwell",
+            "p_6": "Lieutenant-Colonel B. H. Hanaut",
+            "p_7": "Colonel Claerebout",
+            "p_8": "Capitaine de Vaisseau Maerten",
+            "p_9": "Capitaine de Vaisseau Simon",
+            "p_10": "Colonel Rouves"
         },
         "locations": {
-            "l_1": "Nosi Hara",
-            "l_2": "Q.1",
-            "l_3": "Nosi Anjombavola",
-            "l_4": "Courrier Bay",
-            "l_5": "Windsor Castle",
-            "l_6": "Antsirane"
+            "l_1": "Cap D Embre",
+            "l_2": "Antsirane",
+            "l_3": "Orangea Peninsula",
+            "l_4": "Bellevue fort",
+            "l_5": "Ambatolambo",
+            "l_6": "Diego Suarez",
+            "l_7": "Madagascar",
+            "l_8": "French Bay"
         },
         "events": {
-            "e_1": "Report of mine in vicinity",
-            "e_2": "Bombing of observation post at Windsor Castle",
-            "e_3": "Landing of forces at White Beach",
-            "e_4": "Ship movements to main anchorage",
-            "e_5": "Survey of No. 8 battery"
+            "e_1": "Assault by H.M.S. Anthony",
+            "e_2": "Capture of Antsirane",
+            "e_3": "Negotiation for surrender at Orangea Peninsula"
         },
         "organisations": {
-            "o_1": "Royal Navy"
+            "o_1": "Royal Marines",
+            "o_2": "2 Royal Welsh Fusiliers",
+            "o_3": "17 Infantry Brigade",
+            "o_4": "29 Independent Brigade",
+            "o_5": "French troops",
+            "o_6": "Royal Navy",
+            "o_7": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "Minesweeper",
-        "Anchor",
-        "Report",
-        "Communication",
-        "Landing Craft",
-        "Bombing",
-        "Session"
+        "Assault",
+        "Surrender",
+        "Negotiation",
+        "Fire",
+        "Bombardment",
+        "Prisoners of War",
+        "Military Operation"
     ],
     "themes": [
         "Military Operations",
-        "Naval Communication",
-        "Strategic Movements",
-        "Reconnaissance"
+        "Surrender and Negotiation",
+        "Military Coordination"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2"
+        ],
+        "Surrender and Negotiation": [
+            "e_3"
+        ],
+        "Military Coordination": [
+            "e_1",
             "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Naval Communication": [
-            "e_3",
-            "e_5"
-        ],
-        "Strategic Movements": [
-            "e_4"
-        ],
-        "Reconnaissance": [
-            "e_2",
-            "e_5"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown",
+            "date": "Not available",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_6",
+                "o_7"
             ],
             "connectedEvents": [
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "A report of mines in the vicinity is received indicating a potential hazard during operations."
+            "eventSummary": "Assault by H.M.S. Anthony is executed with Royal Marines trying to take control amidst enemy fire."
         },
         {
             "event": "e_2",
-            "date": "1138",
+            "date": "7th May",
             "locations": [
-                "l_5"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The Walrus aircraft is sent to bomb the observation post at Windsor Castle on request from the Army on shore."
+            "eventSummary": "Capture of Antsirane occurs as resistance ceases, but enemy forts continue to fire."
         },
         {
             "event": "e_3",
-            "date": "Unknown",
+            "date": "8th May",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Landing forces at White Beach indicate progress in securing the area."
-        },
-        {
-            "event": "e_4",
-            "date": "Unknown",
-            "locations": [
+                "l_3",
                 "l_6"
             ],
             "persons": [
-                "p_1"
+                "p_7",
+                "p_8",
+                "p_9",
+                "p_10"
             ],
             "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3",
-                "e_5"
-            ],
-            "eventSummary": "Ships navigate to the main anchorage area as part of operational strategy."
-        },
-        {
-            "event": "e_5",
-            "date": "Unknown",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
+                "o_5"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Surveys of No. 8 battery are carried out as part of reconnaissance efforts."
+            "eventSummary": "Negotiation for surrender at Orangea Peninsula involves discussions between British and French officers."
         }
     ]
 }

@@ -1,43 +1,34 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Personnel",
-            "p_2": "British Personnel",
-            "p_3": "American Personnel"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Western Europe",
-            "l_2": "United Kingdom",
-            "l_3": "Continent",
-            "l_4": "South of England"
+            "l_1": "United Kingdom"
         },
         "events": {
             "e_1": "D-Day",
-            "e_2": "Overlord Campaign",
-            "e_3": "Air Operations of the Second Tactical Air Force"
+            "e_2": "Post-Assault Phase",
+            "e_3": "Preparatory Operations"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "U.S. Army Air Forces",
-            "o_3": "United States Ninth Air Force",
-            "o_4": "Second Tactical Air Force",
-            "o_5": "R.A.F. Bomber Command",
-            "o_6": "British Air Forces"
+            "o_1": "U.S. Eighth Air Force",
+            "o_2": "A.E.AF.",
+            "o_3": "Ninth A.F.",
+            "o_4": "T.A.F.",
+            "o_5": "RAF",
+            "o_6": "R.A.F. Coastal Command"
         }
     },
     "keywords": [
-        "Air Operations",
-        "Personnel Casualties",
-        "Administrative Control",
-        "Tactical Air Forces",
-        "Airfield Construction",
-        "Evacuation of Casualties"
+        "air operations",
+        "flying bombs",
+        "ski sites",
+        "attacks",
+        "preparatory phase"
     ],
     "themes": [
         "Military Operations",
-        "Administration",
-        "Logistics",
-        "Alliances"
+        "Air Warfare",
+        "Preparation for Invasion"
     ],
     "topicModel": {
         "Military Operations": [
@@ -45,81 +36,59 @@
             "e_2",
             "e_3"
         ],
-        "Administration": [
-            "e_3"
-        ],
-        "Logistics": [
-            "e_3"
-        ],
-        "Alliances": [
-            "e_1",
+        "Air Warfare": [
             "e_2"
+        ],
+        "Preparation for Invasion": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 6, 1944",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "D-Day marks the beginning of the Allied invasion of occupied Europe, leading to significant operations by both British and American air forces."
-        },
-        {
-            "event": "e_2",
-            "date": "June 1944 - August 1944",
+            "date": "6 June 1944",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_1"
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
             ],
+            "eventSummary": "D-Day signifies the largest amphibious invasion in history, marking the start of the liberation of Western Europe."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Post-Assault Phase includes details on the effectiveness of allied air forces after the D-Day landings."
+        },
+        {
+            "event": "e_3",
+            "date": "1 April to 5 June 1944",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1",
+                "o_2",
+                "o_3",
                 "o_4",
                 "o_5",
                 "o_6"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The Overlord Campaign represents the large-scale Allied operations targeting Nazi-occupied Europe, relying heavily on air and ground cooperation."
-        },
-        {
-            "event": "e_3",
-            "date": "April 1, 1944 - September 30, 1944",
-            "locations": [
-                "l_1",
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The air operations of the Second Tactical Air Force emphasize the complexity and administrative challenges of coordinating extensive military efforts."
+            "connectedEvents": [],
+            "eventSummary": "Preparatory Operations detail the extensive bombing campaigns conducted by the Allied air forces prior to the D-Day landings."
         }
     ]
 }

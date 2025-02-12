@@ -1,154 +1,142 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier Festing",
-            "p_2": "French naval officer"
+            "p_1": "Sebastian Francis Newdigate",
+            "p_2": "F. W. Festing"
         },
         "locations": {
-            "l_1": "Courrier",
-            "l_2": "Ampbararata",
-            "l_3": "Diego Suarez",
-            "l_4": "Antsirane",
-            "l_5": "Ambodivahibe Bay",
-            "l_6": "Mahagaga",
-            "l_7": "Col du Courrier",
-            "l_8": "Andrakaka Peninsula",
-            "l_9": "Col De Bonne Nouvelle",
-            "l_10": "Anamakia"
+            "l_1": "Nosi Fati",
+            "l_2": "Ambararata Bay",
+            "l_3": "Windsor Castle",
+            "l_4": "Diego Suarez"
         },
         "events": {
-            "e_1": "Landing at Courrier Bay",
-            "e_2": "Main Landings of 29 Independent Brigade",
-            "e_3": "Air Action and Diversion by H.M.S. Hernnone",
-            "e_4": "Advance to Antsirane"
+            "e_1": "Assault on Red, Green, and White Beaches",
+            "e_2": "Landing at Blue Beach",
+            "e_3": "Mine incident involving H.M.S. AURICULA",
+            "e_4": "Engagement of enemy post on Windsor Castle"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Merchant Navy",
-            "o_3": "Fleet Air Arm",
-            "o_4": "2 East Lancashire Regiment",
-            "o_5": "2 Royal Welsh Fusiliers",
-            "o_6": "1 Royal Scots Fusiliers",
-            "o_7": "2 South Lancashire Regiment",
-            "o_8": "5 Commando"
+            "o_1": "H.M.S. INDOMITABLE",
+            "o_2": "H.M.S. LIGHTNING",
+            "o_3": "H.M.S. AURICULA",
+            "o_4": "KEREN",
+            "o_5": "KARANJA",
+            "o_6": "WINCHESTER CASTLE",
+            "o_7": "SOBIESKI",
+            "o_8": "BACHAQUERO",
+            "o_9": "No. 5 Commando",
+            "o_10": "2 East Lancs. Regt.",
+            "o_11": "1st R.S.F.",
+            "o_12": "2 R.W.F."
         }
     },
     "keywords": [
-        "Convoy",
-        "Assault",
-        "Landing",
-        "Casualties",
-        "Operation",
-        "Reconaissance",
-        "Infantry",
-        "Navy"
+        "Asault",
+        "Convoys",
+        "Mines",
+        "Landing Craft",
+        "Air Support",
+        "Tactical Plan"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Maneuvers",
-        "Naval Coordination"
+        "Naval Warfare",
+        "Tactics",
+        "Surprise Assault",
+        "Minefield Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_2"
         ],
-        "Tactical Maneuvers": [
-            "e_3",
-            "e_4"
-        ],
-        "Naval Coordination": [
+        "Tactics": [
             "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Naval Warfare": [
             "e_3"
+        ],
+        "Surprise Assault": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1610",
+            "date": "5th May",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
+                "o_4",
+                "o_5",
+                "o_6",
+                "o_9",
+                "o_10",
+                "o_11",
+                "o_12"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The assault on Red, Green, and White Beaches proceeds according to plan, surprising the enemy despite the explosion of at least one mine."
+        },
+        {
+            "event": "e_2",
+            "date": "5th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
                 "o_4",
                 "o_5",
                 "o_6"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The Landing at Courrier Bay occurs with 3 Commando successfully landing at the Red beaches, capturing strategic positions with little to no resistance."
-        },
-        {
-            "event": "e_2",
-            "date": "1610",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_5",
-                "o_6",
-                "o_8"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The Main Landings of 29 Independent Brigade commence successfully as forces move towards Antsirane, meeting limited enemy resistance."
+            "eventSummary": "The landing at Blue Beach occurs under heavy enemy fire, but is successfully carried out."
         },
         {
             "event": "e_3",
-            "date": "1610",
+            "date": "5th May",
             "locations": [
-                "l_5"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "Air Action by H.M.S. Hernnone includes successful bombardment of enemy positions, supporting naval operations in the assault."
+            "connectedEvents": [],
+            "eventSummary": "At 1138, H.M.S. AURICULA strikes a mine close to position HH but remains afloat without loss of life."
         },
         {
             "event": "e_4",
-            "date": "1610",
+            "date": "6th May",
             "locations": [
-                "l_6"
+                "l_3"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_4",
-                "o_5"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Advance of forces to Antsirane is marked by the capture of a French naval officer, highlighting ongoing strategic military movements."
+            "connectedEvents": [],
+            "eventSummary": "An enemy post on Windsor Castle engages and is eventually found to be empty upon the arrival of friendly troops."
         }
     ]
 }

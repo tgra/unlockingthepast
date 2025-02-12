@@ -1,40 +1,99 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Ambala",
-            "l_2": "Delhi",
-            "l_3": "Cawnpore",
-            "l_4": "Ramgarh",
-            "l_5": "Madras",
-            "l_6": "Bangstore",
-            "l_7": "Ceylon",
-            "l_8": "Chagos",
-            "l_9": "Shanghai",
-            "l_10": "Chungking",
-            "l_11": "Changsha",
-            "l_12": "Kunming",
-            "l_13": "Shansi"
+        "persons": {
+            "p_1": "General Slim"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Kabaw Valley",
+            "l_2": "Atwin Yomas",
+            "l_3": "Kyaukchaw",
+            "l_4": "Tamu",
+            "l_5": "Chindwin",
+            "l_6": "Manipur River",
+            "l_7": "Imphal",
+            "l_8": "Tiddim",
+            "l_9": "Fort White",
+            "l_10": "Thaungdut Homalin",
+            "l_11": "Ukhrul",
+            "l_12": "Kohima",
+            "l_13": "Surma Valley",
+            "l_14": "Eastern Bengal",
+            "l_15": "Assam",
+            "l_16": "Arakan",
+            "l_17": "North Burma"
+        },
+        "events": {
+            "e_1": "Japanese Offensive against Imphal and Kohima",
+            "e_2": "Attack on enemy positions at Kyaukchaw"
+        },
+        "organisations": {
+            "o_1": "17 Indian Light Division",
+            "o_2": "Fourteenth Army",
+            "o_3": "50 Indian Parachute Brigade",
+            "o_4": "23 Indian Division",
+            "o_5": "20 Indian Division",
+            "o_6": "Long-Range Penetration Brigades"
+        }
     },
     "keywords": [
-        "Ambala",
-        "Delhi",
-        "Cawnpore",
-        "Ramgarh",
-        "Madras",
-        "Bangstore",
-        "Ceylon",
-        "Chagos",
-        "Shanghai",
-        "Chungking",
-        "Changsha",
-        "Kunming",
-        "Shansi"
+        "Japanese Offensive",
+        "Imphal",
+        "Kohima",
+        "Indian Divisions",
+        "Tactical Discussions",
+        "Military Operations"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Strategic Decisions"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Strategic Decisions": [
+            "e_1"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "8th March",
+            "locations": [
+                "l_7",
+                "l_12",
+                "l_10",
+                "l_4",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On the 8th of March, the anticipated Japanese offensive against Imphal and Kohima is launched, beginning with two main advances, one up the west bank of the Manipur River and the other northwards up the Kabaw Valley."
+        },
+        {
+            "event": "e_2",
+            "date": "17th January",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the 17th of January, forces attack enemy positions at Kyaukchaw, which is eighteen miles southeast of Tamu, along with other small operations in the same area during that month."
+        }
+    ]
 }

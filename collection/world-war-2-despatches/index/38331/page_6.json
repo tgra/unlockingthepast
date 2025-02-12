@@ -1,65 +1,54 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieut. Marshall G. C. Warmington",
-            "p_2": "Major J. F. Durnford-Slater",
-            "p_3": "Captain A. S. Ronald",
-            "p_4": "Lieut. Colonel D. S. Lister",
-            "p_5": "Major M. E. Kerr",
-            "p_6": "Lieut. H. M. Turner",
-            "p_7": "Captain Martin Linge"
+            "p_1": "Commander-in-Chief, Home Fleet",
+            "p_2": "Captain C. Caslon, R.N.",
+            "p_3": "Lieut -Commander Shaw, RN."
         },
         "locations": {
-            "l_1": "Stamsund",
-            "l_2": "Henningsvaer",
-            "l_3": "Svolvaer",
-            "l_4": "Brettesnes"
+            "l_1": "Svolvaer",
+            "l_2": "Brettesnes",
+            "l_3": "Scapa Flow",
+            "l_4": "Skaalefjord",
+            "l_5": "Lofoten Islands",
+            "l_6": "Vestfjord",
+            "l_7": "Norway",
+            "l_8": "Holen Skjoldver",
+            "l_9": "Skravven"
         },
         "events": {
-            "e_1": "Military operation landings on March 4th",
-            "e_2": "Norwegian troops assistance during operations"
+            "e_1": "Operation Rebel",
+            "e_2": "Landing at Lofoten Islands",
+            "e_3": "Naval approach to Lofoten Islands"
         },
         "organisations": {
-            "o_1": "Royal Engineers",
-            "o_2": "The Buffs",
-            "o_3": "The Rifle Brigade",
-            "o_4": "Home Fleet"
+            "o_1": "Royal Navy"
         }
     },
     "keywords": [
-        "military landings",
-        "communication",
-        "meteorological data",
-        "weapons operation",
-        "civilian reception",
-        "Norwegian cooperation"
+        "military operation",
+        "landing craft",
+        "enemy forces",
+        "naval action"
     ],
     "themes": [
         "Military Operations",
-        "Communication",
-        "Weather Impact",
-        "Local Reception",
-        "Collaboration"
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Weather Impact": [
-            "e_1"
-        ],
-        "Local Reception": [
-            "e_2"
-        ],
-        "Collaboration": [
-            "e_2"
+        "Naval Strategy": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 4th",
+            "date": "1st March",
             "locations": [
                 "l_1",
                 "l_2",
@@ -69,40 +58,53 @@
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The military operations involve multiple landings across various ports, successfully completed despite initial concerns over conditions. As planned, the landings are executed under clear skies and with no enemy opposition."
+            "eventSummary": "On 1st March, the force code-named 'Rebel' leaves Scapa Flow at 0000 hours and performs various navigational tasks."
         },
         {
             "event": "e_2",
-            "date": "During military operations",
+            "date": "3rd March",
             "locations": [
+                "l_7",
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4"
+                "l_6"
             ],
             "persons": [
-                "p_7"
+                "p_1"
             ],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Norwegian troops provide enthusiastic assistance during the operations, significantly aiding in the timely and effective completion of the mission."
+            "eventSummary": "On 3rd March, the initial landings at Lofoten Islands occur, with troops ashore by 0650 hours."
+        },
+        {
+            "event": "e_3",
+            "date": "Date unspecified",
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The naval approach to the Lofoten Islands features meticulous planning and execution under Captain C. Caslon."
         }
     ]
 }

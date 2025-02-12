@@ -1,44 +1,40 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear-Admiral",
-            "p_2": "Commander of 20th Cruiser Squadron",
-            "p_3": "Crew of COSSACK",
-            "p_4": "Crew of EDINBURGH",
-            "p_5": "Crew of SHEFFIELD",
-            "p_6": "Crew of HERMIONE",
-            "p_7": "Crew of ORIBI"
+            "p_1": "A. T. B. Curteis",
+            "p_2": "Vice-Admiral"
         },
         "locations": {
-            "l_1": "Christmas",
-            "l_2": "Convoy",
-            "l_3": "Position 37 31 N, 10 46 E"
+            "l_1": "Malta",
+            "l_2": "Palermo",
+            "l_3": "Sardinia",
+            "l_4": "Gibraltar",
+            "l_5": "Marittimo"
         },
         "events": {
-            "e_1": "Night T/B Attack on Force X and Convoy",
-            "e_2": "Second Attack",
-            "e_3": "Third Attack",
-            "e_4": "Fourth Attack"
+            "e_1": "Force W operation",
+            "e_2": "Encounter with enemy cruisers",
+            "e_3": "Order to Gibraltar",
+            "e_4": "Force X bombing incident",
+            "e_5": "Pilot achievements of EAGLE"
         },
         "organisations": {
-            "o_1": "20th Cruiser Squadron",
-            "o_2": "Fleet"
+            "o_1": "Admiralty",
+            "o_2": "Force X"
         }
     },
     "keywords": [
-        "T/B attack",
-        "Fulmar escort",
-        "convoy",
-        "R.D.F.",
-        "torpedo",
-        "enemy aircraft",
-        "C.R.42"
+        "Force W",
+        "Italian cruisers",
+        "Hurricanes",
+        "torpedo bombers",
+        "Gibraltar",
+        "Malta"
     ],
     "themes": [
         "Military Operations",
         "Air Defense",
-        "Naval Tactics",
-        "Convoy Escort"
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
@@ -48,32 +44,24 @@
             "e_4"
         ],
         "Air Defense": [
-            "e_1"
+            "e_4",
+            "e_5"
         ],
-        "Naval Tactics": [
+        "Naval Strategy": [
             "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Convoy Escort": [
-            "e_1"
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 8",
+            "date": "5th June",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_7"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
@@ -81,68 +69,59 @@
             ],
             "connectedEvents": [
                 "e_2",
-                "e_3",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "A series of torpedo bomber attacks occur against Force X and the convoy, prompting defensive maneuvers and engagement of enemy aircraft."
+            "eventSummary": "Force W operation is conducted close to the air base in Sardinia, evaluating risks associated with potential enemy encounters."
         },
         {
             "event": "e_2",
-            "date": "September 8",
+            "date": "15th June",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The second attack features multiple aircraft crossing from starboard to port and attacking the convoy."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A signal is received reporting enemy cruisers and destroyers leaving Palermo, prompting immediate strategic considerations."
         },
         {
             "event": "e_3",
-            "date": "September 8",
+            "date": "16th June",
             "locations": [
-                "l_1"
+                "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_7"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "In the third attack, three torpedo bombers engage from the port beam, with noticeable defensive actions from HERMIONE."
+            "connectedEvents": [],
+            "eventSummary": "Force W is ordered to Gibraltar for refueling and readiness for further operations."
         },
         {
             "event": "e_4",
-            "date": "September 8",
+            "date": "17th June",
             "locations": [
                 "l_1",
-                "l_3"
+                "l_5"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_6"
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Force X faces intermittent bombings, illustrating the ongoing threats during their operations."
+        },
+        {
+            "event": "e_5",
+            "date": "June 13-15, 1942",
+            "locations": [
+                "l_1"
             ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "During the fourth attack, several aircraft drop torpedoes on the convoy with notable damage occurring to IMPERIAL STAR."
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The pilots of EAGLE demonstrate exceptional skill by shooting down multiple enemy aircraft over three days."
         }
     ]
 }

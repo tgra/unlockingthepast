@@ -1,93 +1,158 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major-General H. E. de R. Wetherall",
-            "p_2": "Major-General C. C. Fowkes"
+            "p_1": "His Imperial Majesty The Emperor",
+            "p_2": "General Nasi",
+            "p_3": "Kaid",
+            "p_4": "Lieut.-Colonel G. Benson",
+            "p_5": "Crown Prince of Ethiopia"
         },
         "locations": {
-            "l_1": "Ethiopia",
-            "l_2": "East Africa",
-            "l_3": "Addis Ababa",
-            "l_4": "Gimma",
-            "l_5": "Dessie",
-            "l_6": "Diredaua",
-            "l_7": "Harrar",
-            "l_8": "Berbera",
-            "l_9": "Jibouti"
+            "l_1": "Eritrea",
+            "l_2": "Somalia",
+            "l_3": "British Somaliland",
+            "l_4": "Ethiopia",
+            "l_5": "Northern Rhodesia",
+            "l_6": "Union of South Africa",
+            "l_7": "Lake Tana",
+            "l_8": "Gondar",
+            "l_9": "Asmara",
+            "l_10": "Axum",
+            "l_11": "Dessie",
+            "l_12": "Gedaref",
+            "l_13": "Chelga",
+            "l_14": "Wolchefit",
+            "l_15": "Kulkaber",
+            "l_16": "Feroaber",
+            "l_17": "Metemma",
+            "l_18": "Azozo",
+            "l_19": "Gorgora",
+            "l_20": "Zambia"
         },
         "events": {
-            "e_1": "Fall of Gondar",
-            "e_2": "Evacuation of Italians from Ethiopia"
+            "e_1": "Operations against Gondar",
+            "e_2": "Relief of Sudan troops in the Wolchefit area",
+            "e_3": "Surrender of Wolchefit garrison",
+            "e_4": "Final assault on Gondar",
+            "e_5": "Installation of Crown Prince of Ethiopia"
         },
         "organisations": {
             "o_1": "East Africa Command",
-            "o_2": "His Majesty's Government"
+            "o_2": "12th (African) Division",
+            "o_3": "25th (East African) Infantry Brigade",
+            "o_4": "1/6 King's African Rifles",
+            "o_5": "1st East African Pioneers"
         }
     },
     "keywords": [
+        "Eritrea",
         "Gondar",
-        "East Africa",
-        "Evacuation",
-        "Italians",
-        "Military"
+        "Military Operations",
+        "British Somaliland",
+        "Ethiopia"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Evacuation",
-        "Colonial History"
+        "Colonial Governance",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Evacuation": [
-            "e_2"
-        ],
-        "Colonial History": [
             "e_1",
-            "e_2"
-        ]
+            "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Colonial Governance": [],
+        "Logistics": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 1941",
+            "date": "November 27, 1941",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_8"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The fall of Gondar signals the end of significant Italian resistance in Ethiopia and leads to the subsequent administrative challenges."
+            "eventSummary": "The final assault on Gondar takes place at dawn, with the town captured despite strong opposition."
         },
         {
             "event": "e_2",
-            "date": "December 1941",
+            "date": "September 26, 1941",
             "locations": [
-                "l_1",
-                "l_8",
-                "l_9"
+                "l_14"
             ],
-            "persons": [],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The evacuation of Italians from Ethiopia begins, responding to local demands and marking a significant step in the aftermath of the Gondar operations."
+            "eventSummary": "The 25th (East African) Infantry Brigade successfully relieves Sudanese troops in the Wolchefit area."
+        },
+        {
+            "event": "e_3",
+            "date": "Late September, 1941",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [
+                ""
+            ],
+            "organisations": [
+                ""
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The garrison of the strong position of Wolchefit unexpectedly surrenders."
+        },
+        {
+            "event": "e_4",
+            "date": "November 27, 1941",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A second attack on Gondar is successful, leading to the capture of the town."
+        },
+        {
+            "event": "e_5",
+            "date": "November 29, 1941",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                ""
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The Crown Prince of Ethiopia is installed as order is finally restored following the operations."
         }
     ]
 }

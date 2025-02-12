@@ -1,49 +1,56 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Patton"
+            "p_1": "Simpson",
+            "p_2": "Supreme Commander"
         },
         "locations": {
-            "l_1": "Falaise",
-            "l_2": "Argentan",
-            "l_3": "Mayenne",
-            "l_4": "Chambois",
-            "l_5": "Seine",
-            "l_6": "Mantes",
-            "l_7": "Elbeuf",
-            "l_8": "Rouen",
-            "l_9": "Troyes",
-            "l_10": "Chalons-sur-Marne",
-            "l_11": "Rheims",
-            "l_12": "Normandy",
-            "l_13": "Loire"
+            "l_1": "Rhineland",
+            "l_2": "West of the Rhine",
+            "l_3": "Geldern",
+            "l_4": "Wesel",
+            "l_5": "Diisseldorf",
+            "l_6": "Remagen",
+            "l_7": "Coblenz",
+            "l_8": "Saarbrucken",
+            "l_9": "Mainz",
+            "l_10": "Worms",
+            "l_11": "Ruhr",
+            "l_12": "Rheinberg",
+            "l_13": "Rees",
+            "l_14": "Meuse"
         },
         "events": {
-            "e_1": "Battle of Falaise Pocket",
-            "e_2": "Crossing of the Seine",
-            "e_3": "Battle of Mortain-Falaise Pocket"
+            "e_1": "Battle of the Rhine",
+            "e_2": "Battle of the Rhineland",
+            "e_3": "Crossing of the Rhine"
         },
         "organisations": {
-            "o_1": "Allied Air Forces",
-            "o_2": "First Canadian Army",
-            "o_3": "Twelfth U.S. Army Group",
-            "o_4": "United States Army"
+            "o_1": "First Canadian Army",
+            "o_2": "Ninth U.S. Army",
+            "o_3": "First U.S. Army",
+            "o_4": "21 Army Group",
+            "o_5": "Third United States Army",
+            "o_6": "Seventh United States Army",
+            "o_7": "Second Army",
+            "o_8": "Ninth American Army",
+            "o_9": "2 Canadian Corps",
+            "o_10": "XVIII United States Airborne Corps"
         }
     },
     "keywords": [
-        "Falaise",
-        "Argentan",
-        "Canadian Corps",
-        "Allied Air Forces",
-        "Seine",
-        "Normandy",
-        "Battle",
-        "Troops"
+        "attack",
+        "battle",
+        "enemy",
+        "bridgehead",
+        "operations",
+        "defeat"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Tactical Advancements"
+        "Tactics",
+        "Conflict",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
@@ -51,66 +58,74 @@
             "e_2",
             "e_3"
         ],
-        "Diplomacy": [],
-        "Strategic Decisions": []
+        "Tactics": [
+            "e_1",
+            "e_2"
+        ],
+        "Conflict": [
+            "e_1"
+        ],
+        "Strategic Planning": [
+            "e_3"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 16, 1944",
+            "date": "7th March",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_6",
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
+                "o_4",
                 "o_3"
             ],
             "connectedEvents": [
+                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The Battle of Falaise Pocket continues as Canadian forces secure control over Falaise, marking a significant Allied victory."
+            "eventSummary": "On 7th March, following a swift breakthrough, First United States Army secures the railway bridge at Remagen and begins forming a bridgehead on the East bank."
         },
         {
             "event": "e_2",
-            "date": "August 25, 1944",
+            "date": "3rd March",
             "locations": [
-                "l_5",
-                "l_6",
-                "l_8"
+                "l_1",
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
+                "o_2",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Allied troops successfully cross the Seine River, advancing eastwards towards Elbeuf and securing significant territorial gains."
+            "eventSummary": "The battle of the Rhineland features intense opposition from the enemy and significant movement of troops on 3rd March."
         },
         {
             "event": "e_3",
-            "date": "August 19, 1944",
+            "date": "24th March",
             "locations": [
                 "l_1",
-                "l_4"
+                "l_12",
+                "l_13"
             ],
-            "persons": [],
+            "persons": [
+                ""
+            ],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_4",
+                "o_6"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Battle of Mortain-Falaise Pocket comes to an end as Allied forces press the final attacks on enemy positions."
+            "eventSummary": "The crossing of the Rhine is planned for 24th March after the completion of the battle of the Rhineland."
         }
     ]
 }

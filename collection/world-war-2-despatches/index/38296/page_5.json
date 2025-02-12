@@ -2,19 +2,25 @@
     "namedEntities": {
         "persons": {
             "p_1": "R.A.D.",
-            "p_2": "Commander-in-Chief, Mediterranean"
+            "p_2": "Commander-in-Chief, Mediterranean",
+            "p_3": "Rear Admiral (D), Mediterranean"
         },
         "locations": {
-            "l_1": "Crete",
+            "l_1": "Strait",
             "l_2": "Kithera Strait",
-            "l_3": "Alexandria",
+            "l_3": "Maleme",
             "l_4": "Canea",
-            "l_5": "Heraklion"
+            "l_5": "Crete",
+            "l_6": "Alexandria",
+            "l_7": "Cape Matapan",
+            "l_8": "Aegean",
+            "l_9": "Heraklion",
+            "l_10": "Milo"
         },
         "events": {
             "e_1": "Airborne attacks on Crete",
-            "e_2": "Engagements with enemy troop convoys",
-            "e_3": "Bombardment of Scarpanto"
+            "e_2": "Naval engagement with enemy troop convoy",
+            "e_3": "Bombardment of aerodrome"
         },
         "organisations": {
             "o_1": "Force A",
@@ -23,21 +29,22 @@
             "o_4": "Force D",
             "o_5": "Force E",
             "o_6": "Force Ax",
-            "o_7": "Force Ar"
+            "o_7": "Force Az",
+            "o_8": "Force Ar"
         }
     },
     "keywords": [
         "naval forces",
         "air attacks",
         "bombardment",
-        "enemy troops",
-        "military operations"
+        "enemy troop convoy",
+        "German troops",
+        "aviation reconnaissance"
     ],
     "themes": [
         "Military Operations",
         "Naval Engagements",
-        "Air Assaults",
-        "Strategic Movements"
+        "Aerial Warfare"
     ],
     "topicModel": {
         "Military Operations": [
@@ -48,20 +55,16 @@
         "Naval Engagements": [
             "e_2"
         ],
-        "Air Assaults": [
+        "Aerial Warfare": [
             "e_1"
-        ],
-        "Strategic Movements": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "21st May 1941",
+            "date": "21st May, 1941",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_5"
             ],
             "persons": [
                 "p_1",
@@ -70,57 +73,42 @@
             "organisations": [
                 "o_1",
                 "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6",
-                "o_7"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "During daylight on the 21st May, airborne attacks on Crete intensify, leading to significant military engagements."
+            "eventSummary": "The airborne attacks on Crete continue with great intensity, leading to the capture of Maleme by the enemy."
         },
         {
             "event": "e_2",
-            "date": "21st May 1941",
+            "date": "21st May, 1941",
             "locations": [
-                "l_4",
-                "l_1"
+                "l_4"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
                 "o_4",
-                "o_5",
-                "o_6",
-                "o_7"
+                "o_6"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "On 21st May, Force D encounters an enemy troop convoy north of Canea, resulting in engagements that lead to significant troop casualties."
+            "connectedEvents": [],
+            "eventSummary": "Force D encounters an enemy troop convoy north of Canea, engaging it for two and a half hours and sinking several caiques carrying German soldiers."
         },
         {
             "event": "e_3",
-            "date": "21st May 1941",
+            "date": "Date not specified",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_6"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_5"
             ],
             "connectedEvents": [],
-            "eventSummary": "Force E bombards Scarpanto, damaging enemy aircraft, as reported by intelligence later."
+            "eventSummary": "Force E bombards an aerodrome, with later reports indicating damage to enemy aircraft."
         }
     ]
 }

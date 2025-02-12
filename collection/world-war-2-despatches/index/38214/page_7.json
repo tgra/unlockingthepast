@@ -1,114 +1,116 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant Commander Gill",
-            "p_2": "Captain William Tennant",
-            "p_3": "Lieutenant Commander A. G. Skipwith"
+            "p_1": "A. G. Sxipwitu",
+            "p_2": "C. PuLForp",
+            "p_3": "Fit./Lt. Vigors",
+            "p_4": "T. A. Vicors"
         },
         "locations": {
             "l_1": "Singapore",
-            "l_2": "H.M.S. Prince of Wales"
+            "l_2": "Kota Bharu",
+            "l_3": "Pattani",
+            "l_4": "Singgora",
+            "l_5": "Sembawang"
         },
         "events": {
-            "e_1": "First Air Attack",
-            "e_2": "Loss of H.M.S. Prince of Wales",
-            "e_3": "Final Torpedo Attack"
+            "e_1": "Sinking of H.M.S. PRINCE OF WALES",
+            "e_2": "Sinking of H.M.S. REPULSE",
+            "e_3": "Air attack on the PRINCE OF WALES and REPULSE",
+            "e_4": "Landing at Kota Bharu",
+            "e_5": "Operational Signals by Commander-in-Chief, Eastern Fleet"
         },
         "organisations": {
-            "o_1": "Eastern Fleet",
-            "o_2": "H.M.S. Repulse",
-            "o_3": "H.M.S. Vampire",
-            "o_4": "H.M.S. Electra"
+            "o_1": "Royal Air Force",
+            "o_2": "Eastern Fleet",
+            "o_3": "R.A.A.F Station"
         }
     },
     "keywords": [
-        "Torpedo",
-        "Aircraft",
-        "Air Attack",
-        "Survivors",
-        "Damage",
-        "Bombing"
+        "torpedo",
+        "aircraft",
+        "warship",
+        "sinking",
+        "battle"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Rescue Operations",
-        "Command Decisions"
+        "Courage under Fire",
+        "Strategic Naval Actions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Naval Warfare": [
+        "Courage under Fire": [
             "e_2"
         ],
-        "Rescue Operations": [
-            "e_3"
-        ],
-        "Command Decisions": [
-            "e_1"
+        "Strategic Naval Actions": [
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "11th December, 1941",
+            "date": "December 10, 1941",
             "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "At 1113 hours, fire is opened on eight twin-engined high-level bombers that attack H.M.S. Repulse in close formation."
-        },
-        {
-            "event": "e_2",
-            "date": "10th December, 1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "H.M.S. Prince of Wales is attacked by torpedo bombers at 1144 hours, resulting in significant damage and the eventual loss of the ship."
-        },
-        {
-            "event": "e_3",
-            "date": "14th December, 1941",
-            "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "After the last torpedo attacks, destroyers Vampire and Electra efficiently pick up survivors from H.M.S. Prince of Wales."
+            "eventSummary": "H.M.S. PRINCE OF WALES sinks after sustaining multiple hits from torpedoes during an air attack."
+        },
+        {
+            "event": "e_2",
+            "date": "December 10, 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "H.M.S. REPULSE also sinks under similar attack, showcasing the bravery of the crew amidst dire circumstances."
+        },
+        {
+            "event": "e_5",
+            "date": "December 10, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2",
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Commander-in-Chief of the Eastern Fleet issues operational signals regarding enemy engagements in the region."
         }
     ]
 }

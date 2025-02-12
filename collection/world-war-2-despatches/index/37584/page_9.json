@@ -2,111 +2,143 @@
     "namedEntities": {
         "persons": {
             "p_1": "Brigadier Morgan",
-            "p_2": "Norwegian Commander-in-Chief",
-            "p_3": "Major-General Paget",
-            "p_4": "Brigadier Kent Lemon",
-            "p_5": "Lieutenant-Colonel Robinson"
+            "p_2": "General Paget",
+            "p_3": "General Ruge",
+            "p_4": "Lieut. Colonel Clarke",
+            "p_5": "Lieutenant-Colonel Cass"
         },
         "locations": {
-            "l_1": "Norway",
-            "l_2": "Namsos",
-            "l_3": "Andalsnes"
+            "l_1": "Dombis",
+            "l_2": "Rost",
+            "l_3": "Dovre",
+            "l_4": "Andalsnes",
+            "l_5": "Lesja",
+            "l_6": "Lesjaverk",
+            "l_7": "Lesjaskog",
+            "l_8": "Verma",
+            "l_9": "Botheim",
+            "l_10": "Foldal",
+            "l_11": "Otta",
+            "l_12": "Hjerkinn"
         },
         "events": {
-            "e_1": "Evacuation of Central Norway",
-            "e_2": "Operations supporting Norwegian forces",
-            "e_3": "Bombing of Andalsnes"
+            "e_1": "Demolitions at Rost and Dovre",
+            "e_2": "Withdrawal of Norwegian troops",
+            "e_3": "Withdrawal of British troops from Dombis",
+            "e_4": "Enemy reconnaissance activity",
+            "e_5": "Attack by enemy forces"
         },
         "organisations": {
-            "o_1": "Royal Engineers",
-            "o_2": "Royal Navy",
-            "o_3": "Fleet Air Arm",
-            "o_4": "German Air Force"
+            "o_1": "K.O.Y.L.I.",
+            "o_2": "Green Howards",
+            "o_3": "15th Infantry Brigade",
+            "o_4": "Norwegian G.H.Q."
         }
     },
     "keywords": [
-        "Military Operations",
-        "Norwegian Army",
-        "German advance",
-        "Air Support",
-        "Retreat",
-        "Combined Forces"
+        "Demolitions",
+        "Norwegian Ski Troops",
+        "enemy parachute detachments",
+        "Lines of Communication",
+        "withdrawal",
+        "reconnaissance",
+        "attack"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Retreat",
-        "Air Support",
-        "Cooperation between Services"
+        "Troop Movements",
+        "Enemy Actions",
+        "Defensive Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Strategic Decisions": [
-            "e_1"
-        ],
-        "Air Support": [
             "e_2",
             "e_3"
         ],
-        "Cooperation between Services": [
-            "e_2"
+        "Troop Movements": [
+            "e_2",
+            "e_3"
+        ],
+        "Enemy Actions": [
+            "e_4",
+            "e_5"
+        ],
+        "Defensive Strategies": [
+            "e_3",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "29 May 1946",
+            "date": "28th/29th April",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Demolitions at Rost and Dovre are blown after the rear parties had crossed the bridges."
+        },
+        {
+            "event": "e_2",
+            "date": "28th/29th April",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "During the night, many Norwegian troops are withdrawn from the Lines of Communication."
+        },
+        {
+            "event": "e_3",
+            "date": "Night 30th April/1st May",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Evacuation of Central Norway occurs as forces strategically withdraw in response to the German advance."
-        },
-        {
-            "event": "e_2",
-            "date": "Unknown",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Operations supporting Norwegian forces are conducted with skill and energy, showcasing the effective leadership of Major-General Paget."
+            "connectedEvents": [],
+            "eventSummary": "British troops withdraw from Dombis."
         },
         {
-            "event": "e_3",
-            "date": "Unknown",
-            "locations": [
-                "l_3"
-            ],
+            "event": "e_4",
+            "date": "28th April",
+            "locations": [],
             "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Enemy reconnaissance aircraft and bombers are active, bombing and machine gunning all movement on the Lines of Communication."
+        },
+        {
+            "event": "e_5",
+            "date": "28th April",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_5"
+            ],
             "organisations": [
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The bombing of Andalsnes by German aircraft is continuous and persistent, having serious implications for the operational effectiveness of the allied forces."
+            "eventSummary": "The enemy attempts an attack on the K.O.Y.L.I. position."
         }
     ]
 }

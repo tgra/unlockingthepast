@@ -1,47 +1,45 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain",
-            "p_2": "Vice Admiral",
-            "p_3": "Admiral Nord",
-            "p_4": "Rear Admiral Wake-Walker",
-            "p_5": "Captain Tennant",
-            "p_6": "Captain Bush",
-            "p_7": "Commander-in-Chief, Nore"
+            "p_1": "Commodore A. H. Taylor",
+            "p_2": "Captain the Hon. G. Frazer",
+            "p_3": "General Alexander",
+            "p_4": "Admiral Abrial",
+            "p_5": "S.N.O. Dunkirk",
+            "p_6": "Commander G. O. Maund",
+            "p_7": "Rear Admiral, Dover",
+            "p_8": "Brigadier",
+            "p_9": "C.-in-C."
         },
         "locations": {
             "l_1": "Dunkirk",
-            "l_2": "Dover",
-            "l_3": "La Panne",
-            "l_4": "Bray",
-            "l_5": "Malo",
-            "l_6": "Sheerness",
-            "l_7": "Ramsgate"
+            "l_2": "Ramsgate",
+            "l_3": "Felix Faure Quay",
+            "l_4": "North Quay",
+            "l_5": "Mole",
+            "l_6": "United Kingdom"
         },
         "events": {
-            "e_1": "Evacuation of British troops",
-            "e_2": "Dunkirk bombing",
-            "e_3": "Operation Dynamo",
-            "e_4": "Consultation between Admiralty and Vice Admiral"
+            "e_1": "Evacuation at Dunkirk",
+            "e_2": "Abandonment of daylight evacuation",
+            "e_3": "Night evacuation plan"
         },
         "organisations": {
-            "o_1": "War Office",
-            "o_2": "Admiralty"
+            "o_1": "British Expeditionary Force (B.E.F.)",
+            "o_2": "Royal Air Force (R.A.F.)",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
-        "Evacuation",
+        "evacuation",
         "Dunkirk",
-        "Ships",
-        "Destroyers",
-        "Military Operations",
-        "Troop Concentration"
+        "air attack",
+        "British troops",
+        "French troops"
     ],
     "themes": [
         "Military Operations",
-        "Casualties",
-        "Evacuation Strategy",
-        "Command and Communication"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -49,87 +47,76 @@
             "e_2",
             "e_3"
         ],
-        "Evacuation Strategy": [
-            "e_1"
-        ],
-        "Command and Communication": [
-            "e_4",
-            "e_3"
+        "Strategic Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 30, 1940",
+            "date": "Not specified",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_6"
             ],
             "persons": [
+                "p_1",
                 "p_2",
+                "p_3",
                 "p_4",
-                "p_5"
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Evacuation at Dunkirk is supported by multiple flotillas under military leaders with coordination among British and French forces during crucial night operations."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3",
+                "p_4",
+                "p_8"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The evacuation of British troops continues at maximum speed during the night, with Navy and other vessels participating in transporting them from beaches to safety."
-        },
-        {
-            "event": "e_2",
-            "date": "May 29-30, 1940",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Dunkirk is undergoing heavy air bombardment, resulting in significant losses among the destroyer forces supporting the evacuation."
+            "eventSummary": "The abandonment of daylight evacuation occurs due to increasing enemy air attacks causing serious losses, affecting the operation's momentum."
         },
         {
             "event": "e_3",
-            "date": "May 27 - June 4, 1940",
+            "date": "Not specified",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_2",
-                "p_4"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Operation Dynamo is launched to evacuate Allied troops from Dunkirk, facing fierce enemy attacks and logistical challenges."
-        },
-        {
-            "event": "e_4",
-            "date": "May 30, 1940",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2",
-                "p_7"
-            ],
-            "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "A consultation is held between the Admiralty and the Vice Admiral regarding the ongoing evacuation efforts and challenges faced in Dunkirk."
+            "eventSummary": "The night evacuation plan is established to optimize troop extraction, indicating a shift in strategy from daylight operations."
         }
     ]
 }

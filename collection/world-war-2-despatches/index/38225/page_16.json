@@ -1,97 +1,136 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral Syfret",
-            "p_2": "Captain Waller",
-            "p_3": "Captain Garnons-Williams",
-            "p_4": "Major General Berney-Ficklin",
-            "p_5": "Brigadier Tarleton",
-            "p_6": "Brigadier V. C. Russell"
+            "p_1": "General Sturges",
+            "p_2": "First Lieutenant",
+            "p_3": "AURICULA",
+            "p_4": "F.0.0.",
+            "p_5": "H.M.S. ANTHONY"
         },
         "locations": {
-            "l_1": "Durban",
-            "l_2": "Freetown"
+            "l_1": "Windsor Castle",
+            "l_2": "English Bay",
+            "l_3": "Red Beach centre",
+            "l_4": "Andrakaka Peninsula",
+            "l_5": "Antsirane",
+            "l_6": "Diego Suarez harbour",
+            "l_7": "Nosi Hara",
+            "l_8": "Nosi Fati",
+            "l_9": "Durban",
+            "l_10": "Cape Amber",
+            "l_11": "Scotch Bay"
         },
         "events": {
-            "e_1": "Operation Tronclad",
-            "e_2": "Final Preparations at Durban"
+            "e_1": "Landing at Antsirane",
+            "e_2": "Abandonment of AURICULA",
+            "e_3": "Engagement with submarine LE HEROS",
+            "e_4": "Convoy sail from Durban",
+            "e_5": "Landing of vehicles and stores"
         },
         "organisations": {
-            "o_1": "17 Infantry Brigade Group",
-            "o_2": "13 Infantry Brigade Group",
-            "o_3": "29 Independent Brigade",
-            "o_4": "South African Air Force (S.A.A.F.)",
-            "o_5": "Imperial Movement Control"
+            "o_1": "No. 5 Commando",
+            "o_2": "H.M.S. RAMILLIES",
+            "o_3": "Royal Marines",
+            "o_4": "S.O.F.",
+            "o_5": "D.12"
         }
     },
     "keywords": [
-        "Operation Tronclad",
-        "17 Infantry Brigade Group",
-        "Military Plans",
-        "Naval Plans",
-        "Freetown",
-        "Durban",
-        "Final Preparations"
+        "Landing",
+        "Abandonment",
+        "Convoy",
+        "Attack"
     ],
     "themes": [
         "Military Operations",
-        "Command Coordination",
-        "Logistics Planning"
+        "Naval Engagements",
+        "Transportation of Troops"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Command Coordination": [
-            "e_1"
+        "Naval Engagements": [
+            "e_3"
         ],
-        "Logistics Planning": [
-            "e_2"
+        "Transportation of Troops": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th April",
+            "date": "May 7th",
             "locations": [
-                "l_2"
+                "l_5"
             ],
             "persons": [
-                "p_1",
-                "p_4",
-                "p_2",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_5"
             ],
-            "eventSummary": "Operation Tronclad involves the planning and deployment of military units to prepare for an assault, with key approvals from leadership and logistical preparations in progress."
+            "eventSummary": "The landing at Antsirane is deemed successful as troops arrive and establish control."
         },
         {
             "event": "e_2",
-            "date": "22nd April",
+            "date": "May 6th",
             "locations": [
-                "l_1"
+                "l_5"
             ],
             "persons": [
-                "p_1",
-                "p_6",
-                "p_4"
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The crew of AURICULA is ordered to abandon ship due to emergency conditions."
+        },
+        {
+            "event": "e_3",
+            "date": "May 7th",
+            "locations": [
+                "l_7"
             ],
-            "eventSummary": "Final Preparations at Durban witness extensive coordination among naval and military forces to ensure readiness for the Operation Tronclad assault, including assessments of troops, vehicles, and equipment."
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Reports indicate that ANTHONY engaged and sank the French submarine LE HEROS."
+        },
+        {
+            "event": "e_4",
+            "date": "May 8th",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Preparations are finalized for convoys to sail from Durban to Diego Suarez."
+        },
+        {
+            "event": "e_5",
+            "date": "May 8th",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The landing of vehicles and stores continues, ensuring support for troops on land."
         }
     ]
 }

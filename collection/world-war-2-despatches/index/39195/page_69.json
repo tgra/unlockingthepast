@@ -1,127 +1,108 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Subhas Chandra Bose"
+            "p_1": "Earl of Munster"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Malaya",
-            "l_3": "India",
-            "l_4": "Comilla",
-            "l_5": "Arakan",
-            "l_6": "Tiddim",
-            "l_7": "Burma"
+            "l_1": "Burma",
+            "l_2": "India",
+            "l_3": "Comilla",
+            "l_4": "Shwebo",
+            "l_5": "Rangoon",
+            "l_6": "Pegu"
         },
         "events": {
-            "e_1": "Liberation of prisoners of war in Rangoon",
-            "e_2": "Japanese retreat from Burma",
-            "e_3": "Establishment of Corps Medical Centres",
-            "e_4": "Assault landings in the Arakan",
-            "e_5": "Air-drop supply to medical centre in Tiddim"
+            "e_1": "Battle casualties in March",
+            "e_2": "Repatriation of Southern Rhodesian troops in February",
+            "e_3": "Warning order issued for release starting May",
+            "e_4": "Evacuation of Allied prisoners of war in April 1945"
         },
         "organisations": {
-            "o_1": "Indian National Army",
-            "o_2": "Allied Land Forces",
-            "o_3": "USAAF",
-            "o_4": "RAF"
+            "o_1": "Allied Land Forces, South-East Asia",
+            "o_2": "India Command",
+            "o_3": "South-East Asia Command"
         }
     },
     "keywords": [
-        "prisoners of war",
-        "evacuation",
-        "medical services",
-        "Japanese retreat",
-        "Indian National Army"
+        "reinforcements",
+        "casualties",
+        "morale",
+        "leave schemes",
+        "repatriation"
     ],
     "themes": [
         "Military Operations",
-        "Medical Services",
-        "Evacuation",
-        "Prisoner Treatment"
+        "Troop Morale",
+        "Logistics",
+        "Reintegration"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2",
             "e_1",
             "e_4"
         ],
-        "Medical Services": [
-            "e_3",
-            "e_5"
-        ],
-        "Prisoner Treatment": [
+        "Troop Morale": [
             "e_1"
+        ],
+        "Logistics": [
+            "e_2",
+            "e_3"
+        ],
+        "Reintegration": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd May 1950",
+            "date": "March 1945",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "On 3rd May 1950, allied forces re-enter Rangoon, liberating approximately 600-700 prisoners of war from the gaol, who are in surprisingly better condition than expected."
+            "eventSummary": "Battle casualties cause a sharp increase in demands for British and Indian infantry reinforcements in March."
         },
         {
             "event": "e_2",
-            "date": "1950",
-            "locations": [
-                "l_7"
-            ],
+            "date": "February 1945",
+            "locations": [],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "As Japanese forces retreat from Burma, they leave behind the Indian National Army, totaling around 16,000 troops, who surrender upon the advancing Allied approach."
+            "connectedEvents": [],
+            "eventSummary": "A scheme for the repatriation of Southern Rhodesian troops is approved."
         },
         {
             "event": "e_3",
-            "date": "1950",
-            "locations": [
-                "l_6"
-            ],
+            "date": "May 1945",
+            "locations": [],
             "persons": [],
-            "organisations": [
-                "o_3",
-                "o_4"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "In response to communication difficulties, Corps Medical Centres are established to facilitate casualty evacuation and ensure effective medical treatment in the field."
+            "eventSummary": "A warning order is issued for the start of troop release any time after the 1st May."
         },
         {
             "event": "e_4",
-            "date": "1950",
+            "date": "April 1945",
             "locations": [
                 "l_5"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "In the Arakan, assault landings are conducted in treacherous conditions, complicating the early evacuation of casualties."
-        },
-        {
-            "event": "e_5",
-            "date": "1950",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A medical centre in the Tiddim area is successfully supplied by air-drop, effectively treating a large number of wounded and sick."
+            "eventSummary": "Plans are made for the evacuation of approximately 350 Allied prisoners of war in anticipation of the capture of Rangoon."
         }
     ]
 }

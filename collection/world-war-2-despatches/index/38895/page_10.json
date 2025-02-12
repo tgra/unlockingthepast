@@ -1,0 +1,113 @@
+{
+    "namedEntities": {
+        "persons": {
+            "p_1": "R. R. McGrigor",
+            "p_2": "Sir Philip L. Vian",
+            "p_3": "T. H. Troubridge",
+            "p_4": "C. E. Douglas-Pennant",
+            "p_5": "B. H. Ramsay"
+        },
+        "locations": {
+            "l_1": "Mediterranean",
+            "l_2": "Malta",
+            "l_3": "Sousse",
+            "l_4": "Tripoli",
+            "l_5": "Middle East",
+            "l_6": "United Kingdom",
+            "l_7": "Calafrana",
+            "l_8": "south of Syracuse"
+        },
+        "events": {
+            "e_1": "Operation Husky",
+            "e_2": "D Day",
+            "e_3": "assault landings"
+        },
+        "organisations": {
+            "o_1": "Eastern Naval Task Force",
+            "o_2": "Royal Marine Commandos"
+        }
+    },
+    "keywords": [
+        "aircraft",
+        "merchantmen",
+        "assault",
+        "shipping",
+        "convoy"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Strategy",
+        "Logistics"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
+        ],
+        "Logistics": [
+            "e_3"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "9th July 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "Operation Husky commences with naval commander in charge of Eastern Task Force coordinating an assault on the Mediterranean."
+        },
+        {
+            "event": "e_2",
+            "date": "10th July 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_8"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "D Day operations proceed with landings at planned positions along the southern coast with little opposition."
+        }
+    ]
+}

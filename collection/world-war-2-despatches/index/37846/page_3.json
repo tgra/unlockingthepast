@@ -1,53 +1,105 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "J. H. D'Albiac",
-            "p_2": "General Metaxas"
+            "p_1": "General Metaxas",
+            "p_2": "His Majesty the King"
         },
         "locations": {
             "l_1": "Greece",
             "l_2": "Albania",
-            "l_3": "Athens"
+            "l_3": "Italy",
+            "l_4": "Athens",
+            "l_5": "Valona",
+            "l_6": "Durazzo",
+            "l_7": "Egypt"
         },
         "events": {
-            "e_1": "Air Operations in Greece",
-            "e_2": "Declaration of War"
+            "e_1": "arrival of the force",
+            "e_2": "bombing offensive against the ports",
+            "e_3": "land and air operations",
+            "e_4": "operations in Albania"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Italian Government",
-            "o_3": "Greek Government"
+            "o_1": "Greek General Staff",
+            "o_2": "British forces"
         }
     },
     "keywords": [
-        "Air Operations",
-        "Royal Air Force",
+        "operational disadvantages",
+        "runways",
+        "winter months",
+        "ancillary services",
+        "hospital",
+        "rationing",
+        "Army",
         "Greece",
-        "Italy",
-        "Declaration of War",
-        "General Metaxas"
+        "conference",
+        "offensive",
+        "enemy",
+        "fighter opposition"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "War Strategy"
+        "Strategic Decisions",
+        "Cooperation between Forces",
+        "Supply and Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Diplomacy": [
-            "e_2"
+            "e_1"
         ],
         "Strategic Decisions": [
-            "e_2"
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 15, 1941",
+            "date": "January, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The force arrives in Greece, with ongoing discussions about support and runway construction."
+        },
+        {
+            "event": "e_2",
+            "date": null,
+            "locations": [
+                "l_1",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A bombing offensive is conducted against the ports of Valona and Durazzo, affecting the enemy's supply organization."
+        },
+        {
+            "event": "e_3",
+            "date": null,
             "locations": [
                 "l_1"
             ],
@@ -55,30 +107,25 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "Air Vice-Marshal J. H. D'Albiac reports on Royal Air Force operations conducted in Greece from November 1940 to April 1941, discussing various challenges faced and lessons learned during the campaign."
+            "eventSummary": "Conferences are held to discuss the day’s land and air operations, focusing on cooperation between British and Greek forces."
         },
         {
-            "event": "e_2",
-            "date": "October 28, 1940",
+            "event": "e_4",
+            "date": null,
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_4"
             ],
-            "persons": [
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Italian Minister presents an ultimatum to Greek Prime Minister General Metaxas, leading to Greece's declaration of war against Italy after the ultimatum is refused."
+            "connectedEvents": [],
+            "eventSummary": "Greek forces take the offensive in Albania despite challenging weather and equipment shortages."
         }
     ]
 }

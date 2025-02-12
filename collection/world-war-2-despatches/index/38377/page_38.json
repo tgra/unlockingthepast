@@ -1,118 +1,92 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Crew of Fulmar",
-            "p_2": "Crew of NELSON",
-            "p_3": "Crew of RODNEY",
-            "p_4": "Crew of DUNCAN",
-            "p_5": "Crew of LAFOREY",
-            "p_6": "Crew of FORESTER"
+            "p_1": "Rear-Admiral H. M. Burrough",
+            "p_2": "E. N. SyFRET",
+            "p_3": "Vice-Admiral",
+            "p_4": "Captain (D)",
+            "p_5": "Captain (D)",
+            "p_6": "Rear-Admiral Commanding",
+            "p_7": "Rear-Admiral"
         },
         "locations": {
-            "l_1": "Fleet",
-            "l_2": "NELSON",
-            "l_3": "RODNEY",
-            "l_4": "DUNCAN",
-            "l_5": "LANCE",
-            "l_6": "LIVELY",
-            "l_7": "S.E."
+            "l_1": "Gibraltar",
+            "l_2": "Freetown",
+            "l_3": "Malta",
+            "l_4": "Cape Spartel",
+            "l_5": "Tarifa"
         },
         "events": {
-            "e_1": "First Attack",
-            "e_2": "Second Attack",
-            "e_3": "Third Attack"
+            "e_1": "Operation Berserk",
+            "e_2": "Operation Bellows",
+            "e_3": "Passage of Straits of Gibraltar",
+            "e_4": "Commencement of Force 2's withdrawal"
         },
         "organisations": {
-            "o_1": "R.D.F.",
-            "o_2": "Admiralty"
+            "o_1": "Force F",
+            "o_2": "Force X",
+            "o_3": "North Atlantic",
+            "o_4": "Home Fleet"
         }
     },
     "keywords": [
-        "Torpedo",
-        "Attack",
-        "Fighter",
-        "Fulmar",
-        "Nelson",
-        "Rodney"
+        "Gibraltar",
+        "Force",
+        "Operation",
+        "Naval",
+        "Escort",
+        "Convoy"
     ],
     "themes": [
         "Military Operations",
-        "Air Defense",
-        "Naval Engagement"
+        "Naval Warfare",
+        "Strategic Movements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
+            "e_3",
+            "e_4"
+        ],
+        "Naval Warfare": [
+            "e_1",
             "e_3"
         ],
-        "Air Defense": [
-            "e_1",
-            "e_2"
-        ],
-        "Naval Engagement": [
-            "e_1",
-            "e_2",
-            "e_3"
+        "Strategic Movements": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
-            "event": "e_1",
-            "date": "7th September",
+            "event": "e_3",
+            "date": "30th August",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_4",
-                "l_6"
+                "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_3",
-                "p_6"
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "The first attack sees two formations approaches the fleet with multiple fighters engaging, resulting in the loss of five enemy aircraft but no hits on ships. One Fulmar is accidentally shot down by friendly fire."
+            "eventSummary": "The passage of the Straits of Gibraltar occurs, where a large number of fishing boats are encountered, and the visibility is reduced due to fog."
         },
         {
-            "event": "e_2",
-            "date": "7th September",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_2",
-                "p_5"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The second attack involves enemy aircraft launching a torpedo at NELSON, hitting her. Meanwhile, several enemy aircraft are shot down by the fleet's responding destroyers."
-        },
-        {
-            "event": "e_3",
-            "date": "7th September",
-            "locations": [
-                "l_1"
-            ],
+            "event": "e_4",
+            "date": "",
+            "locations": [],
             "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "During the third attack, multiple S.79s are sighted and engaged by escort ships, with some enemy aircraft retreating under fire."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Commencement of Force 2's withdrawal takes place following the passage of the Straits of Gibraltar."
         }
     ]
 }

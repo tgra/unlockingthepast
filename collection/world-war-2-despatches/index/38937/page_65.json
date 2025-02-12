@@ -1,47 +1,43 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Truscott",
-            "p_2": "Mackensen",
-            "p_3": "General Freyberg"
+            "p_1": "General Clark",
+            "p_2": "General Leese",
+            "p_3": "General Harding"
         },
         "locations": {
-            "l_1": "Anzio",
-            "l_2": "Caserta",
-            "l_3": "Cassino",
-            "l_4": "Middle East",
-            "l_5": "Colli Laziali",
-            "l_6": "Cisterna"
+            "l_1": "Apennines",
+            "l_2": "northern Italy",
+            "l_3": "Po",
+            "l_4": "Torreberetti",
+            "l_5": "Alessandria",
+            "l_6": "Gothic line",
+            "l_7": "Florence",
+            "l_8": "Bologna",
+            "l_9": "Orvieto airfield"
         },
         "events": {
-            "e_1": "First Battle of Cassino",
-            "e_2": "Second Battle of Anzio",
-            "e_3": "Third Battle of Cassino",
-            "e_4": "Fourteenth Army's Second Offensive at Anzio"
+            "e_1": "Operation MALLORY MAJOR",
+            "e_2": "Operation ANVIL",
+            "e_3": "Operation OLIVE",
+            "e_4": "Attack on the Gothic line"
         },
         "organisations": {
-            "o_1": "British Division",
-            "o_2": "United States Division",
-            "o_3": "New Zealand Corps",
-            "o_4": "German Army",
-            "o_5": "LXXVI Corps",
-            "o_6": "VI Corps"
+            "o_1": "Eighth Army",
+            "o_2": "Fifth Army",
+            "o_3": "2 Parachute Brigade",
+            "o_4": "13 Corps"
         }
     },
     "keywords": [
-        "regrouping",
-        "offensive",
-        "attack",
-        "defensive",
-        "bridgehead",
-        "weather conditions",
-        "bombardment"
+        "airborne operation",
+        "bridges destruction",
+        "military strategy",
+        "mountain warfare"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Casualties",
-        "Weather Conditions"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -50,42 +46,69 @@
             "e_3",
             "e_4"
         ],
-        "Defensive Strategies": [
-            "e_2",
-            "e_3"
-        ],
-        "Casualties": [
-            "e_1",
-            "e_2"
-        ],
-        "Weather Conditions": [
-            "e_3"
+        "Strategic Decisions": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 14, 1944",
-            "locations": [
-                "l_3"
-            ],
+            "date": "",
+            "locations": [],
             "persons": [
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_4"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The Third Battle of Cassino is launched after careful planning and lays down heavy bombardments, but German troops are resilient."
+            "eventSummary": "Operation MALLORY MAJOR is planned but ultimately canceled due to changing military priorities."
         },
         {
             "event": "e_2",
-            "date": "February 20, 1944",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation ANVIL presents a new approach that alters the strategic landscape significantly."
+        },
+        {
+            "event": "e_3",
+            "date": "4th August",
             "locations": [
-                "l_1"
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "The plan known as Operation OLIVE is established at Orvieto airfield, focusing on altering the attack strategy against the enemy."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_6",
+                "l_7",
+                "l_8"
             ],
             "persons": [
                 "p_1",
@@ -96,26 +119,9 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "The Fourteenth Army's Second Offensive at Anzio begins but is ultimately deemed a failure due to strategic errors."
-        },
-        {
-            "event": "e_3",
-            "date": "March 5, 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Second Battle of Anzio ends with heavy German losses, leading to a more secure Allied bridgehead."
+            "eventSummary": "The attack on the Gothic line involves a collaborative effort between the Eighth and Fifth Armies, aiming to exploit weaknesses in enemy defenses."
         }
     ]
 }

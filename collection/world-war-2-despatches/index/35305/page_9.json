@@ -1,85 +1,117 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Weygand",
-            "p_2": "General Koeltz",
-            "p_3": "Sir Ronald Adam"
+            "p_1": "unknown",
+            "p_2": "unknown"
         },
         "locations": {
-            "l_1": "Dunkirk",
-            "l_2": "La Panne",
-            "l_3": "Bergues",
-            "l_4": "Belgian frontier",
-            "l_5": "Malo-les-Bains"
+            "l_1": "St. Pol",
+            "l_2": "Lille",
+            "l_3": "Amiens",
+            "l_4": "Ruhr",
+            "l_5": "Saar",
+            "l_6": "Guerstling",
+            "l_7": "Remeling",
+            "l_8": "Rouen",
+            "l_9": "Belgian frontier",
+            "l_10": "Armentières",
+            "l_11": "Metz"
         },
         "events": {
-            "e_1": "Evacuation of the British Expeditionary Force",
-            "e_2": "Arrival of French Troops",
-            "e_3": "Bombing of Dunkirk",
-            "e_4": "Casualty Clearing Stations establishment"
+            "e_1": "German invasion of Denmark and Norway",
+            "e_2": "raid on front line positions",
+            "e_3": "formation of Army Headquarters",
+            "e_4": "development of defensive positions"
         },
         "organisations": {
-            "o_1": "H.M. Government",
-            "o_2": "Royal Air Force"
+            "o_1": "British Army",
+            "o_2": "French Army",
+            "o_3": "War Office",
+            "o_4": "B.E.F.",
+            "o_5": "Air Component",
+            "o_6": "144th Infantry Brigade",
+            "o_7": "48th Division",
+            "o_8": "51st Division",
+            "o_9": "5th Division",
+            "o_10": "G.H.Q."
         }
     },
     "keywords": [
-        "evacuation",
-        "embarkation",
-        "counterattacks",
-        "military operations",
-        "bombing",
-        "medical arrangements"
+        "division",
+        "corps",
+        "reserve",
+        "infantry",
+        "reconnaissance",
+        "forces",
+        "defences",
+        "headquarters",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Strategy",
-        "Medical Assistance",
-        "International Coordination"
+        "Defensive Strategies",
+        "Troop Movements",
+        "Military Preparedness"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Evacuation Strategy": [
-            "e_1",
-            "e_2"
-        ],
-        "Medical Assistance": [
+            "e_2",
             "e_4"
         ],
-        "International Coordination": [
-            "e_2"
+        "Defensive Strategies": [
+            "e_4"
+        ],
+        "Troop Movements": [
+            "e_1",
+            "e_3"
+        ],
+        "Military Preparedness": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 29-30, 1940",
+            "date": "9th April",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
                 "e_3"
             ],
-            "eventSummary": "The British Expeditionary Force is evacuated from Dunkirk amidst heavy enemy bombardment, with troops coordinated for embarkation amidst complex logistical challenges."
+            "eventSummary": "The German invasion of Denmark and Norway creates a new situation, prompting leave to be stopped in the British and French Armies."
         },
         {
             "event": "e_2",
-            "date": "May 29, 1940",
+            "date": "5th March",
             "locations": [
                 "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Enemy carries out a successful raid on British front line positions, causing casualties."
+        },
+        {
+            "event": "e_3",
+            "date": "June",
+            "locations": [
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -90,35 +122,22 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "French troops arrive at Dunkirk, complicating the embarkation process for all forces involved due to previously uncoordinated naval arrangements."
-        },
-        {
-            "event": "e_3",
-            "date": "May 29, 1940",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "Dunkirk is subjected to continuous bombing by enemy forces, impacting the operations and safety of the troops during the evacuation."
+            "eventSummary": "Army Headquarters is prepared for the arrival of further troops and involves the move of G.H.Q."
         },
         {
             "event": "e_4",
-            "date": "May 29, 1940",
+            "date": "up to 10th May",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_9"
             ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
+            "persons": [
+                "p_1"
             ],
-            "eventSummary": "Casualty Clearing Stations are established at Dunkirk and La Panne to manage and treat the wounded amidst the ongoing evacuation."
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Development of defensive positions along the Belgian frontier is carried out steadily, leading to the construction of concrete fortifications."
         }
     ]
 }

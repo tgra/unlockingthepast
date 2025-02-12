@@ -1,61 +1,45 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "King Peter of Yugoslavia",
-            "p_2": "King of Greece",
-            "p_3": "Lieutenant-General Sir T. Blamey",
-            "p_4": "Air Vice-Marshal J. H. D Albiac",
-            "p_5": "Prince Paul of Greece",
-            "p_6": "Greek Prime Minister",
-            "p_7": "General Sir Maitland Wilson",
-            "p_8": "General Mackay",
-            "p_9": "General Rankin",
-            "p_10": "Group Captain A. H. Willets",
-            "p_11": "Wing Commander P. B. Coote",
-            "p_12": "Wing Commander J. R. Gordon-Finlayson",
-            "p_13": "Squadron Leader E. G. Jones"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Crete",
-            "l_2": "Suda Bay",
-            "l_3": "Egypt",
-            "l_4": "Kotor (Yugoslavia)",
-            "l_5": "Eleusis",
-            "l_6": "Bagush",
-            "l_7": "Argos",
-            "l_8": "Kalamata",
-            "l_9": "Gytheon",
-            "l_10": "Nauplia (Morea)",
-            "l_11": "Scaramanga",
-            "l_12": "Kythera"
+            "l_1": "Ptolomais",
+            "l_2": "Kozani",
+            "l_3": "Katerini",
+            "l_4": "Thermopylae Position",
+            "l_5": "Athens Area",
+            "l_6": "Niamata",
+            "l_7": "Salonika",
+            "l_8": "Larissa",
+            "l_9": "Sedes",
+            "l_10": "Katerina",
+            "l_11": "Grevena",
+            "l_12": "Kalabaka",
+            "l_13": "Aliakmon River",
+            "l_14": "Argos"
         },
         "events": {
-            "e_1": "Evacuation of R.A.F. personnel",
-            "e_2": "Air operations in Greece",
-            "e_3": "Evacuation of British and Imperial Forces"
+            "e_1": "Fall of Mount Olympus-Aliakmon Line",
+            "e_2": "Withdrawal of British forces to the coast",
+            "e_3": "Evacuation of R.A.F. personnel",
+            "e_4": "Enemy air attack on Argos"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "B.O.A.C",
-            "o_3": "No. 30 Squadron",
-            "o_4": "No. 216 Squadron",
-            "o_5": "No. 267 Squadron",
-            "o_6": "Nos. 228 and 230 Squadrons",
-            "o_7": "No. 203 Squadron"
+            "o_1": "R.A.F.",
+            "o_2": "H.Q., B.A.F., Greece"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Air Operations",
-        "Greece",
-        "Crete",
-        "Royal Air Force"
+        "enemy columns",
+        "withdrawal",
+        "air attacks",
+        "Blenheims",
+        "Hurricanes",
+        "enemy air force"
     ],
     "themes": [
         "Military Operations",
-        "Evacuation Efforts",
-        "Leadership in Combat",
-        "Air Force Coordination"
+        "Evacuations",
+        "Aerial Warfare"
     ],
     "topicModel": {
         "Military Operations": [
@@ -63,84 +47,73 @@
             "e_2",
             "e_3"
         ],
-        "Evacuation Efforts": [
-            "e_1",
-            "e_3"
-        ],
-        "Leadership in Combat": [
+        "Strategic Decisions": [
             "e_2"
         ],
-        "Air Force Coordination": [
-            "e_2"
+        "Evacuations": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd April",
+            "date": "14th April",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "Sunderlands evacuate R.A.F. personnel from Greece to Crete and Egypt, including important political figures."
+            "eventSummary": "The Mount Olympus-Aliakmon Line falls to enemy forces on 14th April, necessitating a retreat."
         },
         {
             "event": "e_2",
-            "date": "24th-30th April",
+            "date": "20th April",
             "locations": [
-                "l_1",
-                "l_3"
+                "l_4"
             ],
-            "persons": [
-                "p_4",
-                "p_5",
-                "p_6"
-            ],
-            "organisations": [
-                "o_4",
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "British Air Forces engage in air operations to provide cover and support during the evacuation of personnel."
-        },
-        {
-            "event": "e_3",
-            "date": "24th-30th April",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_7",
-                "p_8",
-                "p_9",
-                "p_10",
-                "p_11"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_1",
+                "e_3"
+            ],
+            "eventSummary": "British forces withdraw to the coast due to overwhelming enemy pressure by 20th April."
+        },
+        {
+            "event": "e_3",
+            "date": "23rd April",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The main evacuation of British and Imperial Forces occurs, protected by air operations amidst heavy enemy attacks."
+            "eventSummary": "The evacuation of R.A.F. personnel begins, involving air and sea transportation on 23rd April."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd April",
+            "locations": [
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An enemy air attack occurs at Argos on 23rd April, impacting the remaining strength of R.A.F. Squadrons."
         }
     ]
 }

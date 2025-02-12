@@ -1,54 +1,69 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "General of the Army Dwight D. Eisenhower",
+            "p_2": "Field-Marshal Lord Wilson"
+        },
         "locations": {
-            "l_1": "Anzio",
-            "l_2": "Italy",
-            "l_3": "Adriatic Coast",
-            "l_4": "Garigliano",
-            "l_5": "Aurunci Mountains",
-            "l_6": "Apennine"
+            "l_1": "Casablanca",
+            "l_2": "Washington",
+            "l_3": "United Kingdom",
+            "l_4": "Italy",
+            "l_5": "North Africa",
+            "l_6": "Thrace",
+            "l_7": "Pyrenees"
         },
         "events": {
-            "e_1": "Order of Battle of Allied Armies in Italy",
-            "e_2": "Arrival of Independent Regiments",
-            "e_3": "German forces in Anzio bridgehead"
+            "e_1": "Casablanca conference",
+            "e_2": "Trident conference",
+            "e_3": "invasion of Sicily",
+            "e_4": "campaign in Italy"
         },
         "organisations": {
-            "o_1": "Fourteenth Army",
-            "o_2": "U.S. Army",
-            "o_3": "French Expeditionary Corps",
-            "o_4": "S.S. Battle Group",
-            "o_5": "Luftwaffe"
+            "o_1": "Combined Chiefs of Staff",
+            "o_2": "Supreme Allied Command"
         }
     },
     "keywords": [
-        "Independent Regiments",
-        "German Divisions",
-        "Allied Armies",
-        "Anzio Beachhead",
-        "Order of Battle"
+        "invasion",
+        "clearance",
+        "military strategy",
+        "German divisions",
+        "Allied Force Headquarters"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Deployments",
-        "Military Organisation"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Strategic Deployments": [
-            "e_1",
-            "e_3"
+        "Strategic Decisions": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "11th May, 1944",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Casablanca conference treats the invasion of Sicily as a continuation of the clearance of North Africa."
+        },
+        {
+            "event": "e_2",
+            "date": "May 1943",
             "locations": [
                 "l_2"
             ],
@@ -57,42 +72,41 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The Order of Battle of Allied Armies in Italy is established, detailing the composition and deployment of the various units involved in operations."
-        },
-        {
-            "event": "e_2",
-            "date": "Before 16th February, 1944",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Independent Regiments arrive before 16th February, contributing to the German military presence in the Anzio area."
+            "eventSummary": "The Trident conference in Washington takes a wider view on military strategy and informs the Supreme Allied Commander."
         },
         {
             "event": "e_3",
-            "date": "6th February, 1944",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_4"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
-                "o_4",
-                "o_5"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "German forces in the Anzio bridgehead area are reported to be equivalent to nine divisions as of 6th February."
+            "eventSummary": "The invasion of Sicily is a significant military operation aimed at removing Italy from the war."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The campaign in Italy follows directives from the Combined Chiefs of Staff and is essential for Allied strategy."
         }
     ]
 }

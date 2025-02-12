@@ -1,118 +1,125 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Saint Benedict",
+            "p_1": "General Truscott",
             "p_2": "General Clark",
-            "p_3": "General Eisenhower",
-            "p_4": "Rear-Admiral F. J. Lowry"
+            "p_3": "General Leese"
         },
         "locations": {
-            "l_1": "Monte Cassino",
-            "l_2": "Rome",
-            "l_3": "Termoli",
-            "l_4": "Tiber",
-            "l_5": "Alban Hills",
-            "l_6": "Anzio",
-            "l_7": "Liri valley",
-            "l_8": "Cairo",
-            "l_9": "Italy",
-            "l_10": "Garigliano",
-            "l_11": "Aurunci Mountains",
-            "l_12": "Lepini Mountains"
+            "l_1": "Anzio",
+            "l_2": "Cisterna",
+            "l_3": "Artena",
+            "l_4": "Valmontone",
+            "l_5": "Velletri",
+            "l_6": "Terracina",
+            "l_7": "Rome",
+            "l_8": "Tivoli",
+            "l_9": "Liri",
+            "l_10": "Sacco",
+            "l_11": "Piedimonte",
+            "l_12": "Monte Cairo"
         },
         "events": {
-            "e_1": "Landing at Termoli",
-            "e_2": "Operation SHINGLE",
-            "e_3": "Carthage Conferences"
+            "e_1": "Break-out from Anzio",
+            "e_2": "Fall of Rome",
+            "e_3": "VI Corps attack on Hitler line"
         },
         "organisations": {
-            "o_1": "Eighth Army",
-            "o_2": "Fifth Army",
-            "o_3": "United States Navy"
+            "o_1": "Fifth Army",
+            "o_2": "VI Corps",
+            "o_3": "Eighth Army",
+            "o_4": "1 Canadian Corps",
+            "o_5": "13 Corps",
+            "o_6": "4 Corps",
+            "o_7": "Special Service Force",
+            "o_8": "Fourteenth Army"
         }
     },
     "keywords": [
-        "Operation SHINGLE",
-        "amphibious landing",
-        "Rome",
-        "Alban Hills",
-        "Tiber",
-        "Eighth Army",
-        "Fifth Army"
+        "German divisions",
+        "Fifth Army",
+        "Special Service Force",
+        "an infantry attack",
+        "German lines",
+        "minefields",
+        "Cisterna",
+        "Rome"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Coordination with Allies"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Strategic Decisions": [
             "e_2",
             "e_3"
         ],
-        "Coordination with Allies": [
-            "e_3"
+        "Strategic Decisions": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown",
+            "date": "23rd May",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Eighth Army successfully conducts a small-scale amphibious landing at Termoli."
+            "eventSummary": "The VI Corps attack begins at 0630 hours on 23rd May, aiming to surround Cisterna, with initial success achieved by the 24th."
         },
         {
             "event": "e_2",
-            "date": "20th December",
+            "date": "25th May",
             "locations": [
-                "l_5",
-                "l_6"
+                "l_2",
+                "l_7"
             ],
             "persons": [
                 "p_2",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Operation SHINGLE plans an amphibious landing south of Rome to capture the Alban Hills and disrupt German communications."
-        },
-        {
-            "event": "e_3",
-            "date": "25th October and 3rd November",
-            "locations": [
-                "l_8"
-            ],
-            "persons": [
                 "p_3"
             ],
             "organisations": [
+                "o_1",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Cisterna falls on 25th May, contributing to the capture of Rome amidst strategic military operations led by General Clark and General Leese."
+        },
+        {
+            "event": "e_3",
+            "date": null,
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Carthage Conferences occur where strategies, including the amphibious landing, are discussed among military leaders."
+            "eventSummary": "The attack on the Hitler line by VI Corps is a significant phase in the broader operation leading to the capture of Rome."
         }
     ]
 }

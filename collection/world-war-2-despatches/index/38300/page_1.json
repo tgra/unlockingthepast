@@ -1,90 +1,83 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral",
-            "p_2": "Lieut. R. P. B. Veal"
+            "p_1": "John C. Tovey",
+            "p_2": "Jack C. Tovey",
+            "p_3": "Rear Admiral Commanding, First Cruiser Squadron"
         },
         "locations": {
-            "l_1": "Kirkenes, Norway",
-            "l_2": "Petsamo, Finland",
-            "l_3": "Seidisfiord",
-            "l_4": "Scapa",
-            "l_5": "Reydarfiord"
+            "l_1": "Kirkenes",
+            "l_2": "Petsamo",
+            "l_3": "Northern Norway",
+            "l_4": "Northwestern Norway"
         },
         "events": {
-            "e_1": "Operation BR",
-            "e_2": "Mine incident involving ACHATES"
+            "e_1": "Carrier Borne Aircraft Attack on Kirkenes and Petsamo",
+            "e_2": "Operation of the Rear Admiral Commanding, First Cruiser Squadron"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Admiralty"
+            "o_1": "Home Fleet",
+            "o_2": "Cruiser Squadron"
         }
     },
     "keywords": [
-        "Operation",
-        "German shipping",
         "aircraft",
-        "anti-submarine",
-        "navigation",
-        "mine"
+        "attack",
+        "operation",
+        "morale",
+        "surprise"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Navigation Challenges",
-        "Risks in Warfare"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Engagement": [
+        "Strategic Decisions": [
             "e_1"
-        ],
-        "Navigation Challenges": [
-            "e_2"
-        ],
-        "Risks in Warfare": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th August, 1941",
+            "date": "25th May, 1941",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation BR is conducted, targeting German shipping in Norwegian and Finnish waters with multiple naval forces participating."
+            "eventSummary": "On the 25th of May, 1941, the Carrier Borne Aircraft Attack takes place on Kirkenes and Petsamo, with heavy losses and small material results."
         },
         {
             "event": "e_2",
-            "date": "23rd July, 1941",
+            "date": "25th May, 1941",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_3"
             ],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "ACHATES strikes a mine, leading to a rescue operation by ANTHONY while the squadron faces navigation difficulties due to poor visibility and weather conditions."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The conduct of the operation by the Rear Admiral Commanding, First Cruiser Squadron highlights the challenges faced due to the lack of preparation and reconnaissance."
         }
     ]
 }

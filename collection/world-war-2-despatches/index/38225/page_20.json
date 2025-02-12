@@ -1,37 +1,41 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain R. M. J. Hurton",
-            "p_2": "Captain B. Clark"
+            "p_1": "Rear Admiral Syfret",
+            "p_2": "Captaims Waller",
+            "p_3": "Garnons-Williams",
+            "p_4": "Major General Berney-Ficklin",
+            "p_5": "Brigadier Tarleton",
+            "p_6": "Brigadier V. C. Russell"
         },
         "locations": {
-            "l_1": "Red Beach",
-            "l_2": "Windsor Castle",
-            "l_3": "Nosi Hara",
-            "l_4": "Diego Suarez",
-            "l_5": "Nosi Fati"
+            "l_1": "Freetown",
+            "l_2": "Durban",
+            "l_3": "South Africa"
         },
         "events": {
-            "e_1": "Bombardment of Red Beach",
-            "e_2": "A/S patrol and submarine hunt",
-            "e_3": "Escort of convoy to Diego Suarez"
+            "e_1": "Withdrawal of 17 Infantry Brigade Group",
+            "e_2": "Operation Tronclad",
+            "e_3": "Final Preparations at Durban"
         },
         "organisations": {
-            "o_1": "Royal Artillery",
-            "o_2": "Nineteenth Destroyer Flotilla"
+            "o_1": "17 Infantry Brigade Group",
+            "o_2": "13 Infantry Brigade Group",
+            "o_3": "29 Independent Brigade",
+            "o_4": "South African Air Force (S.A.A.F.)",
+            "o_5": "Imperial Movement Control"
         }
     },
     "keywords": [
-        "bombardment",
-        "submarine",
-        "A.S. patrol",
-        "convoy",
-        "artillery"
+        "operation",
+        "assault",
+        "military plans",
+        "preparations",
+        "naval plans"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Coordination"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -39,69 +43,67 @@
             "e_2",
             "e_3"
         ],
-        "Naval Warfare": [
-            "e_1",
-            "e_2"
-        ],
-        "Coordination": [
-            "e_1"
+        "Strategic Decisions": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date not specified",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_4",
+                "p_5"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The withdrawal of 17 Infantry Brigade Group occurs, involving significant coordination and resource distribution among military leaders."
+        },
+        {
+            "event": "e_2",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
                 "p_1",
-                "p_2"
+                "p_5"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The bombardment of Red Beach takes place, aiming to support ground forces and provide artillery fire at enemy positions."
-        },
-        {
-            "event": "e_2",
-            "date": "Date not specified",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The LAFOREY conducts anti-submarine patrols and seeks out a submarine reported by GENISTA, providing protection for forces in the area."
+            "connectedEvents": [],
+            "eventSummary": "Operation Tronclad is planned, involving discussions and adjustments to military and naval strategies."
         },
         {
             "event": "e_3",
-            "date": "Date not specified",
+            "date": "22nd April",
             "locations": [
-                "l_4"
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_4"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_4"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_2"
             ],
-            "eventSummary": "LAFOREY escorts a convoy from the anchorage to Diego Suarez, successfully entering the harbour."
+            "eventSummary": "Final preparations for the military operation take place in Durban, ensuring all necessary resources and equipment are ready for deployment."
         }
     ]
 }

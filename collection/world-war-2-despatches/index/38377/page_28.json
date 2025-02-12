@@ -1,101 +1,104 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Vice-Admiral, Malta"
+            "p_1": "Unnamed crew of Fulmar",
+            "p_2": "Unnamed crew of Speedy",
+            "p_3": "Unnamed crew of Hythe"
         },
         "locations": {
-            "l_1": "ARK ROYAL",
-            "l_2": "NORTH",
-            "l_3": "NELSON",
-            "l_4": "Marittimo Island"
+            "l_1": "Gibraltar",
+            "l_2": "Malta",
+            "l_3": "Eagle",
+            "l_4": "Liverpool",
+            "l_5": "Tanimbar"
         },
         "events": {
-            "e_1": "Flying Operations from ARK ROYAL",
-            "e_2": "Enemy Aircraft Engagement",
-            "e_3": "Shadowing Operation"
+            "e_1": "Air combat",
+            "e_2": "Attack on convoy",
+            "e_3": "Torpedo bombing",
+            "e_4": "Depth charge attack"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "H.M. Ships"
+            "o_1": "Royal Navy"
         }
     },
     "keywords": [
+        "JU.88",
+        "Hurricanes",
+        "torpedo bombers",
         "Fulmars",
-        "C.R.42",
-        "T/B attacks",
-        "aircraft engagement",
-        "shadowing"
+        "Eagle",
+        "Liverpool",
+        "Malta"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Combat",
-        "Reconnaissance",
-        "Navy Operations"
+        "Air Combat",
+        "Navy Engagement"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Aerial Combat": [
+        "Air Combat": [
+            "e_1"
+        ],
+        "Navy Engagement": [
             "e_2"
-        ],
-        "Reconnaissance": [
-            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 28, 1915",
+            "date": "14th June, 1943",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "ARK ROYAL conducts flying operations with several Fulmars engaging in aerial combat against enemy aircraft."
+            "eventSummary": "A series of air battles take place where JU.88 aircraft engage in combat with Hurricane fighters."
         },
         {
             "event": "e_2",
-            "date": "September 28, 1915",
+            "date": "14th June, 1943",
             "locations": [
-                "l_1"
+                "l_4",
+                "l_5"
             ],
-            "persons": [],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "During aircraft operations, Fulmars engage enemy aircraft, resulting in the downing of one T/B and the engagement of C.R.42 fighters."
+            "eventSummary": "Multiple air attacks are launched against the convoy, targeting Royal Navy vessels including Liverpool and Tanimbar."
         },
         {
             "event": "e_3",
-            "date": "September 28, 1915",
+            "date": "14th June, 1943",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_4"
             ],
-            "persons": [],
+            "persons": [
+                "p_3"
+            ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Shadowers from ARK ROYAL attempt to monitor the positions of enemy battleships but encounter communication issues leading to difficulties in locating targets."
+            "connectedEvents": [],
+            "eventSummary": "A depth charge attack is carried out by Speedy, claiming to have sunk a U-Boat during operations at sea."
         }
     ]
 }

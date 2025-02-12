@@ -1,40 +1,65 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "A.V.M. Park",
+            "p_2": "Air Vice-Marshal Park"
+        },
         "locations": {
-            "l_1": "Church Fenton",
-            "l_2": "Kirton-in-Lindsey",
-            "l_3": "Baginton",
-            "l_4": "Norway"
+            "l_1": "Yorkshire",
+            "l_2": "Newcastle",
+            "l_3": "London",
+            "l_4": "Hornchurch",
+            "l_5": "Biggin Hill",
+            "l_6": "South-East England",
+            "l_7": "Debden",
+            "l_8": "Tangmere",
+            "l_9": "Northolt"
         },
         "events": {
-            "e_1": "Battle of Britain"
+            "e_1": "Battle of Britain",
+            "e_2": "Dunkerque fighting",
+            "e_3": "mass raids on London",
+            "e_4": "second Phase of the Battle",
+            "e_5": "third phase of the Battle",
+            "e_6": "large raids on Yorkshire and Newcastle"
         },
         "organisations": {
-            "o_1": "Royal Air Force"
+            "o_1": "No. 11 Group",
+            "o_2": "No. 12 Group",
+            "o_3": "Army Cooperation Squadrons",
+            "o_4": "Day Bomber Squadrons",
+            "o_5": "Fighter Squadrons"
         }
     },
     "keywords": [
-        "Fighter Aircraft",
-        "German Bombers",
-        "Hurricane",
-        "Performance",
-        "Armour",
-        "Incendiary ammunition"
+        "Flying Training Schools",
+        "Fighters",
+        "Squadrons",
+        "German High Command",
+        "Prisoners of War"
     ],
     "themes": [
         "Military Operations",
-        "Aviation Technology",
-        "Defensive Strategies"
+        "Training and Readiness",
+        "Morale",
+        "Air Defense Strategy"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6"
+        ],
+        "Training and Readiness": [
             "e_1"
         ],
-        "Aviation Technology": [
+        "Morale": [
             "e_1"
         ],
-        "Defensive Strategies": [
+        "Air Defense Strategy": [
             "e_1"
         ]
     },
@@ -43,17 +68,103 @@
             "event": "e_1",
             "date": "1940",
             "locations": [
-                "l_1",
-                "l_2",
                 "l_3",
-                "l_4"
+                "l_6"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "The Battle of Britain unfolds, involving significant engagements in the air over South-East England, as British Fighter Squadrons defend against the Luftwaffe."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Battle of Britain is fought, with Fighter Aircraft like the Hurricane engaging German Bombers, utilizing advanced firepower and armor protection to counter enemy attacks."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "During the Dunkerque fighting, large formations of Fighters are employed strategically against enemy attacks."
+        },
+        {
+            "event": "e_3",
+            "date": "1940",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_5"
+            ],
+            "eventSummary": "Mass raids on London occur, exerting tremendous pressure on Fighter units."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The second phase of the Battle is marked by a reduction in the capacity to reinforce units effectively."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The third phase of the Battle sees heavy engagements and increasing strain on British pilots."
+        },
+        {
+            "event": "e_6",
+            "date": "15th August 1940",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Large raids to Yorkshire and Newcastle take place, testing the capabilities of British Fighter Squadrons."
         }
     ]
 }

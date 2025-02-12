@@ -1,81 +1,91 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain C. E. Otway",
-            "p_2": "Brigadier Wallis",
-            "p_3": "Hon. Major J. J. Paterson",
-            "p_4": "Lieut Carruthers",
-            "p_5": "Captains Ega",
-            "p_6": "Captains Jacosta"
+            "p_1": "Lt.-Colonel Stewart",
+            "p_2": "H.E. The Governor"
         },
         "locations": {
-            "l_1": "Hong Kong Island",
-            "l_2": "Saiwan",
-            "l_3": "Devil's Peak",
-            "l_4": "Lyemun Peninsula",
-            "l_5": "North Point",
-            "l_6": "Kowloon Point",
-            "l_7": "Tytam Gap",
-            "l_8": "Leighton Hill",
-            "l_9": "Quarry Bay",
-            "l_10": "Aldrich Bay",
-            "l_11": "Tai Hang Road",
-            "l_12": "Taikoo",
-            "l_13": "Sugar Factory",
-            "l_14": "Causeway Bay",
-            "l_15": "Power Station"
+            "l_1": "Gaps",
+            "l_2": "Central District",
+            "l_3": "Bennets Hill",
+            "l_4": "Stanley",
+            "l_5": "North shore",
+            "l_6": "Hong Kong"
         },
         "events": {
-            "e_1": "Shelling of Braemar beach defence gun position",
-            "e_2": "Heavy bombardment of Lyemun Peninsula",
-            "e_3": "Japanese patrol attack on Saiwan A.A. position",
-            "e_4": "Occupation of Sugar Factory by enemy forces",
-            "e_5": "Establishment of Hughesiliers at Power Station"
+            "e_1": "Fall of Bennets Hill",
+            "e_2": "Advance by the enemy",
+            "e_3": "Capitulation to Japanese Commander"
         },
         "organisations": {
-            "o_1": "HKVDC",
-            "o_2": "Anglo-Persian Company",
-            "o_3": "5/7 Rajput Regiment",
-            "o_4": "1 Middlesex Regiment",
-            "o_5": "Hughesiliers",
-            "o_6": "China Light and Power Company"
+            "o_1": "1 Middlesex Regt",
+            "o_2": "HQ China Command",
+            "o_3": "HQ RA",
+            "o_4": "Coast Regt RA",
+            "o_5": "Hong Kong Regt HKSRA",
+            "o_6": "Field Coy RE",
+            "o_7": "Royal Scots",
+            "o_8": "Canadian Staff",
+            "o_9": "Winnipeg Grenadiers",
+            "o_10": "Royal Rifles of Canada",
+            "o_11": "5/7 Rajput Regt",
+            "o_12": "2/14 Punjab Regt",
+            "o_13": "Royal Corps of Signals",
+            "o_14": "RAOC",
+            "o_15": "RASC",
+            "o_16": "RAVC",
+            "o_17": "Royal Army Dental Corps",
+            "o_18": "HKVDC",
+            "o_19": "Indian Medical Services"
         }
     },
     "keywords": [
-        "Shelling",
-        "Bombardment",
-        "Artillery",
-        "Defence",
-        "Enemy Attack",
-        "Occupation",
-        "Mobile Reserve"
+        "advance",
+        "capitulate",
+        "casualties",
+        "military resistance",
+        "garrison",
+        "enemy"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Enemy Engagement"
+        "Casualties",
+        "Resistance"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Defensive Strategies": [
-            "e_5"
+        "Casualties": [
+            "e_1"
         ],
-        "Enemy Engagement": [
-            "e_3",
-            "e_4"
+        "Resistance": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December 18, 1941",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The fall of Bennets Hill marks a critical development during the conflict, affecting the strategic situation."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_4",
+                "l_5"
             ],
             "persons": [
                 "p_1"
@@ -84,82 +94,26 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "At noon, the defense gun position at Braemar beach is shelled and suffers several direct hits, resulting in the destruction of two 18-pounders."
-        },
-        {
-            "event": "e_2",
-            "date": "December 18, 1941",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "From 1500 hours onwards, significant bombardment occurs on Lyemun Peninsula, impacting the defense setups."
+            "eventSummary": "The enemy advance along the line of Gaps is significant for its impact on the ongoing military operations."
         },
         {
             "event": "e_3",
-            "date": "December 18, 1941",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
+            "date": "",
+            "locations": [],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_3"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "At 2200 hours, Japanese troops launch a patrol attack on the Saiwan A.A. position, which had already endured heavy shelling."
-        },
-        {
-            "event": "e_4",
-            "date": "December 18, 1941",
-            "locations": [
-                "l_10"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_3",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "At 2200 hours, it is reported that the enemy occupies the Sugar Factory, indicating their advance in the area."
-        },
-        {
-            "event": "e_5",
-            "date": "December 16-19, 1941",
-            "locations": [
-                "l_15"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_5"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Hughesiliers, under Major J. J. Paterson, defend the Power Station against enemy actions and play a crucial role in delaying the enemy's advance."
+            "eventSummary": "Capitulation to the nearest Japanese Commander is ordered to prevent further military losses."
         }
     ]
 }

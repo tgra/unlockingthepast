@@ -1,18 +1,105 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Great Britain"
+        "persons": {
+            "p_1": "Major-General Wingate",
+            "p_2": "Majoraa W. D. A. Lentaigne"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Assam",
+            "l_2": "Imphal Front",
+            "l_3": "Kamaing Mogaung Myitkyina sector",
+            "l_4": "Ledo",
+            "l_5": "Arakan",
+            "l_6": "Alethangyaw",
+            "l_7": "St. Martin's Island",
+            "l_8": "Maungdaw Buthidaung road",
+            "l_9": "Calcutta",
+            "l_10": "North-East Assam"
+        },
+        "events": {
+            "e_1": "Japanese offensive against Assam",
+            "e_2": "Amphibious operation in Alethangyaw",
+            "e_3": "Death of Major-General Wingate"
+        },
+        "organisations": {
+            "o_1": "15 Japanese Division",
+            "o_2": "18 Japanese Division",
+            "o_3": "General Stilwell's forces",
+            "o_4": "16 L.R.P. Brigade",
+            "o_5": "Special Force",
+            "o_6": "111 Brigade",
+            "o_7": "Eastern Air Command",
+            "o_8": "Fourteenth Army",
+            "o_9": "American Air Transport Command"
+        }
     },
     "keywords": [
-        "Printed",
-        "Great Britain",
-        "Code No. 65-3917"
+        "Japanese offensive",
+        "military operations",
+        "infantry",
+        "amphibious operation",
+        "air supply",
+        "coastal forces"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Air Co-operation",
+        "Naval Operations"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2"
+        ],
+        "Air Co-operation": [
+            "e_2"
+        ],
+        "Naval Operations": [
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Date not provided",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Japanese offensive against Assam occurs, impacting enemy lines and delaying troop movements."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1944",
+            "locations": [
+                "l_6",
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An amphibious operation is successfully executed in Alethangyaw to contain enemy movements."
+        },
+        {
+            "event": "e_3",
+            "date": "Late March 1944",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Major-General Wingate's death in a flying accident is noted, reflecting on his leadership."
+        }
+    ]
 }

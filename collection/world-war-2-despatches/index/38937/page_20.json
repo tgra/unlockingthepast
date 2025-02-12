@@ -1,40 +1,48 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Commander-in-Chief"
+            "p_1": "General Montgomery",
+            "p_2": "General Sir Alan Brooke"
         },
         "locations": {
-            "l_1": "Anzio",
-            "l_2": "Naples",
-            "l_3": "North Africa",
-            "l_4": "Salerno",
-            "l_5": "Trapani",
-            "l_6": "Gerbini",
-            "l_7": "Reggio",
-            "l_8": "Vibo Valentia"
+            "l_1": "Naples",
+            "l_2": "Foggia",
+            "l_3": "Calabria",
+            "l_4": "Lucania",
+            "l_5": "Apulia",
+            "l_6": "Salerno",
+            "l_7": "Torre Annunziata",
+            "l_8": "Termoli",
+            "l_9": "Campobasso",
+            "l_10": "Vinchiaturo",
+            "l_11": "Pisa-Rimini",
+            "l_12": "United Kingdom",
+            "l_13": "United States",
+            "l_14": "North Africa",
+            "l_15": "Middle East",
+            "l_16": "Tyrrhenian",
+            "l_17": "Castel Volturno"
         },
         "events": {
-            "e_1": "Operation Anzio",
-            "e_2": "Unloading Operation at Naples"
+            "e_1": "Capture of Naples",
+            "e_2": "Capture of Foggia"
         },
         "organisations": {
             "o_1": "Fifth Army",
-            "o_2": "A.F.H.Q.",
-            "o_3": "Navy"
+            "o_2": "Eighth Army",
+            "o_3": "Imperial General Staff"
         }
     },
     "keywords": [
-        "Unloading",
-        "Supplies",
-        "Bridgehead",
-        "Landing Ships",
-        "Weather",
-        "Logistics"
+        "military operations",
+        "administrative problems",
+        "logistics",
+        "reinforcement"
     ],
     "themes": [
         "Military Operations",
         "Logistics",
-        "Supply Chain Management"
+        "Administrative Challenges"
     ],
     "topicModel": {
         "Military Operations": [
@@ -45,48 +53,41 @@
             "e_1",
             "e_2"
         ],
-        "Supply Chain Management": [
-            "e_2"
-        ]
+        "Administrative Challenges": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 22, 1944",
+            "date": "1st October",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3"
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Operation Anzio commences with supplies being unloaded smoothly due to favorable weather conditions. The force is expected to maintain and expand its presence.",
-            "additionalEvent": {
-                "event": "e_2",
-                "date": "January 22, 1944",
-                "locations": [
-                    "l_2"
-                ],
-                "persons": [
-                    "p_1"
-                ],
-                "organisations": [
-                    "o_1",
-                    "o_3"
-                ],
-                "connectedEvents": [
-                    "e_1"
-                ],
-                "eventSummary": "The unloading operation at Naples achieves a high daily average of 7,400 tons despite bad weather on two occasions, showcasing effective logistical planning."
-            }
+            "eventSummary": "The Capture of Naples takes place, completed by Fifth Army, with the King's Dragoon Guards entering the city at 0930 hours."
+        },
+        {
+            "event": "e_2",
+            "date": "27th September",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Foggia and its airfields are captured by Eighth Army four days prior to the capture of Naples, marking a significant advancement in the campaign."
         }
     ]
 }

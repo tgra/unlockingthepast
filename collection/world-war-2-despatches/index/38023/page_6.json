@@ -1,78 +1,130 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "D. W. Boyp",
-            "p_2": "A. L. St. G. Lysrer"
+            "p_1": "Vice Admiral Malta",
+            "p_2": "T.0.0.2031",
+            "p_3": "V.A.M. (R) R.A.A.",
+            "p_4": "C. in C.",
+            "p_5": "F.O.H. Admiralty"
         },
         "locations": {
-            "l_1": "Mediterranean",
-            "l_2": "open sea"
+            "l_1": "Taranto",
+            "l_2": "Mar Piccolo",
+            "l_3": "H.M.S. EAGLE",
+            "l_4": "H.M.S. ILLUSTRIOUS",
+            "l_5": "Malta",
+            "l_6": "Passagio Picolo"
         },
         "events": {
-            "e_1": "Fleet Air Arm Victory",
-            "e_2": "Attack on Enemy in the Mediterranean"
+            "e_1": "Attack on Taranto",
+            "e_2": "Operation with Royal Air Force",
+            "e_3": "Proposed Operation",
+            "e_4": "Aircraft Landing on H.M.S. ILLUSTRIOUS"
         },
         "organisations": {
-            "o_1": "H.M.S. ILLUSTRIOUS"
+            "o_1": "Royal Air Force",
+            "o_2": "Fleet Air Arm",
+            "o_3": "Admiralty"
         }
     },
     "keywords": [
+        "Taranto",
+        "Mar Piccolo",
+        "H.M.S. EAGLE",
+        "H.M.S. ILLUSTRIOUS",
+        "Royal Air Force",
         "Fleet Air Arm",
-        "victory",
-        "attack",
-        "success"
+        "anti-aircraft fire",
+        "aircraft landing"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Aerial Warfare"
+        "Aerial Warfare",
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Naval Strategy": [
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Aerial Warfare": [
+            "e_1"
+        ],
+        "Naval Warfare": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "24 July 1947",
+            "date": "12th November",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Fleet Air Arm's capability to strike unexpectedly is successfully demonstrated, highlighting the underappreciated power of the arm and rewarding the efforts of its personnel."
+            "eventSummary": "An attack is conducted on Taranto involving dive bombers targeting cruisers and destroyers, with notable results including battleships suffering damage."
         },
         {
             "event": "e_2",
-            "date": "26 November 1940",
+            "date": "",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_2"
+                "p_1",
+                "p_4"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The Royal Air Force's reconnaissance contributes significantly to the success of the Taranto operation."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
             ],
-            "eventSummary": "A successful attack against the enemy is reported from the Mediterranean, demonstrating significant operational effectiveness of the H.M.S. ILLUSTRIOUS."
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A proposal to repeat the Taranto operation with a Striking Force of aircraft is canceled due to unfavorable weather reports."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Aircraft land on H.M.S. ILLUSTRIOUS following the Taranto attack amidst challenging conditions."
         }
     ]
 }

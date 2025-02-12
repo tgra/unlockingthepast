@@ -4,38 +4,34 @@
             "p_1": "Commander R. J. R. Dendy"
         },
         "locations": {
-            "l_1": "REPULSE",
-            "l_2": "PRINCE OF WALES",
-            "l_3": "Green 50"
+            "l_1": "Green 50",
+            "l_2": "port beam"
         },
         "events": {
-            "e_1": "First Attack on REPULSE",
-            "e_2": "Second Attack on REPULSE",
+            "e_1": "Attack on REPULSE",
+            "e_2": "Second Attack by Torpedo Bombers",
             "e_3": "Third Attack on REPULSE",
             "e_4": "Fourth Attack on REPULSE"
         },
-        "organisations": {}
+        "organisations": {
+            "o_1": "PRINCE OF WALES",
+            "o_2": "REPULSE"
+        }
     },
     "keywords": [
-        "torpedo bombers",
-        "high level bombing attack",
+        "attack",
+        "torpedo",
+        "bombing",
         "damage control",
-        "Marines messdeck",
-        "Mitsubishi aircraft"
+        "aircraft"
     ],
     "themes": [
         "Military Operations",
-        "Damage Control",
-        "Naval Warfare"
+        "Naval Warfare",
+        "Damage Control"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Damage Control": [
             "e_1",
             "e_2",
             "e_3",
@@ -46,78 +42,91 @@
             "e_2",
             "e_3",
             "e_4"
+        ],
+        "Damage Control": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown",
+            "date": "",
             "locations": [
                 "l_1"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
             "connectedEvents": [
                 "e_2",
                 "e_3",
                 "e_4"
             ],
-            "eventSummary": "The first attack on REPULSE occurs as nine aircraft approach, dropping bombs that cause some damage but are contained by efficient damage control efforts."
+            "eventSummary": "A series of attacks concentrate on REPULSE, culminating in significant damage from airborne assaults."
         },
         {
             "event": "e_2",
-            "date": "Unknown",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2"
+                ""
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
             "connectedEvents": [
                 "e_1",
                 "e_3",
                 "e_4"
             ],
-            "eventSummary": "During the second attack, torpedo bombers target REPULSE and PRINCE OF WALES; the ship dodges multiple torpedoes thanks to the crew's alertness."
+            "eventSummary": "The second attack features torpedo bomber aircraft targeting REPULSE and PRINCE OF WALES, with successful evasive actions noted."
         },
         {
             "event": "e_3",
-            "date": "Unknown",
+            "date": "",
             "locations": [
-                "l_1",
                 "l_2"
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
             "connectedEvents": [
                 "e_1",
                 "e_2",
                 "e_4"
             ],
-            "eventSummary": "The third attack features high-level bombing on REPULSE, which narrowly avoids significant damage due to its maneuvering."
+            "eventSummary": "A high-level bombing attack occurs against REPULSE, with near misses and a careful assessment of damage reported."
         },
         {
             "event": "e_4",
-            "date": "Unknown",
+            "date": "",
             "locations": [
-                "l_2"
+                ""
             ],
             "persons": [
                 "p_1"
             ],
-            "organisations": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
             "connectedEvents": [
                 "e_1",
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "In the fourth attack, REPULSE is struck by a torpedo amidst a coordinated air assault, yet the crew maintains operations effectively."
+            "eventSummary": "The fourth attack reveals a coordinated effort by torpedo bombers aimed at REPULSE, leading to direct hits."
         }
     ]
 }

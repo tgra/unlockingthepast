@@ -1,58 +1,59 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Gott",
-            "p_2": "General Ramsden"
+            "p_1": "C. J. Auchinleck",
+            "p_2": "General Sir H. M. Wilson",
+            "p_3": "Lt.-General E. P. Quinan"
         },
         "locations": {
-            "l_1": "Deir el Abyad",
-            "l_2": "El Alamein",
-            "l_3": "Ruweisat Ridge",
-            "l_4": "Tel el Eisa",
-            "l_5": "Tel el MakhKhad",
-            "l_6": "Miteiriya",
-            "l_7": "Taga plateau",
-            "l_8": "Sanyet el Miteiriya"
+            "l_1": "Derna",
+            "l_2": "Martuba",
+            "l_3": "Mechili",
+            "l_4": "Tob",
+            "l_5": "Sollum",
+            "l_6": "Maddalena Giarabub",
+            "l_7": "Egypt",
+            "l_8": "Iraq",
+            "l_9": "Cyprus",
+            "l_10": "Persia",
+            "l_11": "Syria",
+            "l_12": "Persian Gulf",
+            "l_13": "Suez Canal"
         },
         "events": {
-            "e_1": "Attack in the Centre",
-            "e_2": "Attack in the North"
+            "e_1": "Operation Instruction No. 112",
+            "e_2": "movement of formations from the Middle East",
+            "e_3": "withdrawal of infantry divisions",
+            "e_4": "security of the Western Front of Egypt"
         },
         "organisations": {
-            "o_1": "21st Indian Infantry Brigade",
-            "o_2": "5th New Zealand Infantry Brigade",
-            "o_3": "6th New Zealand Infantry Brigade",
-            "o_4": "8th Australian Division",
-            "o_5": "1st South African Division",
-            "o_6": "69th Infantry Brigade",
-            "o_7": "7th Armoured Division",
-            "o_8": "23rd Armoured Brigade",
-            "o_9": "2nd Armoured Brigade",
-            "o_10": "9th Light Armoured Brigade"
+            "o_1": "M.E.F.",
+            "o_2": "Ninth Army",
+            "o_3": "Tenth Army",
+            "o_4": "G.H.Q."
         }
     },
     "keywords": [
-        "Attack",
-        "Infantry Brigade",
-        "Armoured Forces",
-        "Counter-attack",
-        "Minefields"
+        "defensive positions",
+        "enemy air force",
+        "armoured division",
+        "infantry division",
+        "reinforcements",
+        "military operations"
     ],
     "themes": [
         "Military Operations",
-        "Counter-Attack",
-        "Battle Strategy"
+        "Strategic Decisions",
+        "Troop Movements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Counter-Attack": [
-            "e_1",
-            "e_2"
-        ],
-        "Battle Strategy": [
+        "Strategic Decisions": [
             "e_1",
             "e_2"
         ]
@@ -60,52 +61,69 @@
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 21-22, 1942",
+            "date": "23rd February, 1942",
             "locations": [
                 "l_1",
-                "l_4",
-                "l_3",
-                "l_6"
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4",
-                "o_5",
-                "o_6",
-                "o_7",
-                "o_8"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The allied forces launch a major assault on the enemy's center, gaining initial ground but ultimately failing to break through due to counterattacks."
+            "eventSummary": "General C. J. Auchinleck issues Operation Instruction No. 112 outlining defense and troop coordination strategies."
         },
         {
             "event": "e_2",
-            "date": "July 26, 1942",
+            "date": "",
             "locations": [
-                "l_4",
-                "l_1",
-                "l_8"
+                "l_7"
             ],
             "persons": [
-                "p_2"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_4",
-                "o_5",
-                "o_6",
-                "o_2"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "General Ramsden leads an attack in the north aimed at breaching enemy positions but faces strong counterattacks, resulting in withdrawal and regrouping of forces."
+            "eventSummary": "The movement of various divisions is planned to bolster forces in the East and Far East."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "A review of available infantry divisions in the Middle East is made, considering possible withdrawals."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Security strategies are discussed for maintaining a robust defense along Egypt's Western Front."
         }
     ]
 }

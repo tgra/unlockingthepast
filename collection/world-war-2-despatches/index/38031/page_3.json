@@ -1,99 +1,126 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral Sir Andrew B. Cunningham",
-            "p_2": "Vice-Admiral H. D. Pridham-Wippell",
-            "p_3": "Captain D.12"
+            "p_1": "A. B. CunnincHam",
+            "p_2": "Captain D.14",
+            "p_3": "Vice-Admiral, Light Forces"
         },
         "locations": {
             "l_1": "Mediterranean",
-            "l_2": "Greece",
-            "l_3": "Suda Bay",
-            "l_4": "Alexandria",
-            "l_5": "Gavdo",
-            "l_6": "Malta"
+            "l_2": "Italian coast",
+            "l_3": "Corinth Canal",
+            "l_4": "Argostoli",
+            "l_5": "Greece",
+            "l_6": "Crete",
+            "l_7": "Alexandria harbour",
+            "l_8": "south westward",
+            "l_9": "north-east",
+            "l_10": "north-west"
         },
         "events": {
             "e_1": "Battle of Matapan",
-            "e_2": "Operation Lustre"
+            "e_2": "attack on Greece",
+            "e_3": "retreating enemy fleet"
         },
         "organisations": {
-            "o_1": "Admiralty",
-            "o_2": "Royal Navy",
-            "o_3": "Italian Navy"
+            "o_1": "H.M.S. GREYHOUND",
+            "o_2": "H.M.S. WARSPITE",
+            "o_3": "H.M.S. HAVOCK",
+            "o_4": "H.M.S. FORMIDABLE",
+            "o_5": "H.M.A.S. STUART",
+            "o_6": "Italian Fleet"
         }
     },
     "keywords": [
-        "Battle of Matapan",
-        "Operation Lustre",
-        "Admiral",
+        "engagement",
+        "reconnaissance",
+        "withdrawal",
+        "attack",
         "cruisers",
         "destroyers",
-        "fleet operation"
+        "air attacks",
+        "night action"
     ],
     "themes": [
         "Military Operations",
-        "Naval Strategy",
-        "Logistics",
-        "Intelligence"
+        "Naval Warfare",
+        "Battle Analysis"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Naval Warfare": [
             "e_1"
         ],
-        "Logistics": [
-            "e_2"
-        ],
-        "Naval Strategy": [
-            "e_1"
-        ],
-        "Intelligence": [
+        "Battle Analysis": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th-30th March 1941",
+            "date": null,
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
                 "l_5",
                 "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Matapan is recognized as a significant naval engagement where British forces successfully engage and sink several enemy cruisers while encountering difficulties due to miscommunications and the presence of enemy fleets."
+        },
+        {
+            "event": "e_2",
+            "date": null,
+            "locations": [
+                "l_5",
+                "l_6"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The attack on Greece is perceived as a precursor to subsequent military operations, emphasizing the growing threat from German and Italian forces in the region."
+        },
+        {
+            "event": "e_3",
+            "date": null,
+            "locations": [
+                "l_6",
+                "l_5"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Battle of Matapan occurs, where the British fleet successfully engages the Italian Navy, resulting in the destruction of five enemy ships with minimal losses."
-        },
-        {
-            "event": "e_2",
-            "date": "1941",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
+                "o_6"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation Lustre involves the transport of British troops and supplies to Greece, crucial for maintaining military support during the conflict."
+            "eventSummary": "The retreating enemy fleet raises concerns during the military operations, highlighting missed opportunities for engagement by British forces."
         }
     ]
 }

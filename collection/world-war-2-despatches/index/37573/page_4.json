@@ -6,93 +6,79 @@
             "p_3": "Brigadier J. G. des R. Swayne",
             "p_4": "Brigadier N. M. Ritchie",
             "p_5": "Lieutenant-Colonel R. Briggs",
-            "p_6": "Air Commodore ColeHamilton",
+            "p_6": "Air Commodore Cole-Hamilton",
             "p_7": "Air Marshal Barratt",
             "p_8": "General de Fonblanque",
             "p_9": "Captain Allen"
         },
         "locations": {
-            "l_1": "Cherbourg",
+            "l_1": "Normandy",
             "l_2": "Brittany",
             "l_3": "Laval",
             "l_4": "Rennes",
-            "l_5": "Redon",
-            "l_6": "St. Nazaire",
-            "l_7": "United Kingdom",
-            "l_8": "Avranches",
-            "l_9": "Channel Islands",
-            "l_10": "Brest",
+            "l_5": "Cherbourg",
+            "l_6": "Vitre",
+            "l_7": "Redon",
+            "l_8": "St. Nazaire",
+            "l_9": "United Kingdom",
+            "l_10": "Avranches",
             "l_11": "La Rochelle",
-            "l_12": "Nantes"
+            "l_12": "Nantes",
+            "l_13": "Channel Islands",
+            "l_14": "Brest",
+            "l_15": "London"
         },
         "events": {
-            "e_1": "Embarkation of Norman Force",
-            "e_2": "Tenth French Army Retreat",
-            "e_3": "Request for Armistice by Petain Government",
-            "e_4": "Enemy Air Raids near St. Nazaire"
+            "e_1": "withdrawal of the Tenth French Army",
+            "e_2": "disengagement of Norman Force",
+            "e_3": "embarkation of troops",
+            "e_4": "request for an Armistice by Petain Government",
+            "e_5": "evacuation from La Rochelle",
+            "e_6": "air raids on St. Nazaire"
         },
         "organisations": {
             "o_1": "Tenth French Army",
-            "o_2": "British Expeditionary Force (B.E.F.)",
-            "o_3": "French Mission"
+            "o_2": "No. 2 Mission",
+            "o_3": "B.E.F.",
+            "o_4": "Petain Government"
         }
     },
     "keywords": [
-        "embarkation",
-        "retreat",
-        "armistice",
-        "air raids",
-        "military strategy"
+        "Army",
+        "withdraw",
+        "embark",
+        "evacuation",
+        "Armistice",
+        "reconnaissance",
+        "pressure"
     ],
     "themes": [
         "Military Operations",
-        "Evacuations",
-        "Diplomacy",
-        "Supply Chain Management"
+        "Evacuation",
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_4"
+            "e_3",
+            "e_6"
+        ],
+        "Evacuation": [
+            "e_3",
+            "e_5"
         ],
         "Diplomacy": [
-            "e_3"
-        ],
-        "Evacuations": [
-            "e_1",
-            "e_2"
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "24th June",
-            "locations": [
-                "l_1",
-                "l_5"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Norman Force is prepared for embarkation at Cherbourg as part of military strategy to assist the retreating Tenth French Army."
-        },
-        {
-            "event": "e_2",
-            "date": "24th June",
+            "date": "Not specified",
             "locations": [
                 "l_3",
-                "l_4",
-                "l_1"
+                "l_4"
             ],
             "persons": [
                 "p_1"
@@ -101,40 +87,90 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The Tenth French Army is in full retreat towards Laval and Rennes, with General Marshall-Cornwall organizing a withdrawal to Cherbourg."
+            "eventSummary": "The Tenth French Army is in full retreat, withdrawing to Laval and Rennes."
         },
         {
-            "event": "e_3",
-            "date": "24th June",
+            "event": "e_2",
+            "date": "Not specified",
             "locations": [
                 "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Norman Force is permitted to disengage and withdraw towards Cherbourg."
+        },
+        {
+            "event": "e_3",
+            "date": "Not specified",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [
+                "p_2",
+                "p_7"
             ],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1",
+                "e_5"
             ],
-            "eventSummary": "The Petain Government requests an armistice with the Germans, significantly impacting military operations and regrouping efforts."
+            "eventSummary": "Major-General Drew embarks his brigade to proceed to the United Kingdom."
         },
         {
             "event": "e_4",
-            "date": "24th June",
+            "date": "Not specified",
             "locations": [
-                "l_6"
+                "l_15"
             ],
             "persons": [
                 "p_1"
             ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Petain Government requests an Armistice with Germany."
+        },
+        {
+            "event": "e_5",
+            "date": "Not specified",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Evacuation arrangements for troops defending Nantes and St. Nazaire are being made."
+        },
+        {
+            "event": "e_6",
+            "date": "Not specified",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Multiple enemy air raids occur near St. Nazaire while evacuations are taking place to ensure the safety of personnel."
+            "eventSummary": "Several enemy air raids occur over St. Nazaire with no damage reported."
         }
     ]
 }

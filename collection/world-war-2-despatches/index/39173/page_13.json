@@ -1,28 +1,147 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "SIN KIANG",
-            "l_2": "Ramgorh",
-            "l_3": "Chhindwara",
-            "l_4": "NICOBAR",
-            "l_5": "CEYLON",
-            "l_6": "MALDIVE",
-            "l_7": "Diego Garcia"
+        "persons": {
+            "p_1": "General Stilwell"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Kohima",
+            "l_2": "Imphal",
+            "l_3": "Moirang",
+            "l_4": "Ningthoukhong",
+            "l_5": "Maingkwan",
+            "l_6": "Hukawng Valley",
+            "l_7": "Kamaing",
+            "l_8": "Mogaung",
+            "l_9": "Myitkyina",
+            "l_10": "Mintha-Tamu road",
+            "l_11": "Tiddim road",
+            "l_12": "Aradura Spur"
+        },
+        "events": {
+            "e_1": "Battle of Kohima",
+            "e_2": "Operations on the Tiddim road",
+            "e_3": "Assaults on Kamaing",
+            "e_4": "Assaults on Mogaung",
+            "e_5": "Assaults on Myitkyina"
+        },
+        "organisations": {
+            "o_1": "14th Army",
+            "o_2": "American squadrons of the Northern Air Sector Force",
+            "o_3": "Air Transport Command",
+            "o_4": "No. 82 Squadron",
+            "o_5": "No. 224 Group",
+            "o_6": "Nos. 99 and 215 Squadrons"
+        }
     },
     "keywords": [
-        "SIN KIANG",
-        "Ramgorh",
-        "Chhindwara",
-        "NICOBAR",
-        "CEYLON",
-        "MALDIVE",
-        "Diego Garcia"
+        "air support",
+        "military operations",
+        "ground forces",
+        "fighter-bombers",
+        "air superiority"
     ],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "themes": [
+        "Military Operations",
+        "Air Support",
+        "Ground Assaults"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Air Support": [
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Ground Assaults": [
+            "e_1",
+            "e_2"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "April 8, 1944",
+            "locations": [
+                "l_1",
+                "l_12"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Battle of Kohima involves intense fighting for control of the town and surrounding areas."
+        },
+        {
+            "event": "e_2",
+            "date": "May 1944",
+            "locations": [
+                "l_2",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operations on the Tiddim road see several attacks against enemy concentrations."
+        },
+        {
+            "event": "e_3",
+            "date": "1944",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Assaults on Kamaing are part of the air support provided by American squadrons."
+        },
+        {
+            "event": "e_4",
+            "date": "1944",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Assaults on Mogaung see significant air and ground force involvement."
+        },
+        {
+            "event": "e_5",
+            "date": "May 17, 1944",
+            "locations": [
+                "l_9"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Assaults on Myitkyina culminate in the strategic capture of the airstrip."
+        }
+    ]
 }

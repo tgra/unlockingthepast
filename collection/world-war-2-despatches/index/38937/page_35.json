@@ -1,132 +1,128 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General von Vietinghoff",
-            "p_2": "Field-Marshal Kesselring"
+            "p_1": "General von Mackensen",
+            "p_2": "General Clark",
+            "p_3": "General Leese"
         },
         "locations": {
-            "l_1": "Italy",
-            "l_2": "Capo Passero",
-            "l_3": "Brenner",
-            "l_4": "Modena",
-            "l_5": "Ostiglia",
-            "l_6": "Verona",
-            "l_7": "Ferrara",
-            "l_8": "Rovigo",
-            "l_9": "Padua",
-            "l_10": "Argenta",
-            "l_11": "Venetia",
-            "l_12": "Tyrol",
-            "l_13": "Salzburg",
-            "l_14": "Western Carinthia",
-            "l_15": "Northern Italy"
+            "l_1": "Genoa",
+            "l_2": "Sangro",
+            "l_3": "Cisterna",
+            "l_4": "Campoleone",
+            "l_5": "Velletri",
+            "l_6": "Anzio",
+            "l_7": "Carroceto",
+            "l_8": "Aurunci Mountains",
+            "l_9": "Cassino",
+            "l_10": "North Africa"
         },
         "events": {
-            "e_1": "Italian Campaign",
-            "e_2": "Operation against German defenses",
-            "e_3": "Transference of divisions"
+            "e_1": "Battle for Cisterna",
+            "e_2": "Renewed Attack on the Gustav Line",
+            "e_3": "Counter-attack by Germans on 3rd February"
         },
         "organisations": {
-            "o_1": "Combined Chiefs of Staff",
-            "o_2": "German Army Group C",
-            "o_3": "Psychological Warfare Organization"
+            "o_1": "65 Infantry Division",
+            "o_2": "715 (Motorized) Infantry Division",
+            "o_3": "Fourteenth Army",
+            "o_4": "I Parachute Corps",
+            "o_5": "LXXVI Panzer Corps",
+            "o_6": "Hermann Goering Division",
+            "o_7": "3 Panzer Grenadier Division",
+            "o_8": "VI Corps",
+            "o_9": "56 Division",
+            "o_10": "1 Special Service Force",
+            "o_11": "45 Division",
+            "o_12": "2 Corps",
+            "o_13": "Eighth Army",
+            "o_14": "French Expeditionary Corps",
+            "o_15": "4 Indian Division",
+            "o_16": "1 Canadian Division",
+            "o_17": "78 Division"
         }
     },
     "keywords": [
-        "Supreme Allied Commander",
-        "Italian campaign",
-        "enemy defenses",
-        "Fifth Army",
-        "Eighth Army",
-        "German Order of Battle",
-        "psychological warfare"
+        "Infantry",
+        "Division",
+        "Artillery",
+        "Attack",
+        "Counter-attack",
+        "Reinforcement"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "Psychological Warfare",
-        "Resilience"
+        "Strategic Decisions",
+        "Defensive Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
             "e_2"
         ],
-        "Defensive Strategies": [
-            "e_2"
-        ],
-        "Psychological Warfare": [
-            "e_3",
-            "o_3"
-        ],
-        "Resilience": [
-            "e_1"
+        "Defensive Operations": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 1945",
+            "date": "25th January",
             "locations": [
-                "l_1",
-                "l_12",
-                "l_13",
-                "l_14",
-                "l_15"
+                "l_3",
+                "l_4"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_6"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The Italian campaign unfolds as Allied forces strategize to dismantle German defenses in Italy, ultimately leading to the final capitulation of enemy forces."
+            "eventSummary": "The battle for Cisterna takes place, where the 3 Division advances but is halted by the Hermann Goering Division."
         },
         {
             "event": "e_2",
-            "date": "April 1945",
+            "date": "February (exact date unspecified)",
             "locations": [
-                "l_1",
-                "l_6",
-                "l_7",
-                "l_10"
+                "l_9"
             ],
             "persons": [
-                "p_1"
+                "p_3"
             ],
             "organisations": [
-                "o_2"
+                "o_8",
+                "o_14"
             ],
             "connectedEvents": [
                 "e_1",
                 "e_3"
             ],
-            "eventSummary": "Operation aiming at breaking German defenses employs two separate attacking points, focusing on surrounding enemy forces and exploiting weaknesses to prevent their reorganization."
+            "eventSummary": "A renewed attack on the Gustav Line is planned to break through enemy lines for strategic advantages."
         },
         {
             "event": "e_3",
-            "date": "April 10, 1945",
+            "date": "3rd February",
             "locations": [
-                "l_1"
+                "l_7",
+                "l_4"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_9"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The transference of divisions indicates shifting military strategies as commands are adjusted in response to ongoing military challenges in the Italian front."
+            "connectedEvents": [],
+            "eventSummary": "The Germans launch a counter-attack on the salient held by 1 Division, challenging the defensive positions."
         }
     ]
 }

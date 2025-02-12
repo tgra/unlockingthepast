@@ -1,143 +1,169 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Blanchard",
-            "p_2": "Sir Ronald Adam",
-            "p_3": "Brigadier Usher",
-            "p_4": "Brigadier C. B. Findlay",
-            "p_5": "Brigadier C. Nicholson"
+            "p_1": "General Petre",
+            "p_2": "General Sir Edmund Ironside",
+            "p_3": "General Billotte",
+            "p_4": "General Weygand",
+            "p_5": "General Georges",
+            "p_6": "C.L.G.S.",
+            "p_7": "C.I.G.S."
         },
         "locations": {
-            "l_1": "Ypres",
-            "l_2": "Hazebrouck",
-            "l_3": "Bergues",
-            "l_4": "Maulde",
-            "l_5": "Bourghelles",
-            "l_6": "Seclin",
-            "l_7": "Halluim",
-            "l_8": "Courtrai",
-            "l_9": "Calais",
-            "l_10": "Dunkirk",
-            "l_11": "Gravelines",
-            "l_12": "Forest of Nieppe",
-            "l_13": "Aire",
-            "l_14": "St. Omer",
-            "l_15": "Clairmarais",
-            "l_16": "Carvin",
-            "l_17": "Raches"
+            "l_1": "Arras",
+            "l_2": "Petreforce",
+            "l_3": "Canal du Nord",
+            "l_4": "Sailly",
+            "l_5": "Albert",
+            "l_6": "Grinchon river",
+            "l_7": "La Herlitre",
+            "l_8": "Doullens",
+            "l_9": "Scarpe",
+            "l_10": "Amiens",
+            "l_11": "Somme",
+            "l_12": "Abbeville",
+            "l_13": "Hesdin",
+            "l_14": "Montreuil",
+            "l_15": "Cambrai",
+            "l_16": "St. Pol",
+            "l_17": "Wahagnies",
+            "l_18": "Escaut",
+            "l_19": "Gambrai"
         },
         "events": {
-            "e_1": "Weygand Plan Attack",
-            "e_2": "Withdrawal to Frontier Defences",
-            "e_3": "Isolation of Calais",
-            "e_4": "Deterioration of Canal Line"
+            "e_1": "Counter attack on 21st May",
+            "e_2": "Bombing of Arras on 19th May",
+            "e_3": "Withdrawal from the Canal du Nord",
+            "e_4": "Arras attack on 20th May",
+            "e_5": "General Weygand's announcement on 23rd May",
+            "e_6": "Discussions on withdrawal plans"
         },
         "organisations": {
-            "o_1": "British Expeditionary Force (B.E.F.)",
-            "o_2": "French 3rd Corps",
-            "o_3": "Royal Tank Regiment"
+            "o_1": "B.E.F.",
+            "o_2": "Imperial General Staff",
+            "o_3": "War Office",
+            "o_4": "Belgian command",
+            "o_5": "French Army"
         }
     },
     "keywords": [
-        "motor accident",
-        "co-ordination",
-        "attack",
+        "counter attack",
+        "reconnaissances",
+        "bombed",
         "withdrawal",
-        "defence",
-        "enemy forces",
-        "Canal line",
-        "reinforcements"
+        "enemy tanks",
+        "bomber support",
+        "instructions",
+        "communication",
+        "rearguard action"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Strategies",
-        "International Coordination"
+        "Strategic Decisions",
+        "Defensive Tactics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
             "e_3",
-            "e_4"
+            "e_4",
+            "e_5"
         ],
-        "International Coordination": [
-            "e_1"
-        ],
-        "Defensive Strategies": [
-            "e_2",
-            "e_4"
+        "Strategic Decisions": [
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 26, 1940",
+            "date": "21st May",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "A counter attack takes place in Arras."
+        },
+        {
+            "event": "e_2",
+            "date": "19th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "Arras is heavily bombed."
+        },
+        {
+            "event": "e_3",
+            "date": "19th May",
+            "locations": [
+                "l_3",
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "23rd Division withdraws from the Canal du Nord."
+        },
+        {
+            "event": "e_4",
+            "date": "20th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
                 "p_2"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_4"
+                "e_2"
             ],
-            "eventSummary": "An attack is proposed by General Blanchard to implement the Weygand plan, which involves British and French forces to push southward."
+            "eventSummary": "The situation at Arras deepens, with enemy tanks reported."
         },
         {
-            "event": "e_2",
-            "date": "May 22-23, 1940",
-            "locations": [
-                "l_7",
-                "l_8"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "The withdrawal to the frontier defences is carried out, reorganizing troops and making strategic decisions to strengthen positions."
-        },
-        {
-            "event": "e_3",
-            "date": "May 26-27, 1940",
-            "locations": [
-                "l_9",
-                "l_10"
-            ],
-            "persons": [
-                "p_5"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The garrison at Calais is finally isolated, and defenses are conducted under the orders of the War Office."
-        },
-        {
-            "event": "e_4",
-            "date": "May 23, 1940",
-            "locations": [
-                "l_2",
-                "l_16"
-            ],
+            "event": "e_5",
+            "date": "23rd May",
+            "locations": [],
             "persons": [
                 "p_4"
             ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "General Weygand announces his appointment as Commander-in-Chief."
+        },
+        {
+            "event": "e_6",
+            "date": "Unknown",
+            "locations": [
+                "l_17"
+            ],
+            "persons": [
+                "p_6",
+                "p_7"
+            ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "The situation on the Canal line deteriorates as enemy forces establish bridgeheads, leading to a need for reinforced defenses."
+            "eventSummary": "Discussions take place regarding withdrawal plans."
         }
     ]
 }

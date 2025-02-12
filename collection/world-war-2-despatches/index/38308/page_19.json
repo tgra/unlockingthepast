@@ -1,108 +1,117 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "E. D. G. Lewin",
-            "p_2": "H. A. Rowe",
-            "p_3": "T. W. Harrington",
-            "p_4": "A. M. Tritton",
-            "p_5": "C. C. Tomkinson",
-            "p_6": "V. B. G. Cheesman",
-            "p_7": "D. R. Foster",
-            "p_8": "N. S. Luard",
-            "p_9": "R. C. Hay"
+            "p_1": "Commander 5th Fleet",
+            "p_2": "A.C.1",
+            "p_3": "CIF 57"
         },
         "locations": {
-            "l_1": "H.M.S. INDOMITABLE",
-            "l_2": "H.M.S. VICTORIOUS",
-            "l_3": "H.M.S. ILLUSTRIOUS",
-            "l_4": "H.M.S. MICTORIOUS"
+            "l_1": "Leyte",
+            "l_2": "Sakishima",
+            "l_3": "Miyako",
+            "l_4": "Ishigaki",
+            "l_5": "Hirara",
+            "l_6": "Formosa"
         },
         "events": {
-            "e_1": "Air attacks on airfields",
-            "e_2": "Operation of Aircraft under impending attack"
+            "e_1": "Unconditional surrender of the German Armed Forces",
+            "e_2": "Operations against Sakishima",
+            "e_3": "Bombing strikes on Miyako and Ishigaki",
+            "e_4": "Kamikaze attacks on H.M.S. VICTORIOUS and H.M.S. HOWE"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "United States Navy",
-            "o_3": "H.M. Ships INDOMITABLE",
-            "o_4": "H.M. Ships VICTORIOUS"
+            "o_2": "U.S. Task Group 52.1"
         }
     },
     "keywords": [
-        "air attack",
-        "fighter direction",
-        "operational efficiency",
-        "bombing runs",
-        "flak",
-        "aircraft"
+        "Fuelling",
+        "Operations",
+        "Bombing",
+        "Kamikaze",
+        "Unconditional surrender"
     ],
     "themes": [
         "Military Operations",
-        "Air Defense",
-        "Aerial Combat",
-        "Naval Operations"
+        "Tactical Command",
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Air Defense": [
-            "e_1"
+        "Tactical Command": [
+            "e_2",
+            "e_4"
         ],
-        "Naval Operations": [
-            "e_2"
+        "Naval Warfare": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Date unknown",
+            "date": "8th May 1945",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
+                "p_1"
             ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Air attacks on airfields are ongoing, facing challenges from camouflaged and dispersed enemy aircraft, increasing the complexity and cost of operations."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The unconditional surrender of the German Armed Forces to the Allies is received, leading to a cease in active operations."
         },
         {
             "event": "e_2",
-            "date": "Date unknown",
+            "date": "Date unspecified",
             "locations": [
-                "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_6",
-                "p_8",
-                "p_9"
+                "p_2"
             ],
             "organisations": [
-                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "Operation of Aircraft under impending attack is crucial as plans are made to intercept enemy aircraft threatening naval fleets."
+            "eventSummary": "U.S. Task Group 52.1 covers Sakishima while engaging in preparations for operations."
+        },
+        {
+            "event": "e_3",
+            "date": "9th May 1945",
+            "locations": [
+                "l_3",
+                "l_4"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Plans for bombing strikes on Miyako and Ishigaki are executed, targeting enemy runways and positions."
+        },
+        {
+            "event": "e_4",
+            "date": "Date unspecified",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Kamikaze attacks occur on H.M.S. VICTORIOUS and H.M.S. HOWE, resulting in damage and casualties."
         }
     ]
 }

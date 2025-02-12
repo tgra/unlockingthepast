@@ -1,49 +1,41 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "NELSON",
-            "p_2": "ARK ROYAL",
-            "p_3": "PRINCE OF WALES",
-            "p_4": "RODNEY",
-            "p_5": "KENYA",
-            "p_6": "EDINBURGH",
-            "p_7": "SHEFFIELD",
-            "p_8": "EURYALUS",
-            "p_9": "HERMIONE",
-            "p_10": "PIORUN",
-            "p_11": "LEGION",
-            "p_12": "Admiral"
+            "p_1": "Admualty",
+            "p_2": "Kenya",
+            "p_3": "Edinburgh",
+            "p_4": "Sheffield",
+            "p_5": "Rodney",
+            "p_6": "Prince of Wales"
         },
         "locations": {
-            "l_1": "Taranto",
-            "l_2": "Naples",
-            "l_3": "Messina",
-            "l_4": "Palermo",
-            "l_5": "Skerki Channel"
+            "l_1": "Malta",
+            "l_2": "Taranto",
+            "l_3": "Naples",
+            "l_4": "Messina",
+            "l_5": "Palermo",
+            "l_6": "Skerki Channel"
         },
         "events": {
             "e_1": "Third Attack",
-            "e_2": "Emergency Report from B (R.A.F. Malta)",
-            "e_3": "Attempt to Intercept Enemy Battlefleet"
+            "e_2": "Air Reconnaissance from Malta",
+            "e_3": "Emergency Report from Aircraft B"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)"
+            "o_1": "R.A.F."
         }
     },
     "keywords": [
-        "convoy",
-        "torpedo",
-        "aircraft",
-        "attack",
-        "enemy",
-        "reconnaissance",
-        "battleships"
+        "Torpedo",
+        "Convoy",
+        "Aircraft",
+        "Battleship",
+        "Destroyer"
     ],
     "themes": [
         "Military Operations",
-        "Air Reconnaissance",
-        "Naval Tactics",
-        "Engagement Strategy"
+        "Naval Warfare",
+        "Aerial Reconnaissance"
     ],
     "topicModel": {
         "Military Operations": [
@@ -51,39 +43,34 @@
             "e_2",
             "e_3"
         ],
-        "Air Reconnaissance": [
-            "e_2"
+        "Naval Warfare": [
+            "e_1"
         ],
-        "Naval Tactics": [
-            "e_1",
-            "e_3"
-        ],
-        "Engagement Strategy": [
+        "Aerial Reconnaissance": [
+            "e_2",
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th September",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_5"
+                "l_2",
+                "l_4",
+                "l_6"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_3",
-                "p_4"
+                "p_5",
+                "p_6"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "During the Third Attack, enemy torpedo bombers are repelled by the gunfire from the destroyers, with six enemy aircraft destroyed before they can cause any damage to H.M. Ships or the convoy."
+            "connectedEvents": [],
+            "eventSummary": "The Third Attack results in the shooting down of two additional enemy T/Bs and one C.R.42 fighter, while causing no further damage to H.M. Ships or convoy."
         },
         {
             "event": "e_2",
@@ -92,37 +79,27 @@
                 "l_1",
                 "l_2"
             ],
-            "persons": [
-                "p_12"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "An emergency report from R.A.F. Malta indicates the position of two battleships and eight destroyers, allowing the allies to position their forces effectively."
+            "connectedEvents": [],
+            "eventSummary": "Reports of air reconnaissance from Malta provide information on the position of the main units of the Italian fleet."
         },
         {
             "event": "e_3",
             "date": "27th September",
             "locations": [
-                "l_5"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
-            "organisations": [
-                "o_1"
-            ],
+            "organisations": [],
             "connectedEvents": [
-                "e_1",
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "In an attempt to intercept the enemy battlefleet, Admiral decides to organize his battleships and destroyers to protect the convoy while flying off reconnaissance aircraft."
+            "eventSummary": "An emergency report from aircraft B indicates the presence of two battleships and eight destroyers en route to intercept."
         }
     ]
 }

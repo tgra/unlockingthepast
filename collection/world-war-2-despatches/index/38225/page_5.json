@@ -1,45 +1,51 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Anthony",
-            "p_2": "General Sturges",
-            "p_3": "Rear-Admiral E. N. Syfret",
-            "p_4": "Major-General R. G. Sturges",
-            "p_5": "Brigadier F. W. Festing",
-            "p_6": "Brigadier M. S. Lush",
-            "p_7": "Captain J. M. Howson",
-            "p_8": "Colonel Melville",
-            "p_9": "Colonel Claerebout",
-            "p_10": "Capitaine de Vaisseau Maerten",
-            "p_11": "Capitaine de Vaisseau Simon",
-            "p_12": "Colonel Rouves",
-            "p_13": "M. Bourgine"
+            "p_1": "ANTHONY",
+            "p_2": "GENISTA",
+            "p_3": "LE HEROS",
+            "p_4": "Colonel Claerebout",
+            "p_5": "Capitaine de Vaisseau Maerten",
+            "p_6": "Capitaine de Vaisseau Simon",
+            "p_7": "General Sturges",
+            "p_8": "Rear-Admiral E. N. Syfret",
+            "p_9": "Major-General R. G. Sturges",
+            "p_10": "Brigadier F. W. Festing",
+            "p_11": "Brigadier M. S. Lush",
+            "p_12": "Captain J. M. Howson",
+            "p_13": "Colonel Melville",
+            "p_14": "Colonel Rouves",
+            "p_15": "M. Bourgine"
         },
         "locations": {
             "l_1": "Antsirane",
             "l_2": "Oranjia Peninsula",
             "l_3": "Nosi Hara",
             "l_4": "Diego Suarez",
-            "l_5": "Courrier Bay",
-            "l_6": "Scotch Bay"
+            "l_5": "Madagascar",
+            "l_6": "Scotch Bay",
+            "l_7": "Courrier Bay",
+            "l_8": "Diego Suarez Bay"
         },
         "events": {
-            "e_1": "Landing at Antsirane",
+            "e_1": "The attack by 17th and 29th Brigades",
             "e_2": "Bombardment of Oranjia Peninsula",
-            "e_3": "Surrender Negotiations",
-            "e_4": "Conference on Terms of Surrender"
+            "e_3": "Capture of Antsirane",
+            "e_4": "Surrender Negotiations",
+            "e_5": "Conference in the Residency at Antsirane"
         },
         "organisations": {
-            "o_1": "British Forces",
-            "o_2": "French Naval Forces"
+            "o_1": "British forces",
+            "o_2": "121 Force",
+            "o_3": "South African Air Force"
         }
     },
     "keywords": [
-        "Antsirane",
         "bombardment",
         "surrender",
-        "military operations",
-        "conference"
+        "assault",
+        "naval",
+        "military"
     ],
     "themes": [
         "Military Operations",
@@ -49,17 +55,19 @@
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
         "Surrender Negotiations": [
-            "e_3",
-            "e_4"
-        ]
+            "e_4",
+            "e_5"
+        ],
+        "Strategic Decisions": []
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "D.3 2030 hours",
+            "date": "",
             "locations": [
                 "l_1"
             ],
@@ -70,13 +78,13 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "At 2030 hours, the 17th Brigade commenced their attack on Antsirane, successfully landing and taking their objective."
+            "eventSummary": "The attack by 17th and 29th Brigades commences successfully with minimal opposition."
         },
         {
             "event": "e_2",
-            "date": "D.3 1040 hours",
+            "date": "",
             "locations": [
                 "l_2"
             ],
@@ -87,48 +95,68 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1",
+                "e_4",
                 "e_3"
             ],
-            "eventSummary": "At 1040 hours, the bombardment of Oranjia Peninsula is initiated but is followed by an order for ceasefire after 10 minutes due to the enemy's surrender."
+            "eventSummary": "Bombardment of Oranjia Peninsula is executed but ceasefire is ordered after the peninsula surrenders."
         },
         {
             "event": "e_3",
-            "date": "8th May 0900",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_9",
-                "p_10",
-                "p_11"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "On 8th May, French officers arrive on HMS RAMILLIES in response to a surrender summons, leading to further discussions on the terms of occupation."
+            "connectedEvents": [],
+            "eventSummary": "Capture of Antsirane is confirmed after the bombardment."
         },
         {
             "event": "e_4",
-            "date": "08th May 1100",
+            "date": "May 8th",
             "locations": [
                 "l_4"
             ],
             "persons": [
-                "p_1",
-                "p_4"
+                "p_4",
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Surrender negotiations are held on May 8th with French officers aboard HMS RAMILLIES."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_7",
+                "p_8",
+                "p_9",
+                "p_10",
+                "p_11",
+                "p_12",
+                "p_13",
+                "p_14",
+                "p_15"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "At 1100 hours, a conference is held in the Residency at Antsirane with the French authorities to convey the terms of surrender."
+            "eventSummary": "A conference is held to convey the terms of surrender."
         }
     ]
 }

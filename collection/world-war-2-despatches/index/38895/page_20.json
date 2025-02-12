@@ -1,136 +1,171 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Officer Commanding 30 Corps",
-            "p_2": "H.M.S. ROBERTS",
-            "p_3": "H.M.S. BLANKNEY",
-            "p_4": "H.M.S. BLENCATHRA",
-            "p_5": "H.M.S. DELHI",
-            "p_6": "H.M.S. BRISSENDEN",
-            "p_7": "H.M.S. ORION",
-            "p_8": "H.M.S. UGANDA",
-            "p_9": "H.M.S. MAURITIUS",
-            "p_10": "S.S. BAARN",
-            "p_11": "M.T. ship JOSEPH C. CANNON",
-            "p_12": "Naval Commander Force A"
+            "p_1": "Naval Commander Eastern Task Force",
+            "p_2": "Flag Officer Sicily",
+            "p_3": "Commander R. W. D. Thompson, R.N.",
+            "p_4": "Captain A. N. Grey, R.N."
         },
         "locations": {
-            "l_1": "Bark West",
-            "l_2": "Bark South",
-            "l_3": "Bark East",
-            "l_4": "Acip South",
-            "l_5": "Norts",
-            "l_6": "Malta",
-            "l_7": "Syracuse",
-            "l_8": "Pozzallo",
-            "l_9": "Isola Grande",
-            "l_10": "Augusta Bay",
-            "l_11": "Spaccaforno",
-            "l_12": "Rosolini"
+            "l_1": "Syracuse",
+            "l_2": "Augusta",
+            "l_3": "Malta",
+            "l_4": "Catania",
+            "l_5": "Bark East",
+            "l_6": "Bark South",
+            "l_7": "Bark West"
         },
         "events": {
-            "e_1": "Syracuse occupation",
-            "e_2": "Malta shuttle service commencement",
-            "e_3": "Artillery support by H.M.S. ROBERTS",
-            "e_4": "Enemy air activity on D+1"
+            "e_1": "Operation at Syracuse",
+            "e_2": "Mine Sweeping",
+            "e_3": "Gun Support",
+            "e_4": "Air Activity",
+            "e_5": "Sailing of Dutch Gunboats",
+            "e_6": "Transfer of Flag Officer Sicily",
+            "e_7": "Convoy Movements"
         },
         "organisations": {
-            "o_1": "1st Canadian Division",
-            "o_2": "30 Corps"
+            "o_1": "N.O.L.C.",
+            "o_2": "14th Minesweeping Flotilla",
+            "o_3": "Inshore Squadron"
         }
     },
     "keywords": [
-        "landing ships",
-        "unloading",
-        "military operation",
-        "bombardment",
-        "air activity",
-        "naval support"
+        "Syracuse",
+        "Augusta",
+        "naval operations",
+        "gunboats",
+        "mine sweeping",
+        "air raids",
+        "convoy"
     ],
     "themes": [
         "Military Operations",
-        "Naval Activity",
-        "Air Operations",
         "Logistics",
-        "Occupation"
+        "Naval Warfare",
+        "Air Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
-        ],
-        "Naval Activity": [
-            "e_2"
-        ],
-        "Air Operations": [
-            "e_4"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
         "Logistics": [
+            "e_2",
+            "e_6"
+        ],
+        "Naval Warfare": [
             "e_1",
-            "e_2"
+            "e_3"
+        ],
+        "Air Support": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "11th July",
+            "date": "16th July",
             "locations": [
-                "l_7"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_12"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_6"
+            ],
+            "eventSummary": "Naval Commander Eastern Task Force decides to take over Syracuse to assist Flag Officer Sicily who is required at Augusta."
+        },
+        {
+            "event": "e_2",
+            "date": "16th July",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [],
-            "eventSummary": "The army enters Syracuse at 2100 on 10th July, with fleet sweepers beginning operations the next morning, resulting in safe passage for naval forces with no opposition."
-        },
-        {
-            "event": "e_2",
-            "date": "N/A",
-            "locations": [
-                "l_6"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The Malta shuttle service begins, with empty landing crafts returning from Sicily, facilitating further military logistics."
+            "eventSummary": "Mine sweeping activities occur in the harbour and approach channel of Augusta with negative results."
         },
         {
             "event": "e_3",
-            "date": "D+1",
+            "date": "16th July",
             "locations": [
-                "l_8"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "Artillery support is provided by H.M.S. ROBERTS to assist the 1st Canadian Division in their advance by firing on enemy positions."
+            "eventSummary": "Supporting fire is carried out by naval forces as required by the army."
         },
         {
             "event": "e_4",
-            "date": "D-day/D+1",
+            "date": "15th/16th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Air raids in the north result in near misses and some minor damage to naval ships."
+        },
+        {
+            "event": "e_5",
+            "date": "16th July",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Dutch gunboats SOEMBA and FLORES sail from Bark East to Augusta under orders from Flag Officer Sicily."
+        },
+        {
+            "event": "e_6",
+            "date": "16th July",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_4"
+                "l_2"
             ],
             "persons": [
-                "p_10",
-                "p_11"
+                "p_2"
             ],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Increased enemy air activity occurs, with various attacks causing few casualties but significant risks to ships."
+            "eventSummary": "Flag Officer Sicily transfers from Syracuse to Augusta aboard H.M.S. LARGS."
+        },
+        {
+            "event": "e_7",
+            "date": "17th July",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Convoy movements at Augusta were delayed until port re-opening after surface sweeps confirm safety."
         }
     ]
 }

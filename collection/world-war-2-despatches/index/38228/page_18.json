@@ -1,83 +1,84 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Generalissimo",
-            "p_2": "Mr. Stewart"
+            "p_1": "Brigadier Bourke"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Kyaikto",
-            "l_3": "Lashio",
-            "l_4": "Chungking",
-            "l_5": "Mokpalin",
-            "l_6": "River Sittang"
+            "l_1": "Northern Thailand",
+            "l_2": "Indo-China border",
+            "l_3": "Salween",
+            "l_4": "Mawchi",
+            "l_5": "Toungoo",
+            "l_6": "Tenasserim",
+            "l_7": "Tavoy",
+            "l_8": "Mergui",
+            "l_9": "Moulmein",
+            "l_10": "Kawkareik",
+            "l_11": "Myawaddy",
+            "l_12": "Dawna Range",
+            "l_13": "Three Pagodas Pass",
+            "l_14": "Gyaing River",
+            "l_15": "Thailand",
+            "l_16": "Ye",
+            "l_17": "Kyungyaung",
+            "l_18": "Migyaunglaung",
+            "l_19": "Myitta"
         },
         "events": {
-            "e_1": "Withdrawal of 17 Indian Division",
-            "e_2": "Visit to Lashio"
+            "e_1": "Formation of H.Q. 17 Indian Division",
+            "e_2": "Troop Movements",
+            "e_3": "Operations at Tavoy"
         },
         "organisations": {
-            "o_1": "Burma Railways",
-            "o_2": "R.A.F."
+            "o_1": "17 Indian Division",
+            "o_2": "16 Indian Infantry Brigade",
+            "o_3": "Burma Rifles",
+            "o_4": "4 Burma Rifles",
+            "o_5": "1/7 G.R.",
+            "o_6": "1/9 R. Jats",
+            "o_7": "4/12 F.F. Regiment",
+            "o_8": "7 Burma Rifles"
         }
     },
     "keywords": [
-        "withdrawal",
-        "reinforcements",
+        "Japanese",
+        "Thai",
+        "troops",
+        "invasion",
         "defence",
-        "bombing",
+        "aerodromes",
         "communications",
-        "evacuation"
+        "intelligence",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Coordination",
-        "Evacuation",
-        "Communication Issues"
+        "Troop Movements",
+        "Defensive Strategies",
+        "Intelligence Gathering"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_3"
+        ],
+        "Troop Movements": [
             "e_2"
         ],
-        "Coordination": [
-            "e_1"
-        ],
-        "Evacuation": [
-            "e_1"
-        ],
-        "Communication Issues": [
+        "Defensive Strategies": [
             "e_1",
+            "e_2"
+        ],
+        "Intelligence Gathering": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "22nd February 1690",
+            "date": "5th January",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_6"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The 17 Indian Division successfully begins its withdrawal from the River Sittang after heavy fighting. The operation involves coordination between different brigades to retreat safely, despite challenges like bombing attacks and difficult communication."
-        },
-        {
-            "event": "e_2",
-            "date": "21st February 1690",
-            "locations": [
-                "l_3",
-                "l_4"
+                "l_9"
             ],
             "persons": [
                 "p_1"
@@ -85,10 +86,42 @@
             "organisations": [
                 "o_1"
             ],
+            "connectedEvents": [],
+            "eventSummary": "On 5th January, the senior staff officers of the 17 Indian Division establish an advanced headquarters at Moulmein, with Brigadier Bourke assuming command."
+        },
+        {
+            "event": "e_2",
+            "date": "14th January",
+            "locations": [
+                "l_9",
+                "l_8",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_4",
+                "o_6",
+                "o_7"
+            ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Generalissimo's visit to Lashio is intended to facilitate the arrival of Chinese troops in Burma. However, he decides not to land, leading to missed opportunities in coordinating reinforcements."
+            "eventSummary": "On 14th January, the 16 Indian Infantry Brigade reconfigures its troops for the defense of Kawkareik and the surrounding areas in response to threats."
+        },
+        {
+            "event": "e_3",
+            "date": "16th January",
+            "locations": [
+                "l_7",
+                "l_19"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 16th January, two companies of the 6 Burma Rifles encounter a Japanese force of approximately 100 men at Myitta which is on the route from Tavoy."
         }
     ]
 }

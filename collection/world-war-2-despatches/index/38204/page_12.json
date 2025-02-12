@@ -1,130 +1,89 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lieutenant H. Henty-Creer",
-            "p_2": "Lieutenant Place",
-            "p_3": "G. E. Creasy"
+            "p_1": "Lieutenant Aitken",
+            "p_2": "Lieutenant H. Henty-Creer",
+            "p_3": "Lieutenant Place",
+            "p_4": "Lieutenant D. Cameron"
         },
         "locations": {
             "l_1": "TIRPITZ",
-            "l_2": "Alten Fiord",
-            "l_3": "Namsos",
-            "l_4": "Kaafiord",
-            "l_5": "Germany",
-            "l_6": "Edinburgh",
-            "l_7": "Cardiff"
+            "l_2": "Kaafiord",
+            "l_3": "Alten Fiord"
         },
         "events": {
-            "e_1": "Attack on TIRPITZ",
-            "e_2": "Midget Submarine Attack",
-            "e_3": "Further Damage to TIRPITZ",
-            "e_4": "Repair Decision for TIRPITZ"
+            "e_1": "Explosion",
+            "e_2": "Attack on TIRPITZ"
         },
         "organisations": {
-            "o_1": "German Navy",
-            "o_2": "German Naval Staff",
-            "o_3": "MARINEGRUPPENKOMMANDO NORD"
+            "o_1": "Admiralty"
         }
     },
     "keywords": [
-        "TIRPITZ",
-        "midget submarine",
-        "attack",
+        "operation",
+        "explosion",
+        "casualties",
         "damage",
-        "repair",
-        "German Navy"
+        "salvage"
     ],
     "themes": [
         "Military Operations",
-        "Damage Report",
-        "Naval Strategy",
-        "Operational Efficiency"
+        "Naval Engagement",
+        "Casualties",
+        "Damage Assessment"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Damage Report": [
+        "Casualties": [
             "e_1"
         ],
-        "Naval Strategy": [
-            "e_4"
-        ],
-        "Operational Efficiency": [
-            "e_3"
+        "Damage Assessment": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 21, 1943",
+            "date": "Not specified",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "The TIRPITZ is attacked by a midget submarine, resulting in significant damage to the ship."
-        },
-        {
-            "event": "e_2",
-            "date": "November 22, 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "MARINEGRUPPENKOMMANDO NORD reports that TIRPITZ is out of action for months due to the midget submarine attack."
-        },
-        {
-            "event": "e_3",
-            "date": "April 1944",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The TIRPITZ moves out from her anchorage, only to be further damaged and finally destroyed by an air attack."
+            "eventSummary": "At 0830, a huge explosion takes place on TIRPITZ, causing significant damage and panic among crew members."
         },
         {
-            "event": "e_4",
-            "date": "October 1943",
+            "event": "e_2",
+            "date": "Not specified",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3"
             ],
             "persons": [
-                "p_2"
+                "p_2",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "It is decided that the repair of TIRPITZ should happen in a northern port, which is later sanctioned by Hitler."
+            "eventSummary": "The attack on TIRPITZ results in considerable damage to the ship's hull, machinery, and armament, leading to ongoing repairs."
         }
     ]
 }

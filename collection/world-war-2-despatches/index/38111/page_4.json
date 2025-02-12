@@ -1,87 +1,120 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Flying Officer Moore"
+            "p_1": "Moore"
         },
         "locations": {
             "l_1": "Channel",
-            "l_2": "Bay of Biscay",
-            "l_3": "Norwegian ports",
-            "l_4": "Brest",
-            "l_5": "Boulogne",
-            "l_6": "Cherbourg",
-            "l_7": "Gironde",
-            "l_8": "Le Havre"
+            "l_2": "Bay",
+            "l_3": "Biscay",
+            "l_4": "Norwegian ports",
+            "l_5": "Brest",
+            "l_6": "Gironde",
+            "l_7": "Boulogne",
+            "l_8": "Cherbourg",
+            "l_9": "Le Havre"
         },
         "events": {
-            "e_1": "Assault on Channel",
-            "e_2": "Battle in the Bay of Biscay",
-            "e_3": "Attack on destroyers from Gironde"
+            "e_1": "D-Day",
+            "e_2": "assault",
+            "e_3": "evacuation of Bay ports",
+            "e_4": "anti-shipping operations"
         },
         "organisations": {
-            "o_1": "Coastal Command",
-            "o_2": "Royal Navy",
-            "o_3": "Bomber Command"
+            "o_1": "Royal Navy",
+            "o_2": "Coastal Command",
+            "o_3": "Bomber Command",
+            "o_4": "No. 224 Squadron"
         }
     },
     "keywords": [
         "U-Boats",
-        "Schnorkel",
-        "Coastal Command",
-        "Royal Navy",
-        "anti-aircraft",
-        "patrols",
-        "anti-shipping"
+        "Aircraft",
+        "Surface forces",
+        "Anti-Shipping",
+        "Reconnaissance",
+        "Patrols"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Air Operations",
-        "Enemy Tactics"
+        "Air Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Naval Warfare": [
+            "e_1",
+            "e_4"
+        ],
+        "Air Warfare": [
             "e_2",
-            "e_3"
-        ],
-        "Air Operations": [
-            "e_1",
-            "e_3"
-        ],
-        "Enemy Tactics": [
-            "e_1",
-            "e_2"
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "D-Day to end of August",
+            "date": "D-Day",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_2",
+                "o_1"
             ],
             "connectedEvents": [
                 "e_2",
                 "e_3"
             ],
-            "eventSummary": "Coastal Command conducts extensive operations against U-Boats in the Channel, resulting in the destruction of multiple enemy vessels during various assaults."
+            "eventSummary": "The D-Day invasion marks the beginning of significant military operations in the Channel."
         },
         {
             "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The assault involves multiple attacks on U-Boats with several successes recorded by Coastal Command."
+        },
+        {
+            "event": "e_3",
             "date": "August",
             "locations": [
+                "l_1",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The evacuation of Bay ports begins as the enemy recognizes the imminent loss of these strategic locations."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1",
                 "l_2"
             ],
             "persons": [],
@@ -89,26 +122,8 @@
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Intense engagements occur in the Bay of Biscay as U-Boats attempt to escape, with Coastal Command accounting for several enemy vessels in brutal confrontations."
-        },
-        {
-            "event": "e_3",
-            "date": "June 6th",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Royal Navy engages and inflicts damage on enemy destroyers approaching from the Gironde, notably succeeding in cutting off reinforcements to the assault area."
+            "connectedEvents": [],
+            "eventSummary": "Coastal Command conducts extensive anti-shipping operations against enemy light forces throughout the summer."
         }
     ]
 }

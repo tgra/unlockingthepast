@@ -1,200 +1,111 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander 3 Indian Corps",
-            "p_2": "C.-in-C. Far East",
-            "p_3": "O.C. Troops Sarawak and Brunei",
-            "p_4": "Director of Public Works",
-            "p_5": "Commander Singapore Fortress"
+            "p_1": "MajorGeneral F. Keith Simmons",
+            "p_2": "Brigadier A. C. Paris"
         },
         "locations": {
-            "l_1": "Port Swettenham",
-            "l_2": "Ipoh",
-            "l_3": "Kuala Lampur",
-            "l_4": "Singapore",
-            "l_5": "Sarawak",
-            "l_6": "Brunei",
-            "l_7": "Kuching",
-            "l_8": "Sanggau",
-            "l_9": "Dutch West Borneo"
+            "l_1": "Malaya",
+            "l_2": "Johore",
+            "l_3": "Singapore Island",
+            "l_4": "Batu Anam",
+            "l_5": "Kota Tinggi",
+            "l_6": "Keppel Harbour",
+            "l_7": "Seletar",
+            "l_8": "Tengah aerodromes",
+            "l_9": "Sembawang",
+            "l_10": "Kallang",
+            "l_11": "Singapore Town",
+            "l_12": "Alexandra"
         },
         "events": {
-            "e_1": "Attack on Eureka fast coastal vessels",
-            "e_2": "Bombing of H.M.S. Kudat",
-            "e_3": "Intensive air action on 23rd December",
-            "e_4": "Japanese landings at Seria",
-            "e_5": "Bombing of Kuching aerodrome",
-            "e_6": "Japanese cruisers and transports landing near Kuching",
-            "e_7": "Aerodrome denial scheme activation",
-            "e_8": "Rearguard action at Nyabang"
+            "e_1": "Malayan campaign",
+            "e_2": "Defence of Singapore",
+            "e_3": "Withdrawal from the mainland"
         },
         "organisations": {
-            "o_1": "Royal Dutch Navy",
-            "o_2": "3 Indian Corps",
-            "o_3": "A.I.F."
+            "o_1": "Committee of Imperial Defence",
+            "o_2": "Chiefs of Staff Committee",
+            "o_3": "Air Force",
+            "o_4": "Naval Base",
+            "o_5": "Anti-Aircraft Defence Headquarters"
         }
     },
     "keywords": [
-        "air operations",
-        "bombing",
-        "Japanese invasion",
-        "aerial supremacy",
-        "withdrawal",
-        "convoy protection"
+        "Defence Scheme",
+        "military labour",
+        "engineer material",
+        "anti-aircraft defences",
+        "Singapore Fortress"
     ],
     "themes": [
         "Military Operations",
-        "Strategy",
-        "Transportation Issues"
+        "Defensive Strategy",
+        "Resource Allocation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4",
-            "e_5",
-            "e_6",
-            "e_7",
-            "e_8"
-        ],
-        "Strategy": [
-            "e_3",
-            "e_4",
-            "e_5",
-            "e_6"
-        ],
-        "Transportation Issues": [
-            "e_1",
-            "e_2",
             "e_3"
+        ],
+        "Defensive Strategy": [
+            "e_2"
+        ],
+        "Resource Allocation": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st January",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Eureka fast coastal vessels are attacked by enemy aircraft while en route to Port Swettenham, resulting in some being sunk or driven ashore."
+            "eventSummary": "The Malayan campaign is underway, highlighting strategic challenges faced by Allied forces."
         },
         {
             "event": "e_2",
-            "date": "30th December",
+            "date": "",
             "locations": [
+                "l_3",
                 "l_1"
             ],
             "persons": [
-                "p_3"
+                "p_1",
+                "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [],
-            "eventSummary": "H.M.S. Kudat, the base depot ship, is bombed and sunk in the harbour of Port Swettenham, contributing to the weakening of naval support."
+            "eventSummary": "The Defence of Singapore is being organized, with plans for military fortifications and resource allocation under MajorGeneral F. Keith Simmons."
         },
         {
             "event": "e_3",
-            "date": "23rd December",
+            "date": "",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_3"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_4",
-                "e_5"
-            ],
-            "eventSummary": "Intensive air action begins against troops in bivouac areas with heavy attacks on December 23rd, shifting from previous focuses on aerodromes."
-        },
-        {
-            "event": "e_4",
-            "date": "16th December",
-            "locations": [
-                "l_6",
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_7"
-            ],
-            "eventSummary": "Japanese troops land at Seria, marking the beginning of significant territorial incursions in the region."
-        },
-        {
-            "event": "e_5",
-            "date": "19th-20th December",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "Japanese aircraft attack Kuching aerodrome and the town, prompting evacuations among the local populace."
-        },
-        {
-            "event": "e_6",
-            "date": "23rd December",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "Japanese land forces arrive off Kuching, leading to significant military engagements in the area."
-        },
-        {
-            "event": "e_7",
-            "date": "24th December",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_6"
-            ],
-            "eventSummary": "The denial scheme on the aerodrome at Kuching is activated, as the readiness for further conflict escalates."
-        },
-        {
-            "event": "e_8",
-            "date": "18th January",
-            "locations": [
-                "l_9"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The Japanese advance at the Sarawak Dutch West Borneo frontier is resisted by the 2/15 Punjab Regt. until significant losses occur."
+            "eventSummary": "The withdrawal from the mainland occurs, impacting the efficiency of Anti-Aircraft Defences in Singapore."
         }
     ]
 }

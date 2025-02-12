@@ -1,47 +1,44 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Alexandra Military Hospital",
-            "p_2": "Tyersall Park Hospital",
-            "p_3": "Australian Base Hospital",
-            "p_4": "Royal Air Force"
+            "p_1": "Rear-Admiral Malaya",
+            "p_2": "Air Officer Commanding Far East",
+            "p_3": "Air Vice-Marshal Pulford"
         },
         "locations": {
             "l_1": "Singapore Town",
-            "l_2": "Malacca",
-            "l_3": "Tanglin",
-            "l_4": "Changi",
-            "l_5": "Seletar",
-            "l_6": "Johore Straits",
-            "l_7": "South Sumatra",
-            "l_8": "Kota Tinggi"
+            "l_2": "Pulau Bukum",
+            "l_3": "Alexandra Ammunition Magazine",
+            "l_4": "Bank Straits",
+            "l_5": "Alexandra Hospital",
+            "l_6": "Mount Echo",
+            "l_7": "Tanglin",
+            "l_8": "MacRitchie Reservoir",
+            "l_9": "Paya Lebar Village",
+            "l_10": "Woodleigh Pumping Station",
+            "l_11": "Bukit Timah hills"
         },
         "events": {
-            "e_1": "Japanese air raids",
-            "e_2": "Naval Base under attack",
-            "e_3": "Military operations against Singapore",
-            "e_4": "Evaluation of troop strength"
+            "e_1": "Destruction of oil stocks on Pulau Bukum",
+            "e_2": "Engagement at the Alexandra Military Hospital",
+            "e_3": "Japanese attacks on 14th February"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Singapore Harbour Board",
-            "o_3": "Civil Medical Services",
-            "o_4": "Main Army Ordnance Depot",
-            "o_5": "Singapore Club",
-            "o_6": "Cricket Club"
+            "o_1": "Asiatic Petroleum Company",
+            "o_2": "Harbour Board"
         }
     },
     "keywords": [
-        "medical accommodation",
-        "Japanese air raids",
-        "naval base",
-        "military stores"
+        "Japanese attacks",
+        "air attack",
+        "artillery",
+        "naval force",
+        "casualties"
     ],
     "themes": [
-        "Medical Services",
         "Military Operations",
-        "Strategic Assessments",
-        "Logistics and Infrastructure"
+        "Civilian Impact",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -49,43 +46,20 @@
             "e_2",
             "e_3"
         ],
-        "Logistics and Infrastructure": [
-            "e_4"
+        "Civilian Impact": [
+            "e_2"
         ],
-        "Medical Services": [
+        "Strategic Decisions": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 31, 1942",
+            "date": "13th February 1942",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Japanese air raids intensify, leading to significant impacts on military logistics and accommodation for medical services in Singapore."
-        },
-        {
-            "event": "e_2",
-            "date": "January 31, 1942",
-            "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -94,48 +68,35 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_3"
             ],
-            "eventSummary": "The Naval Base comes under observed artillery and air attack, highlighting the vulnerability of Singapore's defenses."
+            "eventSummary": "The destruction of oil stocks on Pulau Bukum occurs due to the impending threat from the enemy."
+        },
+        {
+            "event": "e_2",
+            "date": "14th February 1942",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Japanese troops enter the Alexandra Military Hospital and attack the staff and patients."
         },
         {
             "event": "e_3",
-            "date": "January 31, 1942",
+            "date": "14th February 1942",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "Plans are reevaluated for military operations against Singapore in light of enemy strength and tactical positions."
-        },
-        {
-            "event": "e_4",
-            "date": "January 31, 1942",
-            "locations": [
-                "l_6",
-                "l_8"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "A strategic assessment reveals vulnerabilities in troop strength and logistics as enemy forces prepare to strike."
+            "eventSummary": "The Japanese renew their attacks, leading to heavy fighting and significant military actions on various fronts."
         }
     ]
 }

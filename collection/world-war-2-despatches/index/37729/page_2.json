@@ -1,60 +1,48 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "L. O. Brown"
+            "p_1": "Minister of War",
+            "p_2": "General Montgomery",
+            "p_3": "Winston Churchill"
         },
         "locations": {
-            "l_1": "Mechili",
-            "l_2": "Derna",
-            "l_3": "Bardia",
-            "l_4": "Tobruk",
-            "l_5": "Cyrene",
-            "l_6": "Benghazi",
-            "l_7": "Barce",
-            "l_8": "Benina",
-            "l_9": "El Adem",
-            "l_10": "Gazala",
-            "l_11": "Tripolitania",
-            "l_12": "Greece",
-            "l_13": "Palestine",
-            "l_14": "Aqir",
-            "l_15": "Tripoli",
-            "l_16": "Agheila",
-            "l_17": "Agedabia",
-            "l_18": "Malta"
+            "l_1": "Bardia",
+            "l_2": "Tobruk",
+            "l_3": "Derna",
+            "l_4": "Cyrenaica",
+            "l_5": "El Adem",
+            "l_6": "Gazala",
+            "l_7": "Sollum",
+            "l_8": "Benghazi",
+            "l_9": "Sidi Mahmoud",
+            "l_10": "Mechili"
         },
         "events": {
-            "e_1": "Capture of Mechili",
-            "e_2": "Fall of Derna",
-            "e_3": "Occupation of Benghazi",
-            "e_4": "Formation of H.Q., R.A.F., Cyrenaica",
-            "e_5": "Increased German air activity"
+            "e_1": "Battle of Bardia",
+            "e_2": "Battle of Tobruk",
+            "e_3": "Assault on Tobruk"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "No. 202 Group",
-            "o_3": "No. 45 Squadron",
-            "o_4": "No. 113 (B) Squadron",
-            "o_5": "No. 274 (F) Squadron",
-            "o_6": "No. 208 (A.C.) Squadron",
-            "o_7": "No. 6 (A.C.) Squadron",
-            "o_8": "No. 3 Squadron R.A.A.F.",
-            "o_9": "No. 73 (F) Squadron",
-            "o_10": "No. 55 (B) Squadron"
+            "o_1": "No. 113 Squadron",
+            "o_2": "No. 55 Squadron",
+            "o_3": "No. 208 (A.C.) Squadron",
+            "o_4": "No. 3 R.A.A.F. Squadron",
+            "o_5": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "Benghazi",
+        "bombers",
+        "reconnaissance",
         "air attacks",
-        "German reinforcements",
-        "RAF operations",
-        "Italian Air Force"
+        "Naval bombardment",
+        "armoured forces",
+        "Australian infantry",
+        "enemy aerodromes"
     ],
     "themes": [
         "Military Operations",
-        "Air Assaults",
-        "Strategic Movements",
-        "Enemy Reinforcement"
+        "Air Warfare",
+        "Naval Operations"
     ],
     "topicModel": {
         "Military Operations": [
@@ -62,22 +50,18 @@
             "e_2",
             "e_3"
         ],
-        "Air Assaults": [
-            "e_3",
-            "e_5"
-        ],
-        "Strategic Movements": [
+        "Air Warfare": [
             "e_1",
-            "e_4"
+            "e_2"
         ],
-        "Enemy Reinforcement": [
-            "e_5"
+        "Naval Operations": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th January",
+            "date": "3rd January",
             "locations": [
                 "l_1"
             ],
@@ -85,16 +69,18 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The armed forces capture Mechili, initiating further advances into enemy territories."
+            "eventSummary": "The Army attacks Bardia at dawn, engaging in a combined effort with armoured forces and Australian infantry."
         },
         {
             "event": "e_2",
-            "date": "30th January",
+            "date": "21st January",
             "locations": [
                 "l_2"
             ],
@@ -102,58 +88,31 @@
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1",
                 "e_3"
             ],
-            "eventSummary": "Derna falls to the advancing forces, marking a crucial point in the campaign."
+            "eventSummary": "The assault on Tobruk is launched at dawn, followed by close air support from bomber squadrons."
         },
         {
             "event": "e_3",
-            "date": "6th February",
+            "date": "20th January",
             "locations": [
-                "l_6"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Benghazi is occupied with minimal resistance, significantly impacting enemy morale."
-        },
-        {
-            "event": "e_4",
-            "date": "25th February",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Headquarters of the R.A.F. in Cyrenaica is established to coordinate ongoing operations."
-        },
-        {
-            "event": "e_5",
-            "date": "February 1941",
-            "locations": [
-                "l_11"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Increased German air activity occurs following the occupation of Benghazi, posing new challenges."
+            "eventSummary": "The assault on Tobruk includes heavy naval bombardment and bombing raids conducted by various squadrons."
         }
     ]
 }

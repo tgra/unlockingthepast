@@ -1,88 +1,146 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "R. D. OLiver"
+            "p_1": "Captain Garnons-Williams",
+            "p_2": "Brigadier Festing",
+            "p_3": "Brigadier G. W. B. Tarleton",
+            "p_4": "Major-General H. P. M. Berney-Ficklin",
+            "p_5": "Lieutenant-General E. C.: A. Schreiber",
+            "p_6": "Prime Minister"
         },
         "locations": {
-            "l_1": "Diego Suarez Bay",
-            "l_2": "Nosi Anambo",
-            "l_3": "Nosi Fati",
-            "l_4": "Nosi Hara",
-            "l_5": "Nosi Anjombavola"
+            "l_1": "London",
+            "l_2": "Durban",
+            "l_3": "Antsirane",
+            "l_4": "United Kingdom",
+            "l_5": "Melrose"
         },
         "events": {
-            "e_1": "Operation Tricorn",
-            "e_2": "Commando Landing"
+            "e_1": "Operation Assault Landing",
+            "e_2": "Embarkation of Forces",
+            "e_3": "Planning of the Operation",
+            "e_4": "Passage to the Theatre of Operations"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Force F"
+            "o_1": "Expeditionary Force",
+            "o_2": "Royal Navy",
+            "o_3": "HQ Expeditionary Force",
+            "o_4": "War Office",
+            "o_5": "Adviser of Combined Operations"
         }
     },
     "keywords": [
-        "bombardment",
-        "minesweeping",
-        "landing craft",
-        "troops",
-        "buoys"
+        "assault ships",
+        "infantry brigade",
+        "embarkation",
+        "military operation"
     ],
     "themes": [
         "Military Operations",
-        "Naval Engagement",
-        "Commando Operations"
+        "Planning and Strategy",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_4"
         ],
-        "Naval Engagement": [
-            "e_1"
+        "Planning and Strategy": [
+            "e_2",
+            "e_3"
         ],
-        "Commando Operations": [
+        "Logistics": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8th May 1942",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3",
-                "l_4",
-                "l_5"
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5",
+                "p_6"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_2",
+                "o_3",
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The Royal Navy undertakes Operation Tricorn with a focus on minesweeping and providing cover for landing crafts as they prepare for a Commando operation, ensuring strategic positioning and the laying of navigation buoys."
+            "eventSummary": "The planning for the Operation Assault Landing is taking place with key personnel engaged in discussions about logistics and operational execution."
         },
         {
             "event": "e_2",
-            "date": "8th May 1942",
+            "date": "",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The embarkation of forces is executed, with careful planning and integration of units into the assault ships."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Plans are formulated for the operation amidst challenges in troop and vehicle embarkation logistics."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_6"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Commandos land unopposed on the shore, with naval support ensuring all operational conditions are met for safe troop movement and mission success."
+            "eventSummary": "The passage of the forces to the theatre of operations occurs, with continuous study of operational details on board."
         }
     ]
 }

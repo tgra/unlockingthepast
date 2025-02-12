@@ -1,34 +1,42 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Lt.- Col. Lane"
+        },
         "locations": {
-            "l_1": "Malaya",
-            "l_2": "Singapore",
-            "l_3": "Kuala Lumpur",
-            "l_4": "Ipoh",
-            "l_5": "Penang"
+            "l_1": "Kuching",
+            "l_2": "Sarawak",
+            "l_3": "British North Borneo",
+            "l_4": "West Brunei",
+            "l_5": "East Sarawak",
+            "l_6": "Seria",
+            "l_7": "Muri",
+            "l_8": "Lutong",
+            "l_9": "Dutch West Borneo",
+            "l_10": "Malaya"
         },
         "events": {
-            "e_1": "Malayan Campaign",
-            "e_2": "Second World War"
+            "e_1": "Defence of Sarawak",
+            "e_2": "Review of Army Strength Required",
+            "e_3": "Estimate of Army Strength Sent to War Office"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "War Office",
-            "o_3": "Director-General of Civil Defence"
+            "o_1": "British Admiralty",
+            "o_2": "Army",
+            "o_3": "Air Force"
         }
     },
     "keywords": [
-        "Air Defence",
-        "Fighter Aircraft",
-        "Japanese Attacks",
-        "Anti-aircraft Guns",
-        "Civil Labour"
+        "aerodromes",
+        "Volunteer Force",
+        "defence",
+        "demolition",
+        "infantry",
+        "regiments"
     ],
     "themes": [
         "Military Operations",
-        "Defence Strategy",
-        "Labour Issues"
+        "Defence Strategy"
     ],
     "topicModel": {
         "Military Operations": [
@@ -36,50 +44,61 @@
             "e_2"
         ],
         "Defence Strategy": [
-            "e_1"
-        ],
-        "Labour Issues": [
-            "e_1"
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1939-1941",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
                 "l_3",
                 "l_4",
                 "l_5"
             ],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+            "persons": [
+                "p_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Malayan Campaign witnessed significant developments in air defence, facing challenges with warning systems and anti-aircraft capabilities against Japanese attacks."
-        },
-        {
-            "event": "e_2",
-            "date": "1939-1945",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "The defence strategy for Sarawak is being developed to secure the air landing ground against the enemy."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_10"
             ],
-            "eventSummary": "The Second World War led to extensive military operations in Malaya, including efforts to strengthen air defence systems amidst evolving threats."
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "A review of army strength required for the defence of Malaya is conducted to assess the necessary military resources needed."
+        },
+        {
+            "event": "e_3",
+            "date": "2nd August 1941",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "An estimate of the required army strength is sent to the War Office, detailing the military resources needed for defence."
         }
     ]
 }

@@ -1,126 +1,96 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Commodore Silly",
-            "p_2": "General Schilling",
-            "p_3": "Colonel Gulik",
-            "p_4": "Heer Koffman"
+            "p_1": "Admiral Sir Tom Phillips"
         },
         "locations": {
-            "l_1": "Bandoeng",
-            "l_2": "Andir",
-            "l_3": "Tasik Malaja",
-            "l_4": "Poerwokerto",
-            "l_5": "Garoet",
-            "l_6": "south central Java",
-            "l_7": "Tyikadjang",
-            "l_8": "Santosa"
+            "l_1": "Kota Bahru",
+            "l_2": "IndoChina",
+            "l_3": "Gulf of Siam",
+            "l_4": "Singapore",
+            "l_5": "Mersing",
+            "l_6": "Endau",
+            "l_7": "Kuantan",
+            "l_8": "Bangkok",
+            "l_9": "Ko Kong",
+            "l_10": "Manila",
+            "l_11": "Patani",
+            "l_12": "Sungei Patani",
+            "l_13": "Gong Kedah"
         },
         "events": {
-            "e_1": "Surrender Orders Issued",
-            "e_2": "Concentration of British Forces",
-            "e_3": "Dutch C.-in-C. Broadcast"
+            "e_1": "Operation Matador",
+            "e_2": "Reconnaissance Plan for 7th December, 1941"
         },
         "organisations": {
-            "o_1": "A.H.Q.",
-            "o_2": "R.A.F.",
-            "o_3": "Dutch Commander",
-            "o_4": "Blackforce"
+            "o_1": "No. 205 (FB) Squadron",
+            "o_2": "No. 8 (GR) Squadron, R.A.A.F.",
+            "o_3": "G.H.Q.",
+            "o_4": "B.O.A.C."
         }
     },
     "keywords": [
-        "defence",
+        "enemy contact",
         "reconnaissance",
-        "surrender",
-        "concentration",
-        "resistance",
-        "open town"
+        "convoy",
+        "aircraft",
+        "attack",
+        "weather conditions"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Surrender Orders",
-        "Allied Cooperation"
+        "Reconnaissance",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
+        "Reconnaissance": [
             "e_2"
         ],
-        "Surrender Orders": [
-            "e_1",
-            "e_3"
-        ],
-        "Allied Cooperation": [
-            "e_3"
+        "Strategic Decisions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8th March",
+            "date": "7th December, 1941",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On 7th December, 1941, G.H.Q. decides not to put Operation Matador into effect due to failure to reestablish contact with Japanese convoys."
+        },
+        {
+            "event": "e_2",
+            "date": "7th December, 1941",
             "locations": [
                 "l_1",
                 "l_3",
                 "l_4",
-                "l_5"
+                "l_9"
             ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
+                "o_2",
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Orders for surrender are received from the Dutch headquarters indicating the cessation of organized resistance in Java to the Japanese forces."
-        },
-        {
-            "event": "e_2",
-            "date": "7th March",
-            "locations": [
-                "l_2",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_2",
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The British forces start concentrating in a more defensible area following reconnaissance suggestions, amassing a total combined force of about 8,000 men."
-        },
-        {
-            "event": "e_3",
-            "date": "8th March",
-            "locations": [
-                "l_7",
-                "l_5"
-            ],
-            "persons": [
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "A broadcast from the Dutch commander announces the cancellation of fighting orders and urges compliance from all troops in Java to cease resistance."
+            "eventSummary": "On 7th December, 1941, reconnaissance aircraft from Kota Bahru attempt to sweep into the Gulf of Siam to reestablish contact with Japanese convoys."
         }
     ]
 }

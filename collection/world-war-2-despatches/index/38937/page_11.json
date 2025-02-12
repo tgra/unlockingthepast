@@ -1,118 +1,150 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Hermann Goering"
+            "p_1": "General Eisenhower",
+            "p_2": "General Castellano",
+            "p_3": "General Zanussi",
+            "p_4": "General Carton de Wiart",
+            "p_5": "General Smith",
+            "p_6": "Admiral Cunningham",
+            "p_7": "Air Marshal Tedder",
+            "p_8": "General Clark",
+            "p_9": "Mussolini"
         },
         "locations": {
-            "l_1": "Monte Cassino",
-            "l_2": "Mignano",
-            "l_3": "Capua",
-            "l_4": "Rappaido",
-            "l_5": "Liri Valley"
+            "l_1": "Mediterranean theatre",
+            "l_2": "Italy",
+            "l_3": "Lisbon",
+            "l_4": "Salerno",
+            "l_5": "Cassibile",
+            "l_6": "Sicily",
+            "l_7": "Apennines",
+            "l_8": "Rome",
+            "l_9": "Naples"
         },
         "events": {
-            "e_1": "Assumption of Command of 8 Ind. Div. Sector",
-            "e_2": "Takeover of Monte Cassino Sector",
-            "e_3": "Concentration of Tenth Army",
-            "e_4": "Reserve Movements on 11th May 1944"
+            "e_1": "Signing of the armistice",
+            "e_2": "Fall of Mussolini",
+            "e_3": "Italian offer of allegiance transfer",
+            "e_4": "Salerno landing"
         },
         "organisations": {
-            "o_1": "Tenth Army",
-            "o_2": "Fourteenth Army",
-            "o_3": "Armeegruppe von Zangen"
+            "o_1": "Commando Supremo",
+            "o_2": "Italian Armed Forces",
+            "o_3": "Royal Government",
+            "o_4": "Allied Governments",
+            "o_5": "Allied forces",
+            "o_6": "United Nations"
         }
     },
     "keywords": [
-        "Assumed Command",
-        "Concentration",
-        "Takeover",
-        "Divisions",
-        "Battalions",
-        "Army Group"
+        "Armistice",
+        "Capitulation",
+        "Military Operations",
+        "Negotiations",
+        "Invasion"
     ],
     "themes": [
         "Military Operations",
-        "Military Command",
-        "Army Organization"
+        "Negotiations",
+        "Surrender",
+        "Italian Loyalty"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
+            "e_4"
+        ],
+        "Negotiations": [
+            "e_1",
             "e_3"
         ],
-        "Military Command": [
-            "e_1",
-            "e_4"
+        "Surrender": [
+            "e_1"
         ],
-        "Army Organization": [
+        "Italian Loyalty": [
             "e_3",
-            "e_4"
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "9th May 1944",
+            "date": "3 September 1943",
             "locations": [
+                "l_1",
                 "l_2",
-                "l_1"
+                "l_5"
             ],
             "persons": [
-                "p_1"
+                "p_2",
+                "p_3",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "On 9th May 1944, command of the 8 Ind. Division sector is assumed at 2230 hours."
+            "eventSummary": "The signing of the armistice by the Italian Government in Cassibile signifies their intent to cease hostilities, with simultaneous announcements by both parties taking effect shortly before the major Allied landings."
         },
         {
             "event": "e_2",
-            "date": "27th April 1944",
+            "date": "July 1943",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_9"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The fall of Mussolini marks a significant shift in the Italian political landscape, paving the way for negotiations with the Allied forces."
+        },
+        {
+            "event": "e_3",
+            "date": "September 1943",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_6"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "General Castellano expresses intent to transfer allegiance from German to Allied forces during negotiations regarding the armistice."
+        },
+        {
+            "event": "e_4",
+            "date": "9 September 1943",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_5",
+                "p_6"
             ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "On 27th April 1944, the Monte Cassino sector is taken over, marking a significant operational milestone."
-        },
-        {
-            "event": "e_3",
-            "date": "11th May 1944",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "As of 11th May 1944, the Tenth Army is concentrated, reinforcing operational capabilities."
-        },
-        {
-            "event": "e_4",
-            "date": "11th May 1944",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Reserve movements are organized on 11th May 1944, enhancing tactical positions within the Army Groups."
+            "eventSummary": "The Salerno landing occurs as the Allied forces initiate a significant military operation in Italy, following the armistice."
         }
     ]
 }

@@ -1,108 +1,109 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Group Controller",
-            "p_2": "G.P.O.",
-            "p_3": "G.L.",
-            "p_4": "G.O.R.",
-            "p_5": "L.A.A. Guns"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Harwich Harbour",
-            "l_2": "Thameshaven Oil Installations",
-            "l_3": "Tilbury Docks",
-            "l_4": "Chatham Dockyard",
-            "l_5": "Sheerness Dockyard",
-            "l_6": "Dover Harbour",
-            "l_7": "Purfleet Oil and Ammunition Depots",
-            "l_8": "Uxbridge",
-            "l_9": "Hornchurch Aerodrome"
+            "l_1": "Tangmere",
+            "l_2": "Sussex",
+            "l_3": "France",
+            "l_4": "Exeter",
+            "l_5": "Pembrey",
+            "l_6": "St. Eval"
         },
         "events": {
-            "e_1": "Defensive Anti-Aircraft Operations",
-            "e_2": "Attacks on Hornchurch Aerodrome"
+            "e_1": "Development of Night Interception",
+            "e_2": "Intruder system initiation",
+            "e_3": "Battle",
+            "e_4": "Order of Battle, 8th July 1940"
         },
         "organisations": {
-            "o_1": "R.A.F."
+            "o_1": "Fighter Command"
         }
     },
     "keywords": [
-        "anti-aircraft",
-        "bombing",
-        "dive bombers",
-        "fire control",
-        "Gun Zones",
-        "precision engagements",
-        "barrage",
-        "targets"
+        "Bomber",
+        "Fighter",
+        "Radio-Location",
+        "Searchlights",
+        "Night Interception",
+        "A.I.",
+        "G.C.I.",
+        "G.L.",
+        "Day Fighters"
     ],
     "themes": [
         "Military Operations",
-        "Engagement Tactics",
-        "Anti-Dive Bombing",
-        "Defensive Strategies"
+        "Technology Development",
+        "Air Combat Strategies"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Engagement Tactics": [
+        "Technology Development": [
             "e_1"
         ],
-        "Anti-Dive Bombing": [
-            "e_1"
-        ],
-        "Defensive Strategies": [
-            "e_2"
+        "Air Combat Strategies": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "August 19 to October 5",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8"
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "Defensive Anti-Aircraft Operations focus on disabling enemy aircraft through calculated fire control and engagement tactics, employing various gun positions and methods to ensure accurate fire."
+            "eventSummary": "The Development of Night Interception focuses on improving interception methods against bombers at night."
         },
         {
             "event": "e_2",
-            "date": "Dates unspecified, during operations",
+            "date": "",
             "locations": [
-                "l_9"
+                "l_3"
             ],
-            "persons": [
-                "p_2",
-                "p_5"
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
             ],
+            "eventSummary": "The Intruder system is initiated to intercept bombers during takeoff or landing in France."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The Battle encompasses strategic military actions, including the use of the newly developed Night Interception methods."
+        },
+        {
+            "event": "e_4",
+            "date": "8th July 1940",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6"
+            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Attacks on Hornchurch Aerodrome are notably thwarted by anti-aircraft fire, successfully breaking enemy formations and preventing potential damage to the aerodrome and aircraft."
+            "connectedEvents": [],
+            "eventSummary": "The Order of Battle on 8th July 1940 outlines the squadrons' stations and types of aircraft."
         }
     ]
 }

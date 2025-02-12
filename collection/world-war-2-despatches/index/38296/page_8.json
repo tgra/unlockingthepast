@@ -1,12 +1,217 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {},
-        "events": {},
-        "organisations": {}
+        "persons": {
+            "p_1": "King of Greece",
+            "p_2": "H.B.M. Minister",
+            "p_3": "Captain D.5.",
+            "p_4": "C.S. 15",
+            "p_5": "Commander-in-Chief, Mediterranean",
+            "p_6": "Commander-in-Chief, Middle East",
+            "p_7": "Naval Officer-in-Charge, Suda Bay",
+            "p_8": "Senior Officer"
+        },
+        "locations": {
+            "l_1": "Crete",
+            "l_2": "Alexandria",
+            "l_3": "Agriarumeli",
+            "l_4": "Gavdo Island",
+            "l_5": "Suda Bay",
+            "l_6": "Canea",
+            "l_7": "Maleme",
+            "l_8": "Heraklion",
+            "l_9": "Kaso Strait",
+            "l_10": "Saltinos: Kastelli",
+            "l_11": "Tymba"
+        },
+        "events": {
+            "e_1": "Return of Force E to Alexandria",
+            "e_2": "Air attacks off Crete",
+            "e_3": "Sinking of KASHMIR and KELLY",
+            "e_4": "Rescue operations by KIPLING",
+            "e_5": "Reinforcement plan for Crete",
+            "e_6": "Ultimatum to Heraklion",
+            "e_7": "Return of naval forces to Alexandria",
+            "e_8": "Landing attempt at Sitia",
+            "e_9": "Recalling of ISIS and troops"
+        },
+        "organisations": {
+            "o_1": "Force E",
+            "o_2": "Force D",
+            "o_3": "5th D.F.",
+            "o_4": "Layforce",
+            "o_5": "Force Az",
+            "o_6": "Force C",
+            "o_7": "Admiralty"
+        }
     },
-    "keywords": [],
-    "themes": [],
-    "topicModel": {},
-    "eventConnections": []
+    "keywords": [
+        "air attacks",
+        "naval operations",
+        "evacuation plans",
+        "military reinforcement",
+        "survivor rescue"
+    ],
+    "themes": [
+        "Military Operations",
+        "Naval Engagements",
+        "Air Warfare",
+        "Evacuation",
+        "Reinforcement Strategies"
+    ],
+    "topicModel": {
+        "Military Operations": [
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7",
+            "e_8",
+            "e_9"
+        ],
+        "Naval Engagements": [
+            "e_3",
+            "e_4",
+            "e_7"
+        ],
+        "Air Warfare": [
+            "e_2",
+            "e_3"
+        ],
+        "Evacuation": [
+            "e_4",
+            "e_6"
+        ],
+        "Reinforcement Strategies": [
+            "e_5",
+            "e_8"
+        ]
+    },
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "Unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Force E returns to Alexandria after completing its mission."
+        },
+        {
+            "event": "e_2",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Intense air attacks are occurring off the coast of Crete."
+        },
+        {
+            "event": "e_3",
+            "date": "24th May, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "KASHMIR sinks after being hit, and KELLY is severely damaged during a dive bomber attack."
+        },
+        {
+            "event": "e_4",
+            "date": "Unknown",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "KIPLING engages in rescue operations, picking up survivors from the sunken ships amidst continuous air attacks."
+        },
+        {
+            "event": "e_5",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_5",
+                "p_6"
+            ],
+            "organisations": [
+                "o_7"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Commander-in-Chief makes a plan for reinforcing Crete in response to the unfolding situation."
+        },
+        {
+            "event": "e_6",
+            "date": "Unknown",
+            "locations": [
+                "l_8"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An ultimatum is rejected by British and Greek commanders in Heraklion calling for surrender."
+        },
+        {
+            "event": "e_7",
+            "date": "24th May, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Multiple naval forces return to Alexandria after their operations."
+        },
+        {
+            "event": "e_8",
+            "date": "24th May, 1941",
+            "locations": [
+                "l_1",
+                "l_9"
+            ],
+            "persons": [
+                "p_8"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A landing operation is initiated at Sitia to manage the military situation on Crete."
+        },
+        {
+            "event": "e_9",
+            "date": "Unknown",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Due to adverse weather conditions, ISIS and her troops are forced to return to Alexandria."
+        }
+    ]
 }

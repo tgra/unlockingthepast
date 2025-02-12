@@ -1,105 +1,129 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "Vice-Admiral H. K. Hewitt",
-            "p_2": "Commodore G. N. Oliver",
-            "p_3": "Rear-Admiral John L. Hall, Jr.",
-            "p_4": "Vice-Admiral Sir Algernon Willis",
-            "p_5": "Rear-Admiral Sir Philip Vian",
-            "p_6": "Admiral of the Fleet Sir Andrew B. Cunningham"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Gulf of Salerno",
-            "l_2": "Salerno",
-            "l_3": "Italy",
-            "l_4": "Gulf of Gaeta",
-            "l_5": "Naples"
+            "l_1": "Maiori",
+            "l_2": "Vietri",
+            "l_3": "Malta",
+            "l_4": "Bizerta",
+            "l_5": "Taranto",
+            "l_6": "Monte Corvino",
+            "l_7": "Paestum",
+            "l_8": "Milazzo",
+            "l_9": "Salerno",
+            "l_10": "Tripoli"
         },
         "events": {
-            "e_1": "Operation Avalanche",
-            "e_2": "Landings in the Gulf of Salerno"
+            "e_1": "Operation Gibbon",
+            "e_2": "Operation Slapstick",
+            "e_3": "Operation Dragoon",
+            "e_4": "Operation Avalanche"
         },
         "organisations": {
-            "o_1": "U.S. Navy",
-            "o_2": "Lords Commissioners of the Admiralty",
-            "o_3": "Allied Force Headquarters"
+            "o_1": "Force H",
+            "o_2": "Force V",
+            "o_3": "12th Air Support Command",
+            "o_4": "Fifth Army"
         }
     },
     "keywords": [
-        "Operation Avalanche",
-        "Gulf of Salerno",
-        "Naval Task Force",
-        "U.S. Navy",
-        "military invasion",
-        "planning"
+        "landings",
+        "naval forces",
+        "air support",
+        "military operations",
+        "Italian Armistice",
+        "enemy air activity",
+        "congestion",
+        "military reinforcements"
     ],
     "themes": [
         "Military Operations",
         "Naval Warfare",
-        "Planning and Strategy",
-        "Historical Events"
+        "Aerial Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
         "Naval Warfare": [
-            "e_1"
+            "e_1",
+            "e_3"
         ],
-        "Planning and Strategy": [
-            "e_1"
-        ],
-        "Historical Events": [
-            "e_2"
+        "Aerial Support": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "9th September 1943",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
                 "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3",
-                "p_4",
-                "p_5",
-                "p_6"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Avalanche involves naval forces under Vice-Admiral H. K. Hewitt escorting the Fifth Army for landings at Salerno."
-        },
-        {
-            "event": "e_2",
-            "date": "9th September 1943",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The landings in the Gulf of Salerno are crucial for establishing a foothold in Italy as part of the broader Operation Avalanche."
+            "eventSummary": "Operation Gibbon involves the passage of Italian Fleet units to Malta following the Italian Armistice."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_5",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "Operation Slapstick involves loading elements of the First British Airborne Division at Bizerta for discharge at Taranto."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_3",
+                "l_6"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "Operation Dragoon is a military operation on the southern coast of France in August 1944."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Operation Avalanche involves landings at Maiori and Vietri, facing initial challenges from shore batteries."
         }
     ]
 }

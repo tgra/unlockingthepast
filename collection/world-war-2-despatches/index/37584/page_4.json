@@ -9,53 +9,60 @@
             "l_2": "Namsos",
             "l_3": "Trondheim",
             "l_4": "Steinkjer",
-            "l_5": "Kirkenesvaag",
-            "l_6": "Hylla",
-            "l_7": "Tronestangen",
-            "l_8": "Sandvollan",
-            "l_9": "Bangsund"
+            "l_5": "Bangsund",
+            "l_6": "Kirkenesvaag",
+            "l_7": "Sandvollan",
+            "l_8": "Strømmen",
+            "l_9": "Hylla",
+            "l_10": "Tronestangen",
+            "l_11": "Verdal",
+            "l_12": "Stiklestad"
         },
         "events": {
             "e_1": "Evacuation of Namsos",
             "e_2": "Landing of Allied Expedition in Central Norway",
-            "e_3": "Arrival of 5th Demi-Brigade of Chasseurs Alpins",
-            "e_4": "Enemy Detachment Landing at Kirkenesvaag"
+            "e_3": "Naval Operations at Namsos",
+            "e_4": "German Landings in Norway",
+            "e_5": "Withdrawal of 146th Infantry Brigade"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "Allied Forces"
+            "o_2": "Allied forces",
+            "o_3": "146th Infantry Brigade",
+            "o_4": "148th Infantry Brigade",
+            "o_5": "Chasseurs Alpins"
         }
     },
     "keywords": [
-        "evacuation",
-        "military operation",
-        "Namsos",
-        "landing",
+        "Evacuation",
+        "Landing",
+        "Operations",
         "German forces",
-        "Allied troops",
-        "artillery",
-        "air support"
+        "Allied forces"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions"
+        "Allied Expedition",
+        "German Threat"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_2",
-            "e_4"
+        "Allied Expedition": [
+            "e_2"
+        ],
+        "German Threat": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2nd May",
+            "date": "1st May 1940",
             "locations": [
                 "l_2"
             ],
@@ -66,37 +73,17 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_4"
             ],
-            "eventSummary": "The evacuation of Namsos is successfully completed, with a total of 5,400 troops embarked during the night, amidst challenging fog conditions."
+            "eventSummary": "The evacuation of Namsos is successfully carried out, with a total of 5,400 embarked during the night despite difficult weather conditions."
         },
         {
             "event": "e_2",
-            "date": "14th April",
+            "date": "14th April 1940",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_3"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Major-General Carton de Wiart is appointed to command Allied forces in landing operations in Central Norway aimed at securing the Trondheim area."
-        },
-        {
-            "event": "e_3",
-            "date": "19th April",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_2",
                 "p_1"
             ],
             "organisations": [
@@ -105,20 +92,43 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The 5th Demi-Brigade of Chasseurs Alpins arrives in Namsos but faces heavy bombing and destruction of port facilities upon arrival."
+            "eventSummary": "Major-General Carton de Wiart is informed about the landing operation in Central Norway, aimed at securing the Trondheim area."
         },
         {
             "event": "e_4",
-            "date": "21st April",
+            "date": "21st April 1940",
             "locations": [
-                "l_5"
+                "l_6",
+                "l_7",
+                "l_9"
             ],
-            "persons": [],
+            "persons": [
+                "p_1"
+            ],
             "organisations": [
                 "o_2"
             ],
-            "connectedEvents": [],
-            "eventSummary": "An enemy detachment of 400 German troops lands at Kirkenesvaag, posing a strategic threat to the British 146th Infantry Brigade."
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "German forces carry out landings at various locations in Norway, posing a serious threat to the British units."
+        },
+        {
+            "event": "e_5",
+            "date": "24th April 1940",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "General Carton de Wiart decides to withdraw the 146th Infantry Brigade to a safer location north of Steinkjer due to mounting pressures from German forces."
         }
     ]
 }

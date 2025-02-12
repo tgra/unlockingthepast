@@ -1,104 +1,154 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Supreme Allied Commander",
-            "p_2": "Commander-in-Chief, India"
+            "p_1": "Admiral The Lord Louis Mountbatten",
+            "p_2": "Lieut.-General G. A. P. Scoones"
         },
         "locations": {
-            "l_1": "South-East Asia Command",
-            "l_2": "India",
-            "l_3": "Ceylon",
-            "l_4": "Addu Atoll",
-            "l_5": "Diego Garcia",
-            "l_6": "Cocos",
-            "l_7": "Burma",
-            "l_8": "Arakan"
+            "l_1": "Chittagong",
+            "l_2": "Aijal",
+            "l_3": "Kaladan Valley",
+            "l_4": "Kyauktaw",
+            "l_5": "Apaukwa",
+            "l_6": "Chiringa",
+            "l_7": "Sangu Valley",
+            "l_8": "Chin Hills",
+            "l_9": "Imphal Front",
+            "l_10": "Tamu",
+            "l_11": "Sibong",
+            "l_12": "Kalapanzin River",
+            "l_13": "Palel"
         },
         "events": {
-            "e_1": "Reorganization of Standard Division",
-            "e_2": "Assumption of Full Control by 11 Army Group",
-            "e_3": "Operations in Assam and Burma"
+            "e_1": "Arakan Campaign",
+            "e_2": "Operations in the Kaladan Valley",
+            "e_3": "Capture of Kyauktaw",
+            "e_4": "Formation of Lushai Brigade",
+            "e_5": "Defence of the Indian Frontier"
         },
         "organisations": {
-            "o_1": "War Office",
-            "o_2": "General Headquarters, India",
-            "o_3": "11 Army Group"
+            "o_1": "15 Indian Corps",
+            "o_2": "81 (West African) Division",
+            "o_3": "4Corps",
+            "o_4": "23 Indian Division",
+            "o_5": "17 Indian Light Division",
+            "o_6": "20 Indian Division",
+            "o_7": "Fourteenth Army"
         }
     },
     "keywords": [
-        "Standard Division",
-        "Reorganization",
-        "Air Transport",
-        "Army Group",
-        "Fourteenth Army",
-        "Burma",
-        "Ceylon"
+        "Japanese forces",
+        "reinforcements",
+        "advance",
+        "offensive operations",
+        "success",
+        "casualties",
+        "communications"
     ],
     "themes": [
         "Military Operations",
-        "Administrative Changes",
-        "Strategic Decisions"
+        "Defensive Strategy",
+        "Reinforcements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Administrative Changes": [
-            "e_2"
+        "Defensive Strategy": [
+            "e_5"
         ],
-        "Strategic Decisions": [
+        "Reinforcements": [
             "e_1",
-            "e_3"
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 1944",
+            "date": null,
             "locations": [
                 "l_1",
-                "l_2"
+                "l_4",
+                "l_10"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_7"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2",
+                "e_5"
             ],
-            "eventSummary": "The Supreme Allied Commander approves the recommendation to establish a new Standard Division structure to enhance operational capability in South-East Asia."
+            "eventSummary": "The Arakan Campaign aims to improve the general situation and engage Japanese forces."
         },
         {
             "event": "e_2",
-            "date": "May 1, 1944",
+            "date": null,
             "locations": [
-                "l_2"
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "Operations in the Kaladan Valley are conducted to protect the left flank of 15 Indian Corps."
+        },
+        {
+            "event": "e_3",
+            "date": "3rd March",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Kyauktaw is captured, enabling further advances against Japanese forces."
+        },
+        {
+            "event": "e_4",
+            "date": null,
+            "locations": [
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Lushai Brigade is formed to disrupt enemy communications."
+        },
+        {
+            "event": "e_5",
+            "date": null,
+            "locations": [
+                "l_12",
+                "l_13"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_3",
-                "o_2"
+                "o_4",
+                "o_5",
+                "o_6"
             ],
             "connectedEvents": [],
-            "eventSummary": "The 11 Army Group assumes full control, transitioning from General Headquarters in India to streamline military governance."
-        },
-        {
-            "event": "e_3",
-            "date": "June 23, 1944 to November 12, 1944",
-            "locations": [
-                "l_1",
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "Military operations are conducted in Assam and Burma, aiming at strategic goals in the region."
+            "eventSummary": "4Corps is tasked with the defense of the Indian frontier east and south of Manipur."
         }
     ]
 }

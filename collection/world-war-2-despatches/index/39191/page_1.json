@@ -1,66 +1,77 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Philip Vian",
-            "p_2": "Major R. C. Hay"
+            "p_1": "Admiral Sir Arthur J. Power",
+            "p_2": "Rear-Admiral Sir Philip L. Vian"
         },
         "locations": {
             "l_1": "Palembang",
-            "l_2": "Songei Gerong",
-            "l_3": "Pladjoe",
-            "l_4": "Sumatra",
-            "l_5": "Malacca Straits",
-            "l_6": "Trincomalee",
-            "l_7": "Fremantle"
+            "l_2": "Pangkalan Brandan",
+            "l_3": "Songei Gerong",
+            "l_4": "Ceylon",
+            "l_5": "Sumatra"
         },
         "events": {
             "e_1": "Operation Meridian",
-            "e_2": "First Oiling Rendezvous"
+            "e_2": "Attacks on oil refineries"
         },
         "organisations": {
-            "o_1": "Royal Marines",
-            "o_2": "British Pacific Fleet"
+            "o_1": "East Indies Fleet",
+            "o_2": "Royal Navy",
+            "o_3": "British Pacific Fleet",
+            "o_4": "Lords Commissioners of the Admiralty"
         }
     },
     "keywords": [
-        "Operation Meridian",
-        "refineries",
-        "aircraft",
-        "military",
-        "Sally bombers",
-        "Royal Fleet Auxiliary",
-        "aircrews"
+        "Carrier-borne aircraft",
+        "Oil refineries",
+        "Japanese oil industry",
+        "Destruction",
+        "Air fighting"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Air Operations",
-        "Logistics"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
-        ],
-        "Naval Warfare": [
             "e_1",
             "e_2"
         ],
-        "Air Operations": [
+        "Strategic Decisions": [
             "e_1"
-        ],
-        "Logistics": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "10th February, 1945",
+            "date": "March 14, 1945",
             "locations": [
                 "l_1",
-                "l_2",
                 "l_3",
-                "l_4"
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Operation Meridian aims for the destruction of two oil refineries in Sumatra, marking a significant strike against the Japanese oil industry."
+        },
+        {
+            "event": "e_2",
+            "date": "January, 1945",
+            "locations": [
+                "l_1",
+                "l_5"
             ],
             "persons": [
                 "p_1",
@@ -71,27 +82,9 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Meridian aims to neutralize oil refineries in Palembang but faces significant challenges including adverse weather and fuel shortages."
-        },
-        {
-            "event": "e_2",
-            "date": "13th January, 1945",
-            "locations": [
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The First Oiling Rendezvous occurs with multiple naval vessels from the British Pacific Fleet preparing for operations while encountering various naval tactics."
+            "eventSummary": "The attacks on oil refineries in the Palembang area are conducted, targeting key installations crucial for Japanese oil production."
         }
     ]
 }

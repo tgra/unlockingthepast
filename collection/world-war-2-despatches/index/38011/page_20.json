@@ -1,148 +1,124 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Cecil",
-            "p_2": "General Auchinleck",
-            "p_3": "Colonel Pollock",
-            "p_4": "Sir Cecil Dormer",
-            "p_5": "Vice-Admiral Cunhingham",
-            "p_6": "Admiral Diesen",
-            "p_7": "Rear-Admiral Boyes",
-            "p_8": "Captain E. B. K. Stevens",
-            "p_9": "Group-Captain Moore"
+            "p_1": "Colonel Gubbins",
+            "p_2": "Brigadier Fraser",
+            "p_3": "Lieut.-Colonel Trappes-Lomax",
+            "p_4": "Colonel Dowler",
+            "p_5": "General Bethouart"
         },
         "locations": {
-            "l_1": "Norway",
-            "l_2": "Tromso",
-            "l_3": "Sweden",
-            "l_4": "Shetlands",
-            "l_5": "Ofot Fiord",
-            "l_6": "Bardufoss aerodrome",
-            "l_7": "U.K."
+            "l_1": "Bodo",
+            "l_2": "Mo",
+            "l_3": "Scapa Flow",
+            "l_4": "Messingletten",
+            "l_5": "Harstad",
+            "l_6": "Northern Norway",
+            "l_7": "Mo-Mosjoen",
+            "l_8": "Rognan"
         },
         "events": {
-            "e_1": "Evacuation of Norway",
-            "e_2": "Mowinckel Plan consultations",
-            "e_3": "First night of evacuation",
-            "e_4": "Convoy sailing of the expedition to the U.K."
+            "e_1": "Evacuation of Troops from Bodo",
+            "e_2": "Formation of BODOFORCE",
+            "e_3": "Reinforcement Operations in Bodo"
         },
         "organisations": {
-            "o_1": "Norwegian Government",
-            "o_2": "R.A.F.",
-            "o_3": "F.A.A.",
-            "o_4": "British Navy",
-            "o_5": "H.M.S. HAVELOCK"
+            "o_1": "24th Guards Brigade",
+            "o_2": "Scots Guards",
+            "o_3": "Irish Guards",
+            "o_4": "South Wales Borderers",
+            "o_5": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Mowinckel Plan",
-        "Norwegian Government",
-        "British Navy",
-        "Troops",
-        "Convoys",
-        "Negotiations"
+        "Bodo",
+        "Mo",
+        "evacuation",
+        "reinforcement",
+        "Scots Guards",
+        "BODOFORCE"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions"
+        "Evacuation",
+        "Reinforcements",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_4"
-        ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
-            "e_2",
             "e_3"
+        ],
+        "Evacuation": [
+            "e_1"
+        ],
+        "Reinforcements": [
+            "e_3"
+        ],
+        "Command Structure": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "June 3rd-4th, 1940",
+            "date": "20th May",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_4",
-                "p_5",
-                "p_6",
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
+                "o_2",
+                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The evacuation of Norway occurs as planned, facilitating the withdrawal of troops amidst challenging conditions."
+            "eventSummary": "Troops are evacuated from Bodo under pressure from enemy forces."
         },
         {
             "event": "e_2",
-            "date": "June 2nd, 1940",
+            "date": "23rd May",
             "locations": [
-                "l_1",
-                "l_4"
+                "l_1"
             ],
             "persons": [
-                "p_4",
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "Discussions of the Mowinckel Plan take place among key military and government officials, setting the groundwork for future evacuation strategies."
+            "eventSummary": "Troops in the Bodo area are reorganized into BODOFORCE under Brigadier Gubbins."
         },
         {
             "event": "e_3",
-            "date": "June 3rd, 1940",
+            "date": "May 30th",
             "locations": [
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_6",
-                "p_7",
-                "p_8",
-                "p_9"
+                "p_1",
+                "p_5"
             ],
             "organisations": [
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_2"
             ],
-            "eventSummary": "The first night of evacuation is officially observed, with significant troop movements executed successfully."
-        },
-        {
-            "event": "e_4",
-            "date": "June 10th, 1940",
-            "locations": [
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_8",
-                "p_9"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Various convoys carrying troops set sail for the United Kingdom amid preparations and naval coordination."
+            "eventSummary": "Plans for reinforcement operations are discussed due to the ongoing enemy pressure."
         }
     ]
 }

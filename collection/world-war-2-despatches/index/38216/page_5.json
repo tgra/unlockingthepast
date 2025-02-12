@@ -1,87 +1,83 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Group Captain Brown",
-            "p_2": "W/Cdr. R. H. Davies",
-            "p_3": "Group Captain Whistondale",
-            "p_4": "W/Cdr. Jeudwine",
-            "p_5": "S/Ldr. Wilkins",
-            "p_6": "S/Ldr. Brooker",
-            "p_7": "S/Ldr. Wright",
-            "p_8": "Air Commodore Hunter",
-            "p_9": "Air Commodore Vincent",
-            "p_10": "Wing Commander Bell"
+            "p_1": "Commander-in-Chief",
+            "p_2": "A.H.Q.",
+            "p_3": "R.A.F.",
+            "p_4": "Dutch Squadron",
+            "p_5": "Flight Commanders"
         },
         "locations": {
-            "l_1": "Sumatra",
-            "l_2": "Samplak",
-            "l_3": "Kahdyati",
-            "l_4": "Tyililitan",
-            "l_5": "Bandoeng",
-            "l_6": "Batavia",
-            "l_7": "Java",
-            "l_8": "Oesthaven",
-            "l_9": "Palembang",
-            "l_10": "Djocjacarta"
+            "l_1": "Malaya",
+            "l_2": "Singapore",
+            "l_3": "Ponggol",
+            "l_4": "Woodlands North",
+            "l_5": "Port Dickson",
+            "l_6": "Kuantan",
+            "l_7": "Bukit Panjang",
+            "l_8": "Kuala Lumpur",
+            "l_9": "Gong Kedah",
+            "l_10": "Butterworth",
+            "l_11": "Tebrau",
+            "l_12": "Yong Peng",
+            "l_13": "Sembawang",
+            "l_14": "Kallong",
+            "l_15": "Kuantan-Great Natunas-Kuching (B. Borneo)",
+            "l_16": "Seletar"
         },
         "events": {
-            "e_1": "Evacuation of Sumatra",
-            "e_2": "Allocation of aerodromes",
-            "e_3": "Concentration of aircraft",
-            "e_4": "Re-formation of Bomber and Fighter Groups",
-            "e_5": "Re-organisation of squadrons",
-            "e_6": "Reconnaissance operation on Oesthaven"
+            "e_1": "Outbreak of War",
+            "e_2": "Allied Reinforcement Arrangements",
+            "e_3": "Mutual Reinforcement Programme with Dutch Army Air Service",
+            "e_4": "Role of Squadrons in War"
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "Abdair",
-            "o_3": "Westgroup",
-            "o_4": "No. 225 (B) Group",
-            "o_5": "No. 226 (F) Group",
-            "o_6": "Dutch Observer Corps"
+            "o_1": "U.S. Naval Air Service",
+            "o_2": "U.S. Army Air Corps",
+            "o_3": "Dutch Army Air Service",
+            "o_4": "Royal Air Force"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Aerodromes",
-        "Aircraft",
-        "Reconnaissance",
-        "Military Units",
-        "Java",
-        "Strategic Operations"
+        "Dispersal areas",
+        "aerodromes",
+        "aircraft",
+        "reinforcements",
+        "training",
+        "operations"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "International Cooperation",
-        "Defensive Preparations"
+        "Reinforcement Arrangements",
+        "Defensive Strategies",
+        "Inter-Allied Cooperation"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_6"
-        ],
-        "Diplomacy": [
+            "e_3",
             "e_4"
         ],
-        "Strategic Decisions": [
-            "e_2",
+        "Reinforcement Arrangements": [
+            "e_2"
+        ],
+        "Defensive Strategies": [
+            "e_1"
+        ],
+        "Inter-Allied Cooperation": [
             "e_3"
-        ],
-        "International Cooperation": [
-            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "16th February",
+            "date": "December 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_8"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
@@ -90,101 +86,55 @@
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The evacuation of military resources from Sumatra takes place to mitigate losses."
+            "eventSummary": "The outbreak of war leads to immediate concerns regarding defense and preparation in Malaya."
         },
         {
             "event": "e_2",
-            "date": "16th February",
+            "date": "",
             "locations": [
+                "l_1",
                 "l_2",
-                "l_3",
-                "l_4"
+                "l_3"
             ],
-            "persons": [
-                "p_1",
-                "p_3",
-                "p_4"
-            ],
+            "persons": [],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
-                "e_3",
-                "e_4"
+                "e_3"
             ],
-            "eventSummary": "Aerodromes are allocated for various squadrons following military needs in Sumatra."
+            "eventSummary": "Allied reinforcement arrangements for aircraft and support systems are planned amid rising tensions."
         },
         {
             "event": "e_3",
-            "date": "18th February",
-            "locations": [],
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
             "persons": [
-                "p_1",
-                "p_2",
+                "p_4",
                 "p_5"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
                 "o_3"
             ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The Westgroup commander decides to concentrate all aircraft by type into selected squadrons."
+            "connectedEvents": [],
+            "eventSummary": "The mutual reinforcement programme with the Dutch Army Air Service outlines collaborative military efforts."
         },
         {
             "event": "e_4",
-            "date": "18th February",
+            "date": "July 1941",
             "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
+                "l_2"
             ],
-            "persons": [
-                "p_8",
-                "p_9",
-                "p_10"
-            ],
+            "persons": [],
             "organisations": [
-                "o_4",
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "Bomber and Fighter Groups are re-formed to assist operations in Java."
-        },
-        {
-            "event": "e_5",
-            "date": "23rd February",
-            "locations": [],
-            "persons": [
-                "p_9",
-                "p_10"
-            ],
-            "organisations": [
-                "o_2",
-                "o_6"
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "Despite challenges, squadrons are reorganised under the command of experienced leaders."
-        },
-        {
-            "event": "e_6",
-            "date": "18th February",
-            "locations": [
-                "l_8",
-                "l_9"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "A Hudson aircraft conducts a reconnaissance mission over Oesthaven and Palembang with no signs of Japanese activity reported."
+            "eventSummary": "A memorandum outlining the role of squadrons in war and their training is circulated to ensure preparedness."
         }
     ]
 }

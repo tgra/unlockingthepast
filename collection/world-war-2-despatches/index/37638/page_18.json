@@ -1,58 +1,70 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Cick",
-            "p_2": "General Clark",
-            "p_3": "Rashid Ali",
-            "p_4": "Mayor of Baghdad",
-            "p_5": "General Dentz",
-            "p_6": "General de Gaulle",
-            "p_7": "General Legentilhomme",
-            "p_8": "General Catroux"
+            "p_1": "General Catroux",
+            "p_2": "General de Gaulle",
+            "p_3": "General Wilson",
+            "p_4": "Brigadier Lloyd",
+            "p_5": "General Quinan"
         },
         "locations": {
-            "l_1": "Shaibah",
-            "l_2": "Baghdad",
-            "l_3": "Fallujah",
-            "l_4": "Ramadi",
-            "l_5": "Transjordan",
-            "l_6": "Mosul",
-            "l_7": "Crete",
-            "l_8": "Syria",
-            "l_9": "Palestine",
-            "l_10": "Qastima",
-            "l_11": "Jaffa",
-            "l_12": "Lebanon",
-            "l_13": "Damascus"
+            "l_1": "Syria",
+            "l_2": "Palestine",
+            "l_3": "Damascus",
+            "l_4": "Lebanon",
+            "l_5": "Egypt",
+            "l_6": "Cyprus",
+            "l_7": "Turkey",
+            "l_8": "Transjordan",
+            "l_9": "Sudan",
+            "l_10": "Deraa",
+            "l_11": "Yarmuk",
+            "l_12": "Beirut",
+            "l_13": "Merjayun",
+            "l_14": "Litani",
+            "l_15": "Baghdad",
+            "l_16": "Euphrates",
+            "l_17": "Abu Kemal",
+            "l_18": "Deir Ez Zor",
+            "l_19": "Aleppo",
+            "l_20": "Palmyra",
+            "l_21": "Homs",
+            "l_22": "Sidon",
+            "l_23": "Damour"
         },
         "events": {
-            "e_1": "Counter Attack at Fallujah",
-            "e_2": "Advance on Baghdad",
-            "e_3": "Capitulation of Baghdad",
-            "e_4": "Formation of Free French Division",
-            "e_5": "German Infiltration into Syria",
-            "e_6": "Withdrawal of French troops in Syria"
+            "e_1": "French advance to Damascus",
+            "e_2": "Occupation of Syria",
+            "e_3": "Capture of Damascus",
+            "e_4": "Advance into Syria",
+            "e_5": "Counterattacks by French forces",
+            "e_6": "Transportation of troops from Iraq"
         },
         "organisations": {
-            "o_1": "Iraqi Army",
-            "o_2": "Gurkha Battalion",
-            "o_3": "Household Cavalry Regiment",
-            "o_4": "Free French Forces"
+            "o_1": "7th Australian Division",
+            "o_2": "5th Indian Infantry Brigade",
+            "o_3": "Free French",
+            "o_4": "Royal Fusiliers",
+            "o_5": "6th Division",
+            "o_6": "10th Indian Division",
+            "o_7": "Habforce"
         }
     },
     "keywords": [
-        "reinforcements",
-        "capitulation",
-        "military operations",
+        "occupation",
         "advance",
-        "German infiltration"
+        "counterattack",
+        "troops",
+        "occupation of Syria",
+        "Free French",
+        "Australian Division",
+        "Indian Brigade"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
         "Strategic Decisions",
-        "Counterinsurgency",
-        "Military Reinforcements"
+        "Allied Forces",
+        "Resistance"
     ],
     "topicModel": {
         "Military Operations": [
@@ -60,134 +72,116 @@
             "e_2",
             "e_3",
             "e_4",
-            "e_5"
-        ],
-        "Diplomacy": [
-            "e_3",
-            "e_4",
-            "e_5"
-        ],
-        "Strategic Decisions": [
             "e_5",
             "e_6"
         ],
-        "Counterinsurgency": [
-            "e_1",
-            "e_2"
+        "Strategic Decisions": [
+            "e_2",
+            "e_4"
+        ],
+        "Allied Forces": [
+            "o_1",
+            "o_2",
+            "o_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Unknown Date",
+            "date": "21st May",
             "locations": [
                 "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_6"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_5"
             ],
-            "eventSummary": "General Cick's forces successfully repel the Iraqi counter attack at Fallujah."
+            "eventSummary": "On 21st May, General Catroux reports the French troops were moving south towards Damascus."
         },
         {
             "event": "e_2",
-            "date": "30th May",
+            "date": "",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_5"
             ],
             "persons": [
-                "p_1",
                 "p_2"
+            ],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3",
+                "e_6"
+            ],
+            "eventSummary": "Preparations begin for military action in Syria due to strategic threats to Egypt."
+        },
+        {
+            "event": "e_3",
+            "date": "21st June",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The city of Damascus is captured on 21st June after intense fighting."
+        },
+        {
+            "event": "e_4",
+            "date": "8th June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "General Cick's force advances on Baghdad, overcoming communication difficulties and enemy action."
-        },
-        {
-            "event": "e_3",
-            "date": "1st June",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [
-                "p_4",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Baghdad Mayor requests terms of capitulation after the Iraqi forces lose morale and retreat."
-        },
-        {
-            "event": "e_4",
-            "date": "Mid May",
-            "locations": [
-                "l_9",
-                "l_8"
-            ],
-            "persons": [
-                "p_6",
-                "p_7"
-            ],
-            "organisations": [
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "Formation of the Free French division in Egypt with troops organized to oppose German actions in Syria."
+            "connectedEvents": [],
+            "eventSummary": "Advance into Syria commences early on 8th June under General Wilson's command."
         },
         {
             "event": "e_5",
-            "date": "End of April",
+            "date": "",
             "locations": [
-                "l_8"
+                "l_3"
             ],
             "persons": [
-                "p_6",
-                "p_8"
+                "p_1"
             ],
             "organisations": [
                 "o_4"
             ],
-            "connectedEvents": [
-                "e_4",
-                "e_6"
-            ],
-            "eventSummary": "General Dentz is noted to be colluding with Vichy, raising concerns on German advances in Syria."
+            "connectedEvents": [],
+            "eventSummary": "Counterattacks by French forces occur during the advance."
         },
         {
             "event": "e_6",
-            "date": "Late May",
+            "date": "",
             "locations": [
-                "l_8",
-                "l_12"
+                "l_5"
             ],
             "persons": [
-                "p_8"
+                "p_5"
             ],
             "organisations": [
-                "o_4"
+                "o_6"
             ],
-            "connectedEvents": [
-                "e_5"
-            ],
-            "eventSummary": "General Catroux reports French troops in Syria are retreating, necessitating a review of British military involvement."
+            "connectedEvents": [],
+            "eventSummary": "Troops from Iraq move towards Syria to support the ongoing military operations."
         }
     ]
 }

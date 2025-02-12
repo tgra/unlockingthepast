@@ -1,153 +1,114 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Giraud",
-            "p_2": "General Billotte",
-            "p_3": "General Georges",
-            "p_4": "Major General F. N. Mason-MacFarlane",
-            "p_5": "Lieut. Colonel G. F. Hopkinson"
+            "p_1": "General Weygand",
+            "p_2": "General Koeltz",
+            "p_3": "Sir Ronald Adam"
         },
         "locations": {
-            "l_1": "Belgium",
-            "l_2": "Senne",
-            "l_3": "Oise",
-            "l_4": "St. Quentin",
-            "l_5": "Forest of Mormal",
-            "l_6": "Arras",
-            "l_7": "Ruyalcourt",
-            "l_8": "Arleux",
-            "l_9": "Douai",
-            "l_10": "Amiens",
-            "l_11": "Abbeville",
-            "l_12": "Canal du Nord",
-            "l_13": "Somme",
-            "l_14": "Albert"
+            "l_1": "Dunkirk",
+            "l_2": "La Panne",
+            "l_3": "Bergues",
+            "l_4": "Belgian frontier",
+            "l_5": "Malo-les-Bains",
+            "l_6": "Crombeke",
+            "l_7": "Rosendael"
         },
         "events": {
-            "e_1": "Withdrawal to Senne positions",
-            "e_2": "Enemy breakthrough threat",
-            "e_3": "Orders for 23rd Division to occupy Canal du Nord",
-            "e_4": "Delaying actions of local defense schemes"
+            "e_1": "Evacuation of the British Expeditionary Force",
+            "e_2": "Arrival of French troops",
+            "e_3": "Withdrawal of 3rd and 2nd Corps"
         },
         "organisations": {
-            "o_1": "French Army",
-            "o_2": "B.E.F. (British Expeditionary Force)",
-            "o_3": "Royal Engineers",
-            "o_4": "Royal Army Service Corps",
-            "o_5": "12th Division",
-            "o_6": "46th Division",
-            "o_7": "42nd Division"
+            "o_1": "British Expeditionary Force",
+            "o_2": "Royal Air Force",
+            "o_3": "H.M. Government",
+            "o_4": "War Office",
+            "o_5": "French military forces"
         }
     },
     "keywords": [
-        "withdrawal",
-        "enemy breakthrough",
-        "defense",
-        "military operations",
-        "communication",
-        "sabotage"
+        "Dunkirk",
+        "Evacuation",
+        "Embarkation",
+        "Counterattacks",
+        "Royal Air Force",
+        "French troops"
     ],
     "themes": [
         "Military Operations",
-        "Defensive Tactics",
-        "Logistics",
         "Coordination",
-        "Command Structure"
+        "Embarkation Challenges"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Defensive Tactics": [
-            "e_3",
-            "e_4"
-        ],
-        "Logistics": [
-            "e_1"
+            "e_2",
+            "e_3"
         ],
         "Coordination": [
-            "e_2"
-        ],
-        "Command Structure": [
+            "e_1",
             "e_3"
+        ],
+        "Embarkation Challenges": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 17, 1940",
+            "date": "29th May",
             "locations": [
-                "l_2"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The withdrawal to the Senne positions begins and is successfully completed, as enemy movements become increasingly aggressive."
+            "eventSummary": "On 29th May, the British Expeditionary Force prepares for evacuation from Dunkirk as the enemy continues to attack, prompting decisions regarding operations and troop movements."
         },
         {
             "event": "e_2",
-            "date": "May 17, 1940",
+            "date": "29th May",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5"
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Reports confirm enemy armored forces have crossed the Oise, creating an imminent threat, which prompts urgent defensive measures."
-        },
-        {
-            "event": "e_3",
-            "date": "May 17, 1940",
-            "locations": [
-                "l_7",
-                "l_8"
-            ],
-            "persons": [
-                "p_3"
+                "p_1"
             ],
             "organisations": [
                 "o_5"
             ],
             "connectedEvents": [
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "Orders are given for 23rd Division to occupy the Canal du Nord in response to evolving threats."
+            "eventSummary": "On 29th May, French troops arrive at Dunkirk, complicating embarkation efforts just as British forces begin evacuation operations."
         },
         {
-            "event": "e_4",
-            "date": "May 17, 1940",
+            "event": "e_3",
+            "date": "29th May",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_3",
+                "l_4"
             ],
-            "persons": [
-                "p_4"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "Local defense schemes initiated under the command of several divisions to delay enemy advances, showcasing determination despite inexperience."
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 29th May, the 3rd Corps begins withdrawing from its positions as British divisions are ordered to embark for evacuation."
         }
     ]
 }

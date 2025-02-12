@@ -1,146 +1,133 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Wilson",
-            "p_2": "Brigadier Lee",
-            "p_3": "Major-General Mackay",
-            "p_4": "Major-General Freyberg",
-            "p_5": "General Blamey"
+            "p_1": "Brigadier Gatehouse",
+            "p_2": "General Messervy",
+            "p_3": "General Creagh",
+            "p_4": "General Beresford-Peirse"
         },
         "locations": {
-            "l_1": "Tobruk",
-            "l_2": "Egypt",
-            "l_3": "Yugoslavia",
-            "l_4": "El Adem",
-            "l_5": "Sollum",
-            "l_6": "Aegean Sea",
-            "l_7": "Mount Olympus",
-            "l_8": "Veria",
-            "l_9": "Edessa",
-            "l_10": "Monastir",
-            "l_11": "Kozani",
-            "l_12": "Amynteion"
+            "l_1": "Sidi Omar",
+            "l_2": "22nd Guards Brigade",
+            "l_3": "Sidi Barrani",
+            "l_4": "Matruh",
+            "l_5": "Benghazi",
+            "l_6": "Cyrenaica",
+            "l_7": "Crete",
+            "l_8": "Iraq",
+            "l_9": "Syria",
+            "l_10": "Italian East Africa",
+            "l_11": "Tobruk"
         },
         "events": {
-            "e_1": "German attack opens",
-            "e_2": "Operations in Greece",
-            "e_3": "First serious engagement",
-            "e_4": "Withdrawal from Amynteion"
+            "e_1": "Battle involving the 4th Armoured Brigade",
+            "e_2": "Withdrawal of forward troops",
+            "e_3": "Operations in Middle East from 7th February to 14th July"
         },
         "organisations": {
-            "o_1": "Imperial Forces",
-            "o_2": "New Zealand Division",
-            "o_3": "6th Australian Division",
-            "o_4": "12th Greek Division",
-            "o_5": "20th Greek Division",
-            "o_6": "1st Armoured Brigade",
-            "o_7": "3rd Royal Tank Regiment"
+            "o_1": "4th Armoured Brigade",
+            "o_2": "7th Armoured Brigade",
+            "o_3": "Royal Air Force",
+            "o_4": "Royal Navy"
         }
     },
     "keywords": [
-        "Tobruk",
-        "defence",
-        "German attack",
-        "New Zealand Division",
-        "Yugoslav resistance",
-        "engagement",
+        "Armoured Brigade",
+        "enemy column",
+        "tanks",
         "withdrawal",
-        "Anzac Corps"
+        "air action",
+        "British Empire"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Defensive Strategies"
+        "Combat Strategy",
+        "Troop Morale",
+        "Defensive Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3",
-            "e_4"
+            "e_3"
         ],
-        "Strategic Decisions": [
+        "Combat Strategy": [
             "e_1",
-            "e_4"
+            "e_2"
+        ],
+        "Troop Morale": [
+            "e_3"
+        ],
+        "Defensive Operations": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th April",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The German attack opens, putting pressure on the Imperial Forces during their operations in Greece."
+            "eventSummary": "The 4th Armoured Brigade, commanded by Brigadier Gatehouse, engages enemy tanks while facing mechanical issues and ultimately is compelled to counter-attack under General Messervy's orders."
         },
         {
             "event": "e_2",
-            "date": "7th April - 30th April",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2",
                 "l_3"
             ],
             "persons": [
-                "p_1",
-                "p_5"
+                "p_2",
+                "p_4"
             ],
             "organisations": [
                 "o_1",
-                "o_2",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "General Messervy orders the withdrawal of forward troops due to a critical situation, ensuring the safety of his forces from being encircled by the enemy."
+        },
+        {
+            "event": "e_3",
+            "date": "7th February to 14th July",
+            "locations": [
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9",
+                "l_10",
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [
                 "o_3",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_1",
-                "e_3",
-                "e_4"
-            ],
-            "eventSummary": "Operations in Greece are initiated, involving multiple divisions and complex logistical challenges."
-        },
-        {
-            "event": "e_3",
-            "date": "10th April - 11th April",
-            "locations": [
-                "l_12"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The first serious engagement occurs as General Mackay's force is attacked, resulting in significant fighting."
-        },
-        {
-            "event": "e_4",
-            "date": "Night of 11th/12th April",
-            "locations": [
-                "l_12"
-            ],
-            "persons": [
-                "p_3"
-            ],
-            "organisations": [
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_1",
                 "e_2"
             ],
-            "eventSummary": "A withdrawal from Amynteion begins, indicating a change in strategy due to overwhelming pressures from enemy forces."
+            "eventSummary": "Over the six months, the Middle East command successfully undertakes multiple military campaigns while facing significant challenges, illustrating strategic successes despite resource limitations."
         }
     ]
 }

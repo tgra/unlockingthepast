@@ -1,63 +1,71 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "S. L. Landells",
-            "p_2": "D.F.C. Brooker"
+            "p_1": "G. E. Nicholetis",
+            "p_2": "A. G. Bishop",
+            "p_3": "W.E. Staton",
+            "p_4": "B. J. Silly",
+            "p_5": "S. F. Vincent",
+            "p_6": "H. J. F. Hunter"
         },
         "locations": {
             "l_1": "Singapore",
-            "l_2": "Malaya",
-            "l_3": "Tengah",
-            "l_4": "Kallang",
-            "l_5": "H.M.L.S. Prince of Wales",
-            "l_6": "H.M.L.S. Repulse"
+            "l_2": "Johore",
+            "l_3": "Java",
+            "l_4": "Sumatra",
+            "l_5": "Kallang",
+            "l_6": "Tengah",
+            "l_7": "Sembawang",
+            "l_8": "Seletar",
+            "l_9": "Bank Straits"
         },
         "events": {
-            "e_1": "Japanese Air Attacks",
-            "e_2": "Defence of Singapore"
+            "e_1": "Transfer Units to N.E.I.",
+            "e_2": "Withdrawal of Dutch Buffalo Squadron",
+            "e_3": "Reorganisation of senior appointments",
+            "e_4": "Arrival of Air Commodores from U.K."
         },
         "organisations": {
-            "o_1": "R.A.F.",
-            "o_2": "No. 2r (F) Squadron R.A.A.F.",
-            "o_3": "453 (F) Squadron",
-            "o_4": "Nos. 243 and 488 (F) Squadrons"
+            "o_1": "R.A.A.F.",
+            "o_2": "Dutch Army Air Force"
         }
     },
     "keywords": [
-        "air raids",
-        "Hurricanes",
-        "bombing accuracy",
-        "aerodrome repairs",
-        "fighter operations"
+        "Japan",
+        "Singapore",
+        "R.A.F.",
+        "Dutch",
+        "Buffaloes",
+        "aircraft",
+        "operations",
+        "reinforcements"
     ],
     "themes": [
         "Military Operations",
-        "Aerial Warfare",
-        "Resource Management",
-        "Defence Strategies"
+        "Strategic Decisions",
+        "Personnel Changes"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Aerial Warfare": [
+        "Strategic Decisions": [
             "e_1"
         ],
-        "Resource Management": [
-            "e_2"
-        ],
-        "Defence Strategies": [
-            "e_2"
+        "Personnel Changes": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 7, 1942",
+            "date": "January 30, 1942",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_3",
+                "l_4"
             ],
             "persons": [
                 "p_1",
@@ -65,18 +73,30 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_2"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_3"
             ],
-            "eventSummary": "Japanese bombers conduct attacks on Singapore, targeting aerodromes and military objectives with significant air raids."
+            "eventSummary": "The decision to transfer units to the Netherlands East Indies is made due to operational necessities driven by the advancing Japanese forces."
         },
         {
             "event": "e_2",
-            "date": "January 20-30, 1942",
+            "date": "January 19, 1942",
+            "locations": [
+                "l_1",
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Dutch Buffalo Squadron is withdrawn from Kallang amidst the escalating military situation in Singapore."
+        },
+        {
+            "event": "e_3",
+            "date": "January 17, 1942",
             "locations": [
                 "l_1"
             ],
@@ -85,15 +105,22 @@
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
+            "connectedEvents": [],
+            "eventSummary": "With reinforcements arriving, a reorganisation of senior appointments within the command is implemented."
+        },
+        {
+            "event": "e_4",
+            "date": "January 29, 1942",
+            "locations": [],
+            "persons": [
+                "p_5",
+                "p_6"
             ],
-            "eventSummary": "Defensive operations in Singapore escalate as fighter squadrons engage in efforts to counter the Japanese air attacks."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Air Commodores S. F. Vincent and H. J. F. Hunter arrive from the U.K., indicating increased command structure for the air operations."
         }
     ]
 }

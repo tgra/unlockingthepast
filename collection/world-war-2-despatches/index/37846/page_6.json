@@ -1,93 +1,100 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Wing Commander",
-            "p_2": "Force Commander"
+            "p_1": "Mussolini"
         },
         "locations": {
-            "l_1": "Greece",
-            "l_2": "Bulgaria",
-            "l_3": "Roumania",
-            "l_4": "Albania",
-            "l_5": "Italy",
-            "l_6": "Volos",
-            "l_7": "Larissa",
-            "l_8": "Almyros",
-            "l_9": "Niamata",
-            "l_10": "Kazaklar",
-            "l_11": "Attica",
-            "l_12": "Elason"
+            "l_1": "Albania",
+            "l_2": "Greece",
+            "l_3": "Yugo-Slavia",
+            "l_4": "Cape Matapan",
+            "l_5": "Paramythia",
+            "l_6": "Valona",
+            "l_7": "Durazzo",
+            "l_8": "Bulgaria"
         },
         "events": {
-            "e_1": "German Invasion of Greece",
-            "e_2": "Formation of Eastern Wing"
+            "e_1": "Battle of Cape Matapan",
+            "e_2": "Germany declares War on Yugo-Slavia and Greece",
+            "e_3": "The German Invasion"
         },
         "organisations": {
-            "o_1": "Royal Air Force (RAF)",
-            "o_2": "Greek Air Force"
+            "o_1": "R.A.F.",
+            "o_2": "Fleet Air Arm"
         }
     },
     "keywords": [
-        "aircraft",
-        "squadrons",
-        "aerodrome",
+        "munitions",
+        "army services",
+        "air support",
+        "reinforcements",
+        "Hurricanes",
         "operations",
-        "communication",
-        "German attack",
-        "Eastern Wing"
+        "naval engagement",
+        "Balkans",
+        "coup d'état",
+        "staff conference",
+        "air campaign"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Logistics"
+        "Reorganisation",
+        "Crisis Management"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Strategic Decisions": [
-            "e_2"
+        "Crisis Management": [
+            "e_2",
+            "e_3"
         ],
-        "Logistics": []
+        "Reorganisation": [
+            "e_2"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Late April 1941",
+            "date": "28th March",
             "locations": [
-                "l_1"
+                "l_4"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1",
                 "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The German invasion of Greece begins, exploiting poor weather conditions that affect available landing grounds."
+            "connectedEvents": [],
+            "eventSummary": "A naval engagement occurs off Cape Matapan, where bombing squadrons participate and the Mediterranean fleet delivers a decisive defeat to the enemy."
         },
         {
             "event": "e_2",
-            "date": "Late March 1941",
+            "date": "6th April",
             "locations": [
-                "l_1"
+                "l_3",
+                "l_2"
             ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_3"
             ],
-            "eventSummary": "The formation of the Eastern Wing takes place in response to the emerging German threat, focusing on the strategic placement of squadrons."
+            "eventSummary": "Germany declares war on Yugo-Slavia and Greece, marking the beginning of an invasion of both countries."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A German invasion begins, impacting the forces stationed in both Greece and Yugo-Slavia."
         }
     ]
 }

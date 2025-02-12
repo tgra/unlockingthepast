@@ -1,71 +1,92 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Peter Fraser",
-            "p_2": "General Wavell",
-            "p_3": "Major General Freyberg",
-            "p_4": "General Evetts",
-            "p_5": "Major General E. C. Weston",
-            "p_6": "Captain J. A. V. Morse"
+            "p_1": "A. B. CUNNINGHAM",
+            "p_2": "Major General J. F. Evetts",
+            "p_3": "Major General E. C. Weston",
+            "p_4": "C.C. B. R. Pelly"
         },
         "locations": {
             "l_1": "Crete",
             "l_2": "Alexandria",
-            "l_3": "Sphakia",
-            "l_4": "Suda Bay",
-            "l_5": "Plaka",
-            "l_6": "Middle East"
+            "l_3": "Suda Bay",
+            "l_4": "Heraklion",
+            "l_5": "Plaka Bay",
+            "l_6": "Tymbaki",
+            "l_7": "Maleme-Suda Bay area",
+            "l_8": "Retimo area",
+            "l_9": "Kaso Strait",
+            "l_10": "Scarpanto"
         },
         "events": {
-            "e_1": "Evacuation of Crete",
-            "e_2": "Air attacks on Force C",
-            "e_3": "Consultation on troop evacuation"
+            "e_1": "Battle of Crete",
+            "e_2": "Evacuation of the British and Imperial Forces",
+            "e_3": "Ultimatum to the Heraklion garrison",
+            "e_4": "Main evacuation on the night of 28th/29th May"
         },
         "organisations": {
             "o_1": "Royal Air Force",
-            "o_2": "CREFORCE",
-            "o_3": "General Headquarters, Middle East"
+            "o_2": "Mediterranean Fleet",
+            "o_3": "CREFORCE"
         }
     },
     "keywords": [
-        "Evacuation",
-        "Air attacks",
-        "Troop movements",
-        "Military strategy",
-        "Naval operations"
+        "evacuation",
+        "air attacks",
+        "rearguard action",
+        "military operations"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions"
+        "Evacuation Strategies",
+        "Air Defense"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Diplomacy": [
-            "e_3"
+        "Evacuation Strategies": [
+            "e_2",
+            "e_4"
         ],
-        "Strategic Decisions": [
-            "e_3"
+        "Air Defense": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "31st May / 1st June 1941",
+            "date": "28th/29th May 1941",
             "locations": [
                 "l_1",
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3",
-                "p_4",
-                "p_5"
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Battle of Crete involves the prolonged engagement of British and Imperial forces against enemy attacks, leading to the decision to evacuate due to sustained pressure."
+        },
+        {
+            "event": "e_2",
+            "date": "28th/29th May 1941",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
             ],
             "organisations": [
                 "o_1",
@@ -73,49 +94,42 @@
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_1",
+                "e_4"
             ],
-            "eventSummary": "The evacuation of troops from Crete is underway, with planning underway to maximize troop transport to Alexandria amidst challenges from enemy air attacks."
-        },
-        {
-            "event": "e_2",
-            "date": "31st May 1941",
-            "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Force C encounters heavy air attacks from enemy JU.88s while engaged in the evacuation operation, resulting in significant damage to naval crafts but proceeding to Alexandria."
+            "eventSummary": "The evacuation of the British and Imperial forces from Crete is marked by significant maritime operations as troops are successfully removed despite ongoing enemy threats."
         },
         {
             "event": "e_3",
-            "date": "31st May 1941",
+            "date": "23rd May 1941",
             "locations": [
-                "l_1",
-                "l_6"
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "An ultimatum is delivered to the Heraklion garrison by enemy forces, which is rejected by the British and Greek Commanders, setting the stage for ensuing military actions."
+        },
+        {
+            "event": "e_4",
+            "date": "28th/29th May 1941",
+            "locations": [
+                "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_4",
-                "p_5"
+                "p_2"
             ],
             "organisations": [
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "High-level discussions take place regarding the evacuation strategy for troops in Crete, leading to decisions about limiting the number of soldiers to be evacuated."
+            "eventSummary": "The main evacuation occurs from Heraklion as troops are successfully ferried back to safety under the cover of night amid challenging conditions."
         }
     ]
 }

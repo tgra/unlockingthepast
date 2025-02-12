@@ -1,117 +1,127 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Montgomery"
+            "p_1": "General Eisenhower",
+            "p_2": "Lieut.-General Anderson",
+            "p_3": "Admiral Darlan"
         },
         "locations": {
-            "l_1": "Mediterranean",
-            "l_2": "Agheila",
-            "l_3": "Buerat",
-            "l_4": "Tripoli",
-            "l_5": "Sollum",
-            "l_6": "Bardia",
-            "l_7": "Tobruk",
-            "l_8": "Benghazi",
-            "l_9": "Capuzzo",
-            "l_10": "Cyrenaica",
-            "l_11": "Agedabia",
-            "l_12": "Wadi Matratin"
+            "l_1": "Tunisia",
+            "l_2": "Cairo",
+            "l_3": "Algeria",
+            "l_4": "Morocco",
+            "l_5": "Casablanca",
+            "l_6": "Oran",
+            "l_7": "Algiers",
+            "l_8": "Tunis",
+            "l_9": "Bizerta",
+            "l_10": "Youks Les Bains",
+            "l_11": "Tebessa",
+            "l_12": "Gafsa",
+            "l_13": "Medjez el Bab",
+            "l_14": "Gebel Abiud"
         },
         "events": {
-            "e_1": "Battle of Agheila",
-            "e_2": "New Zealand Division flank maneuver",
-            "e_3": "German withdrawal from Agheila"
+            "e_1": "Conquest of Tunisia",
+            "e_2": "Armistice with French",
+            "e_3": "Landing of the expeditionary force",
+            "e_4": "Advance towards Tunis"
         },
         "organisations": {
-            "o_1": "30 Corps",
-            "o_2": "10 Corps",
-            "o_3": "51 Division",
-            "o_4": "7 Armoured Division",
-            "o_5": "8 Armoured Brigade",
-            "o_6": "22 Armoured Brigade"
+            "o_1": "Allied Expeditionary Force",
+            "o_2": "First Army",
+            "o_3": "Eighteenth Army Group"
         }
     },
     "keywords": [
-        "artillery",
-        "maintenance",
-        "demolitions",
-        "evacuation",
-        "rearguard",
-        "advance"
+        "Tunisia",
+        "Algeria",
+        "Armistice",
+        "Eisenhower",
+        "First Army"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Withdrawal Strategies"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Logistics": [
-            "e_1",
+        "Diplomacy": [
             "e_2"
         ],
-        "Withdrawal Strategies": [
-            "e_3"
+        "Strategic Decisions": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "12th December",
+            "date": "February 1943",
             "locations": [
-                "l_2"
+                "l_1",
+                "l_3"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_3",
+                "e_4"
             ],
-            "eventSummary": "The forces prepare for an offensive to capture Agheila, with General Montgomery overseeing strategic movements."
+            "eventSummary": "The conquest of Tunisia is underway as operations are conducted to secure control of the region."
         },
         {
             "event": "e_2",
-            "date": "15th December",
+            "date": "10th November 1942",
             "locations": [
-                "l_2",
-                "l_12"
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An armistice is agreed upon between Admiral Darlan and Allied forces, leading to the cessation of French resistance in North Africa."
+        },
+        {
+            "event": "e_3",
+            "date": "8th November 1942",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The original expeditionary force lands on the west coast of Morocco."
+        },
+        {
+            "event": "e_4",
+            "date": "November 1942",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_6"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The New Zealand Division executes a strategic maneuver to outflank enemy positions near Agheila."
-        },
-        {
-            "event": "e_3",
-            "date": "16th December",
-            "locations": [
-                "l_2"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_5"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The enemy forces begin their withdrawal from Agheila as Allied forces close in."
+            "connectedEvents": [],
+            "eventSummary": "Allied forces begin their advance towards Tunis amid difficult terrain and logistical challenges."
         }
     ]
 }

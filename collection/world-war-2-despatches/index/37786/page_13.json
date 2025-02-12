@@ -1,137 +1,106 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Major the Lord Jellicoe",
-            "p_2": "Admiral Campione",
-            "p_3": "General Eisenhower",
-            "p_4": "Von Kleeman"
+            "p_1": "Royal Navy",
+            "p_2": "Royal Air Force",
+            "p_3": "British North African Force"
         },
         "locations": {
-            "l_1": "Haifa",
-            "l_2": "Castelrosso",
-            "l_3": "Rhodes",
-            "l_4": "Marizza",
-            "l_5": "Cos",
-            "l_6": "Leros",
-            "l_7": "Samos",
-            "l_8": "Crete"
+            "l_1": "Delta",
+            "l_2": "Sicily",
+            "l_3": "Malta",
+            "l_4": "Tripoli",
+            "l_5": "Benghazi",
+            "l_6": "Sousse",
+            "l_7": "Sfax",
+            "l_8": "Philippeville",
+            "l_9": "Tripolitania"
         },
         "events": {
-            "e_1": "Armistice with Italy",
-            "e_2": "Capture of Rhodes",
-            "e_3": "Occupation of Cos, Leros, Samos",
-            "e_4": "Drop of Officers on Rhodes"
+            "e_1": "Eastern Task Force",
+            "e_2": "Operation in Sicily"
         },
         "organisations": {
-            "o_1": "Special Boat Squadron",
-            "o_2": "Royal Air Force",
-            "o_3": "234th Infantry Brigade",
-            "o_4": "Royal Navy"
+            "o_1": "Middle East Command",
+            "o_2": "Eighth Army",
+            "o_3": "Allied Force Headquarters",
+            "o_4": "War Office"
         }
     },
     "keywords": [
-        "Aegean",
-        "military operations",
-        "parachute drop",
-        "Italian collapse",
-        "German occupation",
-        "transport of troops",
-        "airfield"
+        "supplies",
+        "maintenance",
+        "reinforcements",
+        "operation",
+        "ammunition",
+        "rations"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Strategic Decisions",
-        "Italian Collapse"
+        "Logistics",
+        "Reinforcement"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2",
-            "e_3",
-            "e_4"
-        ],
-        "Diplomacy": [
-            "e_1"
-        ],
-        "Strategic Decisions": [
+            "e_1",
             "e_2"
+        ],
+        "Logistics": [
+            "e_2"
+        ],
+        "Reinforcement": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "8th September",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3"
             ],
             "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
                 "o_4"
             ],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The armistice with Italy is announced, impacting military strategies in the region."
+            "eventSummary": "The Eastern Task Force is successfully launched, requiring significant logistical planning and execution."
         },
         {
             "event": "e_2",
-            "date": "throth September",
+            "date": "",
             "locations": [
-                "l_3"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_9"
             ],
             "persons": [
                 "p_1",
-                "p_2",
-                "p_4"
+                "p_2"
             ],
             "organisations": [
                 "o_1",
                 "o_3"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_4"
+                "e_1"
             ],
-            "eventSummary": "The Germans establish control over Rhodes after exploiting the indecision of Admiral Campione."
-        },
-        {
-            "event": "e_3",
-            "date": "15th September",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Small forces are dispatched to Cos, Leros, and Samos to support Italian defenses against potential German efforts."
-        },
-        {
-            "event": "e_4",
-            "date": "oth September",
-            "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The first attempt to drop officers onto Rhodes fails, leading to further delays in military plans."
+            "eventSummary": "The operation in Sicily sees extensive maintenance and logistical support provided by Middle East Command."
         }
     ]
 }

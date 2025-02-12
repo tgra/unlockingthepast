@@ -1,46 +1,55 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Group Capt. Moore",
-            "p_2": "Wing Comd. Atcherley",
-            "p_3": "Brigadier Pyne",
-            "p_4": "Wing Commander Maxton"
+            "p_1": "Major-General Mackesy",
+            "p_2": "General Rug",
+            "p_3": "General Fleischer",
+            "p_4": "Colonel R. C. G. Pollock",
+            "p_5": "Sir Cecil Dormer",
+            "p_6": "Lord Cork",
+            "p_7": "General Bethouart"
         },
         "locations": {
-            "l_1": "Bardu Foss",
-            "l_2": "Skaanland",
-            "l_3": "Narvik",
-            "l_4": "Elvenes",
-            "l_5": "Salangen",
+            "l_1": "Norway",
+            "l_2": "Rombaks Fjord",
+            "l_3": "Mosjoen",
+            "l_4": "Tromso",
+            "l_5": "Beis Fjord",
             "l_6": "Harstad",
-            "l_7": "Bjerkvik",
-            "l_8": "Bodo",
-            "l_9": "Forsanger Fjord",
-            "l_10": "Hammerfest"
+            "l_7": "Bodo",
+            "l_8": "Narvik",
+            "l_9": "Lulea",
+            "l_10": "Laxelvn"
         },
         "events": {
-            "e_1": "Evacuation of Norway",
-            "e_2": "Landing of the first Squadron of Gladiator Fighters",
-            "e_3": "Successful French Landing on 13th May"
+            "e_1": "Interview at Headquarters",
+            "e_2": "Report to the Chiefs of Staff",
+            "e_3": "Telegram from the Chiefs of Staff"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)",
-            "o_2": "Fleet Air Arm"
+            "o_1": "Allied Forces",
+            "o_2": "Norwegian Government",
+            "o_3": "King and Government of Norway",
+            "o_4": "British Army",
+            "o_5": "French forces",
+            "o_6": "War Office"
         }
     },
     "keywords": [
-        "landing grounds",
-        "air superiority",
-        "fighter aircraft",
-        "military operations",
-        "enemy bombers",
-        "naval anchorage"
+        "morale",
+        "cooperation",
+        "Allied Forces",
+        "Norwegian authorities",
+        "military",
+        "diplomatic channels",
+        "offensive",
+        "defensive",
+        "military occupation"
     ],
     "themes": [
         "Military Operations",
-        "Air Support",
-        "Strategic Decisions",
-        "Preparation of Landing Grounds"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
@@ -48,64 +57,66 @@
             "e_2",
             "e_3"
         ],
-        "Air Support": [
+        "Diplomacy": [
+            "e_1",
             "e_2"
         ],
         "Strategic Decisions": [
-            "e_1"
-        ],
-        "Preparation of Landing Grounds": [
-            "e_2"
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "26th May",
+            "date": "16th May",
             "locations": [
                 "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_4"
+                "p_2",
+                "p_3"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The evacuation of Norway is initiated, hindering further operations in the region."
+            "connectedEvents": [],
+            "eventSummary": "On 16th May, a cordial and satisfactory interview occurs at Headquarters with General Rug and General Fleischer, discussing military cooperation and strategies."
         },
         {
             "event": "e_2",
-            "date": "21st May",
+            "date": "16th May",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_3"
+                "p_6"
+            ],
+            "organisations": [
+                "o_1",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On 16th May, a report is sent to the Chiefs of Staff regarding the maintainability of Northern Norway and the necessity for military arrangements."
+        },
+        {
+            "event": "e_3",
+            "date": "17th May",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_7"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The first squadron of Gladiator Fighters is launched from an aircraft carrier and successfully establishes at Bardu Foss."
-        },
-        {
-            "event": "e_3",
-            "date": "13th May",
-            "locations": [
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "A successful French landing occurs, leading to the preparation of additional landing grounds."
+            "eventSummary": "On 17th May, a telegram is received from the Chiefs of Staff about limiting military forces due to developments in France and Belgium."
         }
     ]
 }

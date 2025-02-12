@@ -1,114 +1,163 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Unnamed Commander",
-            "p_2": "Crew of Fulmar",
-            "p_3": "Crew of SPEEDY"
+            "p_1": "BRAMHAM",
+            "p_2": "PATHFINDER",
+            "p_3": "NELSON",
+            "p_4": "RODNEY",
+            "p_5": "CAIRO",
+            "p_6": "ZETLAND",
+            "p_7": "ITHURIEL",
+            "p_8": "TARTAR",
+            "p_9": "WILTON",
+            "p_10": "RearAdmiral",
+            "p_11": "Captain",
+            "p_12": "JU.88s",
+            "p_13": "C.R.42"
         },
         "locations": {
-            "l_1": "Gibraltar",
-            "l_2": "Malta",
-            "l_3": "EAGLE",
-            "l_4": "ARGUS"
+            "l_1": "Malta",
+            "l_2": "Skerki Channel",
+            "l_3": "H (on the port quarter)",
+            "l_4": "I (port quarter)",
+            "l_5": "U (starboard quarter)",
+            "l_6": "V (next position astern of TARTAR)",
+            "l_7": "C (on port bow)",
+            "l_8": "south-eastward"
         },
         "events": {
-            "e_1": "Air Combat Incidents",
-            "e_2": "Torpedo Bomber Attack",
-            "e_3": "Convoy Defense Operations"
+            "e_1": "submarine attack",
+            "e_2": "air raid",
+            "e_3": "torpedo attack",
+            "e_4": "U-Boat sighting",
+            "e_5": "depth charge attack",
+            "e_6": "attack by JU.88s",
+            "e_7": "first enemy formation sighted",
+            "e_8": "ramming of COBALTO"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Enemy Air Forces"
+            "o_1": "19th Destroyer Flotilla",
+            "o_2": "Royal Navy"
         }
     },
     "keywords": [
-        "air combat",
-        "torpedo bombers",
-        "convoy",
-        "enemy attack",
-        "bombers",
-        "Fulmars",
-        "Royal Navy"
+        "U-Boat",
+        "submarine",
+        "attack",
+        "air raid",
+        "depth charge",
+        "JU.88"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Aerial Attacks"
+        "Naval Engagements",
+        "Aerial Warfare",
+        "Submarine Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
-        ],
-        "Naval Warfare": [
             "e_3",
-            "e_2"
+            "e_4"
         ],
-        "Aerial Attacks": [
+        "Naval Engagements": [
             "e_1",
-            "e_2"
+            "e_8"
+        ],
+        "Aerial Warfare": [
+            "e_2",
+            "e_6"
+        ],
+        "Submarine Warfare": [
+            "e_4",
+            "e_5"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "17th June",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_4"
             ],
             "persons": [
                 "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Air combat incidents involving Hurricanes and JU.88 aircraft occur, resulting in some enemy losses."
-        },
-        {
-            "event": "e_2",
-            "date": "17th June",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Torpedo bomber attacks are launched against the convoy, but effective defense results in minimal damage."
-        },
-        {
-            "event": "e_3",
-            "date": "17th June",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
+                "p_2",
+                "p_3",
+                "p_4",
+                "p_5"
             ],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
+            "connectedEvents": [],
+            "eventSummary": "The BRAMHAM and PATHFINDER respond to a U-Boat sighting with a series of attacks to neutralize the threat."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_7"
             ],
-            "eventSummary": "Defensive operations take place as the convoy comes under repeated air attacks, with various ships responding effectively."
+            "persons": [
+                "p_12",
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The first enemy formation is sighted at 1830, comprising around 100 to 120 aircraft, with 22 friendly fighters engaging."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A torpedo attack is executed from multiple enemy aircraft, but none penetrate the destroyer screen."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [
+                "p_7"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The ITHURIEL engages and rams the Italian U-Boat COBALTO, leading to its sinking."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_6"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A depth charge attack is ordered as an anti-submarine measure after multiple asdic contacts are reported."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [],
+            "persons": [
+                "p_12"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "JU.88s launch an attack against friendly forces, demonstrating the scale of the aerial threat."
         }
     ]
 }

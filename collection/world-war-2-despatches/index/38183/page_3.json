@@ -1,112 +1,137 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Sir Robert G. Brooke-Popham",
-            "p_2": "Lieutenant-General Sir Henry Pownall",
-            "p_3": "Major-General Dewing",
-            "p_4": "Group-Captain Darvall",
-            "p_5": "Captain Back",
-            "p_6": "Colonel Fawcett",
-            "p_7": "Sir Archibald Wavell",
-            "p_8": "The Viceroy",
-            "p_9": "Sir Archibald Cochrane",
-            "p_10": "Major-General (now Lieutenant-General) Sir K. McLeod",
-            "p_11": "Major-General Ismay"
+            "p_1": "Wing-Commander Yarde",
+            "p_2": "Colonel Scott",
+            "p_3": "Colonel Faweett",
+            "p_4": "Mr. Killery",
+            "p_5": "Colonel Warren",
+            "p_6": "Air Vice-Marshal Pulford",
+            "p_7": "Air Vice-Marshal Babington",
+            "p_8": "Lieutenant-General Percival",
+            "p_9": "Lieutenant-General Bond"
         },
         "locations": {
-            "l_1": "London",
-            "l_2": "Plymouth",
-            "l_3": "Cairo",
-            "l_4": "Delhi",
-            "l_5": "Rangoon",
-            "l_6": "Singapore",
-            "l_7": "Burma",
-            "l_8": "Far East"
+            "l_1": "India",
+            "l_2": "Singapore",
+            "l_3": "Burma",
+            "l_4": "Malaya",
+            "l_5": "Hong Kong",
+            "l_6": "Siam",
+            "l_7": "Kelantan",
+            "l_8": "Kuantan",
+            "l_9": "Mersing",
+            "l_10": "Singapore Island"
         },
         "events": {
-            "e_1": "Formation of General Headquarters, Far East",
-            "e_2": "Operations in the Far East"
+            "e_1": "War with Japan",
+            "e_2": "Formation of the Far Eastern Combined Bureau",
+            "e_3": "Arrival of Mr. Killery at Singapore",
+            "e_4": "Colonel Warren's arrival in Singapore",
+            "e_5": "Air Vice-Marshal Pulford's appointment"
         },
         "organisations": {
-            "o_1": "British Chiefs of Staff",
-            "o_2": "Royal Air Force",
-            "o_3": "Imperial General Staff",
-            "o_4": "Commander-in-Chief, China Station"
+            "o_1": "Far Eastern Combined Bureau",
+            "o_2": "Ministry of Economic Warfare",
+            "o_3": "General Headquarters Staff"
         }
     },
     "keywords": [
-        "Far East",
-        "Commander-in-Chief",
-        "Operational Control",
-        "Air Power",
-        "Naval Forces",
-        "Japan",
-        "British Government"
+        "intelligence",
+        "military operations",
+        "defence",
+        "communication",
+        "air force"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Diplomacy"
+        "Intelligence",
+        "Defence Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_4",
+            "e_5"
         ],
-        "Strategic Decisions": [
+        "Intelligence": [
+            "e_2",
+            "e_3"
+        ],
+        "Defence Strategy": [
             "e_1"
-        ],
-        "Diplomacy": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27 December 1941",
+            "date": "",
             "locations": [
-                "l_6"
+                "l_1",
+                "l_4",
+                "l_5"
             ],
             "persons": [
-                "p_1",
                 "p_2",
-                "p_3",
-                "p_4"
+                "p_5",
+                "p_6"
             ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Formation of General Headquarters, Far East, is established under Sir Robert G. Brooke-Popham to coordinate military efforts."
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "War with Japan breaks out, leading to significant military activity in the region."
         },
         {
             "event": "e_2",
-            "date": "22 January 1948",
-            "locations": [
-                "l_1",
-                "l_6",
-                "l_4",
-                "l_5",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_7",
-                "p_8",
-                "p_9",
-                "p_10"
-            ],
+            "date": "",
+            "locations": [],
+            "persons": [],
             "organisations": [
-                "o_1",
-                "o_4"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operations in the Far East encompass the military directives and strategic decisions taken between 1940 and 1941 amid the concern of avoiding war with Japan."
+            "eventSummary": "Formation of the Far Eastern Combined Bureau consolidates intelligence efforts from various military branches."
+        },
+        {
+            "event": "e_3",
+            "date": "May, 1941",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Mr. Killery arrives in Singapore to enhance economic warfare efforts."
+        },
+        {
+            "event": "e_4",
+            "date": "early in 1942",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Colonel Warren arrives in Singapore to assist in starting Independent Companies."
+        },
+        {
+            "event": "e_5",
+            "date": "26th April, 1942",
+            "locations": [],
+            "persons": [
+                "p_6",
+                "p_8"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Air Vice-Marshal Pulford becomes Air Officer Commanding, Far East."
         }
     ]
 }

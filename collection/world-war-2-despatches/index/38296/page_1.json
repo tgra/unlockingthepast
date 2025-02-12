@@ -1,153 +1,121 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Rear Admiral Commanding, Fifteenth Cruiser Squadron",
-            "p_2": "H. B. Rawlings",
-            "p_3": "W. G. A. Robson",
-            "p_4": "P. Somerville",
-            "p_5": "W. R. Marshall A Deane",
-            "p_6": "Captain J. A. V. Morse",
-            "p_7": "A. B. Cunnincuam"
+            "p_1": "Admiral Sir Andrew B. Cunningham"
         },
         "locations": {
             "l_1": "Crete",
-            "l_2": "Aegean",
+            "l_2": "Mediterranean",
             "l_3": "Alexandria",
-            "l_4": "Suda"
+            "l_4": "Africa",
+            "l_5": "Malta",
+            "l_6": "Greece",
+            "l_7": "Cyrenaica",
+            "l_8": "Sicilian Narrows"
         },
         "events": {
-            "e_1": "Destruction of enemy convoy",
-            "e_2": "Withdrawal order on 23rd May",
-            "e_3": "Rescue of GREYHOUND and FIJI",
-            "e_4": "Air attacks on the fleet",
-            "e_5": "Loss of GLOUCESTER and KELLY"
+            "e_1": "Battle of Crete",
+            "e_2": "Operation Tiger",
+            "e_3": "air attack on Crete",
+            "e_4": "encounter of Force D with an enemy convoy"
         },
         "organisations": {
             "o_1": "Royal Navy",
-            "o_2": "Mediterranean Fleet"
+            "o_2": "R.A.F.",
+            "o_3": "G.A.F."
         }
     },
     "keywords": [
-        "enemy convoy",
-        "withdrawal",
-        "air attacks",
-        "rescue operation",
-        "ammunition shortage",
-        "naval strategy"
+        "naval operations",
+        "airborne invasion",
+        "troop convoys"
     ],
     "themes": [
         "Military Operations",
-        "Courage and Sacrifice",
-        "Strategic Decisions",
-        "Naval Coordination"
+        "Defense Strategies",
+        "Air Support"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_3",
-            "e_5"
-        ],
-        "Courage and Sacrifice": [
-            "e_3"
-        ],
-        "Strategic Decisions": [
             "e_2",
+            "e_3",
             "e_4"
         ],
-        "Naval Coordination": [
+        "Defense Strategies": [
             "e_1",
-            "e_3",
-            "e_5"
+            "e_3"
+        ],
+        "Air Support": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 22",
+            "date": "May 15-27, 1941",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_4",
-                "e_5"
-            ],
-            "eventSummary": "The Rear Admiral Commanding, Fifteenth Cruiser Squadron, has the opportunity to destroy an enemy convoy but decides to withdraw due to heavy air attacks and low ammunition supplies."
-        },
-        {
-            "event": "e_2",
-            "date": "May 23",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "A Most Immediate message is sent due to a miscommunication regarding ammunition, resulting in the withdrawal order for all forces."
-        },
-        {
-            "event": "e_3",
-            "date": "May 22-23",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_3",
-                "p_4",
-                "p_5"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1",
-                "e_5"
-            ],
-            "eventSummary": "KANDAHAR and KINGSTON conduct a brave rescue operation under heavy attack to save the crews of GREYHOUND and FIJI."
-        },
-        {
-            "event": "e_4",
-            "date": "May 22-23",
-            "locations": [],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
-            ],
-            "eventSummary": "The fleet suffers intense air attacks, challenging their strategies and testing their resilience."
-        },
-        {
-            "event": "e_5",
-            "date": "May 22",
-            "locations": [],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
                 "e_3",
                 "e_4"
             ],
-            "eventSummary": "Significant losses are incurred by the fleet, including the ships GLOUCESTER and KELLY, amidst ongoing conflict."
+            "eventSummary": "The Battle of Crete occurs with naval operations between May 15 and May 27, 1941, aimed at preventing enemy landings."
+        },
+        {
+            "event": "e_2",
+            "date": "May 4-5, 1941",
+            "locations": [
+                "l_2",
+                "l_8"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Operation Tiger involves the passage of naval reinforcements and military stores through the Mediterranean."
+        },
+        {
+            "event": "e_3",
+            "date": "May 20, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The air attack on Crete begins, with significant air assaults on naval vessels."
+        },
+        {
+            "event": "e_4",
+            "date": "May 21-22, 1941",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The encounter of Force D with an enemy convoy takes place, significantly striking German forces and boosting Allied morale."
         }
     ]
 }

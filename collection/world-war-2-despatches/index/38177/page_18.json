@@ -2,73 +2,74 @@
     "namedEntities": {
         "persons": {
             "p_1": "General Ritchie",
-            "p_2": "Brigadier C. H. Miller"
+            "p_2": "Major-General Klopper",
+            "p_3": "Prime Minister"
         },
         "locations": {
-            "l_1": "Acroma",
-            "l_2": "Bir Temrad",
-            "l_3": "Sidi Muftah",
+            "l_1": "Tobruk",
+            "l_2": "Cyrenaica",
+            "l_3": "Tripolitania",
             "l_4": "Gazala",
-            "l_5": "Bir el Gubi",
-            "l_6": "El Adem",
-            "l_7": "Tobruk",
-            "l_8": "Tripolitania",
-            "l_9": "Bengasi",
-            "l_10": "Derna",
-            "l_11": "Tmimi",
-            "l_12": "Giarabub",
-            "l_13": "Belhamed",
-            "l_14": "Maddalena"
+            "l_5": "Bir Hacheim",
+            "l_6": "Belhamed",
+            "l_7": "Sidi Rezegh",
+            "l_8": "Gambut"
         },
         "events": {
-            "e_1": "Libyan Offensive",
-            "e_2": "Establishment of Defensive Positions",
-            "e_3": "Setup of Forward Bases"
+            "e_1": "defeat in December, 1941",
+            "e_2": "enemy's intended offensive",
+            "e_3": "battle began on the 27th May",
+            "e_4": "destruction of an infantry brigade group on 1st June",
+            "e_5": "withdrawal from Bir Hacheim",
+            "e_6": "heavy losses of tanks on 13th June",
+            "e_7": "encirclement of Tobruk began on 17th June"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "5th Indian Division",
-            "o_3": "Polish Brigade Group",
-            "o_4": "5th New Zealand Infantry Brigade",
-            "o_5": "50th (United Kingdom) Division",
-            "o_6": "1st Armoured Division",
-            "o_7": "9th Armoured Division"
+            "o_2": "2nd South African Division",
+            "o_3": "New Zealand Division"
         }
     },
     "keywords": [
-        "Defensive Positions",
-        "Minefields",
-        "Armoured Forces",
-        "Eighth Army",
-        "Libyan Offensive",
-        "Strongpoints"
+        "Tobruk",
+        "offensive",
+        "encirclement",
+        "infantry",
+        "armoured forces"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Planning",
-        "Defensive Tactics"
+        "Defense Strategy",
+        "Leadership Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
         ],
-        "Strategic Decisions": [
+        "Defense Strategy": [
             "e_1",
-            "e_2"
+            "e_3",
+            "e_7"
         ],
-        "Defensive Tactics": [
-            "e_2"
+        "Leadership Decisions": [
+            "e_2",
+            "e_4",
+            "e_6"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "March 1942",
+            "date": "December 1941",
             "locations": [
                 "l_1",
-                "l_4",
-                "l_9"
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -77,44 +78,91 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The Eighth Army is intensively planning a fresh offensive in Libya with the aim of capturing Bengasi and preventing enemy escape into Tripolitania."
-        },
-        {
-            "event": "e_2",
-            "date": "February 1942",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Defensive positions are being established along the Gazala line to prepare for potential enemy attacks."
+            "eventSummary": "In December 1941, the enemy suffers defeat in Cyrenaica, shaping the strategy for future engagements."
         },
         {
             "event": "e_3",
-            "date": "March 1942",
+            "date": "27th May",
             "locations": [
-                "l_7",
-                "l_8",
-                "l_5"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_2"
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_6",
+                "e_7"
+            ],
+            "eventSummary": "On the 27th May, the battle begins, with plans to initiate an offensive against the enemy."
+        },
+        {
+            "event": "e_4",
+            "date": "1st June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [],
-            "eventSummary": "Three forward bases are established rapidly to support operations for the upcoming offensive, facilitating logistics and troop movements."
+            "eventSummary": "On the 1st June, an infantry brigade group is destroyed, impacting the strategic capabilities."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Withdrawal from Bir Hacheim occurs at an uncertain date, affecting the defense strategy."
+        },
+        {
+            "event": "e_6",
+            "date": "13th June",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the 13th June, heavy losses of tanks occur, diminishing the offensive capabilities of the forces."
+        },
+        {
+            "event": "e_7",
+            "date": "17th June",
+            "locations": [
+                "l_1",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "On the 17th June, the enemy begins the encirclement of Tobruk, increasing the tension in the area."
         }
     ]
 }

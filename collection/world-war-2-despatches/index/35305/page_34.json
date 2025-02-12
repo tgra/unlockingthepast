@@ -1,54 +1,45 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "H.M. the King of the Belgians",
-            "p_2": "General Van Overstraeten",
-            "p_3": "Air Marshal Barratt",
-            "p_4": "General Billotte"
+            "p_1": "Général de Division Voruz"
         },
         "locations": {
-            "l_1": "Belgium",
-            "l_2": "Louvain",
-            "l_3": "Brussels",
-            "l_4": "Antwerp",
-            "l_5": "Namur",
-            "l_6": "Sedan",
-            "l_7": "Mzires",
-            "l_8": "Tournai",
-            "l_9": "Gembloux",
-            "l_10": "Perwez",
-            "l_11": "Canal du Nord",
-            "l_12": "Escaut"
+            "l_1": "France",
+            "l_2": "Maastricht",
+            "l_3": "Sedan",
+            "l_4": "Boulogne"
         },
         "events": {
-            "e_1": "Withdrawal of Belgian 1st Corps",
-            "e_2": "Enemy crosses the Meuse",
-            "e_3": "Establishment of command post at Lennick St. Quentin",
-            "e_4": "Dutch Army surrenders",
-            "e_5": "French 7th Army withdraws",
-            "e_6": "Orders for withdrawal to the Escaut",
-            "e_7": "Counter-attack on 21st May",
-            "e_8": "Start of withdrawal (16th-17th May)"
+            "e_1": "Spanish War",
+            "e_2": "Polish Campaign",
+            "e_3": "Operations by B.E.F.",
+            "e_4": "Crossing Water Obstacles",
+            "e_5": "Demolitions of Bridges"
         },
         "organisations": {
-            "o_1": "Belgian Army",
-            "o_2": "B.E.F. (British Expeditionary Force)",
-            "o_3": "French Army"
+            "o_1": "B.E.F.",
+            "o_2": "G.H.Q.",
+            "o_3": "Royal Corps of Signals",
+            "o_4": "G.Q.G.",
+            "o_5": "War Office",
+            "o_6": "Royal Air Force"
         }
     },
     "keywords": [
-        "Withdrawal",
-        "Belgian Army",
-        "French Army",
-        "British Expeditionary Force",
-        "Counter-attack",
-        "Escaut"
+        "Liaison",
+        "Defence in Depth",
+        "Anti-tank defence",
+        "Air Forces",
+        "Demolitions",
+        "Communications",
+        "Traffic Control"
     ],
     "themes": [
         "Military Operations",
-        "Coordination between Allies",
-        "Strategic Withdrawal",
-        "Enemy Movements"
+        "Defensive Strategies",
+        "Air Warfare",
+        "Communications",
+        "Logistics"
     ],
     "topicModel": {
         "Military Operations": [
@@ -56,131 +47,111 @@
             "e_2",
             "e_3",
             "e_4",
-            "e_5",
-            "e_6",
-            "e_7",
-            "e_8"
+            "e_5"
         ],
-        "Diplomacy": [
+        "Defensive Strategies": [
+            "e_3",
+            "e_4",
+            "e_5"
+        ],
+        "Air Warfare": [
             "e_1",
-            "e_2",
-            "e_4"
+            "e_2"
         ],
-        "Strategic Decisions": [
-            "e_6",
-            "e_7",
-            "e_8"
+        "Logistics": [
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "15th May",
+            "date": "",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_4",
-                "e_5"
-            ],
-            "eventSummary": "The Belgian 1st Corps' withdrawal is agreed upon to ensure better strategic positioning."
-        },
-        {
-            "event": "e_2",
-            "date": "Unknown",
-            "locations": [
-                "l_6",
-                "l_7"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The enemy is reported to have crossed the Meuse between Sedan and Mzires, escalating tensions."
-        },
-        {
-            "event": "e_3",
-            "date": "15th May",
-            "locations": [
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_5",
+                "o_6"
             ],
-            "connectedEvents": [],
-            "eventSummary": "A command post is established at Lennick St. Quentin to oversee military operations."
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Spanish War demonstrates the use of air forces in offensive operations."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "The Polish Campaign reveals enemy tactics that affect British operations."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_5"
+            ],
+            "eventSummary": "The operations by B.E.F. involve crucial logistics and tactical decisions."
         },
         {
             "event": "e_4",
-            "date": "15th May",
-            "locations": [],
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
             "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_3"
             ],
-            "connectedEvents": [],
-            "eventSummary": "The Dutch Army surrenders, which may shock the Belgian Army, although it has little immediate impact on B.E.F operations."
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "Crossing water obstacles is executed with skill by enemy forces."
         },
         {
             "event": "e_5",
-            "date": "Unknown",
+            "date": "",
             "locations": [
-                "l_4"
+                "l_1"
             ],
             "persons": [],
             "organisations": [
+                "o_1",
                 "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "The French 7th Army begins a withdrawal, adjusting positions in response to enemy advancements."
-        },
-        {
-            "event": "e_6",
-            "date": "16th May",
-            "locations": [
-                "l_12"
-            ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Orders are issued for the withdrawal to the Escaut river to fortify positions amidst enemy pressures."
-        },
-        {
-            "event": "e_7",
-            "date": "21st May",
-            "locations": [],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "A counter-attack is launched as part of joint efforts with French forces."
-        },
-        {
-            "event": "e_8",
-            "date": "16th-17th May",
-            "locations": [],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The early stages of a withdrawal from the Dyle position begin as defenses are compromised."
+            "eventSummary": "Demolitions of bridges by B.E.F. are significant in slowing enemy advances."
         }
     ]
 }

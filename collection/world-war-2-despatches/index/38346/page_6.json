@@ -1,118 +1,93 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Admiral",
-            "p_2": "officers from HOUSTON",
-            "p_3": "officers from PERTH",
-            "p_4": "Gunnery Officer"
+            "p_1": "Captain O. L. GORDON",
+            "p_2": "Rear Admiral Doorman",
+            "p_3": "Commander May",
+            "p_4": "Commander Binford"
         },
         "locations": {
-            "l_1": "Western Channel",
-            "l_2": "Bawean Island",
-            "l_3": "N.E.",
-            "l_4": "Northward",
-            "l_5": "N.N.E."
+            "l_1": "U.S.S. GOSPER",
+            "l_2": "Sourabaya",
+            "l_3": "Batavia",
+            "l_4": "Celebes",
+            "l_5": "Madura Island"
         },
         "events": {
-            "e_1": "Naval Engagement on 27th February",
-            "e_2": "Torpedo Attack",
-            "e_3": "Counter-Attack by ELECTRA"
+            "e_1": "Loss of H.M.S. EXETER",
+            "e_2": "Departure from Sourabaya"
         },
         "organisations": {
-            "o_1": "Allied Force",
-            "o_2": "ELECTRA",
-            "o_3": "HOUSTON",
-            "o_4": "PERTH",
-            "o_5": "KORTENAER"
+            "o_1": "British Liaison",
+            "o_2": "U.S. destroyers",
+            "o_3": "Allied force"
         }
     },
     "keywords": [
-        "Naval Engagement",
-        "Torpedo Attack",
-        "Cruisers",
-        "Destroyers",
-        "Allied Force"
+        "Despatch",
+        "circumstances",
+        "actions",
+        "enemy aircraft",
+        "fuel requirement",
+        "Commanding Officers",
+        "cruisers",
+        "destroyers",
+        "patrol area"
     ],
     "themes": [
         "Military Operations",
-        "Naval Warfare",
-        "Battle Strategy"
+        "Allied Cooperation",
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Naval Warfare": [
-            "e_1",
-            "e_3"
-        ],
-        "Battle Strategy": [
+        "Allied Cooperation": [
             "e_2"
+        ],
+        "Naval Strategy": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th February",
+            "date": "1st March, 1942",
             "locations": [
-                "l_1",
                 "l_2"
             ],
             "persons": [
-                "p_1",
+                "p_1"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The H.M.S. EXETER under the command of Captain O. L. GORDON is reported to be lost on the 1st of March, 1942, during military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "26th February, 1942",
+            "locations": [
+                "l_2",
+                "l_3"
+            ],
+            "persons": [
                 "p_2",
                 "p_3",
                 "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The Allied force engages in a naval battle against enemy cruisers and destroyers, resulting in multiple tactical maneuvers and significant damage to EXETER."
-        },
-        {
-            "event": "e_2",
-            "date": "27th February",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "During the naval engagement, enemy destroyers launch a torpedo attack against the Allied forces, prompting a tactical retreat."
-        },
-        {
-            "event": "e_3",
-            "date": "27th February",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_4"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "ELECTRA makes a bold counter-attack against enemy destroyers, attempting to protect EXETER as the naval conflict intensifies."
+            "eventSummary": "The Allied force departs from Sourabaya on the 26th of February, 1942, as part of planned military operations amid tensions with enemy forces."
         }
     ]
 }

@@ -1,84 +1,98 @@
 {
     "namedEntities": {
-        "persons": {},
-        "locations": {
-            "l_1": "Tashkent",
-            "l_2": "Peshawar",
-            "l_3": "Lahore",
-            "l_4": "Shanghai",
-            "l_5": "Changsha",
-            "l_6": "Siliguri",
-            "l_7": "Chhindwara",
-            "l_8": "Bangalore",
-            "l_9": "Pondicherry",
-            "l_10": "Trincomalee",
-            "l_11": "Colombo",
-            "l_12": "Maldives",
-            "l_13": "Andaman",
-            "l_14": "Laccadive",
-            "l_15": "Batavia",
-            "l_16": "South-East Asia"
+        "persons": {
+            "p_1": "A. W. S. Marzasy",
+            "p_2": "R. D. Franks"
         },
-        "events": {},
-        "organisations": {}
+        "locations": {
+            "l_1": "Akyab",
+            "l_2": "Mayu River",
+            "l_3": "Maungdaw",
+            "l_4": "Buthidaung",
+            "l_5": "Naf River",
+            "l_6": "Kaladan Valley",
+            "l_7": "East of the River Mayu",
+            "l_8": "Chittagong",
+            "l_9": "Arakan",
+            "l_10": "New Delhi"
+        },
+        "events": {
+            "e_1": "G.H.Q. Operation Instruction No. 19",
+            "e_2": "AIR HEADQUARTERS (INDIA) OPERATION Instruction No. 1"
+        },
+        "organisations": {
+            "o_1": "Eastern Army",
+            "o_2": "Mayu Force",
+            "o_3": "Bengal Command"
+        }
     },
     "keywords": [
-        "Tashkent",
-        "Peshawar",
-        "Lahore",
-        "Shanghai",
-        "Changsha",
-        "Siliguri",
-        "Chhindwara",
-        "Bangalore",
-        "Pondicherry",
-        "Trincomalee",
-        "Colombo",
-        "Maldives",
-        "Andaman",
-        "Laccadive",
-        "Batavia"
+        "Operation",
+        "Instructions",
+        "Offensive",
+        "Air Operations"
     ],
     "themes": [
-        "Geography",
-        "Regional Studies"
+        "Military Operations",
+        "Air Superiority",
+        "Strategic Planning"
     ],
     "topicModel": {
-        "Geography": [
-            "l_1",
-            "l_2",
-            "l_3",
-            "l_4",
-            "l_5",
-            "l_6",
-            "l_7",
-            "l_8",
-            "l_9",
-            "l_10",
-            "l_11",
-            "l_12",
-            "l_13",
-            "l_14",
-            "l_15",
-            "l_16"
+        "Military Operations": [
+            "e_1",
+            "e_2"
         ],
-        "Regional Studies": [
-            "l_1",
-            "l_2",
-            "l_3",
-            "l_4",
-            "l_5",
-            "l_6",
-            "l_7",
-            "l_8",
-            "l_9",
-            "l_10",
-            "l_11",
-            "l_12",
-            "l_13",
-            "l_14",
-            "l_15"
+        "Air Superiority": [
+            "e_2"
+        ],
+        "Strategic Planning": [
+            "e_1"
         ]
     },
-    "eventConnections": []
+    "eventConnections": [
+        {
+            "event": "e_1",
+            "date": "1st April, 1943",
+            "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "G.H.Q. Operation Instruction No. 19 is issued to direct operations in Eastern Army before the monsoon, with a focus on regaining initiative and inflicting defeats on the enemy."
+        },
+        {
+            "event": "e_2",
+            "date": "1st April, 1943",
+            "locations": [
+                "l_3",
+                "l_8",
+                "l_9",
+                "l_10"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "AIR HEADQUARTERS (INDIA) OPERATION Instruction No. 1 is issued to coordinate air actions against Japanese forces and ensure air superiority in Arakan before the arrival of the rains."
+        }
+    ]
 }

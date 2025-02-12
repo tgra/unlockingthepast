@@ -1,111 +1,158 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander 5th Fleet",
-            "p_2": "A.C.1",
-            "p_3": "CIF 57"
+            "p_1": "C INC PAC",
+            "p_2": "CIF 57",
+            "p_3": "CoM",
+            "p_4": "5th Fleet",
+            "p_5": "A.C.1",
+            "p_6": "C.-in-C.",
+            "p_7": "B.P.F.",
+            "p_8": "C IN.C PAC",
+            "p_9": "CINCSWPA",
+            "p_10": "A.C.x",
+            "p_11": "Chief Staff Officer",
+            "p_12": "C.T.G 52.1",
+            "p_13": "Commander"
         },
         "locations": {
-            "l_1": "Leyte",
-            "l_2": "Sakishima",
-            "l_3": "Miyako",
-            "l_4": "Ishigaki",
-            "l_5": "Hirara",
-            "l_6": "Formosa"
+            "l_1": "Sakishima",
+            "l_2": "Leyte",
+            "l_3": "Formosa",
+            "l_4": "Matsuyama",
+            "l_5": "Shinchiku",
+            "l_6": "Cootie One",
+            "l_7": "Yonakuni Jima",
+            "l_8": "Nansei Shoto"
         },
         "events": {
-            "e_1": "Unconditional Surrender of German Armed Forces",
-            "e_2": "Bombing Operation on Miyako and Ishigaki",
-            "e_3": "Kamikaze Attacks on H.M.S. Victorious"
+            "e_1": "Operation Sakishima",
+            "e_2": "Task Force 57 strike on Formosa",
+            "e_3": "Refueling Operation",
+            "e_4": "Airfield Strikes on Matsuyama and Shinchiku"
         },
         "organisations": {
-            "o_1": "H.M.A.S. NORMAN",
-            "o_2": "R.F.A. WAVE KING",
-            "o_3": "R.F.A. WAVE MONARCH",
-            "o_4": "H.M. Ships WHIMBREL",
-            "o_5": "H.M. Ships AVON",
-            "o_6": "H.M.S. FORMIDABLE",
-            "o_7": "H.M.S. VICTORIOUS",
-            "o_8": "H.M.S. HOWE",
-            "o_9": "H.M.S. INDOMITABLE"
+            "o_1": "American Task Group",
+            "o_2": "5th Fleet",
+            "o_3": "Task Force 57",
+            "o_4": "Royal Canadian Navy",
+            "o_5": "New Zealand Navy",
+            "o_6": "Task Unit 112.25",
+            "o_7": "Task Unit 112.2.1"
         }
     },
     "keywords": [
-        "Fuelling",
-        "Surrender",
-        "Bombing",
-        "Kamikaze",
-        "Tactical Command",
-        "Weather Conditions"
+        "Operation",
+        "Refueling",
+        "Strikes",
+        "Task Force",
+        "Fleet",
+        "Aircraft",
+        "Operations"
     ],
     "themes": [
         "Military Operations",
-        "Tactical Decisions",
-        "War Strategy",
-        "Casualties"
+        "Naval Strategy",
+        "Air Operations",
+        "Coordination"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Diplomacy": [
-            "e_1"
+        "Naval Strategy": [
+            "e_1",
+            "e_2"
         ],
-        "Casualties": [
+        "Air Operations": [
+            "e_4"
+        ],
+        "Coordination": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "May 7, 1945",
+            "date": "April 8, 1945",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [],
-            "connectedEvents": [],
-            "eventSummary": "The unconditional surrender of the German Armed Forces to the Allies is reported, leading to the cessation of active operations."
-        },
-        {
-            "event": "e_2",
-            "date": "May 8, 1945",
-            "locations": [
-                "l_2",
-                "l_3",
-                "l_4"
-            ],
-            "persons": [
-                "p_2"
+                "p_1",
+                "p_4",
+                "p_8"
             ],
             "organisations": [
                 "o_1",
-                "o_7"
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
                 "e_3"
             ],
-            "eventSummary": "The plan to bomb Miyako and Ishigaki is executed, but weather conditions lead to cancellations and adjustments in operations."
+            "eventSummary": "Operation Sakishima is planned with certain forces covering Sakishima during the day."
+        },
+        {
+            "event": "e_2",
+            "date": "April 11-12, 1945",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_4",
+                "p_8"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Task Force 57 is instructed to conduct strikes on Formosa airfields with coordination of various fleet operations."
         },
         {
             "event": "e_3",
-            "date": "May 8, 1945",
+            "date": "April 8, 1945",
             "locations": [
-                "l_1"
+                "l_2"
             ],
             "persons": [
-                "p_3"
+                "p_1",
+                "p_4"
             ],
             "organisations": [
-                "o_7",
-                "o_8",
-                "o_9"
+                "o_1",
+                "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "H.M.S. Victorious faces multiple Kamikaze attacks resulting in significant damage and casualties among the crew."
+            "eventSummary": "Refueling operation is completed by 1500 with all but one battleship and one carrier refueled."
+        },
+        {
+            "event": "e_4",
+            "date": "April 11-12, 1945",
+            "locations": [
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_4",
+                "p_10"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Strikes on Matsuyama and Shinchiku airfields are to take place on specified days with maximum available forces."
         }
     ]
 }

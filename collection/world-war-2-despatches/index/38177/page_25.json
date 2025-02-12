@@ -1,120 +1,140 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Cunningham",
-            "p_2": "Major-General N. M. Ritchie",
-            "p_3": "General Norrie"
+            "p_1": "Lieutenant-General Sir Noel Beresford-Peirse",
+            "p_2": "Lieutenant-General A. R. Godwin-Austen"
         },
         "locations": {
-            "l_1": "Sidi Omar",
-            "l_2": "Bir el Gubi",
-            "l_3": "Tobruk",
-            "l_4": "Sidi Rezegh",
-            "l_5": "Halfaya",
-            "l_6": "Sollum",
-            "l_7": "Bardia",
-            "l_8": "Ed Duda"
+            "l_1": "Matruh",
+            "l_2": "Alexandria",
+            "l_3": "Fuka",
+            "l_4": "Buq Bug",
+            "l_5": "Giarabub",
+            "l_6": "Siwa",
+            "l_7": "Tobruk",
+            "l_8": "Western Desert",
+            "l_9": "coastal area"
         },
         "events": {
-            "e_1": "Battle of Sidi Rezegh",
-            "e_2": "Tobruk sorties",
-            "e_3": "Counterstroke at Tobruk"
+            "e_1": "Occupation of Giarabub",
+            "e_2": "Establishment of water pipeline",
+            "e_3": "Command transfer at Western Desert",
+            "e_4": "Main thrust towards Tobruk"
         },
         "organisations": {
-            "o_1": "13th Corps",
-            "o_2": "30th Corps",
-            "o_3": "5th South African Infantry Brigade",
-            "o_4": "New Zealand Division",
-            "o_5": "Ariete Armoured Division"
+            "o_1": "7th Armoured Division",
+            "o_2": "8th Army",
+            "o_3": "13th Corps",
+            "o_4": "Western Desert Forces",
+            "o_5": "4th Indian Division",
+            "o_6": "7th Indian Infantry Brigade",
+            "o_7": "6th South African Armoured Car Regiment",
+            "o_8": "7th Support Group"
         }
     },
     "keywords": [
-        "Tobruk",
-        "armoured divisions",
-        "German",
-        "communication",
-        "Sidi Rezegh",
-        "counterstroke"
+        "transport",
+        "water supply",
+        "ammunition",
+        "mess supplies",
+        "pipeline",
+        "reservoirs",
+        "operational plans"
     ],
     "themes": [
         "Military Operations",
-        "Battle Tactics",
-        "Leadership Decisions"
+        "Logistical Challenges",
+        "Water Supply Management",
+        "Command Structure"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
         ],
-        "Battle Tactics": [
-            "e_1",
+        "Logistical Challenges": [
             "e_2"
         ],
-        "Leadership Decisions": [
-            "e_1",
+        "Water Supply Management": [
+            "e_2"
+        ],
+        "Command Structure": [
             "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "21st November",
+            "date": "8th August",
             "locations": [
-                "l_4",
-                "l_3"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "On November 21st, General Cunningham orders the 13th Corps to start operations and continue the offensive despite enemy counter-attacks, leading to critical engagements around Sidi Rezegh."
-        },
-        {
-            "event": "e_2",
-            "date": "17th-18th November",
-            "locations": [
-                "l_2",
-                "l_3"
+                "l_5",
+                "l_6"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
                 "o_1",
-                "o_2"
+                "o_4",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "On 8th August, orders for the occupation of Giarabub are issued, leading to a detachment of the 7th Indian Infantry Brigade taking possession of the Oases."
+        },
+        {
+            "event": "e_2",
+            "date": "6th September",
+            "locations": [
+                "l_1",
+                "l_2"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Tobruk sorties begin on November 17th following a month of air effort, with the 30th Corps executing a surprise advance towards Tobruk."
+            "eventSummary": "On 6th September, a pipeline is ordered to be laid between Alexandria and the forward area to supply adequate water."
         },
         {
             "event": "e_3",
-            "date": "23rd November",
+            "date": "26th September",
             "locations": [
-                "l_4"
+                "l_8"
             ],
             "persons": [
-                "p_1",
                 "p_2"
             ],
             "organisations": [
-                "o_1",
+                "o_2",
                 "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2",
+                "e_4"
             ],
-            "eventSummary": "On November 23rd, the enemy launches a counterstroke against the Allied forces, creating chaos and prompting critical leadership decisions under pressure."
+            "eventSummary": "At midnight on 26th September, command of the forces in the Western Desert, except those in Tobruk, passes to the Headquarters of the Eighth Army."
+        },
+        {
+            "event": "e_4",
+            "date": "4th October",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "On 4th October, the main thrust towards Tobruk is decided upon as plans to establish further reserves are initiated."
         }
     ]
 }

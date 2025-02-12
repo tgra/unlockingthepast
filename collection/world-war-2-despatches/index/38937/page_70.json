@@ -1,116 +1,149 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Eisenhower",
-            "p_2": "General Hopkinson",
-            "p_3": "Badoglio"
+            "p_1": "Kesselring",
+            "p_2": "General Clark"
         },
         "locations": {
-            "l_1": "Calabria",
-            "l_2": "Reggio",
-            "l_3": "Bagnara",
-            "l_4": "Bizerta",
-            "l_5": "La Marsa",
-            "l_6": "Sicily",
-            "l_7": "Corfu",
-            "l_8": "Sardinia",
-            "l_9": "Corsica",
-            "l_10": "Taranto",
-            "l_11": "Adriatic coast",
-            "l_12": "Western Balkans"
+            "l_1": "Coriano ridge",
+            "l_2": "River Marano",
+            "l_3": "Rimini",
+            "l_4": "San Marino",
+            "l_5": "River Ausa",
+            "l_6": "San Fortunato",
+            "l_7": "Adriatic",
+            "l_8": "Apennines",
+            "l_9": "French frontier",
+            "l_10": "Marano",
+            "l_11": "Italy",
+            "l_12": "Gothic line",
+            "l_13": "Bologna",
+            "l_14": "Futa pass",
+            "l_15": "Florence",
+            "l_16": "Bologna",
+            "l_17": "Giogo pass",
+            "l_18": "Marradi road",
+            "l_19": "Alpe di Vitigliano",
+            "l_20": "Monte Pratone",
+            "l_21": "Poggio Signorini",
+            "l_22": "Monte Altuzzo",
+            "l_23": "Monte Verruca",
+            "l_24": "Monticelli",
+            "l_25": "Firenzuola",
+            "l_26": "1gth",
+            "l_27": "Lombardy"
         },
         "events": {
-            "e_1": "Eighth Army Landings in Calabria",
-            "e_2": "Italian Surrender",
-            "e_3": "Assault Landing on Taranto"
+            "e_1": "Battle for Coriano",
+            "e_2": "Attack on Rimini",
+            "e_3": "Combined attacks by 1 British and 85 United States Divisions",
+            "e_4": "II Corps main offensive on the Gothic line"
         },
         "organisations": {
             "o_1": "Eighth Army",
-            "o_2": "Fifth Army",
-            "o_3": "12th Cruiser Squadron"
+            "o_2": "II Corps",
+            "o_3": "Fifth Army",
+            "o_4": "20 Luftwaffe Field Division",
+            "o_5": "356th Division",
+            "o_6": "42 Jaeger Division",
+            "o_7": "4 Parachute Division",
+            "o_8": "85 Division",
+            "o_9": "1 Canadian Division",
+            "o_10": "13 Corps"
         }
     },
     "keywords": [
-        "Landings",
-        "Armistice",
-        "Assault",
-        "Supply",
-        "Italian Surrender",
-        "Operation"
+        "Coriano ridge",
+        "Battle for Coriano",
+        "Eighth Army",
+        "Luftwaffe Field Division",
+        "Gothic line",
+        "Combined attacks",
+        "Fifth Army",
+        "II Corps"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Diplomacy"
+        "Battle Strategies",
+        "Allied Forces Movements"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
+            "e_4"
+        ],
+        "Battle Strategies": [
             "e_3"
         ],
-        "Diplomacy": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
-            "e_1",
-            "e_3"
+        "Allied Forces Movements": [
+            "e_2",
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "3rd September",
+            "date": "First day of the attack not explicitly stated",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "The Eighth Army successfully lands in Calabria by 0430 hours on 3rd September, capturing Reggio and Bagnara with minimal opposition."
+            "eventSummary": "The Eighth Army succeeds in capturing Coriano ridge and over a thousand prisoners."
         },
         {
             "event": "e_2",
-            "date": "Sign Date Unknown",
+            "date": "18th September",
             "locations": [
+                "l_3",
                 "l_1"
             ],
             "persons": [
-                "p_3"
+                "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_4",
+                "o_5"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The signing of the Italian surrender opens up strategic opportunities in the Mediterranean for the Allied forces."
+            "eventSummary": "The attack on Rimini begins, with significant movements from various divisions."
         },
         {
             "event": "e_3",
-            "date": "Date Not Specified",
+            "date": "17th September",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_8",
+                "o_9"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Combined attacks by British and United States Divisions capture Monte Pratone."
+        },
+        {
+            "event": "e_4",
+            "date": "13th September",
             "locations": [
-                "l_10"
+                "l_12"
             ],
             "persons": [
                 "p_2"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Plans are made to use the 1 Airborne Division to seize Taranto to support the Eighth Army's maintenance and advance."
+            "connectedEvents": [],
+            "eventSummary": "The II Corps main offensive on the Gothic line begins."
         }
     ]
 }

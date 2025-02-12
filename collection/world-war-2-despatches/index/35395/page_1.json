@@ -1,73 +1,51 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "General John Smith",
-            "p_2": "President Jane Doe"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "New York",
-            "l_2": "Europe"
+            "l_1": "Bulgaria",
+            "l_2": "United Kingdom"
         },
         "events": {
-            "e_1": "Operation Freedom",
-            "e_2": "Peace Talks"
+            "e_1": "Declaration of War by Bulgaria on Great Britain"
         },
         "organisations": {
-            "o_1": "United Nations"
+            "o_1": "His Majesty's Government in the United Kingdom",
+            "o_2": "Government of the United States"
         }
     },
     "keywords": [
-        "military",
-        "diplomacy",
-        "negotiation"
+        "War",
+        "Declaration",
+        "Government",
+        "Parliament"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy"
+        "International Relations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1"
         ],
-        "Diplomacy": [
-            "e_2"
+        "International Relations": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "2023-10-15",
+            "date": "13 December 1941",
             "locations": [
                 "l_1",
                 "l_2"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "Operation Freedom is launched to secure peace in the region, involving military forces and strategic planning."
-        },
-        {
-            "event": "e_2",
-            "date": "2023-10-20",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Peace Talks commence in New York, aiming to resolve ongoing conflicts and promote diplomacy among nations."
+            "connectedEvents": [],
+            "eventSummary": "A state of war exists between Bulgaria and Great Britain after Bulgaria announces a declaration of war in the Bulgarian Parliament."
         }
     ]
 }

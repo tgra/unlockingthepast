@@ -1,73 +1,74 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Group Commander",
-            "p_2": "Civil Affairs Officers"
+            "p_1": "Air Vice-Marshal Sharp",
+            "p_2": "Air Vice-Marshal Satterly"
         },
         "locations": {
-            "l_1": "Burma",
-            "l_2": "South East Asia",
-            "l_3": "Rangoon",
-            "l_4": "Malaya",
-            "l_5": "Singapore",
-            "l_6": "Penang",
-            "l_7": "Port Butterworth",
-            "l_8": "Prai area",
-            "l_9": "Province Wellesley",
-            "l_10": "Kallang",
-            "l_11": "Changi",
-            "l_12": "Seletar",
-            "l_13": "Tengah"
+            "l_1": "West Pacific",
+            "l_2": "India",
+            "l_3": "Burma",
+            "l_4": "Rangoon",
+            "l_5": "Sittang area of Southern Burma",
+            "l_6": "Moulmein",
+            "l_7": "Bengal",
+            "l_8": "Manipur Valley",
+            "l_9": "Shwebo",
+            "l_10": "Mandalay",
+            "l_11": "Meiktila",
+            "l_12": "Magwe",
+            "l_13": "Pyinmana",
+            "l_14": "Prome",
+            "l_15": "Toungoo",
+            "l_16": "Tavoy",
+            "l_17": "Mergui",
+            "l_18": "Victoria Point",
+            "l_19": "Tenasserim Coast"
         },
         "events": {
-            "e_1": "D-Day operations planned for the assault on Malaya",
-            "e_2": "Occupation of Singapore",
-            "e_3": "Advance through Burma",
-            "e_4": "Capture of Rangoon"
+            "e_1": "Tiger Force deployment",
+            "e_2": "The Battle of the Sittang Bend",
+            "e_3": "siege of Imphal",
+            "e_4": "capture of Rangoon",
+            "e_5": "air battles over Bengal and Burma"
         },
         "organisations": {
-            "o_1": "R.A.F. Regiment",
-            "o_2": "Royal Marines",
-            "o_3": "Tactical Air Forces"
+            "o_1": "Tiger Force",
+            "o_2": "Air Command South East Asia",
+            "o_3": "Japanese Army",
+            "o_4": "Japanese Air Force",
+            "o_5": "Air Ministry",
+            "o_6": "12th Army"
         }
     },
     "keywords": [
-        "RAF Regiment",
-        "Burma",
-        "Malaya",
-        "Singapore",
-        "airfields",
-        "Japanese",
-        "operations",
-        "occupation",
-        "patrols",
-        "security"
+        "Air Vice-Marshal",
+        "Tiger Force",
+        "Japanese Army",
+        "air superiority",
+        "Rangoon"
     ],
     "themes": [
         "Military Operations",
-        "Defence",
-        "Occupation",
-        "Counterinsurgency",
-        "Collaboration"
+        "Air Power",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
+            "e_2",
             "e_3",
-            "e_4"
+            "e_4",
+            "e_5"
         ],
-        "Defence": [
+        "Air Power": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_5"
         ],
-        "Occupation": [
-            "e_2"
-        ],
-        "Counterinsurgency": [
+        "Strategic Decisions": [
+            "e_1",
             "e_4"
-        ],
-        "Collaboration": [
-            "e_2"
         ]
     },
     "eventConnections": [
@@ -75,29 +76,13 @@
             "event": "e_1",
             "date": "1945",
             "locations": [
+                "l_1",
+                "l_2",
+                "l_3",
                 "l_4"
             ],
             "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The D-Day operations planned for Malaya include significant involvement from the R.A.F. Regiment."
-        },
-        {
-            "event": "e_2",
-            "date": "September 10, 1945",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8"
-            ],
-            "persons": [
+                "p_1",
                 "p_2"
             ],
             "organisations": [
@@ -105,45 +90,69 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_1",
+                "e_2",
                 "e_3",
                 "e_4"
             ],
-            "eventSummary": "The occupation of Singapore sees the R.A.F. Regiment securing airfields and garrison duties, enhancing the safety of vital locations during the transition."
+            "eventSummary": "Tiger Force is being deployed for operations, expected to require multiple logistics and air support from India and Burma."
+        },
+        {
+            "event": "e_2",
+            "date": "July 1945",
+            "locations": [
+                "l_5",
+                "l_3"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_4"
+            ],
+            "eventSummary": "The Battle of the Sittang Bend occurs, where the Japanese Army makes a final stand in Southern Burma."
         },
         {
             "event": "e_3",
-            "date": "January 1945",
+            "date": "May 1944",
             "locations": [
-                "l_1"
+                "l_8"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_4"
             ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The advance through Burma demonstrates the crucial role of the R.A.F. Regiment in securing air support for ground operations."
+            "connectedEvents": [],
+            "eventSummary": "The siege of Imphal is noted as a significant conflict for the Japanese Air Force in their efforts to regain control."
         },
         {
             "event": "e_4",
-            "date": "May 1945",
+            "date": "July 1945",
             "locations": [
-                "l_3"
+                "l_4"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
+            "connectedEvents": [],
+            "eventSummary": "The capture of Rangoon takes place, significantly impacting Japanese air operations."
+        },
+        {
+            "event": "e_5",
+            "date": "1943-1944",
+            "locations": [
+                "l_7",
+                "l_9"
             ],
-            "eventSummary": "The capture of Rangoon is a major success for Allied forces, emphasizing the strategic importance of securing the region with R.A.F. support."
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "Air battles over Bengal and Burma lead to the establishment of Allied air superiority in South East Asia."
         }
     ]
 }

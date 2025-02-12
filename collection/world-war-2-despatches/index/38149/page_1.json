@@ -1,57 +1,100 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Royal Navy",
-            "p_2": "Territorial Army"
+            "p_1": "GENERAL SIR FREDERICK A. PILE"
         },
         "locations": {
             "l_1": "United Kingdom",
-            "l_2": "Midlands",
-            "l_3": "South",
-            "l_4": "North"
+            "l_2": "London",
+            "l_3": "Northern East Anglia",
+            "l_4": "East Midlands",
+            "l_5": "Humber",
+            "l_6": "Scotland",
+            "l_7": "Northern Ireland",
+            "l_8": "North-west England",
+            "l_9": "West Midlands",
+            "l_10": "North Wales",
+            "l_11": "South Wales",
+            "l_12": "south-west England",
+            "l_13": "southern England",
+            "l_14": "South-east England",
+            "l_15": "southern East Anglia",
+            "l_16": "North-east England",
+            "l_17": "Orkneys",
+            "l_18": "Shetlands",
+            "l_19": "Bournemouth"
         },
         "events": {
-            "e_1": "Outbreak of War",
-            "e_2": "Command of Anti-Aircraft Defences Appointment",
-            "e_3": "Introduction of Conscription",
-            "e_4": "Mobilization of Anti-Aircraft Units"
+            "e_1": "Anti-Aircraft Defence of the United Kingdom",
+            "e_2": "Failure of campaign in Norway",
+            "e_3": "Re-organisation of Anti-Aircraft defences"
         },
         "organisations": {
-            "o_1": "AA Corps",
+            "o_1": "Army Council",
             "o_2": "Anti-Aircraft Command",
-            "o_3": "Home Guard",
-            "o_4": "B.B.C."
+            "o_3": "Fighter Command"
         }
     },
     "keywords": [
         "Anti-Aircraft",
-        "Manpower",
-        "Mobile Defence",
-        "Training",
-        "Territorial Units"
+        "Defence",
+        "Campaign",
+        "Re-organisation",
+        "Divisions",
+        "War Office"
     ],
     "themes": [
         "Military Operations",
-        "Conscription",
-        "Training and Preparedness",
-        "Resource Management"
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Conscription": [
+        "Strategic Decisions": [
             "e_3"
-        ],
-        "Training and Preparedness": [
-            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July 28, 1939",
+            "date": "28th July, 1939 to 15th April, 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Anti-Aircraft Defence of the United Kingdom is established and operated from July 28, 1939, to April 15, 1945 to protect against aerial threats."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The failure of the overseas campaign in Norway highlights the need for strong Anti-Aircraft defences."
+        },
+        {
+            "event": "e_3",
+            "date": "End of 1940",
             "locations": [
                 "l_1"
             ],
@@ -63,64 +106,9 @@
                 "o_2"
             ],
             "connectedEvents": [
-                "e_2",
-                "e_3"
+                "e_1"
             ],
-            "eventSummary": "The Outbreak of War results in immediate manpower shortages and mobilization of Anti-Aircraft defenses where the equipment and personnel were insufficient."
-        },
-        {
-            "event": "e_2",
-            "date": "July 28, 1939",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "Upon appointment to command Anti-Aircraft defences, the leader faces grave shortages of equipment and personnel because of inadequate preparation prior to war."
-        },
-        {
-            "event": "e_3",
-            "date": "Early 1939",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_4"
-            ],
-            "eventSummary": "The Introduction of Conscription attempts to increase manpower but is delayed by the war onset, leading to significant recruitment and training challenges."
-        },
-        {
-            "event": "e_4",
-            "date": "April 28, 1939",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_1",
-                "e_3"
-            ],
-            "eventSummary": "The Mobilization of Anti-Aircraft Units before official conflict begins ensures partial readiness of forces, although many issues regarding personnel quality and equipment persist."
+            "eventSummary": "At the end of 1940, a considerable re-organisation of the Anti-Aircraft defences is proposed to improve operational coordination."
         }
     ]
 }

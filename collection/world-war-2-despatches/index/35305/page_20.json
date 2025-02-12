@@ -1,95 +1,91 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "M. Reynaud",
-            "p_2": "General Weygand",
-            "p_3": "Sir John Dill",
+            "p_1": "Major General Curtis",
+            "p_2": "Brigadier C. M. Usher",
+            "p_3": "General Weygand",
             "p_4": "General Billotte",
-            "p_5": "Prime Minister"
+            "p_5": "General Van Overstraeten",
+            "p_6": "General Champon",
+            "p_7": "General Pownall",
+            "p_8": "H.M. the King of the Belgians"
         },
         "locations": {
-            "l_1": "Dunkirk",
-            "l_2": "La Panne",
-            "l_3": "Douai",
-            "l_4": "Cambrai",
-            "l_5": "Paris",
-            "l_6": "Amiens",
-            "l_7": "Peronne",
-            "l_8": "Somme",
-            "l_9": "Belgium",
-            "l_10": "Mons",
-            "l_11": "Northern Armies"
+            "l_1": "Carvin",
+            "l_2": "Millonfosse",
+            "l_3": "St. Amand",
+            "l_4": "Aire",
+            "l_5": "La Basse",
+            "l_6": "Gravelines",
+            "l_7": "St. Omer",
+            "l_8": "St. Pol",
+            "l_9": "Divion",
+            "l_10": "Somme",
+            "l_11": "secteur Fortifi des Flandres",
+            "l_12": "Escaut",
+            "l_13": "Maulde",
+            "l_14": "Audernarde",
+            "l_15": "Ghent",
+            "l_16": "Terneuzen",
+            "l_17": "Ypres",
+            "l_18": "Halluin",
+            "l_19": "Courtrai",
+            "l_20": "Yser"
         },
         "events": {
-            "e_1": "Evacuation at Dunkirk",
-            "e_2": "French 1st Army advance",
-            "e_3": "Weygand's plan execution",
-            "e_4": "Conference in Paris",
-            "e_5": "Communication loss of Northern Armies"
+            "e_1": "Occupation of Canal Line",
+            "e_2": "Meeting of Corps Commanders",
+            "e_3": "Visit of General Weygand to General Billotte",
+            "e_4": "Abandonment of the Escaut",
+            "e_5": "Withdrawal Conference on 22nd/23rd May"
         },
         "organisations": {
-            "o_1": "B.E.F.",
-            "o_2": "French VII Army",
-            "o_3": "Belgian Cavalry Corps",
-            "o_4": "Casualty Clearing Stations"
+            "o_1": "46th Division",
+            "o_2": "42nd Division",
+            "o_3": "139th Infantry Brigade",
+            "o_4": "25th Infantry Brigade",
+            "o_5": "23rd Division",
+            "o_6": "French 1st Army",
+            "o_7": "Belgian G.Q.G.",
+            "o_8": "G.H.Q. Troops"
         }
     },
     "keywords": [
-        "Dunkirk",
-        "evacuation",
-        "Weygand's plan",
-        "French Army",
-        "British Expeditionary Force"
+        "occupation",
+        "defence",
+        "withdrawal",
+        "meeting",
+        "attack"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
-        "Supply Chain Challenges",
-        "Evacuations"
+        "Defensive Strategy",
+        "Command Meetings"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
-        ],
-        "Diplomacy": [
             "e_4"
         ],
-        "Supply Chain Challenges": [
-            "e_1"
+        "Defensive Strategy": [
+            "e_1",
+            "e_4",
+            "e_5"
         ],
-        "Evacuations": [
-            "e_1"
+        "Command Meetings": [
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "23rd May - 1st June",
+            "date": "22nd May",
             "locations": [
                 "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_5"
-            ],
-            "organisations": [
-                "o_1",
-                "o_4"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The evacuation at Dunkirk unfolds with supplies dwindling and constant air raids affecting operations, culminating in the use of boats and lighters to rescue troops until the night of 31st May/1st June."
-        },
-        {
-            "event": "e_2",
-            "date": "23rd May",
-            "locations": [
-                "l_3",
+                "l_6",
+                "l_12",
                 "l_4"
             ],
             "persons": [
@@ -97,63 +93,95 @@
                 "p_2"
             ],
             "organisations": [
-                "o_2"
+                "o_1",
+                "o_2",
+                "o_3"
             ],
             "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "On 23rd May, the French 1st Army advances southwards from Douai, facing increased threats and interruptions from enemy air attacks."
-        },
-        {
-            "event": "e_3",
-            "date": "Circa 24th May",
-            "locations": [
-                "l_5",
-                "l_6",
-                "l_7"
-            ],
-            "persons": [
-                "p_2",
-                "p_4"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
+                "e_2",
                 "e_4"
             ],
-            "eventSummary": "The execution of Weygand's plan involves a coordinated counter-offensive aimed at restoring the situation, relying heavily on communication with Allied forces."
+            "eventSummary": "On 22nd May, the canal line is occupied, with British commanders responsible for sectors dividing 85 miles from the sea at Gravelines to Millonfosse."
         },
         {
-            "event": "e_4",
-            "date": "24th May",
+            "event": "e_2",
+            "date": "21st May",
             "locations": [
-                "l_5"
+                "l_1",
+                "l_4",
+                "l_12"
             ],
             "persons": [
                 "p_1",
                 "p_2"
             ],
             "organisations": [
+                "o_1",
                 "o_2"
             ],
             "connectedEvents": [
+                "e_1",
                 "e_3"
             ],
-            "eventSummary": "A diplomatic conference occurs in Paris where the Prime Minister discusses the situation with M. Reynaud and General Weygand regarding military strategy and execution."
+            "eventSummary": "On 21st May, a meeting of the three Corps Commanders takes place to discuss the thinly held line and potential withdrawals."
         },
         {
-            "event": "e_5",
-            "date": "23rd May",
+            "event": "e_3",
+            "date": "21st May",
             "locations": [
-                "l_11"
+                "l_17"
             ],
             "persons": [
-                "p_5"
+                "p_3",
+                "p_4",
+                "p_8"
             ],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "On 23rd May, communications to the Northern Armies are cut off due to enemy forces, creating a critical situation for Allied troops in the region."
+            "eventSummary": "On 21st May, General Weygand visits General Billotte at Ypres to discuss upcoming attacks."
+        },
+        {
+            "event": "e_4",
+            "date": "22nd/23rd May",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_3",
+                "p_5",
+                "p_6",
+                "p_7",
+                "p_8"
+            ],
+            "organisations": [
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_5"
+            ],
+            "eventSummary": "On the night of 22nd/23rd May, it is agreed that the Escaut should be abandoned by the Allied armies."
+        },
+        {
+            "event": "e_5",
+            "date": "22nd/23rd May",
+            "locations": [
+                "l_1",
+                "l_10"
+            ],
+            "persons": [
+                "p_1",
+                "p_3",
+                "p_8"
+            ],
+            "organisations": [
+                "o_6",
+                "o_7"
+            ],
+            "connectedEvents": [
+                "e_4"
+            ],
+            "eventSummary": "On the night of 22nd/23rd May, a conference is held to plan withdrawals to frontier defences."
         }
     ]
 }

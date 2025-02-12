@@ -1,89 +1,128 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Allied Tactical Air Forces",
-            "p_2": "Build-up Control (BUCO)"
+            "p_1": "members of 6 Airborne Division",
+            "p_2": "3 and 5 Parachute Brigades",
+            "p_3": "United States Airborne Division",
+            "p_4": "82 United States Airborne Division"
         },
         "locations": {
-            "l_1": "Uxbridge",
-            "l_2": "Portsmouth",
-            "l_3": "Normandy",
-            "l_4": "Seine",
-            "l_5": "Loire",
-            "l_6": "Caen"
+            "l_1": "Caen",
+            "l_2": "Cherbourg",
+            "l_3": "Brittany",
+            "l_4": "Baie de la Seine",
+            "l_5": "France",
+            "l_6": "Ste. Mère Église",
+            "l_7": "Pouppeville",
+            "l_8": "St. Martin-de-Varreville",
+            "l_9": "Carentan-Cherbourg"
         },
         "events": {
-            "e_1": "D Day",
-            "e_2": "OVERLORD"
+            "e_1": "Battle of Normandy",
+            "e_2": "Airborne landings",
+            "e_3": "Naval bombardment"
         },
         "organisations": {
-            "o_1": "Anglo-American Army Staff"
+            "o_1": "British forces",
+            "o_2": "United States Airborne Division",
+            "o_3": "Eighth United States Air Force",
+            "o_4": "Bomber Command"
         }
     },
     "keywords": [
-        "Direct Air Support",
-        "Amphibious Operations",
-        "Air Support Control",
-        "Build-up",
-        "Flexible Operations"
+        "operations",
+        "terrain",
+        "Air Forces",
+        "beaches",
+        "organization",
+        "operational plan"
     ],
     "themes": [
         "Military Operations",
-        "Logistics",
-        "Command Structure",
-        "Strategic Decisions"
+        "Administration",
+        "Civil Affairs"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3"
         ],
-        "Logistics": [
+        "Administration": [
             "e_1"
         ],
-        "Command Structure": [
+        "Civil Affairs": [
             "e_1"
-        ],
-        "Strategic Decisions": [
-            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "D Day",
+            "date": "6 June 1944",
             "locations": [
-                "l_3",
-                "l_2"
+                "l_1",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_4"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "On D Day, the Allied forces execute a complex series of amphibious operations, establishing multiple beachheads in Normandy while coordinating air support from Uxbridge."
+            "eventSummary": "At 0200 hours on 6 June, elements of 6 Airborne Division are dropped near Caen to secure critical bridges. The aerial and naval operations support the Allied forces' landings along the French coast."
         },
         {
             "event": "e_2",
-            "date": "During the planning phase of OVERLORD",
+            "date": "6 June 1944",
             "locations": [
-                "l_3",
-                "l_6"
+                "l_1",
+                "l_6",
+                "l_7",
+                "l_8"
             ],
             "persons": [
-                "p_2"
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
             ],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "During the planning of OVERLORD, Allied commanders devise strategies for sustaining momentum after landing, emphasizing the need for rapid advancement to control critical areas while managing resources flexibly."
+            "eventSummary": "During the Airborne landings on 6 June, multiple units drop behind enemy lines to capture key positions. Despite scattered drops, they successfully mislead the enemy and secure vital ground."
+        },
+        {
+            "event": "e_3",
+            "date": "6 June 1944",
+            "locations": [
+                "l_5"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On 6 June, the Eighth United States Air Force executes a coordinated bombing campaign in support of the Allied landings, dropping nearly 6,000 tons of bombs on enemy coastal defences."
         }
     ]
 }

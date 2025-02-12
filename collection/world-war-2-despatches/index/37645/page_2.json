@@ -1,92 +1,82 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "J. K. Edwards",
-            "p_2": "A. C. Duff",
-            "p_3": "Brian H. Robertson",
-            "p_4": "Lady Sidney Farrar"
+            "p_1": "General Cunningham",
+            "p_2": "Mr. Anthony Eden",
+            "p_3": "Lieut.-Colonel O. C. Wingate",
+            "p_4": "Brigadier Sandford",
+            "p_5": "General Platt",
+            "p_6": "Brigadier Messervy",
+            "p_7": "Haille Selassie"
         },
         "locations": {
-            "l_1": "Uaddara",
-            "l_2": "Neghelli",
-            "l_3": "Middle East",
-            "l_4": "Lugh Ferrandi",
-            "l_5": "Oddur",
-            "l_6": "Iscia Baidoa",
-            "l_7": "Nairobi",
-            "l_8": "Garissa",
-            "l_9": "Chisimaio",
-            "l_10": "Mogadiscio",
-            "l_11": "Gabredarre",
-            "l_12": "Giggiga",
-            "l_13": "Harrar",
-            "l_14": "Addis Abeba"
+            "l_1": "Italy",
+            "l_2": "Egypt",
+            "l_3": "Gallabat",
+            "l_4": "Kenya",
+            "l_5": "Kismayu",
+            "l_6": "Abyssinia",
+            "l_7": "Moyale",
+            "l_8": "Sudan",
+            "l_9": "Addis Ababa",
+            "l_10": "Massawa",
+            "l_11": "Jibuti",
+            "l_12": "Port Sudan",
+            "l_13": "Nile Valley",
+            "l_14": "Gojjam",
+            "l_15": "Kassala",
+            "l_16": "Eritrea",
+            "l_17": "Italian Somaliland",
+            "l_18": "Western Desert"
         },
         "events": {
-            "e_1": "Move of 12th (A) Division H.Q. to Neghelli",
-            "e_2": "Division of Force H.Q. into Advanced and Rear H.Q.",
-            "e_3": "Fall of Addis Abeba"
+            "e_1": "Desert offensive",
+            "e_2": "Kassala operation",
+            "e_3": "rebel operations in Abyssinia",
+            "e_4": "operation on Kismayu",
+            "e_5": "movement of Haille Selassie into Abyssinia",
+            "e_6": "enemy withdrawal from Kassala"
         },
         "organisations": {
-            "o_1": "Force H.Q.",
-            "o_2": "12th (A) Division",
-            "o_3": "1st S.A. Division",
-            "o_4": "F.A.N.Y. unit",
-            "o_5": "G.H.Q."
+            "o_1": "4th Indian Division",
+            "o_2": "Gazelle Force"
         }
     },
     "keywords": [
-        "military operations",
-        "command",
-        "intelligence",
-        "headquarters",
-        "supply chain"
+        "rebel",
+        "offensive",
+        "operations",
+        "Abyssinia",
+        "Kassala"
     ],
     "themes": [
         "Military Operations",
-        "Control of Operations",
-        "Intelligence Gathering",
-        "Administration"
+        "Support for Rebellions",
+        "Strategic Planning"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
-        ],
-        "Administration": [
-            "e_2"
-        ],
-        "Intelligence Gathering": [
             "e_2",
+            "e_3",
+            "e_4",
+            "e_6"
+        ],
+        "Support for Rebellions": [
             "e_3"
+        ],
+        "Strategic Planning": [
+            "e_2",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "6th April",
+            "date": "1941",
             "locations": [
-                "l_2",
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2",
-                "o_3"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "On 6th April, the 12th (A) Division H.Q. moves to Neghelli to take over command, enhancing operational control in the area."
-        },
-        {
-            "event": "e_2",
-            "date": "9th February",
-            "locations": [
-                "l_7",
-                "l_8"
+                "l_1",
+                "l_2"
             ],
             "persons": [
                 "p_1"
@@ -95,25 +85,66 @@
                 "o_1"
             ],
             "connectedEvents": [
-                "e_3"
+                "e_2"
             ],
-            "eventSummary": "On 9th February, Force H.Q. is divided into Advanced and Rear H.Q. to manage operations effectively, acknowledging the complexities of the campaign."
+            "eventSummary": "Desert offensive takes place aiming for tactical advantages in North Africa."
+        },
+        {
+            "event": "e_2",
+            "date": "February 1941",
+            "locations": [
+                "l_8",
+                "l_15"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "The Kassala operation is planned with an aim to leverage the recent successes in the Western Desert."
         },
         {
             "event": "e_3",
-            "date": "Unknown",
+            "date": "January 20, 1941",
             "locations": [
-                "l_14"
+                "l_6"
             ],
             "persons": [
-                "p_2",
-                "p_3"
+                "p_7"
             ],
-            "organisations": [
-                "o_5"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The fall of Addis Abeba marks a significant shift in the operational landscape, complicating the command structure and necessitating prompt decisions."
+            "eventSummary": "Haille Selassie crosses the border into Abyssinia, signaling a significant moment for the rebel forces."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Plans are made to advance on Kismayu after the rainy season to support rebel efforts."
+        },
+        {
+            "event": "e_6",
+            "date": "",
+            "locations": [
+                "l_15"
+            ],
+            "persons": [
+                "p_5"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The enemy withdraws from Kassala, leading to a reassessment of military plans."
         }
     ]
 }

@@ -1,69 +1,91 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Group Captain Noel Singer",
-            "p_2": "General Hutton",
-            "p_3": "General Alexander"
+            "p_1": "DC.3",
+            "p_2": "the crews",
+            "p_3": "the enemy",
+            "p_4": "the A.V.G.",
+            "p_5": "H.M.",
+            "p_6": "Navy O"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Magwe",
-            "l_3": "Akyab",
-            "l_4": "Mingaladon",
-            "l_5": "Toungoo",
-            "l_6": "Heho",
-            "l_7": "Namsang",
-            "l_8": "Lashio",
-            "l_9": "Mandalay",
-            "l_10": "Maymyo",
-            "l_11": "Pegu",
-            "l_12": "Prome",
-            "l_13": "Sittang"
+            "l_1": "Imphal",
+            "l_2": "Myitkyina",
+            "l_3": "Ledo",
+            "l_4": "Katha",
+            "l_5": "Indaw",
+            "l_6": "Homalin",
+            "l_7": "Calcutta",
+            "l_8": "Ceylon",
+            "l_9": "Bay of Bengal",
+            "l_10": "Port Blair",
+            "l_11": "Rangoon",
+            "l_12": "Tenasserim",
+            "l_13": "Burma",
+            "l_14": "Akyab",
+            "l_15": "Prome",
+            "l_16": "Mandalay",
+            "l_17": "Maymyo",
+            "l_18": "Toungoo",
+            "l_19": "Heho",
+            "l_20": "Namsang",
+            "l_21": "Lashio",
+            "l_22": "Loiwing",
+            "l_23": "Magwe"
         },
         "events": {
-            "e_1": "Battle over Rangoon",
-            "e_2": "Final attack by Japanese Air Force on Rangoon defence",
-            "e_3": "Battle of Pegu"
+            "e_1": "evacuation of wounded",
+            "e_2": "serious situation in the Bay of Bengal",
+            "e_3": "attack on enemy reconnaissance force",
+            "e_4": "air action in support of the Army",
+            "e_5": "enemy bombing attacks in Tenasserim",
+            "e_6": "enemy attacks on Rangoon",
+            "e_7": "battle of Magwe",
+            "e_8": "enemy air force attack on the Army",
+            "e_9": "enemy day bombing on forward troops"
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "17th Division",
-            "o_3": "Armoured Brigade"
+            "o_1": "American Air Force",
+            "o_2": "A.V.G.",
+            "o_3": "139 Squadron",
+            "o_4": "Army Co-operation Bomber Squadrons"
         }
     },
     "keywords": [
-        "air superiority",
         "evacuation",
-        "bombing offensive",
-        "security",
-        "warning system",
-        "fighter resources",
-        "Japanese Air Force",
-        "enemy casualties"
+        "air force",
+        "bombing",
+        "reconnaissance"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Air Defense"
+        "Evacuations",
+        "Air Combat",
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5",
+            "e_6",
+            "e_7"
         ],
-        "Strategic Decisions": [
-            "e_1",
+        "Evacuations": [
+            "e_1"
+        ],
+        "Naval Strategy": [
             "e_2"
         ],
-        "Air Defense": [
-            "e_2"
+        "Air Combat": [
+            "e_3",
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "February 22, 1942",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2"
@@ -73,47 +95,122 @@
                 "p_2"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Final preparations to continue to fight the battle over Rangoon and withdraw to the North are taken at once."
+            "connectedEvents": [],
+            "eventSummary": "During the evacuation, a total of 8,616 persons, including 2,600 wounded, were flown out to India."
         },
         {
             "event": "e_2",
-            "date": "February 24-25, 1942",
+            "date": "middle of March",
             "locations": [
-                "l_1"
+                "l_7",
+                "l_9"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "A serious situation arises in the Bay of Bengal due to potential enemy threats to shipping."
+        },
+        {
+            "event": "e_3",
+            "date": "April 14",
+            "locations": [
+                "l_10"
+            ],
+            "persons": [
+                "p_6"
+            ],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_6"
+            ],
+            "eventSummary": "An attack on enemy reconnaissance forces is conducted, targeting flying boats at Port Blair."
+        },
+        {
+            "event": "e_4",
+            "date": "23rd December",
+            "locations": [
+                "l_11",
+                "l_12"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_1"
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "The final attack is made by the Japanese Air Force on the Rangoon defence system, failing to attain air superiority and inflicting severe casualties on the enemy."
+            "connectedEvents": [],
+            "eventSummary": "An air action commences, engaging the Japanese air force in the defense of Rangoon."
         },
         {
-            "event": "e_3",
-            "date": "February 23 - March 5, 1942",
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Enemy bombing attacks are carried out on forward troops in Tenasserim."
+        },
+        {
+            "event": "e_6",
+            "date": "February 25th",
             "locations": [
                 "l_11"
             ],
             "persons": [
-                "p_2",
                 "p_3"
             ],
-            "organisations": [
-                "o_2"
-            ],
+            "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The Battle of Pegu develops with enemy pressure exerted against allied forces, occurring from the 23rd February to the 5th March."
+            "eventSummary": "The enemy fails to achieve air superiority over Rangoon after their last attack."
+        },
+        {
+            "event": "e_7",
+            "date": "March 21",
+            "locations": [
+                "l_23"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The enemy begins a determined attack to neutralize the remaining air force at Magwe."
+        },
+        {
+            "event": "e_8",
+            "date": "",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "Enemy air force attacks the Army during withdrawal, but casualty numbers are relatively low."
+        },
+        {
+            "event": "e_9",
+            "date": "",
+            "locations": [
+                "l_12"
+            ],
+            "persons": [
+                "p_3"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The enemy carries out day bombing attacks on forward troops, resulting in significant damage."
         }
     ]
 }

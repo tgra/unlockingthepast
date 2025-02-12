@@ -1,185 +1,110 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Colonel Raynal",
-            "p_2": "General Dupont",
-            "p_3": "Major-General Fowkes",
-            "p_4": "Mr. Hopkinson",
-            "p_5": "Monsieur Chancel",
-            "p_6": "General de Division P. Legentilhomme"
+            "p_1": "Monsieur Annet",
+            "p_2": "Rear Admiral Tennant"
         },
         "locations": {
-            "l_1": "Jibouti",
-            "l_2": "Madagascar",
-            "l_3": "French Somaliland",
-            "l_4": "Aden",
-            "l_5": "Zeila",
-            "l_6": "Harrar",
-            "l_7": "Tananarive",
-            "l_8": "Dauonle",
-            "l_9": "Hol Hol",
-            "l_10": "Chebele"
+            "l_1": "Majunga",
+            "l_2": "Mombasa",
+            "l_3": "Tamatave",
+            "l_4": "Tananarive",
+            "l_5": "Antsirabe",
+            "l_6": "Ambositra",
+            "l_7": "Fianarantsoa",
+            "l_8": "Diego Suarez",
+            "l_9": "Fort Dauphin",
+            "l_10": "Tulear",
+            "l_11": "Mozambique Channel",
+            "l_12": "Mananjary",
+            "l_13": "Manakara"
         },
         "events": {
-            "e_1": "Capitulation of Vichy Forces in Madagascar",
-            "e_2": "Crossing of the Frontier at Zeila",
-            "e_3": "Visit to Jibouti by British Military Commander",
-            "e_4": "Meeting with General Dupont",
-            "e_5": "Seizure of the Bridges",
-            "e_6": "Agreement signed for French Somaliland to join Fighting French",
-            "e_7": "Visit of General de Division P. Legentilhomme"
+            "e_1": "Landing at Tamatave",
+            "e_2": "Advance on Tananarive",
+            "e_3": "Disembarkation at Majunga"
         },
         "organisations": {
-            "o_1": "United Nations",
-            "o_2": "Fighting French",
-            "o_3": "British Government",
-            "o_4": "United States Government"
+            "o_1": "22nd (E.A:) Infantry Brigade",
+            "o_2": "Pretoria Regiment",
+            "o_3": "H.M.S. Birmingham",
+            "o_4": "H.M.S. Inconstant",
+            "o_5": "H.M.A.S. Napier",
+            "o_6": "H.M.N.S. Vangalen"
         }
     },
     "keywords": [
-        "Capitulation",
-        "Vichy Forces",
-        "Allied Landings",
-        "Fighting French",
-        "United Nations",
-        "Economic Agreement",
-        "Military Commander",
-        "Agreement"
+        "Disembarkation",
+        "Landing Craft",
+        "Tactics",
+        "Hostilities",
+        "Reconnaissance",
+        "Bombardment"
     ],
     "themes": [
         "Military Operations",
-        "Diplomacy",
         "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2",
-            "e_5"
-        ],
-        "Diplomacy": [
             "e_1",
-            "e_3",
-            "e_4",
-            "e_6"
+            "e_2",
+            "e_3"
         ],
         "Strategic Decisions": [
             "e_1",
-            "e_4"
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "November 1942",
+            "date": "18th September",
             "locations": [
-                "l_2"
+                "l_3"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3",
+                "o_4",
+                "o_5",
+                "o_6"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The assault on Tamatave is executed with the ambition of securing the town without prior bombardment, leading to its occupation without significant opposition."
+        },
+        {
+            "event": "e_2",
+            "date": "Not specified",
+            "locations": [
+                "l_4",
+                "l_5",
+                "l_6"
             ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "The Vichy Forces in Madagascar capitulate, causing concern in Jibouti, as the Allied forces land in North Africa."
-        },
-        {
-            "event": "e_2",
-            "date": "28th November 1942",
-            "locations": [
-                "l_5"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "Colonel Raynal leads his Battalion across the frontier at Zeila, announcing their support for the United Nations."
+            "eventSummary": "The advance on Tananarive encounters sporadic opposition, mainly from Senegalese troops, and significant obstacles such as road-blocks."
         },
         {
             "event": "e_3",
-            "date": "7th December 1942",
+            "date": "Not specified",
             "locations": [
                 "l_1"
             ],
-            "persons": [
-                "p_4"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The American Consul travels from Aden to Jibouti to investigate the political situation on direct orders from Washington."
-        },
-        {
-            "event": "e_4",
-            "date": "17th December 1942",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [],
-            "connectedEvents": [
-                "e_6"
-            ],
-            "eventSummary": "General Dupont invites the British Military Commander to discuss the situation in Jibouti, but no agreement is reached."
-        },
-        {
-            "event": "e_5",
-            "date": "26th December 1942",
-            "locations": [
-                "l_1",
-                "l_9",
-                "l_10"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_6"
-            ],
-            "eventSummary": "Colonel Raynal's forces successfully seize the crucial bridges, rallying support from outlying garrisons."
-        },
-        {
-            "event": "e_6",
-            "date": "28th December 1942",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_2",
-                "p_3",
-                "p_5"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "General Dupont signs an agreement that integrates French Somaliland into the Fighting French, concluding days of tensions without bloodshed."
-        },
-        {
-            "event": "e_7",
-            "date": "1st January 1943",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [
-                "p_6"
-            ],
+            "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "General de Division P. Legentilhomme arrives in East Africa and inspects the troops in Jibouti."
+            "eventSummary": "Disembarkation at Majunga proves challenging due to the lack of deep water facilities, forcing reliance on landing craft."
         }
     ]
 }

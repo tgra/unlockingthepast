@@ -1,61 +1,43 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander Batu Pahat Force",
-            "p_2": "Commander 11 Indian Division",
-            "p_3": "Commander 3 Indian Corps",
-            "p_4": "Commander 9 Indian Division",
-            "p_5": "Chaplain",
-            "p_6": "Personnel of the Royal Army Medical Corps",
-            "p_7": "Commander Westforce"
+            "p_1": "Hitler",
+            "p_2": "General Officer Commanding Malaya"
         },
         "locations": {
-            "l_1": "Batu Pahat",
-            "l_2": "Senggarang",
-            "l_3": "Jorries",
-            "l_4": "Benut",
-            "l_5": "Rengit",
-            "l_6": "Yong Peng",
-            "l_7": "Kulai",
-            "l_8": "Kluang",
-            "l_9": "Ayer Hitam",
-            "l_10": "Mersing",
-            "l_11": "Kota Tinggi",
-            "l_12": "Jemaluang",
-            "l_13": "Endau",
-            "l_14": "Singapore",
-            "l_15": "Penggerang"
+            "l_1": "Singapore Island",
+            "l_2": "Malaya",
+            "l_3": "Far East",
+            "l_4": "North Malaya",
+            "l_5": "South Thailand",
+            "l_6": "Camranh Bay",
+            "l_7": "French Indo-China"
         },
         "events": {
-            "e_1": "Batu Pahat Operations",
-            "e_2": "Kluang Ayer Hitam Operations",
-            "e_3": "East Coast Operations"
+            "e_1": "Fall of France",
+            "e_2": "Occupation of French Indo-China",
+            "e_3": "Implementation of the Scorched Earth Policy",
+            "e_4": "Defence of Singapore Naval Base"
         },
         "organisations": {
-            "o_1": "5 R. Norfolks",
-            "o_2": "53 Brigade Group",
-            "o_3": "22 Indian Brigade Group",
-            "o_4": "8 Brigade Group",
-            "o_5": "Royal Army Medical Corps"
+            "o_1": "British Fleet",
+            "o_2": "Japanese Navy",
+            "o_3": "War Office"
         }
     },
     "keywords": [
-        "Batu Pahat",
-        "Senggarang",
-        "Withdrawal",
-        "Japanese Forces",
-        "Military Operations",
-        "Communication Breakdown",
-        "Counter-Attack",
-        "Pro-Japanese"
+        "Scorched Earth Policy",
+        "morale",
+        "war material",
+        "defence",
+        "air power",
+        "Naval Base"
     ],
     "themes": [
         "Military Operations",
-        "Communication Challenges",
-        "Strategic Withdrawals",
-        "Combat Engagements",
-        "Supply and Logistics",
-        "Historical Context"
+        "Strategic Decisions",
+        "Defence Strategy",
+        "Air Power"
     ],
     "topicModel": {
         "Military Operations": [
@@ -63,73 +45,78 @@
             "e_2",
             "e_3"
         ],
-        "Diplomacy": [],
         "Strategic Decisions": [
-            "e_1"
+            "e_4"
         ],
-        "Communication Challenges": [
-            "e_1"
+        "Defence Strategy": [
+            "e_4"
         ],
-        "Supply and Logistics": [
-            "e_1",
+        "Air Power": [
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "January 25-26, 1942",
+            "date": "1940",
             "locations": [
-                "l_1",
-                "l_2"
+                "l_6",
+                "l_1"
             ],
             "persons": [
-                "p_1",
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The Batu Pahat Force withdraws to Senggarang amidst continuous fighting, revealing communication delays and operational challenges."
-        },
-        {
-            "event": "e_2",
-            "date": "January 24-25, 1942",
-            "locations": [
-                "l_8",
-                "l_9"
-            ],
-            "persons": [
-                "p_4",
                 "p_1"
             ],
             "organisations": [
-                "o_3",
-                "o_4"
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The fall of France in 1940 alters the strategic landscape for the Allies."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_6",
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The Kluang Ayer Hitam Operations occur with Indian forces engaging Japanese troops, leading to tactical withdrawals."
+            "eventSummary": "The Japanese occupation of French Indo-China further complicates the defence of Malaya."
         },
         {
             "event": "e_3",
-            "date": "January 1942",
+            "date": "",
             "locations": [
-                "l_10",
-                "l_11",
-                "l_12",
-                "l_13"
+                "l_1"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [],
-            "eventSummary": "The East Coast Operations focus on securing Mersing, highlighting its strategic importance in defense against Japanese advances."
+            "eventSummary": "The implementation of the Scorched Earth Policy takes place affecting morale and military operations."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The defence of the Singapore Naval Base is prioritized under challenging conditions."
         }
     ]
 }

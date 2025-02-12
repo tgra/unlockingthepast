@@ -1,103 +1,114 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "General Sir Henry Pownall",
-            "p_2": "Air Chief Marshal Sir Robert Brooke Popham",
-            "p_3": "Group Captain E. B. Rice",
-            "p_4": "Air Vice Marshal P. C. Maltby"
+            "p_1": "Air Commodore Silly",
+            "p_2": "Sir Archibald Wavell",
+            "p_3": "Air Commodore Vincent",
+            "p_4": "General Wavell",
+            "p_5": "Abdair"
         },
         "locations": {
-            "l_1": "Singapore",
-            "l_2": "Ceylon",
-            "l_3": "Tengah",
-            "l_4": "Sembawang",
-            "l_5": "Kluang",
-            "l_6": "Seletar",
-            "l_7": "Kallang",
-            "l_8": "Pakanbaroe",
-            "l_9": "Australia",
-            "l_10": "Middle East"
+            "l_1": "N.E.I.",
+            "l_2": "Sumatra",
+            "l_3": "Singapore Island",
+            "l_4": "Java",
+            "l_5": "Palembang",
+            "l_6": "Batavia"
         },
         "events": {
-            "e_1": "Change in Higher Command",
-            "e_2": "Reinforcement Situation"
+            "e_1": "Fall of Singapore",
+            "e_2": "Reduction of the Fighter Force in Siheapones",
+            "e_3": "Transfer of A.H.Q. to N.E.I."
         },
         "organisations": {
-            "o_1": "Royal Australian Air Force (R.A.A.F.)",
-            "o_2": "Air Ministry",
-            "o_3": "G.H.Q."
+            "o_1": "A.H.Q.",
+            "o_2": "No. 226 (F) Group",
+            "o_3": "H.Q. No. 224 (F) Group",
+            "o_4": "H.Q. No. 225 (B) Group",
+            "o_5": "H.Q. No. 266 (F) Wing"
         }
     },
     "keywords": [
-        "reinforcements",
-        "Japanese Army",
-        "military strategy",
-        "air squadrons",
-        "Higher Command",
-        "aircraft"
+        "Fighter Force",
+        "Rear A.H.Q.",
+        "Japanese air attacks",
+        "air operations",
+        "Army withdrawal"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Leadership Changes"
+        "Diplomacy",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_2"
-        ],
-        "Strategic Decisions": [
             "e_1",
             "e_2"
         ],
-        "Leadership Changes": [
-            "e_1"
+        "Diplomacy": [
+            "e_3"
+        ],
+        "Strategic Decisions": [
+            "e_1",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "27th December, 1941",
+            "date": "31st January 1942",
             "locations": [
-                "l_1"
+                "l_3"
             ],
             "persons": [
-                "p_1",
                 "p_2",
-                "p_3",
                 "p_4"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3"
+                "o_1"
             ],
-            "connectedEvents": [],
-            "eventSummary": "General Sir Henry Pownall relieves Air Chief Marshal Sir Robert Brooke Popham as Commander-in-Chief, Far East, marking a significant change in military command."
+            "connectedEvents": [
+                "e_2",
+                "e_3"
+            ],
+            "eventSummary": "The Army successfully withdraws into Singapore Island by the planned completion date."
         },
         {
             "event": "e_2",
-            "date": "8th December, 1941",
+            "date": "30th January 1942",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10"
+                "l_3"
             ],
-            "persons": [],
+            "persons": [
+                "p_2"
+            ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Reports outline the urgent need for air reinforcements to counter the advancing Japanese Army, reflecting the changing military landscape in the Far East."
+            "eventSummary": "The reduction of the Fighter Force occurs due to constant bombing, limiting their operational capacity."
+        },
+        {
+            "event": "e_3",
+            "date": "6th February 1942",
+            "locations": [
+                "l_1",
+                "l_3"
+            ],
+            "persons": [
+                "p_5",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "The transfer of A.H.Q. to N.E.I. is canceled following disapproval from Abdair."
         }
     ]
 }

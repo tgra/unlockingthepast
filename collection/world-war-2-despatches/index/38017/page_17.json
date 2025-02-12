@@ -1,46 +1,39 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Lord Gort",
-            "p_2": "General Lloyd",
-            "p_3": "General Alexander",
-            "p_4": "Vice Admiral",
-            "p_5": "Rear Admiral"
+            "p_1": "Vice Admiral",
+            "p_2": "Marceau",
+            "p_3": "Admiral Nord"
         },
         "locations": {
             "l_1": "Dunkirk",
-            "l_2": "La Panne",
-            "l_3": "Margate",
-            "l_4": "Sheerness",
-            "l_5": "Southern England",
-            "l_6": "Bray",
-            "l_7": "Malo"
+            "l_2": "Gravelines",
+            "l_3": "Goodwin",
+            "l_4": "Boulogne",
+            "l_5": "Ramsgate",
+            "l_6": "Dover",
+            "l_7": "Margate",
+            "l_8": "Thanet coast"
         },
         "events": {
-            "e_1": "Dunkirk Evacuation",
-            "e_2": "Heavy Bombardment of Dunkirk and La Panne",
-            "e_3": "Military Plan Change",
-            "e_4": "Final Evacuation of the British Expeditionary Force (B.E.F.)"
+            "e_1": "Operation Dynamo",
+            "e_2": "Evacuation Operation"
         },
         "organisations": {
-            "o_1": "Royal Air Force (R.A.F.)",
-            "o_2": "B.E.F. (British Expeditionary Force)"
+            "o_1": "French Admiralty"
         }
     },
     "keywords": [
         "evacuation",
-        "bombardment",
-        "artillery",
-        "troops",
         "Dunkirk",
-        "La Panne"
+        "naval",
+        "operation",
+        "military"
     ],
     "themes": [
         "Military Operations",
         "Evacuation",
-        "Artillery Bombardment",
-        "Military Strategies",
-        "Logistics"
+        "Naval Strategy"
     ],
     "topicModel": {
         "Military Operations": [
@@ -48,96 +41,53 @@
             "e_2"
         ],
         "Evacuation": [
-            "e_1",
-            "e_4"
-        ],
-        "Artillery Bombardment": [
-            "e_2"
-        ],
-        "Military Strategies": [
-            "e_3"
-        ],
-        "Logistics": [
             "e_1"
+        ],
+        "Naval Strategy": [
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1st June 1940",
+            "date": "4th June 1940",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3",
+                "l_4",
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8"
             ],
             "persons": [
                 "p_1",
                 "p_2",
-                "p_3",
-                "p_4"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The final evacuation of the British Expeditionary Force (B.E.F.) is being executed as large numbers of troops are being lifted from Dunkirk on the night of June 1st-2nd, following a series of strategic adjustments and heavy bombardments."
-        },
-        {
-            "event": "e_2",
-            "date": "1st June 1940",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_4"
+                "p_3"
             ],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "Dunkirk and La Panne beaches are subjected to heavy artillery fire, affecting evacuation efforts as the Royal Air Force coordinates with naval operations to assist in locating enemy artillery."
+            "eventSummary": "Operation Dynamo is concluded with the evacuation of approximately 27,000 troops from Dunkirk after a series of naval operations under challenging conditions."
         },
         {
-            "event": "e_3",
-            "date": "1st June 1940",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_2",
-                "p_3"
-            ],
-            "organisations": [
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "A significant change in the military plan is announced, necessitating the withdrawal of the Eastern-most Division from La Panne to adjust to the evolving conditions of the evacuation."
-        },
-        {
-            "event": "e_4",
-            "date": "Night of 1st/2nd June 1940",
+            "event": "e_2",
+            "date": "4th June 1940",
             "locations": [
                 "l_1"
             ],
             "persons": [
-                "p_2",
-                "p_4"
+                "p_1"
             ],
-            "organisations": [
-                "o_2"
-            ],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The final phase of the evacuation of the B.E.F. is underway, with significant movements and transport arrangements made to ensure the safety and rescue of the remaining troops."
+            "eventSummary": "The evacuation operation involves the coordinated withdrawal of Allied troops under significant threat, marking a crucial military maneuver during World War II."
         }
     ]
 }

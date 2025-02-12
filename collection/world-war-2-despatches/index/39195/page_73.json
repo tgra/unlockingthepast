@@ -1,71 +1,96 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Commander, No. 1 Area",
-            "p_2": "Commander, 15 Indian Corps",
-            "p_3": "Fourteenth Army"
+            "p_1": "Fourteenth Army",
+            "p_2": "36 British Division",
+            "p_3": "Indian Pioneer Corps Group Commanders"
         },
         "locations": {
-            "l_1": "Rangoon",
-            "l_2": "Calcutta",
-            "l_3": "Manipur Road",
-            "l_4": "Imphal",
-            "l_5": "Akyab",
-            "l_6": "Kyaukpyu",
-            "l_7": "South-East Asia"
+            "l_1": "Burma",
+            "l_2": "Irrawaddy",
+            "l_3": "Kabaw Valley",
+            "l_4": "Ledo Road",
+            "l_5": "Chittagong",
+            "l_6": "Manipur Road",
+            "l_7": "Mandalay",
+            "l_8": "Shwebo",
+            "l_9": "Rangoon",
+            "l_10": "Assam"
         },
         "events": {
-            "e_1": "Operation Stanza",
-            "e_2": "Development of Advanced Base",
-            "e_3": "Airfield Construction"
+            "e_1": "Burma Campaign",
+            "e_2": "Advance of Fourteenth Army",
+            "e_3": "Crossing of the Irrawaddy",
+            "e_4": "Building and maintaining the Ledo Road",
+            "e_5": "Amphibious right hook operations on the Arakan coast"
         },
         "organisations": {
-            "o_1": "South-East Asia Command",
-            "o_2": "Fourteenth Army",
-            "o_3": "15 Indian Corps",
-            "o_4": "3 Tactical Air Force",
-            "o_5": "Eastern Air Command"
+            "o_1": "Indian Pioneer Corps",
+            "o_2": "Civil Labour Control teams",
+            "o_3": "British Pioneer and Labour Staff",
+            "o_4": "American H.Q."
         }
     },
     "keywords": [
-        "Rangoon",
-        "advanced base",
-        "reconnaissance party",
-        "Air Forces",
-        "logistics",
-        "Port reopening"
+        "vehicles",
+        "labour",
+        "supply",
+        "operations",
+        "workshop"
     ],
     "themes": [
         "Military Operations",
-        "Logistics and Planning",
-        "Airfield Construction",
-        "Strategic Decisions"
+        "Logistics",
+        "Labour Management",
+        "Supply Chain"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_5"
         ],
-        "Logistics and Planning": [
-            "e_1",
-            "e_2"
+        "Logistics": [
+            "e_3",
+            "e_4"
         ],
-        "Airfield Construction": [
-            "e_3"
+        "Labour Management": [
+            "e_1"
         ],
-        "Strategic Decisions": [
-            "e_1",
+        "Supply Chain": [
+            "e_3",
             "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 1945",
+            "date": "1944-1945",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_9"
+            ],
+            "persons": [
+                "p_1",
+                "p_3"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_4"
+            ],
+            "eventSummary": "The Burma Campaign entails enormous administrative efforts with significant labour requirements and various military operations."
+        },
+        {
+            "event": "e_2",
+            "date": "March 1945",
+            "locations": [
+                "l_1"
             ],
             "persons": [
                 "p_1",
@@ -73,55 +98,52 @@
             ],
             "organisations": [
                 "o_1",
-                "o_2"
-            ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "Operation Stanza involves the strategic reopening of Rangoon Port, focusing on effective planning and execution against the backdrop of time constraints due to the impending monsoon."
-        },
-        {
-            "event": "e_2",
-            "date": "April 1945",
-            "locations": [
-                "l_1",
-                "l_2"
-            ],
-            "persons": [
-                "p_1",
-                "p_3"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2"
+                "o_3"
             ],
             "connectedEvents": [
                 "e_1",
-                "e_3"
+                "e_5"
             ],
-            "eventSummary": "The development of the Advanced Base is prioritized to ensure logistical efficiency and prompt operational capabilities as the military proceeds with operations in the region."
+            "eventSummary": "The Advance of Fourteenth Army involves significant logistical support and cooperation with Pioneer units."
         },
         {
             "event": "e_3",
-            "date": "1944-1945",
+            "date": "N/A",
             "locations": [
-                "l_1",
-                "l_5",
+                "l_2"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "The crossing of the Irrawaddy is a crucial tactical movement during the Burma Campaign."
+        },
+        {
+            "event": "e_4",
+            "date": "N/A",
+            "locations": [
                 "l_6"
             ],
-            "persons": [
-                "p_3"
-            ],
+            "persons": [],
             "organisations": [
-                "o_2",
-                "o_4"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_1",
-                "e_2"
+            "connectedEvents": [],
+            "eventSummary": "The construction and maintenance of the Ledo Road are vital for logistical support in the campaign."
+        },
+        {
+            "event": "e_5",
+            "date": "N/A",
+            "locations": [
+                "l_5"
             ],
-            "eventSummary": "Airfield Construction becomes essential to support military operations, resulting in extensive work to enhance capabilities for air supply amidst complex logistics in South-East Asia."
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The amphibious right hook operations on the Arakan coast involve intense military engagement and logistical coordination."
         }
     ]
 }

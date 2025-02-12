@@ -1,46 +1,46 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "C. J. Auchinleck",
-            "p_2": "General Cunningham"
+            "p_1": "Lt.-Gen. Sir Alan Cunningham",
+            "p_2": "General Wavell"
         },
         "locations": {
-            "l_1": "Middle East",
-            "l_2": "Iraq",
-            "l_3": "Tobruk",
-            "l_4": "Bardia",
-            "l_5": "Sollum",
-            "l_6": "Capuzzo",
-            "l_7": "Derna",
-            "l_8": "Bengasi",
-            "l_9": "El Agheila",
-            "l_10": "Sidi Omar Halfaya",
-            "l_11": "Sidi Barrani",
-            "l_12": "Trigh el Abd"
+            "l_1": "Tripolitania",
+            "l_2": "Middle East",
+            "l_3": "Iraq",
+            "l_4": "Bengasi",
+            "l_5": "Giarabub",
+            "l_6": "Gialo",
+            "l_7": "Eastern Cyrenaica",
+            "l_8": "Tobruk",
+            "l_9": "Matruh",
+            "l_10": "Capuzzo",
+            "l_11": "Bir Misheifa"
         },
         "events": {
-            "e_1": "Crusader Operation",
-            "e_2": "Siege of Tobruk"
+            "e_1": "Instruction issued on 17th October",
+            "e_2": "General Cunningham's appreciation and plan on 29th September",
+            "e_3": "Conference on 3rd October"
         },
         "organisations": {
-            "o_1": "M.E.F.",
-            "o_2": "30 Corps",
-            "o_3": "13 Corps"
+            "o_1": "Eighth Army",
+            "o_2": "Ninth Army",
+            "o_3": "British Troops in Egypt",
+            "o_4": "G.H.Q., M.E.F."
         }
     },
     "keywords": [
         "offensive",
-        "withdrawal",
-        "enemy forces",
+        "attack",
         "armoured forces",
-        "strategy",
-        "feints",
-        "deception"
+        "Tobruk",
+        "Bengasi",
+        "Cyrenaica"
     ],
     "themes": [
-        "Military Operations",
-        "Strategic Decisions",
-        "Defense Tactics"
+        "Military Planning",
+        "Strategic Movements",
+        "Resource Allocation"
     ],
     "topicModel": {
         "Military Operations": [
@@ -48,21 +48,18 @@
             "e_2"
         ],
         "Strategic Decisions": [
-            "e_1"
-        ],
-        "Defense Tactics": [
-            "e_2"
+            "e_2",
+            "e_3"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "30th October, 1941",
+            "date": "17th October 1941",
             "locations": [
-                "l_3",
-                "l_4",
-                "l_5",
-                "l_6"
+                "l_1",
+                "l_2",
+                "l_3"
             ],
             "persons": [
                 "p_1"
@@ -73,26 +70,49 @@
                 "o_3"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_2",
+                "e_3"
             ],
-            "eventSummary": "The Crusader Operation aims to destroy enemy armoured forces and involve a strategic offensive towards Tobruk, which necessitates bringing the enemy to a decisive battle on favorable ground."
+            "eventSummary": "On 17th October 1941, Lt.-Gen. Sir Alan Cunningham issues an Instruction emphasizing the need for immediate action to ensure the success of the planned offensive."
         },
         {
             "event": "e_2",
-            "date": "Not specified",
+            "date": "29th September 1941",
             "locations": [
-                "l_3"
+                "l_4",
+                "l_7"
             ],
             "persons": [
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_3"
+                "o_1",
+                "o_2",
+                "o_4"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_1",
+                "e_3"
             ],
-            "eventSummary": "The Siege of Tobruk is ongoing, and military strategists are considering the implications of withdrawing forces to maintain logistics while ensuring the operation's objectives are met."
+            "eventSummary": "On 29th September 1941, General Cunningham presents his appreciation and plan for military operations focused on an attack along the coast, preferring to concentrate efforts towards Tobruk."
+        },
+        {
+            "event": "e_3",
+            "date": "3rd October 1941",
+            "locations": [],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_4"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_2"
+            ],
+            "eventSummary": "On 3rd October 1941, a conference is held where military leaders approve land and air plans, finalizing preparations for the offensive strategy."
         }
     ]
 }

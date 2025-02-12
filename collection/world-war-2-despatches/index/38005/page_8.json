@@ -1,72 +1,95 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Captain V. A. C. Crutchley",
-            "p_2": "W. J. Whitworth"
+            "p_1": "Commander J. P. Wright",
+            "p_2": "Commander P. H. Hadow"
         },
         "locations": {
-            "l_1": "Skjel Fiord",
-            "l_2": "Rombaks Fiord",
-            "l_3": "LONDON"
+            "l_1": "Narvik",
+            "l_2": "Bjerkvik",
+            "l_3": "Herjangs Fiord",
+            "l_4": "Rombaks Fiord",
+            "l_5": "Ofot Fiord",
+            "l_6": "Hamnesholm Light"
         },
         "events": {
-            "e_1": "Operation involving ESKIMO and COSSACK",
-            "e_2": "Attack by Destroyer Flotilla"
+            "e_1": "Sinking of a submarine by WARSPITE's aircraft",
+            "e_2": "Indirect bombardment of enemy ships",
+            "e_3": "Attack on enemy destroyers at the head of the Fiord",
+            "e_4": "Withdrawal of naval forces from Narvik"
         },
         "organisations": {
-            "o_1": "Royal Navy",
-            "o_2": "Home Fleet"
+            "o_1": "British Royal Navy"
         }
     },
     "keywords": [
-        "British destroyers",
-        "German Naval Forces",
-        "casualties",
-        "tactical advantage",
-        "aircraft reports"
+        "torpedoes",
+        "aircraft",
+        "bombardment",
+        "destroyers",
+        "submarine",
+        "enemy forces",
+        "counter-attack"
     ],
     "themes": [
         "Military Operations",
-        "Battle Tactics",
-        "Naval Warfare"
+        "Naval Engagement",
+        "Strategic Decisions"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2"
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Battle Tactics": [
-            "e_1"
+        "Naval Engagement": [
+            "e_1",
+            "e_2",
+            "e_3"
         ],
-        "Naval Warfare": [
-            "e_2"
+        "Strategic Decisions": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "April 1940",
+            "date": "",
             "locations": [
-                "l_1"
+                "l_1",
+                "l_2"
             ],
             "persons": [
-                "p_1",
-                "p_2"
+                "p_1"
             ],
             "organisations": [
-                "o_1",
-                "o_2"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The safe return of ESKIMO and COSSACK to Skjel Fiord marks the conclusion of a successful operation, resulting in the sinking of several enemy vessels."
+            "connectedEvents": [],
+            "eventSummary": "WARSPITE's aircraft reports sinking a submarine anchored off Bjerkvik."
         },
         {
             "event": "e_2",
-            "date": "April 1940",
+            "date": "",
             "locations": [
-                "l_2"
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "Indirect bombardment preparations for enemy ships at Narvik are made but not carried out after the enemy forces are dealt with."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_4"
             ],
             "persons": [],
             "organisations": [
@@ -75,7 +98,20 @@
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "The attack by the Destroyer Flotilla on April 10th effectively eliminates enemy forces, showcasing tactical superiority."
+            "eventSummary": "HERO and ICARUS open fire on the enemy destroyers at the head of the Fiord."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A decision is made to withdraw naval forces from Narvik due to potential risks."
         }
     ]
 }

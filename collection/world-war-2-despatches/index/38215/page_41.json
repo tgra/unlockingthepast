@@ -1,94 +1,64 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier Duncan",
-            "p_2": "Lt.-Col. Anderson A.I.F."
+            "p_1": "WomEN aND CHILDREN",
+            "p_2": "Eurasian",
+            "p_3": "Asiatic",
+            "p_4": "Japanese"
         },
         "locations": {
-            "l_1": "Segamat",
-            "l_2": "Muar",
-            "l_3": "Parit Sulong",
-            "l_4": "Yong Peng",
-            "l_5": "Batu Anam",
-            "l_6": "Tenang",
-            "l_7": "Kampong Bahru",
-            "l_8": "Labus",
-            "l_9": "Paloh",
-            "l_10": "Kluang"
+            "l_1": "Malaya",
+            "l_2": "Home",
+            "l_3": "Far East"
         },
         "events": {
-            "e_1": "Battle of Muar",
-            "e_2": "Withdrawal from Segamat"
+            "e_1": "Scorched Earth Policy",
+            "e_2": "evacuation of women and children from Malaya",
+            "e_3": "outbreak of hostilities"
         },
         "organisations": {
-            "o_1": "45 Indian Brigade",
-            "o_2": "9 Indian Division",
-            "o_3": "247 Australian Brigade Group",
-            "o_4": "Australian troops",
-            "o_5": "Indian troops",
-            "o_6": "Japanese Imperial Guards"
+            "o_1": "Royal Air Force",
+            "o_2": "Passive Air Defence Organization",
+            "o_3": "War Council",
+            "o_4": "British Empire"
         }
     },
     "keywords": [
-        "battle",
-        "withdrawal",
-        "bayonet charge",
-        "counter-attack",
-        "river crossing",
-        "tanks",
-        "air support"
+        "Scorched Earth Policy",
+        "evacuation",
+        "military",
+        "morale",
+        "British prestige"
     ],
     "themes": [
         "Military Operations",
+        "Civilians in War",
         "Strategic Decisions",
-        "Courage and Fortitude",
-        "Humanitarian Concerns"
+        "Diplomacy"
     ],
     "topicModel": {
         "Military Operations": [
+            "e_1"
+        ],
+        "Civilians in War": [
+            "e_2",
+            "e_3"
+        ],
+        "Strategic Decisions": [
             "e_1",
             "e_2"
         ],
-        "Strategic Decisions": [
-            "e_1"
-        ],
-        "Courage and Fortitude": [
-            "e_1"
-        ],
-        "Humanitarian Concerns": [
+        "Diplomacy": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "21st January",
-            "locations": [
-                "l_3",
-                "l_1"
-            ],
-            "persons": [
-                "p_1",
-                "p_2"
-            ],
-            "organisations": [
-                "o_1",
-                "o_2",
-                "o_4",
-                "o_5",
-                "o_6"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "In the Battle of Muar, fierce fighting occurs as the Muar Force tries to take the Parit Sulong bridge held by the Japanese, leading to significant losses and strategic withdrawals."
-        },
-        {
-            "event": "e_2",
-            "date": "18th January - 22nd January",
+            "date": "",
             "locations": [
                 "l_1",
-                "l_6"
+                "l_3"
             ],
             "persons": [],
             "organisations": [
@@ -96,9 +66,38 @@
                 "o_3"
             ],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "The Withdrawal from Segamat sees the 9 Indian Division and 247 Australian Brigade Group retreat under enemy pressure, destroying bridges to prevent enemy advancement."
+            "eventSummary": "The Scorched Earth Policy is enforced as troops withdraw, impacting both military operations and civilian morale."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_1",
+                "e_3"
+            ],
+            "eventSummary": "The War Council considers the evacuation of women and children from Malaya amid the ongoing conflict."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "The outbreak of hostilities raises concerns about the safety and evacuation of civilians in Malaya."
         }
     ]
 }

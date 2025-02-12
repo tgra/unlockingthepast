@@ -1,125 +1,90 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Brigadier G. C. Wickins"
+            "p_1": "General Marshall",
+            "p_2": "Brigadier J. A. E. Burls",
+            "p_3": "Lieut.- Colonel H. J.'R: J. Radcliffe"
         },
         "locations": {
-            "l_1": "London",
-            "l_2": "Solent",
-            "l_3": "Bristol",
-            "l_4": "Isle of Wight",
-            "l_5": "Redhill",
-            "l_6": "Maidstone",
-            "l_7": "Shaftesbury",
-            "l_8": "Shepton Mallet",
-            "l_9": "north-west Germany"
+            "l_1": "America",
+            "l_2": "London",
+            "l_3": "Cuckmere Haven",
+            "l_4": "St. Margaret's Bay",
+            "l_5": "Thames Estuary"
         },
         "events": {
-            "e_1": "Deployment of Heavy anti-aircraft guns",
-            "e_2": "Attacks by Robot Weapons (DIVER)",
-            "e_3": "Invasion Ports Protection Planning",
-            "e_4": "First DIVER missile attacks initiation"
+            "e_1": "Meeting of Fighter Command on 13th July",
+            "e_2": "Move to the coast on 14th July 1944"
         },
         "organisations": {
-            "o_1": "U.S. Army",
-            "o_2": "U.S. Air Force",
-            "o_3": "Royal Navy",
-            "o_4": "Royal Air Force"
+            "o_1": "Fighter Command",
+            "o_2": "R.E.M.E."
         }
     },
     "keywords": [
-        "anti-aircraft troops",
-        "exchange of ideas",
-        "German Intelligence",
-        "suicidal attack",
-        "missiles",
-        "protection plans",
-        "DIVER missile"
+        "Anti-Aircraft",
+        "mobile guns",
+        "static guns",
+        "radar",
+        "coastal deployment"
     ],
     "themes": [
-        "Military Operations",
-        "Defensive Strategies",
-        "World War II"
+        "Military Strategy",
+        "Technology in Warfare",
+        "Defensive Operations"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
-            "e_2",
-            "e_3",
-            "e_4"
+            "e_2"
         ],
-        "Defensive Strategies": [
-            "e_3",
-            "e_1"
+        "Technology in Warfare": [
+            "e_2"
         ],
-        "World War II": [
-            "e_2",
-            "e_4"
+        "Defensive Operations": [
+            "e_1",
+            "e_2"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Summer 1944",
+            "date": "13th July",
             "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
+                "l_1"
             ],
             "persons": [
-                "p_1"
+                "p_1",
+                "p_3"
             ],
             "organisations": [
-                "o_1",
-                "o_2",
-                "o_3",
-                "o_4"
+                "o_1"
             ],
-            "connectedEvents": [
-                "e_3"
-            ],
-            "eventSummary": "The deployment of heavy anti-aircraft guns in London and surrounding regions is executed to protect against potential aerial threats."
-        },
-        {
-            "event": "e_2",
-            "date": "12th/13th June 1944",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "The first missiles, known by the code name DIVER, arrive in London, marking the start of a new phase of aerial threats."
-        },
-        {
-            "event": "e_3",
-            "date": "March 1945",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [],
-            "connectedEvents": [
-                "e_1"
-            ],
-            "eventSummary": "Plans are made to protect the invasion ports from potential aerial attacks as resources are allocated toward anti-aircraft defenses."
-        },
-        {
-            "event": "e_4",
-            "date": "7th December 1943",
-            "locations": [
-                "l_1",
-                "l_2",
-                "l_3"
-            ],
-            "persons": [],
-            "organisations": [],
             "connectedEvents": [
                 "e_2"
             ],
-            "eventSummary": "The first indication of attacks by pilotless aircraft is received, prompting immediate protective measures for London and other key locations."
+            "eventSummary": "On 13th July, Fighter Command holds a meeting to discuss the movement of guns to the coast, recognizing the limited capability of existing setups against incoming threats."
+        },
+        {
+            "event": "e_2",
+            "date": "14th July 1944",
+            "locations": [
+                "l_3",
+                "l_4",
+                "l_5"
+            ],
+            "persons": [
+                "p_1",
+                "p_2"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "On 14th July 1944, the deployment of static guns along the coast is executed, involving 23,000 personnel and significant military resources to enhance defense against enemy attacks."
         }
     ]
 }

@@ -1,80 +1,96 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Sir Trafford Leigh-Mallory",
+            "p_2": "Major-General William O. Butler",
+            "p_3": "Major-General Hoyt S. Vandenberg",
+            "p_4": "Major-General Ralph Royce"
+        },
         "locations": {
-            "l_1": "United Kingdom",
-            "l_2": "Mediterranean",
-            "l_3": "river crossings"
+            "l_1": "N.W. Europe",
+            "l_2": "United Kingdom",
+            "l_3": "Great Britain"
         },
         "events": {
-            "e_1": "Battle of Britain",
-            "e_2": "Operation Neptune"
+            "e_1": "Air Operations by the Allied Expeditionary Air Force",
+            "e_2": "Disbandment of A.E.A.F."
         },
         "organisations": {
-            "o_1": "Royal Air Force",
-            "o_2": "Fleet Air Arm",
-            "o_3": "Strategic Bomber Forces",
-            "o_4": "S.O.E."
+            "o_1": "Allied Expeditionary Air Force",
+            "o_2": "United States Eighth Air Force",
+            "o_3": "Royal Air Force Bomber Command",
+            "o_4": "Royal Air Force Coastal Command",
+            "o_5": "Combined Chiefs of Staff"
         }
     },
     "keywords": [
-        "air forces",
-        "bombing",
-        "naval bombardment",
-        "anti-aircraft",
-        "reconnaissance",
-        "friendly fire"
+        "Air Operations",
+        "Allied Expeditionary Air Force",
+        "Strategic Air Forces",
+        "Royal Air Force",
+        "United States Air Force"
     ],
     "themes": [
-        "Air Operations",
-        "Naval Engagement",
-        "Friendly Fire Incidents",
-        "Operational Challenges"
+        "Military Operations",
+        "Command and Control",
+        "Air Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2"
         ],
-        "Air Defense Coordination": [
-            "e_2"
+        "Command and Control": [
+            "e_1"
         ],
-        "Friendly Fire Issues": [
+        "Air Warfare": [
             "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "1940-1941",
-            "locations": [
-                "l_1"
-            ],
-            "persons": [],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "The Battle of Britain takes place, marked by significant air combat between the Royal Air Force and the German Luftwaffe."
-        },
-        {
-            "event": "e_2",
-            "date": "1944",
+            "date": "15 November, 1943 to 30 September, 1944",
             "locations": [
                 "l_1",
-                "l_2"
+                "l_2",
+                "l_3"
             ],
-            "persons": [],
+            "persons": [
+                "p_1",
+                "p_2",
+                "p_3",
+                "p_4"
+            ],
             "organisations": [
                 "o_1",
                 "o_2",
                 "o_3",
-                "o_4"
+                "o_4",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_2"
+            ],
+            "eventSummary": "Air Operations by the Allied Expeditionary Air Force occur from 15th November, 1943 to 30th September, 1944, covering strategic air support for the assault on Europe."
+        },
+        {
+            "event": "e_2",
+            "date": "14 October, 1944",
+            "locations": [
+                "l_2"
+            ],
+            "persons": [
+                "p_1",
+                "p_4"
+            ],
+            "organisations": [
+                "o_1"
             ],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Operation Neptune is launched as part of the larger D-Day invasion, requiring coordination between air and naval forces for effective execution."
+            "eventSummary": "The disbandment of A.E.A.F. occurs on 14th October, 1944, marking the conclusion of the air operations conducted under its command."
         }
     ]
 }

@@ -1,84 +1,130 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Air Vice-Marshal K. R. Park"
+        },
         "locations": {
-            "l_1": "Speke",
-            "l_2": "Ternhill",
-            "l_3": "Pembrey",
-            "l_4": "Bibury",
-            "l_5": "Filton",
-            "l_6": "Middle Wallop",
-            "l_7": "Boscombe Down",
-            "l_8": "Exeter",
-            "l_9": "St. Eval",
-            "l_10": "Roborough"
+            "l_1": "London",
+            "l_2": "Calais",
+            "l_3": "Southampton",
+            "l_4": "Portland",
+            "l_5": "Piccadilly Circus",
+            "l_6": "Duxford",
+            "l_7": "Isle of Wight",
+            "l_8": "Cherbourg",
+            "l_9": "Manston",
+            "l_10": "Hawkinge",
+            "l_11": "Lympne"
         },
         "events": {
-            "e_1": "Air Combat Operations July-October 1940",
-            "e_2": "Ammunition Expenditure July-September 1940"
+            "e_1": "The Battle",
+            "e_2": "Attacks on Convoys",
+            "e_3": "Fighter escorts",
+            "e_4": "Damage to Radio Location Stations"
         },
         "organisations": {
-            "o_1": "Fighter Command",
-            "o_2": "Anti-Aircraft Command"
+            "o_1": "No. 11 Group",
+            "o_2": "No. 10 Group",
+            "o_3": "No. 12 Group"
         }
     },
     "keywords": [
-        "Aircraft",
-        "Ammunition",
-        "Night Activity",
-        "Day Activity",
-        "Fighter Command"
+        "Battle",
+        "Fighters",
+        "Bombers",
+        "Convoys",
+        "Tactics",
+        "Aerodromes",
+        "Casualties"
     ],
     "themes": [
         "Military Operations",
-        "Ammunition Usage",
-        "Air Combat"
+        "Tactical Adjustments",
+        "Damage Assessment"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_2",
+            "e_3",
+            "e_4"
         ],
-        "Ammunition Usage": [
-            "e_2"
+        "Tactical Adjustments": [
+            "e_1",
+            "e_3"
+        ],
+        "Damage Assessment": [
+            "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "July-October 1940",
+            "date": "",
             "locations": [
                 "l_1",
                 "l_2",
                 "l_3",
-                "l_4",
-                "l_5",
-                "l_6",
-                "l_7",
-                "l_8",
-                "l_9",
-                "l_10"
+                "l_4"
+            ],
+            "persons": [
+                "p_1"
+            ],
+            "organisations": [
+                "o_1",
+                "o_2",
+                "o_3"
+            ],
+            "connectedEvents": [
+                "e_2",
+                "e_3",
+                "e_4"
+            ],
+            "eventSummary": "The Battle involves multiple phases including attacks on convoys and key locations, emphasizing the tactical versatility of German forces."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_1",
+                "l_8"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [
+                "e_1"
+            ],
+            "eventSummary": "Attacks on Convoys occur during the first phase of The Battle, resulting in minimal physical damage."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_1"
             ],
             "persons": [],
             "organisations": [
                 "o_1"
             ],
             "connectedEvents": [
-                "e_2"
+                "e_1"
             ],
-            "eventSummary": "Air combat operations take place, including various aircraft types. The conflict leads to significant losses on both sides."
+            "eventSummary": "Fighter escorts have to adapt to various attacks throughout The Battle, including their positioning relative to bombers."
         },
         {
-            "event": "e_2",
-            "date": "July-September 1940",
-            "locations": [],
-            "persons": [],
-            "organisations": [
-                "o_2"
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_9",
+                "l_10",
+                "l_11"
             ],
+            "persons": [],
+            "organisations": [],
             "connectedEvents": [
                 "e_1"
             ],
-            "eventSummary": "Ammunition expenditure is recorded for the months, detailing the quantities used for both day and night operations."
+            "eventSummary": "Damage to Radio Location Stations in the South of England is assessed, highlighting the resilience of the personnel during attacks."
         }
     ]
 }

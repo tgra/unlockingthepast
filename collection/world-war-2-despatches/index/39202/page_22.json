@@ -1,122 +1,135 @@
 {
     "namedEntities": {
         "persons": {
-            "p_1": "Air Vice-Marshal Bandon",
-            "p_2": "William MacClurry"
+            "p_1": "Captain M. L. Power, C.B.E., D.S.O."
         },
         "locations": {
-            "l_1": "Kelanang airfield",
-            "l_2": "Port Dickson",
-            "l_3": "Morib Beach",
-            "l_4": "Bangkok",
-            "l_5": "Rangoon",
-            "l_6": "Singapore",
-            "l_7": "Saigon",
-            "l_8": "Phu My",
-            "l_9": "French Indo-China"
+            "l_1": "Rangoon",
+            "l_2": "Straits of Malacca",
+            "l_3": "Batavia",
+            "l_4": "Singapore",
+            "l_5": "Northern Sumatra",
+            "l_6": "Northern Malaya",
+            "l_7": "Sonchkla",
+            "l_8": "Chumborn",
+            "l_9": "Port Swettenham"
         },
         "events": {
-            "e_1": "Landing at Port Dickson",
-            "e_2": "Landings at Morib",
-            "e_3": "Occupation of Siam",
-            "e_4": "Entry into Saigon"
+            "e_1": "Destruction of Japanese heavy cruiser HAGURO",
+            "e_2": "Mine-laying operations",
+            "e_3": "Operation Zipper",
+            "e_4": "Operations Birdcage",
+            "e_5": "Operations Mastiff"
         },
         "organisations": {
-            "o_1": "Siamese Air Force",
-            "o_2": "R.A.F.",
-            "o_3": "Allied Forces"
+            "o_1": "HM Naval forces",
+            "o_2": "Nos. 203 and 354 Squadrons",
+            "o_3": "160 Squadron",
+            "o_4": "No. 222 Group",
+            "o_5": "G.R. Air Forces"
         }
     },
     "keywords": [
-        "Amphibious Operations",
-        "Allied Forces",
-        "Japanese Air Force",
-        "Siam",
-        "Cooperation",
-        "Evacuation"
+        "Sunderlands",
+        "Liberator aircraft",
+        "mine-laying",
+        "anti-shipping",
+        "reconnaissance",
+        "U-boats",
+        "Allied prisoners-of-war"
     ],
     "themes": [
         "Military Operations",
-        "Cooperation",
-        "Occupation",
-        "Reception by Local Populace"
+        "Aerial Warfare",
+        "Naval Warfare"
     ],
     "topicModel": {
         "Military Operations": [
             "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4",
+            "e_5"
         ],
-        "Cooperation": [
-            "e_3"
+        "Aerial Warfare": [
+            "e_1",
+            "e_2"
         ],
-        "Occupation": [
-            "e_3"
-        ],
-        "Reception by Local Populace": [
-            "e_4"
+        "Naval Warfare": [
+            "e_1"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "September 10th",
+            "date": "May 16th, 1945",
             "locations": [
-                "l_2",
-                "l_3"
+                "l_2"
             ],
             "persons": [
                 "p_1"
             ],
             "organisations": [
-                "o_3"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The landing at Port Dickson proceeds as planned with no significant incidents."
+            "connectedEvents": [],
+            "eventSummary": "On May 16th, 1945, the Japanese heavy cruiser HAGURO is located and eventually destroyed by HM Naval forces in the Straits of Malacca."
         },
         {
             "event": "e_2",
-            "date": "D-plus-3, September 11th",
+            "date": "January 21st, 1945 - May 24th, 1945",
             "locations": [
-                "l_3"
+                "l_5",
+                "l_6",
+                "l_7",
+                "l_8",
+                "l_4"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_3",
+                "o_5"
+            ],
+            "connectedEvents": [
+                "e_3"
+            ],
+            "eventSummary": "From January 21st to May 24th, 1945, 160 Squadron conducts mine-laying operations as part of the anti-shipping campaign across Northern Sumatra and Northern Malaya."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_4"
             ],
             "persons": [],
             "organisations": [],
             "connectedEvents": [
-                "e_1"
+                "e_2"
             ],
-            "eventSummary": "The landings at Morib are less successful due to difficult landing conditions."
-        },
-        {
-            "event": "e_3",
-            "date": "December 8th, 1941",
-            "locations": [
-                "l_4"
-            ],
-            "persons": [
-                "p_2"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [],
-            "eventSummary": "Siamese Air Force attempts to resist Japanese invasion but is overwhelmed."
+            "eventSummary": "Operation Zipper is planned as the Allied landings approach the west coast of Malaya."
         },
         {
             "event": "e_4",
-            "date": "September 12th",
-            "locations": [
-                "l_7"
-            ],
+            "date": "",
+            "locations": [],
             "persons": [],
             "organisations": [
-                "o_2",
-                "o_3"
+                "o_4"
             ],
             "connectedEvents": [],
-            "eventSummary": "The main R.A.F. party receives a warm welcome in Saigon from French and Annamese."
+            "eventSummary": "No. 222 Group plays a significant role in the coordination and execution of Operations Birdcage."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [],
+            "persons": [],
+            "organisations": [
+                "o_4"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "No. 222 Group contributes to the Operations Mastiff in response to the evolving warfare situation."
         }
     ]
 }

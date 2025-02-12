@@ -1,132 +1,112 @@
 {
     "namedEntities": {
-        "persons": {
-            "p_1": "I.W.T.",
-            "p_2": "Royal Navy"
-        },
+        "persons": {},
         "locations": {
-            "l_1": "Cox's Bazaar",
-            "l_2": "Maungdaw",
-            "l_3": "Akyab",
-            "l_4": "Kyaukpyu",
-            "l_5": "Chittagong",
-            "l_6": "Kalapanzin Valley",
-            "l_7": "Ramree Island",
-            "l_8": "Pathangar",
-            "l_9": "Comilla",
-            "l_10": "India",
-            "l_11": "Eastern Bengal Railway"
+            "l_1": "India",
+            "l_2": "Calcutta",
+            "l_3": "Imphal",
+            "l_4": "South-East Asia"
         },
         "events": {
-            "e_1": "15 Indian Corps Offensive",
-            "e_2": "Capture of Akyab",
-            "e_3": "Landing on the Myebon Peninsula",
-            "e_4": "Landing at Kyaukpyu",
-            "e_5": "Ramree operation"
+            "e_1": "Dracula operation",
+            "e_2": "Christmas mails distribution",
+            "e_3": "January 1945 Salvage operations",
+            "e_4": "March 1945 Equipment deficiencies report"
         },
         "organisations": {
-            "o_1": "53 Brigade (25 Indian Division)",
-            "o_2": "81 (West African) Division",
-            "o_3": "Headquarters L. of C. Command"
+            "o_1": "Allied Land Forces, South-East Asia",
+            "o_2": "India Command",
+            "o_3": "Base Post Office",
+            "o_4": "Ordnance"
         }
     },
     "keywords": [
-        "inland water transport",
-        "military operations",
-        "logistics",
-        "air supply",
-        "construction"
+        "animal transport",
+        "Remount Service",
+        "veterinary",
+        "field postal system",
+        "Canteen Services",
+        "salvage",
+        "equipment deficiencies"
     ],
     "themes": [
         "Military Operations",
         "Logistics",
-        "Supply Chain Management"
+        "Supply Chain Management",
+        "Morale Maintenance"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1",
-            "e_2",
-            "e_4",
-            "e_5"
+            "e_1"
         ],
         "Logistics": [
-            "e_1",
             "e_2",
-            "e_3"
+            "e_3",
+            "e_4"
+        ],
+        "Morale Maintenance": [
+            "e_2"
         ],
         "Supply Chain Management": [
+            "e_3",
             "e_4"
         ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "December",
+            "date": null,
             "locations": [
-                "l_1",
-                "l_2"
+                "l_1"
             ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
-                "o_1"
+                "o_1",
+                "o_2"
             ],
-            "connectedEvents": [
-                "e_2",
-                "e_3"
-            ],
-            "eventSummary": "The 15 Indian Corps Offensive is launched in December, utilizing the smaller Arakan ports for increased operations."
+            "connectedEvents": [],
+            "eventSummary": "The Dracula operation involves the requirement to re-equip several divisions quickly."
         },
         {
             "event": "e_2",
-            "date": "3rd January",
+            "date": "December 1944",
             "locations": [
-                "l_3"
-            ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_4"
-            ],
-            "eventSummary": "Akyab is captured through a river-crossing operation on the 3rd of January."
-        },
-        {
-            "event": "e_4",
-            "date": "12th January",
-            "locations": [
+                "l_3",
                 "l_4"
             ],
-            "persons": [
-                "p_1"
-            ],
-            "organisations": [
-                "o_1"
-            ],
-            "connectedEvents": [
-                "e_2"
-            ],
-            "eventSummary": "The landing at Kyaukpyu is mounted shortly after the capture of Akyab."
-        },
-        {
-            "event": "e_5",
-            "date": "Mid-March",
-            "locations": [
-                "l_8",
-                "l_9"
-            ],
-            "persons": [
-                "p_1"
-            ],
+            "persons": [],
             "organisations": [
                 "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "The Ramree operation unfolds, highlighting the use of logistical support and coordination for successful military engagement."
+            "eventSummary": "In December 1944, heavy Christmas mails are distributed without delays due to increased postal efforts."
+        },
+        {
+            "event": "e_3",
+            "date": "January 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The Salvage service begins large-scale recovery operations concerning vehicles and materials."
+        },
+        {
+            "event": "e_4",
+            "date": "March 1945",
+            "locations": [
+                "l_1"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_1",
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "A report details significant deficiencies in equipment for military operations in March 1945."
         }
     ]
 }

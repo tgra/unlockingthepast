@@ -1,67 +1,172 @@
 {
     "namedEntities": {
-        "persons": {},
+        "persons": {
+            "p_1": "Lieutenant-General Gott",
+            "p_2": "Lieutenant-General Norrie",
+            "p_3": "Admiral Cunningham",
+            "p_4": "Lieutenant-General Sir William Dobbie"
+        },
         "locations": {
-            "l_1": "Alexandria",
-            "l_2": "Kafr Dawud",
-            "l_3": "Suez Canal",
-            "l_4": "Red Sea",
-            "l_5": "Cairo",
-            "l_6": "El Alamein",
-            "l_7": "Wadi Natrun",
-            "l_8": "Gebel Abu Rauwash",
-            "l_9": "Gebel el Khashab",
-            "l_10": "Gebel Qattrani",
-            "l_11": "Siwa Oasis",
-            "l_12": "Mena",
-            "l_13": "Nile Valley",
-            "l_14": "Gulf of Suez"
+            "l_1": "Acroma",
+            "l_2": "El Adem",
+            "l_3": "Bir Gubi",
+            "l_4": "Giarabub",
+            "l_5": "Capuzzo",
+            "l_6": "Cyrenaica",
+            "l_7": "Malta",
+            "l_8": "Iraq",
+            "l_9": "India",
+            "l_10": "Ceylon",
+            "l_11": "Tripoli",
+            "l_12": "Mosul",
+            "l_13": "Central Iraq",
+            "l_14": "Southern Syria",
+            "l_15": "Dizful",
+            "l_16": "Paitak",
+            "l_17": "Lesser Zab River",
+            "l_18": "Abu Kemal",
+            "l_19": "Euphrates",
+            "l_20": "Damascus",
+            "l_21": "Ras Baalbek"
         },
         "events": {
-            "e_1": "Battle of El Alamein"
+            "e_1": "Libyan Offensive",
+            "e_2": "Malta's Supply Situation",
+            "e_3": "Western Front Events",
+            "e_4": "Defensive Policy in Libya",
+            "e_5": "Evacuation of the 70th Division",
+            "e_6": "Operation Instruction No. 112",
+            "e_7": "Enemy Convoy Reaches Tripoli"
         },
         "organisations": {
-            "o_1": "Deltaforce",
-            "o_2": "B.T.E.",
-            "o_3": "Eighth Army"
+            "o_1": "Middle East Defence Committee",
+            "o_2": "Imperial General Staff",
+            "o_3": "G.H.Q., M.E.F."
         }
     },
     "keywords": [
-        "Reinforcements",
-        "Military Operation",
-        "Supply Bases",
-        "Internal Security",
-        "Water Supply",
-        "Tactical H.Q."
+        "military",
+        "supply",
+        "convoy",
+        "defensive",
+        "offensive",
+        "air dominance"
     ],
     "themes": [
         "Military Operations",
-        "Strategic Decisions",
-        "Internal Security"
+        "Supply Chain Issues",
+        "Strategic Withdrawals",
+        "Defensive Strategies"
     ],
     "topicModel": {
         "Military Operations": [
-            "e_1"
+            "e_1",
+            "e_4",
+            "e_7"
         ],
-        "Strategic Decisions": [],
-        "Internal Security": []
+        "Supply Chain Issues": [
+            "e_2"
+        ],
+        "Strategic Withdrawals": [
+            "e_5"
+        ],
+        "Defensive Strategies": [
+            "e_3",
+            "e_6"
+        ]
     },
     "eventConnections": [
         {
             "event": "e_1",
-            "date": "Current phase",
+            "date": "",
             "locations": [
-                "l_1",
                 "l_6"
             ],
             "persons": [],
             "organisations": [
-                "o_1",
+                "o_1"
+            ],
+            "connectedEvents": [
+                "e_4",
+                "e_2"
+            ],
+            "eventSummary": "The Libyan Offensive is recognized as vital, with a significant focus on maintaining positions in Cyrenaica."
+        },
+        {
+            "event": "e_2",
+            "date": "",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [
+                "p_4"
+            ],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The supply situation in Malta becomes precarious, with warnings from Governor Lieutenant-General Sir William Dobbie."
+        },
+        {
+            "event": "e_3",
+            "date": "",
+            "locations": [
+                "l_12",
+                "l_13",
+                "l_14"
+            ],
+            "persons": [],
+            "organisations": [
                 "o_2",
+                "o_1"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The strategic decisions regarding the Northern Front reflect a shift towards defensive measures in light of troop withdrawals."
+        },
+        {
+            "event": "e_4",
+            "date": "",
+            "locations": [
+                "l_7"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "The overarching strategy shifts toward a defensive policy in Libya due to changing troop dynamics."
+        },
+        {
+            "event": "e_5",
+            "date": "",
+            "locations": [
+                "l_9",
+                "l_10"
+            ],
+            "persons": [],
+            "organisations": [
+                "o_2"
+            ],
+            "connectedEvents": [],
+            "eventSummary": "The evacuation of the 70th Division for deployment to India and Ceylon is confirmed amid changing priorities."
+        },
+        {
+            "event": "e_6",
+            "date": "23rd Feb. 1942",
+            "locations": [],
+            "persons": [],
+            "organisations": [
                 "o_3"
             ],
             "connectedEvents": [],
-            "eventSummary": "The Battle of El Alamein is prepared to be fought according to orders, with a focus on securing supply bases and internal security measures."
+            "eventSummary": "Operation Instruction No. 112 establishes revised directives for the defense in light of the evolving situation."
+        },
+        {
+            "event": "e_7",
+            "date": "",
+            "locations": [
+                "l_11"
+            ],
+            "persons": [],
+            "organisations": [],
+            "connectedEvents": [],
+            "eventSummary": "An enemy convoy arrives in Tripoli, raising alarms about potential threats to British positions in Libya."
         }
     ]
 }

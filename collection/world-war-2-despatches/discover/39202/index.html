@@ -319,14 +319,23 @@ function displayData(data) {
 
         let section = document.createElement("div");
         section.innerHTML = `<h3>${title}</h3><ul>` +
-            Object.values(sortedItems).map(item => `<li><a href="../../api/v1/${title.toLowerCase()}/${item.toLowerCase().replace(/\s+/g, "-")}">${item}</a></li>`).join("") + "</ul>";
+            Object.values(sortedItems).map(item => `<li>${item}</li>`).join("") + "</ul>";
+        container.appendChild(section);
+    }
+
+     function createListLinked(title, items) {
+        let sortedItems = Array.isArray(items) ? [...items].sort() : Object.values(items).sort();
+
+        let section = document.createElement("div");
+        section.innerHTML = `<h3>${title}</h3><ul>` +
+            Object.values(sortedItems).map(item => `<li><a href="/id/${item.toLowerCase().replace(/\s+/g, "-").replace(/\./g, "")}">${item}</a></li>`).join("") + "</ul>";
         container.appendChild(section);
     }
 
     createList("Themes", data.themes);
     createList("Keywords", data.keywords);
     createList("Events", data.namedEntities.events);
-    createList("Persons", data.namedEntities.persons);
+    createListLinked("Persons", data.namedEntities.persons);
     createList("Organisations", data.namedEntities.organisations);
     createList("Locations", data.namedEntities.locations);
 }

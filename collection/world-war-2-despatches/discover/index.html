@@ -823,8 +823,8 @@
     const today = new Date();
     const month = String(today.getMonth() + 1).padStart(2, '0');
     const day = String(today.getDate()).padStart(2, '0');
-    const apiUrl = `/api/v1/${month}/${day}/index.json`;
-    //const apiUrl = `/api/v1/04/06/index.json`;
+    const apiUrl = `/collection/world-war-2-despatches/api/v1/on-this-day/${month}/${day}/index.json`;
+   
     function getFormattedDate() {
         const dayNum = today.getDate();
         const monthName = today.toLocaleString('en-GB', { month: 'long' });
@@ -854,6 +854,7 @@
                 eventsList.innerHTML = "<p>No events found for today.</p>";
                 return;
             }
+            
 
             eventsList.innerHTML = "<h5>On This Day - " +  getFormattedDate() + " </h5>";
             
@@ -861,6 +862,11 @@
 
             const accordion = document.createElement("div");
             accordion.classList.add("accordion");
+
+
+
+            // 1. Sort events by year (descending: latest first)
+            data.events.sort((a, b) => a.year - b.year);
 
             data.events.forEach((event, index) => {
                 const collapseId = `collapse${index}`;

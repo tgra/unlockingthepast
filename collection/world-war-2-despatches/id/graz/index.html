@@ -41,7 +41,11 @@
 
 
     <title>Graz</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,7 +84,7 @@
                 </nav>
         <h1 class="mb-4 text-center">Graz</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>The part played by the Allied forces in the final defeat of the enemy in the Mediterranean theatre, March to   May 1945</strong></p>
@@ -88,8 +92,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Graz" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/16-07-06-Rathaus Graz Turmblick-RR2 0275.jpg" alt="Graz"/></div>
+         <div>
+            <p>Country: Austria</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([47.066666666667, 15.433333333333], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([47.066666666667, 15.433333333333]).addTo(map)
+            .bindPopup("Graz")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

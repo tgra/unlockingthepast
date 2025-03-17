@@ -41,7 +41,11 @@
 
 
     <title>Kyaukpyu</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,16 +84,44 @@
                 </nav>
         <h1 class="mb-4 text-center">Kyaukpyu</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Operations in Burma from 12 November 1944 to 15 August 1945</strong></p>
-                    <p class="mb-0"><strong>Issue:39195:</strong> <a href="../../discover/39195/index.html#36" class="link-primary">36</a>, <a href="../../discover/39195/index.html#60" class="link-primary">60</a></p>
+                    <p class="mb-0"><strong>Issue:39195:</strong> <a href="../../discover/39195/index.html#35" class="link-primary">35</a>, <a href="../../discover/39195/index.html#36" class="link-primary">36</a>, <a href="../../discover/39195/index.html#38" class="link-primary">38</a>, <a href="../../discover/39195/index.html#48" class="link-primary">48</a>, <a href="../../discover/39195/index.html#53" class="link-primary">53</a>, <a href="../../discover/39195/index.html#58" class="link-primary">58</a>, <a href="../../discover/39195/index.html#59" class="link-primary">59</a>, <a href="../../discover/39195/index.html#60" class="link-primary">60</a>, <a href="../../discover/39195/index.html#61" class="link-primary">61</a>, <a href="../../discover/39195/index.html#63" class="link-primary">63</a>, <a href="../../discover/39195/index.html#65" class="link-primary">65</a>, <a href="../../discover/39195/index.html#68" class="link-primary">68</a>, <a href="../../discover/39195/index.html#76" class="link-primary">76</a>, <a href="../../discover/39195/index.html#82" class="link-primary">82</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
+                <p class="mb-0"><strong>Naval operations in Ramree Island area 19 January to 22 February 1945</strong></p>
+                    <p class="mb-0"><strong>Issue:38269:</strong> <a href="../../discover/38269/index.html#1" class="link-primary">1</a>, <a href="../../discover/38269/index.html#2" class="link-primary">2</a>, <a href="../../discover/38269/index.html#4" class="link-primary">4</a></p>
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Kyaukphyu" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kyaukphyu Airport.jpg" alt="Kyaukpyu"/></div>
+         <div>
+            <p>Country: Myanmar</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([19.43333333, 93.55], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([19.43333333, 93.55]).addTo(map)
+            .bindPopup("Kyaukpyu")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

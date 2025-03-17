@@ -40,8 +40,12 @@
         
 
 
-    <title>Maan</title>
-    
+    <title>Ma'an</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -75,12 +79,12 @@
                           <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item"><a href="../../discover">World War 2 Despatches</a></li>
                         <li class="breadcrumb-item"><a href="../">Index</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Maan</li>
+                        <li class="breadcrumb-item active" aria-current="page">Ma'an</li>
                     </ol>
                 </nav>
-        <h1 class="mb-4 text-center">Maan</h1>
+        <h1 class="mb-4 text-center">Ma'an</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Operations in the Middle East from 1 November 1941 to 15 August 1942</strong></p>
@@ -88,8 +92,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Ma'an" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ma,an - panoramio.jpg" alt="Ma'an"/></div>
+         <div>
+            <p>Country: Jordan</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([30.193333333333, 35.733333333333], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([30.193333333333, 35.733333333333]).addTo(map)
+            .bindPopup("Ma'an")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

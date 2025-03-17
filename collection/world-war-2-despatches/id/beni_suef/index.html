@@ -41,7 +41,11 @@
 
 
     <title>Beni Suef</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,7 +84,7 @@
                 </nav>
         <h1 class="mb-4 text-center">Beni Suef</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Operations in the Middle East from 1 November 1941 to 15 August 1942</strong></p>
@@ -88,8 +92,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Beni Suef" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Flickr - shaimaa85 - beni suef.jpg" alt="Beni Suef"/></div>
+         <div>
+            <p>Country: Egypt</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([29.066666666667, 31.083333333333], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([29.066666666667, 31.083333333333]).addTo(map)
+            .bindPopup("Beni Suef")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

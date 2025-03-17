@@ -41,7 +41,11 @@
 
 
     <title>Bologna</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,16 +84,44 @@
                 </nav>
         <h1 class="mb-4 text-center">Bologna</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
+                <p class="mb-0"><strong>The part played by the Allied forces in the final defeat of the enemy in the Mediterranean theatre, March to   May 1945</strong></p>
+                    <p class="mb-0"><strong>Issue:39367:</strong> <a href="../../discover/39367/index.html#2" class="link-primary">2</a>, <a href="../../discover/39367/index.html#17" class="link-primary">17</a>, <a href="../../discover/39367/index.html#20" class="link-primary">20</a>, <a href="../../discover/39367/index.html#23" class="link-primary">23</a>, <a href="../../discover/39367/index.html#24" class="link-primary">24</a>, <a href="../../discover/39367/index.html#25" class="link-primary">25</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
                 <p class="mb-0"><strong>The Allied Armies in Italy from 3 September 1943 to 12 December 1944</strong></p>
-                    <p class="mb-0"><strong>Issue:38937:</strong> <a href="../../discover/38937/index.html#97" class="link-primary">97</a></p>
+                    <p class="mb-0"><strong>Issue:38937:</strong> <a href="../../discover/38937/index.html#13" class="link-primary">13</a>, <a href="../../discover/38937/index.html#53" class="link-primary">53</a>, <a href="../../discover/38937/index.html#58" class="link-primary">58</a>, <a href="../../discover/38937/index.html#62" class="link-primary">62</a>, <a href="../../discover/38937/index.html#63" class="link-primary">63</a>, <a href="../../discover/38937/index.html#64" class="link-primary">64</a>, <a href="../../discover/38937/index.html#65" class="link-primary">65</a>, <a href="../../discover/38937/index.html#66" class="link-primary">66</a>, <a href="../../discover/38937/index.html#67" class="link-primary">67</a>, <a href="../../discover/38937/index.html#70" class="link-primary">70</a>, <a href="../../discover/38937/index.html#70" class="link-primary">70</a>, <a href="../../discover/38937/index.html#71" class="link-primary">71</a>, <a href="../../discover/38937/index.html#72" class="link-primary">72</a>, <a href="../../discover/38937/index.html#73" class="link-primary">73</a>, <a href="../../discover/38937/index.html#74" class="link-primary">74</a>, <a href="../../discover/38937/index.html#75" class="link-primary">75</a>, <a href="../../discover/38937/index.html#76" class="link-primary">76</a>, <a href="../../discover/38937/index.html#77" class="link-primary">77</a>, <a href="../../discover/38937/index.html#78" class="link-primary">78</a>, <a href="../../discover/38937/index.html#81" class="link-primary">81</a>, <a href="../../discover/38937/index.html#84" class="link-primary">84</a>, <a href="../../discover/38937/index.html#97" class="link-primary">97</a></p>
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Bologna" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bologna Panorama.jpg" alt="Bologna"/></div>
+         <div>
+            <p>Country: Italy</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([44.493888888889, 11.342777777778], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([44.493888888889, 11.342777777778]).addTo(map)
+            .bindPopup("Bologna")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

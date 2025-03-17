@@ -40,8 +40,12 @@
         
 
 
-    <title>ALBURY</title>
-    
+    <title>Albury</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -75,12 +79,12 @@
                           <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item"><a href="../../discover">World War 2 Despatches</a></li>
                         <li class="breadcrumb-item"><a href="../">Index</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">ALBURY</li>
+                        <li class="breadcrumb-item active" aria-current="page">Albury</li>
                     </ol>
                 </nav>
-        <h1 class="mb-4 text-center">ALBURY</h1>
+        <h1 class="mb-4 text-center">Albury</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>The evacuation of the Allied Armies from Dunkirk and neighbouring beaches, 18 June 1940</strong></p>
@@ -88,8 +92,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Albury" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Over looking Albury.jpg" alt="Albury"/></div>
+         <div>
+            <p>Country: Australia</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([-36.083333333333, 146.91666666667], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([-36.083333333333, 146.91666666667]).addTo(map)
+            .bindPopup("Albury")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

@@ -41,7 +41,11 @@
 
 
     <title>England</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,7 +84,7 @@
                 </nav>
         <h1 class="mb-4 text-center">England</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Air operations by Air Defence of Great Britain Fighter Command in connection with the German Flying Bomb and Rocket Offensives 1944 to 1945</strong></p>
@@ -153,8 +157,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/England, Arkansas" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="None" alt="England"/></div>
+         <div>
+            <p>Country: United States of America</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([34.544166666667, -91.9675], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([34.544166666667, -91.9675]).addTo(map)
+            .bindPopup("England")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

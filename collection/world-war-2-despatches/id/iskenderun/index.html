@@ -40,8 +40,12 @@
         
 
 
-    <title>Iskenderun</title>
-    
+    <title>İskenderun</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -75,12 +79,12 @@
                           <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item"><a href="../../discover">World War 2 Despatches</a></li>
                         <li class="breadcrumb-item"><a href="../">Index</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Iskenderun</li>
+                        <li class="breadcrumb-item active" aria-current="page">İskenderun</li>
                     </ol>
                 </nav>
-        <h1 class="mb-4 text-center">Iskenderun</h1>
+        <h1 class="mb-4 text-center">İskenderun</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Operations in the Middle East from 16 February 1943, to 8 January 1944</strong></p>
@@ -88,8 +92,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/İskenderun" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/City View of Iskenderun Turkey - panoramio.jpg" alt="İskenderun"/></div>
+         <div>
+            <p>Country: Turkey</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([36.581666666667, 36.165], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([36.581666666667, 36.165]).addTo(map)
+            .bindPopup("İskenderun")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

@@ -40,8 +40,12 @@
         
 
 
-    <title>Washington D.C.</title>
-    
+    <title>Washington, D.C.</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -75,12 +79,12 @@
                           <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item"><a href="../../discover">World War 2 Despatches</a></li>
                         <li class="breadcrumb-item"><a href="../">Index</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Washington D.C.</li>
+                        <li class="breadcrumb-item active" aria-current="page">Washington, D.C.</li>
                     </ol>
                 </nav>
-        <h1 class="mb-4 text-center">Washington D.C.</h1>
+        <h1 class="mb-4 text-center">Washington, D.C.</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Notification of state of war with Bulgaria </strong></p>
@@ -88,8 +92,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Washington, D.C." target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial view of White House and downtown, Washington, D.C LCCN2010630891.jpg" alt="Washington, D.C."/></div>
+         <div>
+            <p>Country: United States of America</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([38.895, -77.036666666667], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([38.895, -77.036666666667]).addTo(map)
+            .bindPopup("Washington, D.C.")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

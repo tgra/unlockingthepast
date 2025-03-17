@@ -40,8 +40,12 @@
         
 
 
-    <title>GOLD beach</title>
-    
+    <title>Gold Beach</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -75,12 +79,12 @@
                           <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item"><a href="../../discover">World War 2 Despatches</a></li>
                         <li class="breadcrumb-item"><a href="../">Index</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">GOLD beach</li>
+                        <li class="breadcrumb-item active" aria-current="page">Gold Beach</li>
                     </ol>
                 </nav>
-        <h1 class="mb-4 text-center">GOLD beach</h1>
+        <h1 class="mb-4 text-center">Gold Beach</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>The Assault Phase of the Normandy Landings, 16 October 1944</strong></p>
@@ -88,8 +92,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Gold Beach, Oregon" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rogue River bridge Gold Beach Oregon.jpg" alt="Gold Beach"/></div>
+         <div>
+            <p>Country: United States of America</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([42.402222222222, -124.41527777778], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([42.402222222222, -124.41527777778]).addTo(map)
+            .bindPopup("Gold Beach")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

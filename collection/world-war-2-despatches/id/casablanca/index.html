@@ -41,7 +41,11 @@
 
 
     <title>Casablanca</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,11 +84,16 @@
                 </nav>
         <h1 class="mb-4 text-center">Casablanca</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>The Allied Armies in Italy from 3 September 1943 to 12 December 1944</strong></p>
                     <p class="mb-0"><strong>Issue:38937:</strong> <a href="../../discover/38937/index.html#2" class="link-primary">2</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
+                <p class="mb-0"><strong>The landings in North Africa, 1943</strong></p>
+                    <p class="mb-0"><strong>Issue:38569:</strong> <a href="../../discover/38569/index.html#9" class="link-primary">9</a></p>
                 </div>
             </div><div class="card mb-3">
                 <div class="card-body">
@@ -108,8 +117,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Casablanca" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Au centre de Casablanca (8177200639).jpg" alt="Casablanca"/></div>
+         <div>
+            <p>Country: Morocco</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([33.599166666667, -7.62], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([33.599166666667, -7.62]).addTo(map)
+            .bindPopup("Casablanca")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

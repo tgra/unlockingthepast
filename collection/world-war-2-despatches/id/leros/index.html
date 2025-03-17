@@ -41,7 +41,11 @@
 
 
     <title>Leros</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,16 +84,44 @@
                 </nav>
         <h1 class="mb-4 text-center">Leros</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Naval operations in the Aegean between 7 September 1943 and 28 November 1943</strong></p>
-                    <p class="mb-0"><strong>Issue:38426:</strong> <a href="../../discover/38426/index.html#3" class="link-primary">3</a></p>
+                    <p class="mb-0"><strong>Issue:38426:</strong> <a href="../../discover/38426/index.html#1" class="link-primary">1</a>, <a href="../../discover/38426/index.html#2" class="link-primary">2</a>, <a href="../../discover/38426/index.html#3" class="link-primary">3</a>, <a href="../../discover/38426/index.html#4" class="link-primary">4</a>, <a href="../../discover/38426/index.html#6" class="link-primary">6</a>, <a href="../../discover/38426/index.html#7" class="link-primary">7</a>, <a href="../../discover/38426/index.html#8" class="link-primary">8</a>, <a href="../../discover/38426/index.html#9" class="link-primary">9</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
+                <p class="mb-0"><strong>Operations in the Middle East from 16 February 1943, to 8 January 1944</strong></p>
+                    <p class="mb-0"><strong>Issue:37786:</strong> <a href="../../discover/37786/index.html#2" class="link-primary">2</a>, <a href="../../discover/37786/index.html#18" class="link-primary">18</a>, <a href="../../discover/37786/index.html#19" class="link-primary">19</a>, <a href="../../discover/37786/index.html#20" class="link-primary">20</a>, <a href="../../discover/37786/index.html#21" class="link-primary">21</a>, <a href="../../discover/37786/index.html#22" class="link-primary">22</a>, <a href="../../discover/37786/index.html#23" class="link-primary">23</a></p>
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="#" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="None" alt="Leros"/></div>
+         <div>
+            <p>Country: None</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([None, None], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([None, None]).addTo(map)
+            .bindPopup("Leros")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

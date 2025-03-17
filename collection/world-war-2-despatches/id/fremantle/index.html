@@ -41,7 +41,11 @@
 
 
     <title>Fremantle</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,11 +84,16 @@
                 </nav>
         <h1 class="mb-4 text-center">Fremantle</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>The carrier-borne aircraft attacks on oil refineries in the Palembang (Sumatra) area, January 1945</strong></p>
                     <p class="mb-0"><strong>Issue:39191:</strong> <a href="../../discover/39191/index.html#2" class="link-primary">2</a>, <a href="../../discover/39191/index.html#6" class="link-primary">6</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
+                <p class="mb-0"><strong>Air operations in South East Asia 16 November 1943, to 31 May 1944</strong></p>
+                    <p class="mb-0"><strong>Issue:39173:</strong> <a href="../../discover/39173/index.html#16" class="link-primary">16</a></p>
                 </div>
             </div><div class="card mb-3">
                 <div class="card-body">
@@ -93,8 +102,31 @@
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Fremantle" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial view of Fremantle.JPG" alt="Fremantle"/></div>
+         <div>
+            <p>Country: Australia</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([-32.056944444444, 115.74388888889], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([-32.056944444444, 115.74388888889]).addTo(map)
+            .bindPopup("Fremantle")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

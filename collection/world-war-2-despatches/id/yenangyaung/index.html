@@ -41,7 +41,11 @@
 
 
     <title>Yenangyaung</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,16 +84,54 @@
                 </nav>
         <h1 class="mb-4 text-center">Yenangyaung</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
+                <p class="mb-0"><strong>Air operations in South East Asia from 1 June 1944 to the occupation of Rangoon, 2 May 1945</strong></p>
+                    <p class="mb-0"><strong>Issue:39196:</strong> <a href="../../discover/39196/index.html#13" class="link-primary">13</a>, <a href="../../discover/39196/index.html#15" class="link-primary">15</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
                 <p class="mb-0"><strong>Operations in Burma from 12 November 1944 to 15 August 1945</strong></p>
-                    <p class="mb-0"><strong>Issue:39195:</strong> <a href="../../discover/39195/index.html#41" class="link-primary">41</a></p>
+                    <p class="mb-0"><strong>Issue:39195:</strong> <a href="../../discover/39195/index.html#12" class="link-primary">12</a>, <a href="../../discover/39195/index.html#19" class="link-primary">19</a>, <a href="../../discover/39195/index.html#21" class="link-primary">21</a>, <a href="../../discover/39195/index.html#39" class="link-primary">39</a>, <a href="../../discover/39195/index.html#40" class="link-primary">40</a>, <a href="../../discover/39195/index.html#41" class="link-primary">41</a>, <a href="../../discover/39195/index.html#42" class="link-primary">42</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
+                <p class="mb-0"><strong>Air operations in South East Asia 16 November 1943, to 31 May 1944</strong></p>
+                    <p class="mb-0"><strong>Issue:39173:</strong> <a href="../../discover/39173/index.html#9" class="link-primary">9</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
+                <p class="mb-0"><strong>Operations in Burma from 15 December 1941, to 20 May 1942</strong></p>
+                    <p class="mb-0"><strong>Issue:38228:</strong> <a href="../../discover/38228/index.html#6" class="link-primary">6</a>, <a href="../../discover/38228/index.html#8" class="link-primary">8</a>, <a href="../../discover/38228/index.html#30" class="link-primary">30</a>, <a href="../../discover/38228/index.html#35" class="link-primary">35</a>, <a href="../../discover/38228/index.html#37" class="link-primary">37</a></p>
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Yenangyaung" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Yenangyaung.jpg" alt="Yenangyaung"/></div>
+         <div>
+            <p>Country: Myanmar</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([20.458261111111, 94.873180555556], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([20.458261111111, 94.873180555556]).addTo(map)
+            .bindPopup("Yenangyaung")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

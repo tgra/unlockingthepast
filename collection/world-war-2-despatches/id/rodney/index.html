@@ -40,8 +40,12 @@
         
 
 
-    <title>RODNEY</title>
-    
+    <title>Rodney</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -75,21 +79,49 @@
                           <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item"><a href="../../discover">World War 2 Despatches</a></li>
                         <li class="breadcrumb-item"><a href="../">Index</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">RODNEY</li>
+                        <li class="breadcrumb-item active" aria-current="page">Rodney</li>
                     </ol>
                 </nav>
-        <h1 class="mb-4 text-center">RODNEY</h1>
+        <h1 class="mb-4 text-center">Rodney</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
+                <p class="mb-0"><strong>Mediterranean convoy operations, 19 March 1941</strong></p>
+                    <p class="mb-0"><strong>Issue:38377:</strong> <a href="../../discover/38377/index.html#17" class="link-primary">17</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
                 <p class="mb-0"><strong>Sinking of the German battleship Bismarck on 27 May 1941</strong></p>
-                    <p class="mb-0"><strong>Issue:38098:</strong> <a href="../../discover/38098/index.html#9" class="link-primary">9</a>, <a href="../../discover/38098/index.html#13" class="link-primary">13</a></p>
+                    <p class="mb-0"><strong>Issue:38098:</strong> <a href="../../discover/38098/index.html#16" class="link-primary">16</a>, <a href="../../discover/38098/index.html#17" class="link-primary">17</a></p>
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Rodney, Iowa" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="None" alt="Rodney"/></div>
+         <div>
+            <p>Country: United States of America</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([42.204722222222, -95.951388888889], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([42.204722222222, -95.951388888889]).addTo(map)
+            .bindPopup("Rodney")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

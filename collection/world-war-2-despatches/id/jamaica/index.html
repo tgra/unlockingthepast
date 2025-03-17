@@ -40,8 +40,12 @@
         
 
 
-    <title>JAMAICA</title>
-    
+    <title>Jamaica</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -75,21 +79,44 @@
                           <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item"><a href="../../discover">World War 2 Despatches</a></li>
                         <li class="breadcrumb-item"><a href="../">Index</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">JAMAICA</li>
+                        <li class="breadcrumb-item active" aria-current="page">Jamaica</li>
                     </ol>
                 </nav>
-        <h1 class="mb-4 text-center">JAMAICA</h1>
+        <h1 class="mb-4 text-center">Jamaica</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Sinking of the German battlecruiser Schartnhorst, 26 December 1943</strong></p>
-                    <p class="mb-0"><strong>Issue:38038:</strong> <a href="../../discover/38038/index.html#7" class="link-primary">7</a></p>
+                    <p class="mb-0"><strong>Issue:38038:</strong> <a href="../../discover/38038/index.html#5" class="link-primary">5</a>, <a href="../../discover/38038/index.html#11" class="link-primary">11</a></p>
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Jamaica, Iowa" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Jamaica Iowa 20080118 Sign.JPG" alt="Jamaica"/></div>
+         <div>
+            <p>Country: United States of America</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([41.85, -94.3], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([41.85, -94.3]).addTo(map)
+            .bindPopup("Jamaica")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

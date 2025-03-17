@@ -41,7 +41,11 @@
 
 
     <title>Venice</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,21 +84,39 @@
                 </nav>
         <h1 class="mb-4 text-center">Venice</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
-                <p class="mb-0"><strong>The part played by the Allied forces in the final defeat of the enemy in the Mediterranean theatre, March to   May 1945</strong></p>
-                    <p class="mb-0"><strong>Issue:39367:</strong> <a href="../../discover/39367/index.html#19" class="link-primary">19</a>, <a href="../../discover/39367/index.html#20" class="link-primary">20</a></p>
-                </div>
-            </div><div class="card mb-3">
-                <div class="card-body">
                 <p class="mb-0"><strong>The Allied Armies in Italy from 3 September 1943 to 12 December 1944</strong></p>
-                    <p class="mb-0"><strong>Issue:38937:</strong> <a href="../../discover/38937/index.html#58" class="link-primary">58</a>, <a href="../../discover/38937/index.html#66" class="link-primary">66</a>, <a href="../../discover/38937/index.html#89" class="link-primary">89</a>, <a href="../../discover/38937/index.html#90" class="link-primary">90</a></p>
+                    <p class="mb-0"><strong>Issue:38937:</strong> <a href="../../discover/38937/index.html#77" class="link-primary">77</a>, <a href="../../discover/38937/index.html#80" class="link-primary">80</a></p>
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Venice" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Venice Old Town Lagoon Aerial View.jpg" alt="Venice"/></div>
+         <div>
+            <p>Country: Italy</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([45.439722222222, 12.331944444444], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([45.439722222222, 12.331944444444]).addTo(map)
+            .bindPopup("Venice")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>

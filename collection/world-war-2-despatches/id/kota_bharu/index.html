@@ -41,7 +41,11 @@
 
 
     <title>Kota Bharu</title>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -80,21 +84,54 @@
                 </nav>
         <h1 class="mb-4 text-center">Kota Bharu</h1>
        <div class="row">
-        <div class="col mb-2">
+        <div class="col-4 mb-2">
         <div class="card mb-3">
                 <div class="card-body">
+                <p class="mb-0"><strong>Report on the air operations during the campaigns in Malaya and Netherland East Indies, from 8 December 1941 to 12 March 1942</strong></p>
+                    <p class="mb-0"><strong>Issue:38216:</strong> <a href="../../discover/38216/index.html#4" class="link-primary">4</a>, <a href="../../discover/38216/index.html#6" class="link-primary">6</a>, <a href="../../discover/38216/index.html#10" class="link-primary">10</a>, <a href="../../discover/38216/index.html#11" class="link-primary">11</a>, <a href="../../discover/38216/index.html#14" class="link-primary">14</a>, <a href="../../discover/38216/index.html#15" class="link-primary">15</a>, <a href="../../discover/38216/index.html#16" class="link-primary">16</a>, <a href="../../discover/38216/index.html#17" class="link-primary">17</a>, <a href="../../discover/38216/index.html#18" class="link-primary">18</a>, <a href="../../discover/38216/index.html#19" class="link-primary">19</a>, <a href="../../discover/38216/index.html#20" class="link-primary">20</a>, <a href="../../discover/38216/index.html#21" class="link-primary">21</a>, <a href="../../discover/38216/index.html#28" class="link-primary">28</a>, <a href="../../discover/38216/index.html#63" class="link-primary">63</a>, <a href="../../discover/38216/index.html#68" class="link-primary">68</a>, <a href="../../discover/38216/index.html#69" class="link-primary">69</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
                 <p class="mb-0"><strong>Operations of Malaya Command, from 8 December 1941, to 15 February 1942</strong></p>
-                    <p class="mb-0"><strong>Issue:38215:</strong> <a href="../../discover/38215/index.html#28" class="link-primary">28</a></p>
+                    <p class="mb-0"><strong>Issue:38215:</strong> <a href="../../discover/38215/index.html#9" class="link-primary">9</a>, <a href="../../discover/38215/index.html#10" class="link-primary">10</a>, <a href="../../discover/38215/index.html#11" class="link-primary">11</a>, <a href="../../discover/38215/index.html#24" class="link-primary">24</a>, <a href="../../discover/38215/index.html#25" class="link-primary">25</a>, <a href="../../discover/38215/index.html#26" class="link-primary">26</a>, <a href="../../discover/38215/index.html#28" class="link-primary">28</a></p>
                 </div>
             </div><div class="card mb-3">
                 <div class="card-body">
                 <p class="mb-0"><strong>Loss of HM Ships Prince of Wales and Repulse December 1941</strong></p>
-                    <p class="mb-0"><strong>Issue:38214:</strong> <a href="../../discover/38214/index.html#8" class="link-primary">8</a></p>
+                    <p class="mb-0"><strong>Issue:38214:</strong> <a href="../../discover/38214/index.html#1" class="link-primary">1</a>, <a href="../../discover/38214/index.html#4" class="link-primary">4</a>, <a href="../../discover/38214/index.html#7" class="link-primary">7</a>, <a href="../../discover/38214/index.html#8" class="link-primary">8</a></p>
+                </div>
+            </div><div class="card mb-3">
+                <div class="card-body">
+                <p class="mb-0"><strong>Operations in the Far East from 17 October 1940 to 27 December 1941</strong></p>
+                    <p class="mb-0"><strong>Issue:38183:</strong> <a href="../../discover/38183/index.html#11" class="link-primary">11</a>, <a href="../../discover/38183/index.html#21" class="link-primary">21</a>, <a href="../../discover/38183/index.html#22" class="link-primary">22</a>, <a href="../../discover/38183/index.html#23" class="link-primary">23</a>, <a href="../../discover/38183/index.html#25" class="link-primary">25</a>, <a href="../../discover/38183/index.html#40" class="link-primary">40</a></p>
                 </div>
             </div>
 </div>
-<div class="mb-2 col">
+<div class="mb-2 col-4">
+
+ 
          
+       
+        <p><a href="https://en.wikipedia.org/wiki/Kota Bharu" target="_blank" class="btn btn-link">Read more on Wikipedia</a></p>
+        <div><img width="500px" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sultan Ismail Petra Arch, Kota Bharu.jpg" alt="Kota Bharu"/></div>
+         <div>
+            <p>Country: Malaysia</p>
+<div id="map" style="border:1px solid navy"></div>
+    <script>
+        var map = L.map('map').setView([6.1333333333333, 102.25], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([6.1333333333333, 102.25]).addTo(map)
+            .bindPopup("Kota Bharu")
+            .openPopup();
+    </script>
+            </div>
+    
+
+        
+
          </div>
          </div>
     </div>
